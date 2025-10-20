@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+.env
+.cache/
+
+# Node / Chrome extension build artifacts
+node_modules/
+dist/
+*.tsbuildinfo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data outputs (retain resolver catalog, ignore large intermediates)
+data/product_table_folder/*.pkl
+

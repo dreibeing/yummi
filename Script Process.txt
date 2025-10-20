@@ -1,0 +1,17 @@
+1. Run "webscraper" need to update URL for each category
+2. Run "combined_webscrape" which saves a file combined_webscrape_df.pkl to C:\Users\user\Documents\Greenbean\Shopper\product_table_folder
+3. Run "clean_combined_webscrape" which saves a file clean_combined_webscrape_df to C:\Users\user\Documents\Greenbean\Shopper\product_table_folder
+4. Run "clean_quantities_combined_webscrape" which saves a file clean_quantities_combined_webscrape_df to C:\Users\user\Documents\Greenbean\Shopper\product_table_folder
+5. Run "final_product_table" which adds a uid to clean_quantities_combined_webscrape_df and saves final_product_table_df to C:\Users\user\Documents\Greenbean\Shopper\product_table_folder
+6. Run "ingredients_processing" this creates a new dataframe ingredients_table_df.pkl saved to C:\Users\user\Documents\Greenbean\Shopper\ingredients or updates ingredients_table_df.pkl
+7. Run "ingredients_processing_2" this creates a new dataframe ingredients_table_clean_df.pkl saved to C:\Users\user\Documents\Greenbean\Shopper\ingredients that capitalizes each word
+8. Run "create_archetypes" this creates a new dataframe archetypes_df.pkl saved to "C:\Users\user\Documents\Greenbean\Shopper\archetypes\archetypes.pkl"
+9. Run "final_archetypes" this adds a uid and creates a new dataframe final_archetypes_df.pkl to "C:\Users\user\Documents\Greenbean\Shopper\archetypes\final_archetypes_df.pkl"
+10. Run archetype_ingredients which creates a dataframe archetype_ingredients_df.pkl that is a list of ingredients specific to that archetype.
+11 meal_processing
+12 tags processing
+13 meal_restrictions_batch
+14 python Scripts/web_user_tags/feedback_meal_batch.py
+
+
+

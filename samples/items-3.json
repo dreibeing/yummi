@@ -1,0 +1,21 @@
+{
+  "retailer": "woolworths_co_za",
+  "items": [
+    {
+      "title": "Matured Thick Cut Beef Sirloin Steak Avg 550 g",
+      "url": "https://www.woolworths.co.za/prod/Food/Meat-Poultry-Fish/Beef/Steaks/Matured-Thick-Cut-Beef-Sirloin-Steak-Avg-550-g/_/A-2028910000000?isFromPLP=true",
+      "qty": 1
+    },
+    {
+      "title": "Sugar-Free Sparkling Passion Fruit and Lemon Drink 275 ml",
+      "url": "https://www.woolworths.co.za/prod/Food/Beverages-Juices/Sodas/Woolies-Soda/Sugar-Free-Sparkling-Passion-Fruit-and-Lemon-Drink-275-ml/_/A-6009204269606?isFromPLP=true",
+      "qty": 1
+    },
+    {
+      "title": "White Thick Slice Bread 700 g",
+      "url": "https://www.woolworths.co.za/prod/Food/Bakery/Bread-Rolls/Bread/White-Bread/White-Thick-Slice-Bread-700-g/_/A-20018702?isFromPLP=true",
+      "qty": 1
+    }
+  ]
+}
+

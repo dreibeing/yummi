@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Woolworths Cart Filler</title>
+    <style>
+      body { font-family: sans-serif; margin: 12px; width: 340px; }
+      textarea { width: 100%; height: 140px; box-sizing: border-box; }
+      .row { display: flex; gap: 8px; margin-top: 8px; }
+      .row > button { flex: 1; }
+      .small { color: #555; font-size: 12px; }
+      #progress { margin-top: 8px; font-size: 13px; white-space: pre-wrap; }
+    </style>
+  </head>
+  <body>
+    <h3>Cart Filler</h3>
+    <div class="small">Paste Item List JSON (retailer: woolworths_co_za)</div>
+    <textarea id="input" placeholder='{"retailer":"woolworths_co_za","items":[{"url":"https://...","qty":1,"title":"Example"}]}'></textarea>
+    <div class="row">
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+    </div>
+    <div id="progress"></div>
+    <script src="popup.js"></script>
+  </body>
+  </html>
+

@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Woolworths Cart Filler (POC)",
+  "version": "0.1.0",
+  "description": "Fill Woolworths cart from a provided JSON item list.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Woolworths Cart Filler"
+  },
+  "permissions": [
+    "storage",
+    "scripting",
+    "activeTab",
+    "tabs",
+    "cookies"
+  ],
+  "host_permissions": [
+    "https://www.woolworths.co.za/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.woolworths.co.za/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

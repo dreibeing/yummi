@@ -1,0 +1,403 @@
+[
+  {
+    "name": "Cakes & Gateaux",
+    "url": "https://www.woolworths.co.za/cat/Food/Bakery/Cakes-Gateaux/_/N-1efg4q3",
+    "path": [
+      "Food",
+      "Bakery",
+      "Cakes & Gateaux"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Wraps, Naan, Pitas & Bagels",
+    "url": "https://www.woolworths.co.za/cat/Food/Bakery/Wraps-Naan-Pitas-Bagels/_/N-1u58e51",
+    "path": [
+      "Food",
+      "Bakery",
+      "Wraps, Naan, Pitas & Bagels"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Bakery",
+    "url": "https://www.woolworths.co.za/cat/Food/Bakery/_/N-1bm2new",
+    "path": [
+      "Food",
+      "Bakery"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Bakery",
+    "url": "https://www.woolworths.co.za/cat/Food/Bakery/_/N-1bm2newZxtznwk",
+    "path": [
+      "Food",
+      "Bakery"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Flavoured Water",
+    "url": "https://www.woolworths.co.za/cat/Food/Beverages-Juices/Water-/Flavoured-Water/_/N-do1xq7",
+    "path": [
+      "Food",
+      "Beverages & Juices",
+      "Water & Ice Blocks",
+      "Flavoured Water"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Water & Ice Blocks",
+    "url": "https://www.woolworths.co.za/cat/Food/Beverages-Juices/Water-Ice-Blocks/_/N-25njyc",
+    "path": [
+      "Food",
+      "Beverages & Juices",
+      "Water & Ice Blocks"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Beverages & Juices",
+    "url": "https://www.woolworths.co.za/cat/Food/Beverages-Juices/_/N-mnxddc",
+    "path": [
+      "Food",
+      "Beverages & Juices"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Braai Shop",
+    "url": "https://www.woolworths.co.za/cat/Food/Braai-Shop/_/N-1trm6c",
+    "path": [
+      "Food",
+      "Braai Shop"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Cleaning",
+    "url": "https://www.woolworths.co.za/cat/Food/Cleaning/_/N-o1v4pe",
+    "path": [
+      "Food",
+      "Cleaning"
+    ],
+    "enabled": false
+  },
+  {
+    "name": "Deli & Entertaining",
+    "url": "https://www.woolworths.co.za/cat/Food/Deli-Entertaining/_/N-13b8g51",
+    "path": [
+      "Food",
+      "Deli & Entertaining"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Flowers & Plants",
+    "url": "https://www.woolworths.co.za/cat/Food/Flowers-Plants/_/N-1z13rv1",
+    "path": [
+      "Food",
+      "Flowers & Plants"
+    ],
+    "enabled": false
+  },
+  {
+    "name": "Frozen Food",
+    "url": "https://www.woolworths.co.za/cat/Food/Frozen-Food/_/N-j8pkwq",
+    "path": [
+      "Food",
+      "Frozen Food"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Fresh Vegetables",
+    "url": "https://www.woolworths.co.za/cat/Food/Fruit-Vegetables-Salads/Bulk-Vegetables-Fruit-Salads/Fresh-Vegetables/_/N-8tzevnZxtznwk",
+    "path": [
+      "Food",
+      "Fruit, Vegetables & Salads",
+      "Bulk Vegetables, Fruit & Salads",
+      "Fresh Vegetables"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Bulk Vegetables, Fruit & Salads",
+    "url": "https://www.woolworths.co.za/cat/Food/Fruit-Vegetables-Salads/Bulk-Vegetables-Fruit-Salads/_/N-xtznwkZ1mdxqe6",
+    "path": [
+      "Food",
+      "Fruit, Vegetables & Salads",
+      "Bulk Vegetables, Fruit & Salads"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Fruit, Vegetables & Salads",
+    "url": "https://www.woolworths.co.za/cat/Food/Fruit-Vegetables-Salads/_/N-lllnam",
+    "path": [
+      "Food",
+      "Fruit, Vegetables & Salads"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Fruit, Vegetables & Salads",
+    "url": "https://www.woolworths.co.za/cat/Food/Fruit-Vegetables-Salads/_/N-xtznwkZlllnam",
+    "path": [
+      "Food",
+      "Fruit, Vegetables & Salads"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Sides & Accompaniments",
+    "url": "https://www.woolworths.co.za/cat/Food/Global-Cuisine-Shop/Asian/Sides-Accompaniments/_/N-1p6shcuZxtznwk",
+    "path": [
+      "Food",
+      "Global Cuisine Shop",
+      "Asian",
+      "Sides & Accompaniments"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Asian",
+    "url": "https://www.woolworths.co.za/cat/Food/Global-Cuisine-Shop/Asian/_/N-xtznwkZ1n112j8",
+    "path": [
+      "Food",
+      "Global Cuisine Shop",
+      "Asian"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Global Cuisine Shop",
+    "url": "https://www.woolworths.co.za/cat/Food/Global-Cuisine-Shop/_/N-11b32xa",
+    "path": [
+      "Food",
+      "Global Cuisine Shop"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Global Cuisine Shop",
+    "url": "https://www.woolworths.co.za/cat/Food/Global-Cuisine-Shop/_/N-xtznwkZ11b32xa",
+    "path": [
+      "Food",
+      "Global Cuisine Shop"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Household",
+    "url": "https://www.woolworths.co.za/cat/Food/Household/_/N-vvikef",
+    "path": [
+      "Food",
+      "Household"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Italian Shop",
+    "url": "https://www.woolworths.co.za/cat/Food/Italian-Shop/_/N-13jsf57",
+    "path": [],
+    "enabled": false
+  },
+  {
+    "name": "Kids",
+    "url": "https://www.woolworths.co.za/cat/Food/Kids/_/N-ymaf0z",
+    "path": [
+      "Food",
+      "Kids"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Crumbed Meat, Poultry & Fish",
+    "url": "https://www.woolworths.co.za/cat/Food/Meat-Poultry-Fish/Crumbed-Meat-Poultry-Fish/_/N-6ptpqh",
+    "path": [
+      "Food",
+      "Meat, Poultry & Fish",
+      "Crumbed Meat, Poultry & Fish"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Meat, Poultry & Fish",
+    "url": "https://www.woolworths.co.za/cat/Food/Meat-Poultry-Fish/_/N-d87rb7",
+    "path": [
+      "Food",
+      "Meat, Poultry & Fish"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Meat, Poultry & Fish",
+    "url": "https://www.woolworths.co.za/cat/Food/Meat-Poultry-Fish/_/N-d87rb7Zxtznwk",
+    "path": [
+      "Food",
+      "Meat, Poultry & Fish"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "2025 Dairy Award Winners",
+    "url": "https://www.woolworths.co.za/cat/Food/Milk-Dairy-Eggs/2024-Dairy-Award-Winners/_/N-18t5y8",
+    "path": [
+      "Food",
+      "Milk, Dairy & Eggs",
+      "2025 Dairy Award Winners"
+    ],
+    "enabled": false
+  },
+  {
+    "name": "Milk, Dairy & Eggs",
+    "url": "https://www.woolworths.co.za/cat/Food/Milk-Dairy-Eggs/_/N-1sqo44p",
+    "path": [
+      "Food",
+      "Milk, Dairy & Eggs"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Cheese & Biscuits",
+    "url": "https://www.woolworths.co.za/cat/Food/Pack-a-Picnic/Cheese-Biscuits/_/N-1jmd2td",
+    "path": [
+      "Food",
+      "Pack a Picnic",
+      "Cheese & Biscuits"
+    ],
+    "enabled": false
+  },
+  {
+    "name": "Pack a Picnic",
+    "url": "https://www.woolworths.co.za/cat/Food/Pack-a-Picnic/_/N-gbee9f",
+    "path": [
+      "Food",
+      "Pack a Picnic"
+    ],
+    "enabled": false
+  },
+  {
+    "name": "Pasta",
+    "url": "https://www.woolworths.co.za/cat/Food/Pantry/Pasta-Rice-Noodles/Pasta-/_/N-12u5njw",
+    "path": [
+      "Food",
+      "Pantry",
+      "Pasta, Rice & Noodles",
+      "Pasta"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Pasta, Rice & Noodles",
+    "url": "https://www.woolworths.co.za/cat/Food/Pantry/Pasta-Rice-Noodles/_/N-j8vv2e",
+    "path": [
+      "Food",
+      "Pantry",
+      "Pasta, Rice & Noodles"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Pantry",
+    "url": "https://www.woolworths.co.za/cat/Food/Pantry/_/N-1lw4dzx",
+    "path": [
+      "Food",
+      "Pantry"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Pantry",
+    "url": "https://www.woolworths.co.za/cat/Food/Pantry/_/N-1lw4dzxZxtznwk",
+    "path": [
+      "Food",
+      "Pantry"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Buy 2 Or More And Save",
+    "url": "https://www.woolworths.co.za/cat/Food/Promotions/Buy-2-Or-More-And-Save/_/N-1z13bde",
+    "path": [
+      "Food",
+      "Promotions",
+      "Buy 2 Or More And Save"
+    ],
+    "enabled": false
+  },
+  {
+    "name": "MyDifference Favourites",
+    "url": "https://www.woolworths.co.za/cat/Food/Promotions/WRewards-Deals/_/N-cfl618",
+    "path": [
+      "Food",
+      "Promotions",
+      "MyDifference Favourites"
+    ],
+    "enabled": false
+  },
+  {
+    "name": "Promotions",
+    "url": "https://www.woolworths.co.za/cat/Food/Promotions/_/N-1z13s4w",
+    "path": [
+      "Food",
+      "Promotions"
+    ],
+    "enabled": false
+  },
+  {
+    "name": "MyDifference Favourites",
+    "url": "https://www.woolworths.co.za/cat/Food/Promotions/_/N-cfl618",
+    "path": [
+      "Food",
+      "Promotions",
+      "MyDifference Favourites"
+    ],
+    "enabled": false
+  },
+  {
+    "name": "Ready Meals",
+    "url": "https://www.woolworths.co.za/cat/Food/Ready-Meals/_/N-s2csbp",
+    "path": [
+      "Food",
+      "Ready Meals"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Ready Meals",
+    "url": "https://www.woolworths.co.za/cat/Food/Ready-Meals/_/N-s2csbpZxtznwk",
+    "path": [
+      "Food",
+      "Ready Meals"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "Supper Club",
+    "url": "https://www.woolworths.co.za/cat/Food/Supper-Club/_/N-1m9ip9x",
+    "path": [],
+    "enabled": false
+  },
+  {
+    "name": "Toiletries & Health",
+    "url": "https://www.woolworths.co.za/cat/Food/Toiletries-Health/_/N-1q1wl1r",
+    "path": [
+      "Food",
+      "Toiletries & Health"
+    ],
+    "enabled": false
+  },
+  {
+    "name": "Toiletries & Health",
+    "url": "https://www.woolworths.co.za/cat/Food/Toiletries-Health/_/N-1q1wl1rZxtznwk",
+    "path": [
+      "Food",
+      "Toiletries & Health"
+    ],
+    "enabled": false
+  }
+]

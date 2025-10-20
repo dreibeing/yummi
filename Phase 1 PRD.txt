@@ -1,0 +1,73 @@
+# Phase 1 — Mobile App PRD (Concise)
+
+> Audience: GPT‑5 Codex agent + engineering
+> Goal: Ship a minimal, publishable mobile app (iOS/Android) with auth, subscription, and “Send to Retailer” handoff that triggers a Woolworths basket fill POC.
+
+## 1) Scope (Phase 1)
+
+* **Auth**: Sign in with Apple (iOS), Google, Facebook (social login; OIDC).
+* **Subscription**: In‑app purchases via **RevenueCat** (monthly + annual; free trial). Entitlement gates access to “Retailer handoff.”
+* **Planner Placeholder**: Temporary mock that produces a shopping list (items map to real Woolworths products). ThinSlice planner will replace later.
+* **Retailer Handoff**: Button to initiate a secure, user‑side basket fill (Chrome extension POC) or server runner (Playwright) for demo.
+* **Export**: Share shopping list as CSV/PDF for manual workflows.
+
+## 2) Out of Scope (Phase 1)
+
+* In‑app grocery payment/checkout (happens on retailer site).
+* Advanced planning UX, nutrition/macros, multi‑user households.
+
+## 3) Platforms & Tech
+
+* **Mobile client**: React Native + Expo Router (TypeScript).
+* **Auth**: Supabase Auth or Auth0 (supports Apple/Google/Facebook; with Sign in with Apple compliance on iOS).
+* **Subscriptions**: RevenueCat SDK (entitlements: `free`, `pro`).
+* **Backend (MVP)**: Serverless functions (Node/TS on Vercel/Fly/Cloud Functions) for analytics webhooks and optional runner trigger.
+* **Analytics**: Sentry + GA4/Amplitude (events below).
+
+## 4) Core User Stories & Acceptance
+
+**US‑01 Auth**: As a user I can sign in with Apple/Google/Facebook.
+
+* *Acceptance*: Successful OIDC login; profile stored; Sign in with Apple shown on iOS; logout works.
+
+**US‑02 Paywall**: As a user I can start a trial/subscribe; app recognizes entitlement.
+
+* *Acceptance*: RevenueCat entitlements unlock the “Retailer handoff” screen; restore purchases works; sandbox tested.
+
+**US‑03 Create Plan (Placeholder)**: As a user I input counts for breakfasts/lunches/dinners and receive a list of items that map to real Woolworths products (URLs/SKUs).
+
+* *Acceptance*: List renders with images, quantities, and total item count; export to CSV/PDF.
+
+**US‑04 Retailer Handoff**: As a user I tap “Send to Woolworths,” authenticate in the browser, and my basket is filled for approval/payment.
+
+* *Acceptance*: For a 50‑item test list, ≥95% items added with correct quantities; cart opens successfully.
+
+## 5) Events (Analytics)
+
+* `app_open`, `login_success`, `paywall_view`, `subscribe_success`, `plan_created_placeholder`, `handoff_started`, `basket_fill_success`, `basket_fill_partial`, `handoff_error`.
+
+## 6) Non‑Functional
+
+* Warm start ≤2s, cold start ≤5s.
+* Crash‑free ≥99.5% on beta cohort.
+* Accessibility labels; dynamic type; basic localization ready (units/currency abstractions).
+
+## 7) Deliverables
+
+* iOS TestFlight + Android Internal Test builds.
+* RevenueCat products live (trial + monthly + annual).
+* Minimal Privacy Policy + Terms + Support links.
+* README with quickstart and sample JSON for item list.
+
+## 8) Definition of Done (Phase 1)
+
+* Auth + subscription flows pass QA on iOS/Android.
+* Handoff fills 50‑item basket on Woolworths (POC route) within the performance target below.
+* CSV/PDF export works.
+* Store listing drafts prepared.
+
+## 9) Performance Target (Handoff)
+
+* 50 items in **≤30 seconds** (extension XHR path, batched).
+* 100 items in **≤60 seconds** (with graceful degradation).
+* Progress UI with per‑item success/fail counts.

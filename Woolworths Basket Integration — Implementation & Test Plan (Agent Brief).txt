@@ -1,0 +1,173 @@
+# Woolworths Basket Integration — Implementation & Test Plan (Agent Brief)
+
+> Audience: GPT‑5 Codex agent + engineering
+> Objective: Fastest proof‑of‑concept to fill a Woolworths (SA) online cart from a known item list, with the user logged in. Prioritize **client‑side extension + same‑origin XHR**; fallback to **DOM‑click**; optional **Playwright runner** for research/demos.
+
+---
+
+## A) Inputs & Contracts
+
+### A.1 Item List JSON (from planner or placeholder)
+
+```json
+{
+  "retailer": "woolworths_co_za",
+  "store": "(optional human label)",
+  "items": [
+    {
+      "url": "https://www.woolworths.co.za/prod/xyz",
+      "sku": "(optional if known)",
+      "qty": 2,
+      "title": "Woolworths Salted Butter 500g"
+    }
+  ]
+}
+```
+
+* **url**: canonical product page (preferred).
+* **sku**: retailer SKU/variant id if available (enables faster XHR adds).
+* **qty**: integer ≥1.
+* **title**: for logging and fallbacks.
+
+### A.2 Success Criteria
+
+* **Primary**: Add ≥95% of items to cart with correct quantities.
+* **Performance**: 50 items ≤30s; 100 items ≤60s, measured from “Start fill” to “Cart ready.”
+* **User control**: User is logged in; action initiated from their browser (extension).
+* **Observability**: Per‑item results (ok/failed/reason) + total duration.
+
+---
+
+## B) Approach Overview
+
+1. **Chrome Extension (MV3)** – *primary path*
+
+   * Runs on `woolworths.co.za` origin; uses user’s session cookies.
+   * Preferred **XHR add‑to‑cart** if an endpoint is discoverable via DevTools.
+   * Fallback to **DOM‑click** on product pages.
+   * Executes in **small parallel batches (3–5)** with a throttle to avoid anti‑bot triggers.
+   * Ends by opening **/cart**.
+
+2. **Playwright Runner (POC/Dev)** – *optional*
+
+   * Human logs in once, sets store.
+   * Parallel tabs add items via product pages (or replay captured XHR).
+   * Used for development, QA, and demos—*not for scale*.
+
+3. **Deep‑link catalog**
+
+   * Maintain a mapping `{title → url, sku?}` for popular products to skip search latency.
+
+---
+
+## C) Tasks (To‑Do for Agent)
+
+### C.1 Extension — Foundation
+
+* [ ] Scaffold MV3 extension with **popup**, **content script**, **service worker**.
+* [ ] UI: Paste/upload Item List JSON; show progress (total, success, fail, elapsed).
+* [ ] Storage: Keep queue + index + running flag in `chrome.storage.local` for resilience.
+* [ ] Messaging: `popup ↔ service worker ↔ content` channels; `LOG` events to popup.
+
+### C.2 Discover Cart XHR (DevTools Recon)
+
+* [ ] Manually add one item in browser while logged in.
+* [ ] Capture **Network → XHR/Fetch** for the add‑to‑cart request.
+* [ ] Record: endpoint path, method, headers (CSRF/auth), body schema (sku/variant/quantity), and response shape.
+* [ ] Implement `addViaXHR(sku, qty)` in content script: same‑origin `fetch` with required headers.
+* [ ] Handle stock limits, multi‑variant products, and pack size selections.
+
+### C.3 DOM‑Click Fallback
+
+* [ ] For items without `sku` or if XHR fails, open the product `url` in current tab.
+* [ ] Wait for page settle; set quantity if an input exists; click **Add to cart**.
+* [ ] Detect success via toast/cart counter/network response heuristics.
+* [ ] Close/return; proceed to next item.
+
+### C.4 Parallelism & Throttling
+
+* [ ] Implement small **batch execution** (3–5 items concurrently).
+* [ ] Add 300–800ms jitter between item ops; 500–1000ms between batches.
+* [ ] Exponential backoff on transient failures.
+
+### C.5 Error Handling & Reporting
+
+* [ ] For each item, emit: `{title, url, sku, qty, status: "ok|failed", reason?, duration_ms}`.
+* [ ] Aggregate summary: `{ok, failed, elapsed_ms}`.
+* [ ] Provide **retry failed only** control.
+
+### C.6 Cart Handoff
+
+* [ ] When done, open `/cart` for user review.
+* [ ] Optional: Deep‑link to checkout page if stable.
+
+### C.7 Playwright Runner (Optional)
+
+* [ ] Script to launch Chromium, pause for manual login, then add items (parallel tabs).
+* [ ] Configurable batch size; same per‑item logs; open cart at end.
+
+### C.8 Package & DX
+
+* [ ] `README.md` with install/run steps, permissions, and demo GIF.
+* [ ] Sample `items.json` (10, 50, 100 items).
+* [ ] Env flags for batch size, delays.
+
+---
+
+## D) Test Plan
+
+### D.1 Functional
+
+* [ ] **Login prerequisite**: Prompt when not logged in; do nothing until user is authenticated.
+* [ ] **Add single item** (qty=1) via XHR; verify cart qty increments.
+* [ ] **Add with quantity** (qty>1); verify final qty matches.
+* [ ] **Mixed batch** (some with `sku`, some with `url` only).
+* [ ] **Out‑of‑stock** item: mark failed with reason.
+* [ ] **Variant selection** (e.g., flavor/size on page) handled or gracefully failed.
+
+### D.2 Performance
+
+* [ ] 10 items ≤10s.
+* [ ] 50 items ≤30s.
+* [ ] 100 items ≤60s.
+* [ ] Measure with `performance.now()` at start/end; log elapsed.
+
+### D.3 Resilience
+
+* [ ] Network hiccup → retry with backoff.
+* [ ] One item fails → continue others; allow retry‑failed.
+* [ ] Page layout change → fallback from XHR to DOM‑click automatically.
+
+### D.4 UX
+
+* [ ] Progress bar + counts; cancel/stop button.
+* [ ] Final screen with **Open Cart** button + copyable summary.
+* [ ] Clear permissions explanation (runs only on woolworths.co.za).
+
+---
+
+## E) Risks & Mitigations
+
+* **Anti‑bot / rate limits** → keep batches small, add jitter, use user’s active tab (human signals).
+* **ToS restrictions** → keep POC limited; prioritize extension (user‑side); seek written permission for formal integration.
+* **Selector drift** → centralize selectors; feature‑flag switches; auto‑fallback to DOM‑click.
+* **OOS/Substitutions** → allow optional `fallbacks[]` per item (phase 2).
+
+---
+
+## F) Artifacts to Deliver
+
+* `extension/` (MV3 project) with `manifest.json`, `popup.html/js`, `content.js`, `service-worker.js`.
+* `runner/` (Playwright) with `playwright-spike.ts`.
+* `samples/items-10.json`, `items-50.json`, `items-100.json`.
+* `README.md` (setup, usage, limitations).
+* Log format examples and demo screenshots.
+
+---
+
+## G) Definition of Done (Integration POC)
+
+* Extension fills a 50‑item cart in ≤30s on a test account; ≥95% success.
+* Per‑item JSON log + aggregate summary.
+* Cart opens automatically for approval/payment.
+* Optional Playwright runner achieves same with visible browser.
