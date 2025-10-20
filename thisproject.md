@@ -62,3 +62,10 @@ Build a production-ready pipeline that prepares product data, enriches basket pa
 ## Change Management
 - Update this guide alongside major workflow or tooling changes.
 - Document new commands, schemas, and test expectations for quick onboarding.
+- Version control: repository lives at `https://github.com/dreibeing/yummi.git`. Standard flow:
+  ```powershell
+  git add .
+  git commit -m "Describe change"
+  git push
+  ```
+  (First push already ran `git push -u origin main`; future pushes can just use `git push`.)
