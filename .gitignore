@@ -15,6 +15,13 @@ thin-slice-server/runner-log.txt
 # OS
 .DS_Store
 Thumbs.db
+~$*
 
 # Data outputs (retain resolver catalog, ignore large intermediates)
 data/product_table_folder/*.pkl
+
+# Local documents / generated artifacts
+*.docx
+thin-slice-server/orders.json
+thinslice.md
+yummi_scaffold_spec.md
