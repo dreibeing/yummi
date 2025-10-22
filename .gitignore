@@ -10,6 +10,7 @@ __pycache__/
 node_modules/
 dist/
 *.tsbuildinfo
+thin-slice-server/runner-log.txt
 
 # OS
 .DS_Store
@@ -17,4 +18,3 @@ Thumbs.db
 
 # Data outputs (retain resolver catalog, ignore large intermediates)
 data/product_table_folder/*.pkl
-

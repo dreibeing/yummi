@@ -7,10 +7,23 @@ const STORAGE_KEYS = {
   RUNNING: 'running',
   RESULTS: 'results',
   START_TS: 'startTs',
-  CONTEXT: 'context'
+  CONTEXT: 'context',
+  ORDER: 'order'
 };
 
 const DOMAIN = 'https://www.woolworths.co.za';
+const SERVER_BASE = 'http://localhost:4010';
+
+let currentOrderId = null;
+
+chrome.storage.local.get([STORAGE_KEYS.ORDER]).then((stored) => {
+  const record = stored?.[STORAGE_KEYS.ORDER];
+  if (record && typeof record.id === 'string') {
+    currentOrderId = record.id;
+  }
+}).catch(() => {
+  currentOrderId = null;
+});
 
 function now() { return performance.now(); }
 
@@ -98,6 +111,39 @@ async function updateStatus() {
   await sendPopup('POPUP_STATUS', { data: { ok, failed, total, elapsedMs } });
 }
 
+async function acknowledgeOrder(orderId, status, details) {
+  if (!orderId) return;
+  try {
+    await fetch(`${SERVER_BASE}/orders/${orderId}/ack`, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({
+        status,
+        processedItems: details?.processedItems || null,
+        error: details?.error || null
+      })
+    });
+    await logToPopup(`Order ${orderId} marked ${status}.`);
+  } catch (error) {
+    console.error('[service-worker] Failed to acknowledge order', error);
+    await logToPopup(`Failed to acknowledge order ${orderId}: ${error?.message || 'unknown error'}`);
+  }
+}
+
+async function maybeAcknowledgeOrder(results, forcedStatus) {
+  if (!currentOrderId) return;
+  const list = Array.isArray(results) ? results : [];
+  const okCount = list.filter(r => r.status === 'ok').length;
+  const failedCount = list.filter(r => r.status !== 'ok').length;
+  const status = forcedStatus || (failedCount === 0 ? 'completed' : 'failed');
+  await acknowledgeOrder(currentOrderId, status, {
+    processedItems: { ok: okCount, failed: failedCount },
+    error: forcedStatus === 'failed' ? 'stopped_or_error' : null
+  });
+  currentOrderId = null;
+  await setState({ [STORAGE_KEYS.ORDER]: null });
+}
+
 async function ensureWoolworthsTab(tabIdHint) {
   if (tabIdHint) {
     try {
@@ -170,6 +216,7 @@ async function runQueue(tabId, context) {
   await updateStatus();
   await chrome.tabs.update(tabId, { url: 'https://www.woolworths.co.za/check-out/cart' });
   await setState({ running: false, [STORAGE_KEYS.CONTEXT]: {} });
+  await maybeAcknowledgeOrder(allResults);
 }
 
 chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
@@ -177,16 +224,43 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     switch (msg?.type) {
       case 'START_FILL': {
         const { payload, tabId } = msg;
+        currentOrderId = payload?.orderId || (payload?.order && payload.order.id) || null;
         const queue = (payload?.items || []).map((x, i) => ({
           idx: i,
-          title: x.title || '',
-          url: x.url || '',
+          title: x.title || x.name || '',
+          url:
+            x.url ||
+            x.productUrl ||
+            (x.metadata && (x.metadata.url || x.metadata.productUrl)) ||
+            '',
           sku: x.sku || '',
-          qty: Math.max(1, x.qty || 1)
+          productId:
+            x.productId ||
+            x.catalogRefId ||
+            (x.metadata && (x.metadata.productId || x.metadata.catalogRefId)) ||
+            null,
+          catalogRefId:
+            x.catalogRefId ||
+            x.productId ||
+            (x.metadata && (x.metadata.catalogRefId || x.metadata.productId)) ||
+            null,
+          qty: Math.max(1, x.qty || 1),
+          raw: x
         }));
         const context = await buildContext();
-        await setState({ queue, index: 0, running: true, results: [], startTs: now(), [STORAGE_KEYS.CONTEXT]: context });
+        await setState({
+          queue,
+          index: 0,
+          running: true,
+          results: [],
+          startTs: now(),
+          [STORAGE_KEYS.CONTEXT]: context,
+          [STORAGE_KEYS.ORDER]: currentOrderId ? { id: currentOrderId } : null
+        });
         await logToPopup(`Context delivery=${context.deliveryType} placeId=${context.placeId ? 'set' : 'missing'} store=${context.storeId || 'n/a'}`);
+        if (currentOrderId) {
+          await logToPopup(`Handling queued order ${currentOrderId}`);
+        }
         await updateStatus();
         const tid = await ensureWoolworthsTab(tabId);
         runQueue(tid, context);
@@ -195,6 +269,10 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
       }
       case 'STOP_FILL': {
         await setState({ running: false, [STORAGE_KEYS.CONTEXT]: {} });
+        if (currentOrderId) {
+          const { results = [] } = await getState(['results']);
+          await maybeAcknowledgeOrder(results, 'failed');
+        }
         await logToPopup('Stopped.');
         await updateStatus();
         sendResponse({ ok: true });

@@ -1,0 +1,18 @@
+{
+  "name": "thin-slice-server",
+  "version": "1.0.0",
+  "description": "Dev server that exposes random product slices from resolver/catalog.json.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "seedrandom": "^3.0.5",
+    "uuid": "^13.0.0"
+  }
+}

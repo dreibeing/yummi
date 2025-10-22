@@ -56,8 +56,14 @@ function resolveDeliveryContext(context) {
 }
 
 function extractProductId(item) {
-  if (item.sku) return String(item.sku);
   if (item.productId) return String(item.productId);
+  if (item.catalogRefId) return String(item.catalogRefId);
+  if (item.raw) {
+    if (item.raw.productId) return String(item.raw.productId);
+    if (item.raw.catalogRefId) return String(item.raw.catalogRefId);
+    if (item.raw.sku) return String(item.raw.sku);
+  }
+  if (item.sku) return String(item.sku);
   if (item.url) {
     const matchA = item.url.match(/A-(\d{6,})/i);
     if (matchA) return matchA[1];
@@ -77,15 +83,29 @@ function buildCartPayload(item, context) {
     return { ok: false, reason: 'missing_place_id' };
   }
   const quantity = Math.max(1, Number(item.qty) || 1);
+  let catalogRefId =
+    item.catalogRefId ||
+    (item.raw && (item.raw.catalogRefId || item.raw.productId)) ||
+    productId;
+  if (catalogRefId != null) {
+    catalogRefId = String(catalogRefId);
+    if (productId && catalogRefId !== productId) {
+      // Prefer the current productId when catalogRefId is stale/mismatched.
+      catalogRefId = productId;
+    }
+  }
   const payload = {
     deliveryType,
     fromDeliverySelectionPopup: 'true',
     items: [
       {
         productId,
-        catalogRefId: productId,
+        catalogRefId,
         quantity,
-        itemListName: item.itemListName || 'Extension'
+        itemListName:
+          item.itemListName ||
+          (item.raw && item.raw.itemListName) ||
+          'Extension'
       }
     ]
   };
@@ -108,7 +128,9 @@ async function tryAddViaXHR(item, context) {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
-        'x-requested-by': 'Woolworths Online'
+        'x-requested-by': 'Woolworths Online',
+        'x-requested-with': 'XMLHttpRequest',
+        'accept': 'application/json, text/javascript, */*; q=0.01'
       },
       credentials: 'include',
       body: JSON.stringify(build.payload)
@@ -139,51 +161,51 @@ async function tryAddViaXHR(item, context) {
     if (data?.errorMessages?.length) {
       return { status: 'failed', reason: data.errorMessages.join(',') };
     }
+    const formExceptions =
+      Array.isArray(data?.formExceptions)
+        ? data.formExceptions
+        : Array.isArray(data?.formexceptions)
+        ? data.formexceptions
+        : [];
+    if (formExceptions.length) {
+      const firstException = formExceptions[0];
+      let message = '';
+      if (typeof firstException === 'string') {
+        message = firstException;
+      } else {
+        try {
+          message = JSON.stringify(firstException);
+        } catch (error) {
+          message = String(firstException);
+        }
+      }
+      return { status: 'failed', reason: `form_exception:${message}` };
+    }
+    const hasBasketId =
+      typeof data?.basketId === 'string' && data.basketId.trim().length > 0;
+    const hasGroupSubtotal =
+      data?.groupSubTotal && typeof data.groupSubTotal === 'object';
+    const hasItemsArray = Array.isArray(data?.items) && data.items.length > 0;
+    const statusField =
+      (data && data.status) ||
+      (data && data.result && data.result.status) ||
+      '';
+    const normalizedStatus = String(statusField || '').toUpperCase();
+    const success =
+      data?.success === true ||
+      normalizedStatus === 'SUCCESS' ||
+      normalizedStatus === 'OK' ||
+      typeof (data?.cartData && data.cartData.cartTotal) === 'number' ||
+      typeof (data?.cartSummary && data.cartSummary.total) === 'number' ||
+      hasBasketId ||
+      hasGroupSubtotal ||
+      hasItemsArray;
+    if (!success) {
+      return { status: 'failed', reason: 'no_success_flag' };
+    }
     return { status: 'ok' };
   } catch (err) {
     return { status: 'failed', reason: 'xhr_exception' };
-  }
-}
-
-function waitFor(ms) {
-  return new Promise(r => setTimeout(r, ms));
-}
-
-async function navigateTo(url) {
-  if (!url) return;
-  if (location.href !== url) {
-    location.assign(url);
-    await new Promise(resolve => {
-      const done = () => resolve();
-      window.addEventListener('load', done, { once: true });
-      setTimeout(done, 8000);
-    });
-  }
-}
-
-function findAddToCartButton() {
-  const candidates = Array.from(document.querySelectorAll('button, [role="button"]'));
-  const btn = candidates.find(el => /add to cart|add/i.test(el.textContent || ''));
-  return btn || null;
-}
-
-async function tryAddViaDOM(item) {
-  try {
-    if (!item.url) return { status: 'failed', reason: 'no_url' };
-    await navigateTo(item.url);
-    const qtyInput = document.querySelector('input[type="number"], input[name*="qty" i]');
-    if (qtyInput && item.qty && Number.isFinite(Number(item.qty))) {
-      qtyInput.value = String(item.qty);
-      qtyInput.dispatchEvent(new Event('input', { bubbles: true }));
-      await waitFor(200);
-    }
-    const btn = findAddToCartButton();
-    if (!btn) return { status: 'failed', reason: 'no_add_button' };
-    btn.click();
-    await waitFor(1500);
-    return { status: 'ok' };
-  } catch (e) {
-    return { status: 'failed', reason: 'dom_exception' };
   }
 }
 
@@ -192,12 +214,13 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     if (msg?.type === 'CONTENT_ADD_ITEM') {
       const item = msg.item || {};
       const context = msg.context || {};
-      let res = await tryAddViaXHR(item, context);
-      if (res.status !== 'ok') {
-        res = await tryAddViaDOM(item);
-      }
+      const res = await tryAddViaXHR(item, context);
       sendResponse(res);
     }
   })();
   return true;
 });
+
+
+
+
