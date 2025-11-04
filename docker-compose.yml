@@ -23,6 +23,14 @@ services:
       - OPENAI_DEFAULT_MODEL=${OPENAI_DEFAULT_MODEL:-gpt-4o-mini}
       - SENTRY_DSN=${SENTRY_DSN:-}
       - SENTRY_TRACES_SAMPLE_RATE=${SENTRY_TRACES_SAMPLE_RATE:-0}
+      - PAYFAST_MERCHANT_ID=${PAYFAST_MERCHANT_ID:-}
+      - PAYFAST_MERCHANT_KEY=${PAYFAST_MERCHANT_KEY:-}
+      - PAYFAST_PASSPHRASE=${PAYFAST_PASSPHRASE:-}
+      - PAYFAST_NOTIFY_URL=${PAYFAST_NOTIFY_URL:-http://host.docker.internal:8000/payments/payfast/itn}
+      - PAYFAST_RETURN_URL=${PAYFAST_RETURN_URL:-http://localhost:19006/payfast/return}
+      - PAYFAST_CANCEL_URL=${PAYFAST_CANCEL_URL:-http://localhost:19006/payfast/cancel}
+      - PAYFAST_MODE=${PAYFAST_MODE:-sandbox}
+      - PAYFAST_PDT_TOKEN=${PAYFAST_PDT_TOKEN:-}
     ports:
       - "8000:8000"
     depends_on:

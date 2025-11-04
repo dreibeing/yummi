@@ -40,6 +40,16 @@ class Settings(BaseSettings):
     sentry_dsn: str | None = Field(default=None)
     sentry_traces_sample_rate: float = Field(default=0.0)
 
+    # PayFast
+    payfast_merchant_id: str | None = Field(default=None)
+    payfast_merchant_key: str | None = Field(default=None)
+    payfast_passphrase: str | None = Field(default=None)
+    payfast_notify_url: str | None = Field(default=None)
+    payfast_return_url: str | None = Field(default=None)
+    payfast_cancel_url: str | None = Field(default=None)
+    payfast_mode: str = Field(default="sandbox")
+    payfast_pdt_token: str | None = Field(default=None)
+
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"

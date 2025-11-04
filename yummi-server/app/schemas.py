@@ -38,3 +38,21 @@ class OrderStatusResponse(BaseModel):
     retailer: str
     events: List[dict] = []
 
+
+class PayFastInitiateRequest(BaseModel):
+    amountMinor: int = Field(gt=0)
+    currency: str = Field(default="ZAR", min_length=3, max_length=3)
+    itemName: str = Field(default="Wallet Top-up", max_length=255)
+    itemDescription: Optional[str] = Field(default=None, max_length=255)
+
+
+class PayFastInitiateResponse(BaseModel):
+    url: str
+    params: dict
+    reference: str
+
+
+class PayFastStatusResponse(BaseModel):
+    reference: str
+    status: str
+    message: Optional[str] = None

@@ -13,6 +13,7 @@ COPY yummi-server/requirements.txt ./requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY yummi-server/app ./app
+COPY yummi-server/tests ./tests
 COPY yummi-server/alembic.ini ./alembic.ini
 COPY yummi-server/alembic ./alembic
 COPY resolver ./resolver

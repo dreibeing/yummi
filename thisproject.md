@@ -4,6 +4,7 @@
 - [CartIntegration.md](CartIntegration.md)
 - [Woolworths Basket Integration — Implementation & Test Plan (Agent Brief).txt](Woolworths Basket Integration — Implementation & Test Plan (Agent Brief).txt)
 - [POC-Memory.md](POC-Memory.md)
+- [PayFast Migration Plan](payfastmigration.md)
 
 ## Project Overview
 Build a production-ready pipeline that prepares product data, enriches basket payloads, and fills the user’s Woolworths cart safely and quickly. The mobile app will call into this stack to generate a ready-for-checkout experience on the retailer site while respecting performance, rate limiting, and ToS constraints.
@@ -14,6 +15,7 @@ Build a production-ready pipeline that prepares product data, enriches basket pa
 - **Optional tools**: Playwright runner for QA/demo; serverless functions for analytics and optional handoff triggers.
 - **Backend data**: Product catalog maintained locally (pickle/JSON); resolver catalog maps internal IDs to Woolworths product IDs + URLs.
 - **Scraper utility**: `woolworths_scraper/` (Python 3.11+, httpx) for Food department category discovery and product enrichment.
+- **Payments**: PayFast hosted checkout (card + Instant EFT) with signed requests from the FastAPI backend; ITN confirms wallet top-ups.
 
 ## Working Practices (adapted from Dream/Openworld guidelines)
 1. **Service-first architecture**

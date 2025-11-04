@@ -3,7 +3,7 @@
 ## Phase 0 – Platform hardening
 - ✅ Provision managed Postgres guidance (Fly) and add Alembic migrations so schema changes are reproducible (2025-11-04).
 - ✅ Enable structured logging + metrics exporters (Prometheus, Sentry breadcrumbs) for both local and Fly environments (2025-11-04).
-- Add startup validation that fails fast when mandatory secrets (Clerk, Stripe, Redis, OpenAI) are missing.
+- ✅ Add startup validation that fails fast when mandatory secrets (Clerk, PayFast, Redis, OpenAI) are missing (2025-11-04).
 
 ## Phase 1 – Authentication & access control
 - Enable Clerk verification in FastAPI (`AUTH_DISABLE_VERIFICATION=false`) with real issuer, JWKS, and audience.
@@ -16,8 +16,8 @@
 - Introduce queue monitoring endpoints and admin tooling.
 
 ## Phase 3 – Billing & monetization
-- Integrate Stripe customer linkage, subscription management, and payment-intent flows.
-- Handle Stripe webhooks (invoice paid/failed) and enforcement of subscription status on API usage.
+- Integrate PayFast wallet top-ups and, if needed, subscriptions/adhoc agreements.
+- Handle PayFast ITN/PDT flows and enforce payment status on API usage.
 - Surface billing status in the app and admin dashboards.
 
 ## Phase 4 – Business logic & AI features

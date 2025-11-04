@@ -16,6 +16,7 @@
 - Follow live logs with `docker compose logs -f yummi-server`. Thin slice runner logs are persisted inside the container at `/app/data/thin-runner-log.txt`; view via `docker compose exec yummi-server tail -n 50 data/thin-runner-log.txt`.
 - Whenever the schema changes, apply migrations with `docker compose run --rm yummi-server alembic upgrade head`. Generate a new migration via `docker compose run --rm yummi-server alembic revision --autogenerate -m "describe change"`.
 - Structured logs default to JSON; flip to console mode with `LOG_JSON=false` (and tweak verbosity via `LOG_LEVEL=DEBUG`) in `.env` when developing locally.
+- Non-dev environments will refuse to start unless `REDIS_URL`, `OPENAI_API_KEY`, PayFast merchant credentials (`PAYFAST_MERCHANT_ID`/`PAYFAST_MERCHANT_KEY`) and notify/return URLs are set. Keep `ENVIRONMENT=dev` in local `.env` if you want to bypass the strict checks.
 - Expo thin-slice app defaults to `http://10.0.2.2:8000/v1/thin` on Android. Launch emulator through Android Studio’s Device Manager, then run `npx expo start --android` from `thin-slice-app` in Windows PowerShell (not WSL). Override the API by creating `.env` with `EXPO_PUBLIC_THIN_SLICE_SERVER_URL=...` (see `.env.example`); release builds fall back to the Fly URL automatically.
 - Common fixes: delete stale secrets in `.env` (or set `AUTH_DISABLE_VERIFICATION=true` for local testing), ensure Redis is reachable (`docker compose exec redis redis-cli ping`), and rebuild images if requirements change.
 
@@ -27,12 +28,20 @@
   ```
   fly secrets set ^
     REDIS_URL="redis://default:...@fly-yummi-redis.upstash.io:6379" ^
+    OPENAI_API_KEY="sk-live-or-test" ^
     AUTH_DISABLE_VERIFICATION="true" ^
     ENVIRONMENT="staging" ^
     THIN_SLICE_ENABLED="true" ^
-    THIN_RUNNER_LOG_PATH="/app/data/thin-runner-log.txt"
+    THIN_RUNNER_LOG_PATH="/app/data/thin-runner-log.txt" ^
+    PAYFAST_MERCHANT_ID="1234567" ^
+    PAYFAST_MERCHANT_KEY="abc123" ^
+    PAYFAST_PASSPHRASE="optional-passphrase" ^
+    PAYFAST_NOTIFY_URL="https://yummi-server-YOURNAME.fly.dev/payments/payfast/itn" ^
+    PAYFAST_RETURN_URL="https://yummi.app/payfast/return" ^
+    PAYFAST_CANCEL_URL="https://yummi.app/payfast/cancel"
   ```
   Optional later: `CORS_ALLOWED_ORIGINS=https://yourdomain.com,http://localhost:19006` and `ADMIN_EMAILS=alice@example.com,bob@example.com`. If pydantic throws `error parsing value`, remove the offending secret with `fly secrets unset <NAME>`.
+- Switch `PAYFAST_MODE=live` only after production credentials are enabled; sandbox is assumed when omitted.
 - Run migrations after each deploy: `fly ssh console -a yummi-server-YOURNAME -C "cd /app && alembic upgrade head"`. The container image bundles Alembic so the same command works locally and remotely.
 - Wire up Sentry (optional): set `SENTRY_DSN=...` and `SENTRY_TRACES_SAMPLE_RATE=0.1` (or similar) via `fly secrets set` to capture errors + breadcrumbs. Leave unset to disable.
 - Deploy from repo root: `fly deploy`. Inspect rollout at `https://fly.io/apps/yummi-server-greenbean/monitoring`.
@@ -46,7 +55,7 @@
   - For persistent storage of thin-slice logs, create a Fly volume and mount it at `/app/data` (update `fly.toml` accordingly).
 
 ## Context (from repo)
-- Mobile app: Expo/React Native with Clerk auth and Stripe (per yummi_scaffold_spec.md).
+- Mobile app: Expo/React Native with Clerk auth and PayFast hosted checkout (per yummi_scaffold_spec.md).
 - Thin-slice: minimal flow for Fetch Products, Build Basket, Place Order using resolver/catalog.json (thinslice.md).
 - Data pipeline: woolworths_scraper produces resolver/catalog.json and future enrichments (thisproject.md).
 
@@ -68,6 +77,7 @@
 - products: id, retailer, product_id, catalog_ref_id, title, url, price, payload_jsonb, dataset_id, created_at.
 - orders: id, user_id, status, items_jsonb, retailer, notes, created_at, updated_at.
 - order_events: id, order_id, type, payload_jsonb, created_at.
+- payments: id (uuid), provider, provider_reference, user_id, user_email, amount_minor, currency, status, checkout_payload_jsonb, last_itn_payload_jsonb, created_at, updated_at.
 
 ## API Surface (v1, initial)
 - GET /v1/health -> liveness, version, pending_counts.
@@ -77,6 +87,9 @@
 - POST /v1/orders -> create basket/order queue; body: items[], retailer; returns order_id.
 - GET /v1/orders/{id} -> status + progress events.
 - POST /v1/orders/{id}/ack -> finalize (used by runner/worker).
+- POST /v1/payments/payfast/initiate -> returns PayFast hosted checkout fields + reference.
+- POST /v1/payments/payfast/itn -> webhook endpoint for PayFast Instant Transaction Notifications.
+- GET /v1/payments/payfast/status?reference= -> placeholder status lookup (to be backed by DB).
 - Admin (guarded by role/claims):
   - POST /admin/datasets -> begin dataset version (metadata); returns upload URL(s) or direct JSON ingestion.
   - POST /admin/datasets/{id}/complete -> finalize + index products.
@@ -120,7 +133,7 @@ Initial thin-slice behavior implemented now:
 
 ## Client Integration
 - Thin-slice endpoints: GET /v1/catalog?limit=100&random=true, POST /v1/orders for queueing.
-- Mobile app: Clerk bearer token on each request; Stripe and other endpoints are separate concerns (out of this doc).
+- Mobile app: Clerk bearer token on each request; PayFast checkout posts directly to their hosted form (handled outside this doc).
 - Extension/web runner: uses /orders/next, /orders/{id}/ack for processing (optional if kept for desktop parity).
 
 ## Environments & Deployment
@@ -179,7 +192,7 @@ Initial thin-slice behavior implemented now:
 - Are user-provided OpenAI keys required, or server-owned only? (Plan supports both.)
 - Preferred cloud: Fly/Render/Railway for speed, or AWS for control?
 - Do we keep MV3 extension runner long-term, or use server-side XHR via same-origin cookies (likely not feasible)?
-- Stripe + payments are handled in a separate service per scaffold; share auth/DB or stay isolated?
+- PayFast payments are handled via the scaffolded service; share auth/DB or stay isolated?
 
 ## Additional Considerations (not to forget)
 - API versioning (v1) and deprecation policy.

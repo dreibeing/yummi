@@ -13,7 +13,8 @@ from prometheus_fastapi_instrumentator import Instrumentator
 from .config import get_settings
 from .db import init_engine
 from .observability import configure_logging, init_sentry
-from .routes import health, me, catalog, orders, ai, admin, thin
+from .startup import validate_settings
+from .routes import health, me, catalog, orders, ai, admin, thin, payfast
 from .ratelimit import limiter
 from slowapi.errors import RateLimitExceeded
 from slowapi import _rate_limit_exceeded_handler
@@ -32,6 +33,7 @@ def create_app() -> FastAPI:
     s = get_settings()
     configure_logging(json_logs=s.log_json, level=s.log_level)
     init_sentry(s)
+    validate_settings(s)
     app = FastAPI(title=s.app_name)
 
     # Initialize DB engine if configured
@@ -61,6 +63,7 @@ def create_app() -> FastAPI:
     app.include_router(ai.router, prefix=prefix)
     app.include_router(admin.router, prefix=prefix)
     app.include_router(thin.router, prefix=f"{prefix}/thin")
+    app.include_router(payfast.router, prefix=prefix)
 
     # Rate limit handling
     app.state.limiter = limiter
