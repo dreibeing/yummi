@@ -56,3 +56,20 @@ class PayFastStatusResponse(BaseModel):
     reference: str
     status: str
     message: Optional[str] = None
+
+
+class WalletTransactionSchema(BaseModel):
+    id: str
+    amountMinor: int
+    currency: str
+    entryType: str
+    note: Optional[str] = None
+    createdAt: str
+    paymentId: str
+
+
+class WalletSummary(BaseModel):
+    userId: str
+    balanceMinor: int
+    currency: str
+    transactions: List[WalletTransactionSchema] = []

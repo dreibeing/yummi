@@ -84,14 +84,17 @@ Backend (FastAPI)
    - Store HMAC logs for audits, respond `200` quickly (<7s).
 4. **Compliance**
    - No card data handled client-side (hosted page). Must provide return/privacy policy links in fields.
+   - Implement chargeback + refund policies (see `Chargebacks.txt`): allow negative balances, block spending under zero, keep audit logs, limit user-initiated refunds, flag abusive behavior.
 
 ## 5. Rollout Steps
 1. **Foundation (backend)**
    - Implement PayFast config/secrets.
    - Replace Stripe modules with PayFast service (keep feature flags for fallback if needed).
+   - Store payments + wallet ledger entries in Postgres so ITNs credit user balances.
 2. **Mobile integration**
    - Update API service & screens.
    - Implement return/cancel flows, status polling.
+   - Fetch `/v1/wallet/balance` post-payment to refresh wallet UI.
 3. **Testing**
    - Unit tests for signature/ITN.
    - Manual sandbox flow (test card: `4100000000000000` with CVV `123`, expiry future date, OTP `12345`).
@@ -101,11 +104,11 @@ Backend (FastAPI)
    - Update README/onboarding guides.
 5. **Post-launch**
    - Monitor ITN endpoints, log unknown statuses.
-   - Schedule credential rotation.
+   - Schedule credential rotation and reconcile wallet ledger vs PayFast dashboard regularly.
 
 ## 6. Open Questions
 - Will we offer recurring subscriptions? (PayFast Subscriptions API differs; requires additional enablement.)
-- Do we need on-demand payouts or wallet balances? Determine ledger model before go-live.
+- Do we need on-demand payouts or wallet balances? (Ledger now tracks credits; confirm debit/reversal flows.)
 - Should we maintain Stripe capability for other regions (feature flag by locale)?
 
 ## 7. References

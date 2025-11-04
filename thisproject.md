@@ -5,17 +5,30 @@
 - [Woolworths Basket Integration — Implementation & Test Plan (Agent Brief).txt](Woolworths Basket Integration — Implementation & Test Plan (Agent Brief).txt)
 - [POC-Memory.md](POC-Memory.md)
 - [PayFast Migration Plan](payfastmigration.md)
+- [Server Plan & TODO](server.md)
+- [Mobile Scaffold Spec (Clerk + PayFast)](yummi_scaffold_spec.md)
+- [Chargebacks & Refund Policy](Chargebacks.txt)
+- [Build Plan & Roadmap](plan.md)
+- Thin-slice mobile client entry point: [`thin-slice-app/App.js`](thin-slice-app/App.js)
 
 ## Project Overview
 Build a production-ready pipeline that prepares product data, enriches basket payloads, and fills the user’s Woolworths cart safely and quickly. The mobile app will call into this stack to generate a ready-for-checkout experience on the retailer site while respecting performance, rate limiting, and ToS constraints.
+
+## Current Status (2025-11-04)
+- FastAPI backend exposes `/v1/payments/payfast/*` and `/v1/wallet/balance`, persisting payments + wallet ledger via Alembic migrations ([models](yummi-server/app/models.py), [routes](yummi-server/app/routes/)).
+- PayFast ITNs write ledger credits; `/v1/me` now returns wallet information alongside Clerk claims.
+- Thin-slice Expo client fetches wallet balances, launches PayFast hosted checkout, and refreshes ledger after payment ([mobile code](thin-slice-app/App.js)).
+- Observability/logging and Docker/Fly infrastructure captured in [server.md](server.md); deployment-ready Compose + Fly configs exist.
+- Data ingestion and cart-fill flows operate via the existing resolver, thin-slice endpoints, and Chrome extension runtime.
 
 ## Tech Stack Snapshot
 - **Client trigger**: React Native + Expo Router (TypeScript). Auth via Supabase/Auth0; subscriptions via RevenueCat. The app hands off shopping lists to the integration.
 - **Primary cart fill**: MV3 Chrome extension (TypeScript). Prefers same-origin XHR (`POST /server/cartAddItems`), falls back to DOM automation only when needed. Uses chrome.storage for queue state and throttled batching.
 - **Optional tools**: Playwright runner for QA/demo; serverless functions for analytics and optional handoff triggers.
 - **Backend data**: Product catalog maintained locally (pickle/JSON); resolver catalog maps internal IDs to Woolworths product IDs + URLs.
-- **Scraper utility**: `woolworths_scraper/` (Python 3.11+, httpx) for Food department category discovery and product enrichment.
-- **Payments**: PayFast hosted checkout (card + Instant EFT) with signed requests from the FastAPI backend; ITN confirms wallet top-ups.
+- **Scraper utility**: [`woolworths_scraper/`](woolworths_scraper) (Python 3.11+, httpx) for Food department category discovery and product enrichment.
+- **Payments**: PayFast hosted checkout (card + Instant EFT) with signed requests from the FastAPI backend; ITN confirms wallet top-ups and credits the wallet ledger stored in Postgres.
+- **Wallet policy**: chargebacks/refunds handled per [Chargebacks.txt](Chargebacks.txt) (negative balances allowed, spending blocked until recovered, audit trails required).
 
 ## Working Practices (adapted from Dream/Openworld guidelines)
 1. **Service-first architecture**
@@ -55,11 +68,19 @@ Build a production-ready pipeline that prepares product data, enriches basket pa
 - Session context captured from cookies (`userDelivery`, `location`, `storeId`); fallback to DOM automation only when XHR fails.
 - Extension opens `https://www.woolworths.co.za/check-out/cart` upon completion while surfacing per-item status.
 
+## Wallet & Payments Workflow
+1. Mobile client calls `/v1/payments/payfast/initiate` to retrieve PayFast hosted checkout details (JSON signature payload).
+2. After PayFast redirects to `yummi://payfast/return`, backend processes the ITN, validates via PayFast, and updates the `payments` + `wallet_transactions` tables.
+3. Clients fetch `/v1/wallet/balance` (and `/v1/me`) to display updated wallet totals and recent transactions.
+4. Chargebacks/refunds will mirror ledger entries and enforce negative-balance lockouts (see [Chargebacks.txt](Chargebacks.txt)).
+
 ## TODO Focus Areas
 1. Refine category discovery filters (skip promo-only nodes), freeze canonical category list, and version it under source control.
 2. Add PDP enrichment for pack size/specifications + nutritional metadata.
 3. Sync enriched catalog into `resolver/catalog.json`; ensure extension prioritizes IDs from catalog.
-4. Extend automated and manual test coverage per Agent Brief (functional, performance, resilience, UX).
+4. Implement Clerk-authenticated wallet API usage in the Expo client; remove reliance on dev JWTs.
+5. Build chargeback/refund workflows (negative balance handling, debit reversals, abuse monitoring) per [Chargebacks.txt](Chargebacks.txt).
+6. Extend automated and manual test coverage per Agent Brief (functional, performance, resilience, UX).
 
 ## Change Management
 - Update this guide alongside major workflow or tooling changes.
@@ -71,3 +92,9 @@ Build a production-ready pipeline that prepares product data, enriches basket pa
   git push
   ```
   (First push already ran `git push -u origin main`; future pushes can just use `git push`.)
+
+## Immediate Next Steps
+See [plan.md](plan.md) for the authoritative roadmap. The top priorities for the next coding session are:
+1. **Secure mobile API usage**: wire Clerk session tokens into the Expo app for `/v1/me` and `/v1/wallet/balance` calls; remove temporary dev JWT usage.
+2. **Chargeback/refund groundwork**: design debit/negative-balance handling in backend services (refer to [Chargebacks.txt](Chargebacks.txt)).
+3. **Wallet UI polish**: expand thin-slice UI to show full transaction history and flag negative balances before we harden chargeback logic.

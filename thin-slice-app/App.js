@@ -16,6 +16,7 @@ import {
   ScrollView,
   StyleSheet,
   Text,
+  TextInput,
   TouchableOpacity,
   View,
 } from "react-native";
@@ -40,6 +41,25 @@ const RAW_SERVER_URL =
   Constants.expoConfig?.extra?.thinSliceServerUrl ??
   (isReleaseBuild ? defaultProdServerUrl : localServerUrl);
 const SERVER_BASE_URL = RAW_SERVER_URL.replace(/\/$/, "");
+const RAW_API_BASE_URL =
+  process.env.EXPO_PUBLIC_API_BASE_URL ??
+  Constants.expoConfig?.extra?.apiBaseUrl ??
+  null;
+const API_BASE_URL = RAW_API_BASE_URL
+  ? RAW_API_BASE_URL.replace(/\/$/, "")
+  : null;
+const DEV_JWT =
+  process.env.EXPO_PUBLIC_DEV_JWT ??
+  Constants.expoConfig?.extra?.devJwt ??
+  "";
+const PAYFAST_RETURN_URL =
+  process.env.EXPO_PUBLIC_PAYFAST_RETURN_URL ??
+  Constants.expoConfig?.extra?.payfastReturnUrl ??
+  "yummi://payfast/return";
+const PAYFAST_CANCEL_URL =
+  process.env.EXPO_PUBLIC_PAYFAST_CANCEL_URL ??
+  Constants.expoConfig?.extra?.payfastCancelUrl ??
+  "yummi://payfast/cancel";
 const PRODUCTS_ENDPOINT = `${SERVER_BASE_URL}/products/random`;
 const PLACE_ORDER_ENDPOINT = `${SERVER_BASE_URL}/orders/place`;
 const ACK_ORDER_ENDPOINT = (orderId) =>
@@ -56,6 +76,21 @@ const DEFAULT_LOG_FILE_URI = LOG_FILE_BASE
   ? `${LOG_FILE_BASE}${LOG_FILE_NAME}`
   : null;
 
+const buildAutoSubmitHtml = (url, params) => {
+  const inputs = Object.entries(params || {})
+    .map(
+      ([key, value]) =>
+        `<input type="hidden" name="${key}" value="${
+          value != null ? String(value).replace(/"/g, "&quot;") : ""
+        }" />`
+    )
+    .join("");
+  return `<!DOCTYPE html><html><body>
+    <form id="payfast" action="${url}" method="post">${inputs}</form>
+    <script>document.getElementById("payfast").submit();</script>
+  </body></html>`;
+};
+
 const formatTime = (date) => {
   if (!date) {
     return "";
@@ -65,6 +100,17 @@ const formatTime = (date) => {
   } catch (error) {
     return date.toISOString();
   }
+};
+
+const formatCurrency = (minor, currency = "ZAR") => {
+  if (typeof minor !== "number" || Number.isNaN(minor)) {
+    return `${currency.toUpperCase() === "ZAR" ? "R" : currency.toUpperCase() + " "}0.00`;
+  }
+  const amount = (minor / 100).toFixed(2);
+  if (currency.toUpperCase() === "ZAR") {
+    return `R${amount}`;
+  }
+  return `${currency.toUpperCase()} ${amount}`;
 };
 
 const normalizeOrderItems = (items) =>
@@ -151,6 +197,61 @@ export default function App() {
     failed: 0,
   });
   const [runnerLogs, setRunnerLogs] = useState([]);
+  const [wallet, setWallet] = useState(null);
+  const [walletLoading, setWalletLoading] = useState(false);
+  const [walletError, setWalletError] = useState(null);
+  const [walletLastUpdated, setWalletLastUpdated] = useState(null);
+  const [topUpAmount, setTopUpAmount] = useState("100");
+  const [isTopUpLoading, setIsTopUpLoading] = useState(false);
+  const [payfastSession, setPayfastSession] = useState(null);
+
+  const walletEndpoint = API_BASE_URL ? `${API_BASE_URL}/wallet/balance` : null;
+  const payfastInitiateEndpoint = API_BASE_URL
+    ? `${API_BASE_URL}/payments/payfast/initiate`
+    : null;
+
+  const buildHeaders = useCallback(
+    (extra = {}) => {
+      const headers = { ...extra };
+      if (DEV_JWT) {
+        headers.Authorization = `Bearer ${DEV_JWT}`;
+      }
+      return headers;
+    },
+    []
+  );
+
+  const fetchWallet = useCallback(async () => {
+    if (!walletEndpoint) {
+      return;
+    }
+    setWalletLoading(true);
+    setWalletError(null);
+    try {
+      const response = await fetch(walletEndpoint, {
+        headers: buildHeaders(),
+      });
+      if (response.status === 404) {
+        setWallet({ balanceMinor: 0, currency: "ZAR", transactions: [], userId: null });
+        setWalletLastUpdated(new Date());
+        return;
+      }
+      if (!response.ok) {
+        if (response.status === 401) {
+          throw new Error("Unauthorized. Configure EXPO_PUBLIC_DEV_JWT for testing.");
+        }
+        throw new Error(`Wallet fetch failed (${response.status})`);
+      }
+      const payload = await response.json();
+      setWallet(payload);
+      setWalletLastUpdated(new Date());
+    } catch (error) {
+      console.error("Failed to fetch wallet", error);
+      setWalletError(error.message ?? "Unable to load wallet");
+    } finally {
+      setWalletLoading(false);
+    }
+  }, [walletEndpoint, buildHeaders]);
 
   const webViewRef = useRef(null);
   const completionRef = useRef(false);
@@ -326,6 +427,12 @@ export default function App() {
     appendRunnerLogFile(line);
   }, [appendRunnerLogFile]);
 
+  useEffect(() => {
+    if (walletEndpoint) {
+      fetchWallet();
+    }
+  }, [walletEndpoint, fetchWallet]);
+
   const handleSubmitOrder = useCallback(async () => {
     if (!basket.length) {
       setErrorMessage("Basket empty. Build the basket before placing an order.");
@@ -391,6 +498,87 @@ export default function App() {
       setIsSubmitting(false);
     }
   }, [basket, resetRunnerLogFile]);
+
+  const handleRefreshWallet = useCallback(() => {
+    fetchWallet();
+  }, [fetchWallet]);
+
+  const handlePayfastNavigation = useCallback(
+    (state) => {
+      if (!state?.url) return;
+      const currentUrl = state.url;
+      if (PAYFAST_RETURN_URL && currentUrl.startsWith(PAYFAST_RETURN_URL)) {
+        setPayfastSession(null);
+        setScreen("home");
+        Alert.alert("Payment Submitted", "We are verifying your payment.");
+        fetchWallet();
+      } else if (
+        PAYFAST_CANCEL_URL &&
+        currentUrl.startsWith(PAYFAST_CANCEL_URL)
+      ) {
+        setPayfastSession(null);
+        setScreen("home");
+        Alert.alert("Payment Cancelled", "Top-up was cancelled by the user.");
+        fetchWallet();
+      }
+    },
+    [fetchWallet]
+  );
+
+  const handleCancelPayfast = useCallback(() => {
+    setPayfastSession(null);
+    setScreen("home");
+    fetchWallet();
+  }, [fetchWallet]);
+
+  const handleTopUp = useCallback(async () => {
+    if (!payfastInitiateEndpoint) {
+      Alert.alert(
+        "Configuration Required",
+        "Set EXPO_PUBLIC_API_BASE_URL to enable wallet top-ups."
+      );
+      return;
+    }
+    const parsed = parseFloat(topUpAmount.replace(/,/g, "."));
+    if (Number.isNaN(parsed) || parsed <= 0) {
+      Alert.alert("Invalid Amount", "Enter a positive amount (e.g. 100)");
+      return;
+    }
+    const amountMinor = Math.round(parsed * 100);
+    setIsTopUpLoading(true);
+    setWalletError(null);
+    try {
+      const response = await fetch(payfastInitiateEndpoint, {
+        method: "POST",
+        headers: buildHeaders({ "Content-Type": "application/json" }),
+        body: JSON.stringify({
+          amountMinor,
+          currency: "ZAR",
+          itemName: "Wallet Top-up (mobile)",
+        }),
+      });
+      if (!response.ok) {
+        if (response.status === 401) {
+          throw new Error("Unauthorized. Ensure DEV JWT is configured.");
+        }
+        throw new Error(`Top-up initiation failed (${response.status})`);
+      }
+      const payload = await response.json();
+      if (!payload?.url || !payload?.params) {
+        throw new Error("Unexpected response from server");
+      }
+      setPayfastSession({
+        html: buildAutoSubmitHtml(payload.url, payload.params),
+        reference: payload.reference,
+      });
+      setScreen("payfast");
+    } catch (error) {
+      console.error("Failed to initiate top-up", error);
+      Alert.alert("Top-up Failed", error.message ?? "Unable to start payment");
+    } finally {
+      setIsTopUpLoading(false);
+    }
+  }, [payfastInitiateEndpoint, topUpAmount, buildHeaders]);
 
   const handleGoToBasket = useCallback(() => {
     if (!basket.length) {
@@ -674,6 +862,44 @@ export default function App() {
     );
   }
 
+  if (screen === "payfast" && payfastSession) {
+    return (
+      <SafeAreaView style={styles.safeArea}>
+        <StatusBar style="dark" />
+        <View style={styles.header}>
+          <Text style={styles.title}>PayFast Checkout</Text>
+          <Text style={styles.subtitle}>
+            Complete the secure PayFast form to finish your top-up.
+          </Text>
+        </View>
+        <View style={styles.webviewContainer}>
+          <WebView
+            originWhitelist={["*"]}
+            source={{ html: payfastSession.html }}
+            onNavigationStateChange={handlePayfastNavigation}
+            startInLoadingState
+            renderLoading={() => (
+              <View style={styles.webviewLoader}>
+                <ActivityIndicator size="large" color="#222" />
+                <Text style={styles.webviewLoaderText}>
+                  Loading PayFast checkout…
+                </Text>
+              </View>
+            )}
+          />
+        </View>
+        <View style={styles.footer}>
+          <TouchableOpacity
+            style={styles.secondaryButton}
+            onPress={handleCancelPayfast}
+          >
+            <Text style={styles.secondaryButtonText}>Cancel</Text>
+          </TouchableOpacity>
+        </View>
+      </SafeAreaView>
+    );
+  }
+
   if (screen === "basket") {
     return (
       <SafeAreaView style={styles.safeArea}>
@@ -792,6 +1018,80 @@ export default function App() {
         >
           <Text style={styles.primaryButtonText}>Place Order</Text>
         </TouchableOpacity>
+        <View style={styles.walletCard}>
+          <View style={styles.walletHeader}>
+            <Text style={styles.walletTitle}>Wallet</Text>
+            <TouchableOpacity
+              style={styles.walletRefreshButton}
+              onPress={handleRefreshWallet}
+              disabled={walletLoading}
+            >
+              {walletLoading ? (
+                <ActivityIndicator size="small" color="#222" />
+              ) : (
+                <Text style={styles.walletRefreshText}>Refresh</Text>
+              )}
+            </TouchableOpacity>
+          </View>
+          <Text style={styles.walletBalance}>
+            {wallet ? formatCurrency(wallet.balanceMinor, wallet.currency) : "—"}
+          </Text>
+          {walletLastUpdated ? (
+            <Text style={styles.walletMeta}>
+              Updated {formatTime(walletLastUpdated)}
+            </Text>
+          ) : null}
+          {walletError ? (
+            <Text style={styles.walletErrorText}>{walletError}</Text>
+          ) : null}
+          <View style={styles.topUpRow}>
+            <TextInput
+              style={styles.topUpInput}
+              keyboardType="numeric"
+              value={topUpAmount}
+              onChangeText={setTopUpAmount}
+              placeholder="Amount (R)"
+              placeholderTextColor="#888"
+            />
+            <TouchableOpacity
+              style={[styles.topUpButton, isTopUpLoading ? styles.disabledButton : null]}
+              onPress={handleTopUp}
+              disabled={isTopUpLoading}
+            >
+              {isTopUpLoading ? (
+                <ActivityIndicator color="#fff" />
+              ) : (
+                <Text style={styles.topUpButtonText}>Top Up</Text>
+              )}
+            </TouchableOpacity>
+          </View>
+          {wallet?.transactions?.length ? (
+            <View style={styles.walletTransactions}>
+              {wallet.transactions.slice(0, 3).map((txn) => (
+                <View key={txn.id} style={styles.walletTransactionRow}>
+                  <Text style={styles.walletTransactionText}>
+                    {formatCurrency(txn.amountMinor, txn.currency)} · {formatTime(new Date(txn.createdAt))}
+                  </Text>
+                  {txn.note ? (
+                    <Text style={styles.walletTransactionNote}>{txn.note}</Text>
+                  ) : null}
+                </View>
+              ))}
+              {wallet.transactions.length > 3 ? (
+                <Text style={styles.walletTransactionHint}>
+                  Showing recent {Math.min(wallet.transactions.length, 3)} entries
+                </Text>
+              ) : null}
+            </View>
+          ) : (
+            <Text style={styles.walletMeta}>No transactions yet.</Text>
+          )}
+          {!API_BASE_URL ? (
+            <Text style={styles.walletErrorText}>
+              Set EXPO_PUBLIC_API_BASE_URL to enable wallet features.
+            </Text>
+          ) : null}
+        </View>
         <View style={styles.summaryCard}>
           <Text style={styles.summaryText}>{fetchSummary}</Text>
           <Text style={styles.summaryText}>
@@ -901,6 +1201,102 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     elevation: 2,
     gap: 6,
+  },
+  walletCard: {
+    marginTop: 24,
+    padding: 16,
+    borderRadius: 12,
+    backgroundColor: "#fff",
+    shadowColor: "#000",
+    shadowOpacity: 0.05,
+    shadowRadius: 6,
+    shadowOffset: { width: 0, height: 2 },
+    elevation: 2,
+    gap: 12,
+  },
+  walletHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  walletTitle: {
+    fontSize: 16,
+    fontWeight: "600",
+    color: "#222",
+  },
+  walletRefreshButton: {
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 8,
+    backgroundColor: "#f0f0f0",
+  },
+  walletRefreshText: {
+    fontSize: 12,
+    fontWeight: "600",
+    color: "#222",
+  },
+  walletBalance: {
+    fontSize: 28,
+    fontWeight: "700",
+    color: "#1b5e20",
+  },
+  walletMeta: {
+    fontSize: 12,
+    color: "#555",
+  },
+  walletErrorText: {
+    fontSize: 12,
+    color: "#c62828",
+  },
+  topUpRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 12,
+  },
+  topUpInput: {
+    flex: 1,
+    borderWidth: 1,
+    borderColor: "#ddd",
+    borderRadius: 10,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    fontSize: 14,
+    color: "#222",
+    backgroundColor: "#fafafa",
+  },
+  topUpButton: {
+    backgroundColor: "#1b5e20",
+    paddingVertical: 12,
+    paddingHorizontal: 18,
+    borderRadius: 10,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  topUpButtonText: {
+    color: "#fff",
+    fontSize: 14,
+    fontWeight: "600",
+  },
+  walletTransactions: {
+    gap: 6,
+  },
+  walletTransactionRow: {
+    paddingVertical: 4,
+    borderBottomWidth: 1,
+    borderBottomColor: "#f0f0f0",
+  },
+  walletTransactionText: {
+    fontSize: 13,
+    color: "#333",
+  },
+  walletTransactionNote: {
+    fontSize: 12,
+    color: "#666",
+  },
+  walletTransactionHint: {
+    fontSize: 12,
+    color: "#777",
+    marginTop: 4,
   },
   summaryText: {
     fontSize: 14,

@@ -4,7 +4,7 @@ from datetime import datetime
 import uuid
 from typing import Optional
 
-from sqlalchemy import DateTime, Integer, String, func
+from sqlalchemy import DateTime, Integer, JSON, String, func, ForeignKey
 from sqlalchemy.dialects.postgresql import JSONB, UUID
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
@@ -51,8 +51,9 @@ class Payment(Base, TimestampMixin):
     currency: Mapped[str] = mapped_column(String(3), nullable=False)
     item_name: Mapped[str] = mapped_column(String(255), nullable=False)
     item_description: Mapped[Optional[str]] = mapped_column(String(255))
-    checkout_payload: Mapped[Optional[dict]] = mapped_column(JSONB)
-    last_itn_payload: Mapped[Optional[dict]] = mapped_column(JSONB)
+    json_type = JSON().with_variant(JSONB, "postgresql")
+    checkout_payload: Mapped[Optional[dict]] = mapped_column(json_type)
+    last_itn_payload: Mapped[Optional[dict]] = mapped_column(json_type)
     pf_status: Mapped[Optional[str]] = mapped_column(String(32))
 
     def __repr__(self) -> str:
@@ -60,3 +61,20 @@ class Payment(Base, TimestampMixin):
             f"Payment(id={self.id}, provider={self.provider}, "
             f"provider_reference={self.provider_reference}, status={self.status})"
         )
+
+
+class WalletTransaction(Base, TimestampMixin):
+    __tablename__ = "wallet_transactions"
+
+    id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), primary_key=True, default=uuid.uuid4
+    )
+    user_id: Mapped[str] = mapped_column(String(128), nullable=False)
+    user_email: Mapped[Optional[str]] = mapped_column(String(320))
+    payment_id: Mapped[uuid.UUID] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("payments.id", ondelete="CASCADE"), nullable=False
+    )
+    amount_minor: Mapped[int] = mapped_column(Integer, nullable=False)
+    currency: Mapped[str] = mapped_column(String(3), nullable=False)
+    entry_type: Mapped[str] = mapped_column(String(32), nullable=False, default="credit")
+    note: Mapped[Optional[str]] = mapped_column(String(255))

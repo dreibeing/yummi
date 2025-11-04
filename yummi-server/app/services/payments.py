@@ -7,7 +7,7 @@ from sqlalchemy import select
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from ..models import Payment, PaymentStatus
+from ..models import Payment, PaymentStatus, WalletTransaction
 
 logger = logging.getLogger(__name__)
 
@@ -88,6 +88,10 @@ async def update_payfast_payment_from_itn(
         await session.rollback()
         raise
     await session.refresh(payment)
+
+    if payment.status == PaymentStatus.COMPLETE:
+        await ensure_wallet_credit_for_payment(session, payment)
+
     return payment
 
 
@@ -96,3 +100,72 @@ async def get_payment_by_reference(session: AsyncSession, reference: str) -> Opt
         select(Payment).where(Payment.provider_reference == reference)
     )
     return result.scalar_one_or_none()
+
+
+async def ensure_wallet_credit_for_payment(
+    session: AsyncSession, payment: Payment
+) -> Optional[WalletTransaction]:
+    if payment.status != PaymentStatus.COMPLETE or not payment.user_id:
+        return None
+
+    result = await session.execute(
+        select(WalletTransaction).where(WalletTransaction.payment_id == payment.id)
+    )
+    existing = result.scalar_one_or_none()
+    if existing:
+        return existing
+
+    txn = WalletTransaction(
+        user_id=payment.user_id,
+        user_email=payment.user_email,
+        payment_id=payment.id,
+        amount_minor=payment.amount_minor,
+        currency=payment.currency,
+        entry_type="credit",
+        note=f"PayFast payment {payment.provider_reference}",
+    )
+    session.add(txn)
+    try:
+        await session.commit()
+    except Exception:  # pragma: no cover
+        await session.rollback()
+        raise
+    await session.refresh(txn)
+    return txn
+
+
+async def get_user_wallet_summary(
+    session: AsyncSession, user_id: Optional[str]
+) -> Optional[Dict[str, Any]]:
+    if not user_id:
+        return None
+    result = await session.execute(
+        select(WalletTransaction).where(WalletTransaction.user_id == user_id)
+    )
+    transactions = result.scalars().all()
+    if not transactions:
+        return {
+            "userId": user_id,
+            "balanceMinor": 0,
+            "currency": "ZAR",
+            "transactions": [],
+        }
+    balance = sum(txn.amount_minor if txn.entry_type == "credit" else -txn.amount_minor for txn in transactions)
+    currency = transactions[0].currency if transactions else "ZAR"
+    return {
+        "userId": user_id,
+        "balanceMinor": balance,
+        "currency": currency,
+        "transactions": [
+            {
+                "id": str(txn.id),
+                "amountMinor": txn.amount_minor,
+                "currency": txn.currency,
+                "entryType": txn.entry_type,
+                "note": txn.note,
+                "createdAt": txn.created_at.isoformat(),
+                "paymentId": str(txn.payment_id),
+            }
+            for txn in sorted(transactions, key=lambda t: t.created_at, reverse=True)
+        ],
+    }

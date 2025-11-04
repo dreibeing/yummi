@@ -1,0 +1,23 @@
+Chargebacks
+
+If a card chargeback happens on a wallet top-up, link it to the correct user and pull the same amount out of their wallet.
+
+If that makes their balance go below zero, let it go negative and block all new spending until they add funds again.
+
+Keep the account authenticated and log who/when/device for evidence.
+
+Refunds (user-requested)
+
+Users can refund any unused wallet balance back to their original payment method.
+
+Keep it simple and fast for the user, but track approvals.
+
+Allow only a limited number of refunds per user over a set period (e.g., a few times per quarter). If they exceed this or show patterns of abuse, flag the account and restrict or suspend service.
+
+Abuse/Suspicion
+
+If behavior looks suspicious (e.g., repeated refunds/chargebacks), mark the account, require manual review, and pause access until cleared.
+
+Spending rule
+
+No new debits if the user’s wallet is negative—only top-ups are allowed until the balance is back to zero or above.

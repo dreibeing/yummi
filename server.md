@@ -78,6 +78,7 @@
 - orders: id, user_id, status, items_jsonb, retailer, notes, created_at, updated_at.
 - order_events: id, order_id, type, payload_jsonb, created_at.
 - payments: id (uuid), provider, provider_reference, user_id, user_email, amount_minor, currency, status, checkout_payload_jsonb, last_itn_payload_jsonb, created_at, updated_at.
+- wallet_transactions: id (uuid), user_id, payment_id (fk), amount_minor, currency, entry_type, note, created_at.
 
 ## API Surface (v1, initial)
 - GET /v1/health -> liveness, version, pending_counts.
@@ -90,6 +91,7 @@
 - POST /v1/payments/payfast/initiate -> returns PayFast hosted checkout fields + reference.
 - POST /v1/payments/payfast/itn -> webhook endpoint for PayFast Instant Transaction Notifications.
 - GET /v1/payments/payfast/status?reference= -> placeholder status lookup (to be backed by DB).
+- GET /v1/wallet/balance -> current wallet balance + transactions for the authenticated user.
 - Admin (guarded by role/claims):
   - POST /admin/datasets -> begin dataset version (metadata); returns upload URL(s) or direct JSON ingestion.
   - POST /admin/datasets/{id}/complete -> finalize + index products.
@@ -133,7 +135,7 @@ Initial thin-slice behavior implemented now:
 
 ## Client Integration
 - Thin-slice endpoints: GET /v1/catalog?limit=100&random=true, POST /v1/orders for queueing.
-- Mobile app: Clerk bearer token on each request; PayFast checkout posts directly to their hosted form (handled outside this doc).
+- Mobile app: Clerk bearer token on each request; PayFast checkout posts directly to their hosted form (handled outside this doc). Wallet balance fetched via `/v1/wallet/balance` and also included in `/v1/me` responses.
 - Extension/web runner: uses /orders/next, /orders/{id}/ack for processing (optional if kept for desktop parity).
 
 ## Environments & Deployment
@@ -193,6 +195,7 @@ Initial thin-slice behavior implemented now:
 - Preferred cloud: Fly/Render/Railway for speed, or AWS for control?
 - Do we keep MV3 extension runner long-term, or use server-side XHR via same-origin cookies (likely not feasible)?
 - PayFast payments are handled via the scaffolded service; share auth/DB or stay isolated?
+- Chargebacks/refunds: follow `Chargebacks.txt` policy (allow negative balances, block new debits, log audit data).
 
 ## Additional Considerations (not to forget)
 - API versioning (v1) and deprecation policy.
