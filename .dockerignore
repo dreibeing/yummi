@@ -1,0 +1,9 @@
+# Basic ignores to keep build context light
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+node_modules/
+dist/
+.DS_Store
+Thumbs.db

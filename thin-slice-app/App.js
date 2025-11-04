@@ -22,16 +22,23 @@ import {
 import { WebView } from "react-native-webview";
 import { createExtensionRuntimeScript } from "./extensionRuntime";
 
-const defaultServerUrl = Platform.select({
-  android: "http://10.0.2.2:4010",
-  ios: "http://localhost:4010",
-  default: "http://localhost:4010",
+const localServerUrl = Platform.select({
+  android: "http://10.0.2.2:8000/v1/thin",
+  ios: "http://localhost:8000/v1/thin",
+  default: "http://localhost:8000/v1/thin",
 });
+
+const defaultProdServerUrl =
+  "https://yummi-server-greenbean.fly.dev/v1/thin";
+
+const isReleaseBuild =
+  process.env.NODE_ENV === "production" ||
+  Constants.executionEnvironment === "standalone";
 
 const RAW_SERVER_URL =
   process.env.EXPO_PUBLIC_THIN_SLICE_SERVER_URL ??
   Constants.expoConfig?.extra?.thinSliceServerUrl ??
-  defaultServerUrl;
+  (isReleaseBuild ? defaultProdServerUrl : localServerUrl);
 const SERVER_BASE_URL = RAW_SERVER_URL.replace(/\/$/, "");
 const PRODUCTS_ENDPOINT = `${SERVER_BASE_URL}/products/random`;
 const PLACE_ORDER_ENDPOINT = `${SERVER_BASE_URL}/orders/place`;
