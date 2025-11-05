@@ -10,7 +10,7 @@ export default ({ config }) => {
       payfastReturnUrl: process.env.EXPO_PUBLIC_PAYFAST_RETURN_URL || null,
       payfastCancelUrl: process.env.EXPO_PUBLIC_PAYFAST_CANCEL_URL || null,
       payfastMode: process.env.EXPO_PUBLIC_PAYFAST_MODE || "sandbox",
-      devJwt: process.env.EXPO_PUBLIC_DEV_JWT || null,
+      clerkPublishableKey: process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY || null,
     },
   };
 };

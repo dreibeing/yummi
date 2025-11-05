@@ -3,7 +3,7 @@ from __future__ import annotations
 import logging
 from typing import Any, Dict, Optional
 
-from sqlalchemy import select
+from sqlalchemy import select, and_
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -89,9 +89,7 @@ async def update_payfast_payment_from_itn(
         raise
     await session.refresh(payment)
 
-    if payment.status == PaymentStatus.COMPLETE:
-        await ensure_wallet_credit_for_payment(session, payment)
-
+    await sync_wallet_transactions_for_payment(session, payment, itn_payload=payload)
     return payment
 
 
@@ -134,6 +132,82 @@ async def ensure_wallet_credit_for_payment(
     return txn
 
 
+async def ensure_wallet_debit_for_payment(
+    session: AsyncSession,
+    payment: Payment,
+    *,
+    amount_minor: Optional[int] = None,
+    reason: Optional[str] = None,
+) -> Optional[WalletTransaction]:
+    """Record a debit against the wallet when a chargeback/refund occurs.
+
+    The debit is only created if the payment has previously produced a credit entry.
+    """
+    if not payment.user_id:
+        return None
+
+    existing_debit = await session.execute(
+        select(WalletTransaction).where(
+            and_(
+                WalletTransaction.payment_id == payment.id,
+                WalletTransaction.entry_type == "debit",
+            )
+        )
+    )
+    debit_txn = existing_debit.scalar_one_or_none()
+    if debit_txn:
+        return debit_txn
+
+    credit_exists = await session.execute(
+        select(WalletTransaction).where(
+            and_(
+                WalletTransaction.payment_id == payment.id,
+                WalletTransaction.entry_type == "credit",
+            )
+        )
+    )
+    if credit_exists.scalar_one_or_none() is None:
+        # Nothing to reverse; skip creating a debit entry.
+        return None
+
+    txn = WalletTransaction(
+        user_id=payment.user_id,
+        user_email=payment.user_email,
+        payment_id=payment.id,
+        amount_minor=amount_minor if amount_minor is not None else payment.amount_minor,
+        currency=payment.currency,
+        entry_type="debit",
+        note=reason or f"Chargeback for {payment.provider_reference}",
+    )
+    session.add(txn)
+    try:
+        await session.commit()
+    except Exception:  # pragma: no cover
+        await session.rollback()
+        raise
+    await session.refresh(txn)
+    return txn
+
+
+async def sync_wallet_transactions_for_payment(
+    session: AsyncSession,
+    payment: Payment,
+    *,
+    itn_payload: Optional[Dict[str, Any]] = None,
+) -> None:
+    """Ensure wallet ledger mirrors the current payment status."""
+    if payment.status == PaymentStatus.COMPLETE:
+        await ensure_wallet_credit_for_payment(session, payment)
+        return
+
+    if payment.status in {PaymentStatus.CANCELLED, PaymentStatus.FAILED}:
+        reason = None
+        if itn_payload:
+            status = itn_payload.get("payment_status") or payment.pf_status or payment.status
+            reason = f"Chargeback ({status})"
+        await ensure_wallet_debit_for_payment(session, payment, reason=reason)
+
+
 async def get_user_wallet_summary(
     session: AsyncSession, user_id: Optional[str]
 ) -> Optional[Dict[str, Any]]:
@@ -149,9 +223,25 @@ async def get_user_wallet_summary(
             "balanceMinor": 0,
             "currency": "ZAR",
             "transactions": [],
+            "spendableMinor": 0,
+            "spendBlocked": False,
+            "lockReason": None,
         }
-    balance = sum(txn.amount_minor if txn.entry_type == "credit" else -txn.amount_minor for txn in transactions)
-    currency = transactions[0].currency if transactions else "ZAR"
+
+    balance = 0
+    currency = "ZAR"
+    for txn in transactions:
+        currency = txn.currency or currency
+        if txn.entry_type == "credit":
+            balance += txn.amount_minor
+        else:
+            balance -= txn.amount_minor
+
+    is_negative = balance < 0
+    spend_blocked = is_negative
+    lock_reason = "negative_balance" if spend_blocked else None
+    spendable_minor = max(balance, 0)
+
     return {
         "userId": user_id,
         "balanceMinor": balance,
@@ -168,4 +258,7 @@ async def get_user_wallet_summary(
             }
             for txn in sorted(transactions, key=lambda t: t.created_at, reverse=True)
         ],
+        "spendableMinor": spendable_minor,
+        "spendBlocked": spend_blocked,
+        "lockReason": lock_reason,
     }

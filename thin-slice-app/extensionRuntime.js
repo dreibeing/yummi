@@ -3,11 +3,16 @@ export const createExtensionRuntimeScript = (config) =>
 (function () {
   const CART_ENDPOINT = 'https://www.woolworths.co.za/server/cartAddItems';
 
+  function safeTrim(value) {
+    if (typeof value !== 'string') return '';
+    return value.replace(/^\s+|\s+$/g, '');
+  }
+
   function getCookie(name) {
     var target = name + '=';
     var parts = (document.cookie || '').split(';');
     for (var i = 0; i < parts.length; i += 1) {
-      var part = parts[i].trim();
+      var part = safeTrim(parts[i]);
       if (part.indexOf(target) === 0) {
         return part.slice(target.length);
       }
@@ -286,8 +291,8 @@ export const createExtensionRuntimeScript = (config) =>
           meta: meta,
         };
       }
-      var hasBasketId =
-        dataObj && typeof dataObj.basketId === 'string' && dataObj.basketId.trim().length > 0;
+      var basketIdValue = dataObj ? safeTrim(dataObj.basketId) : '';
+      var hasBasketId = basketIdValue.length > 0;
       var hasGroupSubtotal =
         dataObj && dataObj.groupSubTotal && typeof dataObj.groupSubTotal === 'object';
       var hasItemsArray =
@@ -365,11 +370,8 @@ export const createExtensionRuntimeScript = (config) =>
   }
 
   function hasPlaceId(context) {
-    return (
-      context &&
-      typeof context.placeId === 'string' &&
-      context.placeId.trim().length > 0
-    );
+    if (!context) return false;
+    return safeTrim(context.placeId).length > 0;
   }
 
   async function addItem(item, context) {

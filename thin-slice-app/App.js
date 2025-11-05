@@ -8,6 +8,8 @@ import React, {
 import { StatusBar } from "expo-status-bar";
 import Constants from "expo-constants";
 import * as FileSystem from "expo-file-system";
+import * as SecureStore from "expo-secure-store";
+import * as WebBrowser from "expo-web-browser";
 import {
   ActivityIndicator,
   Alert,
@@ -22,6 +24,14 @@ import {
 } from "react-native";
 import { WebView } from "react-native-webview";
 import { createExtensionRuntimeScript } from "./extensionRuntime";
+import {
+  ClerkProvider,
+  SignedIn,
+  SignedOut,
+  useAuth,
+  useOAuth,
+  useUser,
+} from "@clerk/clerk-expo";
 
 const localServerUrl = Platform.select({
   android: "http://10.0.2.2:8000/v1/thin",
@@ -40,18 +50,40 @@ const RAW_SERVER_URL =
   process.env.EXPO_PUBLIC_THIN_SLICE_SERVER_URL ??
   Constants.expoConfig?.extra?.thinSliceServerUrl ??
   (isReleaseBuild ? defaultProdServerUrl : localServerUrl);
-const SERVER_BASE_URL = RAW_SERVER_URL.replace(/\/$/, "");
+const trimTrailingSlash = (value) =>
+  typeof value === "string" ? value.replace(/\/$/, "") : null;
+
+const SERVER_BASE_URL = trimTrailingSlash(RAW_SERVER_URL) ?? "";
 const RAW_API_BASE_URL =
   process.env.EXPO_PUBLIC_API_BASE_URL ??
   Constants.expoConfig?.extra?.apiBaseUrl ??
   null;
-const API_BASE_URL = RAW_API_BASE_URL
-  ? RAW_API_BASE_URL.replace(/\/$/, "")
-  : null;
-const DEV_JWT =
-  process.env.EXPO_PUBLIC_DEV_JWT ??
-  Constants.expoConfig?.extra?.devJwt ??
-  "";
+const API_BASE_URL = trimTrailingSlash(RAW_API_BASE_URL);
+
+const resolvePublishableKey = () => {
+  if (__DEV__) {
+    console.log("Clerk key (env):", process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY);
+    console.log("Clerk key (extra):", Constants.expoConfig?.extra?.clerkPublishableKey);
+  }
+  const candidate =
+    process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY ??
+    Constants.expoConfig?.extra?.clerkPublishableKey ??
+    null;
+  if (typeof candidate === "string") {
+    return candidate;
+  }
+  if (candidate == null) {
+    return "";
+  }
+  try {
+    return String(candidate);
+  } catch (error) {
+    console.warn("Unable to coerce clerk publishable key", error);
+    return "";
+  }
+};
+
+const CLERK_PUBLISHABLE_KEY = resolvePublishableKey();
 const PAYFAST_RETURN_URL =
   process.env.EXPO_PUBLIC_PAYFAST_RETURN_URL ??
   Constants.expoConfig?.extra?.payfastReturnUrl ??
@@ -60,6 +92,33 @@ const PAYFAST_CANCEL_URL =
   process.env.EXPO_PUBLIC_PAYFAST_CANCEL_URL ??
   Constants.expoConfig?.extra?.payfastCancelUrl ??
   "yummi://payfast/cancel";
+
+WebBrowser.maybeCompleteAuthSession();
+
+const clerkTokenCache = {
+  async getToken(key) {
+    try {
+      return await SecureStore.getItemAsync(key);
+    } catch (error) {
+      console.warn("Failed to read Clerk token from SecureStore", error);
+      return null;
+    }
+  },
+  async saveToken(key, value) {
+    try {
+      await SecureStore.setItemAsync(key, value);
+    } catch (error) {
+      console.warn("Failed to persist Clerk token", error);
+    }
+  },
+  async removeToken(key) {
+    try {
+      await SecureStore.deleteItemAsync(key);
+    } catch (error) {
+      console.warn("Failed to remove Clerk token", error);
+    }
+  },
+};
 const PRODUCTS_ENDPOINT = `${SERVER_BASE_URL}/products/random`;
 const PLACE_ORDER_ENDPOINT = `${SERVER_BASE_URL}/orders/place`;
 const ACK_ORDER_ENDPOINT = (orderId) =>
@@ -113,6 +172,14 @@ const formatCurrency = (minor, currency = "ZAR") => {
   return `${currency.toUpperCase()} ${amount}`;
 };
 
+const getTrimmed = (value) => {
+  if (typeof value !== "string") {
+    return null;
+  }
+  const trimmed = value.replace(/^\s+|\s+$/g, "");
+  return trimmed.length ? trimmed : null;
+};
+
 const normalizeOrderItems = (items) =>
   items.map((item, index) => {
     const metadata = item.metadata ?? {};
@@ -132,27 +199,17 @@ const normalizeOrderItems = (items) =>
         ? productId
         : null;
     const preferredUrl =
-      item.url && item.url.trim()
-        ? item.url
-        : item.productUrl && item.productUrl.trim()
-        ? item.productUrl
-        : metadata.url && metadata.url.trim()
-        ? metadata.url
-        : metadata.productUrl && metadata.productUrl.trim()
-        ? metadata.productUrl
-        : null;
+      getTrimmed(item.url) ??
+      getTrimmed(item.productUrl) ??
+      getTrimmed(metadata.url) ??
+      getTrimmed(metadata.productUrl) ??
+      null;
     const detailUrl =
-      item.detailUrl && item.detailUrl.trim()
-        ? item.detailUrl
-        : metadata.detailUrl && metadata.detailUrl.trim()
-        ? metadata.detailUrl
-        : preferredUrl
-        ? preferredUrl
-        : productId
-        ? `https://www.woolworths.co.za/prod/_/A-${productId}`
-        : catalogRefId
-        ? `https://www.woolworths.co.za/prod/_/A-${catalogRefId}`
-        : null;
+      getTrimmed(item.detailUrl) ??
+      getTrimmed(metadata.detailUrl) ??
+      preferredUrl ??
+      (productId ? `https://www.woolworths.co.za/prod/_/A-${productId}` : null) ??
+      (catalogRefId ? `https://www.woolworths.co.za/prod/_/A-${catalogRefId}` : null);
 
     return {
       index,
@@ -178,7 +235,9 @@ const stageLabels = {
   failed: "Cart fill failed",
 };
 
-export default function App() {
+function AppContent() {
+  const { getToken, signOut, isLoaded: isAuthLoaded, userId } = useAuth();
+  const { user } = useUser();
   const [screen, setScreen] = useState("home");
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -205,20 +264,80 @@ export default function App() {
   const [isTopUpLoading, setIsTopUpLoading] = useState(false);
   const [payfastSession, setPayfastSession] = useState(null);
 
+  const userDisplayName = useMemo(() => {
+    const primaryEmail = user?.primaryEmailAddress?.emailAddress;
+    if (primaryEmail) {
+      return primaryEmail;
+    }
+    const fallbackEmail = user?.emailAddresses?.[0]?.emailAddress;
+    if (fallbackEmail) {
+      return fallbackEmail;
+    }
+    if (user?.username) {
+      return user.username;
+    }
+    if (userId) {
+      return userId;
+    }
+    return null;
+  }, [user, userId]);
+
+  const handleSignOut = useCallback(async () => {
+    try {
+      await signOut();
+    } catch (error) {
+      console.error("Failed to sign out", error);
+      Alert.alert("Sign-out failed", "Please try again.");
+    }
+  }, [signOut]);
+
+  const renderAccountBanner = useCallback(() => {
+    if (!userDisplayName) {
+      return null;
+    }
+    return (
+      <View style={styles.accountRow}>
+        <Text style={styles.accountText}>{userDisplayName}</Text>
+        <TouchableOpacity style={styles.signOutButton} onPress={handleSignOut}>
+          <Text style={styles.signOutButtonText}>Sign out</Text>
+        </TouchableOpacity>
+      </View>
+    );
+  }, [handleSignOut, userDisplayName]);
+
+  if (!isAuthLoaded) {
+    return (
+      <SafeAreaView style={styles.safeArea}>
+        <StatusBar style="dark" />
+        <View style={styles.loadingContainer}>
+          <ActivityIndicator size="large" color="#222" />
+        </View>
+      </SafeAreaView>
+    );
+  }
+
   const walletEndpoint = API_BASE_URL ? `${API_BASE_URL}/wallet/balance` : null;
   const payfastInitiateEndpoint = API_BASE_URL
     ? `${API_BASE_URL}/payments/payfast/initiate`
     : null;
 
-  const buildHeaders = useCallback(
-    (extra = {}) => {
-      const headers = { ...extra };
-      if (DEV_JWT) {
-        headers.Authorization = `Bearer ${DEV_JWT}`;
+  const buildAuthHeaders = useCallback(
+    async (extra = {}) => {
+      try {
+        const token = await getToken();
+        if (!token) {
+          throw new Error("Missing Clerk session token");
+        }
+        return {
+          ...extra,
+          Authorization: `Bearer ${token}`,
+        };
+      } catch (error) {
+        console.error("Failed to retrieve Clerk session token", error);
+        throw new Error("Unable to authenticate request. Please sign in again.");
       }
-      return headers;
     },
-    []
+    [getToken]
   );
 
   const fetchWallet = useCallback(async () => {
@@ -228,8 +347,9 @@ export default function App() {
     setWalletLoading(true);
     setWalletError(null);
     try {
+      const headers = await buildAuthHeaders();
       const response = await fetch(walletEndpoint, {
-        headers: buildHeaders(),
+        headers,
       });
       if (response.status === 404) {
         setWallet({ balanceMinor: 0, currency: "ZAR", transactions: [], userId: null });
@@ -238,7 +358,7 @@ export default function App() {
       }
       if (!response.ok) {
         if (response.status === 401) {
-          throw new Error("Unauthorized. Configure EXPO_PUBLIC_DEV_JWT for testing.");
+          throw new Error("Unauthorized. Please sign in again.");
         }
         throw new Error(`Wallet fetch failed (${response.status})`);
       }
@@ -251,7 +371,7 @@ export default function App() {
     } finally {
       setWalletLoading(false);
     }
-  }, [walletEndpoint, buildHeaders]);
+  }, [walletEndpoint, buildAuthHeaders]);
 
   const webViewRef = useRef(null);
   const completionRef = useRef(false);
@@ -428,10 +548,13 @@ export default function App() {
   }, [appendRunnerLogFile]);
 
   useEffect(() => {
-    if (walletEndpoint) {
-      fetchWallet();
+    if (!walletEndpoint || !isAuthLoaded) {
+      return;
     }
-  }, [walletEndpoint, fetchWallet]);
+    fetchWallet();
+    // We intentionally exclude fetchWallet to avoid redundant refetch loops when its identity changes.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [walletEndpoint, isAuthLoaded]);
 
   const handleSubmitOrder = useCallback(async () => {
     if (!basket.length) {
@@ -548,9 +671,10 @@ export default function App() {
     setIsTopUpLoading(true);
     setWalletError(null);
     try {
+      const headers = await buildAuthHeaders({ "Content-Type": "application/json" });
       const response = await fetch(payfastInitiateEndpoint, {
         method: "POST",
-        headers: buildHeaders({ "Content-Type": "application/json" }),
+        headers,
         body: JSON.stringify({
           amountMinor,
           currency: "ZAR",
@@ -559,7 +683,7 @@ export default function App() {
       });
       if (!response.ok) {
         if (response.status === 401) {
-          throw new Error("Unauthorized. Ensure DEV JWT is configured.");
+          throw new Error("Unauthorized. Please sign in again.");
         }
         throw new Error(`Top-up initiation failed (${response.status})`);
       }
@@ -578,7 +702,7 @@ export default function App() {
     } finally {
       setIsTopUpLoading(false);
     }
-  }, [payfastInitiateEndpoint, topUpAmount, buildHeaders]);
+  }, [payfastInitiateEndpoint, topUpAmount, buildAuthHeaders]);
 
   const handleGoToBasket = useCallback(() => {
     if (!basket.length) {
@@ -794,6 +918,7 @@ export default function App() {
           <Text style={styles.subtitle}>
             Sign in and keep this window open while we load your basket.
           </Text>
+          {renderAccountBanner()}
         </View>
         <View style={styles.webviewContainer}>
           <WebView
@@ -871,6 +996,7 @@ export default function App() {
           <Text style={styles.subtitle}>
             Complete the secure PayFast form to finish your top-up.
           </Text>
+          {renderAccountBanner()}
         </View>
         <View style={styles.webviewContainer}>
           <WebView
@@ -909,6 +1035,7 @@ export default function App() {
           <Text style={styles.subtitle}>
             Showing {basket.length} items ready for Woolworths cart
           </Text>
+          {renderAccountBanner()}
         </View>
         <ScrollView contentContainerStyle={styles.scrollContent}>
           {basket.map((item, index) => (
@@ -983,11 +1110,12 @@ export default function App() {
     <SafeAreaView style={styles.safeArea}>
       <StatusBar style="dark" />
       <View style={styles.header}>
-        <Text style={styles.title}>Thin Slice Shopper</Text>
+        <Text style={[styles.title, styles.authTitle]}>Thin Slice Shopper</Text>
         <Text style={styles.subtitle}>
           Prototype bridge between catalog resolver and Woolworths cart fill.
         </Text>
         <Text style={styles.versionBadge}>{APP_VERSION}</Text>
+        {renderAccountBanner()}
       </View>
       <View style={styles.body}>
         <TouchableOpacity
@@ -1127,10 +1255,104 @@ export default function App() {
   );
 }
 
+function SignedOutScreen() {
+  const [isSigningIn, setIsSigningIn] = useState(false);
+  const { startOAuthFlow } = useOAuth({ strategy: "oauth_google" });
+
+  const handleSignIn = useCallback(async () => {
+    try {
+      setIsSigningIn(true);
+      const { createdSessionId, setActive } = await startOAuthFlow();
+      if (createdSessionId) {
+        await setActive?.({ session: createdSessionId });
+      }
+    } catch (error) {
+      console.error("Clerk sign-in failed", error);
+      Alert.alert("Sign-in failed", error?.message ?? "Unable to sign in. Please try again.");
+    } finally {
+      setIsSigningIn(false);
+    }
+  }, [startOAuthFlow]);
+
+  return (
+    <SafeAreaView style={styles.safeArea}>
+      <StatusBar style="dark" />
+      <View style={styles.authContainer}>
+        <Text style={[styles.title, styles.authTitle]}>Thin Slice Shopper</Text>
+        <Text style={styles.authSubtitle}>
+          Sign in with your Yummi account to manage wallet balances and cart fills.
+        </Text>
+        <TouchableOpacity
+          style={[
+            styles.primaryButton,
+            styles.buttonSpacing,
+            isSigningIn ? styles.disabledButton : null,
+          ]}
+          onPress={handleSignIn}
+          disabled={isSigningIn}
+        >
+          {isSigningIn ? (
+            <ActivityIndicator color="#fff" />
+          ) : (
+            <Text style={styles.primaryButtonText}>Continue with Google</Text>
+          )}
+        </TouchableOpacity>
+      </View>
+    </SafeAreaView>
+  );
+}
+
+function MissingClerkConfigScreen() {
+  return (
+    <SafeAreaView style={styles.safeArea}>
+      <StatusBar style="dark" />
+      <View style={styles.authContainer}>
+        <Text style={[styles.title, styles.authTitle]}>Configuration Required</Text>
+        <Text style={styles.authSubtitle}>
+          Set EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY in app.config.js to enable authentication.
+        </Text>
+      </View>
+    </SafeAreaView>
+  );
+}
+
+export default function App() {
+  const publishableKey =
+    typeof CLERK_PUBLISHABLE_KEY === "string"
+      ? CLERK_PUBLISHABLE_KEY.trim()
+      : "";
+
+  if (__DEV__) {
+    console.log("Clerk publishable key (sanitized):", publishableKey, typeof publishableKey);
+  }
+
+  const isLikelyValidKey = /^pk_(test|live)_/i.test(publishableKey);
+
+  if (!isLikelyValidKey) {
+    return <MissingClerkConfigScreen />;
+  }
+  return (
+    <ClerkProvider publishableKey={publishableKey} tokenCache={clerkTokenCache}>
+      <SignedIn>
+        <AppContent />
+      </SignedIn>
+      <SignedOut>
+        <SignedOutScreen />
+      </SignedOut>
+    </ClerkProvider>
+  );
+}
+
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
     backgroundColor: "#f5f5f5",
+  },
+  loadingContainer: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 24,
   },
   header: {
     paddingHorizontal: 20,
@@ -1152,11 +1374,50 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: "#888",
   },
+  accountRow: {
+    marginTop: 12,
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  accountText: {
+    flex: 1,
+    fontSize: 13,
+    color: "#333",
+  },
+  signOutButton: {
+    marginLeft: 12,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 16,
+    backgroundColor: "#ededed",
+  },
+  signOutButtonText: {
+    fontSize: 13,
+    fontWeight: "600",
+    color: "#c62828",
+  },
   body: {
     flex: 1,
     paddingHorizontal: 20,
     paddingTop: 16,
     paddingBottom: 24,
+  },
+  authContainer: {
+    flex: 1,
+    paddingHorizontal: 32,
+    paddingVertical: 24,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  authTitle: {
+    textAlign: "center",
+  },
+  authSubtitle: {
+    marginTop: 12,
+    fontSize: 14,
+    lineHeight: 20,
+    color: "#555",
+    textAlign: "center",
   },
   primaryButton: {
     backgroundColor: "#222",

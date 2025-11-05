@@ -85,6 +85,10 @@ Backend (FastAPI)
 4. **Compliance**
    - No card data handled client-side (hosted page). Must provide return/privacy policy links in fields.
    - Implement chargeback + refund policies (see `Chargebacks.txt`): allow negative balances, block spending under zero, keep audit logs, limit user-initiated refunds, flag abusive behavior.
+   - ITN sync now mirrors payment status into the wallet ledger:
+     - `payment_status=COMPLETE` → credit entry is created (idempotent).
+     - `payment_status=CANCELLED|FAILED` → matching debit entry is recorded when a prior credit exists, marking chargebacks.
+   - Wallet summaries expose `spendBlocked`, `spendableMinor`, and `lockReason` so clients can block debits until the balance returns to ≥0. Negative balances set `spendBlocked=true` with `lockReason="negative_balance"`.
 
 ## 5. Rollout Steps
 1. **Foundation (backend)**

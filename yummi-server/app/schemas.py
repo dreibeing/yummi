@@ -72,4 +72,7 @@ class WalletSummary(BaseModel):
     userId: str
     balanceMinor: int
     currency: str
-    transactions: List[WalletTransactionSchema] = []
+    spendableMinor: int
+    spendBlocked: bool = False
+    lockReason: Optional[str] = None
+    transactions: List[WalletTransactionSchema] = Field(default_factory=list)
