@@ -78,9 +78,9 @@ Build a production-ready pipeline that prepares product data, enriches basket pa
 1. Refine category discovery filters (skip promo-only nodes), freeze canonical category list, and version it under source control.
 2. Add PDP enrichment for pack size/specifications + nutritional metadata.
 3. Sync enriched catalog into `resolver/catalog.json`; ensure extension prioritizes IDs from catalog.
-4. Implement Clerk-authenticated wallet API usage in the Expo client; remove reliance on dev JWTs.
-5. Build chargeback/refund workflows (negative balance handling, debit reversals, abuse monitoring) per [Chargebacks.txt](Chargebacks.txt).
-6. Extend automated and manual test coverage per Agent Brief (functional, performance, resilience, UX).
+4. Exercise the Fly-hosted PayFast sandbox stack end-to-end (top-up, ITN, wallet refresh) and capture QA notes.
+5. Finalize chargeback/refund workflows (negative balance handling, debit reversals, abuse monitoring) per [Chargebacks.txt](Chargebacks.txt).
+6. Extend wallet UX + automated test coverage so mobile surfaces transactions, errors, and negative balances clearly.
 
 ## Change Management
 - Update this guide alongside major workflow or tooling changes.
@@ -95,6 +95,6 @@ Build a production-ready pipeline that prepares product data, enriches basket pa
 
 ## Immediate Next Steps
 See [plan.md](plan.md) for the authoritative roadmap. The top priorities for the next coding session are:
-1. **Secure mobile API usage**: wire Clerk session tokens into the Expo app for `/v1/me` and `/v1/wallet/balance` calls; remove temporary dev JWT usage.
+1. **Sandbox PayFast QA**: run a full wallet top-up from the thin-slice app against Fly, confirm ITN processing, and document any gaps in [payfastmigration.md](payfastmigration.md).
 2. **Chargeback/refund groundwork**: design debit/negative-balance handling in backend services (refer to [Chargebacks.txt](Chargebacks.txt)).
 3. **Wallet UI polish**: expand thin-slice UI to show full transaction history and flag negative balances before we harden chargeback logic.

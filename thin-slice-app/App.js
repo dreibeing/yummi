@@ -59,6 +59,14 @@ const RAW_API_BASE_URL =
   Constants.expoConfig?.extra?.apiBaseUrl ??
   null;
 const API_BASE_URL = trimTrailingSlash(RAW_API_BASE_URL);
+const RAW_CLERK_JWT_TEMPLATE =
+  process.env.EXPO_PUBLIC_CLERK_JWT_TEMPLATE ??
+  Constants.expoConfig?.extra?.clerkJwtTemplate ??
+  null;
+const CLERK_JWT_TEMPLATE =
+  typeof RAW_CLERK_JWT_TEMPLATE === "string"
+    ? RAW_CLERK_JWT_TEMPLATE.trim() || null
+    : null;
 
 const resolvePublishableKey = () => {
   if (__DEV__) {
@@ -324,7 +332,9 @@ function AppContent() {
   const buildAuthHeaders = useCallback(
     async (extra = {}) => {
       try {
-        const token = await getToken();
+        const token = CLERK_JWT_TEMPLATE
+          ? await getToken({ template: CLERK_JWT_TEMPLATE })
+          : await getToken();
         if (!token) {
           throw new Error("Missing Clerk session token");
         }

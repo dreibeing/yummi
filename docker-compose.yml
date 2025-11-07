@@ -13,7 +13,7 @@ services:
       - CLERK_ISSUER=${CLERK_ISSUER}
       - CLERK_JWKS_URL=${CLERK_JWKS_URL}
       - CLERK_AUDIENCE=${CLERK_AUDIENCE}
-      - AUTH_DISABLE_VERIFICATION=${AUTH_DISABLE_VERIFICATION:-true}
+      - AUTH_DISABLE_VERIFICATION=${AUTH_DISABLE_VERIFICATION:-false}
       - DATABASE_URL=postgresql://postgres:postgres@db:5432/yummi
       - REDIS_URL=redis://redis:6379/0
       - CATALOG_PATH=resolver/catalog.json

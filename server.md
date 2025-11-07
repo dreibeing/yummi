@@ -18,7 +18,7 @@
 - Structured logs default to JSON; flip to console mode with `LOG_JSON=false` (and tweak verbosity via `LOG_LEVEL=DEBUG`) in `.env` when developing locally.
 - Non-dev environments will refuse to start unless `REDIS_URL`, `OPENAI_API_KEY`, PayFast merchant credentials (`PAYFAST_MERCHANT_ID`/`PAYFAST_MERCHANT_KEY`) and notify/return URLs are set. Keep `ENVIRONMENT=dev` in local `.env` if you want to bypass the strict checks.
 - Expo thin-slice app defaults to `http://10.0.2.2:8000/v1/thin` on Android. Launch emulator through Android Studio’s Device Manager, then run `npx expo start --android` from `thin-slice-app` in Windows PowerShell (not WSL). Override the API by creating `.env` with `EXPO_PUBLIC_THIN_SLICE_SERVER_URL=...` (see `.env.example`); release builds fall back to the Fly URL automatically.
-- Common fixes: delete stale secrets in `.env` (or set `AUTH_DISABLE_VERIFICATION=true` for local testing), ensure Redis is reachable (`docker compose exec redis redis-cli ping`), and rebuild images if requirements change.
+- Common fixes: delete stale secrets in `.env`, ensure Redis is reachable (`docker compose exec redis redis-cli ping`), and rebuild images if requirements change. Only set `AUTH_DISABLE_VERIFICATION=true` temporarily when debugging local auth issues.
 
 ### Fly.io deployment
 - Install CLI (`iwr https://fly.io/install.ps1 -useb | iex`), then `fly auth login`.
@@ -29,7 +29,9 @@
   fly secrets set ^
     REDIS_URL="redis://default:...@fly-yummi-redis.upstash.io:6379" ^
     OPENAI_API_KEY="sk-live-or-test" ^
-    AUTH_DISABLE_VERIFICATION="true" ^
+    AUTH_DISABLE_VERIFICATION="false" ^
+    CLERK_ISSUER="https://clerk.your-instance.com" ^
+    CLERK_AUDIENCE="yummi-mobile" ^
     ENVIRONMENT="staging" ^
     THIN_SLICE_ENABLED="true" ^
     THIN_RUNNER_LOG_PATH="/app/data/thin-runner-log.txt" ^
@@ -41,6 +43,7 @@
     PAYFAST_CANCEL_URL="https://yummi.app/payfast/cancel"
   ```
   Optional later: `CORS_ALLOWED_ORIGINS=https://yourdomain.com,http://localhost:19006` and `ADMIN_EMAILS=alice@example.com,bob@example.com`. If pydantic throws `error parsing value`, remove the offending secret with `fly secrets unset <NAME>`.
+- Postgres connections: attaching a Fly Postgres instance sets `DATABASE_URL` automatically. The server now normalizes anything that starts with `postgres://`/`postgresql://` into `postgresql+asyncpg://...?...ssl=disable`, so you no longer need to rewrite secrets manually for asyncpg compatibility.
 - Switch `PAYFAST_MODE=live` only after production credentials are enabled; sandbox is assumed when omitted.
 - Run migrations after each deploy: `fly ssh console -a yummi-server-YOURNAME -C "cd /app && alembic upgrade head"`. The container image bundles Alembic so the same command works locally and remotely.
 - Wire up Sentry (optional): set `SENTRY_DSN=...` and `SENTRY_TRACES_SAMPLE_RATE=0.1` (or similar) via `fly secrets set` to capture errors + breadcrumbs. Leave unset to disable.
@@ -231,22 +234,26 @@ Note: The server is designed to run entirely in the cloud; no dependency on a lo
 
 - Fly app name
   - Choose a unique Fly app name and set it in `fly.toml` (`app = "yummi-server-YOURNAME"`).
-- Deploy (staging, no auth verification)
+- Deploy (staging, auth enabled)
   - `flyctl launch --copy-config --name yummi-server-YOURNAME` (accept defaults)
-  - `flyctl secrets set AUTH_DISABLE_VERIFICATION=true CORS_ALLOWED_ORIGINS=* ADMIN_EMAILS=you@example.com`
+  - `flyctl secrets set AUTH_DISABLE_VERIFICATION=false CLERK_ISSUER=https://clerk.your-instance.com CLERK_AUDIENCE=yummi-mobile CORS_ALLOWED_ORIGINS=* ADMIN_EMAILS=you@example.com`
   - (Optional) Provision Redis for admin import: Upstash or external; set `REDIS_URL=...` via `flyctl secrets set`
   - Deploy: `flyctl deploy`
   - Smoke test: `curl https://yummi-server-YOURNAME.fly.dev/v1/health`
 - Push dataset (thin-slice)
-  - Generate a dev JWT (only valid when `AUTH_DISABLE_VERIFICATION=true`):
+  - (Optional) Generate a dev JWT if you temporarily disabled verification (`AUTH_DISABLE_VERIFICATION=true`):
     - Windows PowerShell: `py -c "import json,base64; hdr=b'{\"alg\":\"none\",\"typ\":\"JWT\"}'; p=b'{\"sub\":\"devuser\",\"email\":\"you@example.com\"}'; b64=lambda b: base64.urlsafe_b64encode(b).rstrip(b'='); print((b64(hdr)+b'.'+b64(p)+b'.').decode())"`
   - Import: `curl -X POST -H "Authorization: Bearer <DEV_JWT>" -H "Content-Type: application/json" --data @resolver/catalog.json https://yummi-server-YOURNAME.fly.dev/v1/admin/catalog/import`
   - Verify: `curl https://yummi-server-YOURNAME.fly.dev/v1/catalog?limit=5`
 - Connect the app
   - Set `EXPO_PUBLIC_API_BASE_URL=https://yummi-server-YOURNAME.fly.dev` in your Expo config.
   - Wire thin-slice "Fetch Products" to `GET /v1/catalog` and "Place Order" to `POST /v1/orders` with Clerk bearer when you re-enable auth.
+- Sandbox PayFast QA
+  - Populate `PAYFAST_*` secrets with sandbox credentials.
+  - From the thin-slice app, trigger a wallet top-up; confirm `/v1/payments/payfast/initiate` returns the sandbox host, submit the hosted checkout, and watch Fly logs for ITN delivery (`POST /payments/payfast/itn`).
+  - Capture order/reference IDs and lessons learned in `payfastmigration.md`.
 - Harden for production
-  - Replace `AUTH_DISABLE_VERIFICATION=true` with proper Clerk settings: `CLERK_ISSUER`, `CLERK_AUDIENCE`.
+  - Keep `AUTH_DISABLE_VERIFICATION=false` with proper Clerk settings: `CLERK_ISSUER`, `CLERK_AUDIENCE`.
   - Set `CORS_ALLOWED_ORIGINS` to your app’s web/admin origin(s) only.
   - Add Postgres + Alembic migrations and switch orders to DB-backed persistence.
 

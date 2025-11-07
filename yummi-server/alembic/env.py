@@ -17,6 +17,7 @@ if str(SYS_PATH_ROOT) not in sys.path:
     sys.path.append(str(SYS_PATH_ROOT))
 
 from app.config import get_settings  # noqa: E402
+from app.db import normalize_database_url  # noqa: E402
 from app.models import Base  # noqa: E402
 
 # this is the Alembic Config object, which provides
@@ -33,16 +34,10 @@ if config.config_file_name is not None:
 target_metadata = Base.metadata
 
 
-def _coerce_asyncpg_url(url: str) -> str:
-    if url.startswith("postgresql://"):
-        return url.replace("postgresql://", "postgresql+asyncpg://", 1)
-    return url
-
-
 def _get_database_url() -> str:
-    settings_url = get_settings().database_url
+    settings_url = normalize_database_url(get_settings().database_url)
     if settings_url:
-        return _coerce_asyncpg_url(settings_url)
+        return settings_url
     ini_url = config.get_main_option("sqlalchemy.url")
     if not ini_url:
         raise RuntimeError(

@@ -46,9 +46,9 @@
 - Conduct security review (rate limiting, secret rotation, audit logs) and prepare launch checklist.
 
 ## Immediate Next Steps
-1. **Secure mobile API usage**  
-   - Replace temporary dev JWT usage in [thin-slice-app/App.js](thin-slice-app/App.js) with Clerk session tokens.  
-   - Enforce Clerk-authenticated access on `/v1/wallet/balance` and `/v1/payments/payfast/initiate`. (Refs: [server.md](server.md#wallet--payments-workflow), [yummi_scaffold_spec.md](yummi_scaffold_spec.md#7-expo-config-appjson--appconfigjs)).
+1. **Sandbox PayFast QA**  
+   - Use the new sandbox merchant credentials to run a full wallet top-up via the thin-slice app, confirm the ITN updates wallet balances, and record findings in [payfastmigration.md](payfastmigration.md#43-operations--security).  
+   - Add a repeatable checklist (amounts, reference IDs, ITN resend steps) for future regression passes.
 2. **Chargeback/refund groundwork**  
    - Design debit/chargeback flow using guidance in [Chargebacks.txt](Chargebacks.txt); extend payment service to support negative balances and ledger reversals.  
    - Document the workflow updates in [payfastmigration.md](payfastmigration.md#43-operations--security).

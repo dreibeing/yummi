@@ -11,6 +11,7 @@ export default ({ config }) => {
       payfastCancelUrl: process.env.EXPO_PUBLIC_PAYFAST_CANCEL_URL || null,
       payfastMode: process.env.EXPO_PUBLIC_PAYFAST_MODE || "sandbox",
       clerkPublishableKey: process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY || null,
+      clerkJwtTemplate: process.env.EXPO_PUBLIC_CLERK_JWT_TEMPLATE || null,
     },
   };
 };
