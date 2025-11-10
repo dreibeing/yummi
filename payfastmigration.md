@@ -90,6 +90,22 @@ Backend (FastAPI)
      - `payment_status=CANCELLED|FAILED` → matching debit entry is recorded when a prior credit exists, marking chargebacks.
    - Wallet summaries expose `spendBlocked`, `spendableMinor`, and `lockReason` so clients can block debits until the balance returns to ≥0. Negative balances set `spendBlocked=true` with `lockReason="negative_balance"`.
 
+#### Sandbox QA log — 2025-11-10
+- Ngrok tunnel: `https://polarographic-zuri-semielastic.ngrok-free.dev`
+- Reference: `user_353rOOrT8uKsY1A9np0mDn8Thgw`
+- Amount: R100.00 (mobile top-up)
+- Result: ITN delivered, wallet credited (thin-slice shows “Complete · Wallet credited”)
+- PayFast dashboard ITN ID: `1644573`
+- Key log excerpt:
+  ```
+  2025-11-10T10:29:49Z PayFast checkout params built host=https://sandbox.payfast.co.za/eng/process reference=user_353rOOrT8uKsY1A9np0mDn8Thgw … notify_url=https://polarographic-zuri-semielastic.ngrok-free.dev/v1/payments/payfast/itn … passphrase=test_passphrase
+  2025-11-10T10:30:13Z Skipping ITN remote validation in dev environment
+  2025-11-10T10:30:13Z PayFast ITN received status=COMPLETE reference=user_353rOOrT8uKsY1A9np0mDn8Thgw
+  2025-11-10T10:30:13Z 172.18.0.1:53422 - "POST /v1/payments/payfast/itn HTTP/1.1" 200
+  2025-11-10T10:30:14Z 172.18.0.1:55102 - "GET /v1/payments/payfast/status?reference=user_353rOOrT8uKsY1A9np0mDn8Thgw HTTP/1.1" 200
+  ```
+- Notes: UI confirmed “Complete · Wallet credited” at 12:30 local and PayFast dashboard entry `1644573` moved to `Complete` after the ITN retry, so no further screenshots were captured.
+
 ## 5. Rollout Steps
 1. **Foundation (backend)**
    - Implement PayFast config/secrets.

@@ -84,6 +84,8 @@ async def payfast_itn(request: Request):
     check_signature = build_signature(
         {k: v for k, v in payload.items() if k != "signature"},
         settings.payfast_passphrase,
+        preserve_order=True,
+        include_empty=True,
     )
     if signature != check_signature:
         logger.warning("PayFast ITN signature mismatch", extra={"payload": payload})

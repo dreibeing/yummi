@@ -17,6 +17,7 @@
 - Whenever the schema changes, apply migrations with `docker compose run --rm yummi-server alembic upgrade head`. Generate a new migration via `docker compose run --rm yummi-server alembic revision --autogenerate -m "describe change"`.
 - Structured logs default to JSON; flip to console mode with `LOG_JSON=false` (and tweak verbosity via `LOG_LEVEL=DEBUG`) in `.env` when developing locally.
 - Non-dev environments will refuse to start unless `REDIS_URL`, `OPENAI_API_KEY`, PayFast merchant credentials (`PAYFAST_MERCHANT_ID`/`PAYFAST_MERCHANT_KEY`) and notify/return URLs are set. Keep `ENVIRONMENT=dev` in local `.env` if you want to bypass the strict checks.
+- PayFast ITN form parsing requires `python-multipart`; `pip install -r yummi-server/requirements.txt` (or rebuild the Docker image) whenever that dependency changes so `/payments/payfast/itn` keeps accepting multipart/form-data.
 - Expo thin-slice app defaults to `http://10.0.2.2:8000/v1/thin` on Android. Launch emulator through Android Studio’s Device Manager, then run `npx expo start --android` from `thin-slice-app` in Windows PowerShell (not WSL). Override the API by creating `.env` with `EXPO_PUBLIC_THIN_SLICE_SERVER_URL=...` (see `.env.example`); release builds fall back to the Fly URL automatically.
 - Common fixes: delete stale secrets in `.env`, ensure Redis is reachable (`docker compose exec redis redis-cli ping`), and rebuild images if requirements change. Only set `AUTH_DISABLE_VERIFICATION=true` temporarily when debugging local auth issues.
 
@@ -250,9 +251,10 @@ Note: The server is designed to run entirely in the cloud; no dependency on a lo
   - Set `EXPO_PUBLIC_API_BASE_URL=https://yummi-server-YOURNAME.fly.dev` in your Expo config.
   - Wire thin-slice "Fetch Products" to `GET /v1/catalog` and "Place Order" to `POST /v1/orders` with Clerk bearer when you re-enable auth.
 - Sandbox PayFast QA
-  - Populate `PAYFAST_*` secrets with sandbox credentials.
-  - From the thin-slice app, trigger a wallet top-up; confirm `/v1/payments/payfast/initiate` returns the sandbox host, submit the hosted checkout, and watch Fly logs for ITN delivery (`POST /payments/payfast/itn`).
-  - Capture order/reference IDs and lessons learned in `payfastmigration.md`.
+  - Populate `PAYFAST_*` secrets with sandbox credentials and keep `ENVIRONMENT=dev` only when running behind ngrok (remote ITN validation is skipped in dev, enforced elsewhere).
+  - Start ngrok (`ngrok http 8000`), set the resulting HTTPS URL in `PAYFAST_NOTIFY_URL`, `PAYFAST_RETURN_URL`, and `PAYFAST_CANCEL_URL`, then rebuild/restart so the tunnel is baked into settings.
+  - From the thin-slice app, trigger a wallet top-up; confirm `/v1/payments/payfast/initiate` returns the sandbox host, submit the hosted checkout, and watch `docker compose logs -f yummi-server` (or `flyctl logs`) for ITN delivery (`POST /payments/payfast/itn`).
+  - After a successful ITN, copy the reference, ngrok URL, and log excerpt into [payfastmigration.md](payfastmigration.md#43-operations--security) so future regression runs have a checklist.
 - Harden for production
   - Keep `AUTH_DISABLE_VERIFICATION=false` with proper Clerk settings: `CLERK_ISSUER`, `CLERK_AUDIENCE`.
   - Set `CORS_ALLOWED_ORIGINS` to your app’s web/admin origin(s) only.

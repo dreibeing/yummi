@@ -46,9 +46,9 @@
 - Conduct security review (rate limiting, secret rotation, audit logs) and prepare launch checklist.
 
 ## Immediate Next Steps
-1. **Sandbox PayFast QA**  
-   - Resolve the current PayFast sandbox signature mismatch (they still reject the hosted form even though our logged payload hashes to `ec4f…`). Share the logged canonical payload with PayFast support and keep the tester results in [payfastmigration.md](payfastmigration.md#43-operations--security).  
-   - Once the form accepts the signature, run a full wallet top-up via the thin-slice app, confirm ITN delivery + wallet credit, and add a repeatable checklist (amounts, reference IDs, ITN resend steps) for future regression passes.
+1. **PayFast hardening + staging rollout**  
+   - Promote the working sandbox flow into a Fly staging deployment, ensure remote ITN validation stays enabled outside `dev`, and document the ngrok regression checklist inside [payfastmigration.md](payfastmigration.md#43-operations--security).  
+   - Backfill automated tests around the new signature builder + python-multipart requirement so we can detect regressions before the next QA pass.
 2. **Chargeback/refund groundwork**  
    - Design debit/chargeback flow using guidance in [Chargebacks.txt](Chargebacks.txt); extend payment service to support negative balances and ledger reversals.  
    - Document the workflow updates in [payfastmigration.md](payfastmigration.md#43-operations--security).

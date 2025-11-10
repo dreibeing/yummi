@@ -17,7 +17,7 @@ Build a production-ready pipeline that prepares product data, enriches basket pa
 ## Current Status (2025-11-10)
 - FastAPI backend exposes `/v1/payments/payfast/*` and `/v1/wallet/balance`, persisting payments + wallet ledger via Alembic migrations ([models](yummi-server/app/models.py), [routes](yummi-server/app/routes/)).
 - PayFast initiate flow now logs the full payload + canonical signature string so we can prove hashes in the sandbox tester; bridge endpoints convert PayFast HTTPS return/cancel URLs into Expo deep links.
-- We are debugging the sandbox signature mismatch (“Generated signature does not match submitted signature”) even though the PayFast tester shows the same MD5 (`ec4f…`) for the logged payload. ITN + wallet credit logic is ready once PayFast accepts the submission.
+- Sandbox PayFast top-up succeeded (R100 on 2025-11-10) after aligning signature ordering with the official SDK and adding `python-multipart`; ITN hit `/v1/payments/payfast/itn` and the wallet credited immediately (runbook + logs captured in [payfastmigration.md](payfastmigration.md)).
 - Thin-slice Expo client fetches wallet balances, launches PayFast hosted checkout, and refreshes ledger after payment ([mobile code](thin-slice-app/App.js)).
 - Observability/logging and Docker/Fly infrastructure captured in [server.md](server.md); deployment-ready Compose + Fly configs exist.
 - Data ingestion and cart-fill flows operate via the existing resolver, thin-slice endpoints, and Chrome extension runtime.
@@ -79,7 +79,7 @@ Build a production-ready pipeline that prepares product data, enriches basket pa
 1. Refine category discovery filters (skip promo-only nodes), freeze canonical category list, and version it under source control.
 2. Add PDP enrichment for pack size/specifications + nutritional metadata.
 3. Sync enriched catalog into `resolver/catalog.json`; ensure extension prioritizes IDs from catalog.
-4. Exercise the Fly-hosted PayFast sandbox stack end-to-end (top-up, ITN, wallet refresh) and capture QA notes.
+4. Harden PayFast production readiness: re-enable remote ITN validation outside dev, document rerun steps, and prep Fly secrets for staging go-live.
 5. Finalize chargeback/refund workflows (negative balance handling, debit reversals, abuse monitoring) per [Chargebacks.txt](Chargebacks.txt).
 6. Extend wallet UX + automated test coverage so mobile surfaces transactions, errors, and negative balances clearly.
 
@@ -96,6 +96,6 @@ Build a production-ready pipeline that prepares product data, enriches basket pa
 
 ## Immediate Next Steps
 See [plan.md](plan.md) for the authoritative roadmap. The top priorities for the next coding session are:
-1. **Sandbox PayFast QA**: finish the PayFast hosted checkout by resolving the sandbox signature rejection (coordinate with PayFast support using the logged canonical payload). Once accepted, run the full top-up → ITN → wallet refresh flow and document any gaps in [payfastmigration.md](payfastmigration.md).
+1. **PayFast hardening**: promote the working sandbox config to staging/Fly, keep remote validation enabled outside dev, and backfill docs/tests from the successful run.
 2. **Chargeback/refund groundwork**: design debit/negative-balance handling in backend services (refer to [Chargebacks.txt](Chargebacks.txt)).
 3. **Wallet UI polish**: expand thin-slice UI to show full transaction history and flag negative balances before we harden chargeback logic.
