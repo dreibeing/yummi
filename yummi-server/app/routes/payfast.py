@@ -4,7 +4,7 @@ import logging
 from typing import Dict
 
 from fastapi import APIRouter, Depends, HTTPException, Request, status
-from fastapi.responses import PlainTextResponse
+from fastapi.responses import HTMLResponse, PlainTextResponse
 
 from ..auth import get_current_principal
 from ..config import get_settings
@@ -21,7 +21,7 @@ from ..schemas import (
 )
 from ..services.payments import (
     create_payfast_payment,
-    get_payment_by_reference,
+    get_payfast_status_details,
     update_payfast_payment_from_itn,
 )
 
@@ -36,7 +36,7 @@ async def initiate_payfast_payment(
     principal=Depends(get_current_principal),
 ):
     try:
-        host, params = build_checkout_params(
+        host, params, signature_payload = build_checkout_params(
             amount_minor=payload.amountMinor,
             currency=payload.currency,
             item_name=payload.itemName,
@@ -48,6 +48,16 @@ async def initiate_payfast_payment(
         logger.exception("Failed to build PayFast checkout params")
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(exc))
 
+    if logger.isEnabledFor(logging.INFO):
+        preview = {k: params[k] for k in sorted(params.keys()) if k != "signature"}
+        logger.info(
+            "PayFast checkout params built host=%s reference=%s payload=%s signature=%s base=%s",
+            host,
+            params.get("custom_str2"),
+            preview,
+            params.get("signature"),
+            signature_payload,
+        )
     reference = params.get("custom_str2", "")
     async with get_session() as session:
         await create_payfast_payment(
@@ -102,10 +112,57 @@ async def payfast_itn(request: Request):
 @router.get("/status", response_model=PayFastStatusResponse)
 async def payfast_status(reference: str):
     async with get_session() as session:
-        payment = await get_payment_by_reference(session, reference)
-    if not payment:
+        payload = await get_payfast_status_details(session, reference)
+    if not payload:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Payment not found")
-    message = None
-    if payment.pf_status:
-        message = f"PayFast status: {payment.pf_status}"
-    return PayFastStatusResponse(reference=reference, status=payment.status, message=message)
+    return PayFastStatusResponse(**payload)
+
+
+def _bridge_html(destination: str | None, fallback_message: str) -> str:
+    if not destination:
+        return f"""<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PayFast Return</title>
+  </head>
+  <body>
+    <p>{fallback_message}</p>
+  </body>
+</html>"""
+    return f"""<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <meta http-equiv="refresh" content="0;url={destination}">
+    <script>window.location.replace("{destination}");</script>
+    <style>
+      body {{
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        padding: 2rem;
+        text-align: center;
+      }}
+    </style>
+  </head>
+  <body>
+    <p>Redirecting back to the app…</p>
+    <p>If nothing happens <a href="{destination}">tap here</a>.</p>
+  </body>
+</html>"""
+
+
+@router.get("/return-bridge", response_class=HTMLResponse)
+async def payfast_return_bridge():
+    settings = get_settings()
+    target = settings.payfast_return_deeplink or settings.payfast_return_url
+    html = _bridge_html(target, "Return URL is not configured.")
+    return HTMLResponse(content=html)
+
+
+@router.get("/cancel-bridge", response_class=HTMLResponse)
+async def payfast_cancel_bridge():
+    settings = get_settings()
+    target = settings.payfast_cancel_deeplink or settings.payfast_cancel_url
+    html = _bridge_html(target, "Cancel URL is not configured.")
+    return HTMLResponse(content=html)

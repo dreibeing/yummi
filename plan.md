@@ -47,8 +47,8 @@
 
 ## Immediate Next Steps
 1. **Sandbox PayFast QA**  
-   - Use the new sandbox merchant credentials to run a full wallet top-up via the thin-slice app, confirm the ITN updates wallet balances, and record findings in [payfastmigration.md](payfastmigration.md#43-operations--security).  
-   - Add a repeatable checklist (amounts, reference IDs, ITN resend steps) for future regression passes.
+   - Resolve the current PayFast sandbox signature mismatch (they still reject the hosted form even though our logged payload hashes to `ec4f…`). Share the logged canonical payload with PayFast support and keep the tester results in [payfastmigration.md](payfastmigration.md#43-operations--security).  
+   - Once the form accepts the signature, run a full wallet top-up via the thin-slice app, confirm ITN delivery + wallet credit, and add a repeatable checklist (amounts, reference IDs, ITN resend steps) for future regression passes.
 2. **Chargeback/refund groundwork**  
    - Design debit/chargeback flow using guidance in [Chargebacks.txt](Chargebacks.txt); extend payment service to support negative balances and ledger reversals.  
    - Document the workflow updates in [payfastmigration.md](payfastmigration.md#43-operations--security).

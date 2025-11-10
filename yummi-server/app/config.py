@@ -49,6 +49,8 @@ class Settings(BaseSettings):
     payfast_cancel_url: str | None = Field(default=None)
     payfast_mode: str = Field(default="sandbox")
     payfast_pdt_token: str | None = Field(default=None)
+    payfast_return_deeplink: str | None = Field(default=None)
+    payfast_cancel_deeplink: str | None = Field(default=None)
 
     class Config:
         env_file = ".env"

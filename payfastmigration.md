@@ -68,7 +68,7 @@ Backend (FastAPI)
 2. **Checkout UI**
    - Show a WebView with auto-submitted form to PayFast (preferred) or open system browser if regulations require.
    - Capture return via deep link (PayFast `return_url` -> `yummi://payfast/return?reference=...&pf_payment_id=...`).
-   - On return, call backend `/payments/{id}` to show status (or PDT endpoint).
+   - On return (or while checkout is open), call `/payments/payfast/status?reference=` to poll payment + wallet credit status; fall back to PDT endpoint only if PayFast disables ITN temporarily.
    - On cancel: detect `cancel_url` navigation, show error state.
 3. **Sandbox testing**
    - Use PayFast test card numbers or Instant EFT instructions.

@@ -14,7 +14,6 @@ import {
   ActivityIndicator,
   Alert,
   Platform,
-  SafeAreaView,
   ScrollView,
   StyleSheet,
   Text,
@@ -22,6 +21,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
+import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import { WebView } from "react-native-webview";
 import { createExtensionRuntimeScript } from "./extensionRuntime";
 import {
@@ -92,6 +92,9 @@ const resolvePublishableKey = () => {
 };
 
 const CLERK_PUBLISHABLE_KEY = resolvePublishableKey();
+if (__DEV__) {
+  console.log("API_BASE_URL (resolved):", API_BASE_URL);
+}
 const PAYFAST_RETURN_URL =
   process.env.EXPO_PUBLIC_PAYFAST_RETURN_URL ??
   Constants.expoConfig?.extra?.payfastReturnUrl ??
@@ -142,6 +145,7 @@ const LOG_FILE_BASE =
 const DEFAULT_LOG_FILE_URI = LOG_FILE_BASE
   ? `${LOG_FILE_BASE}${LOG_FILE_NAME}`
   : null;
+const MAX_PAYFAST_POLLS = 45;
 
 const buildAutoSubmitHtml = (url, params) => {
   const inputs = Object.entries(params || {})
@@ -178,6 +182,30 @@ const formatCurrency = (minor, currency = "ZAR") => {
     return `R${amount}`;
   }
   return `${currency.toUpperCase()} ${amount}`;
+};
+
+const shortReference = (value) => {
+  if (!value) return "";
+  if (value.length <= 10) return value;
+  return `${value.slice(0, 4)}...${value.slice(-4)}`;
+};
+
+const formatPayfastStatus = (status) => {
+  if (!status) return "Pending";
+  const lower = status.toLowerCase();
+  if (lower === "complete") return "Complete";
+  return lower.charAt(0).toUpperCase() + lower.slice(1);
+};
+
+const isPayfastTrackerDone = (status, walletCredited) => {
+  if (!status) {
+    return false;
+  }
+  const normalized = status.toLowerCase();
+  if (normalized === "complete") {
+    return Boolean(walletCredited);
+  }
+  return normalized === "cancelled" || normalized === "failed";
 };
 
 const getTrimmed = (value) => {
@@ -271,6 +299,7 @@ function AppContent() {
   const [topUpAmount, setTopUpAmount] = useState("100");
   const [isTopUpLoading, setIsTopUpLoading] = useState(false);
   const [payfastSession, setPayfastSession] = useState(null);
+  const [payfastMonitor, setPayfastMonitor] = useState(null);
 
   const userDisplayName = useMemo(() => {
     const primaryEmail = user?.primaryEmailAddress?.emailAddress;
@@ -293,6 +322,8 @@ function AppContent() {
   const handleSignOut = useCallback(async () => {
     try {
       await signOut();
+      setPayfastMonitor(null);
+      setPayfastSession(null);
     } catch (error) {
       console.error("Failed to sign out", error);
       Alert.alert("Sign-out failed", "Please try again.");
@@ -327,6 +358,9 @@ function AppContent() {
   const walletEndpoint = API_BASE_URL ? `${API_BASE_URL}/wallet/balance` : null;
   const payfastInitiateEndpoint = API_BASE_URL
     ? `${API_BASE_URL}/payments/payfast/initiate`
+    : null;
+  const payfastStatusEndpoint = API_BASE_URL
+    ? `${API_BASE_URL}/payments/payfast/status`
     : null;
 
   const buildAuthHeaders = useCallback(
@@ -388,6 +422,8 @@ function AppContent() {
   const logFileUriRef = useRef(DEFAULT_LOG_FILE_URI);
   const logBufferRef = useRef([]);
   const serverLogErrorRef = useRef(false);
+  const payfastMonitorRef = useRef(null);
+  const payfastAlertRef = useRef(null);
 
   useEffect(() => {
     if (!activeOrder) {
@@ -401,6 +437,10 @@ function AppContent() {
       setRunnerLogs([]);
     }
   }, [activeOrder]);
+
+  useEffect(() => {
+    payfastMonitorRef.current = payfastMonitor;
+  }, [payfastMonitor]);
 
   const fetchSummary = useMemo(() => {
     if (!products.length) {
@@ -566,6 +606,145 @@ function AppContent() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [walletEndpoint, isAuthLoaded]);
 
+  useEffect(() => {
+    if (!payfastMonitor?.reference || !payfastStatusEndpoint) {
+      return undefined;
+    }
+    let cancelled = false;
+    let timeoutId = null;
+    let attempts = 0;
+
+    const pollStatus = async () => {
+      if (cancelled) {
+        return;
+      }
+      const current = payfastMonitorRef.current;
+      if (
+        !current ||
+        !current.reference ||
+        current.reference !== payfastMonitor.reference ||
+        isPayfastTrackerDone(current.status, current.walletCredited)
+      ) {
+        return;
+      }
+      if (attempts >= MAX_PAYFAST_POLLS) {
+        setPayfastMonitor((prev) => {
+          if (!prev || prev.reference !== current.reference) {
+            return prev;
+          }
+          return {
+            ...prev,
+            error: prev.error ?? "Timed out waiting for PayFast confirmation.",
+            attempts: prev.attempts + 1,
+          };
+        });
+        return;
+      }
+      attempts += 1;
+      try {
+        const headers = await buildAuthHeaders();
+        const url = `${payfastStatusEndpoint}?reference=${encodeURIComponent(current.reference)}`;
+        const response = await fetch(url, { headers });
+        if (!response.ok) {
+          throw new Error(`Status check failed (${response.status})`);
+        }
+        const payload = await response.json();
+        if (cancelled) {
+          return;
+        }
+        const normalizedWalletCredited =
+          typeof payload.walletCredited !== "undefined"
+            ? payload.walletCredited
+            : payload.wallet_credited;
+        const nextStatus = payload.status ?? current.status;
+        const finished = isPayfastTrackerDone(
+          nextStatus,
+          typeof normalizedWalletCredited !== "undefined"
+            ? normalizedWalletCredited
+            : current.walletCredited
+        );
+        setPayfastMonitor((prev) => {
+          if (!prev || prev.reference !== current.reference) {
+            return prev;
+          }
+          return {
+            ...prev,
+            status: nextStatus,
+            message: payload.message ?? prev.message,
+            pfStatus: payload.pfStatus ?? payload.pf_status ?? prev.pfStatus ?? null,
+            walletCredited: Boolean(
+              typeof normalizedWalletCredited !== "undefined"
+                ? normalizedWalletCredited
+                : prev.walletCredited
+            ),
+            providerPaymentId:
+              payload.providerPaymentId ??
+              payload.provider_payment_id ??
+              prev.providerPaymentId ??
+              null,
+            updatedAt: payload.updatedAt ?? payload.updated_at ?? prev.updatedAt ?? null,
+            attempts: prev.attempts + 1,
+            error: null,
+            lastChecked: new Date().toISOString(),
+          };
+        });
+
+        if (!finished && !cancelled) {
+          timeoutId = setTimeout(pollStatus, 4000);
+        }
+      } catch (error) {
+        if (cancelled) {
+          return;
+        }
+        setPayfastMonitor((prev) => {
+          if (!prev || !prev.reference) {
+            return prev;
+          }
+          return {
+            ...prev,
+            attempts: prev.attempts + 1,
+            error: error.message ?? "Unable to check PayFast status",
+            lastChecked: new Date().toISOString(),
+          };
+        });
+        timeoutId = setTimeout(pollStatus, 6000);
+      }
+    };
+
+    pollStatus();
+
+    return () => {
+      cancelled = true;
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+    };
+  }, [payfastMonitor?.reference, payfastStatusEndpoint, buildAuthHeaders]);
+
+  useEffect(() => {
+    if (!payfastMonitor || !payfastMonitor.reference) {
+      return;
+    }
+    if (!isPayfastTrackerDone(payfastMonitor.status, payfastMonitor.walletCredited)) {
+      return;
+    }
+    const key = `${payfastMonitor.reference}:${payfastMonitor.status}:${payfastMonitor.walletCredited}`;
+    if (payfastAlertRef.current === key) {
+      return;
+    }
+    payfastAlertRef.current = key;
+    if (payfastMonitor.status === "complete") {
+      fetchWallet();
+    }
+    const title = payfastMonitor.status === "complete" ? "Top-up Complete" : "PayFast Update";
+    const message =
+      payfastMonitor.message ??
+      (payfastMonitor.status === "complete"
+        ? "Wallet credited via PayFast."
+        : "Payment did not complete. Please review your PayFast session.");
+    Alert.alert(title, message);
+  }, [payfastMonitor, fetchWallet]);
+
   const handleSubmitOrder = useCallback(async () => {
     if (!basket.length) {
       setErrorMessage("Basket empty. Build the basket before placing an order.");
@@ -644,6 +823,15 @@ function AppContent() {
         setPayfastSession(null);
         setScreen("home");
         Alert.alert("Payment Submitted", "We are verifying your payment.");
+        setPayfastMonitor((prev) =>
+          prev
+            ? {
+                ...prev,
+                status: prev.status === "pending" ? "processing" : prev.status,
+                message: "PayFast response received. Waiting for confirmation.",
+              }
+            : prev
+        );
         fetchWallet();
       } else if (
         PAYFAST_CANCEL_URL &&
@@ -652,6 +840,15 @@ function AppContent() {
         setPayfastSession(null);
         setScreen("home");
         Alert.alert("Payment Cancelled", "Top-up was cancelled by the user.");
+        setPayfastMonitor((prev) =>
+          prev
+            ? {
+                ...prev,
+                status: "cancelled",
+                message: "Payment cancelled before completion.",
+              }
+            : prev
+        );
         fetchWallet();
       }
     },
@@ -661,6 +858,15 @@ function AppContent() {
   const handleCancelPayfast = useCallback(() => {
     setPayfastSession(null);
     setScreen("home");
+    setPayfastMonitor((prev) =>
+      prev
+        ? {
+            ...prev,
+            status: "cancelled",
+            message: "Payment cancelled before completion.",
+          }
+        : prev
+    );
     fetchWallet();
   }, [fetchWallet]);
 
@@ -671,6 +877,9 @@ function AppContent() {
         "Set EXPO_PUBLIC_API_BASE_URL to enable wallet top-ups."
       );
       return;
+    }
+    if (__DEV__) {
+      console.log("Top-up endpoint:", payfastInitiateEndpoint);
     }
     const parsed = parseFloat(topUpAmount.replace(/,/g, "."));
     if (Number.isNaN(parsed) || parsed <= 0) {
@@ -692,6 +901,14 @@ function AppContent() {
         }),
       });
       if (!response.ok) {
+        if (__DEV__) {
+          try {
+            const errorText = await response.text();
+            console.log("Top-up response body:", errorText);
+          } catch (respErr) {
+            console.log("Top-up response body unavailable:", respErr);
+          }
+        }
         if (response.status === 401) {
           throw new Error("Unauthorized. Please sign in again.");
         }
@@ -701,6 +918,21 @@ function AppContent() {
       if (!payload?.url || !payload?.params) {
         throw new Error("Unexpected response from server");
       }
+      if (!payload?.reference) {
+        throw new Error("Missing PayFast reference from server response");
+      }
+      setPayfastMonitor({
+        reference: payload.reference,
+        status: "pending",
+        message: "Waiting for PayFast confirmation.",
+        attempts: 0,
+        walletCredited: false,
+        error: null,
+        pfStatus: null,
+        lastChecked: null,
+        updatedAt: null,
+        providerPaymentId: null,
+      });
       setPayfastSession({
         html: buildAutoSubmitHtml(payload.url, payload.params),
         reference: payload.reference,
@@ -1203,6 +1435,39 @@ function AppContent() {
               )}
             </TouchableOpacity>
           </View>
+          {payfastMonitor ? (
+            <View
+              style={[
+                styles.payfastStatusCard,
+                isPayfastTrackerDone(payfastMonitor.status, payfastMonitor.walletCredited)
+                  ? styles.payfastStatusCardDone
+                  : null,
+              ]}
+            >
+              <View style={styles.payfastStatusHeader}>
+                <Text style={styles.payfastStatusTitle}>PayFast Status</Text>
+                <TouchableOpacity onPress={() => setPayfastMonitor(null)}>
+                  <Text style={styles.payfastStatusDismiss}>Dismiss</Text>
+                </TouchableOpacity>
+              </View>
+              <Text style={styles.payfastStatusValue}>
+                {formatPayfastStatus(payfastMonitor.status)}
+                {payfastMonitor.walletCredited ? " • Wallet credited" : ""}
+              </Text>
+              {payfastMonitor.message ? (
+                <Text style={styles.payfastStatusMessage}>{payfastMonitor.message}</Text>
+              ) : null}
+              <Text style={styles.payfastStatusMeta}>
+                Ref {shortReference(payfastMonitor.reference)}
+                {payfastMonitor.lastChecked
+                  ? ` • Checked ${formatTime(new Date(payfastMonitor.lastChecked))}`
+                  : ""}
+              </Text>
+              {payfastMonitor.error ? (
+                <Text style={styles.walletErrorText}>{payfastMonitor.error}</Text>
+              ) : null}
+            </View>
+          ) : null}
           {wallet?.transactions?.length ? (
             <View style={styles.walletTransactions}>
               {wallet.transactions.slice(0, 3).map((txn) => (
@@ -1342,14 +1607,16 @@ export default function App() {
     return <MissingClerkConfigScreen />;
   }
   return (
-    <ClerkProvider publishableKey={publishableKey} tokenCache={clerkTokenCache}>
-      <SignedIn>
-        <AppContent />
-      </SignedIn>
-      <SignedOut>
-        <SignedOutScreen />
-      </SignedOut>
-    </ClerkProvider>
+    <SafeAreaProvider>
+      <ClerkProvider publishableKey={publishableKey} tokenCache={clerkTokenCache}>
+        <SignedIn>
+          <AppContent />
+        </SignedIn>
+        <SignedOut>
+          <SignedOutScreen />
+        </SignedOut>
+      </ClerkProvider>
+    </SafeAreaProvider>
   );
 }
 
@@ -1568,6 +1835,45 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: "#777",
     marginTop: 4,
+  },
+  payfastStatusCard: {
+    marginTop: 12,
+    padding: 12,
+    borderRadius: 12,
+    backgroundColor: "#f4f4f4",
+    borderWidth: 1,
+    borderColor: "#e0e0e0",
+  },
+  payfastStatusCardDone: {
+    borderColor: "#34a853",
+    backgroundColor: "#e8f5e9",
+  },
+  payfastStatusHeader: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  payfastStatusTitle: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "#111",
+  },
+  payfastStatusDismiss: {
+    fontSize: 12,
+    color: "#0066cc",
+  },
+  payfastStatusValue: {
+    fontSize: 16,
+    fontWeight: "600",
+    color: "#111",
+  },
+  payfastStatusMessage: {
+    fontSize: 13,
+    color: "#333",
+  },
+  payfastStatusMeta: {
+    fontSize: 12,
+    color: "#666",
   },
   summaryText: {
     fontSize: 14,

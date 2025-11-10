@@ -13,7 +13,7 @@ services:
       - CLERK_ISSUER=${CLERK_ISSUER}
       - CLERK_JWKS_URL=${CLERK_JWKS_URL}
       - CLERK_AUDIENCE=${CLERK_AUDIENCE}
-      - AUTH_DISABLE_VERIFICATION=${AUTH_DISABLE_VERIFICATION:-false}
+      - AUTH_DISABLE_VERIFICATION=${AUTH_DISABLE_VERIFICATION:-true}
       - DATABASE_URL=postgresql://postgres:postgres@db:5432/yummi
       - REDIS_URL=redis://redis:6379/0
       - CATALOG_PATH=resolver/catalog.json
@@ -31,6 +31,8 @@ services:
       - PAYFAST_CANCEL_URL=${PAYFAST_CANCEL_URL:-http://localhost:19006/payfast/cancel}
       - PAYFAST_MODE=${PAYFAST_MODE:-sandbox}
       - PAYFAST_PDT_TOKEN=${PAYFAST_PDT_TOKEN:-}
+      - PAYFAST_RETURN_DEEPLINK=${PAYFAST_RETURN_DEEPLINK:-}
+      - PAYFAST_CANCEL_DEEPLINK=${PAYFAST_CANCEL_DEEPLINK:-}
     ports:
       - "8000:8000"
     depends_on:

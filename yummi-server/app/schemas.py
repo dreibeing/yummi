@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from typing import List, Optional
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ConfigDict
 
 
 class Product(BaseModel):
@@ -56,6 +56,14 @@ class PayFastStatusResponse(BaseModel):
     reference: str
     status: str
     message: Optional[str] = None
+    pfStatus: Optional[str] = Field(default=None, alias="pf_status")
+    providerPaymentId: Optional[str] = Field(default=None, alias="provider_payment_id")
+    amountMinor: Optional[int] = Field(default=None, alias="amount_minor")
+    currency: Optional[str] = None
+    walletCredited: bool = Field(default=False, alias="wallet_credited")
+    updatedAt: Optional[str] = Field(default=None, alias="updated_at")
+
+    model_config = ConfigDict(populate_by_name=True)
 
 
 class WalletTransactionSchema(BaseModel):

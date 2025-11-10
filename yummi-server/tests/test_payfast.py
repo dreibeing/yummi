@@ -30,7 +30,7 @@ class PayFastHelpersTestCase(unittest.TestCase):
 
     def test_build_checkout_params_uses_settings(self):
         with mock.patch("app.payments.payfast.get_settings", return_value=self.settings):
-            host, params = build_checkout_params(
+            host, params, signature_payload = build_checkout_params(
                 amount_minor=1000,
                 currency="ZAR",
                 item_name="Wallet Top-up",
@@ -39,6 +39,7 @@ class PayFastHelpersTestCase(unittest.TestCase):
                 user_reference="user-123",
             )
         self.assertIn("signature", params)
+        self.assertIn("merchant_id=10000100", signature_payload)
         self.assertEqual(host, "https://sandbox.payfast.co.za/eng/process")
         self.assertEqual(params["amount"], "10.00")
         self.assertEqual(params["custom_str1"], "user-123")

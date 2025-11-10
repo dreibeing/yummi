@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import logging
 import uuid
+from collections import OrderedDict
 from typing import Dict, Tuple
 from urllib.parse import quote_plus
 
@@ -31,12 +32,17 @@ def _clean_value(value: str | None) -> str:
     return str(value).strip()
 
 
-def build_signature(params: Dict[str, str], passphrase: str | None = None) -> str:
-    sorted_pairs = sorted((k, _clean_value(v)) for k, v in params.items())
-    encoded = "&".join(f"{k}={quote_plus(v)}" for k, v in sorted_pairs)
+def _build_signature_payload(params: Dict[str, str], passphrase: str | None = None) -> str:
+    ordered_pairs = sorted((k, _clean_value(v)) for k, v in params.items())
+    encoded = "&".join(f"{k}={quote_plus(v)}" for k, v in ordered_pairs)
     if passphrase:
         encoded = f"{encoded}&passphrase={quote_plus(passphrase.strip())}"
-    signature = hashlib.md5(encoded.encode("utf-8")).hexdigest()
+    return encoded
+
+
+def build_signature(params: Dict[str, str], passphrase: str | None = None) -> str:
+    payload = _build_signature_payload(params, passphrase)
+    signature = hashlib.md5(payload.encode("utf-8")).hexdigest()
     return signature
 
 
@@ -56,13 +62,14 @@ def build_checkout_params(
     item_description: str | None,
     user_email: str | None,
     user_reference: str | None,
-) -> Tuple[str, Dict[str, str]]:
+) -> Tuple[str, Dict[str, str], str]:
     settings = get_settings()
     mode = settings.payfast_mode or "sandbox"
     amount = f"{amount_minor / 100:.2f}"
     reference = user_reference or f"yummi-{uuid.uuid4().hex[:12]}"
 
-    params: Dict[str, str] = {
+    raw_params: OrderedDict[str, str] = OrderedDict(
+        {
         "merchant_id": _clean_value(settings.payfast_merchant_id),
         "merchant_key": _clean_value(settings.payfast_merchant_key),
         "amount": amount,
@@ -75,13 +82,16 @@ def build_checkout_params(
         "email_address": _clean_value(user_email) or "",
         "custom_str1": _clean_value(user_reference) or "",
         "custom_str2": reference,
-        "user_agent": "YummiServer/1.0.0",
     }
-    params = {k: v for k, v in params.items() if v != ""}
+    )
+    params: Dict[str, str] = OrderedDict(
+        (k, v) for k, v in raw_params.items() if _clean_value(v) != ""
+    )
 
-    params["signature"] = build_signature(params, settings.payfast_passphrase)
+    signature_payload = _build_signature_payload(params, settings.payfast_passphrase)
+    params["signature"] = hashlib.md5(signature_payload.encode("utf-8")).hexdigest()
     host = get_checkout_host(mode)
-    return host, params
+    return host, params, signature_payload
 
 
 async def validate_itn_payload(payload: Dict[str, str]) -> bool:

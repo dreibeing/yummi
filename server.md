@@ -11,7 +11,7 @@
 ## Operational Runbook
 
 ### Local development
-- Start everything with `docker compose up -d --build` from repo root; this brings up Postgres, Redis, and the FastAPI app on `http://localhost:8000`.
+- Start everything with `docker compose up -d --build` from repo root; this brings up Postgres, Redis, and the FastAPI app on `http://localhost:8000`. Auth verification is disabled by default in the Compose stack so Clerk isn’t required during local development (set `AUTH_DISABLE_VERIFICATION=false` + Clerk issuer/audience to exercise full verification).
 - Quick health check: `curl http://localhost:8000/v1/health` or `curl http://localhost:8000/v1/thin/health`. Catalog lives under `/v1/catalog`; thin slice clients hit `/v1/thin/*`.
 - Follow live logs with `docker compose logs -f yummi-server`. Thin slice runner logs are persisted inside the container at `/app/data/thin-runner-log.txt`; view via `docker compose exec yummi-server tail -n 50 data/thin-runner-log.txt`.
 - Whenever the schema changes, apply migrations with `docker compose run --rm yummi-server alembic upgrade head`. Generate a new migration via `docker compose run --rm yummi-server alembic revision --autogenerate -m "describe change"`.
@@ -91,9 +91,10 @@
 - POST /v1/orders -> create basket/order queue; body: items[], retailer; returns order_id.
 - GET /v1/orders/{id} -> status + progress events.
 - POST /v1/orders/{id}/ack -> finalize (used by runner/worker).
-- POST /v1/payments/payfast/initiate -> returns PayFast hosted checkout fields + reference.
+- POST /v1/payments/payfast/initiate -> returns PayFast hosted checkout fields + reference and logs the canonical signature payload (copy/paste directly into PayFast’s tester when debugging).
 - POST /v1/payments/payfast/itn -> webhook endpoint for PayFast Instant Transaction Notifications.
-- GET /v1/payments/payfast/status?reference= -> placeholder status lookup (to be backed by DB).
+- GET /v1/payments/payfast/status?reference= -> returns payment + wallet status (PayFast status string, wallet credit flag, timestamps) so clients can poll after checkout.
+- GET /v1/payments/payfast/return-bridge and `/cancel-bridge` -> HTTPS bridge pages that immediately redirect back into the Expo deep links so PayFast’s sandbox (which requires HTTPS) can return to `yummi://payfast/*`.
 - GET /v1/wallet/balance -> current wallet balance + transactions for the authenticated user.
 - Admin (guarded by role/claims):
   - POST /admin/datasets -> begin dataset version (metadata); returns upload URL(s) or direct JSON ingestion.

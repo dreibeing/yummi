@@ -100,6 +100,48 @@ async def get_payment_by_reference(session: AsyncSession, reference: str) -> Opt
     return result.scalar_one_or_none()
 
 
+async def get_payfast_status_details(
+    session: AsyncSession, reference: str
+) -> Optional[Dict[str, Any]]:
+    payment = await get_payment_by_reference(session, reference)
+    if not payment:
+        return None
+
+    credit_query = await session.execute(
+        select(WalletTransaction).where(
+            and_(
+                WalletTransaction.payment_id == payment.id,
+                WalletTransaction.entry_type == "credit",
+            )
+        )
+    )
+    credit_entry = credit_query.scalar_one_or_none()
+    wallet_credited = credit_entry is not None
+
+    if payment.status in {PaymentStatus.PENDING, PaymentStatus.PROCESSING}:
+        message = "Waiting for PayFast confirmation"
+    elif payment.status == PaymentStatus.COMPLETE and wallet_credited:
+        message = "Wallet credited"
+    elif payment.status == PaymentStatus.CANCELLED:
+        message = "Payment cancelled"
+    elif payment.status == PaymentStatus.FAILED:
+        message = "Payment failed"
+    else:
+        message = f"PayFast status: {payment.pf_status}" if payment.pf_status else None
+
+    return {
+        "reference": reference,
+        "status": payment.status,
+        "pf_status": payment.pf_status,
+        "provider_payment_id": payment.provider_payment_id,
+        "amount_minor": payment.amount_minor,
+        "currency": payment.currency,
+        "wallet_credited": wallet_credited,
+        "updated_at": payment.updated_at.isoformat() if payment.updated_at else None,
+        "message": message,
+    }
+
+
 async def ensure_wallet_credit_for_payment(
     session: AsyncSession, payment: Payment
 ) -> Optional[WalletTransaction]:

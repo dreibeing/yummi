@@ -34,8 +34,8 @@ def validate_settings(settings: Settings) -> None:
     if environment == "dev":
         if dev_missing:
             logger.warning(
-                "Running in dev without recommended secrets; some features may be disabled",
-                missing=dev_missing,
+                "Running in dev without recommended secrets; some features may be disabled: %s",
+                ", ".join(dev_missing),
             )
         return
 
