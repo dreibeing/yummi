@@ -119,6 +119,7 @@ We operate a production-ready pipeline that prepares product data, enriches bask
 | `data/`, `samples/` | ✅ | Example catalogs/payloads referenced by docs/tests. |
 | `docker-compose.yml`, `fly.toml`, `env.*` | ✅ | Baseline infra configs; update values per environment. |
 | `.md/.txt` docs listed above | ✅ | Serve as living runbooks/specs. |
+| `scripts/wallet_admin_cli.py` | ✅ | Stopgap CLI for chargebacks/refunds before a dashboard exists. |
 
 ### Yummi implementation focus
 | Path | Purpose |

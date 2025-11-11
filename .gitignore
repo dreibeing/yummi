@@ -25,3 +25,4 @@ data/product_table_folder/*.pkl
 thin-slice-server/orders.json
 thinslice.md
 yummi_scaffold_spec.md
+thin-slice-template/

@@ -55,6 +55,7 @@ Keep Yummi-specific directories (scraper, Woolworths agent brief, cart integrati
 - `extension/`: MV3 service worker + popup for browser-assisted cart filling. Ideal starting point if a future retailer requires Chrome automation.
 - `thin-slice-server/`: queue + runner interfaces used by the thin-slice mobile/WebView flow.
 - `resolver/` + `woolworths_scraper/`: scripts that curate retailer catalogs and attach `productId/catalogRefId` metadata before cart fill.
+- `scripts/wallet_admin_cli.py`: stopgap CLI for recording chargebacks or moderating refunds before a UI exists.
 
 ## Using the template for another app
 1. **Rename packages** – update Expo slug, bundle IDs, and Android package (see sample config in `yummi_scaffold_spec.md` §7).

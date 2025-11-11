@@ -283,3 +283,20 @@ Note: The server is designed to run entirely in the cloud; no dependency on a lo
 - **Refund moderation (`POST /v1/admin/wallet/refunds/{transactionId}/status`)** — reviewers can mark a refund as `approved`, `paid`, or `denied`. Denied refunds automatically credit the funds back to the wallet and retain the audit trail (who/when/reason) in the transaction context.
 - **Spending guardrails** — wallets that dip below zero (e.g., from chargebacks) or are locked for review respond with `spendBlocked=true`. Thin-slice clients and any future spend endpoints should block debits until the user tops up and the lock flag clears.
 
+#### Temporary admin CLI (until dashboard exists)
+Use `scripts/wallet_admin_cli.py` inside the `yummi-server` virtualenv to call the admin endpoints:
+
+```bash
+cd yummi-server
+source .venv/bin/activate  # or .\.venv\Scripts\activate on Windows
+export YUMMI_API_BASE="https://yummi-server-YOURNAME.fly.dev/v1"
+export YUMMI_ADMIN_TOKEN="<admin bearer token (Clerk dev JWT works in dev)>"
+
+# Record a chargeback
+python ../scripts/wallet_admin_cli.py chargeback yummi-ref-123 --amount-minor 1000 --note "issuer dispute"
+
+# Update a refund to paid/denied
+python ../scripts/wallet_admin_cli.py refund-update 7c5e... approved --note "released via PayFast portal"
+```
+
+Flags `--api-base` and `--token` override the env vars if you prefer inline arguments.
