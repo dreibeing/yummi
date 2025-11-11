@@ -100,7 +100,7 @@ We operate a production-ready pipeline that prepares product data, enriches bask
 2. Add PDP enrichment for pack size/specifications + nutritional metadata.
 3. Sync enriched catalog into `resolver/catalog.json`; ensure extension prioritizes IDs from the catalog.
 4. Promote PayFast staging settings into production, monitor ITN/ledger parity, and keep remote validation enforced (`PAYFAST_SKIP_REMOTE_VALIDATION=false`).
-5. Finalize chargeback/refund workflows (negative balance handling, debit reversals, abuse monitoring) per [Chargebacks.txt](Chargebacks.txt).
+5. Operationalize the new chargeback/refund endpoints (alerting, UI surface, and automation hooks) per [Chargebacks.txt](Chargebacks.txt).
 6. Extend wallet UX + automated test coverage so mobile surfaces transactions, errors, and negative balances clearly.
 
 ---

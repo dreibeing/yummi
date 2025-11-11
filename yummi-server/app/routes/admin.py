@@ -7,7 +7,15 @@ from fastapi import APIRouter, Depends, HTTPException
 
 from ..auth import get_current_principal
 from ..config import get_settings
+from ..db import get_session
 from ..redis_util import get_redis
+from ..schemas import (
+    AdminChargebackRequest,
+    AdminChargebackResponse,
+    WalletRefundAdminActionRequest,
+    WalletRefundResponse,
+)
+from ..services.payments import record_chargeback, update_refund_status
 
 
 router = APIRouter()
@@ -66,3 +74,61 @@ def catalog_source(principal=Depends(get_current_principal)):
                 pass
     return {"source": src, "redis": bool(r is not None), "file": s.catalog_path, "count": count}
 
+
+@router.post("/admin/wallet/chargebacks", response_model=AdminChargebackResponse)
+async def admin_record_chargeback(
+    payload: AdminChargebackRequest,
+    principal=Depends(get_current_principal),
+):
+    _require_admin(principal)
+    async with get_session() as session:
+        try:
+            result = await record_chargeback(
+                session,
+                reference=payload.reference,
+                amount_minor=payload.amountMinor,
+                note=payload.note,
+                external_reference=payload.externalReference,
+                actor_email=principal.get("email"),
+            )
+        except ValueError as exc:
+            status_code = 404 if "not found" in str(exc).lower() else 400
+            raise HTTPException(status_code=status_code, detail=str(exc))
+    return result
+
+
+@router.post(
+    "/admin/wallet/refunds/{transaction_id}/status",
+    response_model=WalletRefundResponse,
+)
+async def admin_update_refund(
+    transaction_id: str,
+    payload: WalletRefundAdminActionRequest,
+    principal=Depends(get_current_principal),
+):
+    _require_admin(principal)
+    async with get_session() as session:
+        try:
+            result = await update_refund_status(
+                session,
+                transaction_id=transaction_id,
+                status=payload.status,
+                note=payload.note,
+                actor_email=principal.get("email"),
+            )
+        except ValueError as exc:
+            status_code = 404 if "not found" in str(exc).lower() else 400
+            raise HTTPException(status_code=status_code, detail=str(exc))
+
+    txn = result["transaction"]
+    summary = result["summary"]
+    context = txn.context or {}
+    return WalletRefundResponse(
+        refundId=str(txn.id),
+        status=context.get("status", payload.status),
+        debitedMinor=txn.amount_minor,
+        balanceMinor=summary["balanceMinor"] if summary else 0,
+        spendBlocked=summary["spendBlocked"] if summary else False,
+        lockReason=summary.get("lockReason") if summary else None,
+        lockNote=summary.get("lockNote") if summary else None,
+    )

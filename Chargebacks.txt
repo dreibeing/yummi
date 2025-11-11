@@ -21,3 +21,9 @@ If behavior looks suspicious (e.g., repeated refunds/chargebacks), mark the acco
 Spending rule
 
 No new debits if the user’s wallet is negative—only top-ups are allowed until the balance is back to zero or above.
+
+Implementation hooks
+
+- User refunds go through `POST /v1/wallet/refunds`; every request debits the wallet immediately, tags the request as pending, and enforces the per-quarter limit.
+- Admins record issuer-driven chargebacks via `POST /v1/admin/wallet/chargebacks` (reference = PayFast `custom_str2`) and can approve/deny refunds with `POST /v1/admin/wallet/refunds/{transactionId}/status`.
+- The wallet service auto-locks accounts that exceed the refund/chargeback thresholds and exposes the `spendBlocked` + `lockReason` flags through `/v1/wallet/balance` and `/v1/me`.

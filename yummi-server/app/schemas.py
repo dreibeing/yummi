@@ -71,9 +71,13 @@ class WalletTransactionSchema(BaseModel):
     amountMinor: int
     currency: str
     entryType: str
+    transactionType: str
     note: Optional[str] = None
     createdAt: str
-    paymentId: str
+    paymentId: Optional[str] = None
+    externalReference: Optional[str] = None
+    initiatedBy: Optional[str] = None
+    context: Optional[dict] = None
 
 
 class WalletSummary(BaseModel):
@@ -83,4 +87,41 @@ class WalletSummary(BaseModel):
     spendableMinor: int
     spendBlocked: bool = False
     lockReason: Optional[str] = None
+    lockNote: Optional[str] = None
     transactions: List[WalletTransactionSchema] = Field(default_factory=list)
+
+
+class WalletRefundRequest(BaseModel):
+    amountMinor: int = Field(gt=0)
+    reason: Optional[str] = Field(default=None, max_length=255)
+
+
+class WalletRefundResponse(BaseModel):
+    refundId: str
+    status: str
+    debitedMinor: int
+    balanceMinor: int
+    spendBlocked: bool
+    lockReason: Optional[str] = None
+    lockNote: Optional[str] = None
+
+
+class AdminChargebackRequest(BaseModel):
+    reference: str = Field(min_length=1)
+    amountMinor: Optional[int] = Field(default=None, gt=0)
+    note: Optional[str] = Field(default=None, max_length=255)
+    externalReference: Optional[str] = Field(default=None, max_length=128)
+
+
+class AdminChargebackResponse(BaseModel):
+    paymentReference: str
+    debitTransactionId: Optional[str] = None
+    balanceMinor: int
+    spendBlocked: bool
+    lockReason: Optional[str] = None
+    lockNote: Optional[str] = None
+
+
+class WalletRefundAdminActionRequest(BaseModel):
+    status: str = Field(pattern=r"^(approved|denied|paid)$")
+    note: Optional[str] = Field(default=None, max_length=255)

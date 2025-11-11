@@ -276,3 +276,10 @@ Note: The server is designed to run entirely in the cloud; no dependency on a lo
   - Remote builds using Depot fail because BuildKit uses repo root context; attempts to force context/disable BuildKit hit parsing issues with `flyctl deploy --local-only`.
   - Best known next step: set `DOCKER_BUILDKIT=0` without trailing space using `cmd /c "set \"DOCKER_BUILDKIT=0\" && \"%USERPROFILE%\\.fly\\bin\\flyctl.exe\" deploy --local-only"`. If that still fails, fall back to `flyctl deploy --local-only --no-cache` after ensuring Fly CLI points at `.`, or push the locally tagged image via `docker tag yummi-server-local registry.fly.io/yummi-server-greenbean:manual && docker push ... && flyctl deploy --image registry.fly.io/yummi-server-greenbean:manual`.
 - Catalog upload and client wiring are pending until the cloud deploy stays healthy.
+
+### Wallet chargebacks & refunds
+- **User refunds (`POST /v1/wallet/refunds`)** — any authenticated user can request a payout of their unused wallet balance. The endpoint immediately debits the requested amount, stamps the request as `pending`, and returns updated wallet balances/lock states. Refunds are limited to 3 per 90-day window; exceeding the limit auto-flags the account for review (per [Chargebacks.txt](Chargebacks.txt)).
+- **Admin chargebacks (`POST /v1/admin/wallet/chargebacks`)** — operators record issuer chargebacks by referencing the original PayFast `custom_str2` value. The server links the payment, creates a compensating debit entry, and re-computes wallet locks. Two chargebacks within 90 days automatically place the account into `review` lock until cleared.
+- **Refund moderation (`POST /v1/admin/wallet/refunds/{transactionId}/status`)** — reviewers can mark a refund as `approved`, `paid`, or `denied`. Denied refunds automatically credit the funds back to the wallet and retain the audit trail (who/when/reason) in the transaction context.
+- **Spending guardrails** — wallets that dip below zero (e.g., from chargebacks) or are locked for review respond with `spendBlocked=true`. Thin-slice clients and any future spend endpoints should block debits until the user tops up and the lock flag clears.
+

@@ -4,7 +4,7 @@ from datetime import datetime
 import uuid
 from typing import Optional
 
-from sqlalchemy import DateTime, Integer, JSON, String, func, ForeignKey
+from sqlalchemy import DateTime, Integer, JSON, String, func, ForeignKey, Boolean
 from sqlalchemy.dialects.postgresql import JSONB, UUID
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
@@ -71,10 +71,24 @@ class WalletTransaction(Base, TimestampMixin):
     )
     user_id: Mapped[str] = mapped_column(String(128), nullable=False)
     user_email: Mapped[Optional[str]] = mapped_column(String(320))
-    payment_id: Mapped[uuid.UUID] = mapped_column(
-        UUID(as_uuid=True), ForeignKey("payments.id", ondelete="CASCADE"), nullable=False
+    payment_id: Mapped[Optional[uuid.UUID]] = mapped_column(
+        UUID(as_uuid=True), ForeignKey("payments.id", ondelete="CASCADE"), nullable=True
     )
     amount_minor: Mapped[int] = mapped_column(Integer, nullable=False)
     currency: Mapped[str] = mapped_column(String(3), nullable=False)
     entry_type: Mapped[str] = mapped_column(String(32), nullable=False, default="credit")
     note: Mapped[Optional[str]] = mapped_column(String(255))
+    transaction_type: Mapped[str] = mapped_column(String(32), nullable=False, default="top_up")
+    external_reference: Mapped[Optional[str]] = mapped_column(String(128))
+    initiated_by: Mapped[Optional[str]] = mapped_column(String(320))
+    json_type = JSON().with_variant(JSONB, "postgresql")
+    context: Mapped[Optional[dict]] = mapped_column(json_type)
+
+
+class WalletAccountState(Base, TimestampMixin):
+    __tablename__ = "wallet_account_states"
+
+    user_id: Mapped[str] = mapped_column(String(128), primary_key=True)
+    spend_blocked: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
+    lock_reason: Mapped[Optional[str]] = mapped_column(String(64))
+    lock_note: Mapped[Optional[str]] = mapped_column(String(255))
