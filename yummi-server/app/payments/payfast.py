@@ -179,7 +179,7 @@ def build_checkout_params(
     settings = get_settings()
     mode = settings.payfast_mode or "sandbox"
     amount = f"{amount_minor / 100:.2f}"
-    reference = user_reference or f"yummi-{uuid.uuid4().hex[:12]}"
+    reference = f"yummi-{uuid.uuid4().hex[:12]}"
 
     raw_params: OrderedDict[str, str] = OrderedDict(
         {
@@ -210,8 +210,8 @@ def build_checkout_params(
 async def validate_itn_payload(payload: Dict[str, str]) -> bool:
     settings = get_settings()
     mode = settings.payfast_mode or "sandbox"
-    if settings.environment.lower() == "dev":
-        logger.info("Skipping ITN remote validation in dev environment")
+    if settings.payfast_skip_remote_validation:
+        logger.info("Skipping PayFast ITN remote validation via PAYFAST_SKIP_REMOTE_VALIDATION flag")
         return True
 
     validation_url = get_validation_host(mode)

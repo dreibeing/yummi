@@ -51,6 +51,7 @@ class Settings(BaseSettings):
     payfast_pdt_token: str | None = Field(default=None)
     payfast_return_deeplink: str | None = Field(default=None)
     payfast_cancel_deeplink: str | None = Field(default=None)
+    payfast_skip_remote_validation: bool = Field(default=False)
 
     class Config:
         env_file = ".env"

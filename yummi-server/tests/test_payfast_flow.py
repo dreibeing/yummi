@@ -43,7 +43,9 @@ class PayFastEndToEndTest(IsolatedAsyncioTestCase):
             }
             await update_payfast_payment_from_itn(session, payload)
 
-            status_payload = await get_payfast_status_details(session, payment.provider_reference)
+            status_payload = await get_payfast_status_details(
+                session, payment.provider_reference, expected_user_id="user-1"
+            )
             self.assertIsNotNone(status_payload)
             assert status_payload is not None  # for mypy/type checking
             self.assertEqual(status_payload["status"], PaymentStatus.COMPLETE)
@@ -57,3 +59,22 @@ class PayFastEndToEndTest(IsolatedAsyncioTestCase):
         async with self.Session() as session:
             status_payload = await get_payfast_status_details(session, "missing-ref")
             self.assertIsNone(status_payload)
+
+    async def test_status_requires_owner(self):
+        async with self.Session() as session:
+            payment = await create_payfast_payment(
+                session,
+                reference="ref-owner-check",
+                user_id="owner-1",
+                user_email="owner@example.com",
+                amount_minor=5000,
+                currency="zar",
+                item_name="Wallet Top-up",
+                item_description=None,
+                checkout_payload={"mock": True},
+            )
+
+            with self.assertRaises(PermissionError):
+                await get_payfast_status_details(
+                    session, payment.provider_reference, expected_user_id="other-user"
+                )

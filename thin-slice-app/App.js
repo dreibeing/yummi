@@ -146,6 +146,17 @@ const DEFAULT_LOG_FILE_URI = LOG_FILE_BASE
   ? `${LOG_FILE_BASE}${LOG_FILE_NAME}`
   : null;
 const MAX_PAYFAST_POLLS = 45;
+const urlStartsWith = (value, prefix) => {
+  if (!value || !prefix) {
+    return false;
+  }
+  try {
+    return value.toLowerCase().startsWith(prefix.toLowerCase());
+  } catch (error) {
+    console.warn("Failed to compare PayFast URLs", error);
+    return value.startsWith(prefix);
+  }
+};
 
 const buildAutoSubmitHtml = (url, params) => {
   const inputs = Object.entries(params || {})
@@ -735,6 +746,8 @@ function AppContent() {
     payfastAlertRef.current = key;
     if (payfastMonitor.status === "complete") {
       fetchWallet();
+      // Success handled via inline status card so no modal tap needed.
+      return;
     }
     const title = payfastMonitor.status === "complete" ? "Top-up Complete" : "PayFast Update";
     const message =
@@ -819,10 +832,15 @@ function AppContent() {
     (state) => {
       if (!state?.url) return;
       const currentUrl = state.url;
-      if (PAYFAST_RETURN_URL && currentUrl.startsWith(PAYFAST_RETURN_URL)) {
+      const reachedReturn =
+        urlStartsWith(currentUrl, PAYFAST_RETURN_URL) ||
+        urlStartsWith(currentUrl, payfastSession?.returnUrl);
+      const reachedCancel =
+        urlStartsWith(currentUrl, PAYFAST_CANCEL_URL) ||
+        urlStartsWith(currentUrl, payfastSession?.cancelUrl);
+      if (reachedReturn) {
         setPayfastSession(null);
         setScreen("home");
-        Alert.alert("Payment Submitted", "We are verifying your payment.");
         setPayfastMonitor((prev) =>
           prev
             ? {
@@ -833,10 +851,7 @@ function AppContent() {
             : prev
         );
         fetchWallet();
-      } else if (
-        PAYFAST_CANCEL_URL &&
-        currentUrl.startsWith(PAYFAST_CANCEL_URL)
-      ) {
+      } else if (reachedCancel) {
         setPayfastSession(null);
         setScreen("home");
         Alert.alert("Payment Cancelled", "Top-up was cancelled by the user.");
@@ -852,7 +867,7 @@ function AppContent() {
         fetchWallet();
       }
     },
-    [fetchWallet]
+    [fetchWallet, payfastSession]
   );
 
   const handleCancelPayfast = useCallback(() => {
@@ -936,6 +951,8 @@ function AppContent() {
       setPayfastSession({
         html: buildAutoSubmitHtml(payload.url, payload.params),
         reference: payload.reference,
+        returnUrl: payload.params?.return_url ?? null,
+        cancelUrl: payload.params?.cancel_url ?? null,
       });
       setScreen("payfast");
     } catch (error) {

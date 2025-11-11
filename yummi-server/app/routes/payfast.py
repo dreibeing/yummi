@@ -36,7 +36,7 @@ async def initiate_payfast_payment(
     principal=Depends(get_current_principal),
 ):
     try:
-        host, params, signature_payload = build_checkout_params(
+        host, params, _ = build_checkout_params(
             amount_minor=payload.amountMinor,
             currency=payload.currency,
             item_name=payload.itemName,
@@ -49,14 +49,13 @@ async def initiate_payfast_payment(
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(exc))
 
     if logger.isEnabledFor(logging.INFO):
-        preview = {k: params[k] for k in sorted(params.keys()) if k != "signature"}
         logger.info(
-            "PayFast checkout params built host=%s reference=%s payload=%s signature=%s base=%s",
+            "PayFast checkout params built host=%s reference=%s amount=%s currency=%s item=%s",
             host,
             params.get("custom_str2"),
-            preview,
-            params.get("signature"),
-            signature_payload,
+            params.get("amount"),
+            params.get("currency"),
+            params.get("item_name"),
         )
     reference = params.get("custom_str2", "")
     async with get_session() as session:
@@ -112,9 +111,14 @@ async def payfast_itn(request: Request):
 
 
 @router.get("/status", response_model=PayFastStatusResponse)
-async def payfast_status(reference: str):
+async def payfast_status(reference: str, principal=Depends(get_current_principal)):
     async with get_session() as session:
-        payload = await get_payfast_status_details(session, reference)
+        try:
+            payload = await get_payfast_status_details(
+                session, reference, expected_user_id=principal.get("sub")
+            )
+        except PermissionError:
+            raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Not authorized")
     if not payload:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Payment not found")
     return PayFastStatusResponse(**payload)

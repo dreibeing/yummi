@@ -101,11 +101,16 @@ async def get_payment_by_reference(session: AsyncSession, reference: str) -> Opt
 
 
 async def get_payfast_status_details(
-    session: AsyncSession, reference: str
+    session: AsyncSession,
+    reference: str,
+    *,
+    expected_user_id: Optional[str] = None,
 ) -> Optional[Dict[str, Any]]:
     payment = await get_payment_by_reference(session, reference)
     if not payment:
         return None
+    if expected_user_id and payment.user_id and payment.user_id != expected_user_id:
+        raise PermissionError("Payment does not belong to the requesting user")
 
     credit_query = await session.execute(
         select(WalletTransaction).where(

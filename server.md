@@ -41,16 +41,17 @@
     PAYFAST_PASSPHRASE="optional-passphrase" ^
     PAYFAST_NOTIFY_URL="https://yummi-server-YOURNAME.fly.dev/payments/payfast/itn" ^
     PAYFAST_RETURN_URL="https://yummi.app/payfast/return" ^
-    PAYFAST_CANCEL_URL="https://yummi.app/payfast/cancel"
+    PAYFAST_CANCEL_URL="https://yummi.app/payfast/cancel" ^
+    PAYFAST_SKIP_REMOTE_VALIDATION="false"
   ```
-  Optional later: `CORS_ALLOWED_ORIGINS=https://yourdomain.com,http://localhost:19006` and `ADMIN_EMAILS=alice@example.com,bob@example.com`. If pydantic throws `error parsing value`, remove the offending secret with `fly secrets unset <NAME>`.
+  Lock down browser access by setting `CORS_ALLOWED_ORIGINS` to your trusted hosts (see the `env.staging` / `env.prod` templates for examples) and add `ADMIN_EMAILS=alice@example.com,bob@example.com` as needed. If pydantic throws `error parsing value`, remove the offending secret with `fly secrets unset <NAME>`.
 - Postgres connections: attaching a Fly Postgres instance sets `DATABASE_URL` automatically. The server now normalizes anything that starts with `postgres://`/`postgresql://` into `postgresql+asyncpg://...?...ssl=disable`, so you no longer need to rewrite secrets manually for asyncpg compatibility.
 - Switch `PAYFAST_MODE=live` only after production credentials are enabled; sandbox is assumed when omitted.
 - Run migrations after each deploy: `fly ssh console -a yummi-server-YOURNAME -C "cd /app && alembic upgrade head"`. The container image bundles Alembic so the same command works locally and remotely.
 - Wire up Sentry (optional): set `SENTRY_DSN=...` and `SENTRY_TRACES_SAMPLE_RATE=0.1` (or similar) via `fly secrets set` to capture errors + breadcrumbs. Leave unset to disable.
 - Deploy from repo root: `fly deploy`. Inspect rollout at `https://fly.io/apps/yummi-server-greenbean/monitoring`.
 #### Staging rollout checklist (PayFast)
-  1. Set `ENVIRONMENT=staging` (or `prod`) in Fly secrets so remote ITN validation stays enabled—only `dev` skips validation, and logs should never show “Skipping ITN remote validation” once deployed.
+  1. Set `ENVIRONMENT=staging` (or `prod`) **and** keep `PAYFAST_SKIP_REMOTE_VALIDATION=false` in Fly secrets so remote ITN validation stays enabled—logs should never show “Skipping PayFast ITN remote validation” outside dev.
   2. Double-check secrets before deploy: `PAYFAST_MERCHANT_ID/KEY/PASSPHRASE`, the three PayFast URLs (notify/return/cancel), Clerk issuer/audience (unless `AUTH_DISABLE_VERIFICATION=true` for a temporary smoke test), `REDIS_URL`, and the attached Postgres `DATABASE_URL`.
   3. Rebuild images whenever `python-multipart` or other FastAPI dependencies change (`docker compose build yummi-server` locally, `fly deploy` remotely) so the ITN multipart parser keeps working.
   4. After `fly deploy`, tail logs for a sandbox transaction and confirm remote ITN validation hits the `.../eng/query/validate` host instead of short-circuiting.
@@ -99,9 +100,9 @@
 - POST /v1/orders -> create basket/order queue; body: items[], retailer; returns order_id.
 - GET /v1/orders/{id} -> status + progress events.
 - POST /v1/orders/{id}/ack -> finalize (used by runner/worker).
-- POST /v1/payments/payfast/initiate -> returns PayFast hosted checkout fields + reference and logs the canonical signature payload (copy/paste directly into PayFast’s tester when debugging).
+- POST /v1/payments/payfast/initiate -> returns PayFast hosted checkout fields + reference and logs non-sensitive metadata (reference, amount, item) for traceability.
 - POST /v1/payments/payfast/itn -> webhook endpoint for PayFast Instant Transaction Notifications.
-- GET /v1/payments/payfast/status?reference= -> returns payment + wallet status (PayFast status string, wallet credit flag, timestamps) so clients can poll after checkout.
+- GET /v1/payments/payfast/status?reference= -> Clerk-authenticated poll that returns payment + wallet status (only for the owner of the reference).
 - GET /v1/payments/payfast/return-bridge and `/cancel-bridge` -> HTTPS bridge pages that immediately redirect back into the Expo deep links so PayFast’s sandbox (which requires HTTPS) can return to `yummi://payfast/*`.
 - GET /v1/wallet/balance -> current wallet balance + transactions for the authenticated user.
 - Admin (guarded by role/claims):

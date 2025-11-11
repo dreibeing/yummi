@@ -78,6 +78,8 @@ class PayFastHelpersTestCase(unittest.TestCase):
         self.assertEqual(host, "https://sandbox.payfast.co.za/eng/process")
         self.assertEqual(params["amount"], "10.00")
         self.assertEqual(params["custom_str1"], "user-123")
+        self.assertNotEqual(params["custom_str2"], "user-123")
+        self.assertTrue(params["custom_str2"].startswith("yummi-"))
 
 
 class PayFastValidationTestCase(IsolatedAsyncioTestCase):
@@ -108,8 +110,10 @@ class PayFastValidationTestCase(IsolatedAsyncioTestCase):
             "https://sandbox.payfast.co.za/eng/query/validate", data=payload
         )
 
-    async def test_validate_itn_payload_skips_remote_in_dev(self):
-        dev_settings = Settings(environment="dev", payfast_mode="sandbox")
+    async def test_validate_itn_payload_skips_remote_when_flag_enabled(self):
+        dev_settings = Settings(
+            environment="dev", payfast_mode="sandbox", payfast_skip_remote_validation=True
+        )
         payload = {"merchant_id": "10000100"}
         with mock.patch("app.payments.payfast.get_settings", return_value=dev_settings), mock.patch(
             "app.payments.payfast.httpx.AsyncClient"
