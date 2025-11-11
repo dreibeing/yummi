@@ -18,6 +18,7 @@ Build a production-ready pipeline that prepares product data, enriches basket pa
 - FastAPI backend exposes `/v1/payments/payfast/*` and `/v1/wallet/balance`, persisting payments + wallet ledger via Alembic migrations ([models](yummi-server/app/models.py), [routes](yummi-server/app/routes/)).
 - PayFast initiate flow now logs the full payload + canonical signature string so we can prove hashes in the sandbox tester; bridge endpoints convert PayFast HTTPS return/cancel URLs into Expo deep links.
 - Sandbox PayFast top-up succeeded (R100 on 2025-11-10) after aligning signature ordering with the official SDK and adding `python-multipart`; ITN hit `/v1/payments/payfast/itn` and the wallet credited immediately (runbook + logs captured in [payfastmigration.md](payfastmigration.md)).
+- Fly staging now mirrors the sandbox flow (R100 on 2025-11-11) using Clerk-verified requests and remote ITN validation; secrets live in Fly and the hosted return/cancel bridges run from `yummi-server-greenbean.fly.dev`.
 - Thin-slice Expo client fetches wallet balances, launches PayFast hosted checkout, and refreshes ledger after payment ([mobile code](thin-slice-app/App.js)).
 - Observability/logging and Docker/Fly infrastructure captured in [server.md](server.md); deployment-ready Compose + Fly configs exist.
 - Data ingestion and cart-fill flows operate via the existing resolver, thin-slice endpoints, and Chrome extension runtime.
@@ -96,6 +97,6 @@ Build a production-ready pipeline that prepares product data, enriches basket pa
 
 ## Immediate Next Steps
 See [plan.md](plan.md) for the authoritative roadmap. The top priorities for the next coding session are:
-1. **PayFast hardening**: promote the working sandbox config to staging/Fly, keep remote validation enabled outside dev, and backfill docs/tests from the successful run.
+1. **PayFast production readiness**: migrate the staging config into production Fly apps, keep remote validation enforced, and add monitoring/alerts using the new 2025-11-11 staging runbook.
 2. **Chargeback/refund groundwork**: design debit/negative-balance handling in backend services (refer to [Chargebacks.txt](Chargebacks.txt)).
 3. **Wallet UI polish**: expand thin-slice UI to show full transaction history and flag negative balances before we harden chargeback logic.

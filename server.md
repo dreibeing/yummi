@@ -49,6 +49,13 @@
 - Run migrations after each deploy: `fly ssh console -a yummi-server-YOURNAME -C "cd /app && alembic upgrade head"`. The container image bundles Alembic so the same command works locally and remotely.
 - Wire up Sentry (optional): set `SENTRY_DSN=...` and `SENTRY_TRACES_SAMPLE_RATE=0.1` (or similar) via `fly secrets set` to capture errors + breadcrumbs. Leave unset to disable.
 - Deploy from repo root: `fly deploy`. Inspect rollout at `https://fly.io/apps/yummi-server-greenbean/monitoring`.
+#### Staging rollout checklist (PayFast)
+  1. Set `ENVIRONMENT=staging` (or `prod`) in Fly secrets so remote ITN validation stays enabled—only `dev` skips validation, and logs should never show “Skipping ITN remote validation” once deployed.
+  2. Double-check secrets before deploy: `PAYFAST_MERCHANT_ID/KEY/PASSPHRASE`, the three PayFast URLs (notify/return/cancel), Clerk issuer/audience (unless `AUTH_DISABLE_VERIFICATION=true` for a temporary smoke test), `REDIS_URL`, and the attached Postgres `DATABASE_URL`.
+  3. Rebuild images whenever `python-multipart` or other FastAPI dependencies change (`docker compose build yummi-server` locally, `fly deploy` remotely) so the ITN multipart parser keeps working.
+  4. After `fly deploy`, tail logs for a sandbox transaction and confirm remote ITN validation hits the `.../eng/query/validate` host instead of short-circuiting.
+  5. Capture each successful staging regression (ngrok URL, reference, PayFast ITN ID, log excerpt) back into `payfastmigration.md` under the ngrok checklist to maintain provenance.
+  6. Latest proof point: 2025-11-11 R100 run (reference `user_353rOOrT8uKsY1A9np0mDn8Thgw`, PayFast ITN `1645682`) succeeded entirely on Fly staging using Clerk-verified requests; use it as the template for production cutover.
 - Post-deploy checks:
   - `fly status -a yummi-server-greenbean` (machines should be `started`).
   - `fly logs -a yummi-server-greenbean --no-tail` (look for “Application startup complete”).

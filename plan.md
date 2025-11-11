@@ -46,9 +46,9 @@
 - Conduct security review (rate limiting, secret rotation, audit logs) and prepare launch checklist.
 
 ## Immediate Next Steps
-1. **PayFast hardening + staging rollout**  
-   - Promote the working sandbox flow into a Fly staging deployment, ensure remote ITN validation stays enabled outside `dev`, and document the ngrok regression checklist inside [payfastmigration.md](payfastmigration.md#43-operations--security).  
-   - Backfill automated tests around the new signature builder + python-multipart requirement so we can detect regressions before the next QA pass.
+1. **PayFast production readiness**  
+   - Take the verified Fly staging flow (R100 run on 2025-11-11, ITN `1645682`) and prep production cutover: clone secrets, keep remote validation enforced, and wire up monitoring/alerts using the new regression checklist in [payfastmigration.md](payfastmigration.md#43-operations--security).  
+   - Finish backfilling automated tests (signature builder, multipart ITN parser) and add CI smoke checks so future deploys catch regressions early.
 2. **Chargeback/refund groundwork**  
    - Design debit/chargeback flow using guidance in [Chargebacks.txt](Chargebacks.txt); extend payment service to support negative balances and ledger reversals.  
    - Document the workflow updates in [payfastmigration.md](payfastmigration.md#43-operations--security).

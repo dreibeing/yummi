@@ -1,10 +1,14 @@
 from __future__ import annotations
 
+from contextlib import asynccontextmanager
 import unittest
 from unittest import IsolatedAsyncioTestCase, mock
 
-from app.payments.payfast import build_signature, build_checkout_params, validate_itn_payload
+from fastapi.testclient import TestClient
+
 from app.config import Settings
+from app.main import app
+from app.payments.payfast import build_signature, build_checkout_params, validate_itn_payload
 
 
 class PayFastHelpersTestCase(unittest.TestCase):
@@ -113,6 +117,88 @@ class PayFastValidationTestCase(IsolatedAsyncioTestCase):
             is_valid = await validate_itn_payload(payload)
         self.assertTrue(is_valid)
         client_cls.assert_not_called()
+
+
+class PayFastITNRouteTestCase(unittest.TestCase):
+    def setUp(self):
+        self.client = TestClient(app)
+
+    def _multipart(self, payload: dict[str, str]):
+        return {k: (None, v) for k, v in payload.items()}
+
+    def test_itn_accepts_signed_multipart_payload(self):
+        passphrase = "test-passphrase"
+        unsigned_payload = {
+            "m_payment_id": "order-001",
+            "pf_payment_id": "PF123",
+            "payment_status": "COMPLETE",
+            "amount_gross": "100.00",
+            "amount_fee": "-2.30",
+            "amount_net": "97.70",
+            "custom_str2": "user-ref-1",
+            "merchant_id": "10000100",
+        }
+        signature = build_signature(
+            unsigned_payload.copy(), passphrase, preserve_order=True, include_empty=True
+        )
+        signed_payload = dict(unsigned_payload)
+        signed_payload["signature"] = signature
+
+        settings = Settings(payfast_passphrase=passphrase, environment="staging")
+        validate_mock = mock.AsyncMock(return_value=True)
+        update_mock = mock.AsyncMock()
+
+        @asynccontextmanager
+        async def stub_session():
+            yield mock.AsyncMock()
+
+        with (
+            mock.patch("app.routes.payfast.get_settings", return_value=settings),
+            mock.patch("app.routes.payfast.validate_itn_payload", new=validate_mock),
+            mock.patch("app.routes.payfast.update_payfast_payment_from_itn", new=update_mock),
+            mock.patch("app.routes.payfast.get_session", new=stub_session),
+        ):
+            response = self.client.post(
+                "/v1/payments/payfast/itn",
+                files=self._multipart(signed_payload),
+            )
+
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.text, "OK")
+        validate_mock.assert_awaited_once()
+        update_mock.assert_awaited_once()
+
+    def test_itn_rejects_invalid_signature_without_remote_call(self):
+        passphrase = "another-passphrase"
+        payload = {
+            "m_payment_id": "order-001",
+            "payment_status": "COMPLETE",
+            "custom_str2": "user-ref-1",
+            "signature": "not-a-real-signature",
+        }
+        settings = Settings(payfast_passphrase=passphrase, environment="staging")
+        validate_mock = mock.AsyncMock(return_value=True)
+        update_mock = mock.AsyncMock()
+
+        @asynccontextmanager
+        async def stub_session():
+            yield mock.AsyncMock()
+
+        with (
+            mock.patch("app.routes.payfast.get_settings", return_value=settings),
+            mock.patch("app.routes.payfast.validate_itn_payload", new=validate_mock),
+            mock.patch("app.routes.payfast.update_payfast_payment_from_itn", new=update_mock),
+            mock.patch("app.routes.payfast.get_session", new=stub_session),
+        ):
+            response = self.client.post(
+                "/v1/payments/payfast/itn",
+                files=self._multipart(payload),
+            )
+
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.text, "INVALID")
+        validate_mock.assert_not_awaited()
+        update_mock.assert_not_awaited()
 
 
 if __name__ == "__main__":

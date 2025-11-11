@@ -106,6 +106,30 @@ Backend (FastAPI)
   ```
 - Notes: UI confirmed “Complete · Wallet credited” at 12:30 local and PayFast dashboard entry `1644573` moved to `Complete` after the ITN retry, so no further screenshots were captured.
 
+#### Sandbox QA log — 2025-11-11
+- Environment: Fly staging (`https://yummi-server-greenbean.fly.dev`)
+- Reference: `user_353rOOrT8uKsY1A9np0mDn8Thgw`
+- Amount: R100.00 (thin-slice mobile top-up)
+- Result: Hosted checkout succeeded, ITN validated remotely, wallet credited (Clerk auth enforced).
+- PayFast dashboard ITN ID: `1645682`
+- Key log excerpt:
+  ```
+  2025-11-11T07:52:04Z PayFast checkout params built host=https://sandbox.payfast.co.za/eng/process reference=user_353rOOrT8uKsY1A9np0mDn8Thgw … notify_url=https://yummi-server-greenbean.fly.dev/v1/payments/payfast/itn … merchant_id=10043474
+  2025-11-11T07:52:34Z HTTP Request: POST https://sandbox.payfast.co.za/eng/query/validate "HTTP/1.1 200 OK"
+  2025-11-11T07:52:34Z PayFast ITN received status=COMPLETE reference=user_353rOOrT8uKsY1A9np0mDn8Thgw
+  2025-11-11T07:52:35Z 172.16.31.162:57202 - "GET /v1/wallet/balance HTTP/1.1" 200
+  ```
+- Notes: Secrets now live in Fly; remote validation stays enabled (`AUTH_DISABLE_VERIFICATION=false`). Return bridge served successfully via Fly without ngrok.
+
+#### Ngrok regression checklist
+1. **Start local stack** – `docker compose up -d --build yummi-server db redis` from repo root with `ENVIRONMENT=dev` so ngrok traffic can hit the ITN without remote validation (staging/prod must keep validation enabled).
+2. **Expose the tunnel** – `ngrok http 8000` (or Cloudflared). Copy the HTTPS URL.
+3. **Refresh PayFast URLs** – update `.env` or Compose overrides with the latest tunnel for `PAYFAST_NOTIFY_URL`, `PAYFAST_RETURN_URL`, and `PAYFAST_CANCEL_URL`, then restart the stack so the values load.
+4. **Trigger a top-up** – from the thin-slice app run a R100 wallet top-up (card: `4100 0000 0000 0000`, CVV `123`, OTP `12345`).
+5. **Watch validation logs** – expect `PayFast ITN received status=...` followed by the remote validation call (only dev logs “Skipping ITN remote validation”; staging/prod must never skip).
+6. **Confirm wallet credit** – `/v1/wallet/balance` should reflect the credit immediately; verify the PayFast dashboard entry transitions to `Complete`.
+7. **Record the run** – capture tunnel URL, reference, ITN ID, and log excerpt back into this section so the next regression run has provenance.
+
 ## 5. Rollout Steps
 1. **Foundation (backend)**
    - Implement PayFast config/secrets.
