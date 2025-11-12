@@ -1,0 +1,38 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_3b4f9k",
+      "name": "Solo Quick Bites Flex",
+      "description": "Fast, one-pan or air-fryer friendly meals for solo diners who eat mostly plant-forward with occasional animal protein; mild spice, familiar SA/Modern American flavors, Under-15-minute prep, Simple complexity, and ValueStaples budget for tight weeknights.",
+      "core_tags": {
+        "Diet": ["Flexitarian"],
+        "Cuisine": ["SouthAfrican", "ModernAmerican"],
+        "CuisineOpenness": ["FamiliarClassics"],
+        "PrepTime": ["Under15"],
+        "Complexity": ["Simple"],
+        "HeatSpice": ["Mild"],
+        "Audience": ["Solo"],
+        "BudgetLevel": ["ValueStaples"],
+        "EthicsReligious": [],
+        "Allergens": ["Gluten"]
+      },
+      "diet_profile": {
+        "allowed": ["Flexitarian"],
+        "restricted": ["Shellfish-heavy meals"],
+        "notes": "Primarily plant-forward; optional small portions of poultry, fish, or dairy-based add-ons."
+      },
+      "allergen_flags": {
+        "avoids": ["Shellfish", "Peanut", "TreeNut"],
+        "contains": ["Gluten", "Dairy", "Egg", "Soy", "Sesame", "Mustard"],
+        "cross_contact_notes": "Use separate utensils/boards if adding animal proteins; choose certified nut-free pantry staples to maintain nut avoidance."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [8, 15],
+      "complexity": "Simple",
+      "audience_context": "Solo",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers mainstream, budget-friendly solo meals with mild heat and Under-15-minute prep without overlapping prior family weeknight archetypes."
+    }
+  ]
+}

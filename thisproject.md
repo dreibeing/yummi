@@ -71,6 +71,12 @@ We operate a production-ready pipeline that prepares product data, enriches bask
 3. Clients fetch `/v1/wallet/balance` (and `/v1/me`) to display updated wallet totals and recent transactions.
 4. Chargebacks/refunds mirror ledger entries and enforce negative-balance lockouts (see [Chargebacks.txt](Chargebacks.txt)).
 
+### Archetype data pipeline status (2025-11-12)
+- **Vocabulary + briefs**: `data/tags/defined_tags.json` (tags_version `2025.02.0`) and `data/tags/archetype_constraint_brief.md` now encode the mainstream-first coverage rules. `data/prompts/archetype_generation_prompt.md` and `scripts/archetype_prompt_runner.py` wire those rules into GPT-5 calls, including compact “prior archetype” context to avoid duplicates.
+- **Latest run**: `data/archetypes/run_20251112T091259Z` (25 archetypes, one per batch, reasoning effort = low). Each batch folder contains raw prompts/responses plus `archetypes_so_far.json` snapshots and `run_metadata.json`.
+- **Curation**: `scripts/archetype_curator.py` outputs `curation_raw.txt`, `curation_recommendations.json`, and `archetypes_curated.json` (aggregated list + embedded keep/modify/replace notes). Current curated dataset lives at `data/archetypes/run_20251112T091259Z/curation/archetypes_curated.json`.
+- **Next steps**: apply curator recommendations (replace redundant Jain/family poultry lanes with dairy-free, keto, LatinAmerican Hot entries), re-run the curator to confirm overlap clusters clear, then package the curated JSON into Parquet + manifest for publication (Plan Step 6).
+
 ---
 
 ## 2. Yummi implementation layer

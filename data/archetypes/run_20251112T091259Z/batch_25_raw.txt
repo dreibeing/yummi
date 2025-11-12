@@ -1,0 +1,38 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_3a1b9k",
+      "name": "Solo 10-Minute Omnivore Quick Bites (Value Staples)",
+      "description": "Under-15-minute, one-pan or air-fry-friendly comfort bites for solo eaters using pantry staples; tuned for Omnivores with Mild heat, Familiar SA/Modern American flavors, and a ValueStaples budget.",
+      "core_tags": {
+        "Diet": ["Omnivore"],
+        "Cuisine": ["SouthAfrican", "ModernAmerican"],
+        "CuisineOpenness": ["FamiliarClassics"],
+        "PrepTime": ["Under15"],
+        "Complexity": ["Simple"],
+        "HeatSpice": ["Mild"],
+        "Audience": ["Solo"],
+        "BudgetLevel": ["ValueStaples"],
+        "EthicsReligious": ["None"],
+        "Allergens": ["Gluten", "Dairy", "Egg", "Soy"]
+      },
+      "diet_profile": {
+        "allowed": ["Omnivore"],
+        "restricted": [],
+        "notes": "Focuses on quick proteins, grains, and veg for solo portions; swaps can reduce common allergens when desired."
+      },
+      "allergen_flags": {
+        "avoids": [],
+        "contains": ["Gluten", "Dairy", "Egg", "Soy"],
+        "cross_contact_notes": "Not allergen-safe by default; choose substitutions to avoid listed allergens if needed."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [8, 15],
+      "complexity": "Simple",
+      "audience_context": "Solo",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers a mainstream solo-focused, fast, mild, and budget-friendly option without overlapping prior couple/family weeknight entries."
+    }
+  ]
+}

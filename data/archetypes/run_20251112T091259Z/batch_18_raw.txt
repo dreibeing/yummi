@@ -1,0 +1,38 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_7k3f9w",
+      "name": "Couple Vegetarian Cozy Evenings (Mediterranean & Modern American)",
+      "description": "Vegetarian dinners for two that feel comforting yet fresh, leaning on Mediterranean and Modern American classics with mild spice, balanced budget expectations, and 30–45 minute, intermediate workflows ideal for relaxed weeknights.",
+      "core_tags": {
+        "Diet": ["Vegetarian"],
+        "Cuisine": ["Mediterranean","ModernAmerican"],
+        "CuisineOpenness": ["FamiliarClassics"],
+        "PrepTime": ["30to45"],
+        "Complexity": ["Intermediate"],
+        "HeatSpice": ["Mild"],
+        "Audience": ["Couple"],
+        "BudgetLevel": ["Balanced"],
+        "EthicsReligious": [],
+        "Allergens": []
+      },
+      "diet_profile": {
+        "allowed": ["Vegetarian"],
+        "restricted": ["Beef","Pork","Lamb","Poultry","Fish","Shellfish"],
+        "notes": "Vegetarian-friendly with dairy and eggs optional; protein from legumes, cheeses, and grains."
+      },
+      "allergen_flags": {
+        "avoids": ["Fish","Shellfish"],
+        "contains": ["Dairy","Egg","Gluten"],
+        "cross_contact_notes": "Nut- and soy-containing add-ons are optional; default guidance includes substitutions to avoid common allergens when needed."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [30,45],
+      "complexity": "Intermediate",
+      "audience_context": "Couple",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers a mainstream vegetarian option for couples with balanced budget, mild heat, and 30–45 minute intermediate prep to diversify beyond family 15–30 basics."
+    }
+  ]
+}

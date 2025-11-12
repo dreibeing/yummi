@@ -1,0 +1,38 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_2s9h3k",
+      "name": "Family Poultry-Only SA Twists",
+      "description": "Balanced-budget, family-friendly poultry dinners with South African staples and gentle regional twists; mild spice, 15–30 minutes, simple steps; avoids fish/shellfish and suits kosher-style households seeking familiar flavors without red meat or pork.",
+      "core_tags": {
+        "Diet": ["PoultryOnly"],
+        "Cuisine": ["SouthAfrican"],
+        "CuisineOpenness": ["RegionalTwist"],
+        "PrepTime": ["15to30"],
+        "Complexity": ["Simple"],
+        "HeatSpice": ["Mild"],
+        "Audience": ["Family"],
+        "BudgetLevel": ["Balanced"],
+        "EthicsReligious": ["KosherStyle"],
+        "Allergens": ["Gluten","Dairy","Egg","Soy","Sesame","Mustard"]
+      },
+      "diet_profile": {
+        "allowed": ["PoultryOnly"],
+        "restricted": ["Beef","Lamb","Pork","Fish","Shellfish"],
+        "notes": "Eggs and dairy optional; no red meat, pork, or seafood."
+      },
+      "allergen_flags": {
+        "avoids": ["Fish","Shellfish"],
+        "contains": ["Gluten","Dairy","Egg","Soy","Sesame","Mustard"],
+        "cross_contact_notes": "Nut ingredients not required; verify pantry items for peanut/tree-nut cross-contact as needed."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [15, 30],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "RegionalTwist",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers a mainstream, weeknight-ready family archetype distinct from prior entries by focusing on poultry-only, mild SA flavors, balanced budget, and kosher-style guardrails."
+    }
+  ]
+}

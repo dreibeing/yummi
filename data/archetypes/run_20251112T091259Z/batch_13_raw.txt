@@ -1,0 +1,37 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_7k0x9u",
+      "name": "Vegetarian Family Weeknight Classics",
+      "description": "Kid-friendly vegetarian weeknight dinners with South African and Modern American comforts, mild spice, 15–30 minute cook times, and a balanced budget for households wanting simple, reliable meat-free meals.",
+      "core_tags": {
+        "Diet": ["Vegetarian"],
+        "Cuisine": ["SouthAfrican", "ModernAmerican"],
+        "CuisineOpenness": ["FamiliarClassics"],
+        "PrepTime": ["15to30"],
+        "Complexity": ["Simple"],
+        "HeatSpice": ["Mild"],
+        "Audience": ["Family"],
+        "BudgetLevel": ["Balanced"],
+        "EthicsReligious": []
+      },
+      "diet_profile": {
+        "allowed": ["Vegetarian"],
+        "restricted": ["Beef", "Pork", "Poultry", "Fish", "Shellfish"],
+        "notes": "Eggs and dairy are optional add-ons; defaults keep heat gentle and portions family-sized."
+      },
+      "allergen_flags": {
+        "avoids": ["Fish", "Shellfish"],
+        "contains": ["Dairy", "Egg"],
+        "cross_contact_notes": "Nut and soy components are optional; provide swaps where feasible to accommodate sensitivities."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [15, 30],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers a mainstream, plant-forward family archetype matching the brief’s baseline: simple, 15–30 min, mild, balanced budget, SA/Modern American."
+    }
+  ]
+}

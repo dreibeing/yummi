@@ -1,0 +1,38 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_k5q0zt",
+      "name": "Couple Omnivore Weeknight Classics (SA & Modern American)",
+      "description": "Fast, comforting omnivore dinners for two with pantry-friendly South African and Modern American flavors; mild spice, 15–30 minutes, Simple complexity, Balanced budget, and default nut- and shellfish-free guardrails.",
+      "core_tags": {
+        "Diet": ["Omnivore"],
+        "Cuisine": ["SouthAfrican", "ModernAmerican"],
+        "CuisineOpenness": ["FamiliarClassics"],
+        "PrepTime": ["15to30"],
+        "Complexity": ["Simple"],
+        "HeatSpice": ["Mild"],
+        "Audience": ["Couple"],
+        "BudgetLevel": ["Balanced"],
+        "EthicsReligious": [],
+        "Allergens": ["Peanut", "TreeNut", "Shellfish"]
+      },
+      "diet_profile": {
+        "allowed": ["Omnivore"],
+        "restricted": ["Shellfish", "Peanut", "TreeNut"],
+        "notes": "Designed for quick, balanced omnivore meals for two; defaults avoid nuts and shellfish while keeping common staples accessible."
+      },
+      "allergen_flags": {
+        "avoids": ["Peanut", "TreeNut", "Shellfish"],
+        "contains": ["Gluten", "Dairy", "Egg", "Soy", "Sesame", "Mustard", "Fish"],
+        "cross_contact_notes": "Use separate prep surfaces to minimize cross-contact; nut and shellfish items are excluded in defaults."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [15, 30],
+      "complexity": "Simple",
+      "audience_context": "Couple",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds a mainstream, mild, 15–30 minute Simple omnivore option for couples without duplicating family-focused prior entries."
+    }
+  ]
+}

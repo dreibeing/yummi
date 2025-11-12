@@ -1,0 +1,38 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_7f1c9k",
+      "name": "Kosher-Style Flex Meal Prep (Mediterranean & Middle Eastern)",
+      "description": "Balanced flexitarian batch-cooking for MealPrep households following Kosher-style guardrails (no pork/shellfish, avoid meat–dairy mixing), featuring familiar Mediterranean/MiddleEastern flavors with Mild heat, 30–45 minute sessions, Intermediate steps, and a Balanced budget fit for modern South African routines.",
+      "core_tags": {
+        "Diet": ["Flexitarian"],
+        "Cuisine": ["Mediterranean", "MiddleEastern"],
+        "CuisineOpenness": ["RegionalTwist"],
+        "PrepTime": ["30to45"],
+        "Complexity": ["Intermediate"],
+        "HeatSpice": ["Mild"],
+        "Audience": ["MealPrep"],
+        "BudgetLevel": ["Balanced"],
+        "EthicsReligious": ["KosherStyle"],
+        "Allergens": []
+      },
+      "diet_profile": {
+        "allowed": ["Flexitarian"],
+        "restricted": ["Pork", "Shellfish", "MixedMeatDairy"],
+        "notes": "Emphasizes fish (non-shellfish), poultry, legumes, grains, and produce; keeps meat and dairy separate."
+      },
+      "allergen_flags": {
+        "avoids": ["Shellfish"],
+        "contains": ["Gluten", "Dairy", "Egg", "Soy", "Sesame"],
+        "cross_contact_notes": "Design keeps meat and dairy separate; select dairy-free variants if pairing with meat to maintain Kosher-style posture."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [30, 45],
+      "complexity": "Intermediate",
+      "audience_context": "MealPrep",
+      "cuisine_openness": "RegionalTwist",
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds a Kosher-style, Mild, Balanced-budget MealPrep option in Mediterranean/MiddleEastern flavors without duplicating existing combinations."
+    }
+  ]
+}

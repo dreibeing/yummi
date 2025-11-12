@@ -1,0 +1,37 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_8f2k9x",
+      "name": "Solo Value Staples Quick Bites (Air-Fry & Stovetop)",
+      "description": "Ultra-fast single-serve meals using pantry staples and freezer-friendly basics for solo eaters; Flexitarian omnivore options, kid-friendly mild heat, and tight-budget choices tuned for South African modern kitchens without relying on specialty items.",
+      "core_tags": {
+        "Diet": ["Flexitarian","Omnivore"],
+        "Cuisine": ["ModernAmerican","SouthAfrican"],
+        "CuisineOpenness": ["FamiliarClassics"],
+        "PrepTime": ["Under15"],
+        "Complexity": ["Simple"],
+        "HeatSpice": ["Mild"],
+        "Audience": ["Solo"],
+        "BudgetLevel": ["ValueStaples"],
+        "EthicsReligious": []
+      },
+      "diet_profile": {
+        "allowed": ["Omnivore","Flexitarian"],
+        "restricted": ["Shellfish","Peanut","TreeNut"],
+        "notes": "Focuses on quick proteins and veg with optional swaps to keep costs low; excludes nuts and shellfish to simplify solo pantry management."
+      },
+      "allergen_flags": {
+        "avoids": ["Peanut","TreeNut","Shellfish"],
+        "contains": ["Gluten","Dairy","Egg","Soy","Sesame","Mustard"],
+        "cross_contact_notes": "Avoids nuts and shellfish by design; verify labels for sesame/mustard in sauces and spice blends."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [8,15],
+      "complexity": "Simple",
+      "audience_context": "Solo",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds a mainstream solo, under-15-minute, mild, value-focused archetype not covered by prior entries."
+    }
+  ]
+}

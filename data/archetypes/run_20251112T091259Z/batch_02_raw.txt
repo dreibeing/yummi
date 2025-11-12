@@ -1,0 +1,38 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_7e3a9b",
+      "name": "Family Veggie Weeknight Classics",
+      "description": "Balanced, kid-friendly vegetarian dinners for South African and Modern American palates; mild flavors, 15–30 minutes, simple steps, and a Balanced spend for busy families.",
+      "core_tags": {
+        "Diet": ["Vegetarian"],
+        "Cuisine": ["SouthAfrican", "ModernAmerican"],
+        "CuisineOpenness": ["FamiliarClassics"],
+        "PrepTime": ["15to30"],
+        "Complexity": ["Simple"],
+        "HeatSpice": ["Mild"],
+        "Audience": ["Family"],
+        "BudgetLevel": ["Balanced"],
+        "EthicsReligious": [],
+        "Allergens": ["Dairy"]
+      },
+      "diet_profile": {
+        "allowed": ["Vegetarian"],
+        "restricted": ["Beef", "Pork", "Lamb", "Poultry", "Fish", "Shellfish"],
+        "notes": "Protein from legumes, grains, eggs, and dairy as preferred; egg/dairy substitutes can be used."
+      },
+      "allergen_flags": {
+        "avoids": ["Fish", "Shellfish"],
+        "contains": ["Gluten", "Dairy", "Egg", "Soy", "Sesame", "Mustard"],
+        "cross_contact_notes": "Check labels for peanut/tree nut traces; dairy/egg can be swapped for plant alternatives."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [15, 30],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers a mainstream, plant-forward family weeknight option with mild heat, simple steps, 15–30 minutes, and Balanced spend, distinct from the prior omnivore archetype."
+    }
+  ]
+}

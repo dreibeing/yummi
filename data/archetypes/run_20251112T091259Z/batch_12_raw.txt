@@ -1,0 +1,38 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_3e2c1a",
+      "name": "Family Omnivore Weeknight Classics",
+      "description": "Balanced, kid-friendly omnivore dinners for South African and modern American weeknights: quick two-pan mains with veg sides, affordable staples, mild seasoning, and clear swap notes for common allergens—ideal for families needing 15–30 minute, simple meals.",
+      "core_tags": {
+        "Diet": ["Omnivore"],
+        "Cuisine": ["SouthAfrican", "ModernAmerican"],
+        "CuisineOpenness": ["FamiliarClassics"],
+        "PrepTime": ["15to30"],
+        "Complexity": ["Simple"],
+        "HeatSpice": ["Mild"],
+        "Audience": ["Family"],
+        "BudgetLevel": ["Affordable"],
+        "EthicsReligious": [],
+        "Allergens": ["Gluten", "Dairy", "Egg", "Soy", "Sesame", "Mustard"]
+      },
+      "diet_profile": {
+        "allowed": ["Omnivore"],
+        "restricted": [],
+        "notes": "Emphasizes balanced proteins with vegetables and grains; seasonings remain mild with optional spice add-ons."
+      },
+      "allergen_flags": {
+        "avoids": [],
+        "contains": ["Gluten", "Dairy", "Egg", "Soy", "Sesame", "Mustard"],
+        "cross_contact_notes": "Not positioned as allergen-safe; provide simple swaps where feasible and avoid bulk cross-contact by separating prep surfaces."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [15, 30],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers a mainstream, affordable, mild, 15–30 minute family omnivore baseline covering core weeknight needs in SA households."
+    }
+  ]
+}

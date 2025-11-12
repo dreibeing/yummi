@@ -1,0 +1,38 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_1k7p9f",
+      "name": "Jain-Friendly Vegan Weeknight Basics (No-Heat, Affordable Family)",
+      "description": "Family-friendly vegan dinners built around Indian and South African staples with Jain guardrails (no root vegetables), no-heat seasoning profiles, quick 15–30 minute steps, and an affordable spend for modern SA households.",
+      "core_tags": {
+        "Diet": ["Vegan","HighProtein"],
+        "Cuisine": ["Indian","SouthAfrican"],
+        "CuisineOpenness": ["FamiliarClassics"],
+        "PrepTime": ["15to30"],
+        "Complexity": ["Simple"],
+        "HeatSpice": ["NoHeat"],
+        "Audience": ["Family"],
+        "BudgetLevel": ["Affordable"],
+        "EthicsReligious": ["JainFriendly"],
+        "Allergens": []
+      },
+      "diet_profile": {
+        "allowed": ["Vegan"],
+        "restricted": ["Beef","Pork","Lamb","Poultry","Fish","Shellfish","Egg","Dairy","RootVegetables","Honey"],
+        "notes": "Jain-friendly: excludes all animal products, root vegetables, and honey; focuses on legumes, grains, and non-root produce for complete proteins."
+      },
+      "allergen_flags": {
+        "avoids": ["Dairy","Egg","Fish","Shellfish"],
+        "contains": [],
+        "cross_contact_notes": "Specify vegan and Jain preparation; avoid ghee and shared fryers for dairy/egg contact."
+      },
+      "heat_band": "NoHeat",
+      "prep_time_minutes_range": [15,30],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers an ethics-first, kid-safe, affordable weeknight option while expanding coverage for Vegan and Jain-friendly cohorts."
+    }
+  ]
+}

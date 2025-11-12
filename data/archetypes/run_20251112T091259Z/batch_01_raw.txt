@@ -1,0 +1,38 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_2p9k1f",
+      "name": "Family Weeknight Omnivore Classics (Halal-friendly)",
+      "description": "Broad-appeal halal-friendly dinners for South African families: mild, 15–30 minute, simple stovetop or sheet-pan meals with balanced spend and familiar SA/Modern American comfort profiles.",
+      "core_tags": {
+        "Diet": ["Omnivore"],
+        "Cuisine": ["SouthAfrican", "ModernAmerican"],
+        "CuisineOpenness": ["FamiliarClassics"],
+        "PrepTime": ["15to30"],
+        "Complexity": ["Simple"],
+        "HeatSpice": ["Mild"],
+        "Audience": ["Family"],
+        "BudgetLevel": ["Affordable"],
+        "EthicsReligious": ["Halal"],
+        "Allergens": ["Gluten"]
+      },
+      "diet_profile": {
+        "allowed": ["Omnivore"],
+        "restricted": ["Pork", "Alcohol"],
+        "notes": "Default guidance aligns to halal norms; protein choices kept mainstream and budget-aware."
+      },
+      "allergen_flags": {
+        "avoids": [],
+        "contains": ["Gluten", "Dairy", "Egg", "Soy", "Sesame", "Mustard"],
+        "cross_contact_notes": "Not an allergen-safe archetype; users with allergies should select a dedicated safe cohort."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [15, 30],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers a mainstream, halal-friendly, mild, 15–30 min family baseline with affordable spend and familiar SA/US flavors."
+    }
+  ]
+}

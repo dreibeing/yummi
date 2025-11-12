@@ -1,0 +1,1759 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_2p9k1f",
+      "name": "Family Weeknight Omnivore Classics (Halal-friendly)",
+      "description": "Broad-appeal halal-friendly dinners for South African families: mild, 15\u201330 minute, simple stovetop or sheet-pan meals with balanced spend and familiar SA/Modern American comfort profiles.",
+      "core_tags": {
+        "Diet": [
+          "Omnivore"
+        ],
+        "Cuisine": [
+          "SouthAfrican",
+          "ModernAmerican"
+        ],
+        "CuisineOpenness": [
+          "FamiliarClassics"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "BudgetLevel": [
+          "Affordable"
+        ],
+        "EthicsReligious": [
+          "Halal"
+        ],
+        "Allergens": [
+          "Gluten"
+        ]
+      },
+      "diet_profile": {
+        "allowed": [
+          "Omnivore"
+        ],
+        "restricted": [
+          "Pork",
+          "Alcohol"
+        ],
+        "notes": "Default guidance aligns to halal norms; protein choices kept mainstream and budget-aware."
+      },
+      "allergen_flags": {
+        "avoids": [],
+        "contains": [
+          "Gluten",
+          "Dairy",
+          "Egg",
+          "Soy",
+          "Sesame",
+          "Mustard"
+        ],
+        "cross_contact_notes": "Not an allergen-safe archetype; users with allergies should select a dedicated safe cohort."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [
+        15,
+        30
+      ],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers a mainstream, halal-friendly, mild, 15\u201330 min family baseline with affordable spend and familiar SA/US flavors."
+    },
+    {
+      "uid": "arch_7e3a9b",
+      "name": "Family Veggie Weeknight Classics",
+      "description": "Balanced, kid-friendly vegetarian dinners for South African and Modern American palates; mild flavors, 15\u201330 minutes, simple steps, and a Balanced spend for busy families.",
+      "core_tags": {
+        "Diet": [
+          "Vegetarian"
+        ],
+        "Cuisine": [
+          "SouthAfrican",
+          "ModernAmerican"
+        ],
+        "CuisineOpenness": [
+          "FamiliarClassics"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "BudgetLevel": [
+          "Balanced"
+        ],
+        "EthicsReligious": [],
+        "Allergens": [
+          "Dairy"
+        ]
+      },
+      "diet_profile": {
+        "allowed": [
+          "Vegetarian"
+        ],
+        "restricted": [
+          "Beef",
+          "Pork",
+          "Lamb",
+          "Poultry",
+          "Fish",
+          "Shellfish"
+        ],
+        "notes": "Protein from legumes, grains, eggs, and dairy as preferred; egg/dairy substitutes can be used."
+      },
+      "allergen_flags": {
+        "avoids": [
+          "Fish",
+          "Shellfish"
+        ],
+        "contains": [
+          "Gluten",
+          "Dairy",
+          "Egg",
+          "Soy",
+          "Sesame",
+          "Mustard"
+        ],
+        "cross_contact_notes": "Check labels for peanut/tree nut traces; dairy/egg can be swapped for plant alternatives."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [
+        15,
+        30
+      ],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers a mainstream, plant-forward family weeknight option with mild heat, simple steps, 15\u201330 minutes, and Balanced spend, distinct from the prior omnivore archetype."
+    },
+    {
+      "uid": "arch_3b4f9k",
+      "name": "Solo Quick Bites Flex",
+      "description": "Fast, one-pan or air-fryer friendly meals for solo diners who eat mostly plant-forward with occasional animal protein; mild spice, familiar SA/Modern American flavors, Under-15-minute prep, Simple complexity, and ValueStaples budget for tight weeknights.",
+      "core_tags": {
+        "Diet": [
+          "Flexitarian"
+        ],
+        "Cuisine": [
+          "SouthAfrican",
+          "ModernAmerican"
+        ],
+        "CuisineOpenness": [
+          "FamiliarClassics"
+        ],
+        "PrepTime": [
+          "Under15"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Audience": [
+          "Solo"
+        ],
+        "BudgetLevel": [
+          "ValueStaples"
+        ],
+        "EthicsReligious": [],
+        "Allergens": [
+          "Gluten"
+        ]
+      },
+      "diet_profile": {
+        "allowed": [
+          "Flexitarian"
+        ],
+        "restricted": [
+          "Shellfish-heavy meals"
+        ],
+        "notes": "Primarily plant-forward; optional small portions of poultry, fish, or dairy-based add-ons."
+      },
+      "allergen_flags": {
+        "avoids": [
+          "Shellfish",
+          "Peanut",
+          "TreeNut"
+        ],
+        "contains": [
+          "Gluten",
+          "Dairy",
+          "Egg",
+          "Soy",
+          "Sesame",
+          "Mustard"
+        ],
+        "cross_contact_notes": "Use separate utensils/boards if adding animal proteins; choose certified nut-free pantry staples to maintain nut avoidance."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [
+        8,
+        15
+      ],
+      "complexity": "Simple",
+      "audience_context": "Solo",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers mainstream, budget-friendly solo meals with mild heat and Under-15-minute prep without overlapping prior family weeknight archetypes."
+    },
+    {
+      "uid": "arch_6k2w9e",
+      "name": "Mediterranean Pescatarian Date-Night",
+      "description": "Couple-focused pescatarian dinners with Mediterranean flavors, Medium heat, 30\u201345 minutes, Intermediate skill, and an Affordable spend, designed to be shellfish-free while keeping fish as the primary protein.",
+      "core_tags": {
+        "Diet": [
+          "Pescatarian"
+        ],
+        "Cuisine": [
+          "Mediterranean"
+        ],
+        "CuisineOpenness": [
+          "RegionalTwist"
+        ],
+        "PrepTime": [
+          "30to45"
+        ],
+        "Complexity": [
+          "Intermediate"
+        ],
+        "HeatSpice": [
+          "Medium"
+        ],
+        "Audience": [
+          "Couple"
+        ],
+        "BudgetLevel": [
+          "Affordable"
+        ]
+      },
+      "diet_profile": {
+        "allowed": [
+          "Pescatarian"
+        ],
+        "restricted": [
+          "Pork",
+          "Beef",
+          "Lamb",
+          "Poultry",
+          "Shellfish"
+        ],
+        "notes": "Prioritizes fish and plant ingredients; excludes shellfish."
+      },
+      "allergen_flags": {
+        "avoids": [
+          "Shellfish"
+        ],
+        "contains": [
+          "Fish"
+        ],
+        "cross_contact_notes": "Recipes steer clear of shellfish; other allergens vary by dish and can be toggled via substitutions."
+      },
+      "heat_band": "Medium",
+      "prep_time_minutes_range": [
+        30,
+        45
+      ],
+      "complexity": "Intermediate",
+      "audience_context": "Couple",
+      "cuisine_openness": "RegionalTwist",
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds a couple-friendly pescatarian option (Affordable, Medium heat, 30\u201345, Intermediate) and explicitly covers shellfish-free within Mediterranean cuisine."
+    },
+    {
+      "uid": "arch_k7x3q9",
+      "name": "Gluten-Aware Sheet-Pan Meal Prep Basics",
+      "description": "Hands-off, family-friendly batch cooks for MealPrep that stay GlutenAware omnivore, NoHeat for sensitive palates, and Affordable for South African budgets using FamiliarClassics from SouthAfrican and ModernAmerican comfort cuisines.",
+      "core_tags": {
+        "Diet": [
+          "Omnivore",
+          "GlutenAware"
+        ],
+        "Cuisine": [
+          "SouthAfrican",
+          "ModernAmerican"
+        ],
+        "CuisineOpenness": [
+          "FamiliarClassics"
+        ],
+        "PrepTime": [
+          "45Plus"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "NoHeat"
+        ],
+        "Audience": [
+          "MealPrep"
+        ],
+        "BudgetLevel": [
+          "Affordable"
+        ],
+        "EthicsReligious": [],
+        "Allergens": []
+      },
+      "diet_profile": {
+        "allowed": [
+          "Omnivore",
+          "GlutenAware"
+        ],
+        "restricted": [
+          "Gluten"
+        ],
+        "notes": "Targets naturally gluten-free meal prep patterns; choose certified gluten-free staples and sauces."
+      },
+      "allergen_flags": {
+        "avoids": [
+          "Gluten"
+        ],
+        "contains": [],
+        "cross_contact_notes": "Emphasize certified gluten-free pantry items and separate prep surfaces to minimize cross-contact."
+      },
+      "heat_band": "NoHeat",
+      "prep_time_minutes_range": [
+        50,
+        75
+      ],
+      "complexity": "Simple",
+      "audience_context": "MealPrep",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Provides an affordable, NoHeat, hands-off MealPrep option with GlutenAware guardrails distinct from prior weeknight archetypes."
+    },
+    {
+      "uid": "arch_2s9h3k",
+      "name": "Family Poultry-Only SA Twists",
+      "description": "Balanced-budget, family-friendly poultry dinners with South African staples and gentle regional twists; mild spice, 15\u201330 minutes, simple steps; avoids fish/shellfish and suits kosher-style households seeking familiar flavors without red meat or pork.",
+      "core_tags": {
+        "Diet": [
+          "PoultryOnly"
+        ],
+        "Cuisine": [
+          "SouthAfrican"
+        ],
+        "CuisineOpenness": [
+          "RegionalTwist"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "BudgetLevel": [
+          "Balanced"
+        ],
+        "EthicsReligious": [
+          "KosherStyle"
+        ],
+        "Allergens": [
+          "Gluten",
+          "Dairy",
+          "Egg",
+          "Soy",
+          "Sesame",
+          "Mustard"
+        ]
+      },
+      "diet_profile": {
+        "allowed": [
+          "PoultryOnly"
+        ],
+        "restricted": [
+          "Beef",
+          "Lamb",
+          "Pork",
+          "Fish",
+          "Shellfish"
+        ],
+        "notes": "Eggs and dairy optional; no red meat, pork, or seafood."
+      },
+      "allergen_flags": {
+        "avoids": [
+          "Fish",
+          "Shellfish"
+        ],
+        "contains": [
+          "Gluten",
+          "Dairy",
+          "Egg",
+          "Soy",
+          "Sesame",
+          "Mustard"
+        ],
+        "cross_contact_notes": "Nut ingredients not required; verify pantry items for peanut/tree-nut cross-contact as needed."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [
+        15,
+        30
+      ],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "RegionalTwist",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers a mainstream, weeknight-ready family archetype distinct from prior entries by focusing on poultry-only, mild SA flavors, balanced budget, and kosher-style guardrails."
+    },
+    {
+      "uid": "arch_7f3a9d",
+      "name": "Vegan High-Protein Meal Prep Bowls (Global Explorer)",
+      "description": "Batch-cook vegan bowls for MealPrep households using affordable pantry staples with Mediterranean/MiddleEastern flavors; Medium heat, Simple steps, 30\u201345 minutes per session; tailored for dairy-, egg-, nut-, fish-, and shellfish-free needs on an Affordable budget.",
+      "core_tags": {
+        "Diet": [
+          "Vegan",
+          "HighProtein"
+        ],
+        "Cuisine": [
+          "Mediterranean",
+          "MiddleEastern"
+        ],
+        "CuisineOpenness": [
+          "GlobalExplorer"
+        ],
+        "PrepTime": [
+          "30to45"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Medium"
+        ],
+        "Audience": [
+          "MealPrep"
+        ],
+        "BudgetLevel": [
+          "Affordable"
+        ]
+      },
+      "diet_profile": {
+        "allowed": [
+          "Vegan",
+          "HighProtein"
+        ],
+        "restricted": [
+          "Beef",
+          "Pork",
+          "Lamb",
+          "Poultry",
+          "Fish",
+          "Shellfish",
+          "Dairy",
+          "Egg",
+          "Honey"
+        ],
+        "notes": "Protein emphasis from legumes and grains; default plans avoid soy to widen allergen safety unless explicitly opted in."
+      },
+      "allergen_flags": {
+        "avoids": [
+          "Dairy",
+          "Egg",
+          "Peanut",
+          "TreeNut",
+          "Fish",
+          "Shellfish"
+        ],
+        "contains": [
+          "Gluten",
+          "Sesame",
+          "Mustard"
+        ],
+        "cross_contact_notes": "Use dedicated utensils for allergen-safe prep; soy is excluded by default but can be toggled on if tolerated."
+      },
+      "heat_band": "Medium",
+      "prep_time_minutes_range": [
+        30,
+        45
+      ],
+      "complexity": "Simple",
+      "audience_context": "MealPrep",
+      "cuisine_openness": "GlobalExplorer",
+      "refresh_version": "2025.02.0",
+      "rationale": "Fills the plant-forward MealPrep gap with a high-protein vegan, affordable, medium-heat option distinct from prior omnivore/gluten-aware basics."
+    },
+    {
+      "uid": "arch_5u6h1q",
+      "name": "Jain-Friendly Weeknight Vegan Classics",
+      "description": "Fast, no-heat Indian familiar classics tailored for Jain-friendly vegan family dinners on an affordable budget; avoids root vegetables and animal products while keeping flavors gentle for kids and sensitive palates.",
+      "core_tags": {
+        "Diet": [
+          "Vegan"
+        ],
+        "Cuisine": [
+          "Indian"
+        ],
+        "CuisineOpenness": [
+          "FamiliarClassics"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "NoHeat"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "BudgetLevel": [
+          "Affordable"
+        ],
+        "EthicsReligious": [
+          "JainFriendly"
+        ],
+        "Allergens": [
+          "Dairy",
+          "Egg",
+          "Fish",
+          "Shellfish"
+        ]
+      },
+      "diet_profile": {
+        "allowed": [
+          "Vegan"
+        ],
+        "restricted": [
+          "RootVegetables"
+        ],
+        "notes": "Jain-friendly posture: no animal products; excludes root vegetables by default."
+      },
+      "allergen_flags": {
+        "avoids": [
+          "Dairy",
+          "Egg",
+          "Fish",
+          "Shellfish"
+        ],
+        "contains": [],
+        "cross_contact_notes": "Gluten, soy, peanut, tree nut, sesame, and mustard may appear unless user filters; verify labels to prevent cross-contact."
+      },
+      "heat_band": "NoHeat",
+      "prep_time_minutes_range": [
+        15,
+        30
+      ],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds the required Jain-friendly, no-heat, affordable family weeknight option without duplicating prior Diet\u00d7Cuisine\u00d7Audience\u00d7Budget\u00d7Heat\u00d7Prep\u00d7Complexity\u00d7Ethics combos."
+    },
+    {
+      "uid": "arch_5k3z9h",
+      "name": "Shellfish-Free Pescatarian Entertaining Showstopper",
+      "description": "A premium, guest-ready pescatarian spread with EastAsian GlobalExplorer vibes that stays shellfish-free, gluten-free, and nut-free by design; expect Medium heat, 45+ minute hands-off-and-finish cooking, and techniques that impress for Entertaining without relying on specialty retailer SKUs.",
+      "core_tags": {
+        "Diet": [
+          "Pescatarian"
+        ],
+        "Cuisine": [
+          "EastAsian"
+        ],
+        "CuisineOpenness": [
+          "GlobalExplorer"
+        ],
+        "PrepTime": [
+          "45Plus"
+        ],
+        "Complexity": [
+          "Showstopper"
+        ],
+        "HeatSpice": [
+          "Medium"
+        ],
+        "Audience": [
+          "Entertaining"
+        ],
+        "BudgetLevel": [
+          "PremiumOccasion"
+        ]
+      },
+      "diet_profile": {
+        "allowed": [
+          "Pescatarian"
+        ],
+        "restricted": [
+          "Beef",
+          "Lamb",
+          "Pork",
+          "Poultry",
+          "Shellfish"
+        ],
+        "notes": "Focus on fish and plant ingredients; avoids shellfish entirely to protect allergen cohort while maintaining premium entertaining appeal."
+      },
+      "allergen_flags": {
+        "avoids": [
+          "Gluten",
+          "Dairy",
+          "Peanut",
+          "TreeNut",
+          "Shellfish"
+        ],
+        "contains": [],
+        "cross_contact_notes": "Audit sauces and spice mixes for hidden gluten, dairy, nut, and shellfish derivatives; substitute sesame-free seasonings where needed."
+      },
+      "heat_band": "Medium",
+      "prep_time_minutes_range": [
+        55,
+        90
+      ],
+      "complexity": "Showstopper",
+      "audience_context": "Entertaining",
+      "cuisine_openness": "GlobalExplorer",
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds an Entertaining, Showstopper Pescatarian option with Medium heat, PremiumOccasion budget, and explicit shellfish/gluten/nut avoidance to extend coverage without duplicating prior cohorts."
+    },
+    {
+      "uid": "arch_3f4k9z",
+      "name": "Family Low-Carb Weeknight Basics",
+      "description": "Everyday low-carb family dinners focused on quick skillet and sheet-pan staples; designed for 15\u201330 minute, Simple prep with Mild heat and an Affordable budget, drawing on Familiar Classics from ModernAmerican and Mediterranean flavors.",
+      "core_tags": {
+        "Diet": [
+          "LowCarb"
+        ],
+        "Cuisine": [
+          "ModernAmerican",
+          "Mediterranean"
+        ],
+        "CuisineOpenness": [
+          "FamiliarClassics"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "BudgetLevel": [
+          "Affordable"
+        ],
+        "EthicsReligious": [],
+        "Allergens": []
+      },
+      "diet_profile": {
+        "allowed": [
+          "LowCarb"
+        ],
+        "restricted": [
+          "RefinedCarbs",
+          "AddedSugars"
+        ],
+        "notes": "Emphasizes non-starchy veg and protein with limited grains and sweeteners."
+      },
+      "allergen_flags": {
+        "avoids": [],
+        "contains": [],
+        "cross_contact_notes": "Not allergen-tailored; may include common allergens unless user filters further."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [
+        15,
+        30
+      ],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds a mainstream, affordable low-carb family option with mild heat and 15\u201330 minute simple prep to broaden baseline coverage without duplicating prior combos."
+    },
+    {
+      "uid": "arch_7f1c9k",
+      "name": "Kosher-Style Flex Meal Prep (Mediterranean & Middle Eastern)",
+      "description": "Balanced flexitarian batch-cooking for MealPrep households following Kosher-style guardrails (no pork/shellfish, avoid meat\u2013dairy mixing), featuring familiar Mediterranean/MiddleEastern flavors with Mild heat, 30\u201345 minute sessions, Intermediate steps, and a Balanced budget fit for modern South African routines.",
+      "core_tags": {
+        "Diet": [
+          "Flexitarian"
+        ],
+        "Cuisine": [
+          "Mediterranean",
+          "MiddleEastern"
+        ],
+        "CuisineOpenness": [
+          "RegionalTwist"
+        ],
+        "PrepTime": [
+          "30to45"
+        ],
+        "Complexity": [
+          "Intermediate"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Audience": [
+          "MealPrep"
+        ],
+        "BudgetLevel": [
+          "Balanced"
+        ],
+        "EthicsReligious": [
+          "KosherStyle"
+        ],
+        "Allergens": []
+      },
+      "diet_profile": {
+        "allowed": [
+          "Flexitarian"
+        ],
+        "restricted": [
+          "Pork",
+          "Shellfish",
+          "MixedMeatDairy"
+        ],
+        "notes": "Emphasizes fish (non-shellfish), poultry, legumes, grains, and produce; keeps meat and dairy separate."
+      },
+      "allergen_flags": {
+        "avoids": [
+          "Shellfish"
+        ],
+        "contains": [
+          "Gluten",
+          "Dairy",
+          "Egg",
+          "Soy",
+          "Sesame"
+        ],
+        "cross_contact_notes": "Design keeps meat and dairy separate; select dairy-free variants if pairing with meat to maintain Kosher-style posture."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [
+        30,
+        45
+      ],
+      "complexity": "Intermediate",
+      "audience_context": "MealPrep",
+      "cuisine_openness": "RegionalTwist",
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds a Kosher-style, Mild, Balanced-budget MealPrep option in Mediterranean/MiddleEastern flavors without duplicating existing combinations."
+    },
+    {
+      "uid": "arch_3e2c1a",
+      "name": "Family Omnivore Weeknight Classics",
+      "description": "Balanced, kid-friendly omnivore dinners for South African and modern American weeknights: quick two-pan mains with veg sides, affordable staples, mild seasoning, and clear swap notes for common allergens\u2014ideal for families needing 15\u201330 minute, simple meals.",
+      "core_tags": {
+        "Diet": [
+          "Omnivore"
+        ],
+        "Cuisine": [
+          "SouthAfrican",
+          "ModernAmerican"
+        ],
+        "CuisineOpenness": [
+          "FamiliarClassics"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "BudgetLevel": [
+          "Affordable"
+        ],
+        "EthicsReligious": [],
+        "Allergens": [
+          "Gluten",
+          "Dairy",
+          "Egg",
+          "Soy",
+          "Sesame",
+          "Mustard"
+        ]
+      },
+      "diet_profile": {
+        "allowed": [
+          "Omnivore"
+        ],
+        "restricted": [],
+        "notes": "Emphasizes balanced proteins with vegetables and grains; seasonings remain mild with optional spice add-ons."
+      },
+      "allergen_flags": {
+        "avoids": [],
+        "contains": [
+          "Gluten",
+          "Dairy",
+          "Egg",
+          "Soy",
+          "Sesame",
+          "Mustard"
+        ],
+        "cross_contact_notes": "Not positioned as allergen-safe; provide simple swaps where feasible and avoid bulk cross-contact by separating prep surfaces."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [
+        15,
+        30
+      ],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers a mainstream, affordable, mild, 15\u201330 minute family omnivore baseline covering core weeknight needs in SA households."
+    },
+    {
+      "uid": "arch_7k0x9u",
+      "name": "Vegetarian Family Weeknight Classics",
+      "description": "Kid-friendly vegetarian weeknight dinners with South African and Modern American comforts, mild spice, 15\u201330 minute cook times, and a balanced budget for households wanting simple, reliable meat-free meals.",
+      "core_tags": {
+        "Diet": [
+          "Vegetarian"
+        ],
+        "Cuisine": [
+          "SouthAfrican",
+          "ModernAmerican"
+        ],
+        "CuisineOpenness": [
+          "FamiliarClassics"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "BudgetLevel": [
+          "Balanced"
+        ],
+        "EthicsReligious": []
+      },
+      "diet_profile": {
+        "allowed": [
+          "Vegetarian"
+        ],
+        "restricted": [
+          "Beef",
+          "Pork",
+          "Poultry",
+          "Fish",
+          "Shellfish"
+        ],
+        "notes": "Eggs and dairy are optional add-ons; defaults keep heat gentle and portions family-sized."
+      },
+      "allergen_flags": {
+        "avoids": [
+          "Fish",
+          "Shellfish"
+        ],
+        "contains": [
+          "Dairy",
+          "Egg"
+        ],
+        "cross_contact_notes": "Nut and soy components are optional; provide swaps where feasible to accommodate sensitivities."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [
+        15,
+        30
+      ],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers a mainstream, plant-forward family archetype matching the brief\u2019s baseline: simple, 15\u201330 min, mild, balanced budget, SA/Modern American."
+    },
+    {
+      "uid": "arch_8f2k9x",
+      "name": "Solo Value Staples Quick Bites (Air-Fry & Stovetop)",
+      "description": "Ultra-fast single-serve meals using pantry staples and freezer-friendly basics for solo eaters; Flexitarian omnivore options, kid-friendly mild heat, and tight-budget choices tuned for South African modern kitchens without relying on specialty items.",
+      "core_tags": {
+        "Diet": [
+          "Flexitarian",
+          "Omnivore"
+        ],
+        "Cuisine": [
+          "ModernAmerican",
+          "SouthAfrican"
+        ],
+        "CuisineOpenness": [
+          "FamiliarClassics"
+        ],
+        "PrepTime": [
+          "Under15"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Audience": [
+          "Solo"
+        ],
+        "BudgetLevel": [
+          "ValueStaples"
+        ],
+        "EthicsReligious": []
+      },
+      "diet_profile": {
+        "allowed": [
+          "Omnivore",
+          "Flexitarian"
+        ],
+        "restricted": [
+          "Shellfish",
+          "Peanut",
+          "TreeNut"
+        ],
+        "notes": "Focuses on quick proteins and veg with optional swaps to keep costs low; excludes nuts and shellfish to simplify solo pantry management."
+      },
+      "allergen_flags": {
+        "avoids": [
+          "Peanut",
+          "TreeNut",
+          "Shellfish"
+        ],
+        "contains": [
+          "Gluten",
+          "Dairy",
+          "Egg",
+          "Soy",
+          "Sesame",
+          "Mustard"
+        ],
+        "cross_contact_notes": "Avoids nuts and shellfish by design; verify labels for sesame/mustard in sauces and spice blends."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [
+        8,
+        15
+      ],
+      "complexity": "Simple",
+      "audience_context": "Solo",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds a mainstream solo, under-15-minute, mild, value-focused archetype not covered by prior entries."
+    },
+    {
+      "uid": "arch_k5q0zt",
+      "name": "Couple Omnivore Weeknight Classics (SA & Modern American)",
+      "description": "Fast, comforting omnivore dinners for two with pantry-friendly South African and Modern American flavors; mild spice, 15\u201330 minutes, Simple complexity, Balanced budget, and default nut- and shellfish-free guardrails.",
+      "core_tags": {
+        "Diet": [
+          "Omnivore"
+        ],
+        "Cuisine": [
+          "SouthAfrican",
+          "ModernAmerican"
+        ],
+        "CuisineOpenness": [
+          "FamiliarClassics"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Audience": [
+          "Couple"
+        ],
+        "BudgetLevel": [
+          "Balanced"
+        ],
+        "EthicsReligious": [],
+        "Allergens": [
+          "Peanut",
+          "TreeNut",
+          "Shellfish"
+        ]
+      },
+      "diet_profile": {
+        "allowed": [
+          "Omnivore"
+        ],
+        "restricted": [
+          "Shellfish",
+          "Peanut",
+          "TreeNut"
+        ],
+        "notes": "Designed for quick, balanced omnivore meals for two; defaults avoid nuts and shellfish while keeping common staples accessible."
+      },
+      "allergen_flags": {
+        "avoids": [
+          "Peanut",
+          "TreeNut",
+          "Shellfish"
+        ],
+        "contains": [
+          "Gluten",
+          "Dairy",
+          "Egg",
+          "Soy",
+          "Sesame",
+          "Mustard",
+          "Fish"
+        ],
+        "cross_contact_notes": "Use separate prep surfaces to minimize cross-contact; nut and shellfish items are excluded in defaults."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [
+        15,
+        30
+      ],
+      "complexity": "Simple",
+      "audience_context": "Couple",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds a mainstream, mild, 15\u201330 minute Simple omnivore option for couples without duplicating family-focused prior entries."
+    },
+    {
+      "uid": "arch_3f6a9d",
+      "name": "Family Gluten-Aware Weeknight Basics",
+      "description": "Mainstream South African family dinners designed to be gluten-aware for sensitive eaters, with mild flavors, 15\u201330 minute cook times, simple steps, and an Affordable budget fit for busy households.",
+      "core_tags": {
+        "Diet": [
+          "GlutenAware",
+          "Omnivore"
+        ],
+        "Cuisine": [
+          "SouthAfrican"
+        ],
+        "CuisineOpenness": [
+          "FamiliarClassics"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "BudgetLevel": [
+          "Affordable"
+        ],
+        "EthicsReligious": [
+          "Halal"
+        ],
+        "Allergens": [
+          "Gluten"
+        ]
+      },
+      "diet_profile": {
+        "allowed": [
+          "GlutenAware",
+          "Omnivore"
+        ],
+        "restricted": [
+          "Gluten"
+        ],
+        "notes": "Focuses on familiar, pantry-led meals using naturally gluten-free staples; substitutes used where typical recipes rely on gluten."
+      },
+      "allergen_flags": {
+        "avoids": [
+          "Gluten"
+        ],
+        "contains": [],
+        "cross_contact_notes": "Emphasize verified gluten-free staples and separate prep surfaces to minimize cross-contact."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [
+        15,
+        30
+      ],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers a mainstream, affordable, mild, gluten-aware family weeknight option aligned to SA kitchens."
+    },
+    {
+      "uid": "arch_3q1h2k",
+      "name": "Halal-Friendly Poultry Weeknight Classics (Family)",
+      "description": "Family-friendly poultry-only dinners with South African and Mediterranean comfort flavors; mild heat, 15\u201330 minutes, simple steps, balanced budget, and explicit avoidance of fish and shellfish for straightforward halal-aligned weeknights.",
+      "core_tags": {
+        "Diet": [
+          "PoultryOnly"
+        ],
+        "Cuisine": [
+          "SouthAfrican",
+          "Mediterranean"
+        ],
+        "CuisineOpenness": [
+          "FamiliarClassics"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "BudgetLevel": [
+          "Balanced"
+        ],
+        "EthicsReligious": [
+          "Halal"
+        ],
+        "Allergens": [
+          "Fish",
+          "Shellfish"
+        ]
+      },
+      "diet_profile": {
+        "allowed": [
+          "PoultryOnly"
+        ],
+        "restricted": [
+          "Beef",
+          "Pork",
+          "Lamb",
+          "Fish",
+          "Shellfish",
+          "Alcohol"
+        ],
+        "notes": "Centered on poultry with halal-friendly constraints; plant sides and grains welcomed."
+      },
+      "allergen_flags": {
+        "avoids": [
+          "Fish",
+          "Shellfish"
+        ],
+        "contains": [],
+        "cross_contact_notes": "Check labels for gluten, dairy, egg, soy, peanut, tree nut, sesame, and mustard; recipes default to exclude fish and shellfish."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [
+        15,
+        30
+      ],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Covers PoultryOnly + Family weeknights with halal alignment while staying mainstream, mild, simple, and balanced-budget."
+    },
+    {
+      "uid": "arch_7k3f9w",
+      "name": "Couple Vegetarian Cozy Evenings (Mediterranean & Modern American)",
+      "description": "Vegetarian dinners for two that feel comforting yet fresh, leaning on Mediterranean and Modern American classics with mild spice, balanced budget expectations, and 30\u201345 minute, intermediate workflows ideal for relaxed weeknights.",
+      "core_tags": {
+        "Diet": [
+          "Vegetarian"
+        ],
+        "Cuisine": [
+          "Mediterranean",
+          "ModernAmerican"
+        ],
+        "CuisineOpenness": [
+          "FamiliarClassics"
+        ],
+        "PrepTime": [
+          "30to45"
+        ],
+        "Complexity": [
+          "Intermediate"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Audience": [
+          "Couple"
+        ],
+        "BudgetLevel": [
+          "Balanced"
+        ],
+        "EthicsReligious": [],
+        "Allergens": []
+      },
+      "diet_profile": {
+        "allowed": [
+          "Vegetarian"
+        ],
+        "restricted": [
+          "Beef",
+          "Pork",
+          "Lamb",
+          "Poultry",
+          "Fish",
+          "Shellfish"
+        ],
+        "notes": "Vegetarian-friendly with dairy and eggs optional; protein from legumes, cheeses, and grains."
+      },
+      "allergen_flags": {
+        "avoids": [
+          "Fish",
+          "Shellfish"
+        ],
+        "contains": [
+          "Dairy",
+          "Egg",
+          "Gluten"
+        ],
+        "cross_contact_notes": "Nut- and soy-containing add-ons are optional; default guidance includes substitutions to avoid common allergens when needed."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [
+        30,
+        45
+      ],
+      "complexity": "Intermediate",
+      "audience_context": "Couple",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers a mainstream vegetarian option for couples with balanced budget, mild heat, and 30\u201345 minute intermediate prep to diversify beyond family 15\u201330 basics."
+    },
+    {
+      "uid": "arch_1k7p9f",
+      "name": "Jain-Friendly Vegan Weeknight Basics (No-Heat, Affordable Family)",
+      "description": "Family-friendly vegan dinners built around Indian and South African staples with Jain guardrails (no root vegetables), no-heat seasoning profiles, quick 15\u201330 minute steps, and an affordable spend for modern SA households.",
+      "core_tags": {
+        "Diet": [
+          "Vegan",
+          "HighProtein"
+        ],
+        "Cuisine": [
+          "Indian",
+          "SouthAfrican"
+        ],
+        "CuisineOpenness": [
+          "FamiliarClassics"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "NoHeat"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "BudgetLevel": [
+          "Affordable"
+        ],
+        "EthicsReligious": [
+          "JainFriendly"
+        ],
+        "Allergens": []
+      },
+      "diet_profile": {
+        "allowed": [
+          "Vegan"
+        ],
+        "restricted": [
+          "Beef",
+          "Pork",
+          "Lamb",
+          "Poultry",
+          "Fish",
+          "Shellfish",
+          "Egg",
+          "Dairy",
+          "RootVegetables",
+          "Honey"
+        ],
+        "notes": "Jain-friendly: excludes all animal products, root vegetables, and honey; focuses on legumes, grains, and non-root produce for complete proteins."
+      },
+      "allergen_flags": {
+        "avoids": [
+          "Dairy",
+          "Egg",
+          "Fish",
+          "Shellfish"
+        ],
+        "contains": [],
+        "cross_contact_notes": "Specify vegan and Jain preparation; avoid ghee and shared fryers for dairy/egg contact."
+      },
+      "heat_band": "NoHeat",
+      "prep_time_minutes_range": [
+        15,
+        30
+      ],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers an ethics-first, kid-safe, affordable weeknight option while expanding coverage for Vegan and Jain-friendly cohorts."
+    },
+    {
+      "uid": "arch_6e4b9k",
+      "name": "Pescatarian Mediterranean Entertaining (Shellfish-Free)",
+      "description": "Advanced, medium-heat fish-focused Mediterranean menus for small gatherings; shellfish-free by design, suited to hosts seeking a PremiumOccasion feel without specialty grocers, aligned to South African kitchens.",
+      "core_tags": {
+        "Diet": [
+          "Pescatarian"
+        ],
+        "Cuisine": [
+          "Mediterranean"
+        ],
+        "CuisineOpenness": [
+          "GlobalExplorer"
+        ],
+        "PrepTime": [
+          "30to45"
+        ],
+        "Complexity": [
+          "Advanced"
+        ],
+        "HeatSpice": [
+          "Medium"
+        ],
+        "Audience": [
+          "Entertaining"
+        ],
+        "BudgetLevel": [
+          "PremiumOccasion"
+        ],
+        "Allergens": [
+          "Fish"
+        ]
+      },
+      "diet_profile": {
+        "allowed": [
+          "Pescatarian"
+        ],
+        "restricted": [
+          "Beef",
+          "Pork",
+          "Lamb",
+          "Poultry",
+          "Shellfish"
+        ],
+        "notes": "Fish-forward menus; dairy and eggs optional and can be toggled per recipe."
+      },
+      "allergen_flags": {
+        "avoids": [
+          "Shellfish"
+        ],
+        "contains": [
+          "Fish"
+        ],
+        "cross_contact_notes": "Ensure no shared equipment or stocks with shellfish; verify spice blends and sauces for hidden shellfish extracts."
+      },
+      "heat_band": "Medium",
+      "prep_time_minutes_range": [
+        30,
+        45
+      ],
+      "complexity": "Advanced",
+      "audience_context": "Entertaining",
+      "cuisine_openness": "GlobalExplorer",
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds a shellfish-free pescatarian entertaining option with Medium heat and Advanced complexity at a PremiumOccasion spend to diversify coverage."
+    },
+    {
+      "uid": "arch_5k3f9z",
+      "name": "Vegan High-Protein Meal Prep (SE Asia, Hands-Off)",
+      "description": "Plant-based, protein-focused batch cooks with hands-off methods for budget-savvy meal preppers; Southeast Asian flavors, Medium heat, Affordable spend, and clear dairy/egg/fish/shellfish avoidance for reliable weekday portions in South African kitchens.",
+      "core_tags": {
+        "Diet": [
+          "Vegan",
+          "HighProtein"
+        ],
+        "Cuisine": [
+          "SoutheastAsian"
+        ],
+        "CuisineOpenness": [
+          "GlobalExplorer"
+        ],
+        "PrepTime": [
+          "45Plus"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Medium"
+        ],
+        "Audience": [
+          "MealPrep"
+        ],
+        "BudgetLevel": [
+          "Affordable"
+        ],
+        "EthicsReligious": [],
+        "Allergens": [
+          "Dairy",
+          "Egg",
+          "Fish",
+          "Shellfish"
+        ]
+      },
+      "diet_profile": {
+        "allowed": [
+          "Vegan",
+          "HighProtein"
+        ],
+        "restricted": [
+          "Beef",
+          "Pork",
+          "Poultry",
+          "Fish",
+          "Shellfish",
+          "Dairy",
+          "Eggs"
+        ],
+        "notes": "Protein emphasis via legumes, tofu/tempeh; grains and vegetables anchor bulk prep."
+      },
+      "allergen_flags": {
+        "avoids": [
+          "Dairy",
+          "Egg",
+          "Fish",
+          "Shellfish"
+        ],
+        "contains": [
+          "Soy"
+        ],
+        "cross_contact_notes": "Peanut/TreeNut toppings optional; default builds omit nuts and sesame unless user opts in."
+      },
+      "heat_band": "Medium",
+      "prep_time_minutes_range": [
+        50,
+        120
+      ],
+      "complexity": "Simple",
+      "audience_context": "MealPrep",
+      "cuisine_openness": "GlobalExplorer",
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds a plant-forward, high-protein, hands-off meal-prep option with Southeast Asian flavors at an Affordable budget and Medium heat to diversify coverage without duplicating prior combos."
+    },
+    {
+      "uid": "arch_k7x9s2",
+      "name": "Family Flexitarian Regional Twists (SA & Mediterranean, 15-30, Mild, Balanced)",
+      "description": "Balanced weeknight recipes for families who mix veg-forward meals with occasional lean meats, staying Mild for kids, 15\u201330 minutes, and a Balanced budget with South African staples plus Mediterranean twists.",
+      "core_tags": {
+        "Diet": [
+          "Flexitarian"
+        ],
+        "Cuisine": [
+          "SouthAfrican",
+          "Mediterranean"
+        ],
+        "CuisineOpenness": [
+          "RegionalTwist"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "BudgetLevel": [
+          "Balanced"
+        ],
+        "EthicsReligious": [],
+        "Allergens": []
+      },
+      "diet_profile": {
+        "allowed": [
+          "Flexitarian"
+        ],
+        "restricted": [
+          "UltraProcessedMeats"
+        ],
+        "notes": "Primarily plant-forward with optional lean poultry or fish; red meat limited."
+      },
+      "allergen_flags": {
+        "avoids": [],
+        "contains": [
+          "Gluten",
+          "Dairy",
+          "Egg",
+          "Soy",
+          "Peanut",
+          "TreeNut",
+          "Fish",
+          "Shellfish",
+          "Sesame",
+          "Mustard"
+        ],
+        "cross_contact_notes": "No dedicated allergen exclusions; standard kitchen cross-contact possible."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [
+        15,
+        30
+      ],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "RegionalTwist",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers a mainstream, family-friendly flexitarian option with Mild heat, 15\u201330 min, Simple prep, and Balanced budget distinct from prior classics."
+    },
+    {
+      "uid": "arch_j3q9x1",
+      "name": "Couple Low-Carb Global Explorer (East Asian, 15\u201330, Medium, Affordable)",
+      "description": "For adventurous couples eating low-carb on a budget: East Asian-inspired, medium-heat dishes ready in 15\u201330 minutes with intermediate steps; budget-conscious without specialty splurges.",
+      "core_tags": {
+        "Diet": [
+          "LowCarb"
+        ],
+        "Cuisine": [
+          "EastAsian"
+        ],
+        "CuisineOpenness": [
+          "GlobalExplorer"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Intermediate"
+        ],
+        "HeatSpice": [
+          "Medium"
+        ],
+        "Audience": [
+          "Couple"
+        ],
+        "BudgetLevel": [
+          "Affordable"
+        ],
+        "EthicsReligious": [
+          "None"
+        ],
+        "Allergens": [
+          "Soy",
+          "Sesame"
+        ]
+      },
+      "diet_profile": {
+        "allowed": [
+          "LowCarb"
+        ],
+        "restricted": [
+          "RefinedGrains",
+          "AddedSugar",
+          "Starches"
+        ],
+        "notes": "Focus on low-starch vegetables and lean proteins; limit sweet sauces and grain-focused sides."
+      },
+      "allergen_flags": {
+        "avoids": [],
+        "contains": [
+          "Soy",
+          "Sesame"
+        ],
+        "cross_contact_notes": "Check labels on sauces and seasonings; choose gluten-free soy alternatives if needed."
+      },
+      "heat_band": "Medium",
+      "prep_time_minutes_range": [
+        15,
+        30
+      ],
+      "complexity": "Intermediate",
+      "audience_context": "Couple",
+      "cuisine_openness": "GlobalExplorer",
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds LowCarb coverage for couples with East Asian flavors at affordable spend and medium heat per the brief."
+    },
+    {
+      "uid": "arch_3k9x8h",
+      "name": "Family Vegetarian Weeknight Classics (SA & Modern American, 15\u201330, Mild, Affordable)",
+      "description": "Mainstream, budget-aware vegetarian dinners for families who want mild, familiar South African and Modern American flavors in 15\u201330 minutes without nuts or seafood.",
+      "core_tags": {
+        "Diet": [
+          "Vegetarian"
+        ],
+        "Cuisine": [
+          "SouthAfrican",
+          "ModernAmerican"
+        ],
+        "CuisineOpenness": [
+          "FamiliarClassics"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "BudgetLevel": [
+          "Affordable"
+        ],
+        "EthicsReligious": [],
+        "Allergens": [
+          "Peanut",
+          "TreeNut",
+          "Fish",
+          "Shellfish"
+        ]
+      },
+      "diet_profile": {
+        "allowed": [
+          "Vegetarian"
+        ],
+        "restricted": [
+          "Beef",
+          "Pork",
+          "Lamb",
+          "Fish",
+          "Shellfish",
+          "Poultry"
+        ],
+        "notes": "Eggs and dairy are permitted; emphasis on pantry-friendly produce and grains."
+      },
+      "allergen_flags": {
+        "avoids": [
+          "Peanut",
+          "TreeNut",
+          "Fish",
+          "Shellfish"
+        ],
+        "contains": [
+          "Gluten",
+          "Dairy",
+          "Egg",
+          "Soy",
+          "Sesame",
+          "Mustard"
+        ],
+        "cross_contact_notes": "Formulated to be nut- and shellfish-free by default; verify shared equipment if sensitivities are severe."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [
+        15,
+        30
+      ],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers a mainstream, affordable family vegetarian lane with mild heat and 15\u201330 min simplicity per the coverage brief."
+    },
+    {
+      "uid": "arch_3a1b9k",
+      "name": "Solo 10-Minute Omnivore Quick Bites (Value Staples)",
+      "description": "Under-15-minute, one-pan or air-fry-friendly comfort bites for solo eaters using pantry staples; tuned for Omnivores with Mild heat, Familiar SA/Modern American flavors, and a ValueStaples budget.",
+      "core_tags": {
+        "Diet": [
+          "Omnivore"
+        ],
+        "Cuisine": [
+          "SouthAfrican",
+          "ModernAmerican"
+        ],
+        "CuisineOpenness": [
+          "FamiliarClassics"
+        ],
+        "PrepTime": [
+          "Under15"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Audience": [
+          "Solo"
+        ],
+        "BudgetLevel": [
+          "ValueStaples"
+        ],
+        "EthicsReligious": [
+          "None"
+        ],
+        "Allergens": [
+          "Gluten",
+          "Dairy",
+          "Egg",
+          "Soy"
+        ]
+      },
+      "diet_profile": {
+        "allowed": [
+          "Omnivore"
+        ],
+        "restricted": [],
+        "notes": "Focuses on quick proteins, grains, and veg for solo portions; swaps can reduce common allergens when desired."
+      },
+      "allergen_flags": {
+        "avoids": [],
+        "contains": [
+          "Gluten",
+          "Dairy",
+          "Egg",
+          "Soy"
+        ],
+        "cross_contact_notes": "Not allergen-safe by default; choose substitutions to avoid listed allergens if needed."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [
+        8,
+        15
+      ],
+      "complexity": "Simple",
+      "audience_context": "Solo",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers a mainstream solo-focused, fast, mild, and budget-friendly option without overlapping prior couple/family weeknight entries."
+    }
+  ],
+  "tags_version": "2025.02.0"
+}

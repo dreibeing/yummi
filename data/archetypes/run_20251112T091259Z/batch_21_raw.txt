@@ -1,0 +1,38 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_5k3f9z",
+      "name": "Vegan High-Protein Meal Prep (SE Asia, Hands-Off)",
+      "description": "Plant-based, protein-focused batch cooks with hands-off methods for budget-savvy meal preppers; Southeast Asian flavors, Medium heat, Affordable spend, and clear dairy/egg/fish/shellfish avoidance for reliable weekday portions in South African kitchens.",
+      "core_tags": {
+        "Diet": ["Vegan", "HighProtein"],
+        "Cuisine": ["SoutheastAsian"],
+        "CuisineOpenness": ["GlobalExplorer"],
+        "PrepTime": ["45Plus"],
+        "Complexity": ["Simple"],
+        "HeatSpice": ["Medium"],
+        "Audience": ["MealPrep"],
+        "BudgetLevel": ["Affordable"],
+        "EthicsReligious": [],
+        "Allergens": ["Dairy", "Egg", "Fish", "Shellfish"]
+      },
+      "diet_profile": {
+        "allowed": ["Vegan", "HighProtein"],
+        "restricted": ["Beef", "Pork", "Poultry", "Fish", "Shellfish", "Dairy", "Eggs"],
+        "notes": "Protein emphasis via legumes, tofu/tempeh; grains and vegetables anchor bulk prep."
+      },
+      "allergen_flags": {
+        "avoids": ["Dairy", "Egg", "Fish", "Shellfish"],
+        "contains": ["Soy"],
+        "cross_contact_notes": "Peanut/TreeNut toppings optional; default builds omit nuts and sesame unless user opts in."
+      },
+      "heat_band": "Medium",
+      "prep_time_minutes_range": [50, 120],
+      "complexity": "Simple",
+      "audience_context": "MealPrep",
+      "cuisine_openness": "GlobalExplorer",
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds a plant-forward, high-protein, hands-off meal-prep option with Southeast Asian flavors at an Affordable budget and Medium heat to diversify coverage without duplicating prior combos."
+    }
+  ]
+}

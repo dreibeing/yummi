@@ -1,0 +1,38 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_k7x3q9",
+      "name": "Gluten-Aware Sheet-Pan Meal Prep Basics",
+      "description": "Hands-off, family-friendly batch cooks for MealPrep that stay GlutenAware omnivore, NoHeat for sensitive palates, and Affordable for South African budgets using FamiliarClassics from SouthAfrican and ModernAmerican comfort cuisines.",
+      "core_tags": {
+        "Diet": ["Omnivore", "GlutenAware"],
+        "Cuisine": ["SouthAfrican", "ModernAmerican"],
+        "CuisineOpenness": ["FamiliarClassics"],
+        "PrepTime": ["45Plus"],
+        "Complexity": ["Simple"],
+        "HeatSpice": ["NoHeat"],
+        "Audience": ["MealPrep"],
+        "BudgetLevel": ["Affordable"],
+        "EthicsReligious": [],
+        "Allergens": []
+      },
+      "diet_profile": {
+        "allowed": ["Omnivore", "GlutenAware"],
+        "restricted": ["Gluten"],
+        "notes": "Targets naturally gluten-free meal prep patterns; choose certified gluten-free staples and sauces."
+      },
+      "allergen_flags": {
+        "avoids": ["Gluten"],
+        "contains": [],
+        "cross_contact_notes": "Emphasize certified gluten-free pantry items and separate prep surfaces to minimize cross-contact."
+      },
+      "heat_band": "NoHeat",
+      "prep_time_minutes_range": [50, 75],
+      "complexity": "Simple",
+      "audience_context": "MealPrep",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Provides an affordable, NoHeat, hands-off MealPrep option with GlutenAware guardrails distinct from prior weeknight archetypes."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_k7x9s2",
+      "name": "Family Flexitarian Regional Twists (SA & Mediterranean, 15-30, Mild, Balanced)",
+      "description": "Balanced weeknight recipes for families who mix veg-forward meals with occasional lean meats, staying Mild for kids, 15–30 minutes, and a Balanced budget with South African staples plus Mediterranean twists.",
+      "core_tags": {
+        "Diet": ["Flexitarian"],
+        "Cuisine": ["SouthAfrican", "Mediterranean"],
+        "CuisineOpenness": ["RegionalTwist"],
+        "PrepTime": ["15to30"],
+        "Complexity": ["Simple"],
+        "HeatSpice": ["Mild"],
+        "Audience": ["Family"],
+        "BudgetLevel": ["Balanced"],
+        "EthicsReligious": [],
+        "Allergens": []
+      },
+      "diet_profile": {
+        "allowed": ["Flexitarian"],
+        "restricted": ["UltraProcessedMeats"],
+        "notes": "Primarily plant-forward with optional lean poultry or fish; red meat limited."
+      },
+      "allergen_flags": {
+        "avoids": [],
+        "contains": ["Gluten", "Dairy", "Egg", "Soy", "Peanut", "TreeNut", "Fish", "Shellfish", "Sesame", "Mustard"],
+        "cross_contact_notes": "No dedicated allergen exclusions; standard kitchen cross-contact possible."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [15, 30],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "RegionalTwist",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers a mainstream, family-friendly flexitarian option with Mild heat, 15–30 min, Simple prep, and Balanced budget distinct from prior classics."
+    }
+  ]
+}

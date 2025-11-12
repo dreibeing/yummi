@@ -1,0 +1,73 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_5u6h1q",
+      "name": "Jain-Friendly Weeknight Vegan Classics",
+      "description": "Fast, no-heat Indian familiar classics tailored for Jain-friendly vegan family dinners on an affordable budget; avoids root vegetables and animal products while keeping flavors gentle for kids and sensitive palates.",
+      "core_tags": {
+        "Diet": [
+          "Vegan"
+        ],
+        "Cuisine": [
+          "Indian"
+        ],
+        "CuisineOpenness": [
+          "FamiliarClassics"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "NoHeat"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "BudgetLevel": [
+          "Affordable"
+        ],
+        "EthicsReligious": [
+          "JainFriendly"
+        ],
+        "Allergens": [
+          "Dairy",
+          "Egg",
+          "Fish",
+          "Shellfish"
+        ]
+      },
+      "diet_profile": {
+        "allowed": [
+          "Vegan"
+        ],
+        "restricted": [
+          "RootVegetables"
+        ],
+        "notes": "Jain-friendly posture: no animal products; excludes root vegetables by default."
+      },
+      "allergen_flags": {
+        "avoids": [
+          "Dairy",
+          "Egg",
+          "Fish",
+          "Shellfish"
+        ],
+        "contains": [],
+        "cross_contact_notes": "Gluten, soy, peanut, tree nut, sesame, and mustard may appear unless user filters; verify labels to prevent cross-contact."
+      },
+      "heat_band": "NoHeat",
+      "prep_time_minutes_range": [
+        15,
+        30
+      ],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds the required Jain-friendly, no-heat, affordable family weeknight option without duplicating prior Diet×Cuisine×Audience×Budget×Heat×Prep×Complexity×Ethics combos."
+    }
+  ]
+}

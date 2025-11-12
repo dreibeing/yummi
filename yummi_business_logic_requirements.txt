@@ -1,0 +1,253 @@
+Yummi Meal Recommendation Business Logic Requirements
+=====================================================
+
+Purpose & Scope
+---------------
+- Define the business logic that turns precomputed archetypes/meals into real-time recommendations while honoring Yummi's thin-slice flows and the canonical schemas documented here.
+- Designate this document as the authoritative reference for business-logic contracts across offline pipelines, the Fly-hosted runtime stack, and client integrations.
+- Cover offline AI generation, runtime onboarding, hard-constraint filtering, AI-only allocation/ranking, and feedback ingestion.
+- Clarify deployment boundaries: heavy pre-compute steps run locally, their artifacts are published to the Fly server (database/object store), and the Fly server executes the per-user recommendation code that feeds the app.
+- Explicitly exclude any handcrafted ranking, scoring, diversity logic, or retailer-specific heuristics beyond the initial hard filters.
+- Do not re-specify mobile/web UI, payment, or cart automation layers except where they consume business-logic contracts.
+
+Definitions & Entities
+----------------------
+- Archetype: `uid` (stable base36 hash derived from archetype name per this spec), `name`, `description`, `core_tags[]`, `diet_profile`, `complexity_band`, `refresh_version`. Links to `Meal.archetype_uid`.
+- Meal: `uid`, `archetype_uid`, `name`, `description`, `recipe_steps[]`, `tags{category:values}`, `allergens[]`, `heat_level`, `prep_time_minutes`, `complexity`, `canonical_ingredients[]`, `retailer_items[]`. Recipes reference canonical ingredient IDs before retailer SKU mapping.
+- Recipe Step: Ordered text with optional timers/tools; referenced inside `Meal.recipe_steps`.
+- Canonical Ingredient: `ingredient_id`, `common_name`, `unit`, `dietary_flags`, `allergens`. Acts as retailer-agnostic vocabulary.
+- Retailer Item Mapping: `ingredient_id ↔ retailer_sku`, `sku_metadata` (price, size, availability timestamp). Can plug different catalogs; Woolworths is current default.
+- Tag: Controlled vocab category/value pair (Cuisine, Diet, Spice, Complexity, PrepTime, Audience, Occasion, Ethics, etc.) defined in the Tagging System Architecture below.
+- User Profile: `user_id`, `selected_tags{category:values}`, `hard_constraints{diet, allergens, religious, heat}`, `preference_weights{tag:value}`, `declined_meal_ids[]`.
+- Candidate Pool: A set of Meal IDs surviving hard filters for a specific user session; includes serialized meal payloads for AI ranking.
+- Feedback: `user_id`, `meal_id`, `signal` (`like`, `dislike`, `declined`), `timestamp`, optional `reason_tags[]`. Likes/dislikes influence AI prompt context; declined list prevents repeats until reset.
+
+Tagging System Architecture
+---------------------------
+- Vocabulary Stewardship: Maintain a `defined_tags` table (or JSON manifest) with categories such as Diet, Cuisine, Protein/Base, Technique, Dish Format, PrepTime, Complexity, Heat/Spice, Audience, Occasion, Ethics/Religious, Allergens, Nutrition Focus, and Equipment. Each entry carries `tag_id`, `category`, `value`, `description`, `is_required_for_archetype`, `is_required_for_meal`.
+- Archetype Coverage: Every archetype must include at least Diet, Cuisine openness (broad/experimental indicators), Complexity band, PrepTime range, Heat tolerance, Allergens to avoid, and Household/Audience context. Optional tags (e.g., Equipment) may be added but cannot replace the required set.
+- Meal Tag Expectations: Meals must always emit Diet, Cuisine, Heat level, PrepTime bucket, Complexity, and any allergen/ethical flags triggered by their ingredients. Additional tags (Technique, Occasion, Nutrition) are recommended but explicitly optional—absence simply means \"not specified,\" not \"no.\" Document this behavior in the API schema so consumers do not expect every category.
+- User Profile Linkage: Onboarding responses map directly to `defined_tags`. Preference weights and feedback signals operate at the tag level, ensuring archetype intents, meal descriptors, and user affinities all speak the same vocabulary.
+- Data Model Binding: `archetypes.core_tags` → `meals.tags` → `user_profile.selected_tags` must remain compatible. Validation jobs should fail any build where an archetype references unknown tags or where meals omit a required category. Introduce tag-versioning (`tags_version`) so the Fly server knows which vocabulary applies to a given meal repository.
+- Extension Strategy: When new tags are added, bump `tags_version`, regenerate affected archetypes/meals offline, publish alongside migration notes, and have the Fly server serve both `n` and `n-1` until apps catch up.
+
+Data Storage & Deployment Strategy
+----------------------------------
+- Local Artifact Format: Persist canonical ingredients, archetypes, meals, and derived indexes as columnar Parquet (Arrow) files plus compact JSON manifests. Parquet provides schema evolution, compression, and language-agnostic access, avoiding the fragility and security issues of pickle serialization.
+- Versioned Artifact Tree: Store each build under `artifacts/{version}/` with subfolders for `canonical_ingredients`, `archetypes`, `meals`, `indexes`, and include a `manifest.json` capturing checksums, schema versions, and build metadata. Git LFS is optional; the primary source of truth is the artifact folder plus object storage snapshots.
+- Local Analysis DB: Use DuckDB or SQLite to attach the Parquet files for validation queries and lightweight QA. This keeps tooling simple while guaranteeing SQL schemas identical to what will be loaded into the server.
+- Publish Workflow: A `publish_meal_repository` CLI bundles validated Parquet files, uploads them to object storage (e.g., S3-compatible bucket), and executes ingestion scripts that load normalized tables into Fly Postgres.
+- Fly Server Storage Layout:
+  - Postgres: authoritative store for tags, archetypes, meals (flattened tables), retailer mappings, user profiles, feedback events, preference weights, candidate pools, and recommendation manifests. Use JSONB only for supplemental metadata; keep primary fields strongly typed for indexing.
+  - Object Storage: host large recipe bodies, historical artifacts, and backup manifests; store pointers (URLs + version hashes) in Postgres for referential integrity.
+  - Optional Cache: Redis/Upstash layer for hot candidate pools or recently generated recommendations to reduce query latency.
+- Deployment Simplicity: Loading Parquet into Postgres can leverage `duckdb COPY (SELECT * FROM read_parquet(...)) TO 'postgresql://...'` or PG `COPY FROM STDIN` to keep deployments repeatable. Version columns (`version`, `tags_version`, `catalog_version`) ensure blue/green swaps on Fly without downtime.
+- Backups & Recovery: Nightly Postgres backups plus immutable artifact archives in object storage guarantee restore paths; local Parquet history doubles as reproducibility checkpoints.
+
+Pre-computation Pipeline (Offline)
+---------------------------------
+All stages below execute in the local data/AI environment (scripts + notebooks). Once artifacts pass validation, the `publish_meal_repository` job syncs bundles to Fly server storage (e.g., Postgres + object storage) so runtime services can serve the latest version without rebuilding.
+
+Stage 0 — Catalog + Canonical Ingredient Sync
+- Inputs: Latest retailer catalog dumps (e.g., Woolworths scraper outputs), the current canonical ingredient table snapshot (`canonical_ingredients_v*.json`).
+- Process: Normalize retailer SKUs, refresh canonical ingredient dictionary, maintain `retailer_item_mapping` table with availability timestamps.
+- Outputs: `canonical_ingredients_v{n}.json`, `retailer_items_{retailer}_{yyyymmdd}.parquet`.
+- Validation: Ensure every canonical ingredient referenced by meals maps to ≥1 active SKU per retailer or is flagged as "missing" for remediation.
+- Refresh cadence: Weekly or when retailer catalog deltas detected.
+- E2E Verification Checklist (canonical alignment):
+  1. Confirm schema compatibility with the canonical ingredient schema defined in this document (field names/unit enums).
+  2. Verify canonical ingredient IDs remain stable or emit migration map.
+  3. Ensure each mapped SKU carries allergen/ethics metadata required downstream.
+
+Stage 1 — Archetype Generation (AI)
+- Inputs: Controlled tags manifest, demographic/market coverage goals, previous archetype release for continuity (no ingredient list required).
+- Prompt Goals: Generate theoretical archetypes that span the full potential customer market—covering diet, skill, cuisine openness, prep time, spice tolerance, allergens, and household context—without relying on specific ingredients or retailer availability.
+- Outputs: `archetypes_v{n}.jsonl` with required fields plus prompt metadata (model, temperature, checksum).
+- Validation: Enforce unique `uid`, non-empty tag sets, bounded prep-time ranges, and coverage metrics (e.g., vegetarian, halal, low-heat archetypes present). Confirm that archetype definitions remain ingredient-agnostic; feasibility gets enforced later during meal generation.
+- Refresh cadence: Monthly or after catalog/tag vocabulary changes.
+- E2E Verification Checklist: confirm `uid`, tag vocab, and dietary flags exactly match the runtime expectations defined in this specification before publishing.
+
+Stage 2 — Meal Generation per Archetype (AI)
+- Inputs: Archetype definitions, canonical ingredients, retailer mapping snapshots.
+- Prompt Goals: Produce `X` meals per archetype with names, narratives, **complete ingredient lists including precise quantities and units tied to canonical IDs**, prep timelines, complexity and heat annotations, plus tags in controlled vocab.
+- Outputs: 
+  - `meals_v{n}.jsonl` (meal metadata + recipe text),
+  - `meal_ingredients.parquet` (each row = `meal_id`, `ingredient_id`, `quantity`, `unit`, optional `preparation_notes`),
+  - `meal_recipes.parquet`,
+  - `meal_tags.parquet`.
+- Validation: Schema linting, duplicate name detection, ingredient availability check (resolve missing SKUs), allergen flag completeness, `heat_level` numeric buckets (e.g., 0-4).
+- Refresh cadence: Follows archetype refresh or when retailer catalog changes materially.
+- E2E Verification Checklist: verify every meal record includes `uid`, `archetype_uid`, canonical + SKU references, allergen flags, heat/prep/complexity tags, and any required metadata described in this document.
+
+Stage 3 — Packaging & Publishing
+- Inputs: Validated archetype + meal assets.
+- Process: Normalize into runtime-ready bundles (e.g., object storage blobs plus Fly Postgres tables) keyed by `version`. Generate derived indexes (by tag, by allergen) to accelerate runtime fetch, then push the bundle + manifest to the Fly server so the API layer serves it immediately.
+- Outputs: `meal_repository_v{n}` (object store or DB), `tag_index_v{n}`, manifest referencing checksums, Fly deployment confirmation.
+- Validation: Manifest parity checks, version bump, contract tests ensuring runtime GraphQL/REST fetch returns expected fields.
+- Refresh cadence: Mirrors upstream stage completion; publish only when all validation gates pass.
+- E2E Verification Checklist: confirm manifest tagged with `version` + `model_build_id`, ensure runtime services can blue/green deploy new versions without schema drift, and run regression tests against the contracts defined in this document.
+
+Runtime Flow
+------------
+1. Onboarding Tag Capture
+   - Collects multi-choice responses mapped to controlled tags plus explicit hard constraints (diet, allergens, religious/ethical bans, heat tolerance).
+   - Payload → `UserProfile` persisted with metadata (`created_at`, `source_version`).
+2. Hard-Constraint Filtering
+   - Fly-hosted API loads the current `meal_repository_version` and applies filters exclusively on binary constraints to emit `candidate_pool` (see next section).
+3. AI Allocation/Ranking
+   - The Fly server's recommendation worker sends the OpenAI payload containing user tags, candidate pool snippets, and feedback summaries. It receives an ordered list of Meal IDs with rationales and stores the result for delivery to the app.
+4. Presentation Layer
+   - Present top-N meals, including recipe preview, tag badges, SKU availability indicator.
+5. Feedback Capture
+   - User likes/dislikes/declines update preference weights and decline list immediately; feed into future AI calls.
+6. Data Sync to App
+   - The Fly API exposes the ranked bundle via REST/GraphQL so the Expo thin-slice can ingest it without duplicating logic.
+
+The Fly server hosts the runtime code for steps 2-6, relying on the locally generated artifacts uploaded during Stage 3. Offline compute never runs on Fly; instead, it publishes data and configuration that the hosted services consume deterministically.
+
+Data handoffs:
+- `UserProfile` → Filtering service: `{user_id, hard_constraints, selected_tags}`.
+- Filtering → Recommendation service: `{user_id, candidate_meal_ids[], meal_feature_blob[]}` where each blob includes `uid`, `tags`, `heat_level`, `prep_time`, `sku_summary`.
+- Recommendation → Client: `{meals:[{meal_id, rank, rationale, confidence_hint}], version, generated_at}`.
+- Feedback → Preference store: `{user_id, meal_id, signal, tags_at_time}`.
+
+E2E Verification Checklist (Runtime):
+- Ensure onboarding responses map 1:1 to controlled tags defined in the Tagging System Architecture to avoid mismatched vocab.
+- Confirm filtering outputs at least `min_candidate_pool_size` (fallback to archetype defaults if small).
+- Validate AI response schema before presenting; reject if required fields missing.
+- Check feedback writes succeed before refreshing UI; log failures for replay.
+
+Filtering — Hard Constraints Only
+---------------------------------
+- Constraint Types: dietary (vegan, vegetarian, pescatarian, halal, kosher), allergens (nuts, shellfish, dairy, gluten, soy, egg, sesame), religious/ethical (pork, alcohol, beef), heat tolerance (spice level cap), explicit ingredient bans, prep-time max (only if declared as must-not-exceed minutes).
+- Logic: Evaluate constraints against meal tags, allergen lists, canonical ingredient metadata, and `heat_level`. Exclude meal if any constraint violated; no scoring or partial credit.
+- Implementation Notes: Precompute boolean flags (e.g., `contains_pork`, `max_heat_level`) during offline stage so runtime filtering is a simple predicate.
+- Non-Goals: No soft preferences, diversity balancing, editorial curation, manual overrides, or stock-aware ranking at this layer.
+- Output: Candidate pool with metadata needed for AI (meal summary, tags, sku availability). If pool < threshold, expand by relaxing only time-bound constraints (e.g., extend prep time) with explicit user confirmation, not automatic heuristics.
+
+AI Allocation/Ranking (OpenAI Call)
+-----------------------------------
+- Inputs: `user_profile` (tags, hard constraints summary, preference weights), `candidate_pool` (≤50 meals per call with compact descriptors), `feedback_context` (liked/disliked tags, declined IDs), `system_parameters` (retailer slug, desired recommendation count).
+- Required Output: Ordered list of `N` meals with `meal_id`, `rank`, `rationale`, `confidence` (0-1), `expected_cart_sku_ids[]` (subset for UX), `archetype_reference`.
+- Guardrails:
+  - Prompt must insist on reasoning over provided data only; no external bias toward chefs/brands.
+  - AI must cite conflicts ("excluded because ...") only inside rationale for transparency.
+  - Deterministic required fields; tolerate creative text only inside rationale.
+  - Use `temperature <= 0.3` to keep ordering stable; rely on upstream diversity.
+- Alignment Checks: Prompt references the canonical tag schemas described in this document and ensures each meal retains canonical/SKU IDs already validated offline.
+- Failure Handling: If AI output missing IDs or ranks, reject and retry with stricter system message, logging incident.
+
+Feedback Learning Loop
+----------------------
+- Data Model: `feedback_events` table keyed by `(user_id, meal_id, timestamp)` with `signal ENUM('like','dislike','declined')`, `tag_snapshot`, `reason_text`. `preference_weights` table stores rolling averages of tag affinity.
+- Declined List: Maintained per user; meals moved to `declined_until` date when user dismisses them. Filtering step excludes these IDs unless `force_show` flag is set for recovery testing.
+- Learning Logic: Likes increment weights on meal tags; dislikes decrement; declined only suppresses repetition. These weights never short-circuit the hard filter—only adjust how the AI ranks by being included in the prompt context.
+- Cold Start: If no feedback exists, fill prompt with archetype-level priors (from onboarding) and highlight "no historical data" to encourage exploration.
+- Sparse Data Recovery: Decay old feedback (e.g., exponential decay over 30 days) so outdated dislikes stop suppressing categories forever.
+
+Prompt Engineering Guidelines (Genericity + E2E Alignment)
+---------------------------------------------------------
+- Parameterize retailer context: prompts accept `{retailer_slug, catalog_version}` so the same wording works for Woolworths or future partners.
+- Reference canonical ingredient layer, not brand names, when reasoning about allergens/diets; include SKU metadata only as evidence of availability.
+- Keep prompts outcome-driven: require explicit JSON with fields consumed downstream. Include guard clause instructing the model to verify each upstream artifact (archetype, meal record) covers fields requested by downstream consumers (UI, carting), citing this document's schema expectations.
+- Avoid prescriptive culinary styles; let archetype tags (e.g., `Cuisine:WestAfrican`) drive variety.
+- Embed mini checklists inside prompts ("Before final answer, confirm every recommended meal includes meal_id, rationale, sku list") to enforce E2E compliance.
+
+APIs & Interfaces (Contracts)
+-----------------------------
+All APIs below run on the Fly-hosted FastAPI service. They assume the latest meal repository, tag manifest, and preference stores have been published from the local pre-compute pipeline into Fly Postgres/object storage.
+
+1. Precomputed Meal Fetch API
+   - `GET /v1/meals?version={v}&tag=LowHeat`
+   - Response: `{version, meals:[{meal_id, archetype_uid, tags, allergens, canonical_ingredients, retailer_items}]}`.
+   - Supports filters: by archetype, by tag, by SKU presence.
+
+2. Filtering Service
+   - `POST /v1/filter` with `{user_id, meal_version, hard_constraints, declined_meal_ids[]}`.
+   - Response: `{candidate_pool_id, candidate_meals:[{meal_id, summary, tags, heat_level, prep_time, sku_snapshot}]}`.
+
+3. Recommendation Service (AI Orchestrator)
+   - `POST /v1/recommend` with `{user_id, candidate_pool_id, candidate_meals, user_tags, preference_weights, retailer_slug, requested_count}`.
+   - Response: `{recommendations:[{meal_id, rank, rationale, confidence, sku_ids}], manifest_version, prompt_audit_id}`.
+   - Hosted entirely on Fly; orchestrates filtering output, AI call, and persistence of generated meal listings before returning to clients.
+
+4. Feedback Endpoints
+   - `POST /v1/feedback/like` / `.../dislike` / `.../decline` each taking `{user_id, meal_id, reason_tags?, client_context}`.
+   - Responses acknowledge write and return updated preference summary so the client can refresh in-session recommendations if desired.
+
+Data Refresh & Consistency
+--------------------------
+- Schedule: Catalog sync weekly; archetype/meal rebuild monthly or on-demand; runtime services always reference latest published `meal_repository_version` stored in config.
+- Cache Invalidation: Clients include `If-None-Match` headers with version tags; server responds with 304 when unchanged.
+- Versioning: `version_major.minor.patch` for schema changes; maintain compatibility shim so runtime can serve `n` and `n-1` simultaneously.
+- Rolling Updates: Deploy new versions alongside old; filtering/recommendation requests specify version to avoid mixing.
+
+Metrics & Evaluation
+--------------------
+- Coverage: % of archetypes with ≥X meals live; track by diet/ethics segments.
+- Candidate Pool Sufficiency: Average and p95 pool sizes post-filter; alert when < desired threshold (e.g., <15 meals).
+- Acceptance Rate: Likes / shown recommendations per cohort.
+- Repeat Acceptance: % of liked meals surfaced again intentionally (should be low unless user requests repeats).
+- Correction Rate: # of dislikes citing wrong diet/allergen vs. total recommendations.
+- Safety: 100% exclusion rate for declared allergens/forbidden items; log any violations as Sev0.
+
+Risks, Non-Goals, and Guardrails
+--------------------------------
+- Risks: over-filtering from incomplete tags, SKU drift causing unavailable items, prompt regressions removing required fields, catalog lag creating stale allergen data.
+- Non-Goals: editorial curation, retailer lock-in, introducing rule-based ranking/dedup heuristics beyond AI output, forcing celebrity chef tones.
+- Guardrails: schema validation pipeline, prompt linting (ensure required fields present), monitoring for SKU coverage gaps, automated tests comparing new builds to the canonical fixtures defined in this document before publishing.
+
+Appendix
+--------
+A. Example Generic Prompts (abridged)
+1. Archetype Generation
+```
+SYSTEM: You are creating retailer-agnostic cooking archetypes for meal planning. Use the controlled tag vocabulary defined in the Tagging System Architecture and ensure every archetype lists diet, allergens, spice tolerance, prep-time band, complexity, cuisine openness, household context.
+USER: Given market coverage goals {{market_coverage_brief}} and retailer metadata {{retailer_slug}}, output JSON array of archetypes with fields [uid,name,description,core_tags{},diet_profile,allergen_flags[],heat_band,prep_time_minutes_range,complexity]. Ensure the collection spans the full theoretical customer base; do not constrain by current ingredient availability.
+```
+2. Meal Generation
+```
+SYSTEM: Generate meals for the supplied archetype without assuming any specific retailer branding. Use canonical ingredient IDs and map to retailer SKUs via provided lookup table.
+USER: For archetype {{archetype.uid}} produce {{meal_count}} meals. Each meal must include [meal_id, archetype_uid, name, description, recipe_steps[], canonical_ingredients[{ingredient_id,quantity,unit}], retailer_items[{sku,ingredient_id}], tags{}, allergens[], heat_level(0-4), prep_time_minutes, complexity]. Confirm every canonical ingredient maps to a SKU or flag "missing_mapping".
+```
+3. Runtime Recommendation
+```
+SYSTEM: Rank meals for a specific user strictly using the provided candidate pool and feedback summaries. Do not invent meals. Avoid stylistic bias.
+USER: User profile {{user_profile_json}}. Candidate meals {{candidate_pool_json}}. Feedback summary {{feedback_digest}}. Return JSON {recommendations:[{meal_id,rank,rationale,confidence,sku_ids[]}]} and explain briefly why each meal matches the profile. Verify every recommended meal honors hard constraints and has the fields above.
+```
+
+B. Sample Schemas (canonical reference)
+- `Meal` record:
+```
+{
+  "uid": "meal_7F3K",
+  "archetype_uid": "arch_0QZ9",
+  "name": "Roasted Veggie Harissa Couscous",
+  "tags": {"Diet":["Vegetarian"],"Cuisine":["NorthAfrican"],"Spice":["Medium"],"Complexity":["Intermediate"]},
+  "allergens": ["gluten", "tree_nut"],
+  "heat_level": 2,
+  "prep_time_minutes": 35,
+  "complexity": "Intermediate",
+  "canonical_ingredients": [{"ingredient_id":"ing_1021","quantity":250,"unit":"g"}],
+  "retailer_items": [{"sku":"WW-12345","ingredient_id":"ing_1021","price":89.99}],
+  "recipe_steps": ["Toast spices", "Roast veggies", "Plate"],
+  "version": "2025.02.0"
+}
+```
+- `Feedback Event`:
+```
+{
+  "user_id": "user_abc",
+  "meal_id": "meal_7F3K",
+  "signal": "dislike",
+  "tag_snapshot": {"Spice":"Medium"},
+  "reason_text": "Too spicy",
+  "timestamp": "2025-01-12T19:44:00Z"
+}
+```
+
+C. E2E Verification Checklist Template
+- Confirm upstream artifact includes all downstream-required fields per the canonical schema tables in this document.
+- Validate controlled vocab usage matches latest tag index.
+- Ensure retailer SKU references exist and carry allergen/ethics metadata.
+- Smoke-test API contracts with current version identifiers before release.

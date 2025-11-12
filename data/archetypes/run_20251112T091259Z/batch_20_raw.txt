@@ -1,0 +1,37 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_6e4b9k",
+      "name": "Pescatarian Mediterranean Entertaining (Shellfish-Free)",
+      "description": "Advanced, medium-heat fish-focused Mediterranean menus for small gatherings; shellfish-free by design, suited to hosts seeking a PremiumOccasion feel without specialty grocers, aligned to South African kitchens.",
+      "core_tags": {
+        "Diet": ["Pescatarian"],
+        "Cuisine": ["Mediterranean"],
+        "CuisineOpenness": ["GlobalExplorer"],
+        "PrepTime": ["30to45"],
+        "Complexity": ["Advanced"],
+        "HeatSpice": ["Medium"],
+        "Audience": ["Entertaining"],
+        "BudgetLevel": ["PremiumOccasion"],
+        "Allergens": ["Fish"]
+      },
+      "diet_profile": {
+        "allowed": ["Pescatarian"],
+        "restricted": ["Beef","Pork","Lamb","Poultry","Shellfish"],
+        "notes": "Fish-forward menus; dairy and eggs optional and can be toggled per recipe."
+      },
+      "allergen_flags": {
+        "avoids": ["Shellfish"],
+        "contains": ["Fish"],
+        "cross_contact_notes": "Ensure no shared equipment or stocks with shellfish; verify spice blends and sauces for hidden shellfish extracts."
+      },
+      "heat_band": "Medium",
+      "prep_time_minutes_range": [30,45],
+      "complexity": "Advanced",
+      "audience_context": "Entertaining",
+      "cuisine_openness": "GlobalExplorer",
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds a shellfish-free pescatarian entertaining option with Medium heat and Advanced complexity at a PremiumOccasion spend to diversify coverage."
+    }
+  ]
+}

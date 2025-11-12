@@ -1,0 +1,38 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_3f6a9d",
+      "name": "Family Gluten-Aware Weeknight Basics",
+      "description": "Mainstream South African family dinners designed to be gluten-aware for sensitive eaters, with mild flavors, 15–30 minute cook times, simple steps, and an Affordable budget fit for busy households.",
+      "core_tags": {
+        "Diet": ["GlutenAware","Omnivore"],
+        "Cuisine": ["SouthAfrican"],
+        "CuisineOpenness": ["FamiliarClassics"],
+        "PrepTime": ["15to30"],
+        "Complexity": ["Simple"],
+        "HeatSpice": ["Mild"],
+        "Audience": ["Family"],
+        "BudgetLevel": ["Affordable"],
+        "EthicsReligious": ["Halal"],
+        "Allergens": ["Gluten"]
+      },
+      "diet_profile": {
+        "allowed": ["GlutenAware","Omnivore"],
+        "restricted": ["Gluten"],
+        "notes": "Focuses on familiar, pantry-led meals using naturally gluten-free staples; substitutes used where typical recipes rely on gluten."
+      },
+      "allergen_flags": {
+        "avoids": ["Gluten"],
+        "contains": [],
+        "cross_contact_notes": "Emphasize verified gluten-free staples and separate prep surfaces to minimize cross-contact."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [15,30],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers a mainstream, affordable, mild, gluten-aware family weeknight option aligned to SA kitchens."
+    }
+  ]
+}

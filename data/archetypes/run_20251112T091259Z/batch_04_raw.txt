@@ -1,0 +1,36 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_6k2w9e",
+      "name": "Mediterranean Pescatarian Date-Night",
+      "description": "Couple-focused pescatarian dinners with Mediterranean flavors, Medium heat, 30–45 minutes, Intermediate skill, and an Affordable spend, designed to be shellfish-free while keeping fish as the primary protein.",
+      "core_tags": {
+        "Diet": ["Pescatarian"],
+        "Cuisine": ["Mediterranean"],
+        "CuisineOpenness": ["RegionalTwist"],
+        "PrepTime": ["30to45"],
+        "Complexity": ["Intermediate"],
+        "HeatSpice": ["Medium"],
+        "Audience": ["Couple"],
+        "BudgetLevel": ["Affordable"]
+      },
+      "diet_profile": {
+        "allowed": ["Pescatarian"],
+        "restricted": ["Pork", "Beef", "Lamb", "Poultry", "Shellfish"],
+        "notes": "Prioritizes fish and plant ingredients; excludes shellfish."
+      },
+      "allergen_flags": {
+        "avoids": ["Shellfish"],
+        "contains": ["Fish"],
+        "cross_contact_notes": "Recipes steer clear of shellfish; other allergens vary by dish and can be toggled via substitutions."
+      },
+      "heat_band": "Medium",
+      "prep_time_minutes_range": [30, 45],
+      "complexity": "Intermediate",
+      "audience_context": "Couple",
+      "cuisine_openness": "RegionalTwist",
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds a couple-friendly pescatarian option (Affordable, Medium heat, 30–45, Intermediate) and explicitly covers shellfish-free within Mediterranean cuisine."
+    }
+  ]
+}

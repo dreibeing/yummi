@@ -1,0 +1,38 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_j3q9x1",
+      "name": "Couple Low-Carb Global Explorer (East Asian, 15–30, Medium, Affordable)",
+      "description": "For adventurous couples eating low-carb on a budget: East Asian-inspired, medium-heat dishes ready in 15–30 minutes with intermediate steps; budget-conscious without specialty splurges.",
+      "core_tags": {
+        "Diet": ["LowCarb"],
+        "Cuisine": ["EastAsian"],
+        "CuisineOpenness": ["GlobalExplorer"],
+        "PrepTime": ["15to30"],
+        "Complexity": ["Intermediate"],
+        "HeatSpice": ["Medium"],
+        "Audience": ["Couple"],
+        "BudgetLevel": ["Affordable"],
+        "EthicsReligious": ["None"],
+        "Allergens": ["Soy","Sesame"]
+      },
+      "diet_profile": {
+        "allowed": ["LowCarb"],
+        "restricted": ["RefinedGrains","AddedSugar","Starches"],
+        "notes": "Focus on low-starch vegetables and lean proteins; limit sweet sauces and grain-focused sides."
+      },
+      "allergen_flags": {
+        "avoids": [],
+        "contains": ["Soy","Sesame"],
+        "cross_contact_notes": "Check labels on sauces and seasonings; choose gluten-free soy alternatives if needed."
+      },
+      "heat_band": "Medium",
+      "prep_time_minutes_range": [15,30],
+      "complexity": "Intermediate",
+      "audience_context": "Couple",
+      "cuisine_openness": "GlobalExplorer",
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds LowCarb coverage for couples with East Asian flavors at affordable spend and medium heat per the brief."
+    }
+  ]
+}

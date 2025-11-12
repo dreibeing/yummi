@@ -1,0 +1,36 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_7f3a9d",
+      "name": "Vegan High-Protein Meal Prep Bowls (Global Explorer)",
+      "description": "Batch-cook vegan bowls for MealPrep households using affordable pantry staples with Mediterranean/MiddleEastern flavors; Medium heat, Simple steps, 30–45 minutes per session; tailored for dairy-, egg-, nut-, fish-, and shellfish-free needs on an Affordable budget.",
+      "core_tags": {
+        "Diet": ["Vegan","HighProtein"],
+        "Cuisine": ["Mediterranean","MiddleEastern"],
+        "CuisineOpenness": ["GlobalExplorer"],
+        "PrepTime": ["30to45"],
+        "Complexity": ["Simple"],
+        "HeatSpice": ["Medium"],
+        "Audience": ["MealPrep"],
+        "BudgetLevel": ["Affordable"]
+      },
+      "diet_profile": {
+        "allowed": ["Vegan","HighProtein"],
+        "restricted": ["Beef","Pork","Lamb","Poultry","Fish","Shellfish","Dairy","Egg","Honey"],
+        "notes": "Protein emphasis from legumes and grains; default plans avoid soy to widen allergen safety unless explicitly opted in."
+      },
+      "allergen_flags": {
+        "avoids": ["Dairy","Egg","Peanut","TreeNut","Fish","Shellfish"],
+        "contains": ["Gluten","Sesame","Mustard"],
+        "cross_contact_notes": "Use dedicated utensils for allergen-safe prep; soy is excluded by default but can be toggled on if tolerated."
+      },
+      "heat_band": "Medium",
+      "prep_time_minutes_range": [30,45],
+      "complexity": "Simple",
+      "audience_context": "MealPrep",
+      "cuisine_openness": "GlobalExplorer",
+      "refresh_version": "2025.02.0",
+      "rationale": "Fills the plant-forward MealPrep gap with a high-protein vegan, affordable, medium-heat option distinct from prior omnivore/gluten-aware basics."
+    }
+  ]
+}

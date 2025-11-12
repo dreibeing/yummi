@@ -1,0 +1,38 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_3f4k9z",
+      "name": "Family Low-Carb Weeknight Basics",
+      "description": "Everyday low-carb family dinners focused on quick skillet and sheet-pan staples; designed for 15–30 minute, Simple prep with Mild heat and an Affordable budget, drawing on Familiar Classics from ModernAmerican and Mediterranean flavors.",
+      "core_tags": {
+        "Diet": ["LowCarb"],
+        "Cuisine": ["ModernAmerican", "Mediterranean"],
+        "CuisineOpenness": ["FamiliarClassics"],
+        "PrepTime": ["15to30"],
+        "Complexity": ["Simple"],
+        "HeatSpice": ["Mild"],
+        "Audience": ["Family"],
+        "BudgetLevel": ["Affordable"],
+        "EthicsReligious": [],
+        "Allergens": []
+      },
+      "diet_profile": {
+        "allowed": ["LowCarb"],
+        "restricted": ["RefinedCarbs", "AddedSugars"],
+        "notes": "Emphasizes non-starchy veg and protein with limited grains and sweeteners."
+      },
+      "allergen_flags": {
+        "avoids": [],
+        "contains": [],
+        "cross_contact_notes": "Not allergen-tailored; may include common allergens unless user filters further."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [15, 30],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds a mainstream, affordable low-carb family option with mild heat and 15–30 minute simple prep to broaden baseline coverage without duplicating prior combos."
+    }
+  ]
+}

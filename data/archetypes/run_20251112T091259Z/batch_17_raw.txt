@@ -1,0 +1,38 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_3q1h2k",
+      "name": "Halal-Friendly Poultry Weeknight Classics (Family)",
+      "description": "Family-friendly poultry-only dinners with South African and Mediterranean comfort flavors; mild heat, 15–30 minutes, simple steps, balanced budget, and explicit avoidance of fish and shellfish for straightforward halal-aligned weeknights.",
+      "core_tags": {
+        "Diet": ["PoultryOnly"],
+        "Cuisine": ["SouthAfrican","Mediterranean"],
+        "CuisineOpenness": ["FamiliarClassics"],
+        "PrepTime": ["15to30"],
+        "Complexity": ["Simple"],
+        "HeatSpice": ["Mild"],
+        "Audience": ["Family"],
+        "BudgetLevel": ["Balanced"],
+        "EthicsReligious": ["Halal"],
+        "Allergens": ["Fish","Shellfish"]
+      },
+      "diet_profile": {
+        "allowed": ["PoultryOnly"],
+        "restricted": ["Beef","Pork","Lamb","Fish","Shellfish","Alcohol"],
+        "notes": "Centered on poultry with halal-friendly constraints; plant sides and grains welcomed."
+      },
+      "allergen_flags": {
+        "avoids": ["Fish","Shellfish"],
+        "contains": [],
+        "cross_contact_notes": "Check labels for gluten, dairy, egg, soy, peanut, tree nut, sesame, and mustard; recipes default to exclude fish and shellfish."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [15,30],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Covers PoultryOnly + Family weeknights with halal alignment while staying mainstream, mild, simple, and balanced-budget."
+    }
+  ]
+}

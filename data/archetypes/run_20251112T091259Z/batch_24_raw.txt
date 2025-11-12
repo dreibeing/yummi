@@ -1,0 +1,38 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_3k9x8h",
+      "name": "Family Vegetarian Weeknight Classics (SA & Modern American, 15–30, Mild, Affordable)",
+      "description": "Mainstream, budget-aware vegetarian dinners for families who want mild, familiar South African and Modern American flavors in 15–30 minutes without nuts or seafood.",
+      "core_tags": {
+        "Diet": ["Vegetarian"],
+        "Cuisine": ["SouthAfrican","ModernAmerican"],
+        "CuisineOpenness": ["FamiliarClassics"],
+        "PrepTime": ["15to30"],
+        "Complexity": ["Simple"],
+        "HeatSpice": ["Mild"],
+        "Audience": ["Family"],
+        "BudgetLevel": ["Affordable"],
+        "EthicsReligious": [],
+        "Allergens": ["Peanut","TreeNut","Fish","Shellfish"]
+      },
+      "diet_profile": {
+        "allowed": ["Vegetarian"],
+        "restricted": ["Beef","Pork","Lamb","Fish","Shellfish","Poultry"],
+        "notes": "Eggs and dairy are permitted; emphasis on pantry-friendly produce and grains."
+      },
+      "allergen_flags": {
+        "avoids": ["Peanut","TreeNut","Fish","Shellfish"],
+        "contains": ["Gluten","Dairy","Egg","Soy","Sesame","Mustard"],
+        "cross_contact_notes": "Formulated to be nut- and shellfish-free by default; verify shared equipment if sensitivities are severe."
+      },
+      "heat_band": "Mild",
+      "prep_time_minutes_range": [15,30],
+      "complexity": "Simple",
+      "audience_context": "Family",
+      "cuisine_openness": "FamiliarClassics",
+      "refresh_version": "2025.02.0",
+      "rationale": "Delivers a mainstream, affordable family vegetarian lane with mild heat and 15–30 min simplicity per the coverage brief."
+    }
+  ]
+}

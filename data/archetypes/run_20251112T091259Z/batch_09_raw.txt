@@ -1,0 +1,69 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_5k3z9h",
+      "name": "Shellfish-Free Pescatarian Entertaining Showstopper",
+      "description": "A premium, guest-ready pescatarian spread with EastAsian GlobalExplorer vibes that stays shellfish-free, gluten-free, and nut-free by design; expect Medium heat, 45+ minute hands-off-and-finish cooking, and techniques that impress for Entertaining without relying on specialty retailer SKUs.",
+      "core_tags": {
+        "Diet": [
+          "Pescatarian"
+        ],
+        "Cuisine": [
+          "EastAsian"
+        ],
+        "CuisineOpenness": [
+          "GlobalExplorer"
+        ],
+        "PrepTime": [
+          "45Plus"
+        ],
+        "Complexity": [
+          "Showstopper"
+        ],
+        "HeatSpice": [
+          "Medium"
+        ],
+        "Audience": [
+          "Entertaining"
+        ],
+        "BudgetLevel": [
+          "PremiumOccasion"
+        ]
+      },
+      "diet_profile": {
+        "allowed": [
+          "Pescatarian"
+        ],
+        "restricted": [
+          "Beef",
+          "Lamb",
+          "Pork",
+          "Poultry",
+          "Shellfish"
+        ],
+        "notes": "Focus on fish and plant ingredients; avoids shellfish entirely to protect allergen cohort while maintaining premium entertaining appeal."
+      },
+      "allergen_flags": {
+        "avoids": [
+          "Gluten",
+          "Dairy",
+          "Peanut",
+          "TreeNut",
+          "Shellfish"
+        ],
+        "contains": [],
+        "cross_contact_notes": "Audit sauces and spice mixes for hidden gluten, dairy, nut, and shellfish derivatives; substitute sesame-free seasonings where needed."
+      },
+      "heat_band": "Medium",
+      "prep_time_minutes_range": [
+        55,
+        90
+      ],
+      "complexity": "Showstopper",
+      "audience_context": "Entertaining",
+      "cuisine_openness": "GlobalExplorer",
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds an Entertaining, Showstopper Pescatarian option with Medium heat, PremiumOccasion budget, and explicit shellfish/gluten/nut avoidance to extend coverage without duplicating prior cohorts."
+    }
+  ]
+}

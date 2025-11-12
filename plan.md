@@ -1,59 +1,49 @@
-# Yummi Build Plan
+# Archetype Data Build Plan
 
-## Quick Links
-- Product guide: [thisproject.md](thisproject.md)
-- Backend roadmap & runbook: [server.md](server.md)
-- Mobile scaffold details: [yummi_scaffold_spec.md](yummi_scaffold_spec.md)
-- PayFast integration notes: [payfastmigration.md](payfastmigration.md)
-- Chargebacks & refunds policy: [Chargebacks.txt](Chargebacks.txt)
-- Thin-slice client entry point: [`thin-slice-app/App.js`](thin-slice-app/App.js)
+## Objective
+Produce a validated archetype repository that satisfies the contracts in `yummi_business_logic_requirements.txt` and can be published as Parquet + JSON artifacts for the Fly runtime stack.
 
-## Current Snapshot (2025-11-04)
-- PayFast initiate + ITN endpoints live with wallet ledger persistence (see [yummi-server/app/routes/payfast.py](yummi-server/app/routes/payfast.py) and [yummi-server/app/routes/wallet.py](yummi-server/app/routes/wallet.py)).
-- `/v1/me` returns wallet data; `/v1/wallet/balance` exposes recent transactions (ledger modeled in [yummi-server/app/models.py](yummi-server/app/models.py)).
-- Thin-slice Expo client shows wallet balance, triggers PayFast checkout, and refreshes ledger after return ([thin-slice-app/App.js](thin-slice-app/App.js)).
-- Observability, migrations, and Fly deployment instructions consolidated in [server.md](server.md).
+## Prerequisites
+- Latest controlled vocabulary (`defined_tags` manifest + `tags_version`) and canonical ingredient catalog.
+- Market coverage brief + retailer metadata inputs referenced in `thisproject.md`.
+- Access to the archetype generation prompt stack (Appendix A.1) and validation scripts.
 
-## Phase 0 – Platform hardening
-- ✅ Provision managed Postgres guidance (Fly) and add Alembic migrations so schema changes are reproducible (2025-11-04).
-- ✅ Enable structured logging + metrics exporters (Prometheus, Sentry breadcrumbs) for both local and Fly environments (2025-11-04).
-- ✅ Add startup validation that fails fast when mandatory secrets (Clerk, PayFast, Redis, OpenAI) are missing (2025-11-04).
+## Status (2025-11-12)
+- **Steps 1–4:** Completed. `data/tags/defined_tags.json` locked at `tags_version 2025.02.0`; constraint brief lives in `data/tags/archetype_constraint_brief.md`; prompt/template + runner (`scripts/archetype_prompt_runner.py`) and curator (`scripts/archetype_curator.py`) now bake in mainstream-first guidance and compact prior-archetype context.
+- **Step 5:** Initial QA + GPT-5 curation finished for run `data/archetypes/run_20251112T091259Z`. Raw outputs + recommendations live under `…/curation/`.
+- **Step 6:** Final curated JSON (pre-Parquet) stored at `data/archetypes/run_20251112T091259Z/curation/archetypes_curated.json`. Parquet packaging + publication still pending.
 
-## Phase 1 – Authentication & access control
-- Enable Clerk verification in FastAPI (`AUTH_DISABLE_VERIFICATION=false`) with real issuer, JWKS, and audience.
-- Store Clerk user records in Postgres; build sync logic and role assignments.
-- Require auth on thin-slice endpoints (shared token or role) to prevent anonymous use.
+## Build Steps
+1. **Tag Vocabulary & Versioning**  
+   - Lock the controlled categories/values called out in `yummi_business_logic_requirements.txt` and assign a `tags_version`.  
+   - Fail the build if any planned archetype fields reference missing tags.
 
-## Phase 2 – Persistent data + background jobs
-- Move thin-slice orders/catalog state into Postgres/Redis with models and indexing.
-- Implement ingestion and worker processes for dataset uploads, order claims, and cart fill retries.
-- Introduce queue monitoring endpoints and admin tooling.
+2. **Canonical Ingredient & Constraint Alignment**  
+   - Ensure diet/allergen guardrails and household/audience contexts are documented per the Tagging System Architecture.  
+   - Map required allergen restrictions to canonical ingredient flags before prompting.
 
-## Phase 3 – Billing & monetization
-- Integrate PayFast wallet top-ups and, if needed, subscriptions/adhoc agreements.
-- Handle PayFast ITN/PDT flows and enforce payment status on API usage.
-- Surface billing status in the app and admin dashboards.
-- Implement chargeback/refund workflows per `Chargebacks.txt` (negative balance handling, refund limits, abuse review).
+3. **Prompt Package Preparation**  
+   - Draft the `market_coverage_brief` (audience, cuisines, household sizes) plus retailer notes, then feed them into the Archetype Generation prompt template (Appendix A.1).  
+   - Pre-assign deterministic base36 `uid`s from archetype names to keep referential integrity with planned meals.
 
-## Phase 4 – Business logic & AI features
-- Implement OpenAI-based assistants with server-owned keys, per-user quotas, and usage logging.
-- Extend catalog enrichment and selection logic; add recommendation/personalization features.
-- Harden cart-fill automation (retry logic, analytics, alerts).
+4. **Archetype Generation Run**  
+   - Execute prompt batches, collect JSON output with the required fields (`uid`, `name`, `description`, `core_tags`, `diet_profile`, `allergen_flags`, `heat_band`, `prep_time_minutes_range`, `complexity`, `refresh_version`).  
+   - Capture raw run metadata (model, temperature, inputs) for reproducibility.
 
-## Phase 5 – Productization & QA
-- Build integration + E2E tests (CI pipeline) covering auth, payments, orders, and AI flows.
-- Establish staging environment mirroring Fly prod; add blue/green or rolling deploy strategy.
-- Conduct security review (rate limiting, secret rotation, audit logs) and prepare launch checklist.
+5. **Validation & Coverage QA**  
+   - Enforce schema checks, required tag coverage (Diet, Cuisine openness, Complexity, PrepTime, Heat, Allergens, Audience), and uniqueness of `uid`s.  
+   - Verify collective coverage spans the “full theoretical customer base” mandate before publishing.
 
-## Immediate Next Steps
-1. **PayFast production readiness**  
-   - Take the verified Fly staging flow (R100 run on 2025-11-11, ITN `1645682`) and prep production cutover: clone secrets, keep remote validation enforced, and wire up monitoring/alerts using the new regression checklist in [payfastmigration.md](payfastmigration.md#43-operations--security).  
-   - Finish backfilling automated tests (signature builder, multipart ITN parser) and add CI smoke checks so future deploys catch regressions early.
-2. **Chargeback/refund groundwork**  
-   - Design debit/chargeback flow using guidance in [Chargebacks.txt](Chargebacks.txt); extend payment service to support negative balances and ledger reversals.  
-   - Document the workflow updates in [payfastmigration.md](payfastmigration.md#43-operations--security).
-3. **Wallet UX polish**  
-   - Expand the thin-slice wallet UI to show full transaction history, highlight negative balances, and prompt users for follow-up actions (link to design in [yummi_scaffold_spec.md](yummi_scaffold_spec.md#10-payments-payfast-hosted-checkout)).  
-   - Consider refactoring mobile wallet logic into a dedicated hook/service for reuse.
-4. **Data & scrapers**  
-   - Resume resolver/catalog enrichment tasks (see [thisproject.md](thisproject.md#todo-focus-areas)) once payment auth work is stable.
+6. **Artifact Packaging & Publication**  
+   - Serialize the final set into Parquet + JSON manifests, embed `tags_version`/`refresh_version`, and store under the resolver dataset tree referenced in `thisproject.md`.  
+   - Record release notes + checksums, then push artifacts to the Fly server/object store for downstream meal generation and runtime usage.
+
+## Deliverables
+- `archetypes.parquet` and `archetypes.json` aligned with the canonical schema.  
+- Validation report + prompt metadata for traceability.  
+- Updated roadmap entry noting the deployed `tags_version` and `refresh_version`.
+
+## Immediate Next Actions
+1. Convert `data/archetypes/run_20251112T091259Z/curation/archetypes_curated.json` into the Parquet/JSON artifact pair expected by Step 6 (include checksums + manifest entry).
+2. Wire curator recommendations (keep/modify/replace) into the next generation run or manual edits, then re-run the curator to confirm overlap clusters are resolved.
+3. Publish the vetted artifact to the resolver object store + Fly Postgres, documenting the release details back in this plan and `thisproject.md`.
