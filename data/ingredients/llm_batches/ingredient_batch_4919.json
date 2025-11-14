@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4919",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "7640110708507",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "canderel with sucralose caf sticks 200 pcs",
+      "default_category": "Sugar & Sweeteners",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1572",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20189631",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "blueberries",
+      "default_category": "All Berries",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

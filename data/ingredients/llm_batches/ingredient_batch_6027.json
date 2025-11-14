@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6027",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009175386357",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kids cheese sauce with hidden veggies",
+      "default_category": "Kids Ready Meals",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

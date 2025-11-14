@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4149",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217264322",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "full cream granadilla flavoured yeast free kephir",
+      "default_category": "Dairy Drinks",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

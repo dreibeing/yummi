@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1545",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009025692",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "queen pineapple",
+      "default_category": "Papaya, Mango, Pineapple & Kiwi Fruit",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

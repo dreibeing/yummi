@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3884",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009189642395",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "full cream ayrshire vanilla yoghurt with mini brites",
+      "default_category": "Yoghurt Corner Pots",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

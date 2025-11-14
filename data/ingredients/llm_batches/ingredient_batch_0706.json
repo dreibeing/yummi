@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0706",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009025517",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ken forrester shiraz grenache mourvedre",
+      "default_category": "Top wine pairings: April",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

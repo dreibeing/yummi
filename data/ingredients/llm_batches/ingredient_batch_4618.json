@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4618",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184245652",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "red and white quinoa blend",
+      "default_category": "Pouch Power",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

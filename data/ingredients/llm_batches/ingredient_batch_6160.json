@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6160",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233951206",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "avo wasabi pork booster bowl",
+      "default_category": "Booster & Soup Bowls",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

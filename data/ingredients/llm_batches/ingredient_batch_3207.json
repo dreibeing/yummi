@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3207",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2093340000005",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "2 free range sundried tomato chicken espetadas avg",
+      "default_category": "Kebabs & Espetadas",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

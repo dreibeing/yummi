@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5465",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009000106402",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chives",
+      "default_category": "Herbs",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

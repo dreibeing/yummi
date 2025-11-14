@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5593",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233314315",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plantlove tangy mayonnaise",
+      "default_category": "Mayo",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1528",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20158415",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "coleslaw salad",
+      "default_category": "Bunless Rainbow Crunch Veggie Burger",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

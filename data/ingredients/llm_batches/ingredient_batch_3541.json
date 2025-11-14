@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3541",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875303216",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fish pie with trout hake",
+      "default_category": "Easy To Cook Range",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

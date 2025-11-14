@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5561",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233553189",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "orange blossom honey with royal jelly",
+      "default_category": "Jams, Honey & Spreads",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

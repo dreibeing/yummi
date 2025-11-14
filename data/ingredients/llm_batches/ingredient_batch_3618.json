@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3618",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2582220000001",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "grabouw chicken wors avg",
+      "default_category": "Poultry",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

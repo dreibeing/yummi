@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5764",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20104139",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "butternut soup",
+      "default_category": "Pantry Soup",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

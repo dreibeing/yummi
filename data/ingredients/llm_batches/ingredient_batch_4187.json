@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4187",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009710390696",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "flora gold",
+      "default_category": "Butter & Spreads",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

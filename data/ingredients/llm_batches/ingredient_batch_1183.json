@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1183",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226089732",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "salami selection",
+      "default_category": "Entertaining & Platters",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

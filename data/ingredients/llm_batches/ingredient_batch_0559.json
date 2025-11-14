@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0559",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195242305",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pickled red onion petals",
+      "default_category": "Salad Dressing, Croutons & Toppings",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

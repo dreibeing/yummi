@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5509",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233357183",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "extremely creamy mayonnaise",
+      "default_category": "Mayo",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

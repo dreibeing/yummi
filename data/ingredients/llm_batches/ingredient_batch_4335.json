@@ -1,0 +1,18 @@
+{
+  "batch_id": "ingredient_batch_4335",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211697713",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "basmati rice",
+      "default_category": "Rice, Couscous & Polenta",
+      "category_path": [
+        "Food",
+        "Pantry",
+        "Pasta, Rice & Noodles"
+      ]
+    }
+  ]
+}

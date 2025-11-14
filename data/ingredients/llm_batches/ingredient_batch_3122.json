@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3122",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009000346075",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mince curry rice",
+      "default_category": "Global Cuisine",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

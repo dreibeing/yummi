@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3366",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2083150000005",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "slow cooked whole lamb shanks avg",
+      "default_category": "Beef, Lamb, Pork & Oxtail",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

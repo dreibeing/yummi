@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1504",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20008529",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "tenderstem broccoli",
+      "default_category": "Irresistible side",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

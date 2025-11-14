@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0329",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245382227",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "olive pastry straws",
+      "default_category": "Savoury Biscuits & Crackers",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

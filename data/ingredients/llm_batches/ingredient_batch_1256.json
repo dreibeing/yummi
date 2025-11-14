@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1256",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233589607",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chicken polony roll",
+      "default_category": "Deli Meats",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

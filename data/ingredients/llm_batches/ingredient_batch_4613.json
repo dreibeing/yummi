@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4613",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8801055707775",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "nescaf hazelnut cappuccino sachets 10 x",
+      "default_category": "Instant Drinks",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

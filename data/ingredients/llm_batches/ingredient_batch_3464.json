@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3464",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "1230000068123",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "beyond links plant based links 2 x",
+      "default_category": "Plant Based Braai",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

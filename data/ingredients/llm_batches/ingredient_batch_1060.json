@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1060",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245212982",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "babes scented cleansing water",
+      "default_category": "Baby Toiletries",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

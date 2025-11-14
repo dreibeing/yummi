@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0218",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009005656",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sundried tomato squares",
+      "default_category": "Biscuits",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

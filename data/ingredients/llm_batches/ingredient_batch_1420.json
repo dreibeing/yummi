@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1420",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009000805480",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "so yo vanilla frozen yoghurt",
+      "default_category": "But I'm Counting Kilojoules",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

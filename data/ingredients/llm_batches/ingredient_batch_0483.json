@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0483",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009175863674",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "brie de roche",
+      "default_category": "Brie, Camembert & Soft Cheese",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

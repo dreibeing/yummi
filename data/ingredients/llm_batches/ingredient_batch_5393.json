@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5393",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211710122",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "go apple and cinnamon crush",
+      "default_category": "Energy Bars, Bites & Pouches",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

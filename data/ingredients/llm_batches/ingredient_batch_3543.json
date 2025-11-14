@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3543",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2080290000001",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "lightly smoked mackerel fillets avg",
+      "default_category": "Whole Fish, Portions & Bangers",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

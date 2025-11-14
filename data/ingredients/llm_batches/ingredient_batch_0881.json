@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0881",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20019068",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "white hamburger rolls",
+      "default_category": "White Rolls",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

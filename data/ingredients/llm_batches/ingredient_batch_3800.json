@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3800",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009001733",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fresh full cream ayrshire milk",
+      "default_category": "Fresh Milk",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

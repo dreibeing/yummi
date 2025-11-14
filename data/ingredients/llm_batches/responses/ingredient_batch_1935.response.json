@@ -1,0 +1,16 @@
+{
+  "batch_id": "ingredient_batch_1935",
+  "metadata": {
+    "model": "gpt-5-nano-2025-08-07",
+    "temperature": 0.1,
+    "top_p": null,
+    "max_output_tokens": 5000
+  },
+  "results": [
+    {
+      "product_id": "6009195267902",
+      "core_item_name": "cauliflower",
+      "item_type": "ingredient"
+    }
+  ]
+}

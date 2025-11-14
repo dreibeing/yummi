@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2693",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214212159",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ayrshire smooth ricotta",
+      "default_category": "Melanzane is loaded with flavour",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0173",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009175411332",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pecan cashew nut tartlets",
+      "default_category": "Teatime Sweet Treats",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

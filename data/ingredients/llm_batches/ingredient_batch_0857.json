@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0857",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223032007",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kleine zalze chenin blanc",
+      "default_category": "Bottles of Wine",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

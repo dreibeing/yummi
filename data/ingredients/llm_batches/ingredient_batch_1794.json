@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1794",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009173182531",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "crunchy sprouts",
+      "default_category": "Smashed Pea & Avo Pasta Salad",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

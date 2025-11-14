@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0851",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009101652938",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "non alcoholic sparkling ruby grapefruit drink",
+      "default_category": "Woolies Soda",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

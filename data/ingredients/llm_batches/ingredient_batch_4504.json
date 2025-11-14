@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4504",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001052002985",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "bokomo otees multigrain toasted wheat free cereal",
+      "default_category": "Breakfast Cereals",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

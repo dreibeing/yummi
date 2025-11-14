@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4706",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20167004",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "turmeric",
+      "default_category": "Spices",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

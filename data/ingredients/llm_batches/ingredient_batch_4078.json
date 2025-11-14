@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4078",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226670206",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "full cream ayrshire yoghurt with tommy atkins mango 4 x",
+      "default_category": "Fruited Yoghurt 150g",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

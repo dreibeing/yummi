@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3765",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2579860000003",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "smoked pork belly rib avg",
+      "default_category": "Pork",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

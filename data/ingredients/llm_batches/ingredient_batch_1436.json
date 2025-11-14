@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1436",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195975401",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "frozen cooked shell on large prawns",
+      "default_category": "Frozen Prawns",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

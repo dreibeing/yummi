@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1045",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009188007331",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "nestl nan optipro gold stage 1 infant formula birth to 6 months",
+      "default_category": "Stage 1 Formula",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

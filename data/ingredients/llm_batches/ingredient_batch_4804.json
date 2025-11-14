@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4804",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009101610792",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "instant cappuccino sachets 10 x",
+      "default_category": "Instant Drinks",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2414",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195431013",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sliced smoked salami",
+      "default_category": "Buy 6 Bulk Meats Save 10%",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

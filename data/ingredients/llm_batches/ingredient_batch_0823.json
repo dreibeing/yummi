@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0823",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001341018178",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "milton sterilising fluid",
+      "default_category": "Pharmacy",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

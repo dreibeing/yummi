@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1323",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6005000459616",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "frozen lemon herb rainbow trout portions",
+      "default_category": "Sustainably Sourced Fish",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "batch_id": "ingredient_batch_1446",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009173919649",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "bulk extra fine green beans",
+      "default_category": "Green Beans, Peas & Mange Tout",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads",
+        "Bulk Vegetables, Fruit & Salads",
+        "Fresh Vegetables"
+      ]
+    }
+  ]
+}

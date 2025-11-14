@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4623",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009204751293",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "carb clever almond and cocoa nib granola",
+      "default_category": "Muesli & Granola",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

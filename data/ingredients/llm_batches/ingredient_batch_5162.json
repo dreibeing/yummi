@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5162",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009182627603",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "savoury mince dry cook in sauce",
+      "default_category": "Cook-In Sauces & Pastes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

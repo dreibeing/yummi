@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6030",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20147686",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chicken korma",
+      "default_category": "Single Meals",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

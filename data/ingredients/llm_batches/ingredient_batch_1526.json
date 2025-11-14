@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1526",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20091170",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "cauliflower broccoli carrots",
+      "default_category": "Mixed Veggie Bags",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

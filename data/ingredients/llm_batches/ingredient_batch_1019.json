@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1019",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211118928",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "raw luxury nuts and fruit",
+      "default_category": "Nuts",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

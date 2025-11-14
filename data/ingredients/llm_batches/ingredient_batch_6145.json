@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6145",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20109271",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pepper steak pie",
+      "default_category": "Pies",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

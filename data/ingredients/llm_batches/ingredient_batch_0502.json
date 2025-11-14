@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0502",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233510083",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "babes turtle design reusable pouch with textured wipes",
+      "default_category": "Baby",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

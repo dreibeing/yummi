@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4874",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20127442",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mediterranean tomato cook in sauce",
+      "default_category": "Cook-In Sauces & Pastes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1875",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20041137",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fresh medjool dates",
+      "default_category": "Dates, Figs & Guavas",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

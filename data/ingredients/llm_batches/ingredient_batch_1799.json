@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1799",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009189658037",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "golden kiwi fruit",
+      "default_category": "Fresh Fruit",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

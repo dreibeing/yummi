@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3540",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226084492",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plantlove tempeh",
+      "default_category": "Plant Based Promo",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

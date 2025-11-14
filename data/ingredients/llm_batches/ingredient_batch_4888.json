@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4888",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009035035",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mint green tea bags",
+      "default_category": "Tea",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2947",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009022905",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "organic balsamic vinegar",
+      "default_category": "Balsamic Vinegars & Juice Concentrates",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

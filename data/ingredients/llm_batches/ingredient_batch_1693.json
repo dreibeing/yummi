@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1693",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20008604",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "brussels sprouts",
+      "default_category": "The secret to a succulent turkey",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

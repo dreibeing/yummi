@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2767",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20082000",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "greek leaf salad",
+      "default_category": "Prepared Salads",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

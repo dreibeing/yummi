@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5372",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217869701",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "smoked chilli seasoning in tin",
+      "default_category": "Seasoning Kits, Shakers & Grinders",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

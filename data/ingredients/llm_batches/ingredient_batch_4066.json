@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4066",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009204207226",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mature cheddar cheese",
+      "default_category": "Speciality Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

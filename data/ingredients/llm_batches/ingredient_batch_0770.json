@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0770",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "502323374",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "delicate baby soap",
+      "default_category": "Baby Toiletries",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

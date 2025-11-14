@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4217",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "3177890003651",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ile de france roquefort",
+      "default_category": "Entertaining, Platters & Dairy Dips",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

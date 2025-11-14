@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5831",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8854404001055",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "blue elephant red curry paste",
+      "default_category": "Cook-In Sauces & Pastes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

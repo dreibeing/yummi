@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0815",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875652734",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "roaming goat dry ros",
+      "default_category": "Rosé Wines",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

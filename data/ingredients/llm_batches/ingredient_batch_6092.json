@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6092",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20139926",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "fresh pea ham soup",
+      "default_category": "Soups",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3048",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226197949",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kids music shaped tricolore pasta",
+      "default_category": "Kids school lunches",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

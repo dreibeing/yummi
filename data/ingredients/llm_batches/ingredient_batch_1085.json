@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1085",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6008000445498",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "beech wood smoked american style hot dog sausages",
+      "default_category": "Sausages & Viennas",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

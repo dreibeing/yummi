@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3075",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20082154",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "tagliatelle alfredo",
+      "default_category": "Italian Meals",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

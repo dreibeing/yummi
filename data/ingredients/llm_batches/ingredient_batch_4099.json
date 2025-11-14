@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4099",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2067620000009",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "manchego sheep s milk full fat hard cheese avg",
+      "default_category": "Parmesan & Hard Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

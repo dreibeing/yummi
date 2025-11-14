@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5546",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226185021",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fully cooked brown rice",
+      "default_category": "Rice, Couscous & Polenta",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

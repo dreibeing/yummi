@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5491",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001231000511",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "aunt caroline long grain parboiled rice",
+      "default_category": "Rice, Couscous & Polenta",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4873",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875219388",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "roast garlic and mushroom sauce",
+      "default_category": "Simply Heat Sauces",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1301",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20029388",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "freshly frozen garden peas",
+      "default_category": "Vegetables",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

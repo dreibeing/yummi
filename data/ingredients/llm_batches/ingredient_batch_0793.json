@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0793",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233557590",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "foliage square plate",
+      "default_category": "Serviettes, Paper Towels & Disposables",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5531",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8854404006258",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "blue elephant royal thai cuisine tom yam chilli paste",
+      "default_category": "Global Cuisine",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

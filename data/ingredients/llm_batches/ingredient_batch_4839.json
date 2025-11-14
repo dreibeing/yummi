@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4839",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009171974121",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kids pear pieces in raspberry flavoured jelly cups 4 x",
+      "default_category": "Jelly & Dessert Mixes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

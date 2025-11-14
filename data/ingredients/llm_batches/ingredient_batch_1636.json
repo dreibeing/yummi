@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1636",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20101763",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ripen at home pears",
+      "default_category": "Apples and Pears",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2553",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009175048262",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "dill",
+      "default_category": "Herbs",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

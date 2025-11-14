@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4604",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20167073",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chilli flakes",
+      "default_category": "Seafood Pasta",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

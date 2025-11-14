@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2525",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20115999",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fresh dill",
+      "default_category": "Classic Christmas",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

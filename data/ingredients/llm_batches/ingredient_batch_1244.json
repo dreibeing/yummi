@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1244",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245456737",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "biltong sour cream vetkoek",
+      "default_category": "Finger Foods",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

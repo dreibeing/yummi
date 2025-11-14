@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0265",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2570150000000",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plain butter croissant",
+      "default_category": "Fresh Bakery Counter",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

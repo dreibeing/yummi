@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3465",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2566180000004",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "matured thick cut t bone steak avg",
+      "default_category": "Steaks",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

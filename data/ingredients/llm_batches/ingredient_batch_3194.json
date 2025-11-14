@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3194",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009171288785",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range lean beef mince",
+      "default_category": "Mince & Frikkadels",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

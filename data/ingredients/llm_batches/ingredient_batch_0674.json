@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0674",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214801261",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "peri peri prego baste and dip",
+      "default_category": "Marinades & Braai Sauces",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

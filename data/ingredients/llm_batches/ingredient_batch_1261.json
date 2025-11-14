@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1261",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233946219",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "beech wood smoked cocktail sausages",
+      "default_category": "Deli Meats",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

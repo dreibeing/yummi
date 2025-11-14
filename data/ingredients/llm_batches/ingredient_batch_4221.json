@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4221",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "3073780967754",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kiri cream cheese with garlic herbs",
+      "default_category": "Soft, Cream & Cottage Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

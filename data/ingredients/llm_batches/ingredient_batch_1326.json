@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1326",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214621319",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "frozen mussels with garlic herb butter",
+      "default_category": "Fish & Seafood",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

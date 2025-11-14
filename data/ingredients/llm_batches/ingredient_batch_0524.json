@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0524",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2084870000009",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chicken wings avg",
+      "default_category": "Chicken Portions & Other",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

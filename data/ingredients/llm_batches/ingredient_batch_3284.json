@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3284",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2030280000009",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "moroccan butterflied chicken avg",
+      "default_category": "Braai",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

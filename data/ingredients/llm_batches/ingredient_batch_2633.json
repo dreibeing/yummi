@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2633",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226977138",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mini butter rotis 12 x",
+      "default_category": "Vegetables, Salads & Sides",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

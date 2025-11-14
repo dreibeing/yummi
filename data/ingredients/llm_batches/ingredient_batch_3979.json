@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3979",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "3175460000017",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "boursin high fat soft cheese with garlic mixed herbs",
+      "default_category": "Soft, Cream & Cottage Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

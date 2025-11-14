@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4113",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009034960",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "emmentaler swiss cheese",
+      "default_category": "Emmental & Semi-Hard Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1707",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226024184",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "lemongold seedless lemons",
+      "default_category": "Jason Lilley Mince Pies",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

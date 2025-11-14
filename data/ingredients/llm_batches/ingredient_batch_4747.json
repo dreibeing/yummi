@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4747",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009522300623",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "black cat smooth peanut butter",
+      "default_category": "Nut Butters",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

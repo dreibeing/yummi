@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1021",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233410475",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "halaal beef sizzlers",
+      "default_category": "Boerewors & Sausages",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

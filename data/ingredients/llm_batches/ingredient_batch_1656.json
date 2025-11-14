@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1656",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20026752",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "creamy spinach with a hint of nutmeg",
+      "default_category": "Thali feast",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

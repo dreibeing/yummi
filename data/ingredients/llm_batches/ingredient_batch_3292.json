@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3292",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20098209",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chicken bangers",
+      "default_category": "Boerewors & Sausages",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

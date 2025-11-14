@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3957",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875522235",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "lactose free gouda cheese",
+      "default_category": "Milk, Dairy & Eggs",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

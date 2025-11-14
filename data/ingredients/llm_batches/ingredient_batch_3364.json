@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3364",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2578500000007",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "bulk free range lamb ribbetjies avg",
+      "default_category": "Ribs & Kebabs",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

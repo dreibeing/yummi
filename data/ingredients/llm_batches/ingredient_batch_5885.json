@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5885",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233357060",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "green mango chutney",
+      "default_category": "Beef Mince Curry with Amagwinya and Green Mango Chutney",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

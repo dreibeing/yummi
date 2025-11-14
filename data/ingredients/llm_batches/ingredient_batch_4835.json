@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4835",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009035028",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "green tea tagless tea bags",
+      "default_category": "Wellbeing Starter Pantry",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

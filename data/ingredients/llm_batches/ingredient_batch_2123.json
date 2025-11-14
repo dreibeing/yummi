@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2123",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226991691",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "king oyster mushrooms",
+      "default_category": "Mushrooms",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

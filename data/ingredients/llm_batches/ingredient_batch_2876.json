@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2876",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217632107",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plain crema balsamic vinegar reduction",
+      "default_category": "Balsamic Vinegars & Juice Concentrates",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

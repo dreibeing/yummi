@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1717",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226473401",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "rainbow stir fry",
+      "default_category": "Stir Fry",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

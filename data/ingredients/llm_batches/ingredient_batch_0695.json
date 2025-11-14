@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0695",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233910067",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "babes organic wholegrain multigrain cereal from 12 months",
+      "default_category": "Baby Cereals",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

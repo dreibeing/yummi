@@ -1,0 +1,18 @@
+{
+  "batch_id": "ingredient_batch_4407",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8854404001680",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "blue elephant royal thai cuisine premium thai jasmine rice",
+      "default_category": "Rice, Couscous & Polenta",
+      "category_path": [
+        "Food",
+        "Pantry",
+        "Pasta, Rice & Noodles"
+      ]
+    }
+  ]
+}

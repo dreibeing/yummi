@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2717",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "9781785038914",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "comfort cook book by yotam ottolenghi",
+      "default_category": "Recipe Books",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

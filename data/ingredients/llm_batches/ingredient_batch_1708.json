@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1708",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226041457",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "blood oranges",
+      "default_category": "Mama Turilli’s chocolate torte",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

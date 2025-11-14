@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5419",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8003753950921",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "illy dark roast filter ground coffee",
+      "default_category": "Ground Coffee",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

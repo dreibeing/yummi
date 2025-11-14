@@ -1,0 +1,18 @@
+{
+  "batch_id": "ingredient_batch_4374",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217579181",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ramen noodles",
+      "default_category": "Noodles & Instant Noodles",
+      "category_path": [
+        "Food",
+        "Pantry",
+        "Pasta, Rice & Noodles"
+      ]
+    }
+  ]
+}

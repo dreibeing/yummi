@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1214",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6008000445931",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chilli garlic prawns",
+      "default_category": "Deli & Entertaining",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

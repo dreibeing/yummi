@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1775",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211207943",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "bulk pumpkin",
+      "default_category": "For The Air Fryer",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

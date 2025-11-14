@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1107",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211488144",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "beech wood smoked viennas",
+      "default_category": "Sausages & Viennas",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

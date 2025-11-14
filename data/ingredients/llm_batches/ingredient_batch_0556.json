@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0556",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223159230",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "frozen potato cream gratin",
+      "default_category": "Frozen Food",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

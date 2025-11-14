@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3323",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2011510000006",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "halaal tenderised beef steak avg",
+      "default_category": "Meat, Poultry & Fish",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5914",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20022488",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "beef lasagne",
+      "default_category": "Ready Meals",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3249",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6005000415087",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "freshly frozen hake medallions",
+      "default_category": "Fish & Seafood",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0528",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20071158",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "la motte grand rouge cabernet sauvignon merlot",
+      "default_category": "Red Blend Pairings",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2412",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211908864",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "botham s cremezola blue cheese",
+      "default_category": "Deli, Cured Meats & Cheese",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5379",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20160074",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "basil pesto",
+      "default_category": "Fresh ways with Avo",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

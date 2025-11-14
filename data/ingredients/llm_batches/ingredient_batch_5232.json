@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5232",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009171981990",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "vanilla paste",
+      "default_category": "Baking Ingredients",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

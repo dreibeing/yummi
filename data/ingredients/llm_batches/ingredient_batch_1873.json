@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1873",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6005000551501",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fresh sage",
+      "default_category": "Herbs, Sprouts & Edible Flowers",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

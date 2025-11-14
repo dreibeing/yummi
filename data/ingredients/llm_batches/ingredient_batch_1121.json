@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1121",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20092566",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "cheese cocktail viennas",
+      "default_category": "Sausages & Viennas",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

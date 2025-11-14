@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2678",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214614786",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "frozen mini cheese tomato pizzas 10 x",
+      "default_category": "Pizza, Pies & Pastry",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4914",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6005000661927",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mint leaves infusions tea bags",
+      "default_category": "Pantry Gifts",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

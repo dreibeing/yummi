@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3620",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245352015",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range chicken wing tips",
+      "default_category": "Poultry",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

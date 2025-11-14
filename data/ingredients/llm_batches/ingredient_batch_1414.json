@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1414",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184536484",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mini sugar cones",
+      "default_category": "Single Servings, Cones & Toppings",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

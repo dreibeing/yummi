@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0517",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009173678614",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "tangy tomato chutney",
+      "default_category": "Spices, Chutneys & Atchars",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

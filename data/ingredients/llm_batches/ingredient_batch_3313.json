@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3313",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214425467",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "angus beef biltong dro wors",
+      "default_category": "Biltong & Droewors",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

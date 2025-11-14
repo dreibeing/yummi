@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5416",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009182325141",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "thai 7 spice blend",
+      "default_category": "Curries and Spice Blends",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

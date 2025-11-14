@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2390",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20167042",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "oregano",
+      "default_category": "Seafood Pasta",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

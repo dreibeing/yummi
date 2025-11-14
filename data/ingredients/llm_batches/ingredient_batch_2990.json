@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2990",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20196349",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kids chicken noodle doo",
+      "default_category": "Kids Meals",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

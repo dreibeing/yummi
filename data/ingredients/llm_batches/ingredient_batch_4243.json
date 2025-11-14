@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4243",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233588044",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ayrshire low fat lactose free blueberry yoghurt",
+      "default_category": "Lactose Free",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

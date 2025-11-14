@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0231",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214491455",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "gluten free rosemary crackers",
+      "default_category": "Crackers or Crostinis And Breadsticks",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

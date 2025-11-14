@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0237",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009182602013",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "poppy seed melba toast",
+      "default_category": "Biscuits",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

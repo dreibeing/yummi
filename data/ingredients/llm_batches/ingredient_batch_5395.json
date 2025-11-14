@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5395",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8854404000829",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "blue elephant massaman curry paste",
+      "default_category": "Cook-In Sauces & Pastes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0225",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "78935005100",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ryvita light rye crispbread",
+      "default_category": "Savoury Biscuits & Crackers",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

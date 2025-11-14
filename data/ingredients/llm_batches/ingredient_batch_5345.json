@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5345",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875734959",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "harissa sauce",
+      "default_category": "Marinades & Braai Sauces",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

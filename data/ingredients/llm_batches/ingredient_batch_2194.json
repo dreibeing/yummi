@@ -1,0 +1,18 @@
+{
+  "batch_id": "ingredient_batch_2194",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8854404001093",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "blue elephant royal thai cuisine hot red chilli thai sauce",
+      "default_category": "Global Sauces",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop",
+        "Asian"
+      ]
+    }
+  ]
+}

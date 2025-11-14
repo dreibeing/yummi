@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1733",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009019318",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "aromatic chicken pasta salad",
+      "default_category": "Prepared Salads",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

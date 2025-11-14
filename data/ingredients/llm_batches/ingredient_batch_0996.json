@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0996",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245212968",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "babes unscented body lotion",
+      "default_category": "Baby Toiletries",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

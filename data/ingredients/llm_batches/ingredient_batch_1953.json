@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1953",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6008000281959",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fresh wild rocket",
+      "default_category": "Herbs, Sprouts & Edible Flowers",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

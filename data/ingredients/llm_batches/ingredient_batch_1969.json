@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1969",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233831751",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sticky veggie rice with asian sesame dressing and chilli crunch",
+      "default_category": "Ready to Micro",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

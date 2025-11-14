@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3518",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211171329",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fresh never frozen salmon portion",
+      "default_category": "Whole Fish, Portions & Bangers",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

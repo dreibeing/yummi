@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3276",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009178801734",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "wood smoked back bacon",
+      "default_category": "Bacon",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

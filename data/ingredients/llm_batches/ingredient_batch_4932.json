@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4932",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217206889",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "baked cinnamon granola",
+      "default_category": "Muesli & Granola",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

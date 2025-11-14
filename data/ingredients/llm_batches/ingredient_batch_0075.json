@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0075",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20018986",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "all butter croissants",
+      "default_category": "Breakfast",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

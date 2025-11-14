@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5999",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875187618",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chicken coriander and lime booster bowl",
+      "default_category": "Booster Bowls",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

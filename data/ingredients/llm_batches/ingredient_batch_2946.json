@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2946",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875700527",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "frozen bao buns with spicy prawn",
+      "default_category": "Frozen Snacking",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

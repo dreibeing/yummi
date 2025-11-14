@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1523",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009000155189",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chef s style baby carrots",
+      "default_category": "Kids snacks",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

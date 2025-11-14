@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2689",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207356662",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "crushed turmeric",
+      "default_category": "Garlic, Ginger, Turmeric, Chillies &  Fresh Paste",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

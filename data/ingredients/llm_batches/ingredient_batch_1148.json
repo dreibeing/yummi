@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1148",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214259499",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chicken cocktail viennas",
+      "default_category": "Sausages & Bangers",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

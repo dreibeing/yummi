@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1124",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184714684",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "hummus",
+      "default_category": "Dips, Pâtés, & Spreads",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

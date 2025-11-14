@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1728",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20004125",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "butter lettuce",
+      "default_category": "Lettuce Heads",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2571",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "41508221450",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sanpellegrino zero sugar blood orange sparkling drink can",
+      "default_category": "Soda & Energy Drinks",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

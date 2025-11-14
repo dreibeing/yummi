@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4672",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207165080",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "carbclever almond pecan and macadamia multipack 10 x",
+      "default_category": "Snack Bars & Nibbles",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0355",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211226357",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "brown sandwich bread thins 8 slices",
+      "default_category": "Brown Bread",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

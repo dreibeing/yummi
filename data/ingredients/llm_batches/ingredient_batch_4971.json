@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4971",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "3036817800233",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "maille wholegrain mustard",
+      "default_category": "Weekend braai",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5728",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195036362",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fully cooked spanish style rice",
+      "default_category": "Rice, Couscous & Polenta",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

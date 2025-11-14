@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6053",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6008000614542",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "stonebaked smoked ham mushroom pizzas 2 x",
+      "default_category": "Selected Fresh Pizzas With Toppings",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

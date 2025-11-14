@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0946",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2070960000004",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chicken portions avg",
+      "default_category": "Chicken Portions & Other",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1793",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6008000798327",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "italian salad",
+      "default_category": "Pizza Three Ways",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

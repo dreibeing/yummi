@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5685",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233359262",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "rogan josh spice blend",
+      "default_category": "Indian",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

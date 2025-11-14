@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6116",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207839264",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chilli prawn linguine",
+      "default_category": "Italian Meals",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

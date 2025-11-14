@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3447",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20170172",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ostrich dro wors",
+      "default_category": "Biltong & Droewors",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1334",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009000069172",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "frozen chicken pies",
+      "default_category": "Pizza, Pies & Pastry",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

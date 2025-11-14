@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5637",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "5060319129750",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "higher living organic moringa and peppermint tea bags",
+      "default_category": "Tea",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

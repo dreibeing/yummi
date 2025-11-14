@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4548",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207367064",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mini white flour wraps 10 x",
+      "default_category": "Mexican",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

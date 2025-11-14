@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5207",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195468248",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "blue cheese sauce",
+      "default_category": "Simply Heat Sauces",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

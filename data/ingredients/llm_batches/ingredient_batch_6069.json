@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6069",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009204767256",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "roast chicken pie",
+      "default_category": "Pies",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

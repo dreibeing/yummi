@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1031",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "4062300400221",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "hipp organic combiotic growing up formula stage 3 from 12 months",
+      "default_category": "Stage 3 Formula",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

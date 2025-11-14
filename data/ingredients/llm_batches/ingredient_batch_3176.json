@@ -1,0 +1,18 @@
+{
+  "batch_id": "ingredient_batch_3176",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245381770",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "lightly dusted patagonian squid tubes tentacles",
+      "default_category": "Coated",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish",
+        "Crumbed Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

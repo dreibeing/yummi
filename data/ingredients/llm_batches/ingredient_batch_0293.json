@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0293",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233286698",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "frozen 8 large all butter croissants",
+      "default_category": "Frozen Food",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

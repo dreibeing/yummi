@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5231",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009175048316",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ground allspice",
+      "default_category": "Spices",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

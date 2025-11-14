@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2820",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20090012",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "salad tomatoes",
+      "default_category": "Tomatoes",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

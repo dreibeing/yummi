@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1004",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2563020000002",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "2 moroccan style pork rib eye steaks avg",
+      "default_category": "Beef, Pork & Lamb",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

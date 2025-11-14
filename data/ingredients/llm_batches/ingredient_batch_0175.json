@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0175",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20067991",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plain melba toast slices",
+      "default_category": "Biscuits",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

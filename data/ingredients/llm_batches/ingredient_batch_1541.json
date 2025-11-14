@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1541",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184971902",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kids blueberries 3 x",
+      "default_category": "Assorted Blueberries",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4229",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226676772",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plantlove dairy free macadamia nut based hard cheese",
+      "default_category": "Plant Powered Cheese & Spreads",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

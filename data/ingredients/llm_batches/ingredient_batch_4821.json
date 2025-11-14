@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4821",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875432053",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "cranberry and coconut macaroon inspired muesli",
+      "default_category": "Muesli & Granola",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

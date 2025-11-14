@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5648",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233313585",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kids strawberry multigrain puffed rice cereal bars 10 x",
+      "default_category": "Breakfast & Snack Bars",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

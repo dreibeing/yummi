@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1248",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233882784",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mini spinach south african feta quiches",
+      "default_category": "Savoury Snacks",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

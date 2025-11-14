@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4166",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226676581",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mature cheddar slices",
+      "default_category": "Grated & Sliced Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

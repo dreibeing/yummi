@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2797",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214550718",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "terra del cappo pinot grigio",
+      "default_category": "White Wine",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4826",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6008000522045",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "salt and pepper seasoning",
+      "default_category": "Salt & Pepper",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

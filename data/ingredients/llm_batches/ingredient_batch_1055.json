@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1055",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009012944",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "toothpicks with holder 100 pcs",
+      "default_category": "Braai Serving",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1725",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009175318617",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "roasted veg medley",
+      "default_category": "Mixed Veggie Bags",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

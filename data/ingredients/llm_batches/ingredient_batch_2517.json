@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2517",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8002270686856",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sanpellegrino lemon sparkling drink 6 x cans",
+      "default_category": "Soda & Energy Drinks",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

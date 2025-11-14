@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1188",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214799094",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "halaal beech wood smoked beef viennas",
+      "default_category": "Sausages & Viennas",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

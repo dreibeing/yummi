@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0170",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20176679",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fruit trifle",
+      "default_category": "Chilled Dessert",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

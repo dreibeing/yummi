@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4117",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217530458",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "boerenkaas with cumin",
+      "default_category": "Cheese 75g",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3155",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009189247996",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "asian hot and spicy tom yum soup",
+      "default_category": "Pantry Soup",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

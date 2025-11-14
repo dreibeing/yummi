@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3595",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245068398",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range beef frikkadels with chunky tomato sauce",
+      "default_category": "Easy Meals & Roasts",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

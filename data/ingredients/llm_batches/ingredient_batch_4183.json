@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4183",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009710390702",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "flora 50 plant spread",
+      "default_category": "Fresh",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

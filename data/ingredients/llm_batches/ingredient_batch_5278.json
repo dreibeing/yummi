@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5278",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207365831",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sun dried mango chilli balsamic reduction",
+      "default_category": "Salad Dressings",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

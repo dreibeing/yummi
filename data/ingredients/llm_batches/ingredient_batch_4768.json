@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4768",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009013415",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pumpkin seeds",
+      "default_category": "Entertaining made easy",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

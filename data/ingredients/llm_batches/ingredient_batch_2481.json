@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2481",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233780196",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mexican style churros",
+      "default_category": "Puddings & Desserts",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0459",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20176938",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "portabello mushrooms",
+      "default_category": "Mushrooms",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

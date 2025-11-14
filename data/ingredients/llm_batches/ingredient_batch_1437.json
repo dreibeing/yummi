@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1437",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233586781",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "so yo red berry tropical flavoured low fat frozen yoghurts 4 x",
+      "default_category": "Single Servings, Cones & Toppings",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

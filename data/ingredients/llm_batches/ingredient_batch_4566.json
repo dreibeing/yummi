@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4566",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009101343287",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "instant oats",
+      "default_category": "Porridge & Oats",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

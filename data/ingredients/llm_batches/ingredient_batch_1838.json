@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1838",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223104018",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "spiced chicken quinoa bean salad",
+      "default_category": "Good To Go Salad Pots",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

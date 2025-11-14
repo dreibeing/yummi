@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1105",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875732436",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mini chicken pies",
+      "default_category": "Finger Foods",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

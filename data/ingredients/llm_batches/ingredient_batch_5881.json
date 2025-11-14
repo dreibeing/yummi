@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5881",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245027227",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "chilli tomato soup",
+      "default_category": "Soups",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

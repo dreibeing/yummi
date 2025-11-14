@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2068",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009037091",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "farmer s vegetable selection",
+      "default_category": "Ready to Micro",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1053",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001068579709",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "nestl lactogen 1 starter infant formula birth to 6 months",
+      "default_category": "Stage 1 Formula",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

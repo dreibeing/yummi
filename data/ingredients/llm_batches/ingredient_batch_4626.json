@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4626",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009101265800",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "one cup rooibos tagless tea bags",
+      "default_category": "Rooibos marbled eggs",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

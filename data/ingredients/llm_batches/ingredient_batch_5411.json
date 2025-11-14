@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5411",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226479885",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "wcafe roma espresso blend coffee capsules 10 pcs",
+      "default_category": "Coffee Capsules",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

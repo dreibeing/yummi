@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0979",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223604778",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sparkling lime and mint flavoured drink",
+      "default_category": "Woolies Soda",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

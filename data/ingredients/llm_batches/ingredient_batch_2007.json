@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2007",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233509636",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "imported ripe ready mangoes",
+      "default_category": "Fresh Fruit",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

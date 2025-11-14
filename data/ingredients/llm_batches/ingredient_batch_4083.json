@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4083",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207191010",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "medium fat haloumi cheese for burgers",
+      "default_category": "Burgers",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

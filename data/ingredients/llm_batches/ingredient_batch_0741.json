@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0741",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2572390000000",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range lamb skilpadjies avg",
+      "default_category": "Beef, Pork & Lamb",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

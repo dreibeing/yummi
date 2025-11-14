@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5510",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009879924046",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "futurelife high energy choc strawberry crunch bars 4 x",
+      "default_category": "Energy Bars, Bites & Pouches",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1167",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009021892",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "anchovy fillets in sunflower oil",
+      "default_category": "Anchovies",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

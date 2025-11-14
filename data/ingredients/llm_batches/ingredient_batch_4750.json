@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4750",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009189911255",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "maize meal braai pap",
+      "default_category": "Maize Meal",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4895",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001256000084",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ace super maize meal",
+      "default_category": "Maize Meal",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

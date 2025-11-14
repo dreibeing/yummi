@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0296",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226732751",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "koesisters",
+      "default_category": "Easter Lunch",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

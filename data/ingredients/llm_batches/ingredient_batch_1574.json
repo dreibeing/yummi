@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1574",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20115982",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fresh mint",
+      "default_category": "Seafood Pasta",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

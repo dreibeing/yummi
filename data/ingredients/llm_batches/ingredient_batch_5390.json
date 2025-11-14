@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5390",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "66362105067",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kuhne prepared red cabbage",
+      "default_category": "Pickles",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3360",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2565440000006",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "slow cooked pork belly avg",
+      "default_category": "Easy Roasts & Meals",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

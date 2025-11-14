@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5386",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223344681",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "salt and pepper seasoning refill",
+      "default_category": "Salt & Pepper",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

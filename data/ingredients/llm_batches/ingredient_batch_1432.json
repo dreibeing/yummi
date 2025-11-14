@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1432",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009000434499",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "extremely creamy mini almond solos 6 x",
+      "default_category": "Single Servings, Cones & Toppings",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

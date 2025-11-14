@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4815",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207662343",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "italian style balsamic reduction",
+      "default_category": "Balsamic Vinegars & Juice Concentrates",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

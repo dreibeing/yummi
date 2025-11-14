@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3947",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "3073781082463",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kiri dip crunch cheese with breadsticks 4 tubs",
+      "default_category": "Snacking & Lunchbox Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

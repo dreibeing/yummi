@@ -1,0 +1,18 @@
+{
+  "batch_id": "ingredient_batch_4336",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875598766",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "rigatoni pasta",
+      "default_category": "Pasta",
+      "category_path": [
+        "Food",
+        "Pantry",
+        "Pasta, Rice & Noodles"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4169",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "3161712002113",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ile de france mini brie 5 x",
+      "default_category": "Brie, Camembert & Soft Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0441",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2570880000004",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "bbq beef ribs avg",
+      "default_category": "Steak, Ribs & Burgers",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

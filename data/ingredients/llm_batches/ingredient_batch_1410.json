@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1410",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226904677",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "frozen dream apple ice with caramel flavour 6 x",
+      "default_category": "Braai Ice Cream & Desserts",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

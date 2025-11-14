@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4997",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001038203252",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "robertsons rajah mild and spicy curry powder",
+      "default_category": "Chargrilled corn 3 ways",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

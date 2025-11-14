@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2384",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226204302",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kids creamy chicken and tomato sauce",
+      "default_category": "Pesto & Pasta Sauces",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

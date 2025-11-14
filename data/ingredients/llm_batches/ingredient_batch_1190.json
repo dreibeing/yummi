@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1190",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223193609",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "southern fried chicken",
+      "default_category": "Savoury Snacks",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

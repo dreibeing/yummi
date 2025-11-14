@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5343",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217741618",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "easy to bake vetkoek mix",
+      "default_category": "Flour Mixes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

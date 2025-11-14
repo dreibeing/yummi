@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0062",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20019303",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plain flapjacks",
+      "default_category": "Waffles & Flapjacks",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

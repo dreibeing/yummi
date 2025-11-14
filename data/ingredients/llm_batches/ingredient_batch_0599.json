@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0599",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009175977104",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fantastical multi coloured eggs",
+      "default_category": "Packs & Sharing Bags",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

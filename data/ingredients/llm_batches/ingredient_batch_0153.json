@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0153",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217314959",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "buttermilk rusks",
+      "default_category": "Rusks",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

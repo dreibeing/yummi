@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0319",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245232324",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "luxury all butter shortbread trio",
+      "default_category": "Pantry Gifts",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

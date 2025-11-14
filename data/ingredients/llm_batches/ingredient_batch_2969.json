@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2969",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20175634",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "asian sesame oil",
+      "default_category": "Tea-poached chicken rice and greens",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

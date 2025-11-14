@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1534",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20008208",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "peeled onions",
+      "default_category": "Abigails ultimate braaibroodjies",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2913",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8033717730344",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "traditional balsamic vinegar of modena d o p",
+      "default_category": "Balsamic Vinegars & Juice Concentrates",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

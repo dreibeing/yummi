@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1745",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20045517",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ripen at home nectarines",
+      "default_category": "Nectarine Punnet",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

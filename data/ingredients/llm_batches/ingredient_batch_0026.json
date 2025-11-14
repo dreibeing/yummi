@@ -1,0 +1,18 @@
+{
+  "batch_id": "ingredient_batch_0026",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009178807347",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "white flour wraps 8 x",
+      "default_category": "Long Life",
+      "category_path": [
+        "Food",
+        "Bakery",
+        "Wraps, Naan, Pitas & Bagels"
+      ]
+    }
+  ]
+}

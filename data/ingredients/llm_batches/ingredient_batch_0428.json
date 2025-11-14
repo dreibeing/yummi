@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0428",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2565410000005",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "drakensberg boerewors avg",
+      "default_category": "Boerewors & Sausages",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

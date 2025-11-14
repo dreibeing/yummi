@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4247",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233289217",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "full cream ayrshire yoghurt with black cherry 4 x",
+      "default_category": "Full Cream Yoghurt",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

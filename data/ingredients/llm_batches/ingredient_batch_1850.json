@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1850",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20057633",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mange tout",
+      "default_category": "Green Beans, Peas & Mange Tout",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0257",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2534010000005",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "palmier",
+      "default_category": "Fresh Bakery Counter",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0111",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223776550",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "bulk bran rusks",
+      "default_category": "Rusks",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

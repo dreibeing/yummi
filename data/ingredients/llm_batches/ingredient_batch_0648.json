@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0648",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009189786266",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "south african feta herb dip",
+      "default_category": "Dips, Pâtés, & Spreads",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

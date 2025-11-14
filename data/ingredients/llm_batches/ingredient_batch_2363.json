@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2363",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217885275",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "cold meat cheese roll selection",
+      "default_category": "International Selection Platter",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

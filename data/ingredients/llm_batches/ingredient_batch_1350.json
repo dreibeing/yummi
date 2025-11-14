@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1350",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226685187",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "babes frozen combo meal cubes x 16",
+      "default_category": "Frozen Food",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

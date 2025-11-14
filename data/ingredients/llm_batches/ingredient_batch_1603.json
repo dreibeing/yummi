@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1603",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009101608041",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sliced green beans",
+      "default_category": "Trending",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

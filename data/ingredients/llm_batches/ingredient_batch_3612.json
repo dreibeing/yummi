@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3612",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245254920",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range chicken mini fillets in a creamy garlic sauce",
+      "default_category": "Poultry",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4851",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217717538",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "organic apple cider vinegar",
+      "default_category": "Spirit, Wine, Grape, Rice, Pickling Vinegars",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

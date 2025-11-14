@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0247",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009189898563",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "christmas gluten free brandy fruit pudding",
+      "default_category": "Puddings & Desserts",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

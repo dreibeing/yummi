@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2318",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226729669",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "cauliflower beetroot wraps",
+      "default_category": "Veggie Pastas and Wraps",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

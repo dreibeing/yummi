@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3414",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2571020000007",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "matured thick cut angus beef sirloin steak avg",
+      "default_category": "Steaks",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

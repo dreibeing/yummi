@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4241",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233086922",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kids gouda cheese portions 6 x",
+      "default_category": "Kids Snacks",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

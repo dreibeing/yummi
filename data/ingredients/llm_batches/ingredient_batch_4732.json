@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4732",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009182678704",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "asian medium egg noodles",
+      "default_category": "Asian",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

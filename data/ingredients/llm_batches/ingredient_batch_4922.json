@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4922",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "40804071",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kuhne holsteiner fasskraut sauerkraut",
+      "default_category": "Pickles",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

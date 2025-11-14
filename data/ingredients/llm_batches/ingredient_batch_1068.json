@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1068",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009204131873",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "deli style potato salad",
+      "default_category": "Potato Salad",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

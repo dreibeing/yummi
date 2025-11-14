@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1094",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009189904462",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sliced spicy butter basted chicken breast",
+      "default_category": "Snack Time",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

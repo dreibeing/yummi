@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5996",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009175386715",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kids beef bolognese sauce with extra veggies",
+      "default_category": "Kids Ready Meals",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3488",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2574470000009",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "halaal pepper crusted beef fillet avg",
+      "default_category": "Easy to Cook & Roast",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

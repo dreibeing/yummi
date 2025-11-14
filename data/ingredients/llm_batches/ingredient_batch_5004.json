@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5004",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223344704",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "lamb flavoured thickener",
+      "default_category": "Thickener & Glazes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

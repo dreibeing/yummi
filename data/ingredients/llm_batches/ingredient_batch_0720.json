@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0720",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195715540",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range beef biltong snapsticks",
+      "default_category": "Biltong & Droewors",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

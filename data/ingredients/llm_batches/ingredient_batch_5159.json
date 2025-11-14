@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5159",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009000106549",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "all season grind",
+      "default_category": "Seasoning Kits, Shakers & Grinders",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1713",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20154950",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chicken caesar pasta salad",
+      "default_category": "Salads To Go",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

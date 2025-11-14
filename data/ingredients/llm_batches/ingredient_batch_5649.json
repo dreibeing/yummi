@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5649",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8801055708178",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "nescaf cappuccino sachets 20 x",
+      "default_category": "Instant Drinks",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

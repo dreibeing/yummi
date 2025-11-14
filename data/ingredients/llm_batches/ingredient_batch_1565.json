@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1565",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195026172",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "snacking cucumbers",
+      "default_category": "Cucumbers",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

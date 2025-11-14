@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2813",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184329970",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "white tortilla wraps",
+      "default_category": "Wraps, Naan, Pitas & Bagels",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0381",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233848179",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "natural spring water ice blocks",
+      "default_category": "Frozen Food",
+      "category_path": [
+        "Food",
+        "Beverages & Juices"
+      ]
+    }
+  ]
+}

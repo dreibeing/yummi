@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5621",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "5060366570918",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "miso tasty red miso paste",
+      "default_category": "Sauces, Pastes & Spice Mixes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

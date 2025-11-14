@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0198",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875018776",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "salt and vinegar flavoured mini crackers 5 x",
+      "default_category": "Biscuits & Crackers",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

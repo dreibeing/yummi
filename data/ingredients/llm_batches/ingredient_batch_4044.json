@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4044",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217237708",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "full cream ayrshire vanilla flavoured yoghurt with baked vanilla seed granola",
+      "default_category": "Full Cream Yoghurt",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

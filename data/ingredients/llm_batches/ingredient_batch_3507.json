@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3507",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2573500000002",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range venison steak avg",
+      "default_category": "Woolies Steak",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

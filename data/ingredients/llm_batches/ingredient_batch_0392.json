@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0392",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2583330000004",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range grabouw chicken wors avg",
+      "default_category": "Braai Shop",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

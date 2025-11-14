@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4616",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20198787",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "reduced fat cheese sauce",
+      "default_category": "Simply Heat Sauces",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

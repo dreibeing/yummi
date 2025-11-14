@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5864",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8854404007484",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "blue elephant royal thai cuisine s thin rice noodles",
+      "default_category": "Noodles & Instant Noodles",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

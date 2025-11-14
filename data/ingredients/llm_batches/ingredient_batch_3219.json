@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3219",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2029810000008",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "beef bones avg",
+      "default_category": "Offal & Others",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

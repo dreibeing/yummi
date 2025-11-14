@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3408",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875704068",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "made without added nitrites wood smoked diced bacon",
+      "default_category": "Bacon & Other Smoked",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0844",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245410401",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pizza braaibroodjie foldovers",
+      "default_category": "Braai Salads & Sides",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

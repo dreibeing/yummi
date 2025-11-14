@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1820",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009000998847",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "medium hot serenade chillies",
+      "default_category": "Chillies",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1110",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009027740",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "reduced fat hummus",
+      "default_category": "Dips, Pâtés, & Spreads",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

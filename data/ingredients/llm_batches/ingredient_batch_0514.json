@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0514",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001019904963",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "huggies gold jumbo no 2 5 nappies",
+      "default_category": "Baby Nappies",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

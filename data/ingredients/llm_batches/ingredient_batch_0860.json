@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0860",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8427030004358",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "similac gold comfort stage 1 starter infant formula 0 6 months",
+      "default_category": "Stage 1 Formula",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5865",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8854404001192",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "blue elephant royal thai cuisine thai black pepper sauce",
+      "default_category": "Global Sauces",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

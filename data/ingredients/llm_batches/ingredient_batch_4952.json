@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4952",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20165888",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "smokey bbq braai marinade",
+      "default_category": "Marinades & Braai Sauces",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0598",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245353418",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ice lolly design large cooler bag",
+      "default_category": "Braai Prep",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

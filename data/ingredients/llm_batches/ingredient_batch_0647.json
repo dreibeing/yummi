@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0647",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009178495926",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "small pearl tapioca pudding",
+      "default_category": "Warm Puddings",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

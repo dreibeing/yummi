@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4173",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "5060200952368",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sage derby cheese",
+      "default_category": "Cheeses",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3772",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245423425",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plantlove chickpea tempeh",
+      "default_category": "Plant-Based Protein",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

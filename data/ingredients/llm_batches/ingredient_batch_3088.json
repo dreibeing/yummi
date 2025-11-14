@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3088",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009182759540",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "spaghetti bolognese",
+      "default_category": "Italian Meals",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

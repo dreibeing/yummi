@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4491",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009023957",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "white sugar",
+      "default_category": "Sugar & Sweeteners",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

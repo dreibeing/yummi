@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5735",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009004468",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pineapple pieces in light syrup",
+      "default_category": "Canned Fruit",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

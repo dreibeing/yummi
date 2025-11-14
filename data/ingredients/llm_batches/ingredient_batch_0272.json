@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0272",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8002114017853",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "vergani black cherry panettone",
+      "default_category": "Panettone & Stollen",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

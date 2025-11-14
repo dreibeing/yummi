@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3812",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184342832",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "double cream plain yoghurt 6 x",
+      "default_category": "Double Cream Yoghurt",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

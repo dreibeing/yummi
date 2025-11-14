@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1960",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233581090",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mint yoghurt dressing",
+      "default_category": "Fresh",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

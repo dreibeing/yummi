@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3452",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875744590",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range dhania lamb burgers",
+      "default_category": "Braai",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

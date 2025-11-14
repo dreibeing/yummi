@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3908",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009039682",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "low fat cream flavoured yoghurt with stewed fruit black cherry mango peach passion fruit 6 x",
+      "default_category": "Low Fat Yoghurt",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

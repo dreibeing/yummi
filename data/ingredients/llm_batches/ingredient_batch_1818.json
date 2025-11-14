@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1818",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226231827",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "crunchita lettuce",
+      "default_category": "Salads & Herbs",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

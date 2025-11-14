@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3255",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2009330000009",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range deboned leg of lamb with rosemary garlic avg",
+      "default_category": "Beef, Lamb, Pork & Oxtail",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

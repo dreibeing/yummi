@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2376",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20128104",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fresh italian parsley",
+      "default_category": "Herbs, Sprouts & Edible Flowers",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

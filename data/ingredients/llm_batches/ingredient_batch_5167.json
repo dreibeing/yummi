@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5167",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207587257",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "organic turmeric powder",
+      "default_category": "Spices",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

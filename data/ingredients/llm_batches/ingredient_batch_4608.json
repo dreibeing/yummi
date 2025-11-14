@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4608",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009178233238",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "beef liquid stock concentrate 8 x",
+      "default_category": "Handmade Cornish pasties",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0233",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217035861",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "hazelnut wafers",
+      "default_category": "Wafers",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0039",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2067400000007",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "cheese puff",
+      "default_category": "Pies, Puffs & Samoosa's",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

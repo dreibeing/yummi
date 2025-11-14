@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5534",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009830530293",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "redespresso matcha green tea capsules 10 x",
+      "default_category": "Tea",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

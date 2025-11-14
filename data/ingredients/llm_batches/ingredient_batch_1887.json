@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1887",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6008000747615",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mange tout",
+      "default_category": "Fresh Vegetables",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

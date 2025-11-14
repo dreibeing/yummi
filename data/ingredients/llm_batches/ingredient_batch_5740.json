@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5740",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223211822",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "cheese sauce powder",
+      "default_category": "Cook-In Sauces & Pastes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

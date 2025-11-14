@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3959",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2907031000000",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mature cheddar cheese avg",
+      "default_category": "Cheddar & Gouda Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6029",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009204041141",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "cashew nut chicken",
+      "default_category": "Global Cuisine",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

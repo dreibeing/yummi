@@ -1,0 +1,18 @@
+{
+  "batch_id": "ingredient_batch_2172",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226418143",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "asian everything soya sauce",
+      "default_category": "Global Sauces",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop",
+        "Asian"
+      ]
+    }
+  ]
+}

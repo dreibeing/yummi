@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6088",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20100056",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fresh butternut soup",
+      "default_category": "Checklist for your winter getaway",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

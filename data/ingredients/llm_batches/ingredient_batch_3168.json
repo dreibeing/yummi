@@ -1,0 +1,18 @@
+{
+  "batch_id": "ingredient_batch_3168",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223003618",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "frozen lemon dill kingklip hake fish cakes",
+      "default_category": "Frozen Food",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish",
+        "Crumbed Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3786",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2580750000003",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range smoked paprika coriander chicken steaks avg",
+      "default_category": "Poultry",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

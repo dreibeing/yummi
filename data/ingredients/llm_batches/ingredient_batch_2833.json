@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2833",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20091705",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "creamy tomato sauce",
+      "default_category": "Sauces & Pesto",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

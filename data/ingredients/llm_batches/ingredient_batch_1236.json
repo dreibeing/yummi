@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1236",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226815270",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sliced butter basted chicken breast",
+      "default_category": "Deli Meats",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4180",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233306921",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "low fat yoghurt with strawberry 4 x",
+      "default_category": "Low Fat Yoghurt",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4249",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "5060200952351",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "smoked red fox leicester cheese",
+      "default_category": "Parmesan & Hard Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

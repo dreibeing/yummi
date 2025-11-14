@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5522",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001275001710",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "jungle taystee wheat semolina",
+      "default_category": "Porridge & Oats",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

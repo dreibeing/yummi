@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4246",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226188626",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kids strawberry flavoured low fat lactose free milk 6 x",
+      "default_category": "Lactose Free",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

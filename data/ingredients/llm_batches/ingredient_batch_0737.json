@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0737",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233910135",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "babes organic creamy oat flour and flakes cereal from 12 months",
+      "default_category": "Baby Cereals",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

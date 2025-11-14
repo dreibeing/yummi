@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4036",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009182712217",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "low fat guava yoghurt",
+      "default_category": "Woolies Yoghurts Deal",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4537",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20198794",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "roast chicken gravy",
+      "default_category": "Gravy",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

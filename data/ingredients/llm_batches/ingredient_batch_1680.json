@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1680",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211676534",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "smoky four bean salad",
+      "default_category": "Prepared Salads",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

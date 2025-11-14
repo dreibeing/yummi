@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5437",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "70177174729",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "twinings of london classic tea collection",
+      "default_category": "Everyday Teas",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

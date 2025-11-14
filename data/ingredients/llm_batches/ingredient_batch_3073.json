@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3073",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009173745460",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "baby pak choi",
+      "default_category": "Fresh Vegetables",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

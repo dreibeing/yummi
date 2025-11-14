@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5557",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226480126",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "garlic and butter flavoured quinoa",
+      "default_category": "Grains & Legumes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

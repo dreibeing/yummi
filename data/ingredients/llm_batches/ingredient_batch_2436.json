@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2436",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245212937",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fiesta style sharing meal",
+      "default_category": "Mexican",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

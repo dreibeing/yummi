@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4743",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009022882",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "balsamic vinegar of modena 4 grape",
+      "default_category": "Vinegars",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

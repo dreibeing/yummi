@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5463",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "4053528000072",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "espresto furioso espresso coffee capsules",
+      "default_category": "Coffee Capsules",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

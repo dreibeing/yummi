@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1196",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875996722",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "wafer thin sliced roast peppered beef",
+      "default_category": "Deli Meats",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

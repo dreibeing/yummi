@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3639",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217701032",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "diced wood smoked chicken rashers",
+      "default_category": "Other Smoked",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

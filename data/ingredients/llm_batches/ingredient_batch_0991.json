@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0991",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217494217",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "de alcoholised sparkling ros",
+      "default_category": "Non Alcoholic Wine & Bubbles",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

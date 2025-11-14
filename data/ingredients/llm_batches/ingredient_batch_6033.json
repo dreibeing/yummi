@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6033",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009204041158",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "beef chow mein",
+      "default_category": "Global Cuisine",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

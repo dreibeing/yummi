@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3372",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "1230000068307",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "beyond mince plant based mince",
+      "default_category": "Plant-Based Protein",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

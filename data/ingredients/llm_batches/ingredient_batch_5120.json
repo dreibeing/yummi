@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5120",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214797496",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kids strawberry flavoured multigrain puffs",
+      "default_category": "Kids Cereal",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

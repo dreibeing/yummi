@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2800",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211788022",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "luxury astoria prosecco doc gold italian sparkling",
+      "default_category": "Sparkling Wine",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

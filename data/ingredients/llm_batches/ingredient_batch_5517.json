@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5517",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "5060319120306",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "higher living organic echinacea and cherry tea bags",
+      "default_category": "Tea",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3143",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20171643",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "smoked sliced german style salami",
+      "default_category": "Every Day Salami",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

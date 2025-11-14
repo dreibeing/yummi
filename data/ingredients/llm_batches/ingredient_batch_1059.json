@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1059",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8001841126432",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pampers pants midi no 3 6",
+      "default_category": "Baby Nappies",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

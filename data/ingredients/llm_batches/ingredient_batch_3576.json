@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3576",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245605968",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "lightly smoked trout chipolatas",
+      "default_category": "Boerewors & Sausages",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

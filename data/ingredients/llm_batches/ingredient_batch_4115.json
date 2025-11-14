@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4115",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009182745314",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chevin goat s milk cheese with honey",
+      "default_category": "Speciality Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

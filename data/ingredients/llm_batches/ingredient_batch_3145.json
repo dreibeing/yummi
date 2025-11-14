@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3145",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233018435",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "beef mince curry rice",
+      "default_category": "Single Meals",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

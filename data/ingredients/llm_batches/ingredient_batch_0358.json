@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0358",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211226333",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "white sandwich bread thins 8 slices",
+      "default_category": "White Bread",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

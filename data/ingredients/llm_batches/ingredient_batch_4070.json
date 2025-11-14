@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4070",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2082230000003",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sheep goats milk feta pdo cheese avg",
+      "default_category": "Goat & Sheeps Milk Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

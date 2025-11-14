@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3602",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245366357",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "frozen lightly smoked haddock portions",
+      "default_category": "Frozen Food",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

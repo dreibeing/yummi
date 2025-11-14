@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2293",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20103880",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "egg tagliatelle pasta",
+      "default_category": "Pasta",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

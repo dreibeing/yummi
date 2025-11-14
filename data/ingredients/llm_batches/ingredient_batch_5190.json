@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5190",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20169800",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "saffron filaments 400 mg",
+      "default_category": "Spices",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

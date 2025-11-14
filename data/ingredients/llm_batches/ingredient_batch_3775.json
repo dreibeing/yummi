@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3775",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245423517",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plantlove bbq tofu tempeh kebabs",
+      "default_category": "Plant Based Braai",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

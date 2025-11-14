@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3819",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20173586",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "cheddar cheese",
+      "default_category": "Cheddar & Gouda Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

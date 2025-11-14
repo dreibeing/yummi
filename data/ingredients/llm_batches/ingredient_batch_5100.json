@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5100",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195968755",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sunflower and sesame seed brittle snack bar",
+      "default_category": "Snack Bars & Nibbles",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

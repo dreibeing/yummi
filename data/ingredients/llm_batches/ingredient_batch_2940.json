@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2940",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233390685",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "bombay potato paste",
+      "default_category": "Indian",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4991",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "7622300504342",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "jacobs kr nung decaf instant coffee",
+      "default_category": "Instant Coffee",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

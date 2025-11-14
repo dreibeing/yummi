@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5615",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009830530323",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "redespresso matcha latte instant blend",
+      "default_category": "Tea",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

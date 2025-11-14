@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0314",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245264462",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "cranberry and citrus muesli rusks in decorative tin",
+      "default_category": "Rusks",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

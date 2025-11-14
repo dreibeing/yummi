@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2755",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "9789392130427",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "indian local classic street food recipes by sonal ved",
+      "default_category": "Recipe & Mindfulness Books",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

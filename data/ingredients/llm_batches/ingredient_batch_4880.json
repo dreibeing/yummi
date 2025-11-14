@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4880",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875194920",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mild whole peppadew piquant peppers",
+      "default_category": "Pickles",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

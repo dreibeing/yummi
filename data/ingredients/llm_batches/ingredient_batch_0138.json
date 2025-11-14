@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0138",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001056414340",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "bakers provita wholewheat crispbread 4 x",
+      "default_category": "Crackers & Rice Cakes",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

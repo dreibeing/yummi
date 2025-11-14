@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5002",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195814557",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fresh free range liquid beef stock",
+      "default_category": "Broth & Stock",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

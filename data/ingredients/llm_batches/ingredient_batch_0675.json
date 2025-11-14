@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0675",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009204751101",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sparkling cranberry cosmo fruit drink bottles 6 x",
+      "default_category": "Woolies Soda",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

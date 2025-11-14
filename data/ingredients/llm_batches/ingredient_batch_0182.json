@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0182",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009189458354",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "bulk oat crunchies",
+      "default_category": "We used Our Free Range Eggs",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

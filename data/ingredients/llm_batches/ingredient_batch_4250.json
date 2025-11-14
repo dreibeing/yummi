@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4250",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8002710630227",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "organic grana padano",
+      "default_category": "Parmesan & Hard Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

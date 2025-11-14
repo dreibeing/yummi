@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3818",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009039842",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "paw patrol full cream ayrshire yoghurt 6 x",
+      "default_category": "Kids Yoghurts & Drinking Yoghurts",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

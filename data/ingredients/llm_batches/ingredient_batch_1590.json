@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1590",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009178807378",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "seedless red grapes",
+      "default_category": "Grapes",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4141",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6005000864410",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "cheddar with olives sun dried tomatoes mixed herbs",
+      "default_category": "Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

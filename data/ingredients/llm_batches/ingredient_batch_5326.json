@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5326",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207365855",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "preserved cranberry balsamic reduction",
+      "default_category": "Salad Dressings",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0666",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "5025971207239",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "lil lets maternity breast pads",
+      "default_category": "Pads & Liners",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

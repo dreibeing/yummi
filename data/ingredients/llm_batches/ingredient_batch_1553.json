@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1553",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2906818000004",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "butternut avg",
+      "default_category": "Butternut, Pumpkin & Squash",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

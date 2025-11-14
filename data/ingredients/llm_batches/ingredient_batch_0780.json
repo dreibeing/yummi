@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0780",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009175298957",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "jalape o sauce",
+      "default_category": "Chilli & Pepper Sauces",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0526",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245279824",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "low kilojuole lime and mint flavoured sparkling drink",
+      "default_category": "Braai Non-Alcoholic Drinks & Beverages",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

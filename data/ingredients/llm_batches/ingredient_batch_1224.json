@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1224",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009015464",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "salame milano",
+      "default_category": "International Salami",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

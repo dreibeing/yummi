@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2902",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226418136",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "asian chilli szechuan pepper oil",
+      "default_category": "Olive & Infused Oil",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

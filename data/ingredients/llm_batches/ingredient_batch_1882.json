@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1882",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214464893",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "tenderstem broccoli with lemon black pepper butter",
+      "default_category": "Ready to Micro",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3217",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2083490000000",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range chicken thighs avg",
+      "default_category": "Chicken Portions & Other",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

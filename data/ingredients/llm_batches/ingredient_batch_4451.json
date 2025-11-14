@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4451",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223479307",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "lactose free full cream milk",
+      "default_category": "Lactose Free",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

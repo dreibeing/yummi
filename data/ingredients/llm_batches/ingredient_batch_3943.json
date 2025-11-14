@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3943",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20105990",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "low fat summer fruit yoghurt",
+      "default_category": "Low Fat Yoghurt",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

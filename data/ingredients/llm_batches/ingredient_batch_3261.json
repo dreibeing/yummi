@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3261",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2029920000004",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "8 matured beef sirloin steaks avg",
+      "default_category": "Steaks",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

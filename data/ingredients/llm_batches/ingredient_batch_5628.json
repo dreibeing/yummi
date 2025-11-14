@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5628",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8801055708741",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "nescaf reduced sugar cappuccino sticks 20 x",
+      "default_category": "Instant Drinks",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

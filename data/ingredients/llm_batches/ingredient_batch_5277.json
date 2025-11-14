@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5277",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "5060319129439",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "higher living organic peppermint and licorice teabags",
+      "default_category": "Rooibos & Infused Teas",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0050",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009017444",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "seeded wholewheat brown bread",
+      "default_category": "Wholewheat Bread",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

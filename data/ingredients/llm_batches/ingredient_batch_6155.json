@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6155",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20013264",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "quiche lorraine",
+      "default_category": "Quiches",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

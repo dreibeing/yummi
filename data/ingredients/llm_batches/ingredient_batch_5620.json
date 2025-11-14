@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5620",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009710612101",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "futurelife smart food peanut butter cereal",
+      "default_category": "Breakfast Cereals & Bars",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

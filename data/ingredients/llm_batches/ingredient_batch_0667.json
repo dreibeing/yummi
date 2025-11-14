@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0667",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207681832",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range chilli chicken biltong sticks",
+      "default_category": "Biltong & Droewors",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

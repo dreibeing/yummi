@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3289",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20184407",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range chicken sausage",
+      "default_category": "Boerewors & Sausages",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1575",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20046002",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "baby potatoes with garlic herb butter",
+      "default_category": "One tray wonders",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4740",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001115001542",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "lucky star pilchards in hot chilli sauce",
+      "default_category": "Fish",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

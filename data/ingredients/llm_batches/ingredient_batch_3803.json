@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3803",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20011826",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "salted butter",
+      "default_category": "Seafood Pasta",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

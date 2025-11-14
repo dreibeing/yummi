@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1531",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20127824",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "red onions",
+      "default_category": "Veggie braai",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

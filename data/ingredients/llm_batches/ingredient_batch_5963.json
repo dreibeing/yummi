@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5963",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245021928",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fresh spiced lentil soup",
+      "default_category": "Fresh Soup",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

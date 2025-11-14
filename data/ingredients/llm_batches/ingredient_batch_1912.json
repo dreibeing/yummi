@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1912",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217852994",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "padr n chilli peppers",
+      "default_category": "Padron Peppers",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

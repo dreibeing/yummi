@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0634",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001068625109",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "nestl cerelac regular wheat baby cereal with milk from 6 12 months",
+      "default_category": "Baby Cereals",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

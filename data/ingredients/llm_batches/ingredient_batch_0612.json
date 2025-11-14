@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0612",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009012913",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "vegetable skewers",
+      "default_category": "Serviettes, Paper Towels & Disposables",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

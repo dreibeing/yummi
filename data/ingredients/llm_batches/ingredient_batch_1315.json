@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1315",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009178822166",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "freshly frozen berry medley",
+      "default_category": "Desserts, Fruit & Bakery",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

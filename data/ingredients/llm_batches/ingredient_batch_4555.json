@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4555",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009204751286",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "carbclever coconut and vanilla granola",
+      "default_category": "Muesli & Granola",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

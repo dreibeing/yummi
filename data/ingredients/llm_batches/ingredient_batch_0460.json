@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0460",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009182954686",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "filled gem squash 4 halves",
+      "default_category": "Vegetables & Sides",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

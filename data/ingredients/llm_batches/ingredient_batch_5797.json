@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5797",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195036393",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fully cooked barley",
+      "default_category": "Warm It Up",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

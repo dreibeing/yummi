@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1001",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "4015400274780",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pampers premium care no 3 6 nappies",
+      "default_category": "Baby Nappies",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

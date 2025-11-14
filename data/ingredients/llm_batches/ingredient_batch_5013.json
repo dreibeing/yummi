@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5013",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6008000249799",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kalamata tapenade",
+      "default_category": "Olives",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

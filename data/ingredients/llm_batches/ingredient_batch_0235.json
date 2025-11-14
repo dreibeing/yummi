@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0235",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207542263",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "stoneground flour burritos 4 x",
+      "default_category": "Mexican",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

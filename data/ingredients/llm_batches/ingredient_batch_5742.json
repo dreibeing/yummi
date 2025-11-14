@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5742",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217629640",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plant powered dairy free cheddar flavoured cheese slices",
+      "default_category": "Vegan & Dairy Free",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

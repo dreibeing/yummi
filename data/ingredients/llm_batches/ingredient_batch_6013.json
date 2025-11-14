@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6013",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214621142",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "babes fresh apple oats and coconut brekkie",
+      "default_category": "Meals & Purees",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

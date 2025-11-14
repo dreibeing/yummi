@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1417",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214514079",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "frozen granadilla ice lollies 6 x",
+      "default_category": "Single Servings, Cones & Toppings",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

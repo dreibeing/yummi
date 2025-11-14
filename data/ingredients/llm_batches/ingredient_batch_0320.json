@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0320",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226979736",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "choc oat snaps",
+      "default_category": "Crunchies, Digestives & Oat Biscuits",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

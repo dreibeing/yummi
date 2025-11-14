@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0826",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "700083696991",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "clark s kitchen chipotle chilli sauce",
+      "default_category": "Marinades, Spices & Rubs",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

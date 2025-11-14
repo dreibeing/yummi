@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5482",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217721856",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "christmas cherry and brandy boozy sauce",
+      "default_category": "Tomato & Everyday Sauces",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

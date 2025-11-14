@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5349",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223796862",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "poppy seeds",
+      "default_category": "Exciting newness",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2401",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009173166494",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ayrshire fior di latte mozzarella cheese",
+      "default_category": "Mascarpone, Ricotta & Mozzarella",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

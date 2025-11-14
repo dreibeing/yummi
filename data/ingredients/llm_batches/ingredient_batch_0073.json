@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0073",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20186678",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "brown hamburger rolls",
+      "default_category": "Brown Rolls",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

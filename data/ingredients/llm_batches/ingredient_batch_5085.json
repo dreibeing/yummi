@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5085",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001115000149",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "lucky star middlecut in water salt added",
+      "default_category": "Fish",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

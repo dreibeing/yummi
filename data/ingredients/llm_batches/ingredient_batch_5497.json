@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5497",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6005000184549",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "cocktail dill gherkins",
+      "default_category": "Pickles",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

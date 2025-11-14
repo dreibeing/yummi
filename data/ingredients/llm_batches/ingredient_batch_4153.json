@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4153",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009178708590",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ch vre roue goat s milk cheese",
+      "default_category": "Goats Dairy",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

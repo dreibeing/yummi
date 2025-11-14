@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3627",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233549656",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "smoked cheese pork grillers",
+      "default_category": "Other Smoked",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

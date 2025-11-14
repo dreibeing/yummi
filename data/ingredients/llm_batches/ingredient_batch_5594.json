@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5594",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009522310363",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "koo baked beans in tomato sauce",
+      "default_category": "Cans, Jars & Packaged Foods",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4916",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20087029",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "gravy powder",
+      "default_category": "Gravy",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

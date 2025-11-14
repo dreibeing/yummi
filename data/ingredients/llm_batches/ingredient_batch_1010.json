@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1010",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6297000359267",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "s 26 alula gold infant starter formula 0 6 months",
+      "default_category": "Stage 1 Formula",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

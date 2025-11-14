@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0098",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20009540",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "caramel swiss rolls",
+      "default_category": "Teatime Sweet Treats",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

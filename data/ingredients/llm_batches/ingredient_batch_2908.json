@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2908",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245412429",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "prosciutto di carpegna whole dry cured leg",
+      "default_category": "Foodie Gifts",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

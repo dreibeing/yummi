@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6052",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233883644",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "spinach ricotta cannelloni",
+      "default_category": "Italian Meals",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

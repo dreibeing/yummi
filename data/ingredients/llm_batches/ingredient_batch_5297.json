@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5297",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "5762385078573",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "gammon ham",
+      "default_category": "Meat",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

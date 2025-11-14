@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5504",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226660542",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "date syrup",
+      "default_category": "Sweeteners & Sugar Alternatives",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

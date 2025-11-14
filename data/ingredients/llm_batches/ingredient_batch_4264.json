@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4264",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233086915",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plantlove dairy free smoked gouda flavoured cheese portions 6 x",
+      "default_category": "Plantlove",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

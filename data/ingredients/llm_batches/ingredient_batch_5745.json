@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5745",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009171580025",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "moroccan style chickpea and chicken soup",
+      "default_category": "Pantry Soup",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

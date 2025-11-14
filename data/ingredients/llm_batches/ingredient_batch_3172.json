@@ -1,0 +1,18 @@
+{
+  "batch_id": "ingredient_batch_3172",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2582110000005",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "battered baby hake fillets avg",
+      "default_category": "Coated",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish",
+        "Crumbed Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

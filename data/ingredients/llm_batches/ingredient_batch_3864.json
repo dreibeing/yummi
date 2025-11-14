@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3864",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6008000475808",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range mixed size eggs",
+      "default_category": "Eggs",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

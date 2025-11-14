@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5172",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009189232954",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "vanilla flavoured custard powder",
+      "default_category": "Custard, Sauces & Tinned Cream",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

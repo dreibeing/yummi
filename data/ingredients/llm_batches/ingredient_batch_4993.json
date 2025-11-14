@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4993",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223181972",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "english breakfast blend tagless tea bags",
+      "default_category": "Tea",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

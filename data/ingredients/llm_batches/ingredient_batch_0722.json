@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0722",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875662832",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "alto cabernet sauvignon",
+      "default_category": "Gifts for Him",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

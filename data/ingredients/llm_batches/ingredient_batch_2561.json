@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2561",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009000106419",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "italian herbs",
+      "default_category": "Italian American Staples",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

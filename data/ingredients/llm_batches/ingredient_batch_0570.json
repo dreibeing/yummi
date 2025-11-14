@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0570",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "4062300184541",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "hipp organic 100 baby rice cereal",
+      "default_category": "Baby Cereals",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

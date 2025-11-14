@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1606",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009175831383",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "red onions 5 string",
+      "default_category": "Onions, Celery & Leeks",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1676",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226432804",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "florida pearl strawberries",
+      "default_category": "Fresh Fruit",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

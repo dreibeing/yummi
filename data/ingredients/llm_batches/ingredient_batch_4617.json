@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4617",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001068312702",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "nestl caramel treat",
+      "default_category": "Baking Ingredients",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

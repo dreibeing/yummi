@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0863",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001011321133",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "johnson s lightly fragranced baby jelly",
+      "default_category": "Baby Toiletries",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

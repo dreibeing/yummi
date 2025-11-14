@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4470",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009171091460",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "long life low fat milk 6 x",
+      "default_category": "Low Fat",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

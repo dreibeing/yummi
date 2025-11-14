@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0207",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207379562",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "olive oil breadsticks",
+      "default_category": "Tenderstem™ broccoli soup with Parma ham-and-rocket breadstick dippers",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

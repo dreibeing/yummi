@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5475",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184530383",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "christmas cranberry and apple shimmer glaze",
+      "default_category": "Stock, Thickener & Gravy",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

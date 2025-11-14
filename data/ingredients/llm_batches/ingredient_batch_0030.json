@@ -1,0 +1,18 @@
+{
+  "batch_id": "ingredient_batch_0030",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184330006",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fresh butter rotis 6 x",
+      "default_category": "Fresh",
+      "category_path": [
+        "Food",
+        "Bakery",
+        "Wraps, Naan, Pitas & Bagels"
+      ]
+    }
+  ]
+}

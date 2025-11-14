@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3883",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009006202",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "grated medium fat hard cheese",
+      "default_category": "Parmesan & Hard Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

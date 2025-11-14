@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0167",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009182004657",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "yoghurt dipped crunchies",
+      "default_category": "We used Our Free Range Eggs",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

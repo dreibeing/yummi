@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1634",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20186937",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mini rosa tomatoes",
+      "default_category": "Tomatoes",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

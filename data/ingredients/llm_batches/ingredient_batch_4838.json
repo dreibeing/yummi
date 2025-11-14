@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4838",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009101984787",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mild chakalaka",
+      "default_category": "Cheesy chakalaka braaibroodjies",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

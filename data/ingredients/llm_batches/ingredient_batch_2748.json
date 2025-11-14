@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2748",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233809569",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "marinated mozzarella with tomato pesto",
+      "default_category": "Entertaining, Platters & Dairy Dips",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

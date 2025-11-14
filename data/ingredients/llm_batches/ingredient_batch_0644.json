@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0644",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214801896",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "babes dairy with mango pumpkin and a hint of cinnamon",
+      "default_category": "Smooth",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

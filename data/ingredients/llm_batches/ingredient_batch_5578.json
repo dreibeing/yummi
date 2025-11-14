@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5578",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009188007171",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "nescaf gold instant coffee refill pack",
+      "default_category": "Instant Coffee",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

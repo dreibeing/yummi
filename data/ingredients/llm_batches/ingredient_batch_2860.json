@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2860",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245251721",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "salame milano coated with parmigiano reggiano",
+      "default_category": "Continental Meats",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

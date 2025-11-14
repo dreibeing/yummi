@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2421",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875522228",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "lactose free mozzarella cheese",
+      "default_category": "Milk, Dairy & Eggs",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

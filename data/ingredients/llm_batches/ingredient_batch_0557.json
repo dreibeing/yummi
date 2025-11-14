@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0557",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233851513",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chenin blanc 4 x",
+      "default_category": "White Wines",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

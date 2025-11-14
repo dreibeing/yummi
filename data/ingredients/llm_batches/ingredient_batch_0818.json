@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0818",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233286728",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plantlove mini tofu sizzlers",
+      "default_category": "Plant Based Braai",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

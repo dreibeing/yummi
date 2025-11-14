@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6120",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223966326",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plantlove butternut girasoli",
+      "default_category": "Italian and Pies Eat In",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

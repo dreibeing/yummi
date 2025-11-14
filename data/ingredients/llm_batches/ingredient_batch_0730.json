@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0730",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "3574669907057",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "johnson s baby shampoo",
+      "default_category": "Baby Toiletries",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

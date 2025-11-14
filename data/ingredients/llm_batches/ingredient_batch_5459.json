@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5459",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875626773",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "multiseed mix",
+      "default_category": "Seeds & Powders",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

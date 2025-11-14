@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5244",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009101217717",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "rogan josh cook in sauce",
+      "default_category": "Cook-In Sauces & Pastes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

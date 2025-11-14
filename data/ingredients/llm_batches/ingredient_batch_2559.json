@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2559",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009175379595",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pitted green olives with a hint of chilli",
+      "default_category": "Olives",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

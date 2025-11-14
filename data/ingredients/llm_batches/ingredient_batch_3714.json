@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3714",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6005000069938",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range lamb frikkadels",
+      "default_category": "Mince & Meatballs",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

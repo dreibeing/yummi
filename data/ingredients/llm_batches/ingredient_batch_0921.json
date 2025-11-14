@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0921",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245337043",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "low kilojuole sparkling ruby grapefruit drink 6 x cans",
+      "default_category": "Braai Non-Alcoholic Drinks & Beverages",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

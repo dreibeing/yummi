@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2668",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20160395",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "rosemary and sage grind",
+      "default_category": "Marinades, Spices & Rubs",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

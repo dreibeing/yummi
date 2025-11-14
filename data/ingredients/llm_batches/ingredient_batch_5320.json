@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5320",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195888640",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "peperonata pasta sauce",
+      "default_category": "Pesto & Pasta Sauces",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

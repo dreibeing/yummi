@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5847",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226417160",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "asian korean style bbq sauce",
+      "default_category": "Global Sauces",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

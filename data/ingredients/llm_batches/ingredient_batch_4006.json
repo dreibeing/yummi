@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4006",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "3073780967815",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "the laughing cow full fat mini cheese cubes 15 pcs",
+      "default_category": "Snacking & Lunchbox Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

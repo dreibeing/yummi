@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1015",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009189680755",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "cheese and onion rings and balls maize snack",
+      "default_category": "Puffs, Maize, & Corn Chips",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

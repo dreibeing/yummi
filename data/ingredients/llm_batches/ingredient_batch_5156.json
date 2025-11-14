@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5156",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226491139",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kid s vanilla caramel flavoured rooibos infusion tagless tea bags",
+      "default_category": "Rooibos & Infused Teas",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

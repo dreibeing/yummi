@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2776",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009879918502",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "bosman nero d avola red",
+      "default_category": "Father's Day Wines 2022",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3123",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20040000",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "creamy cheese sauce",
+      "default_category": "Sauces & Pesto",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

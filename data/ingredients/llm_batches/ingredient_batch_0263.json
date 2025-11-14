@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0263",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2580870000006",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "farmstyle pepper steak pie",
+      "default_category": "Food To Go",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3797",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20068882",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range large eggs",
+      "default_category": "Free Range Large Eggs 6 pack",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1639",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20069315",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fuji apples",
+      "default_category": "Apple And Pear",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

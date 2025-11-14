@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5409",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "5060319120122",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "higher living organic green tea chai tagged teabags",
+      "default_category": "Rooibos & Infused Teas",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3680",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2562930000003",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "2 free range spicy yoghurt chicken thigh espetadas avg",
+      "default_category": "Kebabs & Espetadas",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

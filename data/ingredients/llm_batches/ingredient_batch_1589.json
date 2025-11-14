@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1589",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009101070824",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "herb salad",
+      "default_category": "Lettuce & Mixed Leaves",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

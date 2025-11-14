@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4469",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20086138",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "wild blossom honey",
+      "default_category": "Honey",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4660",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214016146",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chicken bone broth",
+      "default_category": "Broth & Stock",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

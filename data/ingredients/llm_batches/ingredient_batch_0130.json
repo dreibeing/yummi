@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0130",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20099442",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mini koeksisters",
+      "default_category": "Chilled Desserts",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

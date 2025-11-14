@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0762",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233551628",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chilli smoked pork bacon biltong",
+      "default_category": "Biltong & Droewors",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1070",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226868566",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "swarthaak kindling braai wood",
+      "default_category": "Braai Essentials",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

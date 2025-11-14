@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0712",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "41508938020",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sanpellegrino zero sugar pomegranate and orange sparkling drink cans 6 x",
+      "default_category": "Soda & Energy Drinks",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

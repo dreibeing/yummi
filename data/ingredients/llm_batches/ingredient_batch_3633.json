@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3633",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233588990",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kids battered angelfish goujons",
+      "default_category": "Coated",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

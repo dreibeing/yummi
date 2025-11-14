@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0655",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2583810000005",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pepper crusted albacore tuna steak with a soy glaze avg",
+      "default_category": "Whole Fish, Portions & Bangers",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

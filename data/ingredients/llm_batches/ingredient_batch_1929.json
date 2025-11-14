@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1929",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217001279",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fresh origanum",
+      "default_category": "Herbs, Sprouts & Edible Flowers",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

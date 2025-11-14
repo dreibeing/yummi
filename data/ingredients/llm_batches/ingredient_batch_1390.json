@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1390",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245223469",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "frozen ox tripe curry",
+      "default_category": "Frozen Food",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4447",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001156230253",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "five roses smooth ceylon blend tagless tea bags",
+      "default_category": "Tea, Coffee & Hot Drink",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

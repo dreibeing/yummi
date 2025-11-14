@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1550",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20009014",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "broccoli cauliflower florets",
+      "default_category": "Broccoli & Cauliflower",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

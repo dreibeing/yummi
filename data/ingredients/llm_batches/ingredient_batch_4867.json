@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4867",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214726106",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "cashew and strawberry snack bar",
+      "default_category": "Easy Snacks",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

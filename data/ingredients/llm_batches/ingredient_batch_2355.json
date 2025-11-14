@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2355",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009021564",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "gorgonzola semi soft medium fat cheese",
+      "default_category": "Hot pot",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

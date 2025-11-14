@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4710",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211697737",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "brown basmati rice",
+      "default_category": "Rice, Couscous & Polenta",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

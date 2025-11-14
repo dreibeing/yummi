@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4687",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223211792",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mushroom sauce powder",
+      "default_category": "Cook-In Sauces & Pastes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

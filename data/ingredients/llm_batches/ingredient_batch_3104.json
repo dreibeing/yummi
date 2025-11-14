@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3104",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217888429",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chilli tomato paste",
+      "default_category": "Tomatoes",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

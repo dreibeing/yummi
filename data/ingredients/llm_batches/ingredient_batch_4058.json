@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4058",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2074210000004",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "royal ashton cheese avg",
+      "default_category": "Emmental & Semi-Hard Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

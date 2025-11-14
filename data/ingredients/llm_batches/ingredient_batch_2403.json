@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2403",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195451097",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "non pareilles caper berries in vinegar",
+      "default_category": "Pickles",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

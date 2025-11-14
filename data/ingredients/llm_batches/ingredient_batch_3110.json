@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3110",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20123895",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "spaghetti carbonara",
+      "default_category": "Italian Meals",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

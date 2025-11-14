@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1519",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20052119",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "papaya punnet",
+      "default_category": "Papaya, Mango, Pineapple & Kiwi Fruit",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

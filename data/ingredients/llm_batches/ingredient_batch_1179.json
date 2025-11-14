@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1179",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009002945",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chorizo sarta pork sausage",
+      "default_category": "Continental Meats",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

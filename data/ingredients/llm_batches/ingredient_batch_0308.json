@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0308",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233780158",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "our best ever tiramisu",
+      "default_category": "Puddings & Desserts",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

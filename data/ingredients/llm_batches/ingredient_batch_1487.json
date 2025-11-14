@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1487",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207189826",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "seedless pink grapes",
+      "default_category": "Grapes",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

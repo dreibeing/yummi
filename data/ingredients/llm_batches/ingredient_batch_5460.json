@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5460",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "43646204005",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "maille honey mustard",
+      "default_category": "Indulgent egg and bacon sandwich",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

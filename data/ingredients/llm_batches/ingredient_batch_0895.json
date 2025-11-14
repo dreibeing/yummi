@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0895",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "5011025086653",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sudocrem skin and baby barrier cream",
+      "default_category": "Pharmacy",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

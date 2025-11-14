@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5226",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875219357",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "luxury steak sauce",
+      "default_category": "Simply Heat Sauces",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

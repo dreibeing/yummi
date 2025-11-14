@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2551",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223395539",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "tikka chicken curry",
+      "default_category": "Global Meals",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

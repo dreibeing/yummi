@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3922",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20167301",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fat free ayrshire vanilla flavoured yoghurt",
+      "default_category": "Fat Free, KJ Controlled & Medium Fat Yoghurt",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

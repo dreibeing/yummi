@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5483",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "87666052826",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "flying goose sriracha super sour hot chilli sauce",
+      "default_category": "Chilli & Pepper Sauces",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

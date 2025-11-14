@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5826",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217288021",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "morinaga mori nu silken extra firm tofu",
+      "default_category": "Wellbeing Starter Pantry",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

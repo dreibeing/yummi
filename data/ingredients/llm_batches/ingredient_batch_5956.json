@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5956",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226151354",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "baked pumpkin rings with a sprinkle of cinnamon",
+      "default_category": "Prepared Vegetables Airfry Range",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

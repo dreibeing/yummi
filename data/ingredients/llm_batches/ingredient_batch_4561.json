@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4561",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6008000586399",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "burger mayonnaise",
+      "default_category": "Mayo",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "batch_id": "ingredient_batch_4377",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211190344",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "orecchiette pasta",
+      "default_category": "Pasta",
+      "category_path": [
+        "Food",
+        "Pantry",
+        "Pasta, Rice & Noodles"
+      ]
+    }
+  ]
+}

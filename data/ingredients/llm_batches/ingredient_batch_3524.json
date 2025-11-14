@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3524",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184172330",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range venison dro wors",
+      "default_category": "Biltong & Droewors",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

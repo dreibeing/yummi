@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1980",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875204957",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "organic ripe ready nectarines",
+      "default_category": "Fresh Fruit",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

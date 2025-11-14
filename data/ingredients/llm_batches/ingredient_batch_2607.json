@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2607",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20169824",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "bay leaves",
+      "default_category": "Herbs",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4619",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207388663",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "wcafe continental espresso blend coffee capsules 10 pcs",
+      "default_category": "Coffee Capsules",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

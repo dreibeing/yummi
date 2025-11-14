@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5262",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "7613036367165",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "nescaf gold decaf instant coffee",
+      "default_category": "Instant Coffee",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

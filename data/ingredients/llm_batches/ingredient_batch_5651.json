@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5651",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226480041",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "savoury quinoa",
+      "default_category": "Grains & Legumes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

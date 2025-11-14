@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3036",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226451294",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "asian inspired fully cooked rice",
+      "default_category": "Rice, Couscous & Polenta",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

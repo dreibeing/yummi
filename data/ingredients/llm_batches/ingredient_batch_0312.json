@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0312",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245442914",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "christmas garlic and onion hexagonal crackers",
+      "default_category": "Christmas",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2698",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009007131",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "astoria prosecco doc italian sparkling",
+      "default_category": "Sparkling Wine",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

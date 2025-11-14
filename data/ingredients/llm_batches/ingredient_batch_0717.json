@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0717",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "4015400264613",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pampers baby dry newborn size 2 3 nappies",
+      "default_category": "Baby Nappies",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

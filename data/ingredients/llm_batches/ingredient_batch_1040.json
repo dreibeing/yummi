@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1040",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214793399",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "babes almond oil and vitamin e baby bath cream wash",
+      "default_category": "Baby Toiletries",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

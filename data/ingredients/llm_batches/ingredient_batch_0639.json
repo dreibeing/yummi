@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0639",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223003861",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pierre jourdan tranquille blush",
+      "default_category": "Haute Cabriere",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

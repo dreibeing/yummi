@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3236",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2004720000003",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range lamb chump chops avg",
+      "default_category": "Chops & Steak",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

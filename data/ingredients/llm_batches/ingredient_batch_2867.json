@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2867",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226437304",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "our best ever beef lasagne",
+      "default_category": "Italian Meals",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

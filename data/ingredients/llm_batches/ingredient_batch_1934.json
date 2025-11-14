@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1934",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226776915",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "garlic scapes min",
+      "default_category": "Fresh Vegetables",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3377",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2571030000004",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "half angus beef fillet avg",
+      "default_category": "Steaks",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

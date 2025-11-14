@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5073",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009178243428",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fine black pepper",
+      "default_category": "Spices",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3650",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2581580000003",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "wagyu beef rib eye steak avg",
+      "default_category": "Angus & Wagyu",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

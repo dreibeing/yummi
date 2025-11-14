@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3557",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233823572",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "creamy mushroom peppers chicken mini fillets",
+      "default_category": "Poultry",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

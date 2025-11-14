@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0164",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001056414296",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "bakers cream crackers",
+      "default_category": "Bakers Savoury Biscuits",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

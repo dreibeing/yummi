@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0749",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214273242",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kleine zalze cabernet sauvignon",
+      "default_category": "Bottles of Wine",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

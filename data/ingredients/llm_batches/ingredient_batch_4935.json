@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4935",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20174491",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sliced jalape os in smoke flavoured brine",
+      "default_category": "Mexican",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

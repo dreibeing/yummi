@@ -1,0 +1,18 @@
+{
+  "batch_id": "ingredient_batch_2189",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226440168",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "asian teriyaki sauce",
+      "default_category": "Global Sauces",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop",
+        "Asian"
+      ]
+    }
+  ]
+}

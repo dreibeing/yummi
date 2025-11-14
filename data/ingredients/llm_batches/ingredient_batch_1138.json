@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1138",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009027818",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "tzatziki",
+      "default_category": "Dips, Pâtés, & Spreads",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

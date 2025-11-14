@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1354",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226529955",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "babes frozen beef bean tomato and basil meal cubes x 8",
+      "default_category": "Frozen Food",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

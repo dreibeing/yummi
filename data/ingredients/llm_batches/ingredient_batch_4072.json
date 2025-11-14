@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4072",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226660245",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kids ayrshire low fat strawberry flavoured smooth yoghurt choobes 9 x",
+      "default_category": "Kids Lactose Free Yoghurt",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

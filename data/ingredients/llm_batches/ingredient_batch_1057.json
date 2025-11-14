@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1057",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226487033",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "babes butternut lentil and brown rice potjie meal",
+      "default_category": "Textured & Chunky",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

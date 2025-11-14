@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1366",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233069802",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "bulk freshly frozen blueberries",
+      "default_category": "Frozen Food",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

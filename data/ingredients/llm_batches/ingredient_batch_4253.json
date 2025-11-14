@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4253",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245348513",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ayrshire double cream strained strawberry yoghurt",
+      "default_category": "Yoghurt",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

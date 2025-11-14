@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1368",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009204815353",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "carb clever chocolate dairy ice cream",
+      "default_category": "Frozen Food",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

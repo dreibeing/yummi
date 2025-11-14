@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2758",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009021281",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "cape malay style lamb mince curry roti",
+      "default_category": "Heat & Eat Takeaways To Go",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

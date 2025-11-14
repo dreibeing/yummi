@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1333",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009175272124",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "frozen cooked peeled prawn ring",
+      "default_category": "Fish & Seafood",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

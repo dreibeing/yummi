@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4834",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217470297",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "medium garden peas in brine",
+      "default_category": "Vegetables, Beans and Legumes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

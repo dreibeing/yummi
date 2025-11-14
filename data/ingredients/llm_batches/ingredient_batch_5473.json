@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5473",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009182310598",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "baharat blend",
+      "default_category": "Curries and Spice Blends",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

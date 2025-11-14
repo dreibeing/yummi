@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4213",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226676857",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ayrshire low fat high protein banana flavoured milk",
+      "default_category": "Flavoured Milk & Milkshakes",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

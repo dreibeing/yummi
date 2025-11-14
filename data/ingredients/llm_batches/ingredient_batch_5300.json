@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5300",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217871216",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ghost chilli seasoning",
+      "default_category": "Seasoning Kits, Shakers & Grinders",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

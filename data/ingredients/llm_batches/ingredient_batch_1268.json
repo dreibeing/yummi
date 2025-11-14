@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1268",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245366340",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "freshly frozen skinless hake fillets",
+      "default_category": "Frozen Food",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

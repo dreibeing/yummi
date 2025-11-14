@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3221",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20035419",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mini skinless chicken breast fillets",
+      "default_category": "Chicken Portions & Other",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4982",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009175298940",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "hot peri peri sauce",
+      "default_category": "How to cook the best chicken",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5869",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226769719",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "gluten free penne pasta",
+      "default_category": "Free From Gluten",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

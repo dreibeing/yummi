@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0080",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2571590000001",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mini spinach south african feta puff",
+      "default_category": "Pies, Puffs & Samoosa's",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

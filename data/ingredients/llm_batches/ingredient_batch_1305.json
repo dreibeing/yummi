@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1305",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223004011",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "frozen broccoli cauliflower gratin",
+      "default_category": "Vegetables",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

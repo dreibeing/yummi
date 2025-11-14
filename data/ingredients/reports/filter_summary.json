@@ -1,0 +1,165 @@
+{
+  "total_rows": 8618,
+  "candidates": 6178,
+  "dropped": 2440,
+  "drop_reason_counts": [
+    [
+      "path:kids",
+      529
+    ],
+    [
+      "path:beverages & juices",
+      479
+    ],
+    [
+      "path:household",
+      300
+    ],
+    [
+      "keyword:gin",
+      210
+    ],
+    [
+      "keyword:cola",
+      201
+    ],
+    [
+      "keyword:sweet",
+      188
+    ],
+    [
+      "keyword:cake",
+      178
+    ],
+    [
+      "keyword:juice",
+      174
+    ],
+    [
+      "keyword:rum",
+      152
+    ],
+    [
+      "path:water & ice blocks",
+      56
+    ],
+    [
+      "keyword:ice cream",
+      48
+    ],
+    [
+      "category:Cakes & Gateaux",
+      34
+    ],
+    [
+      "keyword:biscuit",
+      33
+    ],
+    [
+      "keyword:smoothie",
+      28
+    ],
+    [
+      "keyword:dessert",
+      26
+    ],
+    [
+      "keyword:wine",
+      26
+    ],
+    [
+      "keyword:cookie",
+      24
+    ],
+    [
+      "keyword:chips",
+      22
+    ],
+    [
+      "category:Sodas",
+      20
+    ],
+    [
+      "keyword:serviette",
+      20
+    ],
+    [
+      "keyword:beer",
+      18
+    ],
+    [
+      "category:Smoothies",
+      18
+    ],
+    [
+      "keyword:lemonade",
+      15
+    ],
+    [
+      "keyword:soda",
+      14
+    ],
+    [
+      "category:Cupcakes",
+      12
+    ],
+    [
+      "keyword:crisps",
+      12
+    ],
+    [
+      "keyword:foil",
+      12
+    ],
+    [
+      "category:Desserts",
+      9
+    ],
+    [
+      "keyword:energy drink",
+      9
+    ],
+    [
+      "keyword:milkshake",
+      7
+    ],
+    [
+      "keyword:toffee",
+      6
+    ],
+    [
+      "keyword:charcoal",
+      5
+    ],
+    [
+      "keyword:bin liner",
+      4
+    ],
+    [
+      "keyword:sorbet",
+      3
+    ],
+    [
+      "keyword:firelighter",
+      3
+    ],
+    [
+      "keyword:marshmallow",
+      2
+    ],
+    [
+      "category:Sweet Treats",
+      1
+    ],
+    [
+      "keyword:paper towel",
+      1
+    ],
+    [
+      "keyword:candy",
+      1
+    ]
+  ],
+  "filters_path": "data/catalog_filters.json",
+  "source": "data/product_table_folder/woolworths_products_summary.csv"
+}

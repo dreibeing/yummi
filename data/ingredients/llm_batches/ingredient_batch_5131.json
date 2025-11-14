@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5131",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009175383332",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "southern fry coating",
+      "default_category": "Steak with cauliflower and yoghurt",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

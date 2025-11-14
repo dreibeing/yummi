@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3969",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20134051",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "traditional camembert",
+      "default_category": "Brie, Camembert & Soft Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

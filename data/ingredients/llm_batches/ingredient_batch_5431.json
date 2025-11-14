@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5431",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009182310956",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chermoula blend",
+      "default_category": "Oxtail stew with dumplings",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

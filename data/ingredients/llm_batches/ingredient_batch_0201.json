@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0201",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009101884896",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "gluten free feta oreganum and olive oil crackers",
+      "default_category": "But I'm Gluten Free",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

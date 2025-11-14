@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4533",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20170523",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "tangy mayonnaise",
+      "default_category": "Mayo",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

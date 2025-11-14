@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1839",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20090821",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "bulk sugar snap peas",
+      "default_category": "Green Beans, Peas & Mange Tout",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

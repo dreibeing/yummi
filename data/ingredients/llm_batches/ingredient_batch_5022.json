@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5022",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223961987",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "wcafe classic blend coffee capsules 10 pcs",
+      "default_category": "Coffee Capsules",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

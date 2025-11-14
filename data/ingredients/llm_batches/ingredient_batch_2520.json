@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2520",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6008000281997",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "slicing tomatoes 6",
+      "default_category": "Tomatoes",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

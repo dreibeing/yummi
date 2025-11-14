@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6133",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207535777",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "gnocchi italian potato dumplings",
+      "default_category": "Fresh Pasta",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

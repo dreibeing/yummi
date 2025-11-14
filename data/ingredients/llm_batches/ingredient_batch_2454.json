@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2454",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245347295",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "smoked pepperoni salami ricotta hot honey pinsa style pizza",
+      "default_category": "Pizza",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

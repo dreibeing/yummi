@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4076",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226181887",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kids strawberry flavoured low fat milk",
+      "default_category": "Kids Yoghurts, Drinking Yoghurts, Flavoured Milks & Smoothies",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

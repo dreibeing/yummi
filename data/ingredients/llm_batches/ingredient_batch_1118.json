@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1118",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195265502",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "caramelised onion hummus",
+      "default_category": "Dips, Pâtés, & Spreads",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4002",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009101694600",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "medium fat cream cheese with tomato herbs",
+      "default_category": "Soft, Cream & Cottage Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

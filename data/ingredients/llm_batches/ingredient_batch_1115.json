@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1115",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20078485",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "beef sausage rolls",
+      "default_category": "Entertaining & Platters",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

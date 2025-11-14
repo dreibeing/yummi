@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1279",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223003595",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "frozen uncooked whole mussels",
+      "default_category": "Frozen Mussels 1kg",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

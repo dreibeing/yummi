@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3626",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "1230000156554",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "beyond burger plant based jalapeno flavour patties 2 x",
+      "default_category": "Plant-Based Protein",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

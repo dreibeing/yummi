@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0766",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "196557329104",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "manna modern safari stainless steel tumbler",
+      "default_category": "Bottles & Travel Mugs",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

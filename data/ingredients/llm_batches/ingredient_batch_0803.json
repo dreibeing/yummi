@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0803",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001319808305",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "panado paediatric peppermint syrup",
+      "default_category": "Medical",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4084",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009000182093",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mini mature cheddar",
+      "default_category": "Snacking & Lunchbox Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

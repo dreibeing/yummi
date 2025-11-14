@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0209",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184976570",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ancient grain rice crackers",
+      "default_category": "Crackers & Rice Cakes",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

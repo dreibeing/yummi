@@ -1,0 +1,16 @@
+{
+  "batch_id": "ingredient_batch_3465",
+  "metadata": {
+    "model": "gpt-5-nano-2025-08-07",
+    "temperature": 0.1,
+    "top_p": null,
+    "max_output_tokens": 5000
+  },
+  "results": [
+    {
+      "product_id": "2566180000004",
+      "core_item_name": "t-bone steak",
+      "item_type": "ingredient"
+    }
+  ]
+}

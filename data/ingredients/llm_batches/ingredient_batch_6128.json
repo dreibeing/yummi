@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6128",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195518769",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "five cheese ravioli",
+      "default_category": "Fresh Pasta",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

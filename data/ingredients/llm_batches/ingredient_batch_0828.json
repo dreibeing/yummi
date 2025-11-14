@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0828",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2577430000002",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "halaal dhania beef sausage avg",
+      "default_category": "Braai",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

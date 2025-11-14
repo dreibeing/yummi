@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3018",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20080709",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "macaroni cheese with bacon",
+      "default_category": "Italian Meals",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

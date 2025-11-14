@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5798",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217888436",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "organic italian whole peeled tomatoes",
+      "default_category": "Tomatoes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

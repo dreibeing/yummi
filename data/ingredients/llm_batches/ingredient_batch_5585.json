@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5585",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8445290843708",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "nescaf gold all italiana",
+      "default_category": "Instant Coffee",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

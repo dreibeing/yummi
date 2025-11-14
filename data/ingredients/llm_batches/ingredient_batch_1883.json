@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1883",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223961338",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "red white slaw",
+      "default_category": "Salads & Dressings",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

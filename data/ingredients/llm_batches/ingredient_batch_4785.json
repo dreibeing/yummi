@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4785",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "7622210934000",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "royal baking powder refill",
+      "default_category": "Baking Ingredients",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

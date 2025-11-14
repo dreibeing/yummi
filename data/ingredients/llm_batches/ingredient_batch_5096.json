@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5096",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195372514",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "light meat tuna chunks with vegetable oil",
+      "default_category": "Fish",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

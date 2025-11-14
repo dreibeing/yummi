@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3655",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2581090000005",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "slow cooked ox tripe avg",
+      "default_category": "Easter Lunch",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

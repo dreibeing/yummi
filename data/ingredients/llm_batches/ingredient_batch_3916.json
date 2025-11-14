@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3916",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223763185",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ayrshire mozzarella cheese",
+      "default_category": "Selected Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

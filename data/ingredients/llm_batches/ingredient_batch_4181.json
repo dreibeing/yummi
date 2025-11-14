@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4181",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226676796",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plantlove dairy free macadamia nut based cheddar cheese slices with olives",
+      "default_category": "Plant Powered Cheese & Spreads",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

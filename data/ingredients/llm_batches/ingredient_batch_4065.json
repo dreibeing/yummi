@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4065",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223401278",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "paneer medium fat semi hard cheese",
+      "default_category": "Milk, Dairy & Eggs",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

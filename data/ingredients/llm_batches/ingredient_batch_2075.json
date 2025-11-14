@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2075",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009189515347",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "julienne vegetables",
+      "default_category": "Mixed Veg Bags",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

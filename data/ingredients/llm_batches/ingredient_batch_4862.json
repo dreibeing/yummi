@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4862",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226185014",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fully cooked bulgur quinoa and lentil",
+      "default_category": "Grains & Legumes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

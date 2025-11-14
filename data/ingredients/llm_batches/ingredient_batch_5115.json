@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5115",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001021064570",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "bokomo pronutro banana flavoured protein cereal",
+      "default_category": "Porridge & Oats",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5183",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184138749",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chicken masala",
+      "default_category": "Curries and Spice Blends",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

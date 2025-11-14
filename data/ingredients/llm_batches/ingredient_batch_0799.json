@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0799",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "4102430310615",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "bitburger non alcoholic premium pils 6 x",
+      "default_category": "Non Alcoholic Drinks",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

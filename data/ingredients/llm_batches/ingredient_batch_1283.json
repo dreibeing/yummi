@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1283",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226183249",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "frozen beef sausage rolls",
+      "default_category": "Frozen Food",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4950",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009171974107",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kids peach pieces in mango flavoured wobbly jelly cups 4 x",
+      "default_category": "Jelly & Dessert Mixes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

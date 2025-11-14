@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4148",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226497117",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range large chilled eggs",
+      "default_category": "Eggs",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

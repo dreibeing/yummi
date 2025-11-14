@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4176",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233860423",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kids ayrshire lactose free low fat litchi flavoured yoghurt choobes 9 x",
+      "default_category": "Yoghurt",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

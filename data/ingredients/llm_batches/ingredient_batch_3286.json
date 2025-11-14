@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3286",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009028983",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "frozen norwegian salmon portions",
+      "default_category": "Fish & Seafood",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2915",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009175969789",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "italian potato gnocchi",
+      "default_category": "Pasta",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

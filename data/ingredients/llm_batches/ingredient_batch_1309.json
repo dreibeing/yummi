@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1309",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009173621740",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "frozen savoury rice",
+      "default_category": "Chips, Rice & Potatoes",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

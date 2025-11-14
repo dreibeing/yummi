@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3266",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226483950",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chicken breast fillets topped with mozzarella spring onion",
+      "default_category": "Easy To Cook Range",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

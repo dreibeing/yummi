@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3478",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207761978",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "steakhouse seasoning",
+      "default_category": "The family meetup",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

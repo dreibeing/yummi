@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0522",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245646459",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "medium fat cream cheese with tangy sriracha spice",
+      "default_category": "Entertaining, Platters & Dairy Dips",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

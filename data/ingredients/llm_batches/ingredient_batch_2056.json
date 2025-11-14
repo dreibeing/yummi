@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2056",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184997605",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pick mix papaya",
+      "default_category": "Fresh Fruit",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

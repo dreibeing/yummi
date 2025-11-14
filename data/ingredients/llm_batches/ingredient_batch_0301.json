@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0301",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2566520000008",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "strawberry square donut",
+      "default_category": "Fresh Bakery Counter",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

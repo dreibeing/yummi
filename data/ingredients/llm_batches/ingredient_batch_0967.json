@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0967",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009188007317",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "nestl nan optipro gold stage 3 toddler aged 12 36 months",
+      "default_category": "Stage 3 Formula",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

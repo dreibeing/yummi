@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1615",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6008000207263",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "papaya berry fruit salad",
+      "default_category": "Yoghurt And Fruit",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

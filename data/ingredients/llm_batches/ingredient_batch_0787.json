@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0787",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211112438",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "roasted and salted bbq flavoured peanut and cashew mix",
+      "default_category": "Nuts",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

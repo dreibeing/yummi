@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1811",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009171229382",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "tenderstem broccoli",
+      "default_category": "Tenderstem Broccoli",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1586",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20200374",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "baby spinach rocket watercress salad",
+      "default_category": "Salads & Herbs",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

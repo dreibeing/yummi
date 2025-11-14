@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1149",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211217065",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "bbq pulled pork bao buns",
+      "default_category": "Global Menu Meals",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

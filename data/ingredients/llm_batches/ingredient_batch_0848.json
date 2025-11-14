@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0848",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009508409425",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "lil lets maxi maternity pads with wings",
+      "default_category": "Pads & Liners",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

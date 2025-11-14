@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1654",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20126759",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "crisp watermelon",
+      "default_category": "Melons & Watermelons",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

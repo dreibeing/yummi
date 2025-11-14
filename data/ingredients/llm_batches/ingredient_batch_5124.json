@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5124",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214520544",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "lemon curd",
+      "default_category": "Toppings, Decorating & Accessories",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

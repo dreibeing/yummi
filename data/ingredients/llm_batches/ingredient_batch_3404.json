@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3404",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2571480000005",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range chicken portions avg",
+      "default_category": "Chicken Portions & Other",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

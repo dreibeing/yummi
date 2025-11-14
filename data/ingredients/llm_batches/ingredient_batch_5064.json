@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5064",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223400585",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "red pepper and calabrian chilli pesto antipasti",
+      "default_category": "Antipasti",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

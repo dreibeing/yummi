@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1186",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184780733",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "party foods selection platter",
+      "default_category": "Deli Snacking",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5555",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "7811593297844",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "the harvest table bovine collagen granules",
+      "default_category": "Grains, Legumes, Seeds & Powders",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

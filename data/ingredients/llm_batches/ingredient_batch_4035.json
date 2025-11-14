@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4035",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20166366",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "organic free range mixed size eggs",
+      "default_category": "Milk, Dairy & Eggs",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

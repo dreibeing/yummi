@@ -101,6 +101,12 @@ We operate a production-ready pipeline that prepares product data, enriches bask
 - PDP enrichment (next iteration): parse `productInfo.multiAttributes` for pack sizes, nutrition, allergens, ingredients; merge into canonical records.
 - Outputs feed `resolver/catalog.json`, ensuring cart fill always uses Woolworths IDs with URLs as supporting metadata.
 
+### Ingredient cleanup + classification
+- Heuristic filter CLI (`scripts/ingredient_cleanup.py`) + config (`data/catalog_filters.json`) strip obvious non-meal categories before LLM review. Current heuristics keep ready-meal branches while dropping beverages/household.
+- Batch builder (`scripts/ingredient_batch_builder.py`) now slices the candidate set into JSON payloads (currently 1 SKU per batch to keep GPT-5 nano responses under limits) and records run metadata in `data/ingredients/llm_batches/manifest.json`.
+- GPT classification runner (`scripts/ingredient_llm_classifier.py`) prompts `gpt-5-nano-2025-08-07` (fallback `gpt-5-mini-2025-08-07`) with `--max-output-tokens 5000`, logging progress per SKU and resuming automatically when interrupted. Responses live under `data/ingredients/llm_batches/responses/`.
+- Consolidation script (`scripts/ingredient_classifications_builder.py`) merges `all_results.jsonl` into product-level tables (`data/ingredients/ingredient_classifications.{jsonl,csv}`) and a deduped ingredient catalog (`data/ingredients/unique_core_items.csv`, currently 1 844 unique ingredient/ready-meal rows) for downstream meal generation prompts.
+
 ### TODO focus areas
 1. Refine category discovery filters (skip promo-only nodes), freeze canonical category list, and version it under source control.
 2. Add PDP enrichment for pack size/specifications + nutritional metadata.

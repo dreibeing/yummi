@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4026",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20166335",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "white rock full fat semi soft cheese",
+      "default_category": "Speciality Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

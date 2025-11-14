@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3770",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2562980000008",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "halaal barbeque beef ribs avg",
+      "default_category": "Marinated Braai",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

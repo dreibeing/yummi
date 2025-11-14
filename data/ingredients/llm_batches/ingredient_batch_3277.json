@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3277",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2069560000002",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range beef half fillet avg",
+      "default_category": "Steak-and-mashed potato cups",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

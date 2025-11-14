@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3401",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009204182448",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range beef biltong powder",
+      "default_category": "Beef",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

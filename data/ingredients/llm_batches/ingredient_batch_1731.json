@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1731",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6008000458788",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "bulk seasonal fruit salad",
+      "default_category": "Cut Fruit",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

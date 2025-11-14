@@ -1,0 +1,16 @@
+{
+  "batch_id": "ingredient_batch_4731",
+  "metadata": {
+    "model": "gpt-5-nano-2025-08-07",
+    "temperature": 0.1,
+    "top_p": null,
+    "max_output_tokens": 5000
+  },
+  "results": [
+    {
+      "product_id": "6001231081404",
+      "core_item_name": "basmati rice",
+      "item_type": "ingredient"
+    }
+  ]
+}

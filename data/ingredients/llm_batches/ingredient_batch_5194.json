@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5194",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184322001",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "demi glac concentrate beef stock 8 x",
+      "default_category": "Broth & Stock",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

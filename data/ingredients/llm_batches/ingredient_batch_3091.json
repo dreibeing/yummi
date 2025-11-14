@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3091",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009017260",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "whole unpeeled cherry tomatoes",
+      "default_category": "Tomatoes",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

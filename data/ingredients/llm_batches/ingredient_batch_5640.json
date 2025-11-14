@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5640",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "5030343840662",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "belazu shawarma paste",
+      "default_category": "Condiments, Sauces & Pastes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

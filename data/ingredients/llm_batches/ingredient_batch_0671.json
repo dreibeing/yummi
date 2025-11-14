@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0671",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226043642",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "haloumi full fat semi hard cheese kebabs",
+      "default_category": "Feta & Haloumi Cheese",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

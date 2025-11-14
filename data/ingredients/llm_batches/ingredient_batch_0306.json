@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0306",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245382203",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sea salt sourdough flatbread crackers",
+      "default_category": "Preserves, Crackers & Speciality Bread",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

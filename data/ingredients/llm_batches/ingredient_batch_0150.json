@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0150",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009189506291",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mini yoghurt digestives",
+      "default_category": "Mini Digestives 30g",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

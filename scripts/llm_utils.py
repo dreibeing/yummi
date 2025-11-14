@@ -47,7 +47,7 @@ def call_openai_api(
     user_prompt: str,
     model: str,
     temperature: float,
-    top_p: float,
+    top_p: float | None,
     max_tokens: int,
     reasoning_effort: Optional[str] = None,
     max_output_tokens: Optional[int] = None,
@@ -77,16 +77,19 @@ def call_openai_api(
             raise OpenAIClientError("Responses API did not return any text output.")
         return text
 
-    response = client.chat.completions.create(
-        model=model,
-        temperature=temperature,
-        top_p=top_p,
-        max_tokens=max_tokens,
-        messages=[
+    chat_kwargs: Dict[str, Any] = {
+        "model": model,
+        "temperature": temperature,
+        "max_tokens": max_tokens,
+        "messages": [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt},
         ],
-    )
+    }
+    if top_p is not None:
+        chat_kwargs["top_p"] = top_p
+
+    response = client.chat.completions.create(**chat_kwargs)
     content = response.choices[0].message.content
     if not content:
         raise OpenAIClientError("Chat completion returned empty content.")

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3547",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009204079076",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "blanched prawns with garlic butter",
+      "default_category": "Shellfish",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

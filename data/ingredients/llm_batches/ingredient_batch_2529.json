@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2529",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245212715",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "thali style sharing meal",
+      "default_category": "Indian",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

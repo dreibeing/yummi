@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1684",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20017712",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "star ruby grapefruit",
+      "default_category": "Seedless Star Ruby Grapefruit",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

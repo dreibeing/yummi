@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5791",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223211778",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pepper sauce powder",
+      "default_category": "Chilli & Pepper Sauces",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

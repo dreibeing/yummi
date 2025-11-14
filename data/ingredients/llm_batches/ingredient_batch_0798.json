@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0798",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245244556",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "warwick cape lady cabernet sauvignon 4 x",
+      "default_category": "Red Wines",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

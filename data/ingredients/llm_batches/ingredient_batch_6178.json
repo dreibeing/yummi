@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6178",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226142291",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "citrus honey chicken booster bowl",
+      "default_category": "Booster & Soup Bowls",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

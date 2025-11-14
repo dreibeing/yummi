@@ -1,0 +1,16 @@
+{
+  "batch_id": "ingredient_batch_2161",
+  "metadata": {
+    "model": "gpt-5-nano-2025-08-07",
+    "temperature": 0.1,
+    "top_p": null,
+    "max_output_tokens": 5000
+  },
+  "results": [
+    {
+      "product_id": "6009226418136",
+      "core_item_name": "chili oil",
+      "item_type": "ingredient"
+    }
+  ]
+}

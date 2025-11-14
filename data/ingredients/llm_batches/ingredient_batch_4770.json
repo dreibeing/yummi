@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4770",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009175048231",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "thyme",
+      "default_category": "Herbs",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

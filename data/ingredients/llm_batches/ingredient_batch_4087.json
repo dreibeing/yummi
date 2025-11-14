@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4087",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20125356",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "goat s milk feta cheese",
+      "default_category": "Cheeses",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

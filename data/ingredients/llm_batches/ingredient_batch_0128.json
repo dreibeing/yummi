@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0128",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009171329624",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mini tomato flavoured rice crackers",
+      "default_category": "Biscuits & Crackers",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

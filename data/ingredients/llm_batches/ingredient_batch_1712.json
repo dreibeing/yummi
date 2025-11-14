@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1712",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226130304",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "baby corn",
+      "default_category": "Fresh Vegetables",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

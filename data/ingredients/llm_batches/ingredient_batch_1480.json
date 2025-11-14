@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1480",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2906824000005",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "whole cauliflower avg",
+      "default_category": "Veggie quiche",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

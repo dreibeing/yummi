@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0400",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2581640000004",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "wagyu beef chuck eye steak avg",
+      "default_category": "Angus & Wagyu",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

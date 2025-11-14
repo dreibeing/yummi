@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0217",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195025717",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "all butter palmiers",
+      "default_category": "Mini gingerbread houses",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

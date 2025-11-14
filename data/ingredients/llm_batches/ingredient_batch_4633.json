@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4633",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001021023119",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "cerebos iodated table salt",
+      "default_category": "Salt & Pepper",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1194",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009175424585",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "speck",
+      "default_category": "Hot cross bun jaffles",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

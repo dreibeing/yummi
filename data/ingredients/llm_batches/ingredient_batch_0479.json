@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0479",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "9781485900542",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "jan braai atmosvuur",
+      "default_category": "Recipe & Mindfulness Books",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

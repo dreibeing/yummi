@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1117",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20046712",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "beef samoosas",
+      "default_category": "Meals in under 20 minutes",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

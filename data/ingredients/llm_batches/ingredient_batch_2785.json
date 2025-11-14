@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2785",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "5030343839680",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ottolenghi green harissa",
+      "default_category": "Condiments, Sauces & Pastes",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

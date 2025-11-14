@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4430",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195372293",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "light meat tuna shredded in brine 3 x",
+      "default_category": "Fish",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

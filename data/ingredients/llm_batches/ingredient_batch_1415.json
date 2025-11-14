@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1415",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214397696",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fresh pet frozen lamb s liver with rice vegetables for adult dogs",
+      "default_category": "Fresh & Frozen Dog Food",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

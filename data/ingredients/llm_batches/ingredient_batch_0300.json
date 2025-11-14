@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0300",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245386072",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fruit and nut toasted crackers",
+      "default_category": "Preserves, Crackers & Speciality Bread",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

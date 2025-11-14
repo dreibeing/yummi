@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0116",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184421360",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "bran raisin sultana muffins",
+      "default_category": "Bakery",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

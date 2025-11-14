@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3402",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2577450000006",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "bulk pork shoulder chops avg",
+      "default_category": "Chops & Other",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

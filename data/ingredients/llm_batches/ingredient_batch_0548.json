@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0548",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233557606",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "large round striped paper plate",
+      "default_category": "Serviettes, Paper Towels & Disposables",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4479",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009012685",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "no added salt and sugar peanut butter",
+      "default_category": "Good Fats",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

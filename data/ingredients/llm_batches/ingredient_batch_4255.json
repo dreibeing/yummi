@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4255",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233581045",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "roasted bell pepper haloumi full fat cheese kebabs",
+      "default_category": "Feta & Haloumi Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

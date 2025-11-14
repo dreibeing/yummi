@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1825",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20008635",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fine green beans",
+      "default_category": "Fresh Vegetables",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

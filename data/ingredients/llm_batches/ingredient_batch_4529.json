@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4529",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20044732",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "black olives in brine",
+      "default_category": "Olives",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0242",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214573724",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mini oat crunchies in red with gold embossed leaves on tin",
+      "default_category": "Crunchies, Digestives & Oat Biscuits",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

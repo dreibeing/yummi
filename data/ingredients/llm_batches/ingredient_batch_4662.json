@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4662",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20040772",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "farmhouse chicken soup",
+      "default_category": "Pantry Soup",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

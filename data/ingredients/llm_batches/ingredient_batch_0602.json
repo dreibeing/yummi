@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0602",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20179083",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "crispy onion sprinkle",
+      "default_category": "Salad Dressing, Croutons & Toppings",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

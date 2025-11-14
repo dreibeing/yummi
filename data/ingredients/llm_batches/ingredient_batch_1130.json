@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1130",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009000937037",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sliced beech wood smoked formed turkey pastrami",
+      "default_category": "Turkey Pastrami",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

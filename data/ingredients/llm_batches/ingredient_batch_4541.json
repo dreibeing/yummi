@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4541",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20163105",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "couscous",
+      "default_category": "Rice, Couscous & Polenta",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

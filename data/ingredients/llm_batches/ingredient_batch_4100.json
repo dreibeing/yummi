@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4100",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2562850000008",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "20 months mature gouda cheese avg",
+      "default_category": "Speciality Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

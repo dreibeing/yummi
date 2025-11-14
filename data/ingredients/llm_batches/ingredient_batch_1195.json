@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1195",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223794967",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "liver onion spread",
+      "default_category": "Dips, Pâtés, & Spreads",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

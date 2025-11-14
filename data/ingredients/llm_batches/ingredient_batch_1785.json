@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1785",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009182264549",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "joya apples",
+      "default_category": "Fresh Fruit",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

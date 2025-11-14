@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2347",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "9780241431160",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "jamie oliver s 5 ingredients mediterranean cookbook",
+      "default_category": "Recipe & Mindfulness Books",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

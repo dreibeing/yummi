@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0134",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20116910",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "malva pudding",
+      "default_category": "Woolies Braai Greats",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

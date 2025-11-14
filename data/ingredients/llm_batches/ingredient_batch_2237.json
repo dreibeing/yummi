@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2237",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2581070000001",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range asian style beef short rib avg",
+      "default_category": "Easy Roasts & Meals",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

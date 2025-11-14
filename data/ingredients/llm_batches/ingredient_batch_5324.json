@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5324",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001345000209",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "selati white sugar",
+      "default_category": "Sugar & Sweeteners",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

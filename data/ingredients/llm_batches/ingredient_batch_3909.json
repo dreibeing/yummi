@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3909",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009710390146",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "flora light 40 fat spread",
+      "default_category": "Butter & Spreads",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

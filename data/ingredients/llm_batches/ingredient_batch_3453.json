@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3453",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009204206496",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "lightly smoked norwegian salmon",
+      "default_category": "Lightly Smoked Trout And Lightly Smoked Salmon 250g",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

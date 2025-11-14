@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4724",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195969967",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "almond and berry snack bar",
+      "default_category": "Snack Bars & Nibbles",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

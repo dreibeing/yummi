@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0579",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "4015400739098",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pampers baby dry size 3 6 nappies",
+      "default_category": "Baby Nappies",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

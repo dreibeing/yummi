@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6020",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233758355",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "frozen stonebaked spicy fajita chicken pizza",
+      "default_category": "Frozen Food",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

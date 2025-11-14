@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2431",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226800139",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "falafel hummus caramelised onion wrap",
+      "default_category": "Sandwiches, & Wraps To Go",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

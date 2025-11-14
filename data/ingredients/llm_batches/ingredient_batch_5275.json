@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5275",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217240838",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "asian gochujang paste",
+      "default_category": "Cook-In Sauces & Pastes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

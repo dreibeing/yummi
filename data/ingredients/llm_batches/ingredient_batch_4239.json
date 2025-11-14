@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4239",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245243597",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "south african feta with black pepper",
+      "default_category": "Feta & Haloumi Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

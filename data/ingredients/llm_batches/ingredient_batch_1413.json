@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1413",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207293745",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fresh pet frozen chicken liver rice and vegetables",
+      "default_category": "Fresh & Frozen Dog Food",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

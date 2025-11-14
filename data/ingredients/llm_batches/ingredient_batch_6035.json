@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6035",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009101101108",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fresh tomato soup",
+      "default_category": "Carb clever winter meals",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

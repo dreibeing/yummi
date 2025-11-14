@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2467",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "9780600638889",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "classic indian recipes by chetna makan",
+      "default_category": "Recipe & Mindfulness Books",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1071",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009800454079",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "creation syrah grenache",
+      "default_category": "Discover the Rhone Rangers",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

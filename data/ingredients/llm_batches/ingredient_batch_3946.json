@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3946",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009710390177",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "stork country 40 fat spread",
+      "default_category": "Stork 1kg",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

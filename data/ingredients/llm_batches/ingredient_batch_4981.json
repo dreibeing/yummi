@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4981",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223211815",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chicken flavoured gravy powder",
+      "default_category": "Gravy",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

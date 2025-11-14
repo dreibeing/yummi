@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0262",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2580880000003",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "farmstyle chicken pie",
+      "default_category": "Food To Go",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

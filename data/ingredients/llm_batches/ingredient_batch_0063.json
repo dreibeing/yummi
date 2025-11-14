@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0063",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184419251",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "carrot pecan nut muffins",
+      "default_category": "Scones & Muffins",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

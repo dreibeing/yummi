@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4197",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875492996",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "farmhouse mature cheddar",
+      "default_category": "Cheddar & Gouda Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

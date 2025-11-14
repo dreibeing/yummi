@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5250",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226652530",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pineapple flavoured jelly powder",
+      "default_category": "Jelly & Dessert Mixes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

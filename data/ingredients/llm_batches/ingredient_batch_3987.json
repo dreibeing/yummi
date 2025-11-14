@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3987",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20170141",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "full cream cheddar flavoured cheese 12 slices",
+      "default_category": "Grated & Sliced Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

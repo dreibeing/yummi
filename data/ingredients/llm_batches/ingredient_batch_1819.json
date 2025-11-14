@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1819",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875956955",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "baby potato roasting kit",
+      "default_category": "Tuscan Chicken with Baby Potatoes",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

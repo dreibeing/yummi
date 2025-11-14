@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5603",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233781070",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chilli crunch seasoning in tin",
+      "default_category": "Herbs & Spices",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

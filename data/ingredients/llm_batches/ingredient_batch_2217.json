@@ -1,0 +1,18 @@
+{
+  "batch_id": "ingredient_batch_2217",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217821471",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fresh egg noodles",
+      "default_category": "Fresh Asian",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop",
+        "Asian"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5646",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245305387",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "white condiment",
+      "default_category": "Balsamic Vinegars & Juice Concentrates",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

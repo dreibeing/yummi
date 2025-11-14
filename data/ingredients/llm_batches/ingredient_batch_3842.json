@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3842",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009189248115",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ayrshire full cream lactose free milk",
+      "default_category": "VIP WRewards",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

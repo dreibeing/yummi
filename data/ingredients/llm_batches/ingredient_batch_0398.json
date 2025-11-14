@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0398",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2583020000000",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "thick cut ostrich fillet avg",
+      "default_category": "Venison, Duck & Ostrich",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

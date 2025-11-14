@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3918",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226046674",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "bulk cheddar slices",
+      "default_category": "Grated & Sliced Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

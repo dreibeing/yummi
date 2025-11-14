@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0034",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20018702",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "white thick slice bread",
+      "default_category": "White Bread",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5384",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009681270454",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "willow creek lemon flavoured olive oil",
+      "default_category": "Italian",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

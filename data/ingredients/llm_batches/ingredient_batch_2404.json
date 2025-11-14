@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2404",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217626649",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "coriander and roasted seed dukkah",
+      "default_category": "Herbs",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

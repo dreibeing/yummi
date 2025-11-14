@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4694",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8714599201565",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "jacobs kr nung instant coffee refill pack",
+      "default_category": "Instant Coffee",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

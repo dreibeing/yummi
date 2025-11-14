@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0615",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217494170",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "de alcoholised sauvignon blanc",
+      "default_category": "Non Alcoholic Wine & Bubbles",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

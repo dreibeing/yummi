@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0919",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009204751095",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "non alcoholic sparkling lime and mint flavoured drink 6 x",
+      "default_category": "Woolies Soda",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

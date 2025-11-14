@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3533",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214954738",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range duck sausage",
+      "default_category": "Sausages And Bangers",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

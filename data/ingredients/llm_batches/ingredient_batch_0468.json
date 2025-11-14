@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0468",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20106522",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range beef burgers",
+      "default_category": "Burgers",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

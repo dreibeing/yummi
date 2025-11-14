@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1128",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009189786310",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "moroccan chicken mini fillets",
+      "default_category": "Savoury Snacks",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4764",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195576325",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "tomato soup",
+      "default_category": "Pantry Soup",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

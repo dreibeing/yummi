@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5314",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223444077",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chipotle sauce",
+      "default_category": "Mexican",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

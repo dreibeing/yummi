@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4863",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009173963093",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mixed herb refill",
+      "default_category": "Herbs",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

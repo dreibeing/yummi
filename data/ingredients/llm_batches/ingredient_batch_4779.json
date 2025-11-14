@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4779",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223747376",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "carb clever hazelnut and coffee granola",
+      "default_category": "Muesli & Granola",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

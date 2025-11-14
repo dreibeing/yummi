@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5684",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "5000184321064",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "hellmanns real mayonnaise",
+      "default_category": "Mayo",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

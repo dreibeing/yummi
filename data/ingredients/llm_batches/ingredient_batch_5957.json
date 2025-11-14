@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5957",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211272408",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pumpkin fritters with a sticky cinnamon syrup",
+      "default_category": "Easter Lunch",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

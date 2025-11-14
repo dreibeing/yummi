@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4487",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001306000576",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kellogg s coco pops",
+      "default_category": "Breakfast Cereals",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

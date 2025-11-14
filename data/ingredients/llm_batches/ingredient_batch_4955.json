@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4955",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207368023",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mixed vegetables in brine",
+      "default_category": "Vegetables, Beans and Legumes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

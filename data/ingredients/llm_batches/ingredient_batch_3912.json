@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3912",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875957051",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "paw patrol low fat ayrshire vanilla drinking yoghurt 6 x",
+      "default_category": "Drinking Yoghurts",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

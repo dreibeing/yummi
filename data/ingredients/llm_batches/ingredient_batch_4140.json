@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4140",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226184703",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "roydon goat s cow s camembert",
+      "default_category": "Brie, Camembert & Soft Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

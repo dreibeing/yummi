@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0316",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8002114019673",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "vergani gluten free classic panettone",
+      "default_category": "Panettone & Stollen",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

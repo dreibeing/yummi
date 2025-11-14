@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0758",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211676589",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "basil white balsamic salad dressing",
+      "default_category": "Salad Dressing, Croutons & Toppings",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

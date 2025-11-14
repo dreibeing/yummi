@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3920",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195203504",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ayrshire cultured low fat buttermilk",
+      "default_category": "Buttermilk & Maas",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

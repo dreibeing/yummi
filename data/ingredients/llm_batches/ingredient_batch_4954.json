@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4954",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009182309936",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "garam masala blend",
+      "default_category": "Korma chicken cottage pie",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

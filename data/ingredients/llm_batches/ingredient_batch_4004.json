@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4004",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207289441",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "full cream maas",
+      "default_category": "Buttermilk & Maas",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4965",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875522259",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plantlove peach flavoured cultured coconut",
+      "default_category": "Plant Powered Yoghurt",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

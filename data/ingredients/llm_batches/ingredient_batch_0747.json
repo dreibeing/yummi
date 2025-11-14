@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0747",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214793375",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "babes chamomile and cucumber baby wash and shampoo",
+      "default_category": "Baby Toiletries",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

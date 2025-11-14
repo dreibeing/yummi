@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3899",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009013590",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "italian parmigiano reggiano cheese",
+      "default_category": "Parmesan & Hard Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

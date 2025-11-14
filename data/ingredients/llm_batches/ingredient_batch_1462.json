@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1462",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20109608",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "bananas tray",
+      "default_category": "Bananas",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

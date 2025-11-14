@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5309",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223400578",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chimichurri antipasti",
+      "default_category": "Antipasti",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

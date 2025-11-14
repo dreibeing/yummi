@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0309",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2581490000001",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "wholewheat bread made with sourdough",
+      "default_category": "Fresh Bakery Counter",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

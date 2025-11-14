@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5385",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "5060319120153",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "higher living organic chamomile and vanilla teabags",
+      "default_category": "Rooibos & Infused Teas",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

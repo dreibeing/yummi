@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0714",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009101145379",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "paper stem cotton buds",
+      "default_category": "Cottonwool & Buds",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

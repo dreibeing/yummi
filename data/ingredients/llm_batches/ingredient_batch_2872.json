@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2872",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211813908",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "frozen hake curry",
+      "default_category": "Fish & Seafood",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5537",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233585456",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "garlic cheese filled naan 2 x",
+      "default_category": "Butter chicken soup with cheesy naan",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

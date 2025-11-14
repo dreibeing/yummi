@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1935",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195267902",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "cauli shoots",
+      "default_category": "Fresh Vegetables",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

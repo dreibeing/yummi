@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0702",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245410487",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "i love sa off road truck with sour red green christmas trees",
+      "default_category": "Gifting",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

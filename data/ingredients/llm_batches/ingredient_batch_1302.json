@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1302",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211273313",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "frozen country crop mix",
+      "default_category": "Vegetables",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

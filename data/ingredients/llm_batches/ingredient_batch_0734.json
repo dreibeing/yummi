@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0734",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20083458",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "reduced oil greek dressing",
+      "default_category": "Salad Dressings",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

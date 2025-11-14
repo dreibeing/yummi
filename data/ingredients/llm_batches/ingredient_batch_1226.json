@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1226",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245448138",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "beetroot yoghurt dip",
+      "default_category": "Deli & Entertaining",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

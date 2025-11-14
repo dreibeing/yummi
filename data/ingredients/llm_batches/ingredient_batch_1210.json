@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1210",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223561019",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "marinated white anchovy fillets",
+      "default_category": "Anchovies",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

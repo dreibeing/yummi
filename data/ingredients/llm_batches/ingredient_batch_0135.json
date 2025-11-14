@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0135",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214246291",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "seeded oat quinoa stoneground bread",
+      "default_category": "Speciality Bread",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

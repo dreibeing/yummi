@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4011",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875493009",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mascarpone",
+      "default_category": "Mascarpone, Ricotta & Mozzarella",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

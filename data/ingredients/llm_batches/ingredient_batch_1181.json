@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1181",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009182188975",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "smoked snoek terrine",
+      "default_category": "Dips, Pâtés, & Spreads",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3164",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009189968822",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "braised beef stew",
+      "default_category": "Ready Meals",
+      "category_path": [
+        "Food",
+        "Kids"
+      ]
+    }
+  ]
+}

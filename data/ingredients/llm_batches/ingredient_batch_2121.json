@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2121",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233308956",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "potato roasting vegetables",
+      "default_category": "For The Air Fryer",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

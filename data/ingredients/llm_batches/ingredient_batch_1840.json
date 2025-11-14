@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1840",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20017323",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "cape gooseberries",
+      "default_category": "All Berries",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

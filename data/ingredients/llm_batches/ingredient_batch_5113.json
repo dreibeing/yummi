@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5113",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217648764",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "albacore white tuna fillets in olive oil",
+      "default_category": "Fish",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

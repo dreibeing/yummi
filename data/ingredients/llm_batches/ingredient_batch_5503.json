@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5503",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233764103",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "strawberry flavoured instant oats sachets 10 x",
+      "default_category": "Porridge & Oats",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4094",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20133504",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "cambozola cheese",
+      "default_category": "Chocolate, Wine & Cheese Board",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2866",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245673110",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "dim sum style meal",
+      "default_category": "Ready & Easy Meals",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6121",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009178037805",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kids twisty tuna pasta",
+      "default_category": "Kids Meals",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1103",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20086367",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chicken nuggets",
+      "default_category": "Deli Meats, Fish, Dips, Pate's, Sushi & Wraps",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

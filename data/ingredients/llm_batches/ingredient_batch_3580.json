@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3580",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233410482",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "halaal free range beef frikkadels",
+      "default_category": "Mince & Frikkadels",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

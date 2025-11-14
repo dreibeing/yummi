@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0709",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6008000498913",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "heat eat garlic butter filled ciabatta",
+      "default_category": "Garlic Baguette & Ciabatta",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

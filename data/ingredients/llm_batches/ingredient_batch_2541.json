@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2541",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20199944",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "balsamic vinaigrette dressing",
+      "default_category": "Food Cupboard",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

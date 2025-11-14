@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3984",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009013583",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "grana padano cheese",
+      "default_category": "Parmesan & Hard Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

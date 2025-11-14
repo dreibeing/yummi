@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6046",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20196356",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kids cheese a roni macaroni cheese",
+      "default_category": "Kids Meals",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

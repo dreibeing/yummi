@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5598",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8711000055144",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "douwe egberts pure indulgence instant coffee",
+      "default_category": "Instant Coffee",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

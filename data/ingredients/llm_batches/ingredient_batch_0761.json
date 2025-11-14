@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0761",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226159442",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range lamb sausage",
+      "default_category": "Boerewors & Sausages",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

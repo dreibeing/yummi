@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3331",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009178037775",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "halaal free range beef burgers",
+      "default_category": "Burgers",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

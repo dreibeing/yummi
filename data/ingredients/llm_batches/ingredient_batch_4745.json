@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4745",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184246444",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "white sesame seeds",
+      "default_category": "Easy peanut butter noodles",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

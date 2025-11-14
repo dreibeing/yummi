@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6135",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20120825",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "spinach ricotta ravioli",
+      "default_category": "Fresh Pasta",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

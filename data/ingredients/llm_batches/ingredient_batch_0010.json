@@ -1,0 +1,18 @@
+{
+  "batch_id": "ingredient_batch_0010",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223663782",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "12 tall gold candles and holders",
+      "default_category": "Toppings, Decorating & Accessories",
+      "category_path": [
+        "Food",
+        "Bakery",
+        "Cakes & Gateaux"
+      ]
+    }
+  ]
+}

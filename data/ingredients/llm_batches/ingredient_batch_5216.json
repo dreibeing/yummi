@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5216",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009182325127",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mixed spice",
+      "default_category": "Spices",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

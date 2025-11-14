@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1090",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195431150",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sliced smoked chicken",
+      "default_category": "Chicken & Turkey Cold Meats",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

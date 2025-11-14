@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0852",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2560270000004",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range chicken wings avg",
+      "default_category": "Chicken Portions & Other",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

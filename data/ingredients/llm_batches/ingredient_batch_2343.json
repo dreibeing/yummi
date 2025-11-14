@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2343",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184427287",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "cocktail tomatoes",
+      "default_category": "Tomatoes",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

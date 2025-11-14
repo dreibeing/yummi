@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2544",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6005000896008",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "truffle flavoured olive oil",
+      "default_category": "Potato salad",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

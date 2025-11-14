@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1536",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20004194",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "celery",
+      "default_category": "Your best new braai menu",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

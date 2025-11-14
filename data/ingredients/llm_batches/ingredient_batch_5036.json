@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5036",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211697720",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "brown basmati rice",
+      "default_category": "Bulk Shopping Items",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

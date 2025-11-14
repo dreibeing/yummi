@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0664",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "4015400636649",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pampers sensitive baby wipes",
+      "default_category": "Baby Wipes",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

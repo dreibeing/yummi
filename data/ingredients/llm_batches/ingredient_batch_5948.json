@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5948",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20094621",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "napoletana sauce",
+      "default_category": "Sauces & Pesto",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

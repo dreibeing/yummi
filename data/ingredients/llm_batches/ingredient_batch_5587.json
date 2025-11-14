@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5587",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "5030343840068",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "belazu roasted garlic",
+      "default_category": "Pickles",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5879",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245027210",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "spicy beef soup",
+      "default_category": "Soups",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

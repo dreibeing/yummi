@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5863",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226769702",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "gluten free fusilli pasta",
+      "default_category": "Free From Gluten",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

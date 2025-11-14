@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1267",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245357591",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "frozen passion fruit coconut boa buns",
+      "default_category": "Frozen Food",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

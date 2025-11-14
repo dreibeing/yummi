@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5058",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009204041011",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "creamed honey",
+      "default_category": "Honey",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

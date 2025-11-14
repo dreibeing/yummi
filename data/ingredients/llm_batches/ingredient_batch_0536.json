@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0536",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009178950210",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "dry roasted and salted peanuts and raisins",
+      "default_category": "Nuts",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

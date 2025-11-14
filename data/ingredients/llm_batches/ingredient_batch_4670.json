@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4670",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211706927",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "onion marmalade with mustard seeds",
+      "default_category": "Preserves, Crackers & Speciality Bread",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

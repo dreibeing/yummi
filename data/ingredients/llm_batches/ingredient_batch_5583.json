@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5583",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226652332",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kids strawberry flavoured multigrain hoops",
+      "default_category": "Breakfast Cereals",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

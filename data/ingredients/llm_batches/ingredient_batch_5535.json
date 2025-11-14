@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5535",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245411774",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "smash burger kit",
+      "default_category": "Sugar, Flour & Baking",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

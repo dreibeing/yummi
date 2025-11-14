@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0507",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20078515",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "malva pudding",
+      "default_category": "Warm Puddings",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

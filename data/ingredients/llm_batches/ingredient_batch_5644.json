@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5644",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233587122",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "christmas pitted green olives with tangerine and chilli",
+      "default_category": "Accompaniments",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3559",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233982828",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range duck breast mini fillets",
+      "default_category": "Meat, Poultry & Fish",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

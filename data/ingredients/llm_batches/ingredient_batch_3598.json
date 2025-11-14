@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3598",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2582790000005",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "made without added nitrites smoked pork rashers avg",
+      "default_category": "Other Smoked",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

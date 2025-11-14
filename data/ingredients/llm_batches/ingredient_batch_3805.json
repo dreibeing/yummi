@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3805",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20011246",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plain south african feta cheese",
+      "default_category": "Feta & Haloumi Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3016",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233164880",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "lamb ravioli",
+      "default_category": "Italian Meals & Bowls",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

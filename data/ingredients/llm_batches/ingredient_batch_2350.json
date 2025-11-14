@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2350",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226506222",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kids mini pizza base mix",
+      "default_category": "Baking Kits & Flour Mixes",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5347",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207761893",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fleur de sel sea salt crystals",
+      "default_category": "Salt & Pepper",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

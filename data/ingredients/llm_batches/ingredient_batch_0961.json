@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0961",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875744613",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "halaal free range spicy beef burgers",
+      "default_category": "Braai",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

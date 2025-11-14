@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5544",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009880062560",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "oryx fine desert salt",
+      "default_category": "Pantry Gifts",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

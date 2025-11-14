@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4806",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214397764",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pitted kalamata olives with oregano",
+      "default_category": "Olives",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

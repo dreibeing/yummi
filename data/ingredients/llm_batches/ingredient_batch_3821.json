@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3821",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20011758",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fresh custard with vanilla bean seeds",
+      "default_category": "Chocolate brownie trifle",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5596",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233500909",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "coffee pod advent calendar 12 pcs",
+      "default_category": "Christmas",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

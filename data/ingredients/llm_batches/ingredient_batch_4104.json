@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4104",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184343068",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pecorino romano medium fat hard cheese shavings",
+      "default_category": "Italian Style Minestrone with Winter Veg Salad and Nduja Garlic Bread",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

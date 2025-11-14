@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2766",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009101392865",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "macaroni cheese bacon",
+      "default_category": "Prepared Meals",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

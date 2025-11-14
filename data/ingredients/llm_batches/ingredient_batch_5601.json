@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5601",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245220666",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "calabrian mushroom mascarpone and black truffle creamy sauce",
+      "default_category": "Pesto & Pasta Sauces",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

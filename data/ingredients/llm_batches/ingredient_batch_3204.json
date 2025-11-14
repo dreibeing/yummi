@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3204",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2004890000001",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pork fillet avg",
+      "default_category": "Pork",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

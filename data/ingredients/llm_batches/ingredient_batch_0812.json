@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0812",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214616001",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "gluten free hamburger rolls",
+      "default_category": "Rolls",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

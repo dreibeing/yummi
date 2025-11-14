@@ -1,0 +1,16 @@
+{
+  "batch_id": "ingredient_batch_0020",
+  "metadata": {
+    "model": "gpt-5-nano-2025-08-07",
+    "temperature": 0.1,
+    "top_p": null,
+    "max_output_tokens": 2000
+  },
+  "results": [
+    {
+      "product_id": "6009223401230",
+      "core_item_name": "bagel",
+      "item_type": "ingredient"
+    }
+  ]
+}

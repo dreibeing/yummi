@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2437",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223966395",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plantlove spinach and hummus girasoli",
+      "default_category": "Italian",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0665",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009175257428",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "steak and chops grind",
+      "default_category": "The braai life",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

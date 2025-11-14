@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0699",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009188002022",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "nestl nido powdered drink for growing children 3 5 years preschool",
+      "default_category": "Baby Formula",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

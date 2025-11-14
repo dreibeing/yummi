@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4600",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009171091439",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "long life fat free milk 6 x",
+      "default_category": "Fat Free",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

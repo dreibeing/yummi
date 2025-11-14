@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4081",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211239111",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "blue pearl cheese",
+      "default_category": "Stilton & Blue Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

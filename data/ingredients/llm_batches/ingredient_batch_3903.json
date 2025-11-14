@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3903",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207335773",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "south african feta cheese with sun dried tomato basil",
+      "default_category": "Feta & Haloumi Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

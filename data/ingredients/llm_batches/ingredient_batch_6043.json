@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6043",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6005000285505",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "thai coconut stir fry sauce",
+      "default_category": "Fresh Asian",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

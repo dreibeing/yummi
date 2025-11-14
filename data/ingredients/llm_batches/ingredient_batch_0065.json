@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0065",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226001468",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "white sourdough bread",
+      "default_category": "Bread",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

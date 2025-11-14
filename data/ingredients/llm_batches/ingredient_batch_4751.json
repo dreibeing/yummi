@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4751",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207761992",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "meat and chops seasoning",
+      "default_category": "Braai Destination",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

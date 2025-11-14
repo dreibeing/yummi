@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5177",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8003753158648",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "illy espresso intenso roast coffee capsules",
+      "default_category": "Coffee Capsules",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

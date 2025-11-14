@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0809",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8001090697707",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pampers premium care no 6 16 kg pants",
+      "default_category": "Baby Nappies",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

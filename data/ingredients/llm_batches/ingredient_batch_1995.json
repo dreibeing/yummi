@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1995",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226741388",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "carrot quinoa wraps",
+      "default_category": "Smashed Pea & Avo Pasta Salad",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

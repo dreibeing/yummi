@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3967",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207425269",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "balsamic and onion dip",
+      "default_category": "Entertaining, Platters & Dairy Dips",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

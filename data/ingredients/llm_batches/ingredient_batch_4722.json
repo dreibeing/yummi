@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4722",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009013552",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "split red lentils",
+      "default_category": "Pouch Power",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

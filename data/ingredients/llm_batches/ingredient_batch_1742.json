@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1742",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195026189",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "snacking peppers",
+      "default_category": "Peppers & Chillies",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

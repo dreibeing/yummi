@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4980",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009522300616",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "black cat crunchy peanut butter",
+      "default_category": "Cereal, Oats, Maize, Jam, Peanut Butter",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1525",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20089139",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mixed peppers",
+      "default_category": "Peppers & Chillies",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3913",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211593435",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ayrshire full cream plain yoghurt",
+      "default_category": "Full Cream Yoghurt",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

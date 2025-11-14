@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3686",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2020270000003",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "savoury rub chicken roast with a butter brine based blend avg",
+      "default_category": "Chicken & Other Poultry",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

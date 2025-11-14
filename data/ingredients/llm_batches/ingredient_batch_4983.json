@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4983",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009035929",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "organic crunchy peanut butter",
+      "default_category": "Cereals, Meusli, Oats & Jams",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1587",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20149123",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chopped spinach",
+      "default_category": "Nyama choma",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

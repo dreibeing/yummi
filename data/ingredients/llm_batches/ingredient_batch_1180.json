@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1180",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217687350",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "trout cream cheese rolls",
+      "default_category": "Deli Fish",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

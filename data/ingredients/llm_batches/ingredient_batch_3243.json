@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3243",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2004980000003",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pork loin chops avg",
+      "default_category": "Buy 6 Bulk Meats Save 10%",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

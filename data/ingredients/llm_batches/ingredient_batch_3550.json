@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3550",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2068800000000",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range seasoned lamb chops avg",
+      "default_category": "Chops & Steak",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

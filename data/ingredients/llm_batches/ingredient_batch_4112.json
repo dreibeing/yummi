@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4112",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "5740900846401",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "lurpak salted cultured butter",
+      "default_category": "Butter & Spreads",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

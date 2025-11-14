@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1488",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20110994",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "large potatoes",
+      "default_category": "Potatoes & Sweet Potatoes",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

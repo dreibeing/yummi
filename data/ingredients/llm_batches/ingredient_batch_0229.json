@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0229",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009207379555",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sesame seed breadsticks",
+      "default_category": "Crostini's & 250g Crackers",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

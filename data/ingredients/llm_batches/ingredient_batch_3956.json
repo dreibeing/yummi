@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3956",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20151232",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "double cream ayrshire strawberry yoghurt",
+      "default_category": "Double Cream Yoghurt",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

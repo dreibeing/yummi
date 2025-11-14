@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0115",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6005000416893",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "heat eat knotted rolls",
+      "default_category": "Heat & Eat / Bake at Home",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

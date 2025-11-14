@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2440",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245351506",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "spicy calabrian chilli spinach neapolitan style pizza",
+      "default_category": "Pizza",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

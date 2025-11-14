@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5747",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217629657",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plant powered dairy free cheddar flavoured cheese",
+      "default_category": "Vegan & Dairy Free",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

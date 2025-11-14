@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3218",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2024980000001",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "skinless chicken thigh fillets avg",
+      "default_category": "Chicken Portions & Other",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

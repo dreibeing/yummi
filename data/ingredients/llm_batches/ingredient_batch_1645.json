@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1645",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009189064692",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "petite herb leaf salad",
+      "default_category": "Lettuce & Mixed Leaves",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

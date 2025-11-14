@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1970",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233511745",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "roasting vine tomatoes",
+      "default_category": "Tomatoes",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2914",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245611396",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "effortless entertaining miso dressing",
+      "default_category": "Salad Dressings",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

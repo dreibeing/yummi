@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5636",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233740329",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "our best ever renosterveld fynbos honey",
+      "default_category": "Jams, Honey & Spreads",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

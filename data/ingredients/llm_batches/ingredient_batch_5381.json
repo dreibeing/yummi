@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5381",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009189786051",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "peanut cooking oil",
+      "default_category": "Good Fats",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1245",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226815287",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sliced beech wood smoked formed chicken with herbs",
+      "default_category": "Chicken & Turkey Cold Meats",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

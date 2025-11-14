@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0833",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211949140",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "rustenberg rm nicholson red blend",
+      "default_category": "Discover the Rhone Rangers",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

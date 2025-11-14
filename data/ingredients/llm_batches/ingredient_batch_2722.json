@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2722",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217629046",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plant based bolognese pasta sauce",
+      "default_category": "Pesto & Pasta Sauces",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

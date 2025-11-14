@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5301",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009214210469",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "vanilla icing mix",
+      "default_category": "Toppings, Decorating & Accessories",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

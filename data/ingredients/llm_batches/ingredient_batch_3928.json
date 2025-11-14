@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3928",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009175653770",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "lactose free low fat ayrshire plain yoghurt",
+      "default_category": "Low Fat Yoghurt",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3847",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20123994",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "low fat ayrshire plain yoghurt",
+      "default_category": "Fresh take on nachos",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

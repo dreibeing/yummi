@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3472",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223157045",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sun dried tomato free range chicken burgers",
+      "default_category": "Poultry",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

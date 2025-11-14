@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0691",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6005591400110",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "aquafresh kids milk teeth toothbrush ages 0 2 years",
+      "default_category": "Oral Care",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1112",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20144524",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range chicken liver p t",
+      "default_category": "Dips, Pâtés, & Spreads",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

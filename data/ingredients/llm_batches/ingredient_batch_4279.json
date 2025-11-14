@@ -1,0 +1,19 @@
+{
+  "batch_id": "ingredient_batch_4279",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875598759",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "gnocchi shells",
+      "default_category": "Pasta",
+      "category_path": [
+        "Food",
+        "Pantry",
+        "Pasta, Rice & Noodles",
+        "Pasta"
+      ]
+    }
+  ]
+}

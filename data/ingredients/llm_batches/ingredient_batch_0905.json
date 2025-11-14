@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0905",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "3574669909297",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "johnson s baby soap",
+      "default_category": "Baby Toiletries",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

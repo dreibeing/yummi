@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5928",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226278631",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "macaroni cheese",
+      "default_category": "Prepared Italian Meals & Bowls",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

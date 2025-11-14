@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0044",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009204547407",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "crushed wheat sourdough bread",
+      "default_category": "Speciality Bread",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

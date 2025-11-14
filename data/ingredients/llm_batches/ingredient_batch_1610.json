@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1610",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20191719",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "single yellow pepper",
+      "default_category": "Peppers & Chillies",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

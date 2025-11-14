@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3337",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2570550000006",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "halaal free range lamb rib chops avg",
+      "default_category": "Chops & Steak",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

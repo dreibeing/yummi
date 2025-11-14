@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6002",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211308336",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "babes fresh strawberry and banana with yoghurt",
+      "default_category": "Textured & Chunky",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

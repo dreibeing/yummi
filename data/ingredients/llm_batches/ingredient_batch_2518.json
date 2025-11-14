@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2518",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226418150",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "asian sesame sauce",
+      "default_category": "Global Sauces",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

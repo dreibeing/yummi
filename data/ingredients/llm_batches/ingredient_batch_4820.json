@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4820",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009681271000",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "willow creek estate blend olive oil",
+      "default_category": "Korean style pancakes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

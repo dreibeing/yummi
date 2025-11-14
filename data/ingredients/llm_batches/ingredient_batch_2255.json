@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2255",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217626595",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "falafel seasoning",
+      "default_category": "Herbs",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

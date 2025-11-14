@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0707",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009204512238",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chardonnay",
+      "default_category": "Signature Range",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

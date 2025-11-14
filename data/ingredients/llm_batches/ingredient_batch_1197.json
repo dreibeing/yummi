@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1197",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001009033741",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "hot smoked salmon with pepper mustard seeds dill",
+      "default_category": "Deli Fish",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

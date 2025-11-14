@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4960",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195030377",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "light brown sugar sachets 100 x",
+      "default_category": "Sugar & Sweeteners",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

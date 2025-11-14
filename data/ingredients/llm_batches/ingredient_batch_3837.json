@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3837",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20067281",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "fresh low fat ayrshire milk",
+      "default_category": "Fresh Milk",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

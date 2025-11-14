@@ -1,0 +1,16 @@
+{
+  "batch_id": "ingredient_batch_3045",
+  "metadata": {
+    "model": "gpt-5-nano-2025-08-07",
+    "temperature": 0.1,
+    "top_p": null,
+    "max_output_tokens": 5000
+  },
+  "results": [
+    {
+      "product_id": "6009245452999",
+      "core_item_name": "cacio e pepe",
+      "item_type": "ingredient"
+    }
+  ]
+}

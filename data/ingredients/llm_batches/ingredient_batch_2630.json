@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2630",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245326870",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range chicken breasts with creamy tomato oregano",
+      "default_category": "Poultry",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

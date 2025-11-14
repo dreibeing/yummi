@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4736",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20160456",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mixed herbs",
+      "default_category": "Grilled Spicy Corn",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

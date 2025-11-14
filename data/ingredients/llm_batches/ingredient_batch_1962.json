@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1962",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245362403",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sriracha miso shake it bowl",
+      "default_category": "Salads To Go",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

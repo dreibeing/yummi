@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5447",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009175382977",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "spicy roasting kit",
+      "default_category": "Rub And Kits",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

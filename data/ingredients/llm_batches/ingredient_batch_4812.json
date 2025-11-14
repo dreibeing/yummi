@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4812",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "5050083484896",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kellogg s all bran high fibre wheat cereal",
+      "default_category": "Breakfast Cereals",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

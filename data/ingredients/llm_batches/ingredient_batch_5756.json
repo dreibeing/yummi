@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5756",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217888818",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "passata rustica basil or crushed tomato with basil",
+      "default_category": "Tomatoes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

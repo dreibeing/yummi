@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5524",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245411743",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "tea gift with mug tea bags and notebook 5 pcs",
+      "default_category": "Tea",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

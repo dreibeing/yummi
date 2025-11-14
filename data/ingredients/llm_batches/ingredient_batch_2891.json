@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2891",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245604701",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "blue oyster mushrooms",
+      "default_category": "Fresh Vegetables",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

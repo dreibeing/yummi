@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0978",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009226540103",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "babes fresh lamb veggies lentils and brown rice meal",
+      "default_category": "Textured & Chunky",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

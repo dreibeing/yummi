@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0611",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "4015400541813",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pampers premium care size 5 11 nappies",
+      "default_category": "Baby Nappies",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5319",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184246420",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "rice flour",
+      "default_category": "Alternative flours",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4788",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009182325066",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "thin cinnamon quills",
+      "default_category": "Spices",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

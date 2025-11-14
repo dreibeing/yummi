@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0102",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009101884957",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mini oven baked munchies 6 x",
+      "default_category": "Biscuits & Crackers",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

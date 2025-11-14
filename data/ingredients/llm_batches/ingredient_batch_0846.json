@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0846",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8000500037874",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ferrero rocher",
+      "default_category": "Luxury Chocolates",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

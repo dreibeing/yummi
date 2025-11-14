@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4475",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009195372309",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "light meat tuna shredded with vegetable oil",
+      "default_category": "Canned Tuna",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

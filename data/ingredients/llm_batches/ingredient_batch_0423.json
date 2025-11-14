@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0423",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2566170000007",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "matured thick cut bone in sirloin steak avg",
+      "default_category": "Steaks",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

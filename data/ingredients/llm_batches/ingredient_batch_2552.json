@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2552",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245271422",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "red pepper and calabrian chilli pesto",
+      "default_category": "Pesto & Pasta Sauces",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

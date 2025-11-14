@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3611",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2584070000002",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "asian zing bbq chicken thigh grills avg",
+      "default_category": "Poultry",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

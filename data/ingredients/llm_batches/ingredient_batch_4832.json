@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4832",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6001092500151",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mrs h s ball s peach chutney",
+      "default_category": "A well made cottage pie",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

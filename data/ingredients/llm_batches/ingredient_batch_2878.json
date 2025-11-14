@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2878",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233357046",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plantlove masala cook in sauce",
+      "default_category": "Indian",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4829",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009182310635",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "butter chicken curry spice blend",
+      "default_category": "Spices, Chutneys & Atchars",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

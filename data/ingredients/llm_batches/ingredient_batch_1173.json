@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1173",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20082499",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "wafer thin sliced smoked turkey roll",
+      "default_category": "Wafer Thins",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

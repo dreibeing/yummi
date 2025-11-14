@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0463",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2584090000006",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "herb salsa marinated free range chicken breast fillets avg",
+      "default_category": "Braai Shop",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

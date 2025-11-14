@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4837",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20122706",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "creamy blue cheese dressing",
+      "default_category": "Salad Dressings",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

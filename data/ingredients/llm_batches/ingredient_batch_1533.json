@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1533",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20087388",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "green beans",
+      "default_category": "Your best new braai menu",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

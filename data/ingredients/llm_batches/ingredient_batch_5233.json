@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5233",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223535447",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "oak smoked chilli flakes",
+      "default_category": "Spices",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

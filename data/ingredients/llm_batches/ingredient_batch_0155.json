@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0155",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184976594",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "salt and vinegar crispy rice crackers",
+      "default_category": "Crackers & Rice Cakes",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

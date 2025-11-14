@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1005",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8001841126135",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "pampers no 5 junior 12 pants jumbo",
+      "default_category": "Baby Nappies",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

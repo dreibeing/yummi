@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0199",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20199272",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "crunchie selection",
+      "default_category": "We used Our Free Range Eggs",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

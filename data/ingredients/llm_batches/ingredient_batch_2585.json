@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2585",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211958401",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plain poppadums",
+      "default_category": "Indian Paste & Poppadoms",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

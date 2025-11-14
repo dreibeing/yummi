@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4263",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "3480341002685",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ile de france aperifrais saveur de provence 20 x",
+      "default_category": "Entertaining, Platters & Dairy Dips",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

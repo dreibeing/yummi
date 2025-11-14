@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4638",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009204178885",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "kids strawberry flavoured wobbly jelly cups 4 x",
+      "default_category": "Jelly & Dessert Mixes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

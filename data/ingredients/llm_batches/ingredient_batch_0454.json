@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0454",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2570920000001",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "halaal free range leg of lamb chops avg",
+      "default_category": "Chops & Steak",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

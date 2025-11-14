@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5388",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875626797",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "black quinoa",
+      "default_category": "Grains & Legumes",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

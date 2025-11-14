@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2819",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8002710630227",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "organic grana padano",
+      "default_category": "Parmesan & Hard Cheese",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

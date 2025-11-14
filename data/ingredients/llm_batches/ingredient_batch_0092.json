@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0092",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20107208",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "extra spicy hot cross buns",
+      "default_category": "Hot Cross Buns",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

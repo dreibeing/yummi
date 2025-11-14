@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0663",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223174608",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "de wetshof limestone hill chardonnay",
+      "default_category": "Our Braai Picks",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

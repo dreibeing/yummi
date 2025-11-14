@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1097",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009182764933",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "smoked salami sticks",
+      "default_category": "Continental Meats",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1074",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223031994",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "diemersdal sauvignon blanc",
+      "default_category": "Boxed and canned wines",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

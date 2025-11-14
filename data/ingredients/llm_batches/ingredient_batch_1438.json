@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1438",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233789090",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "so yo red berry low fat flavoured frozen yoghurt",
+      "default_category": "500ml & 1 Litre",
+      "category_path": [
+        "Food",
+        "Frozen Food"
+      ]
+    }
+  ]
+}

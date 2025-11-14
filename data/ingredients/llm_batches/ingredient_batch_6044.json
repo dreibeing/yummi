@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_6044",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009189149276",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "fresh farmhouse chicken soup",
+      "default_category": "Soups",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

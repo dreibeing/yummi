@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4003",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875493016",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plantlove smooth strawberry flavoured cultured soya 6 x",
+      "default_category": "Plant Powered Yoghurt",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

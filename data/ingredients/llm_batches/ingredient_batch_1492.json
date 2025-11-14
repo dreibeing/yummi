@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1492",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20004057",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mini cucumbers",
+      "default_category": "Cucumbers",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

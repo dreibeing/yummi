@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5744",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223182665",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "whole wheat penne",
+      "default_category": "Pasta",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3468",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009217580422",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range venison burgers",
+      "default_category": "Burgers",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

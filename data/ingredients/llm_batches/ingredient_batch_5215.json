@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5215",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211036161",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "apricot jam with thyme sprigs",
+      "default_category": "Jams",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

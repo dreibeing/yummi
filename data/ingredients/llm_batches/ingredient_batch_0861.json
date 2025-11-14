@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0861",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20002480",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "baked beans",
+      "default_category": "Vegetables, Beans and Legumes",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

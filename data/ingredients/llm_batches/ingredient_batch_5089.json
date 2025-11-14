@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5089",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009175235440",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "instant honey nut flavoured latte sachets 10 x",
+      "default_category": "Instant Drinks",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

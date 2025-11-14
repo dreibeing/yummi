@@ -1,0 +1,16 @@
+{
+  "batch_id": "ingredient_batch_0729",
+  "metadata": {
+    "model": "gpt-5-nano-2025-08-07",
+    "temperature": 0.1,
+    "top_p": null,
+    "max_output_tokens": 5000
+  },
+  "results": [
+    {
+      "product_id": "6001011411810",
+      "core_item_name": "baby oil",
+      "item_type": "ingredient"
+    }
+  ]
+}

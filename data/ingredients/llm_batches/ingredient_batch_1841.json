@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1841",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009182517850",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "thyme potted herb",
+      "default_category": "Herbs",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

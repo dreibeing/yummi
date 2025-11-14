@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5401",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009830530859",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "red espresso vanilla rooibos tea capsules",
+      "default_category": "Rooibos & Infused Teas",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

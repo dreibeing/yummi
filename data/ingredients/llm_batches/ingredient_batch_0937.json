@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0937",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245411767",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "roosterkoek mix in heritage collection bag",
+      "default_category": "Gifting",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

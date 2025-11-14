@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3527",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875744675",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "our ultimate free range lamb burgers",
+      "default_category": "Mince & Meatballs",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0999",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20133481",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "salmon herb flavoured medium fat cream cheese",
+      "default_category": "Soft, Cream & Cottage Cheese",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

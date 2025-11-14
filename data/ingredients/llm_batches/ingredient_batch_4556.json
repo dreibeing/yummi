@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4556",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184245638",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "chia seeds",
+      "default_category": "Smoothie bowls",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

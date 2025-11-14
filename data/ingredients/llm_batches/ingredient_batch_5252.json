@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5252",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009223734116",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "german mustard",
+      "default_category": "Condiments",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

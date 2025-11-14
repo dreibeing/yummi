@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2727",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2565430000009",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range slow cooked coconut lamb curry avg",
+      "default_category": "Beef, Lamb, Pork & Oxtail",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

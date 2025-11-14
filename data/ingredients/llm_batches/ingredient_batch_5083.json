@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5083",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875331691",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "asian hoisin sauce",
+      "default_category": "Tomato & Everyday Sauces",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

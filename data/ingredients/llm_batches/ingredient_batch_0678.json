@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0678",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "840179290228",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "manna black lines insulated pint tumbler",
+      "default_category": "Bottles & Travel Mugs",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

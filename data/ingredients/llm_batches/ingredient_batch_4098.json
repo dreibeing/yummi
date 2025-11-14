@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4098",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009101057979",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "low fat strawberry flavoured milk",
+      "default_category": "Flavoured Milk & Milkshakes",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

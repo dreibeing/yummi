@@ -1,0 +1,19 @@
+{
+  "batch_id": "ingredient_batch_1445",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009184264455",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "bulk everyday potatoes",
+      "default_category": "Fresh Vegetables",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads",
+        "Bulk Vegetables, Fruit & Salads",
+        "Fresh Vegetables"
+      ]
+    }
+  ]
+}

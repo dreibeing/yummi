@@ -1,0 +1,18 @@
+{
+  "batch_id": "ingredient_batch_2176",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875331882",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "asian oyster flavoured sauce",
+      "default_category": "Global Sauces",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop",
+        "Asian"
+      ]
+    }
+  ]
+}

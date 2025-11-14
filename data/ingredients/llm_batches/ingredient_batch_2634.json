@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2634",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009245296197",
+      "product_type": "ready_meal",
+      "ready_meal_hint": true,
+      "normalized_name": "spicy soy sesame noodles",
+      "default_category": "Ready Meals",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

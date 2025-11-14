@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4119",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20200398",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "goat s medium fat camembert",
+      "default_category": "Goats Dairy",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

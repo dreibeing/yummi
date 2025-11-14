@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4526",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20076559",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "smooth apricot jam",
+      "default_category": "Jams",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

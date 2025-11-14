@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3683",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2578740000003",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "farmstyle beef pork wors avg",
+      "default_category": "Boerewors & Sausages",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

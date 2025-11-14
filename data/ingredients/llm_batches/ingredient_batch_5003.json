@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5003",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009710611111",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "futurelife vanilla flavoured oat cereal and multigrain pops",
+      "default_category": "Breakfast Cereals",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "batch_id": "ingredient_batch_0007",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233372209",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "glimmer sprinkles",
+      "default_category": "Sugar, Flour & Baking",
+      "category_path": [
+        "Food",
+        "Bakery",
+        "Cakes & Gateaux"
+      ]
+    }
+  ]
+}

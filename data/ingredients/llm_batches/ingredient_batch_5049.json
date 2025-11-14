@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5049",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "8714599201916",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "jacobs classic cappuccino sachets 10 x",
+      "default_category": "Instant Coffee",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

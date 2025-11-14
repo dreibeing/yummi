@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2965",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233359200",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "crispy onion sprinkle",
+      "default_category": "Indian",
+      "category_path": [
+        "Food",
+        "Global Cuisine Shop"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1066",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20197353",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "roasted red pepper hummus",
+      "default_category": "Snack Better",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

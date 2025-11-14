@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_3223",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "2032880000007",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "free range skinless chicken thigh fillets avg",
+      "default_category": "Chicken Portions & Other",
+      "category_path": [
+        "Food",
+        "Meat, Poultry & Fish"
+      ]
+    }
+  ]
+}

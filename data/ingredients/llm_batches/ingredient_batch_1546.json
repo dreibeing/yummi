@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1546",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20158392",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "mixed leaf salad",
+      "default_category": "Lettuce & Mixed Leaves",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

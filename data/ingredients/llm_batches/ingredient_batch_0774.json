@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0774",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20046736",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "vegetable samoosas",
+      "default_category": "Entertaining & Platters",
+      "category_path": [
+        "Food",
+        "Braai Shop"
+      ]
+    }
+  ]
+}

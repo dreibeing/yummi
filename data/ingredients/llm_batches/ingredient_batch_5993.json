@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5993",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233990946",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "artichoke olive roasted red pepper pizza",
+      "default_category": "Pizza",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

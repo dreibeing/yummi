@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1464",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20054731",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "ripe ready hass green skin flavourburst avocados",
+      "default_category": "Avocado Punnet",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

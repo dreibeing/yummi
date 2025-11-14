@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_0203",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6007875037043",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "plantlove blueberry lemon muffins",
+      "default_category": "Bakery",
+      "category_path": [
+        "Food",
+        "Bakery"
+      ]
+    }
+  ]
+}

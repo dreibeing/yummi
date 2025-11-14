@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5407",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009189953705",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "almond sprinkles",
+      "default_category": "Toppings, Decorating & Accessories",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}

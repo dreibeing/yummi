@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_4014",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "3073780896375",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "the laughing cow full fat cheese spread",
+      "default_category": "Snacking & Lunchbox Cheese",
+      "category_path": [
+        "Food",
+        "Milk, Dairy & Eggs"
+      ]
+    }
+  ]
+}

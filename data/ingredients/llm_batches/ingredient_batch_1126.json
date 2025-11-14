@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_1126",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009211538153",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "sliced free range smoked chicken breast",
+      "default_category": "Simply Add",
+      "category_path": [
+        "Food",
+        "Deli & Entertaining"
+      ]
+    }
+  ]
+}

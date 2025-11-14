@@ -1,0 +1,16 @@
+{
+  "batch_id": "ingredient_batch_2018",
+  "metadata": {
+    "model": "gpt-5-nano-2025-08-07",
+    "temperature": 0.1,
+    "top_p": null,
+    "max_output_tokens": 5000
+  },
+  "results": [
+    {
+      "product_id": "6009226711855",
+      "core_item_name": "coleslaw",
+      "item_type": "ready_meal"
+    }
+  ]
+}

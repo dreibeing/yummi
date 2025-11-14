@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_2117",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009182696395",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "coriander potted herb",
+      "default_category": "Potted Herbs",
+      "category_path": [
+        "Food",
+        "Fruit, Vegetables & Salads"
+      ]
+    }
+  ]
+}

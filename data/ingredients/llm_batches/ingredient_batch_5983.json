@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5983",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "20081065",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "spinach feta quiche 2 x",
+      "default_category": "Quiches",
+      "category_path": [
+        "Food",
+        "Ready Meals"
+      ]
+    }
+  ]
+}

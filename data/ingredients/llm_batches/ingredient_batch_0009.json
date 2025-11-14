@@ -1,0 +1,18 @@
+{
+  "batch_id": "ingredient_batch_0009",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009233372148",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "unicorn medley sprinkles",
+      "default_category": "Sugar, Flour & Baking",
+      "category_path": [
+        "Food",
+        "Bakery",
+        "Cakes & Gateaux"
+      ]
+    }
+  ]
+}

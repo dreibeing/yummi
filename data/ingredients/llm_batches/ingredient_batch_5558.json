@@ -1,0 +1,17 @@
+{
+  "batch_id": "ingredient_batch_5558",
+  "item_count": 1,
+  "items": [
+    {
+      "product_id": "6009710611340",
+      "product_type": "ingredient",
+      "ready_meal_hint": false,
+      "normalized_name": "futurelife berries and fruit granola crunch with smart food",
+      "default_category": "Muesli & Granola",
+      "category_path": [
+        "Food",
+        "Pantry"
+      ]
+    }
+  ]
+}
