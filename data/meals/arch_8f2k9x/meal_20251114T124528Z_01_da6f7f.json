@@ -1,0 +1,287 @@
+{
+  "meal_id": "meal_20251114T124528Z_01_da6f7f",
+  "archetype_uid": "arch_8f2k9x",
+  "archetype_name": "Solo Value Staples Quick Bites (Air-Fry & Stovetop)",
+  "name": "Chakalaka Cheese Toast with Fried Egg",
+  "description": "Fast, comforting toast topped with mild chakalaka and melted cheddar, finished with a sunny-side egg. Uses the air fryer for the toast and stovetop for the egg.",
+  "servings": "Single portion",
+  "prep_steps": [
+    "Preheat air fryer to 180°C.",
+    "Grate cheddar cheese.",
+    "Stir chakalaka to loosen.",
+    "Lightly butter one side of each bread slice.",
+    "Set a nonstick frying pan on the stovetop and have oil ready.",
+    "Lay out salt and pepper for seasoning."
+  ],
+  "cook_steps": [
+    "Air-fry the bread slices, buttered side up, for 2 minutes to start crisping.",
+    "Spread chakalaka over the toast and top evenly with grated cheddar cheese.",
+    "Return toast to the air fryer and cook 2–4 minutes until cheese is melted and edges are golden.",
+    "Heat oil in the frying pan over medium heat and crack in the egg; cook sunny-side up until whites are set.",
+    "Plate the cheesy chakalaka toast, top with the fried egg, and season with salt and pepper to taste."
+  ],
+  "instructions": [
+    "Preheat air fryer to 180°C.",
+    "Grate cheddar cheese.",
+    "Stir chakalaka to loosen.",
+    "Lightly butter one side of each bread slice.",
+    "Set a nonstick frying pan on the stovetop and have oil ready.",
+    "Lay out salt and pepper for seasoning.",
+    "Air-fry the bread slices, buttered side up, for 2 minutes to start crisping.",
+    "Spread chakalaka over the toast and top evenly with grated cheddar cheese.",
+    "Return toast to the air fryer and cook 2–4 minutes until cheese is melted and edges are golden.",
+    "Heat oil in the frying pan over medium heat and crack in the egg; cook sunny-side up until whites are set.",
+    "Plate the cheesy chakalaka toast, top with the fried egg, and season with salt and pepper to taste."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "bread",
+      "quantity": "2 slices",
+      "preparation": "buttered on top side"
+    },
+    {
+      "core_item_name": "chakalaka",
+      "quantity": "1/3 cup",
+      "preparation": "stirred"
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "40 g",
+      "preparation": "grated"
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "1"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "1 tsp",
+      "preparation": "softened"
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "pinch"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "pinch"
+    }
+  ],
+  "meal_tags": {
+    "Diet": [
+      "Flexitarian",
+      "Omnivore"
+    ],
+    "Cuisine": [
+      "ModernAmerican",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Egg",
+      "Gluten"
+    ],
+    "BudgetLevel": [
+      "ValueStaples"
+    ],
+    "Audience": [
+      "Solo"
+    ],
+    "CuisineOpenness": [
+      "FamiliarClassics"
+    ],
+    "Equipment": [
+      "AirFryer"
+    ]
+  },
+  "product_matches": [
+    {
+      "core_item_name": "bread",
+      "selected_product_id": "20033897",
+      "package_quantity": 1,
+      "package_notes": "Standard 700 g loaf suits 2 slices and leftovers for the week; good value.",
+      "ingredient_line": "White Sandwich Bread 700 g"
+    },
+    {
+      "core_item_name": "chakalaka",
+      "selected_product_id": "6009101984787",
+      "package_quantity": 1,
+      "package_notes": "Mild 400 g can matches the recipe’s mild chakalaka and is the most size-appropriate.",
+      "ingredient_line": "Mild Chakalaka 400 g"
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "selected_product_id": "20100209",
+      "package_quantity": 1,
+      "package_notes": "Pre-grated 250 g is convenient for quick prep and covers multiple servings.",
+      "ingredient_line": "Grated Mature Cheddar Cheese 250 g"
+    },
+    {
+      "core_item_name": "eggs",
+      "selected_product_id": "20068882",
+      "package_quantity": 1,
+      "package_notes": "Smallest real egg pack; suits solo use with leftovers.",
+      "ingredient_line": "Free Range Large Eggs 6 pk"
+    },
+    {
+      "core_item_name": "butter",
+      "selected_product_id": "20011833",
+      "package_quantity": 1,
+      "package_notes": "250 g salted is the smallest suitable option and ideal for buttered toast.",
+      "ingredient_line": "Salted Butter 250 g"
+    },
+    {
+      "core_item_name": "oil",
+      "selected_product_id": "6009189785252",
+      "package_quantity": 1,
+      "package_notes": "Bulk 2 L is the only oil option provided; plenty for future quick fries.",
+      "ingredient_line": "High Heat Deep-Fry Oil 2 L"
+    },
+    {
+      "core_item_name": "salt",
+      "selected_product_id": "6001021023119",
+      "package_quantity": 1,
+      "package_notes": "Best value basic table salt for a pinch; long pantry life.",
+      "ingredient_line": "Cerebos Iodated Table Salt 1 kg"
+    },
+    {
+      "core_item_name": "pepper",
+      "selected_product_id": "6009000106488",
+      "package_quantity": 1,
+      "package_notes": "Ground white pepper is an appropriate seasoning; other pepper candidates were fresh peppers or pricier sets.",
+      "ingredient_line": "White Pepper 55 g"
+    }
+  ],
+  "final_ingredients": [
+    {
+      "core_item_name": "bread",
+      "quantity": "2 slices",
+      "preparation": "buttered on top side",
+      "selected_product": {
+        "product_id": "20033897",
+        "package_quantity": 1,
+        "name": "White Sandwich Bread 700 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Bakery/Bread-Rolls/Bread/White-Bread/White-Sandwich-Bread-700-g/_/A-20033897",
+        "sale_price": 20.99
+      },
+      "ingredient_line": "White Sandwich Bread 700 g"
+    },
+    {
+      "core_item_name": "chakalaka",
+      "quantity": "1/3 cup",
+      "preparation": "stirred",
+      "selected_product": {
+        "product_id": "6009101984787",
+        "package_quantity": 1,
+        "name": "Mild Chakalaka  400 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/Cheesy-chakalaka-braaibroodjies/Mild-Chakalaka-400-g/_/A-6009101984787",
+        "sale_price": 28.99
+      },
+      "ingredient_line": "Mild Chakalaka 400 g"
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "40 g",
+      "preparation": "grated",
+      "selected_product": {
+        "product_id": "20100209",
+        "package_quantity": 1,
+        "name": "Grated Mature Cheddar Cheese 250 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Milk-Dairy-Eggs/Cheese/Grated-Sliced-Cheese/Grated-Mature-Cheddar-Cheese-250-g/_/A-20100209",
+        "sale_price": 69.99
+      },
+      "ingredient_line": "Grated Mature Cheddar Cheese 250 g"
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "1",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "20068882",
+        "package_quantity": 1,
+        "name": "Free Range Large Eggs 6 pk",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Promotions/Buy-2-Or-More-And-Save/Buy-any-3-pay-for-2/Free-Range-Large-Eggs-6-pack/Free-Range-Large-Eggs-6-pk/_/A-20068882",
+        "sale_price": 31.99
+      },
+      "ingredient_line": "Free Range Large Eggs 6 pk"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "1 tsp",
+      "preparation": "softened",
+      "selected_product": {
+        "product_id": "20011833",
+        "package_quantity": 1,
+        "name": "Salted Butter 250 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Milk-Dairy-Eggs/Butter-Margarine/Butter-Spreads/Salted-Butter-250-g/_/A-20011833",
+        "sale_price": 65.99
+      },
+      "ingredient_line": "Salted Butter 250 g"
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6009189785252",
+        "package_quantity": 1,
+        "name": "High Heat Deep-Fry Oil 2 L",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Food-Basket/Banners/Bulk-Shopping-Items/High-Heat-Deep-Fry-Oil-2-L/_/A-6009189785252",
+        "sale_price": 121.99
+      },
+      "ingredient_line": "High Heat Deep-Fry Oil 2 L"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "pinch",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6001021023119",
+        "package_quantity": 1,
+        "name": "Cerebos Iodated Table Salt 1 kg",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Salt-Pepper/Cerebos-Iodated-Table-Salt-1-kg/_/A-6001021023119",
+        "sale_price": 22.99
+      },
+      "ingredient_line": "Cerebos Iodated Table Salt 1 kg"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "pinch",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6009000106488",
+        "package_quantity": 1,
+        "name": "White Pepper 55 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Spices/White-Pepper-55-g/_/A-6009000106488",
+        "sale_price": 47.99
+      },
+      "ingredient_line": "White Pepper 55 g"
+    }
+  ],
+  "warnings": [
+    "Category 'EthicsReligious' dropped; no valid values after normalization",
+    "Category 'Equipment': dropped 'Stovetop' via synonym mapping",
+    "Category 'Equipment': value 'FryingPan' not in defined_tags",
+    "Category 'Equipment': value 'Knife' not in defined_tags"
+  ],
+  "metadata": {
+    "created_at": "20251114T124625Z",
+    "meal_model": "gpt-5",
+    "product_model": "gpt-5",
+    "tags_version": "2025.02.0",
+    "run_dir": "data\\meals\\runs\\run_20251114T124528Z"
+  }
+}

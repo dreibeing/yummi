@@ -1,0 +1,387 @@
+{
+  "meal_id": "meal_20251114T122557Z_02_1825df",
+  "archetype_uid": "arch_k7x9s2",
+  "archetype_name": "Family Flexitarian Regional Twists (SA & Mediterranean, 15-30, Mild, Balanced)",
+  "name": "Chermoula Hake with Bulgur Herb Salad",
+  "description": "Pan-seared hake brushed with chermoula, served over a bright bulgur, tomato, cucumber, and parsley salad. A mild SA–Mediterranean weeknight plate ready in under 30 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "1) Rinse bulgur in a sieve.",
+    "2) Dice tomato and cucumber.",
+    "3) Roughly chop parsley leaves.",
+    "4) Mince garlic.",
+    "5) Zest and juice the lemon into separate small bowls.",
+    "6) Pat dry hake fillets; season both sides with a pinch of salt and black pepper.",
+    "7) Stir chermoula with 1 teaspoon olive oil to loosen for brushing."
+  ],
+  "cook_steps": [
+    "1) Bring water to a boil in a saucepan; stir in bulgur and a pinch of salt, reduce heat, cover, and simmer 10–12 minutes until tender. Drain excess water if needed and fluff.",
+    "2) While bulgur cooks, heat 1 tablespoon olive oil in a large nonstick pan over medium heat.",
+    "3) Brush tops of hake fillets with half the chermoula; place fillets chermoula-side down in the pan and cook 3–4 minutes.",
+    "4) Brush the exposed sides with remaining chermoula, flip, and cook 2–3 minutes more until the fish flakes easily.",
+    "5) In a bowl, combine warm bulgur, tomato, cucumber, parsley, garlic, lemon zest, lemon juice, and remaining olive oil. Season with salt and black pepper to taste and toss.",
+    "6) Plate bulgur herb salad and top with chermoula hake. Serve immediately."
+  ],
+  "instructions": [
+    "1) Rinse bulgur in a sieve.",
+    "2) Dice tomato and cucumber.",
+    "3) Roughly chop parsley leaves.",
+    "4) Mince garlic.",
+    "5) Zest and juice the lemon into separate small bowls.",
+    "6) Pat dry hake fillets; season both sides with a pinch of salt and black pepper.",
+    "7) Stir chermoula with 1 teaspoon olive oil to loosen for brushing.",
+    "1) Bring water to a boil in a saucepan; stir in bulgur and a pinch of salt, reduce heat, cover, and simmer 10–12 minutes until tender. Drain excess water if needed and fluff.",
+    "2) While bulgur cooks, heat 1 tablespoon olive oil in a large nonstick pan over medium heat.",
+    "3) Brush tops of hake fillets with half the chermoula; place fillets chermoula-side down in the pan and cook 3–4 minutes.",
+    "4) Brush the exposed sides with remaining chermoula, flip, and cook 2–3 minutes more until the fish flakes easily.",
+    "5) In a bowl, combine warm bulgur, tomato, cucumber, parsley, garlic, lemon zest, lemon juice, and remaining olive oil. Season with salt and black pepper to taste and toss.",
+    "6) Plate bulgur herb salad and top with chermoula hake. Serve immediately."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1 cup (dry)"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 cups"
+    },
+    {
+      "core_item_name": "hake fillets",
+      "quantity": "600 g",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "chermoula",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons plus 1 teaspoon",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "tomato",
+      "quantity": "2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 small",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "1 clove",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "Diet": [
+      "Flexitarian"
+    ],
+    "Cuisine": [
+      "Mediterranean",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Fish",
+      "Gluten"
+    ],
+    "BudgetLevel": [
+      "Balanced"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "CuisineOpenness": [
+      "RegionalTwist"
+    ]
+  },
+  "product_matches": [
+    {
+      "core_item_name": "bulgur",
+      "selected_product_id": "20163082",
+      "package_quantity": 1,
+      "package_notes": "500 g pack covers ~1 cup dry (about 160–180 g) with plenty left for pantry.",
+      "ingredient_line": "Bulgur Wheat 500 g"
+    },
+    {
+      "core_item_name": "water",
+      "selected_product_id": null,
+      "package_quantity": 0,
+      "package_notes": "Use tap water for boiling bulgur; bottled options not necessary for cooking.",
+      "ingredient_line": "Tap water"
+    },
+    {
+      "core_item_name": "hake fillets",
+      "selected_product_id": "6009245366340",
+      "package_quantity": 1,
+      "package_notes": "Exact 600 g skinless fillets matches recipe quantity for 4 servings.",
+      "ingredient_line": "Freshly Frozen Skinless Hake Fillets 600 g"
+    },
+    {
+      "core_item_name": "chermoula",
+      "selected_product_id": "6009182310956",
+      "package_quantity": 1,
+      "package_notes": "50 g spice blend is sufficient; mix with oil as directed to make a brushable chermoula.",
+      "ingredient_line": "Chermoula Blend 50 g"
+    },
+    {
+      "core_item_name": "olive oil",
+      "selected_product_id": "6009195707965",
+      "package_quantity": 1,
+      "package_notes": "Neutral cooking olive oil is appropriate; total needed ~35 ml.",
+      "ingredient_line": "Cooking Olive Oil 1 L"
+    },
+    {
+      "core_item_name": "tomato",
+      "selected_product_id": "6009226669651",
+      "package_quantity": 1,
+      "package_notes": "4-pack comfortably covers 2 medium tomatoes with a couple left over.",
+      "ingredient_line": "Roma Tomatoes 4 pk"
+    },
+    {
+      "core_item_name": "cucumber",
+      "selected_product_id": "20179045",
+      "package_quantity": 1,
+      "package_notes": "Single Mediterranean cucumber aligns with 1 small required.",
+      "ingredient_line": "Mediterranean Cucumber"
+    },
+    {
+      "core_item_name": "parsley",
+      "selected_product_id": "20128104",
+      "package_quantity": 1,
+      "package_notes": "30 g bunch yields roughly 1/2 cup chopped leaves.",
+      "ingredient_line": "Fresh Italian Parsley 30 g"
+    },
+    {
+      "core_item_name": "garlic",
+      "selected_product_id": "20008277",
+      "package_quantity": 1,
+      "package_notes": "50 g peeled garlic is convenient for 1 clove with leftovers for other meals.",
+      "ingredient_line": "Peeled Garlic 50 g"
+    },
+    {
+      "core_item_name": "lemon",
+      "selected_product_id": "20017880",
+      "package_quantity": 1,
+      "package_notes": "3-pack is the smallest available; use 1 and keep the rest.",
+      "ingredient_line": "Lemons 3 pk"
+    },
+    {
+      "core_item_name": "salt",
+      "selected_product_id": "6001021021023",
+      "package_quantity": 1,
+      "package_notes": "500 g table salt is a budget-friendly pantry staple for seasoning to taste.",
+      "ingredient_line": "Cerebos Iodated Table Salt 500 g"
+    },
+    {
+      "core_item_name": "black pepper",
+      "selected_product_id": "6009178243428",
+      "package_quantity": 1,
+      "package_notes": "Small 55 g fine black pepper suits general seasoning to taste.",
+      "ingredient_line": "Fine Black Pepper 55 g"
+    }
+  ],
+  "final_ingredients": [
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1 cup (dry)",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "20163082",
+        "package_quantity": 1,
+        "name": "Bulgur Wheat 500 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/Power-grains/Bulgur-Wheat-500-g/_/A-20163082",
+        "sale_price": 39.99
+      },
+      "ingredient_line": "Bulgur Wheat 500 g"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 cups",
+      "preparation": null,
+      "selected_product": {
+        "product_id": null,
+        "package_quantity": 0,
+        "name": null,
+        "detail_url": null,
+        "sale_price": null
+      },
+      "ingredient_line": "Tap water"
+    },
+    {
+      "core_item_name": "hake fillets",
+      "quantity": "600 g",
+      "preparation": "patted dry",
+      "selected_product": {
+        "product_id": "6009245366340",
+        "package_quantity": 1,
+        "name": "Freshly Frozen Skinless Hake Fillets 600 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Frozen-Food/Freshly-Frozen-Skinless-Hake-Fillets-600-g/_/A-6009245366340",
+        "sale_price": 219.99
+      },
+      "ingredient_line": "Freshly Frozen Skinless Hake Fillets 600 g"
+    },
+    {
+      "core_item_name": "chermoula",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6009182310956",
+        "package_quantity": 1,
+        "name": "Chermoula Blend 50 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/Oxtail-stew-with-dumplings/Chermoula-Blend-50-g/_/A-6009182310956",
+        "sale_price": 36.99
+      },
+      "ingredient_line": "Chermoula Blend 50 g"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons plus 1 teaspoon",
+      "preparation": "divided",
+      "selected_product": {
+        "product_id": "6009195707965",
+        "package_quantity": 1,
+        "name": "Cooking Olive Oil 1 L",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Oils-Vinegars/Oils/Cooking-Olive-Oil-1-L/_/A-6009195707965",
+        "sale_price": 289.99
+      },
+      "ingredient_line": "Cooking Olive Oil 1 L"
+    },
+    {
+      "core_item_name": "tomato",
+      "quantity": "2 medium",
+      "preparation": "diced",
+      "selected_product": {
+        "product_id": "6009226669651",
+        "package_quantity": 1,
+        "name": "Roma Tomatoes 4 pk",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Salads-Herbs/Tomatoes/Roma-Tomatoes-4-pk/_/A-6009226669651",
+        "sale_price": 28.99
+      },
+      "ingredient_line": "Roma Tomatoes 4 pk"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 small",
+      "preparation": "diced",
+      "selected_product": {
+        "product_id": "20179045",
+        "package_quantity": 1,
+        "name": "Mediterranean Cucumber",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Salads-Herbs/Cucumbers/Mediterranean-Cucumber/_/A-20179045",
+        "sale_price": 10.49
+      },
+      "ingredient_line": "Mediterranean Cucumber"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped",
+      "selected_product": {
+        "product_id": "20128104",
+        "package_quantity": 1,
+        "name": "Fresh Italian Parsley 30 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Salads-Herbs/Herbs-Sprouts-Edible-Flowers/Fresh-Italian-Parsley-30-g/_/A-20128104",
+        "sale_price": 14.99
+      },
+      "ingredient_line": "Fresh Italian Parsley 30 g"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "1 clove",
+      "preparation": "minced",
+      "selected_product": {
+        "product_id": "20008277",
+        "package_quantity": 1,
+        "name": "Peeled Garlic 50 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Promotions/Buy-2-Or-More-And-Save/Buy-any-2-Save-20-/Prepared-Additions/Peeled-Garlic-50-g/_/A-20008277",
+        "sale_price": 29.99
+      },
+      "ingredient_line": "Peeled Garlic 50 g"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": {
+        "product_id": "20017880",
+        "package_quantity": 1,
+        "name": "Lemons 3 pk",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Fresh-Fruit/ClemenGold-Oranges-Soft-Citrus/Lemons-3-pk/_/A-20017880",
+        "sale_price": 29.99
+      },
+      "ingredient_line": "Lemons 3 pk"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6001021021023",
+        "package_quantity": 1,
+        "name": "Cerebos Iodated Table Salt 500 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Salt-Pepper/Cerebos-Iodated-Table-Salt-500-g/_/A-6001021021023",
+        "sale_price": 32.99
+      },
+      "ingredient_line": "Cerebos Iodated Table Salt 500 g"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6009178243428",
+        "package_quantity": 1,
+        "name": "Fine Black Pepper 55 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Spices/Fine-Black-Pepper-55-g/_/A-6009178243428",
+        "sale_price": 37.99
+      },
+      "ingredient_line": "Fine Black Pepper 55 g"
+    }
+  ],
+  "warnings": [
+    "Category 'EthicsReligious' dropped; no valid values after normalization",
+    "Category 'NutritionFocus' dropped; no valid values after normalization",
+    "Category 'Equipment': value 'Saucepan' not in defined_tags",
+    "Category 'Equipment': value 'NonstickPan' not in defined_tags",
+    "Category 'Equipment': value 'Sieve' not in defined_tags",
+    "Category 'Equipment' dropped; no valid values after normalization"
+  ],
+  "metadata": {
+    "created_at": "20251114T122941Z",
+    "meal_model": "gpt-5",
+    "product_model": "gpt-5",
+    "tags_version": "2025.02.0",
+    "run_dir": "data\\meals\\runs\\run_20251114T122557Z"
+  }
+}

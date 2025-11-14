@@ -1,0 +1,357 @@
+{
+  "meal_id": "meal_20251114T120853Z_02_22236f",
+  "archetype_uid": "arch_1k7p9f",
+  "archetype_name": "Jain-Friendly Vegan Weeknight Basics (No-Heat, Affordable Family)",
+  "name": "Tomato-Lentil Cabbage Stew with Soft Pap (Jain-Friendly)",
+  "description": "A mild, hearty lentil and cabbage tomato stew finished with a cumin tempering, served alongside soft maize meal pap. Vegan, Jain-friendly, and family-focused with no heat.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse lentils under cold water until water runs clear.",
+    "Shred cabbage into thin strips.",
+    "Roughly chop coriander leaves.",
+    "Measure maize meal and water for pap.",
+    "Measure diced tomatoes, peas, sunflower oil, cumin seeds, turmeric, and salt."
+  ],
+  "cook_steps": [
+    "Make pap: Bring 6 cups water and a pinch of salt to a boil in a pot. Whisk in 2 cups maize meal gradually to avoid lumps, reduce heat to low, cover, and cook 15–20 minutes, stirring occasionally until soft.",
+    "Cook lentils: In a separate pot, combine lentils, 4 cups water, turmeric, and a pinch of salt. Bring to a boil, then simmer 12–15 minutes until just tender.",
+    "Add diced tomatoes, cabbage, and peas to the lentils. Simmer 5–8 minutes until cabbage is tender and stew thickens. Adjust salt to taste.",
+    "Temper cumin: Heat sunflower oil in a small pan on medium. Add cumin seeds and let them sizzle 30–45 seconds until fragrant. Pour the tempered oil over the stew and stir.",
+    "Fluff pap and divide among plates. Ladle the stew alongside and garnish with coriander."
+  ],
+  "instructions": [
+    "Rinse lentils under cold water until water runs clear.",
+    "Shred cabbage into thin strips.",
+    "Roughly chop coriander leaves.",
+    "Measure maize meal and water for pap.",
+    "Measure diced tomatoes, peas, sunflower oil, cumin seeds, turmeric, and salt.",
+    "Make pap: Bring 6 cups water and a pinch of salt to a boil in a pot. Whisk in 2 cups maize meal gradually to avoid lumps, reduce heat to low, cover, and cook 15–20 minutes, stirring occasionally until soft.",
+    "Cook lentils: In a separate pot, combine lentils, 4 cups water, turmeric, and a pinch of salt. Bring to a boil, then simmer 12–15 minutes until just tender.",
+    "Add diced tomatoes, cabbage, and peas to the lentils. Simmer 5–8 minutes until cabbage is tender and stew thickens. Adjust salt to taste.",
+    "Temper cumin: Heat sunflower oil in a small pan on medium. Add cumin seeds and let them sizzle 30–45 seconds until fragrant. Pour the tempered oil over the stew and stir.",
+    "Fluff pap and divide among plates. Ladle the stew alongside and garnish with coriander."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "maize meal",
+      "quantity": "2 cups"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "10 cups total",
+      "preparation": "6 cups for pap, 4 cups for stew"
+    },
+    {
+      "core_item_name": "lentils",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (about 400 g)"
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "2 cups",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup",
+      "preparation": "frozen or fresh"
+    },
+    {
+      "core_item_name": "turmeric",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "1.5 teaspoons"
+    },
+    {
+      "core_item_name": "sunflower oil",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 to 1.5 teaspoons",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped leaves"
+    }
+  ],
+  "meal_tags": {
+    "Diet": [
+      "HighProtein",
+      "Vegan"
+    ],
+    "Cuisine": [
+      "Indian",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "EthicsReligious": [
+      "JainFriendly"
+    ],
+    "BudgetLevel": [
+      "Affordable"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "CuisineOpenness": [
+      "FamiliarClassics"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ]
+  },
+  "product_matches": [
+    {
+      "core_item_name": "maize meal",
+      "selected_product_id": "6001205051501",
+      "package_quantity": 1,
+      "package_notes": "2 cups (~320 g) needed; 2.5 kg bag is economical for a family and pantry-friendly.",
+      "ingredient_line": "Iwisa No 1 Super Maize Meal 2.5 kg"
+    },
+    {
+      "core_item_name": "water",
+      "selected_product_id": null,
+      "package_quantity": 0,
+      "package_notes": "Use household tap water; bottled options are unnecessary for cooking."
+    },
+    {
+      "core_item_name": "lentils",
+      "selected_product_id": "6001009013569",
+      "package_quantity": 1,
+      "package_notes": "1.5 cups dry lentils ≈ 285–300 g; one 500 g pack is sufficient with leftover for another meal.",
+      "ingredient_line": "Brown Lentils 500 g"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "selected_product_id": null,
+      "package_quantity": 0,
+      "package_notes": "Listed option contains garlic, which is not Jain-friendly; select a plain diced tomato can when available."
+    },
+    {
+      "core_item_name": "cabbage",
+      "selected_product_id": "6009226231964",
+      "package_quantity": 1,
+      "package_notes": "2 cups shredded ≈ 150–200 g; 300 g pack closely matches the required amount with minimal waste.",
+      "ingredient_line": "Chinese Cabbage 300 g"
+    },
+    {
+      "core_item_name": "peas",
+      "selected_product_id": "20038717",
+      "package_quantity": 1,
+      "package_notes": "1 cup (~150 g) needed; 500 g frozen pack is convenient and minimizes waste.",
+      "ingredient_line": "Frozen Petits Pois Peas 500 g"
+    },
+    {
+      "core_item_name": "turmeric",
+      "selected_product_id": "20167004",
+      "package_quantity": 1,
+      "package_notes": "Recipe calls for ground spice; 55 g jar suits pantry use better than fresh/paste forms.",
+      "ingredient_line": "Turmeric 55 g"
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "selected_product_id": "6009000106525",
+      "package_quantity": 1,
+      "package_notes": "1.5 tsp required; 40 g jar provides ample for multiple uses.",
+      "ingredient_line": "Cumin Seeds 40 g"
+    },
+    {
+      "core_item_name": "sunflower oil",
+      "selected_product_id": "20003388",
+      "package_quantity": 1,
+      "package_notes": "2 tbsp needed; 750 ml bottle is the most economical small size.",
+      "ingredient_line": "Sunflower Oil 750 ml"
+    },
+    {
+      "core_item_name": "salt",
+      "selected_product_id": "6001021023119",
+      "package_quantity": 1,
+      "package_notes": "1–1.5 tsp needed; 1 kg iodated table salt is affordable and pantry-staple.",
+      "ingredient_line": "Cerebos Iodated Table Salt 1 kg"
+    },
+    {
+      "core_item_name": "coriander",
+      "selected_product_id": "20099268",
+      "package_quantity": 1,
+      "package_notes": "1/4 cup chopped ≈ 10 g; 30 g bunch is sufficient.",
+      "ingredient_line": "Fresh Coriander 30 g"
+    }
+  ],
+  "final_ingredients": [
+    {
+      "core_item_name": "maize meal",
+      "quantity": "2 cups",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6001205051501",
+        "package_quantity": 1,
+        "name": "Iwisa No 1 Super Maize Meal 2.5 kg",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Breakfast-Cereals-Bars/Maize-Meal/Iwisa-No-1-Super-Maize-Meal-2-5-kg/_/A-6001205051501",
+        "sale_price": 38.99
+      },
+      "ingredient_line": "Iwisa No 1 Super Maize Meal 2.5 kg"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "10 cups total",
+      "preparation": "6 cups for pap, 4 cups for stew",
+      "selected_product": {
+        "product_id": null,
+        "package_quantity": 0,
+        "name": null,
+        "detail_url": null,
+        "sale_price": null
+      },
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lentils",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed",
+      "selected_product": {
+        "product_id": "6001009013569",
+        "package_quantity": 1,
+        "name": "Brown Lentils 500 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Content/Plant-Based-Deliciousness-Guide/Pouch-Power/Brown-Lentils-500-g/_/A-6001009013569",
+        "sale_price": 49.99
+      },
+      "ingredient_line": "Brown Lentils 500 g"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (about 400 g)",
+      "preparation": null,
+      "selected_product": {
+        "product_id": null,
+        "package_quantity": 0,
+        "name": null,
+        "detail_url": null,
+        "sale_price": null
+      },
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "2 cups",
+      "preparation": "shredded",
+      "selected_product": {
+        "product_id": "6009226231964",
+        "package_quantity": 1,
+        "name": "Chinese Cabbage 300 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Fresh-Vegetables/Chinese-Cabbage-300-g/_/A-6009226231964",
+        "sale_price": 28.99
+      },
+      "ingredient_line": "Chinese Cabbage 300 g"
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup",
+      "preparation": "frozen or fresh",
+      "selected_product": {
+        "product_id": "20038717",
+        "package_quantity": 1,
+        "name": "Frozen Petits Pois Peas 500 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Frozen-Food/Vegetables/Frozen-Petits-Pois-Peas-500-g/_/A-20038717",
+        "sale_price": 49.99
+      },
+      "ingredient_line": "Frozen Petits Pois Peas 500 g"
+    },
+    {
+      "core_item_name": "turmeric",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "20167004",
+        "package_quantity": 1,
+        "name": "Turmeric 55 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Spices/Turmeric-55-g/_/A-20167004",
+        "sale_price": 33.99
+      },
+      "ingredient_line": "Turmeric 55 g"
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "1.5 teaspoons",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6009000106525",
+        "package_quantity": 1,
+        "name": "Cumin Seeds 40 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Spices/Cumin-Seeds-40-g/_/A-6009000106525",
+        "sale_price": 39.99
+      },
+      "ingredient_line": "Cumin Seeds 40 g"
+    },
+    {
+      "core_item_name": "sunflower oil",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "20003388",
+        "package_quantity": 1,
+        "name": "Sunflower Oil 750 ml",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Promotions/Buy-2-Or-More-And-Save/Buy-any-3-for-R60/Sunflower-Oil-750ml/Sunflower-Oil-750-ml/_/A-20003388",
+        "sale_price": 35.99
+      },
+      "ingredient_line": "Sunflower Oil 750 ml"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 to 1.5 teaspoons",
+      "preparation": "to taste",
+      "selected_product": {
+        "product_id": "6001021023119",
+        "package_quantity": 1,
+        "name": "Cerebos Iodated Table Salt 1 kg",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Salt-Pepper/Cerebos-Iodated-Table-Salt-1-kg/_/A-6001021023119",
+        "sale_price": 22.99
+      },
+      "ingredient_line": "Cerebos Iodated Table Salt 1 kg"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped leaves",
+      "selected_product": {
+        "product_id": "20099268",
+        "package_quantity": 1,
+        "name": "Fresh Coriander 30 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/Global-inspired-treats/Fresh-Coriander-30-g/_/A-20099268",
+        "sale_price": 14.99
+      },
+      "ingredient_line": "Fresh Coriander 30 g"
+    }
+  ],
+  "warnings": [
+    "Category 'Allergens' dropped; no valid values after normalization",
+    "Category 'Equipment': dropped 'Stovetop' via synonym mapping",
+    "Category 'Equipment': value 'TwoPots' not in defined_tags",
+    "Category 'Equipment': value 'SmallPan' not in defined_tags",
+    "Category 'Equipment': value 'Whisk' not in defined_tags",
+    "Category 'Equipment' dropped; no valid values after normalization"
+  ],
+  "metadata": {
+    "created_at": "20251114T121047Z",
+    "meal_model": "gpt-5",
+    "product_model": "gpt-5",
+    "tags_version": "2025.02.0",
+    "run_dir": "data\\meals\\runs\\run_20251114T120853Z"
+  }
+}

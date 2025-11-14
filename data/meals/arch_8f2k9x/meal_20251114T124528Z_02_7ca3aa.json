@@ -1,0 +1,334 @@
+{
+  "meal_id": "meal_20251114T124528Z_02_7ca3aa",
+  "archetype_uid": "arch_8f2k9x",
+  "archetype_name": "Solo Value Staples Quick Bites (Air-Fry & Stovetop)",
+  "name": "Air-Fryer Tuna Melt Toastie",
+  "description": "Crispy, melty tuna-and-cheddar toastie made fast in the air fryer with pantry staples. Mild, budget-friendly, and ready in minutes.",
+  "servings": "Single portion",
+  "prep_steps": [
+    "Preheat air fryer to 180°C.",
+    "Finely chop onion and pickles.",
+    "Drain tuna well.",
+    "In a bowl, mix tuna, mayonnaise, onion, pickles, a squeeze of lemon, black pepper, and a small pinch of salt.",
+    "Butter one side of each bread slice (outer sides).",
+    "Lay cheddar cheese on the unbuttered side of one slice."
+  ],
+  "cook_steps": [
+    "Spread the tuna mixture over the cheddar cheese and top with the second bread slice, buttered side facing out.",
+    "Place the sandwich in the air fryer basket.",
+    "Air-fry at 180°C for 6–8 minutes, flipping halfway, until golden and cheese is melted.",
+    "Rest 1 minute, slice, and serve."
+  ],
+  "instructions": [
+    "Preheat air fryer to 180°C.",
+    "Finely chop onion and pickles.",
+    "Drain tuna well.",
+    "In a bowl, mix tuna, mayonnaise, onion, pickles, a squeeze of lemon, black pepper, and a small pinch of salt.",
+    "Butter one side of each bread slice (outer sides).",
+    "Lay cheddar cheese on the unbuttered side of one slice.",
+    "Spread the tuna mixture over the cheddar cheese and top with the second bread slice, buttered side facing out.",
+    "Place the sandwich in the air fryer basket.",
+    "Air-fry at 180°C for 6–8 minutes, flipping halfway, until golden and cheese is melted.",
+    "Rest 1 minute, slice, and serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "bread",
+      "quantity": "2 slices",
+      "preparation": "buttered on outer sides"
+    },
+    {
+      "core_item_name": "tuna",
+      "quantity": "1 small can (about 120 g drained)",
+      "preparation": "drained"
+    },
+    {
+      "core_item_name": "mayonnaise",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "50 g",
+      "preparation": "sliced or grated"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 tablespoon",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "pickles",
+      "quantity": "1 tablespoon",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 wedge",
+      "preparation": "squeezed"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "Pinch"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "Small pinch"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "1 teaspoon",
+      "preparation": "softened"
+    }
+  ],
+  "meal_tags": {
+    "Diet": [
+      "Flexitarian",
+      "Omnivore"
+    ],
+    "Cuisine": [
+      "ModernAmerican",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Egg",
+      "Gluten"
+    ],
+    "BudgetLevel": [
+      "ValueStaples"
+    ],
+    "Audience": [
+      "Solo"
+    ],
+    "CuisineOpenness": [
+      "FamiliarClassics"
+    ],
+    "Equipment": [
+      "AirFryer"
+    ]
+  },
+  "product_matches": [
+    {
+      "core_item_name": "bread",
+      "selected_product_id": "20033897",
+      "package_quantity": 1,
+      "package_notes": "1 loaf covers multiple toasties; 2 slices needed per serving.",
+      "ingredient_line": "White Sandwich Bread 700 g"
+    },
+    {
+      "core_item_name": "tuna",
+      "selected_product_id": "6009195372286",
+      "package_quantity": 1,
+      "package_notes": "Single 170 g can yields about 120 g drained for one toastie.",
+      "ingredient_line": "Light Meat Tuna Shredded in Brine 170 g"
+    },
+    {
+      "core_item_name": "mayonnaise",
+      "selected_product_id": "6008000586399",
+      "package_quantity": 1,
+      "package_notes": "Neutral mayo suits the classic flavour; 1 tbsp per serving.",
+      "ingredient_line": "Burger Mayonnaise 260 g"
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "selected_product_id": "20100209",
+      "package_quantity": 1,
+      "package_notes": "250 g pack; use ~50 g per toastie, ample for several meals.",
+      "ingredient_line": "Grated Mature Cheddar Cheese 250 g"
+    },
+    {
+      "core_item_name": "onion",
+      "selected_product_id": "20008215",
+      "package_quantity": 1,
+      "package_notes": "Smallest fresh onion option available; use ~1 tbsp finely chopped.",
+      "ingredient_line": "Brown Onions 1 kg"
+    },
+    {
+      "core_item_name": "pickles",
+      "selected_product_id": "6005000184709",
+      "package_quantity": 1,
+      "package_notes": "Gherkins jar covers many servings; chop about 1 tbsp.",
+      "ingredient_line": "Mild Dill Gherkins 780 g"
+    },
+    {
+      "core_item_name": "lemon",
+      "selected_product_id": "20017880",
+      "package_quantity": 1,
+      "package_notes": "Smallest pack; use 1 wedge and refrigerate the rest.",
+      "ingredient_line": "Lemons 3 pk"
+    },
+    {
+      "core_item_name": "black pepper",
+      "selected_product_id": "6009178243428",
+      "package_quantity": 1,
+      "package_notes": "Compact and economical; only a pinch needed.",
+      "ingredient_line": "Fine Black Pepper 55 g"
+    },
+    {
+      "core_item_name": "salt",
+      "selected_product_id": "6001021021023",
+      "package_quantity": 1,
+      "package_notes": "500 g table salt is a practical pantry size for occasional use.",
+      "ingredient_line": "Cerebos Iodated Table Salt 500 g"
+    },
+    {
+      "core_item_name": "butter",
+      "selected_product_id": "20011833",
+      "package_quantity": 1,
+      "package_notes": "250 g block; use about 1 tsp to butter the bread.",
+      "ingredient_line": "Salted Butter 250 g"
+    }
+  ],
+  "final_ingredients": [
+    {
+      "core_item_name": "bread",
+      "quantity": "2 slices",
+      "preparation": "buttered on outer sides",
+      "selected_product": {
+        "product_id": "20033897",
+        "package_quantity": 1,
+        "name": "White Sandwich Bread 700 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Bakery/Bread-Rolls/Bread/White-Bread/White-Sandwich-Bread-700-g/_/A-20033897",
+        "sale_price": 20.99
+      },
+      "ingredient_line": "White Sandwich Bread 700 g"
+    },
+    {
+      "core_item_name": "tuna",
+      "quantity": "1 small can (about 120 g drained)",
+      "preparation": "drained",
+      "selected_product": {
+        "product_id": "6009195372286",
+        "package_quantity": 1,
+        "name": "Light Meat Tuna Shredded in Brine 170 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/Canned-Tuna/Light-Meat-Tuna-Shredded-in-Brine-170-g/_/A-6009195372286",
+        "sale_price": 28.99
+      },
+      "ingredient_line": "Light Meat Tuna Shredded in Brine 170 g"
+    },
+    {
+      "core_item_name": "mayonnaise",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6008000586399",
+        "package_quantity": 1,
+        "name": "Burger Mayonnaise 260 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Salad-Dressings-Mayo/Mayo/Burger-Mayonnaise-260-g/_/A-6008000586399",
+        "sale_price": 52.99
+      },
+      "ingredient_line": "Burger Mayonnaise 260 g"
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "50 g",
+      "preparation": "sliced or grated",
+      "selected_product": {
+        "product_id": "20100209",
+        "package_quantity": 1,
+        "name": "Grated Mature Cheddar Cheese 250 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Milk-Dairy-Eggs/Cheese/Grated-Sliced-Cheese/Grated-Mature-Cheddar-Cheese-250-g/_/A-20100209",
+        "sale_price": 69.99
+      },
+      "ingredient_line": "Grated Mature Cheddar Cheese 250 g"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 tablespoon",
+      "preparation": "finely chopped",
+      "selected_product": {
+        "product_id": "20008215",
+        "package_quantity": 1,
+        "name": "Brown Onions 1 kg",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/Roast-glazed-gammon/Brown-Onions-1-kg/_/A-20008215",
+        "sale_price": 26.99
+      },
+      "ingredient_line": "Brown Onions 1 kg"
+    },
+    {
+      "core_item_name": "pickles",
+      "quantity": "1 tablespoon",
+      "preparation": "finely chopped",
+      "selected_product": {
+        "product_id": "6005000184709",
+        "package_quantity": 1,
+        "name": "Mild Dill Gherkins 780 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Olives-Pickles-Antipasti/Pickles/Mild-Dill-Gherkins-780-g/_/A-6005000184709",
+        "sale_price": 63.99
+      },
+      "ingredient_line": "Mild Dill Gherkins 780 g"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 wedge",
+      "preparation": "squeezed",
+      "selected_product": {
+        "product_id": "20017880",
+        "package_quantity": 1,
+        "name": "Lemons 3 pk",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Fresh-Fruit/ClemenGold-Oranges-Soft-Citrus/Lemons-3-pk/_/A-20017880",
+        "sale_price": 29.99
+      },
+      "ingredient_line": "Lemons 3 pk"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "Pinch",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6009178243428",
+        "package_quantity": 1,
+        "name": "Fine Black Pepper 55 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Spices/Fine-Black-Pepper-55-g/_/A-6009178243428",
+        "sale_price": 37.99
+      },
+      "ingredient_line": "Fine Black Pepper 55 g"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "Small pinch",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6001021021023",
+        "package_quantity": 1,
+        "name": "Cerebos Iodated Table Salt 500 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Salt-Pepper/Cerebos-Iodated-Table-Salt-500-g/_/A-6001021021023",
+        "sale_price": 32.99
+      },
+      "ingredient_line": "Cerebos Iodated Table Salt 500 g"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "1 teaspoon",
+      "preparation": "softened",
+      "selected_product": {
+        "product_id": "20011833",
+        "package_quantity": 1,
+        "name": "Salted Butter 250 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Milk-Dairy-Eggs/Butter-Margarine/Butter-Spreads/Salted-Butter-250-g/_/A-20011833",
+        "sale_price": 65.99
+      },
+      "ingredient_line": "Salted Butter 250 g"
+    }
+  ],
+  "warnings": [
+    "Category 'EthicsReligious' dropped; no valid values after normalization",
+    "Category 'NutritionFocus' dropped; no valid values after normalization"
+  ],
+  "metadata": {
+    "created_at": "20251114T124720Z",
+    "meal_model": "gpt-5",
+    "product_model": "gpt-5",
+    "tags_version": "2025.02.0",
+    "run_dir": "data\\meals\\runs\\run_20251114T124528Z"
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "meal_id": "meal_20251114T125206Z_03_254f96",
+  "archetype_uid": "arch_3f4k9z",
+  "archetype_name": "Family Low-Carb Weeknight Basics",
+  "name": "Skillet Creamy Garlic Parmesan Chicken & Broccoli",
+  "description": "Family-friendly low-carb chicken in a mild, creamy garlic-parmesan sauce with broccoli and cherry tomatoes. A quick stovetop skillet dinner with Mediterranean-leaning flavors.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Cut chicken breast into bite-size strips; pat dry.",
+    "Cut broccoli into small florets; rinse and drain.",
+    "Halve cherry tomatoes.",
+    "Mince garlic.",
+    "Zest then juice the lemon; keep separately.",
+    "Measure chicken stock, cream, and grated parmesan cheese.",
+    "Set out oregano, salt, and black pepper.",
+    "Preheat a large skillet over medium-high heat with olive oil."
+  ],
+  "cook_steps": [
+    "Season chicken strips with salt and black pepper; sear in hot olive oil 3–4 minutes until lightly browned and just cooked; transfer to a plate.",
+    "Add broccoli to the skillet with a splash of chicken stock; cook 2–3 minutes, stirring, until bright and just tender-crisp.",
+    "Reduce heat to medium; add garlic and cook 30 seconds until fragrant.",
+    "Pour in remaining chicken stock and cream; stir in oregano and lemon zest; simmer 2–3 minutes to slightly thicken.",
+    "Stir in parmesan cheese until melted and smooth; adjust sauce with a little water or stock if too thick.",
+    "Add cherry tomatoes and return chicken (with juices) to the skillet; simmer 1–2 minutes to warm through.",
+    "Finish with a squeeze of lemon juice; taste and adjust salt and black pepper.",
+    "Serve hot, spooning extra sauce over the chicken and vegetables."
+  ],
+  "instructions": [
+    "Cut chicken breast into bite-size strips; pat dry.",
+    "Cut broccoli into small florets; rinse and drain.",
+    "Halve cherry tomatoes.",
+    "Mince garlic.",
+    "Zest then juice the lemon; keep separately.",
+    "Measure chicken stock, cream, and grated parmesan cheese.",
+    "Set out oregano, salt, and black pepper.",
+    "Preheat a large skillet over medium-high heat with olive oil.",
+    "Season chicken strips with salt and black pepper; sear in hot olive oil 3–4 minutes until lightly browned and just cooked; transfer to a plate.",
+    "Add broccoli to the skillet with a splash of chicken stock; cook 2–3 minutes, stirring, until bright and just tender-crisp.",
+    "Reduce heat to medium; add garlic and cook 30 seconds until fragrant.",
+    "Pour in remaining chicken stock and cream; stir in oregano and lemon zest; simmer 2–3 minutes to slightly thicken.",
+    "Stir in parmesan cheese until melted and smooth; adjust sauce with a little water or stock if too thick.",
+    "Add cherry tomatoes and return chicken (with juices) to the skillet; simmer 1–2 minutes to warm through.",
+    "Finish with a squeeze of lemon juice; taste and adjust salt and black pepper.",
+    "Serve hot, spooning extra sauce over the chicken and vegetables."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken breast",
+      "quantity": "750 g",
+      "preparation": "cut into bite-size strips"
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "500 g",
+      "preparation": "cut into small florets"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1.5 tablespoons"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "1/2 cup"
+    },
+    {
+      "core_item_name": "cream",
+      "quantity": "1 cup"
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "1/2 cup",
+      "preparation": "grated"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and juice separated"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "Diet": [
+      "LowCarb"
+    ],
+    "Cuisine": [
+      "Mediterranean",
+      "ModernAmerican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy"
+    ],
+    "BudgetLevel": [
+      "Affordable"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "CuisineOpenness": [
+      "FamiliarClassics"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ]
+  },
+  "product_matches": [
+    {
+      "core_item_name": "chicken breast",
+      "selected_product_id": "2020200000004",
+      "package_quantity": 2,
+      "package_notes": "Two packs (~860 g total) to meet 750 g raw chicken; plain skinless breasts suit searing and slicing.",
+      "ingredient_line": "Free Range Skinless Chicken Breast Avg 430 g"
+    },
+    {
+      "core_item_name": "broccoli",
+      "selected_product_id": "20009007",
+      "package_quantity": 2,
+      "package_notes": "Two x 300 g broccoli florets (~600 g) to cover 500 g after trimming; avoids cauliflower mix.",
+      "ingredient_line": "Broccoli Florets 300 g"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "selected_product_id": null,
+      "package_quantity": 0,
+      "package_notes": "No fresh cherry tomato pack among candidates; only roasted antipasti or canned, which don’t suit halving and quick simmer.",
+      "ingredient_line": "fresh cherry tomatoes"
+    },
+    {
+      "core_item_name": "garlic",
+      "selected_product_id": "20008277",
+      "package_quantity": 1,
+      "package_notes": "Peeled cloves for easy mincing; 50 g pack more than covers 3 cloves.",
+      "ingredient_line": "Peeled Garlic 50 g"
+    },
+    {
+      "core_item_name": "olive oil",
+      "selected_product_id": "6009195707965",
+      "package_quantity": 1,
+      "package_notes": "Neutral cooking olive oil suits searing; avoids flavoured oils.",
+      "ingredient_line": "Cooking Olive Oil 1 L"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "selected_product_id": "6009189566226",
+      "package_quantity": 1,
+      "package_notes": "500 ml liquid stock; you need ~125 ml, leftovers keep for other recipes.",
+      "ingredient_line": "Fresh Free Range Liquid Chicken Stock 500 ml"
+    },
+    {
+      "core_item_name": "cream",
+      "selected_product_id": "6009189991974",
+      "package_quantity": 1,
+      "package_notes": "500 ml whipping cream; you need ~250 ml.",
+      "ingredient_line": "Whipping Cream 500 ml"
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "selected_product_id": "6001009013590",
+      "package_quantity": 1,
+      "package_notes": "200 g Parmigiano Reggiano; you need ~40–50 g grated.",
+      "ingredient_line": "Italian Parmigiano Reggiano Cheese 200 g"
+    },
+    {
+      "core_item_name": "oregano",
+      "selected_product_id": "20167042",
+      "package_quantity": 1,
+      "package_notes": "Dried oregano aligns with recipe; 15 g pantry pack.",
+      "ingredient_line": "Oregano 15 g"
+    },
+    {
+      "core_item_name": "lemon",
+      "selected_product_id": "20017880",
+      "package_quantity": 1,
+      "package_notes": "3-pack provides at least one lemon for zest and juice with extras for future use.",
+      "ingredient_line": "Lemons 3 pk"
+    },
+    {
+      "core_item_name": "salt",
+      "selected_product_id": "6001021021023",
+      "package_quantity": 1,
+      "package_notes": "Everyday table salt; economical for seasoning to taste.",
+      "ingredient_line": "Cerebos Iodated Table Salt 500 g"
+    },
+    {
+      "core_item_name": "black pepper",
+      "selected_product_id": "6009178243428",
+      "package_quantity": 1,
+      "package_notes": "Fine ground black pepper suitable for quick seasoning.",
+      "ingredient_line": "Fine Black Pepper 55 g"
+    }
+  ],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken breast",
+      "quantity": "750 g",
+      "preparation": "cut into bite-size strips",
+      "selected_product": {
+        "product_id": "2020200000004",
+        "package_quantity": 2,
+        "name": "Free Range Skinless Chicken Breast Avg 430 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Meat-Poultry-Fish/Poultry/Chicken-Portions-Other/Free-Range-Skinless-Chicken-Breast-Avg-430-g/_/A-2020200000004",
+        "sale_price": 90.99
+      },
+      "ingredient_line": "Free Range Skinless Chicken Breast Avg 430 g"
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "500 g",
+      "preparation": "cut into small florets",
+      "selected_product": {
+        "product_id": "20009007",
+        "package_quantity": 2,
+        "name": "Broccoli Florets 300 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Fresh-Vegetables/Broccoli-Cauliflower/Broccoli-Florets-300-g/_/A-20009007",
+        "sale_price": 36.99
+      },
+      "ingredient_line": "Broccoli Florets 300 g"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved",
+      "selected_product": {
+        "product_id": null,
+        "package_quantity": 0,
+        "name": null,
+        "detail_url": null,
+        "sale_price": null
+      },
+      "ingredient_line": "fresh cherry tomatoes"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": {
+        "product_id": "20008277",
+        "package_quantity": 1,
+        "name": "Peeled Garlic 50 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Promotions/Buy-2-Or-More-And-Save/Buy-any-2-Save-20-/Prepared-Additions/Peeled-Garlic-50-g/_/A-20008277",
+        "sale_price": 29.99
+      },
+      "ingredient_line": "Peeled Garlic 50 g"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1.5 tablespoons",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6009195707965",
+        "package_quantity": 1,
+        "name": "Cooking Olive Oil 1 L",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Oils-Vinegars/Oils/Cooking-Olive-Oil-1-L/_/A-6009195707965",
+        "sale_price": 289.99
+      },
+      "ingredient_line": "Cooking Olive Oil 1 L"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6009189566226",
+        "package_quantity": 1,
+        "name": "Fresh Free Range Liquid Chicken Stock 500 ml",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Meat-Poultry-Fish/Fresh-Gravy-Stock-Glazes/Fresh-Free-Range-Liquid-Chicken-Stock-500-ml/_/A-6009189566226",
+        "sale_price": 54.99
+      },
+      "ingredient_line": "Fresh Free Range Liquid Chicken Stock 500 ml"
+    },
+    {
+      "core_item_name": "cream",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6009189991974",
+        "package_quantity": 1,
+        "name": "Whipping Cream 500 ml",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/Lesego-s-samp-and-bean-risotto/Whipping-Cream-500-ml/_/A-6009189991974",
+        "sale_price": 58.99
+      },
+      "ingredient_line": "Whipping Cream 500 ml"
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "1/2 cup",
+      "preparation": "grated",
+      "selected_product": {
+        "product_id": "6001009013590",
+        "package_quantity": 1,
+        "name": "Italian Parmigiano Reggiano Cheese 200 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Milk-Dairy-Eggs/Cheese/Parmesan-Hard-Cheese/Italian-Parmigiano-Reggiano-Cheese-200-g/_/A-6001009013590",
+        "sale_price": 162.99
+      },
+      "ingredient_line": "Italian Parmigiano Reggiano Cheese 200 g"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried",
+      "selected_product": {
+        "product_id": "20167042",
+        "package_quantity": 1,
+        "name": "Oregano 15 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/Seafood-Pasta/Oregano-15-g/_/A-20167042",
+        "sale_price": 34.99
+      },
+      "ingredient_line": "Oregano 15 g"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and juice separated",
+      "selected_product": {
+        "product_id": "20017880",
+        "package_quantity": 1,
+        "name": "Lemons 3 pk",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Fresh-Fruit/ClemenGold-Oranges-Soft-Citrus/Lemons-3-pk/_/A-20017880",
+        "sale_price": 29.99
+      },
+      "ingredient_line": "Lemons 3 pk"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6001021021023",
+        "package_quantity": 1,
+        "name": "Cerebos Iodated Table Salt 500 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Salt-Pepper/Cerebos-Iodated-Table-Salt-500-g/_/A-6001021021023",
+        "sale_price": 32.99
+      },
+      "ingredient_line": "Cerebos Iodated Table Salt 500 g"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6009178243428",
+        "package_quantity": 1,
+        "name": "Fine Black Pepper 55 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Spices/Fine-Black-Pepper-55-g/_/A-6009178243428",
+        "sale_price": 37.99
+      },
+      "ingredient_line": "Fine Black Pepper 55 g"
+    }
+  ],
+  "warnings": [
+    "Category 'EthicsReligious' dropped; no valid values after normalization",
+    "Category 'Equipment': value 'Skillet' not in defined_tags",
+    "Category 'Equipment': dropped 'Stovetop' via synonym mapping",
+    "Category 'Equipment' dropped; no valid values after normalization"
+  ],
+  "metadata": {
+    "created_at": "20251114T125536Z",
+    "meal_model": "gpt-5",
+    "product_model": "gpt-5",
+    "tags_version": "2025.02.0",
+    "run_dir": "data\\meals\\runs\\run_20251114T125206Z"
+  }
+}

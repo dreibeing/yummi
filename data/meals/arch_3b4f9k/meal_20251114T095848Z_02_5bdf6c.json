@@ -1,0 +1,329 @@
+{
+  "meal_id": "meal_20251114T095848Z_02_5bdf6c",
+  "archetype_uid": "arch_3b4f9k",
+  "archetype_name": "Solo Quick Bites Flex",
+  "name": "Air-Fryer Halloumi, Tomato & Spinach Wrap",
+  "description": "Crispy halloumi, fresh greens, and a quick lemon aioli in a warm wrap. A mild, familiar solo bite made fast in the air-fryer.",
+  "servings": "Single portion",
+  "prep_steps": [
+    "1. Preheat air-fryer to 200°C.",
+    "2. Pat halloumi dry and slice into 1 cm strips.",
+    "3. Slice tomato and thinly slice red onion.",
+    "4. Mix aioli with a squeeze of lemon.",
+    "5. Rinse and dry spinach."
+  ],
+  "cook_steps": [
+    "1. Toss halloumi with olive oil, a small pinch of salt, and black pepper.",
+    "2. Air-fry halloumi in a single layer for 6–8 minutes, turning halfway, until golden.",
+    "3. Warm the wrap in the air-fryer for 30–60 seconds until pliable.",
+    "4. Spread lemon aioli over the wrap; layer spinach, tomato, and red onion.",
+    "5. Add crispy halloumi, season lightly with salt and black pepper, then roll up and serve."
+  ],
+  "instructions": [
+    "1. Preheat air-fryer to 200°C.",
+    "2. Pat halloumi dry and slice into 1 cm strips.",
+    "3. Slice tomato and thinly slice red onion.",
+    "4. Mix aioli with a squeeze of lemon.",
+    "5. Rinse and dry spinach.",
+    "1. Toss halloumi with olive oil, a small pinch of salt, and black pepper.",
+    "2. Air-fry halloumi in a single layer for 6–8 minutes, turning halfway, until golden.",
+    "3. Warm the wrap in the air-fryer for 30–60 seconds until pliable.",
+    "4. Spread lemon aioli over the wrap; layer spinach, tomato, and red onion.",
+    "5. Add crispy halloumi, season lightly with salt and black pepper, then roll up and serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "halloumi",
+      "quantity": "120 g",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "wrap",
+      "quantity": "1 large"
+    },
+    {
+      "core_item_name": "spinach",
+      "quantity": "1 cup",
+      "preparation": "rinsed and dried"
+    },
+    {
+      "core_item_name": "tomato",
+      "quantity": "1 small",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/4 small",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "aioli",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 wedge",
+      "preparation": "juiced for aioli"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "pinch"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "small pinch"
+    }
+  ],
+  "meal_tags": {
+    "Diet": [
+      "Flexitarian"
+    ],
+    "Cuisine": [
+      "ModernAmerican",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Egg",
+      "Gluten"
+    ],
+    "BudgetLevel": [
+      "ValueStaples"
+    ],
+    "Audience": [
+      "Solo"
+    ],
+    "CuisineOpenness": [
+      "FamiliarClassics"
+    ],
+    "Equipment": [
+      "AirFryer"
+    ]
+  },
+  "product_matches": [
+    {
+      "core_item_name": "halloumi",
+      "selected_product_id": "2032080000005",
+      "package_quantity": 1,
+      "package_notes": "Block halloumi suitable for slicing; 320 g pack covers 120 g with leftovers.",
+      "ingredient_line": "Haloumi Cheese Avg 320 g"
+    },
+    {
+      "core_item_name": "wrap",
+      "selected_product_id": "6009211254374",
+      "package_quantity": 1,
+      "package_notes": "Large multiseed wraps match format; 6-pack leaves extras for future quick meals.",
+      "ingredient_line": "Heat & Eat Multiseed Wraps 6 pk"
+    },
+    {
+      "core_item_name": "spinach",
+      "selected_product_id": "20008543",
+      "package_quantity": 1,
+      "package_notes": "Fresh baby spinach suits raw use; 200 g is the standard smallest leaf pack.",
+      "ingredient_line": "Baby Spinach 200 g"
+    },
+    {
+      "core_item_name": "tomato",
+      "selected_product_id": "6009226669651",
+      "package_quantity": 1,
+      "package_notes": "Roma 4-pack is the smallest practical fresh option for one small tomato.",
+      "ingredient_line": "Roma Tomatoes 4 pk"
+    },
+    {
+      "core_item_name": "red onion",
+      "selected_product_id": null,
+      "package_quantity": 0,
+      "package_notes": "Only pickled red onion petals available; no suitable fresh red onion SKU in candidates."
+    },
+    {
+      "core_item_name": "aioli",
+      "selected_product_id": "6009217662531",
+      "package_quantity": 1,
+      "package_notes": "120 g jar covers 1 tbsp with plenty left over.",
+      "ingredient_line": "Aioli 120 g"
+    },
+    {
+      "core_item_name": "lemon",
+      "selected_product_id": "20017880",
+      "package_quantity": 1,
+      "package_notes": "Smallest pack size; one lemon provides multiple wedges.",
+      "ingredient_line": "Lemons 3 pk"
+    },
+    {
+      "core_item_name": "olive oil",
+      "selected_product_id": "6009195707965",
+      "package_quantity": 1,
+      "package_notes": "Plain cooking olive oil fits the recipe; avoids flavored options.",
+      "ingredient_line": "Cooking Olive Oil 1 L"
+    },
+    {
+      "core_item_name": "black pepper",
+      "selected_product_id": "6009178243428",
+      "package_quantity": 1,
+      "package_notes": "Small jar suits a pinch and ongoing pantry use.",
+      "ingredient_line": "Fine Black Pepper 55 g"
+    },
+    {
+      "core_item_name": "salt",
+      "selected_product_id": "6001021023119",
+      "package_quantity": 1,
+      "package_notes": "Economical pantry staple; covers a small pinch and future use.",
+      "ingredient_line": "Cerebos Iodated Table Salt 1 kg"
+    }
+  ],
+  "final_ingredients": [
+    {
+      "core_item_name": "halloumi",
+      "quantity": "120 g",
+      "preparation": "sliced",
+      "selected_product": {
+        "product_id": "2032080000005",
+        "package_quantity": 1,
+        "name": "Haloumi Cheese Avg 320 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/How-to-Videos/Ostrich-Burgers/Haloumi-Cheese-Avg-320-g/_/A-2032080000005",
+        "sale_price": 86.4
+      },
+      "ingredient_line": "Haloumi Cheese Avg 320 g"
+    },
+    {
+      "core_item_name": "wrap",
+      "quantity": "1 large",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6009211254374",
+        "package_quantity": 1,
+        "name": "Heat & Eat Multiseed Wraps 6 pk",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Bakery/Wraps-Naan-Pitas-Bagels/Heat-Eat-Multiseed-Wraps-6-pk/_/A-6009211254374",
+        "sale_price": 36.99
+      },
+      "ingredient_line": "Heat & Eat Multiseed Wraps 6 pk"
+    },
+    {
+      "core_item_name": "spinach",
+      "quantity": "1 cup",
+      "preparation": "rinsed and dried",
+      "selected_product": {
+        "product_id": "20008543",
+        "package_quantity": 1,
+        "name": "Baby Spinach 200 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/Chickpeas-For-Breakfast/Baby-Spinach-200-g/_/A-20008543",
+        "sale_price": 34.99
+      },
+      "ingredient_line": "Baby Spinach 200 g"
+    },
+    {
+      "core_item_name": "tomato",
+      "quantity": "1 small",
+      "preparation": "sliced",
+      "selected_product": {
+        "product_id": "6009226669651",
+        "package_quantity": 1,
+        "name": "Roma Tomatoes 4 pk",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Salads-Herbs/Tomatoes/Roma-Tomatoes-4-pk/_/A-6009226669651",
+        "sale_price": 28.99
+      },
+      "ingredient_line": "Roma Tomatoes 4 pk"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/4 small",
+      "preparation": "thinly sliced",
+      "selected_product": {
+        "product_id": null,
+        "package_quantity": 0,
+        "name": null,
+        "detail_url": null,
+        "sale_price": null
+      },
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "aioli",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6009217662531",
+        "package_quantity": 1,
+        "name": "Aioli 120 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Olives-Pickles-Antipasti/Antipasti/Aioli-120-g/_/A-6009217662531",
+        "sale_price": 37.99
+      },
+      "ingredient_line": "Aioli 120 g"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 wedge",
+      "preparation": "juiced for aioli",
+      "selected_product": {
+        "product_id": "20017880",
+        "package_quantity": 1,
+        "name": "Lemons 3 pk",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Fresh-Fruit/ClemenGold-Oranges-Soft-Citrus/Lemons-3-pk/_/A-20017880",
+        "sale_price": 29.99
+      },
+      "ingredient_line": "Lemons 3 pk"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6009195707965",
+        "package_quantity": 1,
+        "name": "Cooking Olive Oil 1 L",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Oils-Vinegars/Oils/Cooking-Olive-Oil-1-L/_/A-6009195707965",
+        "sale_price": 289.99
+      },
+      "ingredient_line": "Cooking Olive Oil 1 L"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "pinch",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6009178243428",
+        "package_quantity": 1,
+        "name": "Fine Black Pepper 55 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Spices/Fine-Black-Pepper-55-g/_/A-6009178243428",
+        "sale_price": 37.99
+      },
+      "ingredient_line": "Fine Black Pepper 55 g"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "small pinch",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6001021023119",
+        "package_quantity": 1,
+        "name": "Cerebos Iodated Table Salt 1 kg",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Salt-Pepper/Cerebos-Iodated-Table-Salt-1-kg/_/A-6001021023119",
+        "sale_price": 22.99
+      },
+      "ingredient_line": "Cerebos Iodated Table Salt 1 kg"
+    }
+  ],
+  "warnings": [
+    "Category 'EthicsReligious' dropped; no valid values after normalization"
+  ],
+  "metadata": {
+    "created_at": "20251114T100045Z",
+    "meal_model": "gpt-5",
+    "product_model": "gpt-5",
+    "tags_version": "2025.02.0",
+    "run_dir": "data\\meals\\runs\\run_20251114T095848Z"
+  }
+}

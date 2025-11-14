@@ -1,0 +1,389 @@
+{
+  "meal_id": "meal_20251114T122557Z_03_ce39c1",
+  "archetype_uid": "arch_k7x9s2",
+  "archetype_name": "Family Flexitarian Regional Twists (SA & Mediterranean, 15-30, Mild, Balanced)",
+  "name": "Lemon-Oregano Chicken Orzo with Peppadew & Feta",
+  "description": "Bright lemon and oregano chicken served over orzo with sweet peppadew peppers, cherry tomatoes, and a light feta crumble. A mild Mediterranean bowl with a South African twist, ready in about 25 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "1. Bring a large saucepan of water to a boil for the orzo.",
+    "2. Halve the cherry tomatoes.",
+    "3. Chop the peppadew peppers.",
+    "4. Mince the garlic.",
+    "5. Zest and juice the lemon.",
+    "6. Cut the chicken breast into bite-size strips.",
+    "7. In a small bowl, mix oregano, half the lemon zest, a pinch of salt, and pepper with 1 tbsp olive oil to coat the chicken."
+  ],
+  "cook_steps": [
+    "1. Salt the boiling water, add orzo, and cook until just tender; reserve 1/2 cup cooking water, then drain.",
+    "2. Heat 2 tbsp olive oil in a large frying pan over medium-high heat.",
+    "3. Add chicken and cook, stirring, until lightly browned and cooked through, 5–7 minutes; transfer to a plate.",
+    "4. In the same pan over medium heat, add garlic and cherry tomatoes; cook until tomatoes soften, 2–3 minutes.",
+    "5. Return chicken to the pan, add peppadew peppers, remaining lemon zest, and lemon juice; toss for 1 minute.",
+    "6. Add drained orzo to the pan with a splash of reserved cooking water to loosen; season with salt and pepper to taste.",
+    "7. Remove from heat and scatter feta over the top; toss gently and serve."
+  ],
+  "instructions": [
+    "1. Bring a large saucepan of water to a boil for the orzo.",
+    "2. Halve the cherry tomatoes.",
+    "3. Chop the peppadew peppers.",
+    "4. Mince the garlic.",
+    "5. Zest and juice the lemon.",
+    "6. Cut the chicken breast into bite-size strips.",
+    "7. In a small bowl, mix oregano, half the lemon zest, a pinch of salt, and pepper with 1 tbsp olive oil to coat the chicken.",
+    "1. Salt the boiling water, add orzo, and cook until just tender; reserve 1/2 cup cooking water, then drain.",
+    "2. Heat 2 tbsp olive oil in a large frying pan over medium-high heat.",
+    "3. Add chicken and cook, stirring, until lightly browned and cooked through, 5–7 minutes; transfer to a plate.",
+    "4. In the same pan over medium heat, add garlic and cherry tomatoes; cook until tomatoes soften, 2–3 minutes.",
+    "5. Return chicken to the pan, add peppadew peppers, remaining lemon zest, and lemon juice; toss for 1 minute.",
+    "6. Add drained orzo to the pan with a splash of reserved cooking water to loosen; season with salt and pepper to taste.",
+    "7. Remove from heat and scatter feta over the top; toss gently and serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "orzo",
+      "quantity": "300 g"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 liters",
+      "preparation": "for boiling orzo"
+    },
+    {
+      "core_item_name": "chicken breast",
+      "quantity": "600 g",
+      "preparation": "cut into bite-size strips"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "peppadew peppers",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and juice"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "feta",
+      "quantity": "100 g",
+      "preparation": "crumbled"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "plus more to taste"
+    }
+  ],
+  "meal_tags": {
+    "Diet": [
+      "Flexitarian"
+    ],
+    "Cuisine": [
+      "Mediterranean",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ],
+    "BudgetLevel": [
+      "Balanced"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "CuisineOpenness": [
+      "RegionalTwist"
+    ]
+  },
+  "product_matches": [
+    {
+      "core_item_name": "orzo",
+      "selected_product_id": "6007875598735",
+      "package_quantity": 1,
+      "package_notes": "Use about 300 g from the 500 g pack; leftovers keep for future meals.",
+      "ingredient_line": "Orzo Pasta 500 g"
+    },
+    {
+      "core_item_name": "water",
+      "selected_product_id": null,
+      "package_quantity": 0,
+      "package_notes": "Use tap water for boiling; no purchase required."
+    },
+    {
+      "core_item_name": "chicken breast",
+      "selected_product_id": "2020200000004",
+      "package_quantity": 2,
+      "package_notes": "Two avg 430 g packs provide enough to use ~600 g; refrigerate or freeze the remainder.",
+      "ingredient_line": "Free Range Skinless Chicken Breast Avg 430 g"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "selected_product_id": null,
+      "package_quantity": 0,
+      "package_notes": "Fresh cherry tomatoes are required; canned/roasted options in candidates don’t fit."
+    },
+    {
+      "core_item_name": "peppadew peppers",
+      "selected_product_id": "6005000152869",
+      "package_quantity": 1,
+      "package_notes": "One 280 g jar provides more than the 1/2 cup needed; refrigerate leftovers.",
+      "ingredient_line": "Mild Diced Peppadew Piquanté Peppers 280 g"
+    },
+    {
+      "core_item_name": "garlic",
+      "selected_product_id": "20008277",
+      "package_quantity": 1,
+      "package_notes": "Use 3 cloves from the 50 g pack; remainder keeps chilled.",
+      "ingredient_line": "Peeled Garlic 50 g"
+    },
+    {
+      "core_item_name": "lemon",
+      "selected_product_id": "20017880",
+      "package_quantity": 1,
+      "package_notes": "One 3-pack covers the single lemon needed with extras for future use.",
+      "ingredient_line": "Lemons 3 pk"
+    },
+    {
+      "core_item_name": "olive oil",
+      "selected_product_id": "6009195707965",
+      "package_quantity": 1,
+      "package_notes": "General cooking olive oil; 1 L covers the 3 tbsp needed and pantry use.",
+      "ingredient_line": "Cooking Olive Oil 1 L"
+    },
+    {
+      "core_item_name": "oregano",
+      "selected_product_id": "6009173963109",
+      "package_quantity": 1,
+      "package_notes": "Dried oregano; 15 g pack covers the 1 tsp required.",
+      "ingredient_line": "Oregano Refill 15 g"
+    },
+    {
+      "core_item_name": "feta",
+      "selected_product_id": "6009211512207",
+      "package_quantity": 1,
+      "package_notes": "Use about 100 g from the 300 g block; keep the rest refrigerated.",
+      "ingredient_line": "Fat Free & kJ Controlled™ South African Feta Cheese 300 g"
+    },
+    {
+      "core_item_name": "salt",
+      "selected_product_id": "6001021021023",
+      "package_quantity": 1,
+      "package_notes": "Standard table salt; 500 g covers recipe and pantry use.",
+      "ingredient_line": "Cerebos Iodated Table Salt 500 g"
+    },
+    {
+      "core_item_name": "pepper",
+      "selected_product_id": "6001009014047",
+      "package_quantity": 1,
+      "package_notes": "Provides black pepper needed for seasoning (set includes salt as well).",
+      "ingredient_line": "Black Pepper and Sea Salt Set"
+    }
+  ],
+  "final_ingredients": [
+    {
+      "core_item_name": "orzo",
+      "quantity": "300 g",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6007875598735",
+        "package_quantity": 1,
+        "name": "Orzo Pasta 500 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Pasta-Rice-Noodles/Pasta/Orzo-Pasta-500-g/_/A-6007875598735",
+        "sale_price": 22.99
+      },
+      "ingredient_line": "Orzo Pasta 500 g"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 liters",
+      "preparation": "for boiling orzo",
+      "selected_product": {
+        "product_id": null,
+        "package_quantity": 0,
+        "name": null,
+        "detail_url": null,
+        "sale_price": null
+      },
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken breast",
+      "quantity": "600 g",
+      "preparation": "cut into bite-size strips",
+      "selected_product": {
+        "product_id": "2020200000004",
+        "package_quantity": 2,
+        "name": "Free Range Skinless Chicken Breast Avg 430 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Meat-Poultry-Fish/Poultry/Chicken-Portions-Other/Free-Range-Skinless-Chicken-Breast-Avg-430-g/_/A-2020200000004",
+        "sale_price": 90.99
+      },
+      "ingredient_line": "Free Range Skinless Chicken Breast Avg 430 g"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved",
+      "selected_product": {
+        "product_id": null,
+        "package_quantity": 0,
+        "name": null,
+        "detail_url": null,
+        "sale_price": null
+      },
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peppadew peppers",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": {
+        "product_id": "6005000152869",
+        "package_quantity": 1,
+        "name": "Mild Diced Peppadew Piquanté Peppers 280 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Olives-Pickles-Antipasti/Pickles/Mild-Diced-Peppadew-Piquant-Peppers-280-g/_/A-6005000152869",
+        "sale_price": 64.99
+      },
+      "ingredient_line": "Mild Diced Peppadew Piquanté Peppers 280 g"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": {
+        "product_id": "20008277",
+        "package_quantity": 1,
+        "name": "Peeled Garlic 50 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Promotions/Buy-2-Or-More-And-Save/Buy-any-2-Save-20-/Prepared-Additions/Peeled-Garlic-50-g/_/A-20008277",
+        "sale_price": 29.99
+      },
+      "ingredient_line": "Peeled Garlic 50 g"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and juice",
+      "selected_product": {
+        "product_id": "20017880",
+        "package_quantity": 1,
+        "name": "Lemons 3 pk",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Fresh-Fruit/ClemenGold-Oranges-Soft-Citrus/Lemons-3-pk/_/A-20017880",
+        "sale_price": 29.99
+      },
+      "ingredient_line": "Lemons 3 pk"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6009195707965",
+        "package_quantity": 1,
+        "name": "Cooking Olive Oil 1 L",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Oils-Vinegars/Oils/Cooking-Olive-Oil-1-L/_/A-6009195707965",
+        "sale_price": 289.99
+      },
+      "ingredient_line": "Cooking Olive Oil 1 L"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "dried",
+      "selected_product": {
+        "product_id": "6009173963109",
+        "package_quantity": 1,
+        "name": "Oregano Refill 15 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Herbs/Oregano-Refill-15-g/_/A-6009173963109",
+        "sale_price": 22.99
+      },
+      "ingredient_line": "Oregano Refill 15 g"
+    },
+    {
+      "core_item_name": "feta",
+      "quantity": "100 g",
+      "preparation": "crumbled",
+      "selected_product": {
+        "product_id": "6009211512207",
+        "package_quantity": 1,
+        "name": "Fat Free & kJ Controlled™ South African Feta Cheese 300 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Milk-Dairy-Eggs/Cheese/Feta-Haloumi-Cheese/Fat-Free-kJ-Controlled-South-African-Feta-Cheese-300-g/_/A-6009211512207",
+        "sale_price": 63.99
+      },
+      "ingredient_line": "Fat Free & kJ Controlled™ South African Feta Cheese 300 g"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "plus more to taste",
+      "selected_product": {
+        "product_id": "6001021021023",
+        "package_quantity": 1,
+        "name": "Cerebos Iodated Table Salt 500 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Salt-Pepper/Cerebos-Iodated-Table-Salt-500-g/_/A-6001021021023",
+        "sale_price": 32.99
+      },
+      "ingredient_line": "Cerebos Iodated Table Salt 500 g"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "plus more to taste",
+      "selected_product": {
+        "product_id": "6001009014047",
+        "package_quantity": 1,
+        "name": "Black Pepper and Sea Salt Set",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/How-to-Videos/Boerewors-Burgers/Black-Pepper-and-Sea-Salt-Set/_/A-6001009014047",
+        "sale_price": 65.99
+      },
+      "ingredient_line": "Black Pepper and Sea Salt Set"
+    }
+  ],
+  "warnings": [
+    "Category 'EthicsReligious' dropped; no valid values after normalization",
+    "Category 'Equipment': value 'Saucepan' not in defined_tags",
+    "Category 'Equipment': value 'FryingPan' not in defined_tags",
+    "Category 'Equipment': value 'Colander' not in defined_tags",
+    "Category 'Equipment' dropped; no valid values after normalization"
+  ],
+  "metadata": {
+    "created_at": "20251114T123050Z",
+    "meal_model": "gpt-5",
+    "product_model": "gpt-5",
+    "tags_version": "2025.02.0",
+    "run_dir": "data\\meals\\runs\\run_20251114T122557Z"
+  }
+}
