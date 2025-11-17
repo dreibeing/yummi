@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from datetime import datetime
 from typing import Any, Dict, List, Optional
 from pydantic import BaseModel, Field, ConfigDict
 
@@ -194,3 +195,22 @@ class MealManifest(BaseModel):
     stats: Dict[str, Any] = Field(default_factory=dict)
     warnings: List[str] = Field(default_factory=list)
     archetypes: List[MealArchetype] = Field(default_factory=list)
+
+
+class PreferenceSaveRequest(BaseModel):
+    tagsVersion: str = Field(min_length=1)
+    responses: Dict[str, Dict[str, str]] = Field(default_factory=dict)
+    completionStage: Optional[str] = Field(default=None, min_length=1)
+    completedAt: Optional[datetime] = Field(default=None)
+
+
+class PreferenceProfileResponse(BaseModel):
+    tagsVersion: Optional[str] = None
+    manifestTagsVersion: Optional[str] = None
+    responses: Dict[str, Dict[str, str]] = Field(default_factory=dict)
+    selectedTags: Dict[str, List[str]] = Field(default_factory=dict)
+    dislikedTags: Dict[str, List[str]] = Field(default_factory=dict)
+    completionStage: Optional[str] = None
+    completedAt: Optional[datetime] = None
+    lastSyncedAt: Optional[datetime] = None
+    updatedAt: Optional[datetime] = None

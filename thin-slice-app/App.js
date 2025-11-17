@@ -188,6 +188,32 @@ const formatTime = (date) => {
   }
 };
 
+const formatDateTime = (date) => {
+  if (!(date instanceof Date) || Number.isNaN(date.valueOf())) {
+    return "";
+  }
+  try {
+    return date.toLocaleString();
+  } catch (error) {
+    return date.toISOString();
+  }
+};
+
+const parseServerDate = (value) => {
+  if (!value) {
+    return null;
+  }
+  try {
+    const parsed = new Date(value);
+    if (Number.isNaN(parsed.valueOf())) {
+      return null;
+    }
+    return parsed;
+  } catch (error) {
+    return null;
+  }
+};
+
 const formatCurrency = (minor, currency = "ZAR") => {
   if (typeof minor !== "number" || Number.isNaN(minor)) {
     return `${currency.toUpperCase() === "ZAR" ? "R" : currency.toUpperCase() + " "}0.00`;
@@ -201,6 +227,10 @@ const formatCurrency = (minor, currency = "ZAR") => {
 
 const PREFERENCES_STATE_STORAGE_KEY = "yummi.preferences.state.v1";
 const PREFERENCES_COMPLETED_STORAGE_KEY = "yummi.preferences.completed.v1";
+const PREFERENCES_TAGS_VERSION = "2025.02.0"; // Keep in sync with data/tags/defined_tags.json
+const PREFERENCES_API_ENDPOINT = API_BASE_URL
+  ? `${API_BASE_URL}/preferences`
+  : null;
 const PREFERENCE_CONTROL_STATES = [
   { id: "like", label: "Like", icon: "👍" },
   { id: "neutral", label: "Skip", icon: "○" },
@@ -707,6 +737,10 @@ function AppContent() {
   const [activePreferenceIndex, setActivePreferenceIndex] = useState(0);
   const [hasAcknowledgedPreferenceComplete, setHasAcknowledgedPreferenceComplete] =
     useState(false);
+  const [hasFetchedRemotePreferences, setHasFetchedRemotePreferences] = useState(false);
+  const [isPreferenceSyncing, setIsPreferenceSyncing] = useState(false);
+  const [preferencesSyncError, setPreferencesSyncError] = useState(null);
+  const [lastPreferencesSyncedAt, setLastPreferencesSyncedAt] = useState(null);
   const [screen, setScreen] = useState("home");
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -733,6 +767,7 @@ function AppContent() {
   const [isTopUpLoading, setIsTopUpLoading] = useState(false);
   const [payfastSession, setPayfastSession] = useState(null);
   const [payfastMonitor, setPayfastMonitor] = useState(null);
+  const preferenceSyncHashRef = useRef(null);
 
   const { height: SCREEN_HEIGHT } = Dimensions.get("window");
   const isSmallDevice = SCREEN_HEIGHT < 740;
@@ -814,6 +849,13 @@ function AppContent() {
   }, []);
 
   useEffect(() => {
+    setHasFetchedRemotePreferences(false);
+    setLastPreferencesSyncedAt(null);
+    setPreferencesSyncError(null);
+    preferenceSyncHashRef.current = null;
+  }, [userId]);
+
+  useEffect(() => {
     let isActive = true;
     const hydratePreferences = async () => {
       try {
@@ -890,6 +932,144 @@ function AppContent() {
   }, [isPreferenceStateReady, isPreferencesFlowComplete]);
 
   useEffect(() => {
+    if (
+      !isPreferenceStateReady ||
+      !PREFERENCES_API_ENDPOINT ||
+      hasFetchedRemotePreferences ||
+      !userId
+    ) {
+      return;
+    }
+    let isCancelled = false;
+    const fetchPreferences = async () => {
+      try {
+        const headers = await buildAuthHeaders();
+        const response = await fetch(PREFERENCES_API_ENDPOINT, {
+          headers,
+        });
+        if (!response.ok) {
+          if (response.status === 404) {
+            return;
+          }
+          throw new Error(`Preference fetch failed (${response.status})`);
+        }
+        const payload = await response.json();
+        if (isCancelled) {
+          return;
+        }
+        const remoteResponses = payload?.responses ?? {};
+        const remoteHash = JSON.stringify(remoteResponses ?? {});
+        const localHash = JSON.stringify(preferenceResponses ?? {});
+        const hasRemoteSelections =
+          remoteResponses && Object.keys(remoteResponses).length > 0;
+        const hasLocalSelections =
+          preferenceResponses && Object.keys(preferenceResponses).length > 0;
+        if (hasRemoteSelections && !hasLocalSelections) {
+          setPreferenceResponses(applyPreferenceSmartLogic(remoteResponses));
+          preferenceSyncHashRef.current = remoteHash;
+        } else if (remoteHash && remoteHash === localHash) {
+          preferenceSyncHashRef.current = remoteHash;
+        }
+        if (payload?.completionStage === "complete") {
+          setIsPreferencesFlowComplete(true);
+          setHasAcknowledgedPreferenceComplete(true);
+        }
+        if (payload?.lastSyncedAt) {
+          const parsed = parseServerDate(payload.lastSyncedAt);
+          if (parsed) {
+            setLastPreferencesSyncedAt(parsed);
+          }
+        }
+      } catch (error) {
+        if (__DEV__) {
+          console.warn("Unable to fetch saved preferences", error);
+        }
+      } finally {
+        if (!isCancelled) {
+          setHasFetchedRemotePreferences(true);
+        }
+      }
+    };
+    fetchPreferences();
+    return () => {
+      isCancelled = true;
+    };
+  }, [
+    buildAuthHeaders,
+    hasFetchedRemotePreferences,
+    isPreferenceStateReady,
+    preferenceResponses,
+    userId,
+  ]);
+
+  useEffect(() => {
+    if (
+      !isPreferenceStateReady ||
+      !PREFERENCES_API_ENDPOINT ||
+      !isPreferencesFlowComplete
+    ) {
+      return;
+    }
+    const responsesSnapshot = preferenceResponses ?? {};
+    const serialized = JSON.stringify(responsesSnapshot ?? {});
+    if (!serialized) {
+      return;
+    }
+    if (preferenceSyncHashRef.current === serialized) {
+      return;
+    }
+    let isCancelled = false;
+    const syncPreferences = async () => {
+      setIsPreferenceSyncing(true);
+      setPreferencesSyncError(null);
+      try {
+        const headers = await buildAuthHeaders({
+          "Content-Type": "application/json",
+        });
+        const response = await fetch(PREFERENCES_API_ENDPOINT, {
+          method: "PUT",
+          headers,
+          body: JSON.stringify({
+            tagsVersion: PREFERENCES_TAGS_VERSION,
+            responses: responsesSnapshot,
+            completionStage: "complete",
+            completedAt: new Date().toISOString(),
+          }),
+        });
+        if (!response.ok) {
+          throw new Error(`Preference sync failed (${response.status})`);
+        }
+        const payload = await response.json();
+        if (isCancelled) {
+          return;
+        }
+        preferenceSyncHashRef.current = serialized;
+        setPreferencesSyncError(null);
+        const parsed = parseServerDate(payload?.lastSyncedAt) ?? new Date();
+        setLastPreferencesSyncedAt(parsed);
+      } catch (error) {
+        if (isCancelled) {
+          return;
+        }
+        setPreferencesSyncError(error?.message ?? "Unable to sync preferences");
+      } finally {
+        if (!isCancelled) {
+          setIsPreferenceSyncing(false);
+        }
+      }
+    };
+    syncPreferences();
+    return () => {
+      isCancelled = true;
+    };
+  }, [
+    buildAuthHeaders,
+    isPreferenceStateReady,
+    isPreferencesFlowComplete,
+    preferenceResponses,
+  ]);
+
+  useEffect(() => {
     if (activePreferenceIndex >= preferenceCategories.length) {
       setActivePreferenceIndex(
         preferenceCategories.length > 0
@@ -963,6 +1143,10 @@ function AppContent() {
     setPreferenceResponses({});
     setActivePreferenceIndex(0);
     setIsPreferencesFlowComplete(false);
+    setHasAcknowledgedPreferenceComplete(false);
+    setLastPreferencesSyncedAt(null);
+    setPreferencesSyncError(null);
+    preferenceSyncHashRef.current = null;
     try {
       await SecureStore.deleteItemAsync(PREFERENCES_STATE_STORAGE_KEY);
     } catch (error) {
@@ -2034,6 +2218,19 @@ function AppContent() {
             <Text style={styles.prefLogicText}>
               You can revisit these preferences at any time.
             </Text>
+            {lastPreferencesSyncedAt ? (
+              <Text style={styles.preferencesSyncMeta}>
+                Synced {formatDateTime(lastPreferencesSyncedAt)}
+              </Text>
+            ) : null}
+            {isPreferenceSyncing ? (
+              <Text style={styles.preferencesSyncMeta}>Syncing preferences…</Text>
+            ) : null}
+            {preferencesSyncError ? (
+              <Text style={styles.preferencesSyncError}>
+                {preferencesSyncError}
+              </Text>
+            ) : null}
           </View>
           <View style={styles.prefCompleteActions}>
             <TouchableOpacity
@@ -2686,6 +2883,18 @@ const styles = StyleSheet.create({
     marginTop: 12,
     fontSize: 14,
     color: "#3c5a47",
+  },
+  preferencesSyncMeta: {
+    marginTop: 12,
+    fontSize: 14,
+    color: "#4c4c4c",
+    textAlign: "center",
+  },
+  preferencesSyncError: {
+    marginTop: 12,
+    fontSize: 14,
+    color: "#b3261e",
+    textAlign: "center",
   },
   prefProgressContainer: {
     backgroundColor: "#ffffff",

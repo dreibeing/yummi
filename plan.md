@@ -13,6 +13,7 @@ Produce a validated archetype repository that satisfies the contracts in `yummi_
 - **Step 5:** Initial QA + GPT-5 curation finished for run `data/archetypes/run_20251112T091259Z`. Raw outputs + recommendations live under `…/curation/`.
 - **Step 6:** Aggregated meals are now published via `scripts/meal_aggregate_builder.py`, which emits `resolver/meals/meals_manifest.json` (Fly serves this through `/v1/meals*`). Parquet packaging/checksums remain optional until `pyarrow` is installed, and we still need a process note for release tagging.
 - **Ingredient normalization (new pipeline):** `scripts/ingredient_cleanup.py` + `data/catalog_filters.json` trim the Woolworths catalog to 6 k candidates, `scripts/ingredient_batch_builder.py` emits single-item GPT batches, `scripts/ingredient_llm_classifier.py` (model `gpt-5-nano-2025-08-07`, `--max-output-tokens 5000`) classified every SKU into `ingredient`/`ready_meal`, and `scripts/ingredient_classifications_builder.py` produced `data/ingredients/ingredient_classifications.{jsonl,csv}` plus a deduped list at `data/ingredients/unique_core_items.csv`.
+- **Preference sync:** Expo onboarding now persists tag selections via `/v1/preferences`, which stores normalized responses in `user_preference_profiles` on Fly (deployed 2025-11-17). Runtime work must read from this table going forward.
 
 ## Build Steps
 1. **Tag Vocabulary & Versioning**  
@@ -50,3 +51,4 @@ Produce a validated archetype repository that satisfies the contracts in `yummi_
 3. Wire curator recommendations (keep/modify/replace) into the next generation run or manual edits, then re-run the curator to confirm overlap clusters are resolved.
 4. Hook the thin-slice app + extension to `/v1/meals` and `/v1/meals/{uid}`, add caching/invalidation guidance, and confirm an end-to-end thin-slice journey uses the hosted manifest.
 5. Review `data/ingredients/unique_core_items.csv` with product/culinary leads, lock a `canonical_ingredients` schema/version, and feed that list into the upcoming meal-generation prompt so recipes reference normalized ingredient IDs instead of retailer SKUs.
+6. Read `user_preference_profiles` when building candidate pools so meal scoring honors saved diet/allergen tags; document the contract that `/v1/preferences` now satisfies for downstream services.

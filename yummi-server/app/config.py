@@ -24,6 +24,7 @@ class Settings(BaseSettings):
     redis_url: str | None = Field(default=None)
     catalog_path: str | None = Field(default="resolver/catalog.json")
     meals_manifest_path: str | None = Field(default="resolver/meals/meals_manifest.json")
+    tags_manifest_path: str | None = Field(default="data/tags/defined_tags.json")
     thin_runner_log_path: str = Field(default="data/thin-runner-log.txt")
     thin_slice_enabled: bool = Field(default=True)
 

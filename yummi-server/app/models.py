@@ -92,3 +92,19 @@ class WalletAccountState(Base, TimestampMixin):
     spend_blocked: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
     lock_reason: Mapped[Optional[str]] = mapped_column(String(64))
     lock_note: Mapped[Optional[str]] = mapped_column(String(255))
+
+
+class UserPreferenceProfile(Base, TimestampMixin):
+    __tablename__ = "user_preference_profiles"
+
+    user_id: Mapped[str] = mapped_column(String(128), primary_key=True)
+    tags_version: Mapped[Optional[str]] = mapped_column(String(32))
+    json_type = JSON().with_variant(JSONB, "postgresql")
+    responses: Mapped[dict] = mapped_column(json_type, nullable=False, default=dict)
+    selected_tags: Mapped[dict] = mapped_column(json_type, nullable=False, default=dict)
+    disliked_tags: Mapped[dict] = mapped_column(json_type, nullable=False, default=dict)
+    completion_stage: Mapped[str] = mapped_column(String(32), nullable=False, default="in_progress")
+    completed_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True))
+    last_synced_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), server_default=func.now(), nullable=False
+    )

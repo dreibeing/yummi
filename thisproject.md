@@ -38,6 +38,7 @@ We operate a production-ready pipeline that prepares product data, enriches bask
 - Sandbox PayFast top-up succeeded (R100 on 2025-11-10) after aligning signature ordering with the official SDK and adding `python-multipart`; ITN hit `/v1/payments/payfast/itn` and the wallet credited immediately (runbook + logs captured in [payfastmigration.md](payfastmigration.md)).
 - Fly staging now mirrors the sandbox flow (R100 on 2025-11-11) using Clerk-verified requests and remote ITN validation; secrets live in Fly and the hosted return/cancel bridges run from `yummi-server-greenbean.fly.dev`.
 - Thin-slice Expo client fetches wallet balances, launches PayFast hosted checkout, and refreshes the ledger automatically; repeated top-ups increment the wallet without extra taps ([thin-slice-app/App.js](thin-slice-app/App.js)).
+- Preference onboarding now persists to Fly: `/v1/preferences` accepts Clerk-authenticated PUT/GET calls, stores normalized preference tags in `user_preference_profiles`, and the Expo flow surfaces the sync timestamp after completion.
 - `/v1/payments/payfast/status` enforces Clerk auth + owner checks, and remote validation can only be skipped with `PAYFAST_SKIP_REMOTE_VALIDATION=true` (dev default). CORS defaults tightened via [`env.staging`](env.staging)/[`env.prod`](env.prod).
 - Observability/logging and Docker/Fly infrastructure captured in [server.md](server.md); deployment-ready Compose + Fly configs exist.
 - Data ingestion and cart-fill flows operate via the resolver, thin-slice endpoints, and Chrome extension runtime.
@@ -177,3 +178,4 @@ See [plan.md](plan.md) for the authoritative roadmap. Top priorities for the nex
 3. **PayFast production rollout** — clone the hardened staging config into production Fly apps, keep `PAYFAST_SKIP_REMOTE_VALIDATION=false`, and add monitoring/alerts using the regression log in [payfastmigration.md](payfastmigration.md).
 4. **Chargeback/refund groundwork** — design debit/negative-balance handling in backend services (refer to [Chargebacks.txt](Chargebacks.txt)).
 5. **Wallet UI polish** — expand thin-slice UI to show full transaction history and flag negative balances before chargeback logic hardens.
+6. **Preference-driven runtime** — plug the newly stored `user_preference_profiles` into meal filtering and runner logic so `/v1/meals*` can honor saved diet/allergen tags per user.

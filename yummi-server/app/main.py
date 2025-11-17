@@ -14,7 +14,7 @@ from .config import get_settings
 from .db import init_engine
 from .observability import configure_logging, init_sentry
 from .startup import validate_settings
-from .routes import health, me, catalog, orders, ai, admin, thin, payfast, wallet, meals
+from .routes import health, me, catalog, orders, ai, admin, thin, payfast, wallet, meals, preferences
 from .ratelimit import limiter
 from slowapi.errors import RateLimitExceeded
 from slowapi import _rate_limit_exceeded_handler
@@ -66,6 +66,7 @@ def create_app() -> FastAPI:
     app.include_router(thin.router, prefix=f"{prefix}/thin")
     app.include_router(payfast.router, prefix=prefix)
     app.include_router(wallet.router, prefix=prefix)
+    app.include_router(preferences.router, prefix=prefix)
 
     # Rate limit handling
     app.state.limiter = limiter
