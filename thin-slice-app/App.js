@@ -26,6 +26,7 @@ import {
 } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import { WebView } from "react-native-webview";
+import { Feather } from "@expo/vector-icons";
 import { createExtensionRuntimeScript } from "./extensionRuntime";
 import {
   ClerkProvider,
@@ -1796,6 +1797,7 @@ function AppContent() {
               style={styles.welcomeLogo}
               resizeMode="contain"
             />
+            <Text style={styles.welcomeTagline}>Your personal meal shopper</Text>
           </View>
           <View style={styles.welcomeCenter}>
             <View style={styles.usagePanel}>
@@ -1805,19 +1807,21 @@ function AppContent() {
                   <Text style={styles.freeUsesValueSuffix}>Free uses left</Text>
                 </View>
               </View>
-              <TouchableOpacity
-                style={styles.shareCard}
-                onPress={handleShareForFreeUses}
-                activeOpacity={0.9}
-              >
-                <Text style={styles.shareIcon}>↗</Text>
-                <View style={styles.shareTextGroup}>
-                  <Text style={styles.sharePrimary}>Share to earn +10 uses</Text>
-                  <Text style={styles.shareSecondary}>
-                    Invite a friend to get 10 bonus uses.
+              <View style={styles.shareSection}>
+                <TouchableOpacity
+                  style={[styles.welcomeButton, styles.shareButton]}
+                  onPress={handleShareForFreeUses}
+                  activeOpacity={0.9}
+                >
+                  <Text style={[styles.welcomeButtonText, styles.shareButtonText]}>
+                    Give 10, get 10
                   </Text>
-                </View>
-              </TouchableOpacity>
+                  <Feather name="share-2" size={22} style={styles.shareButtonIcon} />
+                </TouchableOpacity>
+                <Text style={styles.shareSubline}>
+                  Share with a friend, you both get 10 free uses.
+                </Text>
+              </View>
             </View>
           </View>
         </ScrollView>
@@ -2558,13 +2562,22 @@ const styles = StyleSheet.create({
   welcomeCenter: {
     justifyContent: "flex-start",
     alignItems: "center",
-    marginTop: -200,
-    marginBottom: 12,
+    marginTop: -252,
+    marginBottom: 0,
   },
   welcomeLogo: {
     width: "100%",
     aspectRatio: 4.5,
     maxHeight: 120,
+  },
+  welcomeTagline: {
+    marginTop: 6,
+    marginBottom: 32,
+    fontSize: 14,
+    fontWeight: "400",
+    letterSpacing: 0.4,
+    color: "rgba(27, 63, 47, 0.88)",
+    textAlign: "center",
   },
   usagePanel: {
     width: "100%",
@@ -2577,7 +2590,7 @@ const styles = StyleSheet.create({
     shadowRadius: 20,
     shadowOffset: { width: 0, height: 12 },
     elevation: 6,
-    gap: 40,
+    gap: 32,
   },
   freeUsesCard: {
     width: "100%",
@@ -2605,43 +2618,37 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     color: "#1a4f36",
   },
-  shareCard: {
+  shareSection: {
     width: "100%",
+    alignItems: "center",
+    gap: 16,
+    marginBottom: 48,
+  },
+  shareButton: {
     flexDirection: "row",
     alignItems: "center",
-    paddingVertical: 15,
-    paddingHorizontal: 28,
-    borderRadius: 16,
-    backgroundColor: "#ffffff",
-    shadowColor: "#1c3d2d",
-    shadowOpacity: 0.035,
-    shadowRadius: 9,
-    shadowOffset: { width: 0, height: 6 },
-    elevation: 2,
-    gap: 18,
+    justifyContent: "center",
+    paddingHorizontal: 24,
   },
-  shareIcon: {
-    fontSize: 26,
-    fontWeight: "700",
-    color: "#0c7f4a",
-  },
-  shareTextGroup: {
+  shareButtonText: {
     flex: 1,
-    gap: 2,
+    textAlign: "center",
   },
-  sharePrimary: {
-    fontSize: 16,
-    fontWeight: "700",
-    color: "#0c3c28",
+  shareButtonIcon: {
+    color: "#ffffff",
+    marginLeft: 12,
   },
-  shareSecondary: {
-    fontSize: 13,
-    color: "#4a6a5a",
+  shareSubline: {
+    fontSize: 12,
+    color: "#6b6b6b",
+    textAlign: "center",
+    width: "100%",
   },
   welcomeFooter: {
     paddingHorizontal: 24,
     paddingBottom: 36,
     paddingTop: 12,
+    marginTop: 36,
     backgroundColor: "#f4f9f5",
     justifyContent: "center",
     alignItems: "center",
