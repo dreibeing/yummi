@@ -15,11 +15,14 @@ import {
   Alert,
   Platform,
   ScrollView,
+  Share,
   StyleSheet,
   Text,
   TextInput,
   TouchableOpacity,
+  Image,
   View,
+  Dimensions,
 } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import { WebView } from "react-native-webview";
@@ -285,6 +288,7 @@ const stageLabels = {
 function AppContent() {
   const { getToken, signOut, isLoaded: isAuthLoaded, userId } = useAuth();
   const { user } = useUser();
+  const [isWelcomeComplete, setIsWelcomeComplete] = useState(false);
   const [screen, setScreen] = useState("home");
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -311,6 +315,11 @@ function AppContent() {
   const [isTopUpLoading, setIsTopUpLoading] = useState(false);
   const [payfastSession, setPayfastSession] = useState(null);
   const [payfastMonitor, setPayfastMonitor] = useState(null);
+
+  const { height: SCREEN_HEIGHT } = Dimensions.get("window");
+  const isSmallDevice = SCREEN_HEIGHT < 740;
+  const FREE_USES_FONT_SIZE = isSmallDevice ? 68 : 84;
+  const FOOTER_PADDING = 110;
 
   const userDisplayName = useMemo(() => {
     const primaryEmail = user?.primaryEmailAddress?.emailAddress;
@@ -355,12 +364,78 @@ function AppContent() {
     );
   }, [handleSignOut, userDisplayName]);
 
+  const handleShareForFreeUses = useCallback(async () => {
+    try {
+      await Share.share({
+        title: "Invite friends to Yummi",
+        message:
+          "Try Yummi for curated meals and grocery automation. Use my link to get bonus uses: https://yummi.app/referral",
+      });
+    } catch (error) {
+      Alert.alert("Unable to share", "Please try again.");
+    }
+  }, []);
+
   if (!isAuthLoaded) {
     return (
       <SafeAreaView style={styles.safeArea}>
         <StatusBar style="dark" />
         <View style={styles.loadingContainer}>
           <ActivityIndicator size="large" color="#222" />
+        </View>
+      </SafeAreaView>
+    );
+  }
+
+  if (!isWelcomeComplete) {
+    return (
+      <SafeAreaView style={styles.welcomeSafeArea}>
+        <StatusBar style="dark" />
+        <ScrollView
+          contentContainerStyle={[
+            styles.welcomeScroll,
+            { paddingBottom: FOOTER_PADDING },
+          ]}
+          showsVerticalScrollIndicator={false}
+        >
+          <View style={styles.welcomeHero}>
+            <Image
+              source={require("./assets/yummi-logo.png")}
+              style={styles.welcomeLogo}
+              resizeMode="contain"
+            />
+          </View>
+          <View style={styles.welcomeCenter}>
+            <View style={styles.usagePanel}>
+              <View style={styles.freeUsesCard}>
+                <View style={styles.freeUsesValueStack}>
+                  <Text style={[styles.freeUsesValueNumber, { fontSize: FREE_USES_FONT_SIZE }]}>10</Text>
+                  <Text style={styles.freeUsesValueSuffix}>Free uses left</Text>
+                </View>
+              </View>
+              <TouchableOpacity
+                style={styles.shareCard}
+                onPress={handleShareForFreeUses}
+                activeOpacity={0.9}
+              >
+                <Text style={styles.shareIcon}>↗</Text>
+                <View style={styles.shareTextGroup}>
+                  <Text style={styles.sharePrimary}>Share to earn +10 uses</Text>
+                  <Text style={styles.shareSecondary}>
+                    Invite a friend to get 10 bonus uses.
+                  </Text>
+                </View>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </ScrollView>
+        <View style={styles.welcomeFooter}>
+          <TouchableOpacity
+            style={styles.welcomeButton}
+            onPress={() => setIsWelcomeComplete(true)}
+          >
+              <Text style={styles.welcomeButtonText}>Start shopping!</Text>
+          </TouchableOpacity>
         </View>
       </SafeAreaView>
     );
@@ -1642,11 +1717,134 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#f5f5f5",
   },
+  welcomeSafeArea: {
+    flex: 1,
+    backgroundColor: "#f4f9f5",
+  },
   loadingContainer: {
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
     padding: 24,
+  },
+  welcomeScroll: {
+    flexGrow: 1,
+    paddingHorizontal: 24,
+    paddingTop: 8,
+  },
+  welcomeHero: {
+    width: "100%",
+    alignItems: "center",
+    marginBottom: -120,
+  },
+  welcomeCenter: {
+    justifyContent: "flex-start",
+    alignItems: "center",
+    marginTop: -200,
+    marginBottom: 12,
+  },
+  welcomeLogo: {
+    width: "100%",
+    aspectRatio: 4.5,
+    maxHeight: 120,
+  },
+  usagePanel: {
+    width: "100%",
+    maxWidth: 420,
+    backgroundColor: "#ffffff",
+    borderRadius: 24,
+    padding: 20,
+    shadowColor: "#2d4739",
+    shadowOpacity: 0.08,
+    shadowRadius: 20,
+    shadowOffset: { width: 0, height: 12 },
+    elevation: 6,
+    gap: 40,
+  },
+  freeUsesCard: {
+    width: "100%",
+    paddingVertical: 24,
+    paddingHorizontal: 22,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#d5e8dc",
+    backgroundColor: "#f4fbf6",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  freeUsesValueStack: {
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 4,
+  },
+  freeUsesValueNumber: {
+    fontSize: 84,
+    fontWeight: "700",
+    color: "#00a651",
+  },
+  freeUsesValueSuffix: {
+    fontSize: 18,
+    fontWeight: "600",
+    color: "#1a4f36",
+  },
+  shareCard: {
+    width: "100%",
+    flexDirection: "row",
+    alignItems: "center",
+    paddingVertical: 15,
+    paddingHorizontal: 28,
+    borderRadius: 16,
+    backgroundColor: "#ffffff",
+    shadowColor: "#1c3d2d",
+    shadowOpacity: 0.035,
+    shadowRadius: 9,
+    shadowOffset: { width: 0, height: 6 },
+    elevation: 2,
+    gap: 18,
+  },
+  shareIcon: {
+    fontSize: 26,
+    fontWeight: "700",
+    color: "#0c7f4a",
+  },
+  shareTextGroup: {
+    flex: 1,
+    gap: 2,
+  },
+  sharePrimary: {
+    fontSize: 16,
+    fontWeight: "700",
+    color: "#0c3c28",
+  },
+  shareSecondary: {
+    fontSize: 13,
+    color: "#4a6a5a",
+  },
+  welcomeFooter: {
+    paddingHorizontal: 24,
+    paddingBottom: 36,
+    paddingTop: 12,
+    backgroundColor: "#f4f9f5",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  welcomeButton: {
+    backgroundColor: "#00a651",
+    paddingVertical: 18,
+    borderRadius: 20,
+    alignItems: "center",
+    justifyContent: "center",
+    width: "100%",
+    maxWidth: 420,
+    shadowColor: "#000",
+    shadowOpacity: 0.2,
+    shadowRadius: 8,
+    shadowOffset: { width: 0, height: 4 },
+  },
+  welcomeButtonText: {
+    fontSize: 16,
+    fontWeight: "700",
+    color: "#ffffff",
   },
   header: {
     paddingHorizontal: 20,
