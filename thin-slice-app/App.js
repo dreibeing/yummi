@@ -198,6 +198,416 @@ const formatCurrency = (minor, currency = "ZAR") => {
   return `${currency.toUpperCase()} ${amount}`;
 };
 
+const PREFERENCES_STATE_STORAGE_KEY = "yummi.preferences.state.v1";
+const PREFERENCES_COMPLETED_STORAGE_KEY = "yummi.preferences.completed.v1";
+const PREFERENCE_CONTROL_STATES = [
+  { id: "like", label: "Like", icon: "👍" },
+  { id: "neutral", label: "Skip", icon: "○" },
+  { id: "dislike", label: "Dislike", icon: "👎" },
+];
+const VEGETARIAN_PROTEIN_DISLIKES = [
+  "protein_chicken",
+  "protein_beef",
+  "protein_pork",
+  "protein_lamb",
+  "protein_seafood",
+];
+const VEGAN_ADDITIONAL_PROTEIN_DISLIKES = ["protein_egg"];
+const PLANT_FRIENDLY_PROTEINS = [
+  "protein_legume",
+  "protein_tofu",
+  "protein_mushroom",
+  "protein_egg",
+];
+const BASE_PREFERENCE_CATEGORIES = [
+  {
+    id: "diet",
+    title: "Diet Preferences",
+    description: "Tell us which dietary patterns match your household.",
+    tags: [
+      { id: "diet_omnivore", label: "Omnivore" },
+      { id: "diet_flex", label: "Flexitarian" },
+      { id: "diet_veg", label: "Vegetarian" },
+      { id: "diet_vegan", label: "Vegan" },
+      { id: "diet_pesc", label: "Pescatarian" },
+      { id: "diet_poultry", label: "Poultry only" },
+      { id: "diet_lowcarb", label: "Low carb" },
+      { id: "diet_keto", label: "Keto" },
+      { id: "diet_glutenaware", label: "Gluten aware" },
+      { id: "diet_highprotein", label: "High protein" },
+    ],
+  },
+  {
+    id: "cuisine",
+    title: "Cuisine Types",
+    description: "Highlight the cuisines you’re most excited about.",
+    tags: [
+      { id: "cuisine_southaf", label: "South African" },
+      { id: "cuisine_medit", label: "Mediterranean" },
+      { id: "cuisine_italian", label: "Italian" },
+      { id: "cuisine_latin", label: "Latin American" },
+      { id: "cuisine_indian", label: "Indian" },
+      { id: "cuisine_mideast", label: "Middle Eastern" },
+      { id: "cuisine_eastasian", label: "East Asian" },
+      { id: "cuisine_seasian", label: "Southeast Asian" },
+      { id: "cuisine_northaf", label: "North African" },
+      { id: "cuisine_modamerican", label: "Modern American" },
+    ],
+  },
+  {
+    id: "cuisineOpenness",
+    title: "Flavor Exploration",
+    description: "How adventurous should we get with global flavors?",
+    tags: [
+      { id: "copen_familiar", label: "Familiar classics" },
+      { id: "copen_regional", label: "Regional twists" },
+      { id: "copen_global", label: "Global explorer" },
+      { id: "copen_experimental", label: "Experimental fusion" },
+    ],
+  },
+  {
+    id: "proteinBase",
+    title: "Protein Bases",
+    description: "Pick the primary proteins that should drive meals.",
+    tags: [
+      { id: "protein_chicken", label: "Chicken" },
+      { id: "protein_beef", label: "Beef" },
+      { id: "protein_pork", label: "Pork" },
+      { id: "protein_lamb", label: "Lamb" },
+      { id: "protein_seafood", label: "Seafood" },
+      { id: "protein_legume", label: "Legumes" },
+      { id: "protein_tofu", label: "Tofu & tempeh" },
+      { id: "protein_egg", label: "Eggs" },
+      { id: "protein_mushroom", label: "Mushrooms" },
+    ],
+  },
+  {
+    id: "dishFormat",
+    title: "Dish Formats",
+    description: "Tell us the meal formats that feel like home.",
+    tags: [
+      { id: "format_bowl", label: "Bowls" },
+      { id: "format_salad", label: "Salads" },
+      { id: "format_soup", label: "Soups & stews" },
+      { id: "format_onepan", label: "One-pan meals" },
+      { id: "format_sheetpan", label: "Sheet-pan meals" },
+      { id: "format_wrap", label: "Wraps & handhelds" },
+      { id: "format_pasta", label: "Pastas" },
+      { id: "format_sandwich", label: "Sandwiches" },
+      { id: "format_mealprep", label: "Meal prep portions" },
+    ],
+  },
+  {
+    id: "technique",
+    title: "Cooking Techniques",
+    description: "Feature the cooking methods you love (or want to avoid).",
+    tags: [
+      { id: "tech_saute", label: "Sauté" },
+      { id: "tech_roast", label: "Roast" },
+      { id: "tech_grill", label: "Grill" },
+      { id: "tech_stirfry", label: "Stir-fry" },
+      { id: "tech_pressure", label: "Pressure cook" },
+      { id: "tech_slow", label: "Slow cooker" },
+      { id: "tech_airfry", label: "Air fry" },
+      { id: "tech_nocook", label: "No-cook" },
+      { id: "tech_bake", label: "Bake" },
+    ],
+  },
+  {
+    id: "prepTime",
+    title: "Prep Time",
+    description: "How much hands-on time works for your routine?",
+    tags: [
+      { id: "preptime_under15", label: "< 15 minutes" },
+      { id: "preptime_15_30", label: "15–30 minutes" },
+      { id: "preptime_30_45", label: "30–45 minutes" },
+      { id: "preptime_45plus", label: "45+ minutes" },
+    ],
+  },
+  {
+    id: "complexity",
+    title: "Skill & Complexity",
+    description: "Match recipe difficulty to your comfort level.",
+    tags: [
+      { id: "complex_easy", label: "Simple" },
+      { id: "complex_mid", label: "Intermediate" },
+      { id: "complex_adv", label: "Advanced" },
+      { id: "complex_show", label: "Showstopper" },
+    ],
+  },
+  {
+    id: "heatSpice",
+    title: "Heat & Spice",
+    description: "Set your tolerance for spice and heat.",
+    tags: [
+      { id: "heat_none", label: "No heat" },
+      { id: "heat_mild", label: "Mild" },
+      { id: "heat_medium", label: "Medium" },
+      { id: "heat_hot", label: "Hot" },
+      { id: "heat_extra", label: "Extra hot" },
+    ],
+  },
+  {
+    id: "audience",
+    title: "Who Are We Feeding?",
+    description: "Help us scale portions and vibes to your audience.",
+    tags: [
+      { id: "audience_solo", label: "Solo" },
+      { id: "audience_couple", label: "Couple" },
+      { id: "audience_family", label: "Family" },
+      { id: "audience_mealprep", label: "Meal prep stash" },
+      { id: "audience_entertain", label: "Entertaining" },
+    ],
+  },
+  {
+    id: "budgetLevel",
+    title: "Budget & Ingredients",
+    description: "Set the ingredient spend you’re comfortable with.",
+    tags: [
+      { id: "budget_value", label: "Value staples" },
+      { id: "budget_affordable", label: "Affordable" },
+      { id: "budget_balanced", label: "Balanced mix" },
+      { id: "budget_premium", label: "Premium occasions" },
+      { id: "budget_luxury", label: "Luxury experience" },
+    ],
+  },
+  {
+    id: "occasion",
+    title: "Occasions",
+    description: "Tag the occasions you plan for most often.",
+    tags: [
+      { id: "occasion_weeknight", label: "Weeknight staples" },
+      { id: "occasion_weekend", label: "Weekend projects" },
+      { id: "occasion_entertaining", label: "Entertaining" },
+      { id: "occasion_comfort", label: "Comfort food" },
+      { id: "occasion_light", label: "Light lunches" },
+    ],
+  },
+  {
+    id: "ethics",
+    title: "Ethics & Religious Needs",
+    description: "Respect cultural or ethical guardrails every time.",
+    tags: [
+      { id: "ethics_halal", label: "Halal" },
+      { id: "ethics_kosher", label: "Kosher-style" },
+      { id: "ethics_jain", label: "Jain-friendly" },
+      { id: "ethics_sussea", label: "Sustainable seafood" },
+      { id: "ethics_animal", label: "Animal welfare" },
+    ],
+  },
+  {
+    id: "allergens",
+    title: "Avoidances & Allergens",
+    description: "Flag anything that must stay out of your kitchen.",
+    tags: [
+      { id: "allergen_gluten", label: "Gluten" },
+      { id: "allergen_dairy", label: "Dairy" },
+      { id: "allergen_egg", label: "Eggs" },
+      { id: "allergen_soy", label: "Soy" },
+      { id: "allergen_peanut", label: "Peanuts" },
+      { id: "allergen_treenut", label: "Tree nuts" },
+      { id: "allergen_shellfish", label: "Shellfish" },
+      { id: "allergen_fish", label: "Fish" },
+      { id: "allergen_sesame", label: "Sesame" },
+      { id: "allergen_mustard", label: "Mustard" },
+    ],
+  },
+  {
+    id: "nutritionFocus",
+    title: "Nutrition Focus",
+    description: "Call out wellness goals we should optimize for.",
+    tags: [
+      { id: "nutrition_highprotein", label: "High protein" },
+      { id: "nutrition_lowcal", label: "Low calorie" },
+      { id: "nutrition_heart", label: "Heart healthy" },
+      { id: "nutrition_fiber", label: "High fiber" },
+      { id: "nutrition_diabetic", label: "Diabetic-friendly" },
+      { id: "nutrition_immune", label: "Immune support" },
+    ],
+  },
+  {
+    id: "equipment",
+    title: "Equipment",
+    description: "Let us know what gear is fair game.",
+    tags: [
+      { id: "equip_none", label: "No special gear" },
+      { id: "equip_oven", label: "Oven" },
+      { id: "equip_instantpot", label: "Instant Pot / pressure cooker" },
+      { id: "equip_slowcooker", label: "Slow cooker" },
+      { id: "equip_airfryer", label: "Air fryer" },
+      { id: "equip_blender", label: "Blender" },
+      { id: "equip_grill", label: "Outdoor grill" },
+    ],
+  },
+];
+const PREFERENCE_TAG_LABEL_LOOKUP = BASE_PREFERENCE_CATEGORIES.reduce(
+  (acc, category) => {
+    category.tags.forEach((tag) => {
+      acc[tag.id] = tag.label;
+    });
+    return acc;
+  },
+  {}
+);
+
+const clonePreferenceResponses = (responses = {}) => {
+  return Object.entries(responses).reduce((acc, [categoryId, values]) => {
+    acc[categoryId] = { ...values };
+    return acc;
+  }, {});
+};
+
+const ensurePreferenceValue = (
+  draft,
+  categoryId,
+  tagId,
+  desiredValue,
+  options = {}
+) => {
+  const { protectLikes = true } = options;
+  if (!draft[categoryId]) {
+    draft[categoryId] = {};
+  }
+  const currentValue = draft[categoryId][tagId];
+  if (protectLikes && currentValue === "like" && desiredValue !== "like") {
+    return false;
+  }
+  if (currentValue === desiredValue) {
+    return false;
+  }
+  draft[categoryId][tagId] = desiredValue;
+  return true;
+};
+
+const applyPreferenceSmartLogic = (responses = {}) => {
+  const draft = clonePreferenceResponses(responses);
+  let didChange = false;
+
+  const dietSelections = draft.diet ?? {};
+  const isVegan = dietSelections.diet_vegan === "like";
+  const isVegetarian = dietSelections.diet_veg === "like";
+
+  if (isVegetarian) {
+    VEGETARIAN_PROTEIN_DISLIKES.forEach((tagId) => {
+      const changed = ensurePreferenceValue(
+        draft,
+        "proteinBase",
+        tagId,
+        "dislike"
+      );
+      if (changed) {
+        didChange = true;
+      }
+    });
+  }
+
+  if (isVegan) {
+    VEGETARIAN_PROTEIN_DISLIKES.concat(VEGAN_ADDITIONAL_PROTEIN_DISLIKES).forEach(
+      (tagId) => {
+        const changed = ensurePreferenceValue(
+          draft,
+          "proteinBase",
+          tagId,
+          "dislike"
+        );
+        if (changed) {
+          didChange = true;
+        }
+      }
+    );
+  }
+
+  return didChange ? draft : responses;
+};
+
+const shouldSkipPreferenceCategory = (categoryId, responses = {}) => {
+  const dietSelections = responses.diet ?? {};
+  if (categoryId === "proteinBase" && dietSelections.diet_vegan === "like") {
+    return true;
+  }
+  return false;
+};
+
+const filterPreferenceCategoryTags = (category, responses = {}) => {
+  const dietSelections = responses.diet ?? {};
+
+  if (category.id === "proteinBase" && dietSelections.diet_veg === "like") {
+    if (dietSelections.diet_vegan === "like") {
+      return [];
+    }
+    return category.tags.filter((tag) =>
+      PLANT_FRIENDLY_PROTEINS.includes(tag.id)
+    );
+  }
+
+  return category.tags;
+};
+
+const buildPreferenceCategories = (responses = {}) => {
+  const categories = [];
+  BASE_PREFERENCE_CATEGORIES.forEach((category) => {
+    if (shouldSkipPreferenceCategory(category.id, responses)) {
+      return;
+    }
+    const filteredTags = filterPreferenceCategoryTags(category, responses);
+    if (filteredTags.length === 0) {
+      return;
+    }
+    categories.push({
+      ...category,
+      tags: filteredTags,
+    });
+  });
+  return categories;
+};
+
+const formatListForNotice = (items) => {
+  if (!items.length) {
+    return "";
+  }
+  if (items.length === 1) {
+    return items[0];
+  }
+  return `${items.slice(0, -1).join(", ")} and ${items[items.length - 1]}`;
+};
+
+const derivePreferenceNotices = (responses = {}) => {
+  const notices = [];
+  const dietSelections = responses.diet ?? {};
+  const allergenSelections = responses.allergens ?? {};
+
+  if (dietSelections.diet_vegan === "like") {
+    notices.push("We’ll skip protein options that conflict with a vegan diet.");
+  } else if (dietSelections.diet_veg === "like") {
+    notices.push("Protein tags now focus on vegetarian-friendly options.");
+  }
+
+  const avoidedLabels = Object.entries(allergenSelections)
+    .filter(([, value]) => value === "dislike")
+    .map(
+      ([key]) => PREFERENCE_TAG_LABEL_LOOKUP[key] ?? key.replace(/_/g, " ")
+    );
+
+  if (avoidedLabels.length > 0) {
+    notices.push(
+      `We’ll prioritize meals without ${formatListForNotice(avoidedLabels)}.`
+    );
+  }
+
+  return notices;
+};
+
+const getPreferenceValue = (responses, categoryId, tagId) => {
+  return responses?.[categoryId]?.[tagId] ?? "neutral";
+};
+
+const resolvePreferenceSelectionValue = (currentValue, requestedValue) => {
+  if (currentValue === requestedValue && requestedValue !== "neutral") {
+    return "neutral";
+  }
+  return requestedValue;
+};
+
 const shortReference = (value) => {
   if (!value) return "";
   if (value.length <= 10) return value;
@@ -289,6 +699,13 @@ function AppContent() {
   const { getToken, signOut, isLoaded: isAuthLoaded, userId } = useAuth();
   const { user } = useUser();
   const [isWelcomeComplete, setIsWelcomeComplete] = useState(false);
+  const [preferenceResponses, setPreferenceResponses] = useState({});
+  const [isPreferenceStateReady, setIsPreferenceStateReady] = useState(false);
+  const [isPreferencesFlowComplete, setIsPreferencesFlowComplete] =
+    useState(false);
+  const [activePreferenceIndex, setActivePreferenceIndex] = useState(0);
+  const [hasAcknowledgedPreferenceComplete, setHasAcknowledgedPreferenceComplete] =
+    useState(false);
   const [screen, setScreen] = useState("home");
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -320,6 +737,25 @@ function AppContent() {
   const isSmallDevice = SCREEN_HEIGHT < 740;
   const FREE_USES_FONT_SIZE = isSmallDevice ? 68 : 84;
   const FOOTER_PADDING = 110;
+  const preferenceCategories = useMemo(
+    () => buildPreferenceCategories(preferenceResponses),
+    [preferenceResponses]
+  );
+  const activePreferenceCategory =
+    preferenceCategories[activePreferenceIndex] ?? null;
+  const preferenceNotices = useMemo(
+    () => derivePreferenceNotices(preferenceResponses),
+    [preferenceResponses]
+  );
+  const activeCategoryRatingsCount =
+    activePreferenceCategory && preferenceResponses?.[activePreferenceCategory.id]
+      ? Object.keys(preferenceResponses[activePreferenceCategory.id]).length
+      : 0;
+  const shouldShowPreferenceCompletionScreen =
+    isWelcomeComplete &&
+    isPreferenceStateReady &&
+    isPreferencesFlowComplete &&
+    !hasAcknowledgedPreferenceComplete;
 
   const userDisplayName = useMemo(() => {
     const primaryEmail = user?.primaryEmailAddress?.emailAddress;
@@ -376,71 +812,171 @@ function AppContent() {
     }
   }, []);
 
-  if (!isAuthLoaded) {
-    return (
-      <SafeAreaView style={styles.safeArea}>
-        <StatusBar style="dark" />
-        <View style={styles.loadingContainer}>
-          <ActivityIndicator size="large" color="#222" />
-        </View>
-      </SafeAreaView>
-    );
-  }
+  useEffect(() => {
+    let isActive = true;
+    const hydratePreferences = async () => {
+      try {
+        const [storedState, storedCompletion] = await Promise.all([
+          SecureStore.getItemAsync(PREFERENCES_STATE_STORAGE_KEY),
+          SecureStore.getItemAsync(PREFERENCES_COMPLETED_STORAGE_KEY),
+        ]);
+        if (!isActive) {
+          return;
+        }
+        if (storedState) {
+          try {
+            const parsedState = JSON.parse(storedState);
+            setPreferenceResponses(applyPreferenceSmartLogic(parsedState));
+          } catch (error) {
+            console.warn("Unable to parse stored preference state", error);
+          }
+        }
+        if (storedCompletion === "true") {
+          setIsPreferencesFlowComplete(true);
+        }
+      } catch (error) {
+        console.warn("Failed to load preference flow state", error);
+      } finally {
+        if (isActive) {
+          setIsPreferenceStateReady(true);
+        }
+      }
+    };
+    hydratePreferences();
+    return () => {
+      isActive = false;
+    };
+  }, []);
 
-  if (!isWelcomeComplete) {
-    return (
-      <SafeAreaView style={styles.welcomeSafeArea}>
-        <StatusBar style="dark" />
-        <ScrollView
-          contentContainerStyle={[
-            styles.welcomeScroll,
-            { paddingBottom: FOOTER_PADDING },
-          ]}
-          showsVerticalScrollIndicator={false}
-        >
-          <View style={styles.welcomeHero}>
-            <Image
-              source={require("./assets/yummi-logo.png")}
-              style={styles.welcomeLogo}
-              resizeMode="contain"
-            />
-          </View>
-          <View style={styles.welcomeCenter}>
-            <View style={styles.usagePanel}>
-              <View style={styles.freeUsesCard}>
-                <View style={styles.freeUsesValueStack}>
-                  <Text style={[styles.freeUsesValueNumber, { fontSize: FREE_USES_FONT_SIZE }]}>10</Text>
-                  <Text style={styles.freeUsesValueSuffix}>Free uses left</Text>
-                </View>
-              </View>
-              <TouchableOpacity
-                style={styles.shareCard}
-                onPress={handleShareForFreeUses}
-                activeOpacity={0.9}
-              >
-                <Text style={styles.shareIcon}>↗</Text>
-                <View style={styles.shareTextGroup}>
-                  <Text style={styles.sharePrimary}>Share to earn +10 uses</Text>
-                  <Text style={styles.shareSecondary}>
-                    Invite a friend to get 10 bonus uses.
-                  </Text>
-                </View>
-              </TouchableOpacity>
-            </View>
-          </View>
-        </ScrollView>
-        <View style={styles.welcomeFooter}>
-          <TouchableOpacity
-            style={styles.welcomeButton}
-            onPress={() => setIsWelcomeComplete(true)}
-          >
-              <Text style={styles.welcomeButtonText}>Start shopping!</Text>
-          </TouchableOpacity>
-        </View>
-      </SafeAreaView>
-    );
-  }
+  useEffect(() => {
+    if (!isPreferenceStateReady) {
+      return;
+    }
+    const persistPreferences = async () => {
+      try {
+        await SecureStore.setItemAsync(
+          PREFERENCES_STATE_STORAGE_KEY,
+          JSON.stringify(preferenceResponses)
+        );
+      } catch (error) {
+        console.warn("Unable to persist preference selections", error);
+      }
+    };
+    persistPreferences();
+  }, [preferenceResponses, isPreferenceStateReady]);
 
+  useEffect(() => {
+    if (!isPreferenceStateReady) {
+      return;
+    }
+    const persistCompletion = async () => {
+      try {
+        if (isPreferencesFlowComplete) {
+          await SecureStore.setItemAsync(
+            PREFERENCES_COMPLETED_STORAGE_KEY,
+            "true"
+          );
+        } else {
+          await SecureStore.deleteItemAsync(
+            PREFERENCES_COMPLETED_STORAGE_KEY
+          );
+        }
+      } catch (error) {
+        console.warn("Unable to persist preference completion flag", error);
+      }
+    };
+    persistCompletion();
+  }, [isPreferenceStateReady, isPreferencesFlowComplete]);
+
+  useEffect(() => {
+    if (activePreferenceIndex >= preferenceCategories.length) {
+      setActivePreferenceIndex(
+        preferenceCategories.length > 0
+          ? preferenceCategories.length - 1
+          : 0
+      );
+    }
+  }, [activePreferenceIndex, preferenceCategories.length]);
+
+  useEffect(() => {
+    if (
+      isPreferenceStateReady &&
+      !isPreferencesFlowComplete &&
+      preferenceCategories.length === 0
+    ) {
+      setIsPreferencesFlowComplete(true);
+    }
+  }, [
+    isPreferenceStateReady,
+    isPreferencesFlowComplete,
+    preferenceCategories.length,
+  ]);
+
+  useEffect(() => {
+    if (!isPreferencesFlowComplete) {
+      setHasAcknowledgedPreferenceComplete(false);
+    }
+  }, [isPreferencesFlowComplete]);
+
+  const handlePreferenceSelection = useCallback(
+    (categoryId, tagId, value) => {
+      setPreferenceResponses((prev) => {
+        const nextCategoryValues = { ...(prev[categoryId] ?? {}) };
+        const currentValue = nextCategoryValues[tagId] ?? "neutral";
+        const resolvedValue = resolvePreferenceSelectionValue(
+          currentValue,
+          value
+        );
+        if (resolvedValue === "neutral") {
+          delete nextCategoryValues[tagId];
+        } else {
+          nextCategoryValues[tagId] = resolvedValue;
+        }
+        const next = { ...prev };
+        if (Object.keys(nextCategoryValues).length === 0) {
+          delete next[categoryId];
+        } else {
+          next[categoryId] = nextCategoryValues;
+        }
+        return applyPreferenceSmartLogic(next);
+      });
+    },
+    []
+  );
+
+  const handlePreferenceContinue = useCallback(() => {
+    if (preferenceCategories.length === 0) {
+      setIsPreferencesFlowComplete(true);
+      return;
+    }
+    if (activePreferenceIndex >= preferenceCategories.length - 1) {
+      setIsPreferencesFlowComplete(true);
+      return;
+    }
+    setActivePreferenceIndex((prev) =>
+      Math.min(prev + 1, preferenceCategories.length - 1)
+    );
+  }, [activePreferenceIndex, preferenceCategories.length]);
+
+  const handleResetPreferencesFlow = useCallback(async () => {
+    setPreferenceResponses({});
+    setActivePreferenceIndex(0);
+    setIsPreferencesFlowComplete(false);
+    try {
+      await SecureStore.deleteItemAsync(PREFERENCES_STATE_STORAGE_KEY);
+    } catch (error) {
+      console.warn("Unable to clear stored preference state", error);
+    }
+    try {
+      await SecureStore.deleteItemAsync(PREFERENCES_COMPLETED_STORAGE_KEY);
+    } catch (error) {
+      console.warn("Unable to clear stored preference completion flag", error);
+    }
+  }, []);
+
+  const handleConfirmPreferenceComplete = useCallback(() => {
+    setHasAcknowledgedPreferenceComplete(true);
+  }, []);
   const walletEndpoint = API_BASE_URL ? `${API_BASE_URL}/wallet/balance` : null;
   const payfastInitiateEndpoint = API_BASE_URL
     ? `${API_BASE_URL}/payments/payfast/initiate`
@@ -1232,6 +1768,288 @@ function AppContent() {
     [activeOrder, acknowledgeOrder, appendLog, basket.length]
   );
 
+  if (!isAuthLoaded) {
+    return (
+      <SafeAreaView style={styles.safeArea}>
+        <StatusBar style="dark" />
+        <View style={styles.loadingContainer}>
+          <ActivityIndicator size="large" color="#222" />
+        </View>
+      </SafeAreaView>
+    );
+  }
+
+  if (!isWelcomeComplete) {
+    return (
+      <SafeAreaView style={styles.welcomeSafeArea}>
+        <StatusBar style="dark" />
+        <ScrollView
+          contentContainerStyle={[
+            styles.welcomeScroll,
+            { paddingBottom: FOOTER_PADDING },
+          ]}
+          showsVerticalScrollIndicator={false}
+        >
+          <View style={styles.welcomeHero}>
+            <Image
+              source={require("./assets/yummi-logo.png")}
+              style={styles.welcomeLogo}
+              resizeMode="contain"
+            />
+          </View>
+          <View style={styles.welcomeCenter}>
+            <View style={styles.usagePanel}>
+              <View style={styles.freeUsesCard}>
+                <View style={styles.freeUsesValueStack}>
+                  <Text style={[styles.freeUsesValueNumber, { fontSize: FREE_USES_FONT_SIZE }]}>10</Text>
+                  <Text style={styles.freeUsesValueSuffix}>Free uses left</Text>
+                </View>
+              </View>
+              <TouchableOpacity
+                style={styles.shareCard}
+                onPress={handleShareForFreeUses}
+                activeOpacity={0.9}
+              >
+                <Text style={styles.shareIcon}>↗</Text>
+                <View style={styles.shareTextGroup}>
+                  <Text style={styles.sharePrimary}>Share to earn +10 uses</Text>
+                  <Text style={styles.shareSecondary}>
+                    Invite a friend to get 10 bonus uses.
+                  </Text>
+                </View>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </ScrollView>
+        <View style={styles.welcomeFooter}>
+          <TouchableOpacity
+            style={styles.welcomeButton}
+            onPress={() => setIsWelcomeComplete(true)}
+          >
+            <Text style={styles.welcomeButtonText}>Start shopping!</Text>
+          </TouchableOpacity>
+        </View>
+      </SafeAreaView>
+    );
+  }
+
+  if (isWelcomeComplete && !isPreferenceStateReady) {
+    return (
+      <SafeAreaView style={styles.safeArea}>
+        <StatusBar style="dark" />
+        <View style={styles.loadingContainer}>
+          <ActivityIndicator size="large" color="#00a651" />
+          <Text style={styles.preferencesLoadingText}>
+            Preparing your preferences…
+          </Text>
+        </View>
+      </SafeAreaView>
+    );
+  }
+
+  if (
+    isWelcomeComplete &&
+    !isPreferencesFlowComplete &&
+    activePreferenceCategory
+  ) {
+    const progressTotal = preferenceCategories.length || 1;
+    const progressPosition = Math.min(
+      activePreferenceIndex + 1,
+      progressTotal
+    );
+    const progressPercent = Math.min(
+      100,
+      (progressPosition / progressTotal) * 100
+    );
+    const isOnLastCategory =
+      preferenceCategories.length > 0 &&
+      activePreferenceIndex >= preferenceCategories.length - 1;
+    return (
+      <SafeAreaView style={styles.preferencesSafeArea}>
+        <StatusBar style="dark" />
+        <View style={styles.preferencesWrapper}>
+          <View style={styles.prefProgressContainer}>
+            <Text style={styles.prefProgressLabel}>
+              {`Category ${progressPosition} of ${progressTotal}`}
+            </Text>
+            <View style={styles.prefProgressTrack}>
+              <View
+                style={[
+                  styles.prefProgressFill,
+                  { width: `${progressPercent}%` },
+                ]}
+              />
+            </View>
+          </View>
+          <View style={styles.prefHeaderCard}>
+            <Text style={styles.prefCategoryTitle}>
+              {activePreferenceCategory.title}
+            </Text>
+            <Text style={styles.prefCategorySubtitle}>
+              {activePreferenceCategory.description}
+            </Text>
+          </View>
+          {preferenceNotices.length > 0 && (
+            <View style={styles.prefLogicCard}>
+              {preferenceNotices.map((notice) => (
+                <Text key={notice} style={styles.prefLogicText}>
+                  {notice}
+                </Text>
+              ))}
+            </View>
+          )}
+          <ScrollView
+            style={styles.prefScroll}
+            contentContainerStyle={styles.prefScrollContent}
+            showsVerticalScrollIndicator={false}
+          >
+            {activePreferenceCategory.tags.map((tag) => {
+              const tagValue = getPreferenceValue(
+                preferenceResponses,
+                activePreferenceCategory.id,
+                tag.id
+              );
+              return (
+                <View key={tag.id} style={styles.prefTagCard}>
+                  <View style={styles.prefTagTextGroup}>
+                    <Text style={styles.prefTagLabel}>{tag.label}</Text>
+                    {tag.helper ? (
+                      <Text style={styles.prefTagHelper}>{tag.helper}</Text>
+                    ) : null}
+                  </View>
+                  <View style={styles.prefControls}>
+                    {PREFERENCE_CONTROL_STATES.map((control) => {
+                      const isSelected = tagValue === control.id;
+                      const controlStyles = [
+                        styles.prefControlButton,
+                        control.id === "like" &&
+                          styles.prefControlButtonLike,
+                        control.id === "dislike" &&
+                          styles.prefControlButtonDislike,
+                        control.id === "neutral" &&
+                          styles.prefControlButtonNeutral,
+                        isSelected && styles.prefControlButtonActive,
+                        isSelected &&
+                          control.id === "like" &&
+                          styles.prefControlButtonLikeActive,
+                        isSelected &&
+                          control.id === "dislike" &&
+                          styles.prefControlButtonDislikeActive,
+                        isSelected &&
+                          control.id === "neutral" &&
+                          styles.prefControlButtonNeutralActive,
+                      ];
+                      return (
+                        <TouchableOpacity
+                          key={control.id}
+                          style={controlStyles}
+                          onPress={() =>
+                            handlePreferenceSelection(
+                              activePreferenceCategory.id,
+                              tag.id,
+                              control.id
+                            )
+                          }
+                          accessibilityRole="button"
+                          accessibilityLabel={`${control.label} ${tag.label}`}
+                        >
+                          <Text
+                            style={[
+                              styles.prefControlIcon,
+                              control.id === "like" &&
+                                styles.prefControlIconLike,
+                              control.id === "dislike" &&
+                                styles.prefControlIconDislike,
+                              control.id === "neutral" &&
+                                styles.prefControlIconNeutral,
+                              isSelected && styles.prefControlIconActive,
+                              isSelected &&
+                                control.id === "like" &&
+                                styles.prefControlIconLikeActive,
+                              isSelected &&
+                                control.id === "dislike" &&
+                                styles.prefControlIconDislikeActive,
+                              isSelected &&
+                                control.id === "neutral" &&
+                                styles.prefControlIconNeutralActive,
+                            ]}
+                          >
+                            {control.icon}
+                          </Text>
+                        </TouchableOpacity>
+                      );
+                    })}
+                  </View>
+                </View>
+              );
+            })}
+          </ScrollView>
+        </View>
+        <View style={styles.prefFooter}>
+          <Text style={styles.prefFooterHint}>
+            {activeCategoryRatingsCount === 0
+              ? "Neutral is the default—tap to highlight likes or dislikes."
+              : "Adjust anything you like now or later in Settings."}
+          </Text>
+          <TouchableOpacity
+            style={styles.prefContinueButton}
+            onPress={handlePreferenceContinue}
+          >
+            <Text style={styles.prefContinueButtonText}>
+              {isOnLastCategory ? "Finish" : "Continue"}
+            </Text>
+          </TouchableOpacity>
+        </View>
+      </SafeAreaView>
+    );
+  }
+
+  if (isWelcomeComplete && !isPreferencesFlowComplete) {
+    return (
+      <SafeAreaView style={styles.safeArea}>
+        <StatusBar style="dark" />
+        <View style={styles.loadingContainer}>
+          <ActivityIndicator size="large" color="#00a651" />
+        </View>
+      </SafeAreaView>
+    );
+  }
+
+  if (shouldShowPreferenceCompletionScreen) {
+    return (
+      <SafeAreaView style={styles.preferencesSafeArea}>
+        <StatusBar style="dark" />
+        <View style={styles.prefCompleteWrapper}>
+          <View style={styles.prefHeaderCard}>
+            <Text style={styles.prefCategoryTitle}>Preferences saved</Text>
+            <Text style={styles.prefCategorySubtitle}>
+              Your taste profile is ready. Redo the steps below if you’d like to change anything.
+            </Text>
+          </View>
+          <View style={styles.prefLogicCard}>
+            <Text style={styles.prefLogicText}>
+              You can revisit these preferences at any time.
+            </Text>
+          </View>
+          <View style={styles.prefCompleteActions}>
+            <TouchableOpacity
+              style={styles.prefRedoButton}
+              onPress={handleResetPreferencesFlow}
+            >
+              <Text style={styles.prefRedoButtonText}>Redo Category Selections</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.prefContinueButton}
+              onPress={handleConfirmPreferenceComplete}
+            >
+              <Text style={styles.prefContinueButtonText}>Continue</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </SafeAreaView>
+    );
+  }
+
   if (screen === "webview" && activeOrder) {
     const injectedRunner =
       activeOrder.mode === "runner"
@@ -1845,6 +2663,247 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "700",
     color: "#ffffff",
+  },
+  preferencesSafeArea: {
+    flex: 1,
+    backgroundColor: "#f4f9f5",
+  },
+  preferencesWrapper: {
+    flex: 1,
+    paddingHorizontal: 20,
+    paddingTop: 18,
+    paddingBottom: 12,
+    gap: 12,
+  },
+  preferencesLoadingText: {
+    marginTop: 12,
+    fontSize: 14,
+    color: "#3c5a47",
+  },
+  prefProgressContainer: {
+    backgroundColor: "#ffffff",
+    paddingHorizontal: 18,
+    paddingVertical: 16,
+    borderRadius: 20,
+    shadowColor: "#1c3d2d",
+    shadowOpacity: 0.05,
+    shadowRadius: 16,
+    shadowOffset: { width: 0, height: 8 },
+    elevation: 2,
+    gap: 8,
+  },
+  prefProgressLabel: {
+    fontSize: 13,
+    fontWeight: "600",
+    color: "#1d4731",
+  },
+  prefProgressTrack: {
+    width: "100%",
+    height: 6,
+    borderRadius: 999,
+    backgroundColor: "#e1efe7",
+    overflow: "hidden",
+  },
+  prefProgressFill: {
+    height: "100%",
+    borderRadius: 999,
+    backgroundColor: "#00a651",
+  },
+  prefHeaderCard: {
+    backgroundColor: "#ffffff",
+    borderRadius: 24,
+    paddingHorizontal: 24,
+    paddingVertical: 22,
+    shadowColor: "#1c3d2d",
+    shadowOpacity: 0.06,
+    shadowRadius: 18,
+    shadowOffset: { width: 0, height: 10 },
+    elevation: 3,
+    gap: 6,
+  },
+  prefCategoryTitle: {
+    fontSize: 24,
+    fontWeight: "700",
+    color: "#103b29",
+  },
+  prefCategorySubtitle: {
+    fontSize: 14,
+    color: "#3f5c4b",
+    lineHeight: 20,
+  },
+  prefLogicCard: {
+    backgroundColor: "#f0f7f2",
+    borderRadius: 18,
+    padding: 16,
+    borderWidth: 1,
+    borderColor: "#d5e8dc",
+    gap: 6,
+  },
+  prefLogicText: {
+    fontSize: 13,
+    color: "#2a4838",
+  },
+  prefScroll: {
+    flex: 1,
+  },
+  prefScrollContent: {
+    paddingBottom: 16,
+    gap: 12,
+  },
+  prefTagCard: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingHorizontal: 18,
+    paddingVertical: 16,
+    borderRadius: 20,
+    backgroundColor: "#ffffff",
+    borderWidth: 1,
+    borderColor: "#e6f0e8",
+    shadowColor: "#13281d",
+    shadowOpacity: 0.04,
+    shadowRadius: 12,
+    shadowOffset: { width: 0, height: 6 },
+    elevation: 2,
+  },
+  prefTagTextGroup: {
+    flex: 1,
+    marginRight: 12,
+    gap: 2,
+  },
+  prefTagLabel: {
+    fontSize: 16,
+    fontWeight: "600",
+    color: "#122e21",
+  },
+  prefTagHelper: {
+    fontSize: 13,
+    color: "#577063",
+  },
+  prefControls: {
+    flexDirection: "row",
+    gap: 8,
+  },
+  prefControlButton: {
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    alignItems: "center",
+    justifyContent: "center",
+    borderWidth: 1,
+    borderColor: "#d5e8dc",
+    backgroundColor: "#ffffff",
+  },
+  prefControlButtonActive: {
+    shadowColor: "#1c3d2d",
+    shadowOpacity: 0.12,
+    shadowRadius: 8,
+    shadowOffset: { width: 0, height: 4 },
+    elevation: 3,
+  },
+  prefControlButtonLike: {
+    borderColor: "#d8f3e4",
+  },
+  prefControlButtonDislike: {
+    borderColor: "#f9dede",
+  },
+  prefControlButtonNeutral: {
+    borderColor: "#dae4dc",
+  },
+  prefControlButtonLikeActive: {
+    backgroundColor: "#eaf8f0",
+    borderColor: "#23a665",
+  },
+  prefControlButtonDislikeActive: {
+    backgroundColor: "#fdeeee",
+    borderColor: "#e56b6b",
+  },
+  prefControlButtonNeutralActive: {
+    backgroundColor: "#eef3ef",
+    borderColor: "#b9c9bf",
+  },
+  prefControlIcon: {
+    fontSize: 20,
+    color: "#5b7564",
+  },
+  prefControlIconLike: {
+    color: "#7bb394",
+  },
+  prefControlIconDislike: {
+    color: "#c77a7a",
+  },
+  prefControlIconNeutral: {
+    color: "#7c8c83",
+  },
+  prefControlIconActive: {
+    transform: [{ scale: 1.05 }],
+  },
+  prefControlIconLikeActive: {
+    color: "#0d7c4b",
+  },
+  prefControlIconDislikeActive: {
+    color: "#b53a3a",
+  },
+  prefControlIconNeutralActive: {
+    color: "#324C3C",
+  },
+  prefFooter: {
+    paddingHorizontal: 20,
+    paddingBottom: 32,
+    paddingTop: 8,
+    backgroundColor: "#f4f9f5",
+    gap: 12,
+  },
+  prefCompleteWrapper: {
+    flex: 1,
+    paddingHorizontal: 20,
+    paddingVertical: 24,
+    gap: 16,
+    justifyContent: "center",
+  },
+  prefCompleteActions: {
+    gap: 12,
+  },
+  prefFooterHint: {
+    fontSize: 13,
+    color: "#4d6757",
+    textAlign: "center",
+  },
+  prefContinueButton: {
+    backgroundColor: "#00a651",
+    paddingVertical: 16,
+    borderRadius: 20,
+    alignItems: "center",
+    justifyContent: "center",
+    shadowColor: "#0c391f",
+    shadowOpacity: 0.2,
+    shadowRadius: 12,
+    shadowOffset: { width: 0, height: 6 },
+    elevation: 3,
+  },
+  prefContinueButtonText: {
+    fontSize: 16,
+    fontWeight: "700",
+    color: "#ffffff",
+  },
+  prefRedoButton: {
+    borderWidth: 1,
+    borderColor: "#c5d9cc",
+    borderRadius: 20,
+    paddingVertical: 16,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#ffffff",
+    shadowColor: "#1c3d2d",
+    shadowOpacity: 0.05,
+    shadowRadius: 10,
+    shadowOffset: { width: 0, height: 4 },
+    elevation: 2,
+  },
+  prefRedoButtonText: {
+    fontSize: 16,
+    fontWeight: "600",
+    color: "#184331",
   },
   header: {
     paddingHorizontal: 20,
