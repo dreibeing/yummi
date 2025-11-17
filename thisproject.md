@@ -107,6 +107,12 @@ We operate a production-ready pipeline that prepares product data, enriches bask
 - GPT classification runner (`scripts/ingredient_llm_classifier.py`) prompts `gpt-5-nano-2025-08-07` (fallback `gpt-5-mini-2025-08-07`) with `--max-output-tokens 5000`, logging progress per SKU and resuming automatically when interrupted. Responses live under `data/ingredients/llm_batches/responses/`.
 - Consolidation script (`scripts/ingredient_classifications_builder.py`) merges `all_results.jsonl` into product-level tables (`data/ingredients/ingredient_classifications.{jsonl,csv}`) and a deduped ingredient catalog (`data/ingredients/unique_core_items.csv`, currently 1 844 unique ingredient/ready-meal rows) for downstream meal generation prompts.
 
+### Meal generation + manifest publishing
+- `scripts/meal_builder.py` now produces per-archetype meal JSON under `data/meals/arch_<uid>/` plus run metadata in `data/meals/runs/`. Validation fills any missing required tags from the archetype defaults so downstream tooling doesn’t fail when the LLM omits a category.
+- The new aggregation CLI (`scripts/meal_aggregate_builder.py`) walks all per-archetype directories, normalizes tags, and emits a single manifest at `resolver/meals/meals_manifest.json` (and optional Parquet rows when `pyarrow` is installed). Each manifest carries `schema_version`, `manifest_id`, stats, warnings, and every archetype -> meal relationship required by the thin slice.
+- FastAPI exposes `/v1/meals` and `/v1/meals/{archetype_uid}` off that manifest. Fly builds now bundle `resolver/meals/meals_manifest.json`, so the hosted server already returns live meal data (confirmed via `Invoke-RestMethod https://yummi-server-greenbean.fly.dev/v1/meals/arch_1k7p9f`).
+- Remaining gap: generate meals for every curated archetype and update the thin-slice UI/extension to call these endpoints instead of the local mocks.
+
 ### TODO focus areas
 1. Refine category discovery filters (skip promo-only nodes), freeze canonical category list, and version it under source control.
 2. Add PDP enrichment for pack size/specifications + nutritional metadata.
@@ -114,6 +120,7 @@ We operate a production-ready pipeline that prepares product data, enriches bask
 4. Promote PayFast staging settings into production, monitor ITN/ledger parity, and keep remote validation enforced (`PAYFAST_SKIP_REMOTE_VALIDATION=false`).
 5. Operationalize the new chargeback/refund endpoints (alerting, UI surface, and automation hooks) per [Chargebacks.txt](Chargebacks.txt).
 6. Extend wallet UX + automated test coverage so mobile surfaces transactions, errors, and negative balances clearly.
+7. Wire the thin-slice app + Chrome extension to `/v1/meals*`, cache manifests client-side, and run an end-to-end thin-slice smoke test consuming the hosted meal data.
 
 ---
 
@@ -165,6 +172,8 @@ We operate a production-ready pipeline that prepares product data, enriches bask
 
 ## 5. Immediate next steps
 See [plan.md](plan.md) for the authoritative roadmap. Top priorities for the next coding session:
-1. **PayFast production rollout** — clone the hardened staging config into production Fly apps, keep `PAYFAST_SKIP_REMOTE_VALIDATION=false`, and add monitoring/alerts using the regression log in [payfastmigration.md](payfastmigration.md).
-2. **Chargeback/refund groundwork** — design debit/negative-balance handling in backend services (refer to [Chargebacks.txt](Chargebacks.txt)).
-3. **Wallet UI polish** — expand thin-slice UI to show full transaction history and flag negative balances before chargeback logic hardens.
+1. **Meal manifest hardening** — finish generating meals for every curated archetype, rerun `scripts/meal_aggregate_builder.py` (with Parquet output + checksums), and document the release ID served from Fly.
+2. **Thin-slice integration** — update the Expo thin slice (and extension if needed) to fetch `/v1/meals` + `/v1/meals/{uid}`, add client caching/invalidation, and run an end-to-end smoke test against staging.
+3. **PayFast production rollout** — clone the hardened staging config into production Fly apps, keep `PAYFAST_SKIP_REMOTE_VALIDATION=false`, and add monitoring/alerts using the regression log in [payfastmigration.md](payfastmigration.md).
+4. **Chargeback/refund groundwork** — design debit/negative-balance handling in backend services (refer to [Chargebacks.txt](Chargebacks.txt)).
+5. **Wallet UI polish** — expand thin-slice UI to show full transaction history and flag negative balances before chargeback logic hardens.

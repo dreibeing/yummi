@@ -71,6 +71,11 @@
 - Thin-slice: minimal flow for Fetch Products, Build Basket, Place Order using resolver/catalog.json (thinslice.md).
 - Data pipeline: woolworths_scraper produces resolver/catalog.json and future enrichments (thisproject.md).
 
+### Meal manifest pipeline
+1. Generate the aggregate dataset locally with `python3 scripts/meal_aggregate_builder.py`. By default it reads curated archetypes (`data/archetypes/.../archetypes_curated.json`), walks every `data/meals/arch_*/meal_*.json`, and emits `resolver/meals/meals_manifest.json`. Pass `--manifest-id` when cutting a tagged release or `--skip-parquet` if `pyarrow` is unavailable (install `pyarrow` to get the flattened Parquet analytics output).
+2. Keep the manifest inside the repo so Docker/Fly builds bundle it automatically. Override `MEALS_MANIFEST_PATH` if the artifact lives elsewhere; relative paths resolve against either the repo root or the `yummi-server/` directory.
+3. Deploy with `fly deploy --remote-only` (or the existing Docker flow). The new `/v1/meals` and `/v1/meals/{archetype_uid}` routes are served from the manifest and will 503 if the file is missing.
+4. Smoke test after deploy: `curl https://<app>.fly.dev/v1/meals | jq '.stats'` should show the archetype + meal counts. Thin-slice clients should request `/v1/meals/{uid}` for the archetype they are rendering, verify recipes/instructions/ingredients render, and then run a full thin-slice flow (select archetype → view meals → trigger cart creation).
 ## High-Level Architecture
 - API: FastAPI (Python) for alignment with data tooling, async I/O, Pydantic validation, OpenAPI docs.
 - Auth: Clerk JWT verification middleware; server trusts user identity from Clerk session tokens.

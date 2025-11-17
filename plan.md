@@ -11,7 +11,7 @@ Produce a validated archetype repository that satisfies the contracts in `yummi_
 ## Status (2025-11-12)
 - **Steps 1–4:** Completed. `data/tags/defined_tags.json` locked at `tags_version 2025.02.0`; constraint brief lives in `data/tags/archetype_constraint_brief.md`; prompt/template + runner (`scripts/archetype_prompt_runner.py`) and curator (`scripts/archetype_curator.py`) now bake in mainstream-first guidance and compact prior-archetype context.
 - **Step 5:** Initial QA + GPT-5 curation finished for run `data/archetypes/run_20251112T091259Z`. Raw outputs + recommendations live under `…/curation/`.
-- **Step 6:** Final curated JSON (pre-Parquet) stored at `data/archetypes/run_20251112T091259Z/curation/archetypes_curated.json`. Parquet packaging + publication still pending.
+- **Step 6:** Aggregated meals are now published via `scripts/meal_aggregate_builder.py`, which emits `resolver/meals/meals_manifest.json` (Fly serves this through `/v1/meals*`). Parquet packaging/checksums remain optional until `pyarrow` is installed, and we still need a process note for release tagging.
 - **Ingredient normalization (new pipeline):** `scripts/ingredient_cleanup.py` + `data/catalog_filters.json` trim the Woolworths catalog to 6 k candidates, `scripts/ingredient_batch_builder.py` emits single-item GPT batches, `scripts/ingredient_llm_classifier.py` (model `gpt-5-nano-2025-08-07`, `--max-output-tokens 5000`) classified every SKU into `ingredient`/`ready_meal`, and `scripts/ingredient_classifications_builder.py` produced `data/ingredients/ingredient_classifications.{jsonl,csv}` plus a deduped list at `data/ingredients/unique_core_items.csv`.
 
 ## Build Steps
@@ -45,7 +45,8 @@ Produce a validated archetype repository that satisfies the contracts in `yummi_
 - Updated roadmap entry noting the deployed `tags_version` and `refresh_version`.
 
 ## Immediate Next Actions
-1. Convert `data/archetypes/run_20251112T091259Z/curation/archetypes_curated.json` into the Parquet/JSON artifact pair expected by Step 6 (include checksums + manifest entry).
-2. Wire curator recommendations (keep/modify/replace) into the next generation run or manual edits, then re-run the curator to confirm overlap clusters are resolved.
-3. Publish the vetted artifact to the resolver object store + Fly Postgres, documenting the release details back in this plan and `thisproject.md`.
-4. Review `data/ingredients/unique_core_items.csv` with product/culinary leads, lock a `canonical_ingredients` schema/version, and feed that list into the upcoming meal-generation prompt so recipes reference normalized ingredient IDs instead of retailer SKUs.
+1. Finish meal coverage for every curated archetype (run `scripts/meal_builder.py --archetype-uid <uid>`), then regenerate `resolver/meals/meals_manifest.json` so `/v1/meals*` exposes the full portfolio before product QA begins.
+2. Install `pyarrow` and rerun `scripts/meal_aggregate_builder.py` with Parquet output + checksum logging so Step 6 artifacts satisfy the publication contract (JSON + analytics Parquet + release note).
+3. Wire curator recommendations (keep/modify/replace) into the next generation run or manual edits, then re-run the curator to confirm overlap clusters are resolved.
+4. Hook the thin-slice app + extension to `/v1/meals` and `/v1/meals/{uid}`, add caching/invalidation guidance, and confirm an end-to-end thin-slice journey uses the hosted manifest.
+5. Review `data/ingredients/unique_core_items.csv` with product/culinary leads, lock a `canonical_ingredients` schema/version, and feed that list into the upcoming meal-generation prompt so recipes reference normalized ingredient IDs instead of retailer SKUs.

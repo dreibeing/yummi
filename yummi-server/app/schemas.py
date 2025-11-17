@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import List, Optional
+from typing import Any, Dict, List, Optional
 from pydantic import BaseModel, Field, ConfigDict
 
 
@@ -125,3 +125,72 @@ class AdminChargebackResponse(BaseModel):
 class WalletRefundAdminActionRequest(BaseModel):
     status: str = Field(pattern=r"^(approved|denied|paid)$")
     note: Optional[str] = Field(default=None, max_length=255)
+
+
+class MealIngredientProduct(BaseModel):
+    product_id: Optional[str] = None
+    package_quantity: Optional[float] = None
+    name: Optional[str] = None
+    detail_url: Optional[str] = None
+    sale_price: Optional[float] = None
+
+
+class MealIngredient(BaseModel):
+    core_item_name: Optional[str] = None
+    quantity: Optional[str] = None
+    preparation: Optional[str] = None
+    ingredient_line: Optional[str] = None
+    selected_product: Optional[MealIngredientProduct] = None
+
+
+class MealProductMatch(BaseModel):
+    core_item_name: Optional[str] = None
+    selected_product_id: Optional[str] = None
+    package_quantity: Optional[float] = None
+    package_notes: Optional[str] = None
+    ingredient_line: Optional[str] = None
+
+
+class MealRecord(BaseModel):
+    meal_id: Optional[str] = None
+    name: Optional[str] = None
+    description: Optional[str] = None
+    servings: Optional[str] = None
+    meal_tags: Dict[str, List[str]] = Field(default_factory=dict)
+    prep_steps: List[str] = Field(default_factory=list)
+    cook_steps: List[str] = Field(default_factory=list)
+    instructions: List[str] = Field(default_factory=list)
+    ingredients: List[MealIngredient] = Field(default_factory=list)
+    final_ingredients: List[MealIngredient] = Field(default_factory=list)
+    product_matches: List[MealProductMatch] = Field(default_factory=list)
+    metadata: Dict[str, Any] = Field(default_factory=dict)
+    warnings: List[str] = Field(default_factory=list)
+
+
+class MealArchetype(BaseModel):
+    uid: Optional[str] = None
+    name: Optional[str] = None
+    description: Optional[str] = None
+    core_tags: Dict[str, List[str]] = Field(default_factory=dict)
+    diet_profile: Dict[str, Any] = Field(default_factory=dict)
+    allergen_flags: Dict[str, Any] = Field(default_factory=dict)
+    heat_band: Optional[str] = None
+    prep_time_minutes_range: Optional[List[int]] = None
+    complexity: Optional[str] = None
+    audience_context: Optional[str] = None
+    cuisine_openness: Optional[str] = None
+    refresh_version: Optional[str] = None
+    rationale: Optional[str] = None
+    meals: List[MealRecord] = Field(default_factory=list)
+
+
+class MealManifest(BaseModel):
+    schema_version: Optional[str] = None
+    manifest_id: Optional[str] = None
+    generated_at: Optional[str] = None
+    tags_version: Optional[str] = None
+    required_categories: List[str] = Field(default_factory=list)
+    source: Dict[str, Any] = Field(default_factory=dict)
+    stats: Dict[str, Any] = Field(default_factory=dict)
+    warnings: List[str] = Field(default_factory=list)
+    archetypes: List[MealArchetype] = Field(default_factory=list)
