@@ -748,6 +748,8 @@ function AppContent() {
     useState(false);
   const [hasSeenExplorationResults, setHasSeenExplorationResults] = useState(false);
   const [hasFetchedRemotePreferences, setHasFetchedRemotePreferences] = useState(false);
+  const [isOnboardingActive, setIsOnboardingActive] = useState(false);
+  const [homeSurface, setHomeSurface] = useState("meal");
   const [isPreferenceSyncing, setIsPreferenceSyncing] = useState(false);
   const [preferencesSyncError, setPreferencesSyncError] = useState(null);
   const [lastPreferencesSyncedAt, setLastPreferencesSyncedAt] = useState(null);
@@ -809,10 +811,12 @@ function AppContent() {
       ? Object.keys(preferenceResponses[activePreferenceCategory.id]).length
       : 0;
   const shouldShowPreferenceCompletionScreen =
+    isOnboardingActive &&
     isWelcomeComplete &&
     isPreferenceStateReady &&
     isPreferencesFlowComplete &&
     !hasAcknowledgedPreferenceComplete;
+  const isMealHomeSurface = homeSurface === "meal";
 
   const userDisplayName = useMemo(() => {
     const primaryEmail = user?.primaryEmailAddress?.emailAddress;
@@ -837,6 +841,8 @@ function AppContent() {
       await signOut();
       setPayfastMonitor(null);
       setPayfastSession(null);
+      setIsOnboardingActive(false);
+      setHomeSurface("meal");
     } catch (error) {
       console.error("Failed to sign out", error);
       Alert.alert("Sign-out failed", "Please try again.");
@@ -869,10 +875,22 @@ function AppContent() {
     }
   }, []);
 
+  const handleOpenRunnerSurface = useCallback(() => {
+    setHomeSurface("runner");
+    setScreen("home");
+  }, []);
+
+  const handleReturnToMealHome = useCallback(() => {
+    setHomeSurface("meal");
+    setScreen("home");
+  }, []);
+
   useEffect(() => {
     setHasFetchedRemotePreferences(false);
     setLastPreferencesSyncedAt(null);
     setPreferencesSyncError(null);
+    setIsOnboardingActive(false);
+    setHomeSurface("meal");
     preferenceSyncHashRef.current = null;
     setExplorationState("idle");
     setExplorationMeals([]);
@@ -1140,6 +1158,7 @@ function AppContent() {
 
   useEffect(() => {
     if (
+      !isOnboardingActive ||
       !isPreferenceStateReady ||
       !isPreferencesFlowComplete ||
       explorationState !== "idle" ||
@@ -1150,6 +1169,7 @@ function AppContent() {
     startExplorationRun();
   }, [
     explorationState,
+    isOnboardingActive,
     isPreferenceStateReady,
     isPreferencesFlowComplete,
     startExplorationRun,
@@ -1197,6 +1217,8 @@ function AppContent() {
   }, [activePreferenceIndex, preferenceCategories.length]);
 
   const handleResetPreferencesFlow = useCallback(async () => {
+    setIsOnboardingActive(true);
+    setHomeSurface("meal");
     setPreferenceResponses({});
     setActivePreferenceIndex(0);
     setIsPreferencesFlowComplete(false);
@@ -1210,6 +1232,11 @@ function AppContent() {
     setExplorationSessionId(null);
     setExplorationError(null);
     setExplorationReactions({});
+    setIsRecommendationFlowVisible(false);
+    setRecommendationState("idle");
+    setRecommendationMeals([]);
+    setRecommendationNotes([]);
+    setRecommendationError(null);
     preferenceSyncHashRef.current = null;
     try {
       await SecureStore.deleteItemAsync(PREFERENCES_STATE_STORAGE_KEY);
@@ -1360,17 +1387,34 @@ function AppContent() {
     explorationSessionId,
   ]);
 
+  const handleCompleteOnboardingFlow = useCallback(() => {
+    setIsOnboardingActive(false);
+    setIsRecommendationFlowVisible(false);
+    setRecommendationState("idle");
+    setRecommendationMeals([]);
+    setRecommendationNotes([]);
+    setRecommendationError(null);
+    setExplorationState("idle");
+    setExplorationMeals([]);
+    setExplorationNotes([]);
+    setExplorationSessionId(null);
+    setExplorationError(null);
+    setExplorationReactions({});
+    setHomeSurface("meal");
+  }, []);
+
   const handleConfirmExplorationReview = useCallback(() => {
+    setHasSeenExplorationResults(true);
     if (!RECOMMENDATION_API_ENDPOINT || !explorationSessionId) {
-      setHasSeenExplorationResults(true);
+      handleCompleteOnboardingFlow();
       return;
     }
-    setHasSeenExplorationResults(true);
     setIsRecommendationFlowVisible(true);
     runRecommendationFeed();
   }, [
     RECOMMENDATION_API_ENDPOINT,
     explorationSessionId,
+    handleCompleteOnboardingFlow,
     runRecommendationFeed,
   ]);
 
@@ -1379,12 +1423,12 @@ function AppContent() {
   }, [runRecommendationFeed]);
 
   const handleRecommendationComplete = useCallback(() => {
-    setIsRecommendationFlowVisible(false);
-  }, []);
+    handleCompleteOnboardingFlow();
+  }, [handleCompleteOnboardingFlow]);
 
   const handleSkipRecommendationFlow = useCallback(() => {
-    setIsRecommendationFlowVisible(false);
-  }, []);
+    handleCompleteOnboardingFlow();
+  }, [handleCompleteOnboardingFlow]);
 
   const handleExplorationReaction = useCallback((mealId, value) => {
     setExplorationReactions((prev) => {
@@ -2112,6 +2156,7 @@ function AppContent() {
   }, [basket.length]);
 
   const handleBackToHome = useCallback(() => {
+    setHomeSurface("runner");
     setScreen("home");
   }, []);
 
@@ -2377,6 +2422,7 @@ function AppContent() {
   }
 
   if (
+    isOnboardingActive &&
     isWelcomeComplete &&
     !isPreferencesFlowComplete &&
     activePreferenceCategory
@@ -2533,7 +2579,7 @@ function AppContent() {
     );
   }
 
-  if (isWelcomeComplete && !isPreferencesFlowComplete) {
+  if (isOnboardingActive && isWelcomeComplete && !isPreferencesFlowComplete) {
     return (
       <SafeAreaView style={styles.safeArea}>
         <StatusBar style="dark" />
@@ -2593,6 +2639,7 @@ function AppContent() {
   }
 
   if (
+    isOnboardingActive &&
     isPreferencesFlowComplete &&
     hasAcknowledgedPreferenceComplete &&
     !hasSeenExplorationResults &&
@@ -2615,6 +2662,7 @@ function AppContent() {
   }
 
   if (
+    isOnboardingActive &&
     isPreferencesFlowComplete &&
     hasAcknowledgedPreferenceComplete &&
     !hasSeenExplorationResults &&
@@ -2649,6 +2697,7 @@ function AppContent() {
   }
 
   if (
+    isOnboardingActive &&
     isPreferencesFlowComplete &&
     hasAcknowledgedPreferenceComplete &&
     !hasSeenExplorationResults &&
@@ -2698,6 +2747,7 @@ function AppContent() {
   }
 
   if (
+    isOnboardingActive &&
     isRecommendationFlowVisible &&
     (recommendationState === "idle" || recommendationState === "running")
   ) {
@@ -2717,7 +2767,11 @@ function AppContent() {
     );
   }
 
-  if (isRecommendationFlowVisible && recommendationState === "error") {
+  if (
+    isOnboardingActive &&
+    isRecommendationFlowVisible &&
+    recommendationState === "error"
+  ) {
     return (
       <SafeAreaView style={styles.preferencesSafeArea}>
         <StatusBar style="dark" />
@@ -2744,7 +2798,11 @@ function AppContent() {
     );
   }
 
-  if (isRecommendationFlowVisible && recommendationState === "ready") {
+  if (
+    isOnboardingActive &&
+    isRecommendationFlowVisible &&
+    recommendationState === "ready"
+  ) {
     return (
       <SafeAreaView style={styles.preferencesSafeArea}>
         <StatusBar style="dark" />
@@ -2798,6 +2856,63 @@ function AppContent() {
           contentContainerStyle={styles.recommendationList}
           showsVerticalScrollIndicator={false}
         />
+      </SafeAreaView>
+    );
+  }
+
+  if (
+    screen === "home" &&
+    isMealHomeSurface &&
+    isWelcomeComplete &&
+    isPreferenceStateReady &&
+    !isOnboardingActive
+  ) {
+    const preferenceStatusText = lastPreferencesSyncedAt
+      ? `Preferences synced ${formatDateTime(lastPreferencesSyncedAt)}`
+      : isPreferencesFlowComplete
+      ? "Preferences saved on this device."
+      : "No preferences saved yet.";
+    return (
+      <SafeAreaView style={styles.mealHomeSafeArea}>
+        <StatusBar style="dark" />
+        <View style={styles.mealHomeHeader}>
+          <Text style={styles.mealHomeTitle}>Meal home</Text>
+          <Text style={styles.mealHomeSubtitle}>
+            Reset preferences to walk through tags again and rebuild exploration meals.
+          </Text>
+          {renderAccountBanner()}
+        </View>
+        <View style={styles.mealHomeBody}>
+          <View style={styles.mealHomeStatusCard}>
+            <Text style={styles.mealHomeStatusText}>{preferenceStatusText}</Text>
+            {isPreferenceSyncing ? (
+              <Text style={styles.mealHomeStatusHelper}>Syncing preferences…</Text>
+            ) : null}
+            {preferencesSyncError ? (
+              <Text style={styles.mealHomeStatusError}>{preferencesSyncError}</Text>
+            ) : null}
+          </View>
+          <View style={styles.mealHomeActions}>
+            <TouchableOpacity
+              style={styles.mealHomePrimaryButton}
+              onPress={handleResetPreferencesFlow}
+            >
+              <Text style={styles.mealHomePrimaryText}>Reset Preferences</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.mealHomeSecondaryButton}
+              onPress={handleOpenRunnerSurface}
+            >
+              <Text style={styles.mealHomeSecondaryText}>Open Cart Runner</Text>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.mealHomeFooter}>
+            <Text style={styles.mealHomeFooterText}>
+              After resetting, we’ll guide you through tag selections, rebuild Exploration Meals,
+              and save fresh recommendations automatically.
+            </Text>
+          </View>
+        </View>
       </SafeAreaView>
     );
   }
@@ -3019,6 +3134,14 @@ function AppContent() {
           Prototype bridge between catalog resolver and Woolworths cart fill.
         </Text>
         <Text style={styles.versionBadge}>{APP_VERSION}</Text>
+        {!isMealHomeSurface ? (
+          <TouchableOpacity
+            style={styles.mealHomeSwitchButton}
+            onPress={handleReturnToMealHome}
+          >
+            <Text style={styles.mealHomeSwitchText}>Go to meal home</Text>
+          </TouchableOpacity>
+        ) : null}
         {renderAccountBanner()}
       </View>
       <View style={styles.body}>
@@ -3290,6 +3413,106 @@ const styles = StyleSheet.create({
   welcomeSafeArea: {
     flex: 1,
     backgroundColor: "#f4f9f5",
+  },
+  mealHomeSafeArea: {
+    flex: 1,
+    backgroundColor: "#f4f9f5",
+  },
+  mealHomeHeader: {
+    paddingHorizontal: 24,
+    paddingTop: 32,
+    paddingBottom: 8,
+  },
+  mealHomeTitle: {
+    fontSize: 32,
+    fontWeight: "700",
+    color: "#0c3c26",
+    marginBottom: 8,
+  },
+  mealHomeSubtitle: {
+    fontSize: 16,
+    lineHeight: 22,
+    color: "#2d6041",
+  },
+  mealHomeBody: {
+    flex: 1,
+    paddingHorizontal: 24,
+    paddingVertical: 16,
+  },
+  mealHomeStatusCard: {
+    backgroundColor: "#fff",
+    borderRadius: 18,
+    padding: 20,
+    marginBottom: 24,
+    shadowColor: "#000",
+    shadowOpacity: 0.05,
+    shadowOffset: { width: 0, height: 4 },
+    shadowRadius: 12,
+    elevation: 3,
+  },
+  mealHomeStatusText: {
+    fontSize: 16,
+    color: "#0c3c26",
+  },
+  mealHomeStatusHelper: {
+    fontSize: 14,
+    color: "#2d6041",
+    marginTop: 6,
+  },
+  mealHomeStatusError: {
+    marginTop: 6,
+    fontSize: 14,
+    color: "#c53030",
+  },
+  mealHomeActions: {
+    marginTop: 8,
+  },
+  mealHomePrimaryButton: {
+    backgroundColor: "#00a651",
+    paddingVertical: 18,
+    borderRadius: 16,
+    alignItems: "center",
+    marginBottom: 16,
+  },
+  mealHomePrimaryText: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "600",
+  },
+  mealHomeSecondaryButton: {
+    paddingVertical: 16,
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: "#0c3c26",
+    alignItems: "center",
+    backgroundColor: "#fff",
+  },
+  mealHomeSecondaryText: {
+    color: "#0c3c26",
+    fontSize: 16,
+    fontWeight: "600",
+  },
+  mealHomeFooter: {
+    marginTop: 32,
+  },
+  mealHomeFooterText: {
+    fontSize: 14,
+    lineHeight: 20,
+    color: "#2d6041",
+  },
+  mealHomeSwitchButton: {
+    marginTop: 12,
+    alignSelf: "flex-start",
+    paddingVertical: 6,
+    paddingHorizontal: 12,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: "#d3d3d3",
+  },
+  mealHomeSwitchText: {
+    color: "#0c3c26",
+    fontSize: 14,
+    fontWeight: "600",
   },
   loadingContainer: {
     flex: 1,
