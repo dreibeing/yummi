@@ -46,6 +46,13 @@ class Settings(BaseSettings):
     openai_exploration_max_output_tokens: int = Field(default=9000)
     exploration_candidate_limit: int = Field(default=50)
     exploration_meal_count: int = Field(default=10)
+    openai_recommendation_model: str = Field(default="gpt-5")
+    openai_recommendation_top_p: float | None = Field(default=None)
+    openai_recommendation_reasoning_effort: str = Field(default="medium")
+    openai_recommendation_max_output_tokens: int = Field(default=9000)
+    recommendation_candidate_limit: int = Field(default=60)
+    recommendation_meal_count: int = Field(default=10)
+    openai_request_timeout_seconds: int = Field(default=90, ge=30, le=300)
 
     # Observability
     sentry_dsn: str | None = Field(default=None)

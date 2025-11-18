@@ -105,6 +105,9 @@ class UserPreferenceProfile(Base, TimestampMixin):
     disliked_tags: Mapped[dict] = mapped_column(json_type, nullable=False, default=dict)
     completion_stage: Mapped[str] = mapped_column(String(32), nullable=False, default="in_progress")
     completed_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True))
+    latest_recommendation_meal_ids: Mapped[Optional[list[str]]] = mapped_column(json_type)
+    latest_recommendation_generated_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True))
+    latest_recommendation_manifest_id: Mapped[Optional[str]] = mapped_column(String(64))
     last_synced_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now(), nullable=False
     )

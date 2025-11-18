@@ -8,8 +8,6 @@ from typing import Any, Dict, List
 import uuid
 
 from fastapi import HTTPException, status
-import httpx
-from openai import OpenAI
 
 from ..config import get_settings
 from ..db import get_session
@@ -24,6 +22,8 @@ from ..schemas import (
 )
 from .filtering import CandidateMealDetail, generate_candidate_pool_with_details
 from .meals import get_meal_manifest
+from .meal_representation import extract_key_ingredients, extract_sku_snapshot, format_json
+from .openai_responses import call_openai_responses
 from .preferences import (
     get_user_preference_profile,
     load_tag_manifest,
@@ -70,10 +70,13 @@ async def run_exploration_workflow(
     llm_candidates = _prepare_llm_candidates(detail_records, candidate_limit)
 
     system_prompt, user_prompt = _build_prompts(profile_payload, llm_candidates, meal_target)
-    llm_text = _call_openai(
+    llm_text = call_openai_responses(
         model=settings.openai_exploration_model,
         system_prompt=system_prompt,
         user_prompt=user_prompt,
+        max_output_tokens=settings.openai_exploration_max_output_tokens,
+        top_p=settings.openai_exploration_top_p,
+        reasoning_effort=settings.openai_exploration_reasoning_effort,
     )
     parsed = _parse_llm_payload(llm_text)
     exploration_meals = _materialize_meals(parsed.get("explorationSet") or [], detail_records, meal_target)
@@ -164,47 +167,11 @@ def _prepare_llm_candidates(
                 "name": meal.get("name"),
                 "description": meal.get("description"),
                 "tags": meal.get("meal_tags") or {},
-                "key_ingredients": _extract_key_ingredients(meal),
-                "sku_snapshot": _extract_sku_snapshot(meal),
+                "key_ingredients": extract_key_ingredients(meal),
+                "sku_snapshot": extract_sku_snapshot(meal),
             }
         )
     return payload
-
-
-def _extract_key_ingredients(meal: Dict[str, Any], limit: int = 6) -> List[Dict[str, Any]]:
-    collection: List[Dict[str, Any]] = []
-    for ingredient in (meal.get("final_ingredients") or meal.get("ingredients") or []):
-        label = ingredient.get("core_item_name") or ingredient.get("ingredient_line")
-        if not label:
-            continue
-        entry = {
-            "name": label,
-            "quantity": ingredient.get("quantity"),
-            "product": (ingredient.get("selected_product") or {}).get("name"),
-        }
-        collection.append(entry)
-        if len(collection) >= limit:
-            break
-    return collection
-
-
-def _extract_sku_snapshot(meal: Dict[str, Any], limit: int = 4) -> List[Dict[str, Any]]:
-    snapshots: List[Dict[str, Any]] = []
-    for ingredient in meal.get("final_ingredients") or []:
-        product = ingredient.get("selected_product") or {}
-        if not any([product.get("product_id"), product.get("name"), product.get("detail_url"), product.get("sale_price")]):
-            continue
-        snapshots.append(
-            {
-                "productId": product.get("product_id"),
-                "name": product.get("name"),
-                "detailUrl": product.get("detail_url"),
-                "salePrice": product.get("sale_price"),
-            }
-        )
-        if len(snapshots) >= limit:
-            break
-    return snapshots
 
 
 def _build_prompts(
@@ -220,10 +187,10 @@ def _build_prompts(
     instructions = dedent(
         f"""
         USER_PROFILE:
-        {_format_json(profile_payload)}
+        {format_json(profile_payload)}
 
         CANDIDATE_MEALS:
-        {_format_json(candidates)}
+        {format_json(candidates)}
 
         Requirements:
         1. Choose exactly {meal_target} meals present in the candidate list.
@@ -234,78 +201,6 @@ def _build_prompts(
         """
     ).strip()
     return system_prompt, instructions
-
-
-def _call_openai(*, model: str, system_prompt: str, user_prompt: str) -> str:
-    settings = get_settings()
-    client = OpenAI(api_key=settings.openai_api_key)
-    response_payload: Dict[str, Any] = {
-        "model": model,
-        "input": [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt},
-        ],
-        "max_output_tokens": settings.openai_exploration_max_output_tokens,
-    }
-    if settings.openai_exploration_top_p is not None:
-        response_payload["top_p"] = settings.openai_exploration_top_p
-    if settings.openai_exploration_reasoning_effort:
-        response_payload["reasoning"] = {"effort": settings.openai_exploration_reasoning_effort}
-
-    responses_client = getattr(client, "responses", None)
-    if responses_client and hasattr(responses_client, "create"):
-        response = responses_client.create(**response_payload)
-        if getattr(response, "status", "completed") != "completed":
-            reason = getattr(getattr(response, "incomplete_details", None), "reason", "unknown")
-            logger.error("Exploration Responses API returned incomplete status: %s", reason)
-            raise HTTPException(status_code=status.HTTP_502_BAD_GATEWAY, detail="Exploration model did not complete successfully")
-        text = _extract_response_text(response)
-        if not text:
-            raise HTTPException(status_code=status.HTTP_502_BAD_GATEWAY, detail="Exploration model returned empty output")
-        return text
-
-    logger.warning("OpenAI client missing Responses API; calling REST endpoint directly")
-    try:
-        resp = httpx.post(
-            "https://api.openai.com/v1/responses",
-            json=response_payload,
-            headers={
-                "Authorization": f"Bearer {settings.openai_api_key}",
-                "Content-Type": "application/json",
-            },
-            timeout=60,
-        )
-    except httpx.HTTPError as exc:
-        logger.error("HTTP error calling OpenAI Responses API: %s", exc)
-        raise HTTPException(status_code=status.HTTP_502_BAD_GATEWAY, detail="Unable to reach OpenAI") from exc
-
-    if resp.status_code >= 400:
-        logger.error("OpenAI Responses REST API returned %s: %s", resp.status_code, resp.text)
-        raise HTTPException(status_code=status.HTTP_502_BAD_GATEWAY, detail="Exploration model call failed")
-
-    payload = resp.json()
-    text = _extract_response_text(payload)
-    if not text:
-        raise HTTPException(status_code=status.HTTP_502_BAD_GATEWAY, detail="Exploration model returned empty output")
-    return text
-
-
-def _extract_response_text(response: Any) -> str:
-    chunks: List[str] = []
-    output = getattr(response, "output", None)
-    if output is None and isinstance(response, dict):
-        output = response.get("output")
-    for block in output or []:
-        block_content = getattr(block, "content", None)
-        if block_content is None and isinstance(block, dict):
-            block_content = block.get("content")
-        for content in block_content or []:
-            part_text = getattr(content, "text", None)
-            if part_text is None and isinstance(content, dict):
-                part_text = content.get("text")
-            if part_text:
-                chunks.append(part_text)
-    return "".join(chunks).strip()
 
 
 def _parse_llm_payload(raw_text: str) -> Dict[str, Any]:
@@ -341,25 +236,16 @@ def _materialize_meals(
                         quantity=item.get("quantity"),
                         productName=item.get("product"),
                     )
-                    for item in _extract_key_ingredients(meal)
+                    for item in extract_key_ingredients(meal)
                 ],
                 rationale=selection.get("reason_to_show"),
                 expectedReaction=selection.get("expected_reaction"),
                 diversityAxes=selection.get("diversity_axes") or [],
                 skuSnapshot=[
-                    MealSkuSnapshot(**snapshot) for snapshot in _extract_sku_snapshot(meal)
+                    MealSkuSnapshot(**snapshot) for snapshot in extract_sku_snapshot(meal)
                 ],
             )
         )
         if len(meals) >= meal_target:
             break
     return meals
-
-
-def _format_json(payload: Any) -> str:
-    def _default(value: Any):
-        if isinstance(value, datetime):
-            return value.isoformat()
-        return str(value)
-
-    return json.dumps(payload, indent=2, default=_default)

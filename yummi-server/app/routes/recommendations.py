@@ -5,11 +5,17 @@ from uuid import UUID
 from fastapi import APIRouter, Depends
 
 from ..auth import get_current_principal
-from ..schemas import ExplorationRunRequest, ExplorationRunResponse
+from ..schemas import (
+    ExplorationRunRequest,
+    ExplorationRunResponse,
+    RecommendationRunRequest,
+    RecommendationRunResponse,
+)
 from ..services.exploration import (
     fetch_exploration_session,
     run_exploration_workflow,
 )
+from ..services.recommendation import run_recommendation_workflow
 
 router = APIRouter(prefix="/recommendations", tags=["recommendations"])
 
@@ -30,3 +36,12 @@ async def get_exploration_run(
 ) -> ExplorationRunResponse:
     user_id = principal.get("sub")
     return await fetch_exploration_session(user_id=user_id, session_id=session_id)
+
+
+@router.post("/feed", response_model=RecommendationRunResponse)
+async def create_recommendation_feed(
+    payload: RecommendationRunRequest,
+    principal=Depends(get_current_principal),
+) -> RecommendationRunResponse:
+    user_id = principal.get("sub")
+    return await run_recommendation_workflow(user_id=user_id, request=payload)

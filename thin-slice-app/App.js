@@ -241,6 +241,10 @@ const PREFERENCE_CONTROL_STATES = [
   { id: "neutral", label: "Skip", icon: "○" },
   { id: "dislike", label: "Dislike", icon: "👎" },
 ];
+const RECOMMENDATION_MEAL_TARGET = 10;
+const RECOMMENDATION_API_ENDPOINT = API_BASE_URL
+  ? `${API_BASE_URL}/recommendations/feed`
+  : null;
 const VEGETARIAN_PROTEIN_DISLIKES = [
   "protein_chicken",
   "protein_beef",
@@ -779,6 +783,11 @@ function AppContent() {
   const [explorationSessionId, setExplorationSessionId] = useState(null);
   const [explorationError, setExplorationError] = useState(null);
   const [explorationReactions, setExplorationReactions] = useState({});
+  const [isRecommendationFlowVisible, setIsRecommendationFlowVisible] = useState(false);
+  const [recommendationState, setRecommendationState] = useState("idle");
+  const [recommendationMeals, setRecommendationMeals] = useState([]);
+  const [recommendationNotes, setRecommendationNotes] = useState([]);
+  const [recommendationError, setRecommendationError] = useState(null);
   const preferenceSyncHashRef = useRef(null);
 
   const { height: SCREEN_HEIGHT } = Dimensions.get("window");
@@ -871,7 +880,17 @@ function AppContent() {
     setExplorationSessionId(null);
     setExplorationError(null);
     setExplorationReactions({});
+    setIsRecommendationFlowVisible(false);
+    setRecommendationState("idle");
+    setRecommendationMeals([]);
+    setRecommendationNotes([]);
+    setRecommendationError(null);
     setHasSeenExplorationResults(false);
+    setIsRecommendationFlowVisible(false);
+    setRecommendationState("idle");
+    setRecommendationMeals([]);
+    setRecommendationNotes([]);
+    setRecommendationError(null);
   }, [userId]);
 
   useEffect(() => {
@@ -1242,6 +1261,12 @@ function AppContent() {
     }
     setExplorationState("running");
     setExplorationError(null);
+    setIsRecommendationFlowVisible(false);
+    setRecommendationState("idle");
+    setRecommendationMeals([]);
+    setRecommendationNotes([]);
+    setRecommendationError(null);
+    setHasSeenExplorationResults(false);
     try {
       const headers = await buildAuthHeaders({
         "Content-Type": "application/json",
@@ -1278,10 +1303,87 @@ function AppContent() {
     setExplorationSessionId(null);
     setExplorationReactions({});
     setExplorationState("idle");
+    setIsRecommendationFlowVisible(false);
+    setRecommendationState("idle");
+    setRecommendationMeals([]);
+    setRecommendationNotes([]);
+    setRecommendationError(null);
+    setHasSeenExplorationResults(false);
   }, []);
 
+  const runRecommendationFeed = useCallback(async () => {
+    if (!RECOMMENDATION_API_ENDPOINT || !explorationSessionId) {
+      return;
+    }
+    setRecommendationState("running");
+    setRecommendationError(null);
+    setRecommendationMeals([]);
+    setRecommendationNotes([]);
+    try {
+      const headers = await buildAuthHeaders({
+        "Content-Type": "application/json",
+      });
+      const reactionPayload = Object.entries(explorationReactions || {})
+        .filter(([, state]) => state === "like" || state === "dislike")
+        .map(([mealId, reaction]) => ({ mealId, reaction }));
+      const response = await fetch(RECOMMENDATION_API_ENDPOINT, {
+        method: "POST",
+        headers,
+        body: JSON.stringify({
+          explorationSessionId,
+          mealCount: RECOMMENDATION_MEAL_TARGET,
+          reactions: reactionPayload,
+        }),
+      });
+      if (!response.ok) {
+        const errorPayload = await response.json().catch(() => ({}));
+        throw new Error(
+          errorPayload?.detail ??
+            "Unable to generate follow-up recommendations right now."
+        );
+      }
+      const data = await response.json();
+      setRecommendationMeals(data?.meals ?? []);
+      setRecommendationNotes(data?.notes ?? []);
+      setRecommendationState("ready");
+    } catch (error) {
+      console.warn("Recommendation feed run failed", error);
+      setRecommendationError(
+        error?.message ?? "Something went wrong while building recommendations."
+      );
+      setRecommendationState("error");
+    }
+  }, [
+    RECOMMENDATION_API_ENDPOINT,
+    buildAuthHeaders,
+    explorationReactions,
+    explorationSessionId,
+  ]);
+
   const handleConfirmExplorationReview = useCallback(() => {
+    if (!RECOMMENDATION_API_ENDPOINT || !explorationSessionId) {
+      setHasSeenExplorationResults(true);
+      return;
+    }
     setHasSeenExplorationResults(true);
+    setIsRecommendationFlowVisible(true);
+    runRecommendationFeed();
+  }, [
+    RECOMMENDATION_API_ENDPOINT,
+    explorationSessionId,
+    runRecommendationFeed,
+  ]);
+
+  const handleRecommendationRetry = useCallback(() => {
+    runRecommendationFeed();
+  }, [runRecommendationFeed]);
+
+  const handleRecommendationComplete = useCallback(() => {
+    setIsRecommendationFlowVisible(false);
+  }, []);
+
+  const handleSkipRecommendationFlow = useCallback(() => {
+    setIsRecommendationFlowVisible(false);
   }, []);
 
   const handleExplorationReaction = useCallback((mealId, value) => {
@@ -1377,6 +1479,58 @@ function AppContent() {
     },
     [explorationReactions, handleExplorationReaction]
   );
+
+  const renderRecommendationMeal = useCallback(({ item }) => {
+    const tagEntries = Object.entries(item.tags ?? {}).slice(0, 2);
+    const confidenceLabel =
+      typeof item.confidence === "number"
+        ? `${Math.round(item.confidence * 100)}% match`
+        : null;
+    return (
+      <View style={styles.recommendationCard}>
+        <View style={styles.recommendationHeading}>
+          <View style={styles.recommendationRankBadge}>
+            <Text style={styles.recommendationRankText}>#{item.rank}</Text>
+          </View>
+          <View style={styles.recommendationTitleGroup}>
+            <Text style={styles.recommendationMealName}>{item.name}</Text>
+            {confidenceLabel ? (
+              <Text style={styles.recommendationConfidence}>{confidenceLabel}</Text>
+            ) : null}
+          </View>
+        </View>
+        {item.description ? (
+          <Text style={styles.recommendationDescription}>{item.description}</Text>
+        ) : null}
+        {tagEntries.length ? (
+          <View style={styles.recommendationTagRow}>
+            {tagEntries.map(([category, values]) => (
+              <View
+                key={`${item.mealId}-${category}`}
+                style={styles.recommendationTagChip}
+              >
+                <Text style={styles.recommendationTagText}>
+                  {`${category}: ${values.slice(0, 2).join(", ")}`}
+                </Text>
+              </View>
+            ))}
+          </View>
+        ) : null}
+        {item.rationale ? (
+          <Text style={styles.recommendationRationale}>{item.rationale}</Text>
+        ) : null}
+        {item.diversityAxes?.length ? (
+          <View style={styles.recommendationAxes}>
+            {item.diversityAxes.map((axis, index) => (
+              <Text key={`${item.mealId}-axis-${index}`} style={styles.recommendationAxisText}>
+                • {axis}
+              </Text>
+            ))}
+          </View>
+        ) : null}
+      </View>
+    );
+  }, []);
 
   const fetchWallet = useCallback(async () => {
     if (!walletEndpoint) {
@@ -2543,6 +2697,111 @@ function AppContent() {
     );
   }
 
+  if (
+    isRecommendationFlowVisible &&
+    (recommendationState === "idle" || recommendationState === "running")
+  ) {
+    return (
+      <SafeAreaView style={styles.preferencesSafeArea}>
+        <StatusBar style="dark" />
+        <View style={styles.explorationWrapper}>
+          <ActivityIndicator size="large" color="#00a651" />
+          <Text style={styles.explorationProcessingTitle}>
+            Building your recommended meals…
+          </Text>
+          <Text style={styles.explorationProcessingSubtitle}>
+            We’re combining your likes, dislikes, and saved tags to craft the first home feed.
+          </Text>
+        </View>
+      </SafeAreaView>
+    );
+  }
+
+  if (isRecommendationFlowVisible && recommendationState === "error") {
+    return (
+      <SafeAreaView style={styles.preferencesSafeArea}>
+        <StatusBar style="dark" />
+        <View style={styles.explorationWrapper}>
+          <Text style={styles.prefCategoryTitle}>Unable to build recommendations</Text>
+          <Text style={styles.prefCategorySubtitle}>
+            {recommendationError ??
+              "Something went wrong while creating your feed. Please try again."}
+          </Text>
+          <TouchableOpacity
+            style={[styles.prefContinueButton, { marginTop: 24 }]}
+            onPress={handleRecommendationRetry}
+          >
+            <Text style={styles.prefContinueButtonText}>Try again</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.prefRedoButton}
+            onPress={handleSkipRecommendationFlow}
+          >
+            <Text style={styles.prefRedoButtonText}>Skip for now</Text>
+          </TouchableOpacity>
+        </View>
+      </SafeAreaView>
+    );
+  }
+
+  if (isRecommendationFlowVisible && recommendationState === "ready") {
+    return (
+      <SafeAreaView style={styles.preferencesSafeArea}>
+        <StatusBar style="dark" />
+        <FlatList
+          data={recommendationMeals}
+          keyExtractor={(item) => `${item.mealId}-${item.rank}`}
+          renderItem={renderRecommendationMeal}
+          ListHeaderComponent={
+            <View style={styles.recommendationHeader}>
+              <Text style={styles.prefCategoryTitle}>
+                Here’s your starter lineup
+              </Text>
+              <Text style={styles.prefCategorySubtitle}>
+                We prioritized meals you’re likely to enjoy while keeping cuisines and prep times varied.
+              </Text>
+              {recommendationNotes?.length ? (
+                <View style={styles.recommendationNotes}>
+                  {recommendationNotes.map((note, index) => (
+                    <Text key={`rec-note-${index}`} style={styles.recommendationNoteText}>
+                      • {note}
+                    </Text>
+                  ))}
+                </View>
+              ) : null}
+            </View>
+          }
+          ListFooterComponent={
+            <View style={styles.recommendationFooter}>
+              <TouchableOpacity
+                style={styles.prefContinueButton}
+                onPress={handleRecommendationComplete}
+              >
+                <Text style={styles.prefContinueButtonText}>Continue to home</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={styles.prefRedoButton}
+                onPress={handleRecommendationRetry}
+              >
+                <Text style={styles.prefRedoButtonText}>Refresh list</Text>
+              </TouchableOpacity>
+            </View>
+          }
+          ListEmptyComponent={
+            <View style={styles.recommendationEmptyState}>
+              <Text style={styles.recommendationEmptyTitle}>No meals to show</Text>
+              <Text style={styles.recommendationEmptySubtitle}>
+                We couldn’t map your feedback to new meals yet. Try refreshing the list.
+              </Text>
+            </View>
+          }
+          contentContainerStyle={styles.recommendationList}
+          showsVerticalScrollIndicator={false}
+        />
+      </SafeAreaView>
+    );
+  }
+
   if (screen === "webview" && activeOrder) {
     const injectedRunner =
       activeOrder.mode === "runner"
@@ -3312,6 +3571,125 @@ const styles = StyleSheet.create({
   explorationNoteText: {
     fontSize: 13,
     color: "#1d3752",
+  },
+  recommendationHeader: {
+    paddingHorizontal: 24,
+    paddingBottom: 8,
+  },
+  recommendationList: {
+    paddingBottom: 60,
+  },
+  recommendationCard: {
+    marginHorizontal: 24,
+    marginBottom: 18,
+    backgroundColor: "#ffffff",
+    borderRadius: 22,
+    padding: 20,
+    shadowColor: "#14251c",
+    shadowOpacity: 0.06,
+    shadowRadius: 20,
+    shadowOffset: { width: 0, height: 10 },
+    elevation: 3,
+  },
+  recommendationHeading: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 12,
+    marginBottom: 8,
+  },
+  recommendationRankBadge: {
+    width: 42,
+    height: 42,
+    borderRadius: 12,
+    backgroundColor: "#e8f6ec",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  recommendationRankText: {
+    fontSize: 18,
+    fontWeight: "700",
+    color: "#0f3c27",
+  },
+  recommendationTitleGroup: {
+    flex: 1,
+  },
+  recommendationMealName: {
+    fontSize: 18,
+    fontWeight: "700",
+    color: "#0f3c27",
+  },
+  recommendationConfidence: {
+    marginTop: 2,
+    fontSize: 13,
+    color: "#2f5b42",
+  },
+  recommendationDescription: {
+    fontSize: 14,
+    color: "#445248",
+    marginBottom: 10,
+    lineHeight: 20,
+  },
+  recommendationTagRow: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: 6,
+    marginBottom: 10,
+  },
+  recommendationTagChip: {
+    backgroundColor: "#eef5f0",
+    borderRadius: 10,
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+  },
+  recommendationTagText: {
+    fontSize: 12,
+    color: "#1b4a33",
+  },
+  recommendationRationale: {
+    fontSize: 14,
+    color: "#1e3529",
+    lineHeight: 20,
+    marginBottom: 8,
+  },
+  recommendationAxes: {
+    marginTop: 4,
+    gap: 2,
+  },
+  recommendationAxisText: {
+    fontSize: 12,
+    color: "#506457",
+  },
+  recommendationNotes: {
+    marginTop: 14,
+    backgroundColor: "#f5f8ff",
+    borderRadius: 14,
+    padding: 12,
+  },
+  recommendationNoteText: {
+    fontSize: 13,
+    color: "#1d2f52",
+  },
+  recommendationFooter: {
+    paddingHorizontal: 24,
+    paddingBottom: 36,
+    paddingTop: 12,
+    gap: 12,
+  },
+  recommendationEmptyState: {
+    paddingHorizontal: 24,
+    paddingVertical: 32,
+    alignItems: "center",
+    gap: 8,
+  },
+  recommendationEmptyTitle: {
+    fontSize: 16,
+    fontWeight: "600",
+    color: "#122e21",
+  },
+  recommendationEmptySubtitle: {
+    fontSize: 14,
+    color: "#3f5c4b",
+    textAlign: "center",
   },
   prefProgressContainer: {
     backgroundColor: "#ffffff",

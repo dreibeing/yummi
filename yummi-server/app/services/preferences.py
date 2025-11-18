@@ -168,4 +168,24 @@ def serialize_preference_profile(
         "completedAt": profile.completed_at,
         "lastSyncedAt": profile.last_synced_at if profile else None,
         "updatedAt": profile.updated_at if profile else None,
+        "latestRecommendations": profile.latest_recommendation_meal_ids if profile else None,
+        "latestRecommendationsGeneratedAt": profile.latest_recommendation_generated_at if profile else None,
+        "latestRecommendationsManifestId": profile.latest_recommendation_manifest_id if profile else None,
     }
+
+
+async def update_latest_recommendations(
+    session: AsyncSession,
+    *,
+    user_id: str,
+    meal_ids: list[str],
+    manifest_id: str | None,
+    generated_at: datetime | None,
+) -> None:
+    profile = await get_user_preference_profile(session, user_id)
+    if not profile:
+        raise ValueError(f"User preference profile '{user_id}' not found")
+    profile.latest_recommendation_meal_ids = meal_ids
+    profile.latest_recommendation_manifest_id = manifest_id
+    profile.latest_recommendation_generated_at = _coerce_datetime(generated_at)
+    await session.commit()

@@ -46,8 +46,8 @@ Produce a validated archetype repository that satisfies the contracts in `yummi_
 - Updated roadmap entry noting the deployed `tags_version` and `refresh_version`.
 
 ## Immediate Next Actions
-1. Backfill and monitor the exploration run: `/v1/recommendations/exploration` now generates the 10-meal thumbs-up/down set using GPT-5. Add ops notes (expected latency, REST fallback) and make sure the Expo thin slice keeps surfacing the loading/error/success views we just shipped.
-2. Build the next-stage recommendation worker: feed the stored exploration reactions plus `user_preference_profiles` into a second GPT call that returns ranked meals for the home feed. Document the prompt, schema, and feedback ingestion plan before wiring the new endpoint.
+1. Productize the persisted feed: expose `/v1/recommendations/feed` history from the stored `latest_recommendation_*` fields, define retention/overwrite policy, and document the retrieval contract so other clients can hydrate their home screens without another LLM call.
+2. Integrate the stored recommendations into the thin-slice home experience: decide how the persisted meal IDs populate the post-onboarding feed, add refresh controls, and ensure caching/invalidation guidance exists for the Expo client + extension.
 3. Finish meal coverage for every curated archetype (run `scripts/meal_builder.py --archetype-uid <uid>`), then regenerate `resolver/meals/meals_manifest.json` so `/v1/meals*` exposes the full portfolio before product QA begins.
 4. Install `pyarrow` and rerun `scripts/meal_aggregate_builder.py` with Parquet output + checksum logging so Step 6 artifacts satisfy the publication contract (JSON + analytics Parquet + release note).
 5. Wire curator recommendations (keep/modify/replace) into the next generation run or manual edits, then re-run the curator to confirm overlap clusters are resolved.

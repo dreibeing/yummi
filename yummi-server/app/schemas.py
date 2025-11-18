@@ -1,7 +1,8 @@
 from __future__ import annotations
 
 from datetime import datetime
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Literal
+from uuid import UUID
 from pydantic import BaseModel, Field, ConfigDict
 
 DEFAULT_CANDIDATE_POOL_LIMIT = 40
@@ -280,6 +281,42 @@ class ExplorationRunResponse(BaseModel):
     infoNotes: List[str] = Field(default_factory=list)
 
 
+class MealReaction(BaseModel):
+    mealId: str = Field(min_length=1)
+    reaction: Literal["like", "dislike"]
+
+
+class RecommendationRunRequest(BaseModel):
+    mealVersion: Optional[str] = None
+    candidateLimit: Optional[int] = Field(default=None, ge=1, le=MAX_CANDIDATE_POOL_LIMIT)
+    mealCount: Optional[int] = Field(default=None, ge=1, le=20)
+    hardConstraints: Optional[HardConstraintOverrides] = None
+    declinedMealIds: List[str] = Field(default_factory=list)
+    explorationSessionId: Optional[UUID] = None
+    reactions: List[MealReaction] = Field(default_factory=list)
+
+
+class RecommendationMeal(BaseModel):
+    mealId: str
+    name: Optional[str] = None
+    description: Optional[str] = None
+    tags: Dict[str, List[str]] = Field(default_factory=dict)
+    rank: int = Field(ge=1)
+    rationale: Optional[str] = None
+    confidence: Optional[float] = Field(default=None, ge=0.0, le=1.0)
+    diversityAxes: List[str] = Field(default_factory=list)
+    skuSnapshot: List[MealSkuSnapshot] = Field(default_factory=list)
+    archetypeId: Optional[str] = None
+
+
+class RecommendationRunResponse(BaseModel):
+    generatedAt: datetime
+    manifestId: Optional[str] = None
+    tagsVersion: Optional[str] = None
+    notes: List[str] = Field(default_factory=list)
+    meals: List[RecommendationMeal] = Field(default_factory=list)
+
+
 class PreferenceSaveRequest(BaseModel):
     tagsVersion: str = Field(min_length=1)
     responses: Dict[str, Dict[str, str]] = Field(default_factory=dict)
@@ -297,3 +334,6 @@ class PreferenceProfileResponse(BaseModel):
     completedAt: Optional[datetime] = None
     lastSyncedAt: Optional[datetime] = None
     updatedAt: Optional[datetime] = None
+    latestRecommendations: Optional[List[str]] = None
+    latestRecommendationsGeneratedAt: Optional[datetime] = None
+    latestRecommendationsManifestId: Optional[str] = None
