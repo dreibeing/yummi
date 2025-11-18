@@ -806,6 +806,7 @@ function AppContent() {
   const [recommendationError, setRecommendationError] = useState(null);
   const [mealCount, setMealCount] = useState(1);
   const [homeRecommendedMeals, setHomeRecommendedMeals] = useState([]);
+  const [homeRecommendedMealsSource, setHomeRecommendedMealsSource] = useState([]);
   const [homeMealModal, setHomeMealModal] = useState({
     visible: false,
     meal: null,
@@ -813,12 +814,28 @@ function AppContent() {
   const [homeMealReplacementPointer, setHomeMealReplacementPointer] = useState(-1);
   const [mealServings, setMealServings] = useState({});
   const preferenceSyncHashRef = useRef(null);
+  const mealHomeActiveRef = useRef(false);
 
   const applyHomeRecommendedMeals = useCallback((meals) => {
-    const nextMeals = Array.isArray(meals) ? meals : [];
-    setHomeRecommendedMeals(nextMeals);
-    setHomeMealReplacementPointer(nextMeals.length - 1);
+    const nextSource = Array.isArray(meals)
+      ? meals.filter((meal) => Boolean(meal))
+      : [];
+    setHomeRecommendedMealsSource(nextSource);
+    const randomizedMeals = shuffleMeals(nextSource);
+    setHomeRecommendedMeals(randomizedMeals);
+    setHomeMealReplacementPointer(randomizedMeals.length - 1);
   }, []);
+
+  const reshuffleHomeRecommendedMeals = useCallback(() => {
+    if (!homeRecommendedMealsSource.length) {
+      setHomeRecommendedMeals([]);
+      setHomeMealReplacementPointer(-1);
+      return;
+    }
+    const randomized = shuffleMeals(homeRecommendedMealsSource);
+    setHomeRecommendedMeals(randomized);
+    setHomeMealReplacementPointer(randomized.length - 1);
+  }, [homeRecommendedMealsSource]);
 
   const { height: SCREEN_HEIGHT } = Dimensions.get("window");
   const isSmallDevice = SCREEN_HEIGHT < 740;
@@ -846,7 +863,6 @@ function AppContent() {
     !hasAcknowledgedPreferenceComplete;
   const isMealHomeSurface = homeSurface === "meal";
   const maxVisibleHomeMeals = Math.max(0, homeMealReplacementPointer + 1);
-  const minMealCount = maxVisibleHomeMeals > 0 ? 1 : 0;
   const displayedMeals = useMemo(() => {
     if (!homeRecommendedMeals.length || maxVisibleHomeMeals <= 0) {
       return [];
@@ -857,12 +873,19 @@ function AppContent() {
     }
     return homeRecommendedMeals.slice(0, maxVisibleCount);
   }, [homeRecommendedMeals, maxVisibleHomeMeals, mealCount]);
-  const canDecreaseMealCount = mealCount > minMealCount;
+  const canDecreaseMealCount = mealCount > 1;
   const canIncreaseMealCount = mealCount < maxVisibleHomeMeals;
   const hasRemainingHomeMealPool = homeMealReplacementPointer >= mealCount;
   const canReplaceMeals = hasRemainingHomeMealPool;
   const isHomeMealInventoryDepleted =
     displayedMeals.length > 0 && displayedMeals.length >= maxVisibleHomeMeals;
+
+  const isMealHomeActive =
+    screen === "home" &&
+    isMealHomeSurface &&
+    isWelcomeComplete &&
+    isPreferenceStateReady &&
+    !isOnboardingActive;
 
   const userDisplayName = useMemo(() => {
     const primaryEmail = user?.primaryEmailAddress?.emailAddress;
@@ -944,12 +967,8 @@ function AppContent() {
   }, [homeMealReplacementPointer]);
 
   const handleDecreaseMealCount = useCallback(() => {
-    setMealCount((prev) => {
-      const minValue = maxVisibleHomeMeals > 0 ? 1 : 0;
-      const next = Math.max(minValue, prev - 1);
-      return next;
-    });
-  }, [maxVisibleHomeMeals]);
+    setMealCount((prev) => Math.max(1, prev - 1));
+  }, []);
 
   const handleHomeMealServingsIncrease = useCallback((mealId) => {
     if (!mealId) {
@@ -1087,6 +1106,13 @@ function AppContent() {
   }, [isMealHomeSurface, screen]);
 
   useEffect(() => {
+    if (isMealHomeActive && !mealHomeActiveRef.current) {
+      reshuffleHomeRecommendedMeals();
+    }
+    mealHomeActiveRef.current = isMealHomeActive;
+  }, [isMealHomeActive, reshuffleHomeRecommendedMeals]);
+
+  useEffect(() => {
     let isActive = true;
     const hydratePreferences = async () => {
       try {
@@ -1218,7 +1244,7 @@ function AppContent() {
             ? payload.latestRecommendationMeals
             : [];
         if (latestMealsSource.length > 0) {
-          applyHomeRecommendedMeals(shuffleMeals(latestMealsSource));
+          applyHomeRecommendedMeals(latestMealsSource);
         } else {
           applyHomeRecommendedMeals([]);
         }
@@ -1246,13 +1272,11 @@ function AppContent() {
   ]);
 
   useEffect(() => {
-    const availableMeals = maxVisibleHomeMeals;
-    if (availableMeals <= 0) {
-      setMealCount((prev) => (prev === 0 ? prev : 0));
+    if (!homeRecommendedMeals.length || maxVisibleHomeMeals <= 0) {
       return;
     }
     setMealCount((prev) => {
-      const next = Math.min(Math.max(prev, 1), availableMeals);
+      const next = Math.min(Math.max(prev, 1), maxVisibleHomeMeals);
       return next === prev ? prev : next;
     });
   }, [homeRecommendedMeals.length, maxVisibleHomeMeals]);
