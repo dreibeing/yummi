@@ -23,6 +23,7 @@ import {
   Image,
   View,
   Dimensions,
+  FlatList,
 } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import { WebView } from "react-native-webview";
@@ -230,6 +231,10 @@ const PREFERENCES_COMPLETED_STORAGE_KEY = "yummi.preferences.completed.v1";
 const PREFERENCES_TAGS_VERSION = "2025.02.0"; // Keep in sync with data/tags/defined_tags.json
 const PREFERENCES_API_ENDPOINT = API_BASE_URL
   ? `${API_BASE_URL}/preferences`
+  : null;
+const EXPLORATION_MEAL_TARGET = 10;
+const EXPLORATION_API_ENDPOINT = API_BASE_URL
+  ? `${API_BASE_URL}/recommendations/exploration`
   : null;
 const PREFERENCE_CONTROL_STATES = [
   { id: "like", label: "Like", icon: "👍" },
@@ -737,6 +742,7 @@ function AppContent() {
   const [activePreferenceIndex, setActivePreferenceIndex] = useState(0);
   const [hasAcknowledgedPreferenceComplete, setHasAcknowledgedPreferenceComplete] =
     useState(false);
+  const [hasSeenExplorationResults, setHasSeenExplorationResults] = useState(false);
   const [hasFetchedRemotePreferences, setHasFetchedRemotePreferences] = useState(false);
   const [isPreferenceSyncing, setIsPreferenceSyncing] = useState(false);
   const [preferencesSyncError, setPreferencesSyncError] = useState(null);
@@ -767,6 +773,12 @@ function AppContent() {
   const [isTopUpLoading, setIsTopUpLoading] = useState(false);
   const [payfastSession, setPayfastSession] = useState(null);
   const [payfastMonitor, setPayfastMonitor] = useState(null);
+  const [explorationState, setExplorationState] = useState("idle");
+  const [explorationMeals, setExplorationMeals] = useState([]);
+  const [explorationNotes, setExplorationNotes] = useState([]);
+  const [explorationSessionId, setExplorationSessionId] = useState(null);
+  const [explorationError, setExplorationError] = useState(null);
+  const [explorationReactions, setExplorationReactions] = useState({});
   const preferenceSyncHashRef = useRef(null);
 
   const { height: SCREEN_HEIGHT } = Dimensions.get("window");
@@ -853,6 +865,13 @@ function AppContent() {
     setLastPreferencesSyncedAt(null);
     setPreferencesSyncError(null);
     preferenceSyncHashRef.current = null;
+    setExplorationState("idle");
+    setExplorationMeals([]);
+    setExplorationNotes([]);
+    setExplorationSessionId(null);
+    setExplorationError(null);
+    setExplorationReactions({});
+    setHasSeenExplorationResults(false);
   }, [userId]);
 
   useEffect(() => {
@@ -1096,8 +1115,27 @@ function AppContent() {
   useEffect(() => {
     if (!isPreferencesFlowComplete) {
       setHasAcknowledgedPreferenceComplete(false);
+      setHasSeenExplorationResults(false);
     }
   }, [isPreferencesFlowComplete]);
+
+  useEffect(() => {
+    if (
+      !isPreferenceStateReady ||
+      !isPreferencesFlowComplete ||
+      explorationState !== "idle" ||
+      !EXPLORATION_API_ENDPOINT
+    ) {
+      return;
+    }
+    startExplorationRun();
+  }, [
+    explorationState,
+    isPreferenceStateReady,
+    isPreferencesFlowComplete,
+    startExplorationRun,
+    EXPLORATION_API_ENDPOINT,
+  ]);
 
   const handlePreferenceSelection = useCallback(
     (categoryId, tagId, value) => {
@@ -1144,8 +1182,15 @@ function AppContent() {
     setActivePreferenceIndex(0);
     setIsPreferencesFlowComplete(false);
     setHasAcknowledgedPreferenceComplete(false);
+    setHasSeenExplorationResults(false);
     setLastPreferencesSyncedAt(null);
     setPreferencesSyncError(null);
+    setExplorationState("idle");
+    setExplorationMeals([]);
+    setExplorationNotes([]);
+    setExplorationSessionId(null);
+    setExplorationError(null);
+    setExplorationReactions({});
     preferenceSyncHashRef.current = null;
     try {
       await SecureStore.deleteItemAsync(PREFERENCES_STATE_STORAGE_KEY);
@@ -1189,6 +1234,148 @@ function AppContent() {
       }
     },
     [getToken]
+  );
+
+  const startExplorationRun = useCallback(async () => {
+    if (!EXPLORATION_API_ENDPOINT) {
+      return;
+    }
+    setExplorationState("running");
+    setExplorationError(null);
+    try {
+      const headers = await buildAuthHeaders({
+        "Content-Type": "application/json",
+      });
+      const response = await fetch(EXPLORATION_API_ENDPOINT, {
+        method: "POST",
+        headers,
+        body: JSON.stringify({ mealCount: EXPLORATION_MEAL_TARGET }),
+      });
+      if (!response.ok) {
+        const errorPayload = await response.json().catch(() => ({}));
+        throw new Error(
+          errorPayload?.detail ?? "Unable to prepare exploration recipes"
+        );
+      }
+      const data = await response.json();
+      setExplorationSessionId(data?.sessionId ?? null);
+      setExplorationMeals(data?.meals ?? []);
+      setExplorationNotes(data?.infoNotes ?? []);
+      setExplorationReactions({});
+      setExplorationState("ready");
+    } catch (error) {
+      console.warn("Exploration run failed", error);
+      setExplorationError(
+        error?.message ?? "Something went wrong while preparing recipes."
+      );
+      setExplorationState("error");
+    }
+  }, [buildAuthHeaders, EXPLORATION_API_ENDPOINT]);
+
+  const handleRetryExploration = useCallback(() => {
+    setExplorationMeals([]);
+    setExplorationNotes([]);
+    setExplorationSessionId(null);
+    setExplorationReactions({});
+    setExplorationState("idle");
+  }, []);
+
+  const handleConfirmExplorationReview = useCallback(() => {
+    setHasSeenExplorationResults(true);
+  }, []);
+
+  const handleExplorationReaction = useCallback((mealId, value) => {
+    setExplorationReactions((prev) => {
+      const current = prev[mealId];
+      if (current === value) {
+        const next = { ...prev };
+        delete next[mealId];
+        return next;
+      }
+      return {
+        ...prev,
+        [mealId]: value,
+      };
+    });
+  }, []);
+
+  const renderExplorationMeal = useCallback(
+    ({ item }) => {
+      const reaction = explorationReactions[item.mealId];
+      const tagEntries = Object.entries(item.tags ?? {}).slice(0, 3);
+      return (
+        <View style={styles.explorationCard}>
+          <Text style={styles.explorationMealName}>{item.name}</Text>
+          {item.description ? (
+            <Text style={styles.explorationMealDescription}>
+              {item.description}
+            </Text>
+          ) : null}
+          {tagEntries.length > 0 && (
+            <View style={styles.explorationTagRow}>
+              {tagEntries.map(([category, values]) => (
+                <View key={`${item.mealId}-${category}`} style={styles.explorationTagChip}>
+                  <Text style={styles.explorationTagText}>
+                    {`${category}: ${values.slice(0, 2).join(", ")}`}
+                  </Text>
+                </View>
+              ))}
+            </View>
+          )}
+          {item.keyIngredients?.length ? (
+            <View style={styles.explorationIngredients}>
+              <Text style={styles.explorationIngredientLabel}>
+                Key ingredients
+              </Text>
+              {item.keyIngredients.slice(0, 4).map((ingredient, index) => (
+                <Text key={`${item.mealId}-ingredient-${index}`} style={styles.explorationIngredientText}>
+                  • {ingredient.name}
+                  {ingredient.quantity ? ` (${ingredient.quantity})` : ""}
+                </Text>
+              ))}
+            </View>
+          ) : null}
+          <View style={styles.explorationActions}>
+            <TouchableOpacity
+              style={[
+                styles.explorationActionButton,
+                reaction === "like" && styles.explorationActionButtonActive,
+              ]}
+              onPress={() => handleExplorationReaction(item.mealId, "like")}
+            >
+              <Text
+                style={[
+                  styles.explorationActionText,
+                  reaction === "like" && styles.explorationActionTextActive,
+                ]}
+              >
+                Like
+              </Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={[
+                styles.explorationActionButton,
+                styles.explorationActionButtonDislike,
+                reaction === "dislike" && styles.explorationActionButtonActive,
+              ]}
+              onPress={() =>
+                handleExplorationReaction(item.mealId, "dislike")
+              }
+            >
+              <Text
+                style={[
+                  styles.explorationActionText,
+                  reaction === "dislike" && styles.explorationActionTextActive,
+                ]}
+              >
+                Dislike
+              </Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      );
+    },
+    [explorationReactions, handleExplorationReaction]
   );
 
   const fetchWallet = useCallback(async () => {
@@ -2251,6 +2438,111 @@ function AppContent() {
     );
   }
 
+  if (
+    isPreferencesFlowComplete &&
+    hasAcknowledgedPreferenceComplete &&
+    !hasSeenExplorationResults &&
+    (explorationState === "idle" || explorationState === "running")
+  ) {
+    return (
+      <SafeAreaView style={styles.preferencesSafeArea}>
+        <StatusBar style="dark" />
+        <View style={styles.explorationWrapper}>
+          <ActivityIndicator size="large" color="#00a651" />
+          <Text style={styles.explorationProcessingTitle}>
+            Crafting your starter list…
+          </Text>
+          <Text style={styles.explorationProcessingSubtitle}>
+            We’re running your preferences through our chef AI to gather ten meals. This usually takes 10–15 seconds.
+          </Text>
+        </View>
+      </SafeAreaView>
+    );
+  }
+
+  if (
+    isPreferencesFlowComplete &&
+    hasAcknowledgedPreferenceComplete &&
+    !hasSeenExplorationResults &&
+    explorationState === "error"
+  ) {
+    return (
+      <SafeAreaView style={styles.preferencesSafeArea}>
+        <StatusBar style="dark" />
+        <View style={styles.explorationWrapper}>
+          <Text style={styles.prefCategoryTitle}>We hit a snag</Text>
+          <Text style={styles.prefCategorySubtitle}>
+            {explorationError ??
+              "Something went wrong while preparing your recipes. Please try again."}
+          </Text>
+          <TouchableOpacity
+            style={[styles.prefContinueButton, { marginTop: 24 }]}
+            onPress={handleRetryExploration}
+          >
+            <Text style={styles.prefContinueButtonText}>Try again</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.prefRedoButton}
+            onPress={handleResetPreferencesFlow}
+          >
+            <Text style={styles.prefRedoButtonText}>
+              Adjust preferences
+            </Text>
+          </TouchableOpacity>
+        </View>
+      </SafeAreaView>
+    );
+  }
+
+  if (
+    isPreferencesFlowComplete &&
+    hasAcknowledgedPreferenceComplete &&
+    !hasSeenExplorationResults &&
+    explorationState === "ready"
+  ) {
+    return (
+      <SafeAreaView style={styles.preferencesSafeArea}>
+        <StatusBar style="dark" />
+        <FlatList
+          data={explorationMeals}
+          keyExtractor={(item) => item.mealId}
+          renderItem={renderExplorationMeal}
+          ListHeaderComponent={
+            <View style={styles.explorationHeader}>
+              <Text style={styles.prefCategoryTitle}>
+                Tap like or dislike on each meal
+              </Text>
+              <Text style={styles.prefCategorySubtitle}>
+                We’ll use your reactions plus the onboarding tags to refine future runs.
+              </Text>
+              {explorationNotes?.length ? (
+                <View style={styles.explorationNotes}>
+                  {explorationNotes.map((note, index) => (
+                    <Text key={`note-${index}`} style={styles.explorationNoteText}>
+                      • {note}
+                    </Text>
+                  ))}
+                </View>
+              ) : null}
+            </View>
+          }
+          ListFooterComponent={
+            <View style={styles.explorationFooter}>
+              <TouchableOpacity
+                style={styles.prefContinueButton}
+                onPress={handleConfirmExplorationReview}
+              >
+                <Text style={styles.prefContinueButtonText}>Continue</Text>
+              </TouchableOpacity>
+            </View>
+          }
+          contentContainerStyle={styles.explorationList}
+          showsVerticalScrollIndicator={false}
+        />
+      </SafeAreaView>
+    );
+  }
+
   if (screen === "webview" && activeOrder) {
     const injectedRunner =
       activeOrder.mode === "runner"
@@ -2895,6 +3187,131 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: "#b3261e",
     textAlign: "center",
+  },
+  explorationWrapper: {
+    flex: 1,
+    paddingHorizontal: 32,
+    paddingVertical: 48,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  explorationProcessingTitle: {
+    marginTop: 24,
+    fontSize: 22,
+    fontWeight: "600",
+    textAlign: "center",
+    color: "#0f3c27",
+  },
+  explorationProcessingSubtitle: {
+    marginTop: 12,
+    fontSize: 15,
+    textAlign: "center",
+    color: "#4a5e53",
+    lineHeight: 22,
+  },
+  explorationHeader: {
+    paddingHorizontal: 24,
+    paddingBottom: 8,
+  },
+  explorationList: {
+    paddingBottom: 60,
+  },
+  explorationCard: {
+    marginHorizontal: 24,
+    marginBottom: 18,
+    backgroundColor: "#ffffff",
+    borderRadius: 20,
+    paddingHorizontal: 20,
+    paddingVertical: 18,
+    shadowColor: "#153424",
+    shadowOpacity: 0.06,
+    shadowRadius: 18,
+    shadowOffset: { width: 0, height: 8 },
+    elevation: 3,
+  },
+  explorationMealName: {
+    fontSize: 18,
+    fontWeight: "700",
+    color: "#0f3c27",
+    marginBottom: 6,
+  },
+  explorationMealDescription: {
+    fontSize: 14,
+    color: "#445248",
+    marginBottom: 12,
+    lineHeight: 20,
+  },
+  explorationTagRow: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: 6,
+    marginBottom: 12,
+  },
+  explorationTagChip: {
+    backgroundColor: "#eef5f0",
+    borderRadius: 10,
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+  },
+  explorationTagText: {
+    fontSize: 12,
+    color: "#1b4a33",
+  },
+  explorationIngredients: {
+    marginBottom: 14,
+  },
+  explorationIngredientLabel: {
+    fontSize: 13,
+    fontWeight: "600",
+    color: "#0f3c27",
+    marginBottom: 4,
+  },
+  explorationIngredientText: {
+    fontSize: 13,
+    color: "#4a5e53",
+  },
+  explorationActions: {
+    flexDirection: "row",
+    gap: 10,
+  },
+  explorationActionButton: {
+    flex: 1,
+    borderWidth: 1,
+    borderColor: "#d7e3dc",
+    borderRadius: 12,
+    alignItems: "center",
+    justifyContent: "center",
+    paddingVertical: 10,
+  },
+  explorationActionButtonDislike: {
+    borderColor: "#f5d6d6",
+  },
+  explorationActionButtonActive: {
+    borderColor: "#00a651",
+    backgroundColor: "#e5f6ec",
+  },
+  explorationActionText: {
+    fontSize: 15,
+    fontWeight: "600",
+    color: "#0f3c27",
+  },
+  explorationActionTextActive: {
+    color: "#00a651",
+  },
+  explorationFooter: {
+    paddingHorizontal: 24,
+    paddingBottom: 36,
+    paddingTop: 8,
+  },
+  explorationNotes: {
+    marginTop: 14,
+    backgroundColor: "#f2fbff",
+    borderRadius: 14,
+    padding: 12,
+  },
+  explorationNoteText: {
+    fontSize: 13,
+    color: "#1d3752",
   },
   prefProgressContainer: {
     backgroundColor: "#ffffff",

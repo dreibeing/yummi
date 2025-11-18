@@ -35,8 +35,17 @@ class Settings(BaseSettings):
 
     # OpenAI
     openai_api_key: str | None = Field(default=None)
-    openai_allowed_models: List[str] = Field(default_factory=lambda: ["gpt-4o-mini", "gpt-4o", "o4-mini"])
+    openai_allowed_models: List[str] = Field(
+        default_factory=lambda: ["gpt-4o-mini", "gpt-4o", "o4-mini", "gpt-5"]
+    )
     openai_default_model: str = Field(default="gpt-4o-mini")
+    openai_exploration_model: str = Field(default="gpt-5")
+    openai_exploration_temperature: float = Field(default=0.15)
+    openai_exploration_top_p: float | None = Field(default=None)
+    openai_exploration_reasoning_effort: str = Field(default="low")
+    openai_exploration_max_output_tokens: int = Field(default=9000)
+    exploration_candidate_limit: int = Field(default=50)
+    exploration_meal_count: int = Field(default=10)
 
     # Observability
     sentry_dsn: str | None = Field(default=None)

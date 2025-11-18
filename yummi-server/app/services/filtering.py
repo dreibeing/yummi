@@ -72,6 +72,12 @@ class ConstraintContext:
     declined_meal_ids: set[str]
 
 
+@dataclass
+class CandidateMealDetail:
+    archetype_uid: str | None
+    meal: Dict[str, Any]
+
+
 def generate_candidate_pool(
     *,
     manifest: Dict[str, Any],
@@ -81,6 +87,41 @@ def generate_candidate_pool(
     user_id: str,
 ) -> CandidateFilterResponse:
     """Build the filtered candidate pool returned to the client/AI worker."""
+    response, _ = _build_candidate_pool(
+        manifest=manifest,
+        tag_manifest=tag_manifest,
+        profile=profile,
+        request=request,
+        user_id=user_id,
+    )
+    return response
+
+
+def generate_candidate_pool_with_details(
+    *,
+    manifest: Dict[str, Any],
+    tag_manifest: TagManifest,
+    profile: UserPreferenceProfile | None,
+    request: CandidateFilterRequest,
+    user_id: str,
+) -> tuple[CandidateFilterResponse, List[CandidateMealDetail]]:
+    return _build_candidate_pool(
+        manifest=manifest,
+        tag_manifest=tag_manifest,
+        profile=profile,
+        request=request,
+        user_id=user_id,
+    )
+
+
+def _build_candidate_pool(
+    *,
+    manifest: Dict[str, Any],
+    tag_manifest: TagManifest,
+    profile: UserPreferenceProfile | None,
+    request: CandidateFilterRequest,
+    user_id: str,
+) -> tuple[CandidateFilterResponse, List[CandidateMealDetail]]:
     limit = _normalize_limit(request.limit)
     overrides = request.hardConstraints or HardConstraintOverrides()
     constraints = _build_constraint_context(
@@ -89,12 +130,12 @@ def generate_candidate_pool(
         overrides=overrides,
         declined_ids=request.declinedMealIds,
     )
-    total_candidates, summaries = _filter_manifest(
+    total_candidates, summaries, details = _filter_manifest(
         manifest=manifest,
         constraints=constraints,
         limit=limit,
     )
-    return CandidateFilterResponse(
+    response = CandidateFilterResponse(
         candidatePoolId=str(uuid.uuid4()),
         mealVersion=manifest.get("manifest_id"),
         manifestId=manifest.get("manifest_id"),
@@ -104,6 +145,7 @@ def generate_candidate_pool(
         returnedCount=len(summaries),
         candidateMeals=summaries,
     )
+    return response, details
 
 
 def _normalize_limit(value: int | None) -> int:
@@ -200,9 +242,10 @@ def _filter_manifest(
     manifest: Dict[str, Any],
     constraints: ConstraintContext,
     limit: int,
-) -> tuple[int, List[CandidateMealSummary]]:
+) -> tuple[int, List[CandidateMealSummary], List[CandidateMealDetail]]:
     archetypes = manifest.get("archetypes") or []
     retained: List[CandidateMealSummary] = []
+    details: List[CandidateMealDetail] = []
     total_matches = 0
 
     for archetype in archetypes:
@@ -225,7 +268,8 @@ def _filter_manifest(
             total_matches += 1
             if len(retained) < limit:
                 retained.append(_build_candidate_summary(meal, archetype_uid))
-    return total_matches, retained
+                details.append(CandidateMealDetail(archetype_uid=archetype_uid, meal=meal))
+    return total_matches, retained, details
 
 
 def _passes_diet(tags: Dict[str, List[str]], constraints: ConstraintContext) -> bool:

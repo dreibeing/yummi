@@ -108,3 +108,19 @@ class UserPreferenceProfile(Base, TimestampMixin):
     last_synced_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now(), nullable=False
     )
+
+
+class MealExplorationSession(Base, TimestampMixin):
+    __tablename__ = "meal_exploration_sessions"
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    user_id: Mapped[str] = mapped_column(String(128), nullable=False)
+    status: Mapped[str] = mapped_column(String(32), nullable=False, default="pending")
+    model: Mapped[Optional[str]] = mapped_column(String(64))
+    manifest_id: Mapped[Optional[str]] = mapped_column(String(64))
+    tags_version: Mapped[Optional[str]] = mapped_column(String(32))
+    json_type = JSON().with_variant(JSONB, "postgresql")
+    prompt_context: Mapped[Optional[dict]] = mapped_column(json_type)
+    exploration_results: Mapped[Optional[dict]] = mapped_column(json_type)
+    error_message: Mapped[Optional[str]] = mapped_column(String(512))
+    completed_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True))

@@ -207,6 +207,12 @@ class MealSkuSnapshot(BaseModel):
     detailUrl: Optional[str] = None
 
 
+class IngredientSummary(BaseModel):
+    name: Optional[str] = None
+    quantity: Optional[str] = None
+    productName: Optional[str] = None
+
+
 class CandidateMealSummary(BaseModel):
     mealId: str
     archetypeId: Optional[str] = None
@@ -248,6 +254,30 @@ class CandidateFilterResponse(BaseModel):
     totalCandidates: int
     returnedCount: int
     candidateMeals: List[CandidateMealSummary] = Field(default_factory=list)
+
+
+class ExplorationMeal(BaseModel):
+    mealId: str
+    name: Optional[str] = None
+    description: Optional[str] = None
+    tags: Dict[str, List[str]] = Field(default_factory=dict)
+    keyIngredients: List[IngredientSummary] = Field(default_factory=list)
+    rationale: Optional[str] = None
+    expectedReaction: Optional[str] = None
+    diversityAxes: List[str] = Field(default_factory=list)
+    skuSnapshot: List[MealSkuSnapshot] = Field(default_factory=list)
+
+
+class ExplorationRunRequest(BaseModel):
+    candidateLimit: Optional[int] = Field(default=None, ge=1, le=MAX_CANDIDATE_POOL_LIMIT)
+    mealCount: Optional[int] = Field(default=None, ge=1, le=20)
+
+
+class ExplorationRunResponse(BaseModel):
+    sessionId: str
+    status: str
+    meals: List[ExplorationMeal] = Field(default_factory=list)
+    infoNotes: List[str] = Field(default_factory=list)
 
 
 class PreferenceSaveRequest(BaseModel):

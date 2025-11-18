@@ -46,11 +46,10 @@ Produce a validated archetype repository that satisfies the contracts in `yummi_
 - Updated roadmap entry noting the deployed `tags_version` and `refresh_version`.
 
 ## Immediate Next Actions
-1. Build the server-side hard filter that reads `user_preference_profiles`, enforces the diet/allergen/religious/heat constraints against `resolver/meals/meals_manifest.json`, drops declined meals, and emits a candidate pool contract the recommendation worker can consume.
-2. Design the follow-on LLM-driven exploration loop: define the prompt/response schema that, given user tags plus the filtered candidate pool, proposes a short list of meals for thumbs-up/down feedback focused on maximizing information gain for future sessions.
+1. Backfill and monitor the exploration run: `/v1/recommendations/exploration` now generates the 10-meal thumbs-up/down set using GPT-5. Add ops notes (expected latency, REST fallback) and make sure the Expo thin slice keeps surfacing the loading/error/success views we just shipped.
+2. Build the next-stage recommendation worker: feed the stored exploration reactions plus `user_preference_profiles` into a second GPT call that returns ranked meals for the home feed. Document the prompt, schema, and feedback ingestion plan before wiring the new endpoint.
 3. Finish meal coverage for every curated archetype (run `scripts/meal_builder.py --archetype-uid <uid>`), then regenerate `resolver/meals/meals_manifest.json` so `/v1/meals*` exposes the full portfolio before product QA begins.
 4. Install `pyarrow` and rerun `scripts/meal_aggregate_builder.py` with Parquet output + checksum logging so Step 6 artifacts satisfy the publication contract (JSON + analytics Parquet + release note).
 5. Wire curator recommendations (keep/modify/replace) into the next generation run or manual edits, then re-run the curator to confirm overlap clusters are resolved.
 6. Hook the thin-slice app + extension to `/v1/meals` and `/v1/meals/{uid}`, add caching/invalidation guidance, and confirm an end-to-end thin-slice journey uses the hosted manifest.
 7. Review `data/ingredients/unique_core_items.csv` with product/culinary leads, lock a `canonical_ingredients` schema/version, and feed that list into the upcoming meal-generation prompt so recipes reference normalized ingredient IDs instead of retailer SKUs.
-8. Read `user_preference_profiles` when building candidate pools so meal scoring honors saved diet/allergen tags; document the contract that `/v1/preferences` now satisfies for downstream services.

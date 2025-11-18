@@ -150,6 +150,28 @@ AI Allocation/Ranking (OpenAI Call)
 - Alignment Checks: Prompt references the canonical tag schemas described in this document and ensures each meal retains canonical/SKU IDs already validated offline.
 - Failure Handling: If AI output missing IDs or ranks, reject and retry with stricter system message, logging incident.
 
+Exploration Pass (Ten-meal thumbs up/down set)
+----------------------------------------------
+- Objective: After filtering, call GPT-5 (low reasoning) to choose exactly ten meals that maximize information gain about the user while still biasing toward probable likes.
+- Payload:
+  - Full `user_profile` (`selectedTags`, `dislikedTags`, completion state) and any prior feedback summary available.
+  - Filtered candidate pool truncated to ≤50 entries. Each entry must include `{meal_id, name, description, meal_tags, canonical_ingredients (top 6; name + quantity), skuSnapshot}`. Recipe steps are unnecessary at this stage.
+- Prompt requirements:
+  1. Emphasize "maximize positive reactions" while ensuring **diversity** across Diet, Cuisine, PrepTime, and Protein tags so we can confirm/deny onboarding assumptions.
+  2. Force at least one representative for every diet/ethics tag the user liked during onboarding (if available in the pool); fill remaining slots with high-likelihood matches plus a few exploratory picks that differ along Cuisine/Technique axes.
+  3. Return JSON `{explorationSet:[{meal_id, reason_to_show, expected_reaction (\"likely_like\"|\"uncertain\"), diversity_axes[]}]}`
+  4. Include a short `information_gain_notes` array explaining which tags/profiles each meal will help validate.
+- Runtime behavior:
+  - Always bias toward candidates predicted to be liked (≥60% of the set) to keep the UX positive; at least two entries may be intentionally divergent when the model wants to probe unknown areas.
+  - Deduplicate by `meal_id`; no archetype appears more than twice.
+  - Persist the exploration set ID so the client can report likes/dislikes against that specific batch; store alongside prompt metadata for replay.
+  - The server invokes OpenAI's Responses API (REST fallback baked in) with `max_output_tokens ≈ 9000`, so expect ~10–15s latency. When running locally, watch for the warning that the SDK fell back to the HTTP client—this is normal.
+- Client hand-off:
+  - Thin-slice shows three screens after onboarding: “preferences saved”, “crafting your starter list…”, and the exploration carousel where each meal exposes Like/Dislike toggles. There is no post-list confirmation view yet; once the user hits Continue we simply persist their feedback and return them to the home flow. Future iterations will add a completion banner + CTA into the main recommendation feed.
+- Maintenance:
+  - Whenever tag vocab or filtering logic changes, re-run prompt linting to confirm the exploration instructions reference the latest category names.
+  - Track telemetry on acceptance rate vs. diversity axes to iteratively adjust temperature/system instructions without changing code.
+
 Feedback Learning Loop
 ----------------------
 - Data Model: `feedback_events` table keyed by `(user_id, meal_id, timestamp)` with `signal ENUM('like','dislike','declined')`, `tag_snapshot`, `reason_text`. `preference_weights` table stores rolling averages of tag affinity.
