@@ -24,6 +24,7 @@ NEUTRAL_VALUES = {"neutral", "skip", "unset", ""}
 class TagManifest:
     tags_version: str | None
     tag_to_category: Dict[str, str]
+    tag_to_value: Dict[str, str]
 
 
 @lru_cache
@@ -32,27 +33,33 @@ def load_tag_manifest() -> TagManifest:
     path_setting = get_settings().tags_manifest_path
     if not path_setting:
         logger.warning("tags_manifest_path not configured; tag validation disabled")
-        return TagManifest(tags_version=None, tag_to_category={})
+        return TagManifest(tags_version=None, tag_to_category={}, tag_to_value={})
 
     manifest_path = Path(path_setting)
     try:
         with manifest_path.open("r", encoding="utf-8") as handle:
             payload = json.load(handle)
     except FileNotFoundError:
-        logger.warning("Tag manifest file %s not found; tag validation disabled", manifest_path)
-        return TagManifest(tags_version=None, tag_to_category={})
+        logger.warning(
+            "Tag manifest file %s not found; tag validation disabled", manifest_path
+        )
+        return TagManifest(tags_version=None, tag_to_category={}, tag_to_value={})
     except Exception as exc:  # pragma: no cover - defensive logging
         logger.warning("Unable to read tag manifest %s: %s", manifest_path, exc)
-        return TagManifest(tags_version=None, tag_to_category={})
+        return TagManifest(tags_version=None, tag_to_category={}, tag_to_value={})
 
     lookup: Dict[str, str] = {}
+    value_lookup: Dict[str, str] = {}
     for entry in payload.get("defined_tags", []):
         tag_id = entry.get("tag_id")
         category = entry.get("category")
+        value = entry.get("value")
         if tag_id and category:
             lookup[tag_id] = category
+        if tag_id and value:
+            value_lookup[tag_id] = str(value)
     tags_version = payload.get("tags_version")
-    return TagManifest(tags_version=tags_version, tag_to_category=lookup)
+    return TagManifest(tags_version=tags_version, tag_to_category=lookup, tag_to_value=value_lookup)
 
 
 def _normalize_state(value: str | None) -> str | None:

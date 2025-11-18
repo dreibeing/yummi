@@ -4,6 +4,9 @@ from datetime import datetime
 from typing import Any, Dict, List, Optional
 from pydantic import BaseModel, Field, ConfigDict
 
+DEFAULT_CANDIDATE_POOL_LIMIT = 40
+MAX_CANDIDATE_POOL_LIMIT = 100
+
 
 class Product(BaseModel):
     productId: Optional[str] = None
@@ -195,6 +198,56 @@ class MealManifest(BaseModel):
     stats: Dict[str, Any] = Field(default_factory=dict)
     warnings: List[str] = Field(default_factory=list)
     archetypes: List[MealArchetype] = Field(default_factory=list)
+
+
+class MealSkuSnapshot(BaseModel):
+    productId: Optional[str] = None
+    name: Optional[str] = None
+    salePrice: Optional[float] = None
+    detailUrl: Optional[str] = None
+
+
+class CandidateMealSummary(BaseModel):
+    mealId: str
+    archetypeId: Optional[str] = None
+    name: Optional[str] = None
+    description: Optional[str] = None
+    tags: Dict[str, List[str]] = Field(default_factory=dict)
+    heatLevel: Optional[str] = None
+    prepTimeMinutes: Optional[int] = None
+    prepTimeTags: List[str] = Field(default_factory=list)
+    complexity: Optional[str] = None
+    skuSnapshot: List[MealSkuSnapshot] = Field(default_factory=list)
+
+
+class HardConstraintOverrides(BaseModel):
+    diets: List[str] = Field(default_factory=list)
+    allergens: List[str] = Field(default_factory=list)
+    ethics: List[str] = Field(default_factory=list)
+    excludeHeatLevels: List[str] = Field(default_factory=list)
+    maxPrepTimeMinutes: Optional[int] = Field(default=None, gt=0, le=240)
+
+
+class CandidateFilterRequest(BaseModel):
+    mealVersion: Optional[str] = None
+    hardConstraints: Optional[HardConstraintOverrides] = None
+    declinedMealIds: List[str] = Field(default_factory=list)
+    limit: int = Field(
+        default=DEFAULT_CANDIDATE_POOL_LIMIT,
+        ge=1,
+        le=MAX_CANDIDATE_POOL_LIMIT,
+    )
+
+
+class CandidateFilterResponse(BaseModel):
+    candidatePoolId: str
+    mealVersion: Optional[str] = None
+    manifestId: Optional[str] = None
+    tagsVersion: Optional[str] = None
+    generatedAt: datetime
+    totalCandidates: int
+    returnedCount: int
+    candidateMeals: List[CandidateMealSummary] = Field(default_factory=list)
 
 
 class PreferenceSaveRequest(BaseModel):

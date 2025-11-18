@@ -125,6 +125,19 @@ Filtering — Hard Constraints Only
 - Non-Goals: No soft preferences, diversity balancing, editorial curation, manual overrides, or stock-aware ranking at this layer.
 - Output: Candidate pool with metadata needed for AI (meal summary, tags, sku availability). If pool < threshold, expand by relaxing only time-bound constraints (e.g., extend prep time) with explicit user confirmation, not automatic heuristics.
 
+Restriction Tag Governance
+--------------------------
+- Treat only the following tag IDs as **blocking restrictions** when onboarding responses come back as “like” (or “dislike” for allergens). All other categories remain soft preferences used downstream by the LLM:
+  - Diet: `diet_vegan`, `diet_veg`, `diet_pesc`, `diet_poultry`, `diet_lowcarb`, `diet_keto`, `diet_glutenaware`.
+  - Ethics & Religious: `ethics_halal`, `ethics_kosher`, `ethics_jain`, `ethics_sussea`, `ethics_animal`.
+  - Heat & Spice (upper-bound): `heat_none`, `heat_mild` cap the allowed heat level to those values (still allowing anything milder). `heat_medium`, `heat_hot`, `heat_extra` are non-blocking preferences.
+  - Allergens & Avoidances: every tag under the `Allergens` category (`allergen_gluten` … `allergen_mustard`) is exclusionary when the user marks it as “dislike”.
+- Filtering must require **all** selected restriction tags to be present on a meal (e.g., `diet_vegan` **and** `ethics_halal`), while allergen dislikes and declined meal IDs remove candidates immediately.
+- Maintenance checklist (run whenever we add/move/update tags or re-run the logic stack):
+  1. Compare this whitelist with `data/tags/defined_tags.json`; add/remove IDs here when the manifest changes so the runtime service stays aligned.
+  2. Re-run `yummi-server/app/services/filtering.py` tests (e.g., `test_filtering_service.py`) to confirm the rule set matches the manifest.
+  3. Update client copy or onboarding logic if the “restriction” UI surface changes, ensuring “preference-only” tags never negate meals at the filtering layer.
+
 AI Allocation/Ranking (OpenAI Call)
 -----------------------------------
 - Inputs: `user_profile` (tags, hard constraints summary, preference weights), `candidate_pool` (≤50 meals per call with compact descriptors), `feedback_context` (liked/disliked tags, declined IDs), `system_parameters` (retailer slug, desired recommendation count).
