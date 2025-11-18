@@ -2629,12 +2629,14 @@ function AppContent() {
               </View>
             </View>
           </ScrollView>
-          <TouchableOpacity
-            style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
-            onPress={() => setIsWelcomeComplete(true)}
-          >
-            <Text style={styles.welcomeButtonText}>Start shopping!</Text>
-          </TouchableOpacity>
+          <View style={styles.welcomeFooter}>
+            <TouchableOpacity
+              style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
+              onPress={() => setIsWelcomeComplete(true)}
+            >
+              <Text style={styles.welcomeButtonText}>Start shopping!</Text>
+            </TouchableOpacity>
+          </View>
         </View>
       </SafeAreaView>
     );
@@ -3862,7 +3864,7 @@ const styles = StyleSheet.create({
   },
   welcomeBody: {
     flex: 1,
-    paddingBottom: 24,
+    paddingBottom: 0,
     justifyContent: "space-between",
   },
   mealHomeSafeArea: {
@@ -4075,7 +4077,7 @@ const styles = StyleSheet.create({
   },
   welcomeFooter: {
     paddingHorizontal: 20,
-    paddingBottom: 24,
+    paddingBottom: 16, // match home screen bottom inset
     paddingTop: 12,
     backgroundColor: "#f4f9f5",
     justifyContent: "center",
