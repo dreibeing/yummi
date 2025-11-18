@@ -2462,50 +2462,50 @@ function AppContent() {
     return (
       <SafeAreaView style={styles.welcomeSafeArea}>
         <StatusBar style="dark" />
-        <ScrollView
-          contentContainerStyle={[
-            styles.welcomeScroll,
-            { paddingBottom: FOOTER_PADDING },
-          ]}
-          showsVerticalScrollIndicator={false}
-        >
-          <View style={styles.welcomeHero}>
-            <Image
-              source={require("./assets/yummi-logo.png")}
-              style={styles.welcomeLogo}
-              resizeMode="contain"
-            />
-            <Text style={styles.welcomeTagline}>Your personal meal shopper</Text>
-          </View>
-          <View style={styles.welcomeCenter}>
-            <View style={styles.usagePanel}>
-              <View style={styles.freeUsesCard}>
-                <View style={styles.freeUsesValueStack}>
-                  <Text style={[styles.freeUsesValueNumber, { fontSize: FREE_USES_FONT_SIZE }]}>10</Text>
-                  <Text style={styles.freeUsesValueSuffix}>Free uses left</Text>
+        <View style={styles.welcomeBody}>
+          <ScrollView
+            contentContainerStyle={[
+              styles.welcomeScroll,
+              { paddingBottom: FOOTER_PADDING },
+            ]}
+            showsVerticalScrollIndicator={false}
+          >
+            <View style={styles.welcomeHero}>
+              <Image
+                source={require("./assets/yummi-logo.png")}
+                style={styles.welcomeLogo}
+                resizeMode="contain"
+              />
+              <Text style={styles.welcomeTagline}>Your personal meal shopper</Text>
+            </View>
+            <View style={styles.welcomeCenter}>
+              <View style={styles.usagePanel}>
+                <View style={styles.freeUsesCard}>
+                  <View style={styles.freeUsesValueStack}>
+                    <Text style={[styles.freeUsesValueNumber, { fontSize: FREE_USES_FONT_SIZE }]}>10</Text>
+                    <Text style={styles.freeUsesValueSuffix}>Free uses left</Text>
+                  </View>
+                </View>
+                <View style={styles.shareSection}>
+                  <TouchableOpacity
+                    style={[styles.welcomeButton, styles.shareButton]}
+                    onPress={handleShareForFreeUses}
+                    activeOpacity={0.9}
+                  >
+                    <Text style={[styles.welcomeButtonText, styles.shareButtonText]}>
+                      Give 10, get 10
+                    </Text>
+                    <Feather name="share-2" size={22} style={styles.shareButtonIcon} />
+                  </TouchableOpacity>
+                  <Text style={styles.shareSubline}>
+                    Share with a friend, you both get 10 free uses.
+                  </Text>
                 </View>
               </View>
-              <View style={styles.shareSection}>
-                <TouchableOpacity
-                  style={[styles.welcomeButton, styles.shareButton]}
-                  onPress={handleShareForFreeUses}
-                  activeOpacity={0.9}
-                >
-                  <Text style={[styles.welcomeButtonText, styles.shareButtonText]}>
-                    Give 10, get 10
-                  </Text>
-                  <Feather name="share-2" size={22} style={styles.shareButtonIcon} />
-                </TouchableOpacity>
-                <Text style={styles.shareSubline}>
-                  Share with a friend, you both get 10 free uses.
-                </Text>
-              </View>
             </View>
-          </View>
-        </ScrollView>
-        <View style={styles.welcomeFooter}>
+          </ScrollView>
           <TouchableOpacity
-            style={styles.welcomeButton}
+            style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
             onPress={() => setIsWelcomeComplete(true)}
           >
             <Text style={styles.welcomeButtonText}>Start shopping!</Text>
@@ -3068,7 +3068,9 @@ function AppContent() {
               </Text>
             )}
           </ScrollView>
-          <TouchableOpacity style={[styles.welcomeButton, styles.mealHomeCtaButton]}>
+          <TouchableOpacity
+            style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
+          >
             <Text style={styles.welcomeButtonText}>Create shopping list</Text>
           </TouchableOpacity>
         </View>
@@ -3679,14 +3681,19 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#f4f9f5",
   },
+  welcomeBody: {
+    flex: 1,
+    paddingBottom: 24,
+    justifyContent: "space-between",
+  },
   mealHomeSafeArea: {
     flex: 1,
     backgroundColor: "#f4f9f5",
   },
   mealHomeHeader: {
     paddingHorizontal: 16,
-    paddingTop: 16,
-    paddingBottom: 12,
+    paddingTop: 12,
+    paddingBottom: 8,
     width: "100%",
     backgroundColor: "transparent",
     flexDirection: "row",
@@ -3711,10 +3718,10 @@ const styles = StyleSheet.create({
   },
   mealHomeBody: {
     flex: 1,
-    paddingHorizontal: 24,
-    paddingTop: 16,
-    paddingBottom: 24,
-    gap: 20,
+    paddingHorizontal: 20,
+    paddingTop: 8,
+    paddingBottom: 16,
+    gap: 12,
   },
   mealHomeMenuButton: {
     paddingVertical: 10,
@@ -3793,6 +3800,7 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     paddingHorizontal: 24,
     paddingTop: 8,
+    paddingBottom: 32,
   },
   welcomeHero: {
     width: "100%",
@@ -3869,6 +3877,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     paddingHorizontal: 24,
+    maxWidth: 420,
+    alignSelf: "center",
   },
   shareButtonText: {
     flex: 1,
@@ -3885,10 +3895,9 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   welcomeFooter: {
-    paddingHorizontal: 24,
-    paddingBottom: 36,
+    paddingHorizontal: 20,
+    paddingBottom: 24,
     paddingTop: 12,
-    marginTop: 36,
     backgroundColor: "#f4f9f5",
     justifyContent: "center",
     alignItems: "center",
@@ -3900,11 +3909,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
-    maxWidth: 420,
     shadowColor: "#000",
     shadowOpacity: 0.2,
     shadowRadius: 8,
     shadowOffset: { width: 0, height: 4 },
+  },
+  welcomeCtaButton: {
+    alignSelf: "stretch",
   },
   welcomeButtonText: {
     fontSize: 16,
@@ -4791,20 +4802,20 @@ const styles = StyleSheet.create({
   },
   mealCountCard: {
     backgroundColor: "#fff",
-    borderRadius: 18,
-    paddingVertical: 18,
-    paddingHorizontal: 18,
+    borderRadius: 16,
+    paddingVertical: 14,
+    paddingHorizontal: 16,
     shadowColor: "#000",
-    shadowOpacity: 0.05,
-    shadowOffset: { width: 0, height: 6 },
-    shadowRadius: 12,
-    elevation: 3,
+    shadowOpacity: 0.04,
+    shadowOffset: { width: 0, height: 4 },
+    shadowRadius: 10,
+    elevation: 2,
   },
   mealCountTitle: {
     fontSize: 18,
     fontWeight: "700",
     color: "#0c3c26",
-    marginBottom: 12,
+    marginBottom: 10,
   },
   mealCountControls: {
     flexDirection: "row",
@@ -4847,8 +4858,8 @@ const styles = StyleSheet.create({
   },
   mealRecommendationsScroll: {
     flex: 1,
-    marginTop: 24,
-    marginBottom: 24,
+    marginTop: 12,
+    marginBottom: 12,
   },
   mealRecommendationsContent: {
     paddingBottom: 24,
@@ -4908,6 +4919,7 @@ const styles = StyleSheet.create({
   mealHomeCtaButton: {
     alignSelf: "center",
     width: "100%",
+    marginTop: 4,
   },
   mealDetailModalContainer: {
     position: "absolute",
