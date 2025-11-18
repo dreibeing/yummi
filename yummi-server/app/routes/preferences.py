@@ -20,7 +20,9 @@ async def get_preferences(principal=Depends(get_current_principal)):
     async with get_session() as session:
         profile = await get_user_preference_profile(session, principal.get("sub"))
     manifest = load_tag_manifest()
-    payload = serialize_preference_profile(profile, manifest)
+    payload = serialize_preference_profile(
+        profile, manifest, include_latest_recommendation_details=True
+    )
     return PreferenceProfileResponse(**payload)
 
 
@@ -44,5 +46,7 @@ async def update_preferences(
                 status_code=status.HTTP_400_BAD_REQUEST,
                 detail=str(exc),
             )
-    response_payload = serialize_preference_profile(profile, manifest)
+    response_payload = serialize_preference_profile(
+        profile, manifest, include_latest_recommendation_details=True
+    )
     return PreferenceProfileResponse(**response_payload)

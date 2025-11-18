@@ -317,6 +317,29 @@ class RecommendationRunResponse(BaseModel):
     meals: List[RecommendationMeal] = Field(default_factory=list)
 
 
+class LatestRecommendationIngredient(BaseModel):
+    name: Optional[str] = None
+    quantity: Optional[str] = None
+    preparation: Optional[str] = None
+    productName: Optional[str] = None
+    productId: Optional[str] = None
+    detailUrl: Optional[str] = None
+    salePrice: Optional[float] = None
+    packageQuantity: Optional[float] = None
+
+
+class LatestRecommendationMeal(BaseModel):
+    mealId: str
+    name: Optional[str] = None
+    description: Optional[str] = None
+    tags: Dict[str, List[str]] = Field(default_factory=dict)
+    keyIngredients: List[str] = Field(default_factory=list)
+    archetypeId: Optional[str] = None
+    prepSteps: List[str] = Field(default_factory=list)
+    cookSteps: List[str] = Field(default_factory=list)
+    ingredients: List[LatestRecommendationIngredient] = Field(default_factory=list)
+
+
 class PreferenceSaveRequest(BaseModel):
     tagsVersion: str = Field(min_length=1)
     responses: Dict[str, Dict[str, str]] = Field(default_factory=dict)
@@ -337,3 +360,4 @@ class PreferenceProfileResponse(BaseModel):
     latestRecommendations: Optional[List[str]] = None
     latestRecommendationsGeneratedAt: Optional[datetime] = None
     latestRecommendationsManifestId: Optional[str] = None
+    latestRecommendationMeals: List[LatestRecommendationMeal] = Field(default_factory=list)

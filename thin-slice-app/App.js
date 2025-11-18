@@ -728,6 +728,15 @@ const normalizeOrderItems = (items) =>
     };
   });
 
+const shuffleMeals = (meals = []) => {
+  const copy = Array.isArray(meals) ? [...meals] : [];
+  for (let i = copy.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+};
+
 const stageLabels = {
   idle: "Waiting to start",
   waiting_login: "Waiting for Woolworths login",
@@ -794,6 +803,11 @@ function AppContent() {
   const [recommendationNotes, setRecommendationNotes] = useState([]);
   const [recommendationError, setRecommendationError] = useState(null);
   const [mealCount, setMealCount] = useState(1);
+  const [homeRecommendedMeals, setHomeRecommendedMeals] = useState([]);
+  const [homeMealModal, setHomeMealModal] = useState({
+    visible: false,
+    meal: null,
+  });
   const preferenceSyncHashRef = useRef(null);
 
   const { height: SCREEN_HEIGHT } = Dimensions.get("window");
@@ -821,6 +835,16 @@ function AppContent() {
     isPreferencesFlowComplete &&
     !hasAcknowledgedPreferenceComplete;
   const isMealHomeSurface = homeSurface === "meal";
+  const displayedMeals = useMemo(() => {
+    if (!homeRecommendedMeals.length) {
+      return [];
+    }
+    const limit = Math.min(mealCount, homeRecommendedMeals.length);
+    return homeRecommendedMeals.slice(0, limit);
+  }, [homeRecommendedMeals, mealCount]);
+  const canDecreaseMealCount = mealCount > 1;
+  const canIncreaseMealCount =
+    homeRecommendedMeals.length > 0 && mealCount < homeRecommendedMeals.length;
 
   const userDisplayName = useMemo(() => {
     const primaryEmail = user?.primaryEmailAddress?.emailAddress;
@@ -847,6 +871,7 @@ function AppContent() {
       setPayfastSession(null);
       setIsOnboardingActive(false);
       setHomeSurface("meal");
+      setHomeRecommendedMeals([]);
     } catch (error) {
       console.error("Failed to sign out", error);
       Alert.alert("Sign-out failed", "Please try again.");
@@ -890,6 +915,23 @@ function AppContent() {
     }
   }, []);
 
+  const handleIncreaseMealCount = useCallback(() => {
+    setMealCount((prev) => {
+      if (!homeRecommendedMeals.length) {
+        return prev + 1;
+      }
+      const maxMeals = homeRecommendedMeals.length;
+      if (prev >= maxMeals) {
+        return prev;
+      }
+      return prev + 1;
+    });
+  }, [homeRecommendedMeals.length]);
+
+  const handleDecreaseMealCount = useCallback(() => {
+    setMealCount((prev) => Math.max(1, prev - 1));
+  }, []);
+
   const toggleMealMenu = useCallback(() => {
     setIsMealMenuOpen((prev) => !prev);
   }, []);
@@ -908,6 +950,14 @@ function AppContent() {
     setScreen("home");
   }, []);
 
+  const handleReturnToWelcome = useCallback(() => {
+    setIsWelcomeComplete(false);
+    setIsOnboardingActive(false);
+    setIsMealMenuOpen(false);
+    setHomeSurface("meal");
+    setScreen("home");
+  }, []);
+
   useEffect(() => {
     setHasFetchedRemotePreferences(false);
     setLastPreferencesSyncedAt(null);
@@ -915,6 +965,7 @@ function AppContent() {
     setIsOnboardingActive(false);
     setHomeSurface("meal");
     setIsMealMenuOpen(false);
+    setHomeRecommendedMeals([]);
     preferenceSyncHashRef.current = null;
     setExplorationState("idle");
     setExplorationMeals([]);
@@ -1066,6 +1117,17 @@ function AppContent() {
             setLastPreferencesSyncedAt(parsed);
           }
         }
+        const latestMealsSource =
+          Array.isArray(payload?.latestRecommendations?.meals)
+            ? payload.latestRecommendations.meals
+            : Array.isArray(payload?.latestRecommendationMeals)
+            ? payload.latestRecommendationMeals
+            : [];
+        if (latestMealsSource.length > 0) {
+          setHomeRecommendedMeals(shuffleMeals(latestMealsSource));
+        } else {
+          setHomeRecommendedMeals([]);
+        }
       } catch (error) {
         if (__DEV__) {
           console.warn("Unable to fetch saved preferences", error);
@@ -1087,6 +1149,16 @@ function AppContent() {
     preferenceResponses,
     userId,
   ]);
+
+  useEffect(() => {
+    if (!homeRecommendedMeals.length) {
+      return;
+    }
+    setMealCount((prev) => {
+      const next = Math.min(Math.max(prev, 1), homeRecommendedMeals.length);
+      return next === prev ? prev : next;
+    });
+  }, [homeRecommendedMeals.length]);
 
   useEffect(() => {
     if (
@@ -1267,6 +1339,7 @@ function AppContent() {
     setRecommendationMeals([]);
     setRecommendationNotes([]);
     setRecommendationError(null);
+    setHomeRecommendedMeals([]);
     preferenceSyncHashRef.current = null;
     try {
       await SecureStore.deleteItemAsync(PREFERENCES_STATE_STORAGE_KEY);
@@ -2907,6 +2980,14 @@ function AppContent() {
         <StatusBar style="dark" />
         <View style={styles.mealHomeHeader}>
           <TouchableOpacity
+            style={styles.mealHomeBackButton}
+            onPress={handleReturnToWelcome}
+            accessibilityRole="button"
+            accessibilityLabel="Back to welcome"
+          >
+            <Feather name="arrow-left" size={24} color="#00a651" />
+          </TouchableOpacity>
+          <TouchableOpacity
             style={styles.mealHomeMenuButton}
             onPress={toggleMealMenu}
             accessibilityRole="button"
@@ -2920,10 +3001,14 @@ function AppContent() {
             <Text style={styles.mealCountTitle}>How many meals would you like?</Text>
             <View style={styles.mealCountControls}>
               <TouchableOpacity
-                style={styles.mealCountButton}
-                onPress={() => setMealCount((prev) => Math.max(1, prev - 1))}
+                style={[
+                  styles.mealCountButton,
+                  !canDecreaseMealCount && styles.mealCountButtonDisabled,
+                ]}
+                onPress={handleDecreaseMealCount}
                 accessibilityRole="button"
                 accessibilityLabel="Decrease meal count"
+                disabled={!canDecreaseMealCount}
               >
                 <Text style={styles.mealCountButtonText}>-</Text>
               </TouchableOpacity>
@@ -2931,10 +3016,14 @@ function AppContent() {
                 <Text style={styles.mealCountValueText}>{mealCount}</Text>
               </View>
               <TouchableOpacity
-                style={styles.mealCountButton}
-                onPress={() => setMealCount((prev) => prev + 1)}
+                style={[
+                  styles.mealCountButton,
+                  !canIncreaseMealCount && styles.mealCountButtonDisabled,
+                ]}
+                onPress={handleIncreaseMealCount}
                 accessibilityRole="button"
                 accessibilityLabel="Increase meal count"
+                disabled={!canIncreaseMealCount}
               >
                 <Text style={styles.mealCountButtonText}>+</Text>
               </TouchableOpacity>
@@ -2945,37 +3034,150 @@ function AppContent() {
             contentContainerStyle={styles.mealRecommendationsContent}
             showsVerticalScrollIndicator={false}
           >
-            <Text style={styles.mealRecommendationsPlaceholder}>
-              Recommended meals will appear here.
-            </Text>
+            {displayedMeals.length > 0 ? (
+              displayedMeals.map((meal) => {
+                return (
+                  <TouchableOpacity
+                    key={meal.mealId}
+                    style={styles.homeMealCard}
+                    activeOpacity={0.9}
+                    onPress={() =>
+                      setHomeMealModal({ visible: true, meal })
+                    }
+                  >
+                    <Text style={styles.homeMealTitle}>
+                      {meal.name ?? "Meal"}
+                    </Text>
+                    {meal.description ? (
+                      <Text style={styles.homeMealDescription}>
+                        {meal.description}
+                      </Text>
+                    ) : null}
+                    {Array.isArray(meal.tags?.PrepTime) &&
+                    meal.tags.PrepTime.length > 0 ? (
+                      <Text style={styles.homeMealPrepTime}>
+                        Prep time: {meal.tags.PrepTime.join(", ")}
+                      </Text>
+                    ) : null}
+                  </TouchableOpacity>
+                );
+              })
+            ) : (
+              <Text style={styles.mealRecommendationsPlaceholder}>
+                Recommended meals will appear here.
+              </Text>
+            )}
           </ScrollView>
           <TouchableOpacity style={[styles.welcomeButton, styles.mealHomeCtaButton]}>
             <Text style={styles.welcomeButtonText}>Create shopping list</Text>
           </TouchableOpacity>
         </View>
         {isMealMenuOpen ? (
-          <View style={styles.mealMenuContainer} pointerEvents="box-none">
-            <TouchableWithoutFeedback onPress={closeMealMenu}>
-              <View style={styles.mealMenuBackdrop} />
-            </TouchableWithoutFeedback>
-            <View style={styles.mealMenuCard}>
-              <TouchableOpacity
-                style={styles.mealMenuItem}
-                onPress={handleMealMenuReset}
-              >
-                <Text style={styles.mealMenuItemText}>Reset Preferences</Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={styles.mealMenuItem}
-                onPress={handleMealMenuSignOut}
-              >
-                <Text style={[styles.mealMenuItemText, styles.mealMenuItemDanger]}>
-                  Sign out
-                </Text>
-              </TouchableOpacity>
-            </View>
+        <View style={styles.mealMenuContainer} pointerEvents="box-none">
+          <TouchableWithoutFeedback onPress={closeMealMenu}>
+            <View style={styles.mealMenuBackdrop} />
+          </TouchableWithoutFeedback>
+          <View style={styles.mealMenuCard}>
+            <TouchableOpacity
+              style={styles.mealMenuItem}
+              onPress={handleMealMenuReset}
+            >
+              <Text style={styles.mealMenuItemText}>Reset Preferences</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.mealMenuItem}
+              onPress={handleMealMenuSignOut}
+            >
+              <Text style={[styles.mealMenuItemText, styles.mealMenuItemDanger]}>
+                Sign out
+              </Text>
+            </TouchableOpacity>
           </View>
-        ) : null}
+        </View>
+      ) : null}
+      {homeMealModal.visible && homeMealModal.meal ? (
+        <View style={styles.mealDetailModalContainer} pointerEvents="box-none">
+          <TouchableWithoutFeedback
+            onPress={() => setHomeMealModal({ visible: false, meal: null })}
+          >
+            <View style={styles.mealDetailBackdrop} />
+          </TouchableWithoutFeedback>
+          <View style={styles.mealDetailCard}>
+            <ScrollView
+              style={styles.mealDetailScroll}
+              contentContainerStyle={styles.mealDetailContent}
+            >
+              <Text style={styles.mealDetailTitle}>
+                {homeMealModal.meal.name ?? "Meal"}
+              </Text>
+              {homeMealModal.meal.description ? (
+                <Text style={styles.mealDetailDescription}>
+                  {homeMealModal.meal.description}
+                </Text>
+              ) : null}
+              {Array.isArray(homeMealModal.meal.prepSteps) &&
+              homeMealModal.meal.prepSteps.length > 0 ? (
+                <View style={styles.mealDetailSection}>
+                  <Text style={styles.mealDetailSectionTitle}>Prep Steps</Text>
+                  {homeMealModal.meal.prepSteps.map((step, idx) => (
+                    <Text key={`prep-${idx}`} style={styles.mealDetailSectionItem}>
+                      {idx + 1}. {step}
+                    </Text>
+                  ))}
+                </View>
+              ) : null}
+              {Array.isArray(homeMealModal.meal.cookSteps) &&
+              homeMealModal.meal.cookSteps.length > 0 ? (
+                <View style={styles.mealDetailSection}>
+                  <Text style={styles.mealDetailSectionTitle}>Cooking Steps</Text>
+                  {homeMealModal.meal.cookSteps.map((step, idx) => (
+                    <Text key={`cook-${idx}`} style={styles.mealDetailSectionItem}>
+                      {idx + 1}. {step}
+                    </Text>
+                  ))}
+                </View>
+              ) : null}
+              {Array.isArray(homeMealModal.meal.ingredients) &&
+              homeMealModal.meal.ingredients.length > 0 ? (
+                <View style={styles.mealDetailSection}>
+                  <Text style={styles.mealDetailSectionTitle}>Ingredients</Text>
+                  {homeMealModal.meal.ingredients.map((ingredient, idx) => {
+                    const parts = [];
+                    if (ingredient.quantity) {
+                      parts.push(String(ingredient.quantity));
+                    }
+                    if (ingredient.name) {
+                      parts.push(ingredient.name);
+                    }
+                    if (ingredient.preparation) {
+                      parts.push(`(${ingredient.preparation})`);
+                    }
+                    const label = parts.length ? parts.join(" ") : `Ingredient ${idx + 1}`;
+                    const product = ingredient.productName
+                      ? ` – ${ingredient.productName}`
+                      : "";
+                    return (
+                      <Text
+                        key={`detail-ingredient-${idx}`}
+                        style={styles.mealDetailSectionItem}
+                      >
+                        • {label}
+                        {product}
+                      </Text>
+                    );
+                  })}
+                </View>
+              ) : null}
+            </ScrollView>
+            <TouchableOpacity
+              style={styles.mealDetailCloseButton}
+              onPress={() => setHomeMealModal({ visible: false, meal: null })}
+            >
+              <Text style={styles.mealDetailCloseText}>×</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      ) : null}
       </SafeAreaView>
     );
   }
@@ -3489,7 +3691,17 @@ const styles = StyleSheet.create({
     backgroundColor: "transparent",
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "flex-end",
+    justifyContent: "space-between",
+  },
+  mealHomeBackButton: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    borderWidth: 1,
+    borderColor: "#d3d3d3",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#fff",
   },
   mealHomeTitle: {
     fontSize: 32,
@@ -4610,6 +4822,9 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "#d8e3db",
   },
+  mealCountButtonDisabled: {
+    opacity: 0.4,
+  },
   mealCountButtonText: {
     fontSize: 24,
     fontWeight: "700",
@@ -4637,6 +4852,7 @@ const styles = StyleSheet.create({
   },
   mealRecommendationsContent: {
     paddingBottom: 24,
+    gap: 12,
   },
   mealRecommendationsPlaceholder: {
     fontSize: 16,
@@ -4644,8 +4860,135 @@ const styles = StyleSheet.create({
     textAlign: "center",
     marginTop: 40,
   },
+  homeMealCard: {
+    backgroundColor: "#ffffff",
+    borderRadius: 20,
+    paddingVertical: 20,
+    paddingHorizontal: 18,
+    shadowColor: "#000",
+    shadowOpacity: 0.05,
+    shadowOffset: { width: 0, height: 6 },
+    shadowRadius: 12,
+    elevation: 3,
+  },
+  homeMealTitle: {
+    fontSize: 22,
+    fontWeight: "700",
+    color: "#0c3c26",
+    textAlign: "center",
+    marginBottom: 8,
+  },
+  homeMealDescription: {
+    fontSize: 15,
+    color: "#2c4a38",
+    textAlign: "center",
+    marginBottom: 12,
+  },
+  homeMealIngredients: {
+    display: "none",
+  },
+  homeMealIngredientsTitle: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "#0c3c26",
+    marginBottom: 4,
+  },
+  homeMealPrepTime: {
+    marginTop: 6,
+    fontSize: 13,
+    color: "#4a6756",
+    textAlign: "center",
+  },
+  homeMealIngredientItem: {
+    fontSize: 14,
+    color: "#2d6041",
+    marginBottom: 2,
+    display: "none",
+  },
   mealHomeCtaButton: {
     alignSelf: "center",
     width: "100%",
+  },
+  mealDetailModalContainer: {
+    position: "absolute",
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    zIndex: 25,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  mealDetailBackdrop: {
+    position: "absolute",
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    backgroundColor: "rgba(0,0,0,0.4)",
+  },
+  mealDetailCard: {
+    width: "90%",
+    maxHeight: "80%",
+    backgroundColor: "#fff",
+    borderRadius: 24,
+    shadowColor: "#000",
+    shadowOpacity: 0.25,
+    shadowOffset: { width: 0, height: 10 },
+    shadowRadius: 20,
+    elevation: 8,
+    paddingVertical: 20,
+    paddingHorizontal: 20,
+    flexDirection: "column",
+  },
+  mealDetailScroll: {
+    flexGrow: 1,
+    flexShrink: 1,
+  },
+  mealDetailContent: {
+    paddingBottom: 12,
+  },
+  mealDetailTitle: {
+    fontSize: 24,
+    fontWeight: "700",
+    color: "#0c3c26",
+    marginBottom: 12,
+  },
+  mealDetailDescription: {
+    fontSize: 16,
+    color: "#2c4a38",
+    marginBottom: 16,
+  },
+  mealDetailSection: {
+    marginBottom: 16,
+  },
+  mealDetailSectionTitle: {
+    fontSize: 16,
+    fontWeight: "600",
+    color: "#0c3c26",
+    marginBottom: 6,
+  },
+  mealDetailSectionItem: {
+    fontSize: 15,
+    color: "#2d6041",
+    marginBottom: 4,
+  },
+  mealDetailCloseButton: {
+    marginTop: 16,
+    alignSelf: "center",
+    width: 64,
+    height: 64,
+    borderRadius: 32,
+    backgroundColor: "#f4f9f5",
+    alignItems: "center",
+    justifyContent: "center",
+    borderWidth: 2,
+    borderColor: "#00a651",
+  },
+  mealDetailCloseText: {
+    color: "#00a651",
+    fontSize: 40,
+    fontWeight: "700",
+    lineHeight: 40,
   },
 });

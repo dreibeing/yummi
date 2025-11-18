@@ -6,12 +6,13 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from functools import lru_cache
 from pathlib import Path
-from typing import Dict, Tuple
+from typing import Any, Dict, Tuple
 
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from ..config import get_settings
 from ..models import UserPreferenceProfile
+from ..services.meals import get_meal_manifest
 
 logger = logging.getLogger(__name__)
 
@@ -157,8 +158,10 @@ async def upsert_user_preference_profile(
 def serialize_preference_profile(
     profile: UserPreferenceProfile | None,
     manifest: TagManifest,
+    *,
+    include_latest_recommendation_details: bool = False,
 ) -> Dict[str, object]:
-    return {
+    payload = {
         "tagsVersion": profile.tags_version if profile else None,
         "manifestTagsVersion": manifest.tags_version,
         "responses": profile.responses if profile else {},
@@ -172,6 +175,13 @@ def serialize_preference_profile(
         "latestRecommendationsGeneratedAt": profile.latest_recommendation_generated_at if profile else None,
         "latestRecommendationsManifestId": profile.latest_recommendation_manifest_id if profile else None,
     }
+    if include_latest_recommendation_details and profile and profile.latest_recommendation_meal_ids:
+        payload["latestRecommendationMeals"] = _materialize_latest_recommendation_meals(
+            profile.latest_recommendation_meal_ids
+        )
+    else:
+        payload["latestRecommendationMeals"] = []
+    return payload
 
 
 async def update_latest_recommendations(
@@ -189,3 +199,68 @@ async def update_latest_recommendations(
     profile.latest_recommendation_manifest_id = manifest_id
     profile.latest_recommendation_generated_at = _coerce_datetime(generated_at)
     await session.commit()
+
+
+def _materialize_latest_recommendation_meals(meal_ids: list[str]) -> list[dict[str, object]]:
+    if not meal_ids:
+        return []
+    manifest = get_meal_manifest()
+    lookup: Dict[str, dict[str, object]] = {}
+    for archetype in manifest.get("archetypes", []):
+        archetype_id = archetype.get("uid")
+        for meal in archetype.get("meals", []):
+            meal_id = str(meal.get("meal_id") or meal.get("mealId") or "")
+            if not meal_id:
+                continue
+            final_ingredients = meal.get("final_ingredients") or meal.get("ingredients") or []
+            ingredient_names = []
+            for entry in final_ingredients:
+                if isinstance(entry, dict) and entry.get("core_item_name"):
+                    ingredient_names.append(str(entry["core_item_name"]))
+                elif isinstance(entry, dict) and entry.get("name"):
+                    ingredient_names.append(str(entry["name"]))
+                elif isinstance(entry, str):
+                    ingredient_names.append(entry)
+            lookup[meal_id] = {
+                "mealId": meal_id,
+                "name": meal.get("name"),
+                "description": meal.get("description"),
+                "tags": meal.get("meal_tags") or {},
+                "keyIngredients": ingredient_names,
+                "prepSteps": meal.get("prep_steps") or [],
+                "cookSteps": meal.get("cook_steps") or meal.get("instructions") or [],
+                "ingredients": _format_final_ingredients(final_ingredients),
+                "archetypeId": archetype_id,
+            }
+    ordered: list[dict[str, object]] = []
+    for meal_id in meal_ids:
+        detail = lookup.get(meal_id)
+        if detail:
+            ordered.append(detail)
+    return ordered
+
+
+def _format_final_ingredients(entries: list[Any]) -> list[dict[str, object]]:
+    formatted: list[dict[str, object]] = []
+    for entry in entries or []:
+        if isinstance(entry, str):
+            formatted.append({"name": entry})
+            continue
+        if not isinstance(entry, dict):
+            continue
+        product = entry.get("selected_product") or {}
+        formatted.append(
+            {
+                "name": entry.get("core_item_name")
+                or entry.get("name")
+                or entry.get("ingredient"),
+                "quantity": entry.get("quantity"),
+                "preparation": entry.get("preparation"),
+                "productName": product.get("name"),
+                "productId": product.get("product_id"),
+                "detailUrl": product.get("detail_url"),
+                "salePrice": product.get("sale_price"),
+                "packageQuantity": product.get("package_quantity"),
+            }
+        )
+    return formatted
