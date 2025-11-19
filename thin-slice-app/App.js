@@ -763,7 +763,7 @@ const stageLabels = {
 function AppContent() {
   const { getToken, signOut, isLoaded: isAuthLoaded, userId } = useAuth();
   const { user } = useUser();
-  const { headlineFontSize, cardMaxWidth, menuOverlayTop } = useResponsive();
+  const { headlineFontSize, cardMaxWidth, menuOverlayTop, insets } = useResponsive();
   const [isWelcomeComplete, setIsWelcomeComplete] = useState(false);
   const [preferenceResponses, setPreferenceResponses] = useState({});
   const [isPreferenceStateReady, setIsPreferenceStateReady] = useState(false);
@@ -3106,7 +3106,7 @@ function AppContent() {
           </View>
         </View>
         <View style={styles.flexSpacer} />
-        <View style={styles.prefFooter}>
+        <View style={[styles.prefFooter, styles.prefFooterFixed, { paddingBottom: 16 + insets.bottom }]}>
           <View style={styles.ingredientsButtonGroup}>
             <TouchableOpacity
               style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
@@ -5187,6 +5187,12 @@ const styles = StyleSheet.create({
     backgroundColor: "#f4f9f5",
     gap: 12,
     alignItems: "stretch",
+  },
+  prefFooterFixed: {
+    position: "absolute",
+    left: 0,
+    right: 0,
+    bottom: 0,
   },
   prefFooterHint: {
     fontSize: 13,
