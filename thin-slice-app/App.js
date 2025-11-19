@@ -1799,6 +1799,8 @@ function AppContent() {
     setExplorationError(null);
     setExplorationReactions({});
     setHomeSurface("meal");
+    setIsMealMenuOpen(false);
+    setScreen("home");
     preferenceEntryContextRef.current = null;
   }, []);
 
@@ -3048,6 +3050,25 @@ function AppContent() {
             <Feather name="menu" size={24} color="#0c3c26" />
           </TouchableOpacity>
         </View>
+        <View style={styles.prefCompleteContent}>
+          <View style={styles.prefCompleteInfoCard}>
+            <View style={styles.prefCompleteIconCircle}>
+              <Feather name="check" size={28} color="#ffffff" />
+            </View>
+            <View style={styles.prefCompleteTextGroup}>
+              <Text style={styles.prefCompleteHeadline}>Preferences Saved!</Text>
+              <Text style={styles.prefCompleteSubheadline}>
+                Why do I have to pay for new meals?
+              </Text>
+              <Text style={styles.prefCompleteExplanation}>
+                Each time you ask for a fresh set of meals, the app has to do extra work to build it. The small fee helps us cover that cost and prevent people from over-using the system.
+              </Text>
+              <Text style={styles.prefCompleteExplanation}>
+                You’ll still get fresh meal plans automatically whenever you use the “Get Shopping List” or “Add to Woolworths Cart” buttons.
+              </Text>
+            </View>
+          </View>
+        </View>
         <View style={styles.flexSpacer} />
         <View style={styles.prefFooter}>
           <View style={styles.ingredientsButtonGroup}>
@@ -3633,13 +3654,13 @@ function AppContent() {
               style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
               onPress={() => {}}
             >
-              <Text style={styles.welcomeButtonText}>Get Shopping List (1 Free Use)</Text>
+              <Text style={styles.welcomeButtonText}>Get Shopping List (Use a free use)</Text>
             </TouchableOpacity>
             <TouchableOpacity
               style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
               onPress={() => {}}
             >
-              <Text style={styles.welcomeButtonText}>Add to Woolworths Cart (1 Free Use)</Text>
+              <Text style={styles.welcomeButtonText}>Add to Woolworths Cart (Use a free use)</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -4136,6 +4157,32 @@ export default function App() {
   );
 }
 
+// Centralized shadow tokens for consistent elevation across the app
+const SHADOW = {
+  button: {
+    shadowColor: "#000",
+    shadowOpacity: 0.2,
+    shadowRadius: 8,
+    shadowOffset: { width: 0, height: 4 },
+    elevation: 3,
+  },
+  card: {
+    shadowColor: "#1c3d2d",
+    shadowOpacity: 0.06,
+    shadowRadius: 16,
+    shadowOffset: { width: 0, height: 8 },
+    elevation: 2,
+  },
+  cardLg: {
+    shadowColor: "#1c3d2d",
+    shadowOpacity: 0.08,
+    shadowRadius: 20,
+    shadowOffset: { width: 0, height: 10 },
+    elevation: 4,
+  },
+  none: {},
+};
+
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
@@ -4210,11 +4257,7 @@ const styles = StyleSheet.create({
     padding: 14,
     marginBottom: 10,
     gap: 12,
-    shadowColor: "#2d4739",
-    shadowOpacity: 0.05,
-    shadowRadius: 8,
-    shadowOffset: { width: 0, height: 4 },
-    elevation: 2,
+    ...SHADOW.card,
   },
   ingredientsItemText: {
     fontSize: 14,
@@ -4310,11 +4353,7 @@ const styles = StyleSheet.create({
     borderRadius: 18,
     paddingVertical: 6,
     minWidth: 220,
-    shadowColor: "#000",
-    shadowOpacity: 0.15,
-    shadowOffset: { width: 0, height: 8 },
-    shadowRadius: 16,
-    elevation: 10,
+    ...SHADOW.cardLg,
   },
   mealMenuItem: {
     paddingHorizontal: 18,
@@ -4461,10 +4500,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
-    shadowColor: "#000",
-    shadowOpacity: 0.2,
-    shadowRadius: 8,
-    shadowOffset: { width: 0, height: 4 },
+    ...SHADOW.button,
   },
   welcomeCtaButton: {
     alignSelf: "stretch",
@@ -4484,6 +4520,56 @@ const styles = StyleSheet.create({
     paddingTop: 18,
     paddingBottom: 12,
     gap: 12,
+  },
+  prefCompleteContent: {
+    paddingHorizontal: 24,
+    paddingTop: 32,
+    alignItems: "center",
+  },
+  prefCompleteInfoCard: {
+    width: "100%",
+    backgroundColor: "#ffffff",
+    borderRadius: 28,
+    paddingHorizontal: 28,
+    paddingVertical: 32,
+    alignItems: "center",
+    gap: 20,
+    ...SHADOW.cardLg,
+  },
+  prefCompleteIconCircle: {
+    width: 64,
+    height: 64,
+    borderRadius: 32,
+    backgroundColor: "#00a651",
+    alignItems: "center",
+    justifyContent: "center",
+    shadowColor: "#00a651",
+    shadowOpacity: 0.3,
+    shadowRadius: 12,
+    shadowOffset: { width: 0, height: 6 },
+  },
+  prefCompleteTextGroup: {
+    gap: 10,
+    alignItems: "center",
+  },
+  prefCompleteHeadline: {
+    fontSize: 34,
+    fontWeight: "800",
+    color: "#00a651",
+    textAlign: "center",
+  },
+  prefCompleteSubheadline: {
+    fontSize: 20,
+    fontWeight: "600",
+    color: "#103b29",
+    textAlign: "center",
+  },
+  prefCompleteExplanation: {
+    fontSize: 15,
+    color: "#56695d",
+    textAlign: "center",
+    lineHeight: 22,
+    maxWidth: 320,
   },
   flexSpacer: {
     flex: 1,
@@ -4528,11 +4614,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     paddingHorizontal: 20,
     paddingVertical: 18,
-    shadowColor: "#153424",
-    shadowOpacity: 0.06,
-    shadowRadius: 18,
-    shadowOffset: { width: 0, height: 8 },
-    elevation: 3,
+    ...SHADOW.card,
   },
   explorationMealName: {
     fontSize: 18,
@@ -4631,11 +4713,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#ffffff",
     borderRadius: 22,
     padding: 20,
-    shadowColor: "#14251c",
-    shadowOpacity: 0.06,
-    shadowRadius: 20,
-    shadowOffset: { width: 0, height: 10 },
-    elevation: 3,
+    ...SHADOW.card,
   },
   recommendationHeading: {
     flexDirection: "row",
@@ -4778,11 +4856,7 @@ const styles = StyleSheet.create({
     borderRadius: 24,
     paddingHorizontal: 24,
     paddingVertical: 22,
-    shadowColor: "#1c3d2d",
-    shadowOpacity: 0.06,
-    shadowRadius: 18,
-    shadowOffset: { width: 0, height: 10 },
-    elevation: 3,
+    ...SHADOW.card,
     gap: 6,
   },
   prefCategoryTitle: {
@@ -4824,11 +4898,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#ffffff",
     borderWidth: 1,
     borderColor: "#e6f0e8",
-    shadowColor: "#13281d",
-    shadowOpacity: 0.04,
-    shadowRadius: 12,
-    shadowOffset: { width: 0, height: 6 },
-    elevation: 2,
+    ...SHADOW.card,
   },
   prefTagTextGroup: {
     flex: 1,
@@ -4918,16 +4988,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#f4f9f5",
     gap: 12,
   },
-  prefCompleteWrapper: {
-    flex: 1,
-    paddingHorizontal: 20,
-    paddingVertical: 24,
-    gap: 16,
-    justifyContent: "center",
-  },
-  prefCompleteActions: {
-    gap: 12,
-  },
   prefFooterHint: {
     fontSize: 13,
     color: "#4d6757",
@@ -4940,10 +5000,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     width: "100%",
-    shadowColor: "#000",
-    shadowOpacity: 0.2,
-    shadowRadius: 8,
-    shadowOffset: { width: 0, height: 4 },
+    ...SHADOW.button,
   },
   prefContinueButtonText: {
     fontSize: 16,
@@ -5426,11 +5483,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     paddingVertical: 20,
     paddingHorizontal: 18,
-    shadowColor: "#000",
-    shadowOpacity: 0.05,
-    shadowOffset: { width: 0, height: 6 },
-    shadowRadius: 12,
-    elevation: 3,
+    ...SHADOW.card,
   },
   homeMealTitle: {
     fontSize: 22,
@@ -5566,11 +5619,7 @@ const styles = StyleSheet.create({
     maxHeight: "80%",
     backgroundColor: "#fff",
     borderRadius: 24,
-    shadowColor: "#000",
-    shadowOpacity: 0.25,
-    shadowOffset: { width: 0, height: 10 },
-    shadowRadius: 20,
-    elevation: 8,
+    ...SHADOW.cardLg,
     paddingVertical: 20,
     paddingHorizontal: 20,
     flexDirection: "column",
