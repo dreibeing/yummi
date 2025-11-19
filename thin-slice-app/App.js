@@ -155,7 +155,7 @@ const MAX_PAYFAST_POLLS = 45;
 const YUMMI_LOGO_SOURCE = require("./assets/yummi-logo.png");
 const DEFAULT_HOME_MEAL_SERVINGS = 4;
 const MIN_HOME_MEAL_SERVINGS = 1;
-const HOME_MEAL_DISPLAY_LIMIT = 5;
+const HOME_MEAL_DISPLAY_LIMIT = 50;
 const urlStartsWith = (value, prefix) => {
   if (!value || !prefix) {
     return false;
@@ -720,14 +720,7 @@ const normalizeOrderItems = (items) =>
     };
   });
 
-const shuffleMeals = (meals = []) => {
-  const copy = Array.isArray(meals) ? [...meals] : [];
-  for (let i = copy.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-  }
-  return copy;
-};
+const shuffleMeals = (meals = []) => meals;
 
 const parseIngredientQuantity = (value) => {
   if (typeof value === "number" && Number.isFinite(value)) {
@@ -809,6 +802,7 @@ function AppContent() {
   const [recommendationError, setRecommendationError] = useState(null);
   const [homeRecommendedMeals, setHomeRecommendedMeals] = useState([]);
   const [selectedHomeMealIds, setSelectedHomeMealIds] = useState({});
+  const [homeMealDislikedIds, setHomeMealDislikedIds] = useState({});
   const [homeMealModal, setHomeMealModal] = useState({
     visible: false,
     meal: null,
@@ -825,6 +819,7 @@ function AppContent() {
     const randomizedMeals = shuffleMeals(nextSource);
     setHomeRecommendedMeals(randomizedMeals);
     setSelectedHomeMealIds({});
+    setHomeMealDislikedIds({});
   }, []);
 
   const { height: SCREEN_HEIGHT } = Dimensions.get("window");
@@ -852,27 +847,31 @@ function AppContent() {
     isPreferencesFlowComplete &&
     !hasAcknowledgedPreferenceComplete;
   const isMealHomeSurface = homeSurface === "meal";
-  const maxVisibleHomeMeals = Math.max(0, homeRecommendedMeals.length);
   const displayedMeals = useMemo(() => {
-    if (!homeRecommendedMeals.length || maxVisibleHomeMeals <= 0) {
+    if (!homeRecommendedMeals.length) {
       return [];
     }
-    const maxVisibleCount = Math.min(
-      HOME_MEAL_DISPLAY_LIMIT,
-      maxVisibleHomeMeals
-    );
-    if (maxVisibleCount <= 0) {
-      return [];
-    }
-    return homeRecommendedMeals.slice(0, maxVisibleCount);
-  }, [homeRecommendedMeals, maxVisibleHomeMeals]);
+    return homeRecommendedMeals.slice(0, HOME_MEAL_DISPLAY_LIMIT);
+  }, [homeRecommendedMeals]);
   const displayedMealsCount = displayedMeals.length;
+  const selectedHomeMeals = useMemo(() => {
+    if (!displayedMeals.length || !selectedHomeMealIds) {
+      return [];
+    }
+    return displayedMeals.filter((meal) => {
+      const mealId = meal?.mealId;
+      if (!mealId) {
+        return false;
+      }
+      return Boolean(selectedHomeMealIds[mealId]);
+    });
+  }, [displayedMeals, selectedHomeMealIds]);
   const selectedMealIngredients = useMemo(() => {
-    if (!displayedMeals.length) {
+    if (!selectedHomeMeals.length) {
       return [];
     }
     const items = [];
-    displayedMeals.forEach((meal) => {
+    selectedHomeMeals.forEach((meal) => {
       if (!meal) {
         return;
       }
@@ -922,7 +921,7 @@ function AppContent() {
       }
       return 0;
     });
-  }, [displayedMeals]);
+  }, [selectedHomeMeals]);
 
   useEffect(() => {
     setIngredientQuantities((prev) => {
@@ -942,10 +941,6 @@ function AppContent() {
       return next;
     });
   }, [selectedMealIngredients]);
-  const isHomeMealInventoryDepleted =
-    displayedMealsCount > 0 &&
-    displayedMealsCount >= homeRecommendedMeals.length;
-
   const userDisplayName = useMemo(() => {
     const primaryEmail = user?.primaryEmailAddress?.emailAddress;
     if (primaryEmail) {
@@ -1048,6 +1043,21 @@ function AppContent() {
         delete updated[mealId];
       }
       return updated;
+    });
+  }, []);
+
+  const handleToggleHomeMealDislike = useCallback((mealId) => {
+    if (!mealId) {
+      return;
+    }
+    setHomeMealDislikedIds((prev) => {
+      const next = { ...(prev || {}) };
+      if (next[mealId]) {
+        delete next[mealId];
+      } else {
+        next[mealId] = true;
+      }
+      return next;
     });
   }, []);
 
@@ -3280,6 +3290,7 @@ function AppContent() {
               <>
                 {displayedMeals.map((meal) => {
                   const isSelected = Boolean(selectedHomeMealIds[meal.mealId]);
+                  const isDisliked = Boolean(homeMealDislikedIds[meal.mealId]);
                   const servingsValue =
                     mealServings[meal.mealId] ?? DEFAULT_HOME_MEAL_SERVINGS;
                   return (
@@ -3336,36 +3347,58 @@ function AppContent() {
                             <Text style={styles.homeMealServingsButtonText}>+</Text>
                           </TouchableOpacity>
                         </View>
-                        <TouchableOpacity
-                          style={[
-                            styles.homeMealChooseButton,
-                            isSelected && styles.homeMealChooseButtonActive,
-                          ]}
-                          onPress={(event) => {
-                            event?.stopPropagation?.();
-                            handleToggleHomeMealSelection(meal.mealId);
-                          }}
-                          accessibilityRole="button"
-                          accessibilityLabel={
-                            isSelected ? "Deselect meal" : "Choose meal"
-                          }
-                        >
-                          <Text
+                        <View style={styles.homeMealActionGroup}>
+                          <TouchableOpacity
                             style={[
-                              styles.homeMealChooseButtonText,
-                              isSelected && styles.homeMealChooseButtonTextActive,
+                              styles.homeMealDislikeButton,
+                              isDisliked && styles.homeMealDislikeButtonActive,
                             ]}
+                            onPress={(event) => {
+                              event?.stopPropagation?.();
+                              handleToggleHomeMealDislike(meal.mealId);
+                            }}
+                            accessibilityRole="button"
+                            accessibilityLabel={
+                              isDisliked ? "Undo dislike" : "Mark meal as disliked"
+                            }
                           >
-                            Choose
-                          </Text>
-                        </TouchableOpacity>
+                            <Text
+                              style={[
+                                styles.homeMealDislikeButtonIcon,
+                                isDisliked && styles.homeMealDislikeButtonIconActive,
+                              ]}
+                            >
+                              👎
+                            </Text>
+                          </TouchableOpacity>
+                          <TouchableOpacity
+                            style={[
+                              styles.homeMealChooseButton,
+                              isSelected && styles.homeMealChooseButtonActive,
+                            ]}
+                            onPress={(event) => {
+                              event?.stopPropagation?.();
+                              handleToggleHomeMealSelection(meal.mealId);
+                            }}
+                            accessibilityRole="button"
+                            accessibilityLabel={
+                              isSelected ? "Deselect meal" : "Select meal"
+                            }
+                          >
+                            <Text
+                              style={[
+                                styles.homeMealChooseButtonText,
+                                isSelected && styles.homeMealChooseButtonTextActive,
+                              ]}
+                            >
+                              Select
+                            </Text>
+                          </TouchableOpacity>
+                        </View>
                       </View>
                     </TouchableOpacity>
                   );
                 })}
-                {isHomeMealInventoryDepleted ? (
-                  <Text style={styles.homeMealInventoryDepletedText}>No more meals</Text>
-                ) : null}
               </>
             ) : (
               <Text style={styles.mealRecommendationsPlaceholder}>
@@ -5409,8 +5442,34 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     color: "#0c3c26",
   },
-  homeMealChooseButton: {
+  homeMealActionGroup: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
     marginLeft: "auto",
+  },
+  homeMealDislikeButton: {
+    width: 40,
+    height: 40,
+    borderRadius: 12,
+    borderWidth: 1.5,
+    borderColor: "#ff4d4f",
+    backgroundColor: "#fff5f5",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  homeMealDislikeButtonActive: {
+    backgroundColor: "#ff4d4f",
+  },
+  homeMealDislikeButtonIcon: {
+    fontSize: 18,
+    color: "#d93025",
+  },
+  homeMealDislikeButtonIconActive: {
+    color: "#fff",
+  },
+  homeMealChooseButton: {
+    marginLeft: 0,
     borderRadius: 12,
     borderWidth: 1.5,
     borderColor: "#00a651",
@@ -5428,13 +5487,6 @@ const styles = StyleSheet.create({
   },
   homeMealChooseButtonTextActive: {
     color: "#fff",
-  },
-  homeMealInventoryDepletedText: {
-    marginTop: 12,
-    textAlign: "center",
-    color: "#4a6756",
-    fontSize: 14,
-    fontWeight: "600",
   },
   homeMealIngredientItem: {
     fontSize: 14,
