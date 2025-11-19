@@ -815,6 +815,7 @@ function AppContent() {
   const [ingredientQuantities, setIngredientQuantities] = useState({});
   const preferenceSyncHashRef = useRef(null);
   const preferenceEntryContextRef = useRef(null);
+  const homeMealsBackupRef = useRef(null);
 
   const applyHomeRecommendedMeals = useCallback((meals) => {
     const nextSource = Array.isArray(meals)
@@ -1531,6 +1532,7 @@ function AppContent() {
       screen,
       homeSurface,
     };
+    homeMealsBackupRef.current = homeRecommendedMeals;
     setIsOnboardingActive(true);
     setHomeSurface("meal");
     setActivePreferenceIndex(0);
@@ -1550,7 +1552,14 @@ function AppContent() {
     setRecommendationError(null);
     applyHomeRecommendedMeals([]);
     preferenceSyncHashRef.current = null;
-  }, [applyHomeRecommendedMeals, homeSurface, screen]);
+  }, [applyHomeRecommendedMeals, homeRecommendedMeals, homeSurface, screen]);
+
+  const restoreHomeMealsFromBackup = useCallback(() => {
+    if (homeMealsBackupRef.current != null) {
+      applyHomeRecommendedMeals(homeMealsBackupRef.current);
+      homeMealsBackupRef.current = null;
+    }
+  }, [applyHomeRecommendedMeals]);
 
   const handleMealMenuReset = useCallback(() => {
     closeMealMenu();
@@ -1585,7 +1594,12 @@ function AppContent() {
     }
     setActivePreferenceIndex(0);
     preferenceEntryContextRef.current = null;
-  }, [activePreferenceIndex]);
+    if (!hasAcknowledgedPreferenceComplete) {
+      restoreHomeMealsFromBackup();
+    } else {
+      homeMealsBackupRef.current = null;
+    }
+  }, [activePreferenceIndex, hasAcknowledgedPreferenceComplete, restoreHomeMealsFromBackup]);
 
   const handleConfirmPreferenceComplete = useCallback(() => {
     setHasAcknowledgedPreferenceComplete(true);
