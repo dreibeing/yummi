@@ -193,17 +193,6 @@ const formatTime = (date) => {
   }
 };
 
-const formatDateTime = (date) => {
-  if (!(date instanceof Date) || Number.isNaN(date.valueOf())) {
-    return "";
-  }
-  try {
-    return date.toLocaleString();
-  } catch (error) {
-    return date.toISOString();
-  }
-};
-
 const parseServerDate = (value) => {
   if (!value) {
     return null;
@@ -777,9 +766,9 @@ function AppContent() {
   const [isOnboardingActive, setIsOnboardingActive] = useState(false);
   const [homeSurface, setHomeSurface] = useState("meal");
   const [isMealMenuOpen, setIsMealMenuOpen] = useState(false);
-  const [isPreferenceSyncing, setIsPreferenceSyncing] = useState(false);
-  const [preferencesSyncError, setPreferencesSyncError] = useState(null);
-  const [lastPreferencesSyncedAt, setLastPreferencesSyncedAt] = useState(null);
+  const [, setIsPreferenceSyncing] = useState(false);
+  const [, setPreferencesSyncError] = useState(null);
+  const [, setLastPreferencesSyncedAt] = useState(null);
   const [screen, setScreen] = useState("home");
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -829,6 +818,7 @@ function AppContent() {
   const [ingredientQuantities, setIngredientQuantities] = useState({});
   const preferenceSyncHashRef = useRef(null);
   const mealHomeActiveRef = useRef(false);
+  const preferenceEntryContextRef = useRef(null);
 
   const applyHomeRecommendedMeals = useCallback((meals) => {
     const nextSource = Array.isArray(meals)
@@ -1540,6 +1530,7 @@ function AppContent() {
       !isOnboardingActive ||
       !isPreferenceStateReady ||
       !isPreferencesFlowComplete ||
+      !hasAcknowledgedPreferenceComplete ||
       explorationState !== "idle" ||
       !EXPLORATION_API_ENDPOINT
     ) {
@@ -1551,6 +1542,7 @@ function AppContent() {
     isOnboardingActive,
     isPreferenceStateReady,
     isPreferencesFlowComplete,
+    hasAcknowledgedPreferenceComplete,
     startExplorationRun,
     EXPLORATION_API_ENDPOINT,
   ]);
@@ -1596,15 +1588,16 @@ function AppContent() {
   }, [activePreferenceIndex, preferenceCategories.length]);
 
   const handleResetPreferencesFlow = useCallback(async () => {
+    preferenceEntryContextRef.current = {
+      screen,
+      homeSurface,
+    };
     setIsOnboardingActive(true);
     setHomeSurface("meal");
-    setPreferenceResponses({});
     setActivePreferenceIndex(0);
     setIsPreferencesFlowComplete(false);
     setHasAcknowledgedPreferenceComplete(false);
     setHasSeenExplorationResults(false);
-    setLastPreferencesSyncedAt(null);
-    setPreferencesSyncError(null);
     setExplorationState("idle");
     setExplorationMeals([]);
     setExplorationNotes([]);
@@ -1618,22 +1611,42 @@ function AppContent() {
     setRecommendationError(null);
     applyHomeRecommendedMeals([]);
     preferenceSyncHashRef.current = null;
-    try {
-      await SecureStore.deleteItemAsync(PREFERENCES_STATE_STORAGE_KEY);
-    } catch (error) {
-      console.warn("Unable to clear stored preference state", error);
-    }
-    try {
-      await SecureStore.deleteItemAsync(PREFERENCES_COMPLETED_STORAGE_KEY);
-    } catch (error) {
-      console.warn("Unable to clear stored preference completion flag", error);
-    }
-  }, [applyHomeRecommendedMeals]);
+  }, [applyHomeRecommendedMeals, homeSurface, screen]);
 
   const handleMealMenuReset = useCallback(() => {
     closeMealMenu();
     handleResetPreferencesFlow();
   }, [closeMealMenu, handleResetPreferencesFlow]);
+
+  const handlePreferenceCompleteBack = useCallback(() => {
+    setIsMealMenuOpen(false);
+    setIsPreferencesFlowComplete(false);
+    setHasAcknowledgedPreferenceComplete(false);
+    setHasSeenExplorationResults(false);
+    setActivePreferenceIndex(
+      preferenceCategories.length > 0 ? preferenceCategories.length - 1 : 0
+    );
+  }, [preferenceCategories.length]);
+
+  const handlePreferenceBack = useCallback(() => {
+    if (activePreferenceIndex > 0) {
+      setActivePreferenceIndex((prev) => Math.max(prev - 1, 0));
+      return;
+    }
+    const entryContext = preferenceEntryContextRef.current;
+    setIsOnboardingActive(false);
+    setIsMealMenuOpen(false);
+    if (entryContext?.screen) {
+      setScreen(entryContext.screen);
+    } else {
+      setScreen("home");
+    }
+    if (entryContext?.screen === "home" && entryContext?.homeSurface) {
+      setHomeSurface(entryContext.homeSurface);
+    }
+    setActivePreferenceIndex(0);
+    preferenceEntryContextRef.current = null;
+  }, [activePreferenceIndex]);
 
   const handleConfirmPreferenceComplete = useCallback(() => {
     setHasAcknowledgedPreferenceComplete(true);
@@ -1786,6 +1799,7 @@ function AppContent() {
     setExplorationError(null);
     setExplorationReactions({});
     setHomeSurface("meal");
+    preferenceEntryContextRef.current = null;
   }, []);
 
   const handleConfirmExplorationReview = useCallback(() => {
@@ -2832,8 +2846,20 @@ function AppContent() {
     return (
       <SafeAreaView style={styles.preferencesSafeArea}>
         <StatusBar style="dark" />
-        <View style={styles.preferencesWrapper}>
-          <View style={styles.prefProgressContainer}>
+        <View style={[styles.mealHomeHeader, styles.prefHeaderBar]}>
+          <TouchableOpacity
+            style={styles.mealHomeBackButton}
+            onPress={handlePreferenceBack}
+            accessibilityRole="button"
+            accessibilityLabel={
+              activePreferenceIndex > 0
+                ? "Back to previous category"
+                : "Exit preference reset"
+            }
+          >
+            <Feather name="arrow-left" size={24} color="#00a651" />
+          </TouchableOpacity>
+          <View style={[styles.prefProgressContainer, styles.prefProgressInline]}>
             <Text style={styles.prefProgressLabel}>
               {`Category ${progressPosition} of ${progressTotal}`}
             </Text>
@@ -2846,6 +2872,8 @@ function AppContent() {
               />
             </View>
           </View>
+        </View>
+        <View style={styles.preferencesWrapper}>
           <View style={styles.prefHeaderCard}>
             <Text style={styles.prefCategoryTitle}>
               {activePreferenceCategory.title}
@@ -2961,7 +2989,7 @@ function AppContent() {
             onPress={handlePreferenceContinue}
           >
             <Text style={styles.prefContinueButtonText}>
-              {isOnLastCategory ? "Finish" : "Continue"}
+              {isOnLastCategory ? "Update Preferences" : "Next"}
             </Text>
           </TouchableOpacity>
         </View>
@@ -2980,50 +3008,66 @@ function AppContent() {
     );
   }
 
+  const mealMenuOverlay = isMealMenuOpen ? (
+    <View style={styles.mealMenuContainer} pointerEvents="box-none">
+      <TouchableWithoutFeedback onPress={closeMealMenu}>
+        <View style={styles.mealMenuBackdrop} />
+      </TouchableWithoutFeedback>
+      <View style={styles.mealMenuCard}>
+        <TouchableOpacity style={styles.mealMenuItem} onPress={handleMealMenuReset}>
+          <Text style={styles.mealMenuItemText}>Update Preferences</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.mealMenuItem} onPress={handleMealMenuSignOut}>
+          <Text style={[styles.mealMenuItemText, styles.mealMenuItemDanger]}>
+            Sign out
+          </Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  ) : null;
+
   if (shouldShowPreferenceCompletionScreen) {
     return (
       <SafeAreaView style={styles.preferencesSafeArea}>
         <StatusBar style="dark" />
-        <View style={styles.prefCompleteWrapper}>
-          <View style={styles.prefHeaderCard}>
-            <Text style={styles.prefCategoryTitle}>Preferences saved</Text>
-            <Text style={styles.prefCategorySubtitle}>
-              Your taste profile is ready. Redo the steps below if you’d like to change anything.
-            </Text>
-          </View>
-          <View style={styles.prefLogicCard}>
-            <Text style={styles.prefLogicText}>
-              You can revisit these preferences at any time.
-            </Text>
-            {lastPreferencesSyncedAt ? (
-              <Text style={styles.preferencesSyncMeta}>
-                Synced {formatDateTime(lastPreferencesSyncedAt)}
-              </Text>
-            ) : null}
-            {isPreferenceSyncing ? (
-              <Text style={styles.preferencesSyncMeta}>Syncing preferences…</Text>
-            ) : null}
-            {preferencesSyncError ? (
-              <Text style={styles.preferencesSyncError}>
-                {preferencesSyncError}
-              </Text>
-            ) : null}
-          </View>
-          <View style={styles.prefCompleteActions}>
+        <View style={styles.mealHomeHeader}>
+          <TouchableOpacity
+            style={styles.mealHomeBackButton}
+            onPress={handlePreferenceCompleteBack}
+            accessibilityRole="button"
+            accessibilityLabel="Back to categories"
+          >
+            <Feather name="arrow-left" size={24} color="#00a651" />
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.mealHomeMenuButton}
+            onPress={toggleMealMenu}
+            accessibilityRole="button"
+            accessibilityLabel="Open menu"
+          >
+            <Feather name="menu" size={24} color="#0c3c26" />
+          </TouchableOpacity>
+        </View>
+        <View style={styles.flexSpacer} />
+        <View style={styles.prefFooter}>
+          <View style={styles.ingredientsButtonGroup}>
             <TouchableOpacity
-              style={styles.prefRedoButton}
-              onPress={handleResetPreferencesFlow}
-            >
-              <Text style={styles.prefRedoButtonText}>Redo Category Selections</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              style={styles.prefContinueButton}
+              style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
               onPress={handleConfirmPreferenceComplete}
             >
-              <Text style={styles.prefContinueButtonText}>Continue</Text>
+              <Text style={styles.welcomeButtonText}>
+                Get New Meals (Use a free use)
+              </Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
+              onPress={handleCompleteOnboardingFlow}
+            >
+              <Text style={styles.welcomeButtonText}>Start Shopping!</Text>
             </TouchableOpacity>
           </View>
         </View>
+        {mealMenuOverlay}
       </SafeAreaView>
     );
   }
@@ -3249,24 +3293,6 @@ function AppContent() {
       </SafeAreaView>
     );
   }
-
-  const mealMenuOverlay = isMealMenuOpen ? (
-    <View style={styles.mealMenuContainer} pointerEvents="box-none">
-      <TouchableWithoutFeedback onPress={closeMealMenu}>
-        <View style={styles.mealMenuBackdrop} />
-      </TouchableWithoutFeedback>
-      <View style={styles.mealMenuCard}>
-        <TouchableOpacity style={styles.mealMenuItem} onPress={handleMealMenuReset}>
-          <Text style={styles.mealMenuItemText}>Reset Preferences</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.mealMenuItem} onPress={handleMealMenuSignOut}>
-          <Text style={[styles.mealMenuItemText, styles.mealMenuItemDanger]}>
-            Sign out
-          </Text>
-        </TouchableOpacity>
-      </View>
-    </View>
-  ) : null;
 
   if (
     screen === "home" &&
@@ -4137,6 +4163,10 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
+    height: 64,
+  },
+  prefHeaderBar: {
+    justifyContent: "flex-start",
   },
   mealHomeBackButton: {
     width: 44,
@@ -4455,22 +4485,13 @@ const styles = StyleSheet.create({
     paddingBottom: 12,
     gap: 12,
   },
+  flexSpacer: {
+    flex: 1,
+  },
   preferencesLoadingText: {
     marginTop: 12,
     fontSize: 14,
     color: "#3c5a47",
-  },
-  preferencesSyncMeta: {
-    marginTop: 12,
-    fontSize: 14,
-    color: "#4c4c4c",
-    textAlign: "center",
-  },
-  preferencesSyncError: {
-    marginTop: 12,
-    fontSize: 14,
-    color: "#b3261e",
-    textAlign: "center",
   },
   explorationWrapper: {
     flex: 1,
@@ -4728,6 +4749,13 @@ const styles = StyleSheet.create({
     elevation: 2,
     gap: 8,
   },
+  prefProgressInline: {
+    flex: 1,
+    marginLeft: 12,
+    paddingHorizontal: 14,
+    paddingVertical: 6,
+    height: 44,
+  },
   prefProgressLabel: {
     fontSize: 13,
     fontWeight: "600",
@@ -4885,8 +4913,8 @@ const styles = StyleSheet.create({
   },
   prefFooter: {
     paddingHorizontal: 20,
-    paddingBottom: 32,
-    paddingTop: 8,
+    paddingBottom: 16,
+    paddingTop: 12,
     backgroundColor: "#f4f9f5",
     gap: 12,
   },
@@ -4907,15 +4935,15 @@ const styles = StyleSheet.create({
   },
   prefContinueButton: {
     backgroundColor: "#00a651",
-    paddingVertical: 16,
+    paddingVertical: 18,
     borderRadius: 20,
     alignItems: "center",
     justifyContent: "center",
-    shadowColor: "#0c391f",
+    width: "100%",
+    shadowColor: "#000",
     shadowOpacity: 0.2,
-    shadowRadius: 12,
-    shadowOffset: { width: 0, height: 6 },
-    elevation: 3,
+    shadowRadius: 8,
+    shadowOffset: { width: 0, height: 4 },
   },
   prefContinueButtonText: {
     fontSize: 16,
