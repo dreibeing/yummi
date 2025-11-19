@@ -811,7 +811,7 @@ function AppContent() {
     visible: false,
     context: null,
   });
-  const [isHomeNoInterestScreenVisible, setIsHomeNoInterestScreenVisible] = useState(false);
+  const [isSorryToHearScreenVisible, setIsSorryToHearScreenVisible] = useState(false);
   const [mealServings, setMealServings] = useState({});
   const [ingredientQuantities, setIngredientQuantities] = useState({});
   const preferenceSyncHashRef = useRef(null);
@@ -1169,7 +1169,7 @@ function AppContent() {
     setIsMealMenuOpen(false);
     setHomeSurface("meal");
     setScreen("home");
-    setIsHomeNoInterestScreenVisible(false);
+    setIsSorryToHearScreenVisible(false);
   }, []);
 
   useEffect(() => {
@@ -1529,33 +1529,38 @@ function AppContent() {
     );
   }, [activePreferenceIndex, preferenceCategories.length]);
 
-  const handleResetPreferencesFlow = useCallback(async () => {
-    preferenceEntryContextRef.current = {
-      screen,
-      homeSurface,
-    };
-    homeMealsBackupRef.current = homeRecommendedMeals;
-    setIsHomeNoInterestScreenVisible(false);
-    setIsOnboardingActive(true);
-    setHomeSurface("meal");
-    setActivePreferenceIndex(0);
-    setIsPreferencesFlowComplete(false);
-    setHasAcknowledgedPreferenceComplete(false);
-    setHasSeenExplorationResults(false);
-    setExplorationState("idle");
-    setExplorationMeals([]);
-    setExplorationNotes([]);
-    setExplorationSessionId(null);
-    setExplorationError(null);
-    setExplorationReactions({});
-    setIsRecommendationFlowVisible(false);
-    setRecommendationState("idle");
-    setRecommendationMeals([]);
-    setRecommendationNotes([]);
-    setRecommendationError(null);
-    applyHomeRecommendedMeals([]);
-    preferenceSyncHashRef.current = null;
-  }, [applyHomeRecommendedMeals, homeRecommendedMeals, homeSurface, screen]);
+  const handleResetPreferencesFlow = useCallback(
+    async (options = {}) => {
+      const { returnToSorryScreen = false } = options;
+      preferenceEntryContextRef.current = {
+        screen,
+        homeSurface,
+        returnToSorryScreen,
+      };
+      homeMealsBackupRef.current = homeRecommendedMeals;
+      setIsSorryToHearScreenVisible(false);
+      setIsOnboardingActive(true);
+      setHomeSurface("meal");
+      setActivePreferenceIndex(0);
+      setIsPreferencesFlowComplete(false);
+      setHasAcknowledgedPreferenceComplete(false);
+      setHasSeenExplorationResults(false);
+      setExplorationState("idle");
+      setExplorationMeals([]);
+      setExplorationNotes([]);
+      setExplorationSessionId(null);
+      setExplorationError(null);
+      setExplorationReactions({});
+      setIsRecommendationFlowVisible(false);
+      setRecommendationState("idle");
+      setRecommendationMeals([]);
+      setRecommendationNotes([]);
+      setRecommendationError(null);
+      applyHomeRecommendedMeals([]);
+      preferenceSyncHashRef.current = null;
+    },
+    [applyHomeRecommendedMeals, homeRecommendedMeals, homeSurface, screen]
+  );
 
   const restoreHomeMealsFromBackup = useCallback(() => {
     if (homeMealsBackupRef.current != null) {
@@ -1568,6 +1573,10 @@ function AppContent() {
     closeMealMenu();
     handleResetPreferencesFlow();
   }, [closeMealMenu, handleResetPreferencesFlow]);
+
+  const handleSorryScreenUpdatePreferences = useCallback(() => {
+    handleResetPreferencesFlow({ returnToSorryScreen: true });
+  }, [handleResetPreferencesFlow]);
 
   const handlePreferenceCompleteBack = useCallback(() => {
     setIsMealMenuOpen(false);
@@ -1587,6 +1596,11 @@ function AppContent() {
     const entryContext = preferenceEntryContextRef.current;
     setIsOnboardingActive(false);
     setIsMealMenuOpen(false);
+    if (entryContext?.returnToSorryScreen) {
+      setIsSorryToHearScreenVisible(true);
+    } else {
+      setIsSorryToHearScreenVisible(false);
+    }
     if (entryContext?.screen) {
       setScreen(entryContext.screen);
     } else {
@@ -1647,12 +1661,12 @@ function AppContent() {
   const handleOpenWoolworthsCartConfirm = useCallback(() => {
     showConfirmationDialog("woolworthsCart");
   }, [showConfirmationDialog]);
-  const handleHomeNoLikedMeals = useCallback(() => {
+  const handleOpenSorryToHearScreen = useCallback(() => {
     setIsMealMenuOpen(false);
-    setIsHomeNoInterestScreenVisible(true);
+    setIsSorryToHearScreenVisible(true);
   }, []);
-  const handleCloseHomeNoInterestScreen = useCallback(() => {
-    setIsHomeNoInterestScreenVisible(false);
+  const handleCloseSorryToHearScreen = useCallback(() => {
+    setIsSorryToHearScreenVisible(false);
   }, []);
   const walletEndpoint = API_BASE_URL ? `${API_BASE_URL}/wallet/balance` : null;
   const payfastInitiateEndpoint = API_BASE_URL
@@ -3089,7 +3103,7 @@ function AppContent() {
               style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
               onPress={handleCompleteOnboardingFlow}
             >
-              <Text style={styles.welcomeButtonText}>Start Shopping!</Text>
+              <Text style={styles.welcomeButtonText}>Back to Shopping</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -3127,14 +3141,14 @@ function AppContent() {
     );
   }
 
-  if (isHomeNoInterestScreenVisible) {
+  if (isSorryToHearScreenVisible) {
     return (
       <SafeAreaView style={styles.preferencesSafeArea}>
         <StatusBar style="dark" />
         <View style={styles.mealHomeHeader}>
           <TouchableOpacity
             style={styles.mealHomeBackButton}
-            onPress={handleCloseHomeNoInterestScreen}
+            onPress={handleCloseSorryToHearScreen}
             accessibilityRole="button"
             accessibilityLabel="Back to home"
           >
@@ -3156,15 +3170,14 @@ function AppContent() {
             </View>
             <View style={styles.prefCompleteTextGroup}>
               <Text style={styles.prefCompleteHeadline}>Sorry to hear that</Text>
-              <Text style={styles.prefCompleteSubheadline}>
-                Why do I have to pay for new meals?
+              <Text style={styles.prefCompleteExplanation}>
+                You’ll always get fresh meal plans when you use the “Get Shopping List” or “Add to Woolworths Cart” buttons.
               </Text>
               <Text style={styles.prefCompleteExplanation}>
-                Each time you ask for a fresh set of meals, the app has to do extra work to build it. The small fee helps us cover that cost and prevent people from over-using the system.
+                Don’t like what you see?
               </Text>
-              <Text style={styles.prefCompleteExplanation}>
-                You’ll still get fresh meal plans automatically whenever you use the “Get Shopping List” or “Add to Woolworths Cart” buttons.
-              </Text>
+              <Text style={styles.prefCompleteExplanation}>1. Update your preferences</Text>
+              <Text style={styles.prefCompleteExplanation}>2. Get new meals</Text>
             </View>
           </View>
         </View>
@@ -3173,15 +3186,15 @@ function AppContent() {
           <View style={styles.ingredientsButtonGroup}>
             <TouchableOpacity
               style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
-              onPress={handleOpenNewMealsConfirm}
+              onPress={handleSorryScreenUpdatePreferences}
             >
               <Text style={styles.welcomeButtonText}>
-                Get New Meals (Use a free use)
+                Update Preferences
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
               style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
-              onPress={handleCloseHomeNoInterestScreen}
+              onPress={handleCloseSorryToHearScreen}
             >
               <Text style={styles.welcomeButtonText}>Back to Shopping</Text>
             </TouchableOpacity>
@@ -3592,7 +3605,7 @@ function AppContent() {
                 })}
                 <TouchableOpacity
                   style={styles.homeNoInterestButton}
-                  onPress={handleHomeNoLikedMeals}
+                  onPress={handleOpenSorryToHearScreen}
                   accessibilityRole="button"
                   accessibilityLabel="None of these meals interest me"
                 >
