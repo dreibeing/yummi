@@ -811,6 +811,7 @@ function AppContent() {
     visible: false,
     context: null,
   });
+  const [isHomeNoInterestScreenVisible, setIsHomeNoInterestScreenVisible] = useState(false);
   const [mealServings, setMealServings] = useState({});
   const [ingredientQuantities, setIngredientQuantities] = useState({});
   const preferenceSyncHashRef = useRef(null);
@@ -1168,6 +1169,7 @@ function AppContent() {
     setIsMealMenuOpen(false);
     setHomeSurface("meal");
     setScreen("home");
+    setIsHomeNoInterestScreenVisible(false);
   }, []);
 
   useEffect(() => {
@@ -1533,6 +1535,7 @@ function AppContent() {
       homeSurface,
     };
     homeMealsBackupRef.current = homeRecommendedMeals;
+    setIsHomeNoInterestScreenVisible(false);
     setIsOnboardingActive(true);
     setHomeSurface("meal");
     setActivePreferenceIndex(0);
@@ -1644,6 +1647,13 @@ function AppContent() {
   const handleOpenWoolworthsCartConfirm = useCallback(() => {
     showConfirmationDialog("woolworthsCart");
   }, [showConfirmationDialog]);
+  const handleHomeNoLikedMeals = useCallback(() => {
+    setIsMealMenuOpen(false);
+    setIsHomeNoInterestScreenVisible(true);
+  }, []);
+  const handleCloseHomeNoInterestScreen = useCallback(() => {
+    setIsHomeNoInterestScreenVisible(false);
+  }, []);
   const walletEndpoint = API_BASE_URL ? `${API_BASE_URL}/wallet/balance` : null;
   const payfastInitiateEndpoint = API_BASE_URL
     ? `${API_BASE_URL}/payments/payfast/initiate`
@@ -3117,6 +3127,100 @@ function AppContent() {
     );
   }
 
+  if (isHomeNoInterestScreenVisible) {
+    return (
+      <SafeAreaView style={styles.preferencesSafeArea}>
+        <StatusBar style="dark" />
+        <View style={styles.mealHomeHeader}>
+          <TouchableOpacity
+            style={styles.mealHomeBackButton}
+            onPress={handleCloseHomeNoInterestScreen}
+            accessibilityRole="button"
+            accessibilityLabel="Back to home"
+          >
+            <Feather name="arrow-left" size={24} color="#00a651" />
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.mealHomeMenuButton}
+            onPress={toggleMealMenu}
+            accessibilityRole="button"
+            accessibilityLabel="Open menu"
+          >
+            <Feather name="menu" size={24} color="#0c3c26" />
+          </TouchableOpacity>
+        </View>
+        <View style={styles.prefCompleteContent}>
+          <View style={styles.prefCompleteInfoCard}>
+            <View style={styles.prefCompleteIconCircle}>
+              <Feather name="frown" size={28} color="#ffffff" />
+            </View>
+            <View style={styles.prefCompleteTextGroup}>
+              <Text style={styles.prefCompleteHeadline}>Sorry to hear that</Text>
+              <Text style={styles.prefCompleteSubheadline}>
+                Why do I have to pay for new meals?
+              </Text>
+              <Text style={styles.prefCompleteExplanation}>
+                Each time you ask for a fresh set of meals, the app has to do extra work to build it. The small fee helps us cover that cost and prevent people from over-using the system.
+              </Text>
+              <Text style={styles.prefCompleteExplanation}>
+                You’ll still get fresh meal plans automatically whenever you use the “Get Shopping List” or “Add to Woolworths Cart” buttons.
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View style={styles.flexSpacer} />
+        <View style={styles.prefFooter}>
+          <View style={styles.ingredientsButtonGroup}>
+            <TouchableOpacity
+              style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
+              onPress={handleOpenNewMealsConfirm}
+            >
+              <Text style={styles.welcomeButtonText}>
+                Get New Meals (Use a free use)
+              </Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
+              onPress={handleCloseHomeNoInterestScreen}
+            >
+              <Text style={styles.welcomeButtonText}>Back to Shopping</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+        {mealMenuOverlay}
+        {confirmationDialog.visible ? (
+          <View style={styles.mealDetailModalContainer} pointerEvents="box-none">
+            <TouchableWithoutFeedback onPress={handleCloseConfirmationDialog}>
+              <View style={styles.mealDetailBackdrop} />
+            </TouchableWithoutFeedback>
+            <View style={styles.mealDetailCard}>
+              <View style={styles.confirmModalContent}>
+                <Text style={styles.mealDetailTitle}>Please confirm</Text>
+                <Text style={styles.confirmSubtitle}>use a free use</Text>
+              </View>
+              <TouchableOpacity
+                style={styles.confirmAcceptButton}
+                onPress={handleConfirmDialog}
+                accessibilityRole="button"
+                accessibilityLabel="Confirm action"
+              >
+                <Text style={styles.confirmAcceptText}>✓</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={styles.mealDetailCloseButton}
+                onPress={handleCloseConfirmationDialog}
+                accessibilityRole="button"
+                accessibilityLabel="Dismiss confirmation"
+              >
+                <Text style={styles.mealDetailCloseText}>×</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        ) : null}
+      </SafeAreaView>
+    );
+  }
+
   if (
     isOnboardingActive &&
     isPreferencesFlowComplete &&
@@ -3486,6 +3590,16 @@ function AppContent() {
                     </TouchableOpacity>
                   );
                 })}
+                <TouchableOpacity
+                  style={styles.homeNoInterestButton}
+                  onPress={handleHomeNoLikedMeals}
+                  accessibilityRole="button"
+                  accessibilityLabel="None of these meals interest me"
+                >
+                  <Text style={styles.homeNoInterestButtonText}>
+                    There is nothing I like
+                  </Text>
+                </TouchableOpacity>
               </>
             ) : (
               <Text style={styles.mealRecommendationsPlaceholder}>
@@ -5609,6 +5723,21 @@ const styles = StyleSheet.create({
     color: "#2d6041",
     marginBottom: 2,
     display: "none",
+  },
+  homeNoInterestButton: {
+    marginTop: 12,
+    paddingVertical: 14,
+    borderRadius: 16,
+    borderWidth: 1.5,
+    borderColor: "#00a651",
+    backgroundColor: "#ffffff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  homeNoInterestButtonText: {
+    fontSize: 15,
+    fontWeight: "600",
+    color: "#00a651",
   },
   mealHomeCtaButton: {
     alignSelf: "center",
