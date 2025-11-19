@@ -155,6 +155,7 @@ const MAX_PAYFAST_POLLS = 45;
 const YUMMI_LOGO_SOURCE = require("./assets/yummi-logo.png");
 const DEFAULT_HOME_MEAL_SERVINGS = 4;
 const MIN_HOME_MEAL_SERVINGS = 1;
+const HOME_MEAL_DISPLAY_LIMIT = 5;
 const urlStartsWith = (value, prefix) => {
   if (!value || !prefix) {
     return false;
@@ -806,40 +807,25 @@ function AppContent() {
   const [recommendationMeals, setRecommendationMeals] = useState([]);
   const [recommendationNotes, setRecommendationNotes] = useState([]);
   const [recommendationError, setRecommendationError] = useState(null);
-  const [mealCount, setMealCount] = useState(1);
   const [homeRecommendedMeals, setHomeRecommendedMeals] = useState([]);
-  const [homeRecommendedMealsSource, setHomeRecommendedMealsSource] = useState([]);
+  const [selectedHomeMealIds, setSelectedHomeMealIds] = useState({});
   const [homeMealModal, setHomeMealModal] = useState({
     visible: false,
     meal: null,
   });
-  const [homeMealReplacementPointer, setHomeMealReplacementPointer] = useState(-1);
   const [mealServings, setMealServings] = useState({});
   const [ingredientQuantities, setIngredientQuantities] = useState({});
   const preferenceSyncHashRef = useRef(null);
-  const mealHomeActiveRef = useRef(false);
   const preferenceEntryContextRef = useRef(null);
 
   const applyHomeRecommendedMeals = useCallback((meals) => {
     const nextSource = Array.isArray(meals)
       ? meals.filter((meal) => Boolean(meal))
       : [];
-    setHomeRecommendedMealsSource(nextSource);
     const randomizedMeals = shuffleMeals(nextSource);
     setHomeRecommendedMeals(randomizedMeals);
-    setHomeMealReplacementPointer(randomizedMeals.length - 1);
+    setSelectedHomeMealIds({});
   }, []);
-
-  const reshuffleHomeRecommendedMeals = useCallback(() => {
-    if (!homeRecommendedMealsSource.length) {
-      setHomeRecommendedMeals([]);
-      setHomeMealReplacementPointer(-1);
-      return;
-    }
-    const randomized = shuffleMeals(homeRecommendedMealsSource);
-    setHomeRecommendedMeals(randomized);
-    setHomeMealReplacementPointer(randomized.length - 1);
-  }, [homeRecommendedMealsSource]);
 
   const { height: SCREEN_HEIGHT } = Dimensions.get("window");
   const isSmallDevice = SCREEN_HEIGHT < 740;
@@ -866,17 +852,21 @@ function AppContent() {
     isPreferencesFlowComplete &&
     !hasAcknowledgedPreferenceComplete;
   const isMealHomeSurface = homeSurface === "meal";
-  const maxVisibleHomeMeals = Math.max(0, homeMealReplacementPointer + 1);
+  const maxVisibleHomeMeals = Math.max(0, homeRecommendedMeals.length);
   const displayedMeals = useMemo(() => {
     if (!homeRecommendedMeals.length || maxVisibleHomeMeals <= 0) {
       return [];
     }
-    const maxVisibleCount = Math.min(mealCount, maxVisibleHomeMeals);
+    const maxVisibleCount = Math.min(
+      HOME_MEAL_DISPLAY_LIMIT,
+      maxVisibleHomeMeals
+    );
     if (maxVisibleCount <= 0) {
       return [];
     }
     return homeRecommendedMeals.slice(0, maxVisibleCount);
-  }, [homeRecommendedMeals, maxVisibleHomeMeals, mealCount]);
+  }, [homeRecommendedMeals, maxVisibleHomeMeals]);
+  const displayedMealsCount = displayedMeals.length;
   const selectedMealIngredients = useMemo(() => {
     if (!displayedMeals.length) {
       return [];
@@ -952,19 +942,9 @@ function AppContent() {
       return next;
     });
   }, [selectedMealIngredients]);
-  const canDecreaseMealCount = mealCount > 1;
-  const canIncreaseMealCount = mealCount < maxVisibleHomeMeals;
-  const hasRemainingHomeMealPool = homeMealReplacementPointer >= mealCount;
-  const canReplaceMeals = hasRemainingHomeMealPool;
   const isHomeMealInventoryDepleted =
-    displayedMeals.length > 0 && displayedMeals.length >= maxVisibleHomeMeals;
-
-  const isMealHomeActive =
-    screen === "home" &&
-    isMealHomeSurface &&
-    isWelcomeComplete &&
-    isPreferenceStateReady &&
-    !isOnboardingActive;
+    displayedMealsCount > 0 &&
+    displayedMealsCount >= homeRecommendedMeals.length;
 
   const userDisplayName = useMemo(() => {
     const primaryEmail = user?.primaryEmailAddress?.emailAddress;
@@ -1035,20 +1015,6 @@ function AppContent() {
     }
   }, []);
 
-  const handleIncreaseMealCount = useCallback(() => {
-    setMealCount((prev) => {
-      const maxMeals = Math.max(0, homeMealReplacementPointer + 1);
-      if (prev >= maxMeals) {
-        return prev;
-      }
-      return prev + 1;
-    });
-  }, [homeMealReplacementPointer]);
-
-  const handleDecreaseMealCount = useCallback(() => {
-    setMealCount((prev) => Math.max(1, prev - 1));
-  }, []);
-
   const handleHomeMealServingsIncrease = useCallback((mealId) => {
     if (!mealId) {
       return;
@@ -1085,44 +1051,20 @@ function AppContent() {
     });
   }, []);
 
-  const handleHomeMealReplace = useCallback(
-    (mealId) => {
-      if (!mealId) {
-        return;
+  const handleToggleHomeMealSelection = useCallback((mealId) => {
+    if (!mealId) {
+      return;
+    }
+    setSelectedHomeMealIds((prev) => {
+      const next = { ...(prev || {}) };
+      if (next[mealId]) {
+        delete next[mealId];
+      } else {
+        next[mealId] = true;
       }
-      const replacementIndex = homeMealReplacementPointer;
-      if (
-        replacementIndex == null ||
-        replacementIndex < 0 ||
-        replacementIndex < mealCount
-      ) {
-        return;
-      }
-      let nextPointer = null;
-      setHomeRecommendedMeals((prev) => {
-        if (!Array.isArray(prev) || prev.length === 0) {
-          return prev;
-        }
-        if (replacementIndex >= prev.length) {
-          return prev;
-        }
-        const targetIndex = prev.findIndex((meal) => meal.mealId === mealId);
-        if (targetIndex === -1 || targetIndex === replacementIndex) {
-          return prev;
-        }
-        const updated = [...prev];
-        const temp = updated[targetIndex];
-        updated[targetIndex] = updated[replacementIndex];
-        updated[replacementIndex] = temp;
-        nextPointer = replacementIndex - 1;
-        return updated;
-      });
-      if (nextPointer != null) {
-        setHomeMealReplacementPointer(nextPointer);
-      }
-    },
-    [homeMealReplacementPointer, mealCount]
-  );
+      return next;
+    });
+  }, []);
 
   const handleIngredientQuantityDecrease = useCallback((ingredientId) => {
     if (!ingredientId) {
@@ -1246,13 +1188,6 @@ function AppContent() {
       setIsMealMenuOpen(false);
     }
   }, [isMealHomeSurface, screen]);
-
-  useEffect(() => {
-    if (isMealHomeActive && !mealHomeActiveRef.current) {
-      reshuffleHomeRecommendedMeals();
-    }
-    mealHomeActiveRef.current = isMealHomeActive;
-  }, [isMealHomeActive, reshuffleHomeRecommendedMeals]);
 
   useEffect(() => {
     let isActive = true;
@@ -1412,16 +1347,6 @@ function AppContent() {
     preferenceResponses,
     userId,
   ]);
-
-  useEffect(() => {
-    if (!homeRecommendedMeals.length || maxVisibleHomeMeals <= 0) {
-      return;
-    }
-    setMealCount((prev) => {
-      const next = Math.min(Math.max(prev, 1), maxVisibleHomeMeals);
-      return next === prev ? prev : next;
-    });
-  }, [homeRecommendedMeals.length, maxVisibleHomeMeals]);
 
   useEffect(() => {
     setMealServings({});
@@ -1786,6 +1711,8 @@ function AppContent() {
   ]);
 
   const handleCompleteOnboardingFlow = useCallback(() => {
+    setHasFetchedRemotePreferences(false);
+    applyHomeRecommendedMeals([]);
     setIsOnboardingActive(false);
     setIsRecommendationFlowVisible(false);
     setRecommendationState("idle");
@@ -1802,7 +1729,7 @@ function AppContent() {
     setIsMealMenuOpen(false);
     setScreen("home");
     preferenceEntryContextRef.current = null;
-  }, []);
+  }, [applyHomeRecommendedMeals]);
 
   const handleConfirmExplorationReview = useCallback(() => {
     setHasSeenExplorationResults(true);
@@ -3344,38 +3271,6 @@ function AppContent() {
           </TouchableOpacity>
         </View>
         <View style={styles.mealHomeBody}>
-          <View style={styles.mealCountCard}>
-            <Text style={styles.mealCountTitle}>How many meals would you like?</Text>
-            <View style={styles.mealCountControls}>
-              <TouchableOpacity
-                style={[
-                  styles.mealCountButton,
-                  !canDecreaseMealCount && styles.mealCountButtonDisabled,
-                ]}
-                onPress={handleDecreaseMealCount}
-                accessibilityRole="button"
-                accessibilityLabel="Decrease meal count"
-                disabled={!canDecreaseMealCount}
-              >
-                <Text style={styles.mealCountButtonText}>-</Text>
-              </TouchableOpacity>
-              <View style={styles.mealCountValue}>
-                <Text style={styles.mealCountValueText}>{mealCount}</Text>
-              </View>
-              <TouchableOpacity
-                style={[
-                  styles.mealCountButton,
-                  !canIncreaseMealCount && styles.mealCountButtonDisabled,
-                ]}
-                onPress={handleIncreaseMealCount}
-                accessibilityRole="button"
-                accessibilityLabel="Increase meal count"
-                disabled={!canIncreaseMealCount}
-              >
-                <Text style={styles.mealCountButtonText}>+</Text>
-              </TouchableOpacity>
-            </View>
-          </View>
           <ScrollView
             style={styles.mealRecommendationsScroll}
             contentContainerStyle={styles.mealRecommendationsContent}
@@ -3384,6 +3279,7 @@ function AppContent() {
             {displayedMeals.length > 0 ? (
               <>
                 {displayedMeals.map((meal) => {
+                  const isSelected = Boolean(selectedHomeMealIds[meal.mealId]);
                   const servingsValue =
                     mealServings[meal.mealId] ?? DEFAULT_HOME_MEAL_SERVINGS;
                   return (
@@ -3442,18 +3338,26 @@ function AppContent() {
                         </View>
                         <TouchableOpacity
                           style={[
-                            styles.homeMealReplaceButton,
-                            !canReplaceMeals && styles.homeMealReplaceButtonDisabled,
+                            styles.homeMealChooseButton,
+                            isSelected && styles.homeMealChooseButtonActive,
                           ]}
                           onPress={(event) => {
                             event?.stopPropagation?.();
-                            handleHomeMealReplace(meal.mealId);
+                            handleToggleHomeMealSelection(meal.mealId);
                           }}
                           accessibilityRole="button"
-                          accessibilityLabel="Replace meal"
-                          disabled={!canReplaceMeals}
+                          accessibilityLabel={
+                            isSelected ? "Deselect meal" : "Choose meal"
+                          }
                         >
-                          <Text style={styles.homeMealReplaceButtonText}>Replace</Text>
+                          <Text
+                            style={[
+                              styles.homeMealChooseButtonText,
+                              isSelected && styles.homeMealChooseButtonTextActive,
+                            ]}
+                          >
+                            Choose
+                          </Text>
                         </TouchableOpacity>
                       </View>
                     </TouchableOpacity>
@@ -5407,62 +5311,6 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: "#666",
   },
-  mealCountCard: {
-    backgroundColor: "#fff",
-    borderRadius: 16,
-    paddingVertical: 14,
-    paddingHorizontal: 16,
-    shadowColor: "#000",
-    shadowOpacity: 0.04,
-    shadowOffset: { width: 0, height: 4 },
-    shadowRadius: 10,
-    elevation: 2,
-  },
-  mealCountTitle: {
-    fontSize: 18,
-    fontWeight: "700",
-    color: "#0c3c26",
-    marginBottom: 10,
-  },
-  mealCountControls: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
-    gap: 10,
-  },
-  mealCountButton: {
-    width: 48,
-    height: 48,
-    borderRadius: 14,
-    backgroundColor: "#f0f5f1",
-    alignItems: "center",
-    justifyContent: "center",
-    borderWidth: 1,
-    borderColor: "#d8e3db",
-  },
-  mealCountButtonDisabled: {
-    opacity: 0.4,
-  },
-  mealCountButtonText: {
-    fontSize: 24,
-    fontWeight: "700",
-    color: "#0c3c26",
-  },
-  mealCountValue: {
-    minWidth: 60,
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 16,
-    backgroundColor: "#fff",
-    borderWidth: 1,
-    borderColor: "#d8e3db",
-    alignItems: "center",
-  },
-  mealCountValueText: {
-    fontSize: 22,
-    fontWeight: "700",
-    color: "#0c3c26",
-  },
   mealRecommendationsScroll: {
     flex: 1,
     marginTop: 12,
@@ -5561,22 +5409,25 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     color: "#0c3c26",
   },
-  homeMealReplaceButton: {
+  homeMealChooseButton: {
     marginLeft: "auto",
     borderRadius: 12,
-    borderWidth: 1,
-    borderColor: "#d8e3db",
+    borderWidth: 1.5,
+    borderColor: "#00a651",
     paddingHorizontal: 16,
     paddingVertical: 8,
     backgroundColor: "#fff",
   },
-  homeMealReplaceButtonText: {
+  homeMealChooseButtonActive: {
+    backgroundColor: "#00a651",
+  },
+  homeMealChooseButtonText: {
     fontSize: 14,
     fontWeight: "600",
-    color: "#0c3c26",
+    color: "#00a651",
   },
-  homeMealReplaceButtonDisabled: {
-    opacity: 0.5,
+  homeMealChooseButtonTextActive: {
+    color: "#fff",
   },
   homeMealInventoryDepletedText: {
     marginTop: 12,
