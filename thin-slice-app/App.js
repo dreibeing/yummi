@@ -4514,6 +4514,8 @@ const styles = StyleSheet.create({
   ingredientsButtonGroup: {
     paddingTop: 8,
     gap: 12,
+    alignSelf: "stretch",
+    width: "100%",
   },
   mealHomeMenuButton: {
     paddingVertical: 10,
@@ -5184,6 +5186,7 @@ const styles = StyleSheet.create({
     paddingTop: 12,
     backgroundColor: "#f4f9f5",
     gap: 12,
+    alignItems: "stretch",
   },
   prefFooterHint: {
     fontSize: 13,
