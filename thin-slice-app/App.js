@@ -739,6 +739,19 @@ const shuffleMeals = (meals = []) => {
   return copy;
 };
 
+const parseIngredientQuantity = (value) => {
+  if (typeof value === "number" && Number.isFinite(value)) {
+    return value;
+  }
+  if (typeof value === "string") {
+    const numeric = parseFloat(value);
+    if (!Number.isNaN(numeric)) {
+      return numeric;
+    }
+  }
+  return 1;
+};
+
 const stageLabels = {
   idle: "Waiting to start",
   waiting_login: "Waiting for Woolworths login",
@@ -813,6 +826,7 @@ function AppContent() {
   });
   const [homeMealReplacementPointer, setHomeMealReplacementPointer] = useState(-1);
   const [mealServings, setMealServings] = useState({});
+  const [ingredientQuantities, setIngredientQuantities] = useState({});
   const preferenceSyncHashRef = useRef(null);
   const mealHomeActiveRef = useRef(false);
 
@@ -873,6 +887,81 @@ function AppContent() {
     }
     return homeRecommendedMeals.slice(0, maxVisibleCount);
   }, [homeRecommendedMeals, maxVisibleHomeMeals, mealCount]);
+  const selectedMealIngredients = useMemo(() => {
+    if (!displayedMeals.length) {
+      return [];
+    }
+    const items = [];
+    displayedMeals.forEach((meal) => {
+      if (!meal) {
+        return;
+      }
+      const mealIngredients = Array.isArray(meal.ingredients)
+        ? meal.ingredients
+        : [];
+      if (!mealIngredients.length) {
+        return;
+      }
+      mealIngredients.forEach((ingredient, index) => {
+        if (!ingredient) {
+          return;
+        }
+        const parts = [];
+        if (ingredient.quantity) {
+          parts.push(String(ingredient.quantity));
+        }
+        if (ingredient.unit) {
+          parts.push(String(ingredient.unit));
+        }
+        if (ingredient.name) {
+          parts.push(String(ingredient.name));
+        }
+        if (ingredient.preparation) {
+          parts.push(`(${ingredient.preparation})`);
+        }
+        const fallback =
+          parts.length > 0 ? parts.join(" ") : `Ingredient ${index + 1}`;
+        const displayText =
+          ingredient.productName?.trim() || fallback.trim();
+        const requiredQuantity = parseIngredientQuantity(ingredient.quantity);
+        items.push({
+          id: `${meal.mealId ?? "meal"}-ingredient-${index}`,
+          text: displayText,
+          requiredQuantity,
+        });
+      });
+    });
+    return items.sort((a, b) => {
+      const textA = a.text?.toLowerCase() ?? "";
+      const textB = b.text?.toLowerCase() ?? "";
+      if (textA < textB) {
+        return -1;
+      }
+      if (textA > textB) {
+        return 1;
+      }
+      return 0;
+    });
+  }, [displayedMeals]);
+
+  useEffect(() => {
+    setIngredientQuantities((prev) => {
+      const next = {};
+      selectedMealIngredients.forEach((ingredient) => {
+        const existingValue = prev?.[ingredient.id];
+        if (typeof existingValue === "number" && Number.isFinite(existingValue)) {
+          next[ingredient.id] = existingValue;
+        } else {
+          next[ingredient.id] =
+            typeof ingredient.requiredQuantity === "number" &&
+            Number.isFinite(ingredient.requiredQuantity)
+              ? ingredient.requiredQuantity
+              : 1;
+        }
+      });
+      return next;
+    });
+  }, [selectedMealIngredients]);
   const canDecreaseMealCount = mealCount > 1;
   const canIncreaseMealCount = mealCount < maxVisibleHomeMeals;
   const hasRemainingHomeMealPool = homeMealReplacementPointer >= mealCount;
@@ -1045,6 +1134,59 @@ function AppContent() {
     [homeMealReplacementPointer, mealCount]
   );
 
+  const handleIngredientQuantityDecrease = useCallback((ingredientId) => {
+    if (!ingredientId) {
+      return;
+    }
+    setIngredientQuantities((prev) => {
+      const currentValue = prev?.[ingredientId];
+      const numericValue =
+        typeof currentValue === "number" && Number.isFinite(currentValue)
+          ? currentValue
+          : 0;
+      const nextValue = Math.max(0, numericValue - 1);
+      if (nextValue === numericValue) {
+        return prev;
+      }
+      return {
+        ...prev,
+        [ingredientId]: nextValue,
+      };
+    });
+  }, []);
+
+  const handleIngredientQuantityIncrease = useCallback((ingredientId) => {
+    if (!ingredientId) {
+      return;
+    }
+    setIngredientQuantities((prev) => {
+      const currentValue = prev?.[ingredientId];
+      const numericValue =
+        typeof currentValue === "number" && Number.isFinite(currentValue)
+          ? currentValue
+          : 0;
+      const nextValue = numericValue + 1;
+      if (nextValue === numericValue) {
+        return prev;
+      }
+      return {
+        ...prev,
+        [ingredientId]: nextValue,
+      };
+    });
+  }, []);
+
+  const formatIngredientQuantity = useCallback((value) => {
+    if (typeof value !== "number" || Number.isNaN(value)) {
+      return "0";
+    }
+    if (Math.abs(value - Math.round(value)) < 0.01) {
+      return String(Math.round(value));
+    }
+    const formatted = value.toFixed(1);
+    return formatted.replace(/\.0+$/, "");
+  }, []);
+
   const toggleMealMenu = useCallback(() => {
     setIsMealMenuOpen((prev) => !prev);
   }, []);
@@ -1060,6 +1202,16 @@ function AppContent() {
 
   const handleReturnToMealHome = useCallback(() => {
     setHomeSurface("meal");
+    setScreen("home");
+  }, []);
+
+  const handleOpenIngredientsScreen = useCallback(() => {
+    setIsMealMenuOpen(false);
+    setScreen("ingredients");
+  }, []);
+
+  const handleIngredientsBackToHome = useCallback(() => {
+    setIsMealMenuOpen(false);
     setScreen("home");
   }, []);
 
@@ -2625,6 +2777,9 @@ function AppContent() {
                   <Text style={styles.shareSubline}>
                     Share with a friend, you both get 10 free uses.
                   </Text>
+                  <Text style={styles.shareSubline}>
+                    You always get 1 free use a month.
+                  </Text>
                 </View>
               </View>
             </View>
@@ -2634,7 +2789,7 @@ function AppContent() {
               style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
               onPress={() => setIsWelcomeComplete(true)}
             >
-              <Text style={styles.welcomeButtonText}>Start shopping!</Text>
+              <Text style={styles.welcomeButtonText}>Start Shopping!</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -3095,6 +3250,24 @@ function AppContent() {
     );
   }
 
+  const mealMenuOverlay = isMealMenuOpen ? (
+    <View style={styles.mealMenuContainer} pointerEvents="box-none">
+      <TouchableWithoutFeedback onPress={closeMealMenu}>
+        <View style={styles.mealMenuBackdrop} />
+      </TouchableWithoutFeedback>
+      <View style={styles.mealMenuCard}>
+        <TouchableOpacity style={styles.mealMenuItem} onPress={handleMealMenuReset}>
+          <Text style={styles.mealMenuItemText}>Reset Preferences</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.mealMenuItem} onPress={handleMealMenuSignOut}>
+          <Text style={[styles.mealMenuItemText, styles.mealMenuItemDanger]}>
+            Sign out
+          </Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  ) : null;
+
   if (
     screen === "home" &&
     isMealHomeSurface &&
@@ -3251,34 +3424,13 @@ function AppContent() {
           </ScrollView>
           <TouchableOpacity
             style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
+            onPress={handleOpenIngredientsScreen}
           >
-            <Text style={styles.welcomeButtonText}>Create shopping list</Text>
+            <Text style={styles.welcomeButtonText}>Next</Text>
           </TouchableOpacity>
         </View>
-        {isMealMenuOpen ? (
-        <View style={styles.mealMenuContainer} pointerEvents="box-none">
-          <TouchableWithoutFeedback onPress={closeMealMenu}>
-            <View style={styles.mealMenuBackdrop} />
-          </TouchableWithoutFeedback>
-          <View style={styles.mealMenuCard}>
-            <TouchableOpacity
-              style={styles.mealMenuItem}
-              onPress={handleMealMenuReset}
-            >
-              <Text style={styles.mealMenuItemText}>Reset Preferences</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              style={styles.mealMenuItem}
-              onPress={handleMealMenuSignOut}
-            >
-              <Text style={[styles.mealMenuItemText, styles.mealMenuItemDanger]}>
-                Sign out
-              </Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-      ) : null}
-      {homeMealModal.visible && homeMealModal.meal ? (
+        {mealMenuOverlay}
+        {homeMealModal.visible && homeMealModal.meal ? (
         <View style={styles.mealDetailModalContainer} pointerEvents="box-none">
           <TouchableWithoutFeedback
             onPress={() => setHomeMealModal({ visible: false, meal: null })}
@@ -3361,6 +3513,111 @@ function AppContent() {
           </View>
         </View>
       ) : null}
+      </SafeAreaView>
+    );
+  }
+
+  if (screen === "ingredients") {
+    return (
+      <SafeAreaView style={styles.mealHomeSafeArea}>
+        <StatusBar style="dark" />
+        <View style={styles.mealHomeHeader}>
+          <TouchableOpacity
+            style={styles.mealHomeBackButton}
+            onPress={handleIngredientsBackToHome}
+            accessibilityRole="button"
+            accessibilityLabel="Back to home"
+          >
+            <Feather name="arrow-left" size={24} color="#00a651" />
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.mealHomeMenuButton}
+            onPress={toggleMealMenu}
+            accessibilityRole="button"
+            accessibilityLabel="Open menu"
+          >
+            <Feather name="menu" size={24} color="#0c3c26" />
+          </TouchableOpacity>
+        </View>
+        <View style={styles.ingredientsBody}>
+          <ScrollView
+            style={styles.ingredientsList}
+            contentContainerStyle={styles.ingredientsListContent}
+            showsVerticalScrollIndicator={false}
+          >
+            {selectedMealIngredients.length > 0 ? (
+              selectedMealIngredients.map((ingredient) => {
+                const storedQuantity = ingredientQuantities?.[ingredient.id];
+                const numericQuantity =
+                  typeof storedQuantity === "number" && Number.isFinite(storedQuantity)
+                    ? storedQuantity
+                    : ingredient.requiredQuantity ?? 1;
+                const displayQuantity = formatIngredientQuantity(numericQuantity);
+                const disableDecrease = numericQuantity <= 0;
+                return (
+                  <View key={ingredient.id} style={styles.ingredientsListItem}>
+                    <Text style={styles.ingredientsItemText}>{ingredient.text}</Text>
+                    <View style={styles.ingredientsQuantityRow}>
+                      <TouchableOpacity
+                        style={[
+                          styles.ingredientsQuantityButton,
+                          disableDecrease && styles.ingredientsQuantityButtonDisabled,
+                        ]}
+                        onPress={() => handleIngredientQuantityDecrease(ingredient.id)}
+                        accessibilityRole="button"
+                        accessibilityLabel={`Decrease quantity for ${ingredient.text}`}
+                        disabled={disableDecrease}
+                      >
+                        <Text
+                          style={[
+                            styles.ingredientsQuantityButtonText,
+                            disableDecrease && styles.ingredientsQuantityButtonTextDisabled,
+                          ]}
+                        >
+                          -
+                        </Text>
+                      </TouchableOpacity>
+                      <View style={styles.ingredientsQuantityValue}>
+                        <Text style={styles.ingredientsQuantityValueText}>
+                          {displayQuantity}
+                        </Text>
+                      </View>
+                      <TouchableOpacity
+                        style={styles.ingredientsQuantityButton}
+                        onPress={() => handleIngredientQuantityIncrease(ingredient.id)}
+                        accessibilityRole="button"
+                        accessibilityLabel={`Increase quantity for ${ingredient.text}`}
+                      >
+                        <Text style={styles.ingredientsQuantityButtonText}>+</Text>
+                      </TouchableOpacity>
+                    </View>
+                  </View>
+                );
+              })
+            ) : (
+              <View style={styles.ingredientsEmptyState}>
+                <Text style={styles.ingredientsEmptyText}>
+                  Select meals on the previous screen to see their ingredients here.
+                </Text>
+              </View>
+            )}
+          </ScrollView>
+          <View style={styles.ingredientsButtonGroup}>
+            <TouchableOpacity
+              style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
+              onPress={() => {}}
+            >
+              <Text style={styles.welcomeButtonText}>Get Shopping List (1 Free Use)</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
+              onPress={() => {}}
+            >
+              <Text style={styles.welcomeButtonText}>Add to Woolworths Cart (1 Free Use)</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+        {mealMenuOverlay}
       </SafeAreaView>
     );
   }
@@ -3904,6 +4161,90 @@ const styles = StyleSheet.create({
     paddingBottom: 16,
     gap: 12,
   },
+  ingredientsBody: {
+    flex: 1,
+    paddingHorizontal: 20,
+    paddingTop: 8,
+    paddingBottom: 16,
+    gap: 16,
+  },
+  ingredientsList: {
+    flex: 1,
+  },
+  ingredientsListContent: {
+    paddingBottom: 8,
+  },
+  ingredientsListItem: {
+    backgroundColor: "#fff",
+    borderRadius: 16,
+    padding: 14,
+    marginBottom: 10,
+    gap: 12,
+    shadowColor: "#2d4739",
+    shadowOpacity: 0.05,
+    shadowRadius: 8,
+    shadowOffset: { width: 0, height: 4 },
+    elevation: 2,
+  },
+  ingredientsItemText: {
+    fontSize: 14,
+    color: "#1c1c1c",
+  },
+  ingredientsQuantityRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "flex-end",
+    gap: 6,
+  },
+  ingredientsQuantityButton: {
+    width: 32,
+    height: 32,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#cfd8d2",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#f7f9f8",
+  },
+  ingredientsQuantityButtonDisabled: {
+    opacity: 0.4,
+  },
+  ingredientsQuantityButtonText: {
+    fontSize: 16,
+    color: "#0c3c26",
+    fontWeight: "600",
+  },
+  ingredientsQuantityButtonTextDisabled: {
+    color: "#6f7c72",
+  },
+  ingredientsQuantityValue: {
+    minWidth: 40,
+    paddingVertical: 6,
+    paddingHorizontal: 10,
+    borderRadius: 10,
+    backgroundColor: "#e8f3ed",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  ingredientsQuantityValueText: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "#0c3c26",
+  },
+  ingredientsEmptyState: {
+    paddingVertical: 48,
+    paddingHorizontal: 12,
+    alignItems: "center",
+  },
+  ingredientsEmptyText: {
+    fontSize: 14,
+    color: "#4d4d4d",
+    textAlign: "center",
+  },
+  ingredientsButtonGroup: {
+    paddingTop: 8,
+    gap: 12,
+  },
   mealHomeMenuButton: {
     paddingVertical: 10,
     paddingHorizontal: 10,
@@ -4000,9 +4341,9 @@ const styles = StyleSheet.create({
     maxHeight: 120,
   },
   welcomeTagline: {
-    marginTop: 6,
-    marginBottom: 32,
-    fontSize: 14,
+    marginTop: -6,
+    marginBottom: 12,
+    fontSize: 16,
     fontWeight: "400",
     letterSpacing: 0.4,
     color: "rgba(27, 63, 47, 0.88)",
@@ -4050,8 +4391,8 @@ const styles = StyleSheet.create({
   shareSection: {
     width: "100%",
     alignItems: "center",
-    gap: 16,
-    marginBottom: 48,
+    gap: 8,
+    marginBottom: 16,
   },
   shareButton: {
     flexDirection: "row",
@@ -4070,7 +4411,7 @@ const styles = StyleSheet.create({
     marginLeft: 12,
   },
   shareSubline: {
-    fontSize: 12,
+    fontSize: 14,
     color: "#6b6b6b",
     textAlign: "center",
     width: "100%",
