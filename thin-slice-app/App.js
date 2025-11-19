@@ -255,20 +255,6 @@ const RECOMMENDATION_MEAL_TARGET = 10;
 const RECOMMENDATION_API_ENDPOINT = API_BASE_URL
   ? `${API_BASE_URL}/recommendations/feed`
   : null;
-const VEGETARIAN_PROTEIN_DISLIKES = [
-  "protein_chicken",
-  "protein_beef",
-  "protein_pork",
-  "protein_lamb",
-  "protein_seafood",
-];
-const VEGAN_ADDITIONAL_PROTEIN_DISLIKES = ["protein_egg"];
-const PLANT_FRIENDLY_PROTEINS = [
-  "protein_legume",
-  "protein_tofu",
-  "protein_mushroom",
-  "protein_egg",
-];
 const BASE_PREFERENCE_CATEGORIES = [
   {
     id: "diet",
@@ -311,65 +297,6 @@ const BASE_PREFERENCE_CATEGORIES = [
       { id: "cuisine_thai", label: "Thai" },
       { id: "cuisine_turkish", label: "Turkish" },
       { id: "cuisine_vietnamese", label: "Vietnamese" },
-    ],
-  },
-  {
-    id: "cuisineOpenness",
-    title: "Flavor Exploration",
-    description: "How adventurous should we get with global flavors?",
-    tags: [
-      { id: "copen_familiar", label: "Familiar classics" },
-      { id: "copen_regional", label: "Regional twists" },
-      { id: "copen_global", label: "Global explorer" },
-      { id: "copen_experimental", label: "Experimental fusion" },
-    ],
-  },
-  {
-    id: "proteinBase",
-    title: "Protein Bases",
-    description: "Pick the primary proteins that should drive meals.",
-    tags: [
-      { id: "protein_chicken", label: "Chicken" },
-      { id: "protein_beef", label: "Beef" },
-      { id: "protein_pork", label: "Pork" },
-      { id: "protein_lamb", label: "Lamb" },
-      { id: "protein_seafood", label: "Seafood" },
-      { id: "protein_legume", label: "Legumes" },
-      { id: "protein_tofu", label: "Tofu & tempeh" },
-      { id: "protein_egg", label: "Eggs" },
-      { id: "protein_mushroom", label: "Mushrooms" },
-    ],
-  },
-  {
-    id: "dishFormat",
-    title: "Dish Formats",
-    description: "Tell us the meal formats that feel like home.",
-    tags: [
-      { id: "format_bowl", label: "Bowls" },
-      { id: "format_salad", label: "Salads" },
-      { id: "format_soup", label: "Soups & stews" },
-      { id: "format_onepan", label: "One-pan meals" },
-      { id: "format_sheetpan", label: "Sheet-pan meals" },
-      { id: "format_wrap", label: "Wraps & handhelds" },
-      { id: "format_pasta", label: "Pastas" },
-      { id: "format_sandwich", label: "Sandwiches" },
-      { id: "format_mealprep", label: "Meal prep portions" },
-    ],
-  },
-  {
-    id: "technique",
-    title: "Cooking Techniques",
-    description: "Feature the cooking methods you love (or want to avoid).",
-    tags: [
-      { id: "tech_saute", label: "Sauté" },
-      { id: "tech_roast", label: "Roast" },
-      { id: "tech_grill", label: "Grill" },
-      { id: "tech_stirfry", label: "Stir-fry" },
-      { id: "tech_pressure", label: "Pressure cook" },
-      { id: "tech_slow", label: "Slow cooker" },
-      { id: "tech_airfry", label: "Air fry" },
-      { id: "tech_nocook", label: "No-cook" },
-      { id: "tech_bake", label: "Bake" },
     ],
   },
   {
@@ -428,18 +355,6 @@ const BASE_PREFERENCE_CATEGORIES = [
       { id: "budget_balanced", label: "Balanced mix" },
       { id: "budget_premium", label: "Premium occasions" },
       { id: "budget_luxury", label: "Luxury experience" },
-    ],
-  },
-  {
-    id: "occasion",
-    title: "Occasions",
-    description: "Tag the occasions you plan for most often.",
-    tags: [
-      { id: "occasion_weeknight", label: "Weeknight staples" },
-      { id: "occasion_weekend", label: "Weekend projects" },
-      { id: "occasion_entertaining", label: "Entertaining" },
-      { id: "occasion_comfort", label: "Comfort food" },
-      { id: "occasion_light", label: "Light lunches" },
     ],
   },
   {
@@ -531,91 +446,11 @@ const clonePreferenceResponses = (responses = {}) => {
   }, {});
 };
 
-const ensurePreferenceValue = (
-  draft,
-  categoryId,
-  tagId,
-  desiredValue,
-  options = {}
-) => {
-  const { protectLikes = true } = options;
-  if (!draft[categoryId]) {
-    draft[categoryId] = {};
-  }
-  const currentValue = draft[categoryId][tagId];
-  if (protectLikes && currentValue === "like" && desiredValue !== "like") {
-    return false;
-  }
-  if (currentValue === desiredValue) {
-    return false;
-  }
-  draft[categoryId][tagId] = desiredValue;
-  return true;
-};
+const applyPreferenceSmartLogic = (responses = {}) => responses;
 
-const applyPreferenceSmartLogic = (responses = {}) => {
-  const draft = clonePreferenceResponses(responses);
-  let didChange = false;
+const shouldSkipPreferenceCategory = () => false;
 
-  const dietSelections = draft.diet ?? {};
-  const isVegan = dietSelections.diet_vegan === "like";
-  const isVegetarian = dietSelections.diet_veg === "like";
-
-  if (isVegetarian) {
-    VEGETARIAN_PROTEIN_DISLIKES.forEach((tagId) => {
-      const changed = ensurePreferenceValue(
-        draft,
-        "proteinBase",
-        tagId,
-        "dislike"
-      );
-      if (changed) {
-        didChange = true;
-      }
-    });
-  }
-
-  if (isVegan) {
-    VEGETARIAN_PROTEIN_DISLIKES.concat(VEGAN_ADDITIONAL_PROTEIN_DISLIKES).forEach(
-      (tagId) => {
-        const changed = ensurePreferenceValue(
-          draft,
-          "proteinBase",
-          tagId,
-          "dislike"
-        );
-        if (changed) {
-          didChange = true;
-        }
-      }
-    );
-  }
-
-  return didChange ? draft : responses;
-};
-
-const shouldSkipPreferenceCategory = (categoryId, responses = {}) => {
-  const dietSelections = responses.diet ?? {};
-  if (categoryId === "proteinBase" && dietSelections.diet_vegan === "like") {
-    return true;
-  }
-  return false;
-};
-
-const filterPreferenceCategoryTags = (category, responses = {}) => {
-  const dietSelections = responses.diet ?? {};
-
-  if (category.id === "proteinBase" && dietSelections.diet_veg === "like") {
-    if (dietSelections.diet_vegan === "like") {
-      return [];
-    }
-    return category.tags.filter((tag) =>
-      PLANT_FRIENDLY_PROTEINS.includes(tag.id)
-    );
-  }
-
-  return category.tags;
-};
+const filterPreferenceCategoryTags = (category) => category.tags;
 
 const buildPreferenceCategories = (responses = {}) => {
   const categories = [];
@@ -651,9 +486,9 @@ const derivePreferenceNotices = (responses = {}) => {
   const allergenSelections = responses.allergens ?? {};
 
   if (dietSelections.diet_vegan === "like") {
-    notices.push("We’ll skip protein options that conflict with a vegan diet.");
+    notices.push("We’ll tailor meal ideas to stay fully vegan.");
   } else if (dietSelections.diet_veg === "like") {
-    notices.push("Protein tags now focus on vegetarian-friendly options.");
+    notices.push("We’ll lean into vegetarian-friendly meal ideas.");
   }
 
   const avoidedLabels = Object.entries(allergenSelections)
