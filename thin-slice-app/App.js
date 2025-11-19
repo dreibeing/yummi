@@ -25,8 +25,9 @@ import {
   View,
   Dimensions,
   FlatList,
+  useWindowDimensions,
 } from "react-native";
-import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaProvider, SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
 import { WebView } from "react-native-webview";
 import { Feather } from "@expo/vector-icons";
 import { createExtensionRuntimeScript } from "./extensionRuntime";
@@ -58,6 +59,21 @@ const RAW_SERVER_URL =
   (isReleaseBuild ? defaultProdServerUrl : localServerUrl);
 const trimTrailingSlash = (value) =>
   typeof value === "string" ? value.replace(/\/$/, "") : null;
+
+// Lightweight responsive helper for cross-device sizing
+function useResponsive() {
+  const { width, height } = useWindowDimensions();
+  const insets = useSafeAreaInsets();
+  const shortSide = Math.min(width, height);
+  const isTablet = shortSide >= 600;
+  // Base on 390pt width. Clamp to keep design stable.
+  const base = 390;
+  const scale = Math.min(1.15, Math.max(0.9, shortSide / base));
+  const headlineFontSize = Math.round(34 * scale);
+  const cardMaxWidth = Math.min(width - 56, isTablet ? 560 : 420);
+  const menuOverlayTop = insets.top + 64 + 12; // header height + spacing
+  return { width, height, insets, scale, headlineFontSize, cardMaxWidth, menuOverlayTop };
+}
 
 const SERVER_BASE_URL = trimTrailingSlash(RAW_SERVER_URL) ?? "";
 const RAW_API_BASE_URL =
@@ -747,6 +763,7 @@ const stageLabels = {
 function AppContent() {
   const { getToken, signOut, isLoaded: isAuthLoaded, userId } = useAuth();
   const { user } = useUser();
+  const { headlineFontSize, cardMaxWidth, menuOverlayTop } = useResponsive();
   const [isWelcomeComplete, setIsWelcomeComplete] = useState(false);
   const [preferenceResponses, setPreferenceResponses] = useState({});
   const [isPreferenceStateReady, setIsPreferenceStateReady] = useState(false);
@@ -3034,7 +3051,7 @@ function AppContent() {
       <TouchableWithoutFeedback onPress={closeMealMenu}>
         <View style={styles.mealMenuBackdrop} />
       </TouchableWithoutFeedback>
-      <View style={styles.mealMenuCard}>
+      <View style={[styles.mealMenuCard, { top: menuOverlayTop }] }>
         <TouchableOpacity style={styles.mealMenuItem} onPress={handleMealMenuReset}>
           <Text style={styles.mealMenuItemText}>Update Preferences</Text>
         </TouchableOpacity>
@@ -3075,14 +3092,14 @@ function AppContent() {
               <Feather name="check" size={28} color="#ffffff" />
             </View>
             <View style={styles.prefCompleteTextGroup}>
-              <Text style={styles.prefCompleteHeadline}>Preferences Saved!</Text>
+              <Text style={[styles.prefCompleteHeadline, { fontSize: headlineFontSize }]}>Preferences Saved!</Text>
               <Text style={styles.prefCompleteSubheadline}>
                 Why do I have to pay for new meals?
               </Text>
-              <Text style={styles.prefCompleteExplanation}>
+              <Text style={[styles.prefCompleteExplanation, { maxWidth: cardMaxWidth }]}>
                 Each time you ask for a fresh set of meals, the app has to do extra work to build it. The small fee helps us cover that cost and prevent people from over-using the system.
               </Text>
-              <Text style={styles.prefCompleteExplanation}>
+              <Text style={[styles.prefCompleteExplanation, { maxWidth: cardMaxWidth }]}>
                 You’ll still get fresh meal plans automatically whenever you use the “Get Shopping List” or “Add to Woolworths Cart” buttons.
               </Text>
             </View>
@@ -3169,15 +3186,15 @@ function AppContent() {
               <Feather name="frown" size={28} color="#ffffff" />
             </View>
             <View style={styles.prefCompleteTextGroup}>
-              <Text style={styles.prefCompleteHeadline}>Sorry to hear that</Text>
-              <Text style={styles.prefCompleteExplanation}>
+              <Text style={[styles.prefCompleteHeadline, { fontSize: headlineFontSize }]}>Sorry to hear that</Text>
+              <Text style={[styles.prefCompleteExplanation, { maxWidth: cardMaxWidth }]}>
                 You’ll always get fresh meal plans when you use the “Get Shopping List” or “Add to Woolworths Cart” buttons.
               </Text>
-              <Text style={styles.prefCompleteExplanation}>
+              <Text style={[styles.prefCompleteExplanation, { maxWidth: cardMaxWidth }]}>
                 Don’t like what you see?
               </Text>
-              <Text style={styles.prefCompleteExplanation}>1. Update your preferences</Text>
-              <Text style={styles.prefCompleteExplanation}>2. Get new meals</Text>
+              <Text style={[styles.prefCompleteExplanation, { maxWidth: cardMaxWidth }]}>1. Update your preferences</Text>
+              <Text style={[styles.prefCompleteExplanation, { maxWidth: cardMaxWidth }]}>2. Get new meals</Text>
             </View>
           </View>
         </View>
