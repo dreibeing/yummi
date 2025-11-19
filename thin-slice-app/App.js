@@ -293,15 +293,24 @@ const BASE_PREFERENCE_CATEGORIES = [
     description: "Highlight the cuisines you’re most excited about.",
     tags: [
       { id: "cuisine_southaf", label: "South African" },
-      { id: "cuisine_medit", label: "Mediterranean" },
-      { id: "cuisine_italian", label: "Italian" },
-      { id: "cuisine_latin", label: "Latin American" },
+      { id: "cuisine_american", label: "American" },
+      { id: "cuisine_caribbean", label: "Caribbean" },
+      { id: "cuisine_chinese", label: "Chinese" },
+      { id: "cuisine_french", label: "French" },
+      { id: "cuisine_greek", label: "Greek" },
       { id: "cuisine_indian", label: "Indian" },
+      { id: "cuisine_italian", label: "Italian" },
+      { id: "cuisine_japanese", label: "Japanese" },
+      { id: "cuisine_korean", label: "Korean" },
+      { id: "cuisine_latin", label: "Latin American" },
+      { id: "cuisine_mexican", label: "Mexican" },
       { id: "cuisine_mideast", label: "Middle Eastern" },
-      { id: "cuisine_eastasian", label: "East Asian" },
-      { id: "cuisine_seasian", label: "Southeast Asian" },
       { id: "cuisine_northaf", label: "North African" },
-      { id: "cuisine_modamerican", label: "Modern American" },
+      { id: "cuisine_portuguese", label: "Portuguese" },
+      { id: "cuisine_spanish", label: "Spanish" },
+      { id: "cuisine_thai", label: "Thai" },
+      { id: "cuisine_turkish", label: "Turkish" },
+      { id: "cuisine_vietnamese", label: "Vietnamese" },
     ],
   },
   {
@@ -365,13 +374,13 @@ const BASE_PREFERENCE_CATEGORIES = [
   },
   {
     id: "prepTime",
-    title: "Prep Time",
+    title: "Hands-On Time",
     description: "How much hands-on time works for your routine?",
     tags: [
-      { id: "preptime_under15", label: "< 15 minutes" },
+      { id: "preptime_less15", label: "< 15 minutes" },
       { id: "preptime_15_30", label: "15–30 minutes" },
-      { id: "preptime_30_45", label: "30–45 minutes" },
-      { id: "preptime_45plus", label: "45+ minutes" },
+      { id: "preptime_30_60", label: "30–60 minutes" },
+      { id: "preptime_60_plus", label: "60+ minutes" },
     ],
   },
   {
@@ -402,11 +411,11 @@ const BASE_PREFERENCE_CATEGORIES = [
     title: "Who Are We Feeding?",
     description: "Help us scale portions and vibes to your audience.",
     tags: [
-      { id: "audience_solo", label: "Solo" },
-      { id: "audience_couple", label: "Couple" },
-      { id: "audience_family", label: "Family" },
-      { id: "audience_mealprep", label: "Meal prep stash" },
-      { id: "audience_entertain", label: "Entertaining" },
+      { id: "audience_solo", label: "Solo", helper: "1 serving" },
+      { id: "audience_couple", label: "Couple", helper: "2 servings" },
+      { id: "audience_family", label: "Family", helper: "4 servings" },
+      { id: "audience_largefamily", label: "Large family", helper: "6 servings" },
+      { id: "audience_extendedfamily", label: "Extended family", helper: "8 servings" },
     ],
   },
   {
@@ -490,6 +499,21 @@ const BASE_PREFERENCE_CATEGORIES = [
     ],
   },
 ];
+
+// Controls the order of preference categories in the UI while keeping the full metadata above.
+const PREFERENCE_CATEGORY_ORDER = ["audience", "prepTime", "complexity"];
+const ORDERED_PREFERENCE_CATEGORIES = [
+  ...PREFERENCE_CATEGORY_ORDER.map((categoryId) =>
+    BASE_PREFERENCE_CATEGORIES.find((category) => category.id === categoryId)
+  ),
+  ...BASE_PREFERENCE_CATEGORIES.filter(
+    (category) => !PREFERENCE_CATEGORY_ORDER.includes(category.id)
+  ),
+].filter(Boolean);
+const SINGLE_SELECT_PREFERENCE_CATEGORY_IDS = new Set(["audience"]);
+const isSingleSelectPreferenceCategory = (categoryId) =>
+  SINGLE_SELECT_PREFERENCE_CATEGORY_IDS.has(categoryId);
+
 const PREFERENCE_TAG_LABEL_LOOKUP = BASE_PREFERENCE_CATEGORIES.reduce(
   (acc, category) => {
     category.tags.forEach((tag) => {
@@ -595,7 +619,7 @@ const filterPreferenceCategoryTags = (category, responses = {}) => {
 
 const buildPreferenceCategories = (responses = {}) => {
   const categories = [];
-  BASE_PREFERENCE_CATEGORIES.forEach((category) => {
+  ORDERED_PREFERENCE_CATEGORIES.forEach((category) => {
     if (shouldSkipPreferenceCategory(category.id, responses)) {
       return;
     }
@@ -855,6 +879,9 @@ function AppContent() {
   );
   const activePreferenceCategory =
     preferenceCategories[activePreferenceIndex] ?? null;
+  const isSingleSelectCategory =
+    activePreferenceCategory != null &&
+    isSingleSelectPreferenceCategory(activePreferenceCategory.id);
   const preferenceNotices = useMemo(
     () => derivePreferenceNotices(preferenceResponses),
     [preferenceResponses]
@@ -1506,26 +1533,35 @@ function AppContent() {
     EXPLORATION_API_ENDPOINT,
   ]);
 
-  const handlePreferenceSelection = useCallback(
-    (categoryId, tagId, value) => {
-      setPreferenceResponses((prev) => {
-        const nextCategoryValues = { ...(prev[categoryId] ?? {}) };
-        const currentValue = nextCategoryValues[tagId] ?? "neutral";
-        const resolvedValue = resolvePreferenceSelectionValue(
-          currentValue,
-          value
-        );
+const handlePreferenceSelection = useCallback(
+  (categoryId, tagId, value) => {
+    setPreferenceResponses((prev) => {
+      const prevCategoryValues = prev[categoryId] ?? {};
+      const currentValue = prevCategoryValues[tagId] ?? "neutral";
+      const resolvedValue = resolvePreferenceSelectionValue(
+        currentValue,
+        value
+      );
+      const next = { ...prev };
+      if (isSingleSelectPreferenceCategory(categoryId)) {
         if (resolvedValue === "neutral") {
-          delete nextCategoryValues[tagId];
-        } else {
-          nextCategoryValues[tagId] = resolvedValue;
-        }
-        const next = { ...prev };
-        if (Object.keys(nextCategoryValues).length === 0) {
           delete next[categoryId];
         } else {
-          next[categoryId] = nextCategoryValues;
+          next[categoryId] = { [tagId]: resolvedValue };
         }
+        return applyPreferenceSmartLogic(next);
+      }
+      const nextCategoryValues = { ...prevCategoryValues };
+      if (resolvedValue === "neutral") {
+        delete nextCategoryValues[tagId];
+      } else {
+        nextCategoryValues[tagId] = resolvedValue;
+      }
+      if (Object.keys(nextCategoryValues).length === 0) {
+        delete next[categoryId];
+      } else {
+        next[categoryId] = nextCategoryValues;
+      }
         return applyPreferenceSmartLogic(next);
       });
     },
@@ -2940,6 +2976,8 @@ function AppContent() {
                 activePreferenceCategory.id,
                 tag.id
               );
+              const isTagSelected =
+                isSingleSelectCategory && tagValue === "like";
               return (
                 <View key={tag.id} style={styles.prefTagCard}>
                   <View style={styles.prefTagTextGroup}>
@@ -2948,68 +2986,106 @@ function AppContent() {
                       <Text style={styles.prefTagHelper}>{tag.helper}</Text>
                     ) : null}
                   </View>
-                  <View style={styles.prefControls}>
-                    {PREFERENCE_CONTROL_STATES.map((control) => {
-                      const isSelected = tagValue === control.id;
-                      const controlStyles = [
-                        styles.prefControlButton,
-                        control.id === "like" &&
-                          styles.prefControlButtonLike,
-                        control.id === "dislike" &&
-                          styles.prefControlButtonDislike,
-                        control.id === "neutral" &&
+                  <View
+                    style={
+                      isSingleSelectCategory
+                        ? styles.prefSingleSelectControls
+                        : styles.prefControls
+                    }
+                  >
+                    {isSingleSelectCategory ? (
+                      <TouchableOpacity
+                        style={[
+                          styles.prefControlButton,
                           styles.prefControlButtonNeutral,
-                        isSelected && styles.prefControlButtonActive,
-                        isSelected &&
-                          control.id === "like" &&
-                          styles.prefControlButtonLikeActive,
-                        isSelected &&
-                          control.id === "dislike" &&
-                          styles.prefControlButtonDislikeActive,
-                        isSelected &&
-                          control.id === "neutral" &&
-                          styles.prefControlButtonNeutralActive,
-                      ];
-                      return (
-                        <TouchableOpacity
-                          key={control.id}
-                          style={controlStyles}
-                          onPress={() =>
-                            handlePreferenceSelection(
-                              activePreferenceCategory.id,
-                              tag.id,
-                              control.id
-                            )
-                          }
-                          accessibilityRole="button"
-                          accessibilityLabel={`${control.label} ${tag.label}`}
+                          isTagSelected && styles.prefControlButtonActive,
+                          isTagSelected && styles.prefControlButtonNeutralActive,
+                        ]}
+                        onPress={() =>
+                          handlePreferenceSelection(
+                            activePreferenceCategory.id,
+                            tag.id,
+                            "like"
+                          )
+                        }
+                        accessibilityRole="button"
+                        accessibilityLabel={`Select ${tag.label}`}
+                      >
+                        <Text
+                          style={[
+                            styles.prefControlIcon,
+                            styles.prefControlIconNeutral,
+                            isTagSelected && styles.prefControlIconActive,
+                            isTagSelected &&
+                              styles.prefControlIconNeutralActive,
+                          ]}
                         >
-                          <Text
-                            style={[
-                              styles.prefControlIcon,
-                              control.id === "like" &&
-                                styles.prefControlIconLike,
-                              control.id === "dislike" &&
-                                styles.prefControlIconDislike,
-                              control.id === "neutral" &&
-                                styles.prefControlIconNeutral,
-                              isSelected && styles.prefControlIconActive,
-                              isSelected &&
-                                control.id === "like" &&
-                                styles.prefControlIconLikeActive,
-                              isSelected &&
-                                control.id === "dislike" &&
-                                styles.prefControlIconDislikeActive,
-                              isSelected &&
-                                control.id === "neutral" &&
-                                styles.prefControlIconNeutralActive,
-                            ]}
+                          ○
+                        </Text>
+                      </TouchableOpacity>
+                    ) : (
+                      PREFERENCE_CONTROL_STATES.map((control) => {
+                        const isSelected = tagValue === control.id;
+                        const controlStyles = [
+                          styles.prefControlButton,
+                          control.id === "like" &&
+                            styles.prefControlButtonLike,
+                          control.id === "dislike" &&
+                            styles.prefControlButtonDislike,
+                          control.id === "neutral" &&
+                            styles.prefControlButtonNeutral,
+                          isSelected && styles.prefControlButtonActive,
+                          isSelected &&
+                            control.id === "like" &&
+                            styles.prefControlButtonLikeActive,
+                          isSelected &&
+                            control.id === "dislike" &&
+                            styles.prefControlButtonDislikeActive,
+                          isSelected &&
+                            control.id === "neutral" &&
+                            styles.prefControlButtonNeutralActive,
+                        ];
+                        return (
+                          <TouchableOpacity
+                            key={control.id}
+                            style={controlStyles}
+                            onPress={() =>
+                              handlePreferenceSelection(
+                                activePreferenceCategory.id,
+                                tag.id,
+                                control.id
+                              )
+                            }
+                            accessibilityRole="button"
+                            accessibilityLabel={`${control.label} ${tag.label}`}
                           >
-                            {control.icon}
-                          </Text>
-                        </TouchableOpacity>
-                      );
-                    })}
+                            <Text
+                              style={[
+                                styles.prefControlIcon,
+                                control.id === "like" &&
+                                  styles.prefControlIconLike,
+                                control.id === "dislike" &&
+                                  styles.prefControlIconDislike,
+                                control.id === "neutral" &&
+                                  styles.prefControlIconNeutral,
+                                isSelected && styles.prefControlIconActive,
+                                isSelected &&
+                                  control.id === "like" &&
+                                  styles.prefControlIconLikeActive,
+                                isSelected &&
+                                  control.id === "dislike" &&
+                                  styles.prefControlIconDislikeActive,
+                                isSelected &&
+                                  control.id === "neutral" &&
+                                  styles.prefControlIconNeutralActive,
+                              ]}
+                            >
+                              {control.icon}
+                            </Text>
+                          </TouchableOpacity>
+                        );
+                      })
+                    )}
                   </View>
                 </View>
               );
@@ -3018,7 +3094,11 @@ function AppContent() {
         </View>
         <View style={styles.prefFooter}>
           <Text style={styles.prefFooterHint}>
-            {activeCategoryRatingsCount === 0
+            {isSingleSelectCategory
+              ? activeCategoryRatingsCount === 0
+                ? "Pick the option that best fits—only one can be active."
+                : "Tap another option to switch who you’re feeding anytime."
+              : activeCategoryRatingsCount === 0
               ? "Neutral is the default—tap to highlight likes or dislikes."
               : "Adjust anything you like now or later in Settings."}
           </Text>
@@ -5116,6 +5196,11 @@ const styles = StyleSheet.create({
   prefControls: {
     flexDirection: "row",
     gap: 8,
+  },
+  prefSingleSelectControls: {
+    flexDirection: "row",
+    justifyContent: "flex-end",
+    minWidth: 160,
   },
   prefControlButton: {
     width: 48,
