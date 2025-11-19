@@ -807,6 +807,10 @@ function AppContent() {
     visible: false,
     meal: null,
   });
+  const [confirmationDialog, setConfirmationDialog] = useState({
+    visible: false,
+    context: null,
+  });
   const [mealServings, setMealServings] = useState({});
   const [ingredientQuantities, setIngredientQuantities] = useState({});
   const preferenceSyncHashRef = useRef(null);
@@ -1586,6 +1590,46 @@ function AppContent() {
   const handleConfirmPreferenceComplete = useCallback(() => {
     setHasAcknowledgedPreferenceComplete(true);
   }, []);
+
+  const showConfirmationDialog = useCallback((context) => {
+    setConfirmationDialog({
+      visible: true,
+      context,
+    });
+  }, []);
+
+  const handleCloseConfirmationDialog = useCallback(() => {
+    setConfirmationDialog({
+      visible: false,
+      context: null,
+    });
+  }, []);
+
+  const handleConfirmDialog = useCallback(() => {
+    const context = confirmationDialog.context;
+    setConfirmationDialog({
+      visible: false,
+      context: null,
+    });
+    if (context === "shoppingList") {
+      // Future: trigger shopping list build + checkout logic here.
+    } else if (context === "newMeals") {
+      handleConfirmPreferenceComplete();
+    } else if (context === "woolworthsCart") {
+      // Future: trigger add-to-cart flow once wired up.
+    }
+  }, [confirmationDialog.context, handleConfirmPreferenceComplete]);
+
+  const handleOpenShoppingListConfirm = useCallback(() => {
+    showConfirmationDialog("shoppingList");
+  }, [showConfirmationDialog]);
+
+  const handleOpenNewMealsConfirm = useCallback(() => {
+    showConfirmationDialog("newMeals");
+  }, [showConfirmationDialog]);
+  const handleOpenWoolworthsCartConfirm = useCallback(() => {
+    showConfirmationDialog("woolworthsCart");
+  }, [showConfirmationDialog]);
   const walletEndpoint = API_BASE_URL ? `${API_BASE_URL}/wallet/balance` : null;
   const payfastInitiateEndpoint = API_BASE_URL
     ? `${API_BASE_URL}/payments/payfast/initiate`
@@ -3011,7 +3055,7 @@ function AppContent() {
           <View style={styles.ingredientsButtonGroup}>
             <TouchableOpacity
               style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
-              onPress={handleConfirmPreferenceComplete}
+              onPress={handleOpenNewMealsConfirm}
             >
               <Text style={styles.welcomeButtonText}>
                 Get New Meals (Use a free use)
@@ -3026,6 +3070,35 @@ function AppContent() {
           </View>
         </View>
         {mealMenuOverlay}
+        {confirmationDialog.visible ? (
+          <View style={styles.mealDetailModalContainer} pointerEvents="box-none">
+            <TouchableWithoutFeedback onPress={handleCloseConfirmationDialog}>
+              <View style={styles.mealDetailBackdrop} />
+            </TouchableWithoutFeedback>
+            <View style={styles.mealDetailCard}>
+              <View style={styles.confirmModalContent}>
+                <Text style={styles.mealDetailTitle}>Please confirm</Text>
+                <Text style={styles.confirmSubtitle}>use a free use</Text>
+              </View>
+              <TouchableOpacity
+                style={styles.confirmAcceptButton}
+                onPress={handleConfirmDialog}
+                accessibilityRole="button"
+                accessibilityLabel="Confirm action"
+              >
+                <Text style={styles.confirmAcceptText}>✓</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={styles.mealDetailCloseButton}
+                onPress={handleCloseConfirmationDialog}
+                accessibilityRole="button"
+                accessibilityLabel="Dismiss confirmation"
+              >
+                <Text style={styles.mealDetailCloseText}>×</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        ) : null}
       </SafeAreaView>
     );
   }
@@ -3589,19 +3662,48 @@ function AppContent() {
           <View style={styles.ingredientsButtonGroup}>
             <TouchableOpacity
               style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
-              onPress={() => {}}
+              onPress={handleOpenShoppingListConfirm}
             >
               <Text style={styles.welcomeButtonText}>Get Shopping List (Use a free use)</Text>
             </TouchableOpacity>
             <TouchableOpacity
               style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
-              onPress={() => {}}
+              onPress={handleOpenWoolworthsCartConfirm}
             >
               <Text style={styles.welcomeButtonText}>Add to Woolworths Cart (Use a free use)</Text>
             </TouchableOpacity>
           </View>
         </View>
         {mealMenuOverlay}
+        {confirmationDialog.visible ? (
+          <View style={styles.mealDetailModalContainer} pointerEvents="box-none">
+            <TouchableWithoutFeedback onPress={handleCloseConfirmationDialog}>
+              <View style={styles.mealDetailBackdrop} />
+            </TouchableWithoutFeedback>
+            <View style={styles.mealDetailCard}>
+              <View style={styles.confirmModalContent}>
+                <Text style={styles.mealDetailTitle}>Please confirm</Text>
+                <Text style={styles.confirmSubtitle}>use a free use</Text>
+              </View>
+              <TouchableOpacity
+                style={styles.confirmAcceptButton}
+                onPress={handleConfirmDialog}
+                accessibilityRole="button"
+                accessibilityLabel="Confirm action"
+              >
+                <Text style={styles.confirmAcceptText}>✓</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={styles.mealDetailCloseButton}
+                onPress={handleCloseConfirmationDialog}
+                accessibilityRole="button"
+                accessibilityLabel="Dismiss confirmation"
+              >
+                <Text style={styles.mealDetailCloseText}>×</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        ) : null}
       </SafeAreaView>
     );
   }
@@ -5527,6 +5629,18 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     flexDirection: "column",
   },
+  confirmModalContent: {
+    flexGrow: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    paddingVertical: 12,
+  },
+  confirmSubtitle: {
+    fontSize: 16,
+    color: "#0c3c26",
+    marginTop: 8,
+    textAlign: "center",
+  },
   mealDetailScroll: {
     flexGrow: 1,
     flexShrink: 1,
@@ -5573,6 +5687,22 @@ const styles = StyleSheet.create({
   },
   mealDetailCloseText: {
     color: "#00a651",
+    fontSize: 40,
+    fontWeight: "700",
+    lineHeight: 40,
+  },
+  confirmAcceptButton: {
+    alignSelf: "center",
+    width: 64,
+    height: 64,
+    borderRadius: 32,
+    backgroundColor: "#00a651",
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 12,
+  },
+  confirmAcceptText: {
+    color: "#fff",
     fontSize: 40,
     fontWeight: "700",
     lineHeight: 40,
