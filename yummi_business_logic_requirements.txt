@@ -24,7 +24,7 @@ Definitions & Entities
 
 Tagging System Architecture
 ---------------------------
-- Vocabulary Stewardship: Maintain a `defined_tags` table (or JSON manifest) with categories such as Diet, Cuisine, Protein/Base, Technique, Dish Format, PrepTime, Complexity, Heat/Spice, Audience, Occasion, Ethics/Religious, Allergens, Nutrition Focus, and Equipment. Each entry carries `tag_id`, `category`, `value`, `description`, `is_required_for_archetype`, `is_required_for_meal`.
+- Vocabulary Stewardship: Maintain a `defined_tags` table (or JSON manifest) with categories such as Diet, Cuisine, Protein/Base, Technique, Dish Format, PrepTime, Complexity, Heat/Spice, Audience, Occasion, Ethics/Religious, Allergens, Nutrition Focus, and Equipment. Each entry carries `tag_id`, `category`, `value`, and `description`; additional metadata is optional.
 - Archetype Coverage: Every archetype must include at least Diet, Cuisine openness (broad/experimental indicators), Complexity band, PrepTime range, Heat tolerance, Allergens to avoid, and Household/Audience context. Optional tags (e.g., Equipment) may be added but cannot replace the required set.
 - Meal Tag Expectations: Meals must always emit Diet, Cuisine, Heat level, PrepTime bucket, Complexity, and any allergen/ethical flags triggered by their ingredients. Additional tags (Technique, Occasion, Nutrition) are recommended but explicitly optional—absence simply means \"not specified,\" not \"no.\" Document this behavior in the API schema so consumers do not expect every category.
 - User Profile Linkage: Onboarding responses map directly to `defined_tags`. Preference weights and feedback signals operate at the tag level, ensuring archetype intents, meal descriptors, and user affinities all speak the same vocabulary.

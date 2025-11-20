@@ -1,0 +1,45 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_VegFam_GlobalPot_30to60",
+      "name": "Vegetarian Family One-Pot Global (Indian & Middle Eastern)",
+      "description": "From-scratch vegetarian family meals centered on hearty one-pot dals, stews, and pilafs with Indian and Middle Eastern flavors, ideal for leftovers and batch-friendly cooking.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "Vegetarian"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Indian",
+          "MiddleEastern"
+        ],
+        "PrepTime": [
+          "30to60"
+        ],
+        "Complexity": [
+          "Intermediate"
+        ],
+        "HeatSpice": [
+          "Medium"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "SlowOrPressureCooker"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "HighFiber"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.0",
+      "rationale": "This fills the gap beyond the existing quick, mild SA/American weeknights by offering from-scratch, batchable Indian/Middle Eastern one-pot meals at 30–60 minutes with medium spice for families."
+    }
+  ]
+}

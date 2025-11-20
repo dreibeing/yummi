@@ -105,19 +105,25 @@ def render_user_prompt(
     *,
     market_brief: str,
     tags_version: str,
-    required_categories: List[str],
-    archetype_count: int,
+    scope_diets: List[str] | None,
+    scope_audience: List[str] | None,
+    approved_tags_block: str,
+    existing_archetypes_summary: str,
 ) -> str:
     replacements = {
         "market_coverage_brief": market_brief.strip(),
         "tags_version": tags_version,
-        "required_categories_archetype": ", ".join(required_categories),
-        "archetype_count": archetype_count,
+        "scope_diets": ", ".join(scope_diets or []),
+        "scope_audience": ", ".join(scope_audience or []),
+        "approved_tags_block": approved_tags_block.strip(),
+        "existing_archetypes_summary": existing_archetypes_summary.strip(),
     }
     return _fill_placeholders(template, replacements)
 
 
 def render_system_prompt(template: str, *, archetype_count: int) -> str:
+    # We still accept archetype_count placeholder for compatibility, but the refactor
+    # always generates exactly 1 archetype per call.
     return _fill_placeholders(template, {"archetype_count": archetype_count})
 
 
@@ -158,32 +164,134 @@ def write_archetype_snapshot(run_dir: Path, archetypes: List[Dict[str, Any]], ta
     save_json(snapshot_path, payload)
 
 
-def summarize_archetypes(archetypes: List[Dict[str, Any]], max_items: int) -> str:
-    """Return a compact summary (2 lines per item) using only keywords.
+def summarize_archetypes(archetypes: List[Dict[str, Any]], limit: int | None = None) -> str:
+    """Return a compact, two-line summary per archetype: brief description + tags.
 
-    We summarize the last N archetypes to keep context current and short.
-    Line 1: <n>. <name>
-    Line 2: D=<..>; C=<..>; A=<..>; B=<..>; H=<..>; P=<..>; X=<..>; E=<..>
-    (Diet, Cuisine, Audience, Budget, Heat, Prep, Complexity, Ethics)
+    - Line 1: <n>. <name> — <short description>
+    - Line 2: tags: <Category1>=v1,v2; <Category2>=v1; ... (only categories present)
+    If limit is provided (>0), include only the most recent `limit` entries.
     """
+    items = archetypes
+    if limit is not None and limit > 0 and len(archetypes) > limit:
+        items = archetypes[-limit:]
     lines: List[str] = []
-    window = archetypes[-max_items:] if max_items > 0 else []
-    for idx, archetype in enumerate(window, start=1):
-        name = archetype.get("name", "Unknown")
-        tags = archetype.get("core_tags") or {}
-        diet = ",".join(tags.get("Diet", [])[:2]) or "-"
-        cuisine = ",".join(tags.get("Cuisine", [])[:2]) or "-"
-        audience = ",".join(tags.get("Audience", [])[:1]) or "-"
-        budget = ",".join(tags.get("BudgetLevel", [])[:1]) or "-"
-        heat = ",".join(tags.get("HeatSpice", [])[:1]) or archetype.get("heat_band", "-")
-        prep = ",".join(tags.get("PrepTime", [])[:1]) or "-"
-        complexity = ",".join(tags.get("Complexity", [])[:1]) or archetype.get("complexity", "-")
-        ethics = ",".join(tags.get("EthicsReligious", [])[:1]) or "-"
-        lines.append(f"{idx}. {name}")
-        lines.append(
-            f"D={diet}; C={cuisine}; A={audience}; B={budget}; H={heat}; P={prep}; X={complexity}; E={ethics}"
-        )
-    return "\n".join(lines) if lines else ""
+    for idx, a in enumerate(items, start=1):
+        name = (a.get("name") or "Unknown").strip()
+        desc = (a.get("description") or "").strip()
+        desc_short = desc if len(desc) <= 120 else (desc[:117] + "...")
+        lines.append(f"{idx}. {name} — {desc_short}")
+        tags = a.get("core_tags") or {}
+        tag_parts: List[str] = []
+        for cat, values in tags.items():
+            vals = ",".join(list(values)[:6]) if isinstance(values, list) else str(values)
+            tag_parts.append(f"{cat}={vals}")
+        lines.append("tags: " + "; ".join(tag_parts))
+    return "\n".join(lines)
+
+
+def _gather_existing_archetypes_in_folder(predefined_base: Path) -> List[Dict[str, Any]]:
+    """Scan all run_* subfolders under a predefined folder and collect archetypes.
+
+    Deduplicate by uid (keep first occurrence) and return in chronological order.
+    """
+    collected: List[Dict[str, Any]] = []
+    seen: set[str] = set()
+    if not predefined_base.exists():
+        return collected
+    for run_dir in sorted(predefined_base.glob("run_*") ):
+        agg = run_dir / "archetypes_aggregated.json"
+        snap = run_dir / SNAPSHOT_FILENAME
+        payload = None
+        if agg.exists():
+            try:
+                payload = json.loads(agg.read_text(encoding="utf-8"))
+            except Exception:
+                payload = None
+        elif snap.exists():
+            try:
+                payload = json.loads(snap.read_text(encoding="utf-8"))
+            except Exception:
+                payload = None
+        if not payload:
+            continue
+        for a in payload.get("archetypes", []) or []:
+            uid = str(a.get("uid") or "").strip()
+            if uid and uid not in seen:
+                seen.add(uid)
+                collected.append(a)
+    return collected
+
+
+def build_tag_catalog(tags_manifest: Dict[str, Any]) -> Dict[str, List[Dict[str, str]]]:
+    catalog: Dict[str, List[Dict[str, str]]] = {}
+    for entry in tags_manifest.get("defined_tags", []) or []:
+        category = entry.get("category")
+        value = entry.get("value")
+        if not category or not value:
+            continue
+        description = str(entry.get("description") or "").strip()
+        bucket = catalog.setdefault(str(category), [])
+        if all(item["value"] != value for item in bucket):
+            bucket.append({"value": str(value), "description": description})
+    for category in catalog:
+        catalog[category].sort(key=lambda item: item["value"].lower())
+    return catalog
+
+
+def format_approved_tags_block(catalog: Dict[str, List[Dict[str, str]]]) -> str:
+    lines: List[str] = []
+    for category in sorted(catalog):
+        items = catalog[category]
+        if not items:
+            continue
+        lines.append(f"{category}:")
+        for item in items:
+            value = item["value"]
+            description = item.get("description") or ""
+            if description:
+                lines.append(f"  - {value}: {description}")
+            else:
+                lines.append(f"  - {value}")
+    return "\n".join(lines)
+
+
+def validate_archetype_core_tags(
+    archetypes: List[Dict[str, Any]],
+    catalog: Dict[str, List[Dict[str, str]]],
+    scope_diets: List[str] | None,
+    scope_audience: List[str] | None,
+) -> None:
+    catalog_sets: Dict[str, set[str]] = {
+        category: {item["value"] for item in items}
+        for category, items in catalog.items()
+    }
+    for idx, archetype in enumerate(archetypes, start=1):
+        uid = archetype.get("uid") or f"index {idx}"
+        core_tags = archetype.get("core_tags") or {}
+        for category, values in core_tags.items():
+            if category not in catalog_sets:
+                raise ValueError(
+                    f"Archetype {uid} references unknown category '{category}'. Update defined_tags.json or adjust the model output."
+                )
+            allowed_values = catalog_sets[category]
+            for value in values or []:
+                if value not in allowed_values:
+                    raise ValueError(
+                        f"Archetype {uid} uses value '{value}' for category '{category}', which is not in defined_tags.json."
+                    )
+
+        if scope_diets:
+            archetype_diets = set(core_tags.get("DietaryRestrictions") or [])
+            if archetype_diets != set(scope_diets):
+                raise ValueError(
+                    f"Archetype {uid} must include DietaryRestrictions values {scope_diets} exactly, but got {sorted(archetype_diets)}."
+                )
+        if scope_audience:
+            archetype_audience = set(core_tags.get("Audience") or [])
+            if archetype_audience != set(scope_audience):
+                raise ValueError(
+                    f"Archetype {uid} must include Audience values {scope_audience} exactly, but got {sorted(archetype_audience)}."
+                )
 
 
 def _slugify(value: str) -> str:
@@ -203,45 +311,47 @@ def _build_scope_block(
     scope_audiences: List[str] | None,
     required_sub_tags: Dict[str, List[str]] | None,
 ) -> str:
+    """Legacy scope block (kept for compatibility in curator flows).
+
+    The refactored prompt now embeds scope directly into the user template; this
+    function is retained to keep metadata/context parity if needed elsewhere.
+    """
     if not scope_diets and not scope_audiences and not required_sub_tags:
         return ""
 
     # Prefer category names exactly as defined in the manifest
     archetype_required = (tags_manifest.get("required_categories", {}) or {}).get("archetype", [])
-    diet_category_key = "DietaryRestrictions" if "DietaryRestrictions" in archetype_required else "Diet"
+    diet_category_key = "DietaryRestrictions" if "DietaryRestrictions" in archetype_required else "DietaryRestrictions"
     audience_category_key = "Audience"
 
     lines: List[str] = []
-    lines.append("\n\nScope (HARD CONSTRAINTS; do not violate):")
+    lines.append("\n\nScope (HARD CONSTRAINTS; exact inclusion):")
     if scope_diets:
         lines.append(
-            f"- {diet_category_key}: every generated archetype MUST include one of: "
-            + ", ".join(sorted(scope_diets))
+            f"- {diet_category_key}: include ALL of → " + ", ".join(sorted(scope_diets))
         )
     if scope_audiences:
         lines.append(
-            f"- {audience_category_key}: every generated archetype MUST include one of: "
-            + ", ".join(sorted(scope_audiences))
+            f"- {audience_category_key}: include ALL of → " + ", ".join(sorted(scope_audiences))
         )
     if required_sub_tags:
-        # Render as compact bullets to guide coverage inside the scope
-        lines.append("Required sub‑archetype coverage hints (within this scope):")
+        # Optional guidance within the scope
+        lines.append("Optional coverage hints (within this scope):")
         for cat, values in required_sub_tags.items():
             if not values:
                 continue
-            lines.append(f"  • {cat}: target coverage across {', '.join(sorted(set(values)))}")
-    lines.append(
-        "Reject or revise any archetype that does not include the scoped values above in core_tags."
-    )
+            lines.append(f"  • {cat}: consider coverage across {', '.join(sorted(set(values)))}")
+    lines.append("Reject or revise any archetype that fails exact scope inclusion.")
     return "\n".join(lines) + "\n\n"
 
 
 def run_batches(args: argparse.Namespace) -> None:
     tags_manifest = _load_json(Path(args.tags_manifest))
     tags_version: str = tags_manifest.get("tags_version", "unknown")
-    required_categories = tags_manifest.get("required_categories", {}).get("archetype", [])
-    if not required_categories:
-        raise RuntimeError("tags manifest missing required_categories.archetype entries.")
+    tag_catalog = build_tag_catalog(tags_manifest)
+    if not tag_catalog:
+        raise RuntimeError("defined_tags.json did not yield any tag categories/values.")
+    approved_tags_block = format_approved_tags_block(tag_catalog)
 
     prompt = load_prompt_template(Path(args.prompt_template))
     market_brief = load_constraint_brief(Path(args.constraint_brief))
@@ -254,6 +364,11 @@ def run_batches(args: argparse.Namespace) -> None:
 
     if args.predefined_config:
         cfg_path = Path(args.predefined_config)
+        # Allow passing the predefined folder directly; resolve to config.json
+        if cfg_path.is_dir():
+            candidate = cfg_path / "config.json"
+            if candidate.exists():
+                cfg_path = candidate
         predefined_config = _load_json(cfg_path)
         hard = predefined_config.get("hard_constraints") or {}
         scope_diets = list(hard.get("DietaryRestrictions") or hard.get("Diet") or []) or None
@@ -270,19 +385,15 @@ def run_batches(args: argparse.Namespace) -> None:
     if args.scope_audience:
         scope_audiences = list(args.scope_audience)
 
-    batch_size = args.batch_size or args.archetype_count
     total = args.archetype_count
-    batches: List[int] = []
-    remaining = total
-    while remaining > 0:
-        size = min(batch_size, remaining)
-        batches.append(size)
-        remaining -= size
 
     # Compute output dir; if predefined scope present and output-dir equals default base, nest under a slug
     base_output = Path(args.output_dir)
-    if (predefined_config or scope_diets or scope_audiences) and (base_output == DEFAULT_OUTPUT_DIR):
-        slug = _compute_predefined_slug(scope_diets or [], scope_audiences or [])
+    predefined_slug: Optional[str] = None
+    if predefined_config:
+        predefined_slug = predefined_config.get("predefined_uid") or None
+    if (predefined_slug or scope_diets or scope_audiences) and (base_output == DEFAULT_OUTPUT_DIR):
+        slug = predefined_slug or _compute_predefined_slug(scope_diets or [], scope_audiences or [])
         base_output = base_output / "predefined" / slug
     output_dir = ensure_output_dir(base_output)
     # Support resumable context by loading any previously written snapshot.
@@ -301,43 +412,38 @@ def run_batches(args: argparse.Namespace) -> None:
         "total_requested": total,
     }
 
-    scope_block = _build_scope_block(
-        tags_manifest=tags_manifest,
-        scope_diets=scope_diets,
-        scope_audiences=scope_audiences,
-        required_sub_tags=required_sub_tags,
-    )
+    # Collect existing archetypes across the predefined folder (all runs) and include current-run snapshot
+    folder_existing: List[Dict[str, Any]] = []
+    # If base_output ends with the slug (predefined/<slug>), use that folder to scan
+    if base_output.name and base_output.parent.name == "predefined":
+        folder_existing = _gather_existing_archetypes_in_folder(base_output)
 
-    for idx, batch_count in enumerate(batches, start=1):
-        system_prompt = render_system_prompt(prompt.system, archetype_count=batch_count)
+    for idx in range(1, total + 1):
+        system_prompt = render_system_prompt(prompt.system, archetype_count=1)
+        # Build existing summary: combine folder history with current run so far
+        prior_archetypes = (folder_existing or []) + (load_archetype_snapshot(output_dir) or all_archetypes)
+        existing_summary = summarize_archetypes(
+            prior_archetypes,
+            None if args.context_summary_max == 0 else args.context_summary_max,
+        )
+        if not existing_summary:
+            existing_summary = "None yet."
+
         user_prompt = render_user_prompt(
             prompt.user,
             market_brief=market_brief,
             tags_version=tags_version,
-            required_categories=required_categories,
-            archetype_count=batch_count,
+            scope_diets=scope_diets or [],
+            scope_audience=scope_audiences or [],
+            approved_tags_block=approved_tags_block,
+            existing_archetypes_summary=existing_summary,
         )
 
-        context_block = ""
-        prior_archetypes = load_archetype_snapshot(output_dir) or all_archetypes
-        if prior_archetypes:
-            summary_text = summarize_archetypes(prior_archetypes, args.context_summary_max)
-            context_block = (
-                "\n\nPrior Archetypes (do-not-repeat; keywords only):\n"
-                f"{summary_text}\n\n"
-                "Use the list above strictly as an exclusion guide. Do not generate archetypes with materially similar "
-                "Diet×Cuisine×Audience×Budget×Heat×Prep×Complexity×Ethics combinations. Prefer broad, mainstream family archetypes "
-                "(Omnivore/Vegetarian, Balanced/Affordable, Mild, 15–30, Simple, SA/ModernAmerican) unless the brief explicitly "
-                "asks for specialty cohorts."
-            )
-
-        user_prompt_with_context = user_prompt + scope_block + context_block
-
-        print(f"Preparing batch {idx}/{len(batches)} (target {batch_count} archetypes)...")
+        print(f"Generating archetype {idx}/{total}...")
         if args.dry_run:
-            preview_path = output_dir / f"batch_{idx:02d}_prompt.txt"
+            preview_path = output_dir / f"call_{idx:02d}_prompt.txt"
             preview_path.write_text(
-                f"SYSTEM:\n{system_prompt}\n\nUSER:\n{user_prompt_with_context}\n",
+                f"SYSTEM:\n{system_prompt}\n\nUSER:\n{user_prompt}\n",
                 encoding="utf-8",
             )
             print(f"[dry-run] Wrote prompt preview to {preview_path}")
@@ -345,7 +451,7 @@ def run_batches(args: argparse.Namespace) -> None:
 
         raw_text = call_openai_api(
             system_prompt=system_prompt,
-            user_prompt=user_prompt_with_context,
+            user_prompt=user_prompt,
             model=args.model,
             temperature=args.temperature,
             top_p=args.top_p,
@@ -353,22 +459,23 @@ def run_batches(args: argparse.Namespace) -> None:
             reasoning_effort=args.reasoning_effort,
             max_output_tokens=args.max_output_tokens,
         )
-        raw_file = output_dir / f"batch_{idx:02d}_raw.txt"
+        raw_file = output_dir / f"call_{idx:02d}_raw.txt"
         raw_file.write_text(raw_text, encoding="utf-8")
 
         parsed = parse_response_payload(raw_text)
         archetypes = parsed.get("archetypes", [])
+        validate_archetype_core_tags(archetypes, tag_catalog, scope_diets, scope_audiences)
         all_archetypes.extend(archetypes)
         write_archetype_snapshot(output_dir, all_archetypes, tags_version)
-        metadata["batches"].append(
+        metadata.setdefault("batches", []).append(
             {
                 "batch": idx,
-                "requested_count": batch_count,
+                "requested_count": 1,
                 "received_count": len(archetypes),
                 "raw_file": raw_file.name,
             }
         )
-        print(f"Batch {idx}: requested {batch_count}, received {len(archetypes)} archetypes")
+        print(f"Call {idx}: received {len(archetypes)} archetype(s)")
 
     if args.dry_run:
         print(f"Dry run complete. Prompts saved under {output_dir}")
@@ -407,7 +514,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--predefined-config",
         default=None,
-        help="Optional JSON config for a predefined archetype (hard constraints + required sub-tags).",
+        help="Path to predefined archetype config.json, or pass the predefined folder to auto-detect config.json.",
     )
     parser.add_argument(
         "--scope-dietary",
@@ -421,8 +528,7 @@ def build_parser() -> argparse.ArgumentParser:
         default=None,
         help="Hard scope: one or more Audience values (can repeat).",
     )
-    parser.add_argument("--archetype-count", type=int, default=24, help="Total number of archetypes to request across batches.")
-    parser.add_argument("--batch-size", type=int, default=None, help="Optional batch size (defaults to total, meaning single call).")
+    parser.add_argument("--archetype-count", type=int, default=5, help="How many archetypes to create (one per call).")
     parser.add_argument("--model", default=os.environ.get("OPENAI_MODEL", "gpt-4o-mini"), help="Chat/response model to call.")
     parser.add_argument("--temperature", type=float, default=0.4, help="Sampling temperature for the LLM call.")
     parser.add_argument("--top-p", type=float, default=1.0, help="Nucleus sampling parameter (top_p).")
@@ -442,8 +548,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--context-summary-max",
         type=int,
-        default=10,
-        help="Maximum number of existing archetypes to include in the context summary for each batch.",
+        default=0,
+        help="Limit how many existing archetypes to include (0 = include all from the folder).",
     )
     parser.add_argument("--dry-run", action="store_true", help="Skip API calls and just materialize the rendered prompts.")
     return parser

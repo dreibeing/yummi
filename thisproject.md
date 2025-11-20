@@ -188,3 +188,6 @@ See [plan.md](plan.md) for the authoritative roadmap. Top priorities for the nex
 - `data/archetypes/predefined_archetypes.xlsx` (or the CSV export) now enumerates every hard-scope combination (DietaryRestrictions × Audience × secondary DietaryRestrictions).
 - Run `python scripts/predefined_archetypes_sync.py` to materialize `data/archetypes/predefined/<diet>_<audience>_<secondary>/config.json` for each row; re-run whenever the sheet changes.
 - Invoke scoped generation per folder using `scripts/archetype_prompt_runner.py --predefined-config ...` and follow with `scripts/archetype_curator.py --run-dir ...` so each baseline archetype stays within its constraints before feeding meal generation.
+- The prompt runner now makes one GPT-5 call per archetype. Use `--archetype-count N` to create N sequential archetypes, optionally limiting existing-context size via `--context-summary-max`. `--max-output-tokens` and `--reasoning-effort` still pass straight through to the OpenAI Responses API (requires `openai>=1.3.0`).
+- Prompts embed an "Approved Tags" appendix derived from `defined_tags.json`, and responses are validated so every category/value matches the manifest; scope audiences/diets must be included exactly.
+- `Allergens` is optional—default to the new `None` value unless the archetype is explicitly allergen-focused.

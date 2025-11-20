@@ -31,91 +31,100 @@ Path: `data/tags/defined_tags.json`
     ]
   },
   "defined_tags": [
-    {"tag_id":"dietres_none","category":"DietaryRestrictions","value":"None","description":"No dietary restrictions; eats all foods","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"dietres_vegan","category":"DietaryRestrictions","value":"Vegan","description":"Excludes all animal-derived products","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"dietres_vegetarian","category":"DietaryRestrictions","value":"Vegetarian","description":"No meat or seafood; allows dairy/eggs","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"dietres_pescatarian","category":"DietaryRestrictions","value":"Pescatarian","description":"Seafood allowed; no poultry or red meat","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"dietres_halal","category":"DietaryRestrictions","value":"Halal","description":"Prepared with halal-certified ingredients and processes","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"dietres_kosher","category":"DietaryRestrictions","value":"Kosher","description":"Meets kosher certification requirements; supervised sourcing and preparation","is_required_for_archetype":true,"is_required_for_meal":true},
+    {"tag_id":"dietres_none","category":"DietaryRestrictions","value":"None","description":"No dietary restrictions; eats all foods"},
+    {"tag_id":"dietres_vegan","category":"DietaryRestrictions","value":"Vegan","description":"Excludes all animal-derived products"},
+    {"tag_id":"dietres_vegetarian","category":"DietaryRestrictions","value":"Vegetarian","description":"No meat or seafood; allows dairy/eggs"},
+    {"tag_id":"dietres_pescatarian","category":"DietaryRestrictions","value":"Pescatarian","description":"Seafood allowed; no poultry or red meat"},
+    {"tag_id":"dietres_halal","category":"DietaryRestrictions","value":"Halal","description":"Prepared with halal-certified ingredients and processes"},
+    {"tag_id":"dietres_kosher","category":"DietaryRestrictions","value":"Kosher","description":"Meets kosher certification requirements; supervised sourcing and preparation"},
 
-    {"tag_id":"cuisine_southaf","category":"Cuisine","value":"SouthAfrican","description":"Braai, bunny chow, bobotie, chakalaka, pap and samp with peri-peri or chutney heat","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"cuisine_american","category":"Cuisine","value":"American","description":"Burgers, BBQ ribs or pulled pork, fried chicken, mac & cheese, chili, casseroles, subs, wings, hearty dinner salads","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"cuisine_mexican","category":"Cuisine","value":"Mexican","description":"Tacos, burritos, enchiladas, quesadillas, pozole, chilaquiles, rice and bean bowls with corn masa, salsas, chiles, lime","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"cuisine_caribbean","category":"Cuisine","value":"Caribbean","description":"Jerk chicken or pork, curry goat, oxtail stew, rice and peas, plantains, roti; allspice, thyme, scotch bonnet heat","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"cuisine_latin","category":"Cuisine","value":"LatinAmerican","description":"Ceviche, lomo saltado, feijoada, moqueca, asado plates, arepas, empanadas with ají peppers, chimichurri, rice and beans","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"cuisine_italian","category":"Cuisine","value":"Italian","description":"Pastas, risotto, pizza, parmigiana, minestrone; tomato, basil, olive oil, Parmigiano-centered dishes","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"cuisine_french","category":"Cuisine","value":"French","description":"Bistro braises like coq au vin or boeuf bourguignon, quiche, ratatouille, steak frites; butter and wine sauces, Provençal herbs","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"cuisine_greek","category":"Cuisine","value":"Greek","description":"Souvlaki, gyros, moussaka, spanakopita, Greek salads; lemon, oregano, feta, olive oil, yogurt, pita accompaniments","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"cuisine_turkish","category":"Cuisine","value":"Turkish","description":"Kebabs, köfte, pide, lahmacun, dolma, meze spreads; yogurt sauces with sumac, Aleppo pepper, pomegranate molasses","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"cuisine_mideast","category":"Cuisine","value":"MiddleEastern","description":"Shawarma or kofta, falafel, hummus and mezze, pilafs, fattoush; tahini, za’atar, sumac, saffron, warm flatbreads","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"cuisine_northaf","category":"Cuisine","value":"NorthAfrican","description":"Tagines, couscous platters, chermoula fish, harira soup; cumin, coriander, cinnamon, preserved lemon, harissa spice","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"cuisine_indian","category":"Cuisine","value":"Indian","description":"Curries, biryani, dal, tandoori grills, chaat, naan or roti, dosa; garam masala, cumin, turmeric","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"cuisine_chinese","category":"Cuisine","value":"Chinese","description":"Stir-fries, fried rice, chow mein, dumplings, hot pot, mapo tofu; soy, vinegar, ginger, garlic, five-spice or Sichuan pepper","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"cuisine_japanese","category":"Cuisine","value":"Japanese","description":"Sushi and sashimi, ramen, udon, tempura, katsu, donburi, yakitori; dashi, miso, soy, yuzu, meticulous presentation","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"cuisine_korean","category":"Cuisine","value":"Korean","description":"Bulgogi or galbi, bibimbap, kimchi stew, soft tofu jjigae, japchae; gochujang, gochugaru, sesame oil, fermented banchan","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"cuisine_thai","category":"Cuisine","value":"Thai","description":"Green, red, or yellow curries, pad thai, pad kra pao, tom yum or tom kha soups; Thai basil, lime, sweet-salty-sour-spicy balance","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"cuisine_vietnamese","category":"Cuisine","value":"Vietnamese","description":"Pho, bun cha, bun bo Hue, banh mi, goi cuon; fresh herbs, nuoc cham, crisp vegetables, light aromatic broths","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"cuisine_portuguese","category":"Cuisine","value":"Portuguese","description":"Peri-peri grilled meats, bacalhau, caldo verde, bifana sandwiches; garlic, bay leaf, paprika, vinegar, seafood emphasis","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"cuisine_spanish","category":"Cuisine","value":"Spanish","description":"Paella, tapas selections, tortilla española, gazpacho, hearty stews; olive oil, saffron, smoked paprika, seafood-forward plates","is_required_for_archetype":true,"is_required_for_meal":true},
-
-
-
-
-
-    {"tag_id":"preptime_less15","category":"PrepTime","value":"Under15","description":"Less than 15 minutes hands-on","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"preptime_15_30","category":"PrepTime","value":"15to30","description":"15 to 30 minutes hands-on","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"preptime_30_60","category":"PrepTime","value":"30to60","description":"30 minutes to 1 hour build","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"preptime_60_plus","category":"PrepTime","value":"60Plus","description":"1 hour plus or multi-step","is_required_for_archetype":true,"is_required_for_meal":true},
-
-    {"tag_id":"complex_easy","category":"Complexity","value":"Simple","description":"Beginner-friendly steps","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"complex_mid","category":"Complexity","value":"Intermediate","description":"Multiple components but approachable","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"complex_adv","category":"Complexity","value":"Advanced","description":"Advanced timing or techniques","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"complex_show","category":"Complexity","value":"Showstopper","description":"High effort, presentation-focused","is_required_for_archetype":true,"is_required_for_meal":true},
-
-    {"tag_id":"heat_none","category":"HeatSpice","value":"NoHeat","description":"0 heat; suitable for sensitive palettes","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"heat_mild","category":"HeatSpice","value":"Mild","description":"Noticeable warmth but kid-friendly","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"heat_medium","category":"HeatSpice","value":"Medium","description":"Balanced heat for most adults","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"heat_hot","category":"HeatSpice","value":"Hot","description":"Bold chili presence","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"heat_extra","category":"HeatSpice","value":"ExtraHot","description":"Significant burn; for spice lovers","is_required_for_archetype":true,"is_required_for_meal":true},
-
-    {"tag_id":"audience_solo","category":"Audience","value":"Solo","description":"1 serving meals for individuals","is_required_for_archetype":true,"is_required_for_meal":false},
-    {"tag_id":"audience_couple","category":"Audience","value":"Couple","description":"2 servings sized for two adults","is_required_for_archetype":true,"is_required_for_meal":false},
-    {"tag_id":"audience_family","category":"Audience","value":"Family","description":"4 servings covering a typical household","is_required_for_archetype":true,"is_required_for_meal":false},
-    {"tag_id":"audience_largefamily","category":"Audience","value":"LargeFamily","description":"6 servings designed for big families","is_required_for_archetype":true,"is_required_for_meal":false},
-    {"tag_id":"audience_extendedfamily","category":"Audience","value":"ExtendedFamily","description":"8 servings for extended family","is_required_for_archetype":true,"is_required_for_meal":false},
+    {"tag_id":"cuisine_southaf","category":"Cuisine","value":"SouthAfrican","description":"Braai, bunny chow, bobotie, chakalaka, pap and samp with peri-peri or chutney heat"},
+    {"tag_id":"cuisine_american","category":"Cuisine","value":"American","description":"Burgers, BBQ ribs or pulled pork, fried chicken, mac & cheese, chili, casseroles, subs, wings, hearty dinner salads"},
+    {"tag_id":"cuisine_mexican","category":"Cuisine","value":"Mexican","description":"Tacos, burritos, enchiladas, quesadillas, pozole, chilaquiles, rice and bean bowls with corn masa, salsas, chiles, lime"},
+    {"tag_id":"cuisine_caribbean","category":"Cuisine","value":"Caribbean","description":"Jerk chicken or pork, curry goat, oxtail stew, rice and peas, plantains, roti; allspice, thyme, scotch bonnet heat"},
+    {"tag_id":"cuisine_latin","category":"Cuisine","value":"LatinAmerican","description":"Ceviche, lomo saltado, feijoada, moqueca, asado plates, arepas, empanadas with ají peppers, chimichurri, rice and beans"},
+    {"tag_id":"cuisine_italian","category":"Cuisine","value":"Italian","description":"Pastas, risotto, pizza, parmigiana, minestrone; tomato, basil, olive oil, Parmigiano-centered dishes"},
+    {"tag_id":"cuisine_french","category":"Cuisine","value":"French","description":"Bistro braises like coq au vin or boeuf bourguignon, quiche, ratatouille, steak frites; butter and wine sauces, Provençal herbs"},
+    {"tag_id":"cuisine_greek","category":"Cuisine","value":"Greek","description":"Souvlaki, gyros, moussaka, spanakopita, Greek salads; lemon, oregano, feta, olive oil, yogurt, pita accompaniments"},
+    {"tag_id":"cuisine_turkish","category":"Cuisine","value":"Turkish","description":"Kebabs, köfte, pide, lahmacun, dolma, meze spreads; yogurt sauces with sumac, Aleppo pepper, pomegranate molasses"},
+    {"tag_id":"cuisine_mideast","category":"Cuisine","value":"MiddleEastern","description":"Shawarma or kofta, falafel, hummus and mezze, pilafs, fattoush; tahini, za’atar, sumac, saffron, warm flatbreads"},
+    {"tag_id":"cuisine_northaf","category":"Cuisine","value":"NorthAfrican","description":"Tagines, couscous platters, chermoula fish, harira soup; cumin, coriander, cinnamon, preserved lemon, harissa spice"},
+    {"tag_id":"cuisine_indian","category":"Cuisine","value":"Indian","description":"Curries, biryani, dal, tandoori grills, chaat, naan or roti, dosa; garam masala, cumin, turmeric"},
+    {"tag_id":"cuisine_chinese","category":"Cuisine","value":"Chinese","description":"Stir-fries, fried rice, chow mein, dumplings, hot pot, mapo tofu; soy, vinegar, ginger, garlic, five-spice or Sichuan pepper"},
+    {"tag_id":"cuisine_japanese","category":"Cuisine","value":"Japanese","description":"Sushi and sashimi, ramen, udon, tempura, katsu, donburi, yakitori; dashi, miso, soy, yuzu, meticulous presentation"},
+    {"tag_id":"cuisine_korean","category":"Cuisine","value":"Korean","description":"Bulgogi or galbi, bibimbap, kimchi stew, soft tofu jjigae, japchae; gochujang, gochugaru, sesame oil, fermented banchan"},
+    {"tag_id":"cuisine_thai","category":"Cuisine","value":"Thai","description":"Green, red, or yellow curries, pad thai, pad kra pao, tom yum or tom kha soups; Thai basil, lime, sweet-salty-sour-spicy balance"},
+    {"tag_id":"cuisine_vietnamese","category":"Cuisine","value":"Vietnamese","description":"Pho, bun cha, bun bo Hue, banh mi, goi cuon; fresh herbs, nuoc cham, crisp vegetables, light aromatic broths"},
+    {"tag_id":"cuisine_portuguese","category":"Cuisine","value":"Portuguese","description":"Peri-peri grilled meats, bacalhau, caldo verde, bifana sandwiches; garlic, bay leaf, paprika, vinegar, seafood emphasis"},
+    {"tag_id":"cuisine_spanish","category":"Cuisine","value":"Spanish","description":"Paella, tapas selections, tortilla española, gazpacho, hearty stews; olive oil, saffron, smoked paprika, seafood-forward plates"},
 
 
 
 
-    {"tag_id":"allergen_dairy","category":"Allergens","value":"Dairy","description":"Contains milk or lactose ingredients","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"allergen_egg","category":"Allergens","value":"Egg","description":"Contains eggs or egg products","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"allergen_gluten","category":"Allergens","value":"Gluten","description":"Contains wheat/barley/rye gluten","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"allergen_soy","category":"Allergens","value":"Soy","description":"Contains soybeans or soy derivatives","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"allergen_nuts","category":"Allergens","value":"Nuts","description":"Contains peanuts or tree nuts","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"allergen_seafood","category":"Allergens","value":"Seafood","description":"Contains finned fish or shellfish","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"allergen_sesame","category":"Allergens","value":"Sesame","description":"Contains sesame seeds or oil","is_required_for_archetype":true,"is_required_for_meal":true},
 
-    {"tag_id":"nutrition_highprotein","category":"NutritionFocus","value":"HighProtein","description":"Meals optimized for high protein density per serving","is_required_for_archetype":false,"is_required_for_meal":false},
-    {"tag_id":"nutrition_lowcalorie","category":"NutritionFocus","value":"LowCalorie","description":"Meals designed to stay within a ≤500–600 kcal per serving threshold","is_required_for_archetype":false,"is_required_for_meal":false},
-    {"tag_id":"nutrition_lowcarb","category":"NutritionFocus","value":"LowCarb","description":"Meals moderate in carbohydrates without strict keto limits","is_required_for_archetype":false,"is_required_for_meal":false},
-    {"tag_id":"nutrition_keto","category":"NutritionFocus","value":"Keto","description":"Strict low-carbohydrate, high-fat macro profile for ketogenic diets","is_required_for_archetype":false,"is_required_for_meal":false},
-    {"tag_id":"nutrition_lowfat","category":"NutritionFocus","value":"LowFat","description":"Meals intentionally low in total and saturated fat","is_required_for_archetype":false,"is_required_for_meal":false},
-    {"tag_id":"nutrition_lowsodium","category":"NutritionFocus","value":"LowSodium","description":"Meals formulated to keep sodium levels lower than standard recipes","is_required_for_archetype":false,"is_required_for_meal":false},
-    {"tag_id":"nutrition_highfiber","category":"NutritionFocus","value":"HighFiber","description":"Meals containing elevated dietary fiber per serving","is_required_for_archetype":false,"is_required_for_meal":false},
+    {"tag_id":"preptime_less15","category":"PrepTime","value":"Under15","description":"Less than 15 minutes hands-on"},
+    {"tag_id":"preptime_15_30","category":"PrepTime","value":"15to30","description":"15 to 30 minutes hands-on"},
+    {"tag_id":"preptime_30_60","category":"PrepTime","value":"30to60","description":"30 minutes to 1 hour build"},
+    {"tag_id":"preptime_60_plus","category":"PrepTime","value":"60Plus","description":"1 hour plus or multi-step"},
 
-    {"tag_id":"equip_oven","category":"Equipment","value":"Oven","description":"Requires oven baking or roasting","is_required_for_archetype":false,"is_required_for_meal":false},
-    {"tag_id":"equip_countertop_cooker","category":"Equipment","value":"SlowOrPressureCooker","description":"Has slow cooker or Instant Pot/pressure cooker","is_required_for_archetype":false,"is_required_for_meal":false},
-    {"tag_id":"equip_airfryer","category":"Equipment","value":"AirFryer","description":"Uses air fryer basket","is_required_for_archetype":false,"is_required_for_meal":false},
-    {"tag_id":"equip_microwave","category":"Equipment","value":"Microwave","description":"Needs microwave-safe cooking or reheating","is_required_for_archetype":false,"is_required_for_meal":false},
-    {"tag_id":"equip_stove","category":"Equipment","value":"StoveTop","description":"Requires stove for boiling or pan cooking","is_required_for_archetype":false,"is_required_for_meal":false},
-    {"tag_id":"equip_grill","category":"Equipment","value":"OutdoorGrill","description":"Needs braai/grill access","is_required_for_archetype":false,"is_required_for_meal":false},
+    {"tag_id":"complex_easy","category":"Complexity","value":"Simple","description":"Beginner-friendly steps"},
+    {"tag_id":"complex_mid","category":"Complexity","value":"Intermediate","description":"Multiple components but approachable"},
+    {"tag_id":"complex_adv","category":"Complexity","value":"Advanced","description":"Advanced timing or techniques"},
+    {"tag_id":"complex_show","category":"Complexity","value":"Showstopper","description":"High effort, presentation-focused"},
 
-    {"tag_id":"mealcomp_fromscratch","category":"MealComponentPreference","value":"FromScratch","description":"Prefers meals made from baseline raw ingredients; sauces and components are cooked from scratch.","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"mealcomp_semiprepared","category":"MealComponentPreference","value":"SemiPrepared","description":"Prefers combining partially prepared or ready-to-cook items with simple scratch components.","is_required_for_archetype":true,"is_required_for_meal":true},
-    {"tag_id":"mealcomp_readymeal","category":"MealComponentPreference","value":"ReadyMealPreferred","description":"Prefers fully prepared ready meals or heat-and-eat dishes, with minimal additional cooking.","is_required_for_archetype":true,"is_required_for_meal":true}
+    {"tag_id":"heat_none","category":"HeatSpice","value":"NoHeat","description":"0 heat; suitable for sensitive palettes"},
+    {"tag_id":"heat_mild","category":"HeatSpice","value":"Mild","description":"Noticeable warmth but kid-friendly"},
+    {"tag_id":"heat_medium","category":"HeatSpice","value":"Medium","description":"Balanced heat for most adults"},
+    {"tag_id":"heat_hot","category":"HeatSpice","value":"Hot","description":"Bold chili presence"},
+    {"tag_id":"heat_extra","category":"HeatSpice","value":"ExtraHot","description":"Significant burn; for spice lovers"},
+
+    {"tag_id":"audience_solo","category":"Audience","value":"Solo","description":"1 serving meals for individuals"},
+    {"tag_id":"audience_couple","category":"Audience","value":"Couple","description":"2 servings sized for two adults"},
+    {"tag_id":"audience_family","category":"Audience","value":"Family","description":"4 servings covering a typical household"},
+    {"tag_id":"audience_largefamily","category":"Audience","value":"LargeFamily","description":"6 servings designed for big families"},
+    {"tag_id":"audience_extendedfamily","category":"Audience","value":"ExtendedFamily","description":"8 servings for extended family"},
+
+
+
+
+    {"tag_id":"allergen_none","category":"Allergens","value":"None","description":"No declared allergen avoidance; default tolerance"},
+
+
+
+    {"tag_id":"allergen_dairy","category":"Allergens","value":"Dairy","description":"Contains milk or lactose ingredients"},
+    {"tag_id":"allergen_egg","category":"Allergens","value":"Egg","description":"Contains eggs or egg products"},
+    {"tag_id":"allergen_gluten","category":"Allergens","value":"Gluten","description":"Contains wheat/barley/rye gluten"},
+    {"tag_id":"allergen_soy","category":"Allergens","value":"Soy","description":"Contains soybeans or soy derivatives"},
+    {"tag_id":"allergen_nuts","category":"Allergens","value":"Nuts","description":"Contains peanuts or tree nuts"},
+    {"tag_id":"allergen_seafood","category":"Allergens","value":"Seafood","description":"Contains finned fish or shellfish"},
+    {"tag_id":"allergen_sesame","category":"Allergens","value":"Sesame","description":"Contains sesame seeds or oil"},
+
+    {"tag_id":"nutrition_highprotein","category":"NutritionFocus","value":"HighProtein","description":"Meals optimized for high protein density per serving"},
+    {"tag_id":"nutrition_lowcalorie","category":"NutritionFocus","value":"LowCalorie","description":"Meals designed to stay within a ≤500–600 kcal per serving threshold"},
+    {"tag_id":"nutrition_lowcarb","category":"NutritionFocus","value":"LowCarb","description":"Meals moderate in carbohydrates without strict keto limits"},
+    {"tag_id":"nutrition_keto","category":"NutritionFocus","value":"Keto","description":"Strict low-carbohydrate, high-fat macro profile for ketogenic diets"},
+    {"tag_id":"nutrition_lowfat","category":"NutritionFocus","value":"LowFat","description":"Meals intentionally low in total and saturated fat"},
+    {"tag_id":"nutrition_lowsodium","category":"NutritionFocus","value":"LowSodium","description":"Meals formulated to keep sodium levels lower than standard recipes"},
+    {"tag_id":"nutrition_highfiber","category":"NutritionFocus","value":"HighFiber","description":"Meals containing elevated dietary fiber per serving"},
+
+    {"tag_id":"equip_oven","category":"Equipment","value":"Oven","description":"Requires oven baking or roasting"},
+    {"tag_id":"equip_countertop_cooker","category":"Equipment","value":"SlowOrPressureCooker","description":"Has slow cooker or Instant Pot/pressure cooker"},
+    {"tag_id":"equip_airfryer","category":"Equipment","value":"AirFryer","description":"Uses air fryer basket"},
+    {"tag_id":"equip_microwave","category":"Equipment","value":"Microwave","description":"Needs microwave-safe cooking or reheating"},
+    {"tag_id":"equip_stove","category":"Equipment","value":"StoveTop","description":"Requires stove for boiling or pan cooking"},
+    {"tag_id":"equip_grill","category":"Equipment","value":"OutdoorGrill","description":"Needs braai/grill access"},
+
+    {"tag_id":"mealcomp_fromscratch","category":"MealComponentPreference","value":"FromScratch","description":"Prefers meals made from baseline raw ingredients; sauces and components are cooked from scratch."},
+    {"tag_id":"mealcomp_semiprepared","category":"MealComponentPreference","value":"SemiPrepared","description":"Prefers combining partially prepared or ready-to-cook items with simple scratch components."},
+    {"tag_id":"mealcomp_readymeal","category":"MealComponentPreference","value":"ReadyMealPreferred","description":"Prefers fully prepared ready meals or heat-and-eat dishes, with minimal additional cooking."}
   ]
 }
 ```
+
+### Manifest notes (2025-11 refresh)
+- Tag entries now expose only `tag_id`, `category`, `value`, and `description`; the old `is_required_for_*` flags were retired. Required coverage is driven from the `required_categories` arrays instead.
+- Added `Allergens` value `None` so archetypes can declare a default “no allergen avoidance” stance when no specific exclusions apply.
+- The archetype prompt runner injects the full tag list (with descriptions) for reference while continuing to enforce scope strictly from each predefined config.
 
 ---
 
