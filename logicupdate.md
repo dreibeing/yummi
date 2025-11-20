@@ -135,15 +135,16 @@ Path: `data/tags/defined_tags.json`
 - Normalization helpers: `data/tags/tag_synonyms.json` (used to map or drop non‑canonical values).
 - Constraint brief for coverage: `data/tags/archetype_constraint_brief.md` (referenced by generation/curation prompts).
 
-2) Offline Generation and Aggregation
+-2) Offline Generation and Aggregation
 - Archetype generation: `scripts/archetype_prompt_runner.py` reads `defined_tags.json` to embed `tags_version` and required category lists in prompts and snapshots.
-- Archetype curation: `scripts/archetype_curator.py` produces `curation/archetypes_curated.json` with coverage notes.
+- Archetype curator (deprecated): `scripts/archetype_curator.py` is retained for manual QA only; the main flow consumes the aggregated run output directly.
+- Combined archetype rollup: `scripts/predefined_archetype_aggregator.py` scans each predefined scope and writes `<scope>/archetypes_combined.json` by merging all `run_*` artifacts.
 - Meal generation (LLM + SKU selection): `scripts/meal_builder.py`
   - Loads `defined_tags.json` to build the category→values catalog and enforce `ALWAYS_REQUIRED_MEAL_CATEGORIES` for every meal.
   - Applies `data/tags/tag_synonyms.json` when model returns non‑canonical values.
   - Infers missing `Allergens` from ingredient text where needed.
 - Meal aggregation: `scripts/meal_aggregate_builder.py`
-  - Reads curated archetypes + per‑meal JSON to build `resolver/meals/meals_manifest.json` (and optional Parquet).
+  - Reads the combined archetypes (`archetypes_combined.json`) + per‑meal JSON to build `resolver/meals/meals_manifest.json` (and optional Parquet).
   - Enforces `required_categories.meal` from `defined_tags.json` and fills gaps from archetype defaults.
 
 3) Resolver Artifacts (served to API)
@@ -192,7 +193,7 @@ Path: `data/tags/defined_tags.json`
 
 2) Prompt + generation alignment
 - Update `data/tags/archetype_constraint_brief.md` and prompt templates to reflect the new vocabulary.
-- Regenerate archetypes (`scripts/archetype_prompt_runner.py`) and curate (`scripts/archetype_curator.py`).
+- Regenerate archetypes (`scripts/archetype_prompt_runner.py`) and review the aggregated outputs for coverage (curator script optional/archived).
 
 3) Meal builder adjustments
 - Update `ALWAYS_REQUIRED_MEAL_CATEGORIES` or rely solely on `required_categories.meal` from the manifest.
@@ -229,7 +230,8 @@ Path: `data/tags/defined_tags.json`
   - `data/tags/archetype_constraint_brief.md`
 - Offline scripts
   - `scripts/archetype_prompt_runner.py`
-  - `scripts/archetype_curator.py`
+  - `scripts/archetype_curator.py` (deprecated; retained for manual QA)
+  - `scripts/predefined_archetype_aggregator.py`
   - `scripts/meal_builder.py`
   - `scripts/meal_aggregate_builder.py`
 - Resolver artifacts
@@ -261,12 +263,9 @@ Path: `data/tags/defined_tags.json`
   python scripts/archetype_prompt_runner.py --predefined-config data/archetypes/predefined/<slug>/config.json --archetype-count 12
   ```
   The runner appends a “Scope (HARD CONSTRAINTS)” block so every generated archetype respects the required Diet×Audience combination.
-- **Scoped curation** — Curate the generated set within the same folder:
-  ```powershell
-  python scripts/archetype_curator.py --run-dir data/archetypes/predefined/<slug>/run_<timestamp> --constraint-brief data/tags/archetype_constraint_brief.md
-  ```
-  The curator enforces the stored scope before recommending keep/modify/replace actions.
-- **Meal generation + aggregation** — Point `scripts/meal_builder.py` at the curated `config.json` outputs to produce scoped meals, then aggregate across the folders you plan to ship.
+- **Scoped QA (optional)** — Review `run_*/archetypes_aggregated.json` directly; the curator CLI is deprecated but remains available if you need structured keep/modify guidance.
+- **Rollup** — Run `python scripts/predefined_archetype_aggregator.py` so each scope has `archetypes_combined.json` containing every unique archetype across its runs (deduped by `uid`).
+- **Meal generation + aggregation** — Point `scripts/meal_builder.py` at the combined file to produce scoped meals, then aggregate across the folders you plan to ship.
 - **Maintenance tips** — Update the sheet when adding/removing scopes; rerun the sync script (safe to execute repeatedly). Ensure diet tag values stay aligned with `defined_tags.json`; mismatches will surface later during generation.
 
 ---

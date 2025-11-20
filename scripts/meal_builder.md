@@ -1,6 +1,6 @@
 # Meal Builder CLI
 
-Automates per-archetype meal generation + SKU selection using GPT-5. Each run reads the curated archetype JSON, canonical tags, and normalized ingredient catalog, then produces new meals saved under `data/meals/<archetype_uid>/<meal_id>.json`.
+Automates per-archetype meal generation + SKU selection using GPT-5. Each run reads the aggregated archetype JSON, canonical tags, and normalized ingredient catalog, then produces new meals saved under `data/meals/<archetype_uid>/<meal_id>.json`.
 
 ## Key Behaviors
 - Enforces canonical ingredient usage (`core_item_name` must exist in `data/ingredients/unique_core_items.csv`).
@@ -13,7 +13,7 @@ Automates per-archetype meal generation + SKU selection using GPT-5. Each run re
 
 ## Prerequisites
 1. `OPENAI_API_KEY` set and GPT-5 access enabled.
-2. Curated archetypes: `data/archetypes/run_20251112T091259Z/curation/archetypes_curated.json` (or pass `--archetype-json`).
+2. Combined archetype file: run `python scripts/predefined_archetype_aggregator.py` so each predefined scope exposes `<scope>/archetypes_combined.json`, or pass `--archetype-json` manually.
 3. Locked tags manifest `data/tags/defined_tags.json` plus synonyms file (`data/tags/tag_synonyms.json`).
 4. Canonical ingredients + product mapping: `data/ingredients/unique_core_items.csv` and `data/ingredients/ingredient_classifications.csv`.
 5. Resolver catalog `resolver/catalog.json` populated with Woolworths products.

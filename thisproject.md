@@ -79,8 +79,9 @@ We operate a production-ready pipeline that prepares product data, enriches bask
 ### Archetype data pipeline status (2025-11-12)
 - **Vocabulary + briefs**: `data/tags/defined_tags.json` (tags_version `2025.02.0`) and `data/tags/archetype_constraint_brief.md` now encode the mainstream-first coverage rules. `data/prompts/archetype_generation_prompt.md` and `scripts/archetype_prompt_runner.py` wire those rules into GPT-5 calls, including compact “prior archetype” context to avoid duplicates.
 - **Latest run**: `data/archetypes/run_20251112T091259Z` (25 archetypes, one per batch, reasoning effort = low). Each batch folder contains raw prompts/responses plus `archetypes_so_far.json` snapshots and `run_metadata.json`.
-- **Curation**: `scripts/archetype_curator.py` outputs `curation_raw.txt`, `curation_recommendations.json`, and `archetypes_curated.json` (aggregated list + embedded keep/modify/replace notes). Current curated dataset lives at `data/archetypes/run_20251112T091259Z/curation/archetypes_curated.json`.
-- **Next steps**: apply curator recommendations (replace redundant Jain/family poultry lanes with dairy-free, keto, LatinAmerican Hot entries), re-run the curator to confirm overlap clusters clear, then package the curated JSON into Parquet + manifest for publication (Plan Step 6).
+- **Run artifacts**: `scripts/archetype_prompt_runner.py` writes aggregated payloads per scope (`run_*/archetypes_aggregated.json`). Run `python scripts/predefined_archetype_aggregator.py` to collapse every scope’s runs into `<predefined>/archetypes_combined.json` before meal generation.
+- **Curator status**: `scripts/archetype_curator.py` is retained for historical reference but is no longer part of the default pipeline.
+- **Next steps**: select the archetype UIDs you plan to ship from the combined file, generate meals, and package them into Parquet + manifest (Plan Step 6).
 
 ---
 
@@ -113,10 +114,10 @@ We operate a production-ready pipeline that prepares product data, enriches bask
 - Consolidation script (`scripts/ingredient_classifications_builder.py`) merges `all_results.jsonl` into product-level tables (`data/ingredients/ingredient_classifications.{jsonl,csv}`) and a deduped ingredient catalog (`data/ingredients/unique_core_items.csv`, currently 1 844 unique ingredient/ready-meal rows) for downstream meal generation prompts.
 
 ### Meal generation + manifest publishing
-- `scripts/meal_builder.py` now produces per-archetype meal JSON under `data/meals/arch_<uid>/` plus run metadata in `data/meals/runs/`. Validation fills any missing required tags from the archetype defaults so downstream tooling doesn’t fail when the LLM omits a category.
+- `scripts/meal_builder.py` now produces per-archetype meal JSON under `data/meals/arch_<uid>/` plus run metadata in `data/meals/runs/`. Validation fills any missing required tags from the archetype defaults so downstream tooling doesn’t fail when the LLM omits a category. Point it at `<predefined>/archetypes_combined.json` (or pass `--archetype-json`) after running the aggregator.
 - The new aggregation CLI (`scripts/meal_aggregate_builder.py`) walks all per-archetype directories, normalizes tags, and emits a single manifest at `resolver/meals/meals_manifest.json` (and optional Parquet rows when `pyarrow` is installed). Each manifest carries `schema_version`, `manifest_id`, stats, warnings, and every archetype -> meal relationship required by the thin slice.
 - FastAPI exposes `/v1/meals` and `/v1/meals/{archetype_uid}` off that manifest. Fly builds now bundle `resolver/meals/meals_manifest.json`, so the hosted server already returns live meal data (confirmed via `Invoke-RestMethod https://yummi-server-greenbean.fly.dev/v1/meals/arch_1k7p9f`).
-- Remaining gap: generate meals for every curated archetype and update the thin-slice UI/extension to call these endpoints instead of the local mocks.
+- Remaining gap: generate meals for the archetype UIDs chosen from the aggregated runs and update the thin-slice UI/extension to call these endpoints instead of the local mocks.
 
 ### TODO focus areas
 1. Refine category discovery filters (skip promo-only nodes), freeze canonical category list, and version it under source control.
@@ -177,7 +178,7 @@ We operate a production-ready pipeline that prepares product data, enriches bask
 
 ## 5. Immediate next steps
 See [plan.md](plan.md) for the authoritative roadmap. Top priorities for the next coding session:
-1. **Meal manifest hardening** — finish generating meals for every curated archetype, rerun `scripts/meal_aggregate_builder.py` (with Parquet output + checksums), and document the release ID served from Fly.
+1. **Meal manifest hardening** — run `python scripts/predefined_archetype_aggregator.py` to refresh combined archetype files, finish generating meals for the archetype UIDs you plan to ship, rerun `scripts/meal_aggregate_builder.py` (with Parquet output + checksums), and document the release ID served from Fly.
 2. **Thin-slice integration** — update the Expo thin slice (and extension if needed) to fetch `/v1/meals` + `/v1/meals/{uid}`, add client caching/invalidation, and run an end-to-end smoke test against staging.
 3. **PayFast production rollout** — clone the hardened staging config into production Fly apps, keep `PAYFAST_SKIP_REMOTE_VALIDATION=false`, and add monitoring/alerts using the regression log in [payfastmigration.md](payfastmigration.md).
 4. **Chargeback/refund groundwork** — design debit/negative-balance handling in backend services (refer to [Chargebacks.txt](Chargebacks.txt)).
@@ -187,7 +188,8 @@ See [plan.md](plan.md) for the authoritative roadmap. Top priorities for the nex
 ### Archetype generation workflow (2025-02 update)
 - `data/archetypes/predefined_archetypes.xlsx` (or the CSV export) now enumerates every hard-scope combination (DietaryRestrictions × Audience × secondary DietaryRestrictions).
 - Run `python scripts/predefined_archetypes_sync.py` to materialize `data/archetypes/predefined/<diet>_<audience>_<secondary>/config.json` for each row; re-run whenever the sheet changes.
-- Invoke scoped generation per folder using `scripts/archetype_prompt_runner.py --predefined-config ...` and follow with `scripts/archetype_curator.py --run-dir ...` so each baseline archetype stays within its constraints before feeding meal generation.
+- Invoke scoped generation per folder using `scripts/archetype_prompt_runner.py --predefined-config ...`. The curator CLI is deprecated; review runs manually if additional QA is needed.
+- After each wave of runs, execute `python scripts/predefined_archetype_aggregator.py` so `<predefined>/archetypes_combined.json` is ready for meal generation.
 - The prompt runner now makes one GPT-5 call per archetype. Use `--archetype-count N` to create N sequential archetypes, optionally limiting existing-context size via `--context-summary-max`. `--max-output-tokens` and `--reasoning-effort` still pass straight through to the OpenAI Responses API (requires `openai>=1.3.0`).
 - Prompts embed an "Approved Tags" appendix derived from `defined_tags.json`, and responses are validated so every category/value matches the manifest; scope audiences/diets must be included exactly.
 - `Allergens` is optional—default to the new `None` value unless the archetype is explicitly allergen-focused.

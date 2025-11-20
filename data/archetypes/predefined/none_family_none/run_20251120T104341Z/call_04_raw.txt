@@ -1,0 +1,43 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_FAM_ASIA_UNDER15_01",
+      "name": "Family 15‑Minute Stir‑Fry & Noodle Nights (Chinese/Japanese/Korean)",
+      "description": "Speedy, kid‑friendly stove‑top stir‑fries and noodle bowls with Chinese, Japanese, and Korean flavors using bagged veg, quick sauces, and tender proteins for weeknight dinners.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Chinese",
+          "Japanese",
+          "Korean"
+        ],
+        "PrepTime": [
+          "Under15"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "NoHeat",
+          "Mild"
+        ],
+        "Equipment": [
+          "StoveTop"
+        ],
+        "MealComponentPreference": [
+          "SemiPrepared"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.0",
+      "rationale": "Fills the Under15, Simple, NoHeat/Mild family gap with East Asian flavors not yet covered by existing South African/American, Middle Eastern/Greek, or Mexican/Latin slow‑cooker sets."
+    }
+  ]
+}

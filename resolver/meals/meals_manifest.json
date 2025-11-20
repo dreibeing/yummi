@@ -14,7 +14,7 @@
     "BudgetLevel"
   ],
   "source": {
-    "archetype_json": "data/archetypes/run_20251112T091259Z/curation/archetypes_curated.json",
+    "archetype_json": "data/archetypes/run_20251112T091259Z/archetypes_aggregated.json",
     "meals_dir": "data/meals"
   },
   "stats": {

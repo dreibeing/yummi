@@ -1,0 +1,43 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_FAM_MEZZE_30to60",
+      "name": "Family Middle Eastern & Greek Mezze Nights",
+      "description": "Build-it-yourself family dinners with shawarma-style meats or veggie trays, herby rice, and simple dips for mix-and-match plates.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "MiddleEastern",
+          "Greek",
+          "Turkish"
+        ],
+        "PrepTime": [
+          "30to60"
+        ],
+        "Complexity": [
+          "Intermediate"
+        ],
+        "HeatSpice": [
+          "Medium"
+        ],
+        "Equipment": [
+          "Oven",
+          "StoveTop"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.0",
+      "rationale": "Complements the existing SA/US weeknight mild set by offering a medium-heat, from-scratch family option in Middle Eastern/Greek flavors with a longer 30–60 minute window and intermediate assembly-style workflow."
+    }
+  ]
+}

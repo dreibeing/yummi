@@ -1,0 +1,61 @@
+{
+  "tags_version": "2025.02.0",
+  "predefined_scope": {
+    "dietary_restrictions": [
+      "None"
+    ],
+    "audience": [
+      "LargeFamily"
+    ]
+  },
+  "archetypes": [
+    {
+      "uid": "arch_LFG1",
+      "name": "Large Family Weeknight Crowd-Pleasers",
+      "description": "Simple, mild, 15\u201330 minute South African and American comfort dinners scaled for six, using common oven or stovetop methods.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "LargeFamily"
+        ],
+        "Allergens": [
+          "None"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Cuisine": [
+          "SouthAfrican",
+          "American"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "Oven"
+        ]
+      },
+      "refresh_version": "2025.02.0",
+      "rationale": "Starts the library with a broad, high-appeal large-family weeknight archetype that balances speed, simplicity, and familiar SA/US flavors."
+    }
+  ],
+  "source_runs": [
+    {
+      "run_dir": "run_20251120T104121Z",
+      "source_file": "run_20251120T104121Z\\archetypes_aggregated.json",
+      "archetype_count": 1,
+      "added_to_combined": 1
+    }
+  ],
+  "stats": {
+    "run_count": 1,
+    "archetype_count": 1,
+    "duplicate_uids_skipped": []
+  }
+}

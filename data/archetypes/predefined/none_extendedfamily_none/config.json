@@ -1,0 +1,26 @@
+{
+  "predefined_uid": "none_extendedfamily_none",
+  "tags_version": "2025.02.0",
+  "hard_constraints": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "ExtendedFamily"
+    ]
+  },
+  "required_subarchetype_tags": {},
+  "source_row": {
+    "DietaryRestrictions": "None",
+    "Audience": "ExtendedFamily",
+    "DietaryRestrictions2": ""
+  },
+  "source_scope": {
+    "dietary_restrictions": [
+      "None"
+    ],
+    "audience": [
+      "ExtendedFamily"
+    ]
+  }
+}

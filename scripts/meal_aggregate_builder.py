@@ -11,7 +11,7 @@ from pathlib import Path
 from typing import Any, Dict, Iterable, List
 
 
-DEFAULT_ARCHETYPE_PATH = Path("data/archetypes/run_20251112T091259Z/curation/archetypes_curated.json")
+DEFAULT_ARCHETYPE_PATH = Path("data/archetypes/run_20251112T091259Z/archetypes_aggregated.json")
 DEFAULT_TAGS_MANIFEST = Path("data/tags/defined_tags.json")
 DEFAULT_MEALS_DIR = Path("data/meals")
 DEFAULT_MANIFEST_PATH = Path("resolver/meals/meals_manifest.json")
@@ -29,7 +29,7 @@ ALWAYS_REQUIRED_MEAL_CATEGORIES = {
 
 def parse_args(argv: Iterable[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--archetype-json", type=Path, default=DEFAULT_ARCHETYPE_PATH, help="Path to curated archetype JSON")
+    parser.add_argument("--archetype-json", type=Path, default=DEFAULT_ARCHETYPE_PATH, help="Path to archetype JSON (aggregated run output)")
     parser.add_argument("--tags-manifest", type=Path, default=DEFAULT_TAGS_MANIFEST, help="Path to defined_tags manifest JSON")
     parser.add_argument("--meals-dir", type=Path, default=DEFAULT_MEALS_DIR, help="Directory that stores per-archetype meals")
     parser.add_argument("--manifest-path", type=Path, default=DEFAULT_MANIFEST_PATH, help="Output JSON manifest path")

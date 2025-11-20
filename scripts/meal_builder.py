@@ -16,7 +16,7 @@ from typing import Any, Dict, Iterable, Sequence
 from llm_utils import OpenAIClientError, call_openai_api
 
 
-DEFAULT_ARCHETYPE_PATH = Path("data/archetypes/run_20251112T091259Z/curation/archetypes_curated.json")
+DEFAULT_ARCHETYPE_PATH = Path("data/archetypes/run_20251112T091259Z/archetypes_aggregated.json")
 DEFAULT_TAGS_MANIFEST = Path("data/tags/defined_tags.json")
 DEFAULT_TAG_SYNONYMS = Path("data/tags/tag_synonyms.json")
 DEFAULT_CORE_ITEMS = Path("data/ingredients/unique_core_items.csv")
@@ -110,7 +110,7 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--archetype-uid", required=True, help="UID of the archetype to generate meals for")
     parser.add_argument("--meal-count", type=int, default=1, help="Number of meals to create in this run")
-    parser.add_argument("--archetype-json", type=Path, default=DEFAULT_ARCHETYPE_PATH, help="Path to curated archetype JSON")
+    parser.add_argument("--archetype-json", type=Path, default=DEFAULT_ARCHETYPE_PATH, help="Path to archetype JSON (aggregated run output)")
     parser.add_argument("--tags-manifest", type=Path, default=DEFAULT_TAGS_MANIFEST, help="Path to defined_tags manifest")
     parser.add_argument("--core-items", type=Path, default=DEFAULT_CORE_ITEMS, help="CSV of canonical core items")
     parser.add_argument(

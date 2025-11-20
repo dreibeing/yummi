@@ -19,12 +19,12 @@
   "total_requested": 1,
   "scope": {
     "dietary_restrictions": [
-      "Vegetarian"
+      "None"
     ],
     "audience": [
-      "Family"
+      "LargeFamily"
     ]
   },
-  "predefined_config": "C:\\Users\\user\\Documents\\Greenbean\\Shopper\\projects\\yummi\\data\\archetypes\\predefined\\vegetarian_family_none",
-  "output_dir": "data\\archetypes\\predefined\\vegetarian_family_none"
+  "predefined_config": "C:\\Users\\user\\Documents\\Greenbean\\Shopper\\projects\\yummi\\data\\archetypes\\predefined\\none_largefamily_none",
+  "output_dir": "data\\archetypes\\predefined\\none_largefamily_none"
 }

@@ -1,0 +1,204 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_FAMWK_1530_SAUS",
+      "name": "Family Weeknight Classics (SA & US)",
+      "description": "Kid-friendly, crowd-pleasing dinners with familiar South African and American flavors, built for quick weeknights.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "SouthAfrican",
+          "American"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "Oven"
+        ],
+        "MealComponentPreference": [
+          "SemiPrepared"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.0",
+      "rationale": "Establishes a mainstream, high-appeal family weeknight baseline (simple, 15\u201330 min, mild heat) across South African and American comfort cuisines to anchor broad coverage early."
+    },
+    {
+      "uid": "arch_FAM_MEZZE_30to60",
+      "name": "Family Middle Eastern & Greek Mezze Nights",
+      "description": "Build-it-yourself family dinners with shawarma-style meats or veggie trays, herby rice, and simple dips for mix-and-match plates.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "MiddleEastern",
+          "Greek",
+          "Turkish"
+        ],
+        "PrepTime": [
+          "30to60"
+        ],
+        "Complexity": [
+          "Intermediate"
+        ],
+        "HeatSpice": [
+          "Medium"
+        ],
+        "Equipment": [
+          "Oven",
+          "StoveTop"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.0",
+      "rationale": "Complements the existing SA/US weeknight mild set by offering a medium-heat, from-scratch family option in Middle Eastern/Greek flavors with a longer 30\u201360 minute window and intermediate assembly-style workflow."
+    },
+    {
+      "uid": "arch_FAM_SLOW_60PLUS_LATAM",
+      "name": "Family Set-and-Forget Slow Cooker (Mexican & Latin American)",
+      "description": "Hands-off slow cooker family dinners with Mexican and broader Latin American flavors\u2014taco-ready shredded meats/beans, stews, and rice-friendly dishes that cook low and slow while you get on with your day.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Mexican",
+          "LatinAmerican"
+        ],
+        "PrepTime": [
+          "60Plus"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "SlowOrPressureCooker"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.0",
+      "rationale": "This fills the uncovered family-friendly, hands-off 60+ minute Simple slot with kid-approachable Mild heat and non-overlapping Mexican/Latin American flavors for easy weeknight batch cooking."
+    },
+    {
+      "uid": "arch_FAM_ASIA_UNDER15_01",
+      "name": "Family 15\u2011Minute Stir\u2011Fry & Noodle Nights (Chinese/Japanese/Korean)",
+      "description": "Speedy, kid\u2011friendly stove\u2011top stir\u2011fries and noodle bowls with Chinese, Japanese, and Korean flavors using bagged veg, quick sauces, and tender proteins for weeknight dinners.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Chinese",
+          "Japanese",
+          "Korean"
+        ],
+        "PrepTime": [
+          "Under15"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "NoHeat",
+          "Mild"
+        ],
+        "Equipment": [
+          "StoveTop"
+        ],
+        "MealComponentPreference": [
+          "SemiPrepared"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.0",
+      "rationale": "Fills the Under15, Simple, NoHeat/Mild family gap with East Asian flavors not yet covered by existing South African/American, Middle Eastern/Greek, or Mexican/Latin slow\u2011cooker sets."
+    },
+    {
+      "uid": "arch_FAM_IND_CURRY_BIRYANI_01",
+      "name": "Family Indian Curry & Biryani Nights",
+      "description": "Family-sized Indian dinners featuring gentle curries, dal, tandoori-style oven roasts, and occasional one-pot biryani with rice or flatbread sides.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Indian"
+        ],
+        "PrepTime": [
+          "30to60"
+        ],
+        "Complexity": [
+          "Intermediate"
+        ],
+        "HeatSpice": [
+          "Mild",
+          "Medium"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "Oven"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds an Indian family-friendly lane with adjustable mild-to-medium heat and 30\u201360 minute from-scratch meals, complementing existing SA/US, Middle Eastern/Greek, Mexican/Latin slow-cooker, and East Asian quick stir-fry coverage without overlap."
+    }
+  ],
+  "tags_version": "2025.02.0",
+  "predefined_scope": {
+    "dietary_restrictions": [
+      "None"
+    ],
+    "audience": [
+      "Family"
+    ]
+  }
+}
