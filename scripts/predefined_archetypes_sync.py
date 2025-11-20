@@ -78,7 +78,13 @@ def load_sheet_rows(xlsx_path: Path, csv_path: Path) -> Tuple[List[dict[str, Any
         try:
             import pandas as pd  # type: ignore
 
-            df = pd.read_excel(xlsx_path)
+            # Preserve literal strings such as "None" instead of treating them as NA.
+            df = pd.read_excel(
+                xlsx_path,
+                dtype=str,
+                keep_default_na=False,
+                na_filter=False,
+            )
             raw_columns = list(df.columns)
             columns = [_normalize_header(col) for col in raw_columns]
             rows: List[dict[str, Any]] = []
