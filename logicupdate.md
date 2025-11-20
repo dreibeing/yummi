@@ -1,3 +1,14 @@
+# Logic Update Plan — Tags, Archetypes, Meals, Recommendations
+
+This doc captures the current tag taxonomy and the end‑to‑end touchpoints we’ll update together: pre‑calculation logic, backend services, and the app.
+
+---
+
+## Snapshot: Current Defined Tags (source of truth)
+
+Path: `data/tags/defined_tags.json`
+
+```json
 {
   "tags_version": "2025.02.0",
   "required_categories": {
@@ -104,3 +115,136 @@
     {"tag_id":"mealcomp_readymeal","category":"MealComponentPreference","value":"ReadyMealPreferred","description":"Prefers fully prepared ready meals or heat-and-eat dishes, with minimal additional cooking.","is_required_for_archetype":true,"is_required_for_meal":true}
   ]
 }
+```
+
+---
+
+## E2E Touchpoints We’ll Update
+
+1) Tag Vocabulary and Constraints
+- Source of truth: `data/tags/defined_tags.json` (this file).
+- Normalization helpers: `data/tags/tag_synonyms.json` (used to map or drop non‑canonical values).
+- Constraint brief for coverage: `data/tags/archetype_constraint_brief.md` (referenced by generation/curation prompts).
+
+2) Offline Generation and Aggregation
+- Archetype generation: `scripts/archetype_prompt_runner.py` reads `defined_tags.json` to embed `tags_version` and required category lists in prompts and snapshots.
+- Archetype curation: `scripts/archetype_curator.py` produces `curation/archetypes_curated.json` with coverage notes.
+- Meal generation (LLM + SKU selection): `scripts/meal_builder.py`
+  - Loads `defined_tags.json` to build the category→values catalog and enforce `ALWAYS_REQUIRED_MEAL_CATEGORIES` for every meal.
+  - Applies `data/tags/tag_synonyms.json` when model returns non‑canonical values.
+  - Infers missing `Allergens` from ingredient text where needed.
+- Meal aggregation: `scripts/meal_aggregate_builder.py`
+  - Reads curated archetypes + per‑meal JSON to build `resolver/meals/meals_manifest.json` (and optional Parquet).
+  - Enforces `required_categories.meal` from `defined_tags.json` and fills gaps from archetype defaults.
+
+3) Resolver Artifacts (served to API)
+- Manifest consumed by API: `resolver/meals/meals_manifest.json` (+ `.parquet`).
+- Warnings in manifest (e.g., unknown `Equipment` or `NutritionFocus` values) indicate taxonomy drift that we should fix via tag synonyms or vocabulary expansion.
+
+4) Backend Services (`yummi-server/`)
+- Config paths: `yummi-server/app/config.py` → `meals_manifest_path` and `tags_manifest_path` default to the files above.
+- Tag manifest loader: `yummi-server/app/services/preferences.py::load_tag_manifest()` builds `TagManifest` maps (tag_id→category/value) and exposes `tags_version` for validation.
+- Preference profile: `user_preference_profiles` model (`yummi-server/app/models.py`) stores `responses`, `selected_tags`, `disliked_tags`, and latest recommendations.
+- Candidate filtering: `yummi-server/app/services/filtering.py`
+  - Converts selected/disliked tag_ids into human values using `TagManifest`.
+  - Applies diet/ethics/allergen/heat/prep filters before ranking.
+  - Has hard‑coded sets and maps that must stay aligned with tag IDs/values (see “Known Inconsistencies”).
+- Exploration workflow: `yummi-server/app/services/exploration.py` + route `app/routes/recommendations.py` (`/v1/recommendations/exploration`).
+- Recommendation workflow: `yummi-server/app/services/recommendation.py` + same route module (`/v1/recommendations/feed`). Persists latest ranked meal IDs back onto the preference profile.
+- Meals API: `app/routes/meals.py` serves `GET /v1/meals` and `GET /v1/meals/{uid}` from the manifest.
+- Schemas: `yummi-server/app/schemas.py` defines all request/response contracts (preferences, candidate pool, exploration, feed).
+
+5) App (Expo thin slice, `thin-slice-app/App.js`)
+- Tag selection UI: `BASE_PREFERENCE_CATEGORIES` enumerates tag_ids and labels users interact with.
+- Tag version: `PREFERENCES_TAGS_VERSION` must match `tags_version` in `defined_tags.json` and the backend’s manifest.
+- Preference sync: PUT `/v1/preferences` with `tagsVersion` and `responses` once onboarding completes; GET `/v1/preferences` hydrates state and latest home‑feed snapshot.
+- Exploration + feed: POST `/v1/recommendations/exploration` then POST `/v1/recommendations/feed`; home surface renders `latestRecommendationMeals` when available.
+
+---
+
+## Known Inconsistencies To Address
+
+- Prep time buckets differ across docs/code vs. tag values:
+  - Tags use `Under15`, `15to30`, `30to60`, `60Plus` (see manifest snapshot above).
+  - `yummi-server/app/services/filtering.py` maps `PREP_TIME_BUCKET_TO_MINUTES` with `30to45`, `45Plus` — update to align with the tag manifest or adjust the manifest accordingly.
+- Equipment/Nutrition tags in some meals fall outside the vocabulary:
+  - `resolver/meals/meals_manifest.json` contains warnings like `value 'FryingPan' not in defined_tags` and `value 'ProteinRich' not in defined_tags`.
+  - Resolve by expanding `defined_tags` or mapping via `data/tags/tag_synonyms.json` (preferred) and regenerating meals/manifest.
+- Filtering restrictions depend on stable tag_ids:
+  - Hard‑coded sets (e.g., `DIET_RESTRICTION_TAG_IDS` in filtering) must be updated if tag_ids change.
+
+---
+
+## Refactor Plan (High‑Level)
+
+1) Taxonomy update
+- Finalize category list and values in `data/tags/defined_tags.json`; bump `tags_version`.
+- Extend `data/tags/tag_synonyms.json` to normalize legacy/new terms (drop or canonicalize).
+
+2) Prompt + generation alignment
+- Update `data/tags/archetype_constraint_brief.md` and prompt templates to reflect the new vocabulary.
+- Regenerate archetypes (`scripts/archetype_prompt_runner.py`) and curate (`scripts/archetype_curator.py`).
+
+3) Meal builder adjustments
+- Update `ALWAYS_REQUIRED_MEAL_CATEGORIES` or rely solely on `required_categories.meal` from the manifest.
+- Add/adjust normalization rules in `meal_builder.py` to handle new categories/values.
+- Regenerate meals per archetype.
+
+4) Aggregate + validate manifest
+- Rebuild `resolver/meals/meals_manifest.json` via `scripts/meal_aggregate_builder.py`.
+- Resolve warnings by iterating tag synonyms or extending `defined_tags`.
+
+5) Backend runtime
+- Ensure `tags_manifest_path` and `meals_manifest_path` point to updated artifacts.
+- Update `filtering.py` constants (diet/ethics/heat/prep maps) to match the new tag_ids/values.
+- Verify `/v1/recommendations/*` flows with new tags (schema remains stable).
+
+6) App integration
+- Sync `PREFERENCES_TAGS_VERSION` and `BASE_PREFERENCE_CATEGORIES` to the new taxonomy.
+- Adjust any UI copy impacted by category changes; keep tag_ids intact for API.
+
+7) Data migration considerations
+- Existing `user_preference_profiles` store tag_ids. If ids change, provide a migration (one‑off script) or expand `tag_synonyms` to map old→new during request handling.
+
+8) Testing
+- Smoke test: preference save/fetch, exploration, feed, meal detail fetch.
+- Validate that a variety of user profiles produce non‑empty candidate pools and end‑to‑end feeds.
+
+---
+
+## Quick Inventory (Where To Touch)
+
+- Tags and briefs
+  - `data/tags/defined_tags.json`
+  - `data/tags/tag_synonyms.json`
+  - `data/tags/archetype_constraint_brief.md`
+- Offline scripts
+  - `scripts/archetype_prompt_runner.py`
+  - `scripts/archetype_curator.py`
+  - `scripts/meal_builder.py`
+  - `scripts/meal_aggregate_builder.py`
+- Resolver artifacts
+  - `resolver/meals/meals_manifest.json`
+  - `resolver/meals/meals_manifest.parquet`
+- Backend (FastAPI)
+  - `yummi-server/app/config.py`
+  - `yummi-server/app/services/meals.py`
+  - `yummi-server/app/services/preferences.py`
+  - `yummi-server/app/services/filtering.py`
+  - `yummi-server/app/services/exploration.py`
+  - `yummi-server/app/services/recommendation.py`
+  - `yummi-server/app/routes/*.py`
+  - `yummi-server/app/schemas.py`
+- App (Expo)
+  - `thin-slice-app/App.js` → `PREFERENCES_TAGS_VERSION`, `BASE_PREFERENCE_CATEGORIES`, flows for `/v1/preferences`, `/v1/recommendations/*`, `/v1/meals*`.
+
+---
+
+## Notes
+
+- Keep `tags_version` consistent across:
+  - `data/tags/defined_tags.json`
+  - `resolver/meals/meals_manifest.json` (embedded by the aggregator)
+  - `thin-slice-app/App.js` constant `PREFERENCES_TAGS_VERSION`
+- When in doubt, prefer expanding `tag_synonyms` to preserve backward compatibility, and migrate the database only if tag_ids themselves must change.
+
