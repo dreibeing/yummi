@@ -1,0 +1,28 @@
+{
+  "predefined_uid": "kosher_family_pescatarian",
+  "tags_version": "2025.02.0",
+  "hard_constraints": {
+    "DietaryRestrictions": [
+      "Kosher",
+      "Pescatarian"
+    ],
+    "Audience": [
+      "Family"
+    ]
+  },
+  "required_subarchetype_tags": {},
+  "source_row": {
+    "DietaryRestrictions": "Kosher",
+    "Audience": "Family",
+    "DietaryRestrictions2": "Pescatarian"
+  },
+  "source_scope": {
+    "dietary_restrictions": [
+      "Kosher",
+      "Pescatarian"
+    ],
+    "audience": [
+      "Family"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "predefined_uid": "halal_couple_none",
+  "tags_version": "2025.02.0",
+  "hard_constraints": {
+    "DietaryRestrictions": [
+      "Halal"
+    ],
+    "Audience": [
+      "Couple"
+    ]
+  },
+  "required_subarchetype_tags": {},
+  "source_row": {
+    "DietaryRestrictions": "Halal",
+    "Audience": "Couple",
+    "DietaryRestrictions2": ""
+  },
+  "source_scope": {
+    "dietary_restrictions": [
+      "Halal"
+    ],
+    "audience": [
+      "Couple"
+    ]
+  }
+}

@@ -240,6 +240,28 @@ Path: `data/tags/defined_tags.json`
 
 ---
 
+## Predefined Archetype Workflow (Current Implementation)
+
+- **Spreadsheet source** — `data/archetypes/predefined_archetypes.xlsx` (or `.csv`) defines one scope per row using three columns: `DietaryRestrictions` (primary diet), `Audience`, and `DietaryRestrictions2` (optional additional diet; set to `None` when unused).
+- **Sync script** — Run `python scripts/predefined_archetypes_sync.py` to materialize folders under `data/archetypes/predefined/`. The script:
+  - Parses Excel or `;`/`,`/`\t`-delimited CSV and normalizes headers (handles BOM).
+  - Creates one folder per row with slug `<col1>_<col2>_<col3>` (e.g., `none_family_none`, `halal_family_pescatarian`).
+  - Writes `config.json` containing `hard_constraints` (DietaryRestrictions array includes both `col1` and non-`None` `col3`; Audience array includes `col2`), `required_subarchetype_tags`, and `source_scope` metadata.
+- **Scoped generation** — Execute the archetype runner against a folder-specific config:
+  ```powershell
+  python scripts/archetype_prompt_runner.py --predefined-config data/archetypes/predefined/<slug>/config.json --archetype-count 12
+  ```
+  The runner appends a “Scope (HARD CONSTRAINTS)” block so every generated archetype respects the required Diet×Audience combination.
+- **Scoped curation** — Curate the generated set within the same folder:
+  ```powershell
+  python scripts/archetype_curator.py --run-dir data/archetypes/predefined/<slug>/run_<timestamp> --constraint-brief data/tags/archetype_constraint_brief.md
+  ```
+  The curator enforces the stored scope before recommending keep/modify/replace actions.
+- **Meal generation + aggregation** — Point `scripts/meal_builder.py` at the curated `config.json` outputs to produce scoped meals, then aggregate across the folders you plan to ship.
+- **Maintenance tips** — Update the sheet when adding/removing scopes; rerun the sync script (safe to execute repeatedly). Ensure diet tag values stay aligned with `defined_tags.json`; mismatches will surface later during generation.
+
+---
+
 ## Notes
 
 - Keep `tags_version` consistent across:
@@ -247,4 +269,3 @@ Path: `data/tags/defined_tags.json`
   - `resolver/meals/meals_manifest.json` (embedded by the aggregator)
   - `thin-slice-app/App.js` constant `PREFERENCES_TAGS_VERSION`
 - When in doubt, prefer expanding `tag_synonyms` to preserve backward compatibility, and migrate the database only if tag_ids themselves must change.
-

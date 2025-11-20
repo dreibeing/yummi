@@ -1,0 +1,26 @@
+{
+  "predefined_uid": "vegetarian_largefamily_none",
+  "tags_version": "2025.02.0",
+  "hard_constraints": {
+    "DietaryRestrictions": [
+      "Vegetarian"
+    ],
+    "Audience": [
+      "LargeFamily"
+    ]
+  },
+  "required_subarchetype_tags": {},
+  "source_row": {
+    "DietaryRestrictions": "Vegetarian",
+    "Audience": "LargeFamily",
+    "DietaryRestrictions2": ""
+  },
+  "source_scope": {
+    "dietary_restrictions": [
+      "Vegetarian"
+    ],
+    "audience": [
+      "LargeFamily"
+    ]
+  }
+}

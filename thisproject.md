@@ -183,3 +183,8 @@ See [plan.md](plan.md) for the authoritative roadmap. Top priorities for the nex
 4. **Chargeback/refund groundwork** — design debit/negative-balance handling in backend services (refer to [Chargebacks.txt](Chargebacks.txt)).
 5. **Wallet UI polish** — expand thin-slice UI to show full transaction history and flag negative balances before chargeback logic hardens.
 6. **Preference-driven runtime** — plug the newly stored `user_preference_profiles` into meal filtering and runner logic so `/v1/meals*` can honor saved diet/allergen tags per user.
+
+### Archetype generation workflow (2025-02 update)
+- `data/archetypes/predefined_archetypes.xlsx` (or the CSV export) now enumerates every hard-scope combination (DietaryRestrictions × Audience × secondary DietaryRestrictions).
+- Run `python scripts/predefined_archetypes_sync.py` to materialize `data/archetypes/predefined/<diet>_<audience>_<secondary>/config.json` for each row; re-run whenever the sheet changes.
+- Invoke scoped generation per folder using `scripts/archetype_prompt_runner.py --predefined-config ...` and follow with `scripts/archetype_curator.py --run-dir ...` so each baseline archetype stays within its constraints before feeding meal generation.

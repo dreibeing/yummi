@@ -1,0 +1,28 @@
+{
+  "predefined_uid": "halal_largefamily_vegan",
+  "tags_version": "2025.02.0",
+  "hard_constraints": {
+    "DietaryRestrictions": [
+      "Halal",
+      "Vegan"
+    ],
+    "Audience": [
+      "LargeFamily"
+    ]
+  },
+  "required_subarchetype_tags": {},
+  "source_row": {
+    "DietaryRestrictions": "Halal",
+    "Audience": "LargeFamily",
+    "DietaryRestrictions2": "Vegan"
+  },
+  "source_scope": {
+    "dietary_restrictions": [
+      "Halal",
+      "Vegan"
+    ],
+    "audience": [
+      "LargeFamily"
+    ]
+  }
+}

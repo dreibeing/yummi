@@ -7,7 +7,7 @@ import argparse
 import json
 from pathlib import Path
 from textwrap import dedent
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 from llm_utils import OpenAIClientError, call_openai_api
 
@@ -54,12 +54,15 @@ def build_user_prompt(
     constraint_brief: str,
     archetypes: List[Dict[str, Any]],
     tags_version: str,
+    scope_block: str = "",
 ) -> str:
     dataset_json = json.dumps(archetypes, indent=2)
     return dedent(
         f"""
         Constraint Brief (abridged):
         {constraint_brief}
+
+        {scope_block}
 
         Current archetype dataset (tags_version {tags_version}):
         {dataset_json}
@@ -126,11 +129,26 @@ def run(args: argparse.Namespace) -> None:
     tags_version = aggregated_data.get("tags_version", "unknown")
     constraint_brief = _read_text(Path(args.constraint_brief))
 
+    # Build optional scope block for curator prompt
+    scope = aggregated_data.get("predefined_scope") or {}
+    diets = scope.get("dietary_restrictions") or []
+    audiences = scope.get("audience") or []
+    scope_lines: List[str] = []
+    if diets or audiences:
+        scope_lines.append("Scope (enforcement):")
+        if diets:
+            scope_lines.append("- Every archetype MUST include one of Diet/DietaryRestrictions: " + ", ".join(diets))
+        if audiences:
+            scope_lines.append("- Every archetype MUST include one of Audience: " + ", ".join(audiences))
+        scope_lines.append("Reject proposals that violate scope; propose modify/replace instead.")
+    scope_block = "\n".join(scope_lines)
+
     system_prompt = build_system_prompt()
     user_prompt = build_user_prompt(
         constraint_brief=constraint_brief,
         archetypes=archetypes,
         tags_version=tags_version,
+        scope_block=scope_block,
     )
 
     if args.dry_run:

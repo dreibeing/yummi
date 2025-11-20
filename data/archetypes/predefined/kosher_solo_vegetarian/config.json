@@ -1,0 +1,28 @@
+{
+  "predefined_uid": "kosher_solo_vegetarian",
+  "tags_version": "2025.02.0",
+  "hard_constraints": {
+    "DietaryRestrictions": [
+      "Kosher",
+      "Vegetarian"
+    ],
+    "Audience": [
+      "Solo"
+    ]
+  },
+  "required_subarchetype_tags": {},
+  "source_row": {
+    "DietaryRestrictions": "Kosher",
+    "Audience": "Solo",
+    "DietaryRestrictions2": "Vegetarian"
+  },
+  "source_scope": {
+    "dietary_restrictions": [
+      "Kosher",
+      "Vegetarian"
+    ],
+    "audience": [
+      "Solo"
+    ]
+  }
+}

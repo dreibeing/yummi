@@ -1,0 +1,26 @@
+{
+  "predefined_uid": "pescatarian_solo_none",
+  "tags_version": "2025.02.0",
+  "hard_constraints": {
+    "DietaryRestrictions": [
+      "Pescatarian"
+    ],
+    "Audience": [
+      "Solo"
+    ]
+  },
+  "required_subarchetype_tags": {},
+  "source_row": {
+    "DietaryRestrictions": "Pescatarian",
+    "Audience": "Solo",
+    "DietaryRestrictions2": ""
+  },
+  "source_scope": {
+    "dietary_restrictions": [
+      "Pescatarian"
+    ],
+    "audience": [
+      "Solo"
+    ]
+  }
+}

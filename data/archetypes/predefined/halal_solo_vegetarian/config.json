@@ -1,0 +1,28 @@
+{
+  "predefined_uid": "halal_solo_vegetarian",
+  "tags_version": "2025.02.0",
+  "hard_constraints": {
+    "DietaryRestrictions": [
+      "Halal",
+      "Vegetarian"
+    ],
+    "Audience": [
+      "Solo"
+    ]
+  },
+  "required_subarchetype_tags": {},
+  "source_row": {
+    "DietaryRestrictions": "Halal",
+    "Audience": "Solo",
+    "DietaryRestrictions2": "Vegetarian"
+  },
+  "source_scope": {
+    "dietary_restrictions": [
+      "Halal",
+      "Vegetarian"
+    ],
+    "audience": [
+      "Solo"
+    ]
+  }
+}

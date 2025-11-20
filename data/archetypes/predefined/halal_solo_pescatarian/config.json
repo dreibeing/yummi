@@ -1,0 +1,28 @@
+{
+  "predefined_uid": "halal_solo_pescatarian",
+  "tags_version": "2025.02.0",
+  "hard_constraints": {
+    "DietaryRestrictions": [
+      "Halal",
+      "Pescatarian"
+    ],
+    "Audience": [
+      "Solo"
+    ]
+  },
+  "required_subarchetype_tags": {},
+  "source_row": {
+    "DietaryRestrictions": "Halal",
+    "Audience": "Solo",
+    "DietaryRestrictions2": "Pescatarian"
+  },
+  "source_scope": {
+    "dietary_restrictions": [
+      "Halal",
+      "Pescatarian"
+    ],
+    "audience": [
+      "Solo"
+    ]
+  }
+}

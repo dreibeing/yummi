@@ -1,0 +1,26 @@
+{
+  "predefined_uid": "vegan_solo_none",
+  "tags_version": "2025.02.0",
+  "hard_constraints": {
+    "DietaryRestrictions": [
+      "Vegan"
+    ],
+    "Audience": [
+      "Solo"
+    ]
+  },
+  "required_subarchetype_tags": {},
+  "source_row": {
+    "DietaryRestrictions": "Vegan",
+    "Audience": "Solo",
+    "DietaryRestrictions2": ""
+  },
+  "source_scope": {
+    "dietary_restrictions": [
+      "Vegan"
+    ],
+    "audience": [
+      "Solo"
+    ]
+  }
+}

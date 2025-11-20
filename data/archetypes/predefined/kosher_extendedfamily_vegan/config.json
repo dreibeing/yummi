@@ -1,0 +1,28 @@
+{
+  "predefined_uid": "kosher_extendedfamily_vegan",
+  "tags_version": "2025.02.0",
+  "hard_constraints": {
+    "DietaryRestrictions": [
+      "Kosher",
+      "Vegan"
+    ],
+    "Audience": [
+      "ExtendedFamily"
+    ]
+  },
+  "required_subarchetype_tags": {},
+  "source_row": {
+    "DietaryRestrictions": "Kosher",
+    "Audience": "ExtendedFamily",
+    "DietaryRestrictions2": "Vegan"
+  },
+  "source_scope": {
+    "dietary_restrictions": [
+      "Kosher",
+      "Vegan"
+    ],
+    "audience": [
+      "ExtendedFamily"
+    ]
+  }
+}

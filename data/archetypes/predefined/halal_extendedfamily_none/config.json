@@ -1,0 +1,26 @@
+{
+  "predefined_uid": "halal_extendedfamily_none",
+  "tags_version": "2025.02.0",
+  "hard_constraints": {
+    "DietaryRestrictions": [
+      "Halal"
+    ],
+    "Audience": [
+      "ExtendedFamily"
+    ]
+  },
+  "required_subarchetype_tags": {},
+  "source_row": {
+    "DietaryRestrictions": "Halal",
+    "Audience": "ExtendedFamily",
+    "DietaryRestrictions2": ""
+  },
+  "source_scope": {
+    "dietary_restrictions": [
+      "Halal"
+    ],
+    "audience": [
+      "ExtendedFamily"
+    ]
+  }
+}

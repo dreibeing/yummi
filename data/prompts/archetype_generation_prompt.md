@@ -34,6 +34,7 @@ Constraint Highlights:
 - Household contexts: evenly split across Solo, Couple, Family, MealPrep, Entertaining.
 - Budget tiers: ValueStaples, Affordable, Balanced, PremiumOccasion, LuxuryExperience. Align each archetype’s tone and description to the declared tier.
 - Cuisine openness bands: FamiliarClassics, RegionalTwist, GlobalExplorer, ExperimentalFusion.
+- If a "Scope (HARD CONSTRAINTS)" block follows, you MUST enforce it: every generated archetype must include the specified Diet/DietaryRestrictions and Audience values in core_tags; reject or recompute any archetype that violates scope.
 - If an “Existing Archetypes Summary” block follows, it will be compact, keywords-only lines (no descriptions). Use it as an exclusion guide: do not generate archetypes with materially equivalent combinations. Prefer mainstream, broad-appeal archetypes (e.g., Family weeknight, Omnivore/Vegetarian, Mild heat, 15–30 min, Simple, Balanced/Affordable budgets) unless the coverage brief explicitly asks for specialties.
 
 Output JSON schema:
@@ -85,4 +86,5 @@ Instructions:
 ## Notes
 - `market_coverage_brief` pulls from `data/tags/archetype_constraint_brief.md` plus any retailer or seasonal notes you add.
 - `required_categories_archetype` should be injected as a comma-separated list (Diet, Cuisine, CuisineOpenness, Complexity, PrepTime, HeatSpice, Allergens, Audience, BudgetLevel).
+- When running within a predefined archetype folder, a Scope block is appended; treat it as hard constraints for Diet/DietaryRestrictions and Audience.
 - Keep this template in git so every archetype build is reproducible; update the `refresh_version` and coverage brief when tags evolve.

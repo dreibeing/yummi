@@ -186,6 +186,56 @@ def summarize_archetypes(archetypes: List[Dict[str, Any]], max_items: int) -> st
     return "\n".join(lines) if lines else ""
 
 
+def _slugify(value: str) -> str:
+    return "".join(ch.lower() if ch.isalnum() else "-" for ch in value).strip("-")
+
+
+def _compute_predefined_slug(diets: List[str] | None, audiences: List[str] | None) -> str:
+    diets_slug = "-".join(_slugify(v) for v in (diets or ["any"])) or "any"
+    aud_slug = "-".join(_slugify(v) for v in (audiences or ["any"])) or "any"
+    return f"diet_{diets_slug}__aud_{aud_slug}"
+
+
+def _build_scope_block(
+    *,
+    tags_manifest: Dict[str, Any],
+    scope_diets: List[str] | None,
+    scope_audiences: List[str] | None,
+    required_sub_tags: Dict[str, List[str]] | None,
+) -> str:
+    if not scope_diets and not scope_audiences and not required_sub_tags:
+        return ""
+
+    # Prefer category names exactly as defined in the manifest
+    archetype_required = (tags_manifest.get("required_categories", {}) or {}).get("archetype", [])
+    diet_category_key = "DietaryRestrictions" if "DietaryRestrictions" in archetype_required else "Diet"
+    audience_category_key = "Audience"
+
+    lines: List[str] = []
+    lines.append("\n\nScope (HARD CONSTRAINTS; do not violate):")
+    if scope_diets:
+        lines.append(
+            f"- {diet_category_key}: every generated archetype MUST include one of: "
+            + ", ".join(sorted(scope_diets))
+        )
+    if scope_audiences:
+        lines.append(
+            f"- {audience_category_key}: every generated archetype MUST include one of: "
+            + ", ".join(sorted(scope_audiences))
+        )
+    if required_sub_tags:
+        # Render as compact bullets to guide coverage inside the scope
+        lines.append("Required sub‑archetype coverage hints (within this scope):")
+        for cat, values in required_sub_tags.items():
+            if not values:
+                continue
+            lines.append(f"  • {cat}: target coverage across {', '.join(sorted(set(values)))}")
+    lines.append(
+        "Reject or revise any archetype that does not include the scoped values above in core_tags."
+    )
+    return "\n".join(lines) + "\n\n"
+
+
 def run_batches(args: argparse.Namespace) -> None:
     tags_manifest = _load_json(Path(args.tags_manifest))
     tags_version: str = tags_manifest.get("tags_version", "unknown")
@@ -196,6 +246,30 @@ def run_batches(args: argparse.Namespace) -> None:
     prompt = load_prompt_template(Path(args.prompt_template))
     market_brief = load_constraint_brief(Path(args.constraint_brief))
 
+    # Resolve scope from predefined config (if provided) or CLI flags
+    predefined_config: Optional[Dict[str, Any]] = None
+    scope_diets: List[str] | None = None
+    scope_audiences: List[str] | None = None
+    required_sub_tags: Dict[str, List[str]] | None = None
+
+    if args.predefined_config:
+        cfg_path = Path(args.predefined_config)
+        predefined_config = _load_json(cfg_path)
+        hard = predefined_config.get("hard_constraints") or {}
+        scope_diets = list(hard.get("DietaryRestrictions") or hard.get("Diet") or []) or None
+        scope_audiences = list(hard.get("Audience") or []) or None
+        rst = predefined_config.get("required_subarchetype_tags") or {}
+        # Normalize to list[str]
+        required_sub_tags = {
+            str(k): list(v) if isinstance(v, list) else ([str(v)] if v else [])
+            for k, v in rst.items()
+        } or None
+
+    if args.scope_dietary:
+        scope_diets = list(args.scope_dietary)
+    if args.scope_audience:
+        scope_audiences = list(args.scope_audience)
+
     batch_size = args.batch_size or args.archetype_count
     total = args.archetype_count
     batches: List[int] = []
@@ -205,7 +279,12 @@ def run_batches(args: argparse.Namespace) -> None:
         batches.append(size)
         remaining -= size
 
-    output_dir = ensure_output_dir(Path(args.output_dir))
+    # Compute output dir; if predefined scope present and output-dir equals default base, nest under a slug
+    base_output = Path(args.output_dir)
+    if (predefined_config or scope_diets or scope_audiences) and (base_output == DEFAULT_OUTPUT_DIR):
+        slug = _compute_predefined_slug(scope_diets or [], scope_audiences or [])
+        base_output = base_output / "predefined" / slug
+    output_dir = ensure_output_dir(base_output)
     # Support resumable context by loading any previously written snapshot.
     all_archetypes: List[Dict[str, Any]] = load_archetype_snapshot(output_dir)
     metadata = {
@@ -221,6 +300,13 @@ def run_batches(args: argparse.Namespace) -> None:
         "batches": [],
         "total_requested": total,
     }
+
+    scope_block = _build_scope_block(
+        tags_manifest=tags_manifest,
+        scope_diets=scope_diets,
+        scope_audiences=scope_audiences,
+        required_sub_tags=required_sub_tags,
+    )
 
     for idx, batch_count in enumerate(batches, start=1):
         system_prompt = render_system_prompt(prompt.system, archetype_count=batch_count)
@@ -245,7 +331,7 @@ def run_batches(args: argparse.Namespace) -> None:
                 "asks for specialty cohorts."
             )
 
-        user_prompt_with_context = user_prompt + context_block
+        user_prompt_with_context = user_prompt + scope_block + context_block
 
         print(f"Preparing batch {idx}/{len(batches)} (target {batch_count} archetypes)...")
         if args.dry_run:
@@ -289,8 +375,24 @@ def run_batches(args: argparse.Namespace) -> None:
         return
 
     output_payload = {"archetypes": all_archetypes, "tags_version": tags_version}
+    if predefined_config or scope_diets or scope_audiences:
+        output_payload["predefined_scope"] = {
+            "dietary_restrictions": scope_diets or [],
+            "audience": scope_audiences or [],
+        }
     aggregated_file = output_dir / "archetypes_aggregated.json"
     save_json(aggregated_file, output_payload)
+    # Persist run metadata with scope for traceability
+    metadata.update(
+        {
+            "scope": {
+                "dietary_restrictions": scope_diets or [],
+                "audience": scope_audiences or [],
+            },
+            "predefined_config": str(Path(args.predefined_config)) if args.predefined_config else None,
+            "output_dir": str(base_output),
+        }
+    )
     save_json(output_dir / "run_metadata.json", metadata)
 
     print(f"Saved {len(all_archetypes)} archetypes to {aggregated_file}")
@@ -302,6 +404,23 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--constraint-brief", default=str(DEFAULT_CONSTRAINT_PATH), help="Path to coverage brief injected into the prompt.")
     parser.add_argument("--tags-manifest", default=str(DEFAULT_TAGS_PATH), help="Path to defined_tags manifest.")
     parser.add_argument("--output-dir", default=str(DEFAULT_OUTPUT_DIR), help="Directory for run artifacts.")
+    parser.add_argument(
+        "--predefined-config",
+        default=None,
+        help="Optional JSON config for a predefined archetype (hard constraints + required sub-tags).",
+    )
+    parser.add_argument(
+        "--scope-dietary",
+        action="append",
+        default=None,
+        help="Hard scope: one or more Diet/DietaryRestrictions values (can repeat).",
+    )
+    parser.add_argument(
+        "--scope-audience",
+        action="append",
+        default=None,
+        help="Hard scope: one or more Audience values (can repeat).",
+    )
     parser.add_argument("--archetype-count", type=int, default=24, help="Total number of archetypes to request across batches.")
     parser.add_argument("--batch-size", type=int, default=None, help="Optional batch size (defaults to total, meaning single call).")
     parser.add_argument("--model", default=os.environ.get("OPENAI_MODEL", "gpt-4o-mini"), help="Chat/response model to call.")

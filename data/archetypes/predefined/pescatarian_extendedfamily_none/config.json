@@ -1,0 +1,26 @@
+{
+  "predefined_uid": "pescatarian_extendedfamily_none",
+  "tags_version": "2025.02.0",
+  "hard_constraints": {
+    "DietaryRestrictions": [
+      "Pescatarian"
+    ],
+    "Audience": [
+      "ExtendedFamily"
+    ]
+  },
+  "required_subarchetype_tags": {},
+  "source_row": {
+    "DietaryRestrictions": "Pescatarian",
+    "Audience": "ExtendedFamily",
+    "DietaryRestrictions2": ""
+  },
+  "source_scope": {
+    "dietary_restrictions": [
+      "Pescatarian"
+    ],
+    "audience": [
+      "ExtendedFamily"
+    ]
+  }
+}

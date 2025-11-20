@@ -1,0 +1,26 @@
+{
+  "predefined_uid": "kosher_family_none",
+  "tags_version": "2025.02.0",
+  "hard_constraints": {
+    "DietaryRestrictions": [
+      "Kosher"
+    ],
+    "Audience": [
+      "Family"
+    ]
+  },
+  "required_subarchetype_tags": {},
+  "source_row": {
+    "DietaryRestrictions": "Kosher",
+    "Audience": "Family",
+    "DietaryRestrictions2": ""
+  },
+  "source_scope": {
+    "dietary_restrictions": [
+      "Kosher"
+    ],
+    "audience": [
+      "Family"
+    ]
+  }
+}
