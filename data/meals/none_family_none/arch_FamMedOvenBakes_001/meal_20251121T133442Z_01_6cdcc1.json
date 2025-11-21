@@ -1,0 +1,412 @@
+{
+  "meal_id": "meal_20251121T133442Z_01_6cdcc1",
+  "archetype_uid": "arch_FamMedOvenBakes_001",
+  "archetype_name": "Family Mediterranean Oven Bakes (Italian/Spanish/Portuguese)",
+  "name": "Baked Orzo with Chorizo, Peppers, and Mozzarella",
+  "description": "Family-friendly Italian–Spanish oven bake where orzo cooks in a tomato sauce with chorizo and peppers, finished bubbly with mozzarella and parmesan.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 200°C (390°F).",
+    "Dice onion and finely chop garlic.",
+    "Slice bell peppers into strips.",
+    "Cut chorizo into bite-size pieces.",
+    "Measure orzo, passata, and chicken stock.",
+    "Grate parmesan and tear or slice mozzarella."
+  ],
+  "cook_steps": [
+    "Heat a large oven-safe dish on the stovetop over medium heat with olive oil.",
+    "Add chorizo and onion; cook 3–4 minutes until chorizo renders and onion softens.",
+    "Stir in garlic and bell peppers; cook 1 minute to soften slightly.",
+    "Turn off heat. Stir in orzo, passata, chicken stock, oregano, a pinch of sea salt, and pepper; level the mixture.",
+    "Cover tightly with foil and bake 20 minutes.",
+    "Uncover, stir, and check orzo doneness; bake uncovered 5–10 minutes more until orzo is tender and sauce thickened.",
+    "Top with mozzarella and parmesan; bake 5 minutes until cheese melts and bubbles.",
+    "Rest 5 minutes, then taste and adjust sea salt and pepper. Serve hot."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C (390°F).",
+    "Dice onion and finely chop garlic.",
+    "Slice bell peppers into strips.",
+    "Cut chorizo into bite-size pieces.",
+    "Measure orzo, passata, and chicken stock.",
+    "Grate parmesan and tear or slice mozzarella.",
+    "Heat a large oven-safe dish on the stovetop over medium heat with olive oil.",
+    "Add chorizo and onion; cook 3–4 minutes until chorizo renders and onion softens.",
+    "Stir in garlic and bell peppers; cook 1 minute to soften slightly.",
+    "Turn off heat. Stir in orzo, passata, chicken stock, oregano, a pinch of sea salt, and pepper; level the mixture.",
+    "Cover tightly with foil and bake 20 minutes.",
+    "Uncover, stir, and check orzo doneness; bake uncovered 5–10 minutes more until orzo is tender and sauce thickened.",
+    "Top with mozzarella and parmesan; bake 5 minutes until cheese melts and bubbles.",
+    "Rest 5 minutes, then taste and adjust sea salt and pepper. Serve hot."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "chorizo",
+      "quantity": "300 g",
+      "preparation": "cut into bite-size pieces"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced into strips"
+    },
+    {
+      "core_item_name": "orzo",
+      "quantity": "300 g (about 1 1/2 cups)"
+    },
+    {
+      "core_item_name": "passata",
+      "quantity": "700 g (about 3 cups)"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "2 cups"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "sea salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "mozzarella",
+      "quantity": "200 g",
+      "preparation": "sliced or torn"
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "30 g",
+      "preparation": "grated"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Italian",
+      "Spanish"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [
+    {
+      "core_item_name": "olive oil",
+      "selected_product_id": "6009195707965",
+      "package_quantity": 1,
+      "package_notes": "Neutral cooking olive oil suits sautéing; 2 tbsp needed from 1 L bottle.",
+      "ingredient_line": "Cooking Olive Oil 1 L"
+    },
+    {
+      "core_item_name": "chorizo",
+      "selected_product_id": "6009195239848",
+      "package_quantity": 2,
+      "package_notes": "Recipe needs 300 g; each pack is 210 g. Two packs provide enough with leftovers.",
+      "ingredient_line": "Smoked Spanish Chorizo Pork Sausage 210 g"
+    },
+    {
+      "core_item_name": "onion",
+      "selected_product_id": "20008215",
+      "package_quantity": 1,
+      "package_notes": "1 kg brown onions provides several medium onions; use 1 medium for the recipe.",
+      "ingredient_line": "Brown Onions 1 kg"
+    },
+    {
+      "core_item_name": "garlic",
+      "selected_product_id": "20008277",
+      "package_quantity": 1,
+      "package_notes": "Convenient peeled garlic; 50 g pack easily covers 3 cloves.",
+      "ingredient_line": "Peeled Garlic 50 g"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "selected_product_id": "20004224",
+      "package_quantity": 1,
+      "package_notes": "450 g mixed peppers typically includes 2–3 medium peppers; use 2.",
+      "ingredient_line": "Colore Peppers 450 g"
+    },
+    {
+      "core_item_name": "orzo",
+      "selected_product_id": "6007875598735",
+      "package_quantity": 1,
+      "package_notes": "Dry orzo 500 g pack covers 300 g required.",
+      "ingredient_line": "Orzo Pasta 500 g"
+    },
+    {
+      "core_item_name": "passata",
+      "selected_product_id": "6009217888818",
+      "package_quantity": 2,
+      "package_notes": "Each bottle is 340 ml (~340 g). Two bottles (~680 g) closely match 700 g needed.",
+      "ingredient_line": "Passata Rustica Basil or Crushed Tomato with Basil 340 ml"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "selected_product_id": "6009189566226",
+      "package_quantity": 1,
+      "package_notes": "2 cups ≈ 500 ml; one 500 ml pack matches exactly.",
+      "ingredient_line": "Fresh Free Range Liquid Chicken Stock 500 ml"
+    },
+    {
+      "core_item_name": "oregano",
+      "selected_product_id": "20167042",
+      "package_quantity": 1,
+      "package_notes": "Dried oregano 15 g is pantry-stable; only 1 tsp needed.",
+      "ingredient_line": "Oregano 15 g"
+    },
+    {
+      "core_item_name": "sea salt",
+      "selected_product_id": "6009214702339",
+      "package_quantity": 1,
+      "package_notes": "Grinder format suits seasoning to taste.",
+      "ingredient_line": "Sea Salt in Grinder 250 g"
+    },
+    {
+      "core_item_name": "pepper",
+      "selected_product_id": "6001009014047",
+      "package_quantity": 1,
+      "package_notes": "Set includes black pepper for seasoning to taste.",
+      "ingredient_line": "Black Pepper and Sea Salt Set"
+    },
+    {
+      "core_item_name": "mozzarella",
+      "selected_product_id": "6009223189978",
+      "package_quantity": 2,
+      "package_notes": "Recipe needs 200 g; two 125 g balls provide 250 g for generous topping.",
+      "ingredient_line": "Buffalo Mozzarella Cheese 125 g"
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "selected_product_id": "6001009013590",
+      "package_quantity": 1,
+      "package_notes": "200 g wedge covers 30 g required with plenty left for future use.",
+      "ingredient_line": "Italian Parmigiano Reggiano Cheese 200 g"
+    }
+  ],
+  "final_ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6009195707965",
+        "package_quantity": 1,
+        "name": "Cooking Olive Oil 1 L",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Oils-Vinegars/Oils/Cooking-Olive-Oil-1-L/_/A-6009195707965",
+        "sale_price": 289.99
+      },
+      "ingredient_line": "Cooking Olive Oil 1 L"
+    },
+    {
+      "core_item_name": "chorizo",
+      "quantity": "300 g",
+      "preparation": "cut into bite-size pieces",
+      "selected_product": {
+        "product_id": "6009195239848",
+        "package_quantity": 2,
+        "name": "Smoked Spanish Chorizo Pork Sausage 210 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Deli-Entertaining/Deli-Meats/Continental-Meats/Smoked-Spanish-Chorizo-Pork-Sausage-210-g/_/A-6009195239848",
+        "sale_price": 109.99
+      },
+      "ingredient_line": "Smoked Spanish Chorizo Pork Sausage 210 g"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": {
+        "product_id": "20008215",
+        "package_quantity": 1,
+        "name": "Brown Onions 1 kg",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/Roast-glazed-gammon/Brown-Onions-1-kg/_/A-20008215",
+        "sale_price": 26.99
+      },
+      "ingredient_line": "Brown Onions 1 kg"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped",
+      "selected_product": {
+        "product_id": "20008277",
+        "package_quantity": 1,
+        "name": "Peeled Garlic 50 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Promotions/Buy-2-Or-More-And-Save/Buy-any-2-Save-20-/Prepared-Additions/Peeled-Garlic-50-g/_/A-20008277",
+        "sale_price": 29.99
+      },
+      "ingredient_line": "Peeled Garlic 50 g"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced into strips",
+      "selected_product": {
+        "product_id": "20004224",
+        "package_quantity": 1,
+        "name": "Colore Peppers 450 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Salads-Herbs/Peppers-Chillies/Colore-Peppers-450-g/_/A-20004224",
+        "sale_price": 41.99
+      },
+      "ingredient_line": "Colore Peppers 450 g"
+    },
+    {
+      "core_item_name": "orzo",
+      "quantity": "300 g (about 1 1/2 cups)",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6007875598735",
+        "package_quantity": 1,
+        "name": "Orzo Pasta 500 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Pasta-Rice-Noodles/Pasta/Orzo-Pasta-500-g/_/A-6007875598735",
+        "sale_price": 22.99
+      },
+      "ingredient_line": "Orzo Pasta 500 g"
+    },
+    {
+      "core_item_name": "passata",
+      "quantity": "700 g (about 3 cups)",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6009217888818",
+        "package_quantity": 2,
+        "name": "Passata Rustica Basil or Crushed Tomato with Basil 340 ml",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Cans-Jars-Packaged-Foods/Tomatoes/Passata-Rustica-Basil-or-Crushed-Tomato-with-Basil-340-ml/_/A-6009217888818",
+        "sale_price": 39.99
+      },
+      "ingredient_line": "Passata Rustica Basil or Crushed Tomato with Basil 340 ml"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "2 cups",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6009189566226",
+        "package_quantity": 1,
+        "name": "Fresh Free Range Liquid Chicken Stock 500 ml",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Meat-Poultry-Fish/Fresh-Gravy-Stock-Glazes/Fresh-Free-Range-Liquid-Chicken-Stock-500-ml/_/A-6009189566226",
+        "sale_price": 54.99
+      },
+      "ingredient_line": "Fresh Free Range Liquid Chicken Stock 500 ml"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "20167042",
+        "package_quantity": 1,
+        "name": "Oregano 15 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/Seafood-Pasta/Oregano-15-g/_/A-20167042",
+        "sale_price": 34.99
+      },
+      "ingredient_line": "Oregano 15 g"
+    },
+    {
+      "core_item_name": "sea salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6009214702339",
+        "package_quantity": 1,
+        "name": "Sea Salt in Grinder 250 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Salt-Pepper/Sea-Salt-in-Grinder-250-g/_/A-6009214702339",
+        "sale_price": 44.99
+      },
+      "ingredient_line": "Sea Salt in Grinder 250 g"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6001009014047",
+        "package_quantity": 1,
+        "name": "Black Pepper and Sea Salt Set",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/How-to-Videos/Boerewors-Burgers/Black-Pepper-and-Sea-Salt-Set/_/A-6001009014047",
+        "sale_price": 65.99
+      },
+      "ingredient_line": "Black Pepper and Sea Salt Set"
+    },
+    {
+      "core_item_name": "mozzarella",
+      "quantity": "200 g",
+      "preparation": "sliced or torn",
+      "selected_product": {
+        "product_id": "6009223189978",
+        "package_quantity": 2,
+        "name": "Buffalo Mozzarella Cheese 125 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Global-Cuisine-Shop/Italian/Deli-Cured-Meats-Cheese/Buffalo-Mozzarella-Cheese-125-g/_/A-6009223189978",
+        "sale_price": 94.99
+      },
+      "ingredient_line": "Buffalo Mozzarella Cheese 125 g"
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "30 g",
+      "preparation": "grated",
+      "selected_product": {
+        "product_id": "6001009013590",
+        "package_quantity": 1,
+        "name": "Italian Parmigiano Reggiano Cheese 200 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Milk-Dairy-Eggs/Cheese/Parmesan-Hard-Cheese/Italian-Parmigiano-Reggiano-Cheese-200-g/_/A-6001009013590",
+        "sale_price": 162.99
+      },
+      "ingredient_line": "Italian Parmigiano Reggiano Cheese 200 g"
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251121T133553Z",
+    "meal_model": "gpt-5",
+    "product_model": "gpt-5",
+    "tags_version": "2025.02.0",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251121T133442Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "completed"
+  }
+}

@@ -1,0 +1,593 @@
+{
+  "meal_id": "meal_20251121T133017Z_01_6e0017",
+  "archetype_uid": "arch_FAM_MEZZE_30to60",
+  "archetype_name": "Family Middle Eastern & Greek Mezze Nights",
+  "name": "Sheet-Pan Chicken Shawarma with Herbed Basmati and Mezze Tray",
+  "description": "Oven-roasted shawarma-style chicken and peppers with stovetop herbed basmati rice, quick yogurt-mint sauce, warm pita, and hummus for a build-your-own family plate.",
+  "servings": "Serves 4 (2 adults + 2 kids)",
+  "prep_steps": [
+    "Heat oven to 220°C (425°F).",
+    "Slice red onion into wedges and bell peppers into strips.",
+    "Cut chicken thigh fillets into large bite-size pieces.",
+    "In a bowl, mix shawarma paste with olive oil and crushed garlic.",
+    "Rinse basmati rice under cold water until it runs clear; drain.",
+    "Chop parsley and mint; set some for rice and some for garnish.",
+    "Dice cucumber and tomatoes for a simple side.",
+    "Halve a lemon; cut remaining into wedges for serving."
+  ],
+  "cook_steps": [
+    "Toss chicken, red onion, and bell peppers with the shawarma paste mixture, sea salt, and black pepper; spread on a large sheet pan.",
+    "Roast on middle rack for 20–25 minutes until chicken is cooked through and edges char.",
+    "While chicken roasts, bring chicken stock to a boil in a pot; add rinsed basmati rice and a pinch of sea salt. Reduce to low, cover, and simmer 12 minutes; rest off heat 5 minutes.",
+    "Stir chopped parsley into the rice and fluff with a fork.",
+    "In a small bowl, combine yogurt, a squeeze of lemon, chopped mint, sea salt, and black pepper to make a quick sauce.",
+    "Warm pita bread on the oven rack for 2–3 minutes.",
+    "Transfer roasted chicken and vegetables to a platter; sprinkle with sumac and optional chili flakes. Drizzle with lemon.",
+    "Serve family-style with herbed rice, yogurt-mint sauce, hummus, cucumber and tomatoes, and warm pita."
+  ],
+  "instructions": [
+    "Heat oven to 220°C (425°F).",
+    "Slice red onion into wedges and bell peppers into strips.",
+    "Cut chicken thigh fillets into large bite-size pieces.",
+    "In a bowl, mix shawarma paste with olive oil and crushed garlic.",
+    "Rinse basmati rice under cold water until it runs clear; drain.",
+    "Chop parsley and mint; set some for rice and some for garnish.",
+    "Dice cucumber and tomatoes for a simple side.",
+    "Halve a lemon; cut remaining into wedges for serving.",
+    "Toss chicken, red onion, and bell peppers with the shawarma paste mixture, sea salt, and black pepper; spread on a large sheet pan.",
+    "Roast on middle rack for 20–25 minutes until chicken is cooked through and edges char.",
+    "While chicken roasts, bring chicken stock to a boil in a pot; add rinsed basmati rice and a pinch of sea salt. Reduce to low, cover, and simmer 12 minutes; rest off heat 5 minutes.",
+    "Stir chopped parsley into the rice and fluff with a fork.",
+    "In a small bowl, combine yogurt, a squeeze of lemon, chopped mint, sea salt, and black pepper to make a quick sauce.",
+    "Warm pita bread on the oven rack for 2–3 minutes.",
+    "Transfer roasted chicken and vegetables to a platter; sprinkle with sumac and optional chili flakes. Drizzle with lemon.",
+    "Serve family-style with herbed rice, yogurt-mint sauce, hummus, cucumber and tomatoes, and warm pita."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "800 g",
+      "preparation": "cut into large bite-size pieces"
+    },
+    {
+      "core_item_name": "shawarma paste",
+      "quantity": "3 tablespoons"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "crushed"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "sliced into strips"
+    },
+    {
+      "core_item_name": "sea salt",
+      "quantity": "1.5 teaspoons",
+      "preparation": "divided, to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "3 cups"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/3 cup",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "yogurt",
+      "quantity": "1 cup"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tablespoons",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1–2",
+      "preparation": "1 juiced, rest cut into wedges"
+    },
+    {
+      "core_item_name": "pita bread",
+      "quantity": "4–6 rounds"
+    },
+    {
+      "core_item_name": "hummus",
+      "quantity": "1 cup"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "2",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 teaspoon",
+      "preparation": "for garnish"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2 teaspoon",
+      "preparation": "optional"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten",
+      "Sesame"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [
+    {
+      "core_item_name": "chicken thigh fillets",
+      "selected_product_id": "2032880000007",
+      "package_quantity": 2,
+      "package_notes": "Need ~800 g; packs are avg 700 g each. Two packs (~1.4 kg) allow trimming and kid-friendly portions with leftovers.",
+      "ingredient_line": "Free Range Skinless Chicken Thigh Fillets Avg 700 g"
+    },
+    {
+      "core_item_name": "shawarma paste",
+      "selected_product_id": "5030343840662",
+      "package_quantity": 1,
+      "package_notes": "3 Tbsp ≈ 45 g; one 130 g jar is sufficient with extra for taste.",
+      "ingredient_line": "Belazu Shawarma Paste 130 g"
+    },
+    {
+      "core_item_name": "olive oil",
+      "selected_product_id": "6009195707965",
+      "package_quantity": 1,
+      "package_notes": "Neutral cooking olive oil best fit; 2 Tbsp needed from a 1 L bottle.",
+      "ingredient_line": "Cooking Olive Oil 1 L"
+    },
+    {
+      "core_item_name": "garlic",
+      "selected_product_id": "20008277",
+      "package_quantity": 1,
+      "package_notes": "Recipe calls for 3 cloves; 50 g peeled garlic pack covers need with minimal waste.",
+      "ingredient_line": "Peeled Garlic 50 g"
+    },
+    {
+      "core_item_name": "red onion",
+      "selected_product_id": null,
+      "package_quantity": 0,
+      "package_notes": "Only pickled red onion petals available; not suitable for roasting. Select a whole fresh red onion in produce.",
+      "ingredient_line": ""
+    },
+    {
+      "core_item_name": "bell peppers",
+      "selected_product_id": "20004224",
+      "package_quantity": 1,
+      "package_notes": "Pack ~450 g typically contains 2–3 mixed peppers; enough for 2 peppers.",
+      "ingredient_line": "Colore Peppers 450 g"
+    },
+    {
+      "core_item_name": "sea salt",
+      "selected_product_id": "6009214702339",
+      "package_quantity": 1,
+      "package_notes": "1.5 tsp needed; 250 g grinder is pantry staple.",
+      "ingredient_line": "Sea Salt in Grinder 250 g"
+    },
+    {
+      "core_item_name": "black pepper",
+      "selected_product_id": "6009178243428",
+      "package_quantity": 1,
+      "package_notes": "1 tsp needed; 55 g fine black pepper is suitable.",
+      "ingredient_line": "Fine Black Pepper 55 g"
+    },
+    {
+      "core_item_name": "basmati rice",
+      "selected_product_id": "6001231081411",
+      "package_quantity": 1,
+      "package_notes": "1.5 cups raw ≈ 300 g; 1 kg pack provides multiple meals.",
+      "ingredient_line": "Tastic Basmati Rice 1 kg"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "selected_product_id": "6009189566226",
+      "package_quantity": 2,
+      "package_notes": "Need ~750 ml; each pack is 500 ml. Two packs provide 1 L with leftover for adjustments.",
+      "ingredient_line": "Fresh Free Range Liquid Chicken Stock 500 ml"
+    },
+    {
+      "core_item_name": "parsley",
+      "selected_product_id": "6009217077267",
+      "package_quantity": 1,
+      "package_notes": "1/3 cup chopped ≈ 15–20 g; 80 g pack covers rice and garnish.",
+      "ingredient_line": "Fresh Parsley 80 g"
+    },
+    {
+      "core_item_name": "yogurt",
+      "selected_product_id": "20185589",
+      "package_quantity": 1,
+      "package_notes": "Plain unsweetened yogurt required for sauce; 1 kg tub covers 1 cup with leftovers.",
+      "ingredient_line": "Double Cream Plain Yoghurt 1 kg"
+    },
+    {
+      "core_item_name": "mint",
+      "selected_product_id": "20115982",
+      "package_quantity": 1,
+      "package_notes": "2 Tbsp chopped ≈ small handful; 20 g punnet sufficient.",
+      "ingredient_line": "Fresh Mint 20 g"
+    },
+    {
+      "core_item_name": "lemon",
+      "selected_product_id": "20017880",
+      "package_quantity": 1,
+      "package_notes": "Need 1–2; 3-pack fits quantity for juicing and wedges.",
+      "ingredient_line": "Lemons 3 pk"
+    },
+    {
+      "core_item_name": "pita bread",
+      "selected_product_id": "20018771",
+      "package_quantity": 1,
+      "package_notes": "Serves 4; 4–6 rounds needed. One 6-pack covers.",
+      "ingredient_line": "White Pita Breads 6 pk"
+    },
+    {
+      "core_item_name": "hummus",
+      "selected_product_id": "20173685",
+      "package_quantity": 1,
+      "package_notes": "1 cup ≈ 240 g; one 180 g tub is slightly short—acceptable for mezze, or buy two if you want generous portions.",
+      "ingredient_line": "Hummus 180 g"
+    },
+    {
+      "core_item_name": "cucumber",
+      "selected_product_id": "20004019",
+      "package_quantity": 1,
+      "package_notes": "One whole cucumber for dicing.",
+      "ingredient_line": "English Cucumber"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "selected_product_id": "20101480",
+      "package_quantity": 1,
+      "package_notes": "Pack of 4 slicing tomatoes covers the 2 tomatoes needed with extras for salad.",
+      "ingredient_line": "Slicing Tomatoes 4 pk"
+    },
+    {
+      "core_item_name": "sumac",
+      "selected_product_id": "6009182324960",
+      "package_quantity": 1,
+      "package_notes": "Only 1 tsp needed; 50 g jar is pantry staple.",
+      "ingredient_line": "Sumac 50 g"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "selected_product_id": "6009173963222",
+      "package_quantity": 1,
+      "package_notes": "Optional garnish; 35 g refill is sufficient.",
+      "ingredient_line": "Chilli Flakes Refill 35 g"
+    }
+  ],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "800 g",
+      "preparation": "cut into large bite-size pieces",
+      "selected_product": {
+        "product_id": "2032880000007",
+        "package_quantity": 2,
+        "name": "Free Range Skinless Chicken Thigh Fillets Avg 700 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Meat-Poultry-Fish/Poultry/Chicken-Portions-Other/Free-Range-Skinless-Chicken-Thigh-Fillets-Avg-700-g/_/A-2032880000007",
+        "sale_price": 170.19
+      },
+      "ingredient_line": "Free Range Skinless Chicken Thigh Fillets Avg 700 g"
+    },
+    {
+      "core_item_name": "shawarma paste",
+      "quantity": "3 tablespoons",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "5030343840662",
+        "package_quantity": 1,
+        "name": "Belazu Shawarma Paste 130 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Condiments-Sauces-Pastes/Belazu-Shawarma-Paste-130-g/_/A-5030343840662",
+        "sale_price": 89.99
+      },
+      "ingredient_line": "Belazu Shawarma Paste 130 g"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6009195707965",
+        "package_quantity": 1,
+        "name": "Cooking Olive Oil 1 L",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Oils-Vinegars/Oils/Cooking-Olive-Oil-1-L/_/A-6009195707965",
+        "sale_price": 289.99
+      },
+      "ingredient_line": "Cooking Olive Oil 1 L"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "crushed",
+      "selected_product": {
+        "product_id": "20008277",
+        "package_quantity": 1,
+        "name": "Peeled Garlic 50 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Promotions/Buy-2-Or-More-And-Save/Buy-any-2-Save-20-/Prepared-Additions/Peeled-Garlic-50-g/_/A-20008277",
+        "sale_price": 29.99
+      },
+      "ingredient_line": "Peeled Garlic 50 g"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges",
+      "selected_product": {
+        "product_id": null,
+        "package_quantity": 0,
+        "name": null,
+        "detail_url": null,
+        "sale_price": null
+      },
+      "ingredient_line": ""
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "sliced into strips",
+      "selected_product": {
+        "product_id": "20004224",
+        "package_quantity": 1,
+        "name": "Colore Peppers 450 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Salads-Herbs/Peppers-Chillies/Colore-Peppers-450-g/_/A-20004224",
+        "sale_price": 41.99
+      },
+      "ingredient_line": "Colore Peppers 450 g"
+    },
+    {
+      "core_item_name": "sea salt",
+      "quantity": "1.5 teaspoons",
+      "preparation": "divided, to taste",
+      "selected_product": {
+        "product_id": "6009214702339",
+        "package_quantity": 1,
+        "name": "Sea Salt in Grinder 250 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Salt-Pepper/Sea-Salt-in-Grinder-250-g/_/A-6009214702339",
+        "sale_price": 44.99
+      },
+      "ingredient_line": "Sea Salt in Grinder 250 g"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon",
+      "preparation": "to taste",
+      "selected_product": {
+        "product_id": "6009178243428",
+        "package_quantity": 1,
+        "name": "Fine Black Pepper 55 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Spices/Fine-Black-Pepper-55-g/_/A-6009178243428",
+        "sale_price": 37.99
+      },
+      "ingredient_line": "Fine Black Pepper 55 g"
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed",
+      "selected_product": {
+        "product_id": "6001231081411",
+        "package_quantity": 1,
+        "name": "Tastic Basmati Rice 1 kg",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Pasta-Rice-Noodles/Rice-Couscous-Polenta/Tastic-Basmati-Rice-1-kg/_/A-6001231081411",
+        "sale_price": 81.99
+      },
+      "ingredient_line": "Tastic Basmati Rice 1 kg"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "3 cups",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "6009189566226",
+        "package_quantity": 2,
+        "name": "Fresh Free Range Liquid Chicken Stock 500 ml",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Meat-Poultry-Fish/Fresh-Gravy-Stock-Glazes/Fresh-Free-Range-Liquid-Chicken-Stock-500-ml/_/A-6009189566226",
+        "sale_price": 54.99
+      },
+      "ingredient_line": "Fresh Free Range Liquid Chicken Stock 500 ml"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/3 cup",
+      "preparation": "finely chopped",
+      "selected_product": {
+        "product_id": "6009217077267",
+        "package_quantity": 1,
+        "name": "Fresh Parsley 80 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Salads-Herbs/Herbs-Sprouts-Edible-Flowers/Fresh-Parsley-80-g/_/A-6009217077267",
+        "sale_price": 24.99
+      },
+      "ingredient_line": "Fresh Parsley 80 g"
+    },
+    {
+      "core_item_name": "yogurt",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "20185589",
+        "package_quantity": 1,
+        "name": "Double Cream Plain Yoghurt 1 kg",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/The-Perfect-Party-Platter/Double-Cream-Plain-Yoghurt-1-kg/_/A-20185589",
+        "sale_price": 54.99
+      },
+      "ingredient_line": "Double Cream Plain Yoghurt 1 kg"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tablespoons",
+      "preparation": "finely chopped",
+      "selected_product": {
+        "product_id": "20115982",
+        "package_quantity": 1,
+        "name": "Fresh Mint 20 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/Seafood-Pasta/Fresh-Mint-20-g/_/A-20115982",
+        "sale_price": 14.99
+      },
+      "ingredient_line": "Fresh Mint 20 g"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1–2",
+      "preparation": "1 juiced, rest cut into wedges",
+      "selected_product": {
+        "product_id": "20017880",
+        "package_quantity": 1,
+        "name": "Lemons 3 pk",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Fresh-Fruit/ClemenGold-Oranges-Soft-Citrus/Lemons-3-pk/_/A-20017880",
+        "sale_price": 29.99
+      },
+      "ingredient_line": "Lemons 3 pk"
+    },
+    {
+      "core_item_name": "pita bread",
+      "quantity": "4–6 rounds",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "20018771",
+        "package_quantity": 1,
+        "name": "White Pita Breads 6 pk",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Bakery/Wraps-Naan-Pitas-Bagels/Fresh/White-Pita-Breads-6-pk/_/A-20018771",
+        "sale_price": 42.99
+      },
+      "ingredient_line": "White Pita Breads 6 pk"
+    },
+    {
+      "core_item_name": "hummus",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": {
+        "product_id": "20173685",
+        "package_quantity": 1,
+        "name": "Hummus 180 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/Hummus-toast/Hummus-180-g/_/A-20173685",
+        "sale_price": 54.99
+      },
+      "ingredient_line": "Hummus 180 g"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1",
+      "preparation": "diced",
+      "selected_product": {
+        "product_id": "20004019",
+        "package_quantity": 1,
+        "name": "English Cucumber",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Salads-Herbs/Cucumbers/English-Cucumber/_/A-20004019",
+        "sale_price": 19.99
+      },
+      "ingredient_line": "English Cucumber"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "2",
+      "preparation": "diced",
+      "selected_product": {
+        "product_id": "20101480",
+        "package_quantity": 1,
+        "name": "Slicing Tomatoes 4 pk",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Salads-Herbs/Tomatoes/Slicing-Tomatoes-4-pk/_/A-20101480",
+        "sale_price": 24.99
+      },
+      "ingredient_line": "Slicing Tomatoes 4 pk"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 teaspoon",
+      "preparation": "for garnish",
+      "selected_product": {
+        "product_id": "6009182324960",
+        "package_quantity": 1,
+        "name": "Sumac 50 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Spices/Sumac-50-g/_/A-6009182324960",
+        "sale_price": 40.99
+      },
+      "ingredient_line": "Sumac 50 g"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2 teaspoon",
+      "preparation": "optional",
+      "selected_product": {
+        "product_id": "6009173963222",
+        "package_quantity": 1,
+        "name": "Chilli Flakes Refill 35 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Spices/Chilli-Flakes-Refill-35-g/_/A-6009173963222",
+        "sale_price": 30.99
+      },
+      "ingredient_line": "Chilli Flakes Refill 35 g"
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251121T133121Z",
+    "meal_model": "gpt-5",
+    "product_model": "gpt-5",
+    "tags_version": "2025.02.0",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251121T133017Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "completed"
+  }
+}

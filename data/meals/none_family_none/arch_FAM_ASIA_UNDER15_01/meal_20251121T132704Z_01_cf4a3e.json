@@ -1,0 +1,367 @@
+{
+  "meal_id": "meal_20251121T132704Z_01_cf4a3e",
+  "archetype_uid": "arch_FAM_ASIA_UNDER15_01",
+  "archetype_name": "Family 15‑Minute Stir‑Fry & Noodle Nights (Chinese/Japanese/Korean)",
+  "name": "15-Min Teriyaki Chicken Udon Stir-Fry",
+  "description": "Family-friendly teriyaki chicken tossed with springy udon and mixed veggies. Mild, glossy sauce and quick stovetop cooking for a weeknight win.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Slice chicken thigh fillets into thin strips.",
+    "Mince garlic and slice spring onion.",
+    "Open the bag of stir-fry vegetables.",
+    "Bring a pot of water to a boil for udon noodles (or microwave-ready packs to loosen, 1 minute).",
+    "Measure teriyaki sauce, soy sauce, and sesame oil."
+  ],
+  "cook_steps": [
+    "Boil udon noodles until just tender (about 3–4 minutes). Drain and set aside.",
+    "Heat peanut oil in a large pan or wok over high heat.",
+    "Add chicken strips and black pepper (optional). Stir-fry until lightly browned and cooked through, 4–5 minutes.",
+    "Add garlic and half the spring onion. Stir-fry 30 seconds until fragrant.",
+    "Add stir-fry vegetables. Toss on high heat for 2–3 minutes until crisp-tender.",
+    "Add drained udon noodles. Pour in teriyaki sauce and soy sauce. Toss for 1–2 minutes until glossy and coated.",
+    "Turn off heat. Drizzle sesame oil and toss.",
+    "Top with remaining spring onion and sesame seeds. Serve hot."
+  ],
+  "instructions": [
+    "Slice chicken thigh fillets into thin strips.",
+    "Mince garlic and slice spring onion.",
+    "Open the bag of stir-fry vegetables.",
+    "Bring a pot of water to a boil for udon noodles (or microwave-ready packs to loosen, 1 minute).",
+    "Measure teriyaki sauce, soy sauce, and sesame oil.",
+    "Boil udon noodles until just tender (about 3–4 minutes). Drain and set aside.",
+    "Heat peanut oil in a large pan or wok over high heat.",
+    "Add chicken strips and black pepper (optional). Stir-fry until lightly browned and cooked through, 4–5 minutes.",
+    "Add garlic and half the spring onion. Stir-fry 30 seconds until fragrant.",
+    "Add stir-fry vegetables. Toss on high heat for 2–3 minutes until crisp-tender.",
+    "Add drained udon noodles. Pour in teriyaki sauce and soy sauce. Toss for 1–2 minutes until glossy and coated.",
+    "Turn off heat. Drizzle sesame oil and toss.",
+    "Top with remaining spring onion and sesame seeds. Serve hot."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "600 g",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "udon noodles",
+      "quantity": "400 g",
+      "preparation": "boiled and drained"
+    },
+    {
+      "core_item_name": "stir-fry vegetables",
+      "quantity": "500 g",
+      "preparation": "bagged mix"
+    },
+    {
+      "core_item_name": "teriyaki sauce",
+      "quantity": "1/2 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "1 tablespoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "peanut oil",
+      "quantity": "1 tablespoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tablespoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "pinch",
+      "preparation": "optional"
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "2 teaspoons",
+      "preparation": "optional for topping"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Chinese",
+      "Japanese"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "Sesame",
+      "Soy"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [
+    {
+      "core_item_name": "chicken thigh fillets",
+      "selected_product_id": "2032880000007",
+      "package_quantity": 1,
+      "package_notes": "Avg 700 g pack covers 600 g needed with a little extra; good for a family stir-fry.",
+      "ingredient_line": "Free Range Skinless Chicken Thigh Fillets Avg 700 g"
+    },
+    {
+      "core_item_name": "udon noodles",
+      "selected_product_id": "6009217534333",
+      "package_quantity": 2,
+      "package_notes": "Each pack is 200 g; two packs provide the 400 g required for 4 servings.",
+      "ingredient_line": "Asian Udon Noodles 200 g"
+    },
+    {
+      "core_item_name": "stir-fry vegetables",
+      "selected_product_id": "6009223128649",
+      "package_quantity": 1,
+      "package_notes": "700 g pack comfortably covers 500 g needed with a bit extra for generous servings.",
+      "ingredient_line": "Juliene Stir-Fry Vegetables 700 g"
+    },
+    {
+      "core_item_name": "teriyaki sauce",
+      "selected_product_id": "6009226440168",
+      "package_quantity": 1,
+      "package_notes": "Half cup ≈ 120 ml; one 180 ml bottle is sufficient with some left over.",
+      "ingredient_line": "Asian Teriyaki Sauce 180 ml"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "selected_product_id": "6009226440151",
+      "package_quantity": 1,
+      "package_notes": "Only 1 tbsp needed; the 200 ml bottle is an appropriate pantry size.",
+      "ingredient_line": "Asian Tamari Soy Sauce 200 ml"
+    },
+    {
+      "core_item_name": "peanut oil",
+      "selected_product_id": "6009189786051",
+      "package_quantity": 1,
+      "package_notes": "Recipe uses 1 tbsp; 250 ml bottle suitable for multiple cooks.",
+      "ingredient_line": "Peanut Cooking Oil 250 ml"
+    },
+    {
+      "core_item_name": "sesame oil",
+      "selected_product_id": "6009189786075",
+      "package_quantity": 1,
+      "package_notes": "Only 1 tbsp used; 250 ml organic sesame oil is good value and versatile.",
+      "ingredient_line": "Organic Sesame Oil 250 ml"
+    },
+    {
+      "core_item_name": "garlic",
+      "selected_product_id": "20008277",
+      "package_quantity": 1,
+      "package_notes": "2 cloves needed; 50 g peeled pack is convenient and minimizes waste.",
+      "ingredient_line": "Peeled Garlic 50 g"
+    },
+    {
+      "core_item_name": "spring onion",
+      "selected_product_id": "20004231",
+      "package_quantity": 1,
+      "package_notes": "Typical bunch (~100 g) provides about 4–6 spring onions, matching the recipe.",
+      "ingredient_line": "Mild Spring Onions 100 g"
+    },
+    {
+      "core_item_name": "black pepper",
+      "selected_product_id": "6009178243428",
+      "package_quantity": 1,
+      "package_notes": "Pinch needed; 55 g fine black pepper is a practical small pantry size.",
+      "ingredient_line": "Fine Black Pepper 55 g"
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "selected_product_id": "6009184246444",
+      "package_quantity": 1,
+      "package_notes": "Only 2 tsp needed; 250 g pack is the smallest available option among candidates.",
+      "ingredient_line": "White Sesame Seeds 250 g"
+    }
+  ],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "600 g",
+      "preparation": "thinly sliced",
+      "selected_product": {
+        "product_id": "2032880000007",
+        "package_quantity": 1,
+        "name": "Free Range Skinless Chicken Thigh Fillets Avg 700 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Meat-Poultry-Fish/Poultry/Chicken-Portions-Other/Free-Range-Skinless-Chicken-Thigh-Fillets-Avg-700-g/_/A-2032880000007",
+        "sale_price": 170.19
+      },
+      "ingredient_line": "Free Range Skinless Chicken Thigh Fillets Avg 700 g"
+    },
+    {
+      "core_item_name": "udon noodles",
+      "quantity": "400 g",
+      "preparation": "boiled and drained",
+      "selected_product": {
+        "product_id": "6009217534333",
+        "package_quantity": 2,
+        "name": "Asian Udon Noodles 200 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Pasta-Rice-Noodles/Noodles-Instant-Noodles/Asian-Udon-Noodles-200-g/_/A-6009217534333",
+        "sale_price": 29.99
+      },
+      "ingredient_line": "Asian Udon Noodles 200 g"
+    },
+    {
+      "core_item_name": "stir-fry vegetables",
+      "quantity": "500 g",
+      "preparation": "bagged mix",
+      "selected_product": {
+        "product_id": "6009223128649",
+        "package_quantity": 1,
+        "name": "Juliene Stir-Fry Vegetables 700 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Fresh-Vegetables/Prepared-Vegetables/Stir-Fry/Juliene-Stir-Fry-Vegetables-700-g/_/A-6009223128649",
+        "sale_price": 54.99
+      },
+      "ingredient_line": "Juliene Stir-Fry Vegetables 700 g"
+    },
+    {
+      "core_item_name": "teriyaki sauce",
+      "quantity": "1/2 cup",
+      "preparation": "",
+      "selected_product": {
+        "product_id": "6009226440168",
+        "package_quantity": 1,
+        "name": "Asian Teriyaki Sauce 180 ml",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Condiments-Sauces-Pastes/Condiments/Global-Sauces/Asian-Teriyaki-Sauce-180-ml/_/A-6009226440168",
+        "sale_price": 56.99
+      },
+      "ingredient_line": "Asian Teriyaki Sauce 180 ml"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "1 tablespoon",
+      "preparation": "",
+      "selected_product": {
+        "product_id": "6009226440151",
+        "package_quantity": 1,
+        "name": "Asian Tamari Soy Sauce 200 ml",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Condiments-Sauces-Pastes/Condiments/Global-Sauces/Asian-Tamari-Soy-Sauce-200-ml/_/A-6009226440151",
+        "sale_price": 59.99
+      },
+      "ingredient_line": "Asian Tamari Soy Sauce 200 ml"
+    },
+    {
+      "core_item_name": "peanut oil",
+      "quantity": "1 tablespoon",
+      "preparation": "",
+      "selected_product": {
+        "product_id": "6009189786051",
+        "package_quantity": 1,
+        "name": "Peanut Cooking Oil 250 ml",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/Good-Fats/Peanut-Cooking-Oil-250-ml/_/A-6009189786051",
+        "sale_price": 80.0
+      },
+      "ingredient_line": "Peanut Cooking Oil 250 ml"
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tablespoon",
+      "preparation": "",
+      "selected_product": {
+        "product_id": "6009189786075",
+        "package_quantity": 1,
+        "name": "Organic Sesame Oil 250 ml",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/Indian-styled-instant-noodles/Organic-Sesame-Oil-250-ml/_/A-6009189786075",
+        "sale_price": 130.0
+      },
+      "ingredient_line": "Organic Sesame Oil 250 ml"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": {
+        "product_id": "20008277",
+        "package_quantity": 1,
+        "name": "Peeled Garlic 50 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Promotions/Buy-2-Or-More-And-Save/Buy-any-2-Save-20-/Prepared-Additions/Peeled-Garlic-50-g/_/A-20008277",
+        "sale_price": 29.99
+      },
+      "ingredient_line": "Peeled Garlic 50 g"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4",
+      "preparation": "sliced",
+      "selected_product": {
+        "product_id": "20004231",
+        "package_quantity": 1,
+        "name": "Mild Spring Onions 100 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Salads-Herbs/Mild-Spring-Onions-100-g/_/A-20004231",
+        "sale_price": 24.99
+      },
+      "ingredient_line": "Mild Spring Onions 100 g"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "pinch",
+      "preparation": "optional",
+      "selected_product": {
+        "product_id": "6009178243428",
+        "package_quantity": 1,
+        "name": "Fine Black Pepper 55 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Spices/Fine-Black-Pepper-55-g/_/A-6009178243428",
+        "sale_price": 37.99
+      },
+      "ingredient_line": "Fine Black Pepper 55 g"
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "2 teaspoons",
+      "preparation": "optional for topping",
+      "selected_product": {
+        "product_id": "6009184246444",
+        "package_quantity": 1,
+        "name": "White Sesame Seeds 250 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/Easy-peanut-butter-noodles/White-Sesame-Seeds-250-g/_/A-6009184246444",
+        "sale_price": 56.99
+      },
+      "ingredient_line": "White Sesame Seeds 250 g"
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251121T132740Z",
+    "meal_model": "gpt-5",
+    "product_model": "gpt-5",
+    "tags_version": "2025.02.0",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251121T132704Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "completed"
+  }
+}

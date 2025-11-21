@@ -277,7 +277,7 @@ Path: `data/tags/defined_tags.json`
   The runner appends a “Scope (HARD CONSTRAINTS)” block so every generated archetype respects the required Diet×Audience combination.
 - **Scoped QA (optional)** — Review `run_*/archetypes_aggregated.json` directly; the curator CLI is deprecated but remains available if you need structured keep/modify guidance.
 - **Rollup** — Run `python scripts/predefined_archetype_aggregator.py` so each scope has `archetypes_combined.json` containing every unique archetype across its runs (deduped by `uid`).
-- **Meal generation + aggregation** — Run `scripts/meal_builder.py --predefined-dir data/archetypes/predefined/<slug> --archetype-uid <uid|all>` so the prompt receives the scope metadata, curated ingredients, and archetype tags. Meals save to `data/meals/<slug>/<archetype_uid>/` with run logs under `data/meals/runs/<slug>/`. Use `--archetype-uid all` to create one meal per UID inside the scope, then aggregate across the folders you plan to ship.
+- **Meal generation + aggregation** — Run `scripts/meal_builder.py --predefined-dir data/archetypes/predefined/<slug> --archetype-uid <uid|all>` so the prompt receives the scope metadata, curated ingredients, and archetype tags. Meals save to `data/meals/<slug>/<archetype_uid>/` with run logs under `data/meals/runs/<slug>/`. Each meal file lands immediately after the recipe call (metadata tracks whether SKU selection finished), and `--archetype-uid all` creates one meal per UID inside the scope. Aggregate across the folders you plan to ship.
 - **Maintenance tips** — Update the sheet when adding/removing scopes; rerun the sync script (safe to execute repeatedly). Ensure diet tag values stay aligned with `defined_tags.json`; mismatches will surface later during generation.
 
 ---

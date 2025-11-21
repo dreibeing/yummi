@@ -1005,6 +1005,44 @@ def generate_meals_for_archetype(
             for note in meal_warnings:
                 print(f"[warn] {note}")
 
+        meal_id = f"meal_{run_slug}_{meal_index:02d}_{uuid.uuid4().hex[:6]}"
+        created_at = timestamp_slug()
+        base_record = {
+            "meal_id": meal_id,
+            "archetype_uid": archetype_uid,
+            "archetype_name": archetype.get("name"),
+            "name": meal_payload.get("name"),
+            "description": meal_payload.get("description"),
+            "servings": meal_payload.get("servings"),
+            "prep_steps": meal_payload.get("prep_steps", []),
+            "cook_steps": meal_payload.get("cook_steps", []),
+            "instructions": [*meal_payload.get("prep_steps", []), *meal_payload.get("cook_steps", [])],
+            "ingredients": meal_payload.get("ingredients"),
+            "meal_tags": meal_payload.get("meal_tags"),
+            "product_matches": [],
+            "final_ingredients": [
+                {
+                    "core_item_name": ingredient.get("core_item_name"),
+                    "quantity": ingredient.get("quantity"),
+                    "preparation": ingredient.get("preparation"),
+                    "selected_product": None,
+                    "ingredient_line": None,
+                }
+                for ingredient in meal_payload.get("ingredients", [])
+            ],
+            "warnings": meal_warnings,
+            "metadata": {
+                "created_at": created_at,
+                "meal_model": args.meal_model,
+                "product_model": args.product_model,
+                "tags_version": tags_version,
+                "run_dir": str(run_dir),
+                "predefined_scope": scope_slug,
+                "product_selection_status": "pending",
+            },
+        }
+        record_path = save_meal_record(meals_dir, scope_slug, archetype_uid, base_record)
+
         sku_payload = build_product_candidate_payload(
             meal_payload, classification_index, catalog, args.product_candidate_limit
         )
@@ -1022,6 +1060,9 @@ def generate_meals_for_archetype(
                 max_output_tokens=args.product_max_output_tokens,
             )
         except OpenAIClientError as exc:
+            base_record["metadata"]["product_selection_status"] = "failed"
+            base_record["metadata"]["product_selection_error"] = str(exc)
+            save_meal_record(meals_dir, scope_slug, archetype_uid, base_record)
             raise RuntimeError(f"Product selection API call failed: {exc}") from exc
 
         write_json(
@@ -1032,37 +1073,12 @@ def generate_meals_for_archetype(
         product_payload = parse_product_response(product_response_text)
         matches, final_ingredients = merge_product_matches(meal_payload, product_payload, catalog)
 
-        meal_id = f"meal_{run_slug}_{meal_index:02d}_{uuid.uuid4().hex[:6]}"
-        created_at = timestamp_slug()
-        prep_steps = meal_payload.get("prep_steps", [])
-        cook_steps = meal_payload.get("cook_steps", [])
-        combined_instructions = [*prep_steps, *cook_steps]
-        final_record = {
-            "meal_id": meal_id,
-            "archetype_uid": archetype_uid,
-            "archetype_name": archetype.get("name"),
-            "name": meal_payload.get("name"),
-            "description": meal_payload.get("description"),
-            "servings": meal_payload.get("servings"),
-            "prep_steps": prep_steps,
-            "cook_steps": cook_steps,
-            "instructions": combined_instructions,
-            "ingredients": meal_payload.get("ingredients"),
-            "meal_tags": meal_payload.get("meal_tags"),
-            "product_matches": matches,
-            "final_ingredients": final_ingredients,
-            "warnings": meal_warnings,
-            "metadata": {
-                "created_at": created_at,
-                "meal_model": args.meal_model,
-                "product_model": args.product_model,
-                "tags_version": tags_version,
-                "run_dir": str(run_dir),
-                "predefined_scope": scope_slug,
-            },
-        }
-        record_path = save_meal_record(meals_dir, scope_slug, archetype_uid, final_record)
-        existing_meals.append(final_record)
+        base_record["product_matches"] = matches
+        base_record["final_ingredients"] = final_ingredients
+        base_record["metadata"]["product_selection_status"] = "completed"
+        base_record["metadata"].pop("product_selection_error", None)
+        record_path = save_meal_record(meals_dir, scope_slug, archetype_uid, base_record)
+        existing_meals.append(base_record)
         meals_created.append({"meal_id": meal_id, "path": str(record_path)})
 
     print(f"[info] Created {len(meals_created)} meal(s) for archetype {archetype_uid}")

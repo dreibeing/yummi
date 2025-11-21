@@ -11,6 +11,7 @@ Automates per-archetype meal generation + SKU selection using GPT-5. Each run re
 - Brand references stay out of instructions; product names only surface in `product_matches`/`final_ingredients`.
 - Optional tag values (Equipment/NutritionFocus/etc.) are normalized via `data/tags/tag_synonyms.json`. Unknown values are dropped with warnings.
 - Required tag categories fall back to archetype defaults; if `Allergens` is empty, heuristics infer likely allergens from ingredient text before failing the build.
+- The meal JSON is written immediately after a successful recipe call (before SKU selection). Metadata tracks `product_selection_status` (`pending`, `completed`, or `failed`) plus any LLM error message so you can rerun SKU matching later.
 - Outputs are appended as individual JSON files so meals can be reviewed/deleted without editing a monolithic manifest. Raw prompts/responses land under `data/meals/runs/<scope>/run_<timestamp>/`.
 
 ## Prerequisites
