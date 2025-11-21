@@ -8,10 +8,11 @@
 8. Run "create_archetypes" this creates a new dataframe archetypes_df.pkl saved to "C:\Users\user\Documents\Greenbean\Shopper\archetypes\archetypes.pkl"
 9. Run "final_archetypes" this adds a uid and creates a new dataframe final_archetypes_df.pkl to "C:\Users\user\Documents\Greenbean\Shopper\archetypes\final_archetypes_df.pkl"
 10. Run archetype_ingredients which creates a dataframe archetype_ingredients_df.pkl that is a list of ingredients specific to that archetype.
-11 meal_processing
-12 tags processing
-13 meal_restrictions_batch
-14 python Scripts/web_user_tags/feedback_meal_batch.py
+11. Run "python scripts/archetype_ingredient_curator.py --predefined-dir data/archetypes/predefined/<slug>" to generate curated ingredient lists per archetype. The script chunks the core catalog, calls the LLM for each chunk, and writes results to ingredient_curation/curated_ingredients.json so reruns only process missing UIDs.
+12. meal_processing
+13. tags processing
+14. meal_restrictions_batch
+15. python Scripts/web_user_tags/feedback_meal_batch.py
 
 
 

@@ -1,0 +1,40 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_FAM_CARIB_GRILL_HOT",
+      "name": "Family Caribbean Grill Nights (Jerk & BBQ)",
+      "description": "Spicy, flavor-packed family dinners centered on jerk-style grills and Caribbean BBQ—marinated chicken, pork, or tofu with rice and peas, slaw, and grilled veg.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Caribbean"
+        ],
+        "PrepTime": [
+          "30to60"
+        ],
+        "Complexity": [
+          "Intermediate"
+        ],
+        "HeatSpice": [
+          "Hot"
+        ],
+        "Equipment": [
+          "OutdoorGrill"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds a Hot-leaning, OutdoorGrill-focused Caribbean option for families—filling gaps in cuisine, heat, and equipment not covered by existing weeknight and oven/slow-cooker archetypes."
+    }
+  ]
+}

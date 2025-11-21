@@ -1,0 +1,31 @@
+{
+  "archetype_uid": "arch_AF01",
+  "selected_ingredients": [
+    "chicken strips",
+    "chicken pie",
+    "fish cakes",
+    "hake fillets",
+    "hake nuggets",
+    "hake burgers",
+    "roast chicken",
+    "fried chicken",
+    "sausage rolls",
+    "samosas",
+    "potstickers",
+    "prawn spring rolls",
+    "potato wedges",
+    "roast potatoes",
+    "potato croquettes",
+    "frozen vegetables",
+    "garlic butter baguette",
+    "frozen pizza",
+    "macaroni and cheese",
+    "lasagne",
+    "cottage pie",
+    "quiche",
+    "coleslaw",
+    "smoked chicken breast",
+    "soy burgers",
+    "edamame"
+  ]
+}

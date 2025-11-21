@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_FAM_NorthAfrican_TagineCouscous",
+  "selected_ingredients": [
+    "Moroccan rub",
+    "allspice",
+    "anise",
+    "almonds",
+    "anchovies",
+    "apricot",
+    "artichokes",
+    "baby carrots",
+    "barley",
+    "basa",
+    "bay leaves",
+    "beans",
+    "beef",
+    "beef stew meat",
+    "beef shin",
+    "beef short rib",
+    "beef stock",
+    "bell peppers",
+    "beetroot",
+    "black pepper"
+  ]
+}

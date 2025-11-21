@@ -1,0 +1,32 @@
+{
+  "archetype_uid": "arch_FAM_SLOW_60PLUS_LATAM",
+  "selected_ingredients": [
+    "brown rice",
+    "brown sugar",
+    "butter beans",
+    "butternut squash",
+    "cabbage",
+    "cannellini beans",
+    "canola oil",
+    "carrots",
+    "cauliflower",
+    "celery",
+    "cheddar cheese",
+    "cherry tomatoes",
+    "chicken breast",
+    "chicken leg quarters",
+    "chicken stock",
+    "chicken thighs",
+    "chickpeas",
+    "chilies",
+    "chilli powder",
+    "chimichurri",
+    "chipotle sauce",
+    "chorizo",
+    "chuck eye steak",
+    "cinnamon",
+    "cloves",
+    "coconut milk",
+    "chilli lime seasoning"
+  ]
+}

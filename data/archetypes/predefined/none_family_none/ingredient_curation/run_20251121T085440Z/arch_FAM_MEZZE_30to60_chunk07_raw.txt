@@ -1,0 +1,30 @@
+{
+  "archetype_uid": "arch_FAM_MEZZE_30to60",
+  "selected_ingredients": [
+    "salad greens",
+    "sea salt",
+    "sardines",
+    "semolina",
+    "sesame seeds",
+    "shallots",
+    "shawarma paste",
+    "simit",
+    "sirloin steak",
+    "spice blend",
+    "spinach",
+    "spirit vinegar",
+    "split peas",
+    "spring onion",
+    "squash",
+    "squid",
+    "stuffed grape leaves",
+    "sugar",
+    "sumac",
+    "sun-dried tomatoes",
+    "sunflower oil",
+    "tahini",
+    "tapenade",
+    "thyme",
+    "tilapia"
+  ]
+}

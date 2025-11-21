@@ -1,0 +1,23 @@
+{
+  "archetype_uid": "arch_FAM_NorthAfrican_TagineCouscous",
+  "selected_ingredients": [
+    "bulgur",
+    "brown basmati rice",
+    "butter",
+    "canola oil",
+    "cannellini beans",
+    "carrots",
+    "cauliflower",
+    "cayenne pepper",
+    "celery",
+    "chermoula",
+    "cherry tomatoes",
+    "chicken thighs",
+    "chicken stock",
+    "chickpeas",
+    "cinnamon",
+    "cloves",
+    "citrus fruit",
+    "butternut squash"
+  ]
+}

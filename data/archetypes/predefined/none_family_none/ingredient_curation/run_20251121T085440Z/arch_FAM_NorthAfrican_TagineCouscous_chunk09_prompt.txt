@@ -1,0 +1,246 @@
+SYSTEM:
+You are Yummi's ingredient sourcing strategist. For each request you receive a single archetype plus the canonical
+ingredient catalog. Your job is to identify the ingredients that align with that archetype's culinary profile,
+using only the context supplied in the conversation. Always ground your decisions in the archetype description
+and tags provided later; do not assume any other defaults. When uncertain, err on the side of keeping plausible
+fits, but filter clear mismatches.
+
+Return strict JSON with this structure:
+{
+  "archetype_uid": "arch_XXXX",
+  "selected_ingredients": [
+    "Ingredient A",
+    "Ingredient B"
+  ]
+}
+
+Rules:
+- Return only the JSON object above; no extra commentary.
+- Names must match the catalog exactly (case and spelling).
+- Avoid beverages, household items, or duplicative variants that the archetype would reasonably skip.
+- Ensure the list spans pantry staples, proteins, starches, produce, and sauces that fit the archetype’s cuisines.
+- Do not invent ingredients that are not in the catalog.
+
+USER:
+Archetype UID: arch_FAM_NorthAfrican_TagineCouscous
+Archetype Name: Family North African Tagine & Couscous Nights
+Archetype Description:
+Family-sized Moroccan/Algerian/Tunisian-inspired dinners—tagines, chermoula-roasted fish or veg, and couscous/bean sides—with balanced, kid-manageable warmth and approachable steps.
+
+Core Tags:
+- Allergens: None
+- Audience: Family
+- Complexity: Intermediate
+- Cuisine: NorthAfrican
+- DietaryRestrictions: None
+- Equipment: StoveTop, Oven
+- HeatSpice: Mild, Medium
+- MealComponentPreference: FromScratch
+- NutritionFocus: HighFiber
+- PrepTime: 30to60
+
+Ingredient catalog chunk 9/10 (format: item_type — core_item_name).
+For each entry, answer a single question: would this archetype reasonably use this ingredient when cooking?
+If yes (even occasionally), include the ingredient name in `selected_ingredients`. If the ingredient is clearly unsuitable, exclude it.
+- ready_meal — chicken pasta salad
+- ready_meal — chicken pie
+- ready_meal — chicken pies
+- ready_meal — chicken quinoa bean salad
+- ready_meal — chicken rice salad
+- ready_meal — chicken salad
+- ready_meal — chicken samosas
+- ready_meal — chicken soup
+- ready_meal — chicken strips
+- ready_meal — chicken stroganoff
+- ready_meal — chicken tikka
+- ready_meal — chicken with coconut rice
+- ready_meal — chickpea cucumber salad
+- ready_meal — chilli chicken
+- ready_meal — chilli chicken booster bowl
+- ready_meal — chilli crunch chicken ready meal
+- ready_meal — chilli non carne
+- ready_meal — coleslaw
+- ready_meal — corned beef tongue
+- ready_meal — cottage pie
+- ready_meal — couscous salad
+- ready_meal — croissant
+- ready_meal — croissants
+- ready_meal — cronut
+- ready_meal — curried spelt and beans
+- ready_meal — custard
+- ready_meal — custard tart
+- ready_meal — deli platter
+- ready_meal — dim sum
+- ready_meal — dog food
+- ready_meal — donut
+- ready_meal — doughnut
+- ready_meal — edamame
+- ready_meal — edamame black rice salad
+- ready_meal — egg fried rice
+- ready_meal — falafel wrap
+- ready_meal — fiesta style sharing meal
+- ready_meal — fish cake
+- ready_meal — fish cakes
+- ready_meal — fish pie
+- ready_meal — flan
+- ready_meal — four bean salad
+- ready_meal — four-bean salad
+- ready_meal — fried chicken
+- ready_meal — fried chicken slider
+- ready_meal — frozen fruit cubes
+- ready_meal — frozen mango and peach fruit cubes
+- ready_meal — frozen meal cubes
+- ready_meal — frozen mixed berries
+- ready_meal — frozen pizza
+- ready_meal — frozen vegetables
+- ready_meal — frozen yoghurt
+- ready_meal — fruit cubes
+- ready_meal — fruit salad
+- ready_meal — garlic baguette
+- ready_meal — garlic butter baguette
+- ready_meal — garlic butter ciabatta
+- ready_meal — garlic butter filled ciabatta
+- ready_meal — gazpacho
+- ready_meal — gnocchi
+- ready_meal — gorgonzola pasta
+- ready_meal — gorgonzola walnut girasoli
+- ready_meal — gorgonzola walnut pasta
+- ready_meal — greek salad
+- ready_meal — guava ice lolly
+- ready_meal — haddock
+- ready_meal — hake
+- ready_meal — hake and potato stacks
+- ready_meal — hake burger
+- ready_meal — hake burgers
+- ready_meal — hake curry
+- ready_meal — hake curry ready meal
+- ready_meal — hake fillets
+- ready_meal — hake nuggets
+- ready_meal — ham and cheese roll
+- ready_meal — hummus
+- ready_meal — ice cream
+- ready_meal — ice cream cone
+- ready_meal — ice cream cones
+- ready_meal — ice lolly
+- ready_meal — instant noodles
+- ready_meal — instant noodles cup
+- ready_meal — jalapeno popper bites
+- ready_meal — jalapeño popper bites
+- ready_meal — jelly custard cups
+- ready_meal — koesister
+- ready_meal — korean style chicken wings with rice balls
+- ready_meal — korean style meatballs noodles ready meal
+- ready_meal — laksa ready meal
+- ready_meal — lamb
+- ready_meal — lamb and vegetables
+- ready_meal — lamb casserole
+- ready_meal — lamb curry
+- ready_meal — lamb lentils brown rice meal
+- ready_meal — lamb liver with rice and vegetables
+- ready_meal — lamb mince curry roti
+- ready_meal — lamb tripe
+- ready_meal — lamb with vegetables, lentils and brown rice
+- ready_meal — lamington
+- ready_meal — lasagne
+- ready_meal — lentil soup
+- ready_meal — lychee ice pops
+- ready_meal — macaron
+- ready_meal — macaroni and cheese
+- ready_meal — macaroni cheese
+- ready_meal — macaroni cheese beef bolognese
+- ready_meal — macaroni cheese with bacon
+- ready_meal — malva pudding
+- ready_meal — mashed potatoes
+- ready_meal — meatballs with noodles
+- ready_meal — milk tart
+- ready_meal — mince curry rice
+- ready_meal — mince pie
+- ready_meal — mince pies
+- ready_meal — mint ice cream
+- ready_meal — mixed vegetables
+- ready_meal — moroccan style shake it bowl
+- ready_meal — muffin
+- ready_meal — mushroom risotto
+- ready_meal — mushroom soup
+- ready_meal — mussels
+- ready_meal — nachos
+- ready_meal — noodles
+- ready_meal — oats
+- ready_meal — oats breakfast ready meal
+- ready_meal — ox tripe curry
+- ready_meal — palmier
+- ready_meal — pasta
+- ready_meal — pasta salad
+- ready_meal — pea soup
+- ready_meal — pepper steak pie
+- ready_meal — pepperoni pizza
+- ready_meal — pesto bulgur salad
+- ready_meal — pizza
+- ready_meal — poke bowl
+- ready_meal — pork
+- ready_meal — pork booster bowl
+- ready_meal — pork cheek casserole
+- ready_meal — pork fried rice
+- ready_meal — pork pie
+- ready_meal — pork shank
+- ready_meal — potato bake
+- ready_meal — potato croquettes
+- ready_meal — potato gratin
+- ready_meal — potato leek soup
+- ready_meal — potato salad
+- ready_meal — potato soup
+- ready_meal — potato stacks
+- ready_meal — potato wedges
+- ready_meal — potjie meal
+- ready_meal — potstickers
+- ready_meal — poultry platter
+- ready_meal — prawn avocado pasta salad
+- ready_meal — prawn bao buns
+- ready_meal — prawn cocktail
+- ready_meal — prawn linguine
+- ready_meal — prawn pasta salad
+- ready_meal — prawn spring rolls
+- ready_meal — prawn toast
+- ready_meal — prawns
+- ready_meal — pudding
+- ready_meal — pumpkin fritters
+- ready_meal — quiche
+- ready_meal — quiche lorraine
+- ready_meal — raisin pastry
+- ready_meal — rice
+- ready_meal — rice salad
+- ready_meal — roast chicken
+- ready_meal — roast potatoes
+- ready_meal — roasted vegetable couscous salad
+- ready_meal — rolls
+- ready_meal — root vegetables
+- ready_meal — salad
+- ready_meal — salmon
+- ready_meal — salmon sushi
+- ready_meal — salmon wellington
+- ready_meal — samosa
+- ready_meal — samosas
+- ready_meal — sausage roll
+- ready_meal — sausage rolls
+- ready_meal — seafood mix
+- ready_meal — seasonal sweets
+- ready_meal — sesame chicken noodle
+- ready_meal — sesame chicken noodles
+- ready_meal — sesame chicken with coconut rice
+- ready_meal — shake it bowl
+- ready_meal — sharing meal
+- ready_meal — shepherd's pie
+- ready_meal — slaw
+- ready_meal — smoked chicken breast
+- ready_meal — smoked salmon
+- ready_meal — smoked salmon spinach potato stack ready meal
+- ready_meal — smoked salmon spinach stacks ready meal
+- ready_meal — soup
+- ready_meal — soy burgers
+- ready_meal — soy sesame chicken coconut rice
+- ready_meal — soya burger
+- ready_meal — spaghetti bolognese
+- ready_meal — spaghetti carbonara
+- ready_meal — spaghetti with beef mince
+
+Return strict JSON only; do not include extra commentary.

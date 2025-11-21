@@ -1,0 +1,28 @@
+{
+  "archetype_uid": "arch_FamSEAsia15to30",
+  "selected_ingredients": [
+    "coconut stir-fry sauce",
+    "coconut sugar",
+    "coriander",
+    "coriander seeds",
+    "cornflour",
+    "courgette",
+    "cucumber",
+    "cumin",
+    "cumin seeds",
+    "curry paste",
+    "curry powder",
+    "duck breast",
+    "egg noodles",
+    "eggplant",
+    "eggs",
+    "fish fillets",
+    "fish sauce",
+    "fish stock concentrate",
+    "frozen mixed vegetables",
+    "frozen vegetables",
+    "garlic",
+    "garlic flakes",
+    "garlic powder"
+  ]
+}

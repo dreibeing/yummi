@@ -57,6 +57,7 @@ Keep Yummi-specific directories (scraper, Woolworths agent brief, cart integrati
 - `thin-slice-server/`: queue + runner interfaces used by the thin-slice mobile/WebView flow.
 - `resolver/` + `woolworths_scraper/`: scripts that curate retailer catalogs and attach `productId/catalogRefId` metadata before cart fill.
 - Ingredient cleanup pipeline: `scripts/ingredient_cleanup.py` (heuristics) → `scripts/ingredient_batch_builder.py` (LLM payloads) → `scripts/ingredient_llm_classifier.py` (model pass). Use `gpt-5-nano-2025-08-07` by default for cost efficiency; bump to `gpt-5-mini-2025-08-07` if nano truncates. Best seen working command (batch size 1) is `python scripts/ingredient_llm_classifier.py --max-batches 50 --max-output-tokens 5000 --overwrite`; reruns without `--overwrite` resume from the next unfinished batch.
+- Archetype ingredient curation: `scripts/archetype_ingredient_curator.py` chunks the canonical catalog (~1.8k items) into LLM-friendly batches, decides which ingredients fit each archetype, and writes the results to `data/archetypes/predefined/<slug>/ingredient_curation/curated_ingredients.json`. Reruns skip completed archetype UIDs unless `--recurate-all` is set.
 - `scripts/wallet_admin_cli.py`: stopgap CLI for recording chargebacks or moderating refunds before a UI exists.
 
 ## Using the template for another app

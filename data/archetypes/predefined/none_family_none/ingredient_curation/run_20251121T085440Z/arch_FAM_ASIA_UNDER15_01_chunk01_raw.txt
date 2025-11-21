@@ -1,0 +1,21 @@
+{
+  "archetype_uid": "arch_FAM_ASIA_UNDER15_01",
+  "selected_ingredients": [
+    "Korean BBQ sauce",
+    "black pepper sauce",
+    "black pepper",
+    "avocado oil",
+    "bacon",
+    "basa",
+    "beef sirloin steak",
+    "beef mince",
+    "bone broth",
+    "bok choy",
+    "broccoli",
+    "bell peppers",
+    "asparagus",
+    "baby corn",
+    "baby carrots",
+    "apple cider vinegar"
+  ]
+}

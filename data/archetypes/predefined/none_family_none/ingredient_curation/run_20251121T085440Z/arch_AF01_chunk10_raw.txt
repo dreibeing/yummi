@@ -1,0 +1,15 @@
+{
+  "archetype_uid": "arch_AF01",
+  "selected_ingredients": [
+    "spring rolls",
+    "sweet potato chips",
+    "tempura prawns",
+    "steak pie",
+    "vegetable medley with bechamel sauce",
+    "waffles",
+    "whiting portions",
+    "wontons",
+    "wrap",
+    "vetkoek"
+  ]
+}

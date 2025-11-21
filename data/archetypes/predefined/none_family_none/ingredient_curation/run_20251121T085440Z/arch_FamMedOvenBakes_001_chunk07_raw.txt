@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_FamMedOvenBakes_001",
+  "selected_ingredients": [
+    "salami",
+    "salmon",
+    "sardines",
+    "sausages",
+    "sea salt",
+    "semolina",
+    "serrano ham",
+    "shallots",
+    "soft cheese",
+    "spaghetti",
+    "spelt fusilli",
+    "spinach",
+    "squash",
+    "squid",
+    "sugar",
+    "sun-dried tomatoes",
+    "sunflower oil",
+    "tagliatelle",
+    "thyme",
+    "speck"
+  ]
+}

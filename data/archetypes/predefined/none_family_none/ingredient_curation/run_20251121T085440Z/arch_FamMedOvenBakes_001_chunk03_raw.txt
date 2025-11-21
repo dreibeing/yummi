@@ -1,0 +1,33 @@
+{
+  "archetype_uid": "arch_FamMedOvenBakes_001",
+  "selected_ingredients": [
+    "coppa",
+    "courgette",
+    "cream",
+    "crushed tomatoes",
+    "crushed tomatoes with vegetables",
+    "cumin",
+    "diced tomatoes",
+    "eggs",
+    "eggplant",
+    "fennel",
+    "fennel seeds",
+    "fettuccine",
+    "fig balsamic reduction",
+    "fish fillets",
+    "fish stock concentrate",
+    "flour",
+    "focaccia",
+    "frozen mixed vegetables",
+    "fusilli pasta",
+    "garlic",
+    "garlic and herb seasoning",
+    "garlic flakes",
+    "garlic herb butter",
+    "garlic powder",
+    "gnocchi",
+    "goat cheese",
+    "gorgonzola cheese",
+    "cottage cheese"
+  ]
+}

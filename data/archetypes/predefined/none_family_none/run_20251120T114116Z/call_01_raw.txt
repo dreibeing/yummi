@@ -1,0 +1,42 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_FamMedOvenBakes_001",
+      "name": "Family Mediterranean Oven Bakes (Italian/Spanish/Portuguese)",
+      "description": "Hands-off, family-sized oven bakes and sheet-pan dinners with Italian, Spanish, and Portuguese flavors—think pasta bakes, roasted chicken-and-potato trays, and veggie-forward casseroles for crowd-pleasing weeknights.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Italian",
+          "Spanish",
+          "Portuguese"
+        ],
+        "PrepTime": [
+          "30to60"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "Oven"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds a mainstream, kid-friendly Mediterranean oven-bake format not covered by existing archetypes, expanding European cuisine variety with simple, hands-off family dinners."
+    }
+  ]
+}

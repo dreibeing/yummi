@@ -1,0 +1,4 @@
+{
+  "archetype_uid": "arch_FAM_NorthAfrican_TagineCouscous",
+  "selected_ingredients": []
+}

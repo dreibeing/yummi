@@ -1,0 +1,20 @@
+{
+  "archetype_uid": "arch_FAM_SLOW_60PLUS_LATAM",
+  "selected_ingredients": [
+    "grapeseed oil",
+    "green beans",
+    "ground beef",
+    "ground coffee",
+    "ground cumin",
+    "honey",
+    "hot sauce",
+    "jalapeño peppers",
+    "jasmine rice",
+    "kidney beans",
+    "lamb neck",
+    "lamb shanks",
+    "lentils",
+    "lettuce",
+    "lime"
+  ]
+}

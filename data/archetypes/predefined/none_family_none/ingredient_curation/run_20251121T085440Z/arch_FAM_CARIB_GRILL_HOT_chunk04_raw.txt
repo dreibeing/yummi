@@ -1,0 +1,23 @@
+{
+  "archetype_uid": "arch_FAM_CARIB_GRILL_HOT",
+  "selected_ingredients": [
+    "grapeseed oil",
+    "green beans",
+    "ground beef",
+    "guava",
+    "habanero peppers",
+    "habanero sauce",
+    "honey",
+    "hot sauce",
+    "jasmine rice",
+    "ketchup",
+    "kidney beans",
+    "lime",
+    "lemon",
+    "macaroni",
+    "maize meal",
+    "mackerel",
+    "herbs",
+    "hamburger buns"
+  ]
+}

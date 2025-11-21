@@ -1,0 +1,29 @@
+{
+  "archetype_uid": "arch_FAM_MEZZE_30to60",
+  "selected_ingredients": [
+    "anchovies",
+    "apple cider vinegar",
+    "apricot",
+    "arugula",
+    "asparagus",
+    "artichokes",
+    "aioli",
+    "allspice",
+    "almonds",
+    "baharat",
+    "barley",
+    "basmati rice",
+    "bay leaves",
+    "beef mince",
+    "beef sirloin steak",
+    "beef skewers",
+    "beetroot",
+    "beetroot yoghurt dip",
+    "bell peppers",
+    "black pepper",
+    "bread",
+    "breadsticks",
+    "broccoli",
+    "baby carrots"
+  ]
+}

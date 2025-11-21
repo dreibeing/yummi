@@ -1,0 +1,33 @@
+{
+  "archetype_uid": "arch_FAM_IND_CURRY_BIRYANI_01",
+  "selected_ingredients": [
+    "mango",
+    "mango atchar",
+    "mango chutney",
+    "mango pickle",
+    "marrow",
+    "masala",
+    "masala spice blend",
+    "milk",
+    "milk powder",
+    "meat skewers",
+    "minced beef",
+    "minced meat",
+    "mint",
+    "mixed vegetables",
+    "mushrooms",
+    "mussels",
+    "mustard seeds",
+    "naan",
+    "oxtail",
+    "oyster blade steak",
+    "paneer",
+    "pani puri discs",
+    "paprika",
+    "passata",
+    "peanut oil",
+    "onions",
+    "nutmeg",
+    "nuts"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_AF01",
+      "name": "Family AirFryer Weeknight Wins",
+      "description": "Ultra-fast, kid-friendly family dinners centered on the air fryer—crispy mains and veg sides with minimal prep for busy weeknights.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "PrepTime": [
+          "Under15"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "NoHeat",
+          "Mild"
+        ],
+        "Equipment": [
+          "AirFryer"
+        ],
+        "MealComponentPreference": [
+          "SemiPrepared"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.0",
+      "rationale": "Adds a high-demand, not-yet-covered family archetype focused on AirFryer speed and kid-safe heat levels for weeknight convenience."
+    }
+  ]
+}

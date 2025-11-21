@@ -1,0 +1,27 @@
+{
+  "archetype_uid": "arch_FAM_IND_CURRY_BIRYANI_01",
+  "selected_ingredients": [
+    "grapeseed oil",
+    "ground cumin",
+    "green beans",
+    "kidney beans",
+    "lentils",
+    "lemon",
+    "lime",
+    "jalapeno peppers",
+    "korma paste",
+    "korma sauce",
+    "korma spice blend",
+    "jalfrezi sauce",
+    "jasmine rice",
+    "lamb",
+    "lamb chops",
+    "lamb shanks",
+    "leg of lamb",
+    "lamb mince",
+    "lamb kebabs",
+    "lamb bones",
+    "hake fillets",
+    "kale"
+  ]
+}

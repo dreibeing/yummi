@@ -1,0 +1,4 @@
+{
+  "archetype_uid": "arch_FAM_CARIB_GRILL_HOT",
+  "selected_ingredients": []
+}

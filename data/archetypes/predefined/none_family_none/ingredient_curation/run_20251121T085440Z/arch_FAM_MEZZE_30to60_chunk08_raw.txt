@@ -1,0 +1,20 @@
+{
+  "archetype_uid": "arch_FAM_MEZZE_30to60",
+  "selected_ingredients": [
+    "tomato paste",
+    "tomato puree",
+    "tomatoes",
+    "turkey",
+    "whole chicken",
+    "turmeric powder",
+    "tzatziki seasoning",
+    "vegetable stock",
+    "vinegar",
+    "yogurt",
+    "za'atar",
+    "zhough paste",
+    "zucchini",
+    "watermelon",
+    "yeast"
+  ]
+}

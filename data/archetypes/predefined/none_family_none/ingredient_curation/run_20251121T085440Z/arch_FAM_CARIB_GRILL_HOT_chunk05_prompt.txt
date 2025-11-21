@@ -1,0 +1,245 @@
+SYSTEM:
+You are Yummi's ingredient sourcing strategist. For each request you receive a single archetype plus the canonical
+ingredient catalog. Your job is to identify the ingredients that align with that archetype's culinary profile,
+using only the context supplied in the conversation. Always ground your decisions in the archetype description
+and tags provided later; do not assume any other defaults. When uncertain, err on the side of keeping plausible
+fits, but filter clear mismatches.
+
+Return strict JSON with this structure:
+{
+  "archetype_uid": "arch_XXXX",
+  "selected_ingredients": [
+    "Ingredient A",
+    "Ingredient B"
+  ]
+}
+
+Rules:
+- Return only the JSON object above; no extra commentary.
+- Names must match the catalog exactly (case and spelling).
+- Avoid beverages, household items, or duplicative variants that the archetype would reasonably skip.
+- Ensure the list spans pantry staples, proteins, starches, produce, and sauces that fit the archetype’s cuisines.
+- Do not invent ingredients that are not in the catalog.
+
+USER:
+Archetype UID: arch_FAM_CARIB_GRILL_HOT
+Archetype Name: Family Caribbean Grill Nights (Jerk & BBQ)
+Archetype Description:
+Spicy, flavor-packed family dinners centered on jerk-style grills and Caribbean BBQ—marinated chicken, pork, or tofu with rice and peas, slaw, and grilled veg.
+
+Core Tags:
+- Allergens: None
+- Audience: Family
+- Complexity: Intermediate
+- Cuisine: Caribbean
+- DietaryRestrictions: None
+- Equipment: OutdoorGrill
+- HeatSpice: Hot
+- MealComponentPreference: FromScratch
+- PrepTime: 30to60
+
+Ingredient catalog chunk 5/10 (format: item_type — core_item_name).
+For each entry, answer a single question: would this archetype reasonably use this ingredient when cooking?
+If yes (even occasionally), include the ingredient name in `selected_ingredients`. If the ingredient is clearly unsuitable, exclude it.
+- ingredient — malva pudding
+- ingredient — manchego cheese
+- ingredient — mandarin orange
+- ingredient — mandarins
+- ingredient — mange-tout
+- ingredient — mango
+- ingredient — mango and passion fruit
+- ingredient — mango atchar
+- ingredient — mango chili balsamic reduction
+- ingredient — mango chutney
+- ingredient — mango lassi
+- ingredient — mango pickle
+- ingredient — maple syrup
+- ingredient — margarine
+- ingredient — marmalade
+- ingredient — marrow
+- ingredient — masala
+- ingredient — masala sauce
+- ingredient — masala spice blend
+- ingredient — mascarpone
+- ingredient — mashed potatoes
+- ingredient — massage oil
+- ingredient — massaman curry paste
+- ingredient — matboucha
+- ingredient — matcha latte mix
+- ingredient — maternity pads
+- ingredient — mayonnaise
+- ingredient — meat and vegetable extract spread
+- ingredient — meat extract
+- ingredient — meat skewers
+- ingredient — meatballs
+- ingredient — melba toast
+- ingredient — melon
+- ingredient — meringue mix
+- ingredient — merlot
+- ingredient — microgreens
+- ingredient — milk
+- ingredient — milk powder
+- ingredient — milk roll
+- ingredient — milk tart
+- ingredient — mince
+- ingredient — mince curry rice
+- ingredient — mince pies
+- ingredient — minced beef
+- ingredient — minced meat
+- ingredient — mineral water
+- ingredient — mint
+- ingredient — mint jelly
+- ingredient — mint mojito
+- ingredient — mint mojito drink
+- ingredient — mint yoghurt dressing
+- ingredient — miso
+- ingredient — miso dressing
+- ingredient — miso glaze
+- ingredient — miso paste
+- ingredient — mixed berries
+- ingredient — mixed citrus fruit
+- ingredient — mixed fruit cubes
+- ingredient — mixed greens
+- ingredient — mixed herbs
+- ingredient — mixed nuts
+- ingredient — mixed nuts and seeds
+- ingredient — mixed vegetables
+- ingredient — mocha cappuccino mix
+- ingredient — mocha cappuccino sachets
+- ingredient — mortadella
+- ingredient — mozzarella
+- ingredient — mozzarella cheese
+- ingredient — mozzarella sticks
+- ingredient — muesli
+- ingredient — muffin
+- ingredient — muffin mix
+- ingredient — muffins
+- ingredient — multigrain cereal
+- ingredient — multigrain puffs
+- ingredient — mushroom broth
+- ingredient — mushroom mascarpone truffle sauce
+- ingredient — mushroom pasta sauce
+- ingredient — mushroom powder
+- ingredient — mushroom risotto
+- ingredient — mushroom sauce
+- ingredient — mushroom soup
+- ingredient — mushroom stock
+- ingredient — mushrooms
+- ingredient — mussels
+- ingredient — mustard
+- ingredient — mustard powder
+- ingredient — mustard seeds
+- ingredient — naan
+- ingredient — napoletana sauce
+- ingredient — nappies
+- ingredient — nduja
+- ingredient — nectarine
+- ingredient — nero d avola
+- ingredient — non-alcoholic beer
+- ingredient — non-alcoholic red wine
+- ingredient — non-alcoholic rosé
+- ingredient — non-alcoholic sauvignon blanc
+- ingredient — non-alcoholic sparkling rosé
+- ingredient — non-alcoholic spirit
+- ingredient — non-alcoholic whiskey
+- ingredient — non-alcoholic white wine
+- ingredient — non-alcoholic wine
+- ingredient — noodle
+- ingredient — noodles
+- ingredient — nori
+- ingredient — nut and oat crunchies
+- ingredient — nut bar
+- ingredient — nutmeg
+- ingredient — nutritional yeast
+- ingredient — nuts
+- ingredient — nuts and seeds
+- ingredient — oat and chocolate chip cookies
+- ingredient — oat biscuit
+- ingredient — oat biscuits
+- ingredient — oat bran
+- ingredient — oat cereal
+- ingredient — oat cookies
+- ingredient — oat crunchies
+- ingredient — oats
+- ingredient — oil
+- ingredient — ointment
+- ingredient — olive
+- ingredient — olive and harissa sauce
+- ingredient — olive oil
+- ingredient — olive pastry straw
+- ingredient — olives
+- ingredient — onion
+- ingredient — onion and chilli paste
+- ingredient — onion chutney
+- ingredient — onion dip
+- ingredient — onion gravy powder
+- ingredient — onion marmalade
+- ingredient — onion powder
+- ingredient — onion rings
+- ingredient — onions
+- ingredient — orange
+- ingredient — orange jelly
+- ingredient — orange marmalade
+- ingredient — orange sparkling drink
+- ingredient — orange sparkling water
+- ingredient — oregano
+- ingredient — orzo
+- ingredient — osso buco
+- ingredient — ostrich
+- ingredient — ostrich burger
+- ingredient — ostrich burger patty
+- ingredient — ostrich droewors
+- ingredient — ostrich fillet
+- ingredient — ostrich fillet roast
+- ingredient — ostrich fillets
+- ingredient — ostrich meat
+- ingredient — ostrich mince
+- ingredient — ostrich sausage
+- ingredient — ostrich steak
+- ingredient — oxtail
+- ingredient — oyster blade steak
+- ingredient — oyster mushrooms
+- ingredient — oyster sauce
+- ingredient — pad thai noodles
+- ingredient — pad thai sauce
+- ingredient — padron peppers
+- ingredient — paella seasoning
+- ingredient — pak choi
+- ingredient — palmiers
+- ingredient — paneer
+- ingredient — panettone
+- ingredient — pani puri discs
+- ingredient — pansotti
+- ingredient — papaya
+- ingredient — paper cups
+- ingredient — paper plates
+- ingredient — pappardelle
+- ingredient — paprika
+- ingredient — parchment paper
+- ingredient — parmesan cheese
+- ingredient — parsley
+- ingredient — parsnip
+- ingredient — passata
+- ingredient — passion fruit pulp
+- ingredient — pasta
+- ingredient — pasta salad
+- ingredient — pasta sauce
+- ingredient — pasta sauce with olives
+- ingredient — pastrami
+- ingredient — pastry
+- ingredient — pastry straws
+- ingredient — pate
+- ingredient — patty pan squash
+- ingredient — peach
+- ingredient — peach chutney
+- ingredient — peach jam
+- ingredient — peach jelly cups
+- ingredient — peach slices
+- ingredient — peanut butter
+- ingredient — peanut butter bar
+- ingredient — peanut butter bars
+- ingredient — peanut butter cereal
+- ingredient — peanut butter energy bar
+- ingredient — peanut oil
+
+Return strict JSON only; do not include extra commentary.

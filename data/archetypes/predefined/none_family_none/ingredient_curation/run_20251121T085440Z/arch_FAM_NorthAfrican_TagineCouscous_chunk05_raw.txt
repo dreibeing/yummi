@@ -1,0 +1,22 @@
+{
+  "archetype_uid": "arch_FAM_NorthAfrican_TagineCouscous",
+  "selected_ingredients": [
+    "olive oil",
+    "olives",
+    "onions",
+    "paprika",
+    "parsley",
+    "mint",
+    "passata",
+    "matboucha",
+    "olive and harissa sauce",
+    "minced beef",
+    "oyster blade steak",
+    "mussels",
+    "marrow",
+    "patty pan squash",
+    "mushrooms",
+    "orzo",
+    "orange"
+  ]
+}

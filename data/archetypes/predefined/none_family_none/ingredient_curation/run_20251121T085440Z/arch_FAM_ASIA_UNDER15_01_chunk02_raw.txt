@@ -1,0 +1,20 @@
+{
+  "archetype_uid": "arch_FAM_ASIA_UNDER15_01",
+  "selected_ingredients": [
+    "broccoli and cauliflower florets",
+    "brown rice",
+    "brown sugar",
+    "calamari",
+    "canola oil",
+    "carrots",
+    "cashews",
+    "cauliflower",
+    "cabbage",
+    "celery",
+    "chicken thigh fillets",
+    "chicken mince",
+    "chicken strips",
+    "chicken stock",
+    "chow mein sauce"
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "archetype_uid": "arch_FAM_SLOW_60PLUS_LATAM",
+  "selected_ingredients": []
+}

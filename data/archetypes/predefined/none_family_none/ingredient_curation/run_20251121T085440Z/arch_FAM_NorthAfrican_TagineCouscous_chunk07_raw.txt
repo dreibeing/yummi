@@ -1,0 +1,20 @@
+{
+  "archetype_uid": "arch_FAM_NorthAfrican_TagineCouscous",
+  "selected_ingredients": [
+    "salt",
+    "semolina",
+    "sunflower oil",
+    "salmon",
+    "sardines",
+    "tilapia",
+    "squid",
+    "spinach",
+    "shallots",
+    "spring onion",
+    "squash",
+    "thyme",
+    "split peas",
+    "salad greens",
+    "spice blend"
+  ]
+}

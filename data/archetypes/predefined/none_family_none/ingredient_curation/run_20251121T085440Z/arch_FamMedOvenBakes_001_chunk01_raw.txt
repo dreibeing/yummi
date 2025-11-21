@@ -1,0 +1,28 @@
+{
+  "archetype_uid": "arch_FamMedOvenBakes_001",
+  "selected_ingredients": [
+    "aioli",
+    "almonds",
+    "anchovies",
+    "antipasti",
+    "artichokes",
+    "asparagus",
+    "baby carrots",
+    "bacon",
+    "balsamic vinegar",
+    "barley",
+    "basa",
+    "basil",
+    "bay leaves",
+    "bechamel sauce",
+    "beef meatballs",
+    "beef mince",
+    "beef stock",
+    "beetroot",
+    "bell peppers",
+    "black beans",
+    "borlotti beans",
+    "bouquet garni",
+    "broccoli"
+  ]
+}

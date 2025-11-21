@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_FAM_IND_CURRY_BIRYANI_01",
+  "selected_ingredients": [
+    "peas",
+    "pepper powder",
+    "peppercorns",
+    "red onion",
+    "red pepper",
+    "pickle",
+    "pickled onions",
+    "poppadoms",
+    "potatoes",
+    "prawns",
+    "pumpkin",
+    "pumpkin seeds",
+    "pomegranate",
+    "rice",
+    "rogan josh spice blend",
+    "rose essence",
+    "roti",
+    "puri",
+    "saffron",
+    "saag"
+  ]
+}

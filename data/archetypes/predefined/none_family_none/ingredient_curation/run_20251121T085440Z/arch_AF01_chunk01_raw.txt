@@ -1,0 +1,31 @@
+{
+  "archetype_uid": "arch_AF01",
+  "selected_ingredients": [
+    "barbecue sauce",
+    "Korean BBQ sauce",
+    "aioli",
+    "avocado oil",
+    "balsamic reduction",
+    "baby carrots",
+    "baby corn",
+    "asparagus",
+    "broccoli",
+    "bell peppers",
+    "apple",
+    "baked beans",
+    "bread rolls",
+    "brioche",
+    "bacon",
+    "beef burger patty",
+    "beef meatballs",
+    "beef sausages",
+    "beef vienna sausages",
+    "beef skewers",
+    "basa",
+    "angelfish goujons",
+    "Gouda cheese",
+    "black beans",
+    "black pepper",
+    "beef gravy"
+  ]
+}

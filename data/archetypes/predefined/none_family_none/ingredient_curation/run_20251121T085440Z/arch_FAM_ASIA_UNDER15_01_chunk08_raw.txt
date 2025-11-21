@@ -1,0 +1,23 @@
+{
+  "archetype_uid": "arch_FAM_ASIA_UNDER15_01",
+  "selected_ingredients": [
+    "tomatoes",
+    "udon noodles",
+    "vinegar",
+    "white pepper",
+    "worcestershire sauce",
+    "vegetable stock",
+    "vegetables",
+    "zucchini",
+    "tuna steak",
+    "turkey",
+    "wagyu beef sirloin steak",
+    "Korean style chicken wings with rice",
+    "Korean-style meatballs with noodles",
+    "beef chow mein",
+    "chicken fried rice",
+    "bao buns",
+    "chicken breast strips",
+    "chicken meatballs"
+  ]
+}

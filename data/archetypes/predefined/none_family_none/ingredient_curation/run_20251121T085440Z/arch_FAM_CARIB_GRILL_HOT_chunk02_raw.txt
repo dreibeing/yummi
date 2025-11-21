@@ -1,0 +1,33 @@
+{
+  "archetype_uid": "arch_FAM_CARIB_GRILL_HOT",
+  "selected_ingredients": [
+    "broccoli and cauliflower florets",
+    "brown basmati rice",
+    "brown rice",
+    "brown sugar",
+    "cabbage",
+    "canola oil",
+    "cayenne pepper",
+    "carrots",
+    "cherry tomatoes",
+    "chicken breast",
+    "chicken leg quarters",
+    "chicken skewers",
+    "chicken thighs",
+    "chicken wings",
+    "chicken rub",
+    "chilli flakes",
+    "chilli paste",
+    "chilli powder",
+    "chilies",
+    "chives",
+    "cinnamon",
+    "cloves",
+    "coconut cream",
+    "coconut milk",
+    "coconut oil",
+    "citrus",
+    "chutney",
+    "butterflied chicken"
+  ]
+}

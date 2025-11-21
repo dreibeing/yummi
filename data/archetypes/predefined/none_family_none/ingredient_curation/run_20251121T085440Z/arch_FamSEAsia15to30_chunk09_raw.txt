@@ -1,0 +1,15 @@
+{
+  "archetype_uid": "arch_FamSEAsia15to30",
+  "selected_ingredients": [
+    "edamame",
+    "frozen vegetables",
+    "instant noodles",
+    "mixed vegetables",
+    "noodles",
+    "prawn spring rolls",
+    "prawns",
+    "rice",
+    "roast chicken",
+    "seafood mix"
+  ]
+}

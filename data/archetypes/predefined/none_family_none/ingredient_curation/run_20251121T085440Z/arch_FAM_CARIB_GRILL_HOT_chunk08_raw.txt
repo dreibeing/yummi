@@ -1,0 +1,18 @@
+{
+  "archetype_uid": "arch_FAM_CARIB_GRILL_HOT",
+  "selected_ingredients": [
+    "tomatoes",
+    "tomato paste",
+    "tomato chutney",
+    "vinegar",
+    "worcestershire sauce",
+    "turmeric powder",
+    "white pepper",
+    "whole chicken",
+    "turkey",
+    "tuna steak",
+    "zucchini",
+    "tropical fruit",
+    "vegetable stock"
+  ]
+}

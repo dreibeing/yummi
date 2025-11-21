@@ -11,12 +11,11 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from textwrap import dedent
-from typing import Any, Dict, Iterable, Sequence
+from typing import Any, Sequence
 
 from llm_utils import OpenAIClientError, call_openai_api
 
 
-DEFAULT_ARCHETYPE_PATH = Path("data/archetypes/run_20251112T091259Z/archetypes_aggregated.json")
 DEFAULT_TAGS_MANIFEST = Path("data/tags/defined_tags.json")
 DEFAULT_TAG_SYNONYMS = Path("data/tags/tag_synonyms.json")
 DEFAULT_CORE_ITEMS = Path("data/ingredients/unique_core_items.csv")
@@ -28,14 +27,30 @@ DEFAULT_OUTPUT_DIR = Path("data/meals")
 DEFAULT_MEAL_MODEL = "gpt-5"
 DEFAULT_PRODUCT_MODEL = "gpt-5"
 
-ALWAYS_REQUIRED_MEAL_CATEGORIES = {
-    "Diet",
+CURATED_INGREDIENTS_FILENAME = "curated_ingredients.json"
+INGREDIENT_CURATION_SUBDIR = "ingredient_curation"
+ARH_COMBINED_FILENAME = "archetypes_combined.json"
+
+MEAL_TAG_CATEGORY_ORDER = [
+    "DietaryRestrictions",
+    "Audience",
     "Cuisine",
     "PrepTime",
     "Complexity",
     "HeatSpice",
-    "BudgetLevel",
+    "Allergens",
+    "NutritionFocus",
+    "Equipment",
+    "MealComponentPreference",
+]
+
+MULTI_VALUE_TAG_CATEGORIES = {
+    "Cuisine",
+    "Equipment",
+    "MealComponentPreference",
 }
+
+CRITICAL_MATCH_CATEGORIES = ("DietaryRestrictions", "Audience")
 
 ALLERGEN_KEYWORDS: dict[str, tuple[str, ...]] = {
     "Gluten": (
@@ -108,11 +123,28 @@ class CoreItem:
 
 def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--predefined-dir",
+        type=Path,
+        required=True,
+        help="Predefined archetype scope directory (contains archetypes_combined.json and curated ingredients).",
+    )
     parser.add_argument("--archetype-uid", required=True, help="UID of the archetype to generate meals for")
     parser.add_argument("--meal-count", type=int, default=1, help="Number of meals to create in this run")
-    parser.add_argument("--archetype-json", type=Path, default=DEFAULT_ARCHETYPE_PATH, help="Path to archetype JSON (aggregated run output)")
+    parser.add_argument(
+        "--archetype-json",
+        type=Path,
+        default=None,
+        help="Path to archetype JSON (aggregated run output). Defaults to <predefined-dir>/archetypes_combined.json.",
+    )
     parser.add_argument("--tags-manifest", type=Path, default=DEFAULT_TAGS_MANIFEST, help="Path to defined_tags manifest")
     parser.add_argument("--core-items", type=Path, default=DEFAULT_CORE_ITEMS, help="CSV of canonical core items")
+    parser.add_argument(
+        "--curated-ingredients",
+        type=Path,
+        default=None,
+        help="Path to curated ingredient list. Defaults to <predefined-dir>/ingredient_curation/curated_ingredients.json.",
+    )
     parser.add_argument(
         "--ingredient-classifications",
         type=Path,
@@ -188,6 +220,31 @@ def load_tag_synonyms(path: Path) -> dict[str, dict[str, Any]]:
     return normalized
 
 
+def load_curated_ingredient_sets(path: Path) -> dict[str, list[str]]:
+    if not path.exists():
+        raise FileNotFoundError(f"Curated ingredient file not found: {path}")
+    payload = read_json(path)
+    entries = payload.get("archetype_ingredient_sets") or []
+    if not entries:
+        raise RuntimeError(f"No curated ingredient sets found in {path}")
+    curated: dict[str, list[str]] = {}
+    for entry in entries:
+        uid = entry.get("uid")
+        if not uid:
+            continue
+        names: list[str] = []
+        for raw in entry.get("ingredient_names") or []:
+            name = str(raw).strip()
+            if name:
+                names.append(name)
+        if not names:
+            continue
+        curated[uid] = names
+    if not curated:
+        raise RuntimeError(f"Curated ingredient file {path} did not yield usable entries")
+    return curated
+
+
 def build_tag_catalog(manifest: dict[str, Any]) -> dict[str, set[str]]:
     catalog: dict[str, set[str]] = {}
     for entry in manifest.get("defined_tags", []):
@@ -198,6 +255,15 @@ def build_tag_catalog(manifest: dict[str, Any]) -> dict[str, set[str]]:
         bucket = catalog.setdefault(category, set())
         bucket.add(value)
     return catalog
+
+
+def build_tag_value_reference(tag_catalog: dict[str, set[str]], categories: Sequence[str]) -> dict[str, list[str]]:
+    reference: dict[str, list[str]] = {}
+    for category in categories:
+        values = sorted(tag_catalog.get(category, []))
+        if values:
+            reference[category] = values
+    return reference
 
 
 def load_core_items(path: Path) -> tuple[list[CoreItem], dict[str, CoreItem]]:
@@ -218,6 +284,31 @@ def load_core_items(path: Path) -> tuple[list[CoreItem], dict[str, CoreItem]]:
     if not items:
         raise RuntimeError(f"No rows found in {path}")
     return items, index
+
+
+def select_allowed_core_items(
+    archetype_uid: str,
+    curated_sets: dict[str, list[str]],
+    core_item_index: dict[str, CoreItem],
+) -> tuple[list[CoreItem], list[str]]:
+    names = curated_sets.get(archetype_uid)
+    if not names:
+        raise RuntimeError(f"No curated ingredients found for archetype '{archetype_uid}'")
+    unique_names: set[str] = set()
+    allowed: list[CoreItem] = []
+    missing: list[str] = []
+    for raw_name in names:
+        key = raw_name.lower()
+        if key in unique_names:
+            continue
+        unique_names.add(key)
+        item = core_item_index.get(key)
+        if item:
+            allowed.append(item)
+        else:
+            missing.append(raw_name)
+    allowed.sort(key=lambda item: item.name.lower())
+    return allowed, missing
 
 
 def load_classifications(path: Path) -> dict[str, list[dict[str, Any]]]:
@@ -255,8 +346,8 @@ def load_catalog(path: Path) -> dict[str, dict[str, Any]]:
     return by_id
 
 
-def load_existing_meals(base_dir: Path, archetype_uid: str) -> list[dict[str, Any]]:
-    archetype_dir = base_dir / archetype_uid
+def load_existing_meals(base_dir: Path, scope_slug: str, archetype_uid: str) -> list[dict[str, Any]]:
+    archetype_dir = base_dir / scope_slug / archetype_uid
     if not archetype_dir.exists():
         return []
     records: list[dict[str, Any]] = []
@@ -270,8 +361,8 @@ def load_existing_meals(base_dir: Path, archetype_uid: str) -> list[dict[str, An
     return records
 
 
-def save_meal_record(base_dir: Path, archetype_uid: str, meal_record: dict[str, Any]) -> Path:
-    archetype_dir = base_dir / archetype_uid
+def save_meal_record(base_dir: Path, scope_slug: str, archetype_uid: str, meal_record: dict[str, Any]) -> Path:
+    archetype_dir = base_dir / scope_slug / archetype_uid
     archetype_dir.mkdir(parents=True, exist_ok=True)
     path = archetype_dir / f"{meal_record['meal_id']}.json"
     path.write_text(json.dumps(meal_record, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -322,7 +413,7 @@ def summarize_existing_meals(meals: list[dict[str, Any]], archetype_uid: str, li
     for meal in relevant:
         tags = meal.get("meal_tags") or {}
         highlight_tags = {
-            "Diet": ",".join(tags.get("Diet", [])[:1]),
+            "DietaryRestrictions": ",".join(tags.get("DietaryRestrictions", [])[:1]),
             "Cuisine": ",".join(tags.get("Cuisine", [])[:2]),
             "PrepTime": ",".join(tags.get("PrepTime", [])[:1]),
             "Complexity": ",".join(tags.get("Complexity", [])[:1]),
@@ -332,26 +423,17 @@ def summarize_existing_meals(meals: list[dict[str, Any]], archetype_uid: str, li
             {
                 "meal_id": meal.get("meal_id"),
                 "name": meal.get("name"),
-                "highlight": f"Diet={highlight_tags['Diet'] or '-'}; Cuisine={highlight_tags['Cuisine'] or '-'}; Prep={highlight_tags['PrepTime'] or '-'}; Complexity={highlight_tags['Complexity'] or '-'}",
+                "highlight": f"DietaryRestrictions={highlight_tags['DietaryRestrictions'] or '-'}; Cuisine={highlight_tags['Cuisine'] or '-'}; Prep={highlight_tags['PrepTime'] or '-'}; Complexity={highlight_tags['Complexity'] or '-'}",
                 "key_ingredients": short_ingredients,
             }
         )
     return summary
 
 
-def determine_required_categories(
-    manifest_categories: Iterable[str], archetype: dict[str, Any]
-) -> list[str]:
-    archetype_tags = (archetype.get("core_tags") or {})
-    effective: list[str] = []
-    for category in manifest_categories:
-        if category in ALWAYS_REQUIRED_MEAL_CATEGORIES:
-            effective.append(category)
-            continue
-        values = archetype_tags.get(category)
-        if values:
-            effective.append(category)
-    return effective
+def determine_required_categories(tag_catalog: dict[str, set[str]]) -> list[str]:
+    ordered: list[str] = [category for category in MEAL_TAG_CATEGORY_ORDER if category in tag_catalog]
+    remaining = sorted(category for category in tag_catalog.keys() if category not in MEAL_TAG_CATEGORY_ORDER)
+    return ordered + remaining
 
 
 def infer_allergens_from_ingredients(ingredients: list[dict[str, Any]]) -> list[str]:
@@ -425,17 +507,29 @@ def build_meal_user_prompt(
     archetypes_summary: list[dict[str, Any]],
     existing_meals_summary: list[dict[str, Any]],
     allowed_core_items: list[CoreItem],
-    tags_manifest: dict[str, Any],
+    tags_version: str,
+    tag_value_reference: dict[str, list[str]],
     required_categories: Sequence[str],
+    multi_value_categories: set[str],
     meals_requested: int,
 ) -> str:
-    tags_version = tags_manifest.get("tags_version")
     archetype_json = json.dumps(archetype, ensure_ascii=False, indent=2)
     summary_json = json.dumps(archetypes_summary, ensure_ascii=False, indent=2)
     existing_json = json.dumps(existing_meals_summary, ensure_ascii=False, indent=2)
-    allowed_json = json.dumps([
-        {"core_item_name": item.name, "item_type": item.item_type} for item in allowed_core_items
-    ], ensure_ascii=False)
+    allowed_json = json.dumps(
+        [{"core_item_name": item.name, "item_type": item.item_type} for item in allowed_core_items],
+        ensure_ascii=False,
+        indent=2,
+    )
+    tag_reference_rows = [
+        {
+            "category": category,
+            "allowed_values": tag_value_reference.get(category, []),
+            "min_values": 2 if category in multi_value_categories else 1,
+        }
+        for category in required_categories
+    ]
+    tag_reference_json = json.dumps(tag_reference_rows, ensure_ascii=False, indent=2)
 
     schema = {
         "meal": {
@@ -446,48 +540,57 @@ def build_meal_user_prompt(
             "cook_steps": ["ordered strings describing actual cooking/assembly"],
             "ingredients": [
                 {
-                    "core_item_name": "must match canonical ingredient exactly",
+                    "core_item_name": "must match curated ingredient exactly",
                     "quantity": "human-readable quantity",
-                    "preparation": "optional prep note"
+                    "preparation": "optional prep note",
                 }
             ],
             "meal_tags": {
-                "Diet": ["values"],
+                "DietaryRestrictions": ["values"],
+                "Audience": ["values"],
                 "Cuisine": ["values"],
                 "PrepTime": ["values"],
                 "Complexity": ["values"],
                 "HeatSpice": ["values"],
-                "EthicsReligious": ["values"],
                 "Allergens": ["values"],
-                "BudgetLevel": ["values"],
-                "Audience": ["optional values"],
-                "CuisineOpenness": ["optional values"],
-                "NutritionFocus": ["optional"],
-                "Equipment": ["optional"]
-            }
+                "NutritionFocus": ["values"],
+                "Equipment": ["values"],
+                "MealComponentPreference": ["values"],
+            },
         }
     }
 
     schema_json = json.dumps(schema, ensure_ascii=False, indent=2)
+    multi_value_text = ", ".join(sorted(multi_value_categories)) or "None"
+    critical_text = ", ".join(CRITICAL_MATCH_CATEGORIES)
     instructions = dedent(
         f"""
-        Task: Generate {meals_requested} new meal(s) for the target archetype. Every meal must:
-        - Use only ingredients listed under "Allowed core items".
-        - Fit the archetype's diet, allergens, heat preference, complexity, prep time, and household size.
-        - Provide clear servings guidance (e.g., 'Serves 4', 'Single portion').
-        - Keep instructions referencing ingredient/common terms only (no retailer product names or package sizes).
-        - Split the method into two arrays: `prep_steps` (mise en place) and `cook_steps` (actual cooking), with concise numbered actions.
-        - Include a complete tag set covering required categories: {', '.join(required_categories)} using tags_version {tags_version}.
-        - Avoid duplicating meal names or concepts from "Existing meals" (if any).
-        - Keep ingredient counts manageable (8–12 items) and quantities realistic for the servings size.
-        - Return STRICT JSON matching the provided schema, with double quotes around keys and strings.
+        Task: Generate {meals_requested} new meal(s) for the target archetype (see JSON below).
+        Hard requirements:
+        - Use only the curated ingredients listed under "Allowed core items"; do not introduce items that are not listed.
+        - The meal must explicitly satisfy the archetype's DietaryRestrictions and Audience tags; include those exact values in `meal_tags`.
+        - Serve the household described by the archetype (Audience) and keep effort aligned to its Complexity tag (simpler households need simpler instructions).
+        - Provide servings guidance (e.g., "Serves 4" or "Single portion").
+        - Keep directions practical and step-by-step: split into `prep_steps` (mise en place) and `cook_steps` (actual cooking/assembly) with short, direct actions appropriate for the archetype's skill level.
+        - For every tag category listed in the table below, provide at least one canonical value (tags_version {tags_version}). Categories marked as multi valued should include two or more values when naturally true.
+        - If a category truly has no special focus, choose the value "None" (when available) rather than leaving the list empty.
+        - Avoid duplicating existing meal names or core ideas shown in the "Existing meals" section.
+        - Return STRICT JSON following the schema exactly (double quotes, no trailing commentary).
 
-        Target archetype:
+        Tag coverage plan (use these canonical values):
+        ```json
+        {tag_reference_json}
+        ```
+
+        Categories that often need multiple values: {multi_value_text}
+        Critical categories that must mirror the archetype: {critical_text}
+
+        Target archetype (uid + tags supplied to the LLM generating ingredients):
         ```json
         {archetype_json}
         ```
 
-        Snapshot of all archetypes (for awareness of broader coverage, do NOT reference others in the output):
+        Snapshot of all archetypes (for coverage awareness only; do NOT reference them explicitly):
         ```json
         {summary_json}
         ```
@@ -497,7 +600,7 @@ def build_meal_user_prompt(
         {existing_json}
         ```
 
-        Allowed core items:
+        Allowed core items (curated list for this archetype):
         ```json
         {allowed_json}
         ```
@@ -522,11 +625,12 @@ def parse_meal_response(text: str) -> dict[str, Any]:
 def validate_meal_payload(
     meal: dict[str, Any],
     *,
-    required_categories: Iterable[str],
+    required_categories: Sequence[str],
     tag_catalog: dict[str, set[str]],
     core_item_index: dict[str, CoreItem],
     tag_synonyms: dict[str, dict[str, Any]],
     archetype_tags: dict[str, Any],
+    multi_value_categories: set[str],
 ) -> list[str]:
     missing_fields = [
         key
@@ -560,8 +664,9 @@ def validate_meal_payload(
         if not isinstance(values, list):
             raise ValueError(f"Tag category '{category}' must be a list")
         allowed_values = tag_catalog.get(category)
-        if not allowed_values and category in ALWAYS_REQUIRED_MEAL_CATEGORIES:
-            raise ValueError(f"Required category '{category}' missing from tag manifest")
+        if not allowed_values:
+            warnings.append(f"Category '{category}' not defined in tags manifest; dropping values")
+            continue
 
         normalized_values: list[str] = []
         for value in values:
@@ -596,15 +701,32 @@ def validate_meal_payload(
     for category in required_categories:
         if sanitized_tags.get(category):
             continue
-        fallback_values = archetype_tags.get(category) if isinstance(archetype_tags, dict) else None
+        fallback_values = None
+        if category in CRITICAL_MATCH_CATEGORIES and isinstance(archetype_tags, dict):
+            fallback_values = archetype_tags.get(category)
         if fallback_values:
             values = fallback_values if isinstance(fallback_values, list) else [fallback_values]
             sanitized_tags[category] = values
             warnings.append(f"Filled missing category '{category}' from archetype defaults")
-        else:
-            remaining_missing.append(category)
+            continue
+        remaining_missing.append(category)
     if remaining_missing:
         raise ValueError(f"Meal tags missing required categories: {remaining_missing}")
+
+    for category in CRITICAL_MATCH_CATEGORIES:
+        archetype_values = archetype_tags.get(category) if isinstance(archetype_tags, dict) else None
+        if not archetype_values:
+            continue
+        expected_values = archetype_values if isinstance(archetype_values, list) else [archetype_values]
+        provided = sanitized_tags.get(category, [])
+        missing_expected = [value for value in expected_values if value not in provided]
+        if missing_expected:
+            raise ValueError(f"Meal tags for '{category}' must include archetype values: {missing_expected}")
+
+    for category in multi_value_categories:
+        values = sanitized_tags.get(category) or []
+        if 0 < len(values) < 2:
+            warnings.append(f"Category '{category}' ideally includes 2+ tags; received {values}")
 
     meal["meal_tags"] = sanitized_tags
     return warnings
@@ -770,47 +892,85 @@ def write_json(path: Path, payload: Any) -> None:
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def run(args: argparse.Namespace) -> None:
-    archetypes = load_archetypes(Path(args.archetype_json))
-    archetype = find_archetype(args.archetype_uid, archetypes)
-    tags_manifest = load_tags_manifest(Path(args.tags_manifest))
-    tag_catalog = build_tag_catalog(tags_manifest)
-    tag_synonyms = load_tag_synonyms(Path(args.tag_synonyms))
-    manifest_required_categories = tags_manifest.get("required_categories", {}).get("meal", [])
-    required_categories = determine_required_categories(manifest_required_categories, archetype)
-    tags_version = tags_manifest.get("tags_version")
-    core_items, core_item_index = load_core_items(Path(args.core_items))
-    classification_index = load_classifications(Path(args.ingredient_classifications))
-    catalog = load_catalog(Path(args.catalog))
-    meals_dir = Path(args.meals_dir)
-    existing_meals = load_existing_meals(meals_dir, args.archetype_uid)
+def generate_meals_for_archetype(
+    *,
+    archetype: dict[str, Any],
+    args: argparse.Namespace,
+    scope_slug: str,
+    predefined_dir: Path,
+    curated_path: Path,
+    run_dir_root: Path,
+    allowed_core_items: list[CoreItem] | None,
+    curated_sets: dict[str, list[str]],
+    core_item_index: dict[str, CoreItem],
+    tag_catalog: dict[str, set[str]],
+    tag_synonyms: dict[str, dict[str, Any]],
+    tag_value_reference: dict[str, list[str]],
+    required_categories: Sequence[str],
+    multi_value_categories: set[str],
+    tags_version: str,
+    archetypes_summary_payload: list[dict[str, Any]],
+    classification_index: dict[str, list[dict[str, Any]]],
+    catalog: dict[str, dict[str, Any]],
+    meals_dir: Path,
+    archetype_json_path: Path,
+    curated_source_path: Path,
+) -> int:
+    archetype_uid = archetype.get("uid")
+    if not archetype_uid:
+        raise ValueError("Archetype is missing a uid")
 
-    run_dir = ensure_run_dir(Path(args.output_dir) / "runs")
+    if allowed_core_items is None:
+        allowed_core_items, missing_curated = select_allowed_core_items(
+            archetype_uid, curated_sets, core_item_index
+        )
+        if not allowed_core_items:
+            raise RuntimeError(f"Curated ingredients for {archetype_uid} produced no usable items")
+        if missing_curated:
+            preview = ", ".join(missing_curated[:5])
+            print(
+                f"[warn] {len(missing_curated)} curated ingredient(s) missing from canonical catalog "
+                f"for {archetype_uid} (showing up to 5): {preview}"
+            )
+        print(
+            f"[info] Loaded {len(allowed_core_items)} curated ingredient(s) for {archetype_uid} "
+            f"from {curated_source_path}"
+        )
+
+    existing_meals = load_existing_meals(meals_dir, scope_slug, archetype_uid)
+    run_dir = ensure_run_dir(run_dir_root)
     write_json(
         run_dir / "metadata.json",
         {
-            "archetype_uid": args.archetype_uid,
+            "predefined_scope": scope_slug,
+            "predefined_dir": str(predefined_dir),
+            "archetype_uid": archetype_uid,
             "meal_count": args.meal_count,
             "meal_model": args.meal_model,
             "product_model": args.product_model,
             "tags_version": tags_version,
+            "curated_ingredients_path": str(curated_source_path),
+            "archetype_source": str(archetype_json_path),
             "timestamp": timestamp_slug(),
         },
     )
 
-    archetypes_summary_payload = archetype_summary(archetypes)
-    run_slug = run_dir.name.replace("run_", "")
     meals_created: list[dict[str, Any]] = []
+    run_slug = run_dir.name.replace("run_", "")
 
     for meal_index in range(1, args.meal_count + 1):
-        existing_summary = summarize_existing_meals(existing_meals, args.archetype_uid, args.existing_meal_summary_count)
+        existing_summary = summarize_existing_meals(
+            existing_meals, archetype_uid, args.existing_meal_summary_count
+        )
         meal_prompt = build_meal_user_prompt(
             archetype=archetype,
             archetypes_summary=archetypes_summary_payload,
             existing_meals_summary=existing_summary,
-            allowed_core_items=core_items,
-            tags_manifest=tags_manifest,
+            allowed_core_items=allowed_core_items,
+            tags_version=tags_version,
+            tag_value_reference=tag_value_reference,
             required_categories=required_categories,
+            multi_value_categories=multi_value_categories,
             meals_requested=1,
         )
         print(f"[meal] Generating meal {meal_index}/{args.meal_count} for {archetype.get('name')}")
@@ -839,6 +999,7 @@ def run(args: argparse.Namespace) -> None:
             core_item_index=core_item_index,
             tag_synonyms=tag_synonyms,
             archetype_tags=archetype.get("core_tags") or {},
+            multi_value_categories=multi_value_categories,
         )
         if meal_warnings:
             for note in meal_warnings:
@@ -878,7 +1039,7 @@ def run(args: argparse.Namespace) -> None:
         combined_instructions = [*prep_steps, *cook_steps]
         final_record = {
             "meal_id": meal_id,
-            "archetype_uid": archetype.get("uid"),
+            "archetype_uid": archetype_uid,
             "archetype_name": archetype.get("name"),
             "name": meal_payload.get("name"),
             "description": meal_payload.get("description"),
@@ -897,15 +1058,123 @@ def run(args: argparse.Namespace) -> None:
                 "product_model": args.product_model,
                 "tags_version": tags_version,
                 "run_dir": str(run_dir),
+                "predefined_scope": scope_slug,
             },
         }
-        record_path = save_meal_record(meals_dir, args.archetype_uid, final_record)
+        record_path = save_meal_record(meals_dir, scope_slug, archetype_uid, final_record)
         existing_meals.append(final_record)
         meals_created.append({"meal_id": meal_id, "path": str(record_path)})
 
-    print(f"Created {len(meals_created)} meal(s). Latest file(s):")
-    for entry in meals_created:
-        print(f"  - {entry['meal_id']} -> {entry['path']}")
+    print(f"[info] Created {len(meals_created)} meal(s) for archetype {archetype_uid}")
+    return len(meals_created)
+
+
+def run(args: argparse.Namespace) -> None:
+    predefined_dir = Path(args.predefined_dir)
+    if not predefined_dir.exists():
+        raise FileNotFoundError(f"Predefined archetype directory not found: {predefined_dir}")
+    scope_slug = predefined_dir.name
+    archetype_json_path = Path(args.archetype_json) if args.archetype_json else predefined_dir / ARH_COMBINED_FILENAME
+    curated_path = (
+        Path(args.curated_ingredients)
+        if args.curated_ingredients
+        else predefined_dir / INGREDIENT_CURATION_SUBDIR / CURATED_INGREDIENTS_FILENAME
+    )
+
+    archetypes = load_archetypes(archetype_json_path)
+    archetype_lookup = {entry.get("uid"): entry for entry in archetypes if entry.get("uid")}
+    tags_manifest = load_tags_manifest(Path(args.tags_manifest))
+    tag_catalog = build_tag_catalog(tags_manifest)
+    required_categories = determine_required_categories(tag_catalog)
+    tag_value_reference = build_tag_value_reference(tag_catalog, required_categories)
+    tag_synonyms = load_tag_synonyms(Path(args.tag_synonyms))
+    tags_version = tags_manifest.get("tags_version")
+    multi_value_categories = {category for category in required_categories if category in MULTI_VALUE_TAG_CATEGORIES}
+
+    _, core_item_index = load_core_items(Path(args.core_items))
+    curated_sets = load_curated_ingredient_sets(curated_path)
+    classification_index = load_classifications(Path(args.ingredient_classifications))
+    catalog = load_catalog(Path(args.catalog))
+    meals_dir = Path(args.meals_dir)
+    run_dir_root = Path(args.output_dir) / "runs" / scope_slug
+    archetypes_summary_payload = archetype_summary(archetypes)
+
+    target_uid_raw = (args.archetype_uid or "").strip()
+    if not target_uid_raw:
+        raise ValueError("--archetype-uid is required (use 'all' to process every archetype in the scope)")
+    target_all = target_uid_raw.lower() == "all"
+    if target_all:
+        target_uids = sorted(archetype_lookup.keys())
+        if not target_uids:
+            raise RuntimeError(f"No archetypes discovered for scope {scope_slug}")
+        print(f"[info] Processing all {len(target_uids)} archetypes for scope {scope_slug}")
+    else:
+        target_uids = [target_uid_raw]
+
+    precomputed_allowed: list[CoreItem] | None = None
+    if not target_all:
+        precomputed_allowed, missing_curated = select_allowed_core_items(
+            target_uid_raw, curated_sets, core_item_index
+        )
+        if not precomputed_allowed:
+            raise RuntimeError(f"Curated ingredients for {target_uid_raw} produced no usable items")
+        if missing_curated:
+            preview = ", ".join(missing_curated[:5])
+            print(
+                f"[warn] {len(missing_curated)} curated ingredient(s) missing from canonical catalog "
+                f"(showing up to 5): {preview}"
+            )
+        print(
+            f"[info] Loaded {len(precomputed_allowed)} curated ingredient(s) for {target_uid_raw} "
+            f"from {curated_path}"
+        )
+
+    total_created = 0
+    failures: list[str] = []
+
+    for index, archetype_uid in enumerate(target_uids, start=1):
+        archetype = archetype_lookup.get(archetype_uid)
+        if not archetype:
+            msg = f"[warn] Archetype uid '{archetype_uid}' not found in {archetype_json_path}; skipping"
+            print(msg)
+            failures.append(msg)
+            continue
+        print(f"[info] ({index}/{len(target_uids)}) Starting generation for {archetype.get('name')} ({archetype_uid})")
+        try:
+            meals_created = generate_meals_for_archetype(
+                archetype=archetype,
+                args=args,
+                scope_slug=scope_slug,
+                predefined_dir=predefined_dir,
+                curated_path=curated_path,
+                run_dir_root=run_dir_root,
+                allowed_core_items=precomputed_allowed if not target_all else None,
+                curated_sets=curated_sets,
+                core_item_index=core_item_index,
+                tag_catalog=tag_catalog,
+                tag_synonyms=tag_synonyms,
+                tag_value_reference=tag_value_reference,
+                required_categories=required_categories,
+                multi_value_categories=multi_value_categories,
+                tags_version=tags_version,
+                archetypes_summary_payload=archetypes_summary_payload,
+                classification_index=classification_index,
+                catalog=catalog,
+                meals_dir=meals_dir,
+                archetype_json_path=archetype_json_path,
+                curated_source_path=curated_path,
+            )
+            total_created += meals_created
+        except Exception as exc:  # noqa: BLE001
+            msg = f"[error] Failed to generate meals for {archetype_uid}: {exc}"
+            print(msg)
+            failures.append(msg)
+
+    print(f"[done] Created {total_created} meal(s) across {len(target_uids)} archetype(s).")
+    if failures:
+        raise RuntimeError(
+            f"Completed with {len(failures)} failure(s). First error: {failures[0]} (see logs for details)."
+        )
 
 
 def main(argv: Sequence[str] | None = None) -> None:

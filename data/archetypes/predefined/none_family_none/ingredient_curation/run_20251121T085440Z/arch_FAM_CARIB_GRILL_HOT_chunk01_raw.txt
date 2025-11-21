@@ -1,0 +1,21 @@
+{
+  "archetype_uid": "arch_FAM_CARIB_GRILL_HOT",
+  "selected_ingredients": [
+    "allspice",
+    "apple cider vinegar",
+    "barbecue sauce",
+    "barbecue rub",
+    "basmati rice",
+    "black beans",
+    "bay leaves",
+    "black pepper",
+    "bell peppers",
+    "beef ribs",
+    "beef short ribs",
+    "beef brisket",
+    "T-bone steak",
+    "asparagus",
+    "broccoli",
+    "avocado"
+  ]
+}

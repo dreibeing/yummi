@@ -230,6 +230,7 @@ Path: `data/tags/defined_tags.json`
   - `data/tags/archetype_constraint_brief.md`
 - Offline scripts
   - `scripts/archetype_prompt_runner.py`
+  - `scripts/archetype_ingredient_curator.py`
   - `scripts/archetype_curator.py` (deprecated; retained for manual QA)
   - `scripts/predefined_archetype_aggregator.py`
   - `scripts/meal_builder.py`
@@ -258,6 +259,17 @@ Path: `data/tags/defined_tags.json`
   - Parses Excel or `;`/`,`/`\t`-delimited CSV and normalizes headers (handles BOM).
   - Creates one folder per row with slug `<col1>_<col2>_<col3>` (e.g., `none_family_none`, `halal_family_pescatarian`).
   - Writes `config.json` containing `hard_constraints` (DietaryRestrictions array includes both `col1` and non-`None` `col3`; Audience array includes `col2`), `required_subarchetype_tags`, and `source_scope` metadata.
+
+### Ingredient curation (new)
+
+- **Purpose** — Trim the canonical ingredient list (`data/ingredients/unique_core_items.csv`) to only the items each archetype is likely to use when generating meals.
+- **Runner** — `python scripts/archetype_ingredient_curator.py --predefined-dir data/archetypes/predefined/<slug> [--chunk-size 200] [--max-output-tokens 5000]`.
+  - The script slices the catalog into fixed-size chunks (default 200 items), feeds each chunk to the LLM with the target archetype description/tags, and records any ingredient the model marks as a fit.
+  - Responses are aggregated per archetype and resolved back to canonical names + `item_type` before being written.
+- **State tracking** — Progress is persisted in a single file per predefined folder: `ingredient_curation/curated_ingredients.json`.
+  - Reruns automatically skip archetype UIDs already present in that file; remove an entry (or delete the file) to force regeneration.
+  - Use `--recurate-all` to regenerate everything regardless of prior state.
+- **Artifacts** — Each run still captures prompts/responses under `ingredient_curation/run_<timestamp>/` for auditing, but only successful UIDs are added to `curated_ingredients.json`.
 - **Scoped generation** — Execute the archetype runner against a folder-specific config:
   ```powershell
   python scripts/archetype_prompt_runner.py --predefined-config data/archetypes/predefined/<slug>/config.json --archetype-count 12
@@ -265,7 +277,7 @@ Path: `data/tags/defined_tags.json`
   The runner appends a “Scope (HARD CONSTRAINTS)” block so every generated archetype respects the required Diet×Audience combination.
 - **Scoped QA (optional)** — Review `run_*/archetypes_aggregated.json` directly; the curator CLI is deprecated but remains available if you need structured keep/modify guidance.
 - **Rollup** — Run `python scripts/predefined_archetype_aggregator.py` so each scope has `archetypes_combined.json` containing every unique archetype across its runs (deduped by `uid`).
-- **Meal generation + aggregation** — Point `scripts/meal_builder.py` at the combined file to produce scoped meals, then aggregate across the folders you plan to ship.
+- **Meal generation + aggregation** — Run `scripts/meal_builder.py --predefined-dir data/archetypes/predefined/<slug> --archetype-uid <uid|all>` so the prompt receives the scope metadata, curated ingredients, and archetype tags. Meals save to `data/meals/<slug>/<archetype_uid>/` with run logs under `data/meals/runs/<slug>/`. Use `--archetype-uid all` to create one meal per UID inside the scope, then aggregate across the folders you plan to ship.
 - **Maintenance tips** — Update the sheet when adding/removing scopes; rerun the sync script (safe to execute repeatedly). Ensure diet tag values stay aligned with `defined_tags.json`; mismatches will surface later during generation.
 
 ---

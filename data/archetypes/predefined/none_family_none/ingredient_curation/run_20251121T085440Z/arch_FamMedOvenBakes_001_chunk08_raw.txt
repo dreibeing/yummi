@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_FamMedOvenBakes_001",
+  "selected_ingredients": [
+    "tomato",
+    "tomato and onion mix",
+    "tomato passata with basil",
+    "tomato pasta sauce",
+    "tomato paste",
+    "tomato puree",
+    "tomatoes",
+    "tortelloni",
+    "trinchado sauce",
+    "trout",
+    "tuna",
+    "vegetable stock",
+    "vegetables",
+    "vinegar",
+    "white sauce",
+    "white wine",
+    "whole chicken",
+    "yeast",
+    "zucchini",
+    "whipping cream"
+  ]
+}

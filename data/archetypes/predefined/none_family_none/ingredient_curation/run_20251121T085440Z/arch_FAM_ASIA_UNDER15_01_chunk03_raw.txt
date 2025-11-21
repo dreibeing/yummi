@@ -1,0 +1,30 @@
+{
+  "archetype_uid": "arch_FAM_ASIA_UNDER15_01",
+  "selected_ingredients": [
+    "cod roe",
+    "coriander",
+    "corn",
+    "cornflour",
+    "courgette",
+    "cucumber",
+    "curry powder",
+    "curry sauce",
+    "duck breast",
+    "edamame",
+    "egg noodles",
+    "eggplant",
+    "eggs",
+    "fish fillets",
+    "fish sausage",
+    "fish stock concentrate",
+    "frozen mixed vegetables",
+    "frozen vegetables",
+    "garlic",
+    "garlic flakes",
+    "garlic powder",
+    "garlic salt",
+    "garlic sauce",
+    "garlic scapes",
+    "gochujang"
+  ]
+}

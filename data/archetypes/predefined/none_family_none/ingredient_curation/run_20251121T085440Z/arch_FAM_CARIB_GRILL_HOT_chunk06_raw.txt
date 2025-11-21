@@ -1,0 +1,31 @@
+{
+  "archetype_uid": "arch_FAM_CARIB_GRILL_HOT",
+  "selected_ingredients": [
+    "pepper",
+    "pepper sauce",
+    "pimento pepper",
+    "pineapple",
+    "peas",
+    "peppers",
+    "red onion",
+    "red cabbage",
+    "red pepper",
+    "rice",
+    "rice vinegar",
+    "roti",
+    "rub",
+    "roasted garlic",
+    "pink salt",
+    "potatoes",
+    "pickled onions",
+    "pork shoulder",
+    "pork ribs",
+    "pork chops",
+    "pork belly ribs",
+    "pork skewers",
+    "pork steak",
+    "prawn skewers",
+    "plant-based burger patty",
+    "plant-based sausage links"
+  ]
+}

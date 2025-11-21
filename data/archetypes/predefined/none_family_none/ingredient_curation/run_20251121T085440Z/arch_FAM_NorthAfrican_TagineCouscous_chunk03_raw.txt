@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_FAM_NorthAfrican_TagineCouscous",
+  "selected_ingredients": [
+    "coriander",
+    "coriander seeds",
+    "courgette",
+    "couscous",
+    "crushed tomatoes",
+    "cucumber",
+    "cumin",
+    "cumin seeds",
+    "date syrup",
+    "dates",
+    "dukkah",
+    "eggplant",
+    "eggs",
+    "fennel",
+    "fennel seeds",
+    "fish fillets",
+    "fish stock concentrate",
+    "flour",
+    "garlic",
+    "garlic powder"
+  ]
+}

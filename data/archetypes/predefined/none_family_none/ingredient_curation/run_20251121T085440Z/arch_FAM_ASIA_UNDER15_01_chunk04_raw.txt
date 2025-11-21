@@ -1,0 +1,20 @@
+{
+  "archetype_uid": "arch_FAM_ASIA_UNDER15_01",
+  "selected_ingredients": [
+    "grapeseed oil",
+    "hoisin sauce",
+    "korean barbecue sauce",
+    "honey",
+    "ketchup",
+    "instant noodles",
+    "jasmine rice",
+    "ground beef",
+    "ground meat",
+    "ham",
+    "green beans",
+    "leeks",
+    "kale",
+    "lion's mane mushrooms",
+    "lemon sauce"
+  ]
+}

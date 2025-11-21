@@ -1,0 +1,27 @@
+{
+  "archetype_uid": "arch_FAM_ASIA_UNDER15_01",
+  "selected_ingredients": [
+    "salt",
+    "sunflower oil",
+    "soy sauce",
+    "tamari",
+    "teriyaki sauce",
+    "sesame oil",
+    "sesame seeds",
+    "sesame stir-fry sauce",
+    "shiitake mushrooms",
+    "spring onion",
+    "snow peas",
+    "sugar snap peas",
+    "spinach",
+    "stir-fry vegetables",
+    "sticky rice",
+    "tofu",
+    "salmon",
+    "tilapia",
+    "squid",
+    "sirloin steak",
+    "sugar",
+    "shallots"
+  ]
+}

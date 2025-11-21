@@ -1,0 +1,27 @@
+{
+  "archetype_uid": "arch_FAM_SLOW_60PLUS_LATAM",
+  "selected_ingredients": [
+    "manchego cheese",
+    "mango",
+    "maple syrup",
+    "mayonnaise",
+    "milk",
+    "minced beef",
+    "mushrooms",
+    "nuts",
+    "oat bran",
+    "oats",
+    "oil",
+    "olive oil",
+    "olives",
+    "onion powder",
+    "onions",
+    "orange",
+    "oregano",
+    "oxtail",
+    "oyster blade steak",
+    "paprika",
+    "passata",
+    "peanut butter"
+  ]
+}

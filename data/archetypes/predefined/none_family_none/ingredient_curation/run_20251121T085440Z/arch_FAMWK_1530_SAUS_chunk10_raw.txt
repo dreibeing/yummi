@@ -1,0 +1,22 @@
+{
+  "archetype_uid": "arch_FAMWK_1530_SAUS",
+  "selected_ingredients": [
+    "spinach",
+    "steak pie",
+    "sweet potato chips",
+    "sweet potato salad",
+    "tagliatelle alfredo",
+    "tomato salad",
+    "tomato soup",
+    "trout gratin",
+    "tuna pasta",
+    "vegetable and lentil meal",
+    "vegetable barley soup",
+    "vegetable medley with bechamel sauce",
+    "vegetable risotto",
+    "vegetable soup",
+    "vetkoek",
+    "whiting portions",
+    "wrap"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "archetype_uid": "arch_FamSEAsia15to30",
+  "selected_ingredients": [
+    "mange-tout",
+    "mango",
+    "massaman curry paste",
+    "microgreens",
+    "mince",
+    "minced beef",
+    "mint",
+    "mixed greens",
+    "mixed vegetables",
+    "mushroom broth",
+    "mushroom powder",
+    "mushrooms",
+    "meatballs",
+    "meat skewers",
+    "oyster blade steak",
+    "oyster mushrooms",
+    "oyster sauce",
+    "pad thai noodles",
+    "pad thai sauce",
+    "pak choi",
+    "peanut butter",
+    "peanut oil",
+    "noodles",
+    "oil",
+    "onion"
+  ]
+}

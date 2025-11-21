@@ -1,0 +1,20 @@
+{
+  "archetype_uid": "arch_FAM_SLOW_60PLUS_LATAM",
+  "selected_ingredients": [
+    "tomatoes",
+    "tomato and onion mix",
+    "tomato paste",
+    "tomato puree",
+    "tomato sauce",
+    "tortillas",
+    "whole chicken",
+    "turkey",
+    "venison",
+    "tripe",
+    "zucchini",
+    "vegetable stock",
+    "vegetables",
+    "vinegar",
+    "worcestershire sauce"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "archetype_uid": "arch_FAM_MEZZE_30to60",
+  "selected_ingredients": [
+    "brown basmati rice",
+    "bulgur",
+    "butter",
+    "butter beans",
+    "butternut squash",
+    "cabbage",
+    "calamari",
+    "canola oil",
+    "caper berries",
+    "cardamom",
+    "carrots",
+    "cayenne pepper",
+    "cauliflower",
+    "cherry tomatoes",
+    "chickpeas",
+    "chili flakes",
+    "chilies",
+    "chilli paste",
+    "chicken thigh fillets",
+    "chicken mince",
+    "chicken wings",
+    "chicken stock",
+    "chuck eye steak",
+    "cinnamon",
+    "citrus",
+    "cloves",
+    "brussels sprouts"
+  ]
+}
