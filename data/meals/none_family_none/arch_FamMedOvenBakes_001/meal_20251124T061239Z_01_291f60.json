@@ -1,0 +1,414 @@
+{
+  "meal_id": "meal_20251124T061239Z_01_291f60",
+  "archetype_uid": "arch_FamMedOvenBakes_001",
+  "archetype_name": "Family Mediterranean Oven Bakes (Italian/Spanish/Portuguese)",
+  "name": "Spanish-Portuguese Chicken and Potato Tray Bake",
+  "description": "Family-sized roasted chicken thighs with potatoes, peppers, and a mild paprika-tomato glaze. Hands-off oven bake with bright lemon and herbs.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C (425°F).",
+    "Scrub and cut potatoes into 2–3 cm chunks.",
+    "Slice bell peppers into strips and onion into wedges.",
+    "Finely chop garlic.",
+    "Zest and halve the lemon; chop parsley.",
+    "Set out a large rimmed baking tray."
+  ],
+  "cook_steps": [
+    "Warm a small pan over medium heat (StoveTop). Add olive oil, garlic, paprika, oregano, and tomato and onion mix; stir 2–3 minutes until fragrant, then remove from heat.",
+    "On the baking tray, toss potatoes, bell peppers, and onion with half the warm paprika-tomato oil and a big pinch of sea salt and pepper. Spread in an even layer.",
+    "Nestle chicken thighs skin-side up on top. Brush or spoon the remaining paprika-tomato oil over the chicken. Add lemon halves (cut-side up) to the tray.",
+    "Roast on the middle rack for 40–45 minutes, until chicken skin is crisp, juices run clear, and potatoes are tender (internal temp 75°C/167°F).",
+    "Squeeze roasted lemon over the tray, scatter parsley and lemon zest, and adjust sea salt and pepper to taste.",
+    "Rest 5 minutes, then serve straight from the tray."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C (425°F).",
+    "Scrub and cut potatoes into 2–3 cm chunks.",
+    "Slice bell peppers into strips and onion into wedges.",
+    "Finely chop garlic.",
+    "Zest and halve the lemon; chop parsley.",
+    "Set out a large rimmed baking tray.",
+    "Warm a small pan over medium heat (StoveTop). Add olive oil, garlic, paprika, oregano, and tomato and onion mix; stir 2–3 minutes until fragrant, then remove from heat.",
+    "On the baking tray, toss potatoes, bell peppers, and onion with half the warm paprika-tomato oil and a big pinch of sea salt and pepper. Spread in an even layer.",
+    "Nestle chicken thighs skin-side up on top. Brush or spoon the remaining paprika-tomato oil over the chicken. Add lemon halves (cut-side up) to the tray.",
+    "Roast on the middle rack for 40–45 minutes, until chicken skin is crisp, juices run clear, and potatoes are tender (internal temp 75°C/167°F).",
+    "Squeeze roasted lemon over the tray, scatter parsley and lemon zest, and adjust sea salt and pepper to taste.",
+    "Rest 5 minutes, then serve straight from the tray."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "6–8 pieces (about 1.2–1.4 kg)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "900 g",
+      "preparation": "cut into chunks"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 teaspoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "tomato and onion mix",
+      "quantity": "1/2 cup (120 ml)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "sea salt",
+      "quantity": "1–1.5 teaspoons, to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon, to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and halved"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Portuguese",
+      "Spanish"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [
+    {
+      "core_item_name": "chicken thighs",
+      "selected_product_id": "2083490000000",
+      "package_quantity": 1,
+      "package_notes": "Free Range Chicken Thighs Avg 1.1 kg closely matches the 1.2–1.4 kg need for 6–8 pieces; 1 pack should yield 6–8 thighs. Avoids pre-marinated option.",
+      "ingredient_line": "Free Range Chicken Thighs Avg 1.1 kg"
+    },
+    {
+      "core_item_name": "potatoes",
+      "selected_product_id": "20039240",
+      "package_quantity": 1,
+      "package_notes": "Medium Potatoes 2 kg is the most suitable raw potato option; 1 pack comfortably covers 900 g with leftovers and fits from-scratch prep.",
+      "ingredient_line": "Medium Potatoes 2 kg"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "selected_product_id": "20004224",
+      "package_quantity": 1,
+      "package_notes": "Colore Peppers 450 g typically includes 2–3 peppers; 1 pack covers 2 large peppers.",
+      "ingredient_line": "Colore Peppers 450 g"
+    },
+    {
+      "core_item_name": "onion",
+      "selected_product_id": "20008215",
+      "package_quantity": 1,
+      "package_notes": "Brown Onions 1 kg provides multiple whole onions; best match for 1 large raw onion.",
+      "ingredient_line": "Brown Onions 1 kg"
+    },
+    {
+      "core_item_name": "garlic",
+      "selected_product_id": "20008277",
+      "package_quantity": 1,
+      "package_notes": "Peeled Garlic 50 g provides fresh cloves and minimal waste; 1 pack easily covers 3 cloves.",
+      "ingredient_line": "Peeled Garlic 50 g"
+    },
+    {
+      "core_item_name": "olive oil",
+      "selected_product_id": "6009195707965",
+      "package_quantity": 1,
+      "package_notes": "Cooking Olive Oil 1 L is a neutral olive oil suitable for general cooking; avoids flavored oils.",
+      "ingredient_line": "Cooking Olive Oil 1 L"
+    },
+    {
+      "core_item_name": "paprika",
+      "selected_product_id": "6009223320937",
+      "package_quantity": 1,
+      "package_notes": "Spanish Smoked Paprika Refill 45 g offers the desired smoked profile for Iberian flavors; 1 pack more than covers 2 tsp.",
+      "ingredient_line": "Spanish Smoked Paprika Refill 45 g"
+    },
+    {
+      "core_item_name": "oregano",
+      "selected_product_id": "6009217001279",
+      "package_quantity": 1,
+      "package_notes": "Fresh Origanum 20 g suits Mediterranean tray bakes; 1 pack covers 1 tsp chopped.",
+      "ingredient_line": "Fresh Origanum 20 g"
+    },
+    {
+      "core_item_name": "tomato and onion mix",
+      "selected_product_id": "20034702",
+      "package_quantity": 1,
+      "package_notes": "Tomato and Onion Mix 410 g is the exact product; use ~120 ml and reserve the rest.",
+      "ingredient_line": "Tomato and Onion Mix 410 g"
+    },
+    {
+      "core_item_name": "sea salt",
+      "selected_product_id": "6009214702339",
+      "package_quantity": 1,
+      "package_notes": "Sea Salt in Grinder 250 g covers pantry needs and allows seasoning to taste.",
+      "ingredient_line": "Sea Salt in Grinder 250 g"
+    },
+    {
+      "core_item_name": "pepper",
+      "selected_product_id": "6009000106488",
+      "package_quantity": 1,
+      "package_notes": "White Pepper 55 g is a true ground pepper spice suitable for seasoning; the other options are fresh peppers, not the spice.",
+      "ingredient_line": "White Pepper 55 g"
+    },
+    {
+      "core_item_name": "lemon",
+      "selected_product_id": "20017880",
+      "package_quantity": 1,
+      "package_notes": "Lemons 3 pk is the smallest pack size; covers 1 lemon with minimal excess.",
+      "ingredient_line": "Lemons 3 pk"
+    },
+    {
+      "core_item_name": "parsley",
+      "selected_product_id": "20128104",
+      "package_quantity": 1,
+      "package_notes": "Fresh Italian Parsley 30 g is ample for 2 tbsp chopped and aligns with fresh herb use.",
+      "ingredient_line": "Fresh Italian Parsley 30 g"
+    }
+  ],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "6–8 pieces (about 1.2–1.4 kg)",
+      "preparation": "patted dry",
+      "selected_product": {
+        "product_id": "2083490000000",
+        "package_quantity": 1,
+        "name": "Free Range Chicken Thighs Avg 1.1 kg",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Meat-Poultry-Fish/Poultry/Chicken-Portions-Other/Free-Range-Chicken-Thighs-Avg-1-1-kg/_/A-2083490000000",
+        "sale_price": 155.24
+      },
+      "ingredient_line": "Free Range Chicken Thighs Avg 1.1 kg"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "900 g",
+      "preparation": "cut into chunks",
+      "selected_product": {
+        "product_id": "20039240",
+        "package_quantity": 1,
+        "name": "Medium Potatoes 2 kg",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Fresh-Vegetables/Potatoes-Sweet-Potatoes/Medium-Potatoes-2-kg/_/A-20039240",
+        "sale_price": 41.99
+      },
+      "ingredient_line": "Medium Potatoes 2 kg"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 large",
+      "preparation": "sliced",
+      "selected_product": {
+        "product_id": "20004224",
+        "package_quantity": 1,
+        "name": "Colore Peppers 450 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Salads-Herbs/Peppers-Chillies/Colore-Peppers-450-g/_/A-20004224",
+        "sale_price": 41.99
+      },
+      "ingredient_line": "Colore Peppers 450 g"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges",
+      "selected_product": {
+        "product_id": "20008215",
+        "package_quantity": 1,
+        "name": "Brown Onions 1 kg",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/Roast-glazed-gammon/Brown-Onions-1-kg/_/A-20008215",
+        "sale_price": 26.99
+      },
+      "ingredient_line": "Brown Onions 1 kg"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped",
+      "selected_product": {
+        "product_id": "20008277",
+        "package_quantity": 1,
+        "name": "Peeled Garlic 50 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Promotions/Buy-2-Or-More-And-Save/Buy-any-2-Save-20-/Prepared-Additions/Peeled-Garlic-50-g/_/A-20008277",
+        "sale_price": 29.99
+      },
+      "ingredient_line": "Peeled Garlic 50 g"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "",
+      "selected_product": {
+        "product_id": "6009195707965",
+        "package_quantity": 1,
+        "name": "Cooking Olive Oil 1 L",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Oils-Vinegars/Oils/Cooking-Olive-Oil-1-L/_/A-6009195707965",
+        "sale_price": 289.99
+      },
+      "ingredient_line": "Cooking Olive Oil 1 L"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 teaspoons",
+      "preparation": "",
+      "selected_product": {
+        "product_id": "6009223320937",
+        "package_quantity": 1,
+        "name": "Spanish Smoked Paprika Refill 45 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Spices/Spanish-Smoked-Paprika-Refill-45-g/_/A-6009223320937",
+        "sale_price": 25.5
+      },
+      "ingredient_line": "Spanish Smoked Paprika Refill 45 g"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": {
+        "product_id": "6009217001279",
+        "package_quantity": 1,
+        "name": "Fresh Origanum 20 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Salads-Herbs/Herbs-Sprouts-Edible-Flowers/Fresh-Origanum-20-g/_/A-6009217001279",
+        "sale_price": 14.99
+      },
+      "ingredient_line": "Fresh Origanum 20 g"
+    },
+    {
+      "core_item_name": "tomato and onion mix",
+      "quantity": "1/2 cup (120 ml)",
+      "preparation": "",
+      "selected_product": {
+        "product_id": "20034702",
+        "package_quantity": 1,
+        "name": "Tomato and Onion Mix 410 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/The-braai-life/Tomato-and-Onion-Mix-410-g/_/A-20034702",
+        "sale_price": 24.99
+      },
+      "ingredient_line": "Tomato and Onion Mix 410 g"
+    },
+    {
+      "core_item_name": "sea salt",
+      "quantity": "1–1.5 teaspoons, to taste",
+      "preparation": "",
+      "selected_product": {
+        "product_id": "6009214702339",
+        "package_quantity": 1,
+        "name": "Sea Salt in Grinder 250 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Salt-Pepper/Sea-Salt-in-Grinder-250-g/_/A-6009214702339",
+        "sale_price": 44.99
+      },
+      "ingredient_line": "Sea Salt in Grinder 250 g"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon, to taste",
+      "preparation": "",
+      "selected_product": {
+        "product_id": "6009000106488",
+        "package_quantity": 1,
+        "name": "White Pepper 55 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Spices/White-Pepper-55-g/_/A-6009000106488",
+        "sale_price": 47.99
+      },
+      "ingredient_line": "White Pepper 55 g"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and halved",
+      "selected_product": {
+        "product_id": "20017880",
+        "package_quantity": 1,
+        "name": "Lemons 3 pk",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Fresh-Fruit/ClemenGold-Oranges-Soft-Citrus/Lemons-3-pk/_/A-20017880",
+        "sale_price": 29.99
+      },
+      "ingredient_line": "Lemons 3 pk"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": {
+        "product_id": "20128104",
+        "package_quantity": 1,
+        "name": "Fresh Italian Parsley 30 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Salads-Herbs/Herbs-Sprouts-Edible-Flowers/Fresh-Italian-Parsley-30-g/_/A-20128104",
+        "sale_price": 14.99
+      },
+      "ingredient_line": "Fresh Italian Parsley 30 g"
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251124T061325Z",
+    "meal_model": "gpt-5",
+    "product_model": "gpt-5",
+    "tags_version": "2025.02.0",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251124T061239Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "completed"
+  }
+}

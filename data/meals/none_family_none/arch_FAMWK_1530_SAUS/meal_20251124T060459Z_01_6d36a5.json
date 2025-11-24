@@ -1,0 +1,293 @@
+{
+  "meal_id": "meal_20251124T060459Z_01_6d36a5",
+  "archetype_uid": "arch_FAMWK_1530_SAUS",
+  "archetype_name": "Family Weeknight Classics (SA & US)",
+  "name": "Boerewors Dogs with Chakalaka and Oven Wedges",
+  "description": "Pan-seared boerewors tucked into hot dog buns with a chakalaka-onion relish and crispy oven potato wedges. A quick South African–American family favorite.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F.",
+    "Line a baking tray with baking paper.",
+    "Spread potato wedges on the tray.",
+    "Peel and thinly slice the onion.",
+    "Split hot dog buns lengthwise (not all the way through).",
+    "Open the chakalaka can/jar and stir."
+  ],
+  "cook_steps": [
+    "Bake potato wedges for 20–25 minutes until golden, turning once halfway.",
+    "Heat oil in a large pan over medium heat.",
+    "Add boerewors and cook 12–15 minutes, turning often, until browned and cooked through (165°F/74°C).",
+    "In the last 2 minutes of baking, warm the hot dog buns on the oven rack.",
+    "In a small bowl, mix sliced onion with chakalaka to make a quick relish.",
+    "Cut boerewors into 4 bun-length pieces.",
+    "Assemble: place boerewors in buns, top with chakalaka-onion relish, and add ketchup and mustard to taste.",
+    "Serve with the oven wedges."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F.",
+    "Line a baking tray with baking paper.",
+    "Spread potato wedges on the tray.",
+    "Peel and thinly slice the onion.",
+    "Split hot dog buns lengthwise (not all the way through).",
+    "Open the chakalaka can/jar and stir.",
+    "Bake potato wedges for 20–25 minutes until golden, turning once halfway.",
+    "Heat oil in a large pan over medium heat.",
+    "Add boerewors and cook 12–15 minutes, turning often, until browned and cooked through (165°F/74°C).",
+    "In the last 2 minutes of baking, warm the hot dog buns on the oven rack.",
+    "In a small bowl, mix sliced onion with chakalaka to make a quick relish.",
+    "Cut boerewors into 4 bun-length pieces.",
+    "Assemble: place boerewors in buns, top with chakalaka-onion relish, and add ketchup and mustard to taste.",
+    "Serve with the oven wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "potato wedges",
+      "quantity": "750 g",
+      "preparation": "spread on tray"
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "1 tablespoon",
+      "preparation": "for pan"
+    },
+    {
+      "core_item_name": "boerewors",
+      "quantity": "600 g",
+      "preparation": "left as a coil"
+    },
+    {
+      "core_item_name": "hot dog buns",
+      "quantity": "4",
+      "preparation": "split"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "chakalaka",
+      "quantity": "1 cup",
+      "preparation": "stirred"
+    },
+    {
+      "core_item_name": "ketchup",
+      "quantity": "1/4 cup",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "mustard",
+      "quantity": "2 tablespoons",
+      "preparation": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [
+    {
+      "core_item_name": "potato wedges",
+      "selected_product_id": "6009000622698",
+      "package_quantity": 1,
+      "package_notes": "Exact size match to 750 g requirement; 1 pack serves 4 as specified.",
+      "ingredient_line": "Frozen Potato Wedges 750 g"
+    },
+    {
+      "core_item_name": "oil",
+      "selected_product_id": "6009189785252",
+      "package_quantity": 1,
+      "package_notes": "Only candidate; 2 L bottle covers the 1 tbsp needed plus pantry top-up.",
+      "ingredient_line": "High Heat Deep-Fry Oil 2 L"
+    },
+    {
+      "core_item_name": "boerewors",
+      "selected_product_id": "2067850000008",
+      "package_quantity": 1,
+      "package_notes": "Best size alignment; 600 g pack matches the 600 g callout and suits 4 buns.",
+      "ingredient_line": "Drakensberg Boerewors 600 g"
+    },
+    {
+      "core_item_name": "hot dog buns",
+      "selected_product_id": "6009182479738",
+      "package_quantity": 1,
+      "package_notes": "Exact pack size for 4 servings; avoids leftover rolls compared to 6-pack.",
+      "ingredient_line": "Our Ultimate Hot Dog Rolls 4 pk"
+    },
+    {
+      "core_item_name": "onion",
+      "selected_product_id": "20008215",
+      "package_quantity": 1,
+      "package_notes": "Fresh onion required for slicing; 1 kg bag is the smallest fresh option among candidates.",
+      "ingredient_line": "Brown Onions 1 kg"
+    },
+    {
+      "core_item_name": "chakalaka",
+      "selected_product_id": "6009101984787",
+      "package_quantity": 1,
+      "package_notes": "Mild 400 g can covers ~1 cup (about 250 g) with leftovers; aligns with mild family profile.",
+      "ingredient_line": "Mild Chakalaka  400 g"
+    },
+    {
+      "core_item_name": "ketchup",
+      "selected_product_id": "8696362804732",
+      "package_quantity": 1,
+      "package_notes": "Standard tomato ketchup, 570 g bottle suits family use; better fit than flavored variant.",
+      "ingredient_line": "Heinz Tomato Ketchup 570 g"
+    },
+    {
+      "core_item_name": "mustard",
+      "selected_product_id": "20119126",
+      "package_quantity": 1,
+      "package_notes": "Mild mustard suits family-friendly profile and quantity needed; 225 g jar ample.",
+      "ingredient_line": "Mild Mustard 225 g"
+    }
+  ],
+  "final_ingredients": [
+    {
+      "core_item_name": "potato wedges",
+      "quantity": "750 g",
+      "preparation": "spread on tray",
+      "selected_product": {
+        "product_id": "6009000622698",
+        "package_quantity": 1,
+        "name": "Frozen Potato Wedges 750 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Frozen-Food/Frozen-Potato-Wedges-750-g/_/A-6009000622698",
+        "sale_price": 97.99
+      },
+      "ingredient_line": "Frozen Potato Wedges 750 g"
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "1 tablespoon",
+      "preparation": "for pan",
+      "selected_product": {
+        "product_id": "6009189785252",
+        "package_quantity": 1,
+        "name": "High Heat Deep-Fry Oil 2 L",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Food-Basket/Banners/Bulk-Shopping-Items/High-Heat-Deep-Fry-Oil-2-L/_/A-6009189785252",
+        "sale_price": 121.99
+      },
+      "ingredient_line": "High Heat Deep-Fry Oil 2 L"
+    },
+    {
+      "core_item_name": "boerewors",
+      "quantity": "600 g",
+      "preparation": "left as a coil",
+      "selected_product": {
+        "product_id": "2067850000008",
+        "package_quantity": 1,
+        "name": "Drakensberg Boerewors 600 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Meat-Poultry-Fish/Boerewors-Sausages/Drakensberg-Boerewors-600-g/_/A-2067850000008",
+        "sale_price": 83.99
+      },
+      "ingredient_line": "Drakensberg Boerewors 600 g"
+    },
+    {
+      "core_item_name": "hot dog buns",
+      "quantity": "4",
+      "preparation": "split",
+      "selected_product": {
+        "product_id": "6009182479738",
+        "package_quantity": 1,
+        "name": "Our Ultimate Hot Dog Rolls 4 pk",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Bakery/Bread-Rolls/Rolls/White-Rolls/Our-Ultimate-Hot-Dog-Rolls-4-pk/_/A-6009182479738",
+        "sale_price": 36.99
+      },
+      "ingredient_line": "Our Ultimate Hot Dog Rolls 4 pk"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": {
+        "product_id": "20008215",
+        "package_quantity": 1,
+        "name": "Brown Onions 1 kg",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/Roast-glazed-gammon/Brown-Onions-1-kg/_/A-20008215",
+        "sale_price": 26.99
+      },
+      "ingredient_line": "Brown Onions 1 kg"
+    },
+    {
+      "core_item_name": "chakalaka",
+      "quantity": "1 cup",
+      "preparation": "stirred",
+      "selected_product": {
+        "product_id": "6009101984787",
+        "package_quantity": 1,
+        "name": "Mild Chakalaka  400 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/Cheesy-chakalaka-braaibroodjies/Mild-Chakalaka-400-g/_/A-6009101984787",
+        "sale_price": 28.99
+      },
+      "ingredient_line": "Mild Chakalaka  400 g"
+    },
+    {
+      "core_item_name": "ketchup",
+      "quantity": "1/4 cup",
+      "preparation": "to taste",
+      "selected_product": {
+        "product_id": "8696362804732",
+        "package_quantity": 1,
+        "name": "Heinz Tomato Ketchup 570 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Condiments-Sauces-Pastes/Condiments/Tomato-Everyday-Sauces/Heinz-Tomato-Ketchup-570-g/_/A-8696362804732",
+        "sale_price": 59.99
+      },
+      "ingredient_line": "Heinz Tomato Ketchup 570 g"
+    },
+    {
+      "core_item_name": "mustard",
+      "quantity": "2 tablespoons",
+      "preparation": "to taste",
+      "selected_product": {
+        "product_id": "20119126",
+        "package_quantity": 1,
+        "name": "Mild Mustard 225 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Content/Hot-dogs-with-all-the-toppings/Mild-Mustard-225-g/_/A-20119126",
+        "sale_price": 42.99
+      },
+      "ingredient_line": "Mild Mustard 225 g"
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251124T060540Z",
+    "meal_model": "gpt-5",
+    "product_model": "gpt-5",
+    "tags_version": "2025.02.0",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251124T060459Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "completed"
+  }
+}

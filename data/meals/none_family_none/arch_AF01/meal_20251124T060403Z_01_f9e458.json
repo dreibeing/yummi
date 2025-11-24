@@ -1,0 +1,211 @@
+{
+  "meal_id": "meal_20251124T060403Z_01_f9e458",
+  "archetype_uid": "arch_AF01",
+  "archetype_name": "Family AirFryer Weeknight Wins",
+  "name": "BBQ Chicken Strip Wraps with Slaw & Corn",
+  "description": "Fast, kid‑friendly BBQ chicken wraps using the air fryer with crunchy slaw and sweet corn. Minimal prep and quick assembly for weeknights.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat air fryer to 200°C/390°F.",
+    "Set out 8 tortilla wraps on a board or plate.",
+    "Place slaw in a bowl and have barbecue sauce ready.",
+    "Rinse and drain corn; pat dry with a paper towel.",
+    "Have a microwave-safe plate ready for warming wraps."
+  ],
+  "cook_steps": [
+    "Air-fry chicken strips in a single layer for 6–8 minutes until hot and crisp, shaking halfway.",
+    "Microwave tortilla wraps (stacked and covered with a damp paper towel) for 20–30 seconds to soften.",
+    "Assemble wraps: add a handful of slaw, a few chicken strips, and spoonfuls of corn to each wrap.",
+    "Drizzle barbecue sauce over the filling.",
+    "Roll and serve immediately; add extra sauce on the side if desired."
+  ],
+  "instructions": [
+    "Preheat air fryer to 200°C/390°F.",
+    "Set out 8 tortilla wraps on a board or plate.",
+    "Place slaw in a bowl and have barbecue sauce ready.",
+    "Rinse and drain corn; pat dry with a paper towel.",
+    "Have a microwave-safe plate ready for warming wraps.",
+    "Air-fry chicken strips in a single layer for 6–8 minutes until hot and crisp, shaking halfway.",
+    "Microwave tortilla wraps (stacked and covered with a damp paper towel) for 20–30 seconds to soften.",
+    "Assemble wraps: add a handful of slaw, a few chicken strips, and spoonfuls of corn to each wrap.",
+    "Drizzle barbecue sauce over the filling.",
+    "Roll and serve immediately; add extra sauce on the side if desired."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken strips",
+      "quantity": "600 g",
+      "preparation": "air-fry from chilled/frozen per pack"
+    },
+    {
+      "core_item_name": "tortilla wraps",
+      "quantity": "8 small wraps",
+      "preparation": "warm to soften"
+    },
+    {
+      "core_item_name": "slaw",
+      "quantity": "300 g",
+      "preparation": "ready to use"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "2 cups kernels",
+      "preparation": "rinse and drain"
+    },
+    {
+      "core_item_name": "barbecue sauce",
+      "quantity": "1/2 cup",
+      "preparation": "for drizzling"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild",
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ],
+    "Equipment": [
+      "AirFryer",
+      "Microwave"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [
+    {
+      "core_item_name": "chicken strips",
+      "selected_product_id": "6009195948757",
+      "package_quantity": 2,
+      "package_notes": "Needs ~600 g for 4 servings; two 400 g packs (800 g total) slightly overshoot but are closer and better value than the 18-pack specialty flavour.",
+      "ingredient_line": "Frozen Crispy Chicken Breast Strips 400 g"
+    },
+    {
+      "core_item_name": "tortilla wraps",
+      "selected_product_id": "6009184329970",
+      "package_quantity": 2,
+      "package_notes": "Recipe calls for 8 small wraps; only 6-pack available, so two packs provide 12 wraps to cover 8 with a few extra.",
+      "ingredient_line": "White Tortilla Wraps 6 pk"
+    },
+    {
+      "core_item_name": "slaw",
+      "selected_product_id": "6009178510261",
+      "package_quantity": 1,
+      "package_notes": "Target is 300 g; the Rainbow Slaw 300 g matches exactly and is the most economical fit.",
+      "ingredient_line": "Rainbow Slaw 300 g"
+    },
+    {
+      "core_item_name": "corn",
+      "selected_product_id": "6009214503714",
+      "package_quantity": 1,
+      "package_notes": "Needs about 2 cups kernels (~300 g); the 500 g frozen roasted corn mix provides the right format and easy prep with some extra.",
+      "ingredient_line": "Frozen Roasted Mexican-Style Corn Mix 500 g"
+    },
+    {
+      "core_item_name": "barbecue sauce",
+      "selected_product_id": "6009226417160",
+      "package_quantity": 1,
+      "package_notes": "Requires ~120 ml; a 180 ml bottle covers the need with a little extra for serving.",
+      "ingredient_line": "Asian Korean Style BBQ Sauce 180 ml"
+    }
+  ],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken strips",
+      "quantity": "600 g",
+      "preparation": "air-fry from chilled/frozen per pack",
+      "selected_product": {
+        "product_id": "6009195948757",
+        "package_quantity": 2,
+        "name": "Frozen Crispy Chicken Breast Strips 400 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Frozen-Food/Poultry/Frozen-Crispy-Chicken-Breast-Strips-400-g/_/A-6009195948757",
+        "sale_price": 92.99
+      },
+      "ingredient_line": "Frozen Crispy Chicken Breast Strips 400 g"
+    },
+    {
+      "core_item_name": "tortilla wraps",
+      "quantity": "8 small wraps",
+      "preparation": "warm to soften",
+      "selected_product": {
+        "product_id": "6009184329970",
+        "package_quantity": 2,
+        "name": "White Tortilla Wraps 6 pk",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Bakery/Wraps-Naan-Pitas-Bagels/White-Tortilla-Wraps-6-pk/_/A-6009184329970",
+        "sale_price": 36.99
+      },
+      "ingredient_line": "White Tortilla Wraps 6 pk"
+    },
+    {
+      "core_item_name": "slaw",
+      "quantity": "300 g",
+      "preparation": "ready to use",
+      "selected_product": {
+        "product_id": "6009178510261",
+        "package_quantity": 1,
+        "name": "Rainbow Slaw 300 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Salads-Herbs/Prepared-Salads/Rainbow-Slaw-300-g/_/A-6009178510261",
+        "sale_price": 26.99
+      },
+      "ingredient_line": "Rainbow Slaw 300 g"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "2 cups kernels",
+      "preparation": "rinse and drain",
+      "selected_product": {
+        "product_id": "6009214503714",
+        "package_quantity": 1,
+        "name": "Frozen Roasted Mexican-Style Corn Mix 500 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Frozen-Food/Vegetables/Frozen-Roasted-Mexican-Style-Corn-Mix-500-g/_/A-6009214503714",
+        "sale_price": 64.99
+      },
+      "ingredient_line": "Frozen Roasted Mexican-Style Corn Mix 500 g"
+    },
+    {
+      "core_item_name": "barbecue sauce",
+      "quantity": "1/2 cup",
+      "preparation": "for drizzling",
+      "selected_product": {
+        "product_id": "6009226417160",
+        "package_quantity": 1,
+        "name": "Asian Korean Style BBQ Sauce 180 ml",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Condiments-Sauces-Pastes/Condiments/Global-Sauces/Asian-Korean-Style-BBQ-Sauce-180-ml/_/A-6009226417160",
+        "sale_price": 56.99
+      },
+      "ingredient_line": "Asian Korean Style BBQ Sauce 180 ml"
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251124T060450Z",
+    "meal_model": "gpt-5",
+    "product_model": "gpt-5",
+    "tags_version": "2025.02.0",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251124T060403Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "completed"
+  }
+}

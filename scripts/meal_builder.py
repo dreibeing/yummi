@@ -568,6 +568,7 @@ def build_meal_user_prompt(
         Task: Generate {meals_requested} new meal(s) for the target archetype (see JSON below).
         Hard requirements:
         - Use only the curated ingredients listed under "Allowed core items"; do not introduce items that are not listed.
+        - Every ingredient must remain individually shoppable: keep `core_item_name` identical to the curated list entry that inspired it so the downstream allocator can attach a product SKU. If a recipe concept requires ingredients beyond the allowed list, pick a different concept that fits.
         - The meal must explicitly satisfy the archetype's DietaryRestrictions and Audience tags; include those exact values in `meal_tags`.
         - Serve the household described by the archetype (Audience) and keep effort aligned to its Complexity tag (simpler households need simpler instructions).
         - Provide servings guidance (e.g., "Serves 4" or "Single portion").
@@ -774,6 +775,7 @@ def build_product_system_prompt() -> str:
     return dedent(
         """
         You are a Woolworths product specialist. Given meal ingredients and SKU options, pick the best product and package count.
+        Every ingredient must map to a SKU whenever candidates exist—missing links block the meal from shipping.
         Always emit valid JSON and do not rewrite cooking instructions.
         """
     ).strip()
@@ -813,7 +815,8 @@ def build_product_user_prompt(
     return dedent(
         f"""
         Task: For each ingredient, choose the best Woolworths SKU (from candidates) and suggest how many retail packs are needed.
-        Use servings + archetype context to keep quantities realistic. If no candidate fits, set selected_product_id to null and explain in package_notes.
+        Use servings + archetype context to keep quantities realistic. If candidates are provided, you MUST choose one of them (even if it slightly overshoots quantity) and justify the pick—never return null when at least one candidate exists.
+        Only when no candidates are supplied may you set `selected_product_id` to null, and those notes must begin with `MISSING_SKU:` so the pipeline can flag the meal for removal.
         Do NOT rewrite the instructions or mention retailer names in the method; only provide product matches.
 
         Archetype snapshot:
@@ -1075,7 +1078,26 @@ def generate_meals_for_archetype(
 
         base_record["product_matches"] = matches
         base_record["final_ingredients"] = final_ingredients
-        base_record["metadata"]["product_selection_status"] = "completed"
+        missing_product_links = sorted(
+            ingredient.get("core_item_name")
+            for ingredient in final_ingredients
+            if not (
+                ingredient.get("selected_product")
+                and ingredient["selected_product"].get("product_id")
+            )
+        )
+        if missing_product_links:
+            note = (
+                "Missing product matches for: "
+                + ", ".join(item for item in missing_product_links if item)
+            )
+            print(f"[warn] {note}")
+            base_record.setdefault("warnings", []).append(note)
+            base_record["metadata"]["product_selection_status"] = "incomplete_missing_products"
+            base_record["metadata"]["missing_product_links"] = missing_product_links
+        else:
+            base_record["metadata"]["product_selection_status"] = "completed"
+            base_record["metadata"].pop("missing_product_links", None)
         base_record["metadata"].pop("product_selection_error", None)
         record_path = save_meal_record(meals_dir, scope_slug, archetype_uid, base_record)
         existing_meals.append(base_record)

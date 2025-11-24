@@ -6,12 +6,15 @@ Automates per-archetype meal generation + SKU selection using GPT-5. Each run re
 - Requires a predefined scope directory (`--predefined-dir data/archetypes/predefined/<slug>`) so the prompt can load both `archetypes_combined.json` and the scope’s curated ingredient pool.
 - Enforces canonical ingredient usage (`core_item_name` must exist in `data/ingredients/unique_core_items.csv`).
 - Automatically pulls the curated ingredient list for the target archetype (from `<scope>/ingredient_curation/curated_ingredients.json`) and refuses to generate meals if the UID lacks an ingredient pool.
+- Recipe prompts now keep `core_item_name` identical to the curated entry so every ingredient can be mapped back to a classified product; if a concept requires out-of-scope items, the run aborts rather than inventing new ingredients.
 - Summaries of prior meals feed the prompt to avoid duplicates (lightweight: name + highlight + top ingredients).
 - Instructions require two lists: `prep_steps` (mise en place) and `cook_steps` (execution). Combined `instructions` is stored for backward compatibility.
 - Brand references stay out of instructions; product names only surface in `product_matches`/`final_ingredients`.
 - Optional tag values (Equipment/NutritionFocus/etc.) are normalized via `data/tags/tag_synonyms.json`. Unknown values are dropped with warnings.
 - Required tag categories fall back to archetype defaults; if `Allergens` is empty, heuristics infer likely allergens from ingredient text before failing the build.
-- The meal JSON is written immediately after a successful recipe call (before SKU selection). Metadata tracks `product_selection_status` (`pending`, `completed`, or `failed`) plus any LLM error message so you can rerun SKU matching later.
+- The meal JSON is written immediately after a successful recipe call (before SKU selection). Metadata tracks `product_selection_status` (`pending`, `completed`, `incomplete_missing_products`, or `failed`) plus any LLM error message so you can rerun SKU matching later.
+- SKU selection MUST pick one of the provided candidates when they exist; the selector only emits `selected_product_id = null` when no candidates were passed in, and those notes start with `MISSING_SKU:` so QA can remove/regenerate that meal.
+- Post-selection validation inspects `final_ingredients`; if any ingredient still lacks a `selected_product.product_id`, the meal is tagged with `incomplete_missing_products` and records which core items failed so they can be deleted or rerun.
 - Outputs are appended as individual JSON files so meals can be reviewed/deleted without editing a monolithic manifest. Raw prompts/responses land under `data/meals/runs/<scope>/run_<timestamp>/`.
 
 ## Prerequisites

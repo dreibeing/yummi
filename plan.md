@@ -46,10 +46,9 @@ Produce a validated archetype repository that satisfies the contracts in `yummi_
 - Updated roadmap entry noting the deployed `tags_version` and `refresh_version`.
 
 ## Immediate Next Actions
-1. Productize the persisted feed: expose `/v1/recommendations/feed` history from the stored `latest_recommendation_*` fields, define retention/overwrite policy, and document the retrieval contract so other clients can hydrate their home screens without another LLM call.
-2. Integrate the stored recommendations into the thin-slice home experience: decide how the persisted meal IDs populate the post-onboarding feed, add refresh controls, and ensure caching/invalidation guidance exists for the Expo client + extension.
-3. Run `python scripts/predefined_archetype_aggregator.py` so every scope has `archetypes_combined.json`, then generate meals via `scripts/meal_builder.py --predefined-dir data/archetypes/predefined/<slug> --archetype-uid <uid|all>` (the `all` sentinel creates one meal per UID in that scope). Finish by rerunning `scripts/meal_aggregate_builder.py` so `/v1/meals*` exposes the refreshed portfolio before product QA begins.
-4. Install `pyarrow` and rerun `scripts/meal_aggregate_builder.py` with Parquet output + checksum logging so Step 6 artifacts satisfy the publication contract (JSON + analytics Parquet + release note).
-5. Review any historical curator recommendations before the next generation run and incorporate changes manually if they are still relevant (no curator rerun required).
-6. Hook the thin-slice app + extension to `/v1/meals` and `/v1/meals/{uid}`, add caching/invalidation guidance, and confirm an end-to-end thin-slice journey uses the hosted manifest.
-7. Review `data/ingredients/unique_core_items.csv` with product/culinary leads, lock a `canonical_ingredients` schema/version, and feed that list into the upcoming meal-generation prompt so recipes reference normalized ingredient IDs instead of retailer SKUs.
+1. After each manifest refresh (latest `meals_20251124T072500Z`), kick off exploration + recommendation runs to repopulate `latest_recommendation_*` fields so `/v1/preferences` returns hydrated meals for existing users; document the reset flow for ops.
+2. Finish hardening the Expo onboarding: now that `BASE_PREFERENCE_CATEGORIES` uses the canonical tag IDs, retest the full preference wizard + exploration/recommendation pipeline and capture screenshots/runbook updates for support.
+3. Expand meal coverage beyond `none_family_none`: rerun `scripts/predefined_archetype_aggregator.py` per scope, generate meals, and rebuild the manifest so `/v1/meals*` exposes every archetype slated for launch.
+4. Install `pyarrow` locally/CI and rerun `scripts/meal_aggregate_builder.py` to emit the Parquet companion + checksum so Step 6 artifacts satisfy the publication contract.
+5. Review any historical curator recommendations before the next generation wave and incorporate still-relevant changes (no curator rerun required).
+6. Review `data/ingredients/unique_core_items.csv` with product/culinary leads, lock a `canonical_ingredients` schema/version, and feed that list into the next meal-generation prompt so recipes reference normalized ingredient IDs instead of retailer SKUs.

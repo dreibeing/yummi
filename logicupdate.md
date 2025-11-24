@@ -249,6 +249,7 @@ Path: `data/tags/defined_tags.json`
   - `yummi-server/app/schemas.py`
 - App (Expo)
   - `thin-slice-app/App.js` → `PREFERENCES_TAGS_VERSION`, `BASE_PREFERENCE_CATEGORIES`, flows for `/v1/preferences`, `/v1/recommendations/*`, `/v1/meals*`.
+  - Preference UI now uses the canonical category IDs (`DietaryRestrictions`, `Cuisine`, `PrepTime`, etc.) and tag IDs straight from `defined_tags.json`, so onboarding responses map 1:1 with the backend manifest.
 
 ---
 

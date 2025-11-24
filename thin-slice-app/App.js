@@ -257,50 +257,46 @@ const RECOMMENDATION_API_ENDPOINT = API_BASE_URL
   : null;
 const BASE_PREFERENCE_CATEGORIES = [
   {
-    id: "diet",
-    title: "Diet Preferences",
-    description: "Tell us which dietary patterns match your household.",
+    id: "DietaryRestrictions",
+    title: "Diet & Ethics",
+    description: "Tell us which dietary guardrails apply to your household.",
     tags: [
-      { id: "diet_omnivore", label: "Omnivore" },
-      { id: "diet_flex", label: "Flexitarian" },
-      { id: "diet_veg", label: "Vegetarian" },
-      { id: "diet_vegan", label: "Vegan" },
-      { id: "diet_pesc", label: "Pescatarian" },
-      { id: "diet_poultry", label: "Poultry only" },
-      { id: "diet_lowcarb", label: "Low carb" },
-      { id: "diet_keto", label: "Keto" },
-      { id: "diet_glutenaware", label: "Gluten aware" },
-      { id: "diet_highprotein", label: "High protein" },
+      { id: "dietres_none", label: "No restrictions" },
+      { id: "dietres_vegan", label: "Vegan" },
+      { id: "dietres_vegetarian", label: "Vegetarian" },
+      { id: "dietres_pescatarian", label: "Pescatarian" },
+      { id: "dietres_halal", label: "Halal" },
+      { id: "dietres_kosher", label: "Kosher" },
     ],
   },
   {
-    id: "cuisine",
+    id: "Cuisine",
     title: "Cuisine Types",
     description: "Highlight the cuisines you’re most excited about.",
     tags: [
       { id: "cuisine_southaf", label: "South African" },
       { id: "cuisine_american", label: "American" },
+      { id: "cuisine_mexican", label: "Mexican" },
       { id: "cuisine_caribbean", label: "Caribbean" },
-      { id: "cuisine_chinese", label: "Chinese" },
+      { id: "cuisine_latin", label: "Latin American" },
+      { id: "cuisine_italian", label: "Italian" },
       { id: "cuisine_french", label: "French" },
       { id: "cuisine_greek", label: "Greek" },
-      { id: "cuisine_indian", label: "Indian" },
-      { id: "cuisine_italian", label: "Italian" },
-      { id: "cuisine_japanese", label: "Japanese" },
-      { id: "cuisine_korean", label: "Korean" },
-      { id: "cuisine_latin", label: "Latin American" },
-      { id: "cuisine_mexican", label: "Mexican" },
+      { id: "cuisine_turkish", label: "Turkish" },
       { id: "cuisine_mideast", label: "Middle Eastern" },
       { id: "cuisine_northaf", label: "North African" },
+      { id: "cuisine_indian", label: "Indian" },
+      { id: "cuisine_chinese", label: "Chinese" },
+      { id: "cuisine_japanese", label: "Japanese" },
+      { id: "cuisine_korean", label: "Korean" },
+      { id: "cuisine_thai", label: "Thai" },
+      { id: "cuisine_vietnamese", label: "Vietnamese" },
       { id: "cuisine_portuguese", label: "Portuguese" },
       { id: "cuisine_spanish", label: "Spanish" },
-      { id: "cuisine_thai", label: "Thai" },
-      { id: "cuisine_turkish", label: "Turkish" },
-      { id: "cuisine_vietnamese", label: "Vietnamese" },
     ],
   },
   {
-    id: "prepTime",
+    id: "PrepTime",
     title: "Hands-On Time",
     description: "How much hands-on time works for your routine?",
     tags: [
@@ -311,7 +307,7 @@ const BASE_PREFERENCE_CATEGORIES = [
     ],
   },
   {
-    id: "complexity",
+    id: "Complexity",
     title: "Skill & Complexity",
     description: "Match recipe difficulty to your comfort level.",
     tags: [
@@ -322,7 +318,7 @@ const BASE_PREFERENCE_CATEGORIES = [
     ],
   },
   {
-    id: "heatSpice",
+    id: "HeatSpice",
     title: "Heat & Spice",
     description: "Set your tolerance for spice and heat.",
     tags: [
@@ -334,7 +330,7 @@ const BASE_PREFERENCE_CATEGORIES = [
     ],
   },
   {
-    id: "audience",
+    id: "Audience",
     title: "Who Are We Feeding?",
     description: "Help us scale portions and vibes to your audience.",
     tags: [
@@ -346,77 +342,67 @@ const BASE_PREFERENCE_CATEGORIES = [
     ],
   },
   {
-    id: "budgetLevel",
-    title: "Budget & Ingredients",
-    description: "Set the ingredient spend you’re comfortable with.",
-    tags: [
-      { id: "budget_value", label: "Value staples" },
-      { id: "budget_affordable", label: "Affordable" },
-      { id: "budget_balanced", label: "Balanced mix" },
-      { id: "budget_premium", label: "Premium occasions" },
-      { id: "budget_luxury", label: "Luxury experience" },
-    ],
-  },
-  {
-    id: "ethics",
-    title: "Ethics & Religious Needs",
-    description: "Respect cultural or ethical guardrails every time.",
-    tags: [
-      { id: "ethics_halal", label: "Halal" },
-      { id: "ethics_kosher", label: "Kosher-style" },
-      { id: "ethics_jain", label: "Jain-friendly" },
-      { id: "ethics_sussea", label: "Sustainable seafood" },
-      { id: "ethics_animal", label: "Animal welfare" },
-    ],
-  },
-  {
-    id: "allergens",
+    id: "Allergens",
     title: "Avoidances & Allergens",
     description: "Flag anything that must stay out of your kitchen.",
     tags: [
-      { id: "allergen_gluten", label: "Gluten" },
+      { id: "allergen_none", label: "No allergen avoidance" },
       { id: "allergen_dairy", label: "Dairy" },
       { id: "allergen_egg", label: "Eggs" },
+      { id: "allergen_gluten", label: "Gluten" },
       { id: "allergen_soy", label: "Soy" },
-      { id: "allergen_peanut", label: "Peanuts" },
-      { id: "allergen_treenut", label: "Tree nuts" },
-      { id: "allergen_shellfish", label: "Shellfish" },
-      { id: "allergen_fish", label: "Fish" },
+      { id: "allergen_nuts", label: "Nuts" },
+      { id: "allergen_seafood", label: "Seafood" },
       { id: "allergen_sesame", label: "Sesame" },
-      { id: "allergen_mustard", label: "Mustard" },
     ],
   },
   {
-    id: "nutritionFocus",
+    id: "NutritionFocus",
     title: "Nutrition Focus",
     description: "Call out wellness goals we should optimize for.",
     tags: [
       { id: "nutrition_highprotein", label: "High protein" },
-      { id: "nutrition_lowcal", label: "Low calorie" },
-      { id: "nutrition_heart", label: "Heart healthy" },
-      { id: "nutrition_fiber", label: "High fiber" },
-      { id: "nutrition_diabetic", label: "Diabetic-friendly" },
-      { id: "nutrition_immune", label: "Immune support" },
+      { id: "nutrition_lowcalorie", label: "Low calorie" },
+      { id: "nutrition_lowcarb", label: "Low carb" },
+      { id: "nutrition_keto", label: "Keto" },
+      { id: "nutrition_lowfat", label: "Low fat" },
+      { id: "nutrition_lowsodium", label: "Low sodium" },
+      { id: "nutrition_highfiber", label: "High fiber" },
     ],
   },
   {
-    id: "equipment",
+    id: "Equipment",
     title: "Equipment",
     description: "Let us know what gear is fair game.",
     tags: [
-      { id: "equip_none", label: "No special gear" },
       { id: "equip_oven", label: "Oven" },
-      { id: "equip_instantpot", label: "Instant Pot / pressure cooker" },
-      { id: "equip_slowcooker", label: "Slow cooker" },
+      {
+        id: "equip_countertop_cooker",
+        label: "Slow/pressure cooker",
+      },
       { id: "equip_airfryer", label: "Air fryer" },
-      { id: "equip_blender", label: "Blender" },
+      { id: "equip_microwave", label: "Microwave" },
+      { id: "equip_stove", label: "Stovetop" },
       { id: "equip_grill", label: "Outdoor grill" },
+    ],
+  },
+  {
+    id: "MealComponentPreference",
+    title: "Meal Components",
+    description: "Tell us how scratch-made or ready we should go.",
+    tags: [
+      { id: "mealcomp_fromscratch", label: "From scratch" },
+      { id: "mealcomp_semiprepared", label: "Semi-prepared" },
+      {
+        id: "mealcomp_readymeal",
+        label: "Ready-meal preferred",
+      },
     ],
   },
 ];
 
 // Controls the order of preference categories in the UI while keeping the full metadata above.
-const PREFERENCE_CATEGORY_ORDER = ["audience", "prepTime", "complexity"];
+const PREFERENCE_CATEGORY_ORDER = ["Audience", "PrepTime", "Complexity"];
 const ORDERED_PREFERENCE_CATEGORIES = [
   ...PREFERENCE_CATEGORY_ORDER.map((categoryId) =>
     BASE_PREFERENCE_CATEGORIES.find((category) => category.id === categoryId)
@@ -425,7 +411,7 @@ const ORDERED_PREFERENCE_CATEGORIES = [
     (category) => !PREFERENCE_CATEGORY_ORDER.includes(category.id)
   ),
 ].filter(Boolean);
-const SINGLE_SELECT_PREFERENCE_CATEGORY_IDS = new Set(["audience"]);
+const SINGLE_SELECT_PREFERENCE_CATEGORY_IDS = new Set(["Audience"]);
 const isSingleSelectPreferenceCategory = (categoryId) =>
   SINGLE_SELECT_PREFERENCE_CATEGORY_IDS.has(categoryId);
 
@@ -482,12 +468,12 @@ const formatListForNotice = (items) => {
 
 const derivePreferenceNotices = (responses = {}) => {
   const notices = [];
-  const dietSelections = responses.diet ?? {};
-  const allergenSelections = responses.allergens ?? {};
+  const dietSelections = responses.DietaryRestrictions ?? {};
+  const allergenSelections = responses.Allergens ?? {};
 
-  if (dietSelections.diet_vegan === "like") {
+  if (dietSelections.dietres_vegan === "like") {
     notices.push("We’ll tailor meal ideas to stay fully vegan.");
-  } else if (dietSelections.diet_veg === "like") {
+  } else if (dietSelections.dietres_vegetarian === "like") {
     notices.push("We’ll lean into vegetarian-friendly meal ideas.");
   }
 

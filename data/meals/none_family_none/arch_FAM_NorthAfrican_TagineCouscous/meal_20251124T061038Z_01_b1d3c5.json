@@ -1,0 +1,501 @@
+{
+  "meal_id": "meal_20251124T061038Z_01_b1d3c5",
+  "archetype_uid": "arch_FAM_NorthAfrican_TagineCouscous",
+  "archetype_name": "Family North African Tagine & Couscous Nights",
+  "name": "Chermoula Tilapia with Tomato-Olive Brown Rice",
+  "description": "Baked tilapia in bright chermoula served over spiced brown basmati rice with tomatoes and olives, plus quick green beans on the side.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 200°C (390°F).",
+    "Rinse 1.5 cups brown basmati rice until water runs clear; drain well.",
+    "Finely chop 1 medium onion.",
+    "Dice 3 medium tomatoes.",
+    "Roughly chop 1/2 cup olives.",
+    "Mince 2 cloves garlic.",
+    "Trim 300 g green beans.",
+    "Chop a small handful of parsley.",
+    "Pat dry 4 tilapia fillets; season both sides lightly with salt and black pepper.",
+    "Zest then halve 1 lemon."
+  ],
+  "cook_steps": [
+    "Start rice: Heat 1 tablespoon olive oil in a medium pot over medium heat. Add chopped onion and cook 3–4 minutes until translucent.",
+    "Stir in 1 teaspoon cumin and 1 teaspoon paprika for 30 seconds. Add rinsed rice and toast 1 minute.",
+    "Pour in 3 cups vegetable stock and 1/2 teaspoon salt. Bring to a boil, then reduce to low, cover, and simmer 30–35 minutes until tender.",
+    "Bake fish: In a small bowl, mix 2 tablespoons chermoula with 1 tablespoon olive oil and the juice of half the lemon. Brush over tilapia on a lined tray. Bake 10–12 minutes until the fish flakes easily.",
+    "Green beans: While fish bakes, heat 1 teaspoon olive oil in a skillet over medium-high. Add green beans and a pinch of salt; cook 4–5 minutes until crisp-tender, tossing once. Add half the minced garlic in the last 30 seconds; toss and remove from heat.",
+    "Finish rice: In the last 5 minutes of rice cooking, fold in diced tomatoes and chopped olives. Cover to warm through.",
+    "Fluff rice with a fork. Stir in lemon zest and chopped parsley; adjust salt and black pepper to taste.",
+    "Serve rice in bowls, top with baked tilapia. Spoon any tray juices over the fish. Serve green beans on the side with remaining lemon wedges."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C (390°F).",
+    "Rinse 1.5 cups brown basmati rice until water runs clear; drain well.",
+    "Finely chop 1 medium onion.",
+    "Dice 3 medium tomatoes.",
+    "Roughly chop 1/2 cup olives.",
+    "Mince 2 cloves garlic.",
+    "Trim 300 g green beans.",
+    "Chop a small handful of parsley.",
+    "Pat dry 4 tilapia fillets; season both sides lightly with salt and black pepper.",
+    "Zest then halve 1 lemon.",
+    "Start rice: Heat 1 tablespoon olive oil in a medium pot over medium heat. Add chopped onion and cook 3–4 minutes until translucent.",
+    "Stir in 1 teaspoon cumin and 1 teaspoon paprika for 30 seconds. Add rinsed rice and toast 1 minute.",
+    "Pour in 3 cups vegetable stock and 1/2 teaspoon salt. Bring to a boil, then reduce to low, cover, and simmer 30–35 minutes until tender.",
+    "Bake fish: In a small bowl, mix 2 tablespoons chermoula with 1 tablespoon olive oil and the juice of half the lemon. Brush over tilapia on a lined tray. Bake 10–12 minutes until the fish flakes easily.",
+    "Green beans: While fish bakes, heat 1 teaspoon olive oil in a skillet over medium-high. Add green beans and a pinch of salt; cook 4–5 minutes until crisp-tender, tossing once. Add half the minced garlic in the last 30 seconds; toss and remove from heat.",
+    "Finish rice: In the last 5 minutes of rice cooking, fold in diced tomatoes and chopped olives. Cover to warm through.",
+    "Fluff rice with a fork. Stir in lemon zest and chopped parsley; adjust salt and black pepper to taste.",
+    "Serve rice in bowls, top with baked tilapia. Spoon any tray juices over the fish. Serve green beans on the side with remaining lemon wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "tilapia",
+      "quantity": "4 fillets (600–800 g)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "chermoula",
+      "quantity": "2 tablespoons",
+      "preparation": "mixed with oil and lemon for brushing"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons total",
+      "preparation": "divided for rice, fish, and beans"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and halved"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "for rice"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": "for rice"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "to taste, divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "to taste, divided"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "3 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 cups",
+      "preparation": "hot or room temperature"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "300 g",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "MiddleEastern",
+      "NorthAfrican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "HighFiber"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [
+    {
+      "core_item_name": "tilapia",
+      "selected_product_id": "2583750000004",
+      "package_quantity": 1,
+      "package_notes": "Closest available tilapia option; one whole avg 650 g covers 600–800 g total fish for 4 servings, though it’s whole and stuffed.",
+      "ingredient_line": "Whole Stuffed Tilapia with Lemon & Garlic Butter Avg 650 g"
+    },
+    {
+      "core_item_name": "chermoula",
+      "selected_product_id": "6009182310956",
+      "package_quantity": 1,
+      "package_notes": "Dry spice blend; 50 g easily yields 2 tbsp for brushing with leftovers.",
+      "ingredient_line": "Chermoula Blend 50 g"
+    },
+    {
+      "core_item_name": "olive oil",
+      "selected_product_id": "6009195707965",
+      "package_quantity": 1,
+      "package_notes": "Neutral cooking olive oil best fit for sautéing and baking; 1 L far exceeds 3 tbsp but is the most appropriate plain oil option.",
+      "ingredient_line": "Cooking Olive Oil 1 L"
+    },
+    {
+      "core_item_name": "lemon",
+      "selected_product_id": "20017880",
+      "package_quantity": 1,
+      "package_notes": "Pack of 3 is the smallest practical pack to cover 1 lemon with minimal excess.",
+      "ingredient_line": "Lemons 3 pk"
+    },
+    {
+      "core_item_name": "garlic",
+      "selected_product_id": "20008277",
+      "package_quantity": 1,
+      "package_notes": "Peeled cloves 50 g is convenient and cost‑effective for 2 cloves.",
+      "ingredient_line": "Peeled Garlic 50 g"
+    },
+    {
+      "core_item_name": "cumin",
+      "selected_product_id": "20169794",
+      "package_quantity": 1,
+      "package_notes": "Ground cumin 50 g easily covers 1 tsp.",
+      "ingredient_line": "Ground Cumin 50 g"
+    },
+    {
+      "core_item_name": "paprika",
+      "selected_product_id": "6009223320937",
+      "package_quantity": 1,
+      "package_notes": "Most economical refill option; 45 g covers 1 tsp.",
+      "ingredient_line": "Spanish Smoked Paprika Refill 45 g"
+    },
+    {
+      "core_item_name": "black pepper",
+      "selected_product_id": "6009178243428",
+      "package_quantity": 1,
+      "package_notes": "Fine ground pepper 55 g suits 1/2 tsp with minimal waste compared to large refills.",
+      "ingredient_line": "Fine Black Pepper 55 g"
+    },
+    {
+      "core_item_name": "salt",
+      "selected_product_id": "6001021023119",
+      "package_quantity": 1,
+      "package_notes": "Table salt 1 kg is the lowest-cost straightforward option to cover 1 tsp.",
+      "ingredient_line": "Cerebos Iodated Table Salt 1 kg"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "selected_product_id": "20101480",
+      "package_quantity": 1,
+      "package_notes": "4-pack aligns well with 3 medium tomatoes needed, minimal excess.",
+      "ingredient_line": "Slicing Tomatoes 4 pk"
+    },
+    {
+      "core_item_name": "olives",
+      "selected_product_id": "20026639",
+      "package_quantity": 1,
+      "package_notes": "Standard jar of olives; 425 g easily provides 1/2 cup chopped.",
+      "ingredient_line": "Queen Olives 425 g"
+    },
+    {
+      "core_item_name": "onions",
+      "selected_product_id": "20024772",
+      "package_quantity": 1,
+      "package_notes": "Peeled baby onions 500 g can substitute; use approx 1 medium onion equivalent (~150–180 g).",
+      "ingredient_line": "Peeled Baby Onions 500 g"
+    },
+    {
+      "core_item_name": "brown basmati rice",
+      "selected_product_id": "6009195036409",
+      "package_quantity": 2,
+      "package_notes": "Each pouch is 250 g cooked; for 1.5 cups raw (about 4–5 cups cooked) this isn’t a perfect match, but two pouches (500 g cooked) provide a reasonable base for 4 with the mix-ins.",
+      "ingredient_line": "Fully Cooked Brown Basmati Rice 250 g"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "selected_product_id": "6009195814564",
+      "package_quantity": 2,
+      "package_notes": "Need ~750 ml; two 500 ml packs provide sufficient stock with a little extra.",
+      "ingredient_line": "Fresh Liquid Vegetable Stock 500 ml"
+    },
+    {
+      "core_item_name": "green beans",
+      "selected_product_id": "20087388",
+      "package_quantity": 1,
+      "package_notes": "350 g pack closely matches 300 g requirement with slight overage.",
+      "ingredient_line": "Green Beans 350 g"
+    },
+    {
+      "core_item_name": "parsley",
+      "selected_product_id": "20128104",
+      "package_quantity": 1,
+      "package_notes": "30 g bunch easily covers 2 tbsp chopped.",
+      "ingredient_line": "Fresh Italian Parsley 30 g"
+    }
+  ],
+  "final_ingredients": [
+    {
+      "core_item_name": "tilapia",
+      "quantity": "4 fillets (600–800 g)",
+      "preparation": "patted dry",
+      "selected_product": {
+        "product_id": "2583750000004",
+        "package_quantity": 1,
+        "name": "Whole Stuffed Tilapia with Lemon & Garlic Butter Avg 650 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Meat-Poultry-Fish/Braai/Seafood/Whole-Stuffed-Tilapia-with-Lemon-Garlic-Butter-Avg-650-g/_/A-2583750000004",
+        "sale_price": 214.49
+      },
+      "ingredient_line": "Whole Stuffed Tilapia with Lemon & Garlic Butter Avg 650 g"
+    },
+    {
+      "core_item_name": "chermoula",
+      "quantity": "2 tablespoons",
+      "preparation": "mixed with oil and lemon for brushing",
+      "selected_product": {
+        "product_id": "6009182310956",
+        "package_quantity": 1,
+        "name": "Chermoula Blend 50 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/Oxtail-stew-with-dumplings/Chermoula-Blend-50-g/_/A-6009182310956",
+        "sale_price": 36.99
+      },
+      "ingredient_line": "Chermoula Blend 50 g"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons total",
+      "preparation": "divided for rice, fish, and beans",
+      "selected_product": {
+        "product_id": "6009195707965",
+        "package_quantity": 1,
+        "name": "Cooking Olive Oil 1 L",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Oils-Vinegars/Oils/Cooking-Olive-Oil-1-L/_/A-6009195707965",
+        "sale_price": 289.99
+      },
+      "ingredient_line": "Cooking Olive Oil 1 L"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and halved",
+      "selected_product": {
+        "product_id": "20017880",
+        "package_quantity": 1,
+        "name": "Lemons 3 pk",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Fresh-Fruit/ClemenGold-Oranges-Soft-Citrus/Lemons-3-pk/_/A-20017880",
+        "sale_price": 29.99
+      },
+      "ingredient_line": "Lemons 3 pk"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": {
+        "product_id": "20008277",
+        "package_quantity": 1,
+        "name": "Peeled Garlic 50 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Promotions/Buy-2-Or-More-And-Save/Buy-any-2-Save-20-/Prepared-Additions/Peeled-Garlic-50-g/_/A-20008277",
+        "sale_price": 29.99
+      },
+      "ingredient_line": "Peeled Garlic 50 g"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "for rice",
+      "selected_product": {
+        "product_id": "20169794",
+        "package_quantity": 1,
+        "name": "Ground Cumin 50 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Spices/Ground-Cumin-50-g/_/A-20169794",
+        "sale_price": 41.99
+      },
+      "ingredient_line": "Ground Cumin 50 g"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": "for rice",
+      "selected_product": {
+        "product_id": "6009223320937",
+        "package_quantity": 1,
+        "name": "Spanish Smoked Paprika Refill 45 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Spices/Spanish-Smoked-Paprika-Refill-45-g/_/A-6009223320937",
+        "sale_price": 25.5
+      },
+      "ingredient_line": "Spanish Smoked Paprika Refill 45 g"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "to taste, divided",
+      "selected_product": {
+        "product_id": "6009178243428",
+        "package_quantity": 1,
+        "name": "Fine Black Pepper 55 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Spices/Fine-Black-Pepper-55-g/_/A-6009178243428",
+        "sale_price": 37.99
+      },
+      "ingredient_line": "Fine Black Pepper 55 g"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "to taste, divided",
+      "selected_product": {
+        "product_id": "6001021023119",
+        "package_quantity": 1,
+        "name": "Cerebos Iodated Table Salt 1 kg",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Herbs-Spices/Salt-Pepper/Cerebos-Iodated-Table-Salt-1-kg/_/A-6001021023119",
+        "sale_price": 22.99
+      },
+      "ingredient_line": "Cerebos Iodated Table Salt 1 kg"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "3 medium",
+      "preparation": "diced",
+      "selected_product": {
+        "product_id": "20101480",
+        "package_quantity": 1,
+        "name": "Slicing Tomatoes 4 pk",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Salads-Herbs/Tomatoes/Slicing-Tomatoes-4-pk/_/A-20101480",
+        "sale_price": 24.99
+      },
+      "ingredient_line": "Slicing Tomatoes 4 pk"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped",
+      "selected_product": {
+        "product_id": "20026639",
+        "package_quantity": 1,
+        "name": "Queen Olives 425 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Olives-Pickles-Antipasti/Olives/Queen-Olives-425-g/_/A-20026639",
+        "sale_price": 94.99
+      },
+      "ingredient_line": "Queen Olives 425 g"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely chopped",
+      "selected_product": {
+        "product_id": "20024772",
+        "package_quantity": 1,
+        "name": "Peeled Baby Onions 500 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Fresh-Vegetables/Peeled-Baby-Onions-500-g/_/A-20024772",
+        "sale_price": 19.99
+      },
+      "ingredient_line": "Peeled Baby Onions 500 g"
+    },
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed",
+      "selected_product": {
+        "product_id": "6009195036409",
+        "package_quantity": 2,
+        "name": "Fully Cooked Brown Basmati Rice 250 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Pantry/Pasta-Rice-Noodles/Rice-Couscous-Polenta/Fully-Cooked-Brown-Basmati-Rice-250-g/_/A-6009195036409",
+        "sale_price": 37.99
+      },
+      "ingredient_line": "Fully Cooked Brown Basmati Rice 250 g"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 cups",
+      "preparation": "hot or room temperature",
+      "selected_product": {
+        "product_id": "6009195814564",
+        "package_quantity": 2,
+        "name": "Fresh Liquid Vegetable Stock 500 ml",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Meat-Poultry-Fish/Fresh-Gravy-Stock-Glazes/Fresh-Liquid-Vegetable-Stock-500-ml/_/A-6009195814564",
+        "sale_price": 39.99
+      },
+      "ingredient_line": "Fresh Liquid Vegetable Stock 500 ml"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "300 g",
+      "preparation": "trimmed",
+      "selected_product": {
+        "product_id": "20087388",
+        "package_quantity": 1,
+        "name": "Green Beans 350 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Online-Feature/Recipes/Your-best-new-braai-menu/Green-Beans-350-g/_/A-20087388",
+        "sale_price": 32.99
+      },
+      "ingredient_line": "Green Beans 350 g"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": {
+        "product_id": "20128104",
+        "package_quantity": 1,
+        "name": "Fresh Italian Parsley 30 g",
+        "detail_url": "https://www.woolworths.co.za/prod/Food/Fruit-Vegetables-Salads/Salads-Herbs/Herbs-Sprouts-Edible-Flowers/Fresh-Italian-Parsley-30-g/_/A-20128104",
+        "sale_price": 14.99
+      },
+      "ingredient_line": "Fresh Italian Parsley 30 g"
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251124T061128Z",
+    "meal_model": "gpt-5",
+    "product_model": "gpt-5",
+    "tags_version": "2025.02.0",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251124T061038Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "completed"
+  }
+}
