@@ -43,7 +43,7 @@ Keep Yummi-specific directories (scraper, Woolworths agent brief, cart integrati
 - Clerk-provided OAuth (Google, Apple, Facebook) with session persistence and protected routes.
 - Wallet screen that calls `/v1/wallet/balance`, launches PayFast checkout, and refreshes on return.
 - Deep-link bridges (`yummi://payfast/{return,cancel}`) that Expo handles automatically.
-- Meal home + Ingredients flow: pick meals directly on the home surface, tap `Next`, and the Ingredients screen aggregates all selected products (sorted alphabetically) with inline quantity controls plus CTAs for generating a shopping list or auto-filling Woolworths carts.
+- Meal home + Ingredients flow: pick meals directly on the home surface, tap `Next`, and the Ingredients screen aggregates all selected products (sorted alphabetically) with inline quantity controls, per-item pricing, and an estimated basket total alongside CTAs for generating a shopping list or auto-filling Woolworths carts.
 - See `yummi_scaffold_spec.md` for provider setup, routing, and environment variables.
 
 ### Backend (`yummi-server`)

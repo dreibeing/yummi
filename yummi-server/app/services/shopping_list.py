@@ -3,7 +3,9 @@ from __future__ import annotations
 import json
 import logging
 import math
+import os
 import re
+import threading
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Sequence
 
@@ -21,6 +23,11 @@ from .openai_responses import call_openai_responses
 
 logger = logging.getLogger(__name__)
 
+_catalog_lock = threading.Lock()
+_catalog_by_product_id: Dict[str, Dict[str, Any]] | None = None
+_catalog_by_catalog_ref: Dict[str, Dict[str, Any]] | None = None
+_catalog_cache_mtime: float = 0.0
+_catalog_cache_path: str | None = None
 
 UNIT_DEFINITIONS: Dict[str, Dict[str, Any]] = {
     "g": {"unit_type": "weight", "unit_label": "g", "multiplier": 1},
@@ -206,6 +213,7 @@ def _build_linked_products(entries: Sequence[Dict[str, Any]]) -> List[Dict[str, 
         products.append(
             {
                 "productId": product.get("id"),
+                "catalogRefId": product.get("catalog_ref_id") or product.get("catalogRefId"),
                 "name": product.get("name"),
                 "detailUrl": product.get("detail_url"),
                 "salePrice": product.get("sale_price"),
@@ -380,9 +388,12 @@ def _build_result_item(group: Dict[str, Any], llm_entry: Dict[str, Any] | None) 
         if model_products:
             products = model_products
     default_quantity = 0.0 if classification == "pantry" else packages
+    unit_price = _resolve_unit_price(products, group.get("entries") or [])
+    unit_price_minor = _to_minor_units(unit_price)
     selection_models = [
         ShoppingListProductSelection(
             productId=product.get("productId") or product.get("product_id"),
+            catalogRefId=product.get("catalogRefId") or product.get("catalog_ref_id"),
             name=product.get("name"),
             detailUrl=product.get("detailUrl") or product.get("detail_url"),
             salePrice=product.get("salePrice"),
@@ -399,6 +410,8 @@ def _build_result_item(group: Dict[str, Any], llm_entry: Dict[str, Any] | None) 
         defaultQuantity=float(default_quantity),
         notes=notes,
         linkedProducts=selection_models,
+        unitPrice=unit_price,
+        unitPriceMinor=unit_price_minor,
     )
 
 
@@ -524,6 +537,62 @@ def _normalize_label(value: Any) -> str | None:
     return text or None
 
 
+def _load_catalog_entries() -> tuple[Dict[str, Dict[str, Any]], Dict[str, Dict[str, Any]]]:
+    settings = get_settings()
+    path = settings.catalog_path or "resolver/catalog.json"
+    try:
+        stat = os.stat(path)
+    except OSError:
+        return {}, {}
+    with _catalog_lock:
+        global _catalog_by_product_id, _catalog_by_catalog_ref, _catalog_cache_mtime, _catalog_cache_path
+        if (
+            _catalog_by_product_id is not None
+            and _catalog_cache_path == path
+            and _catalog_cache_mtime >= stat.st_mtime
+        ):
+            return _catalog_by_product_id or {}, _catalog_by_catalog_ref or {}
+        with open(path, "r", encoding="utf-8") as handle:
+            payload = json.load(handle)
+        entries: List[Dict[str, Any]] = []
+        if isinstance(payload, list):
+            entries = [entry for entry in payload if isinstance(entry, dict)]
+        elif isinstance(payload, dict):
+            if isinstance(payload.get("items"), list):
+                entries = [entry for entry in payload["items"] if isinstance(entry, dict)]
+            else:
+                entries = [entry for entry in payload.values() if isinstance(entry, dict)]
+        by_product: Dict[str, Dict[str, Any]] = {}
+        by_catalog_ref: Dict[str, Dict[str, Any]] = {}
+        for entry in entries:
+            product_id = entry.get("productId") or entry.get("product_id") or entry.get("sku")
+            catalog_ref = entry.get("catalogRefId") or entry.get("catalog_ref_id")
+            if product_id is not None:
+                by_product[str(product_id)] = entry
+            if catalog_ref is not None:
+                by_catalog_ref[str(catalog_ref)] = entry
+        _catalog_by_product_id = by_product
+        _catalog_by_catalog_ref = by_catalog_ref
+        _catalog_cache_mtime = stat.st_mtime
+        _catalog_cache_path = path
+        return by_product, by_catalog_ref
+
+
+def _lookup_catalog_product(product_id: Any, catalog_ref_id: Any) -> Dict[str, Any] | None:
+    if product_id is None and catalog_ref_id is None:
+        return None
+    by_product, by_catalog_ref = _load_catalog_entries()
+    if product_id is not None:
+        entry = by_product.get(str(product_id))
+        if entry:
+            return entry
+    if catalog_ref_id is not None:
+        entry = by_catalog_ref.get(str(catalog_ref_id))
+        if entry:
+            return entry
+    return None
+
+
 def _normalize_product_meta(ingredient: Dict[str, Any]) -> Dict[str, Any] | None:
     selected = ingredient.get("selected_product") or ingredient.get("selectedProduct")
     if hasattr(selected, "model_dump"):
@@ -537,18 +606,62 @@ def _normalize_product_meta(ingredient: Dict[str, Any]) -> Dict[str, Any] | None
         ingredient.get("catalog_ref_id"),
         ingredient.get("catalogRefId"),
     )
+    catalog_ref_id = (
+        product.get("catalog_ref_id")
+        or product.get("catalogRefId")
+        or ingredient.get("catalog_ref_id")
+        or ingredient.get("catalogRefId")
+    )
     name = _coalesce(product.get("name"), ingredient.get("product_name"), ingredient.get("productName"))
     package_quantity = (
         _parse_numeric_quantity(product.get("package_quantity"))
         or _parse_numeric_quantity(ingredient.get("package_quantity"))
     )
-    detail_url = _coalesce(product.get("detail_url"), product.get("detailUrl"), ingredient.get("detail_url"), ingredient.get("detailUrl"))
-    sale_price = _parse_numeric_quantity(product.get("sale_price") or product.get("salePrice") or ingredient.get("sale_price") or ingredient.get("salePrice"))
-    ingredient_line = _coalesce(product.get("ingredient_line"), product.get("ingredientLine"), ingredient.get("ingredient_line"), ingredient.get("ingredientLine"))
+    detail_url = _coalesce(
+        product.get("detail_url"),
+        product.get("detailUrl"),
+        ingredient.get("detail_url"),
+        ingredient.get("detailUrl"),
+    )
+    sale_price = _parse_numeric_quantity(
+        product.get("sale_price")
+        or product.get("salePrice")
+        or ingredient.get("sale_price")
+        or ingredient.get("salePrice")
+    )
+    ingredient_line = _coalesce(
+        product.get("ingredient_line"),
+        product.get("ingredientLine"),
+        ingredient.get("ingredient_line"),
+        ingredient.get("ingredientLine"),
+    )
+    catalog_ref_id = ingredient.get("catalog_ref_id") or ingredient.get("catalogRefId")
+    catalog_entry = _lookup_catalog_product(product_id, catalog_ref_id)
+    if catalog_entry:
+        if product_id is None:
+            catalog_product_id = (
+                catalog_entry.get("productId")
+                or catalog_entry.get("product_id")
+                or catalog_entry.get("catalogRefId")
+                or catalog_entry.get("catalog_ref_id")
+            )
+            if catalog_product_id is not None:
+                product_id = str(catalog_product_id)
+        name = name or catalog_entry.get("name") or catalog_entry.get("title")
+        detail_url = detail_url or catalog_entry.get("detailUrl") or catalog_entry.get("url")
+        if sale_price is None:
+            sale_price = _parse_numeric_quantity(
+                catalog_entry.get("salePrice")
+                or catalog_entry.get("sale_price")
+                or catalog_entry.get("price")
+            )
+        if ingredient_line is None:
+            ingredient_line = catalog_entry.get("name") or catalog_entry.get("title")
     if not any([product_id, name, ingredient_line, detail_url]):
         return None
     return {
         "id": str(product_id) if product_id is not None else None,
+        "catalog_ref_id": str(catalog_ref_id) if catalog_ref_id is not None else None,
         "name": name,
         "detail_url": detail_url,
         "sale_price": sale_price,
@@ -656,3 +769,79 @@ def _coalesce(*values: Any) -> Any:
         if isinstance(text, str) and text.strip():
             return text
     return None
+
+
+def _resolve_unit_price(products: Sequence[Dict[str, Any]], entries: Sequence[Dict[str, Any]]) -> float | None:
+    for product in products or []:
+        price = _coerce_sale_price_value(product)
+        if price is not None:
+            return price
+        price = _lookup_catalog_price(product)
+        if price is not None:
+            return price
+    for entry in entries or []:
+        product_meta = entry.get("product") or {}
+        price = _coerce_sale_price_value(product_meta)
+        if price is not None:
+            return price
+        price = _lookup_catalog_price(product_meta)
+        if price is not None:
+            return price
+    return None
+
+
+def _coerce_sale_price_value(data: Dict[str, Any] | None) -> float | None:
+    if not data:
+        return None
+    for key in ("sale_price", "salePrice", "price"):
+        candidate = data.get(key)
+        if candidate is None:
+            continue
+        if isinstance(candidate, dict):
+            for nested_key in ("amount", "value", "price", "amountMinor", "amount_minor"):
+                nested_value = candidate.get(nested_key)
+                parsed = _parse_numeric_quantity(nested_value)
+                if parsed is not None:
+                    if "minor" in nested_key.lower():
+                        return parsed / 100.0
+                    return parsed
+        else:
+            parsed = _parse_numeric_quantity(candidate)
+            if parsed is not None:
+                return parsed
+    metadata = data.get("metadata")
+    if isinstance(metadata, dict):
+        for key in ("salePrice", "price", "amount", "value"):
+            candidate = metadata.get(key)
+            parsed = _parse_numeric_quantity(candidate)
+            if parsed is not None:
+                return parsed
+    return None
+
+
+def _lookup_catalog_price(record: Dict[str, Any]) -> float | None:
+    if not record:
+        return None
+    product_id = _coalesce(
+        record.get("productId"),
+        record.get("product_id"),
+        record.get("id"),
+    )
+    catalog_ref_id = _coalesce(
+        record.get("catalogRefId"),
+        record.get("catalog_ref_id"),
+    )
+    if product_id is None and catalog_ref_id is None:
+        return None
+    entry = _lookup_catalog_product(product_id, catalog_ref_id)
+    if not entry:
+        return None
+    return _parse_numeric_quantity(entry.get("salePrice") or entry.get("sale_price") or entry.get("price"))
+
+
+def _to_minor_units(value: float | None) -> int | None:
+    if value is None:
+        return None
+    if not isinstance(value, (int, float)) or not math.isfinite(value):
+        return None
+    return int(round(float(value) * 100))

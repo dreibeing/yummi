@@ -260,6 +260,7 @@ class ShoppingListBuildRequest(BaseModel):
 
 class ShoppingListProductSelection(BaseModel):
     productId: Optional[str] = None
+    catalogRefId: Optional[str] = None
     name: Optional[str] = None
     detailUrl: Optional[str] = None
     salePrice: Optional[float] = None
@@ -275,6 +276,8 @@ class ShoppingListResultItem(BaseModel):
     defaultQuantity: float = Field(default=0, ge=0)
     notes: Optional[str] = None
     linkedProducts: List[ShoppingListProductSelection] = Field(default_factory=list)
+    unitPrice: Optional[float] = None
+    unitPriceMinor: Optional[int] = None
 
 
 class ShoppingListBuildResponse(BaseModel):

@@ -358,6 +358,42 @@ const formatCurrency = (minor, currency = "ZAR") => {
   return `${currency.toUpperCase()} ${amount}`;
 };
 
+const normalizePriceToMinorUnits = (value) => {
+  if (typeof value === "number" && Number.isFinite(value)) {
+    // Treat values >= 10000 as already minor units to avoid overshooting for cents inputs.
+    if (Math.abs(value) >= 10000 && Number.isInteger(value)) {
+      return Math.round(value);
+    }
+    return Math.round(value * 100);
+  }
+  if (typeof value === "string") {
+    const cleaned = value.replace(/[^0-9,.\-]/g, "").replace(/,/g, ".");
+    if (!cleaned) {
+      return null;
+    }
+    const parsed = Number(cleaned);
+    if (!Number.isNaN(parsed)) {
+      return Math.round(parsed * 100);
+    }
+    return null;
+  }
+  if (value && typeof value === "object") {
+    if (typeof value.amountMinor === "number" && Number.isFinite(value.amountMinor)) {
+      return Math.round(value.amountMinor);
+    }
+    if (typeof value.amount === "number" && Number.isFinite(value.amount)) {
+      return Math.round(value.amount * 100);
+    }
+    if (typeof value.value === "number" && Number.isFinite(value.value)) {
+      return Math.round(value.value * 100);
+    }
+    if (typeof value.value === "string") {
+      return normalizePriceToMinorUnits(value.value);
+    }
+  }
+  return null;
+};
+
 const PREFERENCES_STATE_STORAGE_KEY = "yummi.preferences.state.v1";
 const PREFERENCES_COMPLETED_STORAGE_KEY = "yummi.preferences.completed.v1";
 const PREFERENCES_TAGS_VERSION = "2025.02.0"; // Keep in sync with data/tags/defined_tags.json
@@ -1493,6 +1529,7 @@ function AppContent() {
       return next;
     });
   }, [shoppingListItems]);
+
   const userDisplayName = useMemo(() => {
     const primaryEmail = user?.primaryEmailAddress?.emailAddress;
     if (primaryEmail) {
@@ -1645,25 +1682,160 @@ function AppContent() {
     return formatted.replace(/\.0+$/, "");
   }, []);
 
+  const getIngredientQuantityValue = useCallback(
+    (ingredient) => {
+      if (!ingredient) {
+        return 0;
+      }
+      const storedQuantity = ingredientQuantities?.[ingredient.id];
+      if (typeof storedQuantity === "number" && Number.isFinite(storedQuantity)) {
+        return storedQuantity;
+      }
+      if (
+        typeof ingredient.defaultQuantity === "number" &&
+        Number.isFinite(ingredient.defaultQuantity)
+      ) {
+        return ingredient.defaultQuantity;
+      }
+      if (
+        typeof ingredient.requiredQuantity === "number" &&
+        Number.isFinite(ingredient.requiredQuantity)
+      ) {
+        return ingredient.requiredQuantity;
+      }
+      return 0;
+    },
+    [ingredientQuantities]
+  );
+
+  const getIngredientUnitPriceMinor = useCallback((ingredient) => {
+    if (!ingredient) {
+      return null;
+    }
+    const serverMinor =
+      ingredient.unitPriceMinor ??
+      ingredient.unit_price_minor ??
+      ingredient.unit_priceMinor ??
+      null;
+    if (typeof serverMinor === "number" && Number.isFinite(serverMinor)) {
+      return Math.max(0, Math.round(serverMinor));
+    }
+    if (typeof serverMinor === "string" && serverMinor.trim() !== "") {
+      const parsed = Number(serverMinor);
+      if (!Number.isNaN(parsed)) {
+        return Math.max(0, Math.round(parsed));
+      }
+    }
+    const serverUnit =
+      ingredient.unitPrice ??
+      ingredient.unit_price ??
+      ingredient.unit_price_value ??
+      null;
+    const normalizedServerUnit = normalizePriceToMinorUnits(serverUnit);
+    if (normalizedServerUnit != null) {
+      return normalizedServerUnit;
+    }
+    const linkedProducts = Array.isArray(ingredient.linkedProducts)
+      ? ingredient.linkedProducts
+      : Array.isArray(ingredient.linked_products)
+      ? ingredient.linked_products
+      : [];
+    const extractProductPrice = (product) => {
+      if (!product) {
+        return null;
+      }
+      const salePriceValue =
+        product.salePrice ??
+        product.sale_price ??
+        product.price ??
+        (product.metadata ? product.metadata.salePrice : null);
+      return normalizePriceToMinorUnits(salePriceValue);
+    };
+    const pricedProduct = linkedProducts.find(
+      (product) => extractProductPrice(product) != null
+    );
+    if (pricedProduct) {
+      return extractProductPrice(pricedProduct);
+    }
+    if (ingredient?.salePrice != null || ingredient?.sale_price != null) {
+      return (
+        normalizePriceToMinorUnits(ingredient.salePrice) ??
+        normalizePriceToMinorUnits(ingredient.sale_price)
+      );
+    }
+    return null;
+  }, []);
+
+  const shoppingListPricing = useMemo(() => {
+    const priceMap = {};
+    let basketTotalMinor = 0;
+    let hasAnyPrice = false;
+    shoppingListItems.forEach((ingredient) => {
+      if (!ingredient?.id) {
+        return;
+      }
+      const quantity = getIngredientQuantityValue(ingredient);
+      const numericQuantity =
+        typeof quantity === "number" && Number.isFinite(quantity) ? Math.max(0, quantity) : 0;
+      const unitPriceMinor = getIngredientUnitPriceMinor(ingredient);
+      let lineTotalMinor = null;
+      if (unitPriceMinor != null) {
+        hasAnyPrice = true;
+        if (numericQuantity > 0) {
+          lineTotalMinor = Math.round(unitPriceMinor * numericQuantity);
+          if (lineTotalMinor > 0) {
+            basketTotalMinor += lineTotalMinor;
+          }
+        } else {
+          lineTotalMinor = 0;
+        }
+      }
+      priceMap[ingredient.id] = {
+        unitPriceMinor,
+        lineTotalMinor,
+      };
+    });
+    return {
+      byIngredientId: priceMap,
+      basketTotalMinor,
+      hasAnyPrice,
+    };
+  }, [getIngredientQuantityValue, getIngredientUnitPriceMinor, shoppingListItems]);
+
   const renderIngredientRow = useCallback(
     (ingredient) => {
       if (!ingredient) {
         return null;
       }
-      const storedQuantity = ingredientQuantities?.[ingredient.id];
-      const numericQuantity =
-        typeof storedQuantity === "number" && Number.isFinite(storedQuantity)
-          ? storedQuantity
-          : typeof ingredient.defaultQuantity === "number" && Number.isFinite(ingredient.defaultQuantity)
-          ? ingredient.defaultQuantity
-          : typeof ingredient.requiredQuantity === "number" && Number.isFinite(ingredient.requiredQuantity)
-          ? ingredient.requiredQuantity
-          : 0;
+      const numericQuantity = getIngredientQuantityValue(ingredient);
       const displayQuantity = formatIngredientQuantity(numericQuantity);
       const disableDecrease = numericQuantity <= 0;
+      const priceDetails =
+        shoppingListPricing.byIngredientId?.[ingredient.id] ?? {};
+      const unitPriceMinor =
+        typeof priceDetails.unitPriceMinor === "number"
+          ? priceDetails.unitPriceMinor
+          : null;
+      const lineTotalMinor =
+        typeof priceDetails.lineTotalMinor === "number" &&
+        priceDetails.lineTotalMinor > 0
+          ? priceDetails.lineTotalMinor
+          : null;
       return (
         <View key={ingredient.id} style={styles.ingredientsListItem}>
-          <Text style={styles.ingredientsItemText}>{ingredient.text}</Text>
+          <View style={styles.ingredientsItemHeader}>
+            <Text style={styles.ingredientsItemText}>{ingredient.text}</Text>
+            {lineTotalMinor != null ? (
+              <Text style={styles.ingredientsItemLineTotal}>
+                {formatCurrency(lineTotalMinor)}
+              </Text>
+            ) : null}
+          </View>
+          {unitPriceMinor != null ? (
+            <Text style={styles.ingredientsItemUnitPrice}>
+              {`${formatCurrency(unitPriceMinor)} each`}
+            </Text>
+          ) : null}
           <View style={styles.ingredientsQuantityRow}>
             <TouchableOpacity
               style={[
@@ -1703,9 +1875,10 @@ function AppContent() {
     },
     [
       formatIngredientQuantity,
+      getIngredientQuantityValue,
       handleIngredientQuantityDecrease,
       handleIngredientQuantityIncrease,
-      ingredientQuantities,
+      shoppingListPricing,
     ]
   );
 
@@ -4539,6 +4712,23 @@ const handlePreferenceSelection = useCallback(
               </View>
             )}
           </ScrollView>
+          {shoppingListItems.length > 0 ? (
+            <View style={styles.ingredientsSummaryBar}>
+              <View style={styles.ingredientsSummaryTextGroup}>
+                <Text style={styles.ingredientsSummaryLabel}>Estimated basket total</Text>
+                <Text style={styles.ingredientsSummaryCaption}>
+                  {shoppingListPricing.hasAnyPrice
+                    ? "Based on Woolworths pricing"
+                    : "Pricing unavailable at the moment"}
+                </Text>
+              </View>
+              <Text style={styles.ingredientsSummaryValue}>
+                {shoppingListPricing.hasAnyPrice
+                  ? formatCurrency(shoppingListPricing.basketTotalMinor)
+                  : "—"}
+              </Text>
+            </View>
+          ) : null}
           <View style={styles.ingredientsButtonGroup}>
             <TouchableOpacity
               style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
@@ -5187,9 +5377,24 @@ const styles = StyleSheet.create({
     gap: 12,
     ...SHADOW.card,
   },
+  ingredientsItemHeader: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    gap: 12,
+  },
   ingredientsItemText: {
     fontSize: 14,
     color: "#1c1c1c",
+    flexShrink: 1,
+  },
+  ingredientsItemUnitPrice: {
+    fontSize: 13,
+    color: "#4d4d4d",
+  },
+  ingredientsItemLineTotal: {
+    fontSize: 15,
+    fontWeight: "600",
+    color: "#0c3c26",
   },
   ingredientsQuantityRow: {
     flexDirection: "row",
@@ -5252,6 +5457,36 @@ const styles = StyleSheet.create({
   ingredientsRetryButtonText: {
     color: "#fff",
     fontWeight: "600",
+  },
+  ingredientsSummaryBar: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: 16,
+    marginTop: 12,
+    marginBottom: 8,
+    borderRadius: 16,
+    backgroundColor: "#f7f9f8",
+    gap: 12,
+    ...SHADOW.card,
+  },
+  ingredientsSummaryTextGroup: {
+    flexShrink: 1,
+  },
+  ingredientsSummaryLabel: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "#0c3c26",
+  },
+  ingredientsSummaryCaption: {
+    fontSize: 12,
+    color: "#4d4d4d",
+    marginTop: 2,
+  },
+  ingredientsSummaryValue: {
+    fontSize: 20,
+    fontWeight: "700",
+    color: "#0c3c26",
   },
   ingredientsButtonGroup: {
     paddingTop: 8,
