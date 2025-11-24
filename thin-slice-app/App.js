@@ -4425,6 +4425,9 @@ const handlePreferenceSelection = useCallback(
           </TouchableOpacity>
         </View>
         <View style={styles.mealHomeBody}>
+          <View style={styles.mealHomeTipContainer}>
+            <Text style={styles.mealHomeTipText}>Tap meal card to see details.</Text>
+          </View>
           <ScrollView
             style={styles.mealRecommendationsScroll}
             contentContainerStyle={styles.mealRecommendationsContent}
@@ -4655,6 +4658,9 @@ const handlePreferenceSelection = useCallback(
           </TouchableOpacity>
         </View>
         <View style={styles.ingredientsBody}>
+          <View style={styles.mealHomeTipContainer}>
+            <Text style={styles.mealHomeTipText}>Tap product card to see details.</Text>
+          </View>
           <ScrollView
             style={styles.ingredientsList}
             contentContainerStyle={styles.ingredientsListContent}
@@ -5318,6 +5324,22 @@ const styles = StyleSheet.create({
     paddingTop: 8,
     paddingBottom: 16,
     gap: 12,
+  },
+  mealHomeTipContainer: {
+    width: "100%",
+    paddingVertical: 12,
+    paddingHorizontal: 16,
+    borderRadius: 18,
+    backgroundColor: "#ffffff",
+    alignItems: "center",
+    justifyContent: "center",
+    ...SHADOW.card,
+  },
+  mealHomeTipText: {
+    fontSize: 15,
+    fontWeight: "600",
+    color: "#1f4b35",
+    textAlign: "center",
   },
   ingredientsBody: {
     flex: 1,
