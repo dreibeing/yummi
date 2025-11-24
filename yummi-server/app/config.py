@@ -36,7 +36,7 @@ class Settings(BaseSettings):
     # OpenAI
     openai_api_key: str | None = Field(default=None)
     openai_allowed_models: List[str] = Field(
-        default_factory=lambda: ["gpt-4o-mini", "gpt-4o", "o4-mini", "gpt-5"]
+        default_factory=lambda: ["gpt-4o-mini", "gpt-4o", "o4-mini", "gpt-5", "gpt-5-mini"]
     )
     openai_default_model: str = Field(default="gpt-4o-mini")
     openai_exploration_model: str = Field(default="gpt-5")
@@ -52,6 +52,10 @@ class Settings(BaseSettings):
     openai_recommendation_max_output_tokens: int = Field(default=9000)
     recommendation_candidate_limit: int = Field(default=60)
     recommendation_meal_count: int = Field(default=10)
+    openai_shopping_list_model: str = Field(default="gpt-5-mini")
+    openai_shopping_list_top_p: float | None = Field(default=None)
+    openai_shopping_list_reasoning_effort: str = Field(default="low")
+    openai_shopping_list_max_output_tokens: int = Field(default=12000)
     openai_request_timeout_seconds: int = Field(default=90, ge=30, le=300)
 
     # Observability

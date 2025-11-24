@@ -3,7 +3,7 @@ from __future__ import annotations
 from datetime import datetime
 from typing import Any, Dict, List, Optional, Literal
 from uuid import UUID
-from pydantic import BaseModel, Field, ConfigDict
+from pydantic import AliasChoices, BaseModel, ConfigDict, Field
 
 DEFAULT_CANDIDATE_POOL_LIMIT = 40
 MAX_CANDIDATE_POOL_LIMIT = 100
@@ -170,6 +170,117 @@ class MealRecord(BaseModel):
     product_matches: List[MealProductMatch] = Field(default_factory=list)
     metadata: Dict[str, Any] = Field(default_factory=dict)
     warnings: List[str] = Field(default_factory=list)
+
+
+class ShoppingListIngredientProductPayload(BaseModel):
+    product_id: Optional[str] = Field(
+        default=None,
+        validation_alias=AliasChoices("product_id", "productId"),
+    )
+    package_quantity: Optional[float] = Field(
+        default=None,
+        validation_alias=AliasChoices("package_quantity", "packageQuantity"),
+    )
+    name: Optional[str] = None
+    detail_url: Optional[str] = Field(
+        default=None,
+        validation_alias=AliasChoices("detail_url", "detailUrl"),
+    )
+    sale_price: Optional[float] = Field(
+        default=None,
+        validation_alias=AliasChoices("sale_price", "salePrice"),
+    )
+    ingredient_line: Optional[str] = Field(
+        default=None,
+        validation_alias=AliasChoices("ingredient_line", "ingredientLine"),
+    )
+
+    model_config = ConfigDict(extra="allow")
+
+
+class ShoppingListMealIngredientPayload(BaseModel):
+    id: Optional[str] = None
+    core_item_name: Optional[str] = Field(
+        default=None,
+        validation_alias=AliasChoices("core_item_name", "coreItemName"),
+    )
+    name: Optional[str] = None
+    product_name: Optional[str] = Field(
+        default=None,
+        validation_alias=AliasChoices("product_name", "productName"),
+    )
+    product_id: Optional[str] = Field(
+        default=None,
+        validation_alias=AliasChoices("product_id", "productId"),
+    )
+    catalog_ref_id: Optional[str] = Field(
+        default=None,
+        validation_alias=AliasChoices("catalog_ref_id", "catalogRefId"),
+    )
+    quantity: Optional[str] = None
+    unit: Optional[str] = None
+    text: Optional[str] = None
+    preparation: Optional[str] = None
+    ingredient_line: Optional[str] = Field(
+        default=None,
+        validation_alias=AliasChoices("ingredient_line", "ingredientLine"),
+    )
+    package_quantity: Optional[float] = Field(
+        default=None,
+        validation_alias=AliasChoices("package_quantity", "packageQuantity"),
+    )
+    sale_price: Optional[float] = Field(
+        default=None,
+        validation_alias=AliasChoices("sale_price", "salePrice"),
+    )
+    detail_url: Optional[str] = Field(
+        default=None,
+        validation_alias=AliasChoices("detail_url", "detailUrl"),
+    )
+    selected_product: Optional[ShoppingListIngredientProductPayload] = Field(
+        default=None,
+        validation_alias=AliasChoices("selected_product", "selectedProduct"),
+    )
+
+    model_config = ConfigDict(extra="allow")
+
+
+class ShoppingListMealPayload(BaseModel):
+    meal_id: str = Field(validation_alias=AliasChoices("meal_id", "mealId"))
+    name: Optional[str] = None
+    servings: Optional[str] = None
+    ingredients: List[ShoppingListMealIngredientPayload] = Field(default_factory=list)
+
+    model_config = ConfigDict(extra="allow")
+
+
+class ShoppingListBuildRequest(BaseModel):
+    meals: List[ShoppingListMealPayload] = Field(default_factory=list, min_length=1)
+
+
+class ShoppingListProductSelection(BaseModel):
+    productId: Optional[str] = None
+    name: Optional[str] = None
+    detailUrl: Optional[str] = None
+    salePrice: Optional[float] = None
+    packages: Optional[float] = None
+
+
+class ShoppingListResultItem(BaseModel):
+    id: str
+    groupKey: str
+    text: str
+    classification: Literal["pickup", "pantry"]
+    requiredQuantity: float = Field(default=0, ge=0)
+    defaultQuantity: float = Field(default=0, ge=0)
+    notes: Optional[str] = None
+    linkedProducts: List[ShoppingListProductSelection] = Field(default_factory=list)
+
+
+class ShoppingListBuildResponse(BaseModel):
+    status: Literal["completed"]
+    generatedAt: datetime
+    items: List[ShoppingListResultItem] = Field(default_factory=list)
 
 
 class MealArchetype(BaseModel):

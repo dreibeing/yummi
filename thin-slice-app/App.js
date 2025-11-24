@@ -80,7 +80,21 @@ const RAW_API_BASE_URL =
   process.env.EXPO_PUBLIC_API_BASE_URL ??
   Constants.expoConfig?.extra?.apiBaseUrl ??
   null;
-const API_BASE_URL = trimTrailingSlash(RAW_API_BASE_URL);
+const deriveApiBaseUrl = () => {
+  const trimmed = trimTrailingSlash(RAW_API_BASE_URL);
+  if (trimmed) {
+    return trimmed;
+  }
+  if (SERVER_BASE_URL && SERVER_BASE_URL.endsWith("/v1/thin")) {
+    const fallback = SERVER_BASE_URL.replace(/\/thin$/, "");
+    if (__DEV__) {
+      console.log("API_BASE_URL fallback ->", fallback);
+    }
+    return fallback;
+  }
+  return null;
+};
+const API_BASE_URL = deriveApiBaseUrl();
 const RAW_CLERK_JWT_TEMPLATE =
   process.env.EXPO_PUBLIC_CLERK_JWT_TEMPLATE ??
   Constants.expoConfig?.extra?.clerkJwtTemplate ??
@@ -254,6 +268,9 @@ const PREFERENCE_CONTROL_STATES = [
 const RECOMMENDATION_MEAL_TARGET = 10;
 const RECOMMENDATION_API_ENDPOINT = API_BASE_URL
   ? `${API_BASE_URL}/recommendations/feed`
+  : null;
+const SHOPPING_LIST_API_ENDPOINT = API_BASE_URL
+  ? `${API_BASE_URL}/shopping-list/build`
   : null;
 const DIETARY_RESTRICTIONS_CATEGORY_ID = "DietaryRestrictions";
 const DIETARY_NO_RESTRICTIONS_TAG_ID = "dietres_none";
@@ -622,6 +639,556 @@ const parseIngredientQuantity = (value) => {
   return 1;
 };
 
+const normalizeIngredientLabel = (value) => {
+  if (typeof value !== "string") {
+    if (value == null) {
+      return null;
+    }
+    value = String(value);
+  }
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, " ")
+    .replace(/\b(\d+|ml|l|g|kg|cups?|cup|teaspoons?|tablespoons?|tsp|tbsp|pack|packs|pk|x)\b/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+};
+
+const WATER_LABELS = new Set([
+  "water",
+  "warm water",
+  "cold water",
+  "ice water",
+  "hot water",
+  "boiling water",
+  "tap water",
+  "filtered water",
+  "room temperature water",
+]);
+
+const STAPLE_SPICE_KEYWORDS = [
+  "oregano",
+  "paprika",
+  "smoked paprika",
+  "ground cumin",
+  "cumin",
+  "turmeric",
+  "masala",
+  "garam masala",
+  "curry powder",
+  "mixed herbs",
+  "herb mix",
+  "seasoning",
+  "spice mix",
+  "spice blend",
+  "five spice",
+  "all spice",
+  "peri peri",
+  "ground coriander",
+];
+
+const OIL_KEYWORDS = [
+  "olive oil",
+  "extra virgin olive oil",
+  "cooking olive oil",
+  "vegetable oil",
+  "canola oil",
+  "sunflower oil",
+  "neutral oil",
+  "rapeseed oil",
+  "coconut oil",
+];
+
+const containsWord = (label, word) => {
+  if (!label || !word) {
+    return false;
+  }
+  const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const regex = new RegExp(`\\b${escaped}\\b`, "i");
+  return regex.test(label);
+};
+
+const isMilkLabel = (label) => {
+  if (!label || !label.includes("milk")) {
+    return false;
+  }
+  const disqualifiers = ["chocolate", "powder", "condensed", "evaporated", "coconut", "almond", "soy", "oat"];
+  if (disqualifiers.some((word) => label.includes(word))) {
+    return false;
+  }
+  if (label === "milk") {
+    return true;
+  }
+  const qualifiers = ["full cream", "fullcream", "low fat", "long life", "fresh", "whole", "skim", "fat free"];
+  if (qualifiers.some((word) => label.includes(word))) {
+    return true;
+  }
+  if (label.startsWith("milk ") || label.endsWith(" milk")) {
+    return true;
+  }
+  return false;
+};
+
+const collectIngredientLabels = (ingredient, fallbackText = null) => {
+  const labels = [];
+  const push = (candidate) => {
+    if (typeof candidate === "string" && candidate.trim().length) {
+      labels.push(candidate);
+    }
+  };
+  if (ingredient && typeof ingredient === "object") {
+    push(ingredient.core_item_name);
+    push(ingredient.name);
+    push(ingredient.ingredient_line);
+    push(ingredient.productName);
+    const selectedProduct = ingredient.selectedProduct ?? ingredient.selected_product ?? null;
+    if (selectedProduct && typeof selectedProduct === "object") {
+      push(selectedProduct.name);
+    }
+  }
+  push(fallbackText);
+  return labels;
+};
+
+const isWaterIngredient = (labels) => {
+  if (!Array.isArray(labels) || !labels.length) {
+    return false;
+  }
+  return labels
+    .map((label) => normalizeIngredientLabel(label))
+    .filter(Boolean)
+    .some((normalized) => WATER_LABELS.has(normalized));
+};
+
+const isStapleIngredient = (labels) => {
+  if (!Array.isArray(labels) || !labels.length) {
+    return false;
+  }
+  return labels
+    .map((label) => normalizeIngredientLabel(label))
+    .filter(Boolean)
+    .some((normalized) => {
+      if (!normalized || WATER_LABELS.has(normalized)) {
+        return false;
+      }
+      if (containsWord(normalized, "salt") || containsWord(normalized, "pepper") || containsWord(normalized, "butter")) {
+        return true;
+      }
+      if (isMilkLabel(normalized)) {
+        return true;
+      }
+      if (OIL_KEYWORDS.some((keyword) => normalized.includes(keyword))) {
+        return true;
+      }
+      if (STAPLE_SPICE_KEYWORDS.some((keyword) => normalized.includes(keyword))) {
+        return true;
+      }
+      return false;
+    });
+};
+
+const UNIT_DEFINITIONS = {
+  g: { unitType: "weight", baseLabel: "g", multiplier: 1 },
+  gram: { unitType: "weight", baseLabel: "g", multiplier: 1 },
+  grams: { unitType: "weight", baseLabel: "g", multiplier: 1 },
+  kilogram: { unitType: "weight", baseLabel: "g", multiplier: 1000 },
+  kilograms: { unitType: "weight", baseLabel: "g", multiplier: 1000 },
+  kg: { unitType: "weight", baseLabel: "g", multiplier: 1000 },
+  mg: { unitType: "weight", baseLabel: "g", multiplier: 0.001 },
+  milligram: { unitType: "weight", baseLabel: "g", multiplier: 0.001 },
+  milligrams: { unitType: "weight", baseLabel: "g", multiplier: 0.001 },
+  l: { unitType: "volume", baseLabel: "ml", multiplier: 1000 },
+  litre: { unitType: "volume", baseLabel: "ml", multiplier: 1000 },
+  litres: { unitType: "volume", baseLabel: "ml", multiplier: 1000 },
+  liter: { unitType: "volume", baseLabel: "ml", multiplier: 1000 },
+  liters: { unitType: "volume", baseLabel: "ml", multiplier: 1000 },
+  ml: { unitType: "volume", baseLabel: "ml", multiplier: 1 },
+  millilitre: { unitType: "volume", baseLabel: "ml", multiplier: 1 },
+  millilitres: { unitType: "volume", baseLabel: "ml", multiplier: 1 },
+  milliliter: { unitType: "volume", baseLabel: "ml", multiplier: 1 },
+  milliliters: { unitType: "volume", baseLabel: "ml", multiplier: 1 },
+};
+
+const parseFractionalNumber = (value) => {
+  if (typeof value === "number" && Number.isFinite(value)) {
+    return value;
+  }
+  if (typeof value !== "string") {
+    return null;
+  }
+  const trimmed = value.trim();
+  if (!trimmed) {
+    return null;
+  }
+  const normalized = trimmed.replace(/,/g, ".").toLowerCase();
+  // Handle compound fractions like "1 1/2"
+  const compoundMatch = normalized.match(/^(\d+)\s+(\d+)\/(\d+)$/);
+  if (compoundMatch) {
+    const whole = parseFloat(compoundMatch[1]);
+    const numerator = parseFloat(compoundMatch[2]);
+    const denominator = parseFloat(compoundMatch[3]);
+    if (denominator !== 0) {
+      return whole + numerator / denominator;
+    }
+  }
+  const fractionMatch = normalized.match(/^(\d+)\/(\d+)$/);
+  if (fractionMatch) {
+    const numerator = parseFloat(fractionMatch[1]);
+    const denominator = parseFloat(fractionMatch[2]);
+    if (denominator !== 0) {
+      return numerator / denominator;
+    }
+  }
+  const basicMatch = normalized.match(/-?\d+(?:\.\d+)?/);
+  if (basicMatch) {
+    const parsed = parseFloat(basicMatch[0]);
+    return Number.isFinite(parsed) ? parsed : null;
+  }
+  return null;
+};
+
+const parseMeasurementValue = (value) => {
+  if (value == null) {
+    return null;
+  }
+  if (typeof value === "number" && Number.isFinite(value)) {
+    return { baseAmount: value, unitType: "count", unitLabel: "count" };
+  }
+  if (typeof value !== "string") {
+    return null;
+  }
+  const normalized = value.toLowerCase();
+  const multiplierMatch = normalized.match(
+    /(\d+(?:[\.,]\d+)?(?:\s+\d+\/\d+)?)\s*[x×]\s*(\d+(?:[\.,]\d+)?(?:\s+\d+\/\d+)?)(?:\s*(kg|g|grams?|kilograms?|l|ml|litres?|liters?|millilitres?|milliliters?))?/
+  );
+  if (multiplierMatch) {
+    const countValue = parseFractionalNumber(multiplierMatch[1]);
+    const perValue = parseFractionalNumber(multiplierMatch[2]);
+    const unitKey = multiplierMatch[3]?.trim();
+    if (countValue != null && perValue != null) {
+      if (unitKey && UNIT_DEFINITIONS[unitKey]) {
+        const def = UNIT_DEFINITIONS[unitKey];
+        const baseAmount = countValue * perValue * def.multiplier;
+        return {
+          baseAmount,
+          unitType: def.unitType,
+          unitLabel: def.baseLabel,
+        };
+      }
+      return {
+        baseAmount: countValue * perValue,
+        unitType: "count",
+        unitLabel: "count",
+      };
+    }
+  }
+  const unitMatch = normalized.match(
+    /(\d+(?:[\.,]\d+)?(?:\s+\d+\/\d+)?|\d+\/\d+)\s*(kg|g|grams?|kilograms?|mg|milligrams?|l|ml|litres?|liters?|millilitres?|milliliters?)/
+  );
+  if (unitMatch) {
+    const amount = parseFractionalNumber(unitMatch[1]);
+    const unitKey = unitMatch[2];
+    if (amount != null && UNIT_DEFINITIONS[unitKey]) {
+      const def = UNIT_DEFINITIONS[unitKey];
+      return {
+        baseAmount: amount * def.multiplier,
+        unitType: def.unitType,
+        unitLabel: def.baseLabel,
+      };
+    }
+  }
+  const attachedUnitMatch = normalized.match(
+    /(\d+(?:[\.,]\d+)?)(kg|g|mg|l|ml)/
+  );
+  if (attachedUnitMatch) {
+    const amount = parseFractionalNumber(attachedUnitMatch[1]);
+    const unitKey = attachedUnitMatch[2];
+    if (amount != null && UNIT_DEFINITIONS[unitKey]) {
+      const def = UNIT_DEFINITIONS[unitKey];
+      return {
+        baseAmount: amount * def.multiplier,
+        unitType: def.unitType,
+        unitLabel: def.baseLabel,
+      };
+    }
+  }
+  const countMatch = normalized.match(
+    /(\d+(?:[\.,]\d+)?(?:\s+\d+\/\d+)?|\d+\/\d+)\s*(packets?|packs?|pk|pieces?|pcs|bunch(?:es)?|loaves?|bottles?|jars?|tins?|cans?|sticks?|wraps?|buns?)/
+  );
+  if (countMatch) {
+    const amount = parseFractionalNumber(countMatch[1]);
+    if (amount != null) {
+      return {
+        baseAmount: amount,
+        unitType: "count",
+        unitLabel: "count",
+      };
+    }
+  }
+  const defaultMatch = normalized.match(/(\d+(?:[\.,]\d+)?(?:\s+\d+\/\d+)?|\d+\/\d+)/);
+  if (defaultMatch) {
+    const amount = parseFractionalNumber(defaultMatch[1]);
+    if (amount != null) {
+      return {
+        baseAmount: amount,
+        unitType: "count",
+        unitLabel: "count",
+      };
+    }
+  }
+  return null;
+};
+
+const deriveIngredientCoreKey = (ingredient, fallbackText = null) => {
+  const candidates = [
+    ingredient?.core_item_name,
+    ingredient?.coreItemName,
+    ingredient?.coreName,
+    ingredient?.name,
+    fallbackText,
+  ];
+  for (const candidate of candidates) {
+    const normalized = normalizeIngredientLabel(candidate);
+    if (normalized) {
+      return normalized;
+    }
+  }
+  return normalizeIngredientLabel(fallbackText) || null;
+};
+
+const normalizeProductMeta = (ingredient) => {
+  const nested =
+    (ingredient?.selectedProduct || ingredient?.selected_product) ?? null;
+  if (nested && typeof nested === "object") {
+    return {
+      id:
+        nested.productId ??
+        nested.product_id ??
+        nested.catalogRefId ??
+        nested.catalog_ref_id ??
+        null,
+      name: nested.name ?? ingredient?.productName ?? null,
+      detailUrl: nested.detailUrl ?? nested.detail_url ?? ingredient?.detailUrl ?? null,
+      salePrice: nested.salePrice ?? nested.sale_price ?? ingredient?.salePrice ?? null,
+      packageQuantity:
+        nested.packageQuantity ??
+        nested.package_quantity ??
+        ingredient?.packageQuantity ??
+        ingredient?.package_quantity ??
+        null,
+      ingredientLine:
+        nested.ingredient_line ??
+        ingredient?.ingredient_line ??
+        nested.name ??
+        ingredient?.productName ??
+        null,
+    };
+  }
+  const productId =
+    ingredient?.productId ??
+    ingredient?.product_id ??
+    ingredient?.catalogRefId ??
+    ingredient?.catalog_ref_id ??
+    null;
+  if (
+    productId != null ||
+    ingredient?.productName ||
+    ingredient?.packageQuantity != null ||
+    ingredient?.package_quantity != null ||
+    ingredient?.ingredient_line ||
+    ingredient?.detailUrl ||
+    ingredient?.salePrice != null
+  ) {
+    return {
+      id: productId != null ? String(productId) : null,
+      name: ingredient?.productName ?? ingredient?.ingredient_line ?? null,
+      detailUrl: ingredient?.detailUrl ?? ingredient?.detail_url ?? null,
+      salePrice: ingredient?.salePrice ?? ingredient?.sale_price ?? null,
+      packageQuantity:
+        ingredient?.packageQuantity ?? ingredient?.package_quantity ?? null,
+      ingredientLine: ingredient?.ingredient_line ?? ingredient?.productName ?? null,
+    };
+  }
+  return null;
+};
+
+const extractPackageQuantityValue = (ingredient, productMeta) => {
+  const candidates = [
+    ingredient?.packageQuantity,
+    ingredient?.package_quantity,
+    productMeta?.packageQuantity,
+  ];
+  for (const value of candidates) {
+    if (typeof value === "number" && Number.isFinite(value)) {
+      return value;
+    }
+  }
+  return null;
+};
+
+const summarizeGroupRequirement = (entries) => {
+  let unitType = null;
+  let totalAmount = 0;
+  let fallbackPackages = 0;
+  entries.forEach((entry) => {
+    const qty =
+      typeof entry.requiredQuantity === "number" && Number.isFinite(entry.requiredQuantity)
+        ? entry.requiredQuantity
+        : 1;
+    fallbackPackages += qty;
+    const measurement = entry.requirementMeasurement;
+    if (measurement && measurement.baseAmount > 0) {
+      if (!unitType) {
+        unitType = measurement.unitType;
+      }
+      if (unitType === measurement.unitType) {
+        totalAmount += measurement.baseAmount;
+      } else {
+        unitType = null;
+        totalAmount = 0;
+      }
+    }
+  });
+  return {
+    unitType: unitType ?? null,
+    amount: unitType ? totalAmount : null,
+    fallbackPackages,
+  };
+};
+
+const selectBestGroupCandidate = (entries, requirementSummary) => {
+  if (!entries.length) {
+    return null;
+  }
+  const candidates = new Map();
+  entries.forEach((entry) => {
+    const key = entry.productId || entry.text;
+    if (!candidates.has(key)) {
+      candidates.set(key, {
+        key,
+        productId: entry.productId,
+        productName: entry.productName || entry.text,
+        displayText: entry.text,
+        packMeasurement: entry.packageMeasurement || null,
+        entries: [],
+      });
+    }
+    const candidate = candidates.get(key);
+    candidate.entries.push(entry);
+    if (!candidate.packMeasurement && entry.packageMeasurement) {
+      candidate.packMeasurement = entry.packageMeasurement;
+    }
+  });
+  let best = null;
+  for (const candidate of candidates.values()) {
+    const measurement = candidate.packMeasurement;
+    const requirementAmount = requirementSummary.amount;
+    let packagesNeeded = null;
+    let coverage = null;
+    let hasMeasurement = false;
+    if (
+      measurement &&
+      measurement.baseAmount > 0 &&
+      requirementAmount != null &&
+      measurement.unitType === requirementSummary.unitType
+    ) {
+      hasMeasurement = true;
+      const packSize = measurement.baseAmount;
+      packagesNeeded = Math.max(1, Math.ceil(requirementAmount / packSize));
+      coverage = packagesNeeded * packSize;
+    } else if (measurement && measurement.baseAmount > 0 && requirementSummary.unitType == null) {
+      const observedAmount = candidate.entries.reduce((sum, entry) => {
+        const packMeasure = entry.packageMeasurement;
+        const packQty =
+          typeof entry.requiredQuantity === "number" && Number.isFinite(entry.requiredQuantity)
+            ? entry.requiredQuantity
+            : 1;
+        if (packMeasure && packMeasure.baseAmount > 0 && packMeasure.unitType === measurement.unitType) {
+          return sum + packMeasure.baseAmount * packQty;
+        }
+        return sum;
+      }, 0);
+      if (observedAmount > 0) {
+        hasMeasurement = true;
+        const packSize = measurement.baseAmount;
+        packagesNeeded = Math.max(1, Math.ceil(observedAmount / packSize));
+        coverage = packagesNeeded * packSize;
+      }
+    }
+    if (packagesNeeded == null) {
+      packagesNeeded = candidate.entries.reduce((sum, entry) => {
+        const qty =
+          typeof entry.requiredQuantity === "number" && Number.isFinite(entry.requiredQuantity)
+            ? entry.requiredQuantity
+            : 1;
+        return sum + qty;
+      }, 0);
+      coverage = packagesNeeded;
+    }
+    const waste =
+      hasMeasurement && requirementAmount != null && coverage != null
+        ? Math.max(0, coverage - requirementAmount)
+        : null;
+    candidate.evaluation = {
+      packagesNeeded,
+      coverage,
+      waste,
+      hasMeasurement,
+      packSize: measurement?.baseAmount ?? null,
+    };
+    if (!best) {
+      best = candidate;
+      continue;
+    }
+    const currentEval = candidate.evaluation;
+    const bestEval = best.evaluation;
+    if (currentEval.hasMeasurement && !bestEval.hasMeasurement) {
+      best = candidate;
+      continue;
+    }
+    if (!currentEval.hasMeasurement && bestEval.hasMeasurement) {
+      continue;
+    }
+    if (currentEval.hasMeasurement && bestEval.hasMeasurement) {
+      if (currentEval.packagesNeeded === 1 && bestEval.packagesNeeded !== 1) {
+        best = candidate;
+        continue;
+      }
+      if (currentEval.packagesNeeded !== bestEval.packagesNeeded) {
+        if (currentEval.packagesNeeded < bestEval.packagesNeeded) {
+          best = candidate;
+        }
+        continue;
+      }
+      if (currentEval.waste != null && bestEval.waste != null && currentEval.waste !== bestEval.waste) {
+        if (currentEval.waste < bestEval.waste) {
+          best = candidate;
+        }
+        continue;
+      }
+      if (currentEval.packSize != null && bestEval.packSize != null && currentEval.packSize !== bestEval.packSize) {
+        if (currentEval.packSize < bestEval.packSize) {
+          best = candidate;
+        }
+        continue;
+      }
+    } else {
+      if (currentEval.packagesNeeded !== bestEval.packagesNeeded) {
+        if (currentEval.packagesNeeded < bestEval.packagesNeeded) {
+          best = candidate;
+        }
+        continue;
+      }
+    }
+    const currentName = candidate.productName || candidate.displayText || "";
+    const bestName = best.productName || best.displayText || "";
+    if (currentName.localeCompare(bestName) < 0) {
+      best = candidate;
+    }
+  }
+  return best;
+};
+
 const stageLabels = {
   idle: "Waiting to start",
   waiting_login: "Waiting for Woolworths login",
@@ -702,6 +1269,9 @@ function AppContent() {
   const [isSorryToHearScreenVisible, setIsSorryToHearScreenVisible] = useState(false);
   const [mealServings, setMealServings] = useState({});
   const [ingredientQuantities, setIngredientQuantities] = useState({});
+  const [shoppingListItems, setShoppingListItems] = useState([]);
+  const [shoppingListStatus, setShoppingListStatus] = useState("idle");
+  const [shoppingListError, setShoppingListError] = useState(null);
   const preferenceSyncHashRef = useRef(null);
   const preferenceEntryContextRef = useRef(null);
   const homeMealsBackupRef = useRef(null);
@@ -778,81 +1348,44 @@ function AppContent() {
       return Boolean(selectedHomeMealIds[mealId]);
     });
   }, [displayedMeals, selectedHomeMealIds]);
-  const selectedMealIngredients = useMemo(() => {
-    if (!selectedHomeMeals.length) {
-      return [];
-    }
-    const items = [];
-    selectedHomeMeals.forEach((meal) => {
-      if (!meal) {
+  const { stapleIngredients, primaryIngredients } = useMemo(() => {
+    const staples = [];
+    const primary = [];
+    shoppingListItems.forEach((item) => {
+      if (!item) {
         return;
       }
-      const mealIngredients = Array.isArray(meal.ingredients)
-        ? meal.ingredients
-        : [];
-      if (!mealIngredients.length) {
-        return;
+      if ((item.classification ?? "").toLowerCase() === "pantry") {
+        staples.push(item);
+      } else {
+        primary.push(item);
       }
-      mealIngredients.forEach((ingredient, index) => {
-        if (!ingredient) {
-          return;
-        }
-        const parts = [];
-        if (ingredient.quantity) {
-          parts.push(String(ingredient.quantity));
-        }
-        if (ingredient.unit) {
-          parts.push(String(ingredient.unit));
-        }
-        if (ingredient.name) {
-          parts.push(String(ingredient.name));
-        }
-        if (ingredient.preparation) {
-          parts.push(`(${ingredient.preparation})`);
-        }
-        const fallback =
-          parts.length > 0 ? parts.join(" ") : `Ingredient ${index + 1}`;
-        const displayText =
-          ingredient.productName?.trim() || fallback.trim();
-        const requiredQuantity = parseIngredientQuantity(ingredient.quantity);
-        items.push({
-          id: `${meal.mealId ?? "meal"}-ingredient-${index}`,
-          text: displayText,
-          requiredQuantity,
-        });
-      });
     });
-    return items.sort((a, b) => {
-      const textA = a.text?.toLowerCase() ?? "";
-      const textB = b.text?.toLowerCase() ?? "";
-      if (textA < textB) {
-        return -1;
-      }
-      if (textA > textB) {
-        return 1;
-      }
-      return 0;
-    });
-  }, [selectedHomeMeals]);
+    return { stapleIngredients: staples, primaryIngredients: primary };
+  }, [shoppingListItems]);
 
   useEffect(() => {
     setIngredientQuantities((prev) => {
       const next = {};
-      selectedMealIngredients.forEach((ingredient) => {
+      shoppingListItems.forEach((ingredient) => {
+        if (!ingredient?.id) {
+          return;
+        }
         const existingValue = prev?.[ingredient.id];
         if (typeof existingValue === "number" && Number.isFinite(existingValue)) {
           next[ingredient.id] = existingValue;
         } else {
           next[ingredient.id] =
-            typeof ingredient.requiredQuantity === "number" &&
-            Number.isFinite(ingredient.requiredQuantity)
+            typeof ingredient.defaultQuantity === "number" && Number.isFinite(ingredient.defaultQuantity)
+              ? ingredient.defaultQuantity
+              : typeof ingredient.requiredQuantity === "number" && Number.isFinite(ingredient.requiredQuantity)
               ? ingredient.requiredQuantity
               : 1;
         }
       });
       return next;
     });
-  }, [selectedMealIngredients]);
+  }, [shoppingListItems]);
   const userDisplayName = useMemo(() => {
     const primaryEmail = user?.primaryEmailAddress?.emailAddress;
     if (primaryEmail) {
@@ -1041,6 +1574,70 @@ function AppContent() {
     return formatted.replace(/\.0+$/, "");
   }, []);
 
+  const renderIngredientRow = useCallback(
+    (ingredient) => {
+      if (!ingredient) {
+        return null;
+      }
+      const storedQuantity = ingredientQuantities?.[ingredient.id];
+      const numericQuantity =
+        typeof storedQuantity === "number" && Number.isFinite(storedQuantity)
+          ? storedQuantity
+          : typeof ingredient.defaultQuantity === "number" && Number.isFinite(ingredient.defaultQuantity)
+          ? ingredient.defaultQuantity
+          : typeof ingredient.requiredQuantity === "number" && Number.isFinite(ingredient.requiredQuantity)
+          ? ingredient.requiredQuantity
+          : 0;
+      const displayQuantity = formatIngredientQuantity(numericQuantity);
+      const disableDecrease = numericQuantity <= 0;
+      return (
+        <View key={ingredient.id} style={styles.ingredientsListItem}>
+          <Text style={styles.ingredientsItemText}>{ingredient.text}</Text>
+          <View style={styles.ingredientsQuantityRow}>
+            <TouchableOpacity
+              style={[
+                styles.ingredientsQuantityButton,
+                disableDecrease && styles.ingredientsQuantityButtonDisabled,
+              ]}
+              onPress={() => handleIngredientQuantityDecrease(ingredient.id)}
+              accessibilityRole="button"
+              accessibilityLabel={`Decrease quantity for ${ingredient.text}`}
+              disabled={disableDecrease}
+            >
+              <Text
+                style={[
+                  styles.ingredientsQuantityButtonText,
+                  disableDecrease && styles.ingredientsQuantityButtonTextDisabled,
+                ]}
+              >
+                -
+              </Text>
+            </TouchableOpacity>
+            <View style={styles.ingredientsQuantityValue}>
+              <Text style={styles.ingredientsQuantityValueText}>
+                {displayQuantity}
+              </Text>
+            </View>
+            <TouchableOpacity
+              style={styles.ingredientsQuantityButton}
+              onPress={() => handleIngredientQuantityIncrease(ingredient.id)}
+              accessibilityRole="button"
+              accessibilityLabel={`Increase quantity for ${ingredient.text}`}
+            >
+              <Text style={styles.ingredientsQuantityButtonText}>+</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      );
+    },
+    [
+      formatIngredientQuantity,
+      handleIngredientQuantityDecrease,
+      handleIngredientQuantityIncrease,
+      ingredientQuantities,
+    ]
+  );
+
   const toggleMealMenu = useCallback(() => {
     setIsMealMenuOpen((prev) => !prev);
   }, []);
@@ -1057,11 +1654,6 @@ function AppContent() {
   const handleReturnToMealHome = useCallback(() => {
     setHomeSurface("meal");
     setScreen("home");
-  }, []);
-
-  const handleOpenIngredientsScreen = useCallback(() => {
-    setIsMealMenuOpen(false);
-    setScreen("ingredients");
   }, []);
 
   const handleIngredientsBackToHome = useCallback(() => {
@@ -1105,6 +1697,10 @@ function AppContent() {
     setRecommendationNotes([]);
     setRecommendationError(null);
     toggleDefaultsInitializedRef.current = {};
+    setShoppingListItems([]);
+    setShoppingListStatus("idle");
+    setShoppingListError(null);
+    setIngredientQuantities({});
   }, [applyHomeRecommendedMeals, userId]);
 
   useEffect(() => {
@@ -1637,17 +2233,61 @@ const handlePreferenceSelection = useCallback(
       context: null,
     });
     if (context === "shoppingList") {
-      // Future: trigger shopping list build + checkout logic here.
+      handleBuildShoppingList();
     } else if (context === "newMeals") {
       handleConfirmPreferenceComplete();
     } else if (context === "woolworthsCart") {
       // Future: trigger add-to-cart flow once wired up.
     }
-  }, [confirmationDialog.context, handleConfirmPreferenceComplete]);
+  }, [confirmationDialog.context, handleBuildShoppingList, handleConfirmPreferenceComplete]);
 
   const handleOpenShoppingListConfirm = useCallback(() => {
+    if (!selectedHomeMeals.length) {
+      Alert.alert(
+        "Select meals",
+        "Choose at least one meal before preparing your shopping list."
+      );
+      return;
+    }
+    if (!SHOPPING_LIST_API_ENDPOINT) {
+      Alert.alert(
+        "Shopping list unavailable",
+        "Update the app configuration to enable shopping list preparation."
+      );
+      return;
+    }
     showConfirmationDialog("shoppingList");
-  }, [showConfirmationDialog]);
+  }, [SHOPPING_LIST_API_ENDPOINT, selectedHomeMeals.length, showConfirmationDialog]);
+
+  const confirmationDialogPortal = confirmationDialog.visible ? (
+    <View style={styles.mealDetailModalContainer} pointerEvents="box-none">
+      <TouchableWithoutFeedback onPress={handleCloseConfirmationDialog}>
+        <View style={styles.mealDetailBackdrop} />
+      </TouchableWithoutFeedback>
+      <View style={styles.mealDetailCard}>
+        <View style={styles.confirmModalContent}>
+          <Text style={styles.mealDetailTitle}>Please confirm</Text>
+          <Text style={styles.confirmSubtitle}>use a free use</Text>
+        </View>
+        <TouchableOpacity
+          style={styles.confirmAcceptButton}
+          onPress={handleConfirmDialog}
+          accessibilityRole="button"
+          accessibilityLabel="Confirm action"
+        >
+          <Text style={styles.confirmAcceptText}>✓</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.mealDetailCloseButton}
+          onPress={handleCloseConfirmationDialog}
+          accessibilityRole="button"
+          accessibilityLabel="Dismiss confirmation"
+        >
+          <Text style={styles.mealDetailCloseText}>×</Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  ) : null;
 
   const handleOpenNewMealsConfirm = useCallback(() => {
     showConfirmationDialog("newMeals");
@@ -1690,6 +2330,77 @@ const handlePreferenceSelection = useCallback(
     },
     [getToken]
   );
+
+  const buildShoppingListRequestPayload = useCallback(() => {
+    const mealsPayload = selectedHomeMeals
+      .filter((meal) => meal && meal.mealId)
+      .map((meal) => {
+        const finalIngredients = Array.isArray(meal.finalIngredients)
+          ? meal.finalIngredients
+          : Array.isArray(meal.final_ingredients)
+          ? meal.final_ingredients
+          : Array.isArray(meal.ingredients)
+          ? meal.ingredients
+          : [];
+        return {
+          mealId: meal.mealId,
+          name: meal.name,
+          servings: meal.servings,
+          ingredients: finalIngredients.filter(Boolean),
+        };
+      })
+      .filter((meal) => meal.ingredients.length > 0);
+    return { meals: mealsPayload };
+  }, [selectedHomeMeals]);
+
+  const handleBuildShoppingList = useCallback(async () => {
+    const payload = buildShoppingListRequestPayload();
+    if (!payload.meals.length) {
+      setShoppingListItems([]);
+      setShoppingListStatus("idle");
+      setShoppingListError("Select at least one meal to prepare a shopping list.");
+      Alert.alert(
+        "Missing meal details",
+        "We couldn't find ingredient details for the selected meals. Refresh recommendations and try again."
+      );
+      return;
+    }
+    if (!SHOPPING_LIST_API_ENDPOINT) {
+      setShoppingListStatus("error");
+      setShoppingListError("Shopping list builder is not configured.");
+      return;
+    }
+    setIsMealMenuOpen(false);
+    setScreen("ingredients");
+    setShoppingListStatus("pending");
+    setShoppingListError(null);
+    setShoppingListItems([]);
+    try {
+      const headers = await buildAuthHeaders({ "Content-Type": "application/json" });
+      const response = await fetch(SHOPPING_LIST_API_ENDPOINT, {
+        method: "POST",
+        headers,
+        body: JSON.stringify(payload),
+      });
+      if (!response.ok) {
+        throw new Error(`Shopping list request failed (${response.status})`);
+      }
+      const data = await response.json();
+      const items = Array.isArray(data?.items) ? data.items.filter(Boolean) : [];
+      setShoppingListItems(items);
+      setShoppingListStatus("ready");
+    } catch (error) {
+      console.warn("Shopping list build failed", error);
+      setShoppingListStatus("error");
+      setShoppingListError(
+        error?.message ?? "Something went wrong while preparing your shopping list."
+      );
+    }
+  }, [
+    SHOPPING_LIST_API_ENDPOINT,
+    buildAuthHeaders,
+    buildShoppingListRequestPayload,
+  ]);
 
   const startExplorationRun = useCallback(async () => {
     if (!EXPLORATION_API_ENDPOINT) {
@@ -3152,35 +3863,7 @@ const handlePreferenceSelection = useCallback(
           </View>
         </View>
         {mealMenuOverlay}
-        {confirmationDialog.visible ? (
-          <View style={styles.mealDetailModalContainer} pointerEvents="box-none">
-            <TouchableWithoutFeedback onPress={handleCloseConfirmationDialog}>
-              <View style={styles.mealDetailBackdrop} />
-            </TouchableWithoutFeedback>
-            <View style={styles.mealDetailCard}>
-              <View style={styles.confirmModalContent}>
-                <Text style={styles.mealDetailTitle}>Please confirm</Text>
-                <Text style={styles.confirmSubtitle}>use a free use</Text>
-              </View>
-              <TouchableOpacity
-                style={styles.confirmAcceptButton}
-                onPress={handleConfirmDialog}
-                accessibilityRole="button"
-                accessibilityLabel="Confirm action"
-              >
-                <Text style={styles.confirmAcceptText}>✓</Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={styles.mealDetailCloseButton}
-                onPress={handleCloseConfirmationDialog}
-                accessibilityRole="button"
-                accessibilityLabel="Dismiss confirmation"
-              >
-                <Text style={styles.mealDetailCloseText}>×</Text>
-              </TouchableOpacity>
-            </View>
-          </View>
-        ) : null}
+        {confirmationDialogPortal}
       </SafeAreaView>
     );
   }
@@ -3245,35 +3928,7 @@ const handlePreferenceSelection = useCallback(
           </View>
         </View>
         {mealMenuOverlay}
-        {confirmationDialog.visible ? (
-          <View style={styles.mealDetailModalContainer} pointerEvents="box-none">
-            <TouchableWithoutFeedback onPress={handleCloseConfirmationDialog}>
-              <View style={styles.mealDetailBackdrop} />
-            </TouchableWithoutFeedback>
-            <View style={styles.mealDetailCard}>
-              <View style={styles.confirmModalContent}>
-                <Text style={styles.mealDetailTitle}>Please confirm</Text>
-                <Text style={styles.confirmSubtitle}>use a free use</Text>
-              </View>
-              <TouchableOpacity
-                style={styles.confirmAcceptButton}
-                onPress={handleConfirmDialog}
-                accessibilityRole="button"
-                accessibilityLabel="Confirm action"
-              >
-                <Text style={styles.confirmAcceptText}>✓</Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={styles.mealDetailCloseButton}
-                onPress={handleCloseConfirmationDialog}
-                accessibilityRole="button"
-                accessibilityLabel="Dismiss confirmation"
-              >
-                <Text style={styles.mealDetailCloseText}>×</Text>
-              </TouchableOpacity>
-            </View>
-          </View>
-        ) : null}
+        {confirmationDialogPortal}
       </SafeAreaView>
     );
   }
@@ -3666,12 +4321,13 @@ const handlePreferenceSelection = useCallback(
           </ScrollView>
           <TouchableOpacity
             style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
-            onPress={handleOpenIngredientsScreen}
+            onPress={handleOpenShoppingListConfirm}
           >
             <Text style={styles.welcomeButtonText}>Next</Text>
           </TouchableOpacity>
         </View>
         {mealMenuOverlay}
+        {confirmationDialogPortal}
         {homeMealModal.visible && homeMealModal.meal ? (
         <View style={styles.mealDetailModalContainer} pointerEvents="box-none">
           <TouchableWithoutFeedback
@@ -3787,59 +4443,54 @@ const handlePreferenceSelection = useCallback(
             contentContainerStyle={styles.ingredientsListContent}
             showsVerticalScrollIndicator={false}
           >
-            {selectedMealIngredients.length > 0 ? (
-              selectedMealIngredients.map((ingredient) => {
-                const storedQuantity = ingredientQuantities?.[ingredient.id];
-                const numericQuantity =
-                  typeof storedQuantity === "number" && Number.isFinite(storedQuantity)
-                    ? storedQuantity
-                    : ingredient.requiredQuantity ?? 1;
-                const displayQuantity = formatIngredientQuantity(numericQuantity);
-                const disableDecrease = numericQuantity <= 0;
-                return (
-                  <View key={ingredient.id} style={styles.ingredientsListItem}>
-                    <Text style={styles.ingredientsItemText}>{ingredient.text}</Text>
-                    <View style={styles.ingredientsQuantityRow}>
-                      <TouchableOpacity
-                        style={[
-                          styles.ingredientsQuantityButton,
-                          disableDecrease && styles.ingredientsQuantityButtonDisabled,
-                        ]}
-                        onPress={() => handleIngredientQuantityDecrease(ingredient.id)}
-                        accessibilityRole="button"
-                        accessibilityLabel={`Decrease quantity for ${ingredient.text}`}
-                        disabled={disableDecrease}
-                      >
-                        <Text
-                          style={[
-                            styles.ingredientsQuantityButtonText,
-                            disableDecrease && styles.ingredientsQuantityButtonTextDisabled,
-                          ]}
-                        >
-                          -
-                        </Text>
-                      </TouchableOpacity>
-                      <View style={styles.ingredientsQuantityValue}>
-                        <Text style={styles.ingredientsQuantityValueText}>
-                          {displayQuantity}
-                        </Text>
-                      </View>
-                      <TouchableOpacity
-                        style={styles.ingredientsQuantityButton}
-                        onPress={() => handleIngredientQuantityIncrease(ingredient.id)}
-                        accessibilityRole="button"
-                        accessibilityLabel={`Increase quantity for ${ingredient.text}`}
-                      >
-                        <Text style={styles.ingredientsQuantityButtonText}>+</Text>
-                      </TouchableOpacity>
+            {shoppingListStatus === "pending" ? (
+              <View style={styles.ingredientsEmptyState}>
+                <ActivityIndicator size="large" color="#0c3c26" />
+                <Text style={styles.ingredientsEmptyText}>We're preparing your shopping list...</Text>
+              </View>
+            ) : shoppingListError ? (
+              <View style={styles.ingredientsEmptyState}>
+                <Text style={styles.ingredientsEmptyText}>{shoppingListError}</Text>
+                <TouchableOpacity
+                  style={styles.ingredientsRetryButton}
+                  onPress={handleOpenShoppingListConfirm}
+                >
+                  <Text style={styles.ingredientsRetryButtonText}>Try again</Text>
+                </TouchableOpacity>
+              </View>
+            ) : stapleIngredients.length > 0 || primaryIngredients.length > 0 ? (
+              <>
+                {stapleIngredients.length > 0 ? (
+                  <View style={styles.ingredientsStapleSection}>
+                    <View style={styles.ingredientsStapleNotice}>
+                      <Text style={styles.ingredientsStapleTitle}>Likely already in your pantry</Text>
+                      <Text style={styles.ingredientsStapleDescription}>
+                        We think you already have these staples. Increase the quantity if you need to restock.
+                      </Text>
+                    </View>
+                    {stapleIngredients.map((ingredient) => renderIngredientRow(ingredient))}
+                    <View style={styles.ingredientsPrimaryNotice}>
+                      <Text style={styles.ingredientsPrimaryNoticeTitle}>Need to pick these up?</Text>
+                      <Text style={styles.ingredientsPrimaryNoticeDescription}>
+                        The rest of the list comes from your selected meals and usually needs a store run.
+                      </Text>
                     </View>
                   </View>
-                );
-              })
+                ) : null}
+                {primaryIngredients.length > 0 ? (
+                  <View style={styles.ingredientsPrimarySection}>
+                    {primaryIngredients.map((ingredient) => renderIngredientRow(ingredient))}
+                  </View>
+                ) : null}
+              </>
             ) : (
               <View style={styles.ingredientsEmptyState}>
                 <Text style={styles.ingredientsEmptyText}>
-                  Select meals on the previous screen to see their ingredients here.
+                  {shoppingListStatus === "ready"
+                    ? "Your selected meals don't require any new ingredients."
+                    : selectedHomeMeals.length
+                    ? "Tap Next on the previous screen to prepare your shopping list."
+                    : "Select meals on the previous screen to see their ingredients here."}
                 </Text>
               </View>
             )}
@@ -3860,35 +4511,7 @@ const handlePreferenceSelection = useCallback(
           </View>
         </View>
         {mealMenuOverlay}
-        {confirmationDialog.visible ? (
-          <View style={styles.mealDetailModalContainer} pointerEvents="box-none">
-            <TouchableWithoutFeedback onPress={handleCloseConfirmationDialog}>
-              <View style={styles.mealDetailBackdrop} />
-            </TouchableWithoutFeedback>
-            <View style={styles.mealDetailCard}>
-              <View style={styles.confirmModalContent}>
-                <Text style={styles.mealDetailTitle}>Please confirm</Text>
-                <Text style={styles.confirmSubtitle}>use a free use</Text>
-              </View>
-              <TouchableOpacity
-                style={styles.confirmAcceptButton}
-                onPress={handleConfirmDialog}
-                accessibilityRole="button"
-                accessibilityLabel="Confirm action"
-              >
-                <Text style={styles.confirmAcceptText}>✓</Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={styles.mealDetailCloseButton}
-                onPress={handleCloseConfirmationDialog}
-                accessibilityRole="button"
-                accessibilityLabel="Dismiss confirmation"
-              >
-                <Text style={styles.mealDetailCloseText}>×</Text>
-              </TouchableOpacity>
-            </View>
-          </View>
-        ) : null}
+        {confirmationDialogPortal}
       </SafeAreaView>
     );
   }
@@ -4475,6 +5098,43 @@ const styles = StyleSheet.create({
   ingredientsListContent: {
     paddingBottom: 8,
   },
+  ingredientsStapleSection: {
+    marginBottom: 20,
+  },
+  ingredientsStapleNotice: {
+    backgroundColor: "#f2f7f4",
+    borderRadius: 16,
+    padding: 14,
+    marginBottom: 12,
+    ...SHADOW.card,
+  },
+  ingredientsStapleTitle: {
+    fontSize: 16,
+    fontWeight: "600",
+    color: "#0c3c26",
+  },
+  ingredientsStapleDescription: {
+    fontSize: 13,
+    color: "#4d4d4d",
+  },
+  ingredientsPrimaryNotice: {
+    backgroundColor: "#f0f5ff",
+    borderRadius: 16,
+    padding: 14,
+    marginTop: 4,
+    marginBottom: 12,
+    ...SHADOW.card,
+  },
+  ingredientsPrimaryNoticeTitle: {
+    fontSize: 15,
+    fontWeight: "600",
+    color: "#0c3c26",
+  },
+  ingredientsPrimaryNoticeDescription: {
+    fontSize: 13,
+    color: "#4d4d4d",
+  },
+  ingredientsPrimarySection: {},
   ingredientsListItem: {
     backgroundColor: "#fff",
     borderRadius: 16,
@@ -4537,6 +5197,17 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: "#4d4d4d",
     textAlign: "center",
+  },
+  ingredientsRetryButton: {
+    marginTop: 16,
+    paddingHorizontal: 20,
+    paddingVertical: 12,
+    borderRadius: 999,
+    backgroundColor: "#0c3c26",
+  },
+  ingredientsRetryButtonText: {
+    color: "#fff",
+    fontWeight: "600",
   },
   ingredientsButtonGroup: {
     paddingTop: 8,

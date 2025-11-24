@@ -28,6 +28,7 @@ from .routes import (
     preferences,
     filtering,
     recommendations,
+    shopping,
 )
 from .ratelimit import limiter
 from slowapi.errors import RateLimitExceeded
@@ -83,6 +84,7 @@ def create_app() -> FastAPI:
     app.include_router(preferences.router, prefix=prefix)
     app.include_router(filtering.router, prefix=prefix)
     app.include_router(recommendations.router, prefix=prefix)
+    app.include_router(shopping.router, prefix=prefix)
 
     # Rate limit handling
     app.state.limiter = limiter
