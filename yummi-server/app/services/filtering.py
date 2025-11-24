@@ -63,6 +63,7 @@ SKU_SNAPSHOT_LIMIT = 4
 
 @dataclass
 class ConstraintContext:
+    allowed_audience: set[str]
     required_diets: set[str]
     required_ethics: set[str]
     disallowed_allergens: set[str]
@@ -164,6 +165,7 @@ def _build_constraint_context(
     selected = dict(profile.selected_tags or {}) if profile else {}
     disliked = dict(profile.disliked_tags or {}) if profile else {}
 
+    allowed_audience = _resolve_allowed_audience(selected, tag_manifest)
     required_diets = _resolve_required_diets(selected, tag_manifest, overrides)
     required_ethics = _resolve_required_ethics(selected, tag_manifest, overrides)
 
@@ -179,6 +181,7 @@ def _build_constraint_context(
     declined_meal_ids = {mid for mid in (declined_ids or []) if mid}
 
     return ConstraintContext(
+        allowed_audience=allowed_audience,
         required_diets=required_diets,
         required_ethics=required_ethics,
         disallowed_allergens=disallowed_allergens,
@@ -187,6 +190,16 @@ def _build_constraint_context(
         max_prep_minutes=max_prep_minutes,
         declined_meal_ids=declined_meal_ids,
     )
+
+
+def _resolve_allowed_audience(
+    selected: Dict[str, List[str]],
+    tag_manifest: TagManifest,
+) -> set[str]:
+    tag_ids = selected.get("Audience") or []
+    if not tag_ids:
+        return set()
+    return set(_tag_ids_to_values(tag_ids, tag_manifest))
 
 
 def _resolve_required_diets(
@@ -255,6 +268,8 @@ def _filter_manifest(
             if not meal_id or meal_id in constraints.declined_meal_ids:
                 continue
             tags = meal.get("meal_tags") or {}
+            if not _passes_audience(tags, constraints):
+                continue
             if not _passes_diet(tags, constraints):
                 continue
             if not _passes_ethics(tags, constraints):
@@ -270,6 +285,13 @@ def _filter_manifest(
                 retained.append(_build_candidate_summary(meal, archetype_uid))
                 details.append(CandidateMealDetail(archetype_uid=archetype_uid, meal=meal))
     return total_matches, retained, details
+
+
+def _passes_audience(tags: Dict[str, List[str]], constraints: ConstraintContext) -> bool:
+    if not constraints.allowed_audience:
+        return True
+    meal_audience = set(tags.get("Audience") or [])
+    return bool(meal_audience & constraints.allowed_audience)
 
 
 def _passes_diet(tags: Dict[str, List[str]], constraints: ConstraintContext) -> bool:

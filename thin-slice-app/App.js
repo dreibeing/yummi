@@ -255,13 +255,17 @@ const RECOMMENDATION_MEAL_TARGET = 10;
 const RECOMMENDATION_API_ENDPOINT = API_BASE_URL
   ? `${API_BASE_URL}/recommendations/feed`
   : null;
+const DIETARY_RESTRICTIONS_CATEGORY_ID = "DietaryRestrictions";
+const DIETARY_NO_RESTRICTIONS_TAG_ID = "dietres_none";
+const ALLERGENS_CATEGORY_ID = "Allergens";
+const ALLERGENS_NO_AVOIDANCE_TAG_ID = "allergen_none";
 const BASE_PREFERENCE_CATEGORIES = [
   {
-    id: "DietaryRestrictions",
+    id: DIETARY_RESTRICTIONS_CATEGORY_ID,
     title: "Diet & Ethics",
     description: "Tell us which dietary guardrails apply to your household.",
     tags: [
-      { id: "dietres_none", label: "No restrictions" },
+      { id: DIETARY_NO_RESTRICTIONS_TAG_ID, label: "No restrictions" },
       { id: "dietres_vegan", label: "Vegan" },
       { id: "dietres_vegetarian", label: "Vegetarian" },
       { id: "dietres_pescatarian", label: "Pescatarian" },
@@ -342,11 +346,11 @@ const BASE_PREFERENCE_CATEGORIES = [
     ],
   },
   {
-    id: "Allergens",
+    id: ALLERGENS_CATEGORY_ID,
     title: "Avoidances & Allergens",
     description: "Flag anything that must stay out of your kitchen.",
     tags: [
-      { id: "allergen_none", label: "No allergen avoidance" },
+      { id: ALLERGENS_NO_AVOIDANCE_TAG_ID, label: "No allergen avoidance" },
       { id: "allergen_dairy", label: "Dairy" },
       { id: "allergen_egg", label: "Eggs" },
       { id: "allergen_gluten", label: "Gluten" },
@@ -414,16 +418,25 @@ const ORDERED_PREFERENCE_CATEGORIES = [
 const SINGLE_SELECT_PREFERENCE_CATEGORY_IDS = new Set(["Audience"]);
 const isSingleSelectPreferenceCategory = (categoryId) =>
   SINGLE_SELECT_PREFERENCE_CATEGORY_IDS.has(categoryId);
-
-const PREFERENCE_TAG_LABEL_LOOKUP = BASE_PREFERENCE_CATEGORIES.reduce(
-  (acc, category) => {
-    category.tags.forEach((tag) => {
-      acc[tag.id] = tag.label;
-    });
-    return acc;
+const TOGGLE_CATEGORY_BEHAVIOR = {
+  [DIETARY_RESTRICTIONS_CATEGORY_ID]: {
+    defaultTagId: DIETARY_NO_RESTRICTIONS_TAG_ID,
+    defaultState: "like",
+    selectionState: "like",
   },
-  {}
+  [ALLERGENS_CATEGORY_ID]: {
+    defaultTagId: ALLERGENS_NO_AVOIDANCE_TAG_ID,
+    defaultState: "like",
+    selectionState: "dislike",
+  },
+};
+const MULTI_SELECT_TOGGLE_PREFERENCE_CATEGORY_IDS = new Set(
+  Object.keys(TOGGLE_CATEGORY_BEHAVIOR)
 );
+const isMultiSelectTogglePreferenceCategory = (categoryId) =>
+  MULTI_SELECT_TOGGLE_PREFERENCE_CATEGORY_IDS.has(categoryId);
+const getToggleCategoryConfig = (categoryId) =>
+  TOGGLE_CATEGORY_BEHAVIOR[categoryId] ?? null;
 
 const clonePreferenceResponses = (responses = {}) => {
   return Object.entries(responses).reduce((acc, [categoryId, values]) => {
@@ -432,7 +445,56 @@ const clonePreferenceResponses = (responses = {}) => {
   }, {});
 };
 
-const applyPreferenceSmartLogic = (responses = {}) => responses;
+const applyPreferenceSmartLogic = (responses = {}) => {
+  const next = clonePreferenceResponses(responses);
+  Object.entries(TOGGLE_CATEGORY_BEHAVIOR).forEach(
+    ([categoryId, config]) => {
+      const categoryValues = {
+        ...(next[categoryId] ?? {}),
+      };
+      const hasNonDefaultSelections = Object.entries(categoryValues).some(
+        ([tagId, state]) =>
+          tagId !== config.defaultTagId && state === config.selectionState
+      );
+      if (hasNonDefaultSelections) {
+        delete categoryValues[config.defaultTagId];
+      } else {
+        categoryValues[config.defaultTagId] = config.defaultState;
+      }
+      if (Object.keys(categoryValues).length > 0) {
+        next[categoryId] = categoryValues;
+      } else {
+        delete next[categoryId];
+      }
+    }
+  );
+  return next;
+};
+
+const hasMeaningfulPreferenceSelections = (responses = {}) => {
+  const entries = Object.entries(responses ?? {});
+  if (entries.length === 0) {
+    return false;
+  }
+  for (const [categoryId, selections] of entries) {
+    if (!selections || Object.keys(selections).length === 0) {
+      continue;
+    }
+    const toggleConfig = getToggleCategoryConfig(categoryId);
+    if (!toggleConfig) {
+      return true;
+    }
+    const hasRealSelection = Object.entries(selections).some(
+      ([tagId, state]) =>
+        tagId !== toggleConfig.defaultTagId &&
+        state === toggleConfig.selectionState
+    );
+    if (hasRealSelection) {
+      return true;
+    }
+  }
+  return false;
+};
 
 const shouldSkipPreferenceCategory = () => false;
 
@@ -454,42 +516,6 @@ const buildPreferenceCategories = (responses = {}) => {
     });
   });
   return categories;
-};
-
-const formatListForNotice = (items) => {
-  if (!items.length) {
-    return "";
-  }
-  if (items.length === 1) {
-    return items[0];
-  }
-  return `${items.slice(0, -1).join(", ")} and ${items[items.length - 1]}`;
-};
-
-const derivePreferenceNotices = (responses = {}) => {
-  const notices = [];
-  const dietSelections = responses.DietaryRestrictions ?? {};
-  const allergenSelections = responses.Allergens ?? {};
-
-  if (dietSelections.dietres_vegan === "like") {
-    notices.push("We’ll tailor meal ideas to stay fully vegan.");
-  } else if (dietSelections.dietres_vegetarian === "like") {
-    notices.push("We’ll lean into vegetarian-friendly meal ideas.");
-  }
-
-  const avoidedLabels = Object.entries(allergenSelections)
-    .filter(([, value]) => value === "dislike")
-    .map(
-      ([key]) => PREFERENCE_TAG_LABEL_LOOKUP[key] ?? key.replace(/_/g, " ")
-    );
-
-  if (avoidedLabels.length > 0) {
-    notices.push(
-      `We’ll prioritize meals without ${formatListForNotice(avoidedLabels)}.`
-    );
-  }
-
-  return notices;
 };
 
 const getPreferenceValue = (responses, categoryId, tagId) => {
@@ -679,6 +705,7 @@ function AppContent() {
   const preferenceSyncHashRef = useRef(null);
   const preferenceEntryContextRef = useRef(null);
   const homeMealsBackupRef = useRef(null);
+  const toggleDefaultsInitializedRef = useRef({});
 
   const applyHomeRecommendedMeals = useCallback((meals) => {
     const nextSource = Array.isArray(meals)
@@ -703,14 +730,28 @@ function AppContent() {
   const isSingleSelectCategory =
     activePreferenceCategory != null &&
     isSingleSelectPreferenceCategory(activePreferenceCategory.id);
-  const preferenceNotices = useMemo(
-    () => derivePreferenceNotices(preferenceResponses),
-    [preferenceResponses]
-  );
-  const activeCategoryRatingsCount =
+  const activeToggleConfig = activePreferenceCategory
+    ? getToggleCategoryConfig(activePreferenceCategory.id)
+    : null;
+  const isToggleCategory = Boolean(activeToggleConfig);
+  const activeCategorySelections =
     activePreferenceCategory && preferenceResponses?.[activePreferenceCategory.id]
-      ? Object.keys(preferenceResponses[activePreferenceCategory.id]).length
-      : 0;
+      ? preferenceResponses[activePreferenceCategory.id]
+      : null;
+  const activeCategoryRatingsCount = activeCategorySelections
+    ? Object.keys(activeCategorySelections).length
+    : 0;
+  const hasOnlyToggleDefaultActive =
+    isToggleCategory &&
+    activeToggleConfig &&
+    activeCategoryRatingsCount === 1 &&
+    activeCategorySelections?.[activeToggleConfig.defaultTagId] ===
+      activeToggleConfig.defaultState;
+  const toggleDefaultLabel = isToggleCategory
+    ? activePreferenceCategory?.tags?.find(
+        (tag) => tag.id === activeToggleConfig?.defaultTagId
+      )?.label ?? "the default option"
+    : null;
   const shouldShowPreferenceCompletionScreen =
     isOnboardingActive &&
     isWelcomeComplete &&
@@ -1063,6 +1104,7 @@ function AppContent() {
     setRecommendationMeals([]);
     setRecommendationNotes([]);
     setRecommendationError(null);
+    toggleDefaultsInitializedRef.current = {};
   }, [applyHomeRecommendedMeals, userId]);
 
   useEffect(() => {
@@ -1178,8 +1220,9 @@ function AppContent() {
         const localHash = JSON.stringify(preferenceResponses ?? {});
         const hasRemoteSelections =
           remoteResponses && Object.keys(remoteResponses).length > 0;
-        const hasLocalSelections =
-          preferenceResponses && Object.keys(preferenceResponses).length > 0;
+        const hasLocalSelections = hasMeaningfulPreferenceSelections(
+          preferenceResponses
+        );
         if (hasRemoteSelections && !hasLocalSelections) {
           setPreferenceResponses(applyPreferenceSmartLogic(remoteResponses));
           preferenceSyncHashRef.current = remoteHash;
@@ -1228,6 +1271,68 @@ function AppContent() {
     isPreferenceStateReady,
     preferenceResponses,
     userId,
+  ]);
+
+  useEffect(() => {
+    if (!isPreferenceStateReady) {
+      return;
+    }
+    const shouldWaitForRemote =
+      Boolean(PREFERENCES_API_ENDPOINT && userId) &&
+      !hasFetchedRemotePreferences;
+    if (shouldWaitForRemote) {
+      return;
+    }
+    const pendingCategoryIds = Object.keys(TOGGLE_CATEGORY_BEHAVIOR).filter(
+      (categoryId) => !toggleDefaultsInitializedRef.current[categoryId]
+    );
+    if (pendingCategoryIds.length === 0) {
+      return;
+    }
+    const categoriesNeedingDefault = pendingCategoryIds.filter(
+      (categoryId) => {
+        const selections = preferenceResponses?.[categoryId] ?? {};
+        if (selections && Object.keys(selections).length > 0) {
+          toggleDefaultsInitializedRef.current[categoryId] = true;
+          return false;
+        }
+        return true;
+      }
+    );
+    if (categoriesNeedingDefault.length === 0) {
+      return;
+    }
+    setPreferenceResponses((prev) => {
+      let hasChanges = false;
+      const next = { ...prev };
+      categoriesNeedingDefault.forEach((categoryId) => {
+        const prevSelections = prev?.[categoryId] ?? {};
+        if (prevSelections && Object.keys(prevSelections).length > 0) {
+          toggleDefaultsInitializedRef.current[categoryId] = true;
+          return;
+        }
+        const config = getToggleCategoryConfig(categoryId);
+        if (!config) {
+          toggleDefaultsInitializedRef.current[categoryId] = true;
+          return;
+        }
+        next[categoryId] = {
+          [config.defaultTagId]: config.defaultState,
+        };
+        toggleDefaultsInitializedRef.current[categoryId] = true;
+        hasChanges = true;
+      });
+      if (!hasChanges) {
+        return prev;
+      }
+      return applyPreferenceSmartLogic(next);
+    });
+  }, [
+    hasFetchedRemotePreferences,
+    isPreferenceStateReady,
+    preferenceResponses,
+    userId,
+    PREFERENCES_API_ENDPOINT,
   ]);
 
   useEffect(() => {
@@ -1378,16 +1483,31 @@ const handlePreferenceSelection = useCallback(
       } else {
         nextCategoryValues[tagId] = resolvedValue;
       }
+      const toggleConfig = getToggleCategoryConfig(categoryId);
+      if (toggleConfig) {
+        if (
+          tagId === toggleConfig.defaultTagId &&
+          resolvedValue !== "neutral"
+        ) {
+          Object.keys(nextCategoryValues).forEach((key) => {
+            if (key !== toggleConfig.defaultTagId) {
+              delete nextCategoryValues[key];
+            }
+          });
+        } else if (resolvedValue !== "neutral") {
+          delete nextCategoryValues[toggleConfig.defaultTagId];
+        }
+      }
       if (Object.keys(nextCategoryValues).length === 0) {
         delete next[categoryId];
       } else {
         next[categoryId] = nextCategoryValues;
       }
-        return applyPreferenceSmartLogic(next);
-      });
-    },
-    []
-  );
+      return applyPreferenceSmartLogic(next);
+    });
+  },
+  []
+);
 
   const handlePreferenceContinue = useCallback(() => {
     if (preferenceCategories.length === 0) {
@@ -2777,15 +2897,6 @@ const handlePreferenceSelection = useCallback(
               {activePreferenceCategory.description}
             </Text>
           </View>
-          {preferenceNotices.length > 0 && (
-            <View style={styles.prefLogicCard}>
-              {preferenceNotices.map((notice) => (
-                <Text key={notice} style={styles.prefLogicText}>
-                  {notice}
-                </Text>
-              ))}
-            </View>
-          )}
           <ScrollView
             style={styles.prefScroll}
             contentContainerStyle={styles.prefScrollContent}
@@ -2797,8 +2908,49 @@ const handlePreferenceSelection = useCallback(
                 activePreferenceCategory.id,
                 tag.id
               );
+              const toggleSelectionState =
+                isToggleCategory && activeToggleConfig
+                  ? tag.id === activeToggleConfig.defaultTagId
+                    ? activeToggleConfig.defaultState
+                    : activeToggleConfig.selectionState
+                  : null;
+              const singleControlTargetState = isToggleCategory
+                ? toggleSelectionState ?? "like"
+                : "like";
               const isTagSelected =
-                isSingleSelectCategory && tagValue === "like";
+                isSingleSelectCategory || isToggleCategory
+                  ? tagValue === singleControlTargetState
+                  : tagValue === "like";
+              const renderSingleSelectControl = () => (
+                <TouchableOpacity
+                  style={[
+                    styles.prefControlButton,
+                    styles.prefControlButtonNeutral,
+                    isTagSelected && styles.prefControlButtonActive,
+                    isTagSelected && styles.prefControlButtonNeutralActive,
+                  ]}
+                    onPress={() =>
+                      handlePreferenceSelection(
+                        activePreferenceCategory.id,
+                        tag.id,
+                        singleControlTargetState
+                      )
+                    }
+                  accessibilityRole="button"
+                  accessibilityLabel={`Select ${tag.label}`}
+                >
+                  <Text
+                    style={[
+                      styles.prefControlIcon,
+                      styles.prefControlIconNeutral,
+                      isTagSelected && styles.prefControlIconActive,
+                      isTagSelected && styles.prefControlIconNeutralActive,
+                    ]}
+                  >
+                    ○
+                  </Text>
+                </TouchableOpacity>
+              );
               return (
                 <View key={tag.id} style={styles.prefTagCard}>
                   <View style={styles.prefTagTextGroup}>
@@ -2809,104 +2961,74 @@ const handlePreferenceSelection = useCallback(
                   </View>
                   <View
                     style={
-                      isSingleSelectCategory
+                      isSingleSelectCategory || isToggleCategory
                         ? styles.prefSingleSelectControls
                         : styles.prefControls
                     }
                   >
-                    {isSingleSelectCategory ? (
-                      <TouchableOpacity
-                        style={[
-                          styles.prefControlButton,
-                          styles.prefControlButtonNeutral,
-                          isTagSelected && styles.prefControlButtonActive,
-                          isTagSelected && styles.prefControlButtonNeutralActive,
-                        ]}
-                        onPress={() =>
-                          handlePreferenceSelection(
-                            activePreferenceCategory.id,
-                            tag.id,
-                            "like"
-                          )
-                        }
-                        accessibilityRole="button"
-                        accessibilityLabel={`Select ${tag.label}`}
-                      >
-                        <Text
-                          style={[
-                            styles.prefControlIcon,
-                            styles.prefControlIconNeutral,
-                            isTagSelected && styles.prefControlIconActive,
-                            isTagSelected &&
-                              styles.prefControlIconNeutralActive,
-                          ]}
-                        >
-                          ○
-                        </Text>
-                      </TouchableOpacity>
-                    ) : (
-                      PREFERENCE_CONTROL_STATES.map((control) => {
-                        const isSelected = tagValue === control.id;
-                        const controlStyles = [
-                          styles.prefControlButton,
-                          control.id === "like" &&
-                            styles.prefControlButtonLike,
-                          control.id === "dislike" &&
-                            styles.prefControlButtonDislike,
-                          control.id === "neutral" &&
-                            styles.prefControlButtonNeutral,
-                          isSelected && styles.prefControlButtonActive,
-                          isSelected &&
+                    {isSingleSelectCategory || isToggleCategory
+                      ? renderSingleSelectControl()
+                      : PREFERENCE_CONTROL_STATES.map((control) => {
+                          const isSelected = tagValue === control.id;
+                          const controlStyles = [
+                            styles.prefControlButton,
                             control.id === "like" &&
-                            styles.prefControlButtonLikeActive,
-                          isSelected &&
+                              styles.prefControlButtonLike,
                             control.id === "dislike" &&
-                            styles.prefControlButtonDislikeActive,
-                          isSelected &&
+                              styles.prefControlButtonDislike,
                             control.id === "neutral" &&
-                            styles.prefControlButtonNeutralActive,
-                        ];
-                        return (
-                          <TouchableOpacity
-                            key={control.id}
-                            style={controlStyles}
-                            onPress={() =>
-                              handlePreferenceSelection(
-                                activePreferenceCategory.id,
-                                tag.id,
-                                control.id
-                              )
-                            }
-                            accessibilityRole="button"
-                            accessibilityLabel={`${control.label} ${tag.label}`}
-                          >
-                            <Text
-                              style={[
-                                styles.prefControlIcon,
-                                control.id === "like" &&
-                                  styles.prefControlIconLike,
-                                control.id === "dislike" &&
-                                  styles.prefControlIconDislike,
-                                control.id === "neutral" &&
-                                  styles.prefControlIconNeutral,
-                                isSelected && styles.prefControlIconActive,
-                                isSelected &&
-                                  control.id === "like" &&
-                                  styles.prefControlIconLikeActive,
-                                isSelected &&
-                                  control.id === "dislike" &&
-                                  styles.prefControlIconDislikeActive,
-                                isSelected &&
-                                  control.id === "neutral" &&
-                                  styles.prefControlIconNeutralActive,
-                              ]}
+                              styles.prefControlButtonNeutral,
+                            isSelected && styles.prefControlButtonActive,
+                            isSelected &&
+                              control.id === "like" &&
+                              styles.prefControlButtonLikeActive,
+                            isSelected &&
+                              control.id === "dislike" &&
+                              styles.prefControlButtonDislikeActive,
+                            isSelected &&
+                              control.id === "neutral" &&
+                              styles.prefControlButtonNeutralActive,
+                          ];
+                          return (
+                            <TouchableOpacity
+                              key={control.id}
+                              style={controlStyles}
+                              onPress={() =>
+                                handlePreferenceSelection(
+                                  activePreferenceCategory.id,
+                                  tag.id,
+                                  control.id
+                                )
+                              }
+                              accessibilityRole="button"
+                              accessibilityLabel={`${control.label} ${tag.label}`}
                             >
-                              {control.icon}
-                            </Text>
-                          </TouchableOpacity>
-                        );
-                      })
-                    )}
+                              <Text
+                                style={[
+                                  styles.prefControlIcon,
+                                  control.id === "like" &&
+                                    styles.prefControlIconLike,
+                                  control.id === "dislike" &&
+                                    styles.prefControlIconDislike,
+                                  control.id === "neutral" &&
+                                    styles.prefControlIconNeutral,
+                                  isSelected && styles.prefControlIconActive,
+                                  isSelected &&
+                                    control.id === "like" &&
+                                    styles.prefControlIconLikeActive,
+                                  isSelected &&
+                                    control.id === "dislike" &&
+                                    styles.prefControlIconDislikeActive,
+                                  isSelected &&
+                                    control.id === "neutral" &&
+                                    styles.prefControlIconNeutralActive,
+                                ]}
+                              >
+                                {control.icon}
+                              </Text>
+                            </TouchableOpacity>
+                          );
+                        })}
                   </View>
                 </View>
               );
@@ -2919,6 +3041,10 @@ const handlePreferenceSelection = useCallback(
               ? activeCategoryRatingsCount === 0
                 ? "Pick the option that best fits—only one can be active."
                 : "Tap another option to switch who you’re feeding anytime."
+              : isToggleCategory
+              ? hasOnlyToggleDefaultActive
+                ? `${toggleDefaultLabel ?? "The default option"} is pre-selected—add any options that apply.`
+                : `Choose as many as you like. Selecting "${toggleDefaultLabel ?? "the default option"}" clears the others.`
               : activeCategoryRatingsCount === 0
               ? "Neutral is the default—tap to highlight likes or dislikes."
               : "Adjust anything you like now or later in Settings."}
@@ -4968,18 +5094,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: "#3f5c4b",
     lineHeight: 20,
-  },
-  prefLogicCard: {
-    backgroundColor: "#f0f7f2",
-    borderRadius: 18,
-    padding: 16,
-    borderWidth: 1,
-    borderColor: "#d5e8dc",
-    gap: 6,
-  },
-  prefLogicText: {
-    fontSize: 13,
-    color: "#2a4838",
   },
   prefScroll: {
     flex: 1,

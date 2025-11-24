@@ -157,8 +157,8 @@ Path: `data/tags/defined_tags.json`
 - Preference profile: `user_preference_profiles` model (`yummi-server/app/models.py`) stores `responses`, `selected_tags`, `disliked_tags`, and latest recommendations.
 - Candidate filtering: `yummi-server/app/services/filtering.py`
   - Converts selected/disliked tag_ids into human values using `TagManifest`.
-  - Applies diet/ethics/allergen/heat/prep filters before ranking.
-  - Has hard‑coded sets and maps that must stay aligned with tag IDs/values (see “Known Inconsistencies”).
+  - Applies audience/diet/ethics/allergen/heat/prep filters before ranking.
+  - Has hard-coded sets and maps that must stay aligned with tag IDs/values (see “Known Inconsistencies”).
 - Exploration workflow: `yummi-server/app/services/exploration.py` + route `app/routes/recommendations.py` (`/v1/recommendations/exploration`).
 - Recommendation workflow: `yummi-server/app/services/recommendation.py` + same route module (`/v1/recommendations/feed`). Persists latest ranked meal IDs back onto the preference profile.
 - Meals API: `app/routes/meals.py` serves `GET /v1/meals` and `GET /v1/meals/{uid}` from the manifest.
