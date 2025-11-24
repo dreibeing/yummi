@@ -39,6 +39,7 @@ import {
   useOAuth,
   useUser,
 } from "@clerk/clerk-expo";
+import definedTagsDocument from "./generated/defined_tags.json";
 
 const localServerUrl = Platform.select({
   android: "http://10.0.2.2:8000/v1/thin",
@@ -183,8 +184,8 @@ const DEFAULT_LOG_FILE_URI = LOG_FILE_BASE
   : null;
 const MAX_PAYFAST_POLLS = 45;
 const YUMMI_LOGO_SOURCE = require("./assets/yummi-logo.png");
-const DEFAULT_HOME_MEAL_SERVINGS = 4;
-const MIN_HOME_MEAL_SERVINGS = 1;
+const DEFAULT_AUDIENCE_SERVINGS = 4;
+const AUDIENCE_SERVINGS_LOOKUP = buildAudienceServingsLookup(definedTagsDocument);
 const HOME_MEAL_DISPLAY_LIMIT = 50;
 const urlStartsWith = (value, prefix) => {
   if (!value || !prefix) {
@@ -197,6 +198,113 @@ const urlStartsWith = (value, prefix) => {
     return value.startsWith(prefix);
   }
 };
+
+function buildAudienceServingsLookup(document) {
+  const lookup = {};
+  const tags = document?.defined_tags;
+  if (!Array.isArray(tags)) {
+    return lookup;
+  }
+  tags.forEach((tag) => {
+    if (tag?.category !== "Audience") {
+      return;
+    }
+    const servings = parseServingsCount(tag?.description);
+    if (typeof servings !== "number") {
+      return;
+    }
+    const valueKey =
+      typeof tag?.value === "string" ? tag.value.trim() : null;
+    const idKey =
+      typeof tag?.tag_id === "string" ? tag.tag_id.trim() : null;
+    if (valueKey) {
+      lookup[valueKey] = servings;
+      lookup[valueKey.toLowerCase()] = servings;
+    }
+    if (idKey) {
+      lookup[idKey] = servings;
+      lookup[idKey.toLowerCase()] = servings;
+    }
+  });
+  return lookup;
+}
+
+function parseServingsCount(text) {
+  if (!text || typeof text !== "string") {
+    return null;
+  }
+  const match = text.match(/(\d+)/);
+  if (!match) {
+    return null;
+  }
+  const parsed = parseInt(match[1], 10);
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function getMealAudienceTagValues(meal) {
+  const tagSource =
+    meal?.tags?.Audience ??
+    meal?.tags?.audience ??
+    meal?.meal_tags?.Audience ??
+    meal?.meal_tags?.audience;
+  if (!tagSource) {
+    return [];
+  }
+  if (Array.isArray(tagSource)) {
+    return tagSource.filter(Boolean);
+  }
+  return [tagSource];
+}
+
+function resolveAudienceServingsFromTags(meal) {
+  const candidates = getMealAudienceTagValues(meal);
+  for (const candidate of candidates) {
+    const key = typeof candidate === "string" ? candidate.trim() : candidate;
+    if (!key) {
+      continue;
+    }
+    const normalizedKey = String(key);
+    const lookupValue =
+      AUDIENCE_SERVINGS_LOOKUP[normalizedKey] ??
+      AUDIENCE_SERVINGS_LOOKUP[normalizedKey.toLowerCase()];
+    if (typeof lookupValue === "number") {
+      return lookupValue;
+    }
+  }
+  return null;
+}
+
+function deriveMealServingsCount(meal) {
+  const fromTags = resolveAudienceServingsFromTags(meal);
+  if (typeof fromTags === "number") {
+    return fromTags;
+  }
+  const fromText = parseServingsCount(meal?.servings);
+  if (typeof fromText === "number") {
+    return fromText;
+  }
+  return DEFAULT_AUDIENCE_SERVINGS;
+}
+
+function formatServingsPeopleLabel(count) {
+  const safeCount =
+    typeof count === "number" && Number.isFinite(count)
+      ? count
+      : DEFAULT_AUDIENCE_SERVINGS;
+  const noun = safeCount === 1 ? "person" : "people";
+  return `${safeCount} ${noun}`;
+}
+
+function deriveServingsTextForPayload(meal) {
+  const count = deriveMealServingsCount(meal);
+  if (typeof count === "number" && Number.isFinite(count)) {
+    return `Serves ${count}`;
+  }
+  if (typeof meal?.servings === "string" && meal.servings.trim()) {
+    return meal.servings;
+  }
+  return null;
+}
 
 const buildAutoSubmitHtml = (url, params) => {
   const inputs = Object.entries(params || {})
@@ -1267,7 +1375,6 @@ function AppContent() {
     context: null,
   });
   const [isSorryToHearScreenVisible, setIsSorryToHearScreenVisible] = useState(false);
-  const [mealServings, setMealServings] = useState({});
   const [ingredientQuantities, setIngredientQuantities] = useState({});
   const [shoppingListItems, setShoppingListItems] = useState([]);
   const [shoppingListStatus, setShoppingListStatus] = useState("idle");
@@ -1453,42 +1560,6 @@ function AppContent() {
     } catch (error) {
       Alert.alert("Unable to share", "Please try again.");
     }
-  }, []);
-
-  const handleHomeMealServingsIncrease = useCallback((mealId) => {
-    if (!mealId) {
-      return;
-    }
-    setMealServings((prev) => {
-      const current = prev[mealId] ?? DEFAULT_HOME_MEAL_SERVINGS;
-      const next = current + 1;
-      if (next === current) {
-        return prev;
-      }
-      const updated = { ...prev, [mealId]: next };
-      if (next === DEFAULT_HOME_MEAL_SERVINGS) {
-        delete updated[mealId];
-      }
-      return updated;
-    });
-  }, []);
-
-  const handleHomeMealServingsDecrease = useCallback((mealId) => {
-    if (!mealId) {
-      return;
-    }
-    setMealServings((prev) => {
-      const current = prev[mealId] ?? DEFAULT_HOME_MEAL_SERVINGS;
-      const next = Math.max(MIN_HOME_MEAL_SERVINGS, current - 1);
-      if (next === current) {
-        return prev;
-      }
-      const updated = { ...prev, [mealId]: next };
-      if (next === DEFAULT_HOME_MEAL_SERVINGS) {
-        delete updated[mealId];
-      }
-      return updated;
-    });
   }, []);
 
   const handleToggleHomeMealDislike = useCallback((mealId) => {
@@ -1932,10 +2003,6 @@ function AppContent() {
   ]);
 
   useEffect(() => {
-    setMealServings({});
-  }, [homeRecommendedMeals]);
-
-  useEffect(() => {
     if (
       !isPreferenceStateReady ||
       !PREFERENCES_API_ENDPOINT ||
@@ -2342,10 +2409,11 @@ const handlePreferenceSelection = useCallback(
           : Array.isArray(meal.ingredients)
           ? meal.ingredients
           : [];
+        const servingsText = deriveServingsTextForPayload(meal);
         return {
           mealId: meal.mealId,
           name: meal.name,
-          servings: meal.servings,
+          servings: servingsText,
           ingredients: finalIngredients.filter(Boolean),
         };
       })
@@ -4194,8 +4262,8 @@ const handlePreferenceSelection = useCallback(
                 {displayedMeals.map((meal) => {
                   const isSelected = Boolean(selectedHomeMealIds[meal.mealId]);
                   const isDisliked = Boolean(homeMealDislikedIds[meal.mealId]);
-                  const servingsValue =
-                    mealServings[meal.mealId] ?? DEFAULT_HOME_MEAL_SERVINGS;
+                  const servingsCount = deriveMealServingsCount(meal);
+                  const servingsLabel = formatServingsPeopleLabel(servingsCount);
                   return (
                     <TouchableOpacity
                       key={meal.mealId}
@@ -4222,33 +4290,9 @@ const handlePreferenceSelection = useCallback(
                       <View style={styles.homeMealFooterRow}>
                         <View style={styles.homeMealServingsRow}>
                           <Text style={styles.homeMealServingsLabel}>Servings:</Text>
-                          <TouchableOpacity
-                            style={styles.homeMealServingsButton}
-                            onPress={(event) => {
-                              event?.stopPropagation?.();
-                              handleHomeMealServingsDecrease(meal.mealId);
-                            }}
-                            accessibilityRole="button"
-                            accessibilityLabel="Decrease servings"
-                          >
-                            <Text style={styles.homeMealServingsButtonText}>-</Text>
-                          </TouchableOpacity>
-                          <View style={styles.homeMealServingsValue}>
-                            <Text style={styles.homeMealServingsValueText}>
-                              {servingsValue}
-                            </Text>
-                          </View>
-                          <TouchableOpacity
-                            style={styles.homeMealServingsButton}
-                            onPress={(event) => {
-                              event?.stopPropagation?.();
-                              handleHomeMealServingsIncrease(meal.mealId);
-                            }}
-                            accessibilityRole="button"
-                            accessibilityLabel="Increase servings"
-                          >
-                            <Text style={styles.homeMealServingsButtonText}>+</Text>
-                          </TouchableOpacity>
+                          <Text style={styles.homeMealServingsValueText}>
+                            {servingsLabel}
+                          </Text>
                         </View>
                         <View style={styles.homeMealActionGroup}>
                           <TouchableOpacity
@@ -6372,34 +6416,9 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     color: "#0c3c26",
   },
-  homeMealServingsButton: {
-    width: 32,
-    height: 32,
-    borderRadius: 10,
-    borderWidth: 1,
-    borderColor: "#d8e3db",
-    backgroundColor: "#f4f7f5",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  homeMealServingsButtonText: {
-    fontSize: 18,
-    fontWeight: "700",
-    color: "#0c3c26",
-  },
-  homeMealServingsValue: {
-    minWidth: 40,
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: 12,
-    borderWidth: 1,
-    borderColor: "#d8e3db",
-    backgroundColor: "#fff",
-    alignItems: "center",
-  },
   homeMealServingsValueText: {
-    fontSize: 16,
-    fontWeight: "700",
+    fontSize: 14,
+    fontWeight: "600",
     color: "#0c3c26",
   },
   homeMealActionGroup: {
