@@ -1,0 +1,21 @@
+{
+  "archetype_uid": "arch_FamLatComfort3060",
+  "selected_ingredients": [
+    "ground beef",
+    "ground meat",
+    "ground cumin",
+    "jasmine rice",
+    "kidney beans",
+    "maize meal",
+    "jalapeños",
+    "guacamole",
+    "guacamole seasoning",
+    "lime",
+    "lemon",
+    "green beans",
+    "lettuce",
+    "grapeseed oil",
+    "honey",
+    "grapes"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "archetype_uid": "arch_FamWeeknightCore_15to30",
+  "selected_ingredients": [
+    "gnocchi",
+    "pasta",
+    "rice",
+    "frozen vegetables",
+    "mixed vegetables",
+    "potato wedges",
+    "garlic butter ciabatta",
+    "hake fillets",
+    "salmon",
+    "prawns",
+    "seafood mix"
+  ]
+}

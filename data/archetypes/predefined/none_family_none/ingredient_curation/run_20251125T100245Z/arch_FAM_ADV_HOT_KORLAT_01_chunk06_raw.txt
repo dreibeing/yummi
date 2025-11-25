@@ -1,0 +1,31 @@
+{
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "selected_ingredients": [
+    "pepper",
+    "pepper powder",
+    "pepper sauce",
+    "peppercorns",
+    "peppers",
+    "peppadew peppers",
+    "pickled onions",
+    "pickles",
+    "pineapple",
+    "pomegranate",
+    "red onion",
+    "potatoes",
+    "rice",
+    "rice vinegar",
+    "rice noodles",
+    "ponzu sauce",
+    "plum sauce",
+    "peri peri spice blend",
+    "picanha steak",
+    "pork",
+    "pork belly",
+    "pork shoulder",
+    "pork ribs",
+    "pork mince",
+    "prawns",
+    "ribeye steak"
+  ]
+}

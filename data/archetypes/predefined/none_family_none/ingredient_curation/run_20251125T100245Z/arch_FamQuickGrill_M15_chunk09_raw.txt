@@ -1,0 +1,24 @@
+{
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "selected_ingredients": [
+    "chicken strips",
+    "chicken salad",
+    "smoked chicken breast",
+    "prawns",
+    "hake fillets",
+    "hake",
+    "salmon",
+    "garlic baguette",
+    "rolls",
+    "salad",
+    "greek salad",
+    "couscous salad",
+    "coleslaw",
+    "potato salad",
+    "potato wedges",
+    "rice",
+    "mashed potatoes",
+    "mixed vegetables",
+    "frozen vegetables"
+  ]
+}

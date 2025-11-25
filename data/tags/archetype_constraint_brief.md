@@ -5,7 +5,7 @@ Summarize the non-negotiable coverage expectations for the archetype generation 
 
 ## Global Targets
 - **Archetype count**: 24–28 distinct entries to balance coverage with manageability.
-- **Tags version**: `2025.02.0` from `data/tags/defined_tags.json`.
+- **Tags version**: `2025.02.1` from `data/tags/defined_tags.json`.
 - **Context sources**: `yummi_business_logic_requirements.txt`, `thisproject.md`, PayFast thin-slice scope notes, and controlled vocabulary manifest.
 
 ## Required Category Coverage

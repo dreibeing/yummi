@@ -1,0 +1,153 @@
+{
+  "meal_id": "meal_20251125T115955Z_01_198103",
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "archetype_name": "Family Heat-and-Eat Weeknights (Under 15, No Heat)",
+  "name": "Microwave Roast Chicken Dinner with Green Beans & Garlic Bread",
+  "description": "Family-friendly heat-and-eat roast chicken with mashed potatoes, quick-steamed green beans, gravy, and warm garlic baguette. Zero chili heat and ready in minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Read package directions for roast chicken, mashed potatoes, gravy, and garlic baguette to confirm timings.",
+    "Rinse green beans; trim ends. Place in a microwave-safe bowl with 2 tablespoons water and cover loosely.",
+    "Set out a microwave-safe jug or bowl for the gravy."
+  ],
+  "cook_steps": [
+    "Microwave the roast chicken per package directions until hot.",
+    "Microwave the mashed potatoes per package directions until hot; keep covered.",
+    "Microwave the covered green beans for 3–4 minutes until tender-crisp; drain and season with a pinch of salt and pepper.",
+    "Pour gravy into the jug and microwave in 30–45 second bursts, stirring between, until hot.",
+    "Bake the garlic baguette in a preheated oven per package directions (about 8–10 minutes), or microwave if the package allows; slice.",
+    "Plate chicken and mashed potatoes, add green beans, and spoon over gravy. Serve with sliced garlic baguette."
+  ],
+  "instructions": [
+    "Read package directions for roast chicken, mashed potatoes, gravy, and garlic baguette to confirm timings.",
+    "Rinse green beans; trim ends. Place in a microwave-safe bowl with 2 tablespoons water and cover loosely.",
+    "Set out a microwave-safe jug or bowl for the gravy.",
+    "Microwave the roast chicken per package directions until hot.",
+    "Microwave the mashed potatoes per package directions until hot; keep covered.",
+    "Microwave the covered green beans for 3–4 minutes until tender-crisp; drain and season with a pinch of salt and pepper.",
+    "Pour gravy into the jug and microwave in 30–45 second bursts, stirring between, until hot.",
+    "Bake the garlic baguette in a preheated oven per package directions (about 8–10 minutes), or microwave if the package allows; slice.",
+    "Plate chicken and mashed potatoes, add green beans, and spoon over gravy. Serve with sliced garlic baguette."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "roast chicken",
+      "quantity": "1 family tray",
+      "preparation": "microwave per pack"
+    },
+    {
+      "core_item_name": "mashed potatoes",
+      "quantity": "2 trays (about 900 g total)",
+      "preparation": "microwave per pack"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "rinsed and trimmed"
+    },
+    {
+      "core_item_name": "gravy",
+      "quantity": "1 cup",
+      "preparation": "microwave until hot"
+    },
+    {
+      "core_item_name": "garlic baguette",
+      "quantity": "1 loaf",
+      "preparation": "baked or microwaved per pack"
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "to taste",
+      "preparation": "for seasoning green beans"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "roast chicken",
+      "quantity": "1 family tray",
+      "preparation": "microwave per pack",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mashed potatoes",
+      "quantity": "2 trays (about 900 g total)",
+      "preparation": "microwave per pack",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "rinsed and trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "gravy",
+      "quantity": "1 cup",
+      "preparation": "microwave until hot",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic baguette",
+      "quantity": "1 loaf",
+      "preparation": "baked or microwaved per pack",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "to taste",
+      "preparation": "for seasoning green beans",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T120031Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T115955Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

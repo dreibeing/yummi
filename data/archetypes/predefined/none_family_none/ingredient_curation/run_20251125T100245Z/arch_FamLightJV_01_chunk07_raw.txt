@@ -1,0 +1,32 @@
+{
+  "archetype_uid": "arch_FamLightJV_01",
+  "selected_ingredients": [
+    "salad greens",
+    "salmon",
+    "salt",
+    "sea salt",
+    "sesame oil",
+    "sesame seeds",
+    "sesame sauce",
+    "sesame stir-fry sauce",
+    "shallots",
+    "shiitake mushrooms",
+    "snow peas",
+    "sugar snap peas",
+    "soy sauce",
+    "tamari soy sauce",
+    "spring onion",
+    "sprouts",
+    "spinach",
+    "squash",
+    "sticky rice",
+    "stir-fry vegetables",
+    "stir-fry mix",
+    "sunflower oil",
+    "star anise",
+    "teriyaki sauce",
+    "tofu",
+    "tilapia",
+    "spring rolls"
+  ]
+}

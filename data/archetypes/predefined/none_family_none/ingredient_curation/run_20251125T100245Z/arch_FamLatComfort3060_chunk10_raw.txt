@@ -1,0 +1,15 @@
+{
+  "archetype_uid": "arch_FamLatComfort3060",
+  "selected_ingredients": [
+    "ready_meal — spinach",
+    "ready_meal — spinach salad",
+    "ready_meal — sweet potato chips",
+    "ready_meal — sweet potato salad",
+    "ready_meal — tomato salad",
+    "ready_meal — tomato soup",
+    "ready_meal — wrap",
+    "ready_meal — trout",
+    "ready_meal — whiting portions",
+    "ready_meal — vegetable soup"
+  ]
+}

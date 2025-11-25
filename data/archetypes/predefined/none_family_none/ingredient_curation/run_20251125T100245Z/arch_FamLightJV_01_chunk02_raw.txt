@@ -1,0 +1,33 @@
+{
+  "archetype_uid": "arch_FamLightJV_01",
+  "selected_ingredients": [
+    "broccoli and cauliflower florets",
+    "brown and wild rice",
+    "brown basmati rice with quinoa",
+    "brown rice",
+    "brown sugar",
+    "buckwheat flour",
+    "canola oil",
+    "cabbage",
+    "carrot",
+    "carrots",
+    "cashews",
+    "cauliflower",
+    "celery",
+    "chicken",
+    "chicken breast",
+    "chicken thighs",
+    "chicken stock",
+    "chicken stock concentrate",
+    "chicken stock powder",
+    "chicken strips",
+    "chickpeas",
+    "chilli flakes",
+    "chili oil",
+    "chilies",
+    "chilli paste",
+    "chives",
+    "coconut milk",
+    "coconut oil"
+  ]
+}

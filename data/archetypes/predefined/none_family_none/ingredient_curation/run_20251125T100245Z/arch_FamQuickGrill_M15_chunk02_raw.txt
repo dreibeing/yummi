@@ -1,0 +1,33 @@
+{
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "selected_ingredients": [
+    "broccoli and cauliflower florets",
+    "brown and wild rice",
+    "brown basmati rice",
+    "brown rice",
+    "brown sugar",
+    "burger",
+    "burger buns",
+    "butter",
+    "butterflied chicken",
+    "buttermilk",
+    "cabbage",
+    "caesar dressing",
+    "canola oil",
+    "carrots",
+    "cheddar",
+    "cauliflower",
+    "cherry tomatoes",
+    "chicken",
+    "chicken breast fillets",
+    "chicken kebabs",
+    "chicken thighs",
+    "chicken strips",
+    "chickpeas",
+    "chives",
+    "ciabatta rolls",
+    "bulgur",
+    "chimichurri",
+    "chipolatas"
+  ]
+}

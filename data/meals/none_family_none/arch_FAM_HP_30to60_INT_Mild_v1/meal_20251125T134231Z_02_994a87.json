@@ -1,0 +1,272 @@
+{
+  "meal_id": "meal_20251125T134231Z_02_994a87",
+  "archetype_uid": "arch_FAM_HP_30to60_INT_Mild_v1",
+  "archetype_name": "Family High-Protein Dinners (30–60, Mild, Intermediate)",
+  "name": "Cumin-Paprika Chicken with Chickpea Quinoa and Roasted Vegetables",
+  "description": "Juicy spiced chicken thighs served over lemony chickpea quinoa with a tray of roasted onions, peppers, and zucchini. Mild, protein-forward, and family-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F with a large sheet pan inside.",
+    "Rinse 1.5 cups quinoa under cold water in a fine sieve.",
+    "Measure 3 cups water for the quinoa.",
+    "Drain and rinse chickpeas; set aside 1.5 cups.",
+    "Cut onions, bell peppers, and zucchini into bite-size pieces.",
+    "Mince garlic cloves.",
+    "Zest then juice the lemon; keep separately.",
+    "Pat dry chicken thigh fillets and trim excess fat.",
+    "Roughly chop parsley."
+  ],
+  "cook_steps": [
+    "Roast vegetables: In a bowl, toss onions, bell peppers, and zucchini with 1 tbsp olive oil, a big pinch of salt, and black pepper. Spread on the preheated sheet pan and roast 18–22 minutes, tossing once, until tender and lightly charred.",
+    "Season chicken: In a large bowl, combine 2 tbsp olive oil, minced garlic, ground cumin, paprika, lemon zest, 1/2 tsp salt, and a few grinds of black pepper. Add chicken and coat well.",
+    "Sear chicken: Heat a large oven-safe skillet over medium-high. Sear chicken 3–4 minutes per side until browned.",
+    "Finish chicken in oven: Transfer the skillet to the oven (or move chicken to the sheet pan edges) and roast 8–12 minutes more, until cooked through (internal temp 74°C/165°F). Rest 5 minutes, then slice.",
+    "Cook quinoa: While chicken cooks, bring 3 cups water and 1/2 tsp salt to a boil in a saucepan. Stir in rinsed quinoa, reduce to low, cover, and simmer 14–16 minutes until water is absorbed. Remove from heat, cover, and rest 5 minutes.",
+    "Finish quinoa: Fluff quinoa with a fork. Fold in chickpeas, 1 tbsp lemon juice, half the chopped parsley, a pinch of salt, and black pepper to taste. Warm over low heat 1–2 minutes if needed.",
+    "Plate: Spoon chickpea quinoa onto plates, top with sliced chicken, add roasted vegetables on the side, and finish with remaining parsley and extra lemon juice to taste."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F with a large sheet pan inside.",
+    "Rinse 1.5 cups quinoa under cold water in a fine sieve.",
+    "Measure 3 cups water for the quinoa.",
+    "Drain and rinse chickpeas; set aside 1.5 cups.",
+    "Cut onions, bell peppers, and zucchini into bite-size pieces.",
+    "Mince garlic cloves.",
+    "Zest then juice the lemon; keep separately.",
+    "Pat dry chicken thigh fillets and trim excess fat.",
+    "Roughly chop parsley.",
+    "Roast vegetables: In a bowl, toss onions, bell peppers, and zucchini with 1 tbsp olive oil, a big pinch of salt, and black pepper. Spread on the preheated sheet pan and roast 18–22 minutes, tossing once, until tender and lightly charred.",
+    "Season chicken: In a large bowl, combine 2 tbsp olive oil, minced garlic, ground cumin, paprika, lemon zest, 1/2 tsp salt, and a few grinds of black pepper. Add chicken and coat well.",
+    "Sear chicken: Heat a large oven-safe skillet over medium-high. Sear chicken 3–4 minutes per side until browned.",
+    "Finish chicken in oven: Transfer the skillet to the oven (or move chicken to the sheet pan edges) and roast 8–12 minutes more, until cooked through (internal temp 74°C/165°F). Rest 5 minutes, then slice.",
+    "Cook quinoa: While chicken cooks, bring 3 cups water and 1/2 tsp salt to a boil in a saucepan. Stir in rinsed quinoa, reduce to low, cover, and simmer 14–16 minutes until water is absorbed. Remove from heat, cover, and rest 5 minutes.",
+    "Finish quinoa: Fluff quinoa with a fork. Fold in chickpeas, 1 tbsp lemon juice, half the chopped parsley, a pinch of salt, and black pepper to taste. Warm over low heat 1–2 minutes if needed.",
+    "Plate: Spoon chickpea quinoa onto plates, top with sliced chicken, add roasted vegetables on the side, and finish with remaining parsley and extra lemon juice to taste."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "800 g",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "2 tsp"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 tsp"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "quinoa",
+      "quantity": "1.5 cups (dry)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups"
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "1.5 cups",
+      "preparation": "drained and rinsed"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2",
+      "preparation": "cut into half-moons"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "divided, plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "freshly ground, to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "MiddleEastern",
+      "NorthAfrican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "800 g",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "quinoa",
+      "quantity": "1.5 cups (dry)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "1.5 cups",
+      "preparation": "drained and rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2",
+      "preparation": "cut into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "divided, plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "freshly ground, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T134351Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T134231Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

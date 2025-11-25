@@ -1,0 +1,29 @@
+{
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "selected_ingredients": [
+    "aioli",
+    "anchovy",
+    "anchovy paste",
+    "bacon",
+    "baguette",
+    "bread",
+    "bay leaf",
+    "bay leaves",
+    "bouquet garni",
+    "balsamic vinegar",
+    "balsamic reduction",
+    "black pepper",
+    "bell pepper",
+    "bell peppers",
+    "artichoke",
+    "artichokes",
+    "arugula",
+    "baby carrots",
+    "beetroot",
+    "basmati rice",
+    "basa",
+    "T-bone steak",
+    "beef",
+    "beans"
+  ]
+}

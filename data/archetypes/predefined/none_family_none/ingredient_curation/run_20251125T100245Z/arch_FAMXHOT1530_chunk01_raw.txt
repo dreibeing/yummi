@@ -1,0 +1,21 @@
+{
+  "archetype_uid": "arch_FAMXHOT1530",
+  "selected_ingredients": [
+    "allspice",
+    "black pepper",
+    "bay leaves",
+    "basmati rice",
+    "black beans",
+    "beans",
+    "barbecue rub",
+    "barbecue sauce",
+    "bbq marinade",
+    "braai spice mix",
+    "beef mince",
+    "bacon",
+    "bread",
+    "bell peppers",
+    "avocado",
+    "baby carrots"
+  ]
+}

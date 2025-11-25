@@ -1,5 +1,5 @@
 {
-  "tags_version": "2025.02.0",
+  "tags_version": "2025.02.1",
   "required_categories": {
     "archetype": [
       "DietaryRestrictions",
@@ -325,6 +325,12 @@
       "category": "Allergens",
       "value": "Sesame",
       "description": "Contains sesame seeds or oil"
+    },
+    {
+      "tag_id": "nutrition_none",
+      "category": "NutritionFocus",
+      "value": "NoNutritionFocus",
+      "description": "No targeted macro or calorie emphasis; default balanced meals"
     },
     {
       "tag_id": "nutrition_highprotein",

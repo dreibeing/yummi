@@ -1,0 +1,14 @@
+{
+  "archetype_uid": "arch_FAM_IND_SHOW_60",
+  "selected_ingredients": [
+    "chicken tikka",
+    "chicken samosas",
+    "lamb curry",
+    "lamb mince curry roti",
+    "prawns",
+    "rice",
+    "lentil soup",
+    "roast chicken",
+    "chilli chicken"
+  ]
+}

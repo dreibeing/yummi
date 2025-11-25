@@ -1,0 +1,29 @@
+{
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "selected_ingredients": [
+    "broccoli and cauliflower florets",
+    "brown and wild rice",
+    "brown rice",
+    "brown sugar",
+    "brussels sprouts",
+    "butter",
+    "butter beans",
+    "buttermilk",
+    "butternut squash",
+    "cabbage",
+    "carrot",
+    "carrots",
+    "cannellini beans",
+    "canola oil",
+    "cauliflower",
+    "chicken",
+    "chicken breast",
+    "chicken thigh",
+    "chicken thighs",
+    "chickpeas",
+    "chives",
+    "ciabatta",
+    "celery",
+    "cheddar"
+  ]
+}

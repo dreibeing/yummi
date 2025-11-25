@@ -1,0 +1,29 @@
+{
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "selected_ingredients": [
+    "salt",
+    "sunflower oil",
+    "spice mix",
+    "sesame oil",
+    "sesame seeds",
+    "salmon",
+    "sirloin steak",
+    "sausages",
+    "tofu",
+    "sourdough bread",
+    "sourdough rolls",
+    "salad greens",
+    "spinach",
+    "spring onion",
+    "squash",
+    "sugar snap peas",
+    "strawberries",
+    "salad dressing",
+    "salsa",
+    "sour cream",
+    "tahini",
+    "soy sauce",
+    "sauce",
+    "tartar sauce"
+  ]
+}

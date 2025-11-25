@@ -1,0 +1,30 @@
+{
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "selected_ingredients": [
+    "penne pasta",
+    "ragu",
+    "pesto",
+    "rice",
+    "potatoes",
+    "potato mash",
+    "potato chips",
+    "popcorn",
+    "pizza",
+    "pizza base",
+    "pita bread",
+    "rolls",
+    "pulled pork bao buns",
+    "roast chicken",
+    "pork sausage",
+    "pepperoni",
+    "ricotta cheese",
+    "provolone cheese",
+    "pecorino romano cheese",
+    "peas",
+    "pineapple",
+    "pear",
+    "romaine lettuce",
+    "red onion",
+    "pickles"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "selected_ingredients": [
+    "corn",
+    "courgette",
+    "couscous",
+    "cucumber",
+    "coleslaw",
+    "croutons",
+    "crushed tomatoes",
+    "diced tomatoes",
+    "feta cheese",
+    "garlic",
+    "coriander",
+    "dill",
+    "cornflour",
+    "flour",
+    "fries",
+    "gammon",
+    "fish fillets",
+    "frikkadels",
+    "eggs",
+    "cream",
+    "dressing",
+    "condiment",
+    "fusilli",
+    "focaccia",
+    "cream cheese"
+  ]
+}

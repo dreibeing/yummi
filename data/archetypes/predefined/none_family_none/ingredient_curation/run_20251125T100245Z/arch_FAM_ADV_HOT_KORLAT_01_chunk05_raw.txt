@@ -1,0 +1,30 @@
+{
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "selected_ingredients": [
+    "mango",
+    "mandarins",
+    "mango chutney",
+    "mango pickle",
+    "mango chili balsamic reduction",
+    "onions",
+    "onion and chilli paste",
+    "olive oil",
+    "peanut oil",
+    "oil",
+    "mayonnaise",
+    "miso",
+    "miso paste",
+    "noodle",
+    "noodles",
+    "nori",
+    "minced beef",
+    "meat skewers",
+    "meatballs",
+    "oxtail",
+    "mixed vegetables",
+    "mushrooms",
+    "paprika",
+    "parsley",
+    "olive and harissa sauce"
+  ]
+}

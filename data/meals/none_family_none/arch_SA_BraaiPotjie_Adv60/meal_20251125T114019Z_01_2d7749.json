@@ -1,0 +1,306 @@
+{
+  "meal_id": "meal_20251125T114019Z_01_2d7749",
+  "archetype_uid": "arch_SA_BraaiPotjie_Adv60",
+  "archetype_name": "Family Weekend Advanced: South African Braai & Potjie",
+  "name": "Braai Lamb & Boerewors with Oven-Baked Pap and Chakalaka",
+  "description": "An advanced South African braai platter of lamb chops and boerewors, served with oven-baked pap and a spicy chakalaka bean-tomato relish. Built for a long, relaxed cook with balanced medium heat.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Preheat oven to 180°C (350°F).",
+    "Light your outdoor grill for medium-hot direct heat on one side and medium heat on the other.",
+    "In a bowl, mix olive oil, braai spice mix, peri-peri spice blend, salt, and black pepper. Rub over lamb chops; coil boerewors and brush lightly with olive oil.",
+    "Dice onions and red pepper. Grate carrots. Mince garlic.",
+    "Grease a medium baking dish with olive oil. In the dish, whisk maize meal with chicken stock and a pinch of salt until smooth. Cover tightly with foil.",
+    "Open baked beans and crushed tomatoes."
+  ],
+  "cook_steps": [
+    "Bake the pap: Place the covered baking dish in the oven and bake for 60 minutes. At 30 minutes, carefully remove, whisk or stir to break any lumps, re-cover, and return to the oven.",
+    "Start the chakalaka: Set a cast-iron pot or heavy pan on the grill over medium heat. Add olive oil, then onions, carrots, and red pepper. Cook, stirring, until softened, 8–10 minutes.",
+    "Add garlic, curry powder, and a pinch of peri-peri spice blend. Stir 1 minute until fragrant.",
+    "Stir in crushed tomatoes, baked beans, bay leaf, thyme, and a splash of chicken stock for looseness if needed. Season with salt and black pepper. Simmer uncovered over gentle heat, stirring occasionally, 25–35 minutes, until thick and glossy. Remove bay leaf and adjust seasoning.",
+    "Grill the meats: Sear lamb chops over the hot side 2–3 minutes per side to develop color, then move to medium heat and cook to preferred doneness (about 6–8 minutes total for medium). Rest 5 minutes.",
+    "Grill the boerewors coil over medium heat, turning occasionally, 12–15 minutes until cooked through and juices run clear. Rest briefly, then slice into chunks.",
+    "Finish the pap: Remove from oven, whisk or stir to desired stiffness, and season with a little salt if needed.",
+    "Plate: Spoon pap onto a platter, ladle over chakalaka, and arrange lamb chops and boerewors alongside. Serve hot."
+  ],
+  "instructions": [
+    "Preheat oven to 180°C (350°F).",
+    "Light your outdoor grill for medium-hot direct heat on one side and medium heat on the other.",
+    "In a bowl, mix olive oil, braai spice mix, peri-peri spice blend, salt, and black pepper. Rub over lamb chops; coil boerewors and brush lightly with olive oil.",
+    "Dice onions and red pepper. Grate carrots. Mince garlic.",
+    "Grease a medium baking dish with olive oil. In the dish, whisk maize meal with chicken stock and a pinch of salt until smooth. Cover tightly with foil.",
+    "Open baked beans and crushed tomatoes.",
+    "Bake the pap: Place the covered baking dish in the oven and bake for 60 minutes. At 30 minutes, carefully remove, whisk or stir to break any lumps, re-cover, and return to the oven.",
+    "Start the chakalaka: Set a cast-iron pot or heavy pan on the grill over medium heat. Add olive oil, then onions, carrots, and red pepper. Cook, stirring, until softened, 8–10 minutes.",
+    "Add garlic, curry powder, and a pinch of peri-peri spice blend. Stir 1 minute until fragrant.",
+    "Stir in crushed tomatoes, baked beans, bay leaf, thyme, and a splash of chicken stock for looseness if needed. Season with salt and black pepper. Simmer uncovered over gentle heat, stirring occasionally, 25–35 minutes, until thick and glossy. Remove bay leaf and adjust seasoning.",
+    "Grill the meats: Sear lamb chops over the hot side 2–3 minutes per side to develop color, then move to medium heat and cook to preferred doneness (about 6–8 minutes total for medium). Rest 5 minutes.",
+    "Grill the boerewors coil over medium heat, turning occasionally, 12–15 minutes until cooked through and juices run clear. Rest briefly, then slice into chunks.",
+    "Finish the pap: Remove from oven, whisk or stir to desired stiffness, and season with a little salt if needed.",
+    "Plate: Spoon pap onto a platter, ladle over chakalaka, and arrange lamb chops and boerewors alongside. Serve hot."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "lamb chops",
+      "quantity": "1.2–1.5 kg",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "boerewors",
+      "quantity": "800 g–1 kg",
+      "preparation": "coiled for grilling"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "6 tablespoons",
+      "preparation": "divided for rub, pap dish, and sauté"
+    },
+    {
+      "core_item_name": "braai spice mix",
+      "quantity": "2 tablespoons",
+      "preparation": "for lamb rub"
+    },
+    {
+      "core_item_name": "peri-peri spice blend",
+      "quantity": "1–2 teaspoons",
+      "preparation": "to taste; divided for rub and chakalaka"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 teaspoons",
+      "preparation": "divided, plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon",
+      "preparation": "freshly ground, to taste"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "red pepper",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "grated"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "curry powder",
+      "quantity": "2 teaspoons",
+      "preparation": "for chakalaka"
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 can (400 g)",
+      "preparation": "undrained"
+    },
+    {
+      "core_item_name": "baked beans",
+      "quantity": "1 can (410 g)",
+      "preparation": "undrained"
+    },
+    {
+      "core_item_name": "bay leaf",
+      "quantity": "1"
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 teaspoon",
+      "preparation": "dried leaves"
+    },
+    {
+      "core_item_name": "maize meal",
+      "quantity": "2 cups",
+      "preparation": "for oven-baked pap"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "6 cups",
+      "preparation": "for baking pap and loosening chakalaka as needed"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Portuguese",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "lamb chops",
+      "quantity": "1.2–1.5 kg",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "boerewors",
+      "quantity": "800 g–1 kg",
+      "preparation": "coiled for grilling",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "6 tablespoons",
+      "preparation": "divided for rub, pap dish, and sauté",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "braai spice mix",
+      "quantity": "2 tablespoons",
+      "preparation": "for lamb rub",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peri-peri spice blend",
+      "quantity": "1–2 teaspoons",
+      "preparation": "to taste; divided for rub and chakalaka",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 teaspoons",
+      "preparation": "divided, plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon",
+      "preparation": "freshly ground, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red pepper",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "grated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "curry powder",
+      "quantity": "2 teaspoons",
+      "preparation": "for chakalaka",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 can (400 g)",
+      "preparation": "undrained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "baked beans",
+      "quantity": "1 can (410 g)",
+      "preparation": "undrained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaf",
+      "quantity": "1",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 teaspoon",
+      "preparation": "dried leaves",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "maize meal",
+      "quantity": "2 cups",
+      "preparation": "for oven-baked pap",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "6 cups",
+      "preparation": "for baking pap and loosening chakalaka as needed",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T114132Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T114019Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

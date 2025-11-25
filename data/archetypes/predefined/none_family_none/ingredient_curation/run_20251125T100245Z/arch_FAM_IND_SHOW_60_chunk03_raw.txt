@@ -1,0 +1,28 @@
+{
+  "archetype_uid": "arch_FAM_IND_SHOW_60",
+  "selected_ingredients": [
+    "coriander",
+    "coriander chutney",
+    "coriander seeds",
+    "garam masala",
+    "cumin",
+    "cumin seeds",
+    "garlic",
+    "crushed tomatoes",
+    "diced tomatoes",
+    "cream",
+    "ghee",
+    "curry paste",
+    "curry powder",
+    "curry sauce",
+    "dal spice blend",
+    "dhal spice blend",
+    "dates",
+    "cucumber",
+    "eggplant",
+    "courgette",
+    "flour",
+    "garlic naan bread",
+    "fish fillets"
+  ]
+}

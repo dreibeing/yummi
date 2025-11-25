@@ -1,0 +1,27 @@
+{
+  "archetype_uid": "arch_FAM_IND_SHOW_60",
+  "selected_ingredients": [
+    "mango",
+    "mango chutney",
+    "mango pickle",
+    "masala",
+    "masala sauce",
+    "masala spice blend",
+    "naan",
+    "paneer",
+    "minced meat",
+    "meatballs",
+    "meat skewers",
+    "onions",
+    "mint",
+    "mushrooms",
+    "nuts",
+    "oil",
+    "olive oil",
+    "milk",
+    "milk powder",
+    "mustard seeds",
+    "paprika",
+    "onion chutney"
+  ]
+}

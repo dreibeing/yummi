@@ -1,0 +1,33 @@
+{
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "selected_ingredients": [
+    "mandarins",
+    "mango",
+    "mango chutney",
+    "mange-tout",
+    "mixed greens",
+    "mushrooms",
+    "onions",
+    "parsley",
+    "oregano",
+    "paprika",
+    "olive oil",
+    "olives",
+    "olive",
+    "mayonnaise",
+    "mustard",
+    "maple syrup",
+    "mince",
+    "minced beef",
+    "meat skewers",
+    "meatballs",
+    "ostrich fillet",
+    "mashed potatoes",
+    "pasta salad",
+    "orzo",
+    "pasta",
+    "mozzarella",
+    "parmesan",
+    "milk"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "selected_ingredients": [
+    "spinach",
+    "spinach salad",
+    "tomato salad",
+    "tomato soup",
+    "vegetable and lentil meal",
+    "vegetable barley soup",
+    "vegetable soup",
+    "trout",
+    "whiting portions",
+    "tuna pasta",
+    "tuna penne",
+    "wrap",
+    "sweet potato salad"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "selected_ingredients": [
+    "greek salad",
+    "hummus",
+    "falafel wrap",
+    "chickpea cucumber salad",
+    "couscous salad",
+    "roasted vegetable couscous salad",
+    "lamb",
+    "lamb casserole",
+    "lamb with vegetables, lentils and brown rice",
+    "roast chicken",
+    "chicken strips",
+    "chicken soup",
+    "rice",
+    "mashed potatoes",
+    "roast potatoes",
+    "potato wedges",
+    "potato salad",
+    "potato bake",
+    "frozen vegetables",
+    "mixed vegetables",
+    "salad",
+    "smoked chicken breast"
+  ]
+}

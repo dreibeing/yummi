@@ -1,0 +1,23 @@
+{
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "selected_ingredients": [
+    "peas",
+    "pepper",
+    "pepper powder",
+    "peppercorns",
+    "peppers",
+    "preserved lemon",
+    "phyllo pastry",
+    "pita bread",
+    "pomegranate",
+    "potatoes",
+    "rice",
+    "red onion",
+    "red pepper",
+    "saffron",
+    "poppy seeds",
+    "prawns",
+    "pickled onions",
+    "roasted vegetables"
+  ]
+}

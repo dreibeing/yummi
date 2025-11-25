@@ -1,0 +1,32 @@
+{
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "selected_ingredients": [
+    "tomato",
+    "tomatoes",
+    "tomato paste",
+    "tomato puree",
+    "tomato passata with basil",
+    "tomato sauce",
+    "vegetable",
+    "vegetables",
+    "vegetable stock",
+    "zucchini",
+    "watercress",
+    "trout",
+    "tuna steak",
+    "turkey",
+    "whole chicken",
+    "whipping cream",
+    "white pepper",
+    "white wine",
+    "vinegar",
+    "vinaigrette",
+    "worcestershire sauce",
+    "water",
+    "yeast",
+    "turmeric",
+    "vanilla extract",
+    "yogurt",
+    "wraps"
+  ]
+}

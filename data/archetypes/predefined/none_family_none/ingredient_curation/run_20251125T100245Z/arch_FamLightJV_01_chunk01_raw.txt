@@ -1,0 +1,22 @@
+{
+  "archetype_uid": "arch_FamLightJV_01",
+  "selected_ingredients": [
+    "7-grain medley",
+    "apple",
+    "apple cider vinegar",
+    "baby carrots",
+    "baby corn",
+    "basil",
+    "basa",
+    "bay leaf",
+    "bean(s)",
+    "bell pepper",
+    "bell peppers",
+    "black pepper",
+    "black peppercorns",
+    "black rice",
+    "bok choy",
+    "bone broth",
+    "broccoli"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "selected_ingredients": [
+    "tagliatelle alfredo",
+    "tuna penne",
+    "tomato soup",
+    "vegetable soup",
+    "vegetable risotto",
+    "vegetable medley with bechamel sauce",
+    "vegetable and lentil meal",
+    "trout",
+    "tomato salad",
+    "sweet potato salad"
+  ]
+}

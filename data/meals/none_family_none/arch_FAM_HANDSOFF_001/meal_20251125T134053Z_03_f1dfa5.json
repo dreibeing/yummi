@@ -1,0 +1,263 @@
+{
+  "meal_id": "meal_20251125T134053Z_03_f1dfa5",
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "archetype_name": "Family Hands-Off Sheet Pan & Slow Cooker Nights",
+  "name": "Slow Cooker Lemon-Oregano Whole Chicken with Potatoes & Olives",
+  "description": "Set-and-forget Greek–Middle Eastern style whole chicken with tender potatoes and a bright lemon-olive finish. Optional quick oven blast crisps the skin before serving.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Scrub 1 kg potatoes and cut into 3–4 cm chunks.",
+    "Peel 2 onions and cut into thick wedges.",
+    "Rinse 4–5 carrots and cut into 3–4 cm pieces.",
+    "Crush 6 cloves garlic.",
+    "Zest and juice 1 lemon; cut the squeezed lemon into wedges.",
+    "Pat dry 1 whole chicken.",
+    "Measure spices: 2 tsp oregano, 1.5 tsp salt, 1 tsp black pepper.",
+    "Measure liquids: 2 tbsp olive oil, 120 ml water.",
+    "Optional: Rinse 1 preserved lemon and chop the rind; drain 100 g olives."
+  ],
+  "cook_steps": [
+    "Add potatoes, onions, and carrots to the slow cooker. Scatter half the garlic, half the oregano, and half the salt and pepper over the vegetables.",
+    "Stir together olive oil, lemon zest, lemon juice, remaining garlic, oregano, salt, and black pepper.",
+    "Place whole chicken breast-side up on top of the vegetables. Pour the lemon-oil mixture over the chicken. Tuck lemon wedges around. Add water and 2 bay leaves.",
+    "Cover and cook on Low for 6–7 hours or on High for 3.5–4 hours, until chicken is cooked through and tender.",
+    "Optional crisp: Transfer chicken to a roasting tray and brush with some cooking juices; roast in a hot oven (220°C) for 8–10 minutes to crisp the skin.",
+    "Return chicken to the vegetables (remove bay leaves). Stir in olives and optional chopped preserved lemon rind. Rest 5 minutes.",
+    "Carve and serve chicken with the potatoes and vegetables, spooning over the lemony juices."
+  ],
+  "instructions": [
+    "Scrub 1 kg potatoes and cut into 3–4 cm chunks.",
+    "Peel 2 onions and cut into thick wedges.",
+    "Rinse 4–5 carrots and cut into 3–4 cm pieces.",
+    "Crush 6 cloves garlic.",
+    "Zest and juice 1 lemon; cut the squeezed lemon into wedges.",
+    "Pat dry 1 whole chicken.",
+    "Measure spices: 2 tsp oregano, 1.5 tsp salt, 1 tsp black pepper.",
+    "Measure liquids: 2 tbsp olive oil, 120 ml water.",
+    "Optional: Rinse 1 preserved lemon and chop the rind; drain 100 g olives.",
+    "Add potatoes, onions, and carrots to the slow cooker. Scatter half the garlic, half the oregano, and half the salt and pepper over the vegetables.",
+    "Stir together olive oil, lemon zest, lemon juice, remaining garlic, oregano, salt, and black pepper.",
+    "Place whole chicken breast-side up on top of the vegetables. Pour the lemon-oil mixture over the chicken. Tuck lemon wedges around. Add water and 2 bay leaves.",
+    "Cover and cook on Low for 6–7 hours or on High for 3.5–4 hours, until chicken is cooked through and tender.",
+    "Optional crisp: Transfer chicken to a roasting tray and brush with some cooking juices; roast in a hot oven (220°C) for 8–10 minutes to crisp the skin.",
+    "Return chicken to the vegetables (remove bay leaves). Stir in olives and optional chopped preserved lemon rind. Rest 5 minutes.",
+    "Carve and serve chicken with the potatoes and vegetables, spooning over the lemony juices."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "whole chicken",
+      "quantity": "1 (1.6–2 kg)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "1 kg",
+      "preparation": "cut into chunks"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "2 medium",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "4–5 medium",
+      "preparation": "cut into chunks"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "6 cloves",
+      "preparation": "crushed"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced; wedges reserved"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "120 ml",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "100 g",
+      "preparation": "drained"
+    },
+    {
+      "core_item_name": "preserved lemon",
+      "quantity": "2–3 tbsp",
+      "preparation": "rind finely chopped (optional)"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "SlowOrPressureCooker"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "whole chicken",
+      "quantity": "1 (1.6–2 kg)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "1 kg",
+      "preparation": "cut into chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "2 medium",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "4–5 medium",
+      "preparation": "cut into chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "6 cloves",
+      "preparation": "crushed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced; wedges reserved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "120 ml",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "100 g",
+      "preparation": "drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "preserved lemon",
+      "quantity": "2–3 tbsp",
+      "preparation": "rind finely chopped (optional)",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T134231Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T134053Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

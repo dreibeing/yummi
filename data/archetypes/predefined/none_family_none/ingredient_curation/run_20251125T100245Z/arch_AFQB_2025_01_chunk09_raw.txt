@@ -1,0 +1,22 @@
+{
+  "archetype_uid": "arch_AFQB_2025_01",
+  "selected_ingredients": [
+    "chicken strips",
+    "fried chicken",
+    "hake nuggets",
+    "fish cakes",
+    "macaroni and cheese",
+    "frozen pizza",
+    "potato wedges",
+    "mashed potatoes",
+    "garlic butter baguette",
+    "frozen vegetables",
+    "hummus",
+    "coleslaw",
+    "nachos",
+    "rolls",
+    "rice",
+    "frozen fruit cubes",
+    "salad"
+  ]
+}

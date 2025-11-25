@@ -1,0 +1,249 @@
+{
+  "meal_id": "meal_20251125T112714Z_01_704b7a",
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "archetype_name": "Family Hands-Off Sheet Pan & Slow Cooker Nights",
+  "name": "Sheet-Pan Lemon-Oregano Chicken with Potatoes, Peppers, and Olives",
+  "description": "Hands-off Greek–Middle Eastern style roast chicken and vegetables with bright lemon, oregano, and sumac. Everything goes on one tray for an easy family dinner with no chili heat.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C/425°F. Line a large sheet pan with foil for easy cleanup.",
+    "Scrub potatoes and cut into 2–3 cm chunks.",
+    "Seed bell peppers and slice into thick strips.",
+    "Peel and slice red onion into wedges.",
+    "Mince garlic.",
+    "Zest then halve the lemon; cut one half into wedges and reserve the other half for juice.",
+    "Rinse and drain olives. Roughly chop parsley."
+  ],
+  "cook_steps": [
+    "On the sheet pan, toss potatoes, bell peppers, and red onion with 1 tbsp olive oil, half the minced garlic, 1/2 tsp salt, and 1/4 tsp black pepper. Spread in an even layer.",
+    "Roast vegetables for 15 minutes to start them cooking.",
+    "While veg roasts, pat chicken thighs dry. In a bowl, mix remaining 1 tbsp olive oil, remaining garlic, lemon zest, 1 tbsp lemon juice, oregano, sumac, 1/2 tsp salt, and 1/4 tsp black pepper. Coat chicken thighs in the mixture.",
+    "Remove pan, push vegetables to make space, and nestle chicken thighs on top, skin side up if skin-on.",
+    "Return pan to oven and roast 25–30 minutes, until chicken is cooked through (internal temp 74°C/165°F) and potatoes are tender.",
+    "Scatter olives over the pan and roast 3 more minutes to warm.",
+    "Squeeze remaining lemon over the tray. Sprinkle parsley. Serve with lemon wedges.",
+    "Optional slow cooker variation (set-and-forget): Add potatoes, peppers, onion, garlic, olives, and chicken (coated in the same seasoning) to the slow cooker. Cook on High 3–4 hours or Low 6–7 hours until chicken is done and potatoes are tender. Finish with lemon juice and parsley. For crisper edges, broil finished chicken and veg on a sheet pan for 3–5 minutes."
+  ],
+  "instructions": [
+    "Heat oven to 220°C/425°F. Line a large sheet pan with foil for easy cleanup.",
+    "Scrub potatoes and cut into 2–3 cm chunks.",
+    "Seed bell peppers and slice into thick strips.",
+    "Peel and slice red onion into wedges.",
+    "Mince garlic.",
+    "Zest then halve the lemon; cut one half into wedges and reserve the other half for juice.",
+    "Rinse and drain olives. Roughly chop parsley.",
+    "On the sheet pan, toss potatoes, bell peppers, and red onion with 1 tbsp olive oil, half the minced garlic, 1/2 tsp salt, and 1/4 tsp black pepper. Spread in an even layer.",
+    "Roast vegetables for 15 minutes to start them cooking.",
+    "While veg roasts, pat chicken thighs dry. In a bowl, mix remaining 1 tbsp olive oil, remaining garlic, lemon zest, 1 tbsp lemon juice, oregano, sumac, 1/2 tsp salt, and 1/4 tsp black pepper. Coat chicken thighs in the mixture.",
+    "Remove pan, push vegetables to make space, and nestle chicken thighs on top, skin side up if skin-on.",
+    "Return pan to oven and roast 25–30 minutes, until chicken is cooked through (internal temp 74°C/165°F) and potatoes are tender.",
+    "Scatter olives over the pan and roast 3 more minutes to warm.",
+    "Squeeze remaining lemon over the tray. Sprinkle parsley. Serve with lemon wedges.",
+    "Optional slow cooker variation (set-and-forget): Add potatoes, peppers, onion, garlic, olives, and chicken (coated in the same seasoning) to the slow cooker. Cook on High 3–4 hours or Low 6–7 hours until chicken is done and potatoes are tender. Finish with lemon juice and parsley. For crisper edges, broil finished chicken and veg on a sheet pan for 3–5 minutes."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "6–8 pieces (about 1.2–1.4 kg)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "700 g",
+      "preparation": "cut into 2–3 cm chunks"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 large",
+      "preparation": "seeded and sliced"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced; wedges for serving"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "SlowOrPressureCooker"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "6–8 pieces (about 1.2–1.4 kg)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "700 g",
+      "preparation": "cut into 2–3 cm chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 large",
+      "preparation": "seeded and sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced; wedges for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T112812Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T112714Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

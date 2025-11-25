@@ -1,0 +1,4 @@
+{
+  "archetype_uid": "arch_FamWeeknightCore_15to30",
+  "selected_ingredients": []
+}

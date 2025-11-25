@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "selected_ingredients": [
+    "Korean BBQ sauce",
+    "bbq marinade",
+    "barbecue rub",
+    "aioli",
+    "anchovy",
+    "anchovy paste",
+    "apple cider vinegar",
+    "avocado",
+    "avocado oil",
+    "bell peppers",
+    "black beans",
+    "black pepper",
+    "beef short ribs",
+    "beef brisket",
+    "beef mince",
+    "t-bone steak",
+    "bacon",
+    "bread",
+    "basmati rice",
+    "achar"
+  ]
+}

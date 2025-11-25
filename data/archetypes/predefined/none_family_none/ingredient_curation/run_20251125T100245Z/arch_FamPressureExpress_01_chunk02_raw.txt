@@ -1,0 +1,31 @@
+{
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "selected_ingredients": [
+    "broccoli and cauliflower florets",
+    "brown and wild rice",
+    "brown basmati rice",
+    "brown rice",
+    "brown sugar",
+    "brussels sprouts",
+    "butter",
+    "butter beans",
+    "butternut squash",
+    "cabbage",
+    "cacio e pepe",
+    "cannellini beans",
+    "cannelloni",
+    "canola oil",
+    "carrots",
+    "cauliflower",
+    "cheddar",
+    "cheese",
+    "chicken",
+    "chicken breast",
+    "chicken thighs",
+    "chicken stock",
+    "chicken stock powder",
+    "chickpeas",
+    "chickpea pasta",
+    "chives"
+  ]
+}

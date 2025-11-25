@@ -1,0 +1,17 @@
+{
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "selected_ingredients": [
+    "pork",
+    "roast chicken",
+    "fried chicken",
+    "prawns",
+    "lamb",
+    "rice",
+    "edamame",
+    "slaw",
+    "salad",
+    "potato wedges",
+    "nachos",
+    "soy sesame chicken coconut rice"
+  ]
+}

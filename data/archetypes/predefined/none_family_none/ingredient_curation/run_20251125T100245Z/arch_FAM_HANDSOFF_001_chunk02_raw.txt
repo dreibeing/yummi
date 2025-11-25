@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "selected_ingredients": [
+    "broccoli and cauliflower florets",
+    "brown basmati rice",
+    "bulgur",
+    "butter",
+    "butternut squash",
+    "cabbage",
+    "carrot",
+    "carrots",
+    "cauliflower",
+    "cherry tomatoes",
+    "cardamom",
+    "cinnamon",
+    "chives",
+    "caper berries",
+    "chickpeas",
+    "cannellini beans",
+    "chermoula",
+    "chicken thighs",
+    "chicken breast fillets",
+    "chicken stock"
+  ]
+}

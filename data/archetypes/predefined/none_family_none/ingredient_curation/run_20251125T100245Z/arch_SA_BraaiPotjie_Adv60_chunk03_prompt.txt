@@ -1,0 +1,246 @@
+SYSTEM:
+You are Yummi's ingredient sourcing strategist. For each request you receive a single archetype plus the canonical
+ingredient catalog. Your job is to identify the ingredients that align with that archetype's culinary profile,
+using only the context supplied in the conversation. Always ground your decisions in the archetype description
+and tags provided later; do not assume any other defaults. When uncertain, err on the side of keeping plausible
+fits, but filter clear mismatches.
+
+Return strict JSON with this structure:
+{
+  "archetype_uid": "arch_XXXX",
+  "selected_ingredients": [
+    "Ingredient A",
+    "Ingredient B"
+  ]
+}
+
+Rules:
+- Return only the JSON object above; no extra commentary.
+- Names must match the catalog exactly (case and spelling).
+- Avoid beverages, household items, or duplicative variants that the archetype would reasonably skip.
+- Ensure the list spans pantry staples, proteins, starches, produce, and sauces that fit the archetype’s cuisines.
+- Do not invent ingredients that are not in the catalog.
+
+USER:
+Archetype UID: arch_SA_BraaiPotjie_Adv60
+Archetype Name: Family Weekend Advanced: South African Braai & Potjie
+Archetype Description:
+Presentation-worthy South African family feasts built around braai platters and slow potjie or oven bakes with classic sides—hands-on technique, medium heat, and >60-minute cook times.
+
+Core Tags:
+- Allergens: None
+- Audience: Family
+- Complexity: Advanced
+- Cuisine: SouthAfrican
+- DietaryRestrictions: None
+- Equipment: OutdoorGrill, Oven
+- HeatSpice: Medium
+- MealComponentPreference: FromScratch
+- NutritionFocus: NoNutritionFocus
+- PrepTime: 60Plus
+
+Ingredient catalog chunk 3/10 (format: item_type — core_item_name).
+For each entry, answer a single question: would this archetype reasonably use this ingredient when cooking?
+If yes (even occasionally), include the ingredient name in `selected_ingredients`. If the ingredient is clearly unsuitable, exclude it.
+- ingredient — coconut stir-fry sauce
+- ingredient — coconut sugar
+- ingredient — coconut yogurt
+- ingredient — cod roe
+- ingredient — coffee
+- ingredient — coffee beans
+- ingredient — coffee capsules
+- ingredient — coffee filters
+- ingredient — coffee milk
+- ingredient — coffee sachets
+- ingredient — coleslaw
+- ingredient — collagen granules
+- ingredient — collagen powder
+- ingredient — comté cheese
+- ingredient — condiment
+- ingredient — cookbook
+- ingredient — cookie
+- ingredient — cookies
+- ingredient — cooler bag
+- ingredient — coppa
+- ingredient — coriander
+- ingredient — coriander chutney
+- ingredient — coriander seeds
+- ingredient — corn
+- ingredient — corn flakes
+- ingredient — corn snack
+- ingredient — cornbread mix
+- ingredient — corned beef
+- ingredient — cornflour
+- ingredient — cottage cheese
+- ingredient — cottage pie
+- ingredient — cotton buds
+- ingredient — cotton pads
+- ingredient — cotton puff
+- ingredient — cotton wool roll
+- ingredient — courgette
+- ingredient — couscous
+- ingredient — couscous salad
+- ingredient — cracker
+- ingredient — crackers
+- ingredient — cranberry and apple glaze
+- ingredient — cranberry balsamic reduction
+- ingredient — cranberry citrus sparkling non-alcoholic drink
+- ingredient — cranberry cosmo drink
+- ingredient — cranberry dressing
+- ingredient — cranberry drink
+- ingredient — cranberry sauce
+- ingredient — cranberry sparkling drink
+- ingredient — cream
+- ingredient — cream cheese
+- ingredient — cream crackers
+- ingredient — cream of tartar
+- ingredient — creme fraiche
+- ingredient — crispbread
+- ingredient — croissant
+- ingredient — croutons
+- ingredient — crunchie
+- ingredient — crushed tomatoes
+- ingredient — crushed tomatoes with vegetables
+- ingredient — cucumber
+- ingredient — cumin
+- ingredient — cumin seeds
+- ingredient — cupcake cases
+- ingredient — curried spelt and beans
+- ingredient — curry paste
+- ingredient — curry powder
+- ingredient — curry sauce
+- ingredient — custard
+- ingredient — custard powder
+- ingredient — custard slice
+- ingredient — cutlery
+- ingredient — dairy beverage
+- ingredient — dairy-free cheddar cheese
+- ingredient — dairy-free cheese
+- ingredient — dairy-free cheese spread
+- ingredient — dairy-free hard cheese
+- ingredient — dal spice blend
+- ingredient — dal spice mix
+- ingredient — date
+- ingredient — date syrup
+- ingredient — dates
+- ingredient — deli platter
+- ingredient — dhal spice blend
+- ingredient — diapers
+- ingredient — diced tomatoes
+- ingredient — digestive biscuit
+- ingredient — digestive biscuits
+- ingredient — digestives
+- ingredient — dill
+- ingredient — dill pickles
+- ingredient — dip
+- ingredient — donut
+- ingredient — dressing
+- ingredient — dried beef sausage
+- ingredient — drink
+- ingredient — droewors
+- ingredient — duck
+- ingredient — duck breast
+- ingredient — duck fat
+- ingredient — duck legs
+- ingredient — duck liver
+- ingredient — duck necks
+- ingredient — duck sausage
+- ingredient — duck skin
+- ingredient — dukkah
+- ingredient — edamame
+- ingredient — edible flowers
+- ingredient — egg noodles
+- ingredient — egg whites
+- ingredient — eggplant
+- ingredient — eggs
+- ingredient — emmental cheese
+- ingredient — emollient cream
+- ingredient — enchilada sauce
+- ingredient — energy bar
+- ingredient — energy bars
+- ingredient — english muffin
+- ingredient — english muffins
+- ingredient — erythritol
+- ingredient — erythritol and stevia blend
+- ingredient — everything bagel seasoning
+- ingredient — falafel
+- ingredient — falafel seasoning
+- ingredient — fennel
+- ingredient — fennel seeds
+- ingredient — feta
+- ingredient — feta cheese
+- ingredient — feta dip
+- ingredient — feta herb dip
+- ingredient — fettuccine
+- ingredient — fig balsamic reduction
+- ingredient — fire starter
+- ingredient — fish fillets
+- ingredient — fish sauce
+- ingredient — fish sausage
+- ingredient — fish stock concentrate
+- ingredient — flapjack
+- ingredient — flapjack mix
+- ingredient — flapjacks
+- ingredient — flavoured milk
+- ingredient — flavoured water
+- ingredient — flaxseed oil
+- ingredient — flour
+- ingredient — focaccia
+- ingredient — focaccia mix
+- ingredient — follow-on formula
+- ingredient — follow-on formula stage 2
+- ingredient — food storage container
+- ingredient — food storage containers
+- ingredient — formula
+- ingredient — freezer bags
+- ingredient — french fries
+- ingredient — fried chicken
+- ingredient — fries
+- ingredient — frikadels
+- ingredient — frikkadels
+- ingredient — frozen mixed vegetables
+- ingredient — frozen vegetables
+- ingredient — frozen yoghurt
+- ingredient — frozen yogurt
+- ingredient — fruit
+- ingredient — fruit cocktail
+- ingredient — fruit mince
+- ingredient — fruit salad
+- ingredient — fusilli
+- ingredient — fusilli pasta
+- ingredient — gammon
+- ingredient — garam masala
+- ingredient — garlic
+- ingredient — garlic and herb seasoning
+- ingredient — garlic butter baguette
+- ingredient — garlic butter filled ciabatta
+- ingredient — garlic cheese naan
+- ingredient — garlic flakes
+- ingredient — garlic flavoured avocado oil
+- ingredient — garlic herb butter
+- ingredient — garlic mushroom sauce
+- ingredient — garlic naan bread
+- ingredient — garlic powder
+- ingredient — garlic salt
+- ingredient — garlic sauce
+- ingredient — garlic scapes
+- ingredient — gelatine
+- ingredient — gelling powder
+- ingredient — gem squash
+- ingredient — ghee
+- ingredient — ghost chilli
+- ingredient — gizzards
+- ingredient — glace cherries
+- ingredient — gluten-free all-purpose flour
+- ingredient — gnocchi
+- ingredient — goat camembert
+- ingredient — goat cheese
+- ingredient — goat gouda cheese
+- ingredient — goat milk
+- ingredient — gochujang
+- ingredient — gooseberry
+- ingredient — gorgonzola
+- ingredient — gorgonzola cheese
+- ingredient — gouda
+
+Return strict JSON only; do not include extra commentary.

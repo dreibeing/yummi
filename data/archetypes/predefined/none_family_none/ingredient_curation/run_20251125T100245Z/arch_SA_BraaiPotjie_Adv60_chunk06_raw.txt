@@ -1,0 +1,30 @@
+{
+  "archetype_uid": "arch_SA_BraaiPotjie_Adv60",
+  "selected_ingredients": [
+    "picanha steak",
+    "ribeye steak",
+    "pork ribs",
+    "prawns",
+    "prawn skewers",
+    "peri peri sauce",
+    "peri-peri spice blend",
+    "peppadew peppers",
+    "roosterkoek mix",
+    "potatoes",
+    "potato mash",
+    "polenta",
+    "rice",
+    "rolls",
+    "red onion",
+    "red pepper",
+    "peppers",
+    "pineapple",
+    "roasted garlic",
+    "pickled onions",
+    "pepper",
+    "peppercorns",
+    "pink salt",
+    "rub",
+    "rosemary"
+  ]
+}

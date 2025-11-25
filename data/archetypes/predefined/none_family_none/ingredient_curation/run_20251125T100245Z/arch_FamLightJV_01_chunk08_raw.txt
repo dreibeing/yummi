@@ -1,0 +1,19 @@
+{
+  "archetype_uid": "arch_FamLightJV_01",
+  "selected_ingredients": [
+    "tomatoes",
+    "udon noodles",
+    "tuna",
+    "trout",
+    "whole chicken",
+    "vegetable stock",
+    "water",
+    "vinegar",
+    "turmeric powder",
+    "white pepper",
+    "wasabi paste",
+    "watercress",
+    "zucchini",
+    "vegetables"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_FamLatComfort3060",
+  "selected_ingredients": [
+    "salsa",
+    "salt",
+    "sea salt",
+    "salt and pepper",
+    "seasoning",
+    "spice",
+    "spice blend",
+    "sauce",
+    "sour cream",
+    "sour cream dip",
+    "spring onion",
+    "salad greens",
+    "spinach",
+    "spanish rice",
+    "savoury rice",
+    "taco shells",
+    "tilapia",
+    "sunflower oil",
+    "sugar",
+    "self-raising flour"
+  ]
+}

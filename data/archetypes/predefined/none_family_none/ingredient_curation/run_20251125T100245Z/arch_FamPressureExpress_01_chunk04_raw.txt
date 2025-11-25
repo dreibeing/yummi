@@ -1,0 +1,33 @@
+{
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "selected_ingredients": [
+    "grana padano",
+    "grapeseed oil",
+    "gravy",
+    "gravy powder",
+    "green beans",
+    "ground beef",
+    "ground cumin",
+    "ground meat",
+    "haddock",
+    "ham",
+    "hamburger buns",
+    "herbs",
+    "honey",
+    "italian seasoning",
+    "jasmine rice",
+    "kidney beans",
+    "lasagna sheets",
+    "leek",
+    "lentil",
+    "lentils",
+    "lemon",
+    "linguine",
+    "macaroni",
+    "macaroni and cheese",
+    "kale",
+    "jus",
+    "ketchup",
+    "gruyere cheese"
+  ]
+}

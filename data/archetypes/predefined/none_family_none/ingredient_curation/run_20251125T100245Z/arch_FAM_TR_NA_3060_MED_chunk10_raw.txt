@@ -1,0 +1,16 @@
+{
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "selected_ingredients": [
+    "ready_meal — spinach",
+    "ready_meal — spinach feta pies",
+    "ready_meal — spinach pie",
+    "ready_meal — tomato salad",
+    "ready_meal — tomato soup",
+    "ready_meal — vegetable and lentil meal",
+    "ready_meal — vegetable soup",
+    "ready_meal — vegetable medley with bechamel sauce",
+    "ready_meal — wrap",
+    "ready_meal — trout",
+    "ready_meal — whiting portions"
+  ]
+}

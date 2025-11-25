@@ -1,0 +1,19 @@
+{
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "selected_ingredients": [
+    "cod roe",
+    "fish fillets",
+    "fish stock concentrate",
+    "crushed tomatoes",
+    "diced tomatoes",
+    "garlic",
+    "coriander",
+    "coriander seeds",
+    "fennel",
+    "fennel seeds",
+    "courgette",
+    "eggs",
+    "flour",
+    "fusilli"
+  ]
+}

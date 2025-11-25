@@ -1,0 +1,290 @@
+{
+  "meal_id": "meal_20251125T115301Z_01_01a921",
+  "archetype_uid": "arch_FAMXHOT1530",
+  "archetype_name": "Family Extra-Hot Chili Night (Caribbean & Mexican, 15–30, Simple)",
+  "name": "Extra-Hot Chipotle Beef & Black Bean Tacos with Pineapple-Habanero Salsa",
+  "description": "Fiery chipotle beef and black beans tucked in warm tortillas, topped with a fresh pineapple-habanero salsa for a Caribbean-Mexican heat punch. Built fast for a spicy family taco night.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Dice onion.",
+    "Slice bell peppers into thin strips.",
+    "Mince garlic.",
+    "Finely dice pineapple and tomatoes for salsa.",
+    "Finely chop jalapenos and coriander.",
+    "Cut lime into wedges (reserve 1 for juice).",
+    "Warm tortillas: stack and wrap in foil for the grill, or cover to warm in a dry pan later."
+  ],
+  "cook_steps": [
+    "Heat olive oil in a large skillet over medium-high heat.",
+    "Add onion and bell peppers; cook 3–4 minutes until softened.",
+    "Add ground beef; break up and brown 4–5 minutes.",
+    "Stir in garlic, chilli powder, allspice, and salt; cook 30 seconds until fragrant.",
+    "Add chipotle sauce and black beans; stir and simmer 2–3 minutes to thicken.",
+    "Make salsa in a bowl: combine pineapple, tomatoes, jalapenos, coriander, lime juice, a pinch of salt, and habanero sauce to taste.",
+    "Warm tortillas on OutdoorGrill 30–60 seconds per side (or in a dry skillet on the StoveTop) until pliable.",
+    "Assemble tacos: fill tortillas with beef-bean mixture and top with pineapple-habanero salsa. Serve with extra lime wedges."
+  ],
+  "instructions": [
+    "Dice onion.",
+    "Slice bell peppers into thin strips.",
+    "Mince garlic.",
+    "Finely dice pineapple and tomatoes for salsa.",
+    "Finely chop jalapenos and coriander.",
+    "Cut lime into wedges (reserve 1 for juice).",
+    "Warm tortillas: stack and wrap in foil for the grill, or cover to warm in a dry pan later.",
+    "Heat olive oil in a large skillet over medium-high heat.",
+    "Add onion and bell peppers; cook 3–4 minutes until softened.",
+    "Add ground beef; break up and brown 4–5 minutes.",
+    "Stir in garlic, chilli powder, allspice, and salt; cook 30 seconds until fragrant.",
+    "Add chipotle sauce and black beans; stir and simmer 2–3 minutes to thicken.",
+    "Make salsa in a bowl: combine pineapple, tomatoes, jalapenos, coriander, lime juice, a pinch of salt, and habanero sauce to taste.",
+    "Warm tortillas on OutdoorGrill 30–60 seconds per side (or in a dry skillet on the StoveTop) until pliable.",
+    "Assemble tacos: fill tortillas with beef-bean mixture and top with pineapple-habanero salsa. Serve with extra lime wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 large",
+      "preparation": "sliced thin"
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "500 g (about 1 lb)"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "chilli powder",
+      "quantity": "2 teaspoons"
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 teaspoon, plus more to taste"
+    },
+    {
+      "core_item_name": "chipotle sauce",
+      "quantity": "1/3 cup"
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (400 g) or 1 1/2 cups cooked",
+      "preparation": "drained if canned"
+    },
+    {
+      "core_item_name": "pineapple",
+      "quantity": "1 cup",
+      "preparation": "finely diced"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "1 cup",
+      "preparation": "finely diced"
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "1–2",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/3 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1–2",
+      "preparation": "1 juiced, extra cut into wedges"
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "1–2 teaspoons, to taste"
+    },
+    {
+      "core_item_name": "tortillas",
+      "quantity": "12 small (street-size) or 8 medium"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Caribbean",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "ExtraHot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 large",
+      "preparation": "sliced thin",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "500 g (about 1 lb)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli powder",
+      "quantity": "2 teaspoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 teaspoon, plus more to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chipotle sauce",
+      "quantity": "1/3 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (400 g) or 1 1/2 cups cooked",
+      "preparation": "drained if canned",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pineapple",
+      "quantity": "1 cup",
+      "preparation": "finely diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "1 cup",
+      "preparation": "finely diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "1–2",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/3 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1–2",
+      "preparation": "1 juiced, extra cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "1–2 teaspoons, to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tortillas",
+      "quantity": "12 small (street-size) or 8 medium",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [
+    "Category 'MealComponentPreference' ideally includes 2+ tags; received ['FromScratch']"
+  ],
+  "metadata": {
+    "created_at": "20251125T115339Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T115301Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

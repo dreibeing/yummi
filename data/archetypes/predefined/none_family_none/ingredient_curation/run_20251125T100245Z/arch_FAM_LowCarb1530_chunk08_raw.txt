@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "selected_ingredients": [
+    "tomatoes",
+    "tomato paste",
+    "zucchini",
+    "cauliflower",
+    "cauliflower rice",
+    "vegetables",
+    "vegetable stock",
+    "wraps",
+    "tuna",
+    "tuna steak",
+    "turkey",
+    "whole chicken",
+    "chicken breast",
+    "yogurt",
+    "tzatziki",
+    "za'atar",
+    "vinegar",
+    "vinaigrette",
+    "white pepper",
+    "turmeric powder"
+  ]
+}

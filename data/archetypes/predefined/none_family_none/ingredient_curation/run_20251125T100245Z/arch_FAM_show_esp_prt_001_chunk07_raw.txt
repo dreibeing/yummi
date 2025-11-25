@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "selected_ingredients": [
+    "salt",
+    "semolina",
+    "spanish rice",
+    "spaghetti",
+    "sourdough bread",
+    "serrano ham",
+    "sardines",
+    "salmon",
+    "smoked hake",
+    "squid",
+    "sausage",
+    "shallots",
+    "spinach",
+    "spring onion",
+    "sun-dried tomatoes",
+    "seafood paste",
+    "tapenade",
+    "thyme",
+    "smoked chili flakes",
+    "sugar"
+  ]
+}

@@ -1,0 +1,320 @@
+{
+  "meal_id": "meal_20251125T112605Z_01_74491a",
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "archetype_name": "Family Heat Lovers: Korean & Latin American Feasts (Hot, 30–60, Advanced)",
+  "name": "Gochujang-Grilled Chicken with Chimichurri and Charred Corn Rice",
+  "description": "Hot gochujang-marinated chicken grilled and topped with bright chimichurri, served with charred-corn jasmine rice and a crunchy chilli-vinegar cabbage slaw. A Korean–Latin mashup built from scratch with bold heat.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 2 cups jasmine rice under cold water until it runs mostly clear; drain well.",
+    "Trim 900 g chicken thighs and pat dry.",
+    "In a bowl, combine 3 tbsp gochujang, 2 tbsp soy sauce, 2 tbsp sesame oil (divided later), 1 tbsp brown sugar, 2 cloves garlic minced, 1 tbsp rice vinegar, and zest of 1 lime; mix into a paste.",
+    "Toss chicken thighs in the gochujang paste to coat; marinate 15–20 minutes at room temperature.",
+    "Thinly slice 4 spring onion; set green tops aside for garnish.",
+    "Shred 1/2 small cabbage (about 4 cups).",
+    "Halve the lime and reserve for squeezing.",
+    "Preheat Outdoor Grill to medium-high heat. Place a medium saucepan with lid on the StoveTop."
+  ],
+  "cook_steps": [
+    "Cook rice: Add rinsed jasmine rice, 2 1/2 cups water, and a big pinch of salt to the saucepan. Bring to a boil, stir once, cover, reduce heat to low, and simmer 12 minutes. Turn off heat and rest covered 10 minutes.",
+    "Char corn: Heat 1 tbsp canola oil in a large skillet on the StoveTop (or a grill basket on the Outdoor Grill). Add 1 1/2 cups corn, a pinch of salt, and black pepper. Cook 4–6 minutes until lightly charred. Stir in half of the sliced spring onion whites; remove from heat.",
+    "Grill chicken: Oil grill grates with 1 tsp canola oil. Grill marinated chicken thighs 5–6 minutes per side, until cooked through and lightly charred (juices run clear). Rest 5 minutes.",
+    "Make slaw: In a large bowl, toss shredded cabbage with 2 tbsp apple cider vinegar, juice of 1/2 lime, 1 tsp chilli flakes, a pinch of salt, and 1 tsp sesame oil. Add remaining spring onion whites; toss again.",
+    "Finish rice: Fluff rice with a fork. Fold in charred corn mixture, 1 tsp sesame oil, and a squeeze of lime. Adjust salt to taste.",
+    "Serve: Slice or leave chicken thighs whole. Spoon chimichurri over the chicken. Sprinkle with spring onion greens and sesame seeds. Plate with charred-corn rice and a side of chilli-vinegar slaw."
+  ],
+  "instructions": [
+    "Rinse 2 cups jasmine rice under cold water until it runs mostly clear; drain well.",
+    "Trim 900 g chicken thighs and pat dry.",
+    "In a bowl, combine 3 tbsp gochujang, 2 tbsp soy sauce, 2 tbsp sesame oil (divided later), 1 tbsp brown sugar, 2 cloves garlic minced, 1 tbsp rice vinegar, and zest of 1 lime; mix into a paste.",
+    "Toss chicken thighs in the gochujang paste to coat; marinate 15–20 minutes at room temperature.",
+    "Thinly slice 4 spring onion; set green tops aside for garnish.",
+    "Shred 1/2 small cabbage (about 4 cups).",
+    "Halve the lime and reserve for squeezing.",
+    "Preheat Outdoor Grill to medium-high heat. Place a medium saucepan with lid on the StoveTop.",
+    "Cook rice: Add rinsed jasmine rice, 2 1/2 cups water, and a big pinch of salt to the saucepan. Bring to a boil, stir once, cover, reduce heat to low, and simmer 12 minutes. Turn off heat and rest covered 10 minutes.",
+    "Char corn: Heat 1 tbsp canola oil in a large skillet on the StoveTop (or a grill basket on the Outdoor Grill). Add 1 1/2 cups corn, a pinch of salt, and black pepper. Cook 4–6 minutes until lightly charred. Stir in half of the sliced spring onion whites; remove from heat.",
+    "Grill chicken: Oil grill grates with 1 tsp canola oil. Grill marinated chicken thighs 5–6 minutes per side, until cooked through and lightly charred (juices run clear). Rest 5 minutes.",
+    "Make slaw: In a large bowl, toss shredded cabbage with 2 tbsp apple cider vinegar, juice of 1/2 lime, 1 tsp chilli flakes, a pinch of salt, and 1 tsp sesame oil. Add remaining spring onion whites; toss again.",
+    "Finish rice: Fluff rice with a fork. Fold in charred corn mixture, 1 tsp sesame oil, and a squeeze of lime. Adjust salt to taste.",
+    "Serve: Slice or leave chicken thighs whole. Spoon chimichurri over the chicken. Sprinkle with spring onion greens and sesame seeds. Plate with charred-corn rice and a side of chilli-vinegar slaw."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 1/2 cups"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "900 g",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "3 tbsp"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "zest and juice divided"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tsp + 1 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "1 1/2 cups",
+      "preparation": "kernels"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4",
+      "preparation": "thinly sliced, greens reserved"
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 small (about 4 cups)",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "chimichurri",
+      "quantity": "1/2 cup"
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "1 tbsp"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Korean",
+      "LatinAmerican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Hot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 1/2 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "900 g",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "3 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "zest and juice divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tsp + 1 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "1 1/2 cups",
+      "preparation": "kernels",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4",
+      "preparation": "thinly sliced, greens reserved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 small (about 4 cups)",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chimichurri",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T112714Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T112605Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

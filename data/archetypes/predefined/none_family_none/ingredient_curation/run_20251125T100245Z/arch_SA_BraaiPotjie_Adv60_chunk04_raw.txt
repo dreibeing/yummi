@@ -1,0 +1,22 @@
+{
+  "archetype_uid": "arch_SA_BraaiPotjie_Adv60",
+  "selected_ingredients": [
+    "grapeseed oil",
+    "ground beef",
+    "ground cumin",
+    "green beans",
+    "grapes",
+    "hake fillets",
+    "halloumi",
+    "hamburger buns",
+    "honey",
+    "italian herbs",
+    "ketchup",
+    "kidney beans",
+    "maize meal",
+    "lamb boerewors",
+    "lamb chops",
+    "leg of lamb",
+    "koeksisters"
+  ]
+}

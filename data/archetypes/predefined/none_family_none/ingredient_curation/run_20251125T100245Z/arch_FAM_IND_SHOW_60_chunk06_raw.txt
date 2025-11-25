@@ -1,0 +1,26 @@
+{
+  "archetype_uid": "arch_FAM_IND_SHOW_60",
+  "selected_ingredients": [
+    "peanuts",
+    "peanuts and cashews mix",
+    "peas",
+    "pepper",
+    "pepper powder",
+    "peppercorns",
+    "peppers",
+    "pickles",
+    "pickled onions",
+    "poppadoms",
+    "poppy seeds",
+    "prawn curry",
+    "potatoes",
+    "rice",
+    "roti",
+    "puri",
+    "rogan josh spice blend",
+    "red onion",
+    "pomegranate",
+    "saffron",
+    "roasted garlic"
+  ]
+}

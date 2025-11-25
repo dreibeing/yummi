@@ -1,0 +1,28 @@
+{
+  "archetype_uid": "arch_FAMXHOT1530",
+  "selected_ingredients": [
+    "pepper",
+    "pepper powder",
+    "pepper sauce",
+    "peppers",
+    "piri piri seasoning",
+    "pimento pepper",
+    "pineapple",
+    "pickled onions",
+    "pink salt",
+    "peppercorns",
+    "rice",
+    "rice vinegar",
+    "pork",
+    "pork shoulder",
+    "pork ribs",
+    "pork mince",
+    "prawns",
+    "picanha steak",
+    "roti",
+    "red onion",
+    "red pepper",
+    "red chili sauce",
+    "roasted garlic"
+  ]
+}

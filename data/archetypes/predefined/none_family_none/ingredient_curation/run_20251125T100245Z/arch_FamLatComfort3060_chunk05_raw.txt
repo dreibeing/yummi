@@ -1,0 +1,23 @@
+{
+  "archetype_uid": "arch_FamLatComfort3060",
+  "selected_ingredients": [
+    "mango",
+    "mandarins",
+    "margarine",
+    "mayonnaise",
+    "milk",
+    "minced beef",
+    "mashed potatoes",
+    "mushrooms",
+    "olive oil",
+    "olives",
+    "onions",
+    "passata",
+    "parsley",
+    "paprika",
+    "oregano",
+    "mozzarella cheese",
+    "mixed vegetables",
+    "mixed greens"
+  ]
+}

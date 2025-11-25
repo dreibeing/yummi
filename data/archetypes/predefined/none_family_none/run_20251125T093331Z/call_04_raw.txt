@@ -1,0 +1,45 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_FAM_MED_ASIA_01",
+      "name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)",
+      "description": "Stovetop family dinners inspired by Indian, Thai, and Chinese flavors—balanced medium heat curries and stir-fries built in 15–30 minutes with a few coordinated components.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Indian",
+          "Thai",
+          "Chinese"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Intermediate"
+        ],
+        "HeatSpice": [
+          "Medium"
+        ],
+        "Equipment": [
+          "StoveTop"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Adds a distinct family option with Medium heat and Intermediate complexity focused on Asian stovetop dishes, filling gaps left by existing Simple/NoHeat/Mild archetypes."
+    }
+  ]
+}

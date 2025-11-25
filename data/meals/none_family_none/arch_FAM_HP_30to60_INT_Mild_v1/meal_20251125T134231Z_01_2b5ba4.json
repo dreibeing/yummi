@@ -1,0 +1,225 @@
+{
+  "meal_id": "meal_20251125T134231Z_01_2b5ba4",
+  "archetype_uid": "arch_FAM_HP_30to60_INT_Mild_v1",
+  "archetype_name": "Family High-Protein Dinners (30–60, Mild, Intermediate)",
+  "name": "Turkey Basil Meatballs in Tomato Sauce with Quinoa and Green Beans",
+  "description": "Juicy turkey meatballs simmered in a mild tomato-garlic basil sauce, served over fluffy chicken-stock quinoa with crisp-tender green beans. High-protein and family-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 200°C/390°F.",
+    "Rinse 1.5 cups quinoa under cold water in a fine sieve.",
+    "Finely chop 1 large onion.",
+    "Mince 4 cloves garlic.",
+    "Roughly chop 1/2 cup basil leaves.",
+    "Trim 400 g green beans, cut any long ones in half.",
+    "Set out a large oven-safe skillet and a medium saucepan with lid."
+  ],
+  "cook_steps": [
+    "Start sauce: Heat 1 tbsp olive oil in the oven-safe skillet over medium heat. Add chopped onion and cook 4–5 minutes until translucent. Add half the minced garlic and cook 30 seconds.",
+    "Add 800 g crushed tomatoes, half the chopped basil, 1/2 tsp salt, and 1/4 tsp black pepper. Simmer on low while you form meatballs.",
+    "Mix meatballs: In a bowl, combine 800 g turkey, remaining minced garlic, 1/2 tsp salt, and 1/4 tsp black pepper. Gently mix and form 16 golf-ball-sized meatballs.",
+    "Sear meatballs: Increase skillet to medium-high, add 1 tbsp olive oil. Nestle meatballs into the pan, sear 2 minutes, turn to sear another 2 minutes.",
+    "Bake to finish: Spoon some sauce over the meatballs, transfer skillet to the oven, and bake 12–15 minutes until meatballs are cooked through (internal temp 74°C/165°F).",
+    "Cook quinoa: In the saucepan, bring 3 cups chicken stock to a boil. Stir in rinsed quinoa, reduce to low, cover, and cook 15 minutes. Rest off heat 5 minutes, then fluff.",
+    "Cook green beans: While quinoa cooks, bring a small pot of water to a boil. Add green beans and cook 3–4 minutes until crisp-tender. Drain and toss with 1 tbsp olive oil and a pinch of salt.",
+    "Finish and serve: Stir remaining basil into the tomato sauce. Plate quinoa, top with meatballs and sauce, and serve green beans on the side."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C/390°F.",
+    "Rinse 1.5 cups quinoa under cold water in a fine sieve.",
+    "Finely chop 1 large onion.",
+    "Mince 4 cloves garlic.",
+    "Roughly chop 1/2 cup basil leaves.",
+    "Trim 400 g green beans, cut any long ones in half.",
+    "Set out a large oven-safe skillet and a medium saucepan with lid.",
+    "Start sauce: Heat 1 tbsp olive oil in the oven-safe skillet over medium heat. Add chopped onion and cook 4–5 minutes until translucent. Add half the minced garlic and cook 30 seconds.",
+    "Add 800 g crushed tomatoes, half the chopped basil, 1/2 tsp salt, and 1/4 tsp black pepper. Simmer on low while you form meatballs.",
+    "Mix meatballs: In a bowl, combine 800 g turkey, remaining minced garlic, 1/2 tsp salt, and 1/4 tsp black pepper. Gently mix and form 16 golf-ball-sized meatballs.",
+    "Sear meatballs: Increase skillet to medium-high, add 1 tbsp olive oil. Nestle meatballs into the pan, sear 2 minutes, turn to sear another 2 minutes.",
+    "Bake to finish: Spoon some sauce over the meatballs, transfer skillet to the oven, and bake 12–15 minutes until meatballs are cooked through (internal temp 74°C/165°F).",
+    "Cook quinoa: In the saucepan, bring 3 cups chicken stock to a boil. Stir in rinsed quinoa, reduce to low, cover, and cook 15 minutes. Rest off heat 5 minutes, then fluff.",
+    "Cook green beans: While quinoa cooks, bring a small pot of water to a boil. Add green beans and cook 3–4 minutes until crisp-tender. Drain and toss with 1 tbsp olive oil and a pinch of salt.",
+    "Finish and serve: Stir remaining basil into the tomato sauce. Plate quinoa, top with meatballs and sauce, and serve green beans on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "800 g",
+      "preparation": "formed into 16 meatballs"
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "800 g (about 2 cans)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "1/2 cup leaves",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "quinoa",
+      "quantity": "1.5 cups (dry)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "3 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, divided",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp, divided",
+      "preparation": ""
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "800 g",
+      "preparation": "formed into 16 meatballs",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "800 g (about 2 cans)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "1/2 cup leaves",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "quinoa",
+      "quantity": "1.5 cups (dry)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "3 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, divided",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp, divided",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T134305Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T134231Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

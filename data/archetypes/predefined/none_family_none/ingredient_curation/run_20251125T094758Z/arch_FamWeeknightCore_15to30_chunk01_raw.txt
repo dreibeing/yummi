@@ -1,0 +1,32 @@
+{
+  "archetype_uid": "arch_FamWeeknightCore_15to30",
+  "selected_ingredients": [
+    "7-grain medley",
+    "BBQ sauce",
+    "Gouda cheese",
+    "Red Leicester cheese",
+    "alphabet pasta",
+    "asparagus",
+    "avocado",
+    "baby carrots",
+    "bacon",
+    "balsamic vinegar",
+    "basa",
+    "basil",
+    "basmati rice",
+    "bay leaves",
+    "black beans",
+    "beef mince",
+    "beef meatballs",
+    "beef sirloin steak",
+    "beef stock",
+    "bell peppers",
+    "boerewors",
+    "bread rolls",
+    "broccoli",
+    "braai spice mix",
+    "arugula",
+    "avocado oil",
+    "aioli"
+  ]
+}

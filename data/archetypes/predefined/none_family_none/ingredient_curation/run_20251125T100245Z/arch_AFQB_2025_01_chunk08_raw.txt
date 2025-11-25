@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_AFQB_2025_01",
+  "selected_ingredients": [
+    "tomato",
+    "tomato paste",
+    "tomato sauce",
+    "tortillas",
+    "wraps",
+    "chicken",
+    "chicken breast fillets",
+    "chicken breast strips",
+    "chicken nuggets",
+    "tuna",
+    "turkey",
+    "vegetables",
+    "vegetable stock",
+    "yogurt",
+    "tzatziki",
+    "vinegar",
+    "worcestershire sauce",
+    "vegan cheese slices",
+    "white pepper",
+    "watermelon"
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "meal_id": "meal_20251125T135237Z_01_78a3ba",
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "archetype_name": "Family Low-Carb Weeknight Bowls & Wraps (15–30, Mild)",
+  "name": "Za'atar Turkey Lettuce Wraps with Cucumber Yogurt",
+  "description": "Quick, mild turkey filling seasoned with za'atar, spooned into crisp romaine leaves and topped with a simple cucumber-yogurt sauce. Low-carb and family-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Wash and dry romaine lettuce; separate 12–16 large leaves for wraps.",
+    "Finely dice onions (about 1 cup).",
+    "Mince garlic (2 cloves).",
+    "Dice cucumber (1 cup) and halve cherry tomatoes (1 cup).",
+    "Chop parsley (2 tablespoons).",
+    "In a small bowl, stir yogurt with half the parsley, half the garlic, a pinch of salt, and a squeeze of lemon; set aside.",
+    "Cut the remaining lemon into wedges for serving."
+  ],
+  "cook_steps": [
+    "Heat olive oil in a large skillet over medium heat.",
+    "Add onions and a pinch of salt; cook 3–4 minutes until translucent.",
+    "Add minced garlic; cook 30 seconds until fragrant.",
+    "Add turkey; cook 5–7 minutes, breaking it up, until no longer pink.",
+    "Season turkey with za'atar, black pepper, and a small pinch of salt; squeeze in lemon juice and cook 1 minute to combine.",
+    "Assemble wraps: Fill romaine leaves with turkey, top with cucumber and cherry tomatoes, spoon on yogurt sauce, and finish with remaining parsley.",
+    "Serve with extra lemon wedges."
+  ],
+  "instructions": [
+    "Wash and dry romaine lettuce; separate 12–16 large leaves for wraps.",
+    "Finely dice onions (about 1 cup).",
+    "Mince garlic (2 cloves).",
+    "Dice cucumber (1 cup) and halve cherry tomatoes (1 cup).",
+    "Chop parsley (2 tablespoons).",
+    "In a small bowl, stir yogurt with half the parsley, half the garlic, a pinch of salt, and a squeeze of lemon; set aside.",
+    "Cut the remaining lemon into wedges for serving.",
+    "Heat olive oil in a large skillet over medium heat.",
+    "Add onions and a pinch of salt; cook 3–4 minutes until translucent.",
+    "Add minced garlic; cook 30 seconds until fragrant.",
+    "Add turkey; cook 5–7 minutes, breaking it up, until no longer pink.",
+    "Season turkey with za'atar, black pepper, and a small pinch of salt; squeeze in lemon juice and cook 1 minute to combine.",
+    "Assemble wraps: Fill romaine leaves with turkey, top with cucumber and cherry tomatoes, spoon on yogurt sauce, and finish with remaining parsley.",
+    "Serve with extra lemon wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "1–2 heads (12–16 large leaves)",
+      "preparation": "washed and separated"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium (about 1 cup)",
+      "preparation": "finely diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "turkey",
+      "quantity": "450 g (1 lb)",
+      "preparation": "cut or crumbled for quick sauté"
+    },
+    {
+      "core_item_name": "za'atar",
+      "quantity": "1–1.5 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 teaspoon, divided",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "half juiced, half cut into wedges"
+    },
+    {
+      "core_item_name": "yogurt",
+      "quantity": "3/4 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 cup",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy"
+    ],
+    "NutritionFocus": [
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "1–2 heads (12–16 large leaves)",
+      "preparation": "washed and separated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium (about 1 cup)",
+      "preparation": "finely diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "turkey",
+      "quantity": "450 g (1 lb)",
+      "preparation": "cut or crumbled for quick sauté",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "za'atar",
+      "quantity": "1–1.5 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 teaspoon, divided",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "half juiced, half cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yogurt",
+      "quantity": "3/4 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 cup",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T135328Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T135237Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

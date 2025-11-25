@@ -1,0 +1,2072 @@
+{
+  "generated_at": "20251125T100245Z",
+  "model": "gpt-5-mini",
+  "temperature": 0.2,
+  "top_p": 1.0,
+  "max_output_tokens": 5000,
+  "reasoning_effort": "low",
+  "tags_version": "2025.02.1",
+  "predefined_scope": {
+    "dietary_restrictions": [
+      "None"
+    ],
+    "audience": [
+      "Family"
+    ]
+  },
+  "source": {
+    "predefined_dir": "data\\archetypes\\predefined\\none_family_none",
+    "archetypes_combined": "data\\archetypes\\predefined\\none_family_none\\archetypes_combined.json",
+    "core_items": "data\\ingredients\\unique_core_items.csv"
+  },
+  "archetype_runs": [
+    {
+      "uid": "arch_FamWeeknightCore_15to30",
+      "name": "Family Weeknight Classics (Mild, 15\u201330 min)",
+      "status": "skipped_existing",
+      "reason": "existing curated ingredients found",
+      "return_count": 312,
+      "chunks": 10
+    },
+    {
+      "uid": "arch_FAM_HANDSOFF_001",
+      "name": "Family Hands-Off Sheet Pan & Slow Cooker Nights",
+      "status": "completed",
+      "chunks": [
+        {
+          "chunk": 1,
+          "size": 200,
+          "status": "completed",
+          "selected": 20,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_HANDSOFF_001_chunk01_prompt.txt",
+          "raw_path": "arch_FAM_HANDSOFF_001_chunk01_raw.txt"
+        },
+        {
+          "chunk": 2,
+          "size": 200,
+          "status": "completed",
+          "selected": 20,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_HANDSOFF_001_chunk02_prompt.txt",
+          "raw_path": "arch_FAM_HANDSOFF_001_chunk02_raw.txt"
+        },
+        {
+          "chunk": 3,
+          "size": 200,
+          "status": "completed",
+          "selected": 21,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_HANDSOFF_001_chunk03_prompt.txt",
+          "raw_path": "arch_FAM_HANDSOFF_001_chunk03_raw.txt"
+        },
+        {
+          "chunk": 4,
+          "size": 200,
+          "status": "completed",
+          "selected": 14,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_HANDSOFF_001_chunk04_prompt.txt",
+          "raw_path": "arch_FAM_HANDSOFF_001_chunk04_raw.txt"
+        },
+        {
+          "chunk": 5,
+          "size": 200,
+          "status": "completed",
+          "selected": 24,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_HANDSOFF_001_chunk05_prompt.txt",
+          "raw_path": "arch_FAM_HANDSOFF_001_chunk05_raw.txt"
+        },
+        {
+          "chunk": 6,
+          "size": 200,
+          "status": "completed",
+          "selected": 21,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_HANDSOFF_001_chunk06_prompt.txt",
+          "raw_path": "arch_FAM_HANDSOFF_001_chunk06_raw.txt"
+        },
+        {
+          "chunk": 7,
+          "size": 200,
+          "status": "completed",
+          "selected": 28,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_HANDSOFF_001_chunk07_prompt.txt",
+          "raw_path": "arch_FAM_HANDSOFF_001_chunk07_raw.txt"
+        },
+        {
+          "chunk": 8,
+          "size": 200,
+          "status": "completed",
+          "selected": 22,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_HANDSOFF_001_chunk08_prompt.txt",
+          "raw_path": "arch_FAM_HANDSOFF_001_chunk08_raw.txt"
+        },
+        {
+          "chunk": 9,
+          "size": 200,
+          "status": "completed",
+          "selected": 22,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_HANDSOFF_001_chunk09_prompt.txt",
+          "raw_path": "arch_FAM_HANDSOFF_001_chunk09_raw.txt"
+        },
+        {
+          "chunk": 10,
+          "size": 44,
+          "status": "completed",
+          "selected": 13,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_HANDSOFF_001_chunk10_prompt.txt",
+          "raw_path": "arch_FAM_HANDSOFF_001_chunk10_raw.txt"
+        }
+      ],
+      "return_count": 197,
+      "unmatched": []
+    },
+    {
+      "uid": "arch_AFQB_2025_01",
+      "name": "Family AirFryer Quick Bites",
+      "status": "completed",
+      "chunks": [
+        {
+          "chunk": 1,
+          "size": 200,
+          "status": "completed",
+          "selected": 32,
+          "unmatched": [],
+          "prompt_path": "arch_AFQB_2025_01_chunk01_prompt.txt",
+          "raw_path": "arch_AFQB_2025_01_chunk01_raw.txt"
+        },
+        {
+          "chunk": 2,
+          "size": 200,
+          "status": "completed",
+          "selected": 24,
+          "unmatched": [],
+          "prompt_path": "arch_AFQB_2025_01_chunk02_prompt.txt",
+          "raw_path": "arch_AFQB_2025_01_chunk02_raw.txt"
+        },
+        {
+          "chunk": 3,
+          "size": 200,
+          "status": "completed",
+          "selected": 30,
+          "unmatched": [],
+          "prompt_path": "arch_AFQB_2025_01_chunk03_prompt.txt",
+          "raw_path": "arch_AFQB_2025_01_chunk03_raw.txt"
+        },
+        {
+          "chunk": 4,
+          "size": 200,
+          "status": "completed",
+          "selected": 22,
+          "unmatched": [],
+          "prompt_path": "arch_AFQB_2025_01_chunk04_prompt.txt",
+          "raw_path": "arch_AFQB_2025_01_chunk04_raw.txt"
+        },
+        {
+          "chunk": 5,
+          "size": 200,
+          "status": "completed",
+          "selected": 26,
+          "unmatched": [],
+          "prompt_path": "arch_AFQB_2025_01_chunk05_prompt.txt",
+          "raw_path": "arch_AFQB_2025_01_chunk05_raw.txt"
+        },
+        {
+          "chunk": 6,
+          "size": 200,
+          "status": "completed",
+          "selected": 27,
+          "unmatched": [],
+          "prompt_path": "arch_AFQB_2025_01_chunk06_prompt.txt",
+          "raw_path": "arch_AFQB_2025_01_chunk06_raw.txt"
+        },
+        {
+          "chunk": 7,
+          "size": 200,
+          "status": "completed",
+          "selected": 31,
+          "unmatched": [],
+          "prompt_path": "arch_AFQB_2025_01_chunk07_prompt.txt",
+          "raw_path": "arch_AFQB_2025_01_chunk07_raw.txt"
+        },
+        {
+          "chunk": 8,
+          "size": 200,
+          "status": "completed",
+          "selected": 20,
+          "unmatched": [],
+          "prompt_path": "arch_AFQB_2025_01_chunk08_prompt.txt",
+          "raw_path": "arch_AFQB_2025_01_chunk08_raw.txt"
+        },
+        {
+          "chunk": 9,
+          "size": 200,
+          "status": "completed",
+          "selected": 17,
+          "unmatched": [],
+          "prompt_path": "arch_AFQB_2025_01_chunk09_prompt.txt",
+          "raw_path": "arch_AFQB_2025_01_chunk09_raw.txt"
+        },
+        {
+          "chunk": 10,
+          "size": 44,
+          "status": "completed",
+          "selected": 8,
+          "unmatched": [],
+          "prompt_path": "arch_AFQB_2025_01_chunk10_prompt.txt",
+          "raw_path": "arch_AFQB_2025_01_chunk10_raw.txt"
+        }
+      ],
+      "return_count": 230,
+      "unmatched": []
+    },
+    {
+      "uid": "arch_FAM_MED_ASIA_01",
+      "name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15\u201330, Intermediate)",
+      "status": "completed",
+      "chunks": [
+        {
+          "chunk": 1,
+          "size": 200,
+          "status": "completed",
+          "selected": 28,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_MED_ASIA_01_chunk01_prompt.txt",
+          "raw_path": "arch_FAM_MED_ASIA_01_chunk01_raw.txt"
+        },
+        {
+          "chunk": 2,
+          "size": 200,
+          "status": "completed",
+          "selected": 27,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_MED_ASIA_01_chunk02_prompt.txt",
+          "raw_path": "arch_FAM_MED_ASIA_01_chunk02_raw.txt"
+        },
+        {
+          "chunk": 3,
+          "size": 200,
+          "status": "completed",
+          "selected": 27,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_MED_ASIA_01_chunk03_prompt.txt",
+          "raw_path": "arch_FAM_MED_ASIA_01_chunk03_raw.txt"
+        },
+        {
+          "chunk": 4,
+          "size": 200,
+          "status": "completed",
+          "selected": 24,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_MED_ASIA_01_chunk04_prompt.txt",
+          "raw_path": "arch_FAM_MED_ASIA_01_chunk04_raw.txt"
+        },
+        {
+          "chunk": 5,
+          "size": 200,
+          "status": "completed",
+          "selected": 23,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_MED_ASIA_01_chunk05_prompt.txt",
+          "raw_path": "arch_FAM_MED_ASIA_01_chunk05_raw.txt"
+        },
+        {
+          "chunk": 6,
+          "size": 200,
+          "status": "completed",
+          "selected": 25,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_MED_ASIA_01_chunk06_prompt.txt",
+          "raw_path": "arch_FAM_MED_ASIA_01_chunk06_raw.txt"
+        },
+        {
+          "chunk": 7,
+          "size": 200,
+          "status": "completed",
+          "selected": 31,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_MED_ASIA_01_chunk07_prompt.txt",
+          "raw_path": "arch_FAM_MED_ASIA_01_chunk07_raw.txt"
+        },
+        {
+          "chunk": 8,
+          "size": 200,
+          "status": "completed",
+          "selected": 19,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_MED_ASIA_01_chunk08_prompt.txt",
+          "raw_path": "arch_FAM_MED_ASIA_01_chunk08_raw.txt"
+        },
+        {
+          "chunk": 9,
+          "size": 200,
+          "status": "completed",
+          "selected": 15,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_MED_ASIA_01_chunk09_prompt.txt",
+          "raw_path": "arch_FAM_MED_ASIA_01_chunk09_raw.txt"
+        },
+        {
+          "chunk": 10,
+          "size": 44,
+          "status": "completed",
+          "selected": 11,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_MED_ASIA_01_chunk10_prompt.txt",
+          "raw_path": "arch_FAM_MED_ASIA_01_chunk10_raw.txt"
+        }
+      ],
+      "return_count": 224,
+      "unmatched": []
+    },
+    {
+      "uid": "arch_FAM_show_esp_prt_001",
+      "name": "Family Weekend Showstopper: Spanish & Portuguese Feasts",
+      "status": "completed",
+      "chunks": [
+        {
+          "chunk": 1,
+          "size": 200,
+          "status": "completed",
+          "selected": 24,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_show_esp_prt_001_chunk01_prompt.txt",
+          "raw_path": "arch_FAM_show_esp_prt_001_chunk01_raw.txt"
+        },
+        {
+          "chunk": 2,
+          "size": 200,
+          "status": "completed",
+          "selected": 24,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_show_esp_prt_001_chunk02_prompt.txt",
+          "raw_path": "arch_FAM_show_esp_prt_001_chunk02_raw.txt"
+        },
+        {
+          "chunk": 3,
+          "size": 200,
+          "status": "completed",
+          "selected": 14,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_show_esp_prt_001_chunk03_prompt.txt",
+          "raw_path": "arch_FAM_show_esp_prt_001_chunk03_raw.txt"
+        },
+        {
+          "chunk": 4,
+          "size": 200,
+          "status": "completed",
+          "selected": 20,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_show_esp_prt_001_chunk04_prompt.txt",
+          "raw_path": "arch_FAM_show_esp_prt_001_chunk04_raw.txt"
+        },
+        {
+          "chunk": 5,
+          "size": 200,
+          "status": "completed",
+          "selected": 20,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_show_esp_prt_001_chunk05_prompt.txt",
+          "raw_path": "arch_FAM_show_esp_prt_001_chunk05_raw.txt"
+        },
+        {
+          "chunk": 6,
+          "size": 200,
+          "status": "completed",
+          "selected": 15,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_show_esp_prt_001_chunk06_prompt.txt",
+          "raw_path": "arch_FAM_show_esp_prt_001_chunk06_raw.txt"
+        },
+        {
+          "chunk": 7,
+          "size": 200,
+          "status": "completed",
+          "selected": 20,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_show_esp_prt_001_chunk07_prompt.txt",
+          "raw_path": "arch_FAM_show_esp_prt_001_chunk07_raw.txt"
+        },
+        {
+          "chunk": 8,
+          "size": 200,
+          "status": "completed",
+          "selected": 16,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_show_esp_prt_001_chunk08_prompt.txt",
+          "raw_path": "arch_FAM_show_esp_prt_001_chunk08_raw.txt"
+        },
+        {
+          "chunk": 9,
+          "size": 200,
+          "status": "completed",
+          "selected": 18,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_show_esp_prt_001_chunk09_prompt.txt",
+          "raw_path": "arch_FAM_show_esp_prt_001_chunk09_raw.txt"
+        },
+        {
+          "chunk": 10,
+          "size": 44,
+          "status": "completed",
+          "selected": 9,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_show_esp_prt_001_chunk10_prompt.txt",
+          "raw_path": "arch_FAM_show_esp_prt_001_chunk10_raw.txt"
+        }
+      ],
+      "return_count": 172,
+      "unmatched": []
+    },
+    {
+      "uid": "arch_FAM_ADV_HOT_KORLAT_01",
+      "name": "Family Heat Lovers: Korean & Latin American Feasts (Hot, 30\u201360, Advanced)",
+      "status": "completed",
+      "chunks": [
+        {
+          "chunk": 1,
+          "size": 200,
+          "status": "completed",
+          "selected": 20,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_ADV_HOT_KORLAT_01_chunk01_prompt.txt",
+          "raw_path": "arch_FAM_ADV_HOT_KORLAT_01_chunk01_raw.txt"
+        },
+        {
+          "chunk": 2,
+          "size": 200,
+          "status": "completed",
+          "selected": 32,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_ADV_HOT_KORLAT_01_chunk02_prompt.txt",
+          "raw_path": "arch_FAM_ADV_HOT_KORLAT_01_chunk02_raw.txt"
+        },
+        {
+          "chunk": 3,
+          "size": 200,
+          "status": "completed",
+          "selected": 21,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_ADV_HOT_KORLAT_01_chunk03_prompt.txt",
+          "raw_path": "arch_FAM_ADV_HOT_KORLAT_01_chunk03_raw.txt"
+        },
+        {
+          "chunk": 4,
+          "size": 200,
+          "status": "completed",
+          "selected": 20,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_ADV_HOT_KORLAT_01_chunk04_prompt.txt",
+          "raw_path": "arch_FAM_ADV_HOT_KORLAT_01_chunk04_raw.txt"
+        },
+        {
+          "chunk": 5,
+          "size": 200,
+          "status": "completed",
+          "selected": 25,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_ADV_HOT_KORLAT_01_chunk05_prompt.txt",
+          "raw_path": "arch_FAM_ADV_HOT_KORLAT_01_chunk05_raw.txt"
+        },
+        {
+          "chunk": 6,
+          "size": 200,
+          "status": "completed",
+          "selected": 26,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_ADV_HOT_KORLAT_01_chunk06_prompt.txt",
+          "raw_path": "arch_FAM_ADV_HOT_KORLAT_01_chunk06_raw.txt"
+        },
+        {
+          "chunk": 7,
+          "size": 200,
+          "status": "completed",
+          "selected": 42,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_ADV_HOT_KORLAT_01_chunk07_prompt.txt",
+          "raw_path": "arch_FAM_ADV_HOT_KORLAT_01_chunk07_raw.txt"
+        },
+        {
+          "chunk": 8,
+          "size": 200,
+          "status": "completed",
+          "selected": 21,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_ADV_HOT_KORLAT_01_chunk08_prompt.txt",
+          "raw_path": "arch_FAM_ADV_HOT_KORLAT_01_chunk08_raw.txt"
+        },
+        {
+          "chunk": 9,
+          "size": 200,
+          "status": "completed",
+          "selected": 12,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_ADV_HOT_KORLAT_01_chunk09_prompt.txt",
+          "raw_path": "arch_FAM_ADV_HOT_KORLAT_01_chunk09_raw.txt"
+        },
+        {
+          "chunk": 10,
+          "size": 44,
+          "status": "completed",
+          "selected": 9,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_ADV_HOT_KORLAT_01_chunk10_prompt.txt",
+          "raw_path": "arch_FAM_ADV_HOT_KORLAT_01_chunk10_raw.txt"
+        }
+      ],
+      "return_count": 225,
+      "unmatched": []
+    },
+    {
+      "uid": "arch_FAM_TR_NA_3060_MED",
+      "name": "Family Turkish & North African Suppers (Medium, 30\u201360, Intermediate)",
+      "status": "completed",
+      "chunks": [
+        {
+          "chunk": 1,
+          "size": 200,
+          "status": "completed",
+          "selected": 18,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_TR_NA_3060_MED_chunk01_prompt.txt",
+          "raw_path": "arch_FAM_TR_NA_3060_MED_chunk01_raw.txt"
+        },
+        {
+          "chunk": 2,
+          "size": 200,
+          "status": "completed",
+          "selected": 25,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_TR_NA_3060_MED_chunk02_prompt.txt",
+          "raw_path": "arch_FAM_TR_NA_3060_MED_chunk02_raw.txt"
+        },
+        {
+          "chunk": 3,
+          "size": 200,
+          "status": "completed",
+          "selected": 20,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_TR_NA_3060_MED_chunk03_prompt.txt",
+          "raw_path": "arch_FAM_TR_NA_3060_MED_chunk03_raw.txt"
+        },
+        {
+          "chunk": 4,
+          "size": 200,
+          "status": "completed",
+          "selected": 16,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_TR_NA_3060_MED_chunk04_prompt.txt",
+          "raw_path": "arch_FAM_TR_NA_3060_MED_chunk04_raw.txt"
+        },
+        {
+          "chunk": 5,
+          "size": 200,
+          "status": "completed",
+          "selected": 17,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_TR_NA_3060_MED_chunk05_prompt.txt",
+          "raw_path": "arch_FAM_TR_NA_3060_MED_chunk05_raw.txt"
+        },
+        {
+          "chunk": 6,
+          "size": 200,
+          "status": "completed",
+          "selected": 18,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_TR_NA_3060_MED_chunk06_prompt.txt",
+          "raw_path": "arch_FAM_TR_NA_3060_MED_chunk06_raw.txt"
+        },
+        {
+          "chunk": 7,
+          "size": 200,
+          "status": "completed",
+          "selected": 23,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_TR_NA_3060_MED_chunk07_prompt.txt",
+          "raw_path": "arch_FAM_TR_NA_3060_MED_chunk07_raw.txt"
+        },
+        {
+          "chunk": 8,
+          "size": 200,
+          "status": "completed",
+          "selected": 17,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_TR_NA_3060_MED_chunk08_prompt.txt",
+          "raw_path": "arch_FAM_TR_NA_3060_MED_chunk08_raw.txt"
+        },
+        {
+          "chunk": 9,
+          "size": 200,
+          "status": "completed",
+          "selected": 14,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_TR_NA_3060_MED_chunk09_prompt.txt",
+          "raw_path": "arch_FAM_TR_NA_3060_MED_chunk09_raw.txt"
+        },
+        {
+          "chunk": 10,
+          "size": 44,
+          "status": "completed",
+          "selected": 0,
+          "unmatched": [
+            "ready_meal \u2014 spinach",
+            "ready_meal \u2014 spinach feta pies",
+            "ready_meal \u2014 spinach pie",
+            "ready_meal \u2014 tomato salad",
+            "ready_meal \u2014 tomato soup",
+            "ready_meal \u2014 vegetable and lentil meal",
+            "ready_meal \u2014 vegetable soup",
+            "ready_meal \u2014 vegetable medley with bechamel sauce",
+            "ready_meal \u2014 wrap",
+            "ready_meal \u2014 trout",
+            "ready_meal \u2014 whiting portions"
+          ],
+          "prompt_path": "arch_FAM_TR_NA_3060_MED_chunk10_prompt.txt",
+          "raw_path": "arch_FAM_TR_NA_3060_MED_chunk10_raw.txt"
+        }
+      ],
+      "return_count": 165,
+      "unmatched": [
+        "ready_meal \u2014 spinach",
+        "ready_meal \u2014 spinach feta pies",
+        "ready_meal \u2014 spinach pie",
+        "ready_meal \u2014 tomato salad",
+        "ready_meal \u2014 tomato soup",
+        "ready_meal \u2014 trout",
+        "ready_meal \u2014 vegetable and lentil meal",
+        "ready_meal \u2014 vegetable medley with bechamel sauce",
+        "ready_meal \u2014 vegetable soup",
+        "ready_meal \u2014 whiting portions",
+        "ready_meal \u2014 wrap"
+      ]
+    },
+    {
+      "uid": "arch_FamLightJV_01",
+      "name": "Family Light & Fresh: Japanese and Vietnamese Weeknights",
+      "status": "completed",
+      "chunks": [
+        {
+          "chunk": 1,
+          "size": 200,
+          "status": "completed",
+          "selected": 16,
+          "unmatched": [
+            "bean(s)"
+          ],
+          "prompt_path": "arch_FamLightJV_01_chunk01_prompt.txt",
+          "raw_path": "arch_FamLightJV_01_chunk01_raw.txt"
+        },
+        {
+          "chunk": 2,
+          "size": 200,
+          "status": "completed",
+          "selected": 28,
+          "unmatched": [],
+          "prompt_path": "arch_FamLightJV_01_chunk02_prompt.txt",
+          "raw_path": "arch_FamLightJV_01_chunk02_raw.txt"
+        },
+        {
+          "chunk": 3,
+          "size": 200,
+          "status": "completed",
+          "selected": 14,
+          "unmatched": [],
+          "prompt_path": "arch_FamLightJV_01_chunk03_prompt.txt",
+          "raw_path": "arch_FamLightJV_01_chunk03_raw.txt"
+        },
+        {
+          "chunk": 4,
+          "size": 200,
+          "status": "completed",
+          "selected": 16,
+          "unmatched": [],
+          "prompt_path": "arch_FamLightJV_01_chunk04_prompt.txt",
+          "raw_path": "arch_FamLightJV_01_chunk04_raw.txt"
+        },
+        {
+          "chunk": 5,
+          "size": 200,
+          "status": "completed",
+          "selected": 25,
+          "unmatched": [],
+          "prompt_path": "arch_FamLightJV_01_chunk05_prompt.txt",
+          "raw_path": "arch_FamLightJV_01_chunk05_raw.txt"
+        },
+        {
+          "chunk": 6,
+          "size": 200,
+          "status": "completed",
+          "selected": 26,
+          "unmatched": [],
+          "prompt_path": "arch_FamLightJV_01_chunk06_prompt.txt",
+          "raw_path": "arch_FamLightJV_01_chunk06_raw.txt"
+        },
+        {
+          "chunk": 7,
+          "size": 200,
+          "status": "completed",
+          "selected": 27,
+          "unmatched": [],
+          "prompt_path": "arch_FamLightJV_01_chunk07_prompt.txt",
+          "raw_path": "arch_FamLightJV_01_chunk07_raw.txt"
+        },
+        {
+          "chunk": 8,
+          "size": 200,
+          "status": "completed",
+          "selected": 14,
+          "unmatched": [],
+          "prompt_path": "arch_FamLightJV_01_chunk08_prompt.txt",
+          "raw_path": "arch_FamLightJV_01_chunk08_raw.txt"
+        },
+        {
+          "chunk": 9,
+          "size": 200,
+          "status": "completed",
+          "selected": 21,
+          "unmatched": [],
+          "prompt_path": "arch_FamLightJV_01_chunk09_prompt.txt",
+          "raw_path": "arch_FamLightJV_01_chunk09_raw.txt"
+        },
+        {
+          "chunk": 10,
+          "size": 44,
+          "status": "completed",
+          "selected": 13,
+          "unmatched": [],
+          "prompt_path": "arch_FamLightJV_01_chunk10_prompt.txt",
+          "raw_path": "arch_FamLightJV_01_chunk10_raw.txt"
+        }
+      ],
+      "return_count": 192,
+      "unmatched": [
+        "bean(s)"
+      ]
+    },
+    {
+      "uid": "arch_FAMXHOT1530",
+      "name": "Family Extra-Hot Chili Night (Caribbean & Mexican, 15\u201330, Simple)",
+      "status": "completed",
+      "chunks": [
+        {
+          "chunk": 1,
+          "size": 200,
+          "status": "completed",
+          "selected": 16,
+          "unmatched": [],
+          "prompt_path": "arch_FAMXHOT1530_chunk01_prompt.txt",
+          "raw_path": "arch_FAMXHOT1530_chunk01_raw.txt"
+        },
+        {
+          "chunk": 2,
+          "size": 200,
+          "status": "completed",
+          "selected": 31,
+          "unmatched": [],
+          "prompt_path": "arch_FAMXHOT1530_chunk02_prompt.txt",
+          "raw_path": "arch_FAMXHOT1530_chunk02_raw.txt"
+        },
+        {
+          "chunk": 3,
+          "size": 200,
+          "status": "completed",
+          "selected": 20,
+          "unmatched": [],
+          "prompt_path": "arch_FAMXHOT1530_chunk03_prompt.txt",
+          "raw_path": "arch_FAMXHOT1530_chunk03_raw.txt"
+        },
+        {
+          "chunk": 4,
+          "size": 200,
+          "status": "completed",
+          "selected": 21,
+          "unmatched": [],
+          "prompt_path": "arch_FAMXHOT1530_chunk04_prompt.txt",
+          "raw_path": "arch_FAMXHOT1530_chunk04_raw.txt"
+        },
+        {
+          "chunk": 5,
+          "size": 200,
+          "status": "completed",
+          "selected": 18,
+          "unmatched": [],
+          "prompt_path": "arch_FAMXHOT1530_chunk05_prompt.txt",
+          "raw_path": "arch_FAMXHOT1530_chunk05_raw.txt"
+        },
+        {
+          "chunk": 6,
+          "size": 200,
+          "status": "completed",
+          "selected": 23,
+          "unmatched": [],
+          "prompt_path": "arch_FAMXHOT1530_chunk06_prompt.txt",
+          "raw_path": "arch_FAMXHOT1530_chunk06_raw.txt"
+        },
+        {
+          "chunk": 7,
+          "size": 200,
+          "status": "completed",
+          "selected": 31,
+          "unmatched": [],
+          "prompt_path": "arch_FAMXHOT1530_chunk07_prompt.txt",
+          "raw_path": "arch_FAMXHOT1530_chunk07_raw.txt"
+        },
+        {
+          "chunk": 8,
+          "size": 200,
+          "status": "completed",
+          "selected": 15,
+          "unmatched": [],
+          "prompt_path": "arch_FAMXHOT1530_chunk08_prompt.txt",
+          "raw_path": "arch_FAMXHOT1530_chunk08_raw.txt"
+        },
+        {
+          "chunk": 9,
+          "size": 200,
+          "status": "completed",
+          "selected": 15,
+          "unmatched": [],
+          "prompt_path": "arch_FAMXHOT1530_chunk09_prompt.txt",
+          "raw_path": "arch_FAMXHOT1530_chunk09_raw.txt"
+        },
+        {
+          "chunk": 10,
+          "size": 44,
+          "status": "completed",
+          "selected": 0,
+          "unmatched": [
+            "ready_meal \u2014 sweet potato chips",
+            "ready_meal \u2014 sweet potato salad",
+            "ready_meal \u2014 wrap",
+            "ready_meal \u2014 trout",
+            "ready_meal \u2014 whiting portions",
+            "ready_meal \u2014 tuna pasta",
+            "ready_meal \u2014 tomato salad",
+            "ready_meal \u2014 spinach"
+          ],
+          "prompt_path": "arch_FAMXHOT1530_chunk10_prompt.txt",
+          "raw_path": "arch_FAMXHOT1530_chunk10_raw.txt"
+        }
+      ],
+      "return_count": 187,
+      "unmatched": [
+        "ready_meal \u2014 spinach",
+        "ready_meal \u2014 sweet potato chips",
+        "ready_meal \u2014 sweet potato salad",
+        "ready_meal \u2014 tomato salad",
+        "ready_meal \u2014 trout",
+        "ready_meal \u2014 tuna pasta",
+        "ready_meal \u2014 whiting portions",
+        "ready_meal \u2014 wrap"
+      ]
+    },
+    {
+      "uid": "arch_FAM_LS_FRAM_3060",
+      "name": "Family Low-Sodium American & French Comfort (30\u201360, Mild)",
+      "status": "completed",
+      "chunks": [
+        {
+          "chunk": 1,
+          "size": 200,
+          "status": "completed",
+          "selected": 28,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_LS_FRAM_3060_chunk01_prompt.txt",
+          "raw_path": "arch_FAM_LS_FRAM_3060_chunk01_raw.txt"
+        },
+        {
+          "chunk": 2,
+          "size": 200,
+          "status": "completed",
+          "selected": 24,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_LS_FRAM_3060_chunk02_prompt.txt",
+          "raw_path": "arch_FAM_LS_FRAM_3060_chunk02_raw.txt"
+        },
+        {
+          "chunk": 3,
+          "size": 200,
+          "status": "completed",
+          "selected": 25,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_LS_FRAM_3060_chunk03_prompt.txt",
+          "raw_path": "arch_FAM_LS_FRAM_3060_chunk03_raw.txt"
+        },
+        {
+          "chunk": 4,
+          "size": 200,
+          "status": "completed",
+          "selected": 27,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_LS_FRAM_3060_chunk04_prompt.txt",
+          "raw_path": "arch_FAM_LS_FRAM_3060_chunk04_raw.txt"
+        },
+        {
+          "chunk": 5,
+          "size": 200,
+          "status": "completed",
+          "selected": 39,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_LS_FRAM_3060_chunk05_prompt.txt",
+          "raw_path": "arch_FAM_LS_FRAM_3060_chunk05_raw.txt"
+        },
+        {
+          "chunk": 6,
+          "size": 200,
+          "status": "completed",
+          "selected": 30,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_LS_FRAM_3060_chunk06_prompt.txt",
+          "raw_path": "arch_FAM_LS_FRAM_3060_chunk06_raw.txt"
+        },
+        {
+          "chunk": 7,
+          "size": 200,
+          "status": "completed",
+          "selected": 35,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_LS_FRAM_3060_chunk07_prompt.txt",
+          "raw_path": "arch_FAM_LS_FRAM_3060_chunk07_raw.txt"
+        },
+        {
+          "chunk": 8,
+          "size": 200,
+          "status": "completed",
+          "selected": 27,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_LS_FRAM_3060_chunk08_prompt.txt",
+          "raw_path": "arch_FAM_LS_FRAM_3060_chunk08_raw.txt"
+        },
+        {
+          "chunk": 9,
+          "size": 200,
+          "status": "completed",
+          "selected": 27,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_LS_FRAM_3060_chunk09_prompt.txt",
+          "raw_path": "arch_FAM_LS_FRAM_3060_chunk09_raw.txt"
+        },
+        {
+          "chunk": 10,
+          "size": 44,
+          "status": "completed",
+          "selected": 15,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_LS_FRAM_3060_chunk10_prompt.txt",
+          "raw_path": "arch_FAM_LS_FRAM_3060_chunk10_raw.txt"
+        }
+      ],
+      "return_count": 266,
+      "unmatched": []
+    },
+    {
+      "uid": "arch_FAM_RDY_U15",
+      "name": "Family Heat-and-Eat Weeknights (Under 15, No Heat)",
+      "status": "completed",
+      "chunks": [
+        {
+          "chunk": 1,
+          "size": 200,
+          "status": "completed",
+          "selected": 27,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_RDY_U15_chunk01_prompt.txt",
+          "raw_path": "arch_FAM_RDY_U15_chunk01_raw.txt"
+        },
+        {
+          "chunk": 2,
+          "size": 200,
+          "status": "completed",
+          "selected": 46,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_RDY_U15_chunk02_prompt.txt",
+          "raw_path": "arch_FAM_RDY_U15_chunk02_raw.txt"
+        },
+        {
+          "chunk": 3,
+          "size": 200,
+          "status": "completed",
+          "selected": 38,
+          "unmatched": [
+            "grated cheese"
+          ],
+          "prompt_path": "arch_FAM_RDY_U15_chunk03_prompt.txt",
+          "raw_path": "arch_FAM_RDY_U15_chunk03_raw.txt"
+        },
+        {
+          "chunk": 4,
+          "size": 200,
+          "status": "completed",
+          "selected": 52,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_RDY_U15_chunk04_prompt.txt",
+          "raw_path": "arch_FAM_RDY_U15_chunk04_raw.txt"
+        },
+        {
+          "chunk": 5,
+          "size": 200,
+          "status": "completed",
+          "selected": 22,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_RDY_U15_chunk05_prompt.txt",
+          "raw_path": "arch_FAM_RDY_U15_chunk05_raw.txt"
+        },
+        {
+          "chunk": 6,
+          "size": 200,
+          "status": "completed",
+          "selected": 25,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_RDY_U15_chunk06_prompt.txt",
+          "raw_path": "arch_FAM_RDY_U15_chunk06_raw.txt"
+        },
+        {
+          "chunk": 7,
+          "size": 200,
+          "status": "completed",
+          "selected": 23,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_RDY_U15_chunk07_prompt.txt",
+          "raw_path": "arch_FAM_RDY_U15_chunk07_raw.txt"
+        },
+        {
+          "chunk": 8,
+          "size": 200,
+          "status": "completed",
+          "selected": 28,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_RDY_U15_chunk08_prompt.txt",
+          "raw_path": "arch_FAM_RDY_U15_chunk08_raw.txt"
+        },
+        {
+          "chunk": 9,
+          "size": 200,
+          "status": "completed",
+          "selected": 53,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_RDY_U15_chunk09_prompt.txt",
+          "raw_path": "arch_FAM_RDY_U15_chunk09_raw.txt"
+        },
+        {
+          "chunk": 10,
+          "size": 44,
+          "status": "completed",
+          "selected": 0,
+          "unmatched": [
+            "ready_meal \u2014 spinach",
+            "ready_meal \u2014 spinach feta pies",
+            "ready_meal \u2014 spinach salad",
+            "ready_meal \u2014 strawberry banana yogurt",
+            "ready_meal \u2014 sweet potato chips",
+            "ready_meal \u2014 sweet potato salad",
+            "ready_meal \u2014 tagliatelle alfredo",
+            "ready_meal \u2014 tomato soup",
+            "ready_meal \u2014 tomato salad",
+            "ready_meal \u2014 tuna pasta",
+            "ready_meal \u2014 tuna penne",
+            "ready_meal \u2014 vegetable risotto",
+            "ready_meal \u2014 vegetable soup",
+            "ready_meal \u2014 waffles",
+            "ready_meal \u2014 sundae",
+            "ready_meal \u2014 tiramisu",
+            "ready_meal \u2014 wrap",
+            "ready_meal \u2014 trout",
+            "ready_meal \u2014 trout gratin",
+            "ready_meal \u2014 whiting portions"
+          ],
+          "prompt_path": "arch_FAM_RDY_U15_chunk10_prompt.txt",
+          "raw_path": "arch_FAM_RDY_U15_chunk10_raw.txt"
+        }
+      ],
+      "return_count": 293,
+      "unmatched": [
+        "grated cheese",
+        "ready_meal \u2014 spinach",
+        "ready_meal \u2014 spinach feta pies",
+        "ready_meal \u2014 spinach salad",
+        "ready_meal \u2014 strawberry banana yogurt",
+        "ready_meal \u2014 sundae",
+        "ready_meal \u2014 sweet potato chips",
+        "ready_meal \u2014 sweet potato salad",
+        "ready_meal \u2014 tagliatelle alfredo",
+        "ready_meal \u2014 tiramisu",
+        "ready_meal \u2014 tomato salad",
+        "ready_meal \u2014 tomato soup",
+        "ready_meal \u2014 trout",
+        "ready_meal \u2014 trout gratin",
+        "ready_meal \u2014 tuna pasta",
+        "ready_meal \u2014 tuna penne",
+        "ready_meal \u2014 vegetable risotto",
+        "ready_meal \u2014 vegetable soup",
+        "ready_meal \u2014 waffles",
+        "ready_meal \u2014 whiting portions",
+        "ready_meal \u2014 wrap"
+      ]
+    },
+    {
+      "uid": "arch_FAM_LowCarb1530",
+      "name": "Family Low-Carb Weeknight Bowls & Wraps (15\u201330, Mild)",
+      "status": "completed",
+      "chunks": [
+        {
+          "chunk": 1,
+          "size": 200,
+          "status": "completed",
+          "selected": 25,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_LowCarb1530_chunk01_prompt.txt",
+          "raw_path": "arch_FAM_LowCarb1530_chunk01_raw.txt"
+        },
+        {
+          "chunk": 2,
+          "size": 200,
+          "status": "completed",
+          "selected": 24,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_LowCarb1530_chunk02_prompt.txt",
+          "raw_path": "arch_FAM_LowCarb1530_chunk02_raw.txt"
+        },
+        {
+          "chunk": 3,
+          "size": 200,
+          "status": "completed",
+          "selected": 28,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_LowCarb1530_chunk03_prompt.txt",
+          "raw_path": "arch_FAM_LowCarb1530_chunk03_raw.txt"
+        },
+        {
+          "chunk": 4,
+          "size": 200,
+          "status": "completed",
+          "selected": 27,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_LowCarb1530_chunk04_prompt.txt",
+          "raw_path": "arch_FAM_LowCarb1530_chunk04_raw.txt"
+        },
+        {
+          "chunk": 5,
+          "size": 200,
+          "status": "completed",
+          "selected": 20,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_LowCarb1530_chunk05_prompt.txt",
+          "raw_path": "arch_FAM_LowCarb1530_chunk05_raw.txt"
+        },
+        {
+          "chunk": 6,
+          "size": 200,
+          "status": "completed",
+          "selected": 24,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_LowCarb1530_chunk06_prompt.txt",
+          "raw_path": "arch_FAM_LowCarb1530_chunk06_raw.txt"
+        },
+        {
+          "chunk": 7,
+          "size": 200,
+          "status": "completed",
+          "selected": 24,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_LowCarb1530_chunk07_prompt.txt",
+          "raw_path": "arch_FAM_LowCarb1530_chunk07_raw.txt"
+        },
+        {
+          "chunk": 8,
+          "size": 200,
+          "status": "completed",
+          "selected": 20,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_LowCarb1530_chunk08_prompt.txt",
+          "raw_path": "arch_FAM_LowCarb1530_chunk08_raw.txt"
+        },
+        {
+          "chunk": 9,
+          "size": 200,
+          "status": "completed",
+          "selected": 19,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_LowCarb1530_chunk09_prompt.txt",
+          "raw_path": "arch_FAM_LowCarb1530_chunk09_raw.txt"
+        },
+        {
+          "chunk": 10,
+          "size": 44,
+          "status": "completed",
+          "selected": 0,
+          "unmatched": [
+            "ready_meal \u2014 spinach",
+            "ready_meal \u2014 spinach salad",
+            "ready_meal \u2014 tofu curry",
+            "ready_meal \u2014 tofu mushroom coconut curry",
+            "ready_meal \u2014 thai green chicken curry",
+            "ready_meal \u2014 tom yum soup",
+            "ready_meal \u2014 trout",
+            "ready_meal \u2014 whiting portions",
+            "ready_meal \u2014 tomato salad",
+            "ready_meal \u2014 tomato soup"
+          ],
+          "prompt_path": "arch_FAM_LowCarb1530_chunk10_prompt.txt",
+          "raw_path": "arch_FAM_LowCarb1530_chunk10_raw.txt"
+        }
+      ],
+      "return_count": 198,
+      "unmatched": [
+        "ready_meal \u2014 spinach",
+        "ready_meal \u2014 spinach salad",
+        "ready_meal \u2014 thai green chicken curry",
+        "ready_meal \u2014 tofu curry",
+        "ready_meal \u2014 tofu mushroom coconut curry",
+        "ready_meal \u2014 tom yum soup",
+        "ready_meal \u2014 tomato salad",
+        "ready_meal \u2014 tomato soup",
+        "ready_meal \u2014 trout",
+        "ready_meal \u2014 whiting portions"
+      ]
+    },
+    {
+      "uid": "arch_FAM_HP_30to60_INT_Mild_v1",
+      "name": "Family High-Protein Dinners (30\u201360, Mild, Intermediate)",
+      "status": "completed",
+      "chunks": [
+        {
+          "chunk": 1,
+          "size": 200,
+          "status": "completed",
+          "selected": 36,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_HP_30to60_INT_Mild_v1_chunk01_prompt.txt",
+          "raw_path": "arch_FAM_HP_30to60_INT_Mild_v1_chunk01_raw.txt"
+        },
+        {
+          "chunk": 2,
+          "size": 200,
+          "status": "completed",
+          "selected": 32,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_HP_30to60_INT_Mild_v1_chunk02_prompt.txt",
+          "raw_path": "arch_FAM_HP_30to60_INT_Mild_v1_chunk02_raw.txt"
+        },
+        {
+          "chunk": 3,
+          "size": 200,
+          "status": "completed",
+          "selected": 31,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_HP_30to60_INT_Mild_v1_chunk03_prompt.txt",
+          "raw_path": "arch_FAM_HP_30to60_INT_Mild_v1_chunk03_raw.txt"
+        },
+        {
+          "chunk": 4,
+          "size": 200,
+          "status": "completed",
+          "selected": 32,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_HP_30to60_INT_Mild_v1_chunk04_prompt.txt",
+          "raw_path": "arch_FAM_HP_30to60_INT_Mild_v1_chunk04_raw.txt"
+        },
+        {
+          "chunk": 5,
+          "size": 200,
+          "status": "completed",
+          "selected": 30,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_HP_30to60_INT_Mild_v1_chunk05_prompt.txt",
+          "raw_path": "arch_FAM_HP_30to60_INT_Mild_v1_chunk05_raw.txt"
+        },
+        {
+          "chunk": 6,
+          "size": 200,
+          "status": "completed",
+          "selected": 26,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_HP_30to60_INT_Mild_v1_chunk06_prompt.txt",
+          "raw_path": "arch_FAM_HP_30to60_INT_Mild_v1_chunk06_raw.txt"
+        },
+        {
+          "chunk": 7,
+          "size": 200,
+          "status": "completed",
+          "selected": 37,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_HP_30to60_INT_Mild_v1_chunk07_prompt.txt",
+          "raw_path": "arch_FAM_HP_30to60_INT_Mild_v1_chunk07_raw.txt"
+        },
+        {
+          "chunk": 8,
+          "size": 200,
+          "status": "completed",
+          "selected": 31,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_HP_30to60_INT_Mild_v1_chunk08_prompt.txt",
+          "raw_path": "arch_FAM_HP_30to60_INT_Mild_v1_chunk08_raw.txt"
+        },
+        {
+          "chunk": 9,
+          "size": 200,
+          "status": "completed",
+          "selected": 49,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_HP_30to60_INT_Mild_v1_chunk09_prompt.txt",
+          "raw_path": "arch_FAM_HP_30to60_INT_Mild_v1_chunk09_raw.txt"
+        },
+        {
+          "chunk": 10,
+          "size": 44,
+          "status": "completed",
+          "selected": 14,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_HP_30to60_INT_Mild_v1_chunk10_prompt.txt",
+          "raw_path": "arch_FAM_HP_30to60_INT_Mild_v1_chunk10_raw.txt"
+        }
+      ],
+      "return_count": 298,
+      "unmatched": []
+    },
+    {
+      "uid": "arch_FamPressureExpress_01",
+      "name": "Family Pressure Cooker Express Dinners (15\u201330, Mild)",
+      "status": "completed",
+      "chunks": [
+        {
+          "chunk": 1,
+          "size": 200,
+          "status": "completed",
+          "selected": 23,
+          "unmatched": [],
+          "prompt_path": "arch_FamPressureExpress_01_chunk01_prompt.txt",
+          "raw_path": "arch_FamPressureExpress_01_chunk01_raw.txt"
+        },
+        {
+          "chunk": 2,
+          "size": 200,
+          "status": "completed",
+          "selected": 26,
+          "unmatched": [],
+          "prompt_path": "arch_FamPressureExpress_01_chunk02_prompt.txt",
+          "raw_path": "arch_FamPressureExpress_01_chunk02_raw.txt"
+        },
+        {
+          "chunk": 3,
+          "size": 200,
+          "status": "completed",
+          "selected": 30,
+          "unmatched": [],
+          "prompt_path": "arch_FamPressureExpress_01_chunk03_prompt.txt",
+          "raw_path": "arch_FamPressureExpress_01_chunk03_raw.txt"
+        },
+        {
+          "chunk": 4,
+          "size": 200,
+          "status": "completed",
+          "selected": 28,
+          "unmatched": [],
+          "prompt_path": "arch_FamPressureExpress_01_chunk04_prompt.txt",
+          "raw_path": "arch_FamPressureExpress_01_chunk04_raw.txt"
+        },
+        {
+          "chunk": 5,
+          "size": 200,
+          "status": "completed",
+          "selected": 24,
+          "unmatched": [],
+          "prompt_path": "arch_FamPressureExpress_01_chunk05_prompt.txt",
+          "raw_path": "arch_FamPressureExpress_01_chunk05_raw.txt"
+        },
+        {
+          "chunk": 6,
+          "size": 200,
+          "status": "completed",
+          "selected": 20,
+          "unmatched": [],
+          "prompt_path": "arch_FamPressureExpress_01_chunk06_prompt.txt",
+          "raw_path": "arch_FamPressureExpress_01_chunk06_raw.txt"
+        },
+        {
+          "chunk": 7,
+          "size": 200,
+          "status": "completed",
+          "selected": 28,
+          "unmatched": [],
+          "prompt_path": "arch_FamPressureExpress_01_chunk07_prompt.txt",
+          "raw_path": "arch_FamPressureExpress_01_chunk07_raw.txt"
+        },
+        {
+          "chunk": 8,
+          "size": 200,
+          "status": "completed",
+          "selected": 20,
+          "unmatched": [],
+          "prompt_path": "arch_FamPressureExpress_01_chunk08_prompt.txt",
+          "raw_path": "arch_FamPressureExpress_01_chunk08_raw.txt"
+        },
+        {
+          "chunk": 9,
+          "size": 200,
+          "status": "completed",
+          "selected": 20,
+          "unmatched": [],
+          "prompt_path": "arch_FamPressureExpress_01_chunk09_prompt.txt",
+          "raw_path": "arch_FamPressureExpress_01_chunk09_raw.txt"
+        },
+        {
+          "chunk": 10,
+          "size": 44,
+          "status": "completed",
+          "selected": 10,
+          "unmatched": [],
+          "prompt_path": "arch_FamPressureExpress_01_chunk10_prompt.txt",
+          "raw_path": "arch_FamPressureExpress_01_chunk10_raw.txt"
+        }
+      ],
+      "return_count": 222,
+      "unmatched": []
+    },
+    {
+      "uid": "arch_FamQuickGrill_M15",
+      "name": "Family Quick Grill & Salad Nights (Mild, 15\u201330)",
+      "status": "completed",
+      "chunks": [
+        {
+          "chunk": 1,
+          "size": 200,
+          "status": "completed",
+          "selected": 27,
+          "unmatched": [],
+          "prompt_path": "arch_FamQuickGrill_M15_chunk01_prompt.txt",
+          "raw_path": "arch_FamQuickGrill_M15_chunk01_raw.txt"
+        },
+        {
+          "chunk": 2,
+          "size": 200,
+          "status": "completed",
+          "selected": 28,
+          "unmatched": [],
+          "prompt_path": "arch_FamQuickGrill_M15_chunk02_prompt.txt",
+          "raw_path": "arch_FamQuickGrill_M15_chunk02_raw.txt"
+        },
+        {
+          "chunk": 3,
+          "size": 200,
+          "status": "completed",
+          "selected": 25,
+          "unmatched": [],
+          "prompt_path": "arch_FamQuickGrill_M15_chunk03_prompt.txt",
+          "raw_path": "arch_FamQuickGrill_M15_chunk03_raw.txt"
+        },
+        {
+          "chunk": 4,
+          "size": 200,
+          "status": "completed",
+          "selected": 24,
+          "unmatched": [],
+          "prompt_path": "arch_FamQuickGrill_M15_chunk04_prompt.txt",
+          "raw_path": "arch_FamQuickGrill_M15_chunk04_raw.txt"
+        },
+        {
+          "chunk": 5,
+          "size": 200,
+          "status": "completed",
+          "selected": 27,
+          "unmatched": [
+            "parmesan"
+          ],
+          "prompt_path": "arch_FamQuickGrill_M15_chunk05_prompt.txt",
+          "raw_path": "arch_FamQuickGrill_M15_chunk05_raw.txt"
+        },
+        {
+          "chunk": 6,
+          "size": 200,
+          "status": "completed",
+          "selected": 35,
+          "unmatched": [],
+          "prompt_path": "arch_FamQuickGrill_M15_chunk06_prompt.txt",
+          "raw_path": "arch_FamQuickGrill_M15_chunk06_raw.txt"
+        },
+        {
+          "chunk": 7,
+          "size": 200,
+          "status": "completed",
+          "selected": 24,
+          "unmatched": [],
+          "prompt_path": "arch_FamQuickGrill_M15_chunk07_prompt.txt",
+          "raw_path": "arch_FamQuickGrill_M15_chunk07_raw.txt"
+        },
+        {
+          "chunk": 8,
+          "size": 200,
+          "status": "completed",
+          "selected": 21,
+          "unmatched": [],
+          "prompt_path": "arch_FamQuickGrill_M15_chunk08_prompt.txt",
+          "raw_path": "arch_FamQuickGrill_M15_chunk08_raw.txt"
+        },
+        {
+          "chunk": 9,
+          "size": 200,
+          "status": "completed",
+          "selected": 19,
+          "unmatched": [],
+          "prompt_path": "arch_FamQuickGrill_M15_chunk09_prompt.txt",
+          "raw_path": "arch_FamQuickGrill_M15_chunk09_raw.txt"
+        },
+        {
+          "chunk": 10,
+          "size": 44,
+          "status": "completed",
+          "selected": 11,
+          "unmatched": [],
+          "prompt_path": "arch_FamQuickGrill_M15_chunk10_prompt.txt",
+          "raw_path": "arch_FamQuickGrill_M15_chunk10_raw.txt"
+        }
+      ],
+      "return_count": 231,
+      "unmatched": [
+        "parmesan"
+      ]
+    },
+    {
+      "uid": "arch_FAM_Keto_1530_Mild_Simple",
+      "name": "Family Keto Weeknight Plates (Mild, 15\u201330, Simple)",
+      "status": "completed",
+      "chunks": [
+        {
+          "chunk": 1,
+          "size": 200,
+          "status": "completed",
+          "selected": 29,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_Keto_1530_Mild_Simple_chunk01_prompt.txt",
+          "raw_path": "arch_FAM_Keto_1530_Mild_Simple_chunk01_raw.txt"
+        },
+        {
+          "chunk": 2,
+          "size": 200,
+          "status": "completed",
+          "selected": 29,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_Keto_1530_Mild_Simple_chunk02_prompt.txt",
+          "raw_path": "arch_FAM_Keto_1530_Mild_Simple_chunk02_raw.txt"
+        },
+        {
+          "chunk": 3,
+          "size": 200,
+          "status": "completed",
+          "selected": 24,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_Keto_1530_Mild_Simple_chunk03_prompt.txt",
+          "raw_path": "arch_FAM_Keto_1530_Mild_Simple_chunk03_raw.txt"
+        },
+        {
+          "chunk": 4,
+          "size": 200,
+          "status": "completed",
+          "selected": 26,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_Keto_1530_Mild_Simple_chunk04_prompt.txt",
+          "raw_path": "arch_FAM_Keto_1530_Mild_Simple_chunk04_raw.txt"
+        },
+        {
+          "chunk": 5,
+          "size": 200,
+          "status": "completed",
+          "selected": 21,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_Keto_1530_Mild_Simple_chunk05_prompt.txt",
+          "raw_path": "arch_FAM_Keto_1530_Mild_Simple_chunk05_raw.txt"
+        },
+        {
+          "chunk": 6,
+          "size": 200,
+          "status": "completed",
+          "selected": 31,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_Keto_1530_Mild_Simple_chunk06_prompt.txt",
+          "raw_path": "arch_FAM_Keto_1530_Mild_Simple_chunk06_raw.txt"
+        },
+        {
+          "chunk": 7,
+          "size": 200,
+          "status": "completed",
+          "selected": 29,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_Keto_1530_Mild_Simple_chunk07_prompt.txt",
+          "raw_path": "arch_FAM_Keto_1530_Mild_Simple_chunk07_raw.txt"
+        },
+        {
+          "chunk": 8,
+          "size": 200,
+          "status": "completed",
+          "selected": 19,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_Keto_1530_Mild_Simple_chunk08_prompt.txt",
+          "raw_path": "arch_FAM_Keto_1530_Mild_Simple_chunk08_raw.txt"
+        },
+        {
+          "chunk": 9,
+          "size": 200,
+          "status": "completed",
+          "selected": 16,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_Keto_1530_Mild_Simple_chunk09_prompt.txt",
+          "raw_path": "arch_FAM_Keto_1530_Mild_Simple_chunk09_raw.txt"
+        },
+        {
+          "chunk": 10,
+          "size": 44,
+          "status": "completed",
+          "selected": 0,
+          "unmatched": [
+            "ready_meal \u2014 spinach",
+            "ready_meal \u2014 spinach salad",
+            "ready_meal \u2014 tomato salad",
+            "ready_meal \u2014 trout",
+            "ready_meal \u2014 whiting portions"
+          ],
+          "prompt_path": "arch_FAM_Keto_1530_Mild_Simple_chunk10_prompt.txt",
+          "raw_path": "arch_FAM_Keto_1530_Mild_Simple_chunk10_raw.txt"
+        }
+      ],
+      "return_count": 213,
+      "unmatched": [
+        "ready_meal \u2014 spinach",
+        "ready_meal \u2014 spinach salad",
+        "ready_meal \u2014 tomato salad",
+        "ready_meal \u2014 trout",
+        "ready_meal \u2014 whiting portions"
+      ]
+    },
+    {
+      "uid": "arch_FamLatComfort3060",
+      "name": "Family Latin Comfort (Mild, 30\u201360, Intermediate)",
+      "status": "completed",
+      "chunks": [
+        {
+          "chunk": 1,
+          "size": 200,
+          "status": "completed",
+          "selected": 18,
+          "unmatched": [],
+          "prompt_path": "arch_FamLatComfort3060_chunk01_prompt.txt",
+          "raw_path": "arch_FamLatComfort3060_chunk01_raw.txt"
+        },
+        {
+          "chunk": 2,
+          "size": 200,
+          "status": "completed",
+          "selected": 27,
+          "unmatched": [],
+          "prompt_path": "arch_FamLatComfort3060_chunk02_prompt.txt",
+          "raw_path": "arch_FamLatComfort3060_chunk02_raw.txt"
+        },
+        {
+          "chunk": 3,
+          "size": 200,
+          "status": "completed",
+          "selected": 16,
+          "unmatched": [],
+          "prompt_path": "arch_FamLatComfort3060_chunk03_prompt.txt",
+          "raw_path": "arch_FamLatComfort3060_chunk03_raw.txt"
+        },
+        {
+          "chunk": 4,
+          "size": 200,
+          "status": "completed",
+          "selected": 16,
+          "unmatched": [],
+          "prompt_path": "arch_FamLatComfort3060_chunk04_prompt.txt",
+          "raw_path": "arch_FamLatComfort3060_chunk04_raw.txt"
+        },
+        {
+          "chunk": 5,
+          "size": 200,
+          "status": "completed",
+          "selected": 18,
+          "unmatched": [],
+          "prompt_path": "arch_FamLatComfort3060_chunk05_prompt.txt",
+          "raw_path": "arch_FamLatComfort3060_chunk05_raw.txt"
+        },
+        {
+          "chunk": 6,
+          "size": 200,
+          "status": "completed",
+          "selected": 17,
+          "unmatched": [],
+          "prompt_path": "arch_FamLatComfort3060_chunk06_prompt.txt",
+          "raw_path": "arch_FamLatComfort3060_chunk06_raw.txt"
+        },
+        {
+          "chunk": 7,
+          "size": 200,
+          "status": "completed",
+          "selected": 20,
+          "unmatched": [],
+          "prompt_path": "arch_FamLatComfort3060_chunk07_prompt.txt",
+          "raw_path": "arch_FamLatComfort3060_chunk07_raw.txt"
+        },
+        {
+          "chunk": 8,
+          "size": 200,
+          "status": "completed",
+          "selected": 23,
+          "unmatched": [],
+          "prompt_path": "arch_FamLatComfort3060_chunk08_prompt.txt",
+          "raw_path": "arch_FamLatComfort3060_chunk08_raw.txt"
+        },
+        {
+          "chunk": 9,
+          "size": 200,
+          "status": "completed",
+          "selected": 13,
+          "unmatched": [],
+          "prompt_path": "arch_FamLatComfort3060_chunk09_prompt.txt",
+          "raw_path": "arch_FamLatComfort3060_chunk09_raw.txt"
+        },
+        {
+          "chunk": 10,
+          "size": 44,
+          "status": "completed",
+          "selected": 0,
+          "unmatched": [
+            "ready_meal \u2014 spinach",
+            "ready_meal \u2014 spinach salad",
+            "ready_meal \u2014 sweet potato chips",
+            "ready_meal \u2014 sweet potato salad",
+            "ready_meal \u2014 tomato salad",
+            "ready_meal \u2014 tomato soup",
+            "ready_meal \u2014 wrap",
+            "ready_meal \u2014 trout",
+            "ready_meal \u2014 whiting portions",
+            "ready_meal \u2014 vegetable soup"
+          ],
+          "prompt_path": "arch_FamLatComfort3060_chunk10_prompt.txt",
+          "raw_path": "arch_FamLatComfort3060_chunk10_raw.txt"
+        }
+      ],
+      "return_count": 165,
+      "unmatched": [
+        "ready_meal \u2014 spinach",
+        "ready_meal \u2014 spinach salad",
+        "ready_meal \u2014 sweet potato chips",
+        "ready_meal \u2014 sweet potato salad",
+        "ready_meal \u2014 tomato salad",
+        "ready_meal \u2014 tomato soup",
+        "ready_meal \u2014 trout",
+        "ready_meal \u2014 vegetable soup",
+        "ready_meal \u2014 whiting portions",
+        "ready_meal \u2014 wrap"
+      ]
+    },
+    {
+      "uid": "arch_FAM_IND_SHOW_60",
+      "name": "Family Weekend Showstopper: Indian Feast Night",
+      "status": "completed",
+      "chunks": [
+        {
+          "chunk": 1,
+          "size": 200,
+          "status": "completed",
+          "selected": 19,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_IND_SHOW_60_chunk01_prompt.txt",
+          "raw_path": "arch_FAM_IND_SHOW_60_chunk01_raw.txt"
+        },
+        {
+          "chunk": 2,
+          "size": 200,
+          "status": "completed",
+          "selected": 22,
+          "unmatched": [
+            "chili powder"
+          ],
+          "prompt_path": "arch_FAM_IND_SHOW_60_chunk02_prompt.txt",
+          "raw_path": "arch_FAM_IND_SHOW_60_chunk02_raw.txt"
+        },
+        {
+          "chunk": 3,
+          "size": 200,
+          "status": "completed",
+          "selected": 23,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_IND_SHOW_60_chunk03_prompt.txt",
+          "raw_path": "arch_FAM_IND_SHOW_60_chunk03_raw.txt"
+        },
+        {
+          "chunk": 4,
+          "size": 200,
+          "status": "completed",
+          "selected": 26,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_IND_SHOW_60_chunk04_prompt.txt",
+          "raw_path": "arch_FAM_IND_SHOW_60_chunk04_raw.txt"
+        },
+        {
+          "chunk": 5,
+          "size": 200,
+          "status": "completed",
+          "selected": 22,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_IND_SHOW_60_chunk05_prompt.txt",
+          "raw_path": "arch_FAM_IND_SHOW_60_chunk05_raw.txt"
+        },
+        {
+          "chunk": 6,
+          "size": 200,
+          "status": "completed",
+          "selected": 21,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_IND_SHOW_60_chunk06_prompt.txt",
+          "raw_path": "arch_FAM_IND_SHOW_60_chunk06_raw.txt"
+        },
+        {
+          "chunk": 7,
+          "size": 200,
+          "status": "completed",
+          "selected": 23,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_IND_SHOW_60_chunk07_prompt.txt",
+          "raw_path": "arch_FAM_IND_SHOW_60_chunk07_raw.txt"
+        },
+        {
+          "chunk": 8,
+          "size": 200,
+          "status": "completed",
+          "selected": 13,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_IND_SHOW_60_chunk08_prompt.txt",
+          "raw_path": "arch_FAM_IND_SHOW_60_chunk08_raw.txt"
+        },
+        {
+          "chunk": 9,
+          "size": 200,
+          "status": "completed",
+          "selected": 9,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_IND_SHOW_60_chunk09_prompt.txt",
+          "raw_path": "arch_FAM_IND_SHOW_60_chunk09_raw.txt"
+        },
+        {
+          "chunk": 10,
+          "size": 44,
+          "status": "completed",
+          "selected": 8,
+          "unmatched": [],
+          "prompt_path": "arch_FAM_IND_SHOW_60_chunk10_prompt.txt",
+          "raw_path": "arch_FAM_IND_SHOW_60_chunk10_raw.txt"
+        }
+      ],
+      "return_count": 184,
+      "unmatched": [
+        "chili powder"
+      ]
+    },
+    {
+      "uid": "arch_FamMedLowFat1530",
+      "name": "Family Low-Fat Mediterranean Light Plates (15\u201330, Mild)",
+      "status": "completed",
+      "chunks": [
+        {
+          "chunk": 1,
+          "size": 200,
+          "status": "completed",
+          "selected": 29,
+          "unmatched": [],
+          "prompt_path": "arch_FamMedLowFat1530_chunk01_prompt.txt",
+          "raw_path": "arch_FamMedLowFat1530_chunk01_raw.txt"
+        },
+        {
+          "chunk": 2,
+          "size": 200,
+          "status": "completed",
+          "selected": 25,
+          "unmatched": [],
+          "prompt_path": "arch_FamMedLowFat1530_chunk02_prompt.txt",
+          "raw_path": "arch_FamMedLowFat1530_chunk02_raw.txt"
+        },
+        {
+          "chunk": 3,
+          "size": 200,
+          "status": "completed",
+          "selected": 19,
+          "unmatched": [],
+          "prompt_path": "arch_FamMedLowFat1530_chunk03_prompt.txt",
+          "raw_path": "arch_FamMedLowFat1530_chunk03_raw.txt"
+        },
+        {
+          "chunk": 4,
+          "size": 200,
+          "status": "completed",
+          "selected": 23,
+          "unmatched": [],
+          "prompt_path": "arch_FamMedLowFat1530_chunk04_prompt.txt",
+          "raw_path": "arch_FamMedLowFat1530_chunk04_raw.txt"
+        },
+        {
+          "chunk": 5,
+          "size": 200,
+          "status": "completed",
+          "selected": 20,
+          "unmatched": [],
+          "prompt_path": "arch_FamMedLowFat1530_chunk05_prompt.txt",
+          "raw_path": "arch_FamMedLowFat1530_chunk05_raw.txt"
+        },
+        {
+          "chunk": 6,
+          "size": 200,
+          "status": "completed",
+          "selected": 21,
+          "unmatched": [],
+          "prompt_path": "arch_FamMedLowFat1530_chunk06_prompt.txt",
+          "raw_path": "arch_FamMedLowFat1530_chunk06_raw.txt"
+        },
+        {
+          "chunk": 7,
+          "size": 200,
+          "status": "completed",
+          "selected": 33,
+          "unmatched": [
+            "staple semolina"
+          ],
+          "prompt_path": "arch_FamMedLowFat1530_chunk07_prompt.txt",
+          "raw_path": "arch_FamMedLowFat1530_chunk07_raw.txt"
+        },
+        {
+          "chunk": 8,
+          "size": 200,
+          "status": "completed",
+          "selected": 24,
+          "unmatched": [],
+          "prompt_path": "arch_FamMedLowFat1530_chunk08_prompt.txt",
+          "raw_path": "arch_FamMedLowFat1530_chunk08_raw.txt"
+        },
+        {
+          "chunk": 9,
+          "size": 200,
+          "status": "completed",
+          "selected": 14,
+          "unmatched": [],
+          "prompt_path": "arch_FamMedLowFat1530_chunk09_prompt.txt",
+          "raw_path": "arch_FamMedLowFat1530_chunk09_raw.txt"
+        },
+        {
+          "chunk": 10,
+          "size": 44,
+          "status": "completed",
+          "selected": 13,
+          "unmatched": [],
+          "prompt_path": "arch_FamMedLowFat1530_chunk10_prompt.txt",
+          "raw_path": "arch_FamMedLowFat1530_chunk10_raw.txt"
+        }
+      ],
+      "return_count": 211,
+      "unmatched": [
+        "staple semolina"
+      ]
+    },
+    {
+      "uid": "arch_SA_BraaiPotjie_Adv60",
+      "name": "Family Weekend Advanced: South African Braai & Potjie",
+      "status": "completed",
+      "chunks": [
+        {
+          "chunk": 1,
+          "size": 200,
+          "status": "completed",
+          "selected": 38,
+          "unmatched": [],
+          "prompt_path": "arch_SA_BraaiPotjie_Adv60_chunk01_prompt.txt",
+          "raw_path": "arch_SA_BraaiPotjie_Adv60_chunk01_raw.txt"
+        },
+        {
+          "chunk": 2,
+          "size": 200,
+          "status": "completed",
+          "selected": 39,
+          "unmatched": [],
+          "prompt_path": "arch_SA_BraaiPotjie_Adv60_chunk02_prompt.txt",
+          "raw_path": "arch_SA_BraaiPotjie_Adv60_chunk02_raw.txt"
+        },
+        {
+          "chunk": 3,
+          "size": 200,
+          "status": "completed",
+          "selected": 39,
+          "unmatched": [],
+          "prompt_path": "arch_SA_BraaiPotjie_Adv60_chunk03_prompt.txt",
+          "raw_path": "arch_SA_BraaiPotjie_Adv60_chunk03_raw.txt"
+        },
+        {
+          "chunk": 4,
+          "size": 200,
+          "status": "completed",
+          "selected": 17,
+          "unmatched": [],
+          "prompt_path": "arch_SA_BraaiPotjie_Adv60_chunk04_prompt.txt",
+          "raw_path": "arch_SA_BraaiPotjie_Adv60_chunk04_raw.txt"
+        },
+        {
+          "chunk": 5,
+          "size": 200,
+          "status": "completed",
+          "selected": 38,
+          "unmatched": [],
+          "prompt_path": "arch_SA_BraaiPotjie_Adv60_chunk05_prompt.txt",
+          "raw_path": "arch_SA_BraaiPotjie_Adv60_chunk05_raw.txt"
+        },
+        {
+          "chunk": 6,
+          "size": 200,
+          "status": "completed",
+          "selected": 25,
+          "unmatched": [],
+          "prompt_path": "arch_SA_BraaiPotjie_Adv60_chunk06_prompt.txt",
+          "raw_path": "arch_SA_BraaiPotjie_Adv60_chunk06_raw.txt"
+        },
+        {
+          "chunk": 7,
+          "size": 200,
+          "status": "completed",
+          "selected": 39,
+          "unmatched": [],
+          "prompt_path": "arch_SA_BraaiPotjie_Adv60_chunk07_prompt.txt",
+          "raw_path": "arch_SA_BraaiPotjie_Adv60_chunk07_raw.txt"
+        },
+        {
+          "chunk": 8,
+          "size": 200,
+          "status": "completed",
+          "selected": 22,
+          "unmatched": [],
+          "prompt_path": "arch_SA_BraaiPotjie_Adv60_chunk08_prompt.txt",
+          "raw_path": "arch_SA_BraaiPotjie_Adv60_chunk08_raw.txt"
+        },
+        {
+          "chunk": 9,
+          "size": 200,
+          "status": "completed",
+          "selected": 21,
+          "unmatched": [],
+          "prompt_path": "arch_SA_BraaiPotjie_Adv60_chunk09_prompt.txt",
+          "raw_path": "arch_SA_BraaiPotjie_Adv60_chunk09_raw.txt"
+        },
+        {
+          "chunk": 10,
+          "size": 44,
+          "status": "completed",
+          "selected": 10,
+          "unmatched": [],
+          "prompt_path": "arch_SA_BraaiPotjie_Adv60_chunk10_prompt.txt",
+          "raw_path": "arch_SA_BraaiPotjie_Adv60_chunk10_raw.txt"
+        }
+      ],
+      "return_count": 281,
+      "unmatched": []
+    }
+  ]
+}

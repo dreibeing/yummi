@@ -1,0 +1,210 @@
+{
+  "meal_id": "meal_20251125T134231Z_03_6c49b9",
+  "archetype_uid": "arch_FAM_HP_30to60_INT_Mild_v1",
+  "archetype_name": "Family High-Protein Dinners (30–60, Mild, Intermediate)",
+  "name": "Herb-Paprika Seared Tuna with Roasted Potatoes and Green Beans",
+  "description": "Pan-seared tuna steaks with a mild lemon-garlic herb rub, served alongside oven-roasted potatoes and sautéed green beans. A balanced, high-protein family plate with straightforward timing.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C/425°F (fan 200°C).",
+    "Scrub and cut potatoes into 2–3 cm chunks.",
+    "Trim green beans.",
+    "Finely chop parsley.",
+    "Zest and halve the lemon.",
+    "Peel and mince garlic.",
+    "Pat tuna steak dry with paper towels."
+  ],
+  "cook_steps": [
+    "Roast potatoes: Toss potatoes with 2 tbsp olive oil, 1/2 tsp salt, and 1/2 tsp black pepper on a baking tray. Roast 25–30 minutes, turning once, until golden and tender.",
+    "Make herb rub: In a small bowl, mix 1 tbsp olive oil, minced garlic, lemon zest, 1 tsp paprika, 1/4 tsp salt, and half the chopped parsley.",
+    "Season tuna: Rub the herb mixture over tuna steak on both sides. Set aside 5–10 minutes while potatoes finish.",
+    "Start green beans: Heat 1 tbsp olive oil in a large skillet over medium. Add green beans and 2 tbsp water, cover, and steam-sauté 3–4 minutes until bright green.",
+    "Finish green beans: Uncover, season with a pinch of salt and black pepper, and cook 2–3 minutes more to lightly char. Squeeze in a little lemon juice and transfer to a warm plate.",
+    "Sear tuna: Increase skillet heat to medium-high. Add a thin film of olive oil if needed. Sear tuna 2–3 minutes per side for medium (adjust to preference).",
+    "Finish and serve: Toss roasted potatoes with remaining parsley and a squeeze of lemon. Plate tuna with potatoes and green beans; serve with extra lemon wedges."
+  ],
+  "instructions": [
+    "Heat oven to 220°C/425°F (fan 200°C).",
+    "Scrub and cut potatoes into 2–3 cm chunks.",
+    "Trim green beans.",
+    "Finely chop parsley.",
+    "Zest and halve the lemon.",
+    "Peel and mince garlic.",
+    "Pat tuna steak dry with paper towels.",
+    "Roast potatoes: Toss potatoes with 2 tbsp olive oil, 1/2 tsp salt, and 1/2 tsp black pepper on a baking tray. Roast 25–30 minutes, turning once, until golden and tender.",
+    "Make herb rub: In a small bowl, mix 1 tbsp olive oil, minced garlic, lemon zest, 1 tsp paprika, 1/4 tsp salt, and half the chopped parsley.",
+    "Season tuna: Rub the herb mixture over tuna steak on both sides. Set aside 5–10 minutes while potatoes finish.",
+    "Start green beans: Heat 1 tbsp olive oil in a large skillet over medium. Add green beans and 2 tbsp water, cover, and steam-sauté 3–4 minutes until bright green.",
+    "Finish green beans: Uncover, season with a pinch of salt and black pepper, and cook 2–3 minutes more to lightly char. Squeeze in a little lemon juice and transfer to a warm plate.",
+    "Sear tuna: Increase skillet heat to medium-high. Add a thin film of olive oil if needed. Sear tuna 2–3 minutes per side for medium (adjust to preference).",
+    "Finish and serve: Toss roasted potatoes with remaining parsley and a squeeze of lemon. Plate tuna with potatoes and green beans; serve with extra lemon wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "tuna steak",
+      "quantity": "4 steaks (150–180 g each)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "800 g",
+      "preparation": "cut into 2–3 cm chunks"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and cut into wedges"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "15 g",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "3/4 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "3/4 tsp",
+      "preparation": "divided"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "French"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "tuna steak",
+      "quantity": "4 steaks (150–180 g each)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "800 g",
+      "preparation": "cut into 2–3 cm chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "15 g",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "3/4 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "3/4 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T134419Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T134231Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

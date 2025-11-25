@@ -1,0 +1,32 @@
+{
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "selected_ingredients": [
+    "grana padano",
+    "grapes",
+    "grapeseed oil",
+    "green beans",
+    "ground beef",
+    "ground cumin",
+    "gruyere cheese",
+    "haddock",
+    "hake",
+    "ham",
+    "hamburger buns",
+    "hard cheese",
+    "herbs",
+    "honey",
+    "horseradish",
+    "gravy",
+    "leeks",
+    "lemon",
+    "lentils",
+    "lettuce",
+    "linguine",
+    "macaroni",
+    "macaroni and cheese",
+    "ketchup",
+    "kidney beans",
+    "jus",
+    "juniper berries"
+  ]
+}

@@ -1,0 +1,369 @@
+{
+  "meal_id": "meal_20251125T134419Z_03_8e4444",
+  "archetype_uid": "arch_FAM_IND_SHOW_60",
+  "archetype_name": "Family Weekend Showstopper: Indian Feast Night",
+  "name": "Keema-Stuffed Peppers with Saffron Pea Pilaf and Cucumber-Mint Yoghurt",
+  "description": "Baked bell peppers filled with spiced lamb keema, served alongside fragrant saffron basmati with peas and a cooling cucumber-mint yoghurt. A colorful family centerpiece with medium heat.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Preheat oven to 200°C/390°F. Lightly oil a baking dish.",
+    "Rinse 2 cups basmati rice in cold water until clear; drain well.",
+    "Warm 2 tablespoons water and crush a pinch of saffron into it; set aside to bloom.",
+    "Halve 4 bell peppers lengthwise, remove seeds and membranes; set cut-side up in the baking dish.",
+    "Finely chop 2 onions and 2 tomatoes; mince 4 cloves garlic.",
+    "Finely chop 2 tablespoons mint and half a cucumber for the yoghurt.",
+    "Measure spices for keema: 1 teaspoon cumin seeds, 1 teaspoon garam masala, 1/2 teaspoon turmeric powder, 1 teaspoon chili flakes (or to taste), 1 teaspoon salt, 1/2 teaspoon black pepper.",
+    "Measure spices for pilaf: 1 bay leaf, 3 cardamom pods (lightly crushed), 1 small cinnamon stick, 1 teaspoon salt. Rinse 1 cup peas if using frozen."
+  ],
+  "cook_steps": [
+    "Make the keema (stovetop): Heat 2 tablespoons oil in a large pan over medium-high heat. Add cumin seeds and let them sizzle for 30 seconds.",
+    "Add onions and cook 6–8 minutes until deep golden. Add garlic and cook 1 minute.",
+    "Add 700 g lamb mince, break it up, and cook until browned and most liquid evaporates, 8–10 minutes.",
+    "Stir in tomatoes, garam masala, turmeric powder, chili flakes, salt, and black pepper. Cook 5–7 minutes until thick and spoonable. Adjust seasoning to taste.",
+    "Stuff peppers: Spoon hot keema into each pepper half, mounding slightly. Drizzle 1 tablespoon oil over the tops.",
+    "Bake peppers (oven): Place baking dish on middle rack and bake 25–30 minutes until peppers are tender and lightly blistered.",
+    "Cook saffron pea pilaf (stovetop): In a pot, heat 1 tablespoon oil or ghee over medium heat. Add bay leaf, cardamom, and cinnamon; toast 30 seconds.",
+    "Add drained rice and stir 1 minute to coat. Add 2 1/2 cups water, saffron water, peas, and salt. Bring to a boil, then cover, reduce to low, and simmer 12 minutes. Turn off heat and rest 10 minutes; fluff with a fork.",
+    "Make cucumber-mint yoghurt: In a bowl, combine 1 cup yoghurt, chopped cucumber, mint, a pinch of salt, and 1 teaspoon lemon juice.",
+    "Finish and serve: Plate pilaf, top with baked keema-stuffed peppers, and add a spoon of cucumber-mint yoghurt. Serve extra lemon wedges on the side."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C/390°F. Lightly oil a baking dish.",
+    "Rinse 2 cups basmati rice in cold water until clear; drain well.",
+    "Warm 2 tablespoons water and crush a pinch of saffron into it; set aside to bloom.",
+    "Halve 4 bell peppers lengthwise, remove seeds and membranes; set cut-side up in the baking dish.",
+    "Finely chop 2 onions and 2 tomatoes; mince 4 cloves garlic.",
+    "Finely chop 2 tablespoons mint and half a cucumber for the yoghurt.",
+    "Measure spices for keema: 1 teaspoon cumin seeds, 1 teaspoon garam masala, 1/2 teaspoon turmeric powder, 1 teaspoon chili flakes (or to taste), 1 teaspoon salt, 1/2 teaspoon black pepper.",
+    "Measure spices for pilaf: 1 bay leaf, 3 cardamom pods (lightly crushed), 1 small cinnamon stick, 1 teaspoon salt. Rinse 1 cup peas if using frozen.",
+    "Make the keema (stovetop): Heat 2 tablespoons oil in a large pan over medium-high heat. Add cumin seeds and let them sizzle for 30 seconds.",
+    "Add onions and cook 6–8 minutes until deep golden. Add garlic and cook 1 minute.",
+    "Add 700 g lamb mince, break it up, and cook until browned and most liquid evaporates, 8–10 minutes.",
+    "Stir in tomatoes, garam masala, turmeric powder, chili flakes, salt, and black pepper. Cook 5–7 minutes until thick and spoonable. Adjust seasoning to taste.",
+    "Stuff peppers: Spoon hot keema into each pepper half, mounding slightly. Drizzle 1 tablespoon oil over the tops.",
+    "Bake peppers (oven): Place baking dish on middle rack and bake 25–30 minutes until peppers are tender and lightly blistered.",
+    "Cook saffron pea pilaf (stovetop): In a pot, heat 1 tablespoon oil or ghee over medium heat. Add bay leaf, cardamom, and cinnamon; toast 30 seconds.",
+    "Add drained rice and stir 1 minute to coat. Add 2 1/2 cups water, saffron water, peas, and salt. Bring to a boil, then cover, reduce to low, and simmer 12 minutes. Turn off heat and rest 10 minutes; fluff with a fork.",
+    "Make cucumber-mint yoghurt: In a bowl, combine 1 cup yoghurt, chopped cucumber, mint, a pinch of salt, and 1 teaspoon lemon juice.",
+    "Finish and serve: Plate pilaf, top with baked keema-stuffed peppers, and add a spoon of cucumber-mint yoghurt. Serve extra lemon wedges on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "4 large",
+      "preparation": "halved lengthwise, seeds removed"
+    },
+    {
+      "core_item_name": "lamb mince",
+      "quantity": "700 g",
+      "preparation": "loosened"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 1/2 cups",
+      "preparation": "undrained"
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "1 teaspoon",
+      "preparation": "for tempering"
+    },
+    {
+      "core_item_name": "garam masala",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 teaspoon",
+      "preparation": "adjust to taste"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 teaspoons",
+      "preparation": "divided, plus to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "4 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "a generous pinch",
+      "preparation": "bloomed in warm water"
+    },
+    {
+      "core_item_name": "bay leaf",
+      "quantity": "1"
+    },
+    {
+      "core_item_name": "cardamom",
+      "quantity": "3 pods",
+      "preparation": "lightly crushed"
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1 small stick"
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup"
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1/2 medium",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tablespoons",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced for yoghurt + wedges to serve"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": "for saffron and rice"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Indian",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "4 large",
+      "preparation": "halved lengthwise, seeds removed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lamb mince",
+      "quantity": "700 g",
+      "preparation": "loosened",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 1/2 cups",
+      "preparation": "undrained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "1 teaspoon",
+      "preparation": "for tempering",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garam masala",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 teaspoon",
+      "preparation": "adjust to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 teaspoons",
+      "preparation": "divided, plus to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "4 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "a generous pinch",
+      "preparation": "bloomed in warm water",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaf",
+      "quantity": "1",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cardamom",
+      "quantity": "3 pods",
+      "preparation": "lightly crushed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1 small stick",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1/2 medium",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tablespoons",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced for yoghurt + wedges to serve",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": "for saffron and rice",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T134704Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T134419Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

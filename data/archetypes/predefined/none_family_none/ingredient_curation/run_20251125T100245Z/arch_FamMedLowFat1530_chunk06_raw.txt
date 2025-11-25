@@ -1,0 +1,26 @@
+{
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "selected_ingredients": [
+    "peas",
+    "penne pasta",
+    "peppercorns",
+    "red pepper",
+    "phyllo pastry",
+    "pita bread",
+    "preserved lemon",
+    "pomegranate",
+    "prawns",
+    "quinoa",
+    "potatoes",
+    "rice",
+    "rice vinegar",
+    "red onion",
+    "romaine lettuce",
+    "rocket",
+    "rosemary",
+    "saffron",
+    "sage",
+    "salad",
+    "ricotta cheese"
+  ]
+}

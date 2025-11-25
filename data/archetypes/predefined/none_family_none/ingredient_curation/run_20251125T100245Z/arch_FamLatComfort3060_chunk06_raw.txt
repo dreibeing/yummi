@@ -1,0 +1,22 @@
+{
+  "archetype_uid": "arch_FamLatComfort3060",
+  "selected_ingredients": [
+    "rice",
+    "rice vinegar",
+    "potatoes",
+    "pork",
+    "pork shoulder",
+    "pork mince",
+    "prawns",
+    "roast chicken",
+    "peppers",
+    "red pepper",
+    "red onion",
+    "pickled onions",
+    "pineapple",
+    "roasted garlic",
+    "pepper",
+    "pink salt",
+    "rosemary"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "archetype_uid": "arch_SA_BraaiPotjie_Adv60",
+  "selected_ingredients": [
+    "potjie meal",
+    "lamb",
+    "pork",
+    "prawns",
+    "prawn cocktail",
+    "roast chicken",
+    "smoked chicken breast",
+    "poultry platter",
+    "deli platter",
+    "potato salad",
+    "potato wedges",
+    "potato bake",
+    "roast potatoes",
+    "potato gratin",
+    "coleslaw",
+    "rice",
+    "couscous salad",
+    "garlic baguette",
+    "malva pudding",
+    "koesister",
+    "milk tart"
+  ]
+}

@@ -1,4 +1,0 @@
-{
-  "archetype_uid": "arch_FAM_IND_CURRY_BIRYANI_01",
-  "selected_ingredients": []
-}

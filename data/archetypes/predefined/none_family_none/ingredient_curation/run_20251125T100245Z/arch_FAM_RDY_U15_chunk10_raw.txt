@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "selected_ingredients": [
+    "ready_meal — spinach",
+    "ready_meal — spinach feta pies",
+    "ready_meal — spinach salad",
+    "ready_meal — strawberry banana yogurt",
+    "ready_meal — sweet potato chips",
+    "ready_meal — sweet potato salad",
+    "ready_meal — tagliatelle alfredo",
+    "ready_meal — tomato soup",
+    "ready_meal — tomato salad",
+    "ready_meal — tuna pasta",
+    "ready_meal — tuna penne",
+    "ready_meal — vegetable risotto",
+    "ready_meal — vegetable soup",
+    "ready_meal — waffles",
+    "ready_meal — sundae",
+    "ready_meal — tiramisu",
+    "ready_meal — wrap",
+    "ready_meal — trout",
+    "ready_meal — trout gratin",
+    "ready_meal — whiting portions"
+  ]
+}

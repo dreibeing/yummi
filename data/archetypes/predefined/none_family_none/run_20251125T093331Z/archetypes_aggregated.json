@@ -1,0 +1,832 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_FamWeeknightCore_15to30",
+      "name": "Family Weeknight Classics (Mild, 15\u201330 min)",
+      "description": "Balanced, crowd-pleasing dinners for a typical household that cook in 15\u201330 minutes with straightforward steps and gentle seasoning.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "SouthAfrican",
+          "American",
+          "Italian"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "Oven"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Establishes a mainstream, high-appeal baseline for typical families\u2014fast, simple, mild, and familiar cuisines\u2014forming the backbone before adding specialized diets or adventurous profiles."
+    },
+    {
+      "uid": "arch_FAM_HANDSOFF_001",
+      "name": "Family Hands-Off Sheet Pan & Slow Cooker Nights",
+      "description": "Set-and-forget family dinners with zero chili heat using sheet pans and slow cookers, leaning on Greek and Middle Eastern flavors for busy weeknights and relaxed weekends.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Greek",
+          "MiddleEastern"
+        ],
+        "PrepTime": [
+          "30to60",
+          "60Plus"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "NoHeat"
+        ],
+        "Equipment": [
+          "Oven",
+          "SlowOrPressureCooker"
+        ],
+        "MealComponentPreference": [
+          "SemiPrepared"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Fills a gap by offering family-friendly, no-heat, hands-off meals in the 30\u201360 and 60+ min ranges with different equipment and cuisines than the existing weeknight classics."
+    },
+    {
+      "uid": "arch_AFQB_2025_01",
+      "name": "Family AirFryer Quick Bites",
+      "description": "Ultra-fast, kid-friendly family dinners built around the air fryer with semi-prepared components and fresh add-ons for tacos, wraps, bowls, and crispy mains with quick sides.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "American",
+          "Mexican"
+        ],
+        "PrepTime": [
+          "Under15"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "AirFryer",
+          "Microwave"
+        ],
+        "MealComponentPreference": [
+          "SemiPrepared"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Adds the missing Under15, AirFryer-driven family option with mild flavors and semi-prepared ease, complementing existing 15\u201330 stovetop/oven and hands-off slow-cooker archetypes without overlap."
+    },
+    {
+      "uid": "arch_FAM_MED_ASIA_01",
+      "name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15\u201330, Intermediate)",
+      "description": "Stovetop family dinners inspired by Indian, Thai, and Chinese flavors\u2014balanced medium heat curries and stir-fries built in 15\u201330 minutes with a few coordinated components.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Indian",
+          "Thai",
+          "Chinese"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Intermediate"
+        ],
+        "HeatSpice": [
+          "Medium"
+        ],
+        "Equipment": [
+          "StoveTop"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Adds a distinct family option with Medium heat and Intermediate complexity focused on Asian stovetop dishes, filling gaps left by existing Simple/NoHeat/Mild archetypes."
+    },
+    {
+      "uid": "arch_FAM_show_esp_prt_001",
+      "name": "Family Weekend Showstopper: Spanish & Portuguese Feasts",
+      "description": "Presentation-forward family meals like paella, bacalhau bakes, and peri-peri platters that take time and care for memorable weekend dinners.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Spanish",
+          "Portuguese"
+        ],
+        "PrepTime": [
+          "60Plus"
+        ],
+        "Complexity": [
+          "Showstopper"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "Oven",
+          "OutdoorGrill"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Fills the current gap for Family-oriented, 60+ minute Showstopper meals with new Spanish/Portuguese cuisine coverage distinct from existing quick, hands-off, and medium-heat options."
+    },
+    {
+      "uid": "arch_FAM_ADV_HOT_KORLAT_01",
+      "name": "Family Heat Lovers: Korean & Latin American Feasts (Hot, 30\u201360, Advanced)",
+      "description": "Bold, spicy family dinners with Korean and Latin American flavors\u2014multi-component plates (marinated proteins, quick pickles/salsas, rice or veg sides) built from scratch in 30\u201360 minutes for confident home cooks.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Korean",
+          "LatinAmerican"
+        ],
+        "PrepTime": [
+          "30to60"
+        ],
+        "Complexity": [
+          "Advanced"
+        ],
+        "HeatSpice": [
+          "Hot"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "OutdoorGrill"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Adds an Advanced, Hot-heat family archetype with new Korean and Latin American cuisines and 30\u201360 minute builds\u2014filling gaps not covered by the existing mild/no-heat, simple, and showstopper entries."
+    },
+    {
+      "uid": "arch_FAM_TR_NA_3060_MED",
+      "name": "Family Turkish & North African Suppers (Medium, 30\u201360, Intermediate)",
+      "description": "Balanced, aromatic family dinners featuring Turkish and North African favorites\u2014kofta/kebab-style patties, pilafs, roasted veg, and simple tagine-inspired braises\u2014with medium warmth and approachable multi-component steps.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Turkish",
+          "NorthAfrican"
+        ],
+        "PrepTime": [
+          "30to60"
+        ],
+        "Complexity": [
+          "Intermediate"
+        ],
+        "HeatSpice": [
+          "Medium"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "Oven"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Adds a distinct medium-heat, 30\u201360 minute intermediate option centered on Turkish and North African cuisines not yet covered, complementing existing simple/no-heat and hot/advanced family archetypes without overlap."
+    },
+    {
+      "uid": "arch_FamLightJV_01",
+      "name": "Family Light & Fresh: Japanese and Vietnamese Weeknights",
+      "description": "Lean, veggie-forward family dinners inspired by Japanese and Vietnamese home cooking\u2014brothy soups, rice bowls, and quick stir-fries that stay light yet satisfying.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Japanese",
+          "Vietnamese"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "StoveTop"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "LowCalorie",
+          "HighFiber"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Adds a nutrition-focused, mild, 15\u201330 minute family archetype with Japanese/Vietnamese flavors\u2014expanding cuisine diversity while avoiding overlap with existing comfort, hands-off, and spicy sets."
+    },
+    {
+      "uid": "arch_FAMXHOT1530",
+      "name": "Family Extra-Hot Chili Night (Caribbean & Mexican, 15\u201330, Simple)",
+      "description": "Blazing, pepper-forward family dinners featuring Caribbean and Mexican favorites\u2014jerk-style grills, chile-laced tacos, and peppery rice-and-bean plates\u2014built fast with straightforward steps.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Caribbean",
+          "Mexican"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "ExtraHot"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "OutdoorGrill"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Adds an ExtraHot, quick-and-simple family option in undercovered Caribbean cuisine space without overlapping existing mild/medium/hot archetypes."
+    },
+    {
+      "uid": "arch_FAM_LS_FRAM_3060",
+      "name": "Family Low-Sodium American & French Comfort (30\u201360, Mild)",
+      "description": "Balanced, family-friendly American and French bistro-style dinners with mindful salt control\u2014roasts, braises, and hearty veg sides\u2014cooked from scratch in 30\u201360 minutes with mild flavors.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "American",
+          "French"
+        ],
+        "PrepTime": [
+          "30to60"
+        ],
+        "Complexity": [
+          "Intermediate"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "Oven"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "LowSodium"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Adds a unique low-sodium focus and introduces French cuisine for family diners without overlapping existing heat, equipment, or nutrition profiles."
+    },
+    {
+      "uid": "arch_FAM_RDY_U15",
+      "name": "Family Heat-and-Eat Weeknights (Under 15, No Heat)",
+      "description": "Ultra-fast family dinners built from ready-to-eat mains and sides with simple fresh add-ons, prioritizing zero chili heat for kid-friendly plates.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "American",
+          "Italian"
+        ],
+        "PrepTime": [
+          "Under15"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "NoHeat"
+        ],
+        "Equipment": [
+          "Microwave"
+        ],
+        "MealComponentPreference": [
+          "ReadyMealPreferred"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Fills the gap for a family-friendly, zero-heat, Under-15-minute archetype centered on ready meals (not yet covered by existing semi-prepared or longer hands-off options)."
+    },
+    {
+      "uid": "arch_FAM_LowCarb1530",
+      "name": "Family Low-Carb Weeknight Bowls & Wraps (15\u201330, Mild)",
+      "description": "Fast, family-friendly low-carb dinners built as bowls, lettuce wraps, and protein-plus-veg plates with mild seasoning for easy weeknights.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "American",
+          "Mexican",
+          "MiddleEastern"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "Oven"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "LowCarb"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Adds a mainstream, low-carb family option with mild heat and 15\u201330 min simplicity\u2014distinct from existing no-nutrition-focus and other health focuses\u2014covering a common dietary goal not yet represented."
+    },
+    {
+      "uid": "arch_FAM_HP_30to60_INT_Mild_v1",
+      "name": "Family High-Protein Dinners (30\u201360, Mild, Intermediate)",
+      "description": "Protein-forward family dinners that build balanced plates around lean meats, seafood, and plant proteins with mild seasoning in 30\u201360 minutes.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "PrepTime": [
+          "30to60"
+        ],
+        "Complexity": [
+          "Intermediate"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "Oven"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "HighProtein"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Introduces a clearly missing HighProtein family archetype with mild flavors and 30\u201360 minute intermediate builds, complementing existing weeknight, low-carb, and spicy options without overlapping their focus."
+    },
+    {
+      "uid": "arch_FamPressureExpress_01",
+      "name": "Family Pressure Cooker Express Dinners (15\u201330, Mild)",
+      "description": "Fast, family-friendly meals built in a pressure cooker/Instant Pot\u2014soups, stews, shredded proteins, and pasta dishes with mild seasoning and balanced flavors.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "American",
+          "Italian"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Intermediate"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "SlowOrPressureCooker"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "This fills the uncovered niche of quick (15\u201330 min) pressure-cooker family dinners\u2014distinct from existing slow-cooker hands-off and air-fryer sets\u2014broadly appealing with mild heat and mainstream American/Italian flavors."
+    },
+    {
+      "uid": "arch_FamQuickGrill_M15",
+      "name": "Family Quick Grill & Salad Nights (Mild, 15\u201330)",
+      "description": "Fast, family-friendly grill plates with mild seasoning\u2014quickly seared proteins and veg on the braai paired with simple salads and starch sides for a balanced weeknight dinner.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "SouthAfrican",
+          "American",
+          "Greek"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "OutdoorGrill",
+          "StoveTop"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Adds a missing fast, mild OutdoorGrill-focused weeknight option for families\u2014complementing existing hot/advanced grill feasts and non-grill weeknight sets without overlap."
+    },
+    {
+      "uid": "arch_FAM_Keto_1530_Mild_Simple",
+      "name": "Family Keto Weeknight Plates (Mild, 15\u201330, Simple)",
+      "description": "Fast, keto-friendly family dinners built around lean proteins, leafy or cruciferous veg, and rich but simple sauces\u2014no grains, sugars, or starchy sides\u2014using approachable Greek, Middle Eastern, and American flavors.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Greek",
+          "MiddleEastern",
+          "American"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "Oven"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "Keto",
+          "LowCarb",
+          "HighProtein"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Adds a missing Family keto archetype with mild heat and 15\u201330 minute simplicity, complementing existing low-carb/high-protein sets and avoiding overlap with prior cuisines and formats."
+    },
+    {
+      "uid": "arch_FamLatComfort3060",
+      "name": "Family Latin Comfort (Mild, 30\u201360, Intermediate)",
+      "description": "Family-friendly Latin American and Mexican dinners with gentle seasoning\u2014rice-and-bean plates, enchilada or tortilla bakes, picadillo, and roast-chicken arroz with mild salsas and fresh toppings.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "LatinAmerican",
+          "Mexican"
+        ],
+        "PrepTime": [
+          "30to60"
+        ],
+        "Complexity": [
+          "Intermediate"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "Oven"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "This fills a clear gap by offering mild, intermediate 30\u201360 minute Latin American/Mexican family meals distinct from the existing extra-hot quick set and hot advanced feasts."
+    },
+    {
+      "uid": "arch_FAM_IND_SHOW_60",
+      "name": "Family Weekend Showstopper: Indian Feast Night",
+      "description": "Presentation-forward Indian family dinners\u2014layered biryanis, tandoori-style roasts, festival curries with chutneys and raita\u2014that reward slow, careful cooking for a memorable weekend spread.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Indian"
+        ],
+        "PrepTime": [
+          "60Plus"
+        ],
+        "Complexity": [
+          "Showstopper"
+        ],
+        "HeatSpice": [
+          "Medium"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "Oven"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Adds a non-Western weekend showstopper with medium heat and long build time\u2014coverage not met by the existing Spanish/Portuguese-only showstopper\u2014while staying Family + None scope."
+    },
+    {
+      "uid": "arch_FamMedLowFat1530",
+      "name": "Family Low-Fat Mediterranean Light Plates (15\u201330, Mild)",
+      "description": "Lean, veggie-forward Greek/Turkish/Middle Eastern family dinners\u2014grilled or oven-finished lean proteins, herby salads, and brothy legumes with restrained oil and bright citrus.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Greek",
+          "Turkish",
+          "MiddleEastern"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "Oven"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "LowFat",
+          "HighFiber"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Introduces a quick, simple, mild, Mediterranean-family archetype with a distinct LowFat focus not yet covered, complementing existing Greek/Middle Eastern entries that are hands-off/no-heat or keto-oriented."
+    },
+    {
+      "uid": "arch_SA_BraaiPotjie_Adv60",
+      "name": "Family Weekend Advanced: South African Braai & Potjie",
+      "description": "Presentation-worthy South African family feasts built around braai platters and slow potjie or oven bakes with classic sides\u2014hands-on technique, medium heat, and >60-minute cook times.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "SouthAfrican"
+        ],
+        "PrepTime": [
+          "60Plus"
+        ],
+        "Complexity": [
+          "Advanced"
+        ],
+        "HeatSpice": [
+          "Medium"
+        ],
+        "Equipment": [
+          "OutdoorGrill",
+          "Oven"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Fills a clear gap for a South African weekend project in the Advanced, 60+ minute, grill-forward space\u2014distinct from existing simple grill nights and other regional showstoppers."
+    }
+  ],
+  "tags_version": "2025.02.1",
+  "predefined_scope": {
+    "dietary_restrictions": [
+      "None"
+    ],
+    "audience": [
+      "Family"
+    ]
+  }
+}

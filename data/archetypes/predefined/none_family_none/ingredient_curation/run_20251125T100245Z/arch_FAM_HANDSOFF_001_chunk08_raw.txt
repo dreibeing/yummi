@@ -1,0 +1,27 @@
+{
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "selected_ingredients": [
+    "tomato",
+    "tomato paste",
+    "tomatoes",
+    "tomato puree",
+    "tomato sauce",
+    "tzatziki",
+    "yoghurt",
+    "yoghurt dressing",
+    "za'atar",
+    "zucchini",
+    "whole chicken",
+    "turkey",
+    "tuna",
+    "vegetable stock",
+    "vegetables",
+    "bulgur and lentil salad",
+    "basmati rice with quinoa",
+    "tortilla wraps",
+    "vinegar",
+    "water",
+    "white pepper",
+    "turmeric powder"
+  ]
+}

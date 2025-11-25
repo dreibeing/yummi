@@ -1,0 +1,45 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_FAM_TR_NA_3060_MED",
+      "name": "Family Turkish & North African Suppers (Medium, 30–60, Intermediate)",
+      "description": "Balanced, aromatic family dinners featuring Turkish and North African favorites—kofta/kebab-style patties, pilafs, roasted veg, and simple tagine-inspired braises—with medium warmth and approachable multi-component steps.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Turkish",
+          "NorthAfrican"
+        ],
+        "PrepTime": [
+          "30to60"
+        ],
+        "Complexity": [
+          "Intermediate"
+        ],
+        "HeatSpice": [
+          "Medium"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "Oven"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Adds a distinct medium-heat, 30–60 minute intermediate option centered on Turkish and North African cuisines not yet covered, complementing existing simple/no-heat and hot/advanced family archetypes without overlap."
+    }
+  ]
+}

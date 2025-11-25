@@ -1,0 +1,21 @@
+{
+  "archetype_uid": "arch_FamLightJV_01",
+  "selected_ingredients": [
+    "grapeseed oil",
+    "green beans",
+    "haddock",
+    "hake fillets",
+    "mackerel",
+    "hoisin sauce",
+    "honey",
+    "jasmine rice",
+    "lemongrass",
+    "lemongrass paste",
+    "leek",
+    "leeks",
+    "lettuce",
+    "lemon",
+    "lime",
+    "herbs"
+  ]
+}

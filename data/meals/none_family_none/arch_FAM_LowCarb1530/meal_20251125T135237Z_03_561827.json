@@ -1,0 +1,229 @@
+{
+  "meal_id": "meal_20251125T135237Z_03_561827",
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "archetype_name": "Family Low-Carb Weeknight Bowls & Wraps (15–30, Mild)",
+  "name": "Mild Turkey Fajita Cauliflower Rice Bowls",
+  "description": "Skillet-cooked turkey with peppers and onions over warm cauliflower rice, topped with avocado and mild salsa for a low-carb, family-friendly bowl.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Slice onions into thin strips.",
+    "Slice peppers into thin strips.",
+    "Halve lime.",
+    "Cut avocado into cubes.",
+    "Open cauliflower rice package."
+  ],
+  "cook_steps": [
+    "Heat olive oil in a large skillet over medium-high heat.",
+    "Add turkey, season with salt, black pepper, ground cumin, and paprika; cook 4–5 minutes, breaking up until no longer pink.",
+    "Add sliced onions and peppers to the skillet; cook 4–5 minutes until tender-crisp.",
+    "While the turkey and veg finish, warm cauliflower rice per pack directions in the microwave (or sauté in a second pan with a little olive oil for 3–4 minutes).",
+    "Build bowls: divide cauliflower rice, top with turkey-pepper mixture, avocado, and salsa.",
+    "Squeeze lime over bowls and serve."
+  ],
+  "instructions": [
+    "Slice onions into thin strips.",
+    "Slice peppers into thin strips.",
+    "Halve lime.",
+    "Cut avocado into cubes.",
+    "Open cauliflower rice package.",
+    "Heat olive oil in a large skillet over medium-high heat.",
+    "Add turkey, season with salt, black pepper, ground cumin, and paprika; cook 4–5 minutes, breaking up until no longer pink.",
+    "Add sliced onions and peppers to the skillet; cook 4–5 minutes until tender-crisp.",
+    "While the turkey and veg finish, warm cauliflower rice per pack directions in the microwave (or sauté in a second pan with a little olive oil for 3–4 minutes).",
+    "Build bowls: divide cauliflower rice, top with turkey-pepper mixture, avocado, and salsa.",
+    "Squeeze lime over bowls and serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "1 lb (450 g)",
+      "preparation": "crumbled"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, or to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "24 oz (680 g)",
+      "preparation": "heated"
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1–2",
+      "preparation": "cubed"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup",
+      "preparation": "mild"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "1 lb (450 g)",
+      "preparation": "crumbled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, or to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "24 oz (680 g)",
+      "preparation": "heated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1–2",
+      "preparation": "cubed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup",
+      "preparation": "mild",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T135437Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T135237Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

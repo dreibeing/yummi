@@ -1,0 +1,246 @@
+SYSTEM:
+You are Yummi's ingredient sourcing strategist. For each request you receive a single archetype plus the canonical
+ingredient catalog. Your job is to identify the ingredients that align with that archetype's culinary profile,
+using only the context supplied in the conversation. Always ground your decisions in the archetype description
+and tags provided later; do not assume any other defaults. When uncertain, err on the side of keeping plausible
+fits, but filter clear mismatches.
+
+Return strict JSON with this structure:
+{
+  "archetype_uid": "arch_XXXX",
+  "selected_ingredients": [
+    "Ingredient A",
+    "Ingredient B"
+  ]
+}
+
+Rules:
+- Return only the JSON object above; no extra commentary.
+- Names must match the catalog exactly (case and spelling).
+- Avoid beverages, household items, or duplicative variants that the archetype would reasonably skip.
+- Ensure the list spans pantry staples, proteins, starches, produce, and sauces that fit the archetype’s cuisines.
+- Do not invent ingredients that are not in the catalog.
+
+USER:
+Archetype UID: arch_FamPressureExpress_01
+Archetype Name: Family Pressure Cooker Express Dinners (15–30, Mild)
+Archetype Description:
+Fast, family-friendly meals built in a pressure cooker/Instant Pot—soups, stews, shredded proteins, and pasta dishes with mild seasoning and balanced flavors.
+
+Core Tags:
+- Allergens: None
+- Audience: Family
+- Complexity: Intermediate
+- Cuisine: American, Italian
+- DietaryRestrictions: None
+- Equipment: SlowOrPressureCooker
+- HeatSpice: Mild
+- MealComponentPreference: FromScratch
+- NutritionFocus: NoNutritionFocus
+- PrepTime: 15to30
+
+Ingredient catalog chunk 4/10 (format: item_type — core_item_name).
+For each entry, answer a single question: would this archetype reasonably use this ingredient when cooking?
+If yes (even occasionally), include the ingredient name in `selected_ingredients`. If the ingredient is clearly unsuitable, exclude it.
+- ingredient — grana padano
+- ingredient — granadilla
+- ingredient — granola
+- ingredient — grape jelly powder
+- ingredient — grapefruit
+- ingredient — grapefruit drink
+- ingredient — grapefruit sparkling drink
+- ingredient — grapes
+- ingredient — grapeseed oil
+- ingredient — gravy
+- ingredient — gravy powder
+- ingredient — greek dressing
+- ingredient — green beans
+- ingredient — green chicken curry
+- ingredient — green curry paste
+- ingredient — green tea
+- ingredient — grenache
+- ingredient — grenache rosé
+- ingredient — ground beef
+- ingredient — ground coffee
+- ingredient — ground cumin
+- ingredient — ground meat
+- ingredient — growing up formula
+- ingredient — gruyere cheese
+- ingredient — guacamole
+- ingredient — guacamole seasoning
+- ingredient — guava
+- ingredient — guava and banana
+- ingredient — guava yoghurt
+- ingredient — habanero chillies
+- ingredient — habanero peppers
+- ingredient — habanero sauce
+- ingredient — haddock
+- ingredient — hake
+- ingredient — hake fillets
+- ingredient — halloumi
+- ingredient — halloumi cheese
+- ingredient — haloumi
+- ingredient — haloumi cheese
+- ingredient — haloumi stuffed chicken skewers
+- ingredient — ham
+- ingredient — hamburger buns
+- ingredient — hamburger rolls
+- ingredient — hard cheese
+- ingredient — harissa
+- ingredient — harissa and olive sauce
+- ingredient — harissa paste
+- ingredient — harissa sauce
+- ingredient — havarti cheese
+- ingredient — hazelnut cappuccino sachets
+- ingredient — hazelnut chocolate spread
+- ingredient — hazelnut spread
+- ingredient — hazelnut syrup
+- ingredient — hazelnut wafer
+- ingredient — hemp seeds
+- ingredient — herbal tea
+- ingredient — herbs
+- ingredient — herring
+- ingredient — hibiscus
+- ingredient — hoisin sauce
+- ingredient — honey
+- ingredient — honey drizzle
+- ingredient — honey mustard
+- ingredient — honey mustard dressing
+- ingredient — honeycomb
+- ingredient — horseradish
+- ingredient — hot and sour paste
+- ingredient — hot cross buns
+- ingredient — hot dog
+- ingredient — hot dog buns
+- ingredient — hot dog rolls
+- ingredient — hot sauce
+- ingredient — hummus
+- ingredient — ice
+- ingredient — ice cream
+- ingredient — ice cream cone
+- ingredient — ice lolly
+- ingredient — iced tea
+- ingredient — icing mix
+- ingredient — icing sugar
+- ingredient — infant cereal
+- ingredient — infant formula
+- ingredient — instant cappuccino
+- ingredient — instant cappuccino mix
+- ingredient — instant coffee
+- ingredient — instant latte mix
+- ingredient — instant noodles
+- ingredient — instant oats
+- ingredient — italian herbs
+- ingredient — italian rub
+- ingredient — italian seasoning
+- ingredient — jalapeno chutney
+- ingredient — jalapeno peppers
+- ingredient — jalapeno popper corn snack
+- ingredient — jalapeno sauce
+- ingredient — jalapenos
+- ingredient — jalapeño
+- ingredient — jalapeño peppers
+- ingredient — jalapeño sauce
+- ingredient — jalapeños
+- ingredient — jalfrezi sauce
+- ingredient — jam
+- ingredient — jasmine rice
+- ingredient — jelly
+- ingredient — jelly cup
+- ingredient — jelly cups
+- ingredient — jelly custard
+- ingredient — juniper berries
+- ingredient — jus
+- ingredient — kale
+- ingredient — kassler chops
+- ingredient — kefir
+- ingredient — ketchup
+- ingredient — kidney beans
+- ingredient — kingklip
+- ingredient — kipper
+- ingredient — kiwi
+- ingredient — koeksisters
+- ingredient — kombucha
+- ingredient — korean barbecue sauce
+- ingredient — korma paste
+- ingredient — korma sauce
+- ingredient — korma spice blend
+- ingredient — laksa
+- ingredient — lamb
+- ingredient — lamb boerewors
+- ingredient — lamb bones
+- ingredient — lamb burger
+- ingredient — lamb chop
+- ingredient — lamb chops
+- ingredient — lamb curry
+- ingredient — lamb kebabs
+- ingredient — lamb kidneys
+- ingredient — lamb leg chops
+- ingredient — lamb liver
+- ingredient — lamb loin chop
+- ingredient — lamb meatballs
+- ingredient — lamb mince
+- ingredient — lamb neck
+- ingredient — lamb rib chops
+- ingredient — lamb riblets
+- ingredient — lamb ribs
+- ingredient — lamb rub
+- ingredient — lamb samosa
+- ingredient — lamb samosas
+- ingredient — lamb sausage
+- ingredient — lamb shank
+- ingredient — lamb shanks
+- ingredient — lamb skilpadjies
+- ingredient — lamb sosatie kebabs
+- ingredient — lamb tail
+- ingredient — lamb tails
+- ingredient — lamb tripe
+- ingredient — lancashire cheese
+- ingredient — lasagna sheets
+- ingredient — lasagne
+- ingredient — lasagne pasta sheets
+- ingredient — lasagne sheets
+- ingredient — lassi
+- ingredient — latte mix
+- ingredient — leek
+- ingredient — leeks
+- ingredient — leg of lamb
+- ingredient — legumes
+- ingredient — lemon
+- ingredient — lemon and bitters drink
+- ingredient — lemon curd
+- ingredient — lemon olive oil
+- ingredient — lemon sauce
+- ingredient — lemon sparkling water
+- ingredient — lemongrass
+- ingredient — lemongrass paste
+- ingredient — lentil
+- ingredient — lentil curry
+- ingredient — lentils
+- ingredient — lettuce
+- ingredient — lighter
+- ingredient — lime
+- ingredient — lime and mint drink
+- ingredient — lime and mint sparkling drink
+- ingredient — linguine
+- ingredient — lion's mane mushrooms
+- ingredient — liver
+- ingredient — liver spread
+- ingredient — lotion
+- ingredient — lychee
+- ingredient — lychee drink
+- ingredient — lychees
+- ingredient — maas
+- ingredient — maasdam cheese
+- ingredient — macadamia oil
+- ingredient — macadamia oil spread
+- ingredient — macaroni
+- ingredient — macaroni and cheese
+- ingredient — macaroni cheese
+- ingredient — macaroni cheese with bacon
+- ingredient — mackerel
+- ingredient — maize meal
+- ingredient — maize snack
+- ingredient — malt crunch
+
+Return strict JSON only; do not include extra commentary.

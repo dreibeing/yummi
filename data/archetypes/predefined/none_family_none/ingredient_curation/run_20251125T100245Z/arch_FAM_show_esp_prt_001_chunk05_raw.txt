@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "selected_ingredients": [
+    "manchego cheese",
+    "mussels",
+    "minced meat",
+    "meatballs",
+    "olive oil",
+    "olives",
+    "paella seasoning",
+    "paprika",
+    "passata",
+    "orzo",
+    "pasta",
+    "onions",
+    "parsley",
+    "oregano",
+    "padron peppers",
+    "mixed vegetables",
+    "mixed herbs",
+    "mustard",
+    "milk",
+    "nuts"
+  ]
+}

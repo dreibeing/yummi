@@ -1,0 +1,246 @@
+SYSTEM:
+You are Yummi's ingredient sourcing strategist. For each request you receive a single archetype plus the canonical
+ingredient catalog. Your job is to identify the ingredients that align with that archetype's culinary profile,
+using only the context supplied in the conversation. Always ground your decisions in the archetype description
+and tags provided later; do not assume any other defaults. When uncertain, err on the side of keeping plausible
+fits, but filter clear mismatches.
+
+Return strict JSON with this structure:
+{
+  "archetype_uid": "arch_XXXX",
+  "selected_ingredients": [
+    "Ingredient A",
+    "Ingredient B"
+  ]
+}
+
+Rules:
+- Return only the JSON object above; no extra commentary.
+- Names must match the catalog exactly (case and spelling).
+- Avoid beverages, household items, or duplicative variants that the archetype would reasonably skip.
+- Ensure the list spans pantry staples, proteins, starches, produce, and sauces that fit the archetype’s cuisines.
+- Do not invent ingredients that are not in the catalog.
+
+USER:
+Archetype UID: arch_FAM_MED_ASIA_01
+Archetype Name: Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)
+Archetype Description:
+Stovetop family dinners inspired by Indian, Thai, and Chinese flavors—balanced medium heat curries and stir-fries built in 15–30 minutes with a few coordinated components.
+
+Core Tags:
+- Allergens: None
+- Audience: Family
+- Complexity: Intermediate
+- Cuisine: Indian, Thai, Chinese
+- DietaryRestrictions: None
+- Equipment: StoveTop
+- HeatSpice: Medium
+- MealComponentPreference: FromScratch
+- NutritionFocus: NoNutritionFocus
+- PrepTime: 15to30
+
+Ingredient catalog chunk 8/10 (format: item_type — core_item_name).
+For each entry, answer a single question: would this archetype reasonably use this ingredient when cooking?
+If yes (even occasionally), include the ingredient name in `selected_ingredients`. If the ingredient is clearly unsuitable, exclude it.
+- ingredient — tom yum paste
+- ingredient — tom yum soup
+- ingredient — tomato
+- ingredient — tomato and onion mix
+- ingredient — tomato chutney
+- ingredient — tomato passata with basil
+- ingredient — tomato pasta sauce
+- ingredient — tomato paste
+- ingredient — tomato preserve
+- ingredient — tomato puree
+- ingredient — tomato sauce
+- ingredient — tomato soup
+- ingredient — tomatoes
+- ingredient — toothbrush
+- ingredient — toothpicks
+- ingredient — tortelloni
+- ingredient — tortilla
+- ingredient — tortilla wraps
+- ingredient — tortillas
+- ingredient — towel
+- ingredient — trifle
+- ingredient — trinchado sauce
+- ingredient — tripe
+- ingredient — tropical fruit
+- ingredient — trout
+- ingredient — trout burger
+- ingredient — trout sausage
+- ingredient — tumbler
+- ingredient — tuna
+- ingredient — tuna biltong
+- ingredient — tuna pasta
+- ingredient — tuna penne
+- ingredient — tuna steak
+- ingredient — turkey
+- ingredient — turkey pastrami
+- ingredient — turmeric
+- ingredient — turmeric powder
+- ingredient — tzatziki
+- ingredient — tzatziki seasoning
+- ingredient — udon noodles
+- ingredient — vanilla drinking yoghurt
+- ingredient — vanilla extract
+- ingredient — vanilla matcha latte mix
+- ingredient — vanilla paste
+- ingredient — vanilla wafers
+- ingredient — vegan cheddar
+- ingredient — vegan cheddar cheese slices
+- ingredient — vegan cheddar slices
+- ingredient — vegan cheese
+- ingredient — vegan cheese slices
+- ingredient — vegan cheese spread
+- ingredient — vegetable
+- ingredient — vegetable and lentil sauce
+- ingredient — vegetable stock
+- ingredient — vegetables
+- ingredient — venison
+- ingredient — venison biltong
+- ingredient — venison burgers
+- ingredient — venison droewors
+- ingredient — venison frikkadels
+- ingredient — venison mince
+- ingredient — venison sausage
+- ingredient — vetkoek
+- ingredient — vetkoek mix
+- ingredient — vienna sausage
+- ingredient — vinaigrette
+- ingredient — vindaloo sauce
+- ingredient — vindaloo spice blend
+- ingredient — vinegar
+- ingredient — wafer rolls
+- ingredient — wagyu beef sirloin steak
+- ingredient — wasabi
+- ingredient — wasabi paste
+- ingredient — water
+- ingredient — water bottle
+- ingredient — watercress
+- ingredient — watermelon
+- ingredient — wensleydale cheese
+- ingredient — wheatgrass
+- ingredient — whey powder
+- ingredient — whipping cream
+- ingredient — white pepper
+- ingredient — white sauce
+- ingredient — white wine
+- ingredient — whole chicken
+- ingredient — wine
+- ingredient — worcestershire sauce
+- ingredient — wrap
+- ingredient — wraps
+- ingredient — xylitol
+- ingredient — yeast
+- ingredient — yeast extract
+- ingredient — yellow curry paste
+- ingredient — yoghurt
+- ingredient — yoghurt dipped crunchies
+- ingredient — yoghurt dressing
+- ingredient — yoghurt with granola
+- ingredient — yogurt
+- ingredient — za'atar
+- ingredient — zaatar
+- ingredient — zhough paste
+- ingredient — zucchini
+- ready_meal — 7 grain medley
+- ready_meal — Korean style chicken wings with rice
+- ready_meal — Korean-style meatballs with noodles
+- ready_meal — Thai red curry soup
+- ready_meal — angelfish goujons
+- ready_meal — antipasto
+- ready_meal — assorted party platter
+- ready_meal — banana muffin
+- ready_meal — bao buns
+- ready_meal — basmati rice with quinoa
+- ready_meal — bbq chicken bacon pasta
+- ready_meal — bbq chicken pasta
+- ready_meal — bbq chicken pizza
+- ready_meal — bbq chicken sliders
+- ready_meal — bean salad
+- ready_meal — beef and lentil soup
+- ready_meal — beef bean tomato and basil meal cubes
+- ready_meal — beef borek
+- ready_meal — beef bredie
+- ready_meal — beef chow mein
+- ready_meal — beef curry with rice
+- ready_meal — beef lasagne
+- ready_meal — beef lasagne ready meal
+- ready_meal — beef lentil soup
+- ready_meal — beef mince curry
+- ready_meal — beef mince curry rice
+- ready_meal — beef pie
+- ready_meal — beef roti
+- ready_meal — beef samosa
+- ready_meal — beef samosas
+- ready_meal — beef short rib casserole
+- ready_meal — beef sliders
+- ready_meal — beef soup
+- ready_meal — beef steak pie
+- ready_meal — beef stew
+- ready_meal — beef vegetable soup
+- ready_meal — beetroot
+- ready_meal — beetroot salad
+- ready_meal — bobotie
+- ready_meal — borek
+- ready_meal — braaibroodjie
+- ready_meal — broccoli cauliflower gratin
+- ready_meal — broccoli soup
+- ready_meal — brown basmati rice with red and white quinoa
+- ready_meal — bulgur and lentil salad
+- ready_meal — bulgur lentil salad
+- ready_meal — bulgur quinoa lentil mix
+- ready_meal — bulgur salad
+- ready_meal — bulgur wheat lentil salad
+- ready_meal — bulgur wheat salad
+- ready_meal — burrito
+- ready_meal — burritos
+- ready_meal — butter chicken
+- ready_meal — butter chicken curry
+- ready_meal — butter chicken pie
+- ready_meal — butternut and sage risotto
+- ready_meal — butternut beetroot salad
+- ready_meal — butternut chickpea curry
+- ready_meal — butternut soup
+- ready_meal — butternut squash risotto
+- ready_meal — cacio e pepe
+- ready_meal — cannelloni
+- ready_meal — caramel swiss roll
+- ready_meal — carrot quinoa wrap
+- ready_meal — cauliflower
+- ready_meal — cauliflower gnocchi
+- ready_meal — cauliflower rice
+- ready_meal — cauliflower soup
+- ready_meal — cheese puffs
+- ready_meal — cheesecake
+- ready_meal — cheesy chicken
+- ready_meal — chicken
+- ready_meal — chicken a la king with rice
+- ready_meal — chicken a la king with rice ready meal
+- ready_meal — chicken and vegetables
+- ready_meal — chicken biryani
+- ready_meal — chicken biryani ready meal
+- ready_meal — chicken booster bowl
+- ready_meal — chicken breast
+- ready_meal — chicken breast fillets
+- ready_meal — chicken breast strips
+- ready_meal — chicken broccoli bake
+- ready_meal — chicken burrito bake
+- ready_meal — chicken caesar pasta salad
+- ready_meal — chicken coriander and lime
+- ready_meal — chicken coriander and lime booster bowl
+- ready_meal — chicken couscous salad
+- ready_meal — chicken fried rice
+- ready_meal — chicken korma
+- ready_meal — chicken lasagne
+- ready_meal — chicken leek pie
+- ready_meal — chicken lentil meal
+- ready_meal — chicken meatballs
+- ready_meal — chicken mushroom pie
+- ready_meal — chicken nachos
+- ready_meal — chicken noodle
+- ready_meal — chicken noodle soup
+- ready_meal — chicken nuggets
+
+Return strict JSON only; do not include extra commentary.

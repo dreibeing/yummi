@@ -1,4 +1,0 @@
-{
-  "archetype_uid": "arch_FamMedOvenBakes_001",
-  "selected_ingredients": []
-}

@@ -1,0 +1,33 @@
+{
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "selected_ingredients": [
+    "7-grain medley",
+    "almonds",
+    "apple",
+    "apple cider vinegar",
+    "apple sauce",
+    "artichokes",
+    "asparagus",
+    "baby carrots",
+    "baking powder",
+    "balsamic vinegar",
+    "bay leaves",
+    "baguette",
+    "basil",
+    "barley",
+    "basmati rice",
+    "bechamel sauce",
+    "beans",
+    "beef",
+    "beef brisket",
+    "beef short ribs",
+    "beef stew meat",
+    "beef stock",
+    "bread",
+    "brioche",
+    "brie",
+    "broccoli",
+    "bell peppers",
+    "black pepper"
+  ]
+}

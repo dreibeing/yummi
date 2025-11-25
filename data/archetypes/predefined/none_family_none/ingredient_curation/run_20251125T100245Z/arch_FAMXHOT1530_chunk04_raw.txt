@@ -1,0 +1,26 @@
+{
+  "archetype_uid": "arch_FAMXHOT1530",
+  "selected_ingredients": [
+    "grapeseed oil",
+    "ground beef",
+    "ground cumin",
+    "guacamole",
+    "guacamole seasoning",
+    "guava",
+    "habanero chillies",
+    "habanero peppers",
+    "habanero sauce",
+    "jalapenos",
+    "jasmine rice",
+    "kidney beans",
+    "lime",
+    "lettuce",
+    "green beans",
+    "hot sauce",
+    "haddock",
+    "hake",
+    "honey",
+    "ketchup",
+    "maize meal"
+  ]
+}

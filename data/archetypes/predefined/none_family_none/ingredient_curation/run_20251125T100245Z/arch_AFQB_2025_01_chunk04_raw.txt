@@ -1,0 +1,27 @@
+{
+  "archetype_uid": "arch_AFQB_2025_01",
+  "selected_ingredients": [
+    "grapeseed oil",
+    "green beans",
+    "ground beef",
+    "ground cumin",
+    "guacamole",
+    "guacamole seasoning",
+    "hake fillets",
+    "halloumi cheese",
+    "ham",
+    "hamburger buns",
+    "honey",
+    "honey mustard",
+    "hummus",
+    "italian seasoning",
+    "jalapeno peppers",
+    "ketchup",
+    "kidney beans",
+    "lemon",
+    "lettuce",
+    "macaroni and cheese",
+    "macaroni",
+    "grapes"
+  ]
+}

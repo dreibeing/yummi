@@ -79,7 +79,7 @@ We operate a production-ready pipeline that prepares product data, enriches bask
 4. Chargebacks/refunds mirror ledger entries and enforce negative-balance lockouts (see [Chargebacks.txt](Chargebacks.txt)).
 
 ### Archetype data pipeline status (2025-11-12)
-- **Vocabulary + briefs**: `data/tags/defined_tags.json` (tags_version `2025.02.0`) and `data/tags/archetype_constraint_brief.md` now encode the mainstream-first coverage rules. `data/prompts/archetype_generation_prompt.md` and `scripts/archetype_prompt_runner.py` wire those rules into GPT-5 calls, including compact “prior archetype” context to avoid duplicates.
+- **Vocabulary + briefs**: `data/tags/defined_tags.json` (tags_version `2025.02.1`) and `data/tags/archetype_constraint_brief.md` now encode the mainstream-first coverage rules. `data/prompts/archetype_generation_prompt.md` and `scripts/archetype_prompt_runner.py` wire those rules into GPT-5 calls, including compact “prior archetype” context to avoid duplicates.
 - **Latest run**: `data/archetypes/run_20251112T091259Z` (25 archetypes, one per batch, reasoning effort = low). Each batch folder contains raw prompts/responses plus `archetypes_so_far.json` snapshots and `run_metadata.json`.
 - **Run artifacts**: `scripts/archetype_prompt_runner.py` writes aggregated payloads per scope (`run_*/archetypes_aggregated.json`). Run `python scripts/predefined_archetype_aggregator.py` to collapse every scope’s runs into `<predefined>/archetypes_combined.json` before meal generation.
 - **Curator status**: `scripts/archetype_curator.py` is retained for historical reference but is no longer part of the default pipeline.

@@ -1,0 +1,18 @@
+{
+  "archetype_uid": "arch_FamLightJV_01",
+  "selected_ingredients": [
+    "spring roll",
+    "spring rolls",
+    "sushi",
+    "tempura prawns",
+    "trout",
+    "whiting portions",
+    "wontons",
+    "sticky rice salad",
+    "vegetable soup",
+    "vegetable and lentil meal",
+    "tomato salad",
+    "sweet potato salad",
+    "sriracha miso bowl"
+  ]
+}

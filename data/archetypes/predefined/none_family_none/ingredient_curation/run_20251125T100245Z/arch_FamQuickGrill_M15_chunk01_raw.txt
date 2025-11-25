@@ -1,0 +1,32 @@
+{
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "selected_ingredients": [
+    "BBQ sauce",
+    "barbecue sauce",
+    "bbq marinade",
+    "barbecue rub",
+    "braai spice mix",
+    "braai",
+    "T-bone steak",
+    "beef burgers",
+    "beef sausages",
+    "beef skewers",
+    "boerewors",
+    "bacon",
+    "baked beans",
+    "bread rolls",
+    "baguette",
+    "basmati rice",
+    "baby carrots",
+    "bell peppers",
+    "arugula",
+    "avocado",
+    "Gouda cheese",
+    "babybel cheese",
+    "aioli",
+    "balsamic vinaigrette",
+    "apple cider vinegar",
+    "black pepper",
+    "basil"
+  ]
+}

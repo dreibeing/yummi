@@ -1,0 +1,44 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_FAM_IND_SHOW_60",
+      "name": "Family Weekend Showstopper: Indian Feast Night",
+      "description": "Presentation-forward Indian family dinners—layered biryanis, tandoori-style roasts, festival curries with chutneys and raita—that reward slow, careful cooking for a memorable weekend spread.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Indian"
+        ],
+        "PrepTime": [
+          "60Plus"
+        ],
+        "Complexity": [
+          "Showstopper"
+        ],
+        "HeatSpice": [
+          "Medium"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "Oven"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Adds a non-Western weekend showstopper with medium heat and long build time—coverage not met by the existing Spanish/Portuguese-only showstopper—while staying Family + None scope."
+    }
+  ]
+}

@@ -11,13 +11,13 @@ from app.services.preferences import load_tag_manifest
 class DummyProfile:
     selected_tags: dict
     disliked_tags: dict
-    tags_version: str = "2025.02.0"
+    tags_version: str = "2025.02.1"
 
 
 def _build_manifest() -> dict:
     return {
         "manifest_id": "test_manifest",
-        "tags_version": "2025.02.0",
+        "tags_version": "2025.02.1",
         "archetypes": [
             {
                 "uid": "arch_a",

@@ -1,0 +1,29 @@
+{
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "selected_ingredients": [
+    "tomato",
+    "tomatoes",
+    "tomato paste",
+    "tomato puree",
+    "tomato sauce",
+    "tzatziki",
+    "yoghurt",
+    "za'atar",
+    "zucchini",
+    "watercress",
+    "watermelon",
+    "vegetables",
+    "vegetable stock",
+    "vinaigrette",
+    "vinegar",
+    "white pepper",
+    "turmeric powder",
+    "tuna",
+    "turkey",
+    "trout",
+    "basmati rice with quinoa",
+    "bulgur and lentil salad",
+    "bean salad",
+    "chicken breast fillets"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "selected_ingredients": [
+    "aioli",
+    "allspice",
+    "almond",
+    "almond butter",
+    "almonds",
+    "apple cider vinegar",
+    "artichoke",
+    "arugula",
+    "asparagus",
+    "avocado",
+    "avocado oil",
+    "bacon",
+    "basil",
+    "bay leaves",
+    "black pepper",
+    "black peppercorns",
+    "bone broth",
+    "brie",
+    "broccoli",
+    "Gouda cheese",
+    "T-bone steak",
+    "beef mince",
+    "beef sirloin steaks",
+    "beef stock",
+    "beef burger"
+  ]
+}

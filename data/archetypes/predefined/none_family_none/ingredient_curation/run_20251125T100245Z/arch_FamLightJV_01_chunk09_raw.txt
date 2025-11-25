@@ -1,0 +1,26 @@
+{
+  "archetype_uid": "arch_FamLightJV_01",
+  "selected_ingredients": [
+    "edamame",
+    "edamame black rice salad",
+    "egg fried rice",
+    "instant noodles",
+    "noodles",
+    "rice",
+    "mixed vegetables",
+    "frozen vegetables",
+    "salad",
+    "prawns",
+    "prawn spring rolls",
+    "salmon",
+    "salmon sushi",
+    "poke bowl",
+    "chicken soup",
+    "chicken rice salad",
+    "chicken salad",
+    "fish cake",
+    "four-bean salad",
+    "chickpea cucumber salad",
+    "seafood mix"
+  ]
+}

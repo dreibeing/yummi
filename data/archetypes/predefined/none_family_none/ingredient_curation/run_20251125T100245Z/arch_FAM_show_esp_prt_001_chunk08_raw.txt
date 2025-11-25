@@ -1,0 +1,21 @@
+{
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "selected_ingredients": [
+    "tomato",
+    "tomato paste",
+    "tomato passata with basil",
+    "tomato sauce",
+    "tomatoes",
+    "white wine",
+    "vinegar",
+    "water",
+    "whole chicken",
+    "tuna",
+    "tuna steak",
+    "zucchini",
+    "vegetables",
+    "vegetable",
+    "worcestershire sauce",
+    "yeast"
+  ]
+}

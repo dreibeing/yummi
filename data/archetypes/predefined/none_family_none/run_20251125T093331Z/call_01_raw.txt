@@ -1,0 +1,46 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_FamWeeknightCore_15to30",
+      "name": "Family Weeknight Classics (Mild, 15–30 min)",
+      "description": "Balanced, crowd-pleasing dinners for a typical household that cook in 15–30 minutes with straightforward steps and gentle seasoning.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "SouthAfrican",
+          "American",
+          "Italian"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "Oven"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Establishes a mainstream, high-appeal baseline for typical families—fast, simple, mild, and familiar cuisines—forming the backbone before adding specialized diets or adventurous profiles."
+    }
+  ]
+}

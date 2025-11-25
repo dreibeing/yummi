@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "selected_ingredients": [
+    "minced beef",
+    "meatballs",
+    "mozzarella",
+    "manchego cheese",
+    "parmesan cheese",
+    "mayonnaise",
+    "mustard",
+    "olive oil",
+    "olives",
+    "onions",
+    "mixed greens",
+    "mushrooms",
+    "parsley",
+    "oregano",
+    "paprika",
+    "mixed herbs",
+    "mint",
+    "nutritional yeast",
+    "mixed nuts",
+    "passata"
+  ]
+}

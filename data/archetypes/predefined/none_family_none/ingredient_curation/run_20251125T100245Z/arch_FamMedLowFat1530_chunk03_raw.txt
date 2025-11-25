@@ -1,0 +1,24 @@
+{
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "selected_ingredients": [
+    "couscous",
+    "crushed tomatoes",
+    "diced tomatoes",
+    "garlic",
+    "coriander",
+    "coriander seeds",
+    "cumin",
+    "cumin seeds",
+    "dill",
+    "cucumber",
+    "courgette",
+    "eggplant",
+    "eggs",
+    "fish fillets",
+    "edamame",
+    "feta",
+    "fusilli",
+    "flour",
+    "dates"
+  ]
+}

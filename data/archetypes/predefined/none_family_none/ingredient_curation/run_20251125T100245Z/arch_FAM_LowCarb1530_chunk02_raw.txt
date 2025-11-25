@@ -1,0 +1,29 @@
+{
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "selected_ingredients": [
+    "broccoli and cauliflower florets",
+    "cauliflower",
+    "cauliflower wrap",
+    "butter",
+    "cabbage",
+    "brussels sprouts",
+    "carrot",
+    "carrots",
+    "cherry tomatoes",
+    "cheddar cheese",
+    "cheddar",
+    "chicken",
+    "chicken breast",
+    "chicken thighs",
+    "chicken mince",
+    "chicken strips",
+    "butterflied chicken",
+    "chicken kebabs",
+    "chicken stock",
+    "canola oil",
+    "caesar dressing",
+    "chives",
+    "buttermilk",
+    "chilli flakes"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "selected_ingredients": [
+    "trout",
+    "whiting portions",
+    "tempura prawns",
+    "tuna penne",
+    "tagliatelle alfredo",
+    "sweet potato chips",
+    "spinach",
+    "tomato salad",
+    "tomato soup"
+  ]
+}

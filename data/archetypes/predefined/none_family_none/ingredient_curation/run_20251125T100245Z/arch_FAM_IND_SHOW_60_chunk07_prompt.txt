@@ -1,0 +1,246 @@
+SYSTEM:
+You are Yummi's ingredient sourcing strategist. For each request you receive a single archetype plus the canonical
+ingredient catalog. Your job is to identify the ingredients that align with that archetype's culinary profile,
+using only the context supplied in the conversation. Always ground your decisions in the archetype description
+and tags provided later; do not assume any other defaults. When uncertain, err on the side of keeping plausible
+fits, but filter clear mismatches.
+
+Return strict JSON with this structure:
+{
+  "archetype_uid": "arch_XXXX",
+  "selected_ingredients": [
+    "Ingredient A",
+    "Ingredient B"
+  ]
+}
+
+Rules:
+- Return only the JSON object above; no extra commentary.
+- Names must match the catalog exactly (case and spelling).
+- Avoid beverages, household items, or duplicative variants that the archetype would reasonably skip.
+- Ensure the list spans pantry staples, proteins, starches, produce, and sauces that fit the archetype’s cuisines.
+- Do not invent ingredients that are not in the catalog.
+
+USER:
+Archetype UID: arch_FAM_IND_SHOW_60
+Archetype Name: Family Weekend Showstopper: Indian Feast Night
+Archetype Description:
+Presentation-forward Indian family dinners—layered biryanis, tandoori-style roasts, festival curries with chutneys and raita—that reward slow, careful cooking for a memorable weekend spread.
+
+Core Tags:
+- Allergens: None
+- Audience: Family
+- Complexity: Showstopper
+- Cuisine: Indian
+- DietaryRestrictions: None
+- Equipment: StoveTop, Oven
+- HeatSpice: Medium
+- MealComponentPreference: FromScratch
+- NutritionFocus: NoNutritionFocus
+- PrepTime: 60Plus
+
+Ingredient catalog chunk 7/10 (format: item_type — core_item_name).
+For each entry, answer a single question: would this archetype reasonably use this ingredient when cooking?
+If yes (even occasionally), include the ingredient name in `selected_ingredients`. If the ingredient is clearly unsuitable, exclude it.
+- ingredient — salad cream
+- ingredient — salad dressing
+- ingredient — salad greens
+- ingredient — salami
+- ingredient — salmon
+- ingredient — salsa
+- ingredient — salt
+- ingredient — salt and pepper
+- ingredient — salt and pepper seasoning
+- ingredient — samosa
+- ingredient — samosas
+- ingredient — samp
+- ingredient — samp and beans
+- ingredient — sandwich thins
+- ingredient — sangiovese
+- ingredient — sardines
+- ingredient — satay sauce
+- ingredient — sauce
+- ingredient — sauerkraut
+- ingredient — sausage
+- ingredient — sausages
+- ingredient — sauvignon blanc
+- ingredient — sauvignon blanc semillon
+- ingredient — savoury rice
+- ingredient — scone
+- ingredient — sea salt
+- ingredient — seafood paste
+- ingredient — seafood rub
+- ingredient — seasonal sweets
+- ingredient — seasoning
+- ingredient — seed bar
+- ingredient — seed loaf mix
+- ingredient — seed mix
+- ingredient — seeded rolls
+- ingredient — self-raising flour
+- ingredient — semolina
+- ingredient — serrano ham
+- ingredient — sesame oil
+- ingredient — sesame sauce
+- ingredient — sesame seeds
+- ingredient — sesame stir fry sauce
+- ingredient — sesame stir-fry sauce
+- ingredient — shakshuka
+- ingredient — shallots
+- ingredient — shampoo
+- ingredient — shawarma paste
+- ingredient — shiitake mushrooms
+- ingredient — shoots
+- ingredient — shortbread
+- ingredient — simit
+- ingredient — sirloin steak
+- ingredient — slaw
+- ingredient — smoked cheese
+- ingredient — smoked chicken
+- ingredient — smoked chicken breast
+- ingredient — smoked chicken sausage
+- ingredient — smoked chili flakes
+- ingredient — smoked chilli
+- ingredient — smoked chilli seasoning
+- ingredient — smoked gouda cheese
+- ingredient — smoked hake
+- ingredient — smoked mackerel
+- ingredient — smoked mackerel fillets
+- ingredient — smoked salmon
+- ingredient — smoked snoek pâté
+- ingredient — smoked trout
+- ingredient — smoked trout sausage
+- ingredient — snack bar
+- ingredient — snack bars
+- ingredient — snack mix
+- ingredient — snoek
+- ingredient — snoek pate
+- ingredient — snoek terrine
+- ingredient — snow peas
+- ingredient — soap
+- ingredient — soft cheese
+- ingredient — soft drink
+- ingredient — sorghum and quinoa mix
+- ingredient — soup
+- ingredient — sour cream
+- ingredient — sour cream dip
+- ingredient — sourdough bread
+- ingredient — sourdough rolls
+- ingredient — soy burger
+- ingredient — soy burger patty
+- ingredient — soy mince
+- ingredient — soy sauce
+- ingredient — soy yogurt
+- ingredient — spaghetti
+- ingredient — spaghetti bolognese
+- ingredient — spaghetti carbonara
+- ingredient — spanish rice
+- ingredient — sparkling drink
+- ingredient — sparkling fruit drink
+- ingredient — sparkling passion fruit and lemon drink
+- ingredient — sparkling passion fruit lemon drink
+- ingredient — sparkling water
+- ingredient — speck
+- ingredient — spelt fusilli
+- ingredient — spice
+- ingredient — spice blend
+- ingredient — spice mix
+- ingredient — spice rub
+- ingredient — spinach
+- ingredient — spinach and feta puff pastry
+- ingredient — spinach and ricotta sauce
+- ingredient — spinach ravioli
+- ingredient — spirit vinegar
+- ingredient — split peas
+- ingredient — spread
+- ingredient — spring onion
+- ingredient — spring rolls
+- ingredient — sprinkles
+- ingredient — sprouts
+- ingredient — squash
+- ingredient — squid
+- ingredient — sriracha
+- ingredient — sriracha mayo
+- ingredient — sriracha sauce
+- ingredient — star anise
+- ingredient — steak
+- ingredient — steak rub
+- ingredient — steak sauce
+- ingredient — steak seasoning
+- ingredient — steel cut oats
+- ingredient — stevia
+- ingredient — stick
+- ingredient — sticky rice
+- ingredient — stir fry mix
+- ingredient — stir fry vegetables
+- ingredient — stir-fry mix
+- ingredient — stir-fry vegetables
+- ingredient — strawberries
+- ingredient — strawberry
+- ingredient — strawberry ice lolly
+- ingredient — strawberry jam
+- ingredient — strawberry jelly cups
+- ingredient — strawberry jelly powder
+- ingredient — strawberry lassi
+- ingredient — strawberry milk
+- ingredient — strawberry rosé
+- ingredient — strawberry soy yogurt
+- ingredient — strawberry syrup
+- ingredient — strawberry yoghurt
+- ingredient — straws
+- ingredient — stroganoff sauce
+- ingredient — stuffed grape leaves
+- ingredient — stuffing
+- ingredient — sucralose
+- ingredient — sucralose tablets
+- ingredient — sugar
+- ingredient — sugar cone
+- ingredient — sugar cones
+- ingredient — sugar snap peas
+- ingredient — sugar substitute
+- ingredient — sumac
+- ingredient — sun-dried tomato
+- ingredient — sun-dried tomato pasta sauce
+- ingredient — sun-dried tomatoes
+- ingredient — sunflower oil
+- ingredient — sunflower seeds
+- ingredient — sunscreen
+- ingredient — sushi mat
+- ingredient — sweetener
+- ingredient — swiss roll
+- ingredient — syrup
+- ingredient — szechuan pepper oil
+- ingredient — taco shells
+- ingredient — tagliatelle
+- ingredient — tagliatelle pasta
+- ingredient — tahini
+- ingredient — tahini yoghurt
+- ingredient — tahini yogurt drizzle
+- ingredient — tamari
+- ingredient — tamari soy sauce
+- ingredient — tamarind chutney
+- ingredient — tapenade
+- ingredient — tapioca pudding
+- ingredient — tarragon
+- ingredient — tartar sauce
+- ingredient — tea
+- ingredient — tea bags
+- ingredient — tempeh
+- ingredient — tequila
+- ingredient — teriyaki sauce
+- ingredient — thickener
+- ingredient — thyme
+- ingredient — tikka masala sauce
+- ingredient — tikka paste
+- ingredient — tikka spice blend
+- ingredient — tilapia
+- ingredient — tiramisu
+- ingredient — toddler formula
+- ingredient — tofu
+- ingredient — tofu burger
+- ingredient — tofu sausage
+- ingredient — tofu tempeh kebabs
+- ingredient — tom kha soup
+- ingredient — tom yam chilli paste
+- ingredient — tom yum chili paste
+
+Return strict JSON only; do not include extra commentary.

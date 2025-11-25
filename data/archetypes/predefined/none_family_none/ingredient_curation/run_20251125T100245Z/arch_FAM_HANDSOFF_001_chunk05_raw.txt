@@ -1,0 +1,29 @@
+{
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "selected_ingredients": [
+    "olive oil",
+    "olive",
+    "olives",
+    "onion",
+    "onions",
+    "parsley",
+    "oregano",
+    "mint",
+    "paprika",
+    "mixed herbs",
+    "mint yoghurt dressing",
+    "passata",
+    "orzo",
+    "pasta",
+    "naan",
+    "mashed potatoes",
+    "mixed vegetables",
+    "minced meat",
+    "minced beef",
+    "meatballs",
+    "meat skewers",
+    "mozzarella",
+    "milk",
+    "oil"
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "meal_id": "meal_20251125T135701Z_03_a75e33",
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "archetype_name": "Family Heat-and-Eat Weeknights (Under 15, No Heat)",
+  "name": "Microwave BBQ Chicken Pizza with Coleslaw and Grapes",
+  "description": "Family pizza night in under 15 minutes using a microwaveable BBQ chicken pizza with chilled coleslaw and fresh grapes on the side.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Set out 4 plates and cutlery.",
+    "Open the coleslaw and have a serving spoon ready.",
+    "Rinse the grapes and pat dry."
+  ],
+  "cook_steps": [
+    "Remove the bbq chicken pizza from packaging and place it on a microwave-safe plate.",
+    "Microwave the pizza per pack directions until hot in the center (typically 3–5 minutes).",
+    "Let the pizza rest 1 minute, then slice into 8 pieces.",
+    "Serve 2 slices per person with a scoop of coleslaw and a handful of grapes on each plate."
+  ],
+  "instructions": [
+    "Set out 4 plates and cutlery.",
+    "Open the coleslaw and have a serving spoon ready.",
+    "Rinse the grapes and pat dry.",
+    "Remove the bbq chicken pizza from packaging and place it on a microwave-safe plate.",
+    "Microwave the pizza per pack directions until hot in the center (typically 3–5 minutes).",
+    "Let the pizza rest 1 minute, then slice into 8 pieces.",
+    "Serve 2 slices per person with a scoop of coleslaw and a handful of grapes on each plate."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "bbq chicken pizza",
+      "quantity": "1 large pizza (serves 4)",
+      "preparation": "microwave per pack"
+    },
+    {
+      "core_item_name": "coleslaw",
+      "quantity": "1 large tub (400–500 g)",
+      "preparation": "chilled"
+    },
+    {
+      "core_item_name": "grapes",
+      "quantity": "500 g",
+      "preparation": "rinsed"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "bbq chicken pizza",
+      "quantity": "1 large pizza (serves 4)",
+      "preparation": "microwave per pack",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coleslaw",
+      "quantity": "1 large tub (400–500 g)",
+      "preparation": "chilled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "grapes",
+      "quantity": "500 g",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T135814Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T135701Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

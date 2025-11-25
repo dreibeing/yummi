@@ -1,0 +1,33 @@
+{
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "selected_ingredients": [
+    "salt",
+    "sunflower oil",
+    "sugar",
+    "self-raising flour",
+    "semolina",
+    "spaghetti",
+    "tagliatelle",
+    "sticky rice",
+    "sausages",
+    "salmon",
+    "tofu",
+    "split peas",
+    "soup",
+    "salsa",
+    "sauce",
+    "soy sauce",
+    "teriyaki sauce",
+    "sour cream",
+    "seasoning",
+    "spice blend",
+    "shallots",
+    "spinach",
+    "spring onion",
+    "squash",
+    "snow peas",
+    "sun-dried tomatoes",
+    "thyme",
+    "tarragon"
+  ]
+}

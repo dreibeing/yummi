@@ -1,0 +1,176 @@
+{
+  "meal_id": "meal_20251125T112449Z_01_af33bf",
+  "archetype_uid": "arch_AFQB_2025_01",
+  "archetype_name": "Family AirFryer Quick Bites",
+  "name": "Air Fryer Chicken Nugget Nacho Platter",
+  "description": "Crispy air-fried chicken nuggets piled over cheesy nachos with mild toppings. Fast, shareable, and kid-friendly for a busy family night.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat air fryer to 200°C/390°F.",
+    "Set a large microwave-safe platter or dish for the nachos.",
+    "Drain and rinse black beans.",
+    "Thinly slice spring onion.",
+    "Grate cheddar cheese if not pre-shredded."
+  ],
+  "cook_steps": [
+    "Air-fry chicken nuggets for 8–10 minutes until hot and crisp.",
+    "Spread nachos on the microwave-safe platter.",
+    "Scatter black beans over the chips and sprinkle cheddar cheese.",
+    "Microwave 45–60 seconds until the cheese melts.",
+    "Slice the cooked chicken nuggets into bite-size pieces and place over the nachos.",
+    "Spoon salsa and sour cream over the top, add small dollops of avocado dip, and finish with spring onion.",
+    "Serve immediately and let everyone scoop their portion."
+  ],
+  "instructions": [
+    "Preheat air fryer to 200°C/390°F.",
+    "Set a large microwave-safe platter or dish for the nachos.",
+    "Drain and rinse black beans.",
+    "Thinly slice spring onion.",
+    "Grate cheddar cheese if not pre-shredded.",
+    "Air-fry chicken nuggets for 8–10 minutes until hot and crisp.",
+    "Spread nachos on the microwave-safe platter.",
+    "Scatter black beans over the chips and sprinkle cheddar cheese.",
+    "Microwave 45–60 seconds until the cheese melts.",
+    "Slice the cooked chicken nuggets into bite-size pieces and place over the nachos.",
+    "Spoon salsa and sour cream over the top, add small dollops of avocado dip, and finish with spring onion.",
+    "Serve immediately and let everyone scoop their portion."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken nuggets",
+      "quantity": "16–20 nuggets (about 400 g)"
+    },
+    {
+      "core_item_name": "nachos",
+      "quantity": "1 large bag (about 300 g)"
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (400 g), drained and rinsed"
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1½ cups, shredded"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup"
+    },
+    {
+      "core_item_name": "sour cream",
+      "quantity": "½ cup"
+    },
+    {
+      "core_item_name": "avocado dip",
+      "quantity": "½ cup"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "thinly sliced"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "AirFryer",
+      "Microwave"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken nuggets",
+      "quantity": "16–20 nuggets (about 400 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "nachos",
+      "quantity": "1 large bag (about 300 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (400 g), drained and rinsed",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1½ cups, shredded",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sour cream",
+      "quantity": "½ cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado dip",
+      "quantity": "½ cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T112521Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T112449Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

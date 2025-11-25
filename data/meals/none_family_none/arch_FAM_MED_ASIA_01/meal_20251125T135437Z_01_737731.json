@@ -1,0 +1,233 @@
+{
+  "meal_id": "meal_20251125T135437Z_01_737731",
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "archetype_name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)",
+  "name": "Massaman Beef & Potato Skillet with Jasmine Rice",
+  "description": "Tender beef and potatoes simmered in fragrant Thai massaman curry with a touch of fish sauce sweetness. Served over fluffy jasmine rice for a family-friendly, medium-heat skillet dinner.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse jasmine rice until water runs clear.",
+    "Peel and cut potatoes into 2 cm cubes.",
+    "Slice onions into thin half-moons.",
+    "Trim and thinly slice spring onion.",
+    "Slice beef thinly against the grain.",
+    "Cut lime into wedges."
+  ],
+  "cook_steps": [
+    "Cook rice: Add rinsed jasmine rice to a pot with water per pack ratio, bring to a boil, then cover and simmer on low until tender. Keep warm.",
+    "Heat canola oil in a large skillet over medium-high heat.",
+    "Sear beef in two batches for 1–2 minutes per side until just browned; remove to a plate.",
+    "Lower heat to medium. Add onions and sauté 2 minutes until starting to soften.",
+    "Stir in massaman curry paste and cook 30–45 seconds until fragrant.",
+    "Add coconut milk, potatoes, and brown sugar. Stir to combine and bring to a gentle simmer.",
+    "Cover and simmer 10–12 minutes, stirring once or twice, until potatoes are fork-tender.",
+    "Return beef and any juices to the skillet. Add fish sauce and a pinch of salt. Simmer 2–3 minutes to warm through and thicken to a saucy consistency.",
+    "Taste and adjust seasoning with more fish sauce or salt if needed.",
+    "Serve curry over jasmine rice. Top with spring onion and serve with lime wedges to squeeze over."
+  ],
+  "instructions": [
+    "Rinse jasmine rice until water runs clear.",
+    "Peel and cut potatoes into 2 cm cubes.",
+    "Slice onions into thin half-moons.",
+    "Trim and thinly slice spring onion.",
+    "Slice beef thinly against the grain.",
+    "Cut lime into wedges.",
+    "Cook rice: Add rinsed jasmine rice to a pot with water per pack ratio, bring to a boil, then cover and simmer on low until tender. Keep warm.",
+    "Heat canola oil in a large skillet over medium-high heat.",
+    "Sear beef in two batches for 1–2 minutes per side until just browned; remove to a plate.",
+    "Lower heat to medium. Add onions and sauté 2 minutes until starting to soften.",
+    "Stir in massaman curry paste and cook 30–45 seconds until fragrant.",
+    "Add coconut milk, potatoes, and brown sugar. Stir to combine and bring to a gentle simmer.",
+    "Cover and simmer 10–12 minutes, stirring once or twice, until potatoes are fork-tender.",
+    "Return beef and any juices to the skillet. Add fish sauce and a pinch of salt. Simmer 2–3 minutes to warm through and thicken to a saucy consistency.",
+    "Taste and adjust seasoning with more fish sauce or salt if needed.",
+    "Serve curry over jasmine rice. Top with spring onion and serve with lime wedges to squeeze over."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups uncooked",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "beef",
+      "quantity": "600 g",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "3 medium",
+      "preparation": "peeled and 2 cm cubes"
+    },
+    {
+      "core_item_name": "massaman curry paste",
+      "quantity": "3 tablespoons"
+    },
+    {
+      "core_item_name": "coconut milk",
+      "quantity": "400 ml"
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "fish sauce",
+      "quantity": "1–2 tablespoons"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Indian",
+      "Thai"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups uncooked",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "beef",
+      "quantity": "600 g",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "3 medium",
+      "preparation": "peeled and 2 cm cubes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "massaman curry paste",
+      "quantity": "3 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coconut milk",
+      "quantity": "400 ml",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "fish sauce",
+      "quantity": "1–2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T135527Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T135437Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

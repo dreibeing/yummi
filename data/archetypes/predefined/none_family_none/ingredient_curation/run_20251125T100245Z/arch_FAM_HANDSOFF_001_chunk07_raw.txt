@@ -1,0 +1,33 @@
+{
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "selected_ingredients": [
+    "salt",
+    "sea salt",
+    "seasoning",
+    "spice",
+    "spice blend",
+    "sumac",
+    "tahini",
+    "tahini yoghurt",
+    "tahini yogurt drizzle",
+    "sesame oil",
+    "sesame seeds",
+    "sesame sauce",
+    "shallots",
+    "spring onion",
+    "salad greens",
+    "spinach",
+    "spinach and feta puff pastry",
+    "sourdough bread",
+    "self-raising flour",
+    "semolina",
+    "sour cream",
+    "salmon",
+    "smoked chicken",
+    "smoked chicken breast",
+    "smoked chicken sausage",
+    "stuffed grape leaves",
+    "sun-dried tomatoes",
+    "salad dressing"
+  ]
+}

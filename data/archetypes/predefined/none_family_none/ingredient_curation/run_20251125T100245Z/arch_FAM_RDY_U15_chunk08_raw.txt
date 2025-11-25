@@ -1,0 +1,33 @@
+{
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "selected_ingredients": [
+    "tomato",
+    "tomato pasta sauce",
+    "tomato passata with basil",
+    "tomato puree",
+    "tomato sauce",
+    "tomatoes",
+    "tortelloni",
+    "wraps",
+    "tzatziki",
+    "yoghurt",
+    "yogurt",
+    "vegetables",
+    "zucchini",
+    "tuna",
+    "tuna pasta",
+    "tuna penne",
+    "turkey",
+    "white sauce",
+    "basmati rice with quinoa",
+    "bbq chicken pizza",
+    "chicken nuggets",
+    "beef lasagne ready meal",
+    "cacio e pepe",
+    "cannelloni",
+    "burritos",
+    "chicken fried rice",
+    "chicken lasagne",
+    "chicken breast"
+  ]
+}

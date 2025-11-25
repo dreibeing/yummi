@@ -1,0 +1,32 @@
+{
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "selected_ingredients": [
+    "coconut stir-fry sauce",
+    "coconut sugar",
+    "coconut yogurt",
+    "coriander",
+    "coriander seeds",
+    "cornflour",
+    "curry paste",
+    "curry powder",
+    "curry sauce",
+    "crushed tomatoes",
+    "cumin",
+    "cumin seeds",
+    "dal spice blend",
+    "diced tomatoes",
+    "edamame",
+    "egg noodles",
+    "eggplant",
+    "eggs",
+    "fish fillets",
+    "fish sauce",
+    "fish stock concentrate",
+    "frozen mixed vegetables",
+    "garlic",
+    "garam masala",
+    "ghee",
+    "gochujang",
+    "courgette"
+  ]
+}

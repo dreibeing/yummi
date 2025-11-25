@@ -1,0 +1,273 @@
+{
+  "meal_id": "meal_20251125T115656Z_01_038fb8",
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "archetype_name": "Family Keto Weeknight Plates (Mild, 15–30, Simple)",
+  "name": "Lamb Kofta Lettuce Boats with Tahini-Lemon Drizzle",
+  "description": "Seared and broiled lamb koftas served in crisp romaine leaves with a simple cucumber-tomato-mint salad and a tahini-lemon drizzle. Mild, keto-friendly, and ready in under 30 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven broiler to high. Line a baking sheet with foil and set a rack on top.",
+    "Grate onions and squeeze out excess liquid with your hands.",
+    "Mince garlic.",
+    "Chop parsley and mint.",
+    "Halve cherry tomatoes and dice cucumber.",
+    "Juice lemon.",
+    "Separate romaine lettuce leaves, rinse, and pat dry."
+  ],
+  "cook_steps": [
+    "In a bowl, combine lamb mince, grated onions, half the garlic, parsley, cumin, paprika, 1 tsp salt, and black pepper. Mix gently until just combined.",
+    "Shape mixture into 12 small oval koftas.",
+    "Heat 1 tbsp olive oil in a large skillet over medium-high heat. Sear koftas 4–5 minutes, turning to brown all sides.",
+    "Transfer koftas to the prepared rack and broil 2–3 minutes until cooked through (internal temp 71°C/160°F).",
+    "In a small bowl, whisk tahini, lemon juice, a pinch of salt, remaining garlic, and 1 tbsp olive oil until smooth and drizzleable.",
+    "In another bowl, toss cucumber, cherry tomatoes, mint, 1 tbsp olive oil, a pinch of salt, and black pepper.",
+    "Assemble: place 2–3 koftas in romaine lettuce leaves, top with the cucumber-tomato mix, and drizzle with tahini-lemon sauce. Serve immediately."
+  ],
+  "instructions": [
+    "Preheat oven broiler to high. Line a baking sheet with foil and set a rack on top.",
+    "Grate onions and squeeze out excess liquid with your hands.",
+    "Mince garlic.",
+    "Chop parsley and mint.",
+    "Halve cherry tomatoes and dice cucumber.",
+    "Juice lemon.",
+    "Separate romaine lettuce leaves, rinse, and pat dry.",
+    "In a bowl, combine lamb mince, grated onions, half the garlic, parsley, cumin, paprika, 1 tsp salt, and black pepper. Mix gently until just combined.",
+    "Shape mixture into 12 small oval koftas.",
+    "Heat 1 tbsp olive oil in a large skillet over medium-high heat. Sear koftas 4–5 minutes, turning to brown all sides.",
+    "Transfer koftas to the prepared rack and broil 2–3 minutes until cooked through (internal temp 71°C/160°F).",
+    "In a small bowl, whisk tahini, lemon juice, a pinch of salt, remaining garlic, and 1 tbsp olive oil until smooth and drizzleable.",
+    "In another bowl, toss cucumber, cherry tomatoes, mint, 1 tbsp olive oil, a pinch of salt, and black pepper.",
+    "Assemble: place 2–3 koftas in romaine lettuce leaves, top with the cucumber-tomato mix, and drizzle with tahini-lemon sauce. Serve immediately."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "lamb mince",
+      "quantity": "1 lb (450 g)",
+      "preparation": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 small",
+      "preparation": "grated and squeezed"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp + pinches to taste",
+      "preparation": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp + to taste",
+      "preparation": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "1 large head",
+      "preparation": "leaves separated"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tbsp",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "tahini",
+      "quantity": "1/3 cup",
+      "preparation": null
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Sesame"
+    ],
+    "NutritionFocus": [
+      "HighProtein",
+      "Keto",
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "lamb mince",
+      "quantity": "1 lb (450 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 small",
+      "preparation": "grated and squeezed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp + pinches to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp + to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "1 large head",
+      "preparation": "leaves separated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tahini",
+      "quantity": "1/3 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T115745Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T115656Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

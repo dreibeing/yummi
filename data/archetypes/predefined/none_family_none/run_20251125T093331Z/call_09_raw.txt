@@ -1,0 +1,45 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_FAMXHOT1530",
+      "name": "Family Extra-Hot Chili Night (Caribbean & Mexican, 15–30, Simple)",
+      "description": "Blazing, pepper-forward family dinners featuring Caribbean and Mexican favorites—jerk-style grills, chile-laced tacos, and peppery rice-and-bean plates—built fast with straightforward steps.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Caribbean",
+          "Mexican"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "ExtraHot"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "OutdoorGrill"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Adds an ExtraHot, quick-and-simple family option in undercovered Caribbean cuisine space without overlapping existing mild/medium/hot archetypes."
+    }
+  ]
+}

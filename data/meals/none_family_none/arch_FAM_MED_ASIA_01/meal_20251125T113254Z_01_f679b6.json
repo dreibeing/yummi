@@ -1,0 +1,273 @@
+{
+  "meal_id": "meal_20251125T113254Z_01_f679b6",
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "archetype_name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)",
+  "name": "Green Coconut Chicken Skillet with Jasmine Rice",
+  "description": "Family-friendly Thai-Indian green coconut chicken with crisp veggies over fluffy jasmine rice. Medium heat, done on the stovetop in under 30 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1 1/2 cups jasmine rice until water runs clear; drain.",
+    "Slice 1 large onion thinly.",
+    "Mince 3 cloves garlic.",
+    "Cut 2 bell peppers into strips.",
+    "Trim 2 cups green beans; cut into 2–3 cm pieces.",
+    "Cut 700 g chicken thighs into bite-size pieces.",
+    "Halve 1 lime.",
+    "Measure out 3 tablespoons Thai green curry paste, 1 can (400 ml) coconut milk, 1/2 cup chicken stock, 1/2 teaspoon chili flakes, and 1/2 teaspoon turmeric powder."
+  ],
+  "cook_steps": [
+    "Cook rice: In a pot, add rinsed jasmine rice and 2 cups water with a pinch of salt. Bring to a boil, reduce to low, cover, and cook 12 minutes. Turn off heat and rest covered 5 minutes.",
+    "Heat 1 tablespoon oil in a large skillet over medium-high heat.",
+    "Add onion and a pinch of salt; sauté 2–3 minutes until starting to soften.",
+    "Add garlic; cook 30 seconds until fragrant.",
+    "Add chicken thighs; season with salt and black pepper. Sear 3–4 minutes, stirring, until no longer pink on the outside.",
+    "Stir in Thai green curry paste and turmeric powder; cook 1 minute to coat the chicken.",
+    "Pour in coconut milk and chicken stock; stir to combine and bring to a gentle simmer.",
+    "Add bell peppers and green beans; simmer 5–7 minutes until veggies are crisp-tender and chicken is cooked through.",
+    "Stir in chili flakes; squeeze half the lime into the skillet. Taste and adjust salt and black pepper.",
+    "Fluff rice. Serve curry over rice. Cut remaining lime half into wedges and serve alongside.",
+    "Optional: If reheating leftover rice, use a Microwave with a splash of water, covered, 1–2 minutes until hot."
+  ],
+  "instructions": [
+    "Rinse 1 1/2 cups jasmine rice until water runs clear; drain.",
+    "Slice 1 large onion thinly.",
+    "Mince 3 cloves garlic.",
+    "Cut 2 bell peppers into strips.",
+    "Trim 2 cups green beans; cut into 2–3 cm pieces.",
+    "Cut 700 g chicken thighs into bite-size pieces.",
+    "Halve 1 lime.",
+    "Measure out 3 tablespoons Thai green curry paste, 1 can (400 ml) coconut milk, 1/2 cup chicken stock, 1/2 teaspoon chili flakes, and 1/2 teaspoon turmeric powder.",
+    "Cook rice: In a pot, add rinsed jasmine rice and 2 cups water with a pinch of salt. Bring to a boil, reduce to low, cover, and cook 12 minutes. Turn off heat and rest covered 5 minutes.",
+    "Heat 1 tablespoon oil in a large skillet over medium-high heat.",
+    "Add onion and a pinch of salt; sauté 2–3 minutes until starting to soften.",
+    "Add garlic; cook 30 seconds until fragrant.",
+    "Add chicken thighs; season with salt and black pepper. Sear 3–4 minutes, stirring, until no longer pink on the outside.",
+    "Stir in Thai green curry paste and turmeric powder; cook 1 minute to coat the chicken.",
+    "Pour in coconut milk and chicken stock; stir to combine and bring to a gentle simmer.",
+    "Add bell peppers and green beans; simmer 5–7 minutes until veggies are crisp-tender and chicken is cooked through.",
+    "Stir in chili flakes; squeeze half the lime into the skillet. Taste and adjust salt and black pepper.",
+    "Fluff rice. Serve curry over rice. Cut remaining lime half into wedges and serve alongside.",
+    "Optional: If reheating leftover rice, use a Microwave with a splash of water, covered, 1–2 minutes until hot."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "cut into strips"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "2 cups",
+      "preparation": "trimmed and cut"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "700 g",
+      "preparation": "bite-size pieces"
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "Thai green curry paste",
+      "quantity": "3 tablespoons"
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "coconut milk",
+      "quantity": "400 ml"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "1/2 cup"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Indian",
+      "Thai"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "cut into strips",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "2 cups",
+      "preparation": "trimmed and cut",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "700 g",
+      "preparation": "bite-size pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "Thai green curry paste",
+      "quantity": "3 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coconut milk",
+      "quantity": "400 ml",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T113401Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T113254Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

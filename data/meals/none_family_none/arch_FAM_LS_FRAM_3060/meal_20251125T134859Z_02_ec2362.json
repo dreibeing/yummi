@@ -1,0 +1,253 @@
+{
+  "meal_id": "meal_20251125T134859Z_02_ec2362",
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "archetype_name": "Family Low-Sodium American & French Comfort (30–60, Mild)",
+  "name": "Lemon-Herb Tilapia en Papillote with Zucchini-Tomato Medley and Herbed Quinoa",
+  "description": "Tender tilapia baked in parchment with lemon, thyme, and vegetables, served over fluffy parsley quinoa. Mild, family-friendly, and low in sodium.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 400°F (200°C).",
+    "Rinse quinoa under cold water for 30 seconds; drain well.",
+    "Slice 2 shallots thinly.",
+    "Slice 2 medium zucchini into half-moons.",
+    "Slice 3 medium tomatoes into wedges.",
+    "Zest 1 lemon, then cut it into thin rounds; cut the second lemon into wedges for serving.",
+    "Chop parsley to make 1/4 cup.",
+    "Pat tilapia fillets dry with paper towels.",
+    "Cut 4 large rectangles of parchment paper (about 12x16 inches)."
+  ],
+  "cook_steps": [
+    "Combine quinoa, water, and bay leaves in a medium pot; bring to a boil on StoveTop.",
+    "Reduce heat to low, cover, and simmer until tender and water is absorbed, 15–18 minutes. Remove from heat and keep covered.",
+    "Lay parchment sheets on a baking tray. Lightly brush centers with olive oil.",
+    "Season tilapia on both sides with black pepper and thyme.",
+    "Place 1/4 of the shallots, zucchini, and tomatoes on each parchment center. Top with a tilapia fillet, a few lemon slices, and dot each with a small piece of butter. Drizzle a little olive oil over the top.",
+    "Fold parchment over and crimp edges tightly to seal packets.",
+    "Bake packets in the Oven until fish flakes easily, 12–15 minutes. Rest 2 minutes before opening (watch steam).",
+    "Discard bay leaves from quinoa. Stir in lemon zest, chopped parsley, and a drizzle of olive oil; fluff with a fork.",
+    "Open packets, transfer fish and vegetables over the quinoa. Serve with lemon wedges."
+  ],
+  "instructions": [
+    "Preheat oven to 400°F (200°C).",
+    "Rinse quinoa under cold water for 30 seconds; drain well.",
+    "Slice 2 shallots thinly.",
+    "Slice 2 medium zucchini into half-moons.",
+    "Slice 3 medium tomatoes into wedges.",
+    "Zest 1 lemon, then cut it into thin rounds; cut the second lemon into wedges for serving.",
+    "Chop parsley to make 1/4 cup.",
+    "Pat tilapia fillets dry with paper towels.",
+    "Cut 4 large rectangles of parchment paper (about 12x16 inches).",
+    "Combine quinoa, water, and bay leaves in a medium pot; bring to a boil on StoveTop.",
+    "Reduce heat to low, cover, and simmer until tender and water is absorbed, 15–18 minutes. Remove from heat and keep covered.",
+    "Lay parchment sheets on a baking tray. Lightly brush centers with olive oil.",
+    "Season tilapia on both sides with black pepper and thyme.",
+    "Place 1/4 of the shallots, zucchini, and tomatoes on each parchment center. Top with a tilapia fillet, a few lemon slices, and dot each with a small piece of butter. Drizzle a little olive oil over the top.",
+    "Fold parchment over and crimp edges tightly to seal packets.",
+    "Bake packets in the Oven until fish flakes easily, 12–15 minutes. Rest 2 minutes before opening (watch steam).",
+    "Discard bay leaves from quinoa. Stir in lemon zest, chopped parsley, and a drizzle of olive oil; fluff with a fork.",
+    "Open packets, transfer fish and vegetables over the quinoa. Serve with lemon wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "quinoa",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2"
+    },
+    {
+      "core_item_name": "tilapia",
+      "quantity": "4 fillets (600–800 g)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "shallots",
+      "quantity": "2",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "sliced into half-moons"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "3 medium",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "2 total (zest of 1, slices from 1; wedges from 1)",
+      "preparation": "zested and sliced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 teaspoon",
+      "preparation": "dried leaves"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon",
+      "preparation": "freshly ground if possible"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tablespoons",
+      "preparation": "cut into small pieces"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "French"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowSodium"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "quinoa",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tilapia",
+      "quantity": "4 fillets (600–800 g)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "shallots",
+      "quantity": "2",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "sliced into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "3 medium",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "2 total (zest of 1, slices from 1; wedges from 1)",
+      "preparation": "zested and sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 teaspoon",
+      "preparation": "dried leaves",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon",
+      "preparation": "freshly ground if possible",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tablespoons",
+      "preparation": "cut into small pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T135134Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T134859Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

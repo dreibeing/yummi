@@ -1,0 +1,227 @@
+{
+  "meal_id": "meal_20251125T115529Z_01_4427f1",
+  "archetype_uid": "arch_FAM_HP_30to60_INT_Mild_v1",
+  "archetype_name": "Family High-Protein Dinners (30–60, Mild, Intermediate)",
+  "name": "Lemon-Herbed Beef and Broccoli Orzo Skillet",
+  "description": "Tender beef sirloin and broccoli fold into a lemony, garlic-herb orzo for a balanced, protein-forward family skillet. Mild flavors, hearty texture, ready in under an hour.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Cut broccoli into small florets; peel stems and slice thin.",
+    "Mince garlic.",
+    "Zest and halve lemon; juice one half and reserve the other for wedges if desired.",
+    "Slice beef sirloin steak thinly across the grain; pat dry.",
+    "Finely chop parsley.",
+    "Warm chicken stock in a saucepan on low (helps the orzo cook evenly)."
+  ],
+  "cook_steps": [
+    "Heat 1 tbsp olive oil in a large deep skillet over medium-high.",
+    "Season beef with salt and black pepper; sear in two batches 1–2 minutes per side until just browned. Transfer to a plate (it will finish later).",
+    "Reduce heat to medium; add remaining 1 tbsp olive oil to the same skillet. Add orzo and toast 2 minutes, stirring.",
+    "Add garlic; cook 30 seconds until fragrant.",
+    "Pour in warm chicken stock and sprinkle in italian seasoning. Stir, bring to a gentle simmer, then reduce heat to medium-low.",
+    "Cook orzo uncovered 8–10 minutes, stirring occasionally so it doesn’t stick.",
+    "Scatter broccoli over the orzo, cover the skillet, and steam 5–6 minutes until broccoli is tender-crisp and orzo is al dente. If pan looks dry before orzo is done, add a splash of stock or water.",
+    "Return seared beef and any juices to the pan; fold through for 1–2 minutes to warm and finish cooking.",
+    "Stir in lemon zest and lemon juice; season with salt and black pepper to taste.",
+    "Turn off heat, sprinkle parsley, rest 2 minutes, then serve."
+  ],
+  "instructions": [
+    "Cut broccoli into small florets; peel stems and slice thin.",
+    "Mince garlic.",
+    "Zest and halve lemon; juice one half and reserve the other for wedges if desired.",
+    "Slice beef sirloin steak thinly across the grain; pat dry.",
+    "Finely chop parsley.",
+    "Warm chicken stock in a saucepan on low (helps the orzo cook evenly).",
+    "Heat 1 tbsp olive oil in a large deep skillet over medium-high.",
+    "Season beef with salt and black pepper; sear in two batches 1–2 minutes per side until just browned. Transfer to a plate (it will finish later).",
+    "Reduce heat to medium; add remaining 1 tbsp olive oil to the same skillet. Add orzo and toast 2 minutes, stirring.",
+    "Add garlic; cook 30 seconds until fragrant.",
+    "Pour in warm chicken stock and sprinkle in italian seasoning. Stir, bring to a gentle simmer, then reduce heat to medium-low.",
+    "Cook orzo uncovered 8–10 minutes, stirring occasionally so it doesn’t stick.",
+    "Scatter broccoli over the orzo, cover the skillet, and steam 5–6 minutes until broccoli is tender-crisp and orzo is al dente. If pan looks dry before orzo is done, add a splash of stock or water.",
+    "Return seared beef and any juices to the pan; fold through for 1–2 minutes to warm and finish cooking.",
+    "Stir in lemon zest and lemon juice; season with salt and black pepper to taste.",
+    "Turn off heat, sprinkle parsley, rest 2 minutes, then serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef sirloin steak",
+      "quantity": "600 g",
+      "preparation": "thinly sliced across the grain"
+    },
+    {
+      "core_item_name": "orzo",
+      "quantity": "360 g (about 2 cups)",
+      "preparation": null
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "500 g florets",
+      "preparation": "small florets; stems peeled and sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "4 cups (960 ml), warm",
+      "preparation": null
+    },
+    {
+      "core_item_name": "italian seasoning",
+      "quantity": "1 tsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and juice"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef sirloin steak",
+      "quantity": "600 g",
+      "preparation": "thinly sliced across the grain",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "orzo",
+      "quantity": "360 g (about 2 cups)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "500 g florets",
+      "preparation": "small florets; stems peeled and sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "4 cups (960 ml), warm",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "italian seasoning",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and juice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T115612Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T115529Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

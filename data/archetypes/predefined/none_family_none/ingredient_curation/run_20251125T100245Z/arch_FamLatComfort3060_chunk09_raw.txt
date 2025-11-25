@@ -1,0 +1,18 @@
+{
+  "archetype_uid": "arch_FamLatComfort3060",
+  "selected_ingredients": [
+    "rice",
+    "roast chicken",
+    "four-bean salad",
+    "mixed vegetables",
+    "frozen vegetables",
+    "nachos",
+    "chicken strips",
+    "chicken soup",
+    "fried chicken",
+    "potato wedges",
+    "potato salad",
+    "salad",
+    "root vegetables"
+  ]
+}

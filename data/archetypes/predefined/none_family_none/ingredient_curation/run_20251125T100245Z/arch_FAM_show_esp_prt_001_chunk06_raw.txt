@@ -1,0 +1,20 @@
+{
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "selected_ingredients": [
+    "peas",
+    "pepper",
+    "peppers",
+    "red pepper",
+    "peri-peri sauce",
+    "peri-peri spice blend",
+    "prawns",
+    "pilchards",
+    "rice",
+    "saffron",
+    "potatoes",
+    "red onion",
+    "picanha steak",
+    "pork",
+    "phyllo pastry"
+  ]
+}

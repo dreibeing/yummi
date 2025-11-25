@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "selected_ingredients": [
+    "peas",
+    "penne pasta",
+    "pesto",
+    "ragu",
+    "ricotta cheese",
+    "pecorino romano cheese",
+    "provolone cheese",
+    "pepper",
+    "peppercorns",
+    "potatoes",
+    "polenta",
+    "rice",
+    "red onion",
+    "roasted garlic",
+    "rosemary",
+    "sage",
+    "pork",
+    "pork shoulder",
+    "pork mince",
+    "roast chicken"
+  ]
+}

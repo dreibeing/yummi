@@ -1,0 +1,47 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_FamMedLowFat1530",
+      "name": "Family Low-Fat Mediterranean Light Plates (15–30, Mild)",
+      "description": "Lean, veggie-forward Greek/Turkish/Middle Eastern family dinners—grilled or oven-finished lean proteins, herby salads, and brothy legumes with restrained oil and bright citrus.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Greek",
+          "Turkish",
+          "MiddleEastern"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "Oven"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "LowFat",
+          "HighFiber"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Introduces a quick, simple, mild, Mediterranean-family archetype with a distinct LowFat focus not yet covered, complementing existing Greek/Middle Eastern entries that are hands-off/no-heat or keto-oriented."
+    }
+  ]
+}

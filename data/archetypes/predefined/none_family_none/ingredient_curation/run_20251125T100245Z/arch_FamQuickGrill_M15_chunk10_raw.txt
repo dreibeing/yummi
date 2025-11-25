@@ -1,0 +1,16 @@
+{
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "selected_ingredients": [
+    "spinach feta pies",
+    "spinach salad",
+    "sweet potato chips",
+    "sweet potato salad",
+    "tomato salad",
+    "trout",
+    "whiting portions",
+    "tuna penne",
+    "tuna pasta",
+    "wrap",
+    "vetkoek"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "selected_ingredients": [
+    "tomatoes",
+    "tomato paste",
+    "tomato sauce",
+    "tzatziki",
+    "yoghurt",
+    "vinaigrette",
+    "vinegar",
+    "worcestershire sauce",
+    "turmeric powder",
+    "white pepper",
+    "vegetables",
+    "zucchini",
+    "watercress",
+    "watermelon",
+    "tortilla wraps",
+    "whole chicken",
+    "chicken breast fillets",
+    "tuna steak",
+    "trout",
+    "turkey",
+    "wagyu beef sirloin steak"
+  ]
+}

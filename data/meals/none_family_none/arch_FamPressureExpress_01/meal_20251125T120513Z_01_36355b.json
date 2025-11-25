@@ -1,0 +1,224 @@
+{
+  "meal_id": "meal_20251125T120513Z_01_36355b",
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "archetype_name": "Family Pressure Cooker Express Dinners (15–30, Mild)",
+  "name": "Instant Pot American Goulash (Beef & Macaroni)",
+  "description": "Comforting beef and macaroni in a mild tomato sauce, made fast in the pressure cooker. Family-friendly and ready in about 30 minutes.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Dice onions (about 1 medium).",
+    "Dice bell peppers (2 medium).",
+    "Mince garlic (3 cloves).",
+    "Measure macaroni (12 oz), beef stock (3 cups), and tomato pasta sauce (2 cups).",
+    "Set out Italian seasoning, paprika, salt, and pepper."
+  ],
+  "cook_steps": [
+    "Set the pressure cooker to Sauté. Add olive oil and ground beef; cook 3–5 minutes, breaking it up until mostly browned.",
+    "Add onions, bell peppers, and garlic. Sauté 2–3 minutes until softened. Spoon off excess fat if needed.",
+    "Stir in Italian seasoning, paprika, salt, and pepper. Add a splash of beef stock and scrape the bottom to deglaze.",
+    "Pour in the tomato pasta sauce and the remaining beef stock; stir to combine.",
+    "Add macaroni on top and press down to submerge, but do not stir.",
+    "Seal the lid. Cook on High Pressure for 5 minutes.",
+    "Quick release pressure. Stir well; let sit 2–3 minutes to thicken.",
+    "Taste and adjust salt and pepper. Serve hot."
+  ],
+  "instructions": [
+    "Dice onions (about 1 medium).",
+    "Dice bell peppers (2 medium).",
+    "Mince garlic (3 cloves).",
+    "Measure macaroni (12 oz), beef stock (3 cups), and tomato pasta sauce (2 cups).",
+    "Set out Italian seasoning, paprika, salt, and pepper.",
+    "Set the pressure cooker to Sauté. Add olive oil and ground beef; cook 3–5 minutes, breaking it up until mostly browned.",
+    "Add onions, bell peppers, and garlic. Sauté 2–3 minutes until softened. Spoon off excess fat if needed.",
+    "Stir in Italian seasoning, paprika, salt, and pepper. Add a splash of beef stock and scrape the bottom to deglaze.",
+    "Pour in the tomato pasta sauce and the remaining beef stock; stir to combine.",
+    "Add macaroni on top and press down to submerge, but do not stir.",
+    "Seal the lid. Cook on High Pressure for 5 minutes.",
+    "Quick release pressure. Stir well; let sit 2–3 minutes to thicken.",
+    "Taste and adjust salt and pepper. Serve hot."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "1 pound"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "italian seasoning",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon, or to taste"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon, or to taste"
+    },
+    {
+      "core_item_name": "tomato pasta sauce",
+      "quantity": "2 cups"
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "3 cups"
+    },
+    {
+      "core_item_name": "macaroni",
+      "quantity": "12 ounces"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "SlowOrPressureCooker",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "1 pound",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "italian seasoning",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon, or to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon, or to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato pasta sauce",
+      "quantity": "2 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "3 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "macaroni",
+      "quantity": "12 ounces",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T120604Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T120513Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

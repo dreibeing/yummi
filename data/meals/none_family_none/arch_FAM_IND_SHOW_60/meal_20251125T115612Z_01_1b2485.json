@@ -1,0 +1,384 @@
+{
+  "meal_id": "meal_20251125T115612Z_01_1b2485",
+  "archetype_uid": "arch_FAM_IND_SHOW_60",
+  "archetype_name": "Family Weekend Showstopper: Indian Feast Night",
+  "name": "Tandoori-Style Whole Chicken with Cashew Korma Gravy and Jeera Saffron Rice",
+  "description": "A centerpiece roasted whole chicken in a yoghurt-spice marinade, served with a rich cashew-coconut korma gravy and fragrant cumin-saffron basmati rice. A family-style Indian feast built for weekend showtime.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Preheat oven to 200°C/390°F. Set a rack in the middle.",
+    "Rinse basmati rice in cold water until it runs mostly clear; soak in fresh water for 20 minutes.",
+    "Soak cashews in hot water for 20 minutes; drain.",
+    "In a bowl, whisk yoghurt, lemon juice, oil, garlic (minced), salt, paprika, cayenne pepper, turmeric powder, and garam masala to make the marinade.",
+    "Pat the whole chicken dry with paper towels. Using a small knife, score shallow slashes in the thighs and breasts.",
+    "Thinly slice onions. Pick mint leaves.",
+    "Bloom saffron in 2 tablespoons warm water and set aside."
+  ],
+  "cook_steps": [
+    "Rub the yoghurt marinade all over and under the skin of the whole chicken. Place on a rack over a roasting tray. Roast 20 minutes at 200°C/390°F.",
+    "Reduce oven to 180°C/355°F and continue roasting 45–60 minutes, basting twice with tray juices, until juices run clear and internal temp reaches 75°C/167°F. Rest 10–15 minutes.",
+    "While chicken roasts, make the cashew korma base: In a pot over medium heat, add 1 tablespoon ghee. Add sliced onions with a pinch of salt and cook 12–15 minutes until deeply golden.",
+    "Add garlic (minced) and cook 1 minute. Stir in cumin, coriander, chili flakes, turmeric powder, and garam masala; cook 30 seconds.",
+    "Add drained cashews and coconut milk. Simmer 5 minutes. Blend until smooth (carefully) and return to the pot. Adjust with water for a pourable gravy. Season with salt, lemon juice, and a pinch of sugar to balance. Keep warm on low.",
+    "Cook the jeera saffron rice: Drain soaked basmati rice. In a saucepan, heat 1 tablespoon ghee over medium. Add cumin seeds and bay leaves; sizzle 30 seconds until fragrant.",
+    "Add rice and stir 1 minute to coat. Add water (about 1.5 cups per cup of rice), saffron water, and salt. Bring to a boil, then cover and reduce to low. Cook 12 minutes; rest off heat 10 minutes, then fluff.",
+    "Carve the rested chicken. Spoon cashew korma gravy onto a platter, nestle chicken pieces over, and drizzle more gravy on top.",
+    "Garnish with mint. Serve with jeera saffron rice on the side."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C/390°F. Set a rack in the middle.",
+    "Rinse basmati rice in cold water until it runs mostly clear; soak in fresh water for 20 minutes.",
+    "Soak cashews in hot water for 20 minutes; drain.",
+    "In a bowl, whisk yoghurt, lemon juice, oil, garlic (minced), salt, paprika, cayenne pepper, turmeric powder, and garam masala to make the marinade.",
+    "Pat the whole chicken dry with paper towels. Using a small knife, score shallow slashes in the thighs and breasts.",
+    "Thinly slice onions. Pick mint leaves.",
+    "Bloom saffron in 2 tablespoons warm water and set aside.",
+    "Rub the yoghurt marinade all over and under the skin of the whole chicken. Place on a rack over a roasting tray. Roast 20 minutes at 200°C/390°F.",
+    "Reduce oven to 180°C/355°F and continue roasting 45–60 minutes, basting twice with tray juices, until juices run clear and internal temp reaches 75°C/167°F. Rest 10–15 minutes.",
+    "While chicken roasts, make the cashew korma base: In a pot over medium heat, add 1 tablespoon ghee. Add sliced onions with a pinch of salt and cook 12–15 minutes until deeply golden.",
+    "Add garlic (minced) and cook 1 minute. Stir in cumin, coriander, chili flakes, turmeric powder, and garam masala; cook 30 seconds.",
+    "Add drained cashews and coconut milk. Simmer 5 minutes. Blend until smooth (carefully) and return to the pot. Adjust with water for a pourable gravy. Season with salt, lemon juice, and a pinch of sugar to balance. Keep warm on low.",
+    "Cook the jeera saffron rice: Drain soaked basmati rice. In a saucepan, heat 1 tablespoon ghee over medium. Add cumin seeds and bay leaves; sizzle 30 seconds until fragrant.",
+    "Add rice and stir 1 minute to coat. Add water (about 1.5 cups per cup of rice), saffron water, and salt. Bring to a boil, then cover and reduce to low. Cook 12 minutes; rest off heat 10 minutes, then fluff.",
+    "Carve the rested chicken. Spoon cashew korma gravy onto a platter, nestle chicken pieces over, and drizzle more gravy on top.",
+    "Garnish with mint. Serve with jeera saffron rice on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "whole chicken",
+      "quantity": "1 (1.6–2 kg)",
+      "preparation": "patted dry, slashed"
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": "whisked for marinade"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced for marinade and finishing"
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "2 tablespoons",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "6 cloves",
+      "preparation": "minced, divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2–3 teaspoons",
+      "preparation": "to taste, divided"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 teaspoons",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "cayenne pepper",
+      "quantity": "1/2–1 teaspoon",
+      "preparation": "for medium heat"
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "2 teaspoons",
+      "preparation": "divided for marinade and gravy"
+    },
+    {
+      "core_item_name": "garam masala",
+      "quantity": "2 teaspoons",
+      "preparation": "divided for marinade and gravy"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "3 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "ghee",
+      "quantity": "2 tablespoons",
+      "preparation": "divided for gravy and rice"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "ground, for gravy"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1 teaspoon",
+      "preparation": "ground, for gravy"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2 teaspoon",
+      "preparation": "for gravy"
+    },
+    {
+      "core_item_name": "cashews",
+      "quantity": "3/4 cup",
+      "preparation": "soaked and drained"
+    },
+    {
+      "core_item_name": "coconut milk",
+      "quantity": "1 can (400 ml)",
+      "preparation": "for gravy"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1/2 teaspoon",
+      "preparation": "to balance gravy"
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and soaked"
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "1 1/2 teaspoons",
+      "preparation": "tempered in ghee"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "for rice"
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "a pinch",
+      "preparation": "bloomed in warm water"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": "for rice and gravy"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/4 cup",
+      "preparation": "leaves picked for garnish"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Indian",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Nuts"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "whole chicken",
+      "quantity": "1 (1.6–2 kg)",
+      "preparation": "patted dry, slashed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": "whisked for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced for marinade and finishing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "2 tablespoons",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "6 cloves",
+      "preparation": "minced, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2–3 teaspoons",
+      "preparation": "to taste, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 teaspoons",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cayenne pepper",
+      "quantity": "1/2–1 teaspoon",
+      "preparation": "for medium heat",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "2 teaspoons",
+      "preparation": "divided for marinade and gravy",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garam masala",
+      "quantity": "2 teaspoons",
+      "preparation": "divided for marinade and gravy",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "3 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ghee",
+      "quantity": "2 tablespoons",
+      "preparation": "divided for gravy and rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "ground, for gravy",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1 teaspoon",
+      "preparation": "ground, for gravy",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2 teaspoon",
+      "preparation": "for gravy",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cashews",
+      "quantity": "3/4 cup",
+      "preparation": "soaked and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coconut milk",
+      "quantity": "1 can (400 ml)",
+      "preparation": "for gravy",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1/2 teaspoon",
+      "preparation": "to balance gravy",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and soaked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "1 1/2 teaspoons",
+      "preparation": "tempered in ghee",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "for rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "a pinch",
+      "preparation": "bloomed in warm water",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": "for rice and gravy",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/4 cup",
+      "preparation": "leaves picked for garnish",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T115656Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T115612Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

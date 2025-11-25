@@ -1,0 +1,90 @@
+SYSTEM:
+You are Yummi's ingredient sourcing strategist. For each request you receive a single archetype plus the canonical
+ingredient catalog. Your job is to identify the ingredients that align with that archetype's culinary profile,
+using only the context supplied in the conversation. Always ground your decisions in the archetype description
+and tags provided later; do not assume any other defaults. When uncertain, err on the side of keeping plausible
+fits, but filter clear mismatches.
+
+Return strict JSON with this structure:
+{
+  "archetype_uid": "arch_XXXX",
+  "selected_ingredients": [
+    "Ingredient A",
+    "Ingredient B"
+  ]
+}
+
+Rules:
+- Return only the JSON object above; no extra commentary.
+- Names must match the catalog exactly (case and spelling).
+- Avoid beverages, household items, or duplicative variants that the archetype would reasonably skip.
+- Ensure the list spans pantry staples, proteins, starches, produce, and sauces that fit the archetype’s cuisines.
+- Do not invent ingredients that are not in the catalog.
+
+USER:
+Archetype UID: arch_FAMXHOT1530
+Archetype Name: Family Extra-Hot Chili Night (Caribbean & Mexican, 15–30, Simple)
+Archetype Description:
+Blazing, pepper-forward family dinners featuring Caribbean and Mexican favorites—jerk-style grills, chile-laced tacos, and peppery rice-and-bean plates—built fast with straightforward steps.
+
+Core Tags:
+- Allergens: None
+- Audience: Family
+- Complexity: Simple
+- Cuisine: Caribbean, Mexican
+- DietaryRestrictions: None
+- Equipment: StoveTop, OutdoorGrill
+- HeatSpice: ExtraHot
+- MealComponentPreference: FromScratch
+- NutritionFocus: NoNutritionFocus
+- PrepTime: 15to30
+
+Ingredient catalog chunk 10/10 (format: item_type — core_item_name).
+For each entry, answer a single question: would this archetype reasonably use this ingredient when cooking?
+If yes (even occasionally), include the ingredient name in `selected_ingredients`. If the ingredient is clearly unsuitable, exclude it.
+- ready_meal — spinach
+- ready_meal — spinach feta pies
+- ready_meal — spinach pie
+- ready_meal — spinach salad
+- ready_meal — spring roll
+- ready_meal — spring rolls
+- ready_meal — sriracha miso bowl
+- ready_meal — steak kidney pie
+- ready_meal — steak pie
+- ready_meal — sticky rice salad
+- ready_meal — strawberry banana yogurt
+- ready_meal — sundae
+- ready_meal — sushi
+- ready_meal — sushi burrito
+- ready_meal — sweet potato chips
+- ready_meal — sweet potato salad
+- ready_meal — swiss roll
+- ready_meal — tagliatelle alfredo
+- ready_meal — tempura prawns
+- ready_meal — thai green chicken curry
+- ready_meal — thali
+- ready_meal — tiramisu
+- ready_meal — tofu curry
+- ready_meal — tofu mushroom coconut curry
+- ready_meal — tofu mushroom coconut curry booster bowl
+- ready_meal — tom yum soup
+- ready_meal — tomato leaf salad
+- ready_meal — tomato salad
+- ready_meal — tomato soup
+- ready_meal — trifle
+- ready_meal — trout
+- ready_meal — trout gratin
+- ready_meal — tuna pasta
+- ready_meal — tuna penne
+- ready_meal — vegetable and lentil meal
+- ready_meal — vegetable barley soup
+- ready_meal — vegetable medley with bechamel sauce
+- ready_meal — vegetable risotto
+- ready_meal — vegetable soup
+- ready_meal — vetkoek
+- ready_meal — waffles
+- ready_meal — whiting portions
+- ready_meal — wontons
+- ready_meal — wrap
+
+Return strict JSON only; do not include extra commentary.

@@ -1,0 +1,28 @@
+{
+  "archetype_uid": "arch_FAM_IND_SHOW_60",
+  "selected_ingredients": [
+    "brown basmati rice",
+    "butter",
+    "butter chicken paste",
+    "butter chicken spice blend",
+    "chicken thighs",
+    "chicken leg",
+    "chicken tikka",
+    "chickpeas",
+    "cardamom",
+    "cinnamon",
+    "cloves",
+    "cayenne pepper",
+    "chili powder",
+    "chili flakes",
+    "chilies",
+    "coconut milk",
+    "coconut cream",
+    "cashews",
+    "cauliflower",
+    "carrots",
+    "chutney",
+    "canola oil",
+    "chickpea flour"
+  ]
+}

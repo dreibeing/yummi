@@ -1,0 +1,277 @@
+{
+  "meal_id": "meal_20251125T115745Z_01_1e3ac7",
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "archetype_name": "Family Low-Sodium American & French Comfort (30–60, Mild)",
+  "name": "Pork Chops with Apple-Sage Pan Sauce, Roasted Green Beans & Carrots, and Creamy Mash",
+  "description": "Seared pork chops finished with a mild apple-onion-sage pan sauce, paired with oven-roasted green beans and baby carrots, plus creamy mashed potatoes. Built for low-sodium flavor using herbs, aromatics, and vinegar.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 425°F (220°C).",
+    "Scrub and peel 2 lb potatoes; cut into 1-inch chunks and place in a pot of cold water.",
+    "Trim ends from 12 oz green beans.",
+    "Rinse 12 oz baby carrots and pat dry.",
+    "Core and thinly slice 2 apples.",
+    "Peel and thinly slice 1 large onion.",
+    "Finely chop 1 tablespoon sage leaves (or keep whole if preferred).",
+    "Pat dry 4 pork chops with paper towels; season both sides with black pepper.",
+    "Measure vegetable stock and apple cider vinegar; set out butter, milk, and olive oil."
+  ],
+  "cook_steps": [
+    "Start potatoes: Bring the pot to a boil over high heat, then reduce to a simmer and cook until tender, 12–15 minutes.",
+    "Roast vegetables: On a sheet pan, toss green beans and baby carrots with 1 tablespoon olive oil, a big pinch of black pepper, and a pinch of garlic flakes if using. Roast until tender and lightly browned, 15–20 minutes, tossing once halfway.",
+    "Sear pork: Heat 1 tablespoon olive oil in a large oven-safe skillet over medium-high. Sear pork chops 2–3 minutes per side until well browned.",
+    "Finish pork (optional oven finish): If chops are thick, transfer skillet to the oven for 5–7 minutes until cooked through (internal temp about 145°F). Transfer chops to a plate; tent with foil.",
+    "Make pan sauce: Return skillet to medium heat. Add 1 tablespoon butter; sauté sliced onion 3–4 minutes until softened. Add apple slices; cook 2–3 minutes until just tender.",
+    "Deglaze: Add 1/4 cup apple cider vinegar; simmer 30 seconds, scraping up browned bits. Add 3/4 cup vegetable stock and chopped sage; simmer 3–5 minutes until slightly thickened and glossy. Season with black pepper to taste. Return pork chops to the pan to warm 1 minute; remove from heat.",
+    "Mash potatoes: Drain cooked potatoes well. Return to pot; add 2 tablespoons butter and 1/2 cup milk. Mash until smooth and creamy. Add black pepper to taste.",
+    "Serve: Plate mashed potatoes, roasted green beans and carrots, and pork chops. Spoon apple-sage sauce over the chops."
+  ],
+  "instructions": [
+    "Preheat oven to 425°F (220°C).",
+    "Scrub and peel 2 lb potatoes; cut into 1-inch chunks and place in a pot of cold water.",
+    "Trim ends from 12 oz green beans.",
+    "Rinse 12 oz baby carrots and pat dry.",
+    "Core and thinly slice 2 apples.",
+    "Peel and thinly slice 1 large onion.",
+    "Finely chop 1 tablespoon sage leaves (or keep whole if preferred).",
+    "Pat dry 4 pork chops with paper towels; season both sides with black pepper.",
+    "Measure vegetable stock and apple cider vinegar; set out butter, milk, and olive oil.",
+    "Start potatoes: Bring the pot to a boil over high heat, then reduce to a simmer and cook until tender, 12–15 minutes.",
+    "Roast vegetables: On a sheet pan, toss green beans and baby carrots with 1 tablespoon olive oil, a big pinch of black pepper, and a pinch of garlic flakes if using. Roast until tender and lightly browned, 15–20 minutes, tossing once halfway.",
+    "Sear pork: Heat 1 tablespoon olive oil in a large oven-safe skillet over medium-high. Sear pork chops 2–3 minutes per side until well browned.",
+    "Finish pork (optional oven finish): If chops are thick, transfer skillet to the oven for 5–7 minutes until cooked through (internal temp about 145°F). Transfer chops to a plate; tent with foil.",
+    "Make pan sauce: Return skillet to medium heat. Add 1 tablespoon butter; sauté sliced onion 3–4 minutes until softened. Add apple slices; cook 2–3 minutes until just tender.",
+    "Deglaze: Add 1/4 cup apple cider vinegar; simmer 30 seconds, scraping up browned bits. Add 3/4 cup vegetable stock and chopped sage; simmer 3–5 minutes until slightly thickened and glossy. Season with black pepper to taste. Return pork chops to the pan to warm 1 minute; remove from heat.",
+    "Mash potatoes: Drain cooked potatoes well. Return to pot; add 2 tablespoons butter and 1/2 cup milk. Mash until smooth and creamy. Add black pepper to taste.",
+    "Serve: Plate mashed potatoes, roasted green beans and carrots, and pork chops. Spoon apple-sage sauce over the chops."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "pork chops",
+      "quantity": "4 chops (about 2–2.5 lb total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "for pork, vegetables, and mash"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "3 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "apple",
+      "quantity": "2 medium",
+      "preparation": "cored and thinly sliced"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "sage",
+      "quantity": "1 tablespoon",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1/4 cup",
+      "preparation": "for deglazing"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3/4 cup",
+      "preparation": "prefer low-sodium"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "12 oz",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "baby carrots",
+      "quantity": "12 oz",
+      "preparation": "rinsed and dried"
+    },
+    {
+      "core_item_name": "garlic flakes",
+      "quantity": "1/2 teaspoon",
+      "preparation": "optional, for roasting"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "2 lb",
+      "preparation": "peeled and cut into chunks"
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "1/2 cup",
+      "preparation": "warmed if desired"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": "for boiling potatoes"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "French"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy"
+    ],
+    "NutritionFocus": [
+      "LowSodium"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "pork chops",
+      "quantity": "4 chops (about 2–2.5 lb total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "for pork, vegetables, and mash",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "3 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple",
+      "quantity": "2 medium",
+      "preparation": "cored and thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sage",
+      "quantity": "1 tablespoon",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1/4 cup",
+      "preparation": "for deglazing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3/4 cup",
+      "preparation": "prefer low-sodium",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "12 oz",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "baby carrots",
+      "quantity": "12 oz",
+      "preparation": "rinsed and dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic flakes",
+      "quantity": "1/2 teaspoon",
+      "preparation": "optional, for roasting",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "2 lb",
+      "preparation": "peeled and cut into chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "1/2 cup",
+      "preparation": "warmed if desired",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": "for boiling potatoes",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T115837Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T115745Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

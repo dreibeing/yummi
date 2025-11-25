@@ -1,0 +1,10 @@
+{
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "selected_ingredients": [
+    "ready_meal — spinach",
+    "ready_meal — spinach salad",
+    "ready_meal — tomato salad",
+    "ready_meal — trout",
+    "ready_meal — whiting portions"
+  ]
+}

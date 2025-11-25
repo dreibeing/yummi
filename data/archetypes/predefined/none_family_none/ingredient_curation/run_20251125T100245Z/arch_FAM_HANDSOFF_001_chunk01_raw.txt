@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "selected_ingredients": [
+    "7-grain medley",
+    "baharat",
+    "allspice",
+    "almonds",
+    "basmati rice",
+    "bay leaves",
+    "beans",
+    "beef",
+    "beef stew meat",
+    "beef mince",
+    "beef stock",
+    "bread",
+    "bell peppers",
+    "baby carrots",
+    "artichokes",
+    "basil",
+    "black pepper",
+    "black peppercorns",
+    "bouquet garni",
+    "broccoli"
+  ]
+}

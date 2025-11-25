@@ -1,0 +1,313 @@
+{
+  "meal_id": "meal_20251125T133831Z_03_73c4db",
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "archetype_name": "Family Heat Lovers: Korean & Latin American Feasts (Hot, 30–60, Advanced)",
+  "name": "Fire-Grilled Picanha with Habanero Chimichurri, Korean-Style Cucumber Quick Pickle, and Brown Basmati Rice",
+  "description": "Char-grilled picanha in a hot chilli-garlic glaze, served with tangy cucumber quick pickles and brown basmati rice, finished with a fiery chimichurri. Advanced, from-scratch build with bold Korean and Latin American heat.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1 1/2 cups brown basmati rice in cold water until the water runs clear.",
+    "Thinly slice 1 cucumber into half-moons; slice 2 spring onion.",
+    "In a bowl, whisk 2 tbsp rice vinegar, 1 tsp sugar, 1/2 tsp salt, and a pinch of chilli flakes for the quick pickle.",
+    "In a small bowl, mix 1/3 cup chimichurri with 1–2 tbsp habanero sauce and the juice of 1/2 lime; adjust salt to taste.",
+    "In another bowl, make a glaze: 1 tbsp chilli paste, 2 grated garlic cloves, 1 tbsp rice vinegar, 1 tsp brown sugar, 1 tsp salt, 1/2 tsp black pepper, and 1 tbsp olive oil.",
+    "Pat dry 1–1.2 kg picanha steak; score fat cap lightly and coat with the chilli-garlic glaze.",
+    "Chop 2 tbsp coriander and 2 tbsp parsley for garnish.",
+    "Preheat outdoor grill to high (two zones if possible: hot and medium)."
+  ],
+  "cook_steps": [
+    "Combine rinsed rice with 3 cups water and 1/2 tsp salt in a pot; bring to a boil on the stovetop, then cover and simmer on low until tender, 25–30 minutes. Rest covered 5 minutes.",
+    "Toss cucumber slices in the pickle brine; set aside, stirring once or twice while you cook.",
+    "Oil grill grates lightly with a paper towel dipped in olive oil. Place picanha fat-side down over medium heat zone to render for 6–8 minutes, managing flare-ups.",
+    "Move to hot zone and sear 2–3 minutes per side for a deep char. Continue grilling over medium heat until internal temp reaches your preference (about 50–54°C for medium-rare), 10–15 minutes total depending on thickness.",
+    "Rest steak on a board 8–10 minutes, then slice thinly against the grain.",
+    "Fluff rice with a fork. Drain excess liquid from the cucumber pickles.",
+    "Plate: spoon rice, fan sliced picanha, add cucumber quick pickles, and drizzle the habanero chimichurri over the steak.",
+    "Garnish with spring onion, coriander, and parsley. Serve extra habanero chimichurri on the side."
+  ],
+  "instructions": [
+    "Rinse 1 1/2 cups brown basmati rice in cold water until the water runs clear.",
+    "Thinly slice 1 cucumber into half-moons; slice 2 spring onion.",
+    "In a bowl, whisk 2 tbsp rice vinegar, 1 tsp sugar, 1/2 tsp salt, and a pinch of chilli flakes for the quick pickle.",
+    "In a small bowl, mix 1/3 cup chimichurri with 1–2 tbsp habanero sauce and the juice of 1/2 lime; adjust salt to taste.",
+    "In another bowl, make a glaze: 1 tbsp chilli paste, 2 grated garlic cloves, 1 tbsp rice vinegar, 1 tsp brown sugar, 1 tsp salt, 1/2 tsp black pepper, and 1 tbsp olive oil.",
+    "Pat dry 1–1.2 kg picanha steak; score fat cap lightly and coat with the chilli-garlic glaze.",
+    "Chop 2 tbsp coriander and 2 tbsp parsley for garnish.",
+    "Preheat outdoor grill to high (two zones if possible: hot and medium).",
+    "Combine rinsed rice with 3 cups water and 1/2 tsp salt in a pot; bring to a boil on the stovetop, then cover and simmer on low until tender, 25–30 minutes. Rest covered 5 minutes.",
+    "Toss cucumber slices in the pickle brine; set aside, stirring once or twice while you cook.",
+    "Oil grill grates lightly with a paper towel dipped in olive oil. Place picanha fat-side down over medium heat zone to render for 6–8 minutes, managing flare-ups.",
+    "Move to hot zone and sear 2–3 minutes per side for a deep char. Continue grilling over medium heat until internal temp reaches your preference (about 50–54°C for medium-rare), 10–15 minutes total depending on thickness.",
+    "Rest steak on a board 8–10 minutes, then slice thinly against the grain.",
+    "Fluff rice with a fork. Drain excess liquid from the cucumber pickles.",
+    "Plate: spoon rice, fan sliced picanha, add cucumber quick pickles, and drizzle the habanero chimichurri over the steak.",
+    "Garnish with spring onion, coriander, and parsley. Serve extra habanero chimichurri on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "picanha steak",
+      "quantity": "1–1.2 kg",
+      "preparation": "fat cap lightly scored"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp + for oiling grates"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "grated"
+    },
+    {
+      "core_item_name": "chilli paste",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1/2 tsp + pinch for pickle"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 1/2 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp"
+    },
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "1 1/2 cups"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups + as needed"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "chimichurri",
+      "quantity": "1/3 cup"
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "1–2 tbsp"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1/2",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "2 tbsp",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Korean",
+      "LatinAmerican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Hot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "picanha steak",
+      "quantity": "1–1.2 kg",
+      "preparation": "fat cap lightly scored",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp + for oiling grates",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "grated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli paste",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1/2 tsp + pinch for pickle",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 1/2 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "1 1/2 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups + as needed",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chimichurri",
+      "quantity": "1/3 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "1–2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1/2",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "2 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T134053Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T133831Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

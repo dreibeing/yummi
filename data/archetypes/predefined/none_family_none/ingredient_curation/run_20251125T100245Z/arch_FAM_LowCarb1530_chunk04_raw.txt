@@ -1,0 +1,32 @@
+{
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "selected_ingredients": [
+    "grana padano",
+    "grapeseed oil",
+    "greek dressing",
+    "green beans",
+    "ground beef",
+    "ground cumin",
+    "ground meat",
+    "gruyere cheese",
+    "guacamole",
+    "guacamole seasoning",
+    "halloumi",
+    "ham",
+    "havarti cheese",
+    "hemp seeds",
+    "herbs",
+    "hummus",
+    "italian seasoning",
+    "jalapenos",
+    "kale",
+    "leeks",
+    "lettuce",
+    "lemon",
+    "lime",
+    "lamb mince",
+    "lamb kebabs",
+    "haddock",
+    "mackerel"
+  ]
+}

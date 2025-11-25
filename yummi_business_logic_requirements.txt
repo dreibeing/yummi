@@ -266,7 +266,7 @@ B. Sample Schemas (canonical reference)
   "canonical_ingredients": [{"ingredient_id":"ing_1021","quantity":250,"unit":"g"}],
   "retailer_items": [{"sku":"WW-12345","ingredient_id":"ing_1021","price":89.99}],
   "recipe_steps": ["Toast spices", "Roast veggies", "Plate"],
-  "version": "2025.02.0"
+  "version": "2025.02.1"
 }
 ```
 - `Feedback Event`:

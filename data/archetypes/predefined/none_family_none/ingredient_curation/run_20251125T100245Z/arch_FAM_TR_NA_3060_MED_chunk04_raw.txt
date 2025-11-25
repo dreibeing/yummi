@@ -1,0 +1,21 @@
+{
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "selected_ingredients": [
+    "grapes",
+    "grapeseed oil",
+    "green beans",
+    "ground beef",
+    "ground cumin",
+    "halloumi",
+    "harissa paste",
+    "honey",
+    "herbs",
+    "hummus",
+    "jasmine rice",
+    "lentils",
+    "lemon",
+    "leeks",
+    "lamb",
+    "lamb mince"
+  ]
+}

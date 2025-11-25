@@ -1,0 +1,31 @@
+{
+  "archetype_uid": "arch_FAM_IND_SHOW_60",
+  "selected_ingredients": [
+    "grapeseed oil",
+    "green beans",
+    "ground beef",
+    "ground cumin",
+    "grapes",
+    "honey",
+    "herbs",
+    "ice cream",
+    "icing sugar",
+    "jasmine rice",
+    "jalfrezi sauce",
+    "korma paste",
+    "korma spice blend",
+    "lamb",
+    "leg of lamb",
+    "lamb shank",
+    "lamb mince",
+    "lemon",
+    "lemongrass",
+    "lemongrass paste",
+    "lentils",
+    "lentil curry",
+    "leek",
+    "lime",
+    "lassi",
+    "jalapeno chutney"
+  ]
+}

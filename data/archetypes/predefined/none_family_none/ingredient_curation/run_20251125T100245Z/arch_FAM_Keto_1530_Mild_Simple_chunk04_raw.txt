@@ -1,0 +1,31 @@
+{
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "selected_ingredients": [
+    "grapeseed oil",
+    "macadamia oil",
+    "ground cumin",
+    "italian seasoning",
+    "herbs",
+    "lemon",
+    "lime",
+    "lettuce",
+    "kale",
+    "green beans",
+    "leeks",
+    "ground beef",
+    "lamb",
+    "lamb chops",
+    "lamb mince",
+    "haddock",
+    "hake fillets",
+    "mackerel",
+    "halloumi",
+    "halloumi cheese",
+    "gruyere cheese",
+    "grana padano",
+    "havarti cheese",
+    "guacamole",
+    "greek dressing",
+    "kefir"
+  ]
+}

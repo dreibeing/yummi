@@ -1,0 +1,245 @@
+SYSTEM:
+You are Yummi's ingredient sourcing strategist. For each request you receive a single archetype plus the canonical
+ingredient catalog. Your job is to identify the ingredients that align with that archetype's culinary profile,
+using only the context supplied in the conversation. Always ground your decisions in the archetype description
+and tags provided later; do not assume any other defaults. When uncertain, err on the side of keeping plausible
+fits, but filter clear mismatches.
+
+Return strict JSON with this structure:
+{
+  "archetype_uid": "arch_XXXX",
+  "selected_ingredients": [
+    "Ingredient A",
+    "Ingredient B"
+  ]
+}
+
+Rules:
+- Return only the JSON object above; no extra commentary.
+- Names must match the catalog exactly (case and spelling).
+- Avoid beverages, household items, or duplicative variants that the archetype would reasonably skip.
+- Ensure the list spans pantry staples, proteins, starches, produce, and sauces that fit the archetype’s cuisines.
+- Do not invent ingredients that are not in the catalog.
+
+USER:
+Archetype UID: arch_FamQuickGrill_M15
+Archetype Name: Family Quick Grill & Salad Nights (Mild, 15–30)
+Archetype Description:
+Fast, family-friendly grill plates with mild seasoning—quickly seared proteins and veg on the braai paired with simple salads and starch sides for a balanced weeknight dinner.
+
+Core Tags:
+- Allergens: None
+- Audience: Family
+- Complexity: Simple
+- Cuisine: SouthAfrican, American, Greek
+- DietaryRestrictions: None
+- Equipment: OutdoorGrill, StoveTop
+- HeatSpice: Mild
+- MealComponentPreference: FromScratch
+- PrepTime: 15to30
+
+Ingredient catalog chunk 2/10 (format: item_type — core_item_name).
+For each entry, answer a single question: would this archetype reasonably use this ingredient when cooking?
+If yes (even occasionally), include the ingredient name in `selected_ingredients`. If the ingredient is clearly unsuitable, exclude it.
+- ingredient — broccoli and cauliflower florets
+- ingredient — brown and wild rice
+- ingredient — brown basmati rice
+- ingredient — brown basmati rice with quinoa
+- ingredient — brown rice
+- ingredient — brown rice crackers
+- ingredient — brown sugar
+- ingredient — bruschetta
+- ingredient — brussels sprouts
+- ingredient — buckwheat flour
+- ingredient — buffalo sauce
+- ingredient — bulgur
+- ingredient — bulgur quinoa and lentil
+- ingredient — bum balm
+- ingredient — burger
+- ingredient — burger buns
+- ingredient — burrata
+- ingredient — burritos
+- ingredient — butter
+- ingredient — butter beans
+- ingredient — butter chicken
+- ingredient — butter chicken curry spice blend
+- ingredient — butter chicken paste
+- ingredient — butter chicken sauce
+- ingredient — butter chicken spice blend
+- ingredient — butter roti
+- ingredient — butter spread
+- ingredient — butterflied chicken
+- ingredient — buttermilk
+- ingredient — butternut soup
+- ingredient — butternut squash
+- ingredient — butterscotch syrup
+- ingredient — cabbage
+- ingredient — cabernet sauvignon
+- ingredient — cacio e pepe
+- ingredient — caesar dressing
+- ingredient — cajun sauce
+- ingredient — cajun seasoning
+- ingredient — calamari
+- ingredient — cambozola cheese
+- ingredient — camembert
+- ingredient — cannellini beans
+- ingredient — cannelloni
+- ingredient — canola oil
+- ingredient — caper berries
+- ingredient — cappuccino
+- ingredient — cappuccino mix
+- ingredient — cappuccino sachets
+- ingredient — cappuccino sticks
+- ingredient — caramel
+- ingredient — caramel essence
+- ingredient — caramel mocha cappuccino sachets
+- ingredient — cardamom
+- ingredient — carrot
+- ingredient — carrot quinoa wrap
+- ingredient — carrots
+- ingredient — cashew butter
+- ingredient — cashew chicken
+- ingredient — cashews
+- ingredient — cauliflower
+- ingredient — cauliflower carrot fettuccine
+- ingredient — cauliflower fettuccine
+- ingredient — cauliflower gnocchi
+- ingredient — cauliflower spaghetti
+- ingredient — cauliflower wrap
+- ingredient — caviar
+- ingredient — cayenne pepper
+- ingredient — celery
+- ingredient — cereal
+- ingredient — cereal bars
+- ingredient — cerelac
+- ingredient — chai latte
+- ingredient — chai latte mix
+- ingredient — chakalaka
+- ingredient — chamomile and rooibos tea bags
+- ingredient — chamomile tea
+- ingredient — chardonnay
+- ingredient — cheddar
+- ingredient — cheddar cheese
+- ingredient — cheddar cheese slices
+- ingredient — cheddar cheese spread
+- ingredient — cheddar slices
+- ingredient — cheese
+- ingredient — cheese crackers
+- ingredient — cheese dip
+- ingredient — cheese pastry straws
+- ingredient — cheese pillows
+- ingredient — cheese puff
+- ingredient — cheese roll
+- ingredient — cheese sauce
+- ingredient — cheese slices
+- ingredient — cheese spread
+- ingredient — chermoula
+- ingredient — cherries
+- ingredient — cherry
+- ingredient — cherry brandy sauce
+- ingredient — cherry jam
+- ingredient — cherry tomatoes
+- ingredient — chia seeds
+- ingredient — chicken
+- ingredient — chicken and tomato sauce
+- ingredient — chicken bolognese
+- ingredient — chicken breast
+- ingredient — chicken breast fillets
+- ingredient — chicken burger
+- ingredient — chicken burgers
+- ingredient — chicken curry
+- ingredient — chicken frikkadels
+- ingredient — chicken hearts
+- ingredient — chicken jus
+- ingredient — chicken kebabs
+- ingredient — chicken leg
+- ingredient — chicken leg quarter
+- ingredient — chicken leg quarters
+- ingredient — chicken liver
+- ingredient — chicken liver pâté
+- ingredient — chicken mince
+- ingredient — chicken necks
+- ingredient — chicken noodle
+- ingredient — chicken rashers
+- ingredient — chicken rub
+- ingredient — chicken sausage
+- ingredient — chicken sausages
+- ingredient — chicken seasoning
+- ingredient — chicken skewers
+- ingredient — chicken soup
+- ingredient — chicken steak
+- ingredient — chicken steaks
+- ingredient — chicken stock
+- ingredient — chicken stock concentrate
+- ingredient — chicken stock powder
+- ingredient — chicken strips
+- ingredient — chicken stroganoff
+- ingredient — chicken thigh
+- ingredient — chicken thigh fillets
+- ingredient — chicken thighs
+- ingredient — chicken tikka
+- ingredient — chicken tikka curry
+- ingredient — chicken tomato sauce
+- ingredient — chicken vienna sausage
+- ingredient — chicken wing tips
+- ingredient — chicken wings
+- ingredient — chickpea
+- ingredient — chickpea flour
+- ingredient — chickpea pasta
+- ingredient — chickpeas
+- ingredient — chili flakes
+- ingredient — chili oil
+- ingredient — chilies
+- ingredient — chilli
+- ingredient — chilli bite mix
+- ingredient — chilli con carne sauce
+- ingredient — chilli crisp
+- ingredient — chilli crunch
+- ingredient — chilli crunch seasoning
+- ingredient — chilli flakes
+- ingredient — chilli lime salt
+- ingredient — chilli lime seasoning
+- ingredient — chilli non carne
+- ingredient — chilli oil
+- ingredient — chilli paste
+- ingredient — chilli pickle
+- ingredient — chilli popper bites
+- ingredient — chilli powder
+- ingredient — chilli salt
+- ingredient — chimichurri
+- ingredient — chipolatas
+- ingredient — chipotle chilli sauce
+- ingredient — chipotle sauce
+- ingredient — chives
+- ingredient — chocolate chip biscuits
+- ingredient — chorizo
+- ingredient — chow mein sauce
+- ingredient — chuck eye steak
+- ingredient — chuckles
+- ingredient — churros
+- ingredient — chutney
+- ingredient — ciabatta
+- ingredient — ciabatta rolls
+- ingredient — cider
+- ingredient — cinnamon
+- ingredient — cinnamon sugar
+- ingredient — citrus
+- ingredient — citrus fruit
+- ingredient — citrus mix
+- ingredient — clementine slices
+- ingredient — cloves
+- ingredient — coating mix
+- ingredient — coco pops
+- ingredient — coconut
+- ingredient — coconut cream
+- ingredient — coconut flakes
+- ingredient — coconut flour
+- ingredient — coconut jasmine rice
+- ingredient — coconut milk
+- ingredient — coconut oil
+- ingredient — coconut pineapple drink
+- ingredient — coconut rice
+- ingredient — coconut sauce
+- ingredient — coconut stir fry sauce
+
+Return strict JSON only; do not include extra commentary.

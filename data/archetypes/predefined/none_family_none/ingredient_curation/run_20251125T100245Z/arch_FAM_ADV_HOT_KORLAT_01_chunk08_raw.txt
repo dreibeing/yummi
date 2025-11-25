@@ -1,0 +1,26 @@
+{
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "selected_ingredients": [
+    "tomato",
+    "tomatoes",
+    "tomato paste",
+    "tomato puree",
+    "tomato sauce",
+    "tortilla",
+    "tortilla wraps",
+    "tortillas",
+    "vinegar",
+    "whole chicken",
+    "tuna",
+    "tuna steak",
+    "tripe",
+    "vegetable",
+    "vegetables",
+    "zucchini",
+    "water",
+    "yoghurt",
+    "worcestershire sauce",
+    "vegetable stock",
+    "white pepper"
+  ]
+}

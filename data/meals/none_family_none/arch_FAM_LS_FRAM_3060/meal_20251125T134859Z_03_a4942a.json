@@ -1,0 +1,316 @@
+{
+  "meal_id": "meal_20251125T134859Z_03_a4942a",
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "archetype_name": "Family Low-Sodium American & French Comfort (30–60, Mild)",
+  "name": "Turkey–Quinoa Mini Meatloaves with Mushroom-Thyme Gravy, Garlic Mash, and Green Beans",
+  "description": "Family-friendly mini meatloaves baked and topped with a silky mushroom-thyme gravy, served with creamy garlic mashed potatoes and tender green beans. Built for low-sodium cooking with plenty of fresh aromatics.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 375°F (190°C).",
+    "Rinse 1 cup quinoa under cold water in a fine strainer.",
+    "Peel and cut 2 lb potatoes into 1-inch chunks.",
+    "Trim ends from 12 oz green beans.",
+    "Finely chop 1 medium onion (divide: half for meatloaf, half for gravy).",
+    "Mince 3 cloves garlic (divide: 2 for mash, 1 for meatloaf).",
+    "Slice 8 oz mushrooms.",
+    "Chop 2 tablespoons parsley.",
+    "Measure 1.5 cups mushroom stock and 1/2 cup white wine."
+  ],
+  "cook_steps": [
+    "Cook quinoa: In a small pot, combine rinsed quinoa with 2 cups water. Bring to a boil, reduce to low, cover, and cook 15 minutes. Fluff and let cool slightly.",
+    "Start potatoes: Place potatoes and 2 garlic cloves in a large pot, cover with cold water, and bring to a boil. Reduce to a gentle boil and cook until tender, 12–15 minutes.",
+    "Make meatloaf mix: In a bowl, combine 1.25 lb turkey, 1 cup cooked quinoa (reserve any extra), 1/2 of the chopped onion, 1 minced garlic clove, 1 egg, 1 tbsp olive oil, 1 tbsp chopped parsley, and 1/2 tsp black pepper. Mix gently until just combined.",
+    "Form and bake: Shape mixture into 8 equal mini loaves on a parchment-lined sheet. Bake until cooked through (165°F/74°C), 18–22 minutes.",
+    "Gravy base: In a skillet over medium heat, melt 1 tbsp butter with 1 tsp olive oil. Add remaining onion and sliced mushrooms; cook, stirring, until mushrooms are browned and moisture evaporates, 6–8 minutes.",
+    "Make gravy: Sprinkle 1 tbsp flour over mushrooms; cook 1 minute, stirring. Deglaze with white wine and simmer 1–2 minutes. Whisk in mushroom stock, add 1/2 tsp thyme and a pinch of black pepper, and simmer until glossy and slightly thick, 3–5 minutes. Reduce heat to low.",
+    "Green beans: While gravy simmers, place green beans in a sauté pan with 1/4 cup water and 1 tsp olive oil. Cover and steam-sauté over medium heat until crisp-tender, 4–6 minutes. Finish with black pepper.",
+    "Mash potatoes: Drain potatoes and garlic well. Return to pot over low heat for 30 seconds to evaporate excess moisture. Add 3 tbsp butter and 1/3–1/2 cup warm milk; mash until smooth. Season with black pepper.",
+    "Finish: Spoon mushroom-thyme gravy over baked mini meatloaves. Serve with garlic mash and green beans. Sprinkle remaining parsley over the top."
+  ],
+  "instructions": [
+    "Preheat oven to 375°F (190°C).",
+    "Rinse 1 cup quinoa under cold water in a fine strainer.",
+    "Peel and cut 2 lb potatoes into 1-inch chunks.",
+    "Trim ends from 12 oz green beans.",
+    "Finely chop 1 medium onion (divide: half for meatloaf, half for gravy).",
+    "Mince 3 cloves garlic (divide: 2 for mash, 1 for meatloaf).",
+    "Slice 8 oz mushrooms.",
+    "Chop 2 tablespoons parsley.",
+    "Measure 1.5 cups mushroom stock and 1/2 cup white wine.",
+    "Cook quinoa: In a small pot, combine rinsed quinoa with 2 cups water. Bring to a boil, reduce to low, cover, and cook 15 minutes. Fluff and let cool slightly.",
+    "Start potatoes: Place potatoes and 2 garlic cloves in a large pot, cover with cold water, and bring to a boil. Reduce to a gentle boil and cook until tender, 12–15 minutes.",
+    "Make meatloaf mix: In a bowl, combine 1.25 lb turkey, 1 cup cooked quinoa (reserve any extra), 1/2 of the chopped onion, 1 minced garlic clove, 1 egg, 1 tbsp olive oil, 1 tbsp chopped parsley, and 1/2 tsp black pepper. Mix gently until just combined.",
+    "Form and bake: Shape mixture into 8 equal mini loaves on a parchment-lined sheet. Bake until cooked through (165°F/74°C), 18–22 minutes.",
+    "Gravy base: In a skillet over medium heat, melt 1 tbsp butter with 1 tsp olive oil. Add remaining onion and sliced mushrooms; cook, stirring, until mushrooms are browned and moisture evaporates, 6–8 minutes.",
+    "Make gravy: Sprinkle 1 tbsp flour over mushrooms; cook 1 minute, stirring. Deglaze with white wine and simmer 1–2 minutes. Whisk in mushroom stock, add 1/2 tsp thyme and a pinch of black pepper, and simmer until glossy and slightly thick, 3–5 minutes. Reduce heat to low.",
+    "Green beans: While gravy simmers, place green beans in a sauté pan with 1/4 cup water and 1 tsp olive oil. Cover and steam-sauté over medium heat until crisp-tender, 4–6 minutes. Finish with black pepper.",
+    "Mash potatoes: Drain potatoes and garlic well. Return to pot over low heat for 30 seconds to evaporate excess moisture. Add 3 tbsp butter and 1/3–1/2 cup warm milk; mash until smooth. Season with black pepper.",
+    "Finish: Spoon mushroom-thyme gravy over baked mini meatloaves. Serve with garlic mash and green beans. Sprinkle remaining parsley over the top."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "1.25 lb",
+      "preparation": "ground"
+    },
+    {
+      "core_item_name": "quinoa",
+      "quantity": "1 cup (dry), yields about 3 cups cooked",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 cups for quinoa + as needed for boiling/steaming",
+      "preparation": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "2 lb",
+      "preparation": "peeled and chunked"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "12 oz",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "finely chopped, divided"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced (2 for mash, 1 for meatloaf)"
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "1",
+      "preparation": "lightly beaten"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "about 1.5 teaspoons total",
+      "preparation": "to taste, divided"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 teaspoons total",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "8 oz",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "4 tablespoons total",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "flour",
+      "quantity": "1 tablespoon",
+      "preparation": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup",
+      "preparation": "optional for deglazing"
+    },
+    {
+      "core_item_name": "mushroom stock",
+      "quantity": "1.5 cups",
+      "preparation": "unsalted if available"
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1/2 teaspoon",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "1/3–1/2 cup",
+      "preparation": "warmed"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "French"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Egg"
+    ],
+    "NutritionFocus": [
+      "LowSodium"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "1.25 lb",
+      "preparation": "ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "quinoa",
+      "quantity": "1 cup (dry), yields about 3 cups cooked",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 cups for quinoa + as needed for boiling/steaming",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "2 lb",
+      "preparation": "peeled and chunked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "12 oz",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "finely chopped, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced (2 for mash, 1 for meatloaf)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "1",
+      "preparation": "lightly beaten",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "about 1.5 teaspoons total",
+      "preparation": "to taste, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 teaspoons total",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "8 oz",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "4 tablespoons total",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "flour",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup",
+      "preparation": "optional for deglazing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushroom stock",
+      "quantity": "1.5 cups",
+      "preparation": "unsalted if available",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1/2 teaspoon",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "1/3–1/2 cup",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T135237Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T134859Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

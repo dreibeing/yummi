@@ -1,0 +1,305 @@
+{
+  "meal_id": "meal_20251125T113614Z_01_2f3f11",
+  "archetype_uid": "arch_FamLatComfort3060",
+  "archetype_name": "Family Latin Comfort (Mild, 30–60, Intermediate)",
+  "name": "Family Arroz con Pollo with Corn",
+  "description": "A mild, family-style Latin arroz con pollo baked to finish—tender chicken thighs over seasoned tomato rice with corn, coriander, and lime. Optional salsa on the side.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 180°C/350°F.",
+    "Rinse and drain the brown rice until water runs mostly clear.",
+    "Dice the onions and bell peppers.",
+    "Mince the garlic.",
+    "Chop the coriander; cut the lime into wedges.",
+    "Pat chicken thighs dry and season with salt and black pepper."
+  ],
+  "cook_steps": [
+    "Heat olive oil in a large oven-safe pot over medium-high heat.",
+    "Sear chicken thighs skin-side down until browned, 4–5 minutes; flip and brown 2 minutes more. Remove to a plate.",
+    "Lower heat to medium; add onions and bell peppers. Cook until softened, 4–5 minutes.",
+    "Add garlic, paprika, cumin, and oregano. Stir 30 seconds until fragrant.",
+    "Stir in rinsed brown rice; toast 1 minute, coating grains in oil and spices.",
+    "Add crushed tomatoes, chicken stock, corn, bay leaves, and a pinch of salt and black pepper. Stir and bring to a gentle simmer.",
+    "Nestle chicken thighs on top (skin-side up). Cover with a tight lid or foil.",
+    "Bake at 180°C/350°F for 30–35 minutes, until rice is tender and liquid absorbed.",
+    "Rest 5–10 minutes off heat, covered. Remove bay leaves.",
+    "Fluff rice around the chicken. Sprinkle coriander and squeeze lime over the top.",
+    "Serve with extra lime wedges and salsa on the side (optional)."
+  ],
+  "instructions": [
+    "Heat oven to 180°C/350°F.",
+    "Rinse and drain the brown rice until water runs mostly clear.",
+    "Dice the onions and bell peppers.",
+    "Mince the garlic.",
+    "Chop the coriander; cut the lime into wedges.",
+    "Pat chicken thighs dry and season with salt and black pepper.",
+    "Heat olive oil in a large oven-safe pot over medium-high heat.",
+    "Sear chicken thighs skin-side down until browned, 4–5 minutes; flip and brown 2 minutes more. Remove to a plate.",
+    "Lower heat to medium; add onions and bell peppers. Cook until softened, 4–5 minutes.",
+    "Add garlic, paprika, cumin, and oregano. Stir 30 seconds until fragrant.",
+    "Stir in rinsed brown rice; toast 1 minute, coating grains in oil and spices.",
+    "Add crushed tomatoes, chicken stock, corn, bay leaves, and a pinch of salt and black pepper. Stir and bring to a gentle simmer.",
+    "Nestle chicken thighs on top (skin-side up). Cover with a tight lid or foil.",
+    "Bake at 180°C/350°F for 30–35 minutes, until rice is tender and liquid absorbed.",
+    "Rest 5–10 minutes off heat, covered. Remove bay leaves.",
+    "Fluff rice around the chicken. Sprinkle coriander and squeeze lime over the top.",
+    "Serve with extra lime wedges and salsa on the side (optional)."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "6 pieces (about 1–1.2 kg)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "brown rice",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 can (400 g)"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "2 1/2 cups",
+      "preparation": "hot if possible"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "1 cup",
+      "preparation": "drained if canned"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 1/4 tsp, plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp, plus more to taste"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup",
+      "preparation": "for serving (optional)"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "LatinAmerican",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "6 pieces (about 1–1.2 kg)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown rice",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 can (400 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "2 1/2 cups",
+      "preparation": "hot if possible",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "1 cup",
+      "preparation": "drained if canned",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 1/4 tsp, plus more to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp, plus more to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup",
+      "preparation": "for serving (optional)",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T113654Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T113614Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

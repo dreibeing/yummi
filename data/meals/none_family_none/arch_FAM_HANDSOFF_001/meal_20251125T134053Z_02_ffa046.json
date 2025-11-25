@@ -1,0 +1,283 @@
+{
+  "meal_id": "meal_20251125T134053Z_02_ffa046",
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "archetype_name": "Family Hands-Off Sheet Pan & Slow Cooker Nights",
+  "name": "Slow Cooker Lemon–Olive Lamb Shanks with Potatoes",
+  "description": "Hands-off lamb shanks gently braised with potatoes, oregano, preserved lemon, and olives for mellow Greek–Middle Eastern flavors. Minimal prep; the slow cooker does the work.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Peel and slice onion.",
+    "Peel carrots; cut into thick chunks.",
+    "Scrub potatoes; cut into large chunks.",
+    "Finely chop garlic.",
+    "Rinse olives and drain.",
+    "Rinse preserved lemon; remove pulp and finely chop the peel.",
+    "Measure spices, salt, and pepper.",
+    "Set slow cooker to Low or High based on desired cook time."
+  ],
+  "cook_steps": [
+    "Add potatoes, carrots, and onion to the slow cooker in an even layer.",
+    "Place lamb shanks on top of the vegetables.",
+    "Sprinkle garlic, oregano, ground cumin, cinnamon, bay leaves, salt, and black pepper over the shanks.",
+    "Drizzle olive oil over everything, then pour in beef stock around the sides.",
+    "Cover and cook: Low for 7–8 hours or High for 4–5 hours, until lamb is very tender.",
+    "Stir in olives and preserved lemon during the last 15 minutes of cooking; re-cover.",
+    "Optional finish: Transfer shanks to a sheet pan and place under a hot oven broiler for 3–5 minutes to brown; return to cooker to baste with juices.",
+    "Discard bay leaves. Sprinkle with chopped parsley.",
+    "Serve lamb shanks over the potatoes and vegetables, spooning braising juices on top."
+  ],
+  "instructions": [
+    "Peel and slice onion.",
+    "Peel carrots; cut into thick chunks.",
+    "Scrub potatoes; cut into large chunks.",
+    "Finely chop garlic.",
+    "Rinse olives and drain.",
+    "Rinse preserved lemon; remove pulp and finely chop the peel.",
+    "Measure spices, salt, and pepper.",
+    "Set slow cooker to Low or High based on desired cook time.",
+    "Add potatoes, carrots, and onion to the slow cooker in an even layer.",
+    "Place lamb shanks on top of the vegetables.",
+    "Sprinkle garlic, oregano, ground cumin, cinnamon, bay leaves, salt, and black pepper over the shanks.",
+    "Drizzle olive oil over everything, then pour in beef stock around the sides.",
+    "Cover and cook: Low for 7–8 hours or High for 4–5 hours, until lamb is very tender.",
+    "Stir in olives and preserved lemon during the last 15 minutes of cooking; re-cover.",
+    "Optional finish: Transfer shanks to a sheet pan and place under a hot oven broiler for 3–5 minutes to brown; return to cooker to baste with juices.",
+    "Discard bay leaves. Sprinkle with chopped parsley.",
+    "Serve lamb shanks over the potatoes and vegetables, spooning braising juices on top."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "lamb shanks",
+      "quantity": "4 shanks (about 1.6–2.0 kg total)",
+      "preparation": "trim excess surface fat if needed"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "1.2 kg",
+      "preparation": "cut into large chunks"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "3–4 medium",
+      "preparation": "cut into thick chunks"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "2 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "1.5 cups"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 teaspoons",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 teaspoons",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "3/4 cup",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "preserved lemon",
+      "quantity": "1/2 large",
+      "preparation": "peel finely chopped"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped, for serving"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "SlowOrPressureCooker"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "lamb shanks",
+      "quantity": "4 shanks (about 1.6–2.0 kg total)",
+      "preparation": "trim excess surface fat if needed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "1.2 kg",
+      "preparation": "cut into large chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "3–4 medium",
+      "preparation": "cut into thick chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "2 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "1.5 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 teaspoons",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 teaspoons",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "3/4 cup",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "preserved lemon",
+      "quantity": "1/2 large",
+      "preparation": "peel finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped, for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T134202Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T134053Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

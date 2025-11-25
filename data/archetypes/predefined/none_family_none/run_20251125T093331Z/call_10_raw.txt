@@ -1,0 +1,45 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_FAM_LS_FRAM_3060",
+      "name": "Family Low-Sodium American & French Comfort (30–60, Mild)",
+      "description": "Balanced, family-friendly American and French bistro-style dinners with mindful salt control—roasts, braises, and hearty veg sides—cooked from scratch in 30–60 minutes with mild flavors.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "American",
+          "French"
+        ],
+        "PrepTime": [
+          "30to60"
+        ],
+        "Complexity": [
+          "Intermediate"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "Oven"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "LowSodium"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Adds a unique low-sodium focus and introduces French cuisine for family diners without overlapping existing heat, equipment, or nutrition profiles."
+    }
+  ]
+}

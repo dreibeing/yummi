@@ -1,0 +1,13 @@
+{
+  "archetype_uid": "arch_FAMXHOT1530",
+  "selected_ingredients": [
+    "ready_meal — sweet potato chips",
+    "ready_meal — sweet potato salad",
+    "ready_meal — wrap",
+    "ready_meal — trout",
+    "ready_meal — whiting portions",
+    "ready_meal — tuna pasta",
+    "ready_meal — tomato salad",
+    "ready_meal — spinach"
+  ]
+}

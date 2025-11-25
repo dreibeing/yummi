@@ -1,0 +1,22 @@
+{
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "selected_ingredients": [
+    "tomatoes",
+    "tomato paste",
+    "tomato puree",
+    "tomato and onion mix",
+    "turmeric powder",
+    "tzatziki",
+    "za'atar",
+    "zhough paste",
+    "yoghurt",
+    "vegetable stock",
+    "vegetables",
+    "zucchini",
+    "vinegar",
+    "white pepper",
+    "whole chicken",
+    "turkey",
+    "water"
+  ]
+}

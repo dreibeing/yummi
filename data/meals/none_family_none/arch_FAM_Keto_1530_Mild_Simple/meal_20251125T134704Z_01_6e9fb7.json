@@ -1,0 +1,212 @@
+{
+  "meal_id": "meal_20251125T134704Z_01_6e9fb7",
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "archetype_name": "Family Keto Weeknight Plates (Mild, 15–30, Simple)",
+  "name": "Lemon-Sumac Pork Chops with Roasted Broccoli",
+  "description": "Quick-seared pork chops finished with a bright lemon-sumac drizzle, served alongside crisp roasted broccoli. Mild, keto-friendly, and ready in under 30 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C/425°F.",
+    "Cut broccoli into medium florets; dry well.",
+    "Mince garlic.",
+    "Zest then halve the lemon.",
+    "Pat pork chops dry; set out spices, salt, and pepper."
+  ],
+  "cook_steps": [
+    "Toss broccoli with 1.5 tbsp olive oil, a big pinch of salt, and black pepper; spread on a sheet pan.",
+    "Roast broccoli for 15–18 minutes until edges are browned and tender.",
+    "While broccoli roasts, season pork chops on both sides with 1 tsp salt, black pepper, oregano, and half the sumac.",
+    "Heat 1 tbsp olive oil in a large skillet over medium-high until shimmering.",
+    "Sear pork chops 3–4 minutes per side until nicely browned and just cooked through (internal temp ~63°C/145°F); rest on a plate.",
+    "Turn heat to low; add remaining 0.5 tbsp olive oil and garlic to the skillet. Stir 20–30 seconds until fragrant.",
+    "Stir in lemon juice and remaining sumac to make a quick pan drizzle, scraping up browned bits. Remove from heat.",
+    "Plate pork chops with roasted broccoli. Spoon lemon-sumac drizzle over the chops and a little over broccoli. Sprinkle lemon zest and parsley to finish."
+  ],
+  "instructions": [
+    "Heat oven to 220°C/425°F.",
+    "Cut broccoli into medium florets; dry well.",
+    "Mince garlic.",
+    "Zest then halve the lemon.",
+    "Pat pork chops dry; set out spices, salt, and pepper.",
+    "Toss broccoli with 1.5 tbsp olive oil, a big pinch of salt, and black pepper; spread on a sheet pan.",
+    "Roast broccoli for 15–18 minutes until edges are browned and tender.",
+    "While broccoli roasts, season pork chops on both sides with 1 tsp salt, black pepper, oregano, and half the sumac.",
+    "Heat 1 tbsp olive oil in a large skillet over medium-high until shimmering.",
+    "Sear pork chops 3–4 minutes per side until nicely browned and just cooked through (internal temp ~63°C/145°F); rest on a plate.",
+    "Turn heat to low; add remaining 0.5 tbsp olive oil and garlic to the skillet. Stir 20–30 seconds until fragrant.",
+    "Stir in lemon juice and remaining sumac to make a quick pan drizzle, scraping up browned bits. Remove from heat.",
+    "Plate pork chops with roasted broccoli. Spoon lemon-sumac drizzle over the chops and a little over broccoli. Sprinkle lemon zest and parsley to finish."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "pork chops",
+      "quantity": "4 chops (about 700–900 g total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "800 g",
+      "preparation": "cut into florets"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped, for garnish"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein",
+      "Keto",
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "pork chops",
+      "quantity": "4 chops (about 700–900 g total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "800 g",
+      "preparation": "cut into florets",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped, for garnish",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [
+    "Category 'MealComponentPreference' ideally includes 2+ tags; received ['FromScratch']"
+  ],
+  "metadata": {
+    "created_at": "20251125T134741Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T134704Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "meal_id": "meal_20251125T120031Z_01_db06aa",
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "archetype_name": "Family Turkish & North African Suppers (Medium, 30–60, Intermediate)",
+  "name": "Turkish-Style Yoghurt Chicken with Saffron Rice and Tomato-Cucumber Salad",
+  "description": "Oven-roasted yoghurt-marinated chicken thighs with warm spices, served over fragrant saffron basmati rice and a bright tomato-cucumber salad with sumac and lemon.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F.",
+    "Finely grate 3 cloves garlic.",
+    "Zest and juice 1 lemon; keep separate.",
+    "Thinly slice 1 large onion.",
+    "Rinse 2 cups basmati rice under cold water until it runs mostly clear; soak 15 minutes, then drain.",
+    "Dice 3 tomatoes and 1 cucumber; thinly slice 1/2 red onion; chop a small handful of parsley."
+  ],
+  "cook_steps": [
+    "In a bowl, mix yoghurt, grated garlic, lemon zest, 1 tbsp olive oil, 1.5 tsp paprika, 1 tsp cumin, 1 tsp oregano, 1/2 tsp chili flakes, 1 tsp salt, and 1/2 tsp black pepper.",
+    "Pat dry chicken thighs and coat with the yoghurt marinade; place on a lined baking tray.",
+    "Roast chicken at 220°C/425°F for 25–30 minutes until browned and cooked through (juices run clear). Rest 5 minutes.",
+    "While chicken roasts, warm 1 tbsp olive oil and 1 tbsp butter in a pot over medium heat. Add sliced onion and a pinch of salt; cook 5–6 minutes until soft.",
+    "Stir in drained basmati rice; cook 1 minute to coat. Add a pinch of saffron rubbed between fingers, 2.25 cups water, 1/2 tsp salt, and a pinch of black pepper.",
+    "Bring to a boil, then cover and simmer on low 12 minutes. Turn off heat and rest, covered, 10 minutes. Fluff before serving.",
+    "For the salad, combine tomatoes, cucumber, red onion, and parsley. Toss with 2 tbsp olive oil, 1–2 tbsp lemon juice, 1 tsp sumac, 1/2 tsp salt, and a pinch of black pepper.",
+    "Plate saffron rice, top with chicken, and serve salad on the side. Squeeze extra lemon over chicken if desired."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F.",
+    "Finely grate 3 cloves garlic.",
+    "Zest and juice 1 lemon; keep separate.",
+    "Thinly slice 1 large onion.",
+    "Rinse 2 cups basmati rice under cold water until it runs mostly clear; soak 15 minutes, then drain.",
+    "Dice 3 tomatoes and 1 cucumber; thinly slice 1/2 red onion; chop a small handful of parsley.",
+    "In a bowl, mix yoghurt, grated garlic, lemon zest, 1 tbsp olive oil, 1.5 tsp paprika, 1 tsp cumin, 1 tsp oregano, 1/2 tsp chili flakes, 1 tsp salt, and 1/2 tsp black pepper.",
+    "Pat dry chicken thighs and coat with the yoghurt marinade; place on a lined baking tray.",
+    "Roast chicken at 220°C/425°F for 25–30 minutes until browned and cooked through (juices run clear). Rest 5 minutes.",
+    "While chicken roasts, warm 1 tbsp olive oil and 1 tbsp butter in a pot over medium heat. Add sliced onion and a pinch of salt; cook 5–6 minutes until soft.",
+    "Stir in drained basmati rice; cook 1 minute to coat. Add a pinch of saffron rubbed between fingers, 2.25 cups water, 1/2 tsp salt, and a pinch of black pepper.",
+    "Bring to a boil, then cover and simmer on low 12 minutes. Turn off heat and rest, covered, 10 minutes. Fluff before serving.",
+    "For the salad, combine tomatoes, cucumber, red onion, and parsley. Toss with 2 tbsp olive oil, 1–2 tbsp lemon juice, 1 tsp sumac, 1/2 tsp salt, and a pinch of black pepper.",
+    "Plate saffron rice, top with chicken, and serve salad on the side. Squeeze extra lemon over chicken if desired."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1–1.2 kg (about 6–8 pieces)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1/2 cup",
+      "preparation": "plain"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely grated"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and juice separated"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1.5 tsp"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2 tsp"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2.5 tsp",
+      "preparation": "divided, to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "3/4 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and soaked 15 min"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "a pinch",
+      "preparation": "crumbled"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2.25 cups"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "3 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "small handful",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 tsp"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "NorthAfrican",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Dairy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1–1.2 kg (about 6–8 pieces)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1/2 cup",
+      "preparation": "plain",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely grated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and juice separated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1.5 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2.5 tsp",
+      "preparation": "divided, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "3/4 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and soaked 15 min",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "a pinch",
+      "preparation": "crumbled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2.25 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "3 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "small handful",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [
+    "Category 'MealComponentPreference' ideally includes 2+ tags; received ['FromScratch']"
+  ],
+  "metadata": {
+    "created_at": "20251125T120112Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T120031Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

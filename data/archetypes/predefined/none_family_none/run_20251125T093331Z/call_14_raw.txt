@@ -1,0 +1,44 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_FamPressureExpress_01",
+      "name": "Family Pressure Cooker Express Dinners (15–30, Mild)",
+      "description": "Fast, family-friendly meals built in a pressure cooker/Instant Pot—soups, stews, shredded proteins, and pasta dishes with mild seasoning and balanced flavors.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "American",
+          "Italian"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Intermediate"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "SlowOrPressureCooker"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "This fills the uncovered niche of quick (15–30 min) pressure-cooker family dinners—distinct from existing slow-cooker hands-off and air-fryer sets—broadly appealing with mild heat and mainstream American/Italian flavors."
+    }
+  ]
+}

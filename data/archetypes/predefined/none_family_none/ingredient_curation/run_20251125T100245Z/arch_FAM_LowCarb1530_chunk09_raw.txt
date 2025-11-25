@@ -1,0 +1,24 @@
+{
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "selected_ingredients": [
+    "roast chicken",
+    "smoked chicken breast",
+    "chicken salad",
+    "prawns",
+    "prawn cocktail",
+    "salmon",
+    "smoked salmon",
+    "haddock",
+    "hake fillets",
+    "mussels",
+    "lamb",
+    "pork",
+    "edamame",
+    "mixed vegetables",
+    "frozen vegetables",
+    "salad",
+    "greek salad",
+    "coleslaw",
+    "hummus"
+  ]
+}

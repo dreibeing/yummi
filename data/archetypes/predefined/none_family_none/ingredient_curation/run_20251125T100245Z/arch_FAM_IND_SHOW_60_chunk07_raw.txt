@@ -1,0 +1,28 @@
+{
+  "archetype_uid": "arch_FAM_IND_SHOW_60",
+  "selected_ingredients": [
+    "salt",
+    "sugar",
+    "semolina",
+    "sesame oil",
+    "sesame seeds",
+    "shallots",
+    "spring onion",
+    "spinach",
+    "samosas",
+    "savoury rice",
+    "sticky rice",
+    "spice",
+    "spice blend",
+    "spice mix",
+    "seasoning",
+    "tikka masala sauce",
+    "tikka paste",
+    "tikka spice blend",
+    "tamarind chutney",
+    "salmon",
+    "squid",
+    "tofu",
+    "star anise"
+  ]
+}

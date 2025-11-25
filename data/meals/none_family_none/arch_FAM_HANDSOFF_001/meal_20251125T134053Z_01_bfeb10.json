@@ -1,0 +1,271 @@
+{
+  "meal_id": "meal_20251125T134053Z_01_bfeb10",
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "archetype_name": "Family Hands-Off Sheet Pan & Slow Cooker Nights",
+  "name": "Sheet-Pan Za'atar Salmon with Courgette & Tomatoes and Lemon Couscous",
+  "description": "Hands-off roasted salmon and vegetables with bright Mediterranean flavors, paired with quick lemon couscous. Minimal prep, family-friendly, and no chili heat.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F and line a large sheet pan with parchment.",
+    "Slice courgette into half-moons and red onion into wedges.",
+    "Rinse cherry tomatoes and pat dry.",
+    "In a small bowl, mix olive oil, za'atar, sumac, minced garlic, lemon zest, salt, and black pepper.",
+    "Pat salmon dry with paper towels.",
+    "Bring water to a boil in a small pot for couscous.",
+    "Roughly chop parsley and cut lemon in half for juicing."
+  ],
+  "cook_steps": [
+    "Toss courgette, cherry tomatoes, and red onion with half of the za'atar oil. Spread on the sheet pan in a single layer.",
+    "Roast vegetables for 15 minutes on the middle rack.",
+    "Remove pan, make space, and place salmon on the pan. Brush salmon with the remaining za'atar oil.",
+    "Return pan to oven and roast 10–12 minutes, until salmon flakes and vegetables are tender.",
+    "While salmon roasts, add couscous to a heatproof bowl. Pour boiling water over, cover, and let stand 5 minutes.",
+    "Fluff couscous with a fork. Stir in chopped parsley, lemon juice (to taste), and a drizzle of olive oil. Adjust salt if needed.",
+    "Scatter olives over the roasted vegetables, then serve salmon with the veg and lemon couscous."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F and line a large sheet pan with parchment.",
+    "Slice courgette into half-moons and red onion into wedges.",
+    "Rinse cherry tomatoes and pat dry.",
+    "In a small bowl, mix olive oil, za'atar, sumac, minced garlic, lemon zest, salt, and black pepper.",
+    "Pat salmon dry with paper towels.",
+    "Bring water to a boil in a small pot for couscous.",
+    "Roughly chop parsley and cut lemon in half for juicing.",
+    "Toss courgette, cherry tomatoes, and red onion with half of the za'atar oil. Spread on the sheet pan in a single layer.",
+    "Roast vegetables for 15 minutes on the middle rack.",
+    "Remove pan, make space, and place salmon on the pan. Brush salmon with the remaining za'atar oil.",
+    "Return pan to oven and roast 10–12 minutes, until salmon flakes and vegetables are tender.",
+    "While salmon roasts, add couscous to a heatproof bowl. Pour boiling water over, cover, and let stand 5 minutes.",
+    "Fluff couscous with a fork. Stir in chopped parsley, lemon juice (to taste), and a drizzle of olive oil. Adjust salt if needed.",
+    "Scatter olives over the roasted vegetables, then serve salmon with the veg and lemon couscous."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "salmon",
+      "quantity": "4 fillets (about 600–700 g total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "courgette",
+      "quantity": "2 medium",
+      "preparation": "sliced into half-moons"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "whole"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": null
+    },
+    {
+      "core_item_name": "za'atar",
+      "quantity": "2 tablespoons",
+      "preparation": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 teaspoon",
+      "preparation": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon, plus more to taste",
+      "preparation": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": null
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1 1/2 cups (dry)",
+      "preparation": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1 3/4 cups, boiling",
+      "preparation": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "pitted, whole or halved"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "salmon",
+      "quantity": "4 fillets (about 600–700 g total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "courgette",
+      "quantity": "2 medium",
+      "preparation": "sliced into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "whole",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "za'atar",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon, plus more to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1 1/2 cups (dry)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1 3/4 cups, boiling",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "pitted, whole or halved",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T134127Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T134053Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

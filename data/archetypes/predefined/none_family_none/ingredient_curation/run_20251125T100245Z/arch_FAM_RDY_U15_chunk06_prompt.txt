@@ -1,0 +1,246 @@
+SYSTEM:
+You are Yummi's ingredient sourcing strategist. For each request you receive a single archetype plus the canonical
+ingredient catalog. Your job is to identify the ingredients that align with that archetype's culinary profile,
+using only the context supplied in the conversation. Always ground your decisions in the archetype description
+and tags provided later; do not assume any other defaults. When uncertain, err on the side of keeping plausible
+fits, but filter clear mismatches.
+
+Return strict JSON with this structure:
+{
+  "archetype_uid": "arch_XXXX",
+  "selected_ingredients": [
+    "Ingredient A",
+    "Ingredient B"
+  ]
+}
+
+Rules:
+- Return only the JSON object above; no extra commentary.
+- Names must match the catalog exactly (case and spelling).
+- Avoid beverages, household items, or duplicative variants that the archetype would reasonably skip.
+- Ensure the list spans pantry staples, proteins, starches, produce, and sauces that fit the archetype’s cuisines.
+- Do not invent ingredients that are not in the catalog.
+
+USER:
+Archetype UID: arch_FAM_RDY_U15
+Archetype Name: Family Heat-and-Eat Weeknights (Under 15, No Heat)
+Archetype Description:
+Ultra-fast family dinners built from ready-to-eat mains and sides with simple fresh add-ons, prioritizing zero chili heat for kid-friendly plates.
+
+Core Tags:
+- Allergens: None
+- Audience: Family
+- Complexity: Simple
+- Cuisine: American, Italian
+- DietaryRestrictions: None
+- Equipment: Microwave
+- HeatSpice: NoHeat
+- MealComponentPreference: ReadyMealPreferred
+- NutritionFocus: NoNutritionFocus
+- PrepTime: Under15
+
+Ingredient catalog chunk 6/10 (format: item_type — core_item_name).
+For each entry, answer a single question: would this archetype reasonably use this ingredient when cooking?
+If yes (even occasionally), include the ingredient name in `selected_ingredients`. If the ingredient is clearly unsuitable, exclude it.
+- ingredient — peanut sauce
+- ingredient — peanuts
+- ingredient — peanuts and cashews mix
+- ingredient — pear
+- ingredient — peas
+- ingredient — pecan cashew tartlet
+- ingredient — pecans
+- ingredient — pecorino romano cheese
+- ingredient — penne
+- ingredient — penne pasta
+- ingredient — peperonata sauce
+- ingredient — peppadew peppers
+- ingredient — pepper
+- ingredient — pepper powder
+- ingredient — pepper sauce
+- ingredient — peppercorn sauce
+- ingredient — peppercorns
+- ingredient — peppermint syrup
+- ingredient — peppermint tea
+- ingredient — pepperoni
+- ingredient — peppers
+- ingredient — peri peri sauce
+- ingredient — peri peri spice blend
+- ingredient — peri-peri sauce
+- ingredient — peri-peri spice blend
+- ingredient — pesto
+- ingredient — petroleum jelly
+- ingredient — phyllo pastry
+- ingredient — picanha steak
+- ingredient — pickle
+- ingredient — pickled herring
+- ingredient — pickled onions
+- ingredient — pickles
+- ingredient — pilchards
+- ingredient — pimento pepper
+- ingredient — pineapple
+- ingredient — pineapple and coconut drink
+- ingredient — pineapple jelly powder
+- ingredient — pink salt
+- ingredient — pinot grigio
+- ingredient — pinotage
+- ingredient — pinotage rosé
+- ingredient — piping bags
+- ingredient — piri piri seasoning
+- ingredient — pita bread
+- ingredient — pizza
+- ingredient — pizza base
+- ingredient — pizza base mix
+- ingredient — plant spread
+- ingredient — plant-based burger patty
+- ingredient — plant-based mince
+- ingredient — plant-based sausage links
+- ingredient — plant-based steak
+- ingredient — plastic wrap
+- ingredient — plate
+- ingredient — plum sauce
+- ingredient — poke sauce
+- ingredient — polenta
+- ingredient — polony
+- ingredient — pomegranate
+- ingredient — pomegranate orange sparkling drink
+- ingredient — pomegranate sparkling drink
+- ingredient — ponzu sauce
+- ingredient — popcorn
+- ingredient — poppadoms
+- ingredient — poppy seeds
+- ingredient — porcini mushroom
+- ingredient — porcini mushrooms
+- ingredient — pork
+- ingredient — pork belly
+- ingredient — pork belly ribs
+- ingredient — pork bones
+- ingredient — pork cheek
+- ingredient — pork chops
+- ingredient — pork fillet
+- ingredient — pork grillers
+- ingredient — pork loin chop
+- ingredient — pork loin chops
+- ingredient — pork mince
+- ingredient — pork rashers
+- ingredient — pork rib
+- ingredient — pork ribeye steak
+- ingredient — pork riblets
+- ingredient — pork ribs
+- ingredient — pork sausage
+- ingredient — pork shank
+- ingredient — pork shoulder
+- ingredient — pork shoulder chop
+- ingredient — pork shoulder chops
+- ingredient — pork skewers
+- ingredient — pork steak
+- ingredient — pork trotters
+- ingredient — porridge
+- ingredient — potato
+- ingredient — potato carrot mash
+- ingredient — potato chips
+- ingredient — potato mash
+- ingredient — potato paste
+- ingredient — potato roll
+- ingredient — potato rolls
+- ingredient — potato rostis
+- ingredient — potato seasoning
+- ingredient — potatoes
+- ingredient — potstickers
+- ingredient — powder
+- ingredient — powdered milk drink
+- ingredient — prawn
+- ingredient — prawn cocktail mix
+- ingredient — prawn curry
+- ingredient — prawn skewers
+- ingredient — prawns
+- ingredient — preserved lemon
+- ingredient — pretzel
+- ingredient — pretzels
+- ingredient — prosciutto
+- ingredient — prosecco
+- ingredient — protein bar
+- ingredient — protein powder
+- ingredient — provolone cheese
+- ingredient — pudding
+- ingredient — pudding mix
+- ingredient — puff pastry
+- ingredient — puff pastry sheets
+- ingredient — puffed rice cereal bars
+- ingredient — pulled pork bao buns
+- ingredient — pumpkin
+- ingredient — pumpkin seeds
+- ingredient — puri
+- ingredient — quail eggs
+- ingredient — quiche lorraine
+- ingredient — quinoa
+- ingredient — raclette cheese
+- ingredient — radicchio
+- ingredient — radish
+- ingredient — ragu
+- ingredient — ragù
+- ingredient — rainbow trout
+- ingredient — ramen noodle
+- ingredient — ramen noodles
+- ingredient — raspberries
+- ingredient — raspberry
+- ingredient — raspberry jam
+- ingredient — ratatouille
+- ingredient — ravioli
+- ingredient — red cabbage
+- ingredient — red chili sauce
+- ingredient — red curry paste
+- ingredient — red curry soup
+- ingredient — red onion
+- ingredient — red pepper
+- ingredient — red wine
+- ingredient — relish
+- ingredient — rhubarb
+- ingredient — ribeye steak
+- ingredient — rice
+- ingredient — rice cereal
+- ingredient — rice crackers
+- ingredient — rice flour
+- ingredient — rice noodles
+- ingredient — rice paper
+- ingredient — rice paper wrappers
+- ingredient — rice salad
+- ingredient — rice vermicelli
+- ingredient — rice vinegar
+- ingredient — ricotta
+- ingredient — ricotta cheese
+- ingredient — risotto
+- ingredient — roast beef
+- ingredient — roast chicken
+- ingredient — roast chicken seasoning
+- ingredient — roasted garlic
+- ingredient — roasted vegetables
+- ingredient — roasting vegetables
+- ingredient — rocket
+- ingredient — rogan josh paste
+- ingredient — rogan josh sauce
+- ingredient — rogan josh spice blend
+- ingredient — rolls
+- ingredient — romaine lettuce
+- ingredient — romanesco
+- ingredient — romesco sauce
+- ingredient — rooibos tea
+- ingredient — rooibos tea bags
+- ingredient — roosterkoek mix
+- ingredient — rose essence
+- ingredient — rose wine
+- ingredient — rosemary
+- ingredient — rosemary and sage
+- ingredient — rosé wine
+- ingredient — roti
+- ingredient — royal icing
+- ingredient — rub
+- ingredient — rusk
+- ingredient — rusks
+- ingredient — rye bread
+- ingredient — rye crispbread
+- ingredient — saag
+- ingredient — saffron
+- ingredient — sage
+- ingredient — salad
+
+Return strict JSON only; do not include extra commentary.

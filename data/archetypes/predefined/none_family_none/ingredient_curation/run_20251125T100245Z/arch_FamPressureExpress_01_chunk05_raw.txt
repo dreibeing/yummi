@@ -1,0 +1,29 @@
+{
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "selected_ingredients": [
+    "maple syrup",
+    "margarine",
+    "mayonnaise",
+    "meatballs",
+    "minced beef",
+    "milk",
+    "mixed vegetables",
+    "mushrooms",
+    "mushroom stock",
+    "mozzarella",
+    "parmesan cheese",
+    "onions",
+    "oregano",
+    "orzo",
+    "pappardelle",
+    "pasta",
+    "pasta sauce",
+    "passata",
+    "olive oil",
+    "olives",
+    "parsley",
+    "mixed herbs",
+    "paprika",
+    "parsnip"
+  ]
+}

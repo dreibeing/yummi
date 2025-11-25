@@ -1,0 +1,46 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_FAM_show_esp_prt_001",
+      "name": "Family Weekend Showstopper: Spanish & Portuguese Feasts",
+      "description": "Presentation-forward family meals like paella, bacalhau bakes, and peri-peri platters that take time and care for memorable weekend dinners.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Spanish",
+          "Portuguese"
+        ],
+        "PrepTime": [
+          "60Plus"
+        ],
+        "Complexity": [
+          "Showstopper"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "Oven",
+          "OutdoorGrill"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Fills the current gap for Family-oriented, 60+ minute Showstopper meals with new Spanish/Portuguese cuisine coverage distinct from existing quick, hands-off, and medium-heat options."
+    }
+  ]
+}

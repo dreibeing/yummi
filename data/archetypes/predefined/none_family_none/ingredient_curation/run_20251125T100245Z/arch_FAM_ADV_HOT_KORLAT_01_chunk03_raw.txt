@@ -1,0 +1,26 @@
+{
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "selected_ingredients": [
+    "gochujang",
+    "garlic",
+    "ghost chilli",
+    "cumin",
+    "cumin seeds",
+    "coriander",
+    "coriander seeds",
+    "corn",
+    "crushed tomatoes",
+    "diced tomatoes",
+    "enchilada sauce",
+    "fish sauce",
+    "cornflour",
+    "flour",
+    "eggs",
+    "fish fillets",
+    "duck breast",
+    "coppa",
+    "frozen mixed vegetables",
+    "cucumber",
+    "ghee"
+  ]
+}

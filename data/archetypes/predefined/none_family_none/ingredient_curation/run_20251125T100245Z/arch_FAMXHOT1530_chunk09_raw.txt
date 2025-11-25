@@ -1,0 +1,20 @@
+{
+  "archetype_uid": "arch_FAMXHOT1530",
+  "selected_ingredients": [
+    "chilli chicken",
+    "chilli non carne",
+    "chilli crunch chicken ready meal",
+    "jalapeno popper bites",
+    "nachos",
+    "rice",
+    "chicken strips",
+    "chicken with coconut rice",
+    "roast chicken",
+    "four-bean salad",
+    "coleslaw",
+    "pork",
+    "prawns",
+    "potato wedges",
+    "frozen vegetables"
+  ]
+}

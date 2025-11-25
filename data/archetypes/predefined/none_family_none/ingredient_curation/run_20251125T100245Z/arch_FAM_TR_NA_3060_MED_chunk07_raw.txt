@@ -1,0 +1,28 @@
+{
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "selected_ingredients": [
+    "salt",
+    "sea salt",
+    "sugar",
+    "sunflower oil",
+    "spice",
+    "spice blend",
+    "spice mix",
+    "sumac",
+    "semolina",
+    "tahini",
+    "sesame seeds",
+    "sesame oil",
+    "shallots",
+    "spring onion",
+    "spinach",
+    "simit",
+    "shakshuka",
+    "shawarma paste",
+    "stuffed grape leaves",
+    "sardines",
+    "sirloin steak",
+    "sun-dried tomatoes",
+    "sauce"
+  ]
+}

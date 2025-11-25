@@ -1,0 +1,23 @@
+{
+  "archetype_uid": "arch_FamLatComfort3060",
+  "selected_ingredients": [
+    "allspice",
+    "apple cider vinegar",
+    "avocado",
+    "avocado oil",
+    "baking powder",
+    "bay leaves",
+    "beans",
+    "black beans",
+    "black pepper",
+    "bell peppers",
+    "borlotti beans",
+    "basmati rice",
+    "bread",
+    "baby carrots",
+    "baby corn",
+    "beef mince",
+    "beef stock",
+    "bacon"
+  ]
+}

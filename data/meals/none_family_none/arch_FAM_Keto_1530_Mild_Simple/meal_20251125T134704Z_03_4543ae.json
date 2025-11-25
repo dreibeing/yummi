@@ -1,0 +1,259 @@
+{
+  "meal_id": "meal_20251125T134704Z_03_4543ae",
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "archetype_name": "Family Keto Weeknight Plates (Mild, 15–30, Simple)",
+  "name": "Middle Eastern Turkey Patties with Lemon Kale, Roasted Tomatoes, and Cauli Rice",
+  "description": "Juicy cumin-paprika turkey patties seared then finished in the oven, served with lemony kale, roasted cherry tomatoes, and quick cauliflower rice. Mild, keto-friendly, and weeknight fast.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F. Line a sheet pan with baking paper.",
+    "Finely chop onions. Mince garlic. Roughly chop parsley.",
+    "Remove tough kale stems; tear leaves into bite-size pieces. Rinse and dry.",
+    "Halve cherry tomatoes.",
+    "Zest and juice lemon into separate small bowls.",
+    "In a bowl, combine turkey, half the onions, half the garlic, parsley, ground cumin, paprika, 1/2 tsp salt, and 1/4 tsp black pepper. Mix gently and form 8 equal patties (about 2 cm thick)."
+  ],
+  "cook_steps": [
+    "Toss cherry tomatoes with 1 tsp olive oil, a pinch of salt, black pepper, and sumac. Spread on half of the sheet pan.",
+    "Toss kale with 1 tbsp olive oil, a pinch of salt, and 1 tbsp lemon juice. Spread on the other half of the pan. Roast 10–12 minutes until tomatoes blister and kale edges crisp.",
+    "Heat 1 tbsp olive oil in a large oven-safe skillet over medium-high heat. Sear turkey patties 3 minutes per side until browned.",
+    "Transfer skillet to the oven (or move patties to an oven-safe tray) and bake 5–7 minutes until cooked through (internal temp 74°C/165°F).",
+    "While patties finish, warm 1 tsp olive oil in a medium skillet over medium heat. Add remaining onions and garlic; cook 1–2 minutes until fragrant. Add cauliflower rice and cook 3–4 minutes, stirring, until hot. Season with a pinch of salt, black pepper, and lemon zest.",
+    "Return the turkey skillet to the stovetop over low heat. Add remaining 1–2 tbsp lemon juice to the pan and swirl to pick up browned bits for a quick drizzle.",
+    "Plate cauliflower rice, top with turkey patties and pan drizzle. Add roasted tomatoes and kale on the side."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F. Line a sheet pan with baking paper.",
+    "Finely chop onions. Mince garlic. Roughly chop parsley.",
+    "Remove tough kale stems; tear leaves into bite-size pieces. Rinse and dry.",
+    "Halve cherry tomatoes.",
+    "Zest and juice lemon into separate small bowls.",
+    "In a bowl, combine turkey, half the onions, half the garlic, parsley, ground cumin, paprika, 1/2 tsp salt, and 1/4 tsp black pepper. Mix gently and form 8 equal patties (about 2 cm thick).",
+    "Toss cherry tomatoes with 1 tsp olive oil, a pinch of salt, black pepper, and sumac. Spread on half of the sheet pan.",
+    "Toss kale with 1 tbsp olive oil, a pinch of salt, and 1 tbsp lemon juice. Spread on the other half of the pan. Roast 10–12 minutes until tomatoes blister and kale edges crisp.",
+    "Heat 1 tbsp olive oil in a large oven-safe skillet over medium-high heat. Sear turkey patties 3 minutes per side until browned.",
+    "Transfer skillet to the oven (or move patties to an oven-safe tray) and bake 5–7 minutes until cooked through (internal temp 74°C/165°F).",
+    "While patties finish, warm 1 tsp olive oil in a medium skillet over medium heat. Add remaining onions and garlic; cook 1–2 minutes until fragrant. Add cauliflower rice and cook 3–4 minutes, stirring, until hot. Season with a pinch of salt, black pepper, and lemon zest.",
+    "Return the turkey skillet to the stovetop over low heat. Add remaining 1–2 tbsp lemon juice to the pan and swirl to pick up browned bits for a quick drizzle.",
+    "Plate cauliflower rice, top with turkey patties and pan drizzle. Add roasted tomatoes and kale on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "800 g",
+      "preparation": "mixed into patties"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 small",
+      "preparation": "finely chopped, divided"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced, divided"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "divided, to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "divided, to taste"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zest and juice separated"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 tsp",
+      "preparation": "optional"
+    },
+    {
+      "core_item_name": "kale",
+      "quantity": "1 large bunch",
+      "preparation": "stems removed, leaves torn"
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "600 g (about 2 packs)",
+      "preparation": ""
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein",
+      "Keto",
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "800 g",
+      "preparation": "mixed into patties",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 small",
+      "preparation": "finely chopped, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "divided, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "divided, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zest and juice separated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 tsp",
+      "preparation": "optional",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "kale",
+      "quantity": "1 large bunch",
+      "preparation": "stems removed, leaves torn",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "600 g (about 2 packs)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T134859Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T134704Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

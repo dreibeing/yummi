@@ -1,0 +1,289 @@
+{
+  "meal_id": "meal_20251125T115837Z_01_2455aa",
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "archetype_name": "Family Low-Carb Weeknight Bowls & Wraps (15–30, Mild)",
+  "name": "Mild Beef Taco Lettuce Wraps with Cauliflower Rice",
+  "description": "Family-friendly ground beef taco filling tucked in crisp lettuce leaves with fresh toppings and a quick cauliflower rice side. Mild seasoning keeps it kid-approved and low-carb.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse and dry lettuce; separate 12 large leaves.",
+    "Dice onions.",
+    "Mince garlic.",
+    "Halve cherry tomatoes.",
+    "Chop coriander.",
+    "Slice avocado.",
+    "Cut lime into wedges.",
+    "Have cauliflower rice ready to heat per pack directions."
+  ],
+  "cook_steps": [
+    "Heat olive oil in a large skillet over medium heat.",
+    "Add onions and cook 3–4 minutes until softened.",
+    "Add garlic and cook 30 seconds until fragrant.",
+    "Add ground beef; cook 5–7 minutes, breaking it up until browned.",
+    "Stir in ground cumin, paprika, oregano, salt, and black pepper; cook 1–2 minutes to season.",
+    "Microwave cauliflower rice per pack directions until hot.",
+    "Fill lettuce leaves with seasoned beef.",
+    "Top with salsa, cherry tomatoes, avocado, and coriander.",
+    "Serve with warm cauliflower rice on the side and lime wedges for squeezing."
+  ],
+  "instructions": [
+    "Rinse and dry lettuce; separate 12 large leaves.",
+    "Dice onions.",
+    "Mince garlic.",
+    "Halve cherry tomatoes.",
+    "Chop coriander.",
+    "Slice avocado.",
+    "Cut lime into wedges.",
+    "Have cauliflower rice ready to heat per pack directions.",
+    "Heat olive oil in a large skillet over medium heat.",
+    "Add onions and cook 3–4 minutes until softened.",
+    "Add garlic and cook 30 seconds until fragrant.",
+    "Add ground beef; cook 5–7 minutes, breaking it up until browned.",
+    "Stir in ground cumin, paprika, oregano, salt, and black pepper; cook 1–2 minutes to season.",
+    "Microwave cauliflower rice per pack directions until hot.",
+    "Fill lettuce leaves with seasoned beef.",
+    "Top with salsa, cherry tomatoes, avocado, and coriander.",
+    "Serve with warm cauliflower rice on the side and lime wedges for squeezing."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "lettuce",
+      "quantity": "1 large head",
+      "preparation": "leaves separated"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "1 lb (450 g)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1/2 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 teaspoon, or to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "16 oz (450 g) pack",
+      "preparation": "microwave per directions"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "lettuce",
+      "quantity": "1 large head",
+      "preparation": "leaves separated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "1 lb (450 g)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1/2 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 teaspoon, or to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "16 oz (450 g) pack",
+      "preparation": "microwave per directions",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T115909Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T115837Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -226,7 +226,7 @@ Initial thin-slice behavior implemented now:
 ## Cloud Hosting & Deployment
 - Target: Fly.io (containerized, regional Postgres/Redis options). Alternative: AWS ECS/Fargate + RDS + ElastiCache + S3.
 - Artifacts added:
-  - Docker image build context: `yummi-server/` with `Dockerfile` (serves on `:8000`).
+  - Docker image build context: `yummi-server/` with `Dockerfile` (serves on `:8000`). The Dockerfile now copies both `resolver/` and `data/` so meals manifests and `data/tags/defined_tags.json` ship with the API—if those files go missing, `/v1/recommendations/*` will fail validation.
   - Compose for local dev: `docker-compose.yml` (FastAPI + Postgres + Redis).
   - Fly config: `fly.toml` (HTTP service on `:8000`).
   - GitHub Action: `.github/workflows/deploy-fly.yml` (requires `FLY_API_TOKEN`).

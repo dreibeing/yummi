@@ -1,0 +1,29 @@
+{
+  "archetype_uid": "arch_AFQB_2025_01",
+  "selected_ingredients": [
+    "broccoli and cauliflower florets",
+    "cauliflower",
+    "carrots",
+    "cherry tomatoes",
+    "cabbage",
+    "cheddar cheese",
+    "cheddar cheese slices",
+    "cheese sauce",
+    "butter",
+    "canola oil",
+    "coating mix",
+    "burger",
+    "burger buns",
+    "burritos",
+    "brown rice",
+    "ciabatta rolls",
+    "buffalo sauce",
+    "chipotle sauce",
+    "chicken breast",
+    "chicken strips",
+    "chicken thighs",
+    "chicken wings",
+    "chicken sausages",
+    "chicken burgers"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "selected_ingredients": [
+    "bulgur",
+    "brown basmati rice",
+    "brown rice",
+    "canola oil",
+    "butter",
+    "chickpea",
+    "chickpea flour",
+    "chickpeas",
+    "chicken",
+    "chicken thighs",
+    "chicken mince",
+    "chicken kebabs",
+    "carrot",
+    "carrots",
+    "cauliflower",
+    "cherry tomatoes",
+    "cabbage",
+    "cardamom",
+    "cinnamon",
+    "cloves",
+    "cayenne pepper",
+    "chili flakes",
+    "chilli paste",
+    "chilli oil",
+    "chermoula"
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "meal_id": "meal_20251125T133607Z_01_9582be",
+  "archetype_uid": "arch_FAMXHOT1530",
+  "archetype_name": "Family Extra-Hot Chili Night (Caribbean & Mexican, 15–30, Simple)",
+  "name": "Extra-Hot Ghost Pepper Steak Lettuce Wraps with Mango-Lime Salsa",
+  "description": "Sear spiced sirloin, then pile it into crisp lettuce cups with a fiery mango-lime salsa for a Caribbean-Mexican heat blast. Simple, fast, and built for chili lovers.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse and dry 1 head of lettuce; separate large leaves for cups.",
+    "Peel and dice 1 mango into small cubes.",
+    "Finely dice 1 small red onion (about 1/2 cup).",
+    "Chop 1/2 cup coriander (leaves and tender stems).",
+    "Finely mince 1 jalapenos and 1 small ghost chilli (use gloves).",
+    "Mince 2 cloves garlic.",
+    "Zest and juice 2 limes into a small bowl.",
+    "Pat dry 600 g sirloin steak; trim excess fat.",
+    "In a small bowl, mix 1 tsp ground cumin, 1/2 tsp allspice, 1 tsp salt, 1 tsp black pepper, and half the minced ghost chilli."
+  ],
+  "cook_steps": [
+    "Preheat a heavy pan on the stovetop (or outdoor grill) over high heat for 2–3 minutes.",
+    "Rub steak with 1 tbsp olive oil; coat all sides with the spice-chilli mix.",
+    "Sear steak 3–4 minutes per side for medium-rare (thicker pieces may need 1–2 minutes more). Rest on a board 5 minutes.",
+    "While steak rests, make salsa: In a bowl, combine mango, red onion, jalapenos, remaining ghost chilli, half the coriander, half the lime juice, and 1 tsp olive oil. Season with a pinch of salt; toss.",
+    "Make a quick lime-garlic drizzle: Stir remaining lime juice, lime zest, minced garlic, and 1 tsp olive oil. Season with a pinch of salt.",
+    "Slice rested steak thinly against the grain.",
+    "Assemble: Layer lettuce leaves on a platter. Add steak slices, spoon mango salsa on top, drizzle with lime-garlic sauce, and finish with remaining coriander.",
+    "Serve immediately and let everyone build extra-hot wraps."
+  ],
+  "instructions": [
+    "Rinse and dry 1 head of lettuce; separate large leaves for cups.",
+    "Peel and dice 1 mango into small cubes.",
+    "Finely dice 1 small red onion (about 1/2 cup).",
+    "Chop 1/2 cup coriander (leaves and tender stems).",
+    "Finely mince 1 jalapenos and 1 small ghost chilli (use gloves).",
+    "Mince 2 cloves garlic.",
+    "Zest and juice 2 limes into a small bowl.",
+    "Pat dry 600 g sirloin steak; trim excess fat.",
+    "In a small bowl, mix 1 tsp ground cumin, 1/2 tsp allspice, 1 tsp salt, 1 tsp black pepper, and half the minced ghost chilli.",
+    "Preheat a heavy pan on the stovetop (or outdoor grill) over high heat for 2–3 minutes.",
+    "Rub steak with 1 tbsp olive oil; coat all sides with the spice-chilli mix.",
+    "Sear steak 3–4 minutes per side for medium-rare (thicker pieces may need 1–2 minutes more). Rest on a board 5 minutes.",
+    "While steak rests, make salsa: In a bowl, combine mango, red onion, jalapenos, remaining ghost chilli, half the coriander, half the lime juice, and 1 tsp olive oil. Season with a pinch of salt; toss.",
+    "Make a quick lime-garlic drizzle: Stir remaining lime juice, lime zest, minced garlic, and 1 tsp olive oil. Season with a pinch of salt.",
+    "Slice rested steak thinly against the grain.",
+    "Assemble: Layer lettuce leaves on a platter. Add steak slices, spoon mango salsa on top, drizzle with lime-garlic sauce, and finish with remaining coriander.",
+    "Serve immediately and let everyone build extra-hot wraps."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "lettuce",
+      "quantity": "1 head",
+      "preparation": "leaves separated, rinsed and dried"
+    },
+    {
+      "core_item_name": "sirloin steak",
+      "quantity": "600 g",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "mango",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "finely diced"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "1",
+      "preparation": "finely minced"
+    },
+    {
+      "core_item_name": "ghost chilli",
+      "quantity": "1 small",
+      "preparation": "finely minced; divided"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": "for steak rub"
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1/2 tsp",
+      "preparation": "for steak rub"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1+ pinch",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "for steak rub"
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1",
+      "preparation": "sliced (optional topping)"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Caribbean",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "ExtraHot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "lettuce",
+      "quantity": "1 head",
+      "preparation": "leaves separated, rinsed and dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sirloin steak",
+      "quantity": "600 g",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mango",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "finely diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "1",
+      "preparation": "finely minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ghost chilli",
+      "quantity": "1 small",
+      "preparation": "finely minced; divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": "for steak rub",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1/2 tsp",
+      "preparation": "for steak rub",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1+ pinch",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "for steak rub",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1",
+      "preparation": "sliced (optional topping)",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T133704Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T133607Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

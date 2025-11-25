@@ -1,0 +1,311 @@
+{
+  "meal_id": "meal_20251125T135437Z_02_6db405",
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "archetype_name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)",
+  "name": "Tamarind Soy Tofu Noodles (Pad Thai-Style)",
+  "description": "Family-friendly Thai-style stir-fried rice noodles with tofu, vegetables, and a tangy tamarind-soy sauce. Medium heat and quick stovetop timing for a balanced weeknight skillet.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Bring a medium pot of water to a boil for the rice noodles.",
+    "Drain and pat dry tofu; cut into 2 cm cubes.",
+    "Slice shallots thinly; mince garlic.",
+    "Slice bell pepper into thin strips; peel and julienne carrots; trim snow peas.",
+    "Slice spring onion; cut lime into wedges.",
+    "In a small bowl, mix tamarind chutney, soy sauce, brown sugar, and sriracha."
+  ],
+  "cook_steps": [
+    "Add rice noodles to boiling water, turn off heat, and soak until just tender (5–8 minutes). Drain and set aside.",
+    "Heat peanut oil in a large skillet or wok over medium-high heat.",
+    "Add tofu; season lightly with salt and black pepper. Sear until golden on most sides (4–5 minutes). Push to one side.",
+    "Add shallots and garlic to the open side; stir-fry 30–60 seconds until fragrant.",
+    "Add bell pepper, carrots, and snow peas; stir-fry 2–3 minutes until crisp-tender.",
+    "Push everything to the sides; crack in eggs and scramble until just set (30–60 seconds).",
+    "Add drained rice noodles to the pan. Pour in the tamarind-soy sauce and toss to coat evenly (1–2 minutes). If sticking, splash in 1–2 tablespoons water.",
+    "Taste and adjust heat/salt. Remove from heat and toss in half the spring onion.",
+    "Plate and top with peanuts and remaining spring onion. Serve with lime wedges to squeeze over."
+  ],
+  "instructions": [
+    "Bring a medium pot of water to a boil for the rice noodles.",
+    "Drain and pat dry tofu; cut into 2 cm cubes.",
+    "Slice shallots thinly; mince garlic.",
+    "Slice bell pepper into thin strips; peel and julienne carrots; trim snow peas.",
+    "Slice spring onion; cut lime into wedges.",
+    "In a small bowl, mix tamarind chutney, soy sauce, brown sugar, and sriracha.",
+    "Add rice noodles to boiling water, turn off heat, and soak until just tender (5–8 minutes). Drain and set aside.",
+    "Heat peanut oil in a large skillet or wok over medium-high heat.",
+    "Add tofu; season lightly with salt and black pepper. Sear until golden on most sides (4–5 minutes). Push to one side.",
+    "Add shallots and garlic to the open side; stir-fry 30–60 seconds until fragrant.",
+    "Add bell pepper, carrots, and snow peas; stir-fry 2–3 minutes until crisp-tender.",
+    "Push everything to the sides; crack in eggs and scramble until just set (30–60 seconds).",
+    "Add drained rice noodles to the pan. Pour in the tamarind-soy sauce and toss to coat evenly (1–2 minutes). If sticking, splash in 1–2 tablespoons water.",
+    "Taste and adjust heat/salt. Remove from heat and toss in half the spring onion.",
+    "Plate and top with peanuts and remaining spring onion. Serve with lime wedges to squeeze over."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "rice noodles",
+      "quantity": "340 g",
+      "preparation": "soaked until tender"
+    },
+    {
+      "core_item_name": "tofu",
+      "quantity": "400 g",
+      "preparation": "drained and cubed"
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "2",
+      "preparation": "cracked just before cooking"
+    },
+    {
+      "core_item_name": "shallots",
+      "quantity": "2 small",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "bell pepper",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "1 cup",
+      "preparation": "julienned"
+    },
+    {
+      "core_item_name": "snow peas",
+      "quantity": "1 cup",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "tamarind chutney",
+      "quantity": "3 tablespoons",
+      "preparation": "mixed into sauce"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "3 tablespoons",
+      "preparation": "mixed into sauce"
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tablespoon",
+      "preparation": "mixed into sauce"
+    },
+    {
+      "core_item_name": "sriracha",
+      "quantity": "1–2 teaspoons",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "peanut oil",
+      "quantity": "2 tablespoons",
+      "preparation": "for stir-frying"
+    },
+    {
+      "core_item_name": "peanuts",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "optional"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "optional"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Chinese",
+      "Thai"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Egg",
+      "Nuts",
+      "Soy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "rice noodles",
+      "quantity": "340 g",
+      "preparation": "soaked until tender",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tofu",
+      "quantity": "400 g",
+      "preparation": "drained and cubed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "2",
+      "preparation": "cracked just before cooking",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "shallots",
+      "quantity": "2 small",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell pepper",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "1 cup",
+      "preparation": "julienned",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "snow peas",
+      "quantity": "1 cup",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tamarind chutney",
+      "quantity": "3 tablespoons",
+      "preparation": "mixed into sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "3 tablespoons",
+      "preparation": "mixed into sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tablespoon",
+      "preparation": "mixed into sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sriracha",
+      "quantity": "1–2 teaspoons",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peanut oil",
+      "quantity": "2 tablespoons",
+      "preparation": "for stir-frying",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peanuts",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "optional",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "optional",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T135607Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T135437Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

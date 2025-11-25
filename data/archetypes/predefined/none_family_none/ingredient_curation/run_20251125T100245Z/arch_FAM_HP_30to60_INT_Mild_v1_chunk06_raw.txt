@@ -1,0 +1,33 @@
+{
+  "archetype_uid": "arch_FAM_HP_30to60_INT_Mild_v1",
+  "selected_ingredients": [
+    "peas",
+    "pepper",
+    "penne pasta",
+    "pesto",
+    "ponzu sauce",
+    "plum sauce",
+    "polenta",
+    "potatoes",
+    "potatoes",
+    "prawns",
+    "prawns",
+    "pork",
+    "plant-based mince",
+    "quinoa",
+    "rice",
+    "rice vinegar",
+    "ricotta cheese",
+    "pecorino romano cheese",
+    "pumpkin",
+    "rainbow trout",
+    "roast chicken",
+    "roasted vegetables",
+    "red onion",
+    "red pepper",
+    "red cabbage",
+    "pita bread",
+    "rosemary",
+    "salad"
+  ]
+}

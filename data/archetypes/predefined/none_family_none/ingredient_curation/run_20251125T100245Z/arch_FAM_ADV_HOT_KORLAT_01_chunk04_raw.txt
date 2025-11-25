@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "selected_ingredients": [
+    "grapeseed oil",
+    "green beans",
+    "ground beef",
+    "ground cumin",
+    "guacamole",
+    "habanero chillies",
+    "habanero peppers",
+    "habanero sauce",
+    "hoisin sauce",
+    "hot sauce",
+    "jalapeno sauce",
+    "jalapenos",
+    "jasmine rice",
+    "kidney beans",
+    "lime",
+    "lemon",
+    "maize meal",
+    "herbs",
+    "honey",
+    "korean barbecue sauce"
+  ]
+}

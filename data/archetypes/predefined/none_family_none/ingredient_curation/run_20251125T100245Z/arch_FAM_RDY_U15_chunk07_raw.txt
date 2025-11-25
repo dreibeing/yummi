@@ -1,0 +1,28 @@
+{
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "selected_ingredients": [
+    "salad dressing",
+    "salad greens",
+    "salt",
+    "salt and pepper",
+    "sandwich thins",
+    "sausages",
+    "smoked chicken breast",
+    "smoked salmon",
+    "soft cheese",
+    "sour cream",
+    "sourdough bread",
+    "spaghetti bolognese",
+    "spaghetti",
+    "sun-dried tomato pasta sauce",
+    "sun-dried tomatoes",
+    "spinach",
+    "spring onion",
+    "strawberries",
+    "sugar",
+    "sunflower oil",
+    "sunflower seeds",
+    "seasoning",
+    "sauce"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "archetype_uid": "arch_FamLightJV_01",
+  "selected_ingredients": [
+    "mandarin orange",
+    "mandarins",
+    "mange-tout",
+    "mango",
+    "mint",
+    "miso",
+    "miso dressing",
+    "miso glaze",
+    "miso paste",
+    "mixed greens",
+    "mixed vegetables",
+    "mushroom broth",
+    "mushroom stock",
+    "mushrooms",
+    "nori",
+    "noodle",
+    "noodles",
+    "pak choi",
+    "onion",
+    "onions",
+    "minced meat",
+    "minced beef",
+    "olive oil",
+    "peanut oil",
+    "oyster sauce"
+  ]
+}

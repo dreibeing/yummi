@@ -1,0 +1,323 @@
+{
+  "meal_id": "meal_20251125T113433Z_01_36d5d4",
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "archetype_name": "Family Turkish & North African Suppers (Medium, 30–60, Intermediate)",
+  "name": "Harissa Lamb Kofta with Bulgur Pilaf and Roasted Peppers",
+  "description": "Juicy harissa-spiced lamb kofta with a tomato bulgur pilaf and oven-roasted peppers, finished with a cool mint yoghurt and sumac.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C (425°F).",
+    "Rinse 1 1/2 cups bulgur in cold water; drain well.",
+    "Finely chop 1 large onion and 3 cloves garlic; divide half for kofta and half for pilaf.",
+    "Chop a small handful of parsley and mint; keep separate.",
+    "Cut 3 bell peppers into thick strips; toss with 1 tbsp olive oil, a pinch of salt, and black pepper.",
+    "Zest and juice 1/2 lemon; set aside.",
+    "Measure vegetable stock (about 2 1/4 cups)."
+  ],
+  "cook_steps": [
+    "Roast peppers: Spread bell peppers on a baking tray and roast 18–22 minutes until tender and lightly charred; turn once.",
+    "Start pilaf base: Heat 1 tbsp olive oil in a medium pot over medium heat. Add half the chopped onion and garlic with a pinch of salt; cook 3–4 minutes until translucent.",
+    "Add 1 tbsp tomato paste and cook 1 minute. Stir in rinsed bulgur to coat.",
+    "Pour in vegetable stock, bring to a simmer, then cover and cook on low for 12–15 minutes until bulgur is tender and liquid is absorbed. Turn off heat, rest covered 5 minutes, then fluff with a fork and fold in chopped parsley and a squeeze of lemon juice.",
+    "Make kofta mix: In a bowl, combine lamb mince, remaining onion and garlic, 1 tbsp harissa paste, 1 tsp ground cumin, 1/2 tsp coriander, 1/2 tsp paprika, 1/2 tsp salt, and 1/4 tsp black pepper. Mix gently until just combined.",
+    "Shape kofta: With damp hands, form 8–12 oval patties or logs.",
+    "Cook kofta: Heat 1 tbsp olive oil in a large skillet over medium-high. Sear kofta 3–4 minutes per side until browned and cooked through (internal temp ~70°C/160°F).",
+    "Mint yoghurt: In a small bowl, combine yoghurt with chopped mint, lemon zest, a squeeze of lemon juice, a pinch of salt, and a pinch of sumac.",
+    "Plate: Spoon bulgur pilaf onto plates, add roasted peppers and kofta. Drizzle mint yoghurt over or serve on the side. Sprinkle a little extra sumac if desired."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C (425°F).",
+    "Rinse 1 1/2 cups bulgur in cold water; drain well.",
+    "Finely chop 1 large onion and 3 cloves garlic; divide half for kofta and half for pilaf.",
+    "Chop a small handful of parsley and mint; keep separate.",
+    "Cut 3 bell peppers into thick strips; toss with 1 tbsp olive oil, a pinch of salt, and black pepper.",
+    "Zest and juice 1/2 lemon; set aside.",
+    "Measure vegetable stock (about 2 1/4 cups).",
+    "Roast peppers: Spread bell peppers on a baking tray and roast 18–22 minutes until tender and lightly charred; turn once.",
+    "Start pilaf base: Heat 1 tbsp olive oil in a medium pot over medium heat. Add half the chopped onion and garlic with a pinch of salt; cook 3–4 minutes until translucent.",
+    "Add 1 tbsp tomato paste and cook 1 minute. Stir in rinsed bulgur to coat.",
+    "Pour in vegetable stock, bring to a simmer, then cover and cook on low for 12–15 minutes until bulgur is tender and liquid is absorbed. Turn off heat, rest covered 5 minutes, then fluff with a fork and fold in chopped parsley and a squeeze of lemon juice.",
+    "Make kofta mix: In a bowl, combine lamb mince, remaining onion and garlic, 1 tbsp harissa paste, 1 tsp ground cumin, 1/2 tsp coriander, 1/2 tsp paprika, 1/2 tsp salt, and 1/4 tsp black pepper. Mix gently until just combined.",
+    "Shape kofta: With damp hands, form 8–12 oval patties or logs.",
+    "Cook kofta: Heat 1 tbsp olive oil in a large skillet over medium-high. Sear kofta 3–4 minutes per side until browned and cooked through (internal temp ~70°C/160°F).",
+    "Mint yoghurt: In a small bowl, combine yoghurt with chopped mint, lemon zest, a squeeze of lemon juice, a pinch of salt, and a pinch of sumac.",
+    "Plate: Spoon bulgur pilaf onto plates, add roasted peppers and kofta. Drizzle mint yoghurt over or serve on the side. Sprinkle a little extra sumac if desired."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "lamb mince",
+      "quantity": "500 g",
+      "preparation": "for kofta"
+    },
+    {
+      "core_item_name": "harissa paste",
+      "quantity": "1 tbsp",
+      "preparation": "mix into kofta"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": "for kofta"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 tsp",
+      "preparation": "for kofta"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1/2 tsp",
+      "preparation": "for kofta"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp total",
+      "preparation": "divided across components"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp total",
+      "preparation": "divided across components"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "finely chopped, divided"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped, divided"
+    },
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 1/4 cups",
+      "preparation": "warm"
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "1 tbsp",
+      "preparation": "for pilaf"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided for roasting and cooking"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "3 medium",
+      "preparation": "seeded and sliced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped, for pilaf finish"
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "3/4 cup",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tbsp",
+      "preparation": "chopped, for sauce"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and juice"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1/2 tsp",
+      "preparation": "for sauce and garnish"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "NorthAfrican",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Dairy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "lamb mince",
+      "quantity": "500 g",
+      "preparation": "for kofta",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "harissa paste",
+      "quantity": "1 tbsp",
+      "preparation": "mix into kofta",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": "for kofta",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 tsp",
+      "preparation": "for kofta",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1/2 tsp",
+      "preparation": "for kofta",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp total",
+      "preparation": "divided across components",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp total",
+      "preparation": "divided across components",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "finely chopped, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 1/4 cups",
+      "preparation": "warm",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "1 tbsp",
+      "preparation": "for pilaf",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided for roasting and cooking",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "3 medium",
+      "preparation": "seeded and sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped, for pilaf finish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "3/4 cup",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tbsp",
+      "preparation": "chopped, for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and juice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1/2 tsp",
+      "preparation": "for sauce and garnish",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T113526Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T113433Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

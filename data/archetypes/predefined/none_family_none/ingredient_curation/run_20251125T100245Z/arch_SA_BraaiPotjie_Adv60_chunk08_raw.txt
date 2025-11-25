@@ -1,0 +1,27 @@
+{
+  "archetype_uid": "arch_SA_BraaiPotjie_Adv60",
+  "selected_ingredients": [
+    "tomato",
+    "tomato chutney",
+    "tomato paste",
+    "tomato puree",
+    "tomato sauce",
+    "tomatoes",
+    "whole chicken",
+    "wagyu beef sirloin steak",
+    "venison",
+    "vetkoek",
+    "vetkoek mix",
+    "vegetable",
+    "vegetables",
+    "zucchini",
+    "beetroot",
+    "watermelon",
+    "yoghurt",
+    "white pepper",
+    "vinegar",
+    "worcestershire sauce",
+    "turmeric powder",
+    "yeast"
+  ]
+}

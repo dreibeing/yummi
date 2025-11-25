@@ -1,0 +1,19 @@
+{
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "selected_ingredients": [
+    "grapeseed oil",
+    "ground cumin",
+    "ground beef",
+    "halloumi cheese",
+    "hummus",
+    "jasmine rice",
+    "lentils",
+    "lemon",
+    "green beans",
+    "leeks",
+    "honey",
+    "greek dressing",
+    "herbs",
+    "lamb shanks"
+  ]
+}

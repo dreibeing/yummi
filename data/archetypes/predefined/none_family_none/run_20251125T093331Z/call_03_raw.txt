@@ -1,0 +1,45 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_AFQB_2025_01",
+      "name": "Family AirFryer Quick Bites",
+      "description": "Ultra-fast, kid-friendly family dinners built around the air fryer with semi-prepared components and fresh add-ons for tacos, wraps, bowls, and crispy mains with quick sides.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "American",
+          "Mexican"
+        ],
+        "PrepTime": [
+          "Under15"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "AirFryer",
+          "Microwave"
+        ],
+        "MealComponentPreference": [
+          "SemiPrepared"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Adds the missing Under15, AirFryer-driven family option with mild flavors and semi-prepared ease, complementing existing 15–30 stovetop/oven and hands-off slow-cooker archetypes without overlap."
+    }
+  ]
+}

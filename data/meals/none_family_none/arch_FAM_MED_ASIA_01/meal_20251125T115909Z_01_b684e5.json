@@ -1,0 +1,287 @@
+{
+  "meal_id": "meal_20251125T115909Z_01_b684e5",
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "archetype_name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)",
+  "name": "Chili-Garlic Chicken Stir-Fry with Basmati Rice",
+  "description": "Family-friendly medium-heat chicken and vegetables in a glossy chili-garlic sauce, served over fluffy basmati rice. Built fast on the stovetop with pantry sauces—no soy or nuts.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse basmati rice until water runs clear; drain.",
+    "Slice chicken thighs into thin strips.",
+    "Slice onions; slice bell peppers; slice mushrooms; mince garlic; slice spring onion.",
+    "In a bowl, whisk sriracha, rice vinegar, tomato paste, coconut sugar, and chicken stock.",
+    "In a separate bowl, toss chicken thighs with cornflour, salt, and black pepper.",
+    "Set a large skillet or wok on the stove; gather sunflower oil and a spatula."
+  ],
+  "cook_steps": [
+    "Cook basmati rice in a pot with water per pack guidance until tender; keep warm.",
+    "Heat sunflower oil in a large skillet or wok over high heat until shimmering.",
+    "Add coated chicken thighs in an even layer; sear 3–4 minutes, stirring once, until starting to brown.",
+    "Add onions and mushrooms; stir-fry 2 minutes.",
+    "Add bell peppers; stir-fry 2 minutes more.",
+    "Add garlic; stir 30 seconds until fragrant.",
+    "Stir the sauce, then pour it into the skillet; toss to coat and bring to a simmer.",
+    "Simmer 2–3 minutes, stirring, until the sauce thickens and chicken is cooked through.",
+    "Taste and adjust heat with a little more sriracha if desired; season with a pinch of salt if needed.",
+    "Fluff the rice. Serve stir-fry over basmati rice and garnish with spring onion."
+  ],
+  "instructions": [
+    "Rinse basmati rice until water runs clear; drain.",
+    "Slice chicken thighs into thin strips.",
+    "Slice onions; slice bell peppers; slice mushrooms; mince garlic; slice spring onion.",
+    "In a bowl, whisk sriracha, rice vinegar, tomato paste, coconut sugar, and chicken stock.",
+    "In a separate bowl, toss chicken thighs with cornflour, salt, and black pepper.",
+    "Set a large skillet or wok on the stove; gather sunflower oil and a spatula.",
+    "Cook basmati rice in a pot with water per pack guidance until tender; keep warm.",
+    "Heat sunflower oil in a large skillet or wok over high heat until shimmering.",
+    "Add coated chicken thighs in an even layer; sear 3–4 minutes, stirring once, until starting to brown.",
+    "Add onions and mushrooms; stir-fry 2 minutes.",
+    "Add bell peppers; stir-fry 2 minutes more.",
+    "Add garlic; stir 30 seconds until fragrant.",
+    "Stir the sauce, then pour it into the skillet; toss to coat and bring to a simmer.",
+    "Simmer 2–3 minutes, stirring, until the sauce thickens and chicken is cooked through.",
+    "Taste and adjust heat with a little more sriracha if desired; season with a pinch of salt if needed.",
+    "Fluff the rice. Serve stir-fry over basmati rice and garnish with spring onion."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "700 g",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "250 g",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "sriracha",
+      "quantity": "2–3 tbsp",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1.5 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "coconut sugar",
+      "quantity": "1 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "1/2 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "sunflower oil",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3 stalks",
+      "preparation": "sliced"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Chinese",
+      "Indian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "700 g",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "250 g",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sriracha",
+      "quantity": "2–3 tbsp",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1.5 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coconut sugar",
+      "quantity": "1 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "1/2 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sunflower oil",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3 stalks",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T115955Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T115909Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

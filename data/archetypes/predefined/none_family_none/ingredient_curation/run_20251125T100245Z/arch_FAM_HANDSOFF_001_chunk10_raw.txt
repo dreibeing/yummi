@@ -1,0 +1,18 @@
+{
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "selected_ingredients": [
+    "spinach",
+    "spinach feta pies",
+    "spinach pie",
+    "spinach salad",
+    "tomato salad",
+    "tomato soup",
+    "vegetable and lentil meal",
+    "vegetable barley soup",
+    "vegetable soup",
+    "wrap",
+    "trout",
+    "trout gratin",
+    "sweet potato salad"
+  ]
+}

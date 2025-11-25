@@ -1,0 +1,316 @@
+{
+  "meal_id": "meal_20251125T120801Z_01_04c163",
+  "archetype_uid": "arch_SA_BraaiPotjie_Adv60",
+  "archetype_name": "Family Weekend Advanced: South African Braai & Potjie",
+  "name": "Oxtail Potjie with Tomato Braise and Chakalaka",
+  "description": "Slow-braised South African oxtail potjie with a wine-tomato base, finished tender and served with a bright chakalaka side. Built over coals with an oven finish for steady heat.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Preheat oven to 160°C (320°F).",
+    "Light a medium braai fire and let it burn to steady medium coals.",
+    "Pat dry oxtail and season all sides with salt and black pepper.",
+    "Peel and slice onion.",
+    "Peel and chop carrots into large chunks.",
+    "Peel potatoes and cut into large chunks.",
+    "Peel and crush garlic.",
+    "Open diced tomatoes and beef stock.",
+    "Tie thyme and rosemary together if preferred for easy removal."
+  ],
+  "cook_steps": [
+    "Set a heavy potjie or Dutch oven over steady coals; add olive oil until shimmering.",
+    "Sear oxtail in batches until deeply browned on all sides; set aside on a tray.",
+    "Add onion to the pot with a little more olive oil if needed; cook until softened.",
+    "Stir in garlic, paprika, cumin seeds, and chilli flakes; cook 30–60 seconds until fragrant.",
+    "Deglaze with Chenin Blanc, scraping up browned bits; reduce by half.",
+    "Return oxtail and any juices to the pot; add diced tomatoes, beef stock, bay leaves, thyme, and rosemary. Bring to a gentle simmer.",
+    "Cover. Option A (braai): Keep over low, steady coals for 2.5–3 hours, maintaining a gentle bubble. Option B (oven): Transfer covered pot to the oven and braise 2.5–3 hours.",
+    "After 1.5–2 hours, add carrot chunks; after another 30 minutes, add potato chunks. Stir, re-cover, and continue until oxtail is very tender and potatoes are just cooked.",
+    "Uncover for the last 10–15 minutes to slightly reduce. Adjust salt and black pepper to taste; remove bay leaves and herb stems.",
+    "Serve hot with chakalaka on the side and scatter coriander over the potjie."
+  ],
+  "instructions": [
+    "Preheat oven to 160°C (320°F).",
+    "Light a medium braai fire and let it burn to steady medium coals.",
+    "Pat dry oxtail and season all sides with salt and black pepper.",
+    "Peel and slice onion.",
+    "Peel and chop carrots into large chunks.",
+    "Peel potatoes and cut into large chunks.",
+    "Peel and crush garlic.",
+    "Open diced tomatoes and beef stock.",
+    "Tie thyme and rosemary together if preferred for easy removal.",
+    "Set a heavy potjie or Dutch oven over steady coals; add olive oil until shimmering.",
+    "Sear oxtail in batches until deeply browned on all sides; set aside on a tray.",
+    "Add onion to the pot with a little more olive oil if needed; cook until softened.",
+    "Stir in garlic, paprika, cumin seeds, and chilli flakes; cook 30–60 seconds until fragrant.",
+    "Deglaze with Chenin Blanc, scraping up browned bits; reduce by half.",
+    "Return oxtail and any juices to the pot; add diced tomatoes, beef stock, bay leaves, thyme, and rosemary. Bring to a gentle simmer.",
+    "Cover. Option A (braai): Keep over low, steady coals for 2.5–3 hours, maintaining a gentle bubble. Option B (oven): Transfer covered pot to the oven and braise 2.5–3 hours.",
+    "After 1.5–2 hours, add carrot chunks; after another 30 minutes, add potato chunks. Stir, re-cover, and continue until oxtail is very tender and potatoes are just cooked.",
+    "Uncover for the last 10–15 minutes to slightly reduce. Adjust salt and black pepper to taste; remove bay leaves and herb stems.",
+    "Serve hot with chakalaka on the side and scatter coriander over the potjie."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "oxtail",
+      "quantity": "1.8–2 kg",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3–4 tbsp"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 tsp, plus to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1.5 tsp, plus to taste"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "2 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "crushed"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 tsp"
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1/2 tsp"
+    },
+    {
+      "core_item_name": "Chenin Blanc",
+      "quantity": "250 ml"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "2 x 400 g cans"
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "500–700 ml"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2"
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "4–5 sprigs"
+    },
+    {
+      "core_item_name": "rosemary",
+      "quantity": "1–2 sprigs"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "4",
+      "preparation": "cut into large chunks"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "5–6 medium",
+      "preparation": "peeled and chunked"
+    },
+    {
+      "core_item_name": "chakalaka",
+      "quantity": "1 jar (to serve)"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "small handful",
+      "preparation": "roughly chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "French",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "oxtail",
+      "quantity": "1.8–2 kg",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3–4 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 tsp, plus to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1.5 tsp, plus to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "2 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "crushed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1/2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "Chenin Blanc",
+      "quantity": "250 ml",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "2 x 400 g cans",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "500–700 ml",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "4–5 sprigs",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rosemary",
+      "quantity": "1–2 sprigs",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "4",
+      "preparation": "cut into large chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "5–6 medium",
+      "preparation": "peeled and chunked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chakalaka",
+      "quantity": "1 jar (to serve)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "small handful",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T120915Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T120801Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

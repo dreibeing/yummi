@@ -1,0 +1,18 @@
+{
+  "archetype_uid": "arch_FAM_IND_SHOW_60",
+  "selected_ingredients": [
+    "tomato",
+    "tomato paste",
+    "tomato puree",
+    "tomato chutney",
+    "turmeric powder",
+    "yoghurt",
+    "whole chicken",
+    "vegetables",
+    "vindaloo spice blend",
+    "vinegar",
+    "water",
+    "white pepper",
+    "basmati rice with quinoa"
+  ]
+}

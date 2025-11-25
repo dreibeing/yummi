@@ -1,0 +1,144 @@
+{
+  "model": "gpt-5",
+  "temperature": 0.4,
+  "top_p": 1.0,
+  "max_tokens": 2000,
+  "max_output_tokens": 6000,
+  "reasoning_effort": "low",
+  "tags_version": "2025.02.1",
+  "prompt_template": "data\\prompts\\archetype_generation_prompt.md",
+  "constraint_brief": "data\\tags\\archetype_constraint_brief.md",
+  "batches": [
+    {
+      "batch": 1,
+      "requested_count": 1,
+      "received_count": 1,
+      "raw_file": "call_01_raw.txt"
+    },
+    {
+      "batch": 2,
+      "requested_count": 1,
+      "received_count": 1,
+      "raw_file": "call_02_raw.txt"
+    },
+    {
+      "batch": 3,
+      "requested_count": 1,
+      "received_count": 1,
+      "raw_file": "call_03_raw.txt"
+    },
+    {
+      "batch": 4,
+      "requested_count": 1,
+      "received_count": 1,
+      "raw_file": "call_04_raw.txt"
+    },
+    {
+      "batch": 5,
+      "requested_count": 1,
+      "received_count": 1,
+      "raw_file": "call_05_raw.txt"
+    },
+    {
+      "batch": 6,
+      "requested_count": 1,
+      "received_count": 1,
+      "raw_file": "call_06_raw.txt"
+    },
+    {
+      "batch": 7,
+      "requested_count": 1,
+      "received_count": 1,
+      "raw_file": "call_07_raw.txt"
+    },
+    {
+      "batch": 8,
+      "requested_count": 1,
+      "received_count": 1,
+      "raw_file": "call_08_raw.txt"
+    },
+    {
+      "batch": 9,
+      "requested_count": 1,
+      "received_count": 1,
+      "raw_file": "call_09_raw.txt"
+    },
+    {
+      "batch": 10,
+      "requested_count": 1,
+      "received_count": 1,
+      "raw_file": "call_10_raw.txt"
+    },
+    {
+      "batch": 11,
+      "requested_count": 1,
+      "received_count": 1,
+      "raw_file": "call_11_raw.txt"
+    },
+    {
+      "batch": 12,
+      "requested_count": 1,
+      "received_count": 1,
+      "raw_file": "call_12_raw.txt"
+    },
+    {
+      "batch": 13,
+      "requested_count": 1,
+      "received_count": 1,
+      "raw_file": "call_13_raw.txt"
+    },
+    {
+      "batch": 14,
+      "requested_count": 1,
+      "received_count": 1,
+      "raw_file": "call_14_raw.txt"
+    },
+    {
+      "batch": 15,
+      "requested_count": 1,
+      "received_count": 1,
+      "raw_file": "call_15_raw.txt"
+    },
+    {
+      "batch": 16,
+      "requested_count": 1,
+      "received_count": 1,
+      "raw_file": "call_16_raw.txt"
+    },
+    {
+      "batch": 17,
+      "requested_count": 1,
+      "received_count": 1,
+      "raw_file": "call_17_raw.txt"
+    },
+    {
+      "batch": 18,
+      "requested_count": 1,
+      "received_count": 1,
+      "raw_file": "call_18_raw.txt"
+    },
+    {
+      "batch": 19,
+      "requested_count": 1,
+      "received_count": 1,
+      "raw_file": "call_19_raw.txt"
+    },
+    {
+      "batch": 20,
+      "requested_count": 1,
+      "received_count": 1,
+      "raw_file": "call_20_raw.txt"
+    }
+  ],
+  "total_requested": 20,
+  "scope": {
+    "dietary_restrictions": [
+      "None"
+    ],
+    "audience": [
+      "Family"
+    ]
+  },
+  "predefined_config": "C:\\Users\\user\\Documents\\Greenbean\\Shopper\\projects\\yummi\\data\\archetypes\\predefined\\none_family_none",
+  "output_dir": "data\\archetypes\\predefined\\none_family_none"
+}

@@ -1,8 +1,0 @@
-{
-  "archetype_uid": "arch_FAM_ASIA_UNDER15_01",
-  "selected_ingredients": [
-    "spring rolls",
-    "tempura prawns",
-    "wontons"
-  ]
-}

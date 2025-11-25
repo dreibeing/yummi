@@ -1,0 +1,299 @@
+{
+  "meal_id": "meal_20251125T113107Z_01_7e855e",
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "archetype_name": "Family Low-Sodium American & French Comfort (30–60, Mild)",
+  "name": "Herb-Roasted Chicken Thighs with Dijon Pan Sauce, Green Beans & Carrots, and 7-Grain Medley",
+  "description": "Comforting roasted chicken with a bright mustard pan sauce, tender green beans and carrots, and a hearty 7-grain side. Built for low-sodium, family-friendly flavors.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 425°F (220°C).",
+    "Rinse 1 1/2 cups 7-grain medley under cold water; drain.",
+    "Peel and slice 1 onion.",
+    "Peel and cut 3 carrots into 1/4-inch coins.",
+    "Trim ends from 12 oz green beans.",
+    "Mince 4 cloves garlic.",
+    "Zest then halve 1 lemon.",
+    "Pat dry 6–8 chicken thighs with paper towels; season both sides with black pepper.",
+    "Mix 1 tsp thyme and 1 tsp rosemary together."
+  ],
+  "cook_steps": [
+    "Combine 7-grain medley, 3 cups water, and 1 bay leaf in a saucepan. Bring to a boil, reduce to low, cover, and simmer 35–40 minutes until tender. Remove bay leaf and keep covered off heat.",
+    "Heat 1 tbsp olive oil in a large oven-safe skillet over medium-high. Add chicken thighs skin-side down; sear 4–5 minutes until golden. Flip, sprinkle mixed thyme and rosemary over the chicken, and transfer skillet to the oven. Roast 20–25 minutes until juices run clear.",
+    "While chicken roasts, heat 1 tbsp olive oil in a second skillet over medium. Add onion and carrots; cook 5 minutes, stirring. Add 2 tbsp water, cover, and steam 4 minutes. Add green beans and another 2 tbsp water; cover and cook 4–6 minutes until crisp-tender. Season with black pepper and half the lemon zest; keep warm.",
+    "Transfer cooked chicken to a plate to rest. Return the oven-safe skillet to medium heat (pour off excess fat, leaving about 1 tbsp). Add garlic; cook 30 seconds.",
+    "Stir in 2 tbsp mustard and 1/2 cup white wine; scrape up browned bits. Simmer 2–3 minutes to reduce by half.",
+    "Add 1 cup vegetable stock and the juice of half a lemon. Simmer 3–5 minutes until slightly thickened and glossy. Stir in remaining lemon zest and 2 tbsp chopped parsley (optional). Season with black pepper to taste.",
+    "Fluff the 7-grain medley with a fork. Plate grains, add green beans and carrots, top with chicken, and spoon pan sauce over."
+  ],
+  "instructions": [
+    "Preheat oven to 425°F (220°C).",
+    "Rinse 1 1/2 cups 7-grain medley under cold water; drain.",
+    "Peel and slice 1 onion.",
+    "Peel and cut 3 carrots into 1/4-inch coins.",
+    "Trim ends from 12 oz green beans.",
+    "Mince 4 cloves garlic.",
+    "Zest then halve 1 lemon.",
+    "Pat dry 6–8 chicken thighs with paper towels; season both sides with black pepper.",
+    "Mix 1 tsp thyme and 1 tsp rosemary together.",
+    "Combine 7-grain medley, 3 cups water, and 1 bay leaf in a saucepan. Bring to a boil, reduce to low, cover, and simmer 35–40 minutes until tender. Remove bay leaf and keep covered off heat.",
+    "Heat 1 tbsp olive oil in a large oven-safe skillet over medium-high. Add chicken thighs skin-side down; sear 4–5 minutes until golden. Flip, sprinkle mixed thyme and rosemary over the chicken, and transfer skillet to the oven. Roast 20–25 minutes until juices run clear.",
+    "While chicken roasts, heat 1 tbsp olive oil in a second skillet over medium. Add onion and carrots; cook 5 minutes, stirring. Add 2 tbsp water, cover, and steam 4 minutes. Add green beans and another 2 tbsp water; cover and cook 4–6 minutes until crisp-tender. Season with black pepper and half the lemon zest; keep warm.",
+    "Transfer cooked chicken to a plate to rest. Return the oven-safe skillet to medium heat (pour off excess fat, leaving about 1 tbsp). Add garlic; cook 30 seconds.",
+    "Stir in 2 tbsp mustard and 1/2 cup white wine; scrape up browned bits. Simmer 2–3 minutes to reduce by half.",
+    "Add 1 cup vegetable stock and the juice of half a lemon. Simmer 3–5 minutes until slightly thickened and glossy. Stir in remaining lemon zest and 2 tbsp chopped parsley (optional). Season with black pepper to taste.",
+    "Fluff the 7-grain medley with a fork. Plate grains, add green beans and carrots, top with chicken, and spoon pan sauce over."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "7-grain medley",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": "for grains"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "1",
+      "preparation": "for grains"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "6–8 pieces (about 2 lb)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "divided, to taste"
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 tsp",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "rosemary",
+      "quantity": "1 tsp",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "3 medium",
+      "preparation": "sliced into coins"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "12 oz",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "mustard",
+      "quantity": "2 tbsp",
+      "preparation": "smooth style"
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup",
+      "preparation": "for deglazing"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1 cup",
+      "preparation": "low-sodium preferred"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and halved"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped, optional"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "French"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowSodium"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "7-grain medley",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": "for grains",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "1",
+      "preparation": "for grains",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "6–8 pieces (about 2 lb)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "divided, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 tsp",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rosemary",
+      "quantity": "1 tsp",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "3 medium",
+      "preparation": "sliced into coins",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "12 oz",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mustard",
+      "quantity": "2 tbsp",
+      "preparation": "smooth style",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup",
+      "preparation": "for deglazing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1 cup",
+      "preparation": "low-sodium preferred",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped, optional",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T113204Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T113107Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

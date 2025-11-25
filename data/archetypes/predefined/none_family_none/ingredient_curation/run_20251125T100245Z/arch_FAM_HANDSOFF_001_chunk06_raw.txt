@@ -1,0 +1,26 @@
+{
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "selected_ingredients": [
+    "peas",
+    "pecorino romano cheese",
+    "phyllo pastry",
+    "pita bread",
+    "preserved lemon",
+    "pomegranate",
+    "potatoes",
+    "rice",
+    "quinoa",
+    "roasted garlic",
+    "red onion",
+    "red pepper",
+    "peppers",
+    "pepper",
+    "peppercorns",
+    "rosemary",
+    "saffron",
+    "prawns",
+    "roast chicken",
+    "ricotta cheese",
+    "pickled onions"
+  ]
+}

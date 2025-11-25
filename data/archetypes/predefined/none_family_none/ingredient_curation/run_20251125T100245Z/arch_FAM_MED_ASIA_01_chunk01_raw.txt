@@ -1,0 +1,33 @@
+{
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "selected_ingredients": [
+    "Thai 7 spice blend",
+    "Thai black pepper sauce",
+    "Thai coconut stir fry sauce",
+    "Thai green curry paste",
+    "Thai red chili sauce",
+    "Thai red curry paste",
+    "Thai yellow curry paste",
+    "Thai red chilli sauce",
+    "basmati rice",
+    "bao buns",
+    "avocado oil",
+    "black pepper",
+    "bay leaf",
+    "bay leaves",
+    "bell peppers",
+    "bell pepper",
+    "bok choy",
+    "broccoli",
+    "baby corn",
+    "baby carrots",
+    "beans",
+    "black beans",
+    "almonds",
+    "anchovy paste",
+    "anchovies",
+    "basa",
+    "beef",
+    "beef mince"
+  ]
+}

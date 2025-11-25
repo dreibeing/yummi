@@ -1,0 +1,32 @@
+{
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "selected_ingredients": [
+    "7-grain medley",
+    "barbecue sauce",
+    "Gouda cheese",
+    "Red Leicester cheese",
+    "Special K cereal",
+    "alphabet pasta",
+    "apple",
+    "apple sauce",
+    "baby carrots",
+    "babybel cheese",
+    "bacon",
+    "bagel",
+    "baguette",
+    "baked beans",
+    "basil",
+    "basmati rice",
+    "bechamel sauce",
+    "beef burgers",
+    "beef meatballs",
+    "beef bolognese sauce",
+    "bread",
+    "bread rolls",
+    "brioche",
+    "broccoli",
+    "banana",
+    "blueberries",
+    "biscuits"
+  ]
+}

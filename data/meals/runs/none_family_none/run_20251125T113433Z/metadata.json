@@ -1,0 +1,11 @@
+{
+  "predefined_scope": "none_family_none",
+  "predefined_dir": "data\\archetypes\\predefined\\none_family_none",
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "meal_count": 1,
+  "meal_model": "gpt-5",
+  "tags_version": "2025.02.1",
+  "curated_ingredients_path": "data\\archetypes\\predefined\\none_family_none\\ingredient_curation\\curated_ingredients.json",
+  "archetype_source": "data\\archetypes\\predefined\\none_family_none\\archetypes_combined.json",
+  "timestamp": "20251125T113433Z"
+}

@@ -1,0 +1,255 @@
+{
+  "meal_id": "meal_20251125T113743Z_01_5786ab",
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "archetype_name": "Family Low-Fat Mediterranean Light Plates (15–30, Mild)",
+  "name": "Lemon-Oregano Chicken Kebab Bowls with Quinoa and Chopped Salad",
+  "description": "Quick, low-fat Mediterranean bowls with oven-cooked chicken kebabs, fluffy quinoa, and a bright cucumber–tomato salad. Mild flavors, family-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse quinoa under cold water in a fine sieve for 30 seconds.",
+    "Preheat oven to 220°C/425°F (or broil on high). Line a baking tray with foil and lightly oil it.",
+    "Zest half the lemon, then squeeze the whole lemon for juice.",
+    "Mince garlic.",
+    "Dice cucumber, halve cherry tomatoes, thinly slice red onion, and chop parsley.",
+    "Pat chicken kebabs dry with paper towels."
+  ],
+  "cook_steps": [
+    "Add quinoa and vegetable stock to a pot. Bring to a boil on the stovetop, then reduce to low, cover, and simmer 15 minutes until liquid is absorbed. Rest 5 minutes off heat, then fluff.",
+    "In a small bowl, mix olive oil, lemon zest, half the lemon juice, oregano, garlic, a pinch of salt, and black pepper. Brush over chicken kebabs.",
+    "Place chicken kebabs on the prepared tray. Roast 10–12 minutes (or broil 8–10 minutes), turning once, until cooked through (juices run clear).",
+    "In a large bowl, combine cucumber, cherry tomatoes, red onion, parsley, remaining lemon juice, a pinch of salt, black pepper, and sumac (if using). Toss.",
+    "Divide quinoa into 4 bowls. Top with chopped salad and chicken kebabs. Serve immediately."
+  ],
+  "instructions": [
+    "Rinse quinoa under cold water in a fine sieve for 30 seconds.",
+    "Preheat oven to 220°C/425°F (or broil on high). Line a baking tray with foil and lightly oil it.",
+    "Zest half the lemon, then squeeze the whole lemon for juice.",
+    "Mince garlic.",
+    "Dice cucumber, halve cherry tomatoes, thinly slice red onion, and chop parsley.",
+    "Pat chicken kebabs dry with paper towels.",
+    "Add quinoa and vegetable stock to a pot. Bring to a boil on the stovetop, then reduce to low, cover, and simmer 15 minutes until liquid is absorbed. Rest 5 minutes off heat, then fluff.",
+    "In a small bowl, mix olive oil, lemon zest, half the lemon juice, oregano, garlic, a pinch of salt, and black pepper. Brush over chicken kebabs.",
+    "Place chicken kebabs on the prepared tray. Roast 10–12 minutes (or broil 8–10 minutes), turning once, until cooked through (juices run clear).",
+    "In a large bowl, combine cucumber, cherry tomatoes, red onion, parsley, remaining lemon juice, a pinch of salt, black pepper, and sumac (if using). Toss.",
+    "Divide quinoa into 4 bowls. Top with chopped salad and chicken kebabs. Serve immediately."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "quinoa",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "chicken kebabs",
+      "quantity": "600 g (about 8 skewers)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 small",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1/2 teaspoon",
+      "preparation": "optional"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": ""
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowFat"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "quinoa",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken kebabs",
+      "quantity": "600 g (about 8 skewers)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 small",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1/2 teaspoon",
+      "preparation": "optional",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T113838Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T113743Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

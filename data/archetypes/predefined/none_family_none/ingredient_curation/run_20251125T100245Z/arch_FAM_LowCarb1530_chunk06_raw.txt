@@ -1,0 +1,30 @@
+{
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "selected_ingredients": [
+    "romaine lettuce",
+    "peppers",
+    "red pepper",
+    "red onion",
+    "roasted garlic",
+    "salad",
+    "pepper",
+    "rocket",
+    "rosemary",
+    "sage",
+    "pesto",
+    "romesco sauce",
+    "pickles",
+    "pickled onions",
+    "preserved lemon",
+    "pumpkin seeds",
+    "pork",
+    "pork mince",
+    "pork chops",
+    "prawns",
+    "roast chicken",
+    "provolone cheese",
+    "pecorino romano cheese",
+    "ricotta cheese",
+    "prawns"
+  ]
+}

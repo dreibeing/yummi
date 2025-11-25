@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_FAMXHOT1530",
+  "selected_ingredients": [
+    "coriander",
+    "coriander seeds",
+    "corn",
+    "cornflour",
+    "cornbread mix",
+    "crushed tomatoes",
+    "diced tomatoes",
+    "enchilada sauce",
+    "cumin",
+    "cumin seeds",
+    "garlic",
+    "garlic powder",
+    "garlic salt",
+    "ghost chilli",
+    "flour",
+    "eggs",
+    "fish fillets",
+    "coconut sugar",
+    "cucumber",
+    "ghee"
+  ]
+}

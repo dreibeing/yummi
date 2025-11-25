@@ -20,7 +20,7 @@ from llm_utils import OpenAIClientError, call_openai_api
 DEFAULT_CORE_ITEMS = Path("data/ingredients/unique_core_items.csv")
 ARH_COMBINED_FILENAME = "archetypes_combined.json"
 TRACKING_FILENAME = "curated_ingredients.json"
-DEFAULT_MODEL = "gpt-5"
+DEFAULT_MODEL = "gpt-5-mini"
 
 
 @dataclass(frozen=True)
@@ -48,7 +48,7 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--model",
         default=DEFAULT_MODEL,
-        help="OpenAI model to use for ingredient curation (default: gpt-5).",
+        help="OpenAI model to use for ingredient curation (default: gpt-5-mini, low reasoning).",
     )
     parser.add_argument("--temperature", type=float, default=0.2, help="Sampling temperature.")
     parser.add_argument(

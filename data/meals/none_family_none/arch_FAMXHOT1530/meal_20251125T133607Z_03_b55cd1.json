@@ -1,0 +1,279 @@
+{
+  "meal_id": "meal_20251125T133607Z_03_b55cd1",
+  "archetype_uid": "arch_FAMXHOT1530",
+  "archetype_name": "Family Extra-Hot Chili Night (Caribbean & Mexican, 15–30, Simple)",
+  "name": "Extra-Hot Habanero Chorizo & Black Bean Skillet with Warm Tortillas",
+  "description": "A fiery Caribbean–Mexican chorizo and black bean skillet punched up with habanero and chipotle, served with warm tortillas and fresh lime.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Dice onion and bell peppers; mince garlic.",
+    "Finely chop habanero peppers (wear gloves).",
+    "Drain and rinse black beans.",
+    "Open diced tomatoes and measure chipotle sauce, ground cumin, and oregano.",
+    "Cut lime into wedges; chop coriander.",
+    "Stack tortillas in a damp paper towel for microwaving later."
+  ],
+  "cook_steps": [
+    "Heat olive oil in a large skillet over medium-high heat.",
+    "Add chorizo and cook 3–4 minutes until starting to brown.",
+    "Stir in onion and bell peppers; cook 3–4 minutes until softened.",
+    "Add garlic and habanero peppers; cook 30 seconds until fragrant.",
+    "Stir in ground cumin, oregano, chipotle sauce, and salt.",
+    "Add black beans and diced tomatoes; simmer 5–7 minutes to thicken.",
+    "Taste and, for extra heat, add a tiny pinch of ghost chilli; stir and simmer 1 minute.",
+    "Microwave tortillas 30–45 seconds until warm.",
+    "Top the skillet with chopped coriander and serve with warm tortillas and lime wedges."
+  ],
+  "instructions": [
+    "Dice onion and bell peppers; mince garlic.",
+    "Finely chop habanero peppers (wear gloves).",
+    "Drain and rinse black beans.",
+    "Open diced tomatoes and measure chipotle sauce, ground cumin, and oregano.",
+    "Cut lime into wedges; chop coriander.",
+    "Stack tortillas in a damp paper towel for microwaving later.",
+    "Heat olive oil in a large skillet over medium-high heat.",
+    "Add chorizo and cook 3–4 minutes until starting to brown.",
+    "Stir in onion and bell peppers; cook 3–4 minutes until softened.",
+    "Add garlic and habanero peppers; cook 30 seconds until fragrant.",
+    "Stir in ground cumin, oregano, chipotle sauce, and salt.",
+    "Add black beans and diced tomatoes; simmer 5–7 minutes to thicken.",
+    "Taste and, for extra heat, add a tiny pinch of ghost chilli; stir and simmer 1 minute.",
+    "Microwave tortillas 30–45 seconds until warm.",
+    "Top the skillet with chopped coriander and serve with warm tortillas and lime wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "chorizo",
+      "quantity": "12 oz",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "habanero peppers",
+      "quantity": "1–2",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "2 teaspoons"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "chipotle sauce",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon, to taste"
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "2 x 400 g cans",
+      "preparation": "drained and rinsed"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 x 400 g can"
+    },
+    {
+      "core_item_name": "ghost chilli",
+      "quantity": "tiny pinch",
+      "preparation": "very finely minced (optional, very hot)"
+    },
+    {
+      "core_item_name": "tortillas",
+      "quantity": "8 small",
+      "preparation": "warmed"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Caribbean",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "ExtraHot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chorizo",
+      "quantity": "12 oz",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero peppers",
+      "quantity": "1–2",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "2 teaspoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chipotle sauce",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon, to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "2 x 400 g cans",
+      "preparation": "drained and rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 x 400 g can",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ghost chilli",
+      "quantity": "tiny pinch",
+      "preparation": "very finely minced (optional, very hot)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tortillas",
+      "quantity": "8 small",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T133831Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T133607Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

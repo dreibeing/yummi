@@ -1,0 +1,23 @@
+{
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "selected_ingredients": [
+    "Moroccan rub",
+    "baharat",
+    "allspice",
+    "bay leaves",
+    "basmati rice",
+    "black pepper",
+    "beef mince",
+    "beef meatballs",
+    "beef",
+    "bread",
+    "bell peppers",
+    "apricot",
+    "apricot jam",
+    "almonds",
+    "artichokes",
+    "beans",
+    "apple cider vinegar",
+    "barley"
+  ]
+}

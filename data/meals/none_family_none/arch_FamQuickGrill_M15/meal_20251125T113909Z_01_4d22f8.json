@@ -1,0 +1,249 @@
+{
+  "meal_id": "meal_20251125T113909Z_01_4d22f8",
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "archetype_name": "Family Quick Grill & Salad Nights (Mild, 15–30)",
+  "name": "Lemon-Oregano Braai Chicken & Crunchy Greek Salad",
+  "description": "Fast-grilled chicken thighs with a lemon-garlic-oregano rub, served alongside a crisp tomato, cucumber, olive, and greens salad. Mild, bright flavors for an easy family braai night.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat OutdoorGrill to medium-high heat (200–230°C). If using a grill pan, preheat on StoveTop over medium-high.",
+    "Pat dry chicken thighs with paper towel.",
+    "In a bowl, combine olive oil, lemon zest, lemon juice, oregano, grated garlic, salt, and black pepper.",
+    "Trim and slice cucumber into half-moons.",
+    "Cut tomatoes into wedges (or quarter cherry tomatoes).",
+    "Thinly slice red onion.",
+    "Rinse and dry mixed greens.",
+    "Pit olives if needed."
+  ],
+  "cook_steps": [
+    "Toss chicken thighs in the lemon-oregano mixture to coat evenly.",
+    "Oil grill grates lightly with a paper towel dipped in olive oil.",
+    "Grill chicken 6–7 minutes per side, turning once, until juices run clear and internal temp reaches 75°C.",
+    "Rest chicken on a plate for 3–5 minutes.",
+    "In a large bowl, combine mixed greens, cucumber, tomatoes, red onion, and olives.",
+    "Drizzle salad with olive oil and a splash of apple cider vinegar; season with salt and black pepper. Toss to coat.",
+    "Slice or serve chicken thighs whole alongside the salad."
+  ],
+  "instructions": [
+    "Preheat OutdoorGrill to medium-high heat (200–230°C). If using a grill pan, preheat on StoveTop over medium-high.",
+    "Pat dry chicken thighs with paper towel.",
+    "In a bowl, combine olive oil, lemon zest, lemon juice, oregano, grated garlic, salt, and black pepper.",
+    "Trim and slice cucumber into half-moons.",
+    "Cut tomatoes into wedges (or quarter cherry tomatoes).",
+    "Thinly slice red onion.",
+    "Rinse and dry mixed greens.",
+    "Pit olives if needed.",
+    "Toss chicken thighs in the lemon-oregano mixture to coat evenly.",
+    "Oil grill grates lightly with a paper towel dipped in olive oil.",
+    "Grill chicken 6–7 minutes per side, turning once, until juices run clear and internal temp reaches 75°C.",
+    "Rest chicken on a plate for 3–5 minutes.",
+    "In a large bowl, combine mixed greens, cucumber, tomatoes, red onion, and olives.",
+    "Drizzle salad with olive oil and a splash of apple cider vinegar; season with salt and black pepper. Toss to coat.",
+    "Slice or serve chicken thighs whole alongside the salad."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "8 small–medium pieces (about 1–1.2 kg)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tablespoons total",
+      "preparation": "3 tbsp for marinade, 1 tbsp for salad/grill grates"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 whole",
+      "preparation": "zest and juice"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "grated or finely minced"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 to 1.5 teaspoons",
+      "preparation": "divided for chicken and salad"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "freshly ground, divided"
+    },
+    {
+      "core_item_name": "mixed greens",
+      "quantity": "6 cups",
+      "preparation": "rinsed and dried"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "sliced into half-moons"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "3 medium",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "olive",
+      "quantity": "1/2 cup",
+      "preparation": "pitted if needed"
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tablespoon",
+      "preparation": "for salad dressing"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "8 small–medium pieces (about 1–1.2 kg)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tablespoons total",
+      "preparation": "3 tbsp for marinade, 1 tbsp for salad/grill grates",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 whole",
+      "preparation": "zest and juice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "grated or finely minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 to 1.5 teaspoons",
+      "preparation": "divided for chicken and salad",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "freshly ground, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mixed greens",
+      "quantity": "6 cups",
+      "preparation": "rinsed and dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "sliced into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "3 medium",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive",
+      "quantity": "1/2 cup",
+      "preparation": "pitted if needed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tablespoon",
+      "preparation": "for salad dressing",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T113951Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T113909Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

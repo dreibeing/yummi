@@ -1,0 +1,275 @@
+{
+  "meal_id": "meal_20251125T133607Z_02_401dd0",
+  "archetype_uid": "arch_FAMXHOT1530",
+  "archetype_name": "Family Extra-Hot Chili Night (Caribbean & Mexican, 15–30, Simple)",
+  "name": "Extra-Hot Habanero Pork & Pineapple Skewers with Spanish Rice",
+  "description": "Caribbean-hot pork and pineapple skewers blasted with habanero and allspice, served over simple Mexican-style Spanish rice. Quick grill + stovetop combo built for heat lovers.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Soak wooden skewers if using. Preheat OutdoorGrill to high.",
+    "Cut pork shoulder into 1-inch cubes.",
+    "Peel and core pineapple; cut into 1-inch chunks.",
+    "Slice bell peppers into 1-inch pieces.",
+    "Peel and cut red onion into 1-inch wedges.",
+    "Finely chop habanero peppers (use gloves).",
+    "Mince garlic.",
+    "In a bowl, mix olive oil, lime juice, allspice, chopped habanero peppers, minced garlic, salt, and black pepper to make the marinade.",
+    "Toss pork cubes in half the marinade; set aside 10 minutes.",
+    "Rinse spanish rice in a sieve until water runs clear."
+  ],
+  "cook_steps": [
+    "Thread skewers: alternate marinated pork, pineapple, bell peppers, and red onion.",
+    "Start rice: In a saucepan over medium heat (StoveTop), add 1 tablespoon olive oil (from the listed amount if desired), then spanish rice; toast 1 minute.",
+    "Stir in vegetable stock and diced tomatoes; bring to a boil, then reduce to low, cover, and simmer 15 minutes until tender. Keep covered off heat 5 minutes.",
+    "Grill skewers over high heat, turning every 2–3 minutes and brushing with the remaining marinade during the first two turns. Cook 8–12 minutes total until pork is cooked through with light char.",
+    "Fluff rice with a fork. Plate rice and top with skewers.",
+    "Optional: drizzle hot sauce for extra heat."
+  ],
+  "instructions": [
+    "Soak wooden skewers if using. Preheat OutdoorGrill to high.",
+    "Cut pork shoulder into 1-inch cubes.",
+    "Peel and core pineapple; cut into 1-inch chunks.",
+    "Slice bell peppers into 1-inch pieces.",
+    "Peel and cut red onion into 1-inch wedges.",
+    "Finely chop habanero peppers (use gloves).",
+    "Mince garlic.",
+    "In a bowl, mix olive oil, lime juice, allspice, chopped habanero peppers, minced garlic, salt, and black pepper to make the marinade.",
+    "Toss pork cubes in half the marinade; set aside 10 minutes.",
+    "Rinse spanish rice in a sieve until water runs clear.",
+    "Thread skewers: alternate marinated pork, pineapple, bell peppers, and red onion.",
+    "Start rice: In a saucepan over medium heat (StoveTop), add 1 tablespoon olive oil (from the listed amount if desired), then spanish rice; toast 1 minute.",
+    "Stir in vegetable stock and diced tomatoes; bring to a boil, then reduce to low, cover, and simmer 15 minutes until tender. Keep covered off heat 5 minutes.",
+    "Grill skewers over high heat, turning every 2–3 minutes and brushing with the remaining marinade during the first two turns. Cook 8–12 minutes total until pork is cooked through with light char.",
+    "Fluff rice with a fork. Plate rice and top with skewers.",
+    "Optional: drizzle hot sauce for extra heat."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "pork shoulder",
+      "quantity": "700 g / 1.5 lb",
+      "preparation": "cut into 1-inch cubes"
+    },
+    {
+      "core_item_name": "pineapple",
+      "quantity": "1 small",
+      "preparation": "cut into 1-inch chunks"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "cut into 1-inch pieces"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 medium",
+      "preparation": "cut into 1-inch wedges"
+    },
+    {
+      "core_item_name": "habanero peppers",
+      "quantity": "2",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "spanish rice",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "hot sauce",
+      "quantity": "to taste",
+      "preparation": "for serving (optional)"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Caribbean",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "ExtraHot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "pork shoulder",
+      "quantity": "700 g / 1.5 lb",
+      "preparation": "cut into 1-inch cubes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pineapple",
+      "quantity": "1 small",
+      "preparation": "cut into 1-inch chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "cut into 1-inch pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 medium",
+      "preparation": "cut into 1-inch wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero peppers",
+      "quantity": "2",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spanish rice",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "hot sauce",
+      "quantity": "to taste",
+      "preparation": "for serving (optional)",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T133747Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T133607Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

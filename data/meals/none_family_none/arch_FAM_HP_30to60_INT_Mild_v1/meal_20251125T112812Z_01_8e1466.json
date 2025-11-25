@@ -1,0 +1,269 @@
+{
+  "meal_id": "meal_20251125T112812Z_01_8e1466",
+  "archetype_uid": "arch_FAM_HP_30to60_INT_Mild_v1",
+  "archetype_name": "Family High-Protein Dinners (30–60, Mild, Intermediate)",
+  "name": "Za’atar Lemon Chicken with Herbed Basmati and Chickpea Tomato Salad",
+  "description": "Oven-finished za’atar lemon chicken thighs with fluffy herbed basmati rice and a bright chickpea-tomato-cucumber salad. Mild, protein-forward and family-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 200°C/400°F. Position a rack in the center.",
+    "Rinse 1.5 cups basmati rice under cold water until the water runs clear; drain well.",
+    "Peel and finely chop 1 medium onions.",
+    "Peel and mince 3 cloves garlic.",
+    "Zest 1 lemon, then juice both lemons (about 6 tbsp juice total); keep zest and juice separate.",
+    "Roughly chop parsley (about 1/2 cup chopped), divide into two portions.",
+    "Dice tomatoes and cucumber into bite-size pieces.",
+    "Drain and rinse chickpeas."
+  ],
+  "cook_steps": [
+    "In a bowl, combine 2 tbsp olive oil, lemon zest, 3 tbsp lemon juice, minced garlic, za'atar, paprika, 1 tsp salt, and 1/2 tsp black pepper. Add chicken thigh fillets and toss to coat.",
+    "Heat 1 tbsp olive oil in an oven-safe skillet over medium-high heat. Sear chicken thigh fillets 2–3 minutes per side until lightly browned.",
+    "Transfer skillet to the oven and bake 12–15 minutes until chicken is cooked through (internal temp 74°C/165°F). Rest 5 minutes; spoon pan juices over the chicken.",
+    "While chicken bakes, heat 1 tbsp olive oil in a saucepan over medium heat. Sauté chopped onions 3–4 minutes until translucent.",
+    "Add drained basmati rice to the pan; stir 1 minute to coat. Pour in chicken stock, add a pinch of salt (to taste), bring to a boil, then reduce to low. Cover and simmer 12 minutes. Remove from heat and steam covered 5 minutes.",
+    "Fluff rice with a fork; fold in half the chopped parsley and a pinch of black pepper.",
+    "Make the salad: In a bowl, combine chickpeas, tomatoes, cucumber, remaining chopped parsley, 2 tbsp olive oil, 3 tbsp lemon juice, 1/2 tsp salt, and 1/4 tsp black pepper. Toss to coat.",
+    "Plate herbed basmati rice, top with za’atar lemon chicken and pan juices, and serve salad on the side."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C/400°F. Position a rack in the center.",
+    "Rinse 1.5 cups basmati rice under cold water until the water runs clear; drain well.",
+    "Peel and finely chop 1 medium onions.",
+    "Peel and mince 3 cloves garlic.",
+    "Zest 1 lemon, then juice both lemons (about 6 tbsp juice total); keep zest and juice separate.",
+    "Roughly chop parsley (about 1/2 cup chopped), divide into two portions.",
+    "Dice tomatoes and cucumber into bite-size pieces.",
+    "Drain and rinse chickpeas.",
+    "In a bowl, combine 2 tbsp olive oil, lemon zest, 3 tbsp lemon juice, minced garlic, za'atar, paprika, 1 tsp salt, and 1/2 tsp black pepper. Add chicken thigh fillets and toss to coat.",
+    "Heat 1 tbsp olive oil in an oven-safe skillet over medium-high heat. Sear chicken thigh fillets 2–3 minutes per side until lightly browned.",
+    "Transfer skillet to the oven and bake 12–15 minutes until chicken is cooked through (internal temp 74°C/165°F). Rest 5 minutes; spoon pan juices over the chicken.",
+    "While chicken bakes, heat 1 tbsp olive oil in a saucepan over medium heat. Sauté chopped onions 3–4 minutes until translucent.",
+    "Add drained basmati rice to the pan; stir 1 minute to coat. Pour in chicken stock, add a pinch of salt (to taste), bring to a boil, then reduce to low. Cover and simmer 12 minutes. Remove from heat and steam covered 5 minutes.",
+    "Fluff rice with a fork; fold in half the chopped parsley and a pinch of black pepper.",
+    "Make the salad: In a bowl, combine chickpeas, tomatoes, cucumber, remaining chopped parsley, 2 tbsp olive oil, 3 tbsp lemon juice, 1/2 tsp salt, and 1/4 tsp black pepper. Toss to coat.",
+    "Plate herbed basmati rice, top with za’atar lemon chicken and pan juices, and serve salad on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "800 g",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "5 tbsp, divided"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "2 whole",
+      "preparation": "zested (1) and juiced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "za'atar",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp, plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp, divided"
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "3 cups"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped, divided"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "3 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "1 can (400 g)",
+      "preparation": "drained and rinsed"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "800 g",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "5 tbsp, divided",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "2 whole",
+      "preparation": "zested (1) and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "za'atar",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp, plus more to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp, divided",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "3 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "3 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "1 can (400 g)",
+      "preparation": "drained and rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T112907Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T112812Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

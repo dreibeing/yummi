@@ -1,0 +1,48 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_FAM_Keto_1530_Mild_Simple",
+      "name": "Family Keto Weeknight Plates (Mild, 15–30, Simple)",
+      "description": "Fast, keto-friendly family dinners built around lean proteins, leafy or cruciferous veg, and rich but simple sauces—no grains, sugars, or starchy sides—using approachable Greek, Middle Eastern, and American flavors.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Greek",
+          "MiddleEastern",
+          "American"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "Oven"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "Keto",
+          "LowCarb",
+          "HighProtein"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Adds a missing Family keto archetype with mild heat and 15–30 minute simplicity, complementing existing low-carb/high-protein sets and avoiding overlap with prior cuisines and formats."
+    }
+  ]
+}

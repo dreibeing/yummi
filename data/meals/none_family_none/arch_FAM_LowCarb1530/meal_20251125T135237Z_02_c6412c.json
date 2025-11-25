@@ -1,0 +1,204 @@
+{
+  "meal_id": "meal_20251125T135237Z_02_c6412c",
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "archetype_name": "Family Low-Carb Weeknight Bowls & Wraps (15–30, Mild)",
+  "name": "Lemon-Tahini Salmon Bowls with Cauliflower Rice",
+  "description": "Mild, low-carb salmon and broccoli bowls over cauliflower rice with a quick lemon-tahini drizzle. Simple, weeknight-friendly and family-ready.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F.",
+    "Cut broccoli into bite-size pieces.",
+    "Mince garlic.",
+    "Zest and juice the lemon (about 2–3 tbsp juice).",
+    "Chop parsley (optional).",
+    "Pat salmon dry with paper towels."
+  ],
+  "cook_steps": [
+    "On a sheet pan, toss broccoli with 1.5 tbsp olive oil, a pinch of salt and pepper; spread in a single layer.",
+    "Place salmon on the same pan; rub with 1 tbsp olive oil, half the minced garlic, a big pinch of salt and pepper, and half the lemon zest.",
+    "Roast 12–15 minutes until salmon flakes and broccoli is tender with crisp edges.",
+    "While roasting, warm cauliflower rice in a large skillet over medium with 1 tbsp olive oil and remaining garlic for 3–4 minutes; season with salt and pepper.",
+    "In a small bowl, whisk tahini with lemon juice, remaining lemon zest, a pinch of salt, and just enough water to make a pourable sauce.",
+    "Build bowls: divide cauliflower rice, top with salmon (flaked or in portions) and roasted broccoli, drizzle lemon-tahini sauce, and finish with parsley."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F.",
+    "Cut broccoli into bite-size pieces.",
+    "Mince garlic.",
+    "Zest and juice the lemon (about 2–3 tbsp juice).",
+    "Chop parsley (optional).",
+    "Pat salmon dry with paper towels.",
+    "On a sheet pan, toss broccoli with 1.5 tbsp olive oil, a pinch of salt and pepper; spread in a single layer.",
+    "Place salmon on the same pan; rub with 1 tbsp olive oil, half the minced garlic, a big pinch of salt and pepper, and half the lemon zest.",
+    "Roast 12–15 minutes until salmon flakes and broccoli is tender with crisp edges.",
+    "While roasting, warm cauliflower rice in a large skillet over medium with 1 tbsp olive oil and remaining garlic for 3–4 minutes; season with salt and pepper.",
+    "In a small bowl, whisk tahini with lemon juice, remaining lemon zest, a pinch of salt, and just enough water to make a pourable sauce.",
+    "Build bowls: divide cauliflower rice, top with salmon (flaked or in portions) and roasted broccoli, drizzle lemon-tahini sauce, and finish with parsley."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "salmon",
+      "quantity": "4 fillets (about 600–700 g total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "500 g",
+      "preparation": "cut into bite-size pieces"
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "750 g",
+      "preparation": "ready to heat"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3.5 tbsp"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "tahini",
+      "quantity": "3 tbsp"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped (optional)"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Seafood",
+      "Sesame"
+    ],
+    "NutritionFocus": [
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "salmon",
+      "quantity": "4 fillets (about 600–700 g total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "500 g",
+      "preparation": "cut into bite-size pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "750 g",
+      "preparation": "ready to heat",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3.5 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tahini",
+      "quantity": "3 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped (optional)",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T135352Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T135237Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

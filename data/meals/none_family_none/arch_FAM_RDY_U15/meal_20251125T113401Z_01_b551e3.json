@@ -1,0 +1,155 @@
+{
+  "meal_id": "meal_20251125T113401Z_01_b551e3",
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "archetype_name": "Family Heat-and-Eat Weeknights (Under 15, No Heat)",
+  "name": "Microwave Lasagne & Salad Plate",
+  "description": "Family-friendly heat-and-eat lasagne with a quick salad, soft rolls, and crunchy baby carrots. Zero chili heat and ready in under 15 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Read the microwave instructions on the beef lasagne ready meal.",
+    "Rinse and drain the cherry tomatoes.",
+    "Open the salad and place in a serving bowl.",
+    "Place rolls in a microwave-safe bowl; set butter on the table.",
+    "Set out plates, forks, and serving tongs."
+  ],
+  "cook_steps": [
+    "Microwave the beef lasagne ready meal per package directions until steaming hot (typically 6–8 minutes), then rest 1 minute.",
+    "Microwave the rolls for 20–30 seconds to soften (or serve at room temperature).",
+    "Add cherry tomatoes to the salad and toss.",
+    "Plate slices of lasagne with a side of salad and baby carrots.",
+    "Serve rolls with butter."
+  ],
+  "instructions": [
+    "Read the microwave instructions on the beef lasagne ready meal.",
+    "Rinse and drain the cherry tomatoes.",
+    "Open the salad and place in a serving bowl.",
+    "Place rolls in a microwave-safe bowl; set butter on the table.",
+    "Set out plates, forks, and serving tongs.",
+    "Microwave the beef lasagne ready meal per package directions until steaming hot (typically 6–8 minutes), then rest 1 minute.",
+    "Microwave the rolls for 20–30 seconds to soften (or serve at room temperature).",
+    "Add cherry tomatoes to the salad and toss.",
+    "Plate slices of lasagne with a side of salad and baby carrots.",
+    "Serve rolls with butter."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef lasagne ready meal",
+      "quantity": "1 family-size tray (or 2 individual trays)",
+      "preparation": "microwave per package"
+    },
+    {
+      "core_item_name": "salad",
+      "quantity": "1 family pack",
+      "preparation": "opened"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "rolls",
+      "quantity": "6 rolls",
+      "preparation": "microwave to warm if desired"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2–3 tablespoons",
+      "preparation": "for spreading"
+    },
+    {
+      "core_item_name": "baby carrots",
+      "quantity": "2 cups",
+      "preparation": "serve as is"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef lasagne ready meal",
+      "quantity": "1 family-size tray (or 2 individual trays)",
+      "preparation": "microwave per package",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salad",
+      "quantity": "1 family pack",
+      "preparation": "opened",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rolls",
+      "quantity": "6 rolls",
+      "preparation": "microwave to warm if desired",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2–3 tablespoons",
+      "preparation": "for spreading",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "baby carrots",
+      "quantity": "2 cups",
+      "preparation": "serve as is",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T113433Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T113401Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_FamLatComfort3060",
+      "name": "Family Latin Comfort (Mild, 30–60, Intermediate)",
+      "description": "Family-friendly Latin American and Mexican dinners with gentle seasoning—rice-and-bean plates, enchilada or tortilla bakes, picadillo, and roast-chicken arroz with mild salsas and fresh toppings.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "LatinAmerican",
+          "Mexican"
+        ],
+        "PrepTime": [
+          "30to60"
+        ],
+        "Complexity": [
+          "Intermediate"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "Oven"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "This fills a clear gap by offering mild, intermediate 30–60 minute Latin American/Mexican family meals distinct from the existing extra-hot quick set and hot advanced feasts."
+    }
+  ]
+}

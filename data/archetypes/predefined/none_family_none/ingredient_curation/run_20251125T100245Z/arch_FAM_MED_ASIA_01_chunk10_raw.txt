@@ -1,0 +1,16 @@
+{
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "selected_ingredients": [
+    "spring roll",
+    "tempura prawns",
+    "thai green chicken curry",
+    "tofu curry",
+    "tofu mushroom coconut curry",
+    "wontons",
+    "sticky rice salad",
+    "thali",
+    "vegetable and lentil meal",
+    "tom yum soup",
+    "vegetable soup"
+  ]
+}

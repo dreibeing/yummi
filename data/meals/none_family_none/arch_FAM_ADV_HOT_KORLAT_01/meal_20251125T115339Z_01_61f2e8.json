@@ -1,0 +1,342 @@
+{
+  "meal_id": "meal_20251125T115339Z_01_61f2e8",
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "archetype_name": "Family Heat Lovers: Korean & Latin American Feasts (Hot, 30–60, Advanced)",
+  "name": "Gochujang Ribeye with Mango-Habanero Salsa, Cucumber Quick Pickle, and Jasmine Rice",
+  "description": "Charred, gochujang-glazed ribeye meets a bright mango-habanero salsa and a snappy cucumber quick pickle over fluffy jasmine rice. A bold Korean–Latin American family feast with real heat.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 2 cups jasmine rice under cold water until mostly clear; drain.",
+    "Peel and dice mango (small cubes).",
+    "Finely mince 1–2 habanero peppers (remove seeds for slightly less heat).",
+    "Roughly chop coriander.",
+    "Thinly slice cucumber into rounds.",
+    "Mince garlic.",
+    "Slice spring onion.",
+    "In a bowl, whisk gochujang, soy sauce, brown sugar, sesame oil, minced garlic, and black pepper to make a steak glaze.",
+    "Pat dry ribeye steak and lightly oil with canola oil; season both sides with salt and black pepper.",
+    "In a small bowl, mix rice vinegar, sugar, and a pinch of salt until dissolved for the pickle brine."
+  ],
+  "cook_steps": [
+    "Cook rice: Add rinsed jasmine rice and water to a pot (about 3 cups water). Bring to a boil, reduce to low, cover, and simmer 15 minutes. Rest off heat, covered, 5–10 minutes.",
+    "Start quick pickle: Toss cucumber with the vinegar brine and a pinch of chilli flakes. Press down so it’s submerged; chill while you cook.",
+    "Preheat an outdoor grill to high heat or heat a heavy stovetop skillet over high until very hot.",
+    "Grill/sear steak: Cook ribeye 3–4 minutes per side for medium-rare (thicker steaks may need another minute per side). During the last minute, brush generously with the gochujang glaze on both sides to lacquer.",
+    "Rest steak 5–8 minutes on a board; brush with a little more glaze while resting.",
+    "Make salsa: In a bowl, combine diced mango, minced habanero, chopped coriander, lime juice, and a pinch of salt. Stir and let sit 2–3 minutes.",
+    "Finish rice: Fluff rice with a fork. Fold in sliced spring onion and a light drizzle of sesame oil; season with salt to taste.",
+    "Slice steak against the grain.",
+    "Plate: Mound jasmine rice, top with sliced gochujang ribeye, spoon over mango-habanero salsa, and add cucumber quick pickle on the side. Sprinkle sesame seeds over steak and rice."
+  ],
+  "instructions": [
+    "Rinse 2 cups jasmine rice under cold water until mostly clear; drain.",
+    "Peel and dice mango (small cubes).",
+    "Finely mince 1–2 habanero peppers (remove seeds for slightly less heat).",
+    "Roughly chop coriander.",
+    "Thinly slice cucumber into rounds.",
+    "Mince garlic.",
+    "Slice spring onion.",
+    "In a bowl, whisk gochujang, soy sauce, brown sugar, sesame oil, minced garlic, and black pepper to make a steak glaze.",
+    "Pat dry ribeye steak and lightly oil with canola oil; season both sides with salt and black pepper.",
+    "In a small bowl, mix rice vinegar, sugar, and a pinch of salt until dissolved for the pickle brine.",
+    "Cook rice: Add rinsed jasmine rice and water to a pot (about 3 cups water). Bring to a boil, reduce to low, cover, and simmer 15 minutes. Rest off heat, covered, 5–10 minutes.",
+    "Start quick pickle: Toss cucumber with the vinegar brine and a pinch of chilli flakes. Press down so it’s submerged; chill while you cook.",
+    "Preheat an outdoor grill to high heat or heat a heavy stovetop skillet over high until very hot.",
+    "Grill/sear steak: Cook ribeye 3–4 minutes per side for medium-rare (thicker steaks may need another minute per side). During the last minute, brush generously with the gochujang glaze on both sides to lacquer.",
+    "Rest steak 5–8 minutes on a board; brush with a little more glaze while resting.",
+    "Make salsa: In a bowl, combine diced mango, minced habanero, chopped coriander, lime juice, and a pinch of salt. Stir and let sit 2–3 minutes.",
+    "Finish rice: Fluff rice with a fork. Fold in sliced spring onion and a light drizzle of sesame oil; season with salt to taste.",
+    "Slice steak against the grain.",
+    "Plate: Mound jasmine rice, top with sliced gochujang ribeye, spoon over mango-habanero salsa, and add cucumber quick pickle on the side. Sprinkle sesame seeds over steak and rice."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups"
+    },
+    {
+      "core_item_name": "ribeye steak",
+      "quantity": "800–900 g total (2 large steaks)"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 teaspoons, divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon, divided",
+      "preparation": "freshly ground if possible"
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "3 tablespoons"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "2 teaspoons, divided"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "mango",
+      "quantity": "1 large",
+      "preparation": "diced small"
+    },
+    {
+      "core_item_name": "habanero peppers",
+      "quantity": "1–2",
+      "preparation": "finely minced"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1/3 cup"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1/4 teaspoon"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "1 tablespoon"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Korean",
+      "LatinAmerican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Hot"
+    ],
+    "Allergens": [
+      "Sesame",
+      "Soy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ribeye steak",
+      "quantity": "800–900 g total (2 large steaks)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 teaspoons, divided",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon, divided",
+      "preparation": "freshly ground if possible",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "3 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "2 teaspoons, divided",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mango",
+      "quantity": "1 large",
+      "preparation": "diced small",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero peppers",
+      "quantity": "1–2",
+      "preparation": "finely minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1/3 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1/4 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T115430Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T115339Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

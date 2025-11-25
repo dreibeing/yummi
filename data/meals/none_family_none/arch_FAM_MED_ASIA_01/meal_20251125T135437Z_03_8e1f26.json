@@ -1,0 +1,287 @@
+{
+  "meal_id": "meal_20251125T135437Z_03_8e1f26",
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "archetype_name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)",
+  "name": "Chili-Black Pepper Chicken Stir-Fry with Brown Basmati Rice",
+  "description": "Juicy peppery chicken and crisp vegetables in a chili-vinegar glaze, served over nutty brown basmati. Medium heat, fast skillet cooking.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 2 cups brown basmati rice until water runs clear.",
+    "Dice 600–700 g chicken thighs into bite-size pieces; pat dry.",
+    "Cut 1 large onion into thin slices.",
+    "Slice 1–2 bell peppers into strips.",
+    "Cut 1 small head broccoli into small florets.",
+    "Mince 3–4 cloves garlic.",
+    "Finely chop 1 fresh chili (or keep seeds for extra heat).",
+    "In a bowl, toss chicken with 2 tbsp cornflour, 1 tsp black pepper, and 1/2 tsp salt.",
+    "In a small bowl, mix 1 tbsp chilli paste, 1 tbsp rice vinegar, 1 tsp sugar, and the juice of 1/2 lime."
+  ],
+  "cook_steps": [
+    "Rice: Add rinsed brown basmati rice to a pot with 4 cups water and a pinch of salt. Bring to a boil, then cover and simmer on StoveTop 25 minutes until tender; rest 5 minutes covered.",
+    "Quick-steam broccoli: Place florets in a microwave-safe bowl with a splash of water, cover, and Microwave 2–3 minutes until bright green; drain.",
+    "Heat 1 tbsp canola oil in a large skillet or wok over high heat. Sear half the chicken 3–4 minutes until browned; remove. Repeat with another 1 tbsp canola oil and remaining chicken; remove.",
+    "Reduce heat to medium-high; add 1 tsp canola oil if dry. Stir-fry onions 1 minute, then add garlic and chopped chili; cook 30 seconds.",
+    "Add bell peppers and steamed broccoli; stir-fry 2–3 minutes until crisp-tender.",
+    "Return chicken to the pan. Pour in the chilli paste mixture and 1–2 tsp szechuan pepper oil; toss 1–2 minutes until glossy and chicken is cooked through. Adjust salt and black pepper to taste; add more lime if desired.",
+    "Fluff rice. Serve stir-fry over rice."
+  ],
+  "instructions": [
+    "Rinse 2 cups brown basmati rice until water runs clear.",
+    "Dice 600–700 g chicken thighs into bite-size pieces; pat dry.",
+    "Cut 1 large onion into thin slices.",
+    "Slice 1–2 bell peppers into strips.",
+    "Cut 1 small head broccoli into small florets.",
+    "Mince 3–4 cloves garlic.",
+    "Finely chop 1 fresh chili (or keep seeds for extra heat).",
+    "In a bowl, toss chicken with 2 tbsp cornflour, 1 tsp black pepper, and 1/2 tsp salt.",
+    "In a small bowl, mix 1 tbsp chilli paste, 1 tbsp rice vinegar, 1 tsp sugar, and the juice of 1/2 lime.",
+    "Rice: Add rinsed brown basmati rice to a pot with 4 cups water and a pinch of salt. Bring to a boil, then cover and simmer on StoveTop 25 minutes until tender; rest 5 minutes covered.",
+    "Quick-steam broccoli: Place florets in a microwave-safe bowl with a splash of water, cover, and Microwave 2–3 minutes until bright green; drain.",
+    "Heat 1 tbsp canola oil in a large skillet or wok over high heat. Sear half the chicken 3–4 minutes until browned; remove. Repeat with another 1 tbsp canola oil and remaining chicken; remove.",
+    "Reduce heat to medium-high; add 1 tsp canola oil if dry. Stir-fry onions 1 minute, then add garlic and chopped chili; cook 30 seconds.",
+    "Add bell peppers and steamed broccoli; stir-fry 2–3 minutes until crisp-tender.",
+    "Return chicken to the pan. Pour in the chilli paste mixture and 1–2 tsp szechuan pepper oil; toss 1–2 minutes until glossy and chicken is cooked through. Adjust salt and black pepper to taste; add more lime if desired.",
+    "Fluff rice. Serve stir-fry over rice."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "2 cups (raw)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "600–700 g",
+      "preparation": "diced bite-size"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1–2",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "1 small head",
+      "preparation": "cut into small florets"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3–4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "chilies",
+      "quantity": "1",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "2 tbsp",
+      "preparation": "for coating chicken"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1–1.5 tsp",
+      "preparation": "divided, to season"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "chilli paste",
+      "quantity": "1 tbsp",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tbsp",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tsp",
+      "preparation": "for sauce balance"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1/2",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2–3 tsp plus 2 tbsp",
+      "preparation": "divided for stir-fry"
+    },
+    {
+      "core_item_name": "szechuan pepper oil",
+      "quantity": "1–2 tsp",
+      "preparation": "to finish"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Chinese",
+      "Thai"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "2 cups (raw)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "600–700 g",
+      "preparation": "diced bite-size",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1–2",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "1 small head",
+      "preparation": "cut into small florets",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3–4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilies",
+      "quantity": "1",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "2 tbsp",
+      "preparation": "for coating chicken",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1–1.5 tsp",
+      "preparation": "divided, to season",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli paste",
+      "quantity": "1 tbsp",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tbsp",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tsp",
+      "preparation": "for sauce balance",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1/2",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2–3 tsp plus 2 tbsp",
+      "preparation": "divided for stir-fry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "szechuan pepper oil",
+      "quantity": "1–2 tsp",
+      "preparation": "to finish",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T135701Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T135437Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

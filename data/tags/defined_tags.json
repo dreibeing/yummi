@@ -1,24 +1,5 @@
 {
-  "tags_version": "2025.02.0",
-  "required_categories": {
-    "archetype": [
-      "DietaryRestrictions",
-      "Cuisine",
-      "Complexity",
-      "PrepTime",
-      "HeatSpice",
-      "Allergens",
-      "Audience"
-    ],
-    "meal": [
-      "DietaryRestrictions",
-      "Cuisine",
-      "PrepTime",
-      "Complexity",
-      "HeatSpice",
-      "Allergens"
-    ]
-  },
+  "tags_version": "2025.02.1",
   "defined_tags": [
     {
       "tag_id": "dietres_none",
@@ -325,6 +306,12 @@
       "category": "Allergens",
       "value": "Sesame",
       "description": "Contains sesame seeds or oil"
+    },
+    {
+      "tag_id": "nutrition_none",
+      "category": "NutritionFocus",
+      "value": "NoNutritionFocus",
+      "description": "No targeted macro or calorie emphasis; default balanced meals"
     },
     {
       "tag_id": "nutrition_highprotein",

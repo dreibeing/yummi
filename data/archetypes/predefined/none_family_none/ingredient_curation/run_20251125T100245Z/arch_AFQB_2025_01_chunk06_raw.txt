@@ -1,0 +1,33 @@
+{
+  "archetype_uid": "arch_AFQB_2025_01",
+  "selected_ingredients": [
+    "peas",
+    "pepper",
+    "pepperoni",
+    "peppers",
+    "pesto",
+    "pita bread",
+    "pizza",
+    "pizza base",
+    "potato",
+    "potatoes",
+    "potato chips",
+    "potato rostis",
+    "potato rolls",
+    "pickles",
+    "pickled onions",
+    "pineapple",
+    "pork sausage",
+    "pork mince",
+    "pork rashers",
+    "pulled pork bao buns",
+    "plant-based burger patty",
+    "penne pasta",
+    "rice",
+    "romaine lettuce",
+    "red onion",
+    "popcorn",
+    "pretzels",
+    "pesto"
+  ]
+}

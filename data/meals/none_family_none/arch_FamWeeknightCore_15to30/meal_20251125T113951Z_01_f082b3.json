@@ -1,0 +1,190 @@
+{
+  "meal_id": "meal_20251125T113951Z_01_f082b3",
+  "archetype_uid": "arch_FamWeeknightCore_15to30",
+  "archetype_name": "Family Weeknight Classics (Mild, 15–30 min)",
+  "name": "Oven-Baked Meatballs with Napoletana Spaghetti and Roasted Broccoli",
+  "description": "Family-friendly spaghetti with warm napoletana sauce, topped with baked beef meatballs and a side of roasted broccoli. Mild, simple, and ready in under 30 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C (425°F). Line a baking tray with foil or parchment.",
+    "Bring a large pot of salted water to a boil for the spaghetti.",
+    "Cut broccoli into bite-size florets.",
+    "Peel and finely chop garlic.",
+    "Grate parmesan cheese."
+  ],
+  "cook_steps": [
+    "Place beef meatballs on the lined tray. Bake for 12–15 minutes until browned and cooked through, turning once halfway.",
+    "On a second section of the same tray, toss broccoli with olive oil, half the garlic, a pinch of salt, and pepper. Roast for 10–12 minutes until tender-crisp.",
+    "Cook spaghetti in the boiling water according to package directions until al dente. Reserve 1/2 cup pasta water, then drain.",
+    "In a wide pan over medium heat, warm napoletana sauce with the remaining garlic for 2–3 minutes.",
+    "Add drained spaghetti to the pan with the sauce. Toss, loosening with a splash of reserved pasta water as needed. Season with salt and pepper to taste.",
+    "Serve spaghetti in bowls, top with baked meatballs, and add roasted broccoli on the side. Finish with parmesan cheese."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C (425°F). Line a baking tray with foil or parchment.",
+    "Bring a large pot of salted water to a boil for the spaghetti.",
+    "Cut broccoli into bite-size florets.",
+    "Peel and finely chop garlic.",
+    "Grate parmesan cheese.",
+    "Place beef meatballs on the lined tray. Bake for 12–15 minutes until browned and cooked through, turning once halfway.",
+    "On a second section of the same tray, toss broccoli with olive oil, half the garlic, a pinch of salt, and pepper. Roast for 10–12 minutes until tender-crisp.",
+    "Cook spaghetti in the boiling water according to package directions until al dente. Reserve 1/2 cup pasta water, then drain.",
+    "In a wide pan over medium heat, warm napoletana sauce with the remaining garlic for 2–3 minutes.",
+    "Add drained spaghetti to the pan with the sauce. Toss, loosening with a splash of reserved pasta water as needed. Season with salt and pepper to taste.",
+    "Serve spaghetti in bowls, top with baked meatballs, and add roasted broccoli on the side. Finish with parmesan cheese."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef meatballs",
+      "quantity": "500–600 g",
+      "preparation": "place on tray"
+    },
+    {
+      "core_item_name": "spaghetti",
+      "quantity": "350–400 g",
+      "preparation": "cook al dente"
+    },
+    {
+      "core_item_name": "napoletana sauce",
+      "quantity": "2 cups (about 500 ml)"
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "1 large head (about 500 g)",
+      "preparation": "cut into florets"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "for roasting broccoli"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "1/2 cup",
+      "preparation": "grated"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef meatballs",
+      "quantity": "500–600 g",
+      "preparation": "place on tray",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spaghetti",
+      "quantity": "350–400 g",
+      "preparation": "cook al dente",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "napoletana sauce",
+      "quantity": "2 cups (about 500 ml)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "1 large head (about 500 g)",
+      "preparation": "cut into florets",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "for roasting broccoli",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "1/2 cup",
+      "preparation": "grated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T114019Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T113951Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

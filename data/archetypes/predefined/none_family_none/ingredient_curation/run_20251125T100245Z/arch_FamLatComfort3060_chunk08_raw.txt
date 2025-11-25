@@ -1,0 +1,28 @@
+{
+  "archetype_uid": "arch_FamLatComfort3060",
+  "selected_ingredients": [
+    "tomato",
+    "tomato and onion mix",
+    "tomato passata with basil",
+    "tomato paste",
+    "tomato puree",
+    "tomato sauce",
+    "tomatoes",
+    "tortilla",
+    "tortilla wraps",
+    "tortillas",
+    "turmeric powder",
+    "white pepper",
+    "vegetable",
+    "vegetable stock",
+    "vegetables",
+    "whole chicken",
+    "tuna",
+    "turkey",
+    "yoghurt",
+    "vinegar",
+    "worcestershire sauce",
+    "zucchini",
+    "water"
+  ]
+}

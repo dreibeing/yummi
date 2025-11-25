@@ -1,0 +1,44 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_FAM_RDY_U15",
+      "name": "Family Heat-and-Eat Weeknights (Under 15, No Heat)",
+      "description": "Ultra-fast family dinners built from ready-to-eat mains and sides with simple fresh add-ons, prioritizing zero chili heat for kid-friendly plates.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "American",
+          "Italian"
+        ],
+        "PrepTime": [
+          "Under15"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "NoHeat"
+        ],
+        "Equipment": [
+          "Microwave"
+        ],
+        "MealComponentPreference": [
+          "ReadyMealPreferred"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Fills the gap for a family-friendly, zero-heat, Under-15-minute archetype centered on ready meals (not yet covered by existing semi-prepared or longer hands-off options)."
+    }
+  ]
+}

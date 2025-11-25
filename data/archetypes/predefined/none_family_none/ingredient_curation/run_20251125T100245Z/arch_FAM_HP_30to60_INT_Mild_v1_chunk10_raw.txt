@@ -1,0 +1,19 @@
+{
+  "archetype_uid": "arch_FAM_HP_30to60_INT_Mild_v1",
+  "selected_ingredients": [
+    "spinach",
+    "trout",
+    "whiting portions",
+    "tempura prawns",
+    "tuna pasta",
+    "tuna penne",
+    "thai green chicken curry",
+    "tofu curry",
+    "tofu mushroom coconut curry",
+    "vegetable and lentil meal",
+    "vegetable risotto",
+    "vegetable medley with bechamel sauce",
+    "sweet potato salad",
+    "tomato salad"
+  ]
+}

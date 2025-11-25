@@ -1,0 +1,24 @@
+{
+  "archetype_uid": "arch_FAM_IND_SHOW_60",
+  "selected_ingredients": [
+    "achar",
+    "basmati rice",
+    "biryani",
+    "biryani mix",
+    "bay leaf",
+    "bay leaves",
+    "black pepper",
+    "black peppercorns",
+    "almond",
+    "almonds",
+    "apricot",
+    "apricot jam",
+    "apple cider vinegar",
+    "bell pepper",
+    "bell peppers",
+    "baby carrots",
+    "baby corn",
+    "bread",
+    "basa"
+  ]
+}

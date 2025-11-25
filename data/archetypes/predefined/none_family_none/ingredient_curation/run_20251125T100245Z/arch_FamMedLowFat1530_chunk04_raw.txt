@@ -1,0 +1,28 @@
+{
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "selected_ingredients": [
+    "herbs",
+    "italian seasoning",
+    "ground cumin",
+    "greek dressing",
+    "hummus",
+    "lentil",
+    "lentils",
+    "legumes",
+    "kidney beans",
+    "jasmine rice",
+    "macaroni",
+    "haddock",
+    "hake fillets",
+    "lemon",
+    "lime",
+    "green beans",
+    "leeks",
+    "lettuce",
+    "grapes",
+    "kefir",
+    "maas",
+    "honey",
+    "harissa paste"
+  ]
+}

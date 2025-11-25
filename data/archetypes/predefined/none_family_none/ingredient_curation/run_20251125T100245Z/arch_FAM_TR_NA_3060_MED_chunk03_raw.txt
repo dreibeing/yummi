@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "selected_ingredients": [
+    "coriander",
+    "coriander seeds",
+    "couscous",
+    "crushed tomatoes",
+    "garlic",
+    "cumin",
+    "cumin seeds",
+    "eggplant",
+    "courgette",
+    "cucumber",
+    "dates",
+    "date syrup",
+    "dukkah",
+    "feta cheese",
+    "eggs",
+    "flour",
+    "garlic sauce",
+    "falafel seasoning",
+    "fish fillets",
+    "ghee"
+  ]
+}

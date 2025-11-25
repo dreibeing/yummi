@@ -1,0 +1,14 @@
+{
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "selected_ingredients": [
+    "sriracha miso bowl",
+    "sticky rice salad",
+    "sweet potato chips",
+    "sweet potato salad",
+    "tempura prawns",
+    "trout",
+    "wrap",
+    "spring roll",
+    "spring rolls"
+  ]
+}

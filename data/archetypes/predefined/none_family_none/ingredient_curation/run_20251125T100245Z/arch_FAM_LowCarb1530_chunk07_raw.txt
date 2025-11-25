@@ -1,0 +1,29 @@
+{
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "selected_ingredients": [
+    "salad greens",
+    "salmon",
+    "salsa",
+    "salt",
+    "sea salt",
+    "sesame oil",
+    "sesame seeds",
+    "shallots",
+    "shawarma paste",
+    "shiitake mushrooms",
+    "slaw",
+    "smoked chicken breast",
+    "smoked salmon",
+    "snow peas",
+    "sour cream",
+    "soy sauce",
+    "spinach",
+    "spring onion",
+    "squash",
+    "tahini",
+    "sunflower oil",
+    "sunflower seeds",
+    "sirloin steak",
+    "sausage"
+  ]
+}

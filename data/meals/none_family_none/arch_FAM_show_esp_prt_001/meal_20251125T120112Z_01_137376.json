@@ -1,0 +1,283 @@
+{
+  "meal_id": "meal_20251125T120112Z_01_137376",
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "archetype_name": "Family Weekend Showstopper: Spanish & Portuguese Feasts",
+  "name": "Portuguese Smoked Hake Bake with Roasted Padrón Peppers",
+  "description": "A family-size Portuguese-style fish and potato bake in a creamy paprika sauce, finished in the oven and served with blistered Padrón peppers. Weekend showstopper with Spanish and Portuguese flavors.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Preheat oven to 200°C (390°F).",
+    "Peel potatoes and cut into thin matchsticks (or small cubes).",
+    "Thinly slice onions; mince garlic.",
+    "Roughly chop parsley; zest the lemon and set aside the zest.",
+    "Rinse and dry padron peppers.",
+    "Pat smoked hake dry and flake into large pieces, removing any bones.",
+    "Warm milk in a small pot with bay leaves until steaming (do not boil); set aside off heat."
+  ],
+  "cook_steps": [
+    "Parboil the cut potatoes in salted water for 5 minutes; drain well.",
+    "Heat 3 tbsp olive oil in a large skillet (StoveTop). Fry drained potatoes over medium-high heat until lightly golden and just tender, 8–10 minutes; transfer to a large bowl.",
+    "In the same skillet, add 1 tbsp olive oil. Cook onions with a pinch of salt over medium heat until soft and lightly golden, 8–10 minutes. Add garlic and 1 tsp paprika; cook 30 seconds.",
+    "Deglaze onions with white wine; simmer 1–2 minutes until reduced. Add onions to the bowl with potatoes.",
+    "In a clean pot, melt butter over medium heat. Whisk in flour to make a roux; cook 1–2 minutes.",
+    "Remove bay leaves from the warm milk. Gradually whisk milk into the roux until smooth. Simmer 3–5 minutes, whisking, until thick and glossy. Season with salt and black pepper.",
+    "Fold flaked smoked hake, parsley, and lemon zest into the potatoes and onions. Pour over the hot sauce and gently combine. Adjust salt and black pepper.",
+    "Transfer mixture to a greased baking dish. Drizzle 1 tbsp olive oil over the top. Bake (Oven) 25–30 minutes until bubbling and lightly browned.",
+    "While the bake finishes, toss padron peppers with 1 tbsp olive oil and a pinch of salt. Spread on a tray and roast 10–12 minutes until blistered, turning once.",
+    "Rest the bake 5 minutes. Squeeze lemon over peppers and the bake to taste. Serve hot with extra parsley."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C (390°F).",
+    "Peel potatoes and cut into thin matchsticks (or small cubes).",
+    "Thinly slice onions; mince garlic.",
+    "Roughly chop parsley; zest the lemon and set aside the zest.",
+    "Rinse and dry padron peppers.",
+    "Pat smoked hake dry and flake into large pieces, removing any bones.",
+    "Warm milk in a small pot with bay leaves until steaming (do not boil); set aside off heat.",
+    "Parboil the cut potatoes in salted water for 5 minutes; drain well.",
+    "Heat 3 tbsp olive oil in a large skillet (StoveTop). Fry drained potatoes over medium-high heat until lightly golden and just tender, 8–10 minutes; transfer to a large bowl.",
+    "In the same skillet, add 1 tbsp olive oil. Cook onions with a pinch of salt over medium heat until soft and lightly golden, 8–10 minutes. Add garlic and 1 tsp paprika; cook 30 seconds.",
+    "Deglaze onions with white wine; simmer 1–2 minutes until reduced. Add onions to the bowl with potatoes.",
+    "In a clean pot, melt butter over medium heat. Whisk in flour to make a roux; cook 1–2 minutes.",
+    "Remove bay leaves from the warm milk. Gradually whisk milk into the roux until smooth. Simmer 3–5 minutes, whisking, until thick and glossy. Season with salt and black pepper.",
+    "Fold flaked smoked hake, parsley, and lemon zest into the potatoes and onions. Pour over the hot sauce and gently combine. Adjust salt and black pepper.",
+    "Transfer mixture to a greased baking dish. Drizzle 1 tbsp olive oil over the top. Bake (Oven) 25–30 minutes until bubbling and lightly browned.",
+    "While the bake finishes, toss padron peppers with 1 tbsp olive oil and a pinch of salt. Spread on a tray and roast 10–12 minutes until blistered, turning once.",
+    "Rest the bake 5 minutes. Squeeze lemon over peppers and the bake to taste. Serve hot with extra parsley."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "smoked hake",
+      "quantity": "600 g",
+      "preparation": "flaked, bones removed"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "1.2 kg",
+      "preparation": "peeled, cut into matchsticks or small cubes"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "5 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "4 tbsp"
+    },
+    {
+      "core_item_name": "flour",
+      "quantity": "4 tbsp"
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "3 cups (720 ml)",
+      "preparation": "warmed with bay leaves"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup (120 ml)"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and cut into wedges"
+    },
+    {
+      "core_item_name": "padron peppers",
+      "quantity": "200 g"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Portuguese",
+      "Spanish"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten",
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "smoked hake",
+      "quantity": "600 g",
+      "preparation": "flaked, bones removed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "1.2 kg",
+      "preparation": "peeled, cut into matchsticks or small cubes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "5 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "4 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "flour",
+      "quantity": "4 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "3 cups (720 ml)",
+      "preparation": "warmed with bay leaves",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup (120 ml)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "padron peppers",
+      "quantity": "200 g",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T120209Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T120112Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

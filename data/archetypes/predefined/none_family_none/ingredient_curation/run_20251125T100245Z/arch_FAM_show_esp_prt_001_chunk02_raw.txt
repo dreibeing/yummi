@@ -1,0 +1,29 @@
+{
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "selected_ingredients": [
+    "butter",
+    "canola oil",
+    "chicken stock",
+    "butterflied chicken",
+    "chicken thighs",
+    "chorizo",
+    "calamari",
+    "cannellini beans",
+    "chickpeas",
+    "brown rice",
+    "ciabatta",
+    "cherry tomatoes",
+    "carrots",
+    "celery",
+    "caper berries",
+    "chives",
+    "chilli flakes",
+    "chilies",
+    "chilli powder",
+    "chilli paste",
+    "chilli oil",
+    "chermoula",
+    "chimichurri",
+    "churros"
+  ]
+}

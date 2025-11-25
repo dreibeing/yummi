@@ -1,0 +1,22 @@
+{
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "selected_ingredients": [
+    "mandarins",
+    "matboucha",
+    "meat skewers",
+    "meatballs",
+    "minced meat",
+    "olive oil",
+    "olives",
+    "onions",
+    "parsley",
+    "mint",
+    "paprika",
+    "passata",
+    "orzo",
+    "olive and harissa sauce",
+    "mint yoghurt dressing",
+    "nuts",
+    "oregano"
+  ]
+}

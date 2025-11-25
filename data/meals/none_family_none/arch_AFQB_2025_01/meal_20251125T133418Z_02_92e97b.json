@@ -1,0 +1,203 @@
+{
+  "meal_id": "meal_20251125T133418Z_02_92e97b",
+  "archetype_uid": "arch_AFQB_2025_01",
+  "archetype_name": "Family AirFryer Quick Bites",
+  "name": "Air Fryer Chicken Burgers with Crispy Wedges",
+  "description": "Fast family chicken burgers with lettuce, tomato, and pickles, plus air-fried potato wedges. Mild, kid-friendly, and built from semi-prepped items.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat air fryer to 200°C/390°F.",
+    "Slice 2 medium tomato into rounds.",
+    "Rinse and pat dry 1 small head lettuce; tear into burger-size pieces.",
+    "Split 4 hamburger buns.",
+    "Set out ketchup, mayonnaise, and pickles for the table."
+  ],
+  "cook_steps": [
+    "Add 600 g potato wedges to the air fryer basket in a single layer; cook 12–15 minutes, shaking halfway.",
+    "At the 5-minute mark, place 4 chicken burgers in the basket beside the wedges (or on a second rack if available); air fry 8–10 minutes, flipping once, until heated through and crispy.",
+    "Microwave hamburger buns 15–20 seconds to warm (optional).",
+    "Assemble burgers: spread mayonnaise on buns, add chicken burger, top with cheddar cheese slices, lettuce, tomato, and pickles.",
+    "Serve burgers with potato wedges and ketchup on the side."
+  ],
+  "instructions": [
+    "Preheat air fryer to 200°C/390°F.",
+    "Slice 2 medium tomato into rounds.",
+    "Rinse and pat dry 1 small head lettuce; tear into burger-size pieces.",
+    "Split 4 hamburger buns.",
+    "Set out ketchup, mayonnaise, and pickles for the table.",
+    "Add 600 g potato wedges to the air fryer basket in a single layer; cook 12–15 minutes, shaking halfway.",
+    "At the 5-minute mark, place 4 chicken burgers in the basket beside the wedges (or on a second rack if available); air fry 8–10 minutes, flipping once, until heated through and crispy.",
+    "Microwave hamburger buns 15–20 seconds to warm (optional).",
+    "Assemble burgers: spread mayonnaise on buns, add chicken burger, top with cheddar cheese slices, lettuce, tomato, and pickles.",
+    "Serve burgers with potato wedges and ketchup on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "potato wedges",
+      "quantity": "600 g",
+      "preparation": "frozen, ready to air fry"
+    },
+    {
+      "core_item_name": "chicken burgers",
+      "quantity": "4 patties",
+      "preparation": "from chilled or frozen per pack"
+    },
+    {
+      "core_item_name": "hamburger buns",
+      "quantity": "4 buns",
+      "preparation": "split"
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "1 small head",
+      "preparation": "rinsed and torn"
+    },
+    {
+      "core_item_name": "tomato",
+      "quantity": "2 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "cheddar cheese slices",
+      "quantity": "4 slices",
+      "preparation": "ready to use"
+    },
+    {
+      "core_item_name": "pickles",
+      "quantity": "1/2 cup",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "ketchup",
+      "quantity": "to taste",
+      "preparation": "for serving"
+    },
+    {
+      "core_item_name": "mayonnaise",
+      "quantity": "to taste",
+      "preparation": "for spreading"
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "pinch each",
+      "preparation": "optional, for seasoning wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "AirFryer",
+      "Microwave"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "potato wedges",
+      "quantity": "600 g",
+      "preparation": "frozen, ready to air fry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken burgers",
+      "quantity": "4 patties",
+      "preparation": "from chilled or frozen per pack",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "hamburger buns",
+      "quantity": "4 buns",
+      "preparation": "split",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "1 small head",
+      "preparation": "rinsed and torn",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato",
+      "quantity": "2 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cheddar cheese slices",
+      "quantity": "4 slices",
+      "preparation": "ready to use",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pickles",
+      "quantity": "1/2 cup",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ketchup",
+      "quantity": "to taste",
+      "preparation": "for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mayonnaise",
+      "quantity": "to taste",
+      "preparation": "for spreading",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "pinch each",
+      "preparation": "optional, for seasoning wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T133529Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T133418Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

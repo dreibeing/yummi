@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "selected_ingredients": [
+    "tomato paste",
+    "tomato pasta sauce",
+    "tomato passata with basil",
+    "tomato puree",
+    "tomato sauce",
+    "tomatoes",
+    "tortelloni",
+    "tortillas",
+    "vegetable stock",
+    "vegetables",
+    "zucchini",
+    "whole chicken",
+    "turkey",
+    "tuna",
+    "white pepper",
+    "worcestershire sauce",
+    "water",
+    "white sauce",
+    "yogurt",
+    "whipping cream"
+  ]
+}

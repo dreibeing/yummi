@@ -1,0 +1,15 @@
+{
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "selected_ingredients": [
+    "ready_meal — spinach",
+    "ready_meal — spinach salad",
+    "ready_meal — tofu curry",
+    "ready_meal — tofu mushroom coconut curry",
+    "ready_meal — thai green chicken curry",
+    "ready_meal — tom yum soup",
+    "ready_meal — trout",
+    "ready_meal — whiting portions",
+    "ready_meal — tomato salad",
+    "ready_meal — tomato soup"
+  ]
+}

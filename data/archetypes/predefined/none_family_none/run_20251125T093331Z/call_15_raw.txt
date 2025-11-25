@@ -1,0 +1,43 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_FamQuickGrill_M15",
+      "name": "Family Quick Grill & Salad Nights (Mild, 15–30)",
+      "description": "Fast, family-friendly grill plates with mild seasoning—quickly seared proteins and veg on the braai paired with simple salads and starch sides for a balanced weeknight dinner.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "SouthAfrican",
+          "American",
+          "Greek"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "OutdoorGrill",
+          "StoveTop"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Adds a missing fast, mild OutdoorGrill-focused weeknight option for families—complementing existing hot/advanced grill feasts and non-grill weeknight sets without overlap."
+    }
+  ]
+}

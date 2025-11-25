@@ -1,0 +1,20 @@
+{
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "selected_ingredients": [
+    "rice",
+    "noodles",
+    "instant noodles",
+    "egg fried rice",
+    "chicken strips",
+    "chicken tikka",
+    "chilli chicken",
+    "prawns",
+    "edamame",
+    "mixed vegetables",
+    "frozen vegetables",
+    "lamb",
+    "pork",
+    "hake fillets",
+    "sesame chicken noodles"
+  ]
+}

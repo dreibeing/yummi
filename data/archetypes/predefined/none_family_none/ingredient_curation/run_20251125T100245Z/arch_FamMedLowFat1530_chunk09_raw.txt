@@ -1,0 +1,19 @@
+{
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "selected_ingredients": [
+    "chickpea cucumber salad",
+    "couscous salad",
+    "roasted vegetable couscous salad",
+    "hummus",
+    "greek salad",
+    "lentil soup",
+    "four-bean salad",
+    "edamame",
+    "salad",
+    "rice",
+    "prawns",
+    "hake fillets",
+    "haddock",
+    "roast chicken"
+  ]
+}

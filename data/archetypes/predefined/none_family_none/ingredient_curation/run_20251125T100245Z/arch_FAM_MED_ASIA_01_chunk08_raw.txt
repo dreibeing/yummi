@@ -1,0 +1,24 @@
+{
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "selected_ingredients": [
+    "tom yum paste",
+    "tomato",
+    "tomato paste",
+    "tomato puree",
+    "turmeric powder",
+    "white pepper",
+    "yellow curry paste",
+    "vindaloo spice blend",
+    "vindaloo sauce",
+    "vegetable stock",
+    "vegetables",
+    "zucchini",
+    "watercress",
+    "udon noodles",
+    "whole chicken",
+    "tuna",
+    "trout",
+    "yogurt",
+    "vinegar"
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "generated_at": "20251125T094758Z",
+  "model": "gpt-5",
+  "temperature": 0.2,
+  "top_p": 1.0,
+  "max_output_tokens": 5000,
+  "reasoning_effort": "low",
+  "tags_version": "2025.02.1",
+  "predefined_scope": {
+    "dietary_restrictions": [
+      "None"
+    ],
+    "audience": [
+      "Family"
+    ]
+  },
+  "source": {
+    "predefined_dir": "data\\archetypes\\predefined\\none_family_none",
+    "archetypes_combined": "data\\archetypes\\predefined\\none_family_none\\archetypes_combined.json",
+    "core_items": "data\\ingredients\\unique_core_items.csv"
+  },
+  "archetype_runs": [
+    {
+      "uid": "arch_FamWeeknightCore_15to30",
+      "name": "Family Weeknight Classics (Mild, 15\u201330 min)",
+      "status": "completed",
+      "chunks": [
+        {
+          "chunk": 1,
+          "size": 200,
+          "status": "completed",
+          "selected": 27,
+          "unmatched": [],
+          "prompt_path": "arch_FamWeeknightCore_15to30_chunk01_prompt.txt",
+          "raw_path": "arch_FamWeeknightCore_15to30_chunk01_raw.txt"
+        },
+        {
+          "chunk": 2,
+          "size": 200,
+          "status": "completed",
+          "selected": 39,
+          "unmatched": [],
+          "prompt_path": "arch_FamWeeknightCore_15to30_chunk02_prompt.txt",
+          "raw_path": "arch_FamWeeknightCore_15to30_chunk02_raw.txt"
+        },
+        {
+          "chunk": 3,
+          "size": 200,
+          "status": "completed",
+          "selected": 42,
+          "unmatched": [],
+          "prompt_path": "arch_FamWeeknightCore_15to30_chunk03_prompt.txt",
+          "raw_path": "arch_FamWeeknightCore_15to30_chunk03_raw.txt"
+        },
+        {
+          "chunk": 4,
+          "size": 200,
+          "status": "completed",
+          "selected": 44,
+          "unmatched": [],
+          "prompt_path": "arch_FamWeeknightCore_15to30_chunk04_prompt.txt",
+          "raw_path": "arch_FamWeeknightCore_15to30_chunk04_raw.txt"
+        },
+        {
+          "chunk": 5,
+          "size": 200,
+          "status": "completed",
+          "selected": 42,
+          "unmatched": [],
+          "prompt_path": "arch_FamWeeknightCore_15to30_chunk05_prompt.txt",
+          "raw_path": "arch_FamWeeknightCore_15to30_chunk05_raw.txt"
+        },
+        {
+          "chunk": 6,
+          "size": 200,
+          "status": "completed",
+          "selected": 41,
+          "unmatched": [],
+          "prompt_path": "arch_FamWeeknightCore_15to30_chunk06_prompt.txt",
+          "raw_path": "arch_FamWeeknightCore_15to30_chunk06_raw.txt"
+        },
+        {
+          "chunk": 7,
+          "size": 200,
+          "status": "completed",
+          "selected": 39,
+          "unmatched": [],
+          "prompt_path": "arch_FamWeeknightCore_15to30_chunk07_prompt.txt",
+          "raw_path": "arch_FamWeeknightCore_15to30_chunk07_raw.txt"
+        },
+        {
+          "chunk": 8,
+          "size": 200,
+          "status": "completed",
+          "selected": 34,
+          "unmatched": [],
+          "prompt_path": "arch_FamWeeknightCore_15to30_chunk08_prompt.txt",
+          "raw_path": "arch_FamWeeknightCore_15to30_chunk08_raw.txt"
+        },
+        {
+          "chunk": 9,
+          "size": 200,
+          "status": "completed",
+          "selected": 11,
+          "unmatched": [],
+          "prompt_path": "arch_FamWeeknightCore_15to30_chunk09_prompt.txt",
+          "raw_path": "arch_FamWeeknightCore_15to30_chunk09_raw.txt"
+        },
+        {
+          "chunk": 10,
+          "size": 44,
+          "status": "completed",
+          "selected": 0,
+          "unmatched": [],
+          "prompt_path": "arch_FamWeeknightCore_15to30_chunk10_prompt.txt",
+          "raw_path": "arch_FamWeeknightCore_15to30_chunk10_raw.txt"
+        }
+      ],
+      "return_count": 312,
+      "unmatched": []
+    }
+  ]
+}

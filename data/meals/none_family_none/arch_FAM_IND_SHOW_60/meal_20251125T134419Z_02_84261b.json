@@ -1,0 +1,427 @@
+{
+  "meal_id": "meal_20251125T134419Z_02_84261b",
+  "archetype_uid": "arch_FAM_IND_SHOW_60",
+  "archetype_name": "Family Weekend Showstopper: Indian Feast Night",
+  "name": "Paneer Tikka Masala Feast with Saffron Jeera Rice and Poppadoms",
+  "description": "Charred oven-baked paneer tikka folded into a creamy masala, served with saffron-cumin basmati rice, crisp poppadoms, and mango chutney. A weekend showstopper with medium heat and classic Indian flavors.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Preheat oven to 230°C/450°F. Line a baking tray with foil and lightly oil it.",
+    "Cut paneer into 3 cm cubes.",
+    "In a bowl, mix yoghurt, tikka paste, lemon juice, grated garlic, garam masala, cumin, chili flakes, and salt to make the marinade.",
+    "Toss paneer in the marinade; cover and set aside 30 minutes.",
+    "Rinse basmati rice in cold water until it runs clear; drain well.",
+    "Soak a pinch of saffron in 2 tbsp warm water.",
+    "Finely slice onions and mince garlic for the sauce.",
+    "Chop coriander for garnish.",
+    "Gather rice aromatics: ghee, cumin seeds, bay leaf, cardamom, salt, peas."
+  ],
+  "cook_steps": [
+    "Paneer tikka: Arrange marinated paneer on the oiled tray. Bake 12–15 minutes until edges char slightly; broil for 1–2 minutes if needed. Set aside.",
+    "Masala base: Heat ghee in a wide pot over medium heat. Add sliced onions; cook 12–15 minutes, stirring, until deep golden.",
+    "Add minced garlic; cook 1 minute. Stir in tomato paste and cook 2 minutes.",
+    "Pour in crushed tomatoes, black pepper, and sugar; simmer 10 minutes, stirring occasionally.",
+    "Reduce heat to low, stir in cream and a pinch of salt; simmer 5 minutes until silky.",
+    "Fold the baked paneer into the masala; simmer 5 minutes to coat well. Adjust salt and heat to taste. Keep warm on low.",
+    "Rice: In a medium pot, melt ghee over medium heat. Add cumin seeds, bay leaf, and cardamom; toast 30 seconds until fragrant.",
+    "Add rinsed rice and stir 1 minute to coat. Pour in water, saffron with its soaking liquid, peas, and salt. Bring to a boil.",
+    "Cover, reduce heat to low, and cook 12 minutes. Turn off heat and rest 10 minutes covered. Fluff with a fork and remove whole spices.",
+    "Poppadoms: Heat 1–2 cm oil in a wide pan over medium-high. Fry poppadoms one at a time for a few seconds per side until puffed and crisp; drain on paper towel.",
+    "Serve: Spoon rice onto a platter, top with chopped coriander. Ladle paneer tikka masala into a serving bowl. Serve with poppadoms, mango chutney, and lemon wedges."
+  ],
+  "instructions": [
+    "Preheat oven to 230°C/450°F. Line a baking tray with foil and lightly oil it.",
+    "Cut paneer into 3 cm cubes.",
+    "In a bowl, mix yoghurt, tikka paste, lemon juice, grated garlic, garam masala, cumin, chili flakes, and salt to make the marinade.",
+    "Toss paneer in the marinade; cover and set aside 30 minutes.",
+    "Rinse basmati rice in cold water until it runs clear; drain well.",
+    "Soak a pinch of saffron in 2 tbsp warm water.",
+    "Finely slice onions and mince garlic for the sauce.",
+    "Chop coriander for garnish.",
+    "Gather rice aromatics: ghee, cumin seeds, bay leaf, cardamom, salt, peas.",
+    "Paneer tikka: Arrange marinated paneer on the oiled tray. Bake 12–15 minutes until edges char slightly; broil for 1–2 minutes if needed. Set aside.",
+    "Masala base: Heat ghee in a wide pot over medium heat. Add sliced onions; cook 12–15 minutes, stirring, until deep golden.",
+    "Add minced garlic; cook 1 minute. Stir in tomato paste and cook 2 minutes.",
+    "Pour in crushed tomatoes, black pepper, and sugar; simmer 10 minutes, stirring occasionally.",
+    "Reduce heat to low, stir in cream and a pinch of salt; simmer 5 minutes until silky.",
+    "Fold the baked paneer into the masala; simmer 5 minutes to coat well. Adjust salt and heat to taste. Keep warm on low.",
+    "Rice: In a medium pot, melt ghee over medium heat. Add cumin seeds, bay leaf, and cardamom; toast 30 seconds until fragrant.",
+    "Add rinsed rice and stir 1 minute to coat. Pour in water, saffron with its soaking liquid, peas, and salt. Bring to a boil.",
+    "Cover, reduce heat to low, and cook 12 minutes. Turn off heat and rest 10 minutes covered. Fluff with a fork and remove whole spices.",
+    "Poppadoms: Heat 1–2 cm oil in a wide pan over medium-high. Fry poppadoms one at a time for a few seconds per side until puffed and crisp; drain on paper towel.",
+    "Serve: Spoon rice onto a platter, top with chopped coriander. Ladle paneer tikka masala into a serving bowl. Serve with poppadoms, mango chutney, and lemon wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "paneer",
+      "quantity": "600 g",
+      "preparation": "cut into 3 cm cubes"
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "tikka paste",
+      "quantity": "3 tbsp",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "2",
+      "preparation": "1 juiced for marinade; 1 cut into wedges for serving"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "7 cloves",
+      "preparation": "4 grated for marinade; 3 minced for sauce"
+    },
+    {
+      "core_item_name": "garam masala",
+      "quantity": "1 tsp",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 tsp",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "split across marinade, sauce, and rice"
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "1 tbsp + more for frying poppadoms",
+      "preparation": "to grease tray and for shallow-frying"
+    },
+    {
+      "core_item_name": "ghee",
+      "quantity": "3 tbsp",
+      "preparation": "2 tbsp for sauce; 1 tbsp for rice"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "3 medium",
+      "preparation": "finely sliced"
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tbsp",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "800 g (about 3 cups)",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tsp",
+      "preparation": "to balance sauce"
+    },
+    {
+      "core_item_name": "cream",
+      "quantity": "3/4 cup",
+      "preparation": "stir into sauce"
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 1/2 cups",
+      "preparation": "for cooking rice"
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "1 tsp",
+      "preparation": "toast for rice"
+    },
+    {
+      "core_item_name": "bay leaf",
+      "quantity": "1",
+      "preparation": "for rice"
+    },
+    {
+      "core_item_name": "cardamom",
+      "quantity": "4",
+      "preparation": "lightly crushed for rice"
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "1 pinch",
+      "preparation": "soaked in 2 tbsp warm water"
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup",
+      "preparation": "stir into rice"
+    },
+    {
+      "core_item_name": "poppadoms",
+      "quantity": "8",
+      "preparation": "to fry"
+    },
+    {
+      "core_item_name": "mango chutney",
+      "quantity": "1/2 cup",
+      "preparation": "for serving"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped, for garnish"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Indian",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Dairy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "paneer",
+      "quantity": "600 g",
+      "preparation": "cut into 3 cm cubes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tikka paste",
+      "quantity": "3 tbsp",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "2",
+      "preparation": "1 juiced for marinade; 1 cut into wedges for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "7 cloves",
+      "preparation": "4 grated for marinade; 3 minced for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garam masala",
+      "quantity": "1 tsp",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 tsp",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "split across marinade, sauce, and rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "1 tbsp + more for frying poppadoms",
+      "preparation": "to grease tray and for shallow-frying",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ghee",
+      "quantity": "3 tbsp",
+      "preparation": "2 tbsp for sauce; 1 tbsp for rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "3 medium",
+      "preparation": "finely sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tbsp",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "800 g (about 3 cups)",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tsp",
+      "preparation": "to balance sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cream",
+      "quantity": "3/4 cup",
+      "preparation": "stir into sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 1/2 cups",
+      "preparation": "for cooking rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "1 tsp",
+      "preparation": "toast for rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaf",
+      "quantity": "1",
+      "preparation": "for rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cardamom",
+      "quantity": "4",
+      "preparation": "lightly crushed for rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "1 pinch",
+      "preparation": "soaked in 2 tbsp warm water",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup",
+      "preparation": "stir into rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "poppadoms",
+      "quantity": "8",
+      "preparation": "to fry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mango chutney",
+      "quantity": "1/2 cup",
+      "preparation": "for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped, for garnish",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T134610Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T134419Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "archetype_uid": "arch_FamLightJV_01",
+  "selected_ingredients": [
+    "coriander",
+    "coriander seeds",
+    "courgette",
+    "cucumber",
+    "edamame",
+    "egg noodles",
+    "eggs",
+    "fish fillets",
+    "fish sauce",
+    "fish stock concentrate",
+    "frozen mixed vegetables",
+    "flour",
+    "cornflour",
+    "garlic"
+  ]
+}

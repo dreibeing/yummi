@@ -1,0 +1,293 @@
+{
+  "meal_id": "meal_20251125T112521Z_01_2cfe51",
+  "archetype_uid": "arch_FAMXHOT1530",
+  "archetype_name": "Family Extra-Hot Chili Night (Caribbean & Mexican, 15–30, Simple)",
+  "name": "Extra-Hot Habanero Jerk Chicken & Black Bean Rice Bowls",
+  "description": "Caribbean jerk-style chicken meets Mexican black beans over fluffy rice with a blazing habanero-hot finish. Fast, family-friendly assembly with big pepper heat.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse and drain 1.5 cups jasmine rice.",
+    "Finely chop 1–2 habanero peppers (use gloves).",
+    "Slice 1 onion and 2 bell peppers into thin strips.",
+    "Mince 3 cloves garlic.",
+    "Juice 1 lime and cut extra wedges if desired.",
+    "Drain and rinse 1 can black beans.",
+    "In a bowl, combine chicken thighs (sliced) with allspice, oregano, ground cumin, brown sugar, salt, black pepper, half the chopped habanero, half the garlic, lime juice, and 1.5 tbsp olive oil; toss to coat."
+  ],
+  "cook_steps": [
+    "Cook rice: Add jasmine rice to a pot with 2.25 cups water and a pinch of salt. Bring to a boil, cover, and simmer on low 12–15 minutes until tender. Rest covered 5 minutes.",
+    "Cook chicken (OutdoorGrill or StoveTop): Heat grill to medium-high or a large skillet over medium-high with 1 tbsp olive oil. Cook marinated chicken 6–8 minutes until browned and cooked through, stirring or flipping for even color.",
+    "Sauté veg and beans: In the same skillet (add 0.5 tbsp olive oil if needed), cook onion and bell peppers 3–4 minutes until tender-crisp. Add remaining garlic, remaining chopped habanero, and black beans; cook 1–2 minutes to heat through. Season with salt to taste.",
+    "Assemble bowls: Fluff rice and divide into 4 bowls. Top with chicken, the pepper-bean mix, and spoon over salsa.",
+    "Finish: Drizzle hot sauce to taste. Garnish with chopped coriander and lime wedges."
+  ],
+  "instructions": [
+    "Rinse and drain 1.5 cups jasmine rice.",
+    "Finely chop 1–2 habanero peppers (use gloves).",
+    "Slice 1 onion and 2 bell peppers into thin strips.",
+    "Mince 3 cloves garlic.",
+    "Juice 1 lime and cut extra wedges if desired.",
+    "Drain and rinse 1 can black beans.",
+    "In a bowl, combine chicken thighs (sliced) with allspice, oregano, ground cumin, brown sugar, salt, black pepper, half the chopped habanero, half the garlic, lime juice, and 1.5 tbsp olive oil; toss to coat.",
+    "Cook rice: Add jasmine rice to a pot with 2.25 cups water and a pinch of salt. Bring to a boil, cover, and simmer on low 12–15 minutes until tender. Rest covered 5 minutes.",
+    "Cook chicken (OutdoorGrill or StoveTop): Heat grill to medium-high or a large skillet over medium-high with 1 tbsp olive oil. Cook marinated chicken 6–8 minutes until browned and cooked through, stirring or flipping for even color.",
+    "Sauté veg and beans: In the same skillet (add 0.5 tbsp olive oil if needed), cook onion and bell peppers 3–4 minutes until tender-crisp. Add remaining garlic, remaining chopped habanero, and black beans; cook 1–2 minutes to heat through. Season with salt to taste.",
+    "Assemble bowls: Fluff rice and divide into 4 bowls. Top with chicken, the pepper-bean mix, and spoon over salsa.",
+    "Finish: Drizzle hot sauce to taste. Garnish with chopped coriander and lime wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1.5 cups (raw)"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "600 g",
+      "preparation": "sliced into bite-size pieces"
+    },
+    {
+      "core_item_name": "habanero peppers",
+      "quantity": "1–2",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (about 400 g)",
+      "preparation": "drained and rinsed"
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, plus to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "juiced, plus wedges to serve"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp total"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup"
+    },
+    {
+      "core_item_name": "hot sauce",
+      "quantity": "2 tbsp, to taste"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Caribbean",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "ExtraHot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1.5 cups (raw)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "600 g",
+      "preparation": "sliced into bite-size pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero peppers",
+      "quantity": "1–2",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (about 400 g)",
+      "preparation": "drained and rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, plus to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "juiced, plus wedges to serve",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp total",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "hot sauce",
+      "quantity": "2 tbsp, to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T112604Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T112521Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

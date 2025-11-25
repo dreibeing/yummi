@@ -1,0 +1,45 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_FamLightJV_01",
+      "name": "Family Light & Fresh: Japanese and Vietnamese Weeknights",
+      "description": "Lean, veggie-forward family dinners inspired by Japanese and Vietnamese home cooking—brothy soups, rice bowls, and quick stir-fries that stay light yet satisfying.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Japanese",
+          "Vietnamese"
+        ],
+        "PrepTime": [
+          "15to30"
+        ],
+        "Complexity": [
+          "Simple"
+        ],
+        "HeatSpice": [
+          "Mild"
+        ],
+        "Equipment": [
+          "StoveTop"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "LowCalorie",
+          "HighFiber"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Adds a nutrition-focused, mild, 15–30 minute family archetype with Japanese/Vietnamese flavors—expanding cuisine diversity while avoiding overlap with existing comfort, hands-off, and spicy sets."
+    }
+  ]
+}

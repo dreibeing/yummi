@@ -1,0 +1,29 @@
+{
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "selected_ingredients": [
+    "grapeseed oil",
+    "green beans",
+    "green chicken curry",
+    "green curry paste",
+    "ground beef",
+    "ground cumin",
+    "hoisin sauce",
+    "honey",
+    "hot and sour paste",
+    "jasmine rice",
+    "instant noodles",
+    "jalfrezi sauce",
+    "korma paste",
+    "lemongrass",
+    "lemongrass paste",
+    "lentils",
+    "lentil curry",
+    "leeks",
+    "lemon",
+    "lime",
+    "jalapenos",
+    "lamb mince",
+    "kidney beans",
+    "legumes"
+  ]
+}

@@ -10,7 +10,7 @@ Path: `data/tags/defined_tags.json`
 
 ```json
 {
-  "tags_version": "2025.02.0",
+  "tags_version": "2025.02.1",
   "required_categories": {
     "archetype": [
       "DietaryRestrictions",
@@ -98,7 +98,7 @@ Path: `data/tags/defined_tags.json`
     {"tag_id":"allergen_nuts","category":"Allergens","value":"Nuts","description":"Contains peanuts or tree nuts"},
     {"tag_id":"allergen_seafood","category":"Allergens","value":"Seafood","description":"Contains finned fish or shellfish"},
     {"tag_id":"allergen_sesame","category":"Allergens","value":"Sesame","description":"Contains sesame seeds or oil"},
-
+    {"tag_id":"nutrition_none","category":"NutritionFocus","value":"NoNutritionFocus","description":"No targeted macro or calorie emphasis; default balanced meals"},
     {"tag_id":"nutrition_highprotein","category":"NutritionFocus","value":"HighProtein","description":"Meals optimized for high protein density per serving"},
     {"tag_id":"nutrition_lowcalorie","category":"NutritionFocus","value":"LowCalorie","description":"Meals designed to stay within a ≤500–600 kcal per serving threshold"},
     {"tag_id":"nutrition_lowcarb","category":"NutritionFocus","value":"LowCarb","description":"Meals moderate in carbohydrates without strict keto limits"},

@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "selected_ingredients": [
+    "mandarins",
+    "orange",
+    "olive oil",
+    "olive",
+    "olives",
+    "passata",
+    "orzo",
+    "pasta",
+    "onions",
+    "parsley",
+    "mint",
+    "mixed greens",
+    "mushrooms",
+    "mussels",
+    "minced meat",
+    "mustard",
+    "oregano",
+    "paprika",
+    "milk",
+    "mint yoghurt dressing"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "selected_ingredients": [
+    "spinach",
+    "tomato soup",
+    "tomato salad",
+    "trout",
+    "trout gratin",
+    "tagliatelle alfredo",
+    "vegetable medley with bechamel sauce",
+    "vegetable soup",
+    "vegetable risotto",
+    "vegetable and lentil meal",
+    "vegetable barley soup",
+    "tuna pasta",
+    "tuna penne",
+    "sweet potato salad",
+    "waffles"
+  ]
+}

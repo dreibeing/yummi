@@ -1,0 +1,195 @@
+{
+  "meal_id": "meal_20251125T133418Z_01_a80b99",
+  "archetype_uid": "arch_AFQB_2025_01",
+  "archetype_name": "Family AirFryer Quick Bites",
+  "name": "Air Fryer Crispy Fish Taco Bowls",
+  "description": "Crunchy hake nuggets over warm microwave rice with lettuce, salsa, avocado dip, and mild cheddar. Fast, family-friendly taco flavors without the tortillas.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat air fryer to 200°C/390°F.",
+    "Tear a small vent in the tops of the rice pouches.",
+    "Rinse and drain black beans (if packed in liquid).",
+    "Shred or thinly slice lettuce.",
+    "Cut lemon into wedges (for serving).",
+    "Set out salsa, avocado dip, and grated cheddar cheese."
+  ],
+  "cook_steps": [
+    "Air-fry hake nuggets in a single layer for 8–10 minutes, shaking halfway, until crisp and hot.",
+    "Microwave rice pouches according to pack directions (about 90 seconds each).",
+    "Place black beans in a microwave-safe bowl and heat for 60–90 seconds until warm.",
+    "Assemble bowls: add rice as the base, top with lettuce and warm black beans.",
+    "Add air-fried hake nuggets, then spoon over salsa and avocado dip.",
+    "Sprinkle with cheddar cheese and serve with lemon wedges. Season with salt and pepper if desired."
+  ],
+  "instructions": [
+    "Preheat air fryer to 200°C/390°F.",
+    "Tear a small vent in the tops of the rice pouches.",
+    "Rinse and drain black beans (if packed in liquid).",
+    "Shred or thinly slice lettuce.",
+    "Cut lemon into wedges (for serving).",
+    "Set out salsa, avocado dip, and grated cheddar cheese.",
+    "Air-fry hake nuggets in a single layer for 8–10 minutes, shaking halfway, until crisp and hot.",
+    "Microwave rice pouches according to pack directions (about 90 seconds each).",
+    "Place black beans in a microwave-safe bowl and heat for 60–90 seconds until warm.",
+    "Assemble bowls: add rice as the base, top with lettuce and warm black beans.",
+    "Add air-fried hake nuggets, then spoon over salsa and avocado dip.",
+    "Sprinkle with cheddar cheese and serve with lemon wedges. Season with salt and pepper if desired."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "hake nuggets",
+      "quantity": "500–600 g",
+      "preparation": "air-fry from frozen if applicable"
+    },
+    {
+      "core_item_name": "rice",
+      "quantity": "2 microwave pouches (about 250 g each)",
+      "preparation": "heat per pack"
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "4 cups, shredded",
+      "preparation": "shredded or thinly sliced"
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed and drained if canned"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": "for topping"
+    },
+    {
+      "core_item_name": "avocado dip",
+      "quantity": "1/2 cup",
+      "preparation": "for dolloping"
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1 cup, grated",
+      "preparation": "for sprinkling"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "to taste",
+      "preparation": "optional"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "AirFryer",
+      "Microwave"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "hake nuggets",
+      "quantity": "500–600 g",
+      "preparation": "air-fry from frozen if applicable",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice",
+      "quantity": "2 microwave pouches (about 250 g each)",
+      "preparation": "heat per pack",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "4 cups, shredded",
+      "preparation": "shredded or thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed and drained if canned",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": "for topping",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado dip",
+      "quantity": "1/2 cup",
+      "preparation": "for dolloping",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1 cup, grated",
+      "preparation": "for sprinkling",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "to taste",
+      "preparation": "optional",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T133448Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T133418Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

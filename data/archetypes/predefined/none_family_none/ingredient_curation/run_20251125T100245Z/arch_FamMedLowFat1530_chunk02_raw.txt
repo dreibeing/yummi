@@ -1,0 +1,30 @@
+{
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "selected_ingredients": [
+    "broccoli and cauliflower florets",
+    "brown and wild rice",
+    "brown basmati rice",
+    "brown basmati rice with quinoa",
+    "brown rice",
+    "bulgur",
+    "bulgur quinoa and lentil",
+    "cannellini beans",
+    "butter beans",
+    "canola oil",
+    "caper berries",
+    "chermoula",
+    "cherry tomatoes",
+    "chickpea flour",
+    "chickpeas",
+    "chicken breast fillets",
+    "chicken kebabs",
+    "chicken stock",
+    "cauliflower",
+    "carrots",
+    "celery",
+    "cabbage",
+    "chives",
+    "cardamom",
+    "brussels sprouts"
+  ]
+}

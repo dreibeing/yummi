@@ -1,0 +1,45 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_FAM_ADV_HOT_KORLAT_01",
+      "name": "Family Heat Lovers: Korean & Latin American Feasts (Hot, 30–60, Advanced)",
+      "description": "Bold, spicy family dinners with Korean and Latin American flavors—multi-component plates (marinated proteins, quick pickles/salsas, rice or veg sides) built from scratch in 30–60 minutes for confident home cooks.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "Korean",
+          "LatinAmerican"
+        ],
+        "PrepTime": [
+          "30to60"
+        ],
+        "Complexity": [
+          "Advanced"
+        ],
+        "HeatSpice": [
+          "Hot"
+        ],
+        "Equipment": [
+          "StoveTop",
+          "OutdoorGrill"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Adds an Advanced, Hot-heat family archetype with new Korean and Latin American cuisines and 30–60 minute builds—filling gaps not covered by the existing mild/no-heat, simple, and showstopper entries."
+    }
+  ]
+}

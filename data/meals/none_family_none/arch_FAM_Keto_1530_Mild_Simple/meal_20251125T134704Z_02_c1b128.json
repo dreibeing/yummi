@@ -1,0 +1,244 @@
+{
+  "meal_id": "meal_20251125T134704Z_02_c1b128",
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "archetype_name": "Family Keto Weeknight Plates (Mild, 15–30, Simple)",
+  "name": "Pan-Seared Sirloin with Garlic Herb Butter, Roasted Asparagus, and Greek Salad",
+  "description": "Quick steak night with a bright Greek salad and tender roasted asparagus, all keto-friendly and mild. Simple steps for a family weeknight plate.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F.",
+    "Trim woody ends from asparagus.",
+    "Pat beef sirloin steak dry with paper towels.",
+    "Slice cucumber into half-moons and halve the cherry tomatoes.",
+    "Thinly slice red onion.",
+    "Cut lemon in half for juice.",
+    "In a bowl, combine 3 tbsp olive oil, juice of 1/2 lemon, 1 tsp oregano, a pinch of salt, and black pepper for dressing.",
+    "Add cucumber, cherry tomatoes, olives, red onion, and crumbled feta cheese to a large salad bowl (do not toss yet)."
+  ],
+  "cook_steps": [
+    "Toss asparagus with 1 tbsp olive oil, a pinch of salt, and black pepper on a baking tray. Roast 10–12 minutes until tender-crisp.",
+    "Season beef sirloin steak on both sides with salt and black pepper.",
+    "Heat 1 tbsp olive oil in a large skillet over medium-high heat. Sear steak 3–4 minutes per side for medium (adjust to preference).",
+    "Transfer steak to a plate and rest 5 minutes. Top with 2–3 tbsp garlic herb butter to melt over the steak.",
+    "Toss the salad with the lemon-oregano dressing just before serving.",
+    "Slice steak against the grain. Plate with roasted asparagus and the Greek salad."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F.",
+    "Trim woody ends from asparagus.",
+    "Pat beef sirloin steak dry with paper towels.",
+    "Slice cucumber into half-moons and halve the cherry tomatoes.",
+    "Thinly slice red onion.",
+    "Cut lemon in half for juice.",
+    "In a bowl, combine 3 tbsp olive oil, juice of 1/2 lemon, 1 tsp oregano, a pinch of salt, and black pepper for dressing.",
+    "Add cucumber, cherry tomatoes, olives, red onion, and crumbled feta cheese to a large salad bowl (do not toss yet).",
+    "Toss asparagus with 1 tbsp olive oil, a pinch of salt, and black pepper on a baking tray. Roast 10–12 minutes until tender-crisp.",
+    "Season beef sirloin steak on both sides with salt and black pepper.",
+    "Heat 1 tbsp olive oil in a large skillet over medium-high heat. Sear steak 3–4 minutes per side for medium (adjust to preference).",
+    "Transfer steak to a plate and rest 5 minutes. Top with 2–3 tbsp garlic herb butter to melt over the steak.",
+    "Toss the salad with the lemon-oregano dressing just before serving.",
+    "Slice steak against the grain. Plate with roasted asparagus and the Greek salad."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef sirloin steak",
+      "quantity": "700–800 g total"
+    },
+    {
+      "core_item_name": "garlic herb butter",
+      "quantity": "2–3 tbsp"
+    },
+    {
+      "core_item_name": "asparagus",
+      "quantity": "600 g",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "5 tbsp total"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "300 g",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "pitted if needed"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/4 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "feta cheese",
+      "quantity": "120 g",
+      "preparation": "crumbled"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "halved for juice"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "dried"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Greek"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein",
+      "Keto",
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef sirloin steak",
+      "quantity": "700–800 g total",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic herb butter",
+      "quantity": "2–3 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "asparagus",
+      "quantity": "600 g",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "5 tbsp total",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "300 g",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "pitted if needed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/4 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "feta cheese",
+      "quantity": "120 g",
+      "preparation": "crumbled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "halved for juice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T134815Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T134704Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

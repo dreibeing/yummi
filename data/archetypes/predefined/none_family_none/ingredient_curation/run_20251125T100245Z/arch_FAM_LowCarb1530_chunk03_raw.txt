@@ -1,0 +1,33 @@
+{
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "selected_ingredients": [
+    "crushed tomatoes",
+    "diced tomatoes",
+    "cream",
+    "cream cheese",
+    "creme fraiche",
+    "cottage cheese",
+    "feta",
+    "comté cheese",
+    "eggs",
+    "egg whites",
+    "fish fillets",
+    "corned beef",
+    "edamame",
+    "frozen vegetables",
+    "courgette",
+    "cucumber",
+    "eggplant",
+    "garlic",
+    "dill",
+    "fennel",
+    "gem squash",
+    "cumin",
+    "coriander",
+    "garlic powder",
+    "fish sauce",
+    "enchilada sauce",
+    "dressing",
+    "ghee"
+  ]
+}

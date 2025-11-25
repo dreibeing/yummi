@@ -1,0 +1,307 @@
+{
+  "meal_id": "meal_20251125T134859Z_01_a28d06",
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "archetype_name": "Family Low-Sodium American & French Comfort (30–60, Mild)",
+  "name": "Bourguignon-Style Beef with Buttered Parsley Potatoes and Roasted Green Beans",
+  "description": "A family-friendly, low-sodium beef and mushroom skillet in a wine-tomato reduction, served with buttered parsley potatoes and lemon-kissed roasted green beans.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 425°F (220°C).",
+    "Rinse and quarter 2 lb potatoes; keep pieces similar in size.",
+    "Trim 12 oz green beans; pat dry.",
+    "Slice 10 oz mushrooms.",
+    "Dice 1 large onion.",
+    "Peel and slice 2 carrots into 1/4-inch rounds.",
+    "Mince 3 cloves garlic.",
+    "Roughly chop 1/4 cup parsley.",
+    "Zest 1 lemon; reserve.",
+    "Pat dry 1.5 lb beef stew meat; season with black pepper."
+  ],
+  "cook_steps": [
+    "Bring a large pot of water to a boil; add potatoes and cook until just tender, 12–15 minutes. Drain and keep warm.",
+    "On a sheet pan, toss green beans with 1 tbsp olive oil and a pinch of black pepper. Roast at 425°F until tender with light char, 12–15 minutes. Finish with lemon zest.",
+    "Meanwhile, heat 1 tbsp olive oil and 1 tbsp butter in a wide pot over medium-high. Brown beef in 2 batches, 3–4 minutes per batch. Transfer to a plate.",
+    "Lower heat to medium. Add onion and carrots; cook 4 minutes, stirring.",
+    "Add mushrooms; cook until they release moisture and lightly brown, 5–6 minutes.",
+    "Stir in garlic and 2 tbsp tomato paste; cook 1 minute.",
+    "Deglaze with 1/2 cup white wine, scraping up browned bits; simmer 1–2 minutes.",
+    "Add 1.5 cups water, 2 bay leaves, 1 tsp thyme, and several grinds of black pepper. Return beef and any juices. Bring to a simmer, then cook gently uncovered, stirring occasionally, 20–25 minutes until beef is tender and sauce is reduced.",
+    "Off heat, swirl in 1 tbsp butter for gloss. Remove bay leaves and adjust black pepper to taste.",
+    "Toss drained potatoes with 1 tbsp butter and parsley. Plate beef with sauce, potatoes, and roasted green beans."
+  ],
+  "instructions": [
+    "Preheat oven to 425°F (220°C).",
+    "Rinse and quarter 2 lb potatoes; keep pieces similar in size.",
+    "Trim 12 oz green beans; pat dry.",
+    "Slice 10 oz mushrooms.",
+    "Dice 1 large onion.",
+    "Peel and slice 2 carrots into 1/4-inch rounds.",
+    "Mince 3 cloves garlic.",
+    "Roughly chop 1/4 cup parsley.",
+    "Zest 1 lemon; reserve.",
+    "Pat dry 1.5 lb beef stew meat; season with black pepper.",
+    "Bring a large pot of water to a boil; add potatoes and cook until just tender, 12–15 minutes. Drain and keep warm.",
+    "On a sheet pan, toss green beans with 1 tbsp olive oil and a pinch of black pepper. Roast at 425°F until tender with light char, 12–15 minutes. Finish with lemon zest.",
+    "Meanwhile, heat 1 tbsp olive oil and 1 tbsp butter in a wide pot over medium-high. Brown beef in 2 batches, 3–4 minutes per batch. Transfer to a plate.",
+    "Lower heat to medium. Add onion and carrots; cook 4 minutes, stirring.",
+    "Add mushrooms; cook until they release moisture and lightly brown, 5–6 minutes.",
+    "Stir in garlic and 2 tbsp tomato paste; cook 1 minute.",
+    "Deglaze with 1/2 cup white wine, scraping up browned bits; simmer 1–2 minutes.",
+    "Add 1.5 cups water, 2 bay leaves, 1 tsp thyme, and several grinds of black pepper. Return beef and any juices. Bring to a simmer, then cook gently uncovered, stirring occasionally, 20–25 minutes until beef is tender and sauce is reduced.",
+    "Off heat, swirl in 1 tbsp butter for gloss. Remove bay leaves and adjust black pepper to taste.",
+    "Toss drained potatoes with 1 tbsp butter and parsley. Plate beef with sauce, potatoes, and roasted green beans."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef stew meat",
+      "quantity": "1.5 lb",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "10 oz",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1.5 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "2 lb",
+      "preparation": "quartered"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "12 oz",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "French"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowSodium"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef stew meat",
+      "quantity": "1.5 lb",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "10 oz",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1.5 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "2 lb",
+      "preparation": "quartered",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "12 oz",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T134937Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T134859Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "archetype_uid": "arch_AFQB_2025_01",
+  "selected_ingredients": [
+    "spring rolls",
+    "wrap",
+    "sweet potato chips",
+    "waffles",
+    "whiting portions",
+    "tuna pasta",
+    "tuna penne",
+    "sundae"
+  ]
+}

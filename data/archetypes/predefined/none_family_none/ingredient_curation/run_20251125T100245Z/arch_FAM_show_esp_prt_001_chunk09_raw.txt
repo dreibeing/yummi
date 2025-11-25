@@ -1,0 +1,23 @@
+{
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "selected_ingredients": [
+    "rice",
+    "prawns",
+    "mussels",
+    "seafood mix",
+    "hake",
+    "hake fillets",
+    "chicken",
+    "pork",
+    "roast potatoes",
+    "potato bake",
+    "potato gratin",
+    "garlic baguette",
+    "gazpacho",
+    "sharing meal",
+    "fiesta style sharing meal",
+    "mixed vegetables",
+    "salad",
+    "hummus"
+  ]
+}

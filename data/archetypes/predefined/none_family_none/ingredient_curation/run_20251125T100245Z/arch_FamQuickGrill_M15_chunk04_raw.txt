@@ -1,0 +1,29 @@
+{
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "selected_ingredients": [
+    "grapeseed oil",
+    "greek dressing",
+    "green beans",
+    "grapes",
+    "ground beef",
+    "ground cumin",
+    "halloumi cheese",
+    "ham",
+    "hot dog",
+    "hamburger buns",
+    "hot dog buns",
+    "jasmine rice",
+    "macaroni",
+    "maize meal",
+    "lettuce",
+    "lemon",
+    "lime",
+    "ketchup",
+    "honey",
+    "honey mustard",
+    "hummus",
+    "italian herbs",
+    "lamb chops",
+    "lamb sosatie kebabs"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "selected_ingredients": [
+    "mandarins",
+    "mange-tout",
+    "mango",
+    "mango chutney",
+    "masala",
+    "masala spice blend",
+    "massaman curry paste",
+    "minced meat",
+    "meatballs",
+    "mushrooms",
+    "mushroom stock",
+    "mustard seeds",
+    "naan",
+    "noodles",
+    "pad thai noodles",
+    "pak choi",
+    "paneer",
+    "paprika",
+    "peanut butter",
+    "peanut oil",
+    "onions",
+    "oyster sauce",
+    "oil"
+  ]
+}

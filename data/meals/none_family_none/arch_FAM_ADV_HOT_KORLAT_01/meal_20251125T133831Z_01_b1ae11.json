@@ -1,0 +1,348 @@
+{
+  "meal_id": "meal_20251125T133831Z_01_b1ae11",
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "archetype_name": "Family Heat Lovers: Korean & Latin American Feasts (Hot, 30–60, Advanced)",
+  "name": "Korean BBQ Pork Belly Tacos with Habanero Slaw and Sticky Rice",
+  "description": "Grilled Korean BBQ pork belly tucked into tortillas with a hot habanero-lime slaw and quick-pickled onions, served alongside fluffy sticky rice. A bold, from-scratch Korean–Latin mashup built for heat lovers.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Place pork belly in the freezer for 10 minutes to firm for slicing if needed.",
+    "Thinly slice pork belly into 1/4-inch strips.",
+    "In a bowl, whisk Korean BBQ sauce, soy sauce, sesame oil, minced garlic, and chilli flakes to make a marinade.",
+    "Toss pork belly in the marinade; set aside 15 minutes.",
+    "Finely shred cabbage; peel and julienne carrots.",
+    "Chop coriander and thinly slice spring onion; set aside for garnish.",
+    "Thinly slice red onion; place in a small bowl with rice vinegar, sugar, salt, and a splash of water to quick pickle.",
+    "Rinse sticky rice in cold water until it runs mostly clear; drain and soak 10 minutes.",
+    "Halve and juice the lime; in a large bowl whisk habanero sauce, lime juice, a pinch of salt, and 1 teaspoon canola oil for slaw dressing.",
+    "Pat cabbage and carrots dry if wet; keep tortillas ready; preheat OutdoorGrill to medium-high (or heat a grill pan on StoveTop)."
+  ],
+  "cook_steps": [
+    "Combine soaked sticky rice with water and a pinch of salt in a pot; bring to a boil, cover, reduce to low, and cook 12–15 minutes until tender. Rest covered 10 minutes off heat.",
+    "Toss cabbage and carrots with the habanero-lime dressing; set aside to lightly wilt.",
+    "Oil grill grates (or pan) lightly with canola oil. Grill marinated pork belly 2–3 minutes per side until charred edges and cooked through; transfer to a plate and tent loosely.",
+    "Warm tortillas on the grill or a dry pan 20–30 seconds per side until pliable.",
+    "Drain quick-pickled red onions.",
+    "Assemble tacos: place slaw on each tortilla, add pork belly, top with pickled red onions, spring onion, coriander, and sesame seeds. Add extra habanero sauce if desired.",
+    "Fluff sticky rice and serve on the side."
+  ],
+  "instructions": [
+    "Place pork belly in the freezer for 10 minutes to firm for slicing if needed.",
+    "Thinly slice pork belly into 1/4-inch strips.",
+    "In a bowl, whisk Korean BBQ sauce, soy sauce, sesame oil, minced garlic, and chilli flakes to make a marinade.",
+    "Toss pork belly in the marinade; set aside 15 minutes.",
+    "Finely shred cabbage; peel and julienne carrots.",
+    "Chop coriander and thinly slice spring onion; set aside for garnish.",
+    "Thinly slice red onion; place in a small bowl with rice vinegar, sugar, salt, and a splash of water to quick pickle.",
+    "Rinse sticky rice in cold water until it runs mostly clear; drain and soak 10 minutes.",
+    "Halve and juice the lime; in a large bowl whisk habanero sauce, lime juice, a pinch of salt, and 1 teaspoon canola oil for slaw dressing.",
+    "Pat cabbage and carrots dry if wet; keep tortillas ready; preheat OutdoorGrill to medium-high (or heat a grill pan on StoveTop).",
+    "Combine soaked sticky rice with water and a pinch of salt in a pot; bring to a boil, cover, reduce to low, and cook 12–15 minutes until tender. Rest covered 10 minutes off heat.",
+    "Toss cabbage and carrots with the habanero-lime dressing; set aside to lightly wilt.",
+    "Oil grill grates (or pan) lightly with canola oil. Grill marinated pork belly 2–3 minutes per side until charred edges and cooked through; transfer to a plate and tent loosely.",
+    "Warm tortillas on the grill or a dry pan 20–30 seconds per side until pliable.",
+    "Drain quick-pickled red onions.",
+    "Assemble tacos: place slaw on each tortilla, add pork belly, top with pickled red onions, spring onion, coriander, and sesame seeds. Add extra habanero sauce if desired.",
+    "Fluff sticky rice and serve on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "pork belly",
+      "quantity": "700 g",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "Korean BBQ sauce",
+      "quantity": "1/3 cup",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tablespoons",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tablespoon",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 teaspoon",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "4 cups",
+      "preparation": "finely shredded"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "peeled and julienned"
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "2–3 tablespoons",
+      "preparation": "for slaw and serving"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1 whole",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1/3 cup",
+      "preparation": "for quick pickle"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tablespoon",
+      "preparation": "for quick pickle"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 teaspoons",
+      "preparation": "for grill and slaw"
+    },
+    {
+      "core_item_name": "tortillas",
+      "quantity": "12 small"
+    },
+    {
+      "core_item_name": "sticky rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and soaked"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 to 2 1/4 cups",
+      "preparation": "for cooking rice"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2 stalks",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "1 tablespoon",
+      "preparation": "for garnish"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Korean",
+      "LatinAmerican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Hot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "pork belly",
+      "quantity": "700 g",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "Korean BBQ sauce",
+      "quantity": "1/3 cup",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tablespoons",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tablespoon",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 teaspoon",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "4 cups",
+      "preparation": "finely shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "peeled and julienned",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "2–3 tablespoons",
+      "preparation": "for slaw and serving",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1 whole",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1/3 cup",
+      "preparation": "for quick pickle",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tablespoon",
+      "preparation": "for quick pickle",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 teaspoons",
+      "preparation": "for grill and slaw",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tortillas",
+      "quantity": "12 small",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sticky rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and soaked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 to 2 1/4 cups",
+      "preparation": "for cooking rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2 stalks",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "1 tablespoon",
+      "preparation": "for garnish",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T133927Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T133831Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

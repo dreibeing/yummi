@@ -1,0 +1,330 @@
+{
+  "meal_id": "meal_20251125T113654Z_01_cdd5d9",
+  "archetype_uid": "arch_FamLightJV_01",
+  "archetype_name": "Family Light & Fresh: Japanese and Vietnamese Weeknights",
+  "name": "Lemongrass Chicken Rice Noodle Soup",
+  "description": "Light, brothy chicken soup with rice noodles, bok choy, and herbs, scented with lemongrass and star anise. Mild and fresh for an easy family weeknight.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Slice 2 spring onion stalks (greens and whites) and keep some greens for garnish.",
+    "Thinly slice 2 carrots.",
+    "Slice 6–8 mushrooms.",
+    "Chop 2–3 bok choy into bite-size pieces.",
+    "Cut 500 g chicken thighs into small 2 cm pieces and pat dry.",
+    "Halve 1 onion; smash 2 garlic cloves.",
+    "Quarter 1 lime.",
+    "Bring a pot of water to a boil for the rice noodles."
+  ],
+  "cook_steps": [
+    "Cook rice noodles in boiling water until tender, 4–6 minutes; drain, rinse with cold water, and set aside.",
+    "Heat 1 tbsp canola oil in a large pot over medium heat.",
+    "Add onion halves (cut side down) and smashed garlic; cook 2–3 minutes until fragrant and lightly browned.",
+    "Stir in 1 tbsp lemongrass paste and the sliced spring onion whites; cook 30 seconds.",
+    "Pour in 4 cups vegetable stock and 2 cups water; add 1 star anise and 1 bay leaf. Bring to a boil, then reduce to a gentle simmer.",
+    "Add chicken thigh pieces; simmer until just cooked through, 8–10 minutes. Skim any foam.",
+    "Add sliced carrots and mushrooms; simmer 2 minutes.",
+    "Add bok choy; simmer 2–3 minutes until tender-crisp.",
+    "Remove onion halves, star anise, and bay leaf. Season broth with salt and white pepper to taste. Squeeze in 2 lime wedges.",
+    "Divide rice noodles among bowls. Ladle hot soup over noodles.",
+    "Top with chopped coriander, mint, and reserved spring onion greens. Serve with remaining lime wedges."
+  ],
+  "instructions": [
+    "Slice 2 spring onion stalks (greens and whites) and keep some greens for garnish.",
+    "Thinly slice 2 carrots.",
+    "Slice 6–8 mushrooms.",
+    "Chop 2–3 bok choy into bite-size pieces.",
+    "Cut 500 g chicken thighs into small 2 cm pieces and pat dry.",
+    "Halve 1 onion; smash 2 garlic cloves.",
+    "Quarter 1 lime.",
+    "Bring a pot of water to a boil for the rice noodles.",
+    "Cook rice noodles in boiling water until tender, 4–6 minutes; drain, rinse with cold water, and set aside.",
+    "Heat 1 tbsp canola oil in a large pot over medium heat.",
+    "Add onion halves (cut side down) and smashed garlic; cook 2–3 minutes until fragrant and lightly browned.",
+    "Stir in 1 tbsp lemongrass paste and the sliced spring onion whites; cook 30 seconds.",
+    "Pour in 4 cups vegetable stock and 2 cups water; add 1 star anise and 1 bay leaf. Bring to a boil, then reduce to a gentle simmer.",
+    "Add chicken thigh pieces; simmer until just cooked through, 8–10 minutes. Skim any foam.",
+    "Add sliced carrots and mushrooms; simmer 2 minutes.",
+    "Add bok choy; simmer 2–3 minutes until tender-crisp.",
+    "Remove onion halves, star anise, and bay leaf. Season broth with salt and white pepper to taste. Squeeze in 2 lime wedges.",
+    "Divide rice noodles among bowls. Ladle hot soup over noodles.",
+    "Top with chopped coriander, mint, and reserved spring onion greens. Serve with remaining lime wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "rice noodles",
+      "quantity": "250 g",
+      "preparation": "cooked and rinsed"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "500 g",
+      "preparation": "cut into 2 cm pieces"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "4 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lemongrass paste",
+      "quantity": "1 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "smashed"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "6–8 pieces",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "2–3 small heads",
+      "preparation": "chopped bite-size"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2 stalks",
+      "preparation": "sliced; greens reserved"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1 whole",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "star anise",
+      "quantity": "1 whole",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "bay leaf",
+      "quantity": "1 leaf",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "white pepper",
+      "quantity": "to taste",
+      "preparation": ""
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Japanese",
+      "Vietnamese"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowCalorie"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "rice noodles",
+      "quantity": "250 g",
+      "preparation": "cooked and rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "500 g",
+      "preparation": "cut into 2 cm pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "4 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemongrass paste",
+      "quantity": "1 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "smashed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "6–8 pieces",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "2–3 small heads",
+      "preparation": "chopped bite-size",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2 stalks",
+      "preparation": "sliced; greens reserved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1 whole",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "star anise",
+      "quantity": "1 whole",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaf",
+      "quantity": "1 leaf",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white pepper",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T113743Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T113654Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

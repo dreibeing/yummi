@@ -1,0 +1,32 @@
+{
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "selected_ingredients": [
+    "broccoli and cauliflower florets",
+    "brown basmati rice",
+    "brown rice",
+    "coconut jasmine rice",
+    "coconut milk",
+    "coconut cream",
+    "coconut stir fry sauce",
+    "butter",
+    "butter chicken sauce",
+    "canola oil",
+    "cardamom",
+    "cinnamon",
+    "cloves",
+    "carrots",
+    "cauliflower",
+    "cabbage",
+    "chickpeas",
+    "cashews",
+    "chilies",
+    "chilli paste",
+    "chili oil",
+    "chili flakes",
+    "chicken",
+    "chicken thighs",
+    "chicken stock",
+    "brown sugar",
+    "chives"
+  ]
+}

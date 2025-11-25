@@ -319,20 +319,15 @@ def _build_scope_block(
     if not scope_diets and not scope_audiences and not required_sub_tags:
         return ""
 
-    # Prefer category names exactly as defined in the manifest
-    archetype_required = (tags_manifest.get("required_categories", {}) or {}).get("archetype", [])
-    diet_category_key = "DietaryRestrictions" if "DietaryRestrictions" in archetype_required else "DietaryRestrictions"
-    audience_category_key = "Audience"
-
     lines: List[str] = []
     lines.append("\n\nScope (HARD CONSTRAINTS; exact inclusion):")
     if scope_diets:
         lines.append(
-            f"- {diet_category_key}: include ALL of → " + ", ".join(sorted(scope_diets))
+            "- DietaryRestrictions: include ALL of → " + ", ".join(sorted(scope_diets))
         )
     if scope_audiences:
         lines.append(
-            f"- {audience_category_key}: include ALL of → " + ", ".join(sorted(scope_audiences))
+            "- Audience: include ALL of → " + ", ".join(sorted(scope_audiences))
         )
     if required_sub_tags:
         # Optional guidance within the scope

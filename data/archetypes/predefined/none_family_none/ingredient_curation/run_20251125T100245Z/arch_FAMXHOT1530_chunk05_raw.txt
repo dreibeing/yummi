@@ -1,0 +1,23 @@
+{
+  "archetype_uid": "arch_FAMXHOT1530",
+  "selected_ingredients": [
+    "olive oil",
+    "paprika",
+    "oregano",
+    "onion powder",
+    "passata",
+    "onion",
+    "onions",
+    "mango",
+    "padron peppers",
+    "orange",
+    "parsley",
+    "minced beef",
+    "meat skewers",
+    "pasta",
+    "mango chutney",
+    "onion and chilli paste",
+    "nduja",
+    "mayonnaise"
+  ]
+}

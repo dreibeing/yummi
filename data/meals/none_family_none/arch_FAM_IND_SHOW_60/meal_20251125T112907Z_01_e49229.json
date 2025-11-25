@@ -1,0 +1,403 @@
+{
+  "meal_id": "meal_20251125T112907Z_01_e49229",
+  "archetype_uid": "arch_FAM_IND_SHOW_60",
+  "archetype_name": "Family Weekend Showstopper: Indian Feast Night",
+  "name": "Saffron Chicken Dum Biryani with Cucumber Raita",
+  "description": "A layered chicken biryani sealed and baked on dum with saffron milk, fried onions, and herbs, served with a cooling cucumber raita. Weekend showstopper with medium heat and classic Indian flavors.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Rinse basmati rice under cold water until it runs clear; soak 20 minutes, then drain.",
+    "Warm milk slightly and crumble saffron into it; set aside to bloom.",
+    "Slice onions thinly.",
+    "Chop coriander and mint.",
+    "Mince garlic.",
+    "Cut cucumber into small dice for raita.",
+    "In a bowl, combine yoghurt, lemon juice, salt, turmeric powder, garam masala, chili flakes, and minced garlic; add chicken thighs and coat well. Marinate 30–60 minutes refrigerated.",
+    "Preheat oven to 180°C/350°F.",
+    "Mix flour with enough water to form a pliable rope for sealing the pot lid; cover to prevent drying."
+  ],
+  "cook_steps": [
+    "Bring a large pot of water to a boil; add salt and a bay leaf. Add soaked basmati rice and cook until 70% done (grains still firm), about 5–6 minutes. Drain and spread to steam off.",
+    "Heat ghee with a little canola oil in a heavy oven-safe pot over medium heat. Fry sliced onions, stirring, until deep golden and crisp at edges. Remove half to a plate for layering; leave the rest in the pot.",
+    "Add cumin seeds, peppercorns, cardamom, cloves, cinnamon, and a bay leaf to the pot; toast 30–45 seconds until aromatic.",
+    "Increase heat to medium-high. Add marinated chicken thighs and any marinade; sear 2–3 minutes per side until lightly browned.",
+    "Reduce heat to medium. Cook chicken with lid ajar 8–10 minutes, stirring once, until just starting to release juices.",
+    "Turn heat off. Scatter half the chopped mint and coriander over the chicken, then half the reserved fried onions.",
+    "Layer par-cooked rice evenly over the chicken. Drizzle saffron milk over the rice and dot with a little ghee. Top with remaining fried onions and remaining herbs.",
+    "Run the flour rope around the pot rim, press on the lid to seal. Transfer to oven and bake 35–40 minutes.",
+    "Rest 10 minutes out of the oven, then break the seal. Gently fluff, lifting chicken and rice together to keep layers distinct.",
+    "For the raita: In a bowl, mix yoghurt, diced cucumber, ground cumin, a pinch of salt, and chopped mint. Serve alongside the biryani."
+  ],
+  "instructions": [
+    "Rinse basmati rice under cold water until it runs clear; soak 20 minutes, then drain.",
+    "Warm milk slightly and crumble saffron into it; set aside to bloom.",
+    "Slice onions thinly.",
+    "Chop coriander and mint.",
+    "Mince garlic.",
+    "Cut cucumber into small dice for raita.",
+    "In a bowl, combine yoghurt, lemon juice, salt, turmeric powder, garam masala, chili flakes, and minced garlic; add chicken thighs and coat well. Marinate 30–60 minutes refrigerated.",
+    "Preheat oven to 180°C/350°F.",
+    "Mix flour with enough water to form a pliable rope for sealing the pot lid; cover to prevent drying.",
+    "Bring a large pot of water to a boil; add salt and a bay leaf. Add soaked basmati rice and cook until 70% done (grains still firm), about 5–6 minutes. Drain and spread to steam off.",
+    "Heat ghee with a little canola oil in a heavy oven-safe pot over medium heat. Fry sliced onions, stirring, until deep golden and crisp at edges. Remove half to a plate for layering; leave the rest in the pot.",
+    "Add cumin seeds, peppercorns, cardamom, cloves, cinnamon, and a bay leaf to the pot; toast 30–45 seconds until aromatic.",
+    "Increase heat to medium-high. Add marinated chicken thighs and any marinade; sear 2–3 minutes per side until lightly browned.",
+    "Reduce heat to medium. Cook chicken with lid ajar 8–10 minutes, stirring once, until just starting to release juices.",
+    "Turn heat off. Scatter half the chopped mint and coriander over the chicken, then half the reserved fried onions.",
+    "Layer par-cooked rice evenly over the chicken. Drizzle saffron milk over the rice and dot with a little ghee. Top with remaining fried onions and remaining herbs.",
+    "Run the flour rope around the pot rim, press on the lid to seal. Transfer to oven and bake 35–40 minutes.",
+    "Rest 10 minutes out of the oven, then break the seal. Gently fluff, lifting chicken and rice together to keep layers distinct.",
+    "For the raita: In a bowl, mix yoghurt, diced cucumber, ground cumin, a pinch of salt, and chopped mint. Serve alongside the biryani."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "3 cups",
+      "preparation": "rinsed and soaked"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1.2–1.5 kg",
+      "preparation": "boneless or bone-in"
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced for marinade"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2–3 teaspoons total",
+      "preparation": "divided for rice, marinade, and raita"
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "garam masala",
+      "quantity": "2 teaspoons"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 teaspoon",
+      "preparation": "adjust to taste"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4–5 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "3 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "ghee",
+      "quantity": "3 tablespoons"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "peppercorns",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "cardamom",
+      "quantity": "4 pods"
+    },
+    {
+      "core_item_name": "cloves",
+      "quantity": "4"
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1 small stick"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2"
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "1/2 teaspoon",
+      "preparation": "crumbled"
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "1/3 cup",
+      "preparation": "warmed for saffron"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "flour",
+      "quantity": "1/2 cup",
+      "preparation": "mixed with water to seal lid"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": "for boiling rice and dough"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "diced for raita"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1/2 teaspoon",
+      "preparation": "for raita"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Indian",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "3 cups",
+      "preparation": "rinsed and soaked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1.2–1.5 kg",
+      "preparation": "boneless or bone-in",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2–3 teaspoons total",
+      "preparation": "divided for rice, marinade, and raita",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garam masala",
+      "quantity": "2 teaspoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 teaspoon",
+      "preparation": "adjust to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4–5 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "3 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ghee",
+      "quantity": "3 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peppercorns",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cardamom",
+      "quantity": "4 pods",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cloves",
+      "quantity": "4",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1 small stick",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "1/2 teaspoon",
+      "preparation": "crumbled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "1/3 cup",
+      "preparation": "warmed for saffron",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "flour",
+      "quantity": "1/2 cup",
+      "preparation": "mixed with water to seal lid",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": "for boiling rice and dough",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "diced for raita",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1/2 teaspoon",
+      "preparation": "for raita",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T113018Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T112907Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

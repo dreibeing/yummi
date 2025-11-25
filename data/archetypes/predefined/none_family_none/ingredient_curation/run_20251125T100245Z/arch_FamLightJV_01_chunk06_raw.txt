@@ -1,0 +1,31 @@
+{
+  "archetype_uid": "arch_FamLightJV_01",
+  "selected_ingredients": [
+    "peanuts",
+    "peas",
+    "pepper",
+    "peppercorns",
+    "prawns",
+    "pork",
+    "pork mince",
+    "pork belly",
+    "pork bones",
+    "roast chicken",
+    "rainbow trout",
+    "rice",
+    "rice noodles",
+    "rice vermicelli",
+    "ramen noodles",
+    "rice paper wrappers",
+    "rice vinegar",
+    "rice flour",
+    "red onion",
+    "red pepper",
+    "radish",
+    "red cabbage",
+    "romaine lettuce",
+    "ponzu sauce",
+    "plum sauce",
+    "pickles"
+  ]
+}

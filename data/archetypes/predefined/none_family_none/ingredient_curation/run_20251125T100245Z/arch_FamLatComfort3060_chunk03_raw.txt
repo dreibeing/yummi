@@ -1,0 +1,21 @@
+{
+  "archetype_uid": "arch_FamLatComfort3060",
+  "selected_ingredients": [
+    "coriander",
+    "coriander seeds",
+    "corn",
+    "cornflour",
+    "crushed tomatoes",
+    "diced tomatoes",
+    "enchilada sauce",
+    "cumin",
+    "cumin seeds",
+    "garlic",
+    "flour",
+    "eggs",
+    "fish fillets",
+    "courgette",
+    "cream",
+    "cream cheese"
+  ]
+}

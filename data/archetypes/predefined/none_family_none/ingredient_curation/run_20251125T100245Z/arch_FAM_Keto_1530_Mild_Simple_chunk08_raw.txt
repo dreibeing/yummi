@@ -1,0 +1,24 @@
+{
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "selected_ingredients": [
+    "tomato",
+    "tomato paste",
+    "tomatoes",
+    "turmeric powder",
+    "tzatziki",
+    "yoghurt",
+    "za'atar",
+    "vinegar",
+    "white pepper",
+    "whipping cream",
+    "watercress",
+    "zucchini",
+    "cauliflower rice",
+    "chicken",
+    "chicken breast",
+    "whole chicken",
+    "turkey",
+    "tuna",
+    "trout"
+  ]
+}

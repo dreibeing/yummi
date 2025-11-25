@@ -1,0 +1,21 @@
+{
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "selected_ingredients": [
+    "chicken salad",
+    "chicken soup",
+    "chicken tikka",
+    "roast chicken",
+    "smoked chicken breast",
+    "lamb",
+    "haddock",
+    "hake fillets",
+    "salmon",
+    "prawns",
+    "mussels",
+    "smoked salmon",
+    "greek salad",
+    "salad",
+    "coleslaw",
+    "slaw"
+  ]
+}

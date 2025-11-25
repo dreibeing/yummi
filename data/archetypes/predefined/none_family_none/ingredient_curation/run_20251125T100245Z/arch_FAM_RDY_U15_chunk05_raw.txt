@@ -1,0 +1,27 @@
+{
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "selected_ingredients": [
+    "mandarins",
+    "mixed berries",
+    "mixed vegetables",
+    "onions",
+    "mushrooms",
+    "milk",
+    "margarine",
+    "maple syrup",
+    "mayonnaise",
+    "peanut butter",
+    "mashed potatoes",
+    "minced beef",
+    "meatballs",
+    "mozzarella",
+    "mozzarella sticks",
+    "parmesan cheese",
+    "pasta",
+    "pasta sauce",
+    "passata",
+    "napoletana sauce",
+    "olive oil",
+    "oil"
+  ]
+}

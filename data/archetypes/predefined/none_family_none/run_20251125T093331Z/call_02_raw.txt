@@ -1,0 +1,23 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_FAM_HANDSOFF_001",
+      "name": "Family Hands-Off Sheet Pan & Slow Cooker Nights",
+      "description": "Set-and-forget family dinners with zero chili heat using sheet pans and slow cookers, leaning on Greek and Middle Eastern flavors for busy weeknights and relaxed weekends.",
+      "core_tags": {
+        "DietaryRestrictions": ["None"],
+        "Audience": ["Family"],
+        "Cuisine": ["Greek", "MiddleEastern"],
+        "PrepTime": ["30to60", "60Plus"],
+        "Complexity": ["Simple"],
+        "HeatSpice": ["NoHeat"],
+        "Equipment": ["Oven", "SlowOrPressureCooker"],
+        "MealComponentPreference": ["SemiPrepared"],
+        "NutritionFocus": ["NoNutritionFocus"],
+        "Allergens": ["None"]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Fills a gap by offering family-friendly, no-heat, hands-off meals in the 30–60 and 60+ min ranges with different equipment and cuisines than the existing weeknight classics."
+    }
+  ]
+}

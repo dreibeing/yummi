@@ -1,0 +1,246 @@
+SYSTEM:
+You are Yummi's ingredient sourcing strategist. For each request you receive a single archetype plus the canonical
+ingredient catalog. Your job is to identify the ingredients that align with that archetype's culinary profile,
+using only the context supplied in the conversation. Always ground your decisions in the archetype description
+and tags provided later; do not assume any other defaults. When uncertain, err on the side of keeping plausible
+fits, but filter clear mismatches.
+
+Return strict JSON with this structure:
+{
+  "archetype_uid": "arch_XXXX",
+  "selected_ingredients": [
+    "Ingredient A",
+    "Ingredient B"
+  ]
+}
+
+Rules:
+- Return only the JSON object above; no extra commentary.
+- Names must match the catalog exactly (case and spelling).
+- Avoid beverages, household items, or duplicative variants that the archetype would reasonably skip.
+- Ensure the list spans pantry staples, proteins, starches, produce, and sauces that fit the archetype’s cuisines.
+- Do not invent ingredients that are not in the catalog.
+
+USER:
+Archetype UID: arch_FAM_MED_ASIA_01
+Archetype Name: Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)
+Archetype Description:
+Stovetop family dinners inspired by Indian, Thai, and Chinese flavors—balanced medium heat curries and stir-fries built in 15–30 minutes with a few coordinated components.
+
+Core Tags:
+- Allergens: None
+- Audience: Family
+- Complexity: Intermediate
+- Cuisine: Indian, Thai, Chinese
+- DietaryRestrictions: None
+- Equipment: StoveTop
+- HeatSpice: Medium
+- MealComponentPreference: FromScratch
+- NutritionFocus: NoNutritionFocus
+- PrepTime: 15to30
+
+Ingredient catalog chunk 1/10 (format: item_type — core_item_name).
+For each entry, answer a single question: would this archetype reasonably use this ingredient when cooking?
+If yes (even occasionally), include the ingredient name in `selected_ingredients`. If the ingredient is clearly unsuitable, exclude it.
+- ingredient — 7-grain medley
+- ingredient — BBQ sauce
+- ingredient — Chenin Blanc
+- ingredient — Chianti
+- ingredient — Ferrero Rocher
+- ingredient — Fromager d'Affinois
+- ingredient — Gouda cheese
+- ingredient — HP sauce
+- ingredient — Korean BBQ sauce
+- ingredient — Moroccan rub
+- ingredient — Red Leicester cheese
+- ingredient — Roquefort cheese
+- ingredient — Special K cereal
+- ingredient — T-bone steak
+- ingredient — Thai 7 spice blend
+- ingredient — Thai black pepper sauce
+- ingredient — Thai coconut stir fry sauce
+- ingredient — Thai green curry paste
+- ingredient — Thai red chili sauce
+- ingredient — Thai red chilli sauce
+- ingredient — Thai red curry paste
+- ingredient — Thai yellow curry paste
+- ingredient — Tom Kha soup paste
+- ingredient — achar
+- ingredient — aioli
+- ingredient — allspice
+- ingredient — almond
+- ingredient — almond bar
+- ingredient — almond butter
+- ingredient — almond essence
+- ingredient — almond ice cream
+- ingredient — almond oil
+- ingredient — almond sprinkles
+- ingredient — almonds
+- ingredient — alphabet pasta
+- ingredient — anchovies
+- ingredient — anchovy
+- ingredient — anchovy paste
+- ingredient — angelfish goujons
+- ingredient — anise
+- ingredient — antipasti
+- ingredient — antipasto
+- ingredient — apple
+- ingredient — apple and cinnamon energy bar
+- ingredient — apple cider vinegar
+- ingredient — apple sauce
+- ingredient — apricot
+- ingredient — apricot jam
+- ingredient — arrabbiata pasta sauce
+- ingredient — artichoke
+- ingredient — artichokes
+- ingredient — arugula
+- ingredient — asparagus
+- ingredient — avocado
+- ingredient — avocado dip
+- ingredient — avocado oil
+- ingredient — avocado oil spread
+- ingredient — baby bath wash
+- ingredient — baby carrots
+- ingredient — baby cereal
+- ingredient — baby corn
+- ingredient — baby cream
+- ingredient — baby oil
+- ingredient — baby wash
+- ingredient — baby wipes
+- ingredient — babybel cheese
+- ingredient — bacon
+- ingredient — bagel
+- ingredient — bagels
+- ingredient — baguette
+- ingredient — baharat
+- ingredient — baked beans
+- ingredient — baking powder
+- ingredient — balsamic dressing
+- ingredient — balsamic reduction
+- ingredient — balsamic vinaigrette
+- ingredient — balsamic vinegar
+- ingredient — banana
+- ingredient — banana cereal
+- ingredient — banana flavoured milk
+- ingredient — banana loaf
+- ingredient — bao buns
+- ingredient — barbecue roasting kit
+- ingredient — barbecue rub
+- ingredient — barbecue sauce
+- ingredient — barley
+- ingredient — basa
+- ingredient — basil
+- ingredient — basmati rice
+- ingredient — basmati rice mix
+- ingredient — bay leaf
+- ingredient — bay leaves
+- ingredient — bbq marinade
+- ingredient — bean curry
+- ingredient — beans
+- ingredient — bechamel sauce
+- ingredient — beef
+- ingredient — beef biltong
+- ingredient — beef blade steak
+- ingredient — beef bolognese sauce
+- ingredient — beef bones
+- ingredient — beef brisket
+- ingredient — beef burger
+- ingredient — beef burger patty
+- ingredient — beef burgers
+- ingredient — beef chow mein
+- ingredient — beef chuck eye steak
+- ingredient — beef droewors
+- ingredient — beef fat
+- ingredient — beef fillet
+- ingredient — beef flavoured thickener
+- ingredient — beef frikadels
+- ingredient — beef frikkadels
+- ingredient — beef gravy
+- ingredient — beef liver
+- ingredient — beef marrow bones
+- ingredient — beef meatballs
+- ingredient — beef mince
+- ingredient — beef patties
+- ingredient — beef patty
+- ingredient — beef rashers
+- ingredient — beef rib
+- ingredient — beef ribs
+- ingredient — beef sausage
+- ingredient — beef sausages
+- ingredient — beef shin
+- ingredient — beef short rib
+- ingredient — beef short ribs
+- ingredient — beef sirloin steak
+- ingredient — beef sirloin steaks
+- ingredient — beef skewers
+- ingredient — beef slider
+- ingredient — beef steak
+- ingredient — beef stew
+- ingredient — beef stew meat
+- ingredient — beef stock
+- ingredient — beef stock concentrate
+- ingredient — beef stroganoff sauce mix
+- ingredient — beef tongue
+- ingredient — beef vienna sausage
+- ingredient — beef vienna sausages
+- ingredient — beetroot
+- ingredient — beetroot yoghurt dip
+- ingredient — bell pepper
+- ingredient — bell peppers
+- ingredient — berries
+- ingredient — biltong
+- ingredient — biltong powder
+- ingredient — biryani
+- ingredient — biryani mix
+- ingredient — biscotti
+- ingredient — biscuit
+- ingredient — biscuits
+- ingredient — black beans
+- ingredient — black pepper
+- ingredient — black pepper sauce
+- ingredient — black peppercorns
+- ingredient — black rice
+- ingredient — blackberries
+- ingredient — blood orange
+- ingredient — blood orange sparkling drink
+- ingredient — blood orange sparkling water
+- ingredient — blood oranges
+- ingredient — blue cheese
+- ingredient — blue cheese dressing
+- ingredient — blue cheese sauce
+- ingredient — blueberries
+- ingredient — blueberry and raspberry preserve
+- ingredient — blueberry beet energy bar
+- ingredient — blueberry jam
+- ingredient — blueberry muffin
+- ingredient — bockwurst
+- ingredient — body lotion
+- ingredient — boerenkaas cheese
+- ingredient — boerewors
+- ingredient — bok choy
+- ingredient — bolognese pasta sauce
+- ingredient — bolognese sauce
+- ingredient — bone broth
+- ingredient — bone broth powder
+- ingredient — bone-in sirloin steak
+- ingredient — borlotti beans
+- ingredient — bouquet garni
+- ingredient — braai
+- ingredient — braai spice mix
+- ingredient — braai wood
+- ingredient — bran cereal
+- ingredient — bran flakes
+- ingredient — bran rusks
+- ingredient — bread
+- ingredient — bread mix
+- ingredient — bread roll
+- ingredient — bread rolls
+- ingredient — breadsticks
+- ingredient — breast pads
+- ingredient — breyani rice
+- ingredient — brie
+- ingredient — brie cheese
+- ingredient — brioche
+- ingredient — broccoli
+
+Return strict JSON only; do not include extra commentary.

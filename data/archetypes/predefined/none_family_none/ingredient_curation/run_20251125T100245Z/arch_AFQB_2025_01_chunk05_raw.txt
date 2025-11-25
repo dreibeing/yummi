@@ -1,0 +1,31 @@
+{
+  "archetype_uid": "arch_AFQB_2025_01",
+  "selected_ingredients": [
+    "maple syrup",
+    "margarine",
+    "mashed potatoes",
+    "mayonnaise",
+    "meatballs",
+    "milk",
+    "minced beef",
+    "mozzarella",
+    "mozzarella sticks",
+    "mushrooms",
+    "onions",
+    "onion rings",
+    "mixed vegetables",
+    "mixed greens",
+    "mixed herbs",
+    "olive oil",
+    "oil",
+    "paprika",
+    "parsley",
+    "passata",
+    "pasta",
+    "peanut butter",
+    "mandarins",
+    "mango",
+    "olives",
+    "parmesan cheese"
+  ]
+}

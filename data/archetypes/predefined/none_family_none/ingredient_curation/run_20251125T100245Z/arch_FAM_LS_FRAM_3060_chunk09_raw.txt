@@ -1,0 +1,32 @@
+{
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "selected_ingredients": [
+    "roast chicken",
+    "roast potatoes",
+    "mashed potatoes",
+    "potato gratin",
+    "potato bake",
+    "shepherd's pie",
+    "cottage pie",
+    "spaghetti bolognese",
+    "lasagne",
+    "macaroni and cheese",
+    "chicken soup",
+    "chicken pie",
+    "fish pie",
+    "salmon",
+    "haddock",
+    "hake fillets",
+    "pork shank",
+    "lamb casserole",
+    "root vegetables",
+    "mixed vegetables",
+    "salad",
+    "rolls",
+    "croissant",
+    "quiche lorraine",
+    "quiche",
+    "gnocchi",
+    "rice"
+  ]
+}

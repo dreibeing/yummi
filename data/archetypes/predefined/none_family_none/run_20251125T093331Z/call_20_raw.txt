@@ -1,0 +1,44 @@
+{
+  "archetypes": [
+    {
+      "uid": "arch_SA_BraaiPotjie_Adv60",
+      "name": "Family Weekend Advanced: South African Braai & Potjie",
+      "description": "Presentation-worthy South African family feasts built around braai platters and slow potjie or oven bakes with classic sides—hands-on technique, medium heat, and >60-minute cook times.",
+      "core_tags": {
+        "DietaryRestrictions": [
+          "None"
+        ],
+        "Audience": [
+          "Family"
+        ],
+        "Cuisine": [
+          "SouthAfrican"
+        ],
+        "PrepTime": [
+          "60Plus"
+        ],
+        "Complexity": [
+          "Advanced"
+        ],
+        "HeatSpice": [
+          "Medium"
+        ],
+        "Equipment": [
+          "OutdoorGrill",
+          "Oven"
+        ],
+        "MealComponentPreference": [
+          "FromScratch"
+        ],
+        "NutritionFocus": [
+          "NoNutritionFocus"
+        ],
+        "Allergens": [
+          "None"
+        ]
+      },
+      "refresh_version": "2025.02.1",
+      "rationale": "Fills a clear gap for a South African weekend project in the Advanced, 60+ minute, grill-forward space—distinct from existing simple grill nights and other regional showstoppers."
+    }
+  ]
+}

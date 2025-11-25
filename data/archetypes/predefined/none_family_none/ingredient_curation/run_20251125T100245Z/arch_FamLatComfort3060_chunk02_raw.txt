@@ -1,0 +1,32 @@
+{
+  "archetype_uid": "arch_FamLatComfort3060",
+  "selected_ingredients": [
+    "brown rice",
+    "brown basmati rice",
+    "brown and wild rice",
+    "burritos",
+    "butter",
+    "brown sugar",
+    "canola oil",
+    "cheddar cheese",
+    "cheese",
+    "chicken",
+    "chicken breast",
+    "chicken thighs",
+    "chicken stock",
+    "chicken tomato sauce",
+    "chorizo",
+    "carrot",
+    "carrots",
+    "cabbage",
+    "cauliflower",
+    "cherry tomatoes",
+    "chipotle sauce",
+    "chipotle chilli sauce",
+    "butter beans",
+    "cannellini beans",
+    "chives",
+    "chilli powder",
+    "chimichurri"
+  ]
+}

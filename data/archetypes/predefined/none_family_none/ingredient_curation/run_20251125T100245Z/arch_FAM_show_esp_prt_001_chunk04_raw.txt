@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "selected_ingredients": [
+    "grapeseed oil",
+    "green beans",
+    "ground beef",
+    "ground cumin",
+    "haddock",
+    "hake",
+    "hake fillets",
+    "ham",
+    "herbs",
+    "honey",
+    "leeks",
+    "lentils",
+    "lemon",
+    "lime",
+    "lamb",
+    "leg of lamb",
+    "lamb chops",
+    "mackerel",
+    "lemon olive oil",
+    "grapes"
+  ]
+}

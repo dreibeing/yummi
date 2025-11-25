@@ -1,0 +1,15 @@
+{
+  "archetype_uid": "arch_SA_BraaiPotjie_Adv60",
+  "selected_ingredients": [
+    "vetkoek",
+    "trout",
+    "whiting portions",
+    "sweet potato chips",
+    "sweet potato salad",
+    "tomato salad",
+    "vegetable medley with bechamel sauce",
+    "vegetable and lentil meal",
+    "tiramisu",
+    "trifle"
+  ]
+}

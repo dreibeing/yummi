@@ -1,0 +1,25 @@
+{
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "selected_ingredients": [
+    "chicken soup",
+    "chicken strips",
+    "roast chicken",
+    "mashed potatoes",
+    "pasta",
+    "rice",
+    "lasagne",
+    "spaghetti bolognese",
+    "spaghetti with beef mince",
+    "macaroni and cheese",
+    "gnocchi",
+    "mixed vegetables",
+    "frozen vegetables",
+    "cottage pie",
+    "shepherd's pie",
+    "meatballs with noodles",
+    "garlic baguette",
+    "garlic butter baguette",
+    "potato bake",
+    "potato gratin"
+  ]
+}

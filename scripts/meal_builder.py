@@ -19,13 +19,10 @@ from llm_utils import OpenAIClientError, call_openai_api
 DEFAULT_TAGS_MANIFEST = Path("data/tags/defined_tags.json")
 DEFAULT_TAG_SYNONYMS = Path("data/tags/tag_synonyms.json")
 DEFAULT_CORE_ITEMS = Path("data/ingredients/unique_core_items.csv")
-DEFAULT_CLASSIFICATIONS = Path("data/ingredients/ingredient_classifications.csv")
-DEFAULT_CATALOG = Path("resolver/catalog.json")
 DEFAULT_MEALS_DIR = Path("data/meals")
 DEFAULT_OUTPUT_DIR = Path("data/meals")
 
 DEFAULT_MEAL_MODEL = "gpt-5"
-DEFAULT_PRODUCT_MODEL = "gpt-5"
 
 CURATED_INGREDIENTS_FILENAME = "curated_ingredients.json"
 INGREDIENT_CURATION_SUBDIR = "ingredient_curation"
@@ -146,13 +143,6 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
         help="Path to curated ingredient list. Defaults to <predefined-dir>/ingredient_curation/curated_ingredients.json.",
     )
     parser.add_argument(
-        "--ingredient-classifications",
-        type=Path,
-        default=DEFAULT_CLASSIFICATIONS,
-        help="CSV mapping product IDs to core items (from ingredient classification run)",
-    )
-    parser.add_argument("--catalog", type=Path, default=DEFAULT_CATALOG, help="Resolver catalog JSON with Woolworths products")
-    parser.add_argument(
         "--meals-dir",
         type=Path,
         default=DEFAULT_MEALS_DIR,
@@ -170,12 +160,6 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--meal-top-p", type=float, default=None)
     parser.add_argument("--meal-max-output-tokens", type=int, default=1600)
     parser.add_argument("--meal-reasoning-effort", default="low")
-    parser.add_argument("--product-model", default=DEFAULT_PRODUCT_MODEL, help="OpenAI model for SKU selection")
-    parser.add_argument("--product-temperature", type=float, default=0.2)
-    parser.add_argument("--product-top-p", type=float, default=None)
-    parser.add_argument("--product-max-output-tokens", type=int, default=1200)
-    parser.add_argument("--product-reasoning-effort", default="low")
-    parser.add_argument("--product-candidate-limit", type=int, default=5, help="Max SKU candidates to supply per ingredient")
     parser.add_argument("--existing-meal-summary-count", type=int, default=8, help="How many prior meals to summarize for the prompt")
     return parser.parse_args(list(argv) if argv is not None else None)
 
@@ -309,41 +293,6 @@ def select_allowed_core_items(
             missing.append(raw_name)
     allowed.sort(key=lambda item: item.name.lower())
     return allowed, missing
-
-
-def load_classifications(path: Path) -> dict[str, list[dict[str, Any]]]:
-    if not path.exists():
-        raise FileNotFoundError(f"Missing ingredient classifications CSV: {path}")
-    mapping: dict[str, list[dict[str, Any]]] = {}
-    with path.open(encoding="utf-8") as fh:
-        reader = csv.DictReader(fh)
-        for row in reader:
-            core_name = (row.get("core_item_name") or "").strip()
-            product_id = (row.get("product_id") or "").strip()
-            if not core_name or not product_id:
-                continue
-            mapping.setdefault(core_name.lower(), []).append({
-                "core_item_name": core_name,
-                "product_id": product_id,
-                "item_type": row.get("item_type"),
-                "batch_id": row.get("batch_id"),
-            })
-    return mapping
-
-
-def load_catalog(path: Path) -> dict[str, dict[str, Any]]:
-    payload = read_json(path)
-    by_id: dict[str, dict[str, Any]] = {}
-    for _, product in payload.items():
-        product_id = str(product.get("productId") or product.get("product_id") or "").strip()
-        if not product_id:
-            continue
-        product_copy = dict(product)
-        product_copy.setdefault("display_name", product.get("name"))
-        by_id[product_id] = product_copy
-    if not by_id:
-        raise RuntimeError(f"Resolver catalog {path} did not yield any product entries")
-    return by_id
 
 
 def load_existing_meals(base_dir: Path, scope_slug: str, archetype_uid: str) -> list[dict[str, Any]]:
@@ -733,164 +682,6 @@ def validate_meal_payload(
     return warnings
 
 
-def build_product_candidate_payload(
-    meal: dict[str, Any],
-    classification_index: dict[str, list[dict[str, Any]]],
-    catalog: dict[str, dict[str, Any]],
-    limit: int,
-) -> list[dict[str, Any]]:
-    payload: list[dict[str, Any]] = []
-    for ingredient in meal.get("ingredients", []):
-        core_name = ingredient.get("core_item_name")
-        candidates: list[dict[str, Any]] = []
-        records = classification_index.get((core_name or "").lower(), [])
-        for record in records:
-            product = catalog.get(record.get("product_id"))
-            if not product:
-                continue
-            candidates.append(
-                {
-                    "product_id": record.get("product_id"),
-                    "name": product.get("name") or product.get("display_name"),
-                    "brand": product.get("brand"),
-                    "sale_price": product.get("salePrice"),
-                    "detail_url": product.get("detailUrl"),
-                    "default_category": product.get("defaultCategory"),
-                    "package_hint": product.get("name"),
-                }
-            )
-            if len(candidates) >= limit:
-                break
-        payload.append(
-            {
-                "core_item_name": core_name,
-                "ingredient_quantity": ingredient.get("quantity"),
-                "candidates": candidates,
-            }
-        )
-    return payload
-
-
-def build_product_system_prompt() -> str:
-    return dedent(
-        """
-        You are a Woolworths product specialist. Given meal ingredients and SKU options, pick the best product and package count.
-        Every ingredient must map to a SKU whenever candidates exist—missing links block the meal from shipping.
-        Always emit valid JSON and do not rewrite cooking instructions.
-        """
-    ).strip()
-
-
-def build_product_user_prompt(
-    *,
-    archetype: dict[str, Any],
-    meal: dict[str, Any],
-    sku_payload: list[dict[str, Any]],
-) -> str:
-    archetype_brief = json.dumps(
-        {
-            "uid": archetype.get("uid"),
-            "name": archetype.get("name"),
-            "core_tags": archetype.get("core_tags"),
-        },
-        ensure_ascii=False,
-        indent=2,
-    )
-    meal_json = json.dumps(meal, ensure_ascii=False, indent=2)
-    sku_json = json.dumps(sku_payload, ensure_ascii=False, indent=2)
-
-    schema = {
-        "product_matches": [
-            {
-                "core_item_name": "string",
-                "selected_product_id": "string or null",
-                "package_quantity": "float or int indicating number of retail packs",
-                "package_notes": "brief rationale",
-                "ingredient_line": "optional text using product name",
-            }
-        ]
-    }
-    schema_json = json.dumps(schema, ensure_ascii=False, indent=2)
-
-    return dedent(
-        f"""
-        Task: For each ingredient, choose the best Woolworths SKU (from candidates) and suggest how many retail packs are needed.
-        Use servings + archetype context to keep quantities realistic. If candidates are provided, you MUST choose one of them (even if it slightly overshoots quantity) and justify the pick—never return null when at least one candidate exists.
-        Only when no candidates are supplied may you set `selected_product_id` to null, and those notes must begin with `MISSING_SKU:` so the pipeline can flag the meal for removal.
-        Do NOT rewrite the instructions or mention retailer names in the method; only provide product matches.
-
-        Archetype snapshot:
-        ```json
-        {archetype_brief}
-        ```
-
-        Meal draft:
-        ```json
-        {meal_json}
-        ```
-
-        SKU candidates per ingredient:
-        ```json
-        {sku_json}
-        ```
-
-        Output schema:
-        ```json
-        {schema_json}
-        ```
-        """
-    ).strip()
-
-
-def parse_product_response(text: str) -> dict[str, Any]:
-    body = scrub_json_block(text)
-    data = json.loads(body)
-    if "product_matches" not in data:
-        raise ValueError("Product selection response missing 'product_matches'")
-    return data
-
-
-def merge_product_matches(
-    meal: dict[str, Any],
-    product_response: dict[str, Any],
-    catalog: dict[str, dict[str, Any]],
-) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
-    matches = product_response.get("product_matches", [])
-    final_matches: list[dict[str, Any]] = []
-    final_ingredients: list[dict[str, Any]] = []
-
-    match_by_name = { (entry.get("core_item_name") or "").lower(): entry for entry in matches }
-    for ingredient in meal.get("ingredients", []):
-        key = (ingredient.get("core_item_name") or "").lower()
-        match = match_by_name.get(key)
-        product_payload = None
-        ingredient_line = None
-        package_qty = None
-        if match:
-            product_id = match.get("selected_product_id")
-            package_qty = match.get("package_quantity")
-            ingredient_line = match.get("ingredient_line")
-            product_payload = catalog.get(product_id) if product_id else None
-        final_matches.append(match or {"core_item_name": ingredient.get("core_item_name")})
-        final_ingredients.append(
-            {
-                "core_item_name": ingredient.get("core_item_name"),
-                "quantity": ingredient.get("quantity"),
-                "preparation": ingredient.get("preparation"),
-                "selected_product": {
-                    "product_id": match.get("selected_product_id"),
-                    "package_quantity": package_qty,
-                    "name": product_payload.get("name") if product_payload else None,
-                    "detail_url": product_payload.get("detailUrl") if product_payload else None,
-                    "sale_price": product_payload.get("salePrice") if product_payload else None,
-                } if match else None,
-                "ingredient_line": ingredient_line,
-            }
-        )
-
-    return final_matches, final_ingredients
-
-
 def write_json(path: Path, payload: Any) -> None:
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
@@ -913,8 +704,6 @@ def generate_meals_for_archetype(
     multi_value_categories: set[str],
     tags_version: str,
     archetypes_summary_payload: list[dict[str, Any]],
-    classification_index: dict[str, list[dict[str, Any]]],
-    catalog: dict[str, dict[str, Any]],
     meals_dir: Path,
     archetype_json_path: Path,
     curated_source_path: Path,
@@ -950,7 +739,6 @@ def generate_meals_for_archetype(
             "archetype_uid": archetype_uid,
             "meal_count": args.meal_count,
             "meal_model": args.meal_model,
-            "product_model": args.product_model,
             "tags_version": tags_version,
             "curated_ingredients_path": str(curated_source_path),
             "archetype_source": str(archetype_json_path),
@@ -1037,68 +825,12 @@ def generate_meals_for_archetype(
             "metadata": {
                 "created_at": created_at,
                 "meal_model": args.meal_model,
-                "product_model": args.product_model,
                 "tags_version": tags_version,
                 "run_dir": str(run_dir),
                 "predefined_scope": scope_slug,
-                "product_selection_status": "pending",
+                "product_selection_status": "skipped",
             },
         }
-        record_path = save_meal_record(meals_dir, scope_slug, archetype_uid, base_record)
-
-        sku_payload = build_product_candidate_payload(
-            meal_payload, classification_index, catalog, args.product_candidate_limit
-        )
-        sku_prompt = build_product_user_prompt(archetype=archetype, meal=meal_payload, sku_payload=sku_payload)
-        print(f"[products] Selecting SKUs for meal {meal_index:02d}")
-        try:
-            product_response_text = call_openai_api(
-                system_prompt=build_product_system_prompt(),
-                user_prompt=sku_prompt,
-                model=args.product_model,
-                temperature=args.product_temperature,
-                top_p=args.product_top_p,
-                max_tokens=args.product_max_output_tokens,
-                reasoning_effort=args.product_reasoning_effort,
-                max_output_tokens=args.product_max_output_tokens,
-            )
-        except OpenAIClientError as exc:
-            base_record["metadata"]["product_selection_status"] = "failed"
-            base_record["metadata"]["product_selection_error"] = str(exc)
-            save_meal_record(meals_dir, scope_slug, archetype_uid, base_record)
-            raise RuntimeError(f"Product selection API call failed: {exc}") from exc
-
-        write_json(
-            run_dir / f"meal_{meal_index:02d}_selector.json",
-            {"prompt": sku_prompt, "response": product_response_text},
-        )
-
-        product_payload = parse_product_response(product_response_text)
-        matches, final_ingredients = merge_product_matches(meal_payload, product_payload, catalog)
-
-        base_record["product_matches"] = matches
-        base_record["final_ingredients"] = final_ingredients
-        missing_product_links = sorted(
-            ingredient.get("core_item_name")
-            for ingredient in final_ingredients
-            if not (
-                ingredient.get("selected_product")
-                and ingredient["selected_product"].get("product_id")
-            )
-        )
-        if missing_product_links:
-            note = (
-                "Missing product matches for: "
-                + ", ".join(item for item in missing_product_links if item)
-            )
-            print(f"[warn] {note}")
-            base_record.setdefault("warnings", []).append(note)
-            base_record["metadata"]["product_selection_status"] = "incomplete_missing_products"
-            base_record["metadata"]["missing_product_links"] = missing_product_links
-        else:
-            base_record["metadata"]["product_selection_status"] = "completed"
-            base_record["metadata"].pop("missing_product_links", None)
-        base_record["metadata"].pop("product_selection_error", None)
         record_path = save_meal_record(meals_dir, scope_slug, archetype_uid, base_record)
         existing_meals.append(base_record)
         meals_created.append({"meal_id": meal_id, "path": str(record_path)})
@@ -1131,8 +863,6 @@ def run(args: argparse.Namespace) -> None:
 
     _, core_item_index = load_core_items(Path(args.core_items))
     curated_sets = load_curated_ingredient_sets(curated_path)
-    classification_index = load_classifications(Path(args.ingredient_classifications))
-    catalog = load_catalog(Path(args.catalog))
     meals_dir = Path(args.meals_dir)
     run_dir_root = Path(args.output_dir) / "runs" / scope_slug
     archetypes_summary_payload = archetype_summary(archetypes)
@@ -1196,8 +926,6 @@ def run(args: argparse.Namespace) -> None:
                 multi_value_categories=multi_value_categories,
                 tags_version=tags_version,
                 archetypes_summary_payload=archetypes_summary_payload,
-                classification_index=classification_index,
-                catalog=catalog,
                 meals_dir=meals_dir,
                 archetype_json_path=archetype_json_path,
                 curated_source_path=curated_path,

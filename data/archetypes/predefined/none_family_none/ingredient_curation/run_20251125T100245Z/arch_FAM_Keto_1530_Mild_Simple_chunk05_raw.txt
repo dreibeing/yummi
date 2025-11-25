@@ -1,0 +1,26 @@
+{
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "selected_ingredients": [
+    "olive oil",
+    "olives",
+    "onions",
+    "parsley",
+    "oregano",
+    "mint",
+    "mixed greens",
+    "microgreens",
+    "pak choi",
+    "mushrooms",
+    "minced beef",
+    "meatballs",
+    "mussels",
+    "mozzarella cheese",
+    "parmesan cheese",
+    "manchego cheese",
+    "mayonnaise",
+    "mustard",
+    "paprika",
+    "mixed nuts",
+    "nutritional yeast"
+  ]
+}

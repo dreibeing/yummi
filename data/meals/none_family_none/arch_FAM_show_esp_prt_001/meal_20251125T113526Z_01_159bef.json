@@ -1,0 +1,310 @@
+{
+  "meal_id": "meal_20251125T113526Z_01_159bef",
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "archetype_name": "Family Weekend Showstopper: Spanish & Portuguese Feasts",
+  "name": "Family Chicken & Chorizo Paella",
+  "description": "A showstopping Spanish-style paella with saffron rice, seared chicken thighs, and smoky chorizo. Built for a family feast with golden socarrat and fresh lemon-parsley finish.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Finely chop onions.",
+    "Dice red pepper.",
+    "Mince garlic.",
+    "Slice chorizo into 1 cm rounds.",
+    "Chop parsley; cut lemon into wedges.",
+    "Season chicken thighs with salt and black pepper.",
+    "Warm chicken stock in a pot; crumble saffron into the stock and keep hot on low.",
+    "If using an outdoor grill, preheat to medium and set up a stable surface for the pan."
+  ],
+  "cook_steps": [
+    "Set a wide, heavy pan (paella pan or large skillet) over medium heat on the stovetop or grill; add olive oil.",
+    "Brown chorizo 3–4 minutes; remove to a bowl, leaving the rendered oil in the pan.",
+    "Sear chicken thighs skin-side down until deeply golden, 6–8 minutes; flip and cook 3–4 minutes more. Remove to a plate.",
+    "Add onions and red pepper to the pan; cook until softened, 6–8 minutes. Stir in garlic and paprika; cook 30 seconds.",
+    "Add diced tomatoes; cook, stirring, until thick and jammy, 3–5 minutes.",
+    "Stir in spanish rice to coat in the sofrito, 1 minute.",
+    "Pour in white wine; simmer until mostly absorbed, 1–2 minutes.",
+    "Add the hot saffron chicken stock and bay leaf; stir once to distribute rice evenly, then stop stirring.",
+    "Nestle chicken thighs and chorizo into the rice. Cook uncovered at a steady simmer, rotating the pan occasionally for even heat, about 15 minutes.",
+    "Scatter peas over the surface. Continue cooking 10–15 minutes until rice is tender and most liquid is absorbed. For socarrat, increase heat for the last 2–3 minutes without stirring until you hear gentle crackling.",
+    "Remove from heat; cover loosely with a clean towel and rest 5–10 minutes.",
+    "Discard bay leaf, sprinkle with parsley, and serve with lemon wedges."
+  ],
+  "instructions": [
+    "Finely chop onions.",
+    "Dice red pepper.",
+    "Mince garlic.",
+    "Slice chorizo into 1 cm rounds.",
+    "Chop parsley; cut lemon into wedges.",
+    "Season chicken thighs with salt and black pepper.",
+    "Warm chicken stock in a pot; crumble saffron into the stock and keep hot on low.",
+    "If using an outdoor grill, preheat to medium and set up a stable surface for the pan.",
+    "Set a wide, heavy pan (paella pan or large skillet) over medium heat on the stovetop or grill; add olive oil.",
+    "Brown chorizo 3–4 minutes; remove to a bowl, leaving the rendered oil in the pan.",
+    "Sear chicken thighs skin-side down until deeply golden, 6–8 minutes; flip and cook 3–4 minutes more. Remove to a plate.",
+    "Add onions and red pepper to the pan; cook until softened, 6–8 minutes. Stir in garlic and paprika; cook 30 seconds.",
+    "Add diced tomatoes; cook, stirring, until thick and jammy, 3–5 minutes.",
+    "Stir in spanish rice to coat in the sofrito, 1 minute.",
+    "Pour in white wine; simmer until mostly absorbed, 1–2 minutes.",
+    "Add the hot saffron chicken stock and bay leaf; stir once to distribute rice evenly, then stop stirring.",
+    "Nestle chicken thighs and chorizo into the rice. Cook uncovered at a steady simmer, rotating the pan occasionally for even heat, about 15 minutes.",
+    "Scatter peas over the surface. Continue cooking 10–15 minutes until rice is tender and most liquid is absorbed. For socarrat, increase heat for the last 2–3 minutes without stirring until you hear gentle crackling.",
+    "Remove from heat; cover loosely with a clean towel and rest 5–10 minutes.",
+    "Discard bay leaf, sprinkle with parsley, and serve with lemon wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons"
+    },
+    {
+      "core_item_name": "chorizo",
+      "quantity": "200 g",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "800 g",
+      "preparation": "bone-in, skin-on; seasoned"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "red pepper",
+      "quantity": "1",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 teaspoons"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 cup"
+    },
+    {
+      "core_item_name": "spanish rice",
+      "quantity": "2 cups"
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "5 cups",
+      "preparation": "hot"
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "1/2 teaspoon",
+      "preparation": "crumbled into stock"
+    },
+    {
+      "core_item_name": "bay leaf",
+      "quantity": "1"
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Portuguese",
+      "Spanish"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chorizo",
+      "quantity": "200 g",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "800 g",
+      "preparation": "bone-in, skin-on; seasoned",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red pepper",
+      "quantity": "1",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 teaspoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spanish rice",
+      "quantity": "2 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "5 cups",
+      "preparation": "hot",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "1/2 teaspoon",
+      "preparation": "crumbled into stock",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaf",
+      "quantity": "1",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T113614Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T113526Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "selected_ingredients": [
+    "peanut sauce",
+    "peanuts",
+    "peanuts and cashews mix",
+    "peas",
+    "pepper",
+    "peppercorns",
+    "peppers",
+    "plum sauce",
+    "ponzu sauce",
+    "poppadoms",
+    "pork",
+    "prawns",
+    "potato",
+    "potatoes",
+    "pineapple",
+    "rice",
+    "rice noodles",
+    "rice vermicelli",
+    "rice vinegar",
+    "red curry paste",
+    "red chili sauce",
+    "red onion",
+    "red pepper",
+    "roasted garlic",
+    "roti"
+  ]
+}

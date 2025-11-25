@@ -1,0 +1,30 @@
+{
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "selected_ingredients": [
+    "comté cheese",
+    "emmental cheese",
+    "cream",
+    "creme fraiche",
+    "cream cheese",
+    "cottage cheese",
+    "eggs",
+    "flour",
+    "cornflour",
+    "fusilli",
+    "fettuccine",
+    "gnocchi",
+    "couscous",
+    "crushed tomatoes",
+    "garlic",
+    "garlic flakes",
+    "dill",
+    "fennel",
+    "courgette",
+    "cucumber",
+    "corn",
+    "frozen vegetables",
+    "frozen mixed vegetables",
+    "fish fillets",
+    "duck"
+  ]
+}

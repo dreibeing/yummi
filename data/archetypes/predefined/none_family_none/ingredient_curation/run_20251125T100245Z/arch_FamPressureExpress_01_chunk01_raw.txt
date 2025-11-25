@@ -1,0 +1,28 @@
+{
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "selected_ingredients": [
+    "7-grain medley",
+    "BBQ sauce",
+    "Gouda cheese",
+    "alphabet pasta",
+    "apple",
+    "apple cider vinegar",
+    "apple sauce",
+    "basil",
+    "bay leaves",
+    "beans",
+    "black beans",
+    "baked beans",
+    "baby carrots",
+    "bell peppers",
+    "broccoli",
+    "bolognese sauce",
+    "beef stew meat",
+    "beef stock",
+    "bone broth",
+    "basmati rice",
+    "bread",
+    "bouquet garni",
+    "bacon"
+  ]
+}

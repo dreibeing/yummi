@@ -1,0 +1,26 @@
+{
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "selected_ingredients": [
+    "coriander",
+    "cumin",
+    "cumin seeds",
+    "garlic",
+    "garlic sauce",
+    "crushed tomatoes",
+    "diced tomatoes",
+    "couscous",
+    "courgette",
+    "cucumber",
+    "feta cheese",
+    "falafel",
+    "falafel seasoning",
+    "dates",
+    "dill",
+    "dukkah",
+    "eggs",
+    "flour",
+    "ghee",
+    "frozen mixed vegetables",
+    "frozen vegetables"
+  ]
+}

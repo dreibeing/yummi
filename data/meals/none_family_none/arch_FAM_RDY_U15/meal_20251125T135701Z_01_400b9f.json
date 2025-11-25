@@ -1,0 +1,125 @@
+{
+  "meal_id": "meal_20251125T135701Z_01_400b9f",
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "archetype_name": "Family Heat-and-Eat Weeknights (Under 15, No Heat)",
+  "name": "Microwave Meatballs & Noodles with Salad and Garlic Baguette",
+  "description": "Family-friendly meatballs with noodles, a crisp salad, and warm garlic baguette. All heat-and-eat components for a no-chili, under-15-minute dinner.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Clear counter space and set out 4 plates and serving tongs.",
+    "Open the salad and have the salad dressing ready.",
+    "If using the oven for the garlic baguette, preheat to the pack’s recommended temperature; otherwise plan to microwave it."
+  ],
+  "cook_steps": [
+    "Microwave meatballs with noodles according to pack directions (heat one tray at a time if using two; stir halfway if instructed).",
+    "Heat the garlic baguette: microwave per pack directions for the fastest option, or bake in the preheated oven if preferred.",
+    "Toss the salad with salad dressing in the bag or a bowl.",
+    "Plate the meatballs with noodles, add a handful of salad to each plate, and serve with slices of garlic baguette."
+  ],
+  "instructions": [
+    "Clear counter space and set out 4 plates and serving tongs.",
+    "Open the salad and have the salad dressing ready.",
+    "If using the oven for the garlic baguette, preheat to the pack’s recommended temperature; otherwise plan to microwave it.",
+    "Microwave meatballs with noodles according to pack directions (heat one tray at a time if using two; stir halfway if instructed).",
+    "Heat the garlic baguette: microwave per pack directions for the fastest option, or bake in the preheated oven if preferred.",
+    "Toss the salad with salad dressing in the bag or a bowl.",
+    "Plate the meatballs with noodles, add a handful of salad to each plate, and serve with slices of garlic baguette."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "meatballs with noodles",
+      "quantity": "2 trays (about 350–450 g each)",
+      "preparation": "microwave per pack"
+    },
+    {
+      "core_item_name": "salad",
+      "quantity": "1 family-size pack (about 300–450 g)",
+      "preparation": "ready to serve"
+    },
+    {
+      "core_item_name": "salad dressing",
+      "quantity": "4 tablespoons",
+      "preparation": "for tossing salad"
+    },
+    {
+      "core_item_name": "garlic baguette",
+      "quantity": "1 pack (2 halves)",
+      "preparation": "microwave or oven heat"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "meatballs with noodles",
+      "quantity": "2 trays (about 350–450 g each)",
+      "preparation": "microwave per pack",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salad",
+      "quantity": "1 family-size pack (about 300–450 g)",
+      "preparation": "ready to serve",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salad dressing",
+      "quantity": "4 tablespoons",
+      "preparation": "for tossing salad",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic baguette",
+      "quantity": "1 pack (2 halves)",
+      "preparation": "microwave or oven heat",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T135720Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T135701Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

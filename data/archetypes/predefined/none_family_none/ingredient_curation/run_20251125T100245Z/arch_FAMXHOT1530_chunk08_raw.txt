@@ -1,0 +1,20 @@
+{
+  "archetype_uid": "arch_FAMXHOT1530",
+  "selected_ingredients": [
+    "tomato",
+    "tomato paste",
+    "tomato sauce",
+    "tomatoes",
+    "tortillas",
+    "whole chicken",
+    "tropical fruit",
+    "turmeric powder",
+    "vinegar",
+    "white pepper",
+    "worcestershire sauce",
+    "vegetable stock",
+    "vegetables",
+    "zucchini",
+    "yogurt"
+  ]
+}

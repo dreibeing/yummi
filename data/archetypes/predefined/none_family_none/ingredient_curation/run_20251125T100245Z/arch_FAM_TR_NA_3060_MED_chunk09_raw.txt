@@ -1,0 +1,19 @@
+{
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "selected_ingredients": [
+    "couscous salad",
+    "roasted vegetable couscous salad",
+    "hummus",
+    "falafel wrap",
+    "chickpea cucumber salad",
+    "moroccan style shake it bowl",
+    "lamb",
+    "lamb and vegetables",
+    "lamb casserole",
+    "rice",
+    "roast chicken",
+    "salad",
+    "mixed vegetables",
+    "root vegetables"
+  ]
+}

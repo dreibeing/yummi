@@ -1,0 +1,13 @@
+{
+  "archetype_uid": "arch_FAM_IND_SHOW_60",
+  "selected_ingredients": [
+    "thali",
+    "vegetable and lentil meal",
+    "tofu curry",
+    "tofu mushroom coconut curry",
+    "trout",
+    "tomato salad",
+    "sweet potato salad",
+    "vegetable soup"
+  ]
+}

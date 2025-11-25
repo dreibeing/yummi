@@ -1,0 +1,29 @@
+{
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "selected_ingredients": [
+    "crushed tomatoes",
+    "diced tomatoes",
+    "garlic",
+    "cumin",
+    "cumin seeds",
+    "coriander",
+    "coriander seeds",
+    "dill",
+    "dukkah",
+    "ghee",
+    "flaxseed oil",
+    "courgette",
+    "cucumber",
+    "eggplant",
+    "eggs",
+    "fish fillets",
+    "duck breast",
+    "cottage cheese",
+    "cream",
+    "cream cheese",
+    "creme fraiche",
+    "feta cheese",
+    "garlic herb butter",
+    "coriander chutney"
+  ]
+}

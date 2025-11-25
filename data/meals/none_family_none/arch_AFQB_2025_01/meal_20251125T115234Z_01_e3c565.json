@@ -1,0 +1,176 @@
+{
+  "meal_id": "meal_20251125T115234Z_01_e3c565",
+  "archetype_uid": "arch_AFQB_2025_01",
+  "archetype_name": "Family AirFryer Quick Bites",
+  "name": "Air Fryer Chicken Strip Soft Tacos",
+  "description": "Crispy air-fried chicken strips stuffed into warm tortillas with mild salsa, lettuce, cheese, and creamy toppings. Fast family tacos built from semi-prepped components.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat air fryer to 200°C/390°F.",
+    "Place tortillas in a microwave-safe plate and cover lightly to prevent drying.",
+    "Shred lettuce if needed.",
+    "Grate cheddar cheese if using a block.",
+    "Drain black beans."
+  ],
+  "cook_steps": [
+    "Air fry chicken strips for 6–8 minutes until hot and crisp; shake basket halfway.",
+    "Microwave the tortillas for 20–30 seconds to warm.",
+    "Microwave black beans with half of the salsa for 60–90 seconds until hot; stir.",
+    "Assemble tacos: add chicken strips to tortillas, spoon on warm beans, top with lettuce and cheddar cheese.",
+    "Finish with remaining salsa, guacamole, and sour cream. Serve immediately."
+  ],
+  "instructions": [
+    "Preheat air fryer to 200°C/390°F.",
+    "Place tortillas in a microwave-safe plate and cover lightly to prevent drying.",
+    "Shred lettuce if needed.",
+    "Grate cheddar cheese if using a block.",
+    "Drain black beans.",
+    "Air fry chicken strips for 6–8 minutes until hot and crisp; shake basket halfway.",
+    "Microwave the tortillas for 20–30 seconds to warm.",
+    "Microwave black beans with half of the salsa for 60–90 seconds until hot; stir.",
+    "Assemble tacos: add chicken strips to tortillas, spoon on warm beans, top with lettuce and cheddar cheese.",
+    "Finish with remaining salsa, guacamole, and sour cream. Serve immediately."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken strips",
+      "quantity": "500 g",
+      "preparation": "air fry from chilled or frozen per pack timing if different"
+    },
+    {
+      "core_item_name": "tortillas",
+      "quantity": "8 small"
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "2 cups",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1 cup",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (400 g)",
+      "preparation": "drained"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup + 2 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "guacamole",
+      "quantity": "1/2 cup"
+    },
+    {
+      "core_item_name": "sour cream",
+      "quantity": "1/2 cup"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "AirFryer",
+      "Microwave"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken strips",
+      "quantity": "500 g",
+      "preparation": "air fry from chilled or frozen per pack timing if different",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tortillas",
+      "quantity": "8 small",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "2 cups",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1 cup",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (400 g)",
+      "preparation": "drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup + 2 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "guacamole",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sour cream",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T115301Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T115234Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

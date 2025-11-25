@@ -396,7 +396,7 @@ const normalizePriceToMinorUnits = (value) => {
 
 const PREFERENCES_STATE_STORAGE_KEY = "yummi.preferences.state.v1";
 const PREFERENCES_COMPLETED_STORAGE_KEY = "yummi.preferences.completed.v1";
-const PREFERENCES_TAGS_VERSION = "2025.02.0"; // Keep in sync with data/tags/defined_tags.json
+const PREFERENCES_TAGS_VERSION = "2025.02.1"; // Keep in sync with data/tags/defined_tags.json
 const PREFERENCES_API_ENDPOINT = API_BASE_URL
   ? `${API_BASE_URL}/preferences`
   : null;
@@ -420,6 +420,8 @@ const DIETARY_RESTRICTIONS_CATEGORY_ID = "DietaryRestrictions";
 const DIETARY_NO_RESTRICTIONS_TAG_ID = "dietres_none";
 const ALLERGENS_CATEGORY_ID = "Allergens";
 const ALLERGENS_NO_AVOIDANCE_TAG_ID = "allergen_none";
+const NUTRITION_FOCUS_CATEGORY_ID = "NutritionFocus";
+const NUTRITION_NO_FOCUS_TAG_ID = "nutrition_none";
 const BASE_PREFERENCE_CATEGORIES = [
   {
     id: DIETARY_RESTRICTIONS_CATEGORY_ID,
@@ -522,10 +524,11 @@ const BASE_PREFERENCE_CATEGORIES = [
     ],
   },
   {
-    id: "NutritionFocus",
+    id: NUTRITION_FOCUS_CATEGORY_ID,
     title: "Nutrition Focus",
     description: "Call out wellness goals we should optimize for.",
     tags: [
+      { id: NUTRITION_NO_FOCUS_TAG_ID, label: "No nutrition focus" },
       { id: "nutrition_highprotein", label: "High protein" },
       { id: "nutrition_lowcalorie", label: "Low calorie" },
       { id: "nutrition_lowcarb", label: "Low carb" },
@@ -567,7 +570,17 @@ const BASE_PREFERENCE_CATEGORIES = [
 ];
 
 // Controls the order of preference categories in the UI while keeping the full metadata above.
-const PREFERENCE_CATEGORY_ORDER = ["Audience", "PrepTime", "Complexity"];
+const PREFERENCE_CATEGORY_ORDER = [
+  "Audience",
+  "PrepTime",
+  "Complexity",
+  "MealComponentPreference",
+  DIETARY_RESTRICTIONS_CATEGORY_ID,
+  ALLERGENS_CATEGORY_ID,
+  NUTRITION_FOCUS_CATEGORY_ID,
+  "Cuisine",
+  "HeatSpice",
+];
 const ORDERED_PREFERENCE_CATEGORIES = [
   ...PREFERENCE_CATEGORY_ORDER.map((categoryId) =>
     BASE_PREFERENCE_CATEGORIES.find((category) => category.id === categoryId)
@@ -589,6 +602,11 @@ const TOGGLE_CATEGORY_BEHAVIOR = {
     defaultTagId: ALLERGENS_NO_AVOIDANCE_TAG_ID,
     defaultState: "like",
     selectionState: "dislike",
+  },
+  [NUTRITION_FOCUS_CATEGORY_ID]: {
+    defaultTagId: NUTRITION_NO_FOCUS_TAG_ID,
+    defaultState: "like",
+    selectionState: "like",
   },
 };
 const MULTI_SELECT_TOGGLE_PREFERENCE_CATEGORY_IDS = new Set(

@@ -17,6 +17,7 @@ COPY yummi-server/tests ./tests
 COPY yummi-server/alembic.ini ./alembic.ini
 COPY yummi-server/alembic ./alembic
 COPY resolver ./resolver
+COPY data ./data
 
 ENV PORT=8000
 EXPOSE 8000
