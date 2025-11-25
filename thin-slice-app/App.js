@@ -768,6 +768,85 @@ const normalizeOrderItems = (items) =>
     };
   });
 
+const normalizeShoppingListProductSelection = (product) => {
+  if (!product || typeof product !== "object") {
+    return null;
+  }
+  const productId =
+    product.productId ?? product.product_id ?? product.sku ?? null;
+  const catalogRefId =
+    product.catalogRefId ?? product.catalog_ref_id ?? null;
+  const detailUrl =
+    product.detailUrl ?? product.detail_url ?? product.url ?? null;
+  const packages =
+    typeof product.packages === "number" && Number.isFinite(product.packages)
+      ? product.packages
+      : null;
+  return {
+    productId: productId != null ? String(productId) : null,
+    catalogRefId: catalogRefId != null ? String(catalogRefId) : null,
+    name: product.name ?? product.title ?? null,
+    detailUrl,
+    packages,
+  };
+};
+
+const extractLinkedProducts = (ingredient) => {
+  if (!ingredient || typeof ingredient !== "object") {
+    return [];
+  }
+  if (Array.isArray(ingredient.linkedProducts)) {
+    return ingredient.linkedProducts;
+  }
+  if (Array.isArray(ingredient.linked_products)) {
+    return ingredient.linked_products;
+  }
+  return [];
+};
+
+const pickPreferredShoppingListProduct = (ingredient) => {
+  const candidates = extractLinkedProducts(ingredient)
+    .map((product) => normalizeShoppingListProductSelection(product))
+    .filter(Boolean);
+  if (!candidates.length) {
+    return null;
+  }
+  const withProductId = candidates.find((candidate) => candidate.productId);
+  if (withProductId) {
+    return withProductId;
+  }
+  const withCatalog = candidates.find((candidate) => candidate.catalogRefId);
+  if (withCatalog) {
+    return withCatalog;
+  }
+  return candidates[0];
+};
+
+const buildProductDetailUrl = (productId, catalogRefId) => {
+  const resolved = productId ?? catalogRefId;
+  if (!resolved) {
+    return null;
+  }
+  return `https://www.woolworths.co.za/prod/_/A-${resolved}`;
+};
+
+const formatSkippedIngredientSummary = (entries, maxDisplay = 3) => {
+  if (!Array.isArray(entries) || entries.length === 0) {
+    return null;
+  }
+  const labels = entries
+    .map((entry) => entry?.label)
+    .filter((label) => typeof label === "string" && label.trim().length);
+  if (!labels.length) {
+    return `${entries.length} item${entries.length === 1 ? "" : "s"}`;
+  }
+  const preview = labels.slice(0, maxDisplay).join(", ");
+  if (labels.length > maxDisplay) {
+    return `${preview} +${labels.length - maxDisplay} more`;
+  }
+  return preview;
+};
+
 const shuffleMeals = (meals = []) => meals;
 
 const parseIngredientQuantity = (value) => {
@@ -1541,6 +1620,7 @@ function AppContent() {
   const [shoppingListItems, setShoppingListItems] = useState([]);
   const [shoppingListStatus, setShoppingListStatus] = useState("idle");
   const [shoppingListError, setShoppingListError] = useState(null);
+  const [isCartPushPending, setIsCartPushPending] = useState(false);
   const preferenceSyncHashRef = useRef(null);
   const preferenceEntryContextRef = useRef(null);
   const homeMealsBackupRef = useRef(null);
@@ -1632,6 +1712,9 @@ function AppContent() {
     });
     return { stapleIngredients: staples, primaryIngredients: primary };
   }, [shoppingListItems]);
+
+  const canSendShoppingListToCart =
+    shoppingListStatus === "ready" && shoppingListItems.length > 0;
 
   useEffect(() => {
     setIngredientQuantities((prev) => {
@@ -1927,6 +2010,58 @@ function AppContent() {
       hasAnyPrice,
     };
   }, [getIngredientQuantityValue, getIngredientUnitPriceMinor, shoppingListItems]);
+
+  const buildShoppingListCartItems = useCallback(() => {
+    const readyItems = [];
+    const skipped = [];
+    shoppingListItems.forEach((ingredient) => {
+      if (!ingredient) {
+        return;
+      }
+      const quantity = getIngredientQuantityValue(ingredient);
+      if (!(typeof quantity === "number" && Number.isFinite(quantity) && quantity > 0)) {
+        return;
+      }
+      const normalizedQuantity = Math.max(1, Math.ceil(quantity));
+      const selection = pickPreferredShoppingListProduct(ingredient);
+      if (!selection || (!selection.productId && !selection.catalogRefId)) {
+        skipped.push({
+          id: ingredient.id ?? ingredient.groupKey ?? ingredient.text ?? null,
+          label: ingredient.text ?? ingredient.groupKey ?? selection?.name ?? "Ingredient",
+        });
+        return;
+      }
+      const detailUrl =
+        selection.detailUrl ??
+        buildProductDetailUrl(selection.productId, selection.catalogRefId);
+      readyItems.push({
+        key:
+          ingredient.id ??
+          ingredient.groupKey ??
+          selection.productId ??
+          selection.catalogRefId ??
+          `ingredient-${readyItems.length + 1}`,
+        title: selection.name ?? ingredient.text ?? "Ingredient",
+        productId: selection.productId,
+        catalogRefId: selection.catalogRefId ?? selection.productId,
+        qty: normalizedQuantity,
+        url: detailUrl,
+        detailUrl,
+        itemListName: "Yummi Shopping List",
+        metadata: {
+          ingredientId: ingredient.id ?? null,
+          groupKey: ingredient.groupKey ?? null,
+          classification: ingredient.classification ?? null,
+          requestedQuantity: quantity,
+          recommendedQuantity: ingredient.requiredQuantity ?? null,
+          notes: ingredient.notes ?? null,
+          productName: selection.name ?? null,
+          productPackagesSuggested: selection.packages ?? null,
+        },
+      });
+    });
+    return { items: readyItems, skipped };
+  }, [getIngredientQuantityValue, shoppingListItems]);
 
   const renderIngredientRow = useCallback(
     (ingredient) => {
@@ -2603,9 +2738,14 @@ const handlePreferenceSelection = useCallback(
     } else if (context === "newMeals") {
       handleConfirmPreferenceComplete();
     } else if (context === "woolworthsCart") {
-      // Future: trigger add-to-cart flow once wired up.
+      handleSendShoppingListToCart();
     }
-  }, [confirmationDialog.context, handleBuildShoppingList, handleConfirmPreferenceComplete]);
+  }, [
+    confirmationDialog.context,
+    handleBuildShoppingList,
+    handleConfirmPreferenceComplete,
+    handleSendShoppingListToCart,
+  ]);
 
   const handleOpenShoppingListConfirm = useCallback(() => {
     if (!selectedHomeMeals.length) {
@@ -2659,8 +2799,16 @@ const handlePreferenceSelection = useCallback(
     showConfirmationDialog("newMeals");
   }, [showConfirmationDialog]);
   const handleOpenWoolworthsCartConfirm = useCallback(() => {
+    if (!canSendShoppingListToCart) {
+      const message =
+        shoppingListStatus === "pending"
+          ? "We're still preparing your shopping list. Try again in a moment."
+          : "Prepare your shopping list before sending it to Woolworths.";
+      Alert.alert("Shopping list not ready", message);
+      return;
+    }
     showConfirmationDialog("woolworthsCart");
-  }, [showConfirmationDialog]);
+  }, [canSendShoppingListToCart, shoppingListStatus, showConfirmationDialog]);
   const handleOpenSorryToHearScreen = useCallback(() => {
     setIsMealMenuOpen(false);
     setIsSorryToHearScreenVisible(true);
@@ -2767,6 +2915,64 @@ const handlePreferenceSelection = useCallback(
     SHOPPING_LIST_API_ENDPOINT,
     buildAuthHeaders,
     buildShoppingListRequestPayload,
+  ]);
+
+  const handleSendShoppingListToCart = useCallback(async () => {
+    if (!canSendShoppingListToCart) {
+      const message =
+        shoppingListStatus === "pending"
+          ? "We're still preparing your shopping list. Try again in a moment."
+          : "Prepare your shopping list before sending it to Woolworths.";
+      Alert.alert("Shopping list not ready", message);
+      return;
+    }
+    const { items: cartItems, skipped } = buildShoppingListCartItems();
+    if (!cartItems.length) {
+      const summary =
+        formatSkippedIngredientSummary(skipped) ??
+        "We couldn't find Woolworths products for your current selections.";
+      Alert.alert("Nothing to send", summary);
+      return;
+    }
+    if (skipped.length) {
+      const summary = formatSkippedIngredientSummary(skipped);
+      if (summary) {
+        Alert.alert(
+          "Skipping a few items",
+          `We'll skip ${summary} because we couldn't find Woolworths product matches.`
+        );
+      }
+    }
+    const selectedMealIds = selectedHomeMeals
+      .map((meal) => meal?.mealId)
+      .filter(Boolean);
+    setIsCartPushPending(true);
+    setBasket(cartItems);
+    setErrorMessage(null);
+    try {
+      await placeRunnerOrder(cartItems, {
+        trigger: "shopping_list",
+        shoppingListItemCount: shoppingListItems.length,
+        cartItemCount: cartItems.length,
+        skippedIngredientCount: skipped.length,
+        skippedIngredients: skipped.map((entry) => entry.label).filter(Boolean),
+        selectedMealIds,
+      });
+    } catch (error) {
+      console.error("Failed to push shopping list to Woolworths", error);
+      const message = error?.message ?? "Unable to start the Woolworths cart fill.";
+      setErrorMessage(message);
+      Alert.alert("Cart fill failed", message);
+    } finally {
+      setIsCartPushPending(false);
+    }
+  }, [
+    buildShoppingListCartItems,
+    canSendShoppingListToCart,
+    placeRunnerOrder,
+    selectedHomeMeals,
+    shoppingListItems.length,
+    shoppingListStatus,
   ]);
 
   const startExplorationRun = useCallback(async () => {
@@ -3431,25 +3637,25 @@ const handlePreferenceSelection = useCallback(
     Alert.alert(title, message);
   }, [payfastMonitor, fetchWallet]);
 
-  const handleSubmitOrder = useCallback(async () => {
-    if (!basket.length) {
-      setErrorMessage("Basket empty. Build the basket before placing an order.");
-      return;
-    }
-
-    setIsSubmitting(true);
-    setErrorMessage(null);
-    const normalizedItems = normalizeOrderItems(basket);
-    try {
+  const placeRunnerOrder = useCallback(
+    async (items, metadataOverrides = {}) => {
+      const normalizedItems = normalizeOrderItems(items ?? []);
+      if (!normalizedItems.length) {
+        throw new Error("Cart is empty. Select at least one product.");
+      }
+      const metadataPayload = {
+        source: "thin-slice-app",
+        requestedAt: new Date().toISOString(),
+        ...(metadataOverrides && typeof metadataOverrides === "object"
+          ? metadataOverrides
+          : {}),
+      };
       const response = await fetch(PLACE_ORDER_ENDPOINT, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           items: normalizedItems,
-          metadata: {
-            source: "thin-slice-app",
-            requestedAt: new Date().toISOString(),
-          },
+          metadata: metadataPayload,
         }),
       });
       if (!response.ok) {
@@ -3462,13 +3668,12 @@ const handlePreferenceSelection = useCallback(
       const redirectUrl =
         payload?.redirectUrl ?? "https://www.woolworths.co.za/login";
       const orderId = payload?.orderId ?? null;
-      const status = {
+      setOrderStatus({
         message,
-        receivedItems: payload?.receivedItems ?? basket.length,
+        receivedItems: payload?.receivedItems ?? normalizedItems.length,
         timestamp: new Date(),
         orderId,
-      };
-      setOrderStatus(status);
+      });
       await resetRunnerLogFile();
       setRunnerLogs([]);
       setRunnerState({
@@ -3487,6 +3692,20 @@ const handlePreferenceSelection = useCallback(
         items: normalizedItems,
       });
       setScreen("webview");
+      return { orderId, redirectUrl };
+    },
+    [resetRunnerLogFile]
+  );
+
+  const handleSubmitOrder = useCallback(async () => {
+    if (!basket.length) {
+      setErrorMessage("Basket empty. Build the basket before placing an order.");
+      return;
+    }
+    setIsSubmitting(true);
+    setErrorMessage(null);
+    try {
+      await placeRunnerOrder(basket);
     } catch (error) {
       console.error("Failed to submit order", error);
       const msg = error.message ?? "Unknown order submission error";
@@ -3495,7 +3714,7 @@ const handlePreferenceSelection = useCallback(
     } finally {
       setIsSubmitting(false);
     }
-  }, [basket, resetRunnerLogFile]);
+  }, [basket, placeRunnerOrder]);
 
   const handleRefreshWallet = useCallback(() => {
     fetchWallet();
@@ -4855,10 +5074,20 @@ const handlePreferenceSelection = useCallback(
               <Text style={styles.welcomeButtonText}>Get Shopping List (Use a free use)</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
+              style={[
+                styles.welcomeButton,
+                styles.mealHomeCtaButton,
+                styles.welcomeCtaButton,
+                (!canSendShoppingListToCart || isCartPushPending) && styles.disabledButton,
+              ]}
               onPress={handleOpenWoolworthsCartConfirm}
+              disabled={!canSendShoppingListToCart || isCartPushPending}
             >
-              <Text style={styles.welcomeButtonText}>Add to Woolworths Cart (Use a free use)</Text>
+              <Text style={styles.welcomeButtonText}>
+                {isCartPushPending
+                  ? "Sending to Woolworths..."
+                  : "Add to Woolworths Cart (Use a free use)"}
+              </Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -4878,17 +5107,18 @@ const handlePreferenceSelection = useCallback(
           })
         : null;
     const stageLabel = stageLabels[runnerState.stage] ?? "Working…";
-    const recentLogs = runnerLogs.slice(-4);
+    const itemsProgress = `${runnerState.processed}/${runnerState.total} items • OK ${runnerState.ok} • Failed ${runnerState.failed}`;
 
     return (
-      <SafeAreaView style={styles.safeArea}>
+      <SafeAreaView style={styles.mealHomeSafeArea}>
         <StatusBar style="dark" />
-        <View style={styles.header}>
-          <Text style={styles.title}>Woolworths Checkout</Text>
-          <Text style={styles.subtitle}>
-            Sign in and keep this window open while we load your basket.
-          </Text>
-          {renderAccountBanner()}
+        <View style={styles.checkoutHeader}>
+          <Text style={styles.checkoutTitle}>Woolworths Checkout</Text>
+          <Text style={styles.checkoutSubtitle}>Hang tight—your basket is loading.</Text>
+        </View>
+        <View style={styles.checkoutStatusCard}>
+          <Text style={styles.checkoutStatusLabel}>{stageLabel}</Text>
+          <Text style={styles.checkoutStatusMeta}>{itemsProgress}</Text>
         </View>
         <View style={styles.webviewContainer}>
           <WebView
@@ -4918,39 +5148,22 @@ const handlePreferenceSelection = useCallback(
           {runnerState.stage !== "completed" ? (
             <View style={styles.webviewOverlay}>
               <ActivityIndicator size="large" color="#fff" />
-              <Text style={styles.overlayTitle}>Filling your basket…</Text>
+              <Text style={styles.overlayTitle}>Placing items in your cart…</Text>
               <Text style={styles.overlaySubtitle}>
-                Stay signed in. We'll show the Woolworths cart once everything is ready.
+                Keep this window open while we finish up.
               </Text>
             </View>
           ) : null}
-        </View>
-        <View style={styles.runnerStatusCard}>
-          <Text style={styles.runnerStatusHeading}>{stageLabel}</Text>
-          <Text style={styles.runnerStatusText}>
-            {runnerState.processed}/{runnerState.total} items • OK{" "}
-            {runnerState.ok} • Failed {runnerState.failed}
-          </Text>
-          {runnerState.stage === "completed" && activeOrder?.completedAt ? (
-            <Text style={styles.runnerLogText}>
-              Keep this page open to confirm cart contents in Woolworths.
-            </Text>
-          ) : null}
-          {recentLogs.map((line, idx) => (
-            <Text key={`${idx}-${line}`} style={styles.runnerLogText}>
-              {line}
-            </Text>
-          ))}
         </View>
         <View style={styles.footer}>
           <TouchableOpacity
             style={styles.secondaryButton}
             onPress={() => {
               setActiveOrder(null);
-              setScreen("basket");
+              handleReturnToWelcome();
             }}
           >
-            <Text style={styles.secondaryButtonText}>Cancel</Text>
+            <Text style={styles.secondaryButtonText}>Finish</Text>
           </TouchableOpacity>
         </View>
       </SafeAreaView>
@@ -6644,6 +6857,39 @@ const styles = StyleSheet.create({
     paddingTop: 12,
     gap: 12,
   },
+  checkoutHeader: {
+    paddingHorizontal: 20,
+    paddingTop: 18,
+    paddingBottom: 8,
+  },
+  checkoutTitle: {
+    fontSize: 30,
+    fontWeight: "700",
+    color: "#0c3c26",
+  },
+  checkoutSubtitle: {
+    fontSize: 15,
+    color: "#4b6856",
+    marginTop: 4,
+  },
+  checkoutStatusCard: {
+    marginHorizontal: 20,
+    marginBottom: 12,
+    padding: 16,
+    borderRadius: 18,
+    backgroundColor: "#ffffff",
+    gap: 6,
+    ...SHADOW.card,
+  },
+  checkoutStatusLabel: {
+    fontSize: 15,
+    fontWeight: "600",
+    color: "#0c3c26",
+  },
+  checkoutStatusMeta: {
+    fontSize: 13,
+    color: "#4a6756",
+  },
   webviewContainer: {
     flex: 1,
     marginHorizontal: 12,
@@ -6689,33 +6935,6 @@ const styles = StyleSheet.create({
   webviewLoaderText: {
     fontSize: 14,
     color: "#555",
-  },
-  runnerStatusCard: {
-    marginHorizontal: 20,
-    marginTop: 12,
-    marginBottom: 4,
-    padding: 16,
-    borderRadius: 12,
-    backgroundColor: "#ffffff",
-    shadowColor: "#000",
-    shadowOpacity: 0.05,
-    shadowRadius: 6,
-    shadowOffset: { width: 0, height: 2 },
-    elevation: 2,
-    gap: 4,
-  },
-  runnerStatusHeading: {
-    fontSize: 15,
-    fontWeight: "600",
-    color: "#222",
-  },
-  runnerStatusText: {
-    fontSize: 13,
-    color: "#444",
-  },
-  runnerLogText: {
-    fontSize: 12,
-    color: "#666",
   },
   mealRecommendationsScroll: {
     flex: 1,
