@@ -19,6 +19,7 @@ import {
   StyleSheet,
   Text,
   TextInput,
+  Modal,
   TouchableOpacity,
   TouchableWithoutFeedback,
   Image,
@@ -894,6 +895,185 @@ const collectIngredientLabels = (ingredient, fallbackText = null) => {
   return labels;
 };
 
+const pickFirstNonEmptyString = (...candidates) => {
+  for (const candidate of candidates) {
+    if (typeof candidate === "string") {
+      const trimmed = candidate.trim();
+      if (trimmed.length > 0) {
+        return trimmed;
+      }
+    }
+  }
+  return null;
+};
+
+const formatNumericQuantityValue = (value) => {
+  if (typeof value !== "number" || !Number.isFinite(value)) {
+    return null;
+  }
+  if (Math.abs(value - Math.round(value)) < 0.01) {
+    return String(Math.round(value));
+  }
+  return value.toFixed(2).replace(/\.0+$/, "").replace(/(\.\d*[1-9])0+$/, "$1");
+};
+
+const deriveMeasurementQuantityText = (ingredient) => {
+  if (!ingredient || typeof ingredient !== "object") {
+    return null;
+  }
+  const measurement =
+    ingredient.requirementMeasurement ??
+    ingredient.measurement ??
+    ingredient.quantityMeasurement ??
+    null;
+  if (!measurement || typeof measurement !== "object") {
+    return null;
+  }
+  const amountValue =
+    typeof measurement.amount === "number" && Number.isFinite(measurement.amount)
+      ? measurement.amount
+      : typeof measurement.baseAmount === "number" && Number.isFinite(measurement.baseAmount)
+      ? measurement.baseAmount
+      : null;
+  const unitLabel = pickFirstNonEmptyString(
+    measurement.unitType,
+    measurement.unit,
+    measurement.unit_label,
+    measurement.unitLabel
+  );
+  if (amountValue == null || !unitLabel) {
+    return null;
+  }
+  const amountText = formatNumericQuantityValue(amountValue) ?? String(amountValue);
+  return `${amountText} ${unitLabel}`.trim();
+};
+
+const formatMealIngredientQuantityText = (ingredient) => {
+  if (!ingredient || typeof ingredient !== "object") {
+    return null;
+  }
+  const stringQuantity = pickFirstNonEmptyString(
+    ingredient.quantityText,
+    ingredient.quantity_text,
+    ingredient.quantityLabel,
+    ingredient.quantity_label,
+    ingredient.quantityDisplay,
+    ingredient.quantity_display
+  );
+  if (stringQuantity) {
+    return stringQuantity;
+  }
+  if (typeof ingredient.quantity === "string") {
+    const trimmed = ingredient.quantity.trim();
+    if (trimmed.length) {
+      return trimmed;
+    }
+  } else if (typeof ingredient.quantity === "number") {
+    const numericValue = formatNumericQuantityValue(ingredient.quantity);
+    if (numericValue) {
+      return numericValue;
+    }
+  }
+  const numericQuantity =
+    formatNumericQuantityValue(ingredient.quantityValue) ??
+    formatNumericQuantityValue(ingredient.quantity_value) ??
+    formatNumericQuantityValue(ingredient.requiredQuantity) ??
+    formatNumericQuantityValue(ingredient.defaultQuantity);
+  if (numericQuantity) {
+    return numericQuantity;
+  }
+  return deriveMeasurementQuantityText(ingredient);
+};
+
+const resolveMealIngredientName = (ingredient, fallbackLabel) => {
+  if (!ingredient || typeof ingredient !== "object") {
+    return fallbackLabel;
+  }
+  return (
+    pickFirstNonEmptyString(
+      ingredient.core_item_name,
+      ingredient.coreItemName,
+      ingredient.coreName,
+      ingredient.name,
+      ingredient.displayName,
+      ingredient.baseName,
+      ingredient.ingredient_line,
+      ingredient.text,
+      ingredient.productName
+    ) ?? fallbackLabel
+  );
+};
+
+const formatMealIngredientDetailText = (ingredient, fallbackIndex = 0) => {
+  const fallbackLabel = `Ingredient ${fallbackIndex + 1}`;
+  const quantityText = formatMealIngredientQuantityText(ingredient);
+  const ingredientName = resolveMealIngredientName(ingredient, fallbackLabel);
+  const baseLabel = [quantityText, ingredientName].filter(Boolean).join(" ").trim() || fallbackLabel;
+  const preparationText = pickFirstNonEmptyString(
+    ingredient?.preparation,
+    ingredient?.prepNote,
+    ingredient?.preparationNote,
+    ingredient?.preparation_note
+  );
+  if (preparationText) {
+    return `${baseLabel} (${preparationText})`;
+  }
+  return baseLabel;
+};
+
+const buildMealIngredientFallbackLabel = (ingredient, index = 0) => {
+  const productLabel = pickFirstNonEmptyString(
+    ingredient?.product_name,
+    ingredient?.productName,
+    ingredient?.ingredient_line,
+    ingredient?.ingredientLine
+  );
+  if (productLabel) {
+    return productLabel;
+  }
+  const quantityText = formatMealIngredientQuantityText(ingredient);
+  const ingredientName = pickFirstNonEmptyString(
+    ingredient?.core_item_name,
+    ingredient?.coreItemName,
+    ingredient?.coreName,
+    ingredient?.name
+  );
+  const preparationText = pickFirstNonEmptyString(
+    ingredient?.preparation,
+    ingredient?.prepNote,
+    ingredient?.preparationNote,
+    ingredient?.preparation_note
+  );
+  const parts = [];
+  if (quantityText) {
+    parts.push(quantityText);
+  }
+  if (ingredientName) {
+    parts.push(ingredientName);
+  }
+  if (preparationText) {
+    parts.push(`(${preparationText})`);
+  }
+  if (parts.length) {
+    return parts.join(" ").trim();
+  }
+  return `Ingredient ${index + 1}`;
+};
+
+const resolveShoppingListGroupKey = (item) => {
+  if (!item) {
+    return null;
+  }
+  const candidates = [item.groupKey, item.group_key, item.id, item.text];
+  for (const candidate of candidates) {
+    const normalized = normalizeIngredientLabel(candidate);
+    if (normalized) {
+      return normalized;
+    }
+  }
+  return null;
+};
+
 const isWaterIngredient = (labels) => {
   if (!Array.isArray(labels) || !labels.length) {
     return false;
@@ -1089,6 +1269,10 @@ const deriveIngredientCoreKey = (ingredient, fallbackText = null) => {
     ingredient?.coreItemName,
     ingredient?.coreName,
     ingredient?.name,
+    ingredient?.product_name,
+    ingredient?.productName,
+    ingredient?.ingredient_line,
+    ingredient?.ingredientLine,
     fallbackText,
   ];
   for (const candidate of candidates) {
@@ -1406,6 +1590,11 @@ function AppContent() {
     visible: false,
     meal: null,
   });
+  const [ingredientDetailModal, setIngredientDetailModal] = useState({
+    visible: false,
+    ingredient: null,
+    usage: [],
+  });
   const [confirmationDialog, setConfirmationDialog] = useState({
     visible: false,
     context: null,
@@ -1479,6 +1668,19 @@ function AppContent() {
     return homeRecommendedMeals.slice(0, HOME_MEAL_DISPLAY_LIMIT);
   }, [homeRecommendedMeals]);
   const displayedMealsCount = displayedMeals.length;
+  const resolveMealIngredients = useCallback((meal) => {
+    if (!meal) {
+      return [];
+    }
+    const finalIngredients = Array.isArray(meal.finalIngredients)
+      ? meal.finalIngredients
+      : Array.isArray(meal.final_ingredients)
+      ? meal.final_ingredients
+      : Array.isArray(meal.ingredients)
+      ? meal.ingredients
+      : [];
+    return finalIngredients.filter(Boolean);
+  }, []);
   const selectedHomeMeals = useMemo(() => {
     if (!displayedMeals.length || !selectedHomeMealIds) {
       return [];
@@ -1801,6 +2003,60 @@ function AppContent() {
       hasAnyPrice,
     };
   }, [getIngredientQuantityValue, getIngredientUnitPriceMinor, shoppingListItems]);
+  const ingredientUsageByGroupKey = useMemo(() => {
+    const usage = {};
+    selectedHomeMeals.forEach((meal) => {
+      if (!meal) {
+        return;
+      }
+      const mealIngredients = resolveMealIngredients(meal);
+      mealIngredients.forEach((ingredient, index) => {
+        if (!ingredient) {
+          return;
+        }
+        const fallbackLabel = buildMealIngredientFallbackLabel(ingredient, index);
+        const key = deriveIngredientCoreKey(ingredient, fallbackLabel);
+        if (!key) {
+          return;
+        }
+        if (!usage[key]) {
+          usage[key] = [];
+        }
+        usage[key].push({
+          mealId: meal.mealId ?? `meal-${index}`,
+          mealName: meal.name ?? null,
+          ingredientLabel: formatMealIngredientDetailText(ingredient, index),
+        });
+      });
+    });
+    return usage;
+  }, [resolveMealIngredients, selectedHomeMeals]);
+
+  const handleOpenIngredientDetailModal = useCallback(
+    (ingredient) => {
+      if (!ingredient) {
+        return;
+      }
+      const normalizedKey = resolveShoppingListGroupKey(ingredient);
+      const usageEntries = normalizedKey
+        ? ingredientUsageByGroupKey[normalizedKey] || []
+        : [];
+      setIngredientDetailModal({
+        visible: true,
+        ingredient,
+        usage: usageEntries,
+      });
+    },
+    [ingredientUsageByGroupKey]
+  );
+
+  const handleCloseIngredientDetailModal = useCallback(() => {
+    setIngredientDetailModal({
+      visible: false,
+      ingredient: null,
+      usage: [],
+    });
+  }, []);
 
   const renderIngredientRow = useCallback(
     (ingredient) => {
@@ -1822,7 +2078,12 @@ function AppContent() {
           ? priceDetails.lineTotalMinor
           : null;
       return (
-        <View key={ingredient.id} style={styles.ingredientsListItem}>
+        <TouchableOpacity
+          key={ingredient.id}
+          style={styles.ingredientsListItem}
+          activeOpacity={0.95}
+          onPress={() => handleOpenIngredientDetailModal(ingredient)}
+        >
           <View style={styles.ingredientsItemHeader}>
             <Text style={styles.ingredientsItemText}>{ingredient.text}</Text>
             {lineTotalMinor != null ? (
@@ -1842,7 +2103,10 @@ function AppContent() {
                 styles.ingredientsQuantityButton,
                 disableDecrease && styles.ingredientsQuantityButtonDisabled,
               ]}
-              onPress={() => handleIngredientQuantityDecrease(ingredient.id)}
+              onPress={(event) => {
+                event?.stopPropagation?.();
+                handleIngredientQuantityDecrease(ingredient.id);
+              }}
               accessibilityRole="button"
               accessibilityLabel={`Decrease quantity for ${ingredient.text}`}
               disabled={disableDecrease}
@@ -1863,14 +2127,17 @@ function AppContent() {
             </View>
             <TouchableOpacity
               style={styles.ingredientsQuantityButton}
-              onPress={() => handleIngredientQuantityIncrease(ingredient.id)}
+              onPress={(event) => {
+                event?.stopPropagation?.();
+                handleIngredientQuantityIncrease(ingredient.id);
+              }}
               accessibilityRole="button"
               accessibilityLabel={`Increase quantity for ${ingredient.text}`}
             >
               <Text style={styles.ingredientsQuantityButtonText}>+</Text>
             </TouchableOpacity>
           </View>
-        </View>
+        </TouchableOpacity>
       );
     },
     [
@@ -1878,6 +2145,7 @@ function AppContent() {
       getIngredientQuantityValue,
       handleIngredientQuantityDecrease,
       handleIngredientQuantityIncrease,
+      handleOpenIngredientDetailModal,
       shoppingListPricing,
     ]
   );
@@ -2528,6 +2796,73 @@ const handlePreferenceSelection = useCallback(
       </View>
     </View>
   ) : null;
+  const ingredientDetailModalPortal = (
+    <Modal
+      visible={Boolean(ingredientDetailModal.visible && ingredientDetailModal.ingredient)}
+      animationType="fade"
+      transparent
+      onRequestClose={handleCloseIngredientDetailModal}
+    >
+      <View style={styles.mealDetailModalContainer} pointerEvents="box-none">
+        <TouchableWithoutFeedback onPress={handleCloseIngredientDetailModal}>
+          <View style={styles.mealDetailBackdrop} />
+        </TouchableWithoutFeedback>
+        <View style={styles.mealDetailCard}>
+          <ScrollView
+            style={styles.mealDetailScroll}
+            contentContainerStyle={styles.mealDetailContent}
+            showsVerticalScrollIndicator={false}
+          >
+            <Text style={styles.mealDetailTitle}>
+              {ingredientDetailModal.ingredient?.text ?? "Ingredient details"}
+            </Text>
+            {ingredientDetailModal.ingredient?.notes ? (
+              <Text style={styles.mealDetailDescription}>
+                {ingredientDetailModal.ingredient.notes}
+              </Text>
+            ) : null}
+            <View style={styles.ingredientUsageHeader}>
+              <Text style={styles.ingredientUsageHeading}>Used in selected meals</Text>
+              <Text style={styles.ingredientUsageSubheading}>
+                {ingredientDetailModal.usage.length > 0
+                  ? `Appears in ${ingredientDetailModal.usage.length} meal${
+                      ingredientDetailModal.usage.length === 1 ? "" : "s"
+                    }`
+                  : "No linked meals"}
+              </Text>
+            </View>
+            <View style={styles.ingredientUsageList}>
+              {ingredientDetailModal.usage.length > 0 ? (
+                ingredientDetailModal.usage.map((entry, idx) => (
+                  <View
+                    key={`ingredient-usage-${entry.mealId ?? idx}-${idx}`}
+                    style={styles.ingredientUsageMealBlock}
+                  >
+                    <Text style={styles.ingredientUsageMealName}>
+                      {entry.mealName ?? `Meal ${idx + 1}`}
+                    </Text>
+                    <Text style={styles.ingredientUsageLine}>{entry.ingredientLabel}</Text>
+                  </View>
+                ))
+              ) : (
+                <Text style={styles.ingredientUsageEmptyText}>
+                  We couldn't map this ingredient to your chosen meals.
+                </Text>
+              )}
+            </View>
+          </ScrollView>
+          <TouchableOpacity
+            style={styles.mealDetailCloseButton}
+            onPress={handleCloseIngredientDetailModal}
+            accessibilityRole="button"
+            accessibilityLabel="Close ingredient details"
+          >
+            <Text style={styles.mealDetailCloseText}>×</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+    </Modal>
+  );
 
   const handleOpenNewMealsConfirm = useCallback(() => {
     showConfirmationDialog("newMeals");
@@ -2575,13 +2910,7 @@ const handlePreferenceSelection = useCallback(
     const mealsPayload = selectedHomeMeals
       .filter((meal) => meal && meal.mealId)
       .map((meal) => {
-        const finalIngredients = Array.isArray(meal.finalIngredients)
-          ? meal.finalIngredients
-          : Array.isArray(meal.final_ingredients)
-          ? meal.final_ingredients
-          : Array.isArray(meal.ingredients)
-          ? meal.ingredients
-          : [];
+        const finalIngredients = resolveMealIngredients(meal);
         const servingsText = deriveServingsTextForPayload(meal);
         return {
           mealId: meal.mealId,
@@ -2592,7 +2921,7 @@ const handlePreferenceSelection = useCallback(
       })
       .filter((meal) => meal.ingredients.length > 0);
     return { meals: mealsPayload };
-  }, [selectedHomeMeals]);
+  }, [resolveMealIngredients, selectedHomeMeals]);
 
   const handleBuildShoppingList = useCallback(async () => {
     const payload = buildShoppingListRequestPayload();
@@ -3712,6 +4041,7 @@ const handlePreferenceSelection = useCallback(
         <View style={styles.loadingContainer}>
           <ActivityIndicator size="large" color="#222" />
         </View>
+        {ingredientDetailModalPortal}
       </SafeAreaView>
     );
   }
@@ -4105,6 +4435,7 @@ const handlePreferenceSelection = useCallback(
         </View>
         {mealMenuOverlay}
         {confirmationDialogPortal}
+        {ingredientDetailModalPortal}
       </SafeAreaView>
     );
   }
@@ -4170,6 +4501,7 @@ const handlePreferenceSelection = useCallback(
         </View>
         {mealMenuOverlay}
         {confirmationDialogPortal}
+        {ingredientDetailModalPortal}
       </SafeAreaView>
     );
   }
@@ -4595,27 +4927,13 @@ const handlePreferenceSelection = useCallback(
                 <View style={styles.mealDetailSection}>
                   <Text style={styles.mealDetailSectionTitle}>Ingredients</Text>
                   {homeMealModal.meal.ingredients.map((ingredient, idx) => {
-                    const parts = [];
-                    if (ingredient.quantity) {
-                      parts.push(String(ingredient.quantity));
-                    }
-                    if (ingredient.name) {
-                      parts.push(ingredient.name);
-                    }
-                    if (ingredient.preparation) {
-                      parts.push(`(${ingredient.preparation})`);
-                    }
-                    const label = parts.length ? parts.join(" ") : `Ingredient ${idx + 1}`;
-                    const product = ingredient.productName
-                      ? ` – ${ingredient.productName}`
-                      : "";
+                    const label = formatMealIngredientDetailText(ingredient, idx);
                     return (
                       <Text
                         key={`detail-ingredient-${idx}`}
                         style={styles.mealDetailSectionItem}
                       >
                         • {label}
-                        {product}
                       </Text>
                     );
                   })}
@@ -5398,6 +5716,46 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     gap: 12,
     ...SHADOW.card,
+  },
+  ingredientUsageHeader: {
+    marginBottom: 12,
+  },
+  ingredientUsageHeading: {
+    fontSize: 17,
+    fontWeight: "700",
+    color: "#0c3c26",
+  },
+  ingredientUsageSubheading: {
+    fontSize: 13,
+    color: "#4d4d4d",
+    marginTop: 4,
+  },
+  ingredientUsageList: {
+    gap: 12,
+  },
+  ingredientUsageMealBlock: {
+    backgroundColor: "#f4f9f5",
+    borderRadius: 16,
+    padding: 14,
+    borderWidth: 1,
+    borderColor: "#e0eee6",
+  },
+  ingredientUsageMealName: {
+    fontSize: 15,
+    fontWeight: "600",
+    color: "#0c3c26",
+    marginBottom: 4,
+  },
+  ingredientUsageLine: {
+    fontSize: 14,
+    color: "#1f4b35",
+    lineHeight: 20,
+  },
+  ingredientUsageEmptyText: {
+    fontSize: 14,
+    color: "#4d4d4d",
+    textAlign: "center",
+    paddingVertical: 8,
   },
   ingredientsItemHeader: {
     flexDirection: "row",
