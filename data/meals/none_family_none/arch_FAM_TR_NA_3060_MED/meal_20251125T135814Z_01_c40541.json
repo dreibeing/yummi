@@ -1,0 +1,285 @@
+{
+  "meal_id": "meal_20251125T135814Z_01_c40541",
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "archetype_name": "Family Turkish & North African Suppers (Medium, 30–60, Intermediate)",
+  "name": "Chermoula Baked Fish with Olive Couscous and Roast Vegetables",
+  "description": "Baked fish in chermoula with a lemon finish, served over olive-studded couscous and a tray of roasted peppers, zucchini, and tomatoes. Medium warmth and family-friendly prep with both oven and stovetop steps.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F.",
+    "Pat dry fish fillets with paper towel.",
+    "Halve cherry tomatoes.",
+    "Slice red onion into wedges.",
+    "Cut bell peppers into strips.",
+    "Cut zucchini into thick half-moons.",
+    "Finely chop parsley and mint.",
+    "Zest then cut the lemon into wedges.",
+    "Bring vegetable stock to a boil in a small pot or kettle."
+  ],
+  "cook_steps": [
+    "On a large baking tray, toss cherry tomatoes, red onion, bell peppers, and zucchini with 1.5 tbsp olive oil, a big pinch salt, black pepper, and chili flakes. Spread in an even layer and roast for 20–25 minutes until tender and lightly charred.",
+    "In a bowl, coat fish fillets with chermoula, 1 tbsp lemon juice (from the lemon), a pinch of salt, and 1 tsp olive oil. Set aside to marinate for 10 minutes while vegetables roast.",
+    "Place couscous in a heatproof bowl with a pinch of salt and 1 tsp olive oil. Pour the hot vegetable stock over, stir once, cover tightly (plate or lid), and let stand 5–8 minutes.",
+    "When vegetables have about 10–12 minutes left, make space on the tray or use a second tray. Arrange marinated fish fillets and bake 10–12 minutes until opaque and flaky.",
+    "Fluff couscous with a fork. Stir in olives, parsley, mint, and lemon zest. Adjust salt and black pepper to taste.",
+    "Serve couscous on plates, top with baked fish, add roasted vegetables on the side, and finish with lemon wedges."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F.",
+    "Pat dry fish fillets with paper towel.",
+    "Halve cherry tomatoes.",
+    "Slice red onion into wedges.",
+    "Cut bell peppers into strips.",
+    "Cut zucchini into thick half-moons.",
+    "Finely chop parsley and mint.",
+    "Zest then cut the lemon into wedges.",
+    "Bring vegetable stock to a boil in a small pot or kettle.",
+    "On a large baking tray, toss cherry tomatoes, red onion, bell peppers, and zucchini with 1.5 tbsp olive oil, a big pinch salt, black pepper, and chili flakes. Spread in an even layer and roast for 20–25 minutes until tender and lightly charred.",
+    "In a bowl, coat fish fillets with chermoula, 1 tbsp lemon juice (from the lemon), a pinch of salt, and 1 tsp olive oil. Set aside to marinate for 10 minutes while vegetables roast.",
+    "Place couscous in a heatproof bowl with a pinch of salt and 1 tsp olive oil. Pour the hot vegetable stock over, stir once, cover tightly (plate or lid), and let stand 5–8 minutes.",
+    "When vegetables have about 10–12 minutes left, make space on the tray or use a second tray. Arrange marinated fish fillets and bake 10–12 minutes until opaque and flaky.",
+    "Fluff couscous with a fork. Stir in olives, parsley, mint, and lemon zest. Adjust salt and black pepper to taste.",
+    "Serve couscous on plates, top with baked fish, add roasted vegetables on the side, and finish with lemon wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "600–800 g",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "chermoula",
+      "quantity": "3 tbsp",
+      "preparation": "for marinating fish"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and cut into wedges"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "300 g",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "sliced into strips"
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "cut into half-moons"
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "2 cups (about 320 g)",
+      "preparation": "dry"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups (480 ml)",
+      "preparation": "brought to a boil"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "pitted and roughly chopped"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tbsp",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 tsp",
+      "preparation": "for roasting vegetables"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "freshly ground"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "NorthAfrican",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "600–800 g",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chermoula",
+      "quantity": "3 tbsp",
+      "preparation": "for marinating fish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "300 g",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "sliced into strips",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "cut into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "2 cups (about 320 g)",
+      "preparation": "dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups (480 ml)",
+      "preparation": "brought to a boil",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "pitted and roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tbsp",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 tsp",
+      "preparation": "for roasting vegetables",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T135850Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T135814Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}
