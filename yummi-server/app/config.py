@@ -50,7 +50,7 @@ class Settings(BaseSettings):
     openai_recommendation_model: str = Field(default="gpt-5-mini")
     openai_recommendation_top_p: float | None = Field(default=None)
     openai_recommendation_reasoning_effort: str = Field(default="low")
-    openai_recommendation_max_output_tokens: int = Field(default=9000)
+    openai_recommendation_max_output_tokens: int = Field(default=3000)
     recommendation_candidate_limit: int = Field(default=20)
     recommendation_meal_count: int = Field(default=20)
     openai_shopping_list_model: str = Field(default="gpt-5-mini")

@@ -73,24 +73,39 @@ async def run_recommendation_workflow(
     meal_target = request.mealCount or settings.recommendation_meal_count
     declined_ids = _merge_declined_ids(request.declinedMealIds, request.reactions)
     reaction_groups = _bucket_reactions_by_sentiment(request.reactions)
+    disliked_meal_ids = set(reaction_groups.get("dislike") or [])
+    exploration_streamed_details: List[CandidateMealDetail] = []
+    if exploration_session:
+        streamed_ids = _extract_streamed_meal_ids(exploration_session)
+        filtered_ids = _filter_streamed_meal_ids(
+            streamed_ids,
+            excluded_ids=declined_ids.union(disliked_meal_ids),
+        )
+        if filtered_ids:
+            exploration_streamed_details = _build_detail_records_from_manifest(
+                manifest=manifest,
+                meal_ids=filtered_ids,
+            )
     filter_request = CandidateFilterRequest(
         mealVersion=request.mealVersion,
         hardConstraints=request.hardConstraints,
         declinedMealIds=list(declined_ids),
         limit=candidate_limit,
     )
-    filter_response, detail_records = generate_candidate_pool_with_details(
+    filter_response, generated_detail_records = generate_candidate_pool_with_details(
         manifest=manifest,
         tag_manifest=tag_manifest,
         profile=profile,
         request=filter_request,
         user_id=user_id,
     )
-    if filter_response.returnedCount == 0 or not detail_records:
+    if (filter_response.returnedCount == 0 or not generated_detail_records) and not exploration_streamed_details:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="No meals available for the selected preferences. Please adjust your constraints.",
         )
+    detail_records = exploration_streamed_details or generated_detail_records
+    using_streamed_candidates = bool(exploration_streamed_details)
 
     blocked_archetypes = _derive_blocked_archetypes(
         reaction_groups.get("dislike") or [],
@@ -108,7 +123,7 @@ async def run_recommendation_workflow(
                 detail="No meals available after removing disliked archetypes. Please adjust your dislikes or try again later.",
             )
 
-    if len(detail_records) > candidate_limit:
+    if not using_streamed_candidates and len(detail_records) > candidate_limit:
         detail_records = random.sample(detail_records, candidate_limit)
 
     profile_payload = serialize_preference_profile(profile, tag_manifest)
@@ -118,7 +133,8 @@ async def run_recommendation_workflow(
         exploration_session=exploration_session,
         declined_ids=declined_ids,
     )
-    candidate_payload = _prepare_candidate_payload(detail_records, candidate_limit)
+    candidate_payload_limit = len(detail_records) if using_streamed_candidates else candidate_limit
+    candidate_payload = _prepare_candidate_payload(detail_records, candidate_payload_limit)
     system_prompt, user_prompt = _build_prompts(
         profile_payload=profile_payload,
         feedback_payload=feedback_payload,
@@ -298,7 +314,7 @@ def _build_prompts(
         2. Infer soft patterns from FEEDBACK_SUMMARY (likedMeals/neutralMeals/dislikedMeals) and USER_PROFILE (selected/disliked tags). Treat likes as strong positives, neutrals as mild/uncertain signals, and dislikes as negative signals to down-rank (not hard bans unless a meal is in declined IDs). Prefer themes seen in likes/selectedTags, gently explore neutrals, de-prioritize dislikedMeals/dislikedTags, and maintain varied cuisines, proteins, heat, and prep times while aligning to inferred preferences.
         3. NutritionFocus (and similar categories) are preferences only; treat "NoNutritionFocus" as neutral. Do not hard-filter on these.
         4. Do not add hard filters beyond the candidate pool. Audience, Diet/Ethics, and Allergens are already satisfied. If the user set no allergen avoidance, treat all candidates as acceptable.
-        5. Respond in JSON: {{"recommendations":["meal_uid_1","meal_uid_2","meal_uid_3"], "notes":["short variety notes describing learned themes and variety rationale"]}}. Only include meal IDs in `recommendations`; the API will hydrate fields.
+        5. Respond in JSON: {{"recommendations":[{{"meal_id":"meal_uid_1"}},{{"meal_id":"meal_uid_2"}},{{"meal_id":"meal_uid_3"}}], "notes":["short variety notes describing learned themes and variety rationale"]}}. Each recommendation entry must only include the `meal_id` field—no names, descriptions, rationales, or other metadata.
         6. Use only provided information. Never hallucinate tags, meals, or SKUs.
         """
     ).strip()
@@ -412,3 +428,54 @@ def _hydrate_recommendation_meal(
         skuSnapshot=[MealSkuSnapshot(**snapshot) for snapshot in extract_sku_snapshot(meal)],
         archetypeId=detail.archetype_uid,
     )
+
+
+def _extract_streamed_meal_ids(
+    exploration_session: MealExplorationSession | None,
+) -> List[str]:
+    if not exploration_session or not exploration_session.exploration_results:
+        return []
+    raw_payload = exploration_session.exploration_results.get("rawResponse") or {}
+    streamed_by_archetype = raw_payload.get("streamedMealIds") or {}
+    ordered: List[str] = []
+    for meal_ids in streamed_by_archetype.values():
+        for meal_id in meal_ids or []:
+            if meal_id is None:
+                continue
+            ordered.append(str(meal_id))
+    return ordered
+
+
+def _filter_streamed_meal_ids(
+    meal_ids: Sequence[str],
+    *,
+    excluded_ids: set[str],
+) -> List[str]:
+    filtered: List[str] = []
+    seen: set[str] = set()
+    for meal_id in meal_ids or []:
+        normalized = str(meal_id)
+        if not normalized or normalized in seen or normalized in excluded_ids:
+            continue
+        filtered.append(normalized)
+        seen.add(normalized)
+    return filtered
+
+
+def _build_detail_records_from_manifest(
+    *,
+    manifest: Dict[str, Any],
+    meal_ids: Sequence[str],
+) -> List[CandidateMealDetail]:
+    details: List[CandidateMealDetail] = []
+    for meal_id in meal_ids:
+        meal, archetype_uid = _find_manifest_meal_with_archetype(manifest, meal_id)
+        if not meal:
+            continue
+        details.append(
+            CandidateMealDetail(
+                archetype_uid=archetype_uid,
+                meal=meal,
+            )
+        )
+    return details
