@@ -24,7 +24,6 @@ import {
   Image,
   View,
   Dimensions,
-  FlatList,
   useWindowDimensions,
 } from "react-native";
 import { SafeAreaProvider, SafeAreaView, useSafeAreaInsets } from "react-native-safe-area-context";
@@ -1729,10 +1728,7 @@ function AppContent() {
   const [explorationSessionId, setExplorationSessionId] = useState(null);
   const [explorationError, setExplorationError] = useState(null);
   const [explorationReactions, setExplorationReactions] = useState({});
-  const [isRecommendationFlowVisible, setIsRecommendationFlowVisible] = useState(false);
-  const [recommendationState, setRecommendationState] = useState("idle");
-  const [recommendationMeals, setRecommendationMeals] = useState([]);
-  const [recommendationError, setRecommendationError] = useState(null);
+  const [isCompletingExploration, setIsCompletingExploration] = useState(false);
   const [homeRecommendedMeals, setHomeRecommendedMeals] = useState([]);
   const [selectedHomeMealIds, setSelectedHomeMealIds] = useState({});
   const [homeMealDislikedIds, setHomeMealDislikedIds] = useState({});
@@ -1754,7 +1750,6 @@ function AppContent() {
   const preferenceEntryContextRef = useRef(null);
   const homeMealsBackupRef = useRef(null);
   const toggleDefaultsInitializedRef = useRef({});
-  const shouldAutoCompleteRecommendationRef = useRef(false);
 
   const applyHomeRecommendedMeals = useCallback((meals) => {
     const nextSource = Array.isArray(meals)
@@ -2320,15 +2315,7 @@ function AppContent() {
     setExplorationSessionId(null);
     setExplorationError(null);
     setExplorationReactions({});
-    setIsRecommendationFlowVisible(false);
-    setRecommendationState("idle");
-    setRecommendationMeals([]);
-    setRecommendationError(null);
     setHasSeenExplorationResults(false);
-    setIsRecommendationFlowVisible(false);
-    setRecommendationState("idle");
-    setRecommendationMeals([]);
-    setRecommendationError(null);
     toggleDefaultsInitializedRef.current = {};
     setShoppingListItems([]);
     setShoppingListStatus("idle");
@@ -2770,10 +2757,6 @@ const handlePreferenceSelection = useCallback(
       setExplorationSessionId(null);
       setExplorationError(null);
       setExplorationReactions({});
-      setIsRecommendationFlowVisible(false);
-      setRecommendationState("idle");
-      setRecommendationMeals([]);
-      setRecommendationError(null);
       applyHomeRecommendedMeals([]);
       preferenceSyncHashRef.current = null;
     },
@@ -3108,10 +3091,6 @@ const handlePreferenceSelection = useCallback(
     }
     setExplorationState("running");
     setExplorationError(null);
-    setIsRecommendationFlowVisible(false);
-    setRecommendationState("idle");
-    setRecommendationMeals([]);
-    setRecommendationError(null);
     setHasSeenExplorationResults(false);
     try {
       const headers = await buildAuthHeaders({
@@ -3149,53 +3128,37 @@ const handlePreferenceSelection = useCallback(
     setExplorationSessionId(null);
     setExplorationReactions({});
     setExplorationState("idle");
-    setIsRecommendationFlowVisible(false);
-    setRecommendationState("idle");
-    setRecommendationMeals([]);
-    setRecommendationError(null);
     setHasSeenExplorationResults(false);
   }, []);
 
   const runRecommendationFeed = useCallback(async () => {
     if (!RECOMMENDATION_API_ENDPOINT || !explorationSessionId) {
-      return;
+      return [];
     }
-    setRecommendationState("running");
-    setRecommendationError(null);
-    setRecommendationMeals([]);
-    try {
-      const headers = await buildAuthHeaders({
-        "Content-Type": "application/json",
-      });
-      const reactionPayload = Object.entries(explorationReactions || {})
-        .filter(([, state]) => state === "like" || state === "dislike")
-        .map(([mealId, reaction]) => ({ mealId, reaction }));
-      const response = await fetch(RECOMMENDATION_API_ENDPOINT, {
-        method: "POST",
-        headers,
-        body: JSON.stringify({
-          explorationSessionId,
-          mealCount: RECOMMENDATION_MEAL_TARGET,
-          reactions: reactionPayload,
-        }),
-      });
-      if (!response.ok) {
-        const errorPayload = await response.json().catch(() => ({}));
-        throw new Error(
-          errorPayload?.detail ??
-            "Unable to generate follow-up recommendations right now."
-        );
-      }
-      const data = await response.json();
-      setRecommendationMeals(data?.meals ?? []);
-      setRecommendationState("ready");
-    } catch (error) {
-      console.warn("Recommendation feed run failed", error);
-      setRecommendationError(
-        error?.message ?? "Something went wrong while building recommendations."
+    const headers = await buildAuthHeaders({
+      "Content-Type": "application/json",
+    });
+    const reactionPayload = Object.entries(explorationReactions || {})
+      .filter(([, state]) => state === "like" || state === "dislike")
+      .map(([mealId, reaction]) => ({ mealId, reaction }));
+    const response = await fetch(RECOMMENDATION_API_ENDPOINT, {
+      method: "POST",
+      headers,
+      body: JSON.stringify({
+        explorationSessionId,
+        mealCount: RECOMMENDATION_MEAL_TARGET,
+        reactions: reactionPayload,
+      }),
+    });
+    if (!response.ok) {
+      const errorPayload = await response.json().catch(() => ({}));
+      throw new Error(
+        errorPayload?.detail ??
+          "Unable to generate follow-up recommendations right now."
       );
-      setRecommendationState("error");
     }
+    const data = await response.json();
+    return Array.isArray(data?.meals) ? data.meals : [];
   }, [
     RECOMMENDATION_API_ENDPOINT,
     buildAuthHeaders,
@@ -3212,10 +3175,6 @@ const handlePreferenceSelection = useCallback(
       applyHomeRecommendedMeals([]);
     }
     setIsOnboardingActive(false);
-    setIsRecommendationFlowVisible(false);
-    setRecommendationState("idle");
-    setRecommendationMeals([]);
-    setRecommendationError(null);
     setExplorationState("idle");
     setExplorationMeals([]);
     setExplorationNotes([]);
@@ -3226,50 +3185,25 @@ const handlePreferenceSelection = useCallback(
     setIsMealMenuOpen(false);
     setScreen("home");
     preferenceEntryContextRef.current = null;
-    shouldAutoCompleteRecommendationRef.current = false;
   }, [applyHomeRecommendedMeals]);
 
-  const handleConfirmExplorationReview = useCallback(() => {
-    setHasSeenExplorationResults(true);
-    if (!RECOMMENDATION_API_ENDPOINT || !explorationSessionId) {
-      shouldAutoCompleteRecommendationRef.current = false;
+  const handleConfirmExplorationReview = useCallback(async () => {
+    if (isCompletingExploration) {
+      return;
+    }
+    setIsCompletingExploration(true);
+    try {
+      const meals = await runRecommendationFeed();
+      handleCompleteOnboardingFlow({
+        seedHomeMeals: meals.length ? meals : undefined,
+      });
+    } catch (error) {
+      console.warn("Failed to build recommendation feed", error);
       handleCompleteOnboardingFlow();
-      return;
+    } finally {
+      setIsCompletingExploration(false);
     }
-    shouldAutoCompleteRecommendationRef.current = true;
-    setIsRecommendationFlowVisible(true);
-    runRecommendationFeed();
-  }, [
-    RECOMMENDATION_API_ENDPOINT,
-    explorationSessionId,
-    handleCompleteOnboardingFlow,
-    runRecommendationFeed,
-  ]);
-
-  const handleRecommendationRetry = useCallback(() => {
-    runRecommendationFeed();
-  }, [runRecommendationFeed]);
-
-  const handleSkipRecommendationFlow = useCallback(() => {
-    handleCompleteOnboardingFlow();
-  }, [handleCompleteOnboardingFlow]);
-
-  useEffect(() => {
-    if (
-      !shouldAutoCompleteRecommendationRef.current ||
-      !isRecommendationFlowVisible ||
-      recommendationState !== "ready"
-    ) {
-      return;
-    }
-    shouldAutoCompleteRecommendationRef.current = false;
-    handleCompleteOnboardingFlow({ seedHomeMeals: recommendationMeals });
-  }, [
-    handleCompleteOnboardingFlow,
-    isRecommendationFlowVisible,
-    recommendationMeals,
-    recommendationState,
-  ]);
+  }, [handleCompleteOnboardingFlow, isCompletingExploration, runRecommendationFeed]);
 
   const handleExplorationReaction = useCallback((mealId, value) => {
     setExplorationReactions((prev) => {
@@ -3380,7 +3314,8 @@ const handlePreferenceSelection = useCallback(
       const reaction = explorationReactions[meal.mealId] ?? "neutral";
       const servingsCount = deriveMealServingsCount(meal);
       const servingsLabel = formatServingsPeopleLabel(servingsCount);
-      const mealKey = meal.mealId ?? `${meal.name ?? "meal"}-${index}`;
+      const mealKeyBase = meal.mealId ?? meal.name ?? "meal";
+      const mealKey = `${mealKeyBase}-${index}`;
       return (
         <View key={mealKey} style={styles.homeMealCard}>
           <Text style={styles.homeMealTitle}>
@@ -4783,13 +4718,8 @@ const handlePreferenceSelection = useCallback(
         <SafeAreaView style={styles.mealHomeSafeArea}>
           <StatusBar style="dark" />
           <View style={styles.explorationMealCardScreen}>
-            <View style={styles.explorationCardHeader}>
-              <Text style={styles.explorationCardTitle}>
-                Help Us Learn
-              </Text>
-            </View>
             <View style={styles.explorationMealTipCard}>
-              <Text style={styles.explorationMealTipTitle}>How it works</Text>
+              <Text style={styles.explorationMealTipTitle}>Help us learn</Text>
               <Text style={styles.explorationMealTipText}>
                 👍 Like: We’ll show similar meals more often.
               </Text>
@@ -4817,10 +4747,18 @@ const handlePreferenceSelection = useCallback(
             </ScrollView>
             <View style={styles.explorationMealCardFooter}>
               <TouchableOpacity
-                style={styles.prefContinueButton}
+                style={[
+                  styles.prefContinueButton,
+                  isCompletingExploration && styles.prefContinueButtonDisabled,
+                ]}
                 onPress={handleConfirmExplorationReview}
+                disabled={isCompletingExploration}
               >
-                <Text style={styles.prefContinueButtonText}>Continue</Text>
+                {isCompletingExploration ? (
+                  <ActivityIndicator color="#ffffff" />
+                ) : (
+                  <Text style={styles.prefContinueButtonText}>Continue</Text>
+                )}
               </TouchableOpacity>
             </View>
           </View>
@@ -4828,90 +4766,6 @@ const handlePreferenceSelection = useCallback(
       );
     }
 
-    return (
-      <SafeAreaView style={styles.preferencesSafeArea}>
-        <StatusBar style="dark" />
-        <FlatList
-          data={explorationMeals}
-          keyExtractor={(item) => item.mealId}
-          renderItem={renderExplorationMeal}
-          ListHeaderComponent={
-            <View style={styles.explorationHeader}>
-              <Text style={styles.prefCategoryTitle}>
-                Tap like or dislike on each meal
-              </Text>
-              <Text style={styles.prefCategorySubtitle}>
-                We’ll use your reactions plus the onboarding tags to refine future runs.
-              </Text>
-            </View>
-          }
-          ListFooterComponent={
-            <View style={styles.explorationFooter}>
-              <TouchableOpacity
-                style={styles.prefContinueButton}
-                onPress={handleConfirmExplorationReview}
-              >
-                <Text style={styles.prefContinueButtonText}>Continue</Text>
-              </TouchableOpacity>
-            </View>
-          }
-          contentContainerStyle={styles.explorationList}
-          showsVerticalScrollIndicator={false}
-        />
-      </SafeAreaView>
-    );
-  }
-
-  if (
-    isOnboardingActive &&
-    isRecommendationFlowVisible &&
-    recommendationState !== "error"
-  ) {
-    return (
-      <SafeAreaView style={styles.preferencesSafeArea}>
-        <StatusBar style="dark" />
-        <View style={styles.explorationWrapper}>
-          <ActivityIndicator size="large" color="#00a651" />
-          <Text style={styles.explorationProcessingTitle}>
-            Building your recommended meals…
-          </Text>
-          <Text style={styles.explorationProcessingSubtitle}>
-            We’re combining your likes, dislikes, and saved tags to craft the first home feed.
-          </Text>
-        </View>
-      </SafeAreaView>
-    );
-  }
-
-  if (
-    isOnboardingActive &&
-    isRecommendationFlowVisible &&
-    recommendationState === "error"
-  ) {
-    return (
-      <SafeAreaView style={styles.preferencesSafeArea}>
-        <StatusBar style="dark" />
-        <View style={styles.explorationWrapper}>
-          <Text style={styles.prefCategoryTitle}>Unable to build recommendations</Text>
-          <Text style={styles.prefCategorySubtitle}>
-            {recommendationError ??
-              "Something went wrong while creating your feed. Please try again."}
-          </Text>
-          <TouchableOpacity
-            style={[styles.prefContinueButton, { marginTop: 24 }]}
-            onPress={handleRecommendationRetry}
-          >
-            <Text style={styles.prefContinueButtonText}>Try again</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            style={styles.prefRedoButton}
-            onPress={handleSkipRecommendationFlow}
-          >
-            <Text style={styles.prefRedoButtonText}>Skip for now</Text>
-          </TouchableOpacity>
-        </View>
-      </SafeAreaView>
-    );
   }
 
   if (
@@ -6629,6 +6483,9 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     width: "100%",
     ...SHADOW.button,
+  },
+  prefContinueButtonDisabled: {
+    opacity: 0.7,
   },
   prefContinueButtonText: {
     fontSize: 16,
