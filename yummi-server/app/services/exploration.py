@@ -2,9 +2,12 @@ from __future__ import annotations
 
 import json
 import logging
+import asyncio
+from collections import deque, defaultdict
 from datetime import datetime, timezone
+from time import perf_counter
 from textwrap import dedent
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Callable
 import uuid
 import random
 
@@ -20,6 +23,7 @@ from ..schemas import (
     ExplorationRunResponse,
     IngredientSummary,
     MealSkuSnapshot,
+    MAX_CANDIDATE_POOL_LIMIT,
 )
 from .filtering import CandidateMealDetail, generate_candidate_pool_with_details
 from .meals import get_meal_manifest
@@ -53,13 +57,26 @@ async def run_exploration_workflow(
 
     candidate_limit = request.candidateLimit or settings.exploration_candidate_limit
     meal_target = request.mealCount or settings.exploration_meal_count
-    filter_request = CandidateFilterRequest(limit=candidate_limit)
+    logger.info(
+        "Exploration run starting user=%s model=%s candidate_limit=%s meal_target=%s",
+        user_id,
+        settings.openai_exploration_model,
+        candidate_limit,
+        meal_target,
+    )
+    filter_request = CandidateFilterRequest(limit=MAX_CANDIDATE_POOL_LIMIT)
     filter_response, detail_records = generate_candidate_pool_with_details(
         manifest=manifest,
         tag_manifest=tag_manifest,
         profile=profile,
         request=filter_request,
         user_id=user_id,
+    )
+    logger.info(
+        "Exploration candidate pool built user=%s total_candidates=%s returned=%s",
+        user_id,
+        filter_response.totalCandidates,
+        filter_response.returnedCount,
     )
     if filter_response.returnedCount == 0 or not detail_records:
         raise HTTPException(
@@ -68,21 +85,59 @@ async def run_exploration_workflow(
         )
 
     profile_payload = serialize_preference_profile(profile, tag_manifest)
-    llm_candidates = _prepare_llm_candidates(detail_records, candidate_limit)
+    archetype_batches = _build_archetype_batches(detail_records, candidate_limit)
+    if not archetype_batches:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="No eligible archetype meal batches were found for exploration.",
+        )
 
-    system_prompt, user_prompt = _build_prompts(profile_payload, llm_candidates, meal_target)
-    llm_text = call_openai_responses(
-        model=settings.openai_exploration_model,
-        system_prompt=system_prompt,
-        user_prompt=user_prompt,
-        max_output_tokens=settings.openai_exploration_max_output_tokens,
-        top_p=settings.openai_exploration_top_p,
-        reasoning_effort=settings.openai_exploration_reasoning_effort,
+    streamed_meal_ids: Dict[str, List[str]] = defaultdict(list)
+
+    def handle_streamed_meal(archetype_uid: str, meal_id: str) -> None:
+        if not archetype_uid or not meal_id:
+            return
+        streamed_meal_ids[archetype_uid].append(meal_id)
+        logger.info(
+            "Exploration stream update user=%s archetype=%s meal_id=%s",
+            user_id,
+            archetype_uid,
+            meal_id,
+        )
+
+    archetype_payloads = await _score_archetype_batches(
+        user_id=user_id,
+        profile_payload=profile_payload,
+        archetype_batches=archetype_batches,
+        settings=settings,
+        on_stream_meal=handle_streamed_meal,
     )
-    parsed = _parse_llm_payload(llm_text)
-    exploration_meals = _materialize_meals(parsed.get("explorationSet") or [], detail_records, meal_target)
+
+    archetype_meal_map: Dict[str, List[ExplorationMeal]] = {}
+    raw_payload: Dict[str, Any] = {
+        "archetypeResponses": {},
+        "streamedMealIds": {uid: meals for uid, meals in streamed_meal_ids.items()},
+    }
+    for archetype_uid, parsed_payload, batch_details in archetype_payloads:
+        raw_payload["archetypeResponses"][archetype_uid] = parsed_payload
+        selections = parsed_payload.get("explorationSet") or []
+        meals = _materialize_meals(selections, batch_details, None)
+        if meals:
+            archetype_meal_map[archetype_uid] = meals
+
+    exploration_meals = _balance_archetype_meals(archetype_meal_map, meal_target)
+    if not exploration_meals:
+        raise HTTPException(
+            status_code=status.HTTP_502_BAD_GATEWAY,
+            detail="Exploration model returned no meals.",
+        )
+    if len(exploration_meals) < meal_target:
+        logger.warning(
+            "Exploration run returned %s meals (target %s)",
+            len(exploration_meals),
+            meal_target,
+        )
     random.shuffle(exploration_meals)
-    information_notes = parsed.get("information_gain_notes") or parsed.get("informationGainNotes") or []
 
     record = await _persist_session(
         user_id=user_id,
@@ -93,15 +148,15 @@ async def run_exploration_workflow(
             "returnedCandidates": filter_response.returnedCount,
         },
         meals=exploration_meals,
-        raw_payload=parsed,
-        notes=information_notes,
+        raw_payload=raw_payload,
+        notes=[],
     )
 
     return ExplorationRunResponse(
         sessionId=str(record.id),
         status=record.status,
         meals=exploration_meals,
-        infoNotes=information_notes,
+        infoNotes=[],
     )
 
 
@@ -113,12 +168,11 @@ async def fetch_exploration_session(user_id: str, session_id: uuid.UUID) -> Expl
 
     meals_payload = (record.exploration_results or {}).get("meals") or []
     meals = [ExplorationMeal(**meal) for meal in meals_payload]
-    info_notes = (record.exploration_results or {}).get("informationGainNotes") or []
     return ExplorationRunResponse(
         sessionId=str(record.id),
         status=record.status,
         meals=meals,
-        infoNotes=info_notes,
+        infoNotes=[],
     )
 
 
@@ -144,7 +198,6 @@ async def _persist_session(
         },
         exploration_results={
             "meals": [meal.model_dump() for meal in meals],
-            "informationGainNotes": notes,
             "rawResponse": raw_payload,
         },
         completed_at=datetime.now(timezone.utc),
@@ -173,16 +226,145 @@ def _prepare_llm_candidates(
     return payload
 
 
+def _build_archetype_batches(
+    details: List[CandidateMealDetail],
+    per_archetype_limit: int,
+) -> List[tuple[str, List[CandidateMealDetail]]]:
+    if per_archetype_limit <= 0:
+        return []
+    buckets: Dict[str, List[CandidateMealDetail]] = {}
+    for detail in details:
+        archetype_uid = detail.archetype_uid or "unassigned"
+        buckets.setdefault(archetype_uid, []).append(detail)
+    batches: List[tuple[str, List[CandidateMealDetail]]] = []
+    for archetype_uid, records in buckets.items():
+        if not records:
+            continue
+        random.shuffle(records)
+        take = min(len(records), per_archetype_limit)
+        batches.append((archetype_uid, records[:take]))
+    return batches
+
+
+async def _score_archetype_batches(
+    *,
+    user_id: str,
+    profile_payload: Dict[str, Any],
+    archetype_batches: List[tuple[str, List[CandidateMealDetail]]],
+    settings,
+    on_stream_meal: Callable[[str, str], None] | None = None,
+) -> List[tuple[str, Dict[str, Any], List[CandidateMealDetail]]]:
+    tasks = [
+        _score_single_archetype_batch(
+            user_id=user_id,
+            profile_payload=profile_payload,
+            archetype_uid=archetype_uid,
+            batch_details=batch_details,
+            settings=settings,
+            on_stream_meal=on_stream_meal,
+        )
+        for archetype_uid, batch_details in archetype_batches
+    ]
+    return await asyncio.gather(*tasks)
+
+
+async def _score_single_archetype_batch(
+    *,
+    user_id: str,
+    profile_payload: Dict[str, Any],
+    archetype_uid: str,
+    batch_details: List[CandidateMealDetail],
+    settings,
+    on_stream_meal: Callable[[str, str], None] | None,
+) -> tuple[str, Dict[str, Any], List[CandidateMealDetail]]:
+    stream_accumulator = _StreamingMealAccumulator(archetype_uid, on_stream_meal)
+    candidates = _prepare_llm_candidates(batch_details, len(batch_details))
+    system_prompt, user_prompt = _build_prompts(profile_payload, candidates, None)
+    llm_start = perf_counter()
+    llm_text = await asyncio.to_thread(
+        call_openai_responses,
+        model=settings.openai_exploration_model,
+        system_prompt=system_prompt,
+        user_prompt=user_prompt,
+        max_output_tokens=settings.openai_exploration_max_output_tokens,
+        top_p=settings.openai_exploration_top_p,
+        reasoning_effort=settings.openai_exploration_reasoning_effort,
+        stream=True,
+        on_stream_delta=stream_accumulator.handle_delta,
+    )
+    duration = perf_counter() - llm_start
+    logger.info(
+        "Exploration archetype run finished user=%s archetype=%s duration=%.2fs candidates=%s",
+        user_id,
+        archetype_uid,
+        duration,
+        len(batch_details),
+    )
+    final_text = llm_text or stream_accumulator.buffer
+    parsed = _parse_llm_payload(final_text)
+    return archetype_uid, parsed, batch_details
+
+
+def _balance_archetype_meals(
+    archetype_meals: Dict[str, List[ExplorationMeal]],
+    desired_total: int,
+) -> List[ExplorationMeal]:
+    queues: Dict[str, deque[ExplorationMeal]] = {
+        uid: deque(meals) for uid, meals in archetype_meals.items() if meals
+    }
+    if not queues:
+        return []
+    order = list(queues.keys())
+    random.shuffle(order)
+    selections: List[ExplorationMeal] = []
+    while order and len(selections) < desired_total:
+        next_round: List[str] = []
+        for uid in order:
+            queue = queues.get(uid)
+            if not queue:
+                continue
+            selections.append(queue.popleft())
+            if queue:
+                next_round.append(uid)
+            if len(selections) >= desired_total:
+                break
+        order = next_round
+    return selections
+
+
 def _build_prompts(
     profile_payload: Dict[str, Any],
     candidates: List[Dict[str, Any]],
-    meal_target: int,
+    meal_target: int | None,
 ) -> tuple[str, str]:
     system_prompt = (
         "You are Yummi's exploration planner. Select meals from the provided candidate list. "
         "All hard constraints have already been applied (Audience, Diet/Ethics, Avoidances/Allergens). "
         "Treat all remaining categories as preferences, not hard filters. Recommend a full set the user will likely enjoy while keeping reasonable diversity so we can learn from like/dislike feedback. "
         "Always respect the contract and return valid JSON."
+    )
+    requirement_lines: List[str] = []
+    if meal_target is not None:
+        requirement_lines.append(
+            f"Choose exactly {meal_target} meals when the candidate list has at least {meal_target} entries; only return fewer if the candidate pool itself is smaller. Never invent meal IDs."
+        )
+    else:
+        requirement_lines.append(
+            "Review the provided meals and return the subset that best matches the USER_PROFILE. You may return any number of meals from 1 up to the provided candidates. Never invent meal IDs."
+        )
+    requirement_lines.extend(
+        [
+            "Primary objective: maximize expected enjoyment using preferences as soft signals. Secondary objective: maintain reasonable diversity so reactions provide useful learning.",
+            "Treat USER_PROFILE thumbs (\"selectedTags\" vs. \"dislikedTags\") as \"preferred\"/\"less preferred\" hints—use them for gentle biasing, not strict inclusion/exclusion.",
+            "NutritionFocus (and similar categories) are preferences only; treat \"NoNutritionFocus\" as neutral. Do not hard-filter on these.",
+            "Do not apply additional hard filtering for Audience, Diet/Ethics, or Allergens—candidates already satisfy these. If the user selected no allergen avoidance, treat all candidates as acceptable.",
+            "Ensure diversity across cuisine, proteins, heat levels, prep time, complexity, and equipment.",
+            "Respond in JSON: {\"explorationSet\":[{\"meal_id\": \"...\"}]}",
+            "Never invent meals, tags, or SKUs. Use only provided data.",
+        ]
+    )
+    enumerated_requirements = "\n".join(
+        f"{index}. {line}" for index, line in enumerate(requirement_lines, start=1)
     )
     instructions = dedent(
         f"""
@@ -193,31 +375,61 @@ def _build_prompts(
         {format_json(candidates)}
 
         Requirements:
-        1. Choose exactly {meal_target} meals when the candidate list has at least {meal_target} entries; only return fewer if the candidate pool itself is smaller. Never invent meal IDs.
-        2. Primary objective: maximize expected enjoyment using preferences as soft signals. Secondary objective: maintain reasonable diversity so reactions provide useful learning.
-        3. Treat USER_PROFILE thumbs ("selectedTags" vs. "dislikedTags") as "preferred"/"less preferred" hints—use them for gentle biasing, not strict inclusion/exclusion.
-        4. NutritionFocus (and similar categories) are preferences only; treat "NoNutritionFocus" as neutral. Do not hard-filter on these.
-        5. Do not apply additional hard filtering for Audience, Diet/Ethics, or Allergens—candidates already satisfy these. If the user selected no allergen avoidance, treat all candidates as acceptable.
-        6. Ensure diversity across cuisine, proteins, heat levels, prep time, complexity, and equipment. Favor "expected_reaction":"likely_like"; include at most 3 boundary picks marked "expected_reaction":"uncertain" only if needed to cover unexplored areas without sacrificing overall expected enjoyment.
-        7. Respond in JSON: {{"explorationSet":[{{"meal_id": "...", "reason_to_show": "...", "expected_reaction": "likely_like|uncertain", "diversity_axes":["Cuisine:Thai","Protein:Seafood"]}}], "information_gain_notes":["short hypotheses about preference patterns and what boundary picks test"]}}
-        8. Never invent meals, tags, or SKUs. Use only provided data.
+        {enumerated_requirements}
         """
     ).strip()
     return system_prompt, instructions
 
 
+class _StreamingMealAccumulator:
+    def __init__(
+        self,
+        archetype_uid: str,
+        callback: Callable[[str, str], None] | None,
+    ) -> None:
+        self.archetype_uid = archetype_uid
+        self.callback = callback
+        self.buffer: str = ""
+        self._emitted: set[str] = set()
+
+    def handle_delta(self, delta: str | None) -> None:
+        if not delta:
+            return
+        self.buffer += delta
+        self._try_emit_ids()
+
+    def _try_emit_ids(self) -> None:
+        if not self.callback:
+            return
+        try:
+            payload = json.loads(self.buffer)
+        except json.JSONDecodeError:
+            return
+        selections = payload.get("explorationSet") or []
+        for selection in selections:
+            meal_id = selection.get("meal_id")
+            if not meal_id or meal_id in self._emitted:
+                continue
+            self._emitted.add(meal_id)
+            self.callback(self.archetype_uid, meal_id)
+
+
 def _parse_llm_payload(raw_text: str) -> Dict[str, Any]:
     try:
-        return json.loads(raw_text)
+        parsed = json.loads(raw_text)
+        if not isinstance(parsed, dict):
+            logger.warning("Exploration model returned non-object payload; ignoring.")
+            return {"explorationSet": []}
+        return parsed
     except json.JSONDecodeError as exc:
-        logger.error("Exploration model returned invalid JSON: %s", exc)
-        raise HTTPException(status_code=status.HTTP_502_BAD_GATEWAY, detail="Exploration model returned invalid JSON")
+        logger.warning("Exploration model returned invalid JSON (treating as empty): %s", exc)
+        return {"explorationSet": []}
 
 
 def _materialize_meals(
     selections: List[Dict[str, Any]],
     detail_records: List[CandidateMealDetail],
-    meal_target: int,
+    meal_target: int | None,
 ) -> List[ExplorationMeal]:
     lookup = {detail.meal.get("meal_id"): detail for detail in detail_records}
     meals: List[ExplorationMeal] = []
@@ -227,18 +439,13 @@ def _materialize_meals(
         detail = lookup.get(meal_id)
         if not detail:
             continue
-        hydrated = _hydrate_exploration_meal(
-            detail,
-            rationale=selection.get("reason_to_show"),
-            expected=selection.get("expected_reaction"),
-            diversity_axes=selection.get("diversity_axes") or [],
-        )
+        hydrated = _hydrate_exploration_meal(detail)
         meals.append(hydrated)
         seen_ids.add(hydrated.mealId)
-        if len(meals) >= meal_target:
+        if meal_target is not None and len(meals) >= meal_target:
             break
 
-    if len(meals) < meal_target:
+    if meal_target is not None and len(meals) < meal_target:
         logger.warning(
             "Exploration model returned %s selections (target %s); auto-filling remainder",
             len(meals),
@@ -248,12 +455,7 @@ def _materialize_meals(
             meal_id = str(detail.meal.get("meal_id"))
             if not meal_id or meal_id in seen_ids:
                 continue
-            hydrated = _hydrate_exploration_meal(
-                detail,
-                rationale="Auto-selected to complete lineup",
-                expected="likely_like",
-                diversity_axes=[],
-            )
+            hydrated = _hydrate_exploration_meal(detail)
             meals.append(hydrated)
             seen_ids.add(hydrated.mealId)
             if len(meals) >= meal_target:
@@ -264,9 +466,9 @@ def _materialize_meals(
 
 def _hydrate_exploration_meal(
     detail: CandidateMealDetail,
-    rationale: str | None,
-    expected: str | None,
-    diversity_axes: List[str],
+    rationale: str | None = None,
+    expected: str | None = None,
+    diversity_axes: List[str] | None = None,
 ) -> ExplorationMeal:
     meal = detail.meal
     prep_steps = _coerce_step_list(meal.get("prep_steps"))
@@ -292,7 +494,7 @@ def _hydrate_exploration_meal(
         ingredients=_format_final_ingredients(final_ingredients),
         rationale=rationale,
         expectedReaction=expected,
-        diversityAxes=diversity_axes,
+        diversityAxes=diversity_axes or [],
         skuSnapshot=[
             MealSkuSnapshot(**snapshot) for snapshot in extract_sku_snapshot(meal)
         ],
