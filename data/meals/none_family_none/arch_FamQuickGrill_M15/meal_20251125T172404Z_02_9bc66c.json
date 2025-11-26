@@ -1,0 +1,249 @@
+{
+  "meal_id": "meal_20251125T172404Z_02_9bc66c",
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "archetype_name": "Family Quick Grill & Salad Nights (Mild, 15–30)",
+  "name": "Herb-Grilled Sirloin with Tomato-Cucumber-Feta Salad and Grilled Baguette",
+  "description": "Fast braai-seared sirloin with a bright Greek-style salad and crunchy grilled bread. Mild, family-friendly flavors done in under 30 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat OutdoorGrill to high heat; clean and oil the grates.",
+    "Pat dry sirloin steak with paper towel.",
+    "Halve the lemon and set one half for squeezing; cut the other half into wedges for serving.",
+    "Dice tomatoes, chop cucumber, thinly slice red onion, and pit/slice olives if needed.",
+    "Crumble feta cheese.",
+    "Slice baguette on the bias into 8–12 slices.",
+    "Peel the garlic clove and lightly crush.",
+    "In a bowl, combine tomatoes, cucumber, red onion, and olives."
+  ],
+  "cook_steps": [
+    "Season steak: rub with 1 tbsp olive oil, 1 tsp oregano, 1 tsp salt, and 1/2 tsp black pepper.",
+    "Dress the salad: add 2 tbsp olive oil, a big squeeze of lemon, 1/4 tsp salt, and a pinch of black pepper; toss. Top with crumbled feta and set aside.",
+    "Brush baguette slices lightly with 1 tbsp olive oil.",
+    "Grill steak over direct high heat for 3–5 minutes per side (to desired doneness). Transfer to a board and rest 5 minutes.",
+    "Grill baguette 30–60 seconds per side until lightly charred; while warm, rub one side of each slice with the crushed garlic.",
+    "Slice the rested steak across the grain.",
+    "Serve sliced steak with the tomato-cucumber-feta salad, grilled baguette, and lemon wedges."
+  ],
+  "instructions": [
+    "Preheat OutdoorGrill to high heat; clean and oil the grates.",
+    "Pat dry sirloin steak with paper towel.",
+    "Halve the lemon and set one half for squeezing; cut the other half into wedges for serving.",
+    "Dice tomatoes, chop cucumber, thinly slice red onion, and pit/slice olives if needed.",
+    "Crumble feta cheese.",
+    "Slice baguette on the bias into 8–12 slices.",
+    "Peel the garlic clove and lightly crush.",
+    "In a bowl, combine tomatoes, cucumber, red onion, and olives.",
+    "Season steak: rub with 1 tbsp olive oil, 1 tsp oregano, 1 tsp salt, and 1/2 tsp black pepper.",
+    "Dress the salad: add 2 tbsp olive oil, a big squeeze of lemon, 1/4 tsp salt, and a pinch of black pepper; toss. Top with crumbled feta and set aside.",
+    "Brush baguette slices lightly with 1 tbsp olive oil.",
+    "Grill steak over direct high heat for 3–5 minutes per side (to desired doneness). Transfer to a board and rest 5 minutes.",
+    "Grill baguette 30–60 seconds per side until lightly charred; while warm, rub one side of each slice with the crushed garlic.",
+    "Slice the rested steak across the grain.",
+    "Serve sliced steak with the tomato-cucumber-feta salad, grilled baguette, and lemon wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "sirloin steak",
+      "quantity": "750–900 g",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tbsp total",
+      "preparation": "divided for steak, salad, and bread"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 1/4 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "3/4 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "halved, wedges for serving"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "4 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "pitted and sliced"
+    },
+    {
+      "core_item_name": "feta cheese",
+      "quantity": "100 g",
+      "preparation": "crumbled"
+    },
+    {
+      "core_item_name": "baguette",
+      "quantity": "1 small",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "1 clove",
+      "preparation": "peeled and lightly crushed"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "sirloin steak",
+      "quantity": "750–900 g",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tbsp total",
+      "preparation": "divided for steak, salad, and bread",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 1/4 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "3/4 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "halved, wedges for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "4 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "pitted and sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "feta cheese",
+      "quantity": "100 g",
+      "preparation": "crumbled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "baguette",
+      "quantity": "1 small",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "1 clove",
+      "preparation": "peeled and lightly crushed",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T172647Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T172404Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

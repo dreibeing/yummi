@@ -1,0 +1,257 @@
+{
+  "meal_id": "meal_20251125T164026Z_02_f8589e",
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "archetype_name": "Family Low-Sodium American & French Comfort (30–60, Mild)",
+  "name": "Herb-Seared Tuna with Oven Ratatouille and Creamy Polenta",
+  "description": "Seared tuna steaks with a lemon-herb finish, served alongside a low-sodium oven-roasted zucchini–tomato ratatouille and creamy buttered polenta. Family-friendly, mild, and from-scratch in under an hour.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 425°F (220°C).",
+    "Cut zucchini into 1/2-inch half-moons.",
+    "Slice bell peppers into strips and onion into wedges.",
+    "Cut tomatoes into large chunks.",
+    "Mince garlic.",
+    "Finely chop parsley and zest the lemon; cut lemon into wedges.",
+    "Pat tuna steak dry and season both sides with black pepper.",
+    "Measure polenta and water."
+  ],
+  "cook_steps": [
+    "Roast vegetables: On a large sheet pan, toss zucchini, bell peppers, onion, tomatoes, and half the garlic with 2 tbsp olive oil, 1 tsp thyme, and black pepper. Spread in a single layer and roast 20–25 minutes until tender and lightly browned, stirring once halfway.",
+    "Cook polenta: In a medium pot, bring 6 cups water to a boil. Whisk in polenta in a steady stream to avoid lumps. Reduce heat to low and simmer 20–25 minutes, stirring often, until thick and creamy. Stir in butter and a pinch of black pepper; keep warm covered.",
+    "Sear tuna: Heat 1 tbsp olive oil in a large skillet over medium-high. Sear tuna steak 2–3 minutes per side for medium-rare (cook longer if preferred). Remove from heat.",
+    "Finish tuna: Sprinkle lemon zest and remaining garlic over the hot tuna in the pan; squeeze over some lemon juice.",
+    "Plate: Spoon polenta onto plates. Add roasted vegetables. Slice tuna if desired and place on top. Garnish with parsley and serve with extra lemon wedges."
+  ],
+  "instructions": [
+    "Preheat oven to 425°F (220°C).",
+    "Cut zucchini into 1/2-inch half-moons.",
+    "Slice bell peppers into strips and onion into wedges.",
+    "Cut tomatoes into large chunks.",
+    "Mince garlic.",
+    "Finely chop parsley and zest the lemon; cut lemon into wedges.",
+    "Pat tuna steak dry and season both sides with black pepper.",
+    "Measure polenta and water.",
+    "Roast vegetables: On a large sheet pan, toss zucchini, bell peppers, onion, tomatoes, and half the garlic with 2 tbsp olive oil, 1 tsp thyme, and black pepper. Spread in a single layer and roast 20–25 minutes until tender and lightly browned, stirring once halfway.",
+    "Cook polenta: In a medium pot, bring 6 cups water to a boil. Whisk in polenta in a steady stream to avoid lumps. Reduce heat to low and simmer 20–25 minutes, stirring often, until thick and creamy. Stir in butter and a pinch of black pepper; keep warm covered.",
+    "Sear tuna: Heat 1 tbsp olive oil in a large skillet over medium-high. Sear tuna steak 2–3 minutes per side for medium-rare (cook longer if preferred). Remove from heat.",
+    "Finish tuna: Sprinkle lemon zest and remaining garlic over the hot tuna in the pan; squeeze over some lemon juice.",
+    "Plate: Spoon polenta onto plates. Add roasted vegetables. Slice tuna if desired and place on top. Garnish with parsley and serve with extra lemon wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "tuna steak",
+      "quantity": "4 small steaks (about 1.5 lb total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "cut into half-moons"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "4 medium",
+      "preparation": "cut into chunks"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 tsp",
+      "preparation": "dried or fresh, chopped"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and cut into wedges"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null
+    },
+    {
+      "core_item_name": "polenta",
+      "quantity": "1 1/2 cups",
+      "preparation": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "6 cups",
+      "preparation": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": null
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "French"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowSodium"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "tuna steak",
+      "quantity": "4 small steaks (about 1.5 lb total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "cut into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "4 medium",
+      "preparation": "cut into chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 tsp",
+      "preparation": "dried or fresh, chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "polenta",
+      "quantity": "1 1/2 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "6 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T164211Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T164026Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,339 @@
+{
+  "meal_id": "meal_20251125T165650Z_01_618e35",
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "archetype_name": "Family Turkish & North African Suppers (Medium, 30–60, Intermediate)",
+  "name": "Harissa Eggplant & Chickpea Stew with Preserved Lemon Saffron Rice",
+  "description": "Roasted eggplant and chickpeas simmered in a harissa-tomato sauce, served over fragrant saffron basmati rice finished with preserved lemon and parsley. Medium warmth with Turkish and North African spices.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C (430°F).",
+    "Rinse 1 1/2 cups basmati rice in cold water until clear; drain well.",
+    "Warm 2 tablespoons water and crumble a pinch of saffron into it; set aside.",
+    "Cut 2 eggplant into 2–3 cm cubes.",
+    "Slice 1 large onion thinly; mince 3 cloves garlic.",
+    "Roughly chop 2 tablespoons preserved lemon peel (rinse if very salty).",
+    "Halve 1 cup cherry tomatoes.",
+    "Rinse and drain 2 cups chickpeas if using canned.",
+    "Chop 1/4 cup parsley."
+  ],
+  "cook_steps": [
+    "On a baking tray, toss eggplant and cherry tomatoes with 2 tablespoons olive oil, 1/2 teaspoon salt, 1/2 teaspoon black pepper, and 1 teaspoon paprika. Roast 20–25 minutes until browned and soft.",
+    "In a pot, heat 1 tablespoon olive oil over medium. Add onion and cook 5–7 minutes until soft. Add garlic and cook 30 seconds.",
+    "Stir in 1 tablespoon harissa paste, 1 teaspoon cumin, and 1 teaspoon coriander; cook 30 seconds.",
+    "Add 1 1/2 cups crushed tomatoes and 1 tablespoon tomato paste with 1/2 cup water. Simmer 5 minutes.",
+    "Stir in chickpeas. Simmer 8–10 minutes to thicken. Adjust heat with extra harissa paste if needed; season with salt and black pepper to taste.",
+    "While sauce simmers, in a separate saucepan add rinsed basmati rice, 2 1/4 cups water, 1/2 teaspoon salt, and the saffron water. Bring to a boil, then reduce to low, cover, and cook 12 minutes. Rest off heat 5 minutes.",
+    "Fold roasted eggplant and tomatoes into the chickpea sauce. Simmer 2 minutes. Sprinkle in 1/2 teaspoon sumac (optional) and adjust seasoning.",
+    "Fluff rice with a fork and gently fold in the chopped preserved lemon and half the parsley.",
+    "Serve saffron rice in bowls, top with the harissa eggplant-chickpea stew, and finish with remaining parsley."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C (430°F).",
+    "Rinse 1 1/2 cups basmati rice in cold water until clear; drain well.",
+    "Warm 2 tablespoons water and crumble a pinch of saffron into it; set aside.",
+    "Cut 2 eggplant into 2–3 cm cubes.",
+    "Slice 1 large onion thinly; mince 3 cloves garlic.",
+    "Roughly chop 2 tablespoons preserved lemon peel (rinse if very salty).",
+    "Halve 1 cup cherry tomatoes.",
+    "Rinse and drain 2 cups chickpeas if using canned.",
+    "Chop 1/4 cup parsley.",
+    "On a baking tray, toss eggplant and cherry tomatoes with 2 tablespoons olive oil, 1/2 teaspoon salt, 1/2 teaspoon black pepper, and 1 teaspoon paprika. Roast 20–25 minutes until browned and soft.",
+    "In a pot, heat 1 tablespoon olive oil over medium. Add onion and cook 5–7 minutes until soft. Add garlic and cook 30 seconds.",
+    "Stir in 1 tablespoon harissa paste, 1 teaspoon cumin, and 1 teaspoon coriander; cook 30 seconds.",
+    "Add 1 1/2 cups crushed tomatoes and 1 tablespoon tomato paste with 1/2 cup water. Simmer 5 minutes.",
+    "Stir in chickpeas. Simmer 8–10 minutes to thicken. Adjust heat with extra harissa paste if needed; season with salt and black pepper to taste.",
+    "While sauce simmers, in a separate saucepan add rinsed basmati rice, 2 1/4 cups water, 1/2 teaspoon salt, and the saffron water. Bring to a boil, then reduce to low, cover, and cook 12 minutes. Rest off heat 5 minutes.",
+    "Fold roasted eggplant and tomatoes into the chickpea sauce. Simmer 2 minutes. Sprinkle in 1/2 teaspoon sumac (optional) and adjust seasoning.",
+    "Fluff rice with a fork and gently fold in the chopped preserved lemon and half the parsley.",
+    "Serve saffron rice in bowls, top with the harissa eggplant-chickpea stew, and finish with remaining parsley."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "eggplant",
+      "quantity": "2 medium",
+      "preparation": "cut into 2–3 cm cubes"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 1/2 teaspoons, divided",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon, divided",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "harissa paste",
+      "quantity": "1–2 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 1/2 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "1 tablespoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups + 1/2 cup + 2 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "2 cups cooked",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "1 good pinch",
+      "preparation": "crumbled into warm water"
+    },
+    {
+      "core_item_name": "preserved lemon",
+      "quantity": "2 tablespoons peel",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1/2 teaspoon",
+      "preparation": "optional"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "NorthAfrican",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "eggplant",
+      "quantity": "2 medium",
+      "preparation": "cut into 2–3 cm cubes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 1/2 teaspoons, divided",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon, divided",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "harissa paste",
+      "quantity": "1–2 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 1/2 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "1 tablespoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups + 1/2 cup + 2 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "2 cups cooked",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "1 good pinch",
+      "preparation": "crumbled into warm water",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "preserved lemon",
+      "quantity": "2 tablespoons peel",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1/2 teaspoon",
+      "preparation": "optional",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T165742Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T165650Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

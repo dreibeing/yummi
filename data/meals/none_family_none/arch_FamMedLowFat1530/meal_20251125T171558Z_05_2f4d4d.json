@@ -1,0 +1,248 @@
+{
+  "meal_id": "meal_20251125T171558Z_05_2f4d4d",
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "archetype_name": "Family Low-Fat Mediterranean Light Plates (15–30, Mild)",
+  "name": "Lemon-Oregano Chicken Kebabs with Brown Basmati and Cucumber-Tomato Salad",
+  "description": "Oven-finished chicken kebabs with a bright lemon-oregano finish, served over fluffy brown basmati rice and a fresh cucumber–tomato salad. Light on oil and family-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1 1/2 cups brown basmati rice in cold water until it runs clear.",
+    "Preheat oven to 220°C/425°F. Line a sheet pan with foil.",
+    "Quarter 1 cucumber lengthwise, then slice into half-moons.",
+    "Halve 2 cups cherry tomatoes.",
+    "Thinly slice 1/2 red onion.",
+    "Roughly chop 1/4 cup parsley and 2 tablespoons mint.",
+    "Zest and juice 1 lemon into a small bowl.",
+    "In a small cup, mix 1 tablespoon olive oil with 1 teaspoon oregano and a pinch of salt and black pepper for the kebabs."
+  ],
+  "cook_steps": [
+    "Add rinsed brown basmati rice to a pot with 3 cups vegetable stock. Bring to a boil, then reduce heat to low, cover, and simmer 25 minutes until tender. Rest 5 minutes covered.",
+    "Place chicken kebabs on the lined sheet pan. Brush with the olive oil–oregano mixture.",
+    "Bake chicken kebabs for 12–15 minutes, turning once, until cooked through (juices run clear).",
+    "While kebabs cook, make the salad: In a bowl, combine cucumber, cherry tomatoes, red onion, parsley, and mint. Add half the lemon zest and 2 tablespoons lemon juice, 1 teaspoon olive oil, a pinch of salt, and black pepper. Toss and set aside.",
+    "Fluff the rice. Stir in remaining lemon zest and 1 tablespoon lemon juice, plus a pinch of salt if needed.",
+    "Brush the baked kebabs with any juices on the pan. Squeeze the remaining lemon over the kebabs.",
+    "Serve rice in bowls, top with chicken kebabs, and add the cucumber–tomato salad on the side."
+  ],
+  "instructions": [
+    "Rinse 1 1/2 cups brown basmati rice in cold water until it runs clear.",
+    "Preheat oven to 220°C/425°F. Line a sheet pan with foil.",
+    "Quarter 1 cucumber lengthwise, then slice into half-moons.",
+    "Halve 2 cups cherry tomatoes.",
+    "Thinly slice 1/2 red onion.",
+    "Roughly chop 1/4 cup parsley and 2 tablespoons mint.",
+    "Zest and juice 1 lemon into a small bowl.",
+    "In a small cup, mix 1 tablespoon olive oil with 1 teaspoon oregano and a pinch of salt and black pepper for the kebabs.",
+    "Add rinsed brown basmati rice to a pot with 3 cups vegetable stock. Bring to a boil, then reduce heat to low, cover, and simmer 25 minutes until tender. Rest 5 minutes covered.",
+    "Place chicken kebabs on the lined sheet pan. Brush with the olive oil–oregano mixture.",
+    "Bake chicken kebabs for 12–15 minutes, turning once, until cooked through (juices run clear).",
+    "While kebabs cook, make the salad: In a bowl, combine cucumber, cherry tomatoes, red onion, parsley, and mint. Add half the lemon zest and 2 tablespoons lemon juice, 1 teaspoon olive oil, a pinch of salt, and black pepper. Toss and set aside.",
+    "Fluff the rice. Stir in remaining lemon zest and 1 tablespoon lemon juice, plus a pinch of salt if needed.",
+    "Brush the baked kebabs with any juices on the pan. Squeeze the remaining lemon over the kebabs.",
+    "Serve rice in bowls, top with chicken kebabs, and add the cucumber–tomato salad on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "1 1/2 cups (uncooked)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 cups",
+      "preparation": "for cooking rice"
+    },
+    {
+      "core_item_name": "chicken kebabs",
+      "quantity": "4–6 skewers (about 600–700 g)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 teaspoons total",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 whole",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowFat"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "1 1/2 cups (uncooked)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 cups",
+      "preparation": "for cooking rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken kebabs",
+      "quantity": "4–6 skewers (about 600–700 g)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 teaspoons total",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 whole",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T172036Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T171558Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

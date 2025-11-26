@@ -1,0 +1,271 @@
+{
+  "meal_id": "meal_20251125T170209Z_04_b0e6d9",
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "archetype_name": "Family Weekend Showstopper: Spanish & Portuguese Feasts",
+  "name": "Portuguese Garlic-Lemon Roast Leg of Lamb with Spanish Panadera Potatoes",
+  "description": "A showstopping roast leg of lamb marinated with garlic, lemon, paprika, and bay, served over Spanish-style sliced potatoes and onions that soak up the pan juices.",
+  "servings": "Serves 5–6",
+  "prep_steps": [
+    "Preheat oven to 200°C (390°F).",
+    "Peel and thinly slice the onions.",
+    "Peel and slice the potatoes into 5–7 mm rounds.",
+    "Peel and crush the garlic.",
+    "Halve and juice the lemon; reserve the squeezed halves.",
+    "In a bowl, mix garlic, olive oil, lemon juice, paprika, oregano, salt, black pepper, and white wine to make a marinade.",
+    "Pat the leg of lamb dry with paper towels.",
+    "Toss potatoes and onions with a little olive oil, salt, black pepper, and a pinch of paprika.",
+    "Lightly oil a large roasting pan and spread the potatoes and onions evenly.",
+    "Pierce the leg of lamb all over with a knife to help the marinade penetrate."
+  ],
+  "cook_steps": [
+    "Rub the leg of lamb thoroughly with the marinade, tucking bay leaves and the squeezed lemon halves under and around the meat.",
+    "Heat a large stove-safe roasting pan or skillet over medium-high heat and sear the leg of lamb on all sides until browned (about 8–10 minutes total).",
+    "Set the seared lamb on top of the potato-onion bed in the roasting pan, pouring any marinade and pan juices over everything.",
+    "Roast at 200°C (390°F) for 20 minutes to develop color.",
+    "Reduce oven to 170°C (340°F) and continue roasting 60–80 minutes, basting the lamb and potatoes with pan juices every 20 minutes. Add a splash of water if the pan looks dry.",
+    "Check doneness: for medium, aim for 60–63°C (140–145°F) in the thickest part. Roast longer for more doneness as preferred.",
+    "Rest the lamb on a board, loosely covered, for 15–20 minutes.",
+    "While the lamb rests, return the potatoes to the oven for 10 minutes to crisp edges and reduce the juices slightly.",
+    "Slice the lamb across the grain. Scatter chopped parsley over the potatoes and onions.",
+    "Serve sliced lamb over the panadera potatoes, spooning pan juices on top."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C (390°F).",
+    "Peel and thinly slice the onions.",
+    "Peel and slice the potatoes into 5–7 mm rounds.",
+    "Peel and crush the garlic.",
+    "Halve and juice the lemon; reserve the squeezed halves.",
+    "In a bowl, mix garlic, olive oil, lemon juice, paprika, oregano, salt, black pepper, and white wine to make a marinade.",
+    "Pat the leg of lamb dry with paper towels.",
+    "Toss potatoes and onions with a little olive oil, salt, black pepper, and a pinch of paprika.",
+    "Lightly oil a large roasting pan and spread the potatoes and onions evenly.",
+    "Pierce the leg of lamb all over with a knife to help the marinade penetrate.",
+    "Rub the leg of lamb thoroughly with the marinade, tucking bay leaves and the squeezed lemon halves under and around the meat.",
+    "Heat a large stove-safe roasting pan or skillet over medium-high heat and sear the leg of lamb on all sides until browned (about 8–10 minutes total).",
+    "Set the seared lamb on top of the potato-onion bed in the roasting pan, pouring any marinade and pan juices over everything.",
+    "Roast at 200°C (390°F) for 20 minutes to develop color.",
+    "Reduce oven to 170°C (340°F) and continue roasting 60–80 minutes, basting the lamb and potatoes with pan juices every 20 minutes. Add a splash of water if the pan looks dry.",
+    "Check doneness: for medium, aim for 60–63°C (140–145°F) in the thickest part. Roast longer for more doneness as preferred.",
+    "Rest the lamb on a board, loosely covered, for 15–20 minutes.",
+    "While the lamb rests, return the potatoes to the oven for 10 minutes to crisp edges and reduce the juices slightly.",
+    "Slice the lamb across the grain. Scatter chopped parsley over the potatoes and onions.",
+    "Serve sliced lamb over the panadera potatoes, spooning pan juices on top."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "leg of lamb",
+      "quantity": "1 whole (2–2.5 kg)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "1.5 kg",
+      "preparation": "sliced 5–7 mm"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "8–10 cloves",
+      "preparation": "crushed"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tbsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced, halves reserved"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 tsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 tsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "3",
+      "preparation": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1 cup",
+      "preparation": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 tsp, plus to taste",
+      "preparation": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1.5 tsp, plus to taste",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1/2 cup as needed",
+      "preparation": "for pan if dry"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Portuguese",
+      "Spanish"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "leg of lamb",
+      "quantity": "1 whole (2–2.5 kg)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "1.5 kg",
+      "preparation": "sliced 5–7 mm",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "8–10 cloves",
+      "preparation": "crushed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced, halves reserved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "3",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 tsp, plus to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1.5 tsp, plus to taste",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1/2 cup as needed",
+      "preparation": "for pan if dry",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T170536Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T170209Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import logging
+import random
 import uuid
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -176,9 +177,8 @@ def _filter_manifest(
     limit: int,
 ) -> tuple[int, List[CandidateMealSummary], List[CandidateMealDetail]]:
     archetypes = manifest.get("archetypes") or []
-    retained: List[CandidateMealSummary] = []
+    summaries: List[CandidateMealSummary] = []
     details: List[CandidateMealDetail] = []
-    total_matches = 0
 
     for archetype in archetypes:
         archetype_uid = archetype.get("uid")
@@ -193,11 +193,17 @@ def _filter_manifest(
                 continue
             if not _passes_allergens(tags, constraints):
                 continue
-            total_matches += 1
-            if len(retained) < limit:
-                retained.append(_build_candidate_summary(meal, archetype_uid))
-                details.append(CandidateMealDetail(archetype_uid=archetype_uid, meal=meal))
-    return total_matches, retained, details
+            summaries.append(_build_candidate_summary(meal, archetype_uid))
+            details.append(CandidateMealDetail(archetype_uid=archetype_uid, meal=meal))
+
+    total_matches = len(summaries)
+    if total_matches <= limit:
+        return total_matches, summaries, details
+
+    indices = random.sample(range(total_matches), limit)
+    selected_summaries = [summaries[i] for i in indices]
+    selected_details = [details[i] for i in indices]
+    return total_matches, selected_summaries, selected_details
 
 
 def _passes_audience(tags: Dict[str, List[str]], constraints: ConstraintContext) -> bool:

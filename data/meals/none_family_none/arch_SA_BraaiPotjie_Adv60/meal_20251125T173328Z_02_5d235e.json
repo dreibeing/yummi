@@ -1,0 +1,297 @@
+{
+  "meal_id": "meal_20251125T173328Z_02_5d235e",
+  "archetype_uid": "arch_SA_BraaiPotjie_Adv60",
+  "archetype_name": "Family Weekend Advanced: South African Braai & Potjie",
+  "name": "Cape Malay Chicken Potjie with Turmeric Rice",
+  "description": "A slow-braised chicken thigh potjie with Cape Malay spice, apricots, and chutney, served with fragrant turmeric basmati rice. Built for the braai fire with a steady simmer and rich, layered flavor.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Light a medium braai fire for steady coals; place a potjie or heavy pot over indirect heat.",
+    "Rinse 2 cups basmati rice until water runs clear; drain well.",
+    "Peel and slice 2 large onions; mince 4 cloves garlic.",
+    "Quarter 4 apricots.",
+    "Measure spices: 2 tbsp masala spice blend, 1 tsp turmeric powder (split: 1/2 tsp for potjie, 1/2 tsp for rice), 1 tsp cumin seeds, 1 tsp coriander seeds, 2 bay leaves.",
+    "Season 1.2 kg chicken thighs with 1 tsp salt and 1/2 tsp black pepper."
+  ],
+  "cook_steps": [
+    "Heat 2 tbsp sunflower oil in the potjie over the coals until shimmering.",
+    "Brown chicken thighs skin-side down 6–8 minutes, turn and brown 3–4 minutes more; remove to a tray.",
+    "Add sliced onions; cook 6–8 minutes until soft and lightly browned. Add minced garlic; cook 30 seconds.",
+    "Stir in cumin seeds, coriander seeds, masala spice blend, and 1/2 tsp turmeric powder; toast 30–60 seconds until fragrant.",
+    "Add 1 can (400 g) diced tomatoes, 1/2 cup chutney, 2 bay leaves, and 2 cups chicken stock; bring to a gentle simmer.",
+    "Return chicken to the pot skin-side up; tuck in apricot quarters. Adjust heat for a very gentle bubble, cover, and simmer 60–75 minutes until chicken is tender and sauce thickens. Stir occasionally to prevent sticking.",
+    "Taste and season with 1/2 tsp salt and 1/2 tsp black pepper (or to taste). Keep warm at the side of the fire.",
+    "For the rice: In a pot on the stovetop, combine rinsed basmati rice, 3 cups chicken stock, 1/2 tsp turmeric powder, and a pinch of salt. Bring to a boil, then reduce to low, cover, and cook 12–15 minutes until liquid is absorbed. Rest covered 5 minutes, then fluff.",
+    "Serve chicken and sauce over turmeric rice. Scatter chopped coriander on top."
+  ],
+  "instructions": [
+    "Light a medium braai fire for steady coals; place a potjie or heavy pot over indirect heat.",
+    "Rinse 2 cups basmati rice until water runs clear; drain well.",
+    "Peel and slice 2 large onions; mince 4 cloves garlic.",
+    "Quarter 4 apricots.",
+    "Measure spices: 2 tbsp masala spice blend, 1 tsp turmeric powder (split: 1/2 tsp for potjie, 1/2 tsp for rice), 1 tsp cumin seeds, 1 tsp coriander seeds, 2 bay leaves.",
+    "Season 1.2 kg chicken thighs with 1 tsp salt and 1/2 tsp black pepper.",
+    "Heat 2 tbsp sunflower oil in the potjie over the coals until shimmering.",
+    "Brown chicken thighs skin-side down 6–8 minutes, turn and brown 3–4 minutes more; remove to a tray.",
+    "Add sliced onions; cook 6–8 minutes until soft and lightly browned. Add minced garlic; cook 30 seconds.",
+    "Stir in cumin seeds, coriander seeds, masala spice blend, and 1/2 tsp turmeric powder; toast 30–60 seconds until fragrant.",
+    "Add 1 can (400 g) diced tomatoes, 1/2 cup chutney, 2 bay leaves, and 2 cups chicken stock; bring to a gentle simmer.",
+    "Return chicken to the pot skin-side up; tuck in apricot quarters. Adjust heat for a very gentle bubble, cover, and simmer 60–75 minutes until chicken is tender and sauce thickens. Stir occasionally to prevent sticking.",
+    "Taste and season with 1/2 tsp salt and 1/2 tsp black pepper (or to taste). Keep warm at the side of the fire.",
+    "For the rice: In a pot on the stovetop, combine rinsed basmati rice, 3 cups chicken stock, 1/2 tsp turmeric powder, and a pinch of salt. Bring to a boil, then reduce to low, cover, and cook 12–15 minutes until liquid is absorbed. Rest covered 5 minutes, then fluff.",
+    "Serve chicken and sauce over turmeric rice. Scatter chopped coriander on top."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1.2 kg",
+      "preparation": "bone-in, skin-on"
+    },
+    {
+      "core_item_name": "sunflower oil",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "400 g can",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "apricot",
+      "quantity": "4",
+      "preparation": "quartered"
+    },
+    {
+      "core_item_name": "chutney",
+      "quantity": "1/2 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "masala spice blend",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1 tsp",
+      "preparation": "split between potjie and rice"
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "coriander seeds",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "5 cups",
+      "preparation": "2 cups for potjie, 3 cups for rice"
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped, for garnish"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": ""
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Indian",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1.2 kg",
+      "preparation": "bone-in, skin-on",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sunflower oil",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "400 g can",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apricot",
+      "quantity": "4",
+      "preparation": "quartered",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chutney",
+      "quantity": "1/2 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "masala spice blend",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1 tsp",
+      "preparation": "split between potjie and rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander seeds",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "5 cups",
+      "preparation": "2 cups for potjie, 3 cups for rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped, for garnish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T173605Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T173328Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

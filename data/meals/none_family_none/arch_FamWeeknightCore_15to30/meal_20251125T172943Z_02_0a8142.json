@@ -1,0 +1,219 @@
+{
+  "meal_id": "meal_20251125T172943Z_02_0a8142",
+  "archetype_uid": "arch_FamWeeknightCore_15to30",
+  "archetype_name": "Family Weeknight Classics (Mild, 15–30 min)",
+  "name": "Braai-Spiced Pork Chops with Creamy Mushroom Sauce and Roasted Green Beans",
+  "description": "Quick-seared pork chops seasoned with braai spice get a silky mushroom-cream pan sauce, served alongside oven-roasted green beans. Mild, family-friendly, and weeknight fast.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C (425°F).",
+    "Trim the ends from the green beans.",
+    "Rinse and slice the mushrooms.",
+    "Peel and finely chop the garlic.",
+    "Pat pork chops dry with paper towels; season both sides with salt, pepper, and braai spice mix."
+  ],
+  "cook_steps": [
+    "Toss green beans with 1 tbsp olive oil, a pinch of salt, and pepper; spread on a baking tray.",
+    "Roast green beans for 12–15 minutes until tender-crisp, tossing once halfway.",
+    "Heat 1 tbsp olive oil in a large skillet over medium-high heat.",
+    "Sear pork chops 3–4 minutes per side until nicely browned and cooked through (internal temp 63°C/145°F); transfer to a plate to rest.",
+    "Reduce heat to medium; add 1 tbsp butter to the skillet.",
+    "Add mushrooms and cook 4–5 minutes until browned and any liquid reduces.",
+    "Stir in garlic and cook 30 seconds until fragrant.",
+    "Pour in chicken stock and simmer 1–2 minutes, scraping the pan.",
+    "Lower heat and stir in cream; simmer 2–3 minutes until slightly thickened. Season with salt and pepper to taste.",
+    "Off heat, swirl in remaining 1 tbsp butter for gloss. Return pork chops to the pan and spoon sauce over.",
+    "Serve pork chops with creamy mushroom sauce and roasted green beans."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C (425°F).",
+    "Trim the ends from the green beans.",
+    "Rinse and slice the mushrooms.",
+    "Peel and finely chop the garlic.",
+    "Pat pork chops dry with paper towels; season both sides with salt, pepper, and braai spice mix.",
+    "Toss green beans with 1 tbsp olive oil, a pinch of salt, and pepper; spread on a baking tray.",
+    "Roast green beans for 12–15 minutes until tender-crisp, tossing once halfway.",
+    "Heat 1 tbsp olive oil in a large skillet over medium-high heat.",
+    "Sear pork chops 3–4 minutes per side until nicely browned and cooked through (internal temp 63°C/145°F); transfer to a plate to rest.",
+    "Reduce heat to medium; add 1 tbsp butter to the skillet.",
+    "Add mushrooms and cook 4–5 minutes until browned and any liquid reduces.",
+    "Stir in garlic and cook 30 seconds until fragrant.",
+    "Pour in chicken stock and simmer 1–2 minutes, scraping the pan.",
+    "Lower heat and stir in cream; simmer 2–3 minutes until slightly thickened. Season with salt and pepper to taste.",
+    "Off heat, swirl in remaining 1 tbsp butter for gloss. Return pork chops to the pan and spoon sauce over.",
+    "Serve pork chops with creamy mushroom sauce and roasted green beans."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "pork chops",
+      "quantity": "4 chops (about 600–800 g)"
+    },
+    {
+      "core_item_name": "braai spice mix",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp, divided"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "300 g",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "1/2 cup"
+    },
+    {
+      "core_item_name": "cream",
+      "quantity": "1/2 cup"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp, divided"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "pork chops",
+      "quantity": "4 chops (about 600–800 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "braai spice mix",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp, divided",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "300 g",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cream",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp, divided",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T173117Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T172943Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

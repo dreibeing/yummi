@@ -1,0 +1,264 @@
+{
+  "meal_id": "meal_20251125T172036Z_01_4026f7",
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "archetype_name": "Family Pressure Cooker Express Dinners (15–30, Mild)",
+  "name": "Instant Pot Sausage & Peppers Penne",
+  "description": "Family-friendly one-pot penne with sausages, sweet peppers, and a mild tomato sauce made fast in the pressure cooker.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Slice sausages into 1/2-inch rounds.",
+    "Slice bell peppers into strips.",
+    "Dice onions.",
+    "Mince garlic.",
+    "Measure penne pasta, chicken stock, diced tomatoes, and tomato pasta sauce.",
+    "Grate parmesan cheese and chop parsley (if using)."
+  ],
+  "cook_steps": [
+    "Set the pressure cooker to Sauté (Normal). Add olive oil.",
+    "Brown sliced sausages for 3–4 minutes, stirring once or twice.",
+    "Add onions and bell peppers; sauté 2–3 minutes until slightly softened.",
+    "Add garlic; cook 30 seconds until fragrant.",
+    "Pour in chicken stock and scrape the bottom to deglaze.",
+    "Add penne pasta and spread in an even layer. Pour diced tomatoes and tomato pasta sauce on top. Sprinkle italian seasoning. Do not stir.",
+    "Seal the lid and set to Pressure Cook (High) for 5 minutes.",
+    "Quick release pressure. Open lid and stir gently to combine. Season with salt and pepper.",
+    "If sauce seems thin, let sit on Keep Warm for 2–3 minutes to thicken.",
+    "Top with parmesan cheese and parsley before serving."
+  ],
+  "instructions": [
+    "Slice sausages into 1/2-inch rounds.",
+    "Slice bell peppers into strips.",
+    "Dice onions.",
+    "Mince garlic.",
+    "Measure penne pasta, chicken stock, diced tomatoes, and tomato pasta sauce.",
+    "Grate parmesan cheese and chop parsley (if using).",
+    "Set the pressure cooker to Sauté (Normal). Add olive oil.",
+    "Brown sliced sausages for 3–4 minutes, stirring once or twice.",
+    "Add onions and bell peppers; sauté 2–3 minutes until slightly softened.",
+    "Add garlic; cook 30 seconds until fragrant.",
+    "Pour in chicken stock and scrape the bottom to deglaze.",
+    "Add penne pasta and spread in an even layer. Pour diced tomatoes and tomato pasta sauce on top. Sprinkle italian seasoning. Do not stir.",
+    "Seal the lid and set to Pressure Cook (High) for 5 minutes.",
+    "Quick release pressure. Open lid and stir gently to combine. Season with salt and pepper.",
+    "If sauce seems thin, let sit on Keep Warm for 2–3 minutes to thicken.",
+    "Top with parmesan cheese and parsley before serving."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "sausages",
+      "quantity": "1 lb",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "3 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "penne pasta",
+      "quantity": "12 oz",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (14–15 oz)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "tomato pasta sauce",
+      "quantity": "1 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "italian seasoning",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "1/2 cup",
+      "preparation": "grated"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "SlowOrPressureCooker",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "sausages",
+      "quantity": "1 lb",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "3 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "penne pasta",
+      "quantity": "12 oz",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (14–15 oz)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato pasta sauce",
+      "quantity": "1 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "italian seasoning",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "1/2 cup",
+      "preparation": "grated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T172114Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T172036Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

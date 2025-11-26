@@ -1,0 +1,215 @@
+{
+  "meal_id": "meal_20251125T164458Z_03_94e025",
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "archetype_name": "Family Low-Carb Weeknight Bowls & Wraps (15–30, Mild)",
+  "name": "Philly-Style Cheesesteak Cauliflower Rice Bowls",
+  "description": "Family-friendly, low-carb bowls with sautéed sirloin, peppers, onions, and mushrooms over cauliflower rice, finished with melted provolone. Mild seasoning keeps it kid-friendly and quick.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Thinly slice the sirloin steak against the grain.",
+    "Slice the onions and peppers; clean and slice the mushrooms.",
+    "Mince the garlic.",
+    "Preheat oven broiler to high (for melting cheese).",
+    "Open the cauliflower rice and have it ready near the stove."
+  ],
+  "cook_steps": [
+    "Heat a large skillet over medium-high heat and add half the olive oil.",
+    "Sauté onions and peppers with a pinch of salt until softened, 4–5 minutes; add mushrooms and cook 2–3 minutes more. Transfer veggies to a bowl.",
+    "Add remaining olive oil to the skillet. Season steak with salt, black pepper, and paprika, then sear in the hot pan, 2–3 minutes, just until browned.",
+    "Return veggies to the skillet with the steak, add garlic, and toss for 30–60 seconds until fragrant. Turn off heat.",
+    "In a second skillet, warm cauliflower rice over medium heat with a pinch of salt and black pepper, 3–4 minutes, stirring occasionally.",
+    "Divide cauliflower rice into 4 oven-safe bowls. Top each with the steak-and-veg mixture.",
+    "Lay provolone cheese over each bowl and broil 1–2 minutes until melted (watch closely).",
+    "Serve hot."
+  ],
+  "instructions": [
+    "Thinly slice the sirloin steak against the grain.",
+    "Slice the onions and peppers; clean and slice the mushrooms.",
+    "Mince the garlic.",
+    "Preheat oven broiler to high (for melting cheese).",
+    "Open the cauliflower rice and have it ready near the stove.",
+    "Heat a large skillet over medium-high heat and add half the olive oil.",
+    "Sauté onions and peppers with a pinch of salt until softened, 4–5 minutes; add mushrooms and cook 2–3 minutes more. Transfer veggies to a bowl.",
+    "Add remaining olive oil to the skillet. Season steak with salt, black pepper, and paprika, then sear in the hot pan, 2–3 minutes, just until browned.",
+    "Return veggies to the skillet with the steak, add garlic, and toss for 30–60 seconds until fragrant. Turn off heat.",
+    "In a second skillet, warm cauliflower rice over medium heat with a pinch of salt and black pepper, 3–4 minutes, stirring occasionally.",
+    "Divide cauliflower rice into 4 oven-safe bowls. Top each with the steak-and-veg mixture.",
+    "Lay provolone cheese over each bowl and broil 1–2 minutes until melted (watch closely).",
+    "Serve hot."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "sirloin steak",
+      "quantity": "1 lb (450 g)",
+      "preparation": "thinly sliced against the grain"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "8 oz (225 g)",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1/2 tsp"
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "4 cups"
+    },
+    {
+      "core_item_name": "provolone cheese",
+      "quantity": "6–8 slices"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy"
+    ],
+    "NutritionFocus": [
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "sirloin steak",
+      "quantity": "1 lb (450 g)",
+      "preparation": "thinly sliced against the grain",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "8 oz (225 g)",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1/2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "4 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "provolone cheese",
+      "quantity": "6–8 slices",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T164733Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T164458Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "meal_id": "meal_20251125T162140Z_01_9017c2",
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "archetype_name": "Family Hands-Off Sheet Pan & Slow Cooker Nights",
+  "name": "Sheet-Pan Oregano Halloumi with Courgette & Tomatoes and Lemon Couscous",
+  "description": "Hands-off roasted halloumi and vegetables with Greek/Middle Eastern flavors, served over quick lemon couscous. Simple prep, mostly oven time.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F and line a large sheet pan.",
+    "Cut halloumi cheese into 2–3 cm cubes.",
+    "Slice courgette into 1 cm half-moons.",
+    "Slice bell peppers into strips and red onion into wedges.",
+    "Lightly crush or mince garlic.",
+    "Halve the lemon; finely zest one half and juice both halves, keeping zest and juice separate.",
+    "Rinse and drain olives.",
+    "Measure couscous and water."
+  ],
+  "cook_steps": [
+    "On the sheet pan, toss courgette, bell peppers, red onion, and garlic with olive oil, oregano, salt, and black pepper. Spread in an even layer.",
+    "Roast 20 minutes until vegetables start to soften.",
+    "Remove pan, add halloumi cheese and olives, and gently toss with the vegetables. Return to oven and roast 10–15 minutes until halloumi is golden at the edges.",
+    "While the pan finishes, bring water to a boil (kettle or small pot). Add couscous to a heatproof bowl with a pinch of salt and half the lemon zest. Pour boiling water over, cover, and rest 5 minutes.",
+    "Fluff couscous with a fork. Stir in lemon juice and remaining lemon zest; adjust salt to taste.",
+    "Serve couscous in bowls and top with the roasted halloumi and vegetables."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F and line a large sheet pan.",
+    "Cut halloumi cheese into 2–3 cm cubes.",
+    "Slice courgette into 1 cm half-moons.",
+    "Slice bell peppers into strips and red onion into wedges.",
+    "Lightly crush or mince garlic.",
+    "Halve the lemon; finely zest one half and juice both halves, keeping zest and juice separate.",
+    "Rinse and drain olives.",
+    "Measure couscous and water.",
+    "On the sheet pan, toss courgette, bell peppers, red onion, and garlic with olive oil, oregano, salt, and black pepper. Spread in an even layer.",
+    "Roast 20 minutes until vegetables start to soften.",
+    "Remove pan, add halloumi cheese and olives, and gently toss with the vegetables. Return to oven and roast 10–15 minutes until halloumi is golden at the edges.",
+    "While the pan finishes, bring water to a boil (kettle or small pot). Add couscous to a heatproof bowl with a pinch of salt and half the lemon zest. Pour boiling water over, cover, and rest 5 minutes.",
+    "Fluff couscous with a fork. Stir in lemon juice and remaining lemon zest; adjust salt to taste.",
+    "Serve couscous in bowls and top with the roasted halloumi and vegetables."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "halloumi cheese",
+      "quantity": "400 g",
+      "preparation": "cut into 2–3 cm cubes"
+    },
+    {
+      "core_item_name": "courgette",
+      "quantity": "2 medium",
+      "preparation": "sliced into half-moons"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "left whole"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "sliced into strips"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 teaspoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "crushed or minced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon, plus to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1.5 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1.5 cups",
+      "preparation": "just boiled"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "finely chopped (optional)"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "halloumi cheese",
+      "quantity": "400 g",
+      "preparation": "cut into 2–3 cm cubes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "courgette",
+      "quantity": "2 medium",
+      "preparation": "sliced into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "left whole",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "sliced into strips",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 teaspoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "crushed or minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon, plus to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1.5 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1.5 cups",
+      "preparation": "just boiled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "finely chopped (optional)",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T162218Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T162140Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

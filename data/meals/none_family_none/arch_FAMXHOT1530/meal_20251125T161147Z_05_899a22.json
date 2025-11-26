@@ -1,0 +1,257 @@
+{
+  "meal_id": "meal_20251125T161147Z_05_899a22",
+  "archetype_uid": "arch_FAMXHOT1530",
+  "archetype_name": "Family Extra-Hot Chili Night (Caribbean & Mexican, 15–30, Simple)",
+  "name": "Extra-Hot Jerk Chicken & Black Bean Coconut Rice Bowls",
+  "description": "Fiery jerk-style chicken over coconut rice with limey black beans and peppers. Caribbean heat meets Mexican staples in a fast family bowl.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Dice chicken thighs into bite-size pieces; pat dry.",
+    "Finely mince habanero peppers (use gloves).",
+    "Mince garlic.",
+    "Slice onion and bell peppers into thin strips.",
+    "Rinse and drain black beans.",
+    "Chop coriander and cut lime into wedges; squeeze 1 lime for juice.",
+    "If using an outdoor grill, preheat to high. If using stovetop, place a large skillet over medium-high heat."
+  ],
+  "cook_steps": [
+    "In a bowl, mix olive oil, minced habanero peppers, garlic, allspice, cumin, lime juice, and salt. Toss in chicken to coat.",
+    "Grill or pan-sear chicken in a single layer until browned and cooked through, 6–8 minutes, turning once. Transfer to a plate.",
+    "In the same skillet (or a grill-safe pan), add a little more olive oil if needed and cook onion and bell peppers with a pinch of salt until tender-crisp, 3–4 minutes. Remove from heat.",
+    "Warm coconut rice in a covered pot over low heat with a splash of water, 3–4 minutes, fluffing occasionally.",
+    "In a small pot, warm black beans over medium heat with a splash of water and hot sauce; simmer 2–3 minutes and season with a pinch of salt.",
+    "Assemble bowls: coconut rice, black beans, peppers and onions, and jerk chicken. Top with coriander and extra hot sauce if desired. Serve with lime wedges."
+  ],
+  "instructions": [
+    "Dice chicken thighs into bite-size pieces; pat dry.",
+    "Finely mince habanero peppers (use gloves).",
+    "Mince garlic.",
+    "Slice onion and bell peppers into thin strips.",
+    "Rinse and drain black beans.",
+    "Chop coriander and cut lime into wedges; squeeze 1 lime for juice.",
+    "If using an outdoor grill, preheat to high. If using stovetop, place a large skillet over medium-high heat.",
+    "In a bowl, mix olive oil, minced habanero peppers, garlic, allspice, cumin, lime juice, and salt. Toss in chicken to coat.",
+    "Grill or pan-sear chicken in a single layer until browned and cooked through, 6–8 minutes, turning once. Transfer to a plate.",
+    "In the same skillet (or a grill-safe pan), add a little more olive oil if needed and cook onion and bell peppers with a pinch of salt until tender-crisp, 3–4 minutes. Remove from heat.",
+    "Warm coconut rice in a covered pot over low heat with a splash of water, 3–4 minutes, fluffing occasionally.",
+    "In a small pot, warm black beans over medium heat with a splash of water and hot sauce; simmer 2–3 minutes and season with a pinch of salt.",
+    "Assemble bowls: coconut rice, black beans, peppers and onions, and jerk chicken. Top with coriander and extra hot sauce if desired. Serve with lime wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "700–800 g",
+      "preparation": "diced, patted dry"
+    },
+    {
+      "core_item_name": "habanero peppers",
+      "quantity": "2",
+      "preparation": "finely minced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "juiced, plus wedges from an additional lime if desired"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, plus to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "coconut rice",
+      "quantity": "4 cups cooked",
+      "preparation": "warmed"
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 x 400 g can",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "hot sauce",
+      "quantity": "1–2 tbsp, to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Caribbean",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "ExtraHot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "700–800 g",
+      "preparation": "diced, patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero peppers",
+      "quantity": "2",
+      "preparation": "finely minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "juiced, plus wedges from an additional lime if desired",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, plus to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coconut rice",
+      "quantity": "4 cups cooked",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 x 400 g can",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "hot sauce",
+      "quantity": "1–2 tbsp, to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T161630Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T161147Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

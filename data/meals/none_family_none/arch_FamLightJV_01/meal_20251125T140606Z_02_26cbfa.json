@@ -1,0 +1,265 @@
+{
+  "meal_id": "meal_20251125T140606Z_02_26cbfa",
+  "archetype_uid": "arch_FamLightJV_01",
+  "archetype_name": "Family Light & Fresh: Japanese and Vietnamese Weeknights",
+  "name": "Miso-Soy Udon with Tofu, Bok Choy, and Lime",
+  "description": "Quick, light udon tossed with seared tofu and crisp veggies in a mild miso-soy sauce, brightened with lime and mint vibes. Family-friendly and ready in 20–25 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Bring a large pot of water to a boil for the udon noodles.",
+    "Drain tofu and pat very dry; cut into 2 cm cubes.",
+    "Rinse and slice bok choy into bite-size pieces (separate stems and leafy tops).",
+    "Peel carrots and cut into thin matchsticks or half-moons.",
+    "Wipe shiitake mushrooms and slice.",
+    "Slice spring onion (white and green parts).",
+    "In a small bowl, whisk miso paste, soy sauce, rice vinegar, honey, juice of 1/2 lime, and 3–4 tbsp water until smooth.",
+    "Optional: Warm serving bowls in the microwave for 30–60 seconds."
+  ],
+  "cook_steps": [
+    "Heat 1 tbsp sesame oil in a large skillet over medium-high heat.",
+    "Add tofu; cook 5–6 minutes, turning occasionally, until lightly browned. Transfer to a plate.",
+    "Add another 1 tsp sesame oil to the skillet. Stir-fry carrots and bok choy stems for 2 minutes.",
+    "Add shiitake mushrooms; cook 2–3 minutes until tender.",
+    "Add bok choy leafy tops and most of the spring onion; toss 1 minute until just wilted.",
+    "Meanwhile, boil udon noodles per package (usually 2–3 minutes). Drain well.",
+    "Return tofu to the skillet. Pour in the miso-soy sauce; toss 30–60 seconds to coat and warm through.",
+    "Add drained udon to the skillet; toss until noodles are glossy and evenly coated. If needed, add 1–2 tbsp water to loosen.",
+    "Taste and adjust with a squeeze more lime if desired.",
+    "Serve hot. Garnish with remaining spring onion and a sprinkle of sesame seeds."
+  ],
+  "instructions": [
+    "Bring a large pot of water to a boil for the udon noodles.",
+    "Drain tofu and pat very dry; cut into 2 cm cubes.",
+    "Rinse and slice bok choy into bite-size pieces (separate stems and leafy tops).",
+    "Peel carrots and cut into thin matchsticks or half-moons.",
+    "Wipe shiitake mushrooms and slice.",
+    "Slice spring onion (white and green parts).",
+    "In a small bowl, whisk miso paste, soy sauce, rice vinegar, honey, juice of 1/2 lime, and 3–4 tbsp water until smooth.",
+    "Optional: Warm serving bowls in the microwave for 30–60 seconds.",
+    "Heat 1 tbsp sesame oil in a large skillet over medium-high heat.",
+    "Add tofu; cook 5–6 minutes, turning occasionally, until lightly browned. Transfer to a plate.",
+    "Add another 1 tsp sesame oil to the skillet. Stir-fry carrots and bok choy stems for 2 minutes.",
+    "Add shiitake mushrooms; cook 2–3 minutes until tender.",
+    "Add bok choy leafy tops and most of the spring onion; toss 1 minute until just wilted.",
+    "Meanwhile, boil udon noodles per package (usually 2–3 minutes). Drain well.",
+    "Return tofu to the skillet. Pour in the miso-soy sauce; toss 30–60 seconds to coat and warm through.",
+    "Add drained udon to the skillet; toss until noodles are glossy and evenly coated. If needed, add 1–2 tbsp water to loosen.",
+    "Taste and adjust with a squeeze more lime if desired.",
+    "Serve hot. Garnish with remaining spring onion and a sprinkle of sesame seeds."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "udon noodles",
+      "quantity": "600 g",
+      "preparation": "boil per package"
+    },
+    {
+      "core_item_name": "tofu",
+      "quantity": "400 g",
+      "preparation": "drained and cubed"
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "2 medium heads",
+      "preparation": "sliced, stems and leaves separated"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "shiitake mushrooms",
+      "quantity": "200 g",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "2 tsp + 1 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "miso paste",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3–6 tbsp",
+      "preparation": "for sauce and loosening"
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "1–2 tsp",
+      "preparation": "for garnish"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Japanese",
+      "Vietnamese"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Sesame",
+      "Soy"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowCalorie"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "udon noodles",
+      "quantity": "600 g",
+      "preparation": "boil per package",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tofu",
+      "quantity": "400 g",
+      "preparation": "drained and cubed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "2 medium heads",
+      "preparation": "sliced, stems and leaves separated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "shiitake mushrooms",
+      "quantity": "200 g",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "2 tsp + 1 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "miso paste",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3–6 tbsp",
+      "preparation": "for sauce and loosening",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "1–2 tsp",
+      "preparation": "for garnish",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T140756Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T140606Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

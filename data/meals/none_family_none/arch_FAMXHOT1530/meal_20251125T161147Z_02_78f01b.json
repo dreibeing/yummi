@@ -1,0 +1,233 @@
+{
+  "meal_id": "meal_20251125T161147Z_02_78f01b",
+  "archetype_uid": "arch_FAMXHOT1530",
+  "archetype_name": "Family Extra-Hot Chili Night (Caribbean & Mexican, 15–30, Simple)",
+  "name": "Extra-Hot Habanero Fish over Spanish Rice with Charred Corn-Jalapeño Salsa",
+  "description": "Crispy, spicy fish glazed with habanero sauce over fluffy Spanish rice, topped with a fiery corn-jalapeño salsa. Built fast with bold Caribbean–Mexican heat.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Pat dry fish fillets with paper towels.",
+    "Finely dice onion; reserve half for salsa and half for the pan.",
+    "Chop coriander (cilantro).",
+    "Seed and finely chop jalapenos (leave seeds for extra heat).",
+    "Dice bell peppers.",
+    "Cut lime into wedges."
+  ],
+  "cook_steps": [
+    "Cook spanish rice according to package directions; keep warm.",
+    "Heat a grill or a large skillet over high. Add a little olive oil and char corn and half the jalapenos for 3–4 minutes until lightly blistered; cool briefly.",
+    "In a bowl, combine charred corn, reserved raw jalapenos, half the chopped coriander, half the diced onion, a squeeze of lime, and a pinch of salt; set aside as salsa.",
+    "Season fish fillets lightly with salt and chilli powder. Brush both sides with habanero sauce.",
+    "Heat olive oil in a large skillet over medium-high (or use a well-oiled grill). Sear fish 2–3 minutes per side until opaque and flaky.",
+    "In the same pan, add a splash more olive oil if needed. Soften remaining diced onion and bell peppers for 2–3 minutes; toss with a small spoon of habanero sauce for extra heat.",
+    "To serve, spoon spanish rice into bowls, top with seared fish, the warm pepper-onion mix, and the corn-jalapeño salsa. Finish with remaining coriander and lime wedges."
+  ],
+  "instructions": [
+    "Pat dry fish fillets with paper towels.",
+    "Finely dice onion; reserve half for salsa and half for the pan.",
+    "Chop coriander (cilantro).",
+    "Seed and finely chop jalapenos (leave seeds for extra heat).",
+    "Dice bell peppers.",
+    "Cut lime into wedges.",
+    "Cook spanish rice according to package directions; keep warm.",
+    "Heat a grill or a large skillet over high. Add a little olive oil and char corn and half the jalapenos for 3–4 minutes until lightly blistered; cool briefly.",
+    "In a bowl, combine charred corn, reserved raw jalapenos, half the chopped coriander, half the diced onion, a squeeze of lime, and a pinch of salt; set aside as salsa.",
+    "Season fish fillets lightly with salt and chilli powder. Brush both sides with habanero sauce.",
+    "Heat olive oil in a large skillet over medium-high (or use a well-oiled grill). Sear fish 2–3 minutes per side until opaque and flaky.",
+    "In the same pan, add a splash more olive oil if needed. Soften remaining diced onion and bell peppers for 2–3 minutes; toss with a small spoon of habanero sauce for extra heat.",
+    "To serve, spoon spanish rice into bowls, top with seared fish, the warm pepper-onion mix, and the corn-jalapeño salsa. Finish with remaining coriander and lime wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "4 fillets (about 600–800 g total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "spanish rice",
+      "quantity": "1 1/2 cups (dry) or equivalent pouch",
+      "preparation": "cook per package"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "1 1/2 cups kernels",
+      "preparation": "charred"
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "2–3 peppers",
+      "preparation": "chopped; keep some seeds for extra heat"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 cup",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "3–4 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "chilli powder",
+      "quantity": "1 teaspoon",
+      "preparation": "for seasoning fish"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2–3 tablespoons",
+      "preparation": "for searing and charring"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Caribbean",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "ExtraHot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "4 fillets (about 600–800 g total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spanish rice",
+      "quantity": "1 1/2 cups (dry) or equivalent pouch",
+      "preparation": "cook per package",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "1 1/2 cups kernels",
+      "preparation": "charred",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "2–3 peppers",
+      "preparation": "chopped; keep some seeds for extra heat",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 cup",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "3–4 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli powder",
+      "quantity": "1 teaspoon",
+      "preparation": "for seasoning fish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2–3 tablespoons",
+      "preparation": "for searing and charring",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T161332Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T161147Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

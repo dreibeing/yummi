@@ -1,0 +1,290 @@
+{
+  "meal_id": "meal_20251125T171111Z_04_fa35fc",
+  "archetype_uid": "arch_FamLightJV_01",
+  "archetype_name": "Family Light & Fresh: Japanese and Vietnamese Weeknights",
+  "name": "Ginger-Lime Chicken & Zucchini Rice Noodle Bowls (No Soy)",
+  "description": "Light, herb-forward chicken and vegetables over rice noodles with a tangy ginger-lime dressing. Fresh and mild, inspired by Vietnamese herb bowls with a simple Japanese nori finish.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Bring a large pot of water to a boil for noodles.",
+    "Trim excess fat from chicken thighs; pat dry.",
+    "Peel and finely grate 1 garlic clove; mince the other.",
+    "Zucchini: halve lengthwise, then thinly slice into half-moons.",
+    "Carrots: peel and cut into thin matchsticks.",
+    "Cucumber: halve lengthwise, scrape seeds if watery, then thinly slice.",
+    "Basil and mint: pick leaves; tear larger leaves.",
+    "Lime: zest 1 lime (optional), then juice both limes into a small bowl.",
+    "In a small bowl, whisk dressing: lime juice (and zest if using), honey, rice vinegar, grated garlic, 1 tablespoon olive oil, a pinch of salt, and black pepper.",
+    "Optional: Cut nori into thin strips for garnish."
+  ],
+  "cook_steps": [
+    "Season chicken thighs on both sides with 1/2 teaspoon salt and a few grinds of black pepper.",
+    "Heat a large skillet over medium-high on the stovetop. Sear chicken 4–5 minutes per side until cooked through; rest on a board, then slice into thin strips.",
+    "While chicken cooks, add rice noodles to the boiling water and cook until just tender (per pack timing, usually 4–6 minutes). Drain and rinse under cold water to stop cooking.",
+    "In the warm skillet, add zucchini and carrots with a splash of water; stir-fry 2–3 minutes until just crisp-tender. Add minced garlic; cook 30 seconds. Season lightly with salt and pepper. Remove from heat.",
+    "In a large bowl, toss noodles with half the dressing.",
+    "Add sliced chicken, zucchini-carrot mix, cucumber, basil, and mint to the noodles. Drizzle remaining dressing and toss gently to combine.",
+    "Taste and adjust salt and black pepper. Top with nori strips if using. Serve immediately."
+  ],
+  "instructions": [
+    "Bring a large pot of water to a boil for noodles.",
+    "Trim excess fat from chicken thighs; pat dry.",
+    "Peel and finely grate 1 garlic clove; mince the other.",
+    "Zucchini: halve lengthwise, then thinly slice into half-moons.",
+    "Carrots: peel and cut into thin matchsticks.",
+    "Cucumber: halve lengthwise, scrape seeds if watery, then thinly slice.",
+    "Basil and mint: pick leaves; tear larger leaves.",
+    "Lime: zest 1 lime (optional), then juice both limes into a small bowl.",
+    "In a small bowl, whisk dressing: lime juice (and zest if using), honey, rice vinegar, grated garlic, 1 tablespoon olive oil, a pinch of salt, and black pepper.",
+    "Optional: Cut nori into thin strips for garnish.",
+    "Season chicken thighs on both sides with 1/2 teaspoon salt and a few grinds of black pepper.",
+    "Heat a large skillet over medium-high on the stovetop. Sear chicken 4–5 minutes per side until cooked through; rest on a board, then slice into thin strips.",
+    "While chicken cooks, add rice noodles to the boiling water and cook until just tender (per pack timing, usually 4–6 minutes). Drain and rinse under cold water to stop cooking.",
+    "In the warm skillet, add zucchini and carrots with a splash of water; stir-fry 2–3 minutes until just crisp-tender. Add minced garlic; cook 30 seconds. Season lightly with salt and pepper. Remove from heat.",
+    "In a large bowl, toss noodles with half the dressing.",
+    "Add sliced chicken, zucchini-carrot mix, cucumber, basil, and mint to the noodles. Drizzle remaining dressing and toss gently to combine.",
+    "Taste and adjust salt and black pepper. Top with nori strips if using. Serve immediately."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "600 g (about 1.3 lb)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "rice noodles",
+      "quantity": "300 g",
+      "preparation": "cooked and rinsed"
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "thin half-moons"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "thin matchsticks"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "thin slices"
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "1/2 cup leaves",
+      "preparation": "torn"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/2 cup leaves",
+      "preparation": "torn"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "zested (optional) and juiced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "1 finely grated, 1 minced"
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tablespoon",
+      "preparation": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tablespoons",
+      "preparation": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "3/4 teaspoon, divided",
+      "preparation": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon, divided",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "For boiling noodles",
+      "preparation": null
+    },
+    {
+      "core_item_name": "nori",
+      "quantity": "1 sheet (optional)",
+      "preparation": "thin strips"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Japanese",
+      "Vietnamese"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowCalorie"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "600 g (about 1.3 lb)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice noodles",
+      "quantity": "300 g",
+      "preparation": "cooked and rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "thin half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "thin matchsticks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "thin slices",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "1/2 cup leaves",
+      "preparation": "torn",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/2 cup leaves",
+      "preparation": "torn",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "zested (optional) and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "1 finely grated, 1 minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "3/4 teaspoon, divided",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon, divided",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "For boiling noodles",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "nori",
+      "quantity": "1 sheet (optional)",
+      "preparation": "thin strips",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T171500Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T171111Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

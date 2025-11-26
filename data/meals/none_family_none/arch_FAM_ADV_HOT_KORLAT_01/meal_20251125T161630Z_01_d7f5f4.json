@@ -1,0 +1,361 @@
+{
+  "meal_id": "meal_20251125T161630Z_01_d7f5f4",
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "archetype_name": "Family Heat Lovers: Korean & Latin American Feasts (Hot, 30–60, Advanced)",
+  "name": "Gochujang Lomo Saltado with Crispy Oven Potatoes and Jasmine Rice",
+  "description": "A hot, Korean–Latin stir-fry of sirloin, red onion, tomatoes, and bell peppers in a gochujang–soy–vinegar glaze, served over jasmine rice with a side of crispy oven potatoes and a bright coriander–lime finish.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F; place a sheet pan inside to heat.",
+    "Rinse 2 cups jasmine rice until water runs clear.",
+    "Slice 700 g sirloin steak into thin strips; pat dry.",
+    "Thinly slice 1 red onion; wedge 2 tomatoes; slice 1 bell peppers into strips.",
+    "Mince 3 cloves garlic.",
+    "Cut 900 g potatoes into 1 cm fries; pat dry.",
+    "Chop 1 small bunch coriander and 2 spring onion; quarter 1 lime.",
+    "In a bowl, whisk sauce: 2 tbsp gochujang, 3 tbsp soy sauce, 2 tbsp rice vinegar, 1 tsp sugar, 1 tsp habanero sauce (or to taste), 1/3 cup water.",
+    "In a small cup, mix 2 tsp cornflour with 2 tbsp water (slurry).",
+    "Season steak strips with 1/2 tsp salt and 1/2 tsp black pepper."
+  ],
+  "cook_steps": [
+    "Toss potatoes with 2 tbsp canola oil, 1/2 tsp salt, and 1/2 tsp black pepper. Spread on the preheated sheet pan and roast 25–30 minutes, turning once, until deeply golden and crisp.",
+    "Start rice: combine rinsed jasmine rice with 2.5 cups water and a pinch of salt in a pot. Bring to a boil, cover, reduce to low, and cook 12 minutes. Off heat, rest covered 10 minutes.",
+    "Heat a large skillet or wok over high heat. Add 1 tbsp canola oil; sear half the steak 60–90 seconds until just browned; transfer. Repeat with remaining steak.",
+    "Add 1 tbsp canola oil to the pan. Stir-fry red onion and bell peppers 2 minutes on high. Add garlic; cook 30 seconds.",
+    "Return steak to the pan with tomatoes. Stir sauce; add to pan and boil 30 seconds. Stir in cornflour slurry and cook 30–60 seconds until glossy and coats ingredients. Adjust heat with more habanero sauce if desired.",
+    "Off heat, toss in most of the chopped coriander and spring onion; squeeze half the lime over.",
+    "Fluff rice. Serve rice in bowls, top with the gochujang lomo saltado. Add crispy potatoes on the side. Garnish with remaining coriander and spring onion; serve with remaining lime wedges."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F; place a sheet pan inside to heat.",
+    "Rinse 2 cups jasmine rice until water runs clear.",
+    "Slice 700 g sirloin steak into thin strips; pat dry.",
+    "Thinly slice 1 red onion; wedge 2 tomatoes; slice 1 bell peppers into strips.",
+    "Mince 3 cloves garlic.",
+    "Cut 900 g potatoes into 1 cm fries; pat dry.",
+    "Chop 1 small bunch coriander and 2 spring onion; quarter 1 lime.",
+    "In a bowl, whisk sauce: 2 tbsp gochujang, 3 tbsp soy sauce, 2 tbsp rice vinegar, 1 tsp sugar, 1 tsp habanero sauce (or to taste), 1/3 cup water.",
+    "In a small cup, mix 2 tsp cornflour with 2 tbsp water (slurry).",
+    "Season steak strips with 1/2 tsp salt and 1/2 tsp black pepper.",
+    "Toss potatoes with 2 tbsp canola oil, 1/2 tsp salt, and 1/2 tsp black pepper. Spread on the preheated sheet pan and roast 25–30 minutes, turning once, until deeply golden and crisp.",
+    "Start rice: combine rinsed jasmine rice with 2.5 cups water and a pinch of salt in a pot. Bring to a boil, cover, reduce to low, and cook 12 minutes. Off heat, rest covered 10 minutes.",
+    "Heat a large skillet or wok over high heat. Add 1 tbsp canola oil; sear half the steak 60–90 seconds until just browned; transfer. Repeat with remaining steak.",
+    "Add 1 tbsp canola oil to the pan. Stir-fry red onion and bell peppers 2 minutes on high. Add garlic; cook 30 seconds.",
+    "Return steak to the pan with tomatoes. Stir sauce; add to pan and boil 30 seconds. Stir in cornflour slurry and cook 30–60 seconds until glossy and coats ingredients. Adjust heat with more habanero sauce if desired.",
+    "Off heat, toss in most of the chopped coriander and spring onion; squeeze half the lime over.",
+    "Fluff rice. Serve rice in bowls, top with the gochujang lomo saltado. Add crispy potatoes on the side. Garnish with remaining coriander and spring onion; serve with remaining lime wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2.5 cups",
+      "preparation": "for cooking rice"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "sirloin steak",
+      "quantity": "700 g",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "900 g",
+      "preparation": "cut into 1 cm fries"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "4 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "2 medium",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "2 tbsp",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "3 tbsp",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tbsp",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tsp",
+      "preparation": "for sauce balance"
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "1–2 tsp",
+      "preparation": "to taste for heat"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1/3 cup",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "2 tsp",
+      "preparation": "mixed with water for slurry"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 tbsp",
+      "preparation": "to make slurry"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1 small bunch",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2 stalks",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Korean",
+      "LatinAmerican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Hot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2.5 cups",
+      "preparation": "for cooking rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sirloin steak",
+      "quantity": "700 g",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "900 g",
+      "preparation": "cut into 1 cm fries",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "4 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "2 medium",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "2 tbsp",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "3 tbsp",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tbsp",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tsp",
+      "preparation": "for sauce balance",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "1–2 tsp",
+      "preparation": "to taste for heat",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1/3 cup",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "2 tsp",
+      "preparation": "mixed with water for slurry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 tbsp",
+      "preparation": "to make slurry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1 small bunch",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2 stalks",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T161728Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T161630Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

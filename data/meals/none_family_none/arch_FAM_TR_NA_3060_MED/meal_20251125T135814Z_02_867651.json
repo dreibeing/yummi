@@ -1,0 +1,295 @@
+{
+  "meal_id": "meal_20251125T135814Z_02_867651",
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "archetype_name": "Family Turkish & North African Suppers (Medium, 30–60, Intermediate)",
+  "name": "Apricot-Almond Chicken Tagine with Fluffy Couscous",
+  "description": "Oven-finished chicken thigh tagine with apricots, warm spices, and toasted almonds, served over parsley couscous. Medium warmth and family-friendly portions.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 180°C (350°F).",
+    "Slice 2 medium onions and mince 3 cloves garlic.",
+    "Pit and quarter 6 apricot.",
+    "Finely chop the rind of 1/2 preserved lemon.",
+    "Roughly chop 1/3 cup almonds and chop 1/2 cup parsley.",
+    "Measure spices: 1 tsp cinnamon, 1.5 tsp cumin, 1/2–1 tsp chili flakes.",
+    "Boil 2.5 cups water for couscous."
+  ],
+  "cook_steps": [
+    "Heat 2 tbsp olive oil in a large oven-safe pot over medium-high heat.",
+    "Season 800 g chicken thighs with 1 tsp salt and 1/4 tsp black pepper; brown 3–4 min per side. Transfer to a plate.",
+    "Add 1 tbsp olive oil if needed, then onions and a pinch of salt; cook 5–6 min until softened. Stir in garlic for 30 seconds.",
+    "Add cinnamon, cumin, and chili flakes; toast 30–60 seconds until fragrant.",
+    "Stir in apricot, preserved lemon, and 2 cups vegetable stock; bring to a simmer. Return chicken (and juices), cover, and transfer to the oven for 25–30 min until chicken is tender.",
+    "While the tagine cooks, place 2 cups couscous in a bowl with 1/2 tsp salt and 1 tbsp olive oil. Pour over 2.5 cups boiling water, cover, and let stand 10 min. Fluff with a fork and fold in parsley.",
+    "Toast almonds in a dry pan over medium heat for 2–3 min until golden.",
+    "Remove tagine from the oven; taste and adjust with salt and black pepper as needed.",
+    "Serve couscous in bowls, top with chicken and sauce, and sprinkle with toasted almonds. Add spoonfuls of hummus on the side if using."
+  ],
+  "instructions": [
+    "Preheat oven to 180°C (350°F).",
+    "Slice 2 medium onions and mince 3 cloves garlic.",
+    "Pit and quarter 6 apricot.",
+    "Finely chop the rind of 1/2 preserved lemon.",
+    "Roughly chop 1/3 cup almonds and chop 1/2 cup parsley.",
+    "Measure spices: 1 tsp cinnamon, 1.5 tsp cumin, 1/2–1 tsp chili flakes.",
+    "Boil 2.5 cups water for couscous.",
+    "Heat 2 tbsp olive oil in a large oven-safe pot over medium-high heat.",
+    "Season 800 g chicken thighs with 1 tsp salt and 1/4 tsp black pepper; brown 3–4 min per side. Transfer to a plate.",
+    "Add 1 tbsp olive oil if needed, then onions and a pinch of salt; cook 5–6 min until softened. Stir in garlic for 30 seconds.",
+    "Add cinnamon, cumin, and chili flakes; toast 30–60 seconds until fragrant.",
+    "Stir in apricot, preserved lemon, and 2 cups vegetable stock; bring to a simmer. Return chicken (and juices), cover, and transfer to the oven for 25–30 min until chicken is tender.",
+    "While the tagine cooks, place 2 cups couscous in a bowl with 1/2 tsp salt and 1 tbsp olive oil. Pour over 2.5 cups boiling water, cover, and let stand 10 min. Fluff with a fork and fold in parsley.",
+    "Toast almonds in a dry pan over medium heat for 2–3 min until golden.",
+    "Remove tagine from the oven; taste and adjust with salt and black pepper as needed.",
+    "Serve couscous in bowls, top with chicken and sauce, and sprinkle with toasted almonds. Add spoonfuls of hummus on the side if using."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "800 g",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1.5 tsp"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2–1 tsp"
+    },
+    {
+      "core_item_name": "apricot",
+      "quantity": "6",
+      "preparation": "pitted and quartered"
+    },
+    {
+      "core_item_name": "preserved lemon",
+      "quantity": "1/2",
+      "preparation": "rind finely chopped"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "about 1.5 tsp total"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "about 1/2 tsp total"
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "2 cups",
+      "preparation": "dry"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2.5 cups",
+      "preparation": "boiling"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "almonds",
+      "quantity": "1/3 cup",
+      "preparation": "toasted, roughly chopped"
+    },
+    {
+      "core_item_name": "hummus",
+      "quantity": "1 cup",
+      "preparation": "to serve (optional)"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "NorthAfrican",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "800 g",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1.5 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2–1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apricot",
+      "quantity": "6",
+      "preparation": "pitted and quartered",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "preserved lemon",
+      "quantity": "1/2",
+      "preparation": "rind finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "about 1.5 tsp total",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "about 1/2 tsp total",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "2 cups",
+      "preparation": "dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2.5 cups",
+      "preparation": "boiling",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "almonds",
+      "quantity": "1/3 cup",
+      "preparation": "toasted, roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "hummus",
+      "quantity": "1 cup",
+      "preparation": "to serve (optional)",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T135942Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T135814Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

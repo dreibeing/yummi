@@ -1,0 +1,309 @@
+{
+  "meal_id": "meal_20251125T140030Z_02_b2a5da",
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "archetype_name": "Family Weekend Showstopper: Spanish & Portuguese Feasts",
+  "name": "Caldeirada de Peixe (Portuguese Family Fish Stew)",
+  "description": "A layered Portuguese fish stew baked and simmered with potatoes, peppers, tomatoes, and aromatic bay-saffron broth for a showpiece family pot.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Preheat oven to 180°C/350°F.",
+    "Rinse and pat dry fish fillets; cut into large chunks (about palm-size).",
+    "Rinse mussels and discard any broken shells (if using ready-cooked, keep chilled until assembly).",
+    "Peel potatoes and slice into 1 cm rounds.",
+    "Peel onions and slice into thin rings.",
+    "Core and slice red pepper into strips.",
+    "Mince garlic.",
+    "Roughly chop parsley; cut lemon into wedges.",
+    "Dissolve fish stock concentrate in 500 ml warm water.",
+    "Measure white wine, olive oil, paprika, saffron, salt, and black pepper."
+  ],
+  "cook_steps": [
+    "Heat a large oven-safe pot with lid over medium heat; add 3 tbsp olive oil.",
+    "Scatter a layer of onions on the bottom, then a layer of potatoes, a few strips of red pepper, and half the garlic; season lightly with salt, black pepper, and a pinch of paprika.",
+    "Add half the fish fillets in a single layer; add 1 bay leaf.",
+    "Repeat layers: onions, potatoes, red pepper, remaining garlic, a little salt, pepper, paprika; then the remaining fish and second bay leaf.",
+    "Pour in diced tomatoes, white wine, and the warm fish stock concentrate mixture around the sides so layers stay mostly intact.",
+    "Sprinkle saffron over the top and drizzle remaining 1 tbsp olive oil.",
+    "Bring to a gentle simmer on the stovetop (about 5–7 minutes).",
+    "Cover the pot and transfer to the oven; bake 25–30 minutes until potatoes are tender.",
+    "Return pot to stovetop on medium; nestle mussels on top, cover, and cook 5–8 minutes until mussels are heated through and (if raw) opened. Discard any that do not open.",
+    "Taste and adjust salt and black pepper. Rest 5 minutes.",
+    "Finish with chopped parsley and a few squeezes of lemon. Serve directly from the pot with extra lemon wedges."
+  ],
+  "instructions": [
+    "Preheat oven to 180°C/350°F.",
+    "Rinse and pat dry fish fillets; cut into large chunks (about palm-size).",
+    "Rinse mussels and discard any broken shells (if using ready-cooked, keep chilled until assembly).",
+    "Peel potatoes and slice into 1 cm rounds.",
+    "Peel onions and slice into thin rings.",
+    "Core and slice red pepper into strips.",
+    "Mince garlic.",
+    "Roughly chop parsley; cut lemon into wedges.",
+    "Dissolve fish stock concentrate in 500 ml warm water.",
+    "Measure white wine, olive oil, paprika, saffron, salt, and black pepper.",
+    "Heat a large oven-safe pot with lid over medium heat; add 3 tbsp olive oil.",
+    "Scatter a layer of onions on the bottom, then a layer of potatoes, a few strips of red pepper, and half the garlic; season lightly with salt, black pepper, and a pinch of paprika.",
+    "Add half the fish fillets in a single layer; add 1 bay leaf.",
+    "Repeat layers: onions, potatoes, red pepper, remaining garlic, a little salt, pepper, paprika; then the remaining fish and second bay leaf.",
+    "Pour in diced tomatoes, white wine, and the warm fish stock concentrate mixture around the sides so layers stay mostly intact.",
+    "Sprinkle saffron over the top and drizzle remaining 1 tbsp olive oil.",
+    "Bring to a gentle simmer on the stovetop (about 5–7 minutes).",
+    "Cover the pot and transfer to the oven; bake 25–30 minutes until potatoes are tender.",
+    "Return pot to stovetop on medium; nestle mussels on top, cover, and cook 5–8 minutes until mussels are heated through and (if raw) opened. Discard any that do not open.",
+    "Taste and adjust salt and black pepper. Rest 5 minutes.",
+    "Finish with chopped parsley and a few squeezes of lemon. Serve directly from the pot with extra lemon wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "800 g",
+      "preparation": "cut into large chunks"
+    },
+    {
+      "core_item_name": "mussels",
+      "quantity": "500 g",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "800 g",
+      "preparation": "sliced into 1 cm rounds"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "sliced into rings"
+    },
+    {
+      "core_item_name": "red pepper",
+      "quantity": "2",
+      "preparation": "sliced into strips"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "400 g can",
+      "preparation": "undrained"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "200 ml",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "fish stock concentrate",
+      "quantity": "1 sachet",
+      "preparation": "dissolved in 500 ml warm water"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "a pinch",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 bunch",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": ""
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Portuguese",
+      "Spanish"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "800 g",
+      "preparation": "cut into large chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mussels",
+      "quantity": "500 g",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "800 g",
+      "preparation": "sliced into 1 cm rounds",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "sliced into rings",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red pepper",
+      "quantity": "2",
+      "preparation": "sliced into strips",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "400 g can",
+      "preparation": "undrained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "200 ml",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "fish stock concentrate",
+      "quantity": "1 sachet",
+      "preparation": "dissolved in 500 ml warm water",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "a pinch",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 bunch",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T140207Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T140030Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "meal_id": "meal_20251125T140836Z_02_4d76a2",
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "archetype_name": "Family Low-Fat Mediterranean Light Plates (15–30, Mild)",
+  "name": "Lemon-Dill Lentil Soup with Roasted Zucchini & Tomatoes",
+  "description": "Bright, low-fat lentil soup finished with fresh lemon and dill, topped with a quick tray of roasted zucchini and cherry tomatoes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C/425°F.",
+    "Rinse lentils in a sieve until water runs clear.",
+    "Dice onions, carrots, and celery small.",
+    "Slice zucchini into half-moons; halve cherry tomatoes.",
+    "Mince garlic.",
+    "Roughly chop dill and parsley.",
+    "Zest and halve the lemon."
+  ],
+  "cook_steps": [
+    "On a sheet pan, toss zucchini and cherry tomatoes with 1 tsp olive oil, a pinch of salt, and black pepper. Roast 12–15 minutes until tender and lightly browned.",
+    "Meanwhile, heat 2 tsp olive oil in a pot over medium heat. Add onions, carrots, and celery; cook 4–5 minutes until softened.",
+    "Stir in garlic and ground cumin; cook 30 seconds until fragrant.",
+    "Add lentils, bay leaf, vegetable stock, and a pinch of salt and black pepper. Bring to a boil, then reduce heat and simmer 15–18 minutes until lentils are tender.",
+    "Remove bay leaf. Stir in dill, half the parsley, lemon zest, and juice to taste. Adjust salt and black pepper.",
+    "Ladle soup into bowls. Top each with roasted zucchini and tomatoes and the remaining parsley. Serve with extra lemon wedges if desired."
+  ],
+  "instructions": [
+    "Heat oven to 220°C/425°F.",
+    "Rinse lentils in a sieve until water runs clear.",
+    "Dice onions, carrots, and celery small.",
+    "Slice zucchini into half-moons; halve cherry tomatoes.",
+    "Mince garlic.",
+    "Roughly chop dill and parsley.",
+    "Zest and halve the lemon.",
+    "On a sheet pan, toss zucchini and cherry tomatoes with 1 tsp olive oil, a pinch of salt, and black pepper. Roast 12–15 minutes until tender and lightly browned.",
+    "Meanwhile, heat 2 tsp olive oil in a pot over medium heat. Add onions, carrots, and celery; cook 4–5 minutes until softened.",
+    "Stir in garlic and ground cumin; cook 30 seconds until fragrant.",
+    "Add lentils, bay leaf, vegetable stock, and a pinch of salt and black pepper. Bring to a boil, then reduce heat and simmer 15–18 minutes until lentils are tender.",
+    "Remove bay leaf. Stir in dill, half the parsley, lemon zest, and juice to taste. Adjust salt and black pepper.",
+    "Ladle soup into bowls. Top each with roasted zucchini and tomatoes and the remaining parsley. Serve with extra lemon wedges if desired."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "lentils",
+      "quantity": "1 1/4 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "6 cups"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "celery",
+      "quantity": "2 stalks",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "bay leaf",
+      "quantity": "1"
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "sliced into half-moons"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "dill",
+      "quantity": "3 Tbsp",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 Tbsp",
+      "preparation": "chopped, divided"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 Tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowFat"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "lentils",
+      "quantity": "1 1/4 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "6 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "celery",
+      "quantity": "2 stalks",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaf",
+      "quantity": "1",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "sliced into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "dill",
+      "quantity": "3 Tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 Tbsp",
+      "preparation": "chopped, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 Tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [
+    "Category 'MealComponentPreference' ideally includes 2+ tags; received ['FromScratch']"
+  ],
+  "metadata": {
+    "created_at": "20251125T141003Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T140836Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

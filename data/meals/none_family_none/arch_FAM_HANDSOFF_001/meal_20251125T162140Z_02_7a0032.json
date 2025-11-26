@@ -1,0 +1,233 @@
+{
+  "meal_id": "meal_20251125T162140Z_02_7a0032",
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "archetype_name": "Family Hands-Off Sheet Pan & Slow Cooker Nights",
+  "name": "Sheet-Pan Chermoula Turkey with Peppers & Courgette, served with Herbed Couscous",
+  "description": "Hands-off roasted turkey and vegetables coated in chermoula, finished with olives and lemon, with a quick parsley couscous on the side.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F and line a large sheet pan.",
+    "Slice bell peppers into strips, courgette into half-moons, and red onion into wedges.",
+    "Pat turkey dry with paper towels.",
+    "In a bowl, mix chermoula with olive oil to make a loose paste.",
+    "Rinse parsley and finely chop.",
+    "Halve the lemon; zest one half and cut the rest into wedges.",
+    "Bring 1.5 cups water to a boil in a small pot for couscous."
+  ],
+  "cook_steps": [
+    "On the sheet pan, toss bell peppers, courgette, and red onion with half the chermoula mixture, a pinch of salt, and black pepper.",
+    "Add turkey to the pan and brush with the remaining chermoula; spread everything in a single layer.",
+    "Roast for 25–30 minutes, turning vegetables and flipping turkey once halfway, until turkey is cooked through.",
+    "During roasting, pour the boiling water over couscous in a pot, add a pinch of salt, stir, cover, and let sit off heat for 5 minutes.",
+    "Fluff couscous with a fork; mix in chopped parsley, lemon zest, and a drizzle of olive oil.",
+    "In the last 5 minutes of roasting, scatter olives over the sheet pan to warm.",
+    "Squeeze lemon over the turkey and vegetables. Serve with the herbed couscous and extra lemon wedges."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F and line a large sheet pan.",
+    "Slice bell peppers into strips, courgette into half-moons, and red onion into wedges.",
+    "Pat turkey dry with paper towels.",
+    "In a bowl, mix chermoula with olive oil to make a loose paste.",
+    "Rinse parsley and finely chop.",
+    "Halve the lemon; zest one half and cut the rest into wedges.",
+    "Bring 1.5 cups water to a boil in a small pot for couscous.",
+    "On the sheet pan, toss bell peppers, courgette, and red onion with half the chermoula mixture, a pinch of salt, and black pepper.",
+    "Add turkey to the pan and brush with the remaining chermoula; spread everything in a single layer.",
+    "Roast for 25–30 minutes, turning vegetables and flipping turkey once halfway, until turkey is cooked through.",
+    "During roasting, pour the boiling water over couscous in a pot, add a pinch of salt, stir, cover, and let sit off heat for 5 minutes.",
+    "Fluff couscous with a fork; mix in chopped parsley, lemon zest, and a drizzle of olive oil.",
+    "In the last 5 minutes of roasting, scatter olives over the sheet pan to warm.",
+    "Squeeze lemon over the turkey and vegetables. Serve with the herbed couscous and extra lemon wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "700–800 g",
+      "preparation": "cut into strips or chunks if not pre-cut"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "courgette",
+      "quantity": "2 medium",
+      "preparation": "cut into 1 cm half-moons"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "chermoula",
+      "quantity": "3 tablespoons"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 to 1.5 teaspoons",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "drained"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and wedges"
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1 cup (dry)"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "finely chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "700–800 g",
+      "preparation": "cut into strips or chunks if not pre-cut",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "courgette",
+      "quantity": "2 medium",
+      "preparation": "cut into 1 cm half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chermoula",
+      "quantity": "3 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 to 1.5 teaspoons",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1 cup (dry)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T162258Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T162140Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

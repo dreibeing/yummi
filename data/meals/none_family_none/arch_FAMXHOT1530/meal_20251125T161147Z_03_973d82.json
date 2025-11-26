@@ -1,0 +1,261 @@
+{
+  "meal_id": "meal_20251125T161147Z_03_973d82",
+  "archetype_uid": "arch_FAMXHOT1530",
+  "archetype_name": "Family Extra-Hot Chili Night (Caribbean & Mexican, 15–30, Simple)",
+  "name": "Extra-Hot Habanero Steak & Pineapple Pepper Stir-Fry over Rice",
+  "description": "Quick seared sirloin tossed with bell peppers and pineapple in an allspice–habanero sauce, served over fluffy jasmine rice. Caribbean heat meets Mexican brightness for a fast family burn.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1.5 cups jasmine rice until water runs clear.",
+    "Slice 1 lb (450 g) sirloin steak thinly against the grain.",
+    "Core and slice 2 bell peppers into strips.",
+    "Slice 1 onion and mince 3 cloves garlic.",
+    "Cut 2 cups pineapple into bite-size chunks.",
+    "Chop a small handful of coriander.",
+    "In a bowl, mix 2–3 tbsp habanero sauce, juice of 1 lime, 1 tsp ground cumin, 1/2 tsp allspice, 1/2 tsp black pepper, and 1/2 tsp salt."
+  ],
+  "cook_steps": [
+    "Cook rice: Add rinsed jasmine rice and 3 cups water to a pot. Bring to a boil, reduce to low, cover, and simmer 12–15 minutes until tender; rest covered 5 minutes.",
+    "Heat a large skillet on high. Add 1 tbsp olive oil.",
+    "Sear steak in a single layer 1–2 minutes per side until just browned. Transfer to a plate.",
+    "Add remaining 1 tbsp olive oil to the skillet. Stir-fry onion and bell peppers 3–4 minutes until crisp-tender.",
+    "Add garlic and pineapple; cook 2–3 minutes to lightly char edges.",
+    "Return steak and pour in the habanero-lime spice mix. Toss 30–60 seconds until glossy and hot. Season to taste with salt.",
+    "Fluff rice and portion into bowls. Top with the steak-pepper-pineapple mix. Sprinkle coriander.",
+    "Outdoor grill option (optional, for extra char): While rice cooks, grill pepper strips and pineapple on high heat 2–3 minutes per side, then proceed from the steak sear step and add the grilled pieces in."
+  ],
+  "instructions": [
+    "Rinse 1.5 cups jasmine rice until water runs clear.",
+    "Slice 1 lb (450 g) sirloin steak thinly against the grain.",
+    "Core and slice 2 bell peppers into strips.",
+    "Slice 1 onion and mince 3 cloves garlic.",
+    "Cut 2 cups pineapple into bite-size chunks.",
+    "Chop a small handful of coriander.",
+    "In a bowl, mix 2–3 tbsp habanero sauce, juice of 1 lime, 1 tsp ground cumin, 1/2 tsp allspice, 1/2 tsp black pepper, and 1/2 tsp salt.",
+    "Cook rice: Add rinsed jasmine rice and 3 cups water to a pot. Bring to a boil, reduce to low, cover, and simmer 12–15 minutes until tender; rest covered 5 minutes.",
+    "Heat a large skillet on high. Add 1 tbsp olive oil.",
+    "Sear steak in a single layer 1–2 minutes per side until just browned. Transfer to a plate.",
+    "Add remaining 1 tbsp olive oil to the skillet. Stir-fry onion and bell peppers 3–4 minutes until crisp-tender.",
+    "Add garlic and pineapple; cook 2–3 minutes to lightly char edges.",
+    "Return steak and pour in the habanero-lime spice mix. Toss 30–60 seconds until glossy and hot. Season to taste with salt.",
+    "Fluff rice and portion into bowls. Top with the steak-pepper-pineapple mix. Sprinkle coriander.",
+    "Outdoor grill option (optional, for extra char): While rice cooks, grill pepper strips and pineapple on high heat 2–3 minutes per side, then proceed from the steak sear step and add the grilled pieces in."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "sirloin steak",
+      "quantity": "1 lb (450 g)",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "cored and sliced"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "pineapple",
+      "quantity": "2 cups",
+      "preparation": "chunks"
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "2–3 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1/2 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Caribbean",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "ExtraHot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sirloin steak",
+      "quantity": "1 lb (450 g)",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "cored and sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pineapple",
+      "quantity": "2 cups",
+      "preparation": "chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "2–3 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1/2 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T161414Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T161147Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

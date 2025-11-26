@@ -1,0 +1,223 @@
+{
+  "meal_id": "meal_20251125T141310Z_02_7508ce",
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "archetype_name": "Family Quick Grill & Salad Nights (Mild, 15–30)",
+  "name": "Boerewors Rolls with Quick Tomato-Onion Relish & Garden Salad",
+  "description": "Family-friendly boerewors rolls grilled fast on the braai, topped with a sweet-tangy tomato-onion relish and served with a simple mixed-greens salad. Mild and weeknight-quick.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat OutdoorGrill to medium-high heat.",
+    "Dice tomatoes (about 3 medium).",
+    "Finely chop onions (1 large).",
+    "Measure apple cider vinegar, brown sugar, salt, black pepper, and olive oil for the relish.",
+    "Rinse and dry mixed greens.",
+    "Split bread rolls and set aside.",
+    "Place vinaigrette near the salad bowl."
+  ],
+  "cook_steps": [
+    "Grill boerewors over direct medium-high heat for 12–15 minutes, turning every 3–4 minutes until browned and cooked through.",
+    "While the boerewors cooks, heat olive oil in a small pan on the StoveTop over medium heat; add onions and cook 3–4 minutes until softened.",
+    "Stir in tomatoes, apple cider vinegar, brown sugar, salt, and black pepper; simmer 5–7 minutes until slightly thickened. Remove from heat.",
+    "Toast bread rolls cut-side down on the grill for 30–60 seconds until lightly crisp.",
+    "Toss mixed greens with vinaigrette in a bowl.",
+    "Assemble rolls: place boerewors in toasted bread rolls and spoon over the warm tomato-onion relish.",
+    "Serve immediately with the mixed-greens salad on the side."
+  ],
+  "instructions": [
+    "Preheat OutdoorGrill to medium-high heat.",
+    "Dice tomatoes (about 3 medium).",
+    "Finely chop onions (1 large).",
+    "Measure apple cider vinegar, brown sugar, salt, black pepper, and olive oil for the relish.",
+    "Rinse and dry mixed greens.",
+    "Split bread rolls and set aside.",
+    "Place vinaigrette near the salad bowl.",
+    "Grill boerewors over direct medium-high heat for 12–15 minutes, turning every 3–4 minutes until browned and cooked through.",
+    "While the boerewors cooks, heat olive oil in a small pan on the StoveTop over medium heat; add onions and cook 3–4 minutes until softened.",
+    "Stir in tomatoes, apple cider vinegar, brown sugar, salt, and black pepper; simmer 5–7 minutes until slightly thickened. Remove from heat.",
+    "Toast bread rolls cut-side down on the grill for 30–60 seconds until lightly crisp.",
+    "Toss mixed greens with vinaigrette in a bowl.",
+    "Assemble rolls: place boerewors in toasted bread rolls and spoon over the warm tomato-onion relish.",
+    "Serve immediately with the mixed-greens salad on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "boerewors",
+      "quantity": "800 g",
+      "preparation": "whole coil or links"
+    },
+    {
+      "core_item_name": "bread rolls",
+      "quantity": "4–6 rolls",
+      "preparation": "split"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "3 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": "for sautéing"
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "2 tbsp",
+      "preparation": "for relish"
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tbsp",
+      "preparation": "for relish"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "mixed greens",
+      "quantity": "150 g",
+      "preparation": "rinsed and dried"
+    },
+    {
+      "core_item_name": "vinaigrette",
+      "quantity": "3 tbsp",
+      "preparation": "for salad"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "boerewors",
+      "quantity": "800 g",
+      "preparation": "whole coil or links",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bread rolls",
+      "quantity": "4–6 rolls",
+      "preparation": "split",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "3 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": "for sautéing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "2 tbsp",
+      "preparation": "for relish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tbsp",
+      "preparation": "for relish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mixed greens",
+      "quantity": "150 g",
+      "preparation": "rinsed and dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vinaigrette",
+      "quantity": "3 tbsp",
+      "preparation": "for salad",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T141428Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T141310Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

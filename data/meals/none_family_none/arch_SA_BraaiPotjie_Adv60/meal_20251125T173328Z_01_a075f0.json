@@ -1,0 +1,281 @@
+{
+  "meal_id": "meal_20251125T173328Z_01_a075f0",
+  "archetype_uid": "arch_SA_BraaiPotjie_Adv60",
+  "archetype_name": "Family Weekend Advanced: South African Braai & Potjie",
+  "name": "Leg of Lamb Potjie with Tomato, Rosemary and Pap",
+  "description": "A slow-braised South African lamb potjie with tomatoes, herbs, and medium warmth, finished low and slow and served with maize meal pap. Built for weekend braai time with an oven finish for steady tenderness.",
+  "servings": "Serves 6",
+  "prep_steps": [
+    "Set up OutdoorGrill for medium heat with steady coals; preheat Oven to 160°C (320°F).",
+    "Cut onions into thick wedges.",
+    "Peel and chunk carrots into 3–4 cm pieces.",
+    "Scrub potatoes and cut into large chunks.",
+    "Smash and peel garlic cloves.",
+    "Pat dry leg of lamb and season all over with salt, black pepper, and paprika.",
+    "Measure beef stock and open diced tomatoes.",
+    "Have bay leaves, rosemary, oregano, and chilli flakes ready."
+  ],
+  "cook_steps": [
+    "Heat a potjie or heavy Dutch oven over the OutdoorGrill; add a good splash of olive oil.",
+    "Brown the leg of lamb on all sides (8–10 minutes) until well colored; remove to a tray.",
+    "Add a little more olive oil to the pot; sauté onions and garlic until lightly golden (4–5 minutes).",
+    "Stir in carrots and potatoes; cook 3 minutes to coat in the aromatics.",
+    "Add diced tomatoes, beef stock, bay leaves, rosemary, oregano, and a pinch of chilli flakes; stir and bring to a simmer.",
+    "Return the leg of lamb to the pot (nestle into the vegetables). Top up with a little water if needed to come halfway up the meat. Cover with lid.",
+    "Transfer the covered pot to the Oven at 160°C and braise 2.5–3 hours, turning the lamb once halfway, until fork-tender and the sauce is rich. Adjust salt and black pepper to taste.",
+    "About 25 minutes before serving, bring a pot of salted water to a boil on the OutdoorGrill or stovetop and whisk in maize meal to make pap, cooking and stirring until thick and smooth.",
+    "Rest the potjie 10 minutes off heat. Slice or pull chunks of lamb and serve over pap with the tomato-herb potjie gravy and vegetables."
+  ],
+  "instructions": [
+    "Set up OutdoorGrill for medium heat with steady coals; preheat Oven to 160°C (320°F).",
+    "Cut onions into thick wedges.",
+    "Peel and chunk carrots into 3–4 cm pieces.",
+    "Scrub potatoes and cut into large chunks.",
+    "Smash and peel garlic cloves.",
+    "Pat dry leg of lamb and season all over with salt, black pepper, and paprika.",
+    "Measure beef stock and open diced tomatoes.",
+    "Have bay leaves, rosemary, oregano, and chilli flakes ready.",
+    "Heat a potjie or heavy Dutch oven over the OutdoorGrill; add a good splash of olive oil.",
+    "Brown the leg of lamb on all sides (8–10 minutes) until well colored; remove to a tray.",
+    "Add a little more olive oil to the pot; sauté onions and garlic until lightly golden (4–5 minutes).",
+    "Stir in carrots and potatoes; cook 3 minutes to coat in the aromatics.",
+    "Add diced tomatoes, beef stock, bay leaves, rosemary, oregano, and a pinch of chilli flakes; stir and bring to a simmer.",
+    "Return the leg of lamb to the pot (nestle into the vegetables). Top up with a little water if needed to come halfway up the meat. Cover with lid.",
+    "Transfer the covered pot to the Oven at 160°C and braise 2.5–3 hours, turning the lamb once halfway, until fork-tender and the sauce is rich. Adjust salt and black pepper to taste.",
+    "About 25 minutes before serving, bring a pot of salted water to a boil on the OutdoorGrill or stovetop and whisk in maize meal to make pap, cooking and stirring until thick and smooth.",
+    "Rest the potjie 10 minutes off heat. Slice or pull chunks of lamb and serve over pap with the tomato-herb potjie gravy and vegetables."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "leg of lamb",
+      "quantity": "1 whole (2–2.5 kg)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3–4 tablespoons",
+      "preparation": "for searing and sautéing"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2–3 teaspoons, plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "2 teaspoons, divided"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 teaspoons"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "6 cloves",
+      "preparation": "smashed and peeled"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "4 medium",
+      "preparation": "peeled and chunked"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "800 g",
+      "preparation": "scrubbed and chunked"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "2 cans (800 g total)"
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "2 cups (500 ml)"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2"
+    },
+    {
+      "core_item_name": "rosemary",
+      "quantity": "2 sprigs"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon dried or 1 sprig fresh"
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1/2–1 teaspoon",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "maize meal",
+      "quantity": "2 cups",
+      "preparation": "for pap"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "leg of lamb",
+      "quantity": "1 whole (2–2.5 kg)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3–4 tablespoons",
+      "preparation": "for searing and sautéing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2–3 teaspoons, plus more to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "2 teaspoons, divided",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 teaspoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "6 cloves",
+      "preparation": "smashed and peeled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "4 medium",
+      "preparation": "peeled and chunked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "800 g",
+      "preparation": "scrubbed and chunked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "2 cans (800 g total)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "2 cups (500 ml)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rosemary",
+      "quantity": "2 sprigs",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon dried or 1 sprig fresh",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1/2–1 teaspoon",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "maize meal",
+      "quantity": "2 cups",
+      "preparation": "for pap",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T173454Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T173328Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "meal_id": "meal_20251125T140030Z_01_744b71",
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "archetype_name": "Family Weekend Showstopper: Spanish & Portuguese Feasts",
+  "name": "Charred Peri-Peri Butterflied Chicken with Lemon Potatoes and Blistered Padrón Peppers",
+  "description": "A family-style Portuguese-Spanish feast: grill-roasted peri-peri butterflied chicken with crispy lemon potatoes and quick-blistered Padrón peppers.",
+  "servings": "Serves 4–5",
+  "prep_steps": [
+    "Pat dry the butterflied chicken with paper towels.",
+    "In a bowl, mix peri-peri sauce, peri-peri spice blend, 3 tbsp olive oil, 3 minced garlic cloves, zest of 1 lemon, juice of 1 lemon, 1 tsp salt, and 1/2 tsp black pepper.",
+    "Rub marinade all over the chicken (under the skin where possible). Cover and marinate 30–60 minutes in the fridge.",
+    "Peel (optional) and cut potatoes into 3–4 cm chunks. Rinse to remove surface starch.",
+    "Bring a large pot of water to a boil for potatoes. Preheat oven to 220°C (425°F) with a large roasting tray inside.",
+    "Toss padron peppers with 1 tbsp olive oil and a pinch of salt in a bowl; set aside.",
+    "Finely chop parsley. Slice the remaining lemon into wedges for serving.",
+    "Prepare the grill for medium heat with a two-zone setup (indirect and direct heat). Oil the grates."
+  ],
+  "cook_steps": [
+    "Parboil potatoes in boiling water for 8–10 minutes until just tender on the edges. Drain and let steam-dry 2 minutes.",
+    "In a large bowl, toss hot potatoes with 2 tbsp olive oil, 1 tsp salt, 1/2 tsp black pepper, 1 tsp paprika, and 2 minced garlic cloves. Carefully tip onto the preheated tray and roast 35–45 minutes, turning once, until golden and crisp.",
+    "Place marinated butterflied chicken skin-side up over indirect heat on the grill. Close lid and cook 35–45 minutes, maintaining steady medium heat.",
+    "Move chicken to direct heat, skin-side down, and char 3–5 minutes to crisp. Flip and brush with a little extra peri-peri sauce if desired; cook until juices run clear and thickest part reaches doneness.",
+    "While chicken finishes, blister padron peppers: place a cast-iron pan on the grill or use a hot stovetop pan. Add peppers and cook 3–5 minutes, tossing, until blistered. Season with a pinch of salt.",
+    "Rest chicken 10 minutes. Scatter chopped parsley over potatoes.",
+    "Carve chicken. Serve with lemon wedges, crispy lemon potatoes, and blistered padron peppers."
+  ],
+  "instructions": [
+    "Pat dry the butterflied chicken with paper towels.",
+    "In a bowl, mix peri-peri sauce, peri-peri spice blend, 3 tbsp olive oil, 3 minced garlic cloves, zest of 1 lemon, juice of 1 lemon, 1 tsp salt, and 1/2 tsp black pepper.",
+    "Rub marinade all over the chicken (under the skin where possible). Cover and marinate 30–60 minutes in the fridge.",
+    "Peel (optional) and cut potatoes into 3–4 cm chunks. Rinse to remove surface starch.",
+    "Bring a large pot of water to a boil for potatoes. Preheat oven to 220°C (425°F) with a large roasting tray inside.",
+    "Toss padron peppers with 1 tbsp olive oil and a pinch of salt in a bowl; set aside.",
+    "Finely chop parsley. Slice the remaining lemon into wedges for serving.",
+    "Prepare the grill for medium heat with a two-zone setup (indirect and direct heat). Oil the grates.",
+    "Parboil potatoes in boiling water for 8–10 minutes until just tender on the edges. Drain and let steam-dry 2 minutes.",
+    "In a large bowl, toss hot potatoes with 2 tbsp olive oil, 1 tsp salt, 1/2 tsp black pepper, 1 tsp paprika, and 2 minced garlic cloves. Carefully tip onto the preheated tray and roast 35–45 minutes, turning once, until golden and crisp.",
+    "Place marinated butterflied chicken skin-side up over indirect heat on the grill. Close lid and cook 35–45 minutes, maintaining steady medium heat.",
+    "Move chicken to direct heat, skin-side down, and char 3–5 minutes to crisp. Flip and brush with a little extra peri-peri sauce if desired; cook until juices run clear and thickest part reaches doneness.",
+    "While chicken finishes, blister padron peppers: place a cast-iron pan on the grill or use a hot stovetop pan. Add peppers and cook 3–5 minutes, tossing, until blistered. Season with a pinch of salt.",
+    "Rest chicken 10 minutes. Scatter chopped parsley over potatoes.",
+    "Carve chicken. Serve with lemon wedges, crispy lemon potatoes, and blistered padron peppers."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "butterflied chicken",
+      "quantity": "1 whole (1.4–1.8 kg)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "peri-peri sauce",
+      "quantity": "1/2 cup",
+      "preparation": "plus extra for brushing"
+    },
+    {
+      "core_item_name": "peri-peri spice blend",
+      "quantity": "2 tbsp",
+      "preparation": "mixed into marinade"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "6 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "5 cloves",
+      "preparation": "3 minced for marinade, 2 minced for potatoes"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "2",
+      "preparation": "zest and juice 1 for marinade; 1 cut into wedges"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "about 2 tsp",
+      "preparation": "divided, to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "divided, to taste"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "1.2 kg",
+      "preparation": "cut into 3–4 cm chunks"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": "for potatoes"
+    },
+    {
+      "core_item_name": "padron peppers",
+      "quantity": "300 g",
+      "preparation": "tossed with oil and salt"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1 small bunch",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": "for boiling potatoes"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Portuguese",
+      "Spanish"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "butterflied chicken",
+      "quantity": "1 whole (1.4–1.8 kg)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peri-peri sauce",
+      "quantity": "1/2 cup",
+      "preparation": "plus extra for brushing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peri-peri spice blend",
+      "quantity": "2 tbsp",
+      "preparation": "mixed into marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "6 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "5 cloves",
+      "preparation": "3 minced for marinade, 2 minced for potatoes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "2",
+      "preparation": "zest and juice 1 for marinade; 1 cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "about 2 tsp",
+      "preparation": "divided, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "divided, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "1.2 kg",
+      "preparation": "cut into 3–4 cm chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": "for potatoes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "padron peppers",
+      "quantity": "300 g",
+      "preparation": "tossed with oil and salt",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1 small bunch",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": "for boiling potatoes",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [
+    "Category 'MealComponentPreference' ideally includes 2+ tags; received ['FromScratch']"
+  ],
+  "metadata": {
+    "created_at": "20251125T140125Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T140030Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

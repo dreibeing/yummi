@@ -1,0 +1,284 @@
+{
+  "meal_id": "meal_20251125T171111Z_05_bb74d5",
+  "archetype_uid": "arch_FamLightJV_01",
+  "archetype_name": "Family Light & Fresh: Japanese and Vietnamese Weeknights",
+  "name": "Herb Chicken Rice Paper Rolls (No Soy, No Seafood)",
+  "description": "Fresh Vietnamese-style rice paper rolls with juicy chicken, crisp vegetables, and a lime-vinegar dipping sauce. Light, mild, and family-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Wash and dry produce.",
+    "Julienne carrot and cucumber.",
+    "Thinly slice spring onion.",
+    "Pick mint and basil leaves.",
+    "Mince garlic.",
+    "Juice 1 lime; cut the second lime into wedges.",
+    "Set a wide bowl with warm water (microwave or stovetop) for soaking rice paper wrappers.",
+    "Lay out a clean damp towel or board for rolling."
+  ],
+  "cook_steps": [
+    "Heat a large skillet over medium-high heat; add canola oil.",
+    "Season chicken thighs with salt and black pepper; toss with half the minced garlic.",
+    "Cook chicken 5–7 minutes, stirring, until cooked through and lightly browned. Squeeze a little lime juice over, then set aside to cool slightly.",
+    "Make dipping sauce: in a small bowl, whisk rice vinegar, remaining minced garlic, 1 tablespoon lime juice, honey, and 1–2 tablespoons water to thin.",
+    "Soften 1 rice paper wrapper in warm water for about 10 seconds; place on the damp towel.",
+    "Add a leaf of romaine lettuce, a few strips of chicken, carrot, cucumber, and a pinch of spring onion, mint, and basil.",
+    "Fold sides in, roll tightly. Repeat with remaining wrappers and fillings.",
+    "Serve rolls with dipping sauce and lime wedges."
+  ],
+  "instructions": [
+    "Wash and dry produce.",
+    "Julienne carrot and cucumber.",
+    "Thinly slice spring onion.",
+    "Pick mint and basil leaves.",
+    "Mince garlic.",
+    "Juice 1 lime; cut the second lime into wedges.",
+    "Set a wide bowl with warm water (microwave or stovetop) for soaking rice paper wrappers.",
+    "Lay out a clean damp towel or board for rolling.",
+    "Heat a large skillet over medium-high heat; add canola oil.",
+    "Season chicken thighs with salt and black pepper; toss with half the minced garlic.",
+    "Cook chicken 5–7 minutes, stirring, until cooked through and lightly browned. Squeeze a little lime juice over, then set aside to cool slightly.",
+    "Make dipping sauce: in a small bowl, whisk rice vinegar, remaining minced garlic, 1 tablespoon lime juice, honey, and 1–2 tablespoons water to thin.",
+    "Soften 1 rice paper wrapper in warm water for about 10 seconds; place on the damp towel.",
+    "Add a leaf of romaine lettuce, a few strips of chicken, carrot, cucumber, and a pinch of spring onion, mint, and basil.",
+    "Fold sides in, roll tightly. Repeat with remaining wrappers and fillings.",
+    "Serve rolls with dipping sauce and lime wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "500 g",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 teaspoon",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 teaspoon",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "1 small head",
+      "preparation": "leaves separated"
+    },
+    {
+      "core_item_name": "carrot",
+      "quantity": "2 medium",
+      "preparation": "julienned"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "julienned"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/2 cup",
+      "preparation": "leaves picked"
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "1/2 cup",
+      "preparation": "leaves picked"
+    },
+    {
+      "core_item_name": "rice paper wrappers",
+      "quantity": "16 sheets"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "1 juiced, 1 cut into wedges"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "4 cups",
+      "preparation": "warm, for soaking wrappers and thinning sauce"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Japanese",
+      "Vietnamese"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowCalorie"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "500 g",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 teaspoon",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 teaspoon",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "1 small head",
+      "preparation": "leaves separated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrot",
+      "quantity": "2 medium",
+      "preparation": "julienned",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "julienned",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/2 cup",
+      "preparation": "leaves picked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "1/2 cup",
+      "preparation": "leaves picked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice paper wrappers",
+      "quantity": "16 sheets",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "1 juiced, 1 cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "4 cups",
+      "preparation": "warm, for soaking wrappers and thinning sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T171558Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T171111Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

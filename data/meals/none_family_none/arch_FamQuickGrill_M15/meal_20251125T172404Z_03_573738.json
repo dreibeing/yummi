@@ -1,0 +1,285 @@
+{
+  "meal_id": "meal_20251125T172404Z_03_573738",
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "archetype_name": "Family Quick Grill & Salad Nights (Mild, 15–30)",
+  "name": "Grilled Halloumi Veg Skewers with Watermelon-Feta Salad",
+  "description": "Quick halloumi and vegetable skewers on the braai with a cool watermelon-cucumber-feta salad. Mild, fresh, and weeknight fast.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat OutdoorGrill to medium-high (or heat a StoveTop grill pan).",
+    "Cut halloumi cheese into 3 cm cubes.",
+    "Cut courgette into 1.5 cm thick half-moons.",
+    "Cut bell peppers into 3 cm pieces.",
+    "Cut red onion into chunky wedges.",
+    "Brush mushrooms clean and halve any large pieces.",
+    "In a bowl, combine olive oil, oregano, salt, and black pepper for the skewers.",
+    "Cube watermelon and dice cucumber; crumble feta cheese; roughly chop basil (optional).",
+    "In a large bowl, add watermelon, cucumber, feta cheese, olives, a drizzle of olive oil, and apple cider vinegar; season with salt and black pepper.",
+    "Cut lemon into wedges for serving."
+  ],
+  "cook_steps": [
+    "Toss halloumi cheese, courgette, bell peppers, red onion, and mushrooms with the seasoned olive oil.",
+    "Thread halloumi and vegetables onto skewers, alternating pieces.",
+    "Grill skewers 8–10 minutes, turning every 2–3 minutes, until halloumi is golden and vegetables are tender with light char.",
+    "Finish salad: add basil to the bowl, toss gently, and adjust vinegar, salt, and black pepper to taste.",
+    "Serve skewers hot with lemon wedges for squeezing and the watermelon-feta salad on the side."
+  ],
+  "instructions": [
+    "Preheat OutdoorGrill to medium-high (or heat a StoveTop grill pan).",
+    "Cut halloumi cheese into 3 cm cubes.",
+    "Cut courgette into 1.5 cm thick half-moons.",
+    "Cut bell peppers into 3 cm pieces.",
+    "Cut red onion into chunky wedges.",
+    "Brush mushrooms clean and halve any large pieces.",
+    "In a bowl, combine olive oil, oregano, salt, and black pepper for the skewers.",
+    "Cube watermelon and dice cucumber; crumble feta cheese; roughly chop basil (optional).",
+    "In a large bowl, add watermelon, cucumber, feta cheese, olives, a drizzle of olive oil, and apple cider vinegar; season with salt and black pepper.",
+    "Cut lemon into wedges for serving.",
+    "Toss halloumi cheese, courgette, bell peppers, red onion, and mushrooms with the seasoned olive oil.",
+    "Thread halloumi and vegetables onto skewers, alternating pieces.",
+    "Grill skewers 8–10 minutes, turning every 2–3 minutes, until halloumi is golden and vegetables are tender with light char.",
+    "Finish salad: add basil to the bowl, toss gently, and adjust vinegar, salt, and black pepper to taste.",
+    "Serve skewers hot with lemon wedges for squeezing and the watermelon-feta salad on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "halloumi cheese",
+      "quantity": "400–450 g",
+      "preparation": "cut into cubes"
+    },
+    {
+      "core_item_name": "courgette",
+      "quantity": "2 medium",
+      "preparation": "cut into half-moons"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 large",
+      "preparation": "cut into chunks"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "200 g",
+      "preparation": "halved if large"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "divided for skewers and salad"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "watermelon",
+      "quantity": "600 g",
+      "preparation": "cut into 2 cm cubes"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "feta cheese",
+      "quantity": "120 g",
+      "preparation": "crumbled"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "pitted, whole or sliced"
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1–2 tablespoons",
+      "preparation": "to taste for salad"
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "1/4 cup",
+      "preparation": "roughly chopped (optional)"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "halloumi cheese",
+      "quantity": "400–450 g",
+      "preparation": "cut into cubes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "courgette",
+      "quantity": "2 medium",
+      "preparation": "cut into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 large",
+      "preparation": "cut into chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "200 g",
+      "preparation": "halved if large",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "divided for skewers and salad",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "watermelon",
+      "quantity": "600 g",
+      "preparation": "cut into 2 cm cubes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "feta cheese",
+      "quantity": "120 g",
+      "preparation": "crumbled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "pitted, whole or sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1–2 tablespoons",
+      "preparation": "to taste for salad",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "1/4 cup",
+      "preparation": "roughly chopped (optional)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T172738Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T172404Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

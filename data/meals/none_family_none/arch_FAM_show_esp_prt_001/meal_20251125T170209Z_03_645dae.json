@@ -1,0 +1,290 @@
+{
+  "meal_id": "meal_20251125T170209Z_03_645dae",
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "archetype_name": "Family Weekend Showstopper: Spanish & Portuguese Feasts",
+  "name": "Grilled Portuguese Sardines with Tomato-Pepper Rice",
+  "description": "Char-grilled sardines served over a rich Iberian tomato-pepper rice for a festive family centerpiece. Slow-simmered rice and smoky fish deliver classic Portuguese-Spanish weekend vibes.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Preheat OutdoorGrill to medium-high heat; clean and oil the grates.",
+    "Rinse sardines under cold water and pat fully dry with paper towels.",
+    "Peel and finely chop onions.",
+    "Finely chop garlic.",
+    "Core and dice red pepper.",
+    "Rinse spanish rice in cold water until water runs mostly clear; drain.",
+    "Roughly chop parsley.",
+    "Halve the lemon.",
+    "Measure water and have fish stock concentrate ready."
+  ],
+  "cook_steps": [
+    "Start the rice: Heat a large deep pan over medium heat on the StoveTop and add olive oil.",
+    "Sauté onions with a pinch of salt until translucent, 8–10 minutes, then add garlic and red pepper; cook 2–3 minutes.",
+    "Stir in paprika and saffron; toast 30 seconds.",
+    "Add spanish rice; stir to coat in oil and aromatics for 1 minute.",
+    "Pour in diced tomatoes, fish stock concentrate, and water; add bay leaf and a pinch of black pepper. Bring to a boil.",
+    "Reduce to low, cover, and simmer gently until rice is tender and liquid is absorbed, 18–22 minutes. If needed, add a splash of water to finish. Keep covered off-heat 5 minutes; fluff and fold in parsley.",
+    "While rice simmers, drizzle sardines with olive oil; season both sides with salt and black pepper.",
+    "Grill sardines over direct heat, 3–4 minutes per side, until skin is charred and flesh just opaque. Move to indirect heat if flare-ups occur.",
+    "Squeeze lemon over sardines; taste rice and adjust salt and black pepper.",
+    "To serve, spread tomato-pepper rice on a warm platter and arrange sardines on top. Serve extra lemon on the side."
+  ],
+  "instructions": [
+    "Preheat OutdoorGrill to medium-high heat; clean and oil the grates.",
+    "Rinse sardines under cold water and pat fully dry with paper towels.",
+    "Peel and finely chop onions.",
+    "Finely chop garlic.",
+    "Core and dice red pepper.",
+    "Rinse spanish rice in cold water until water runs mostly clear; drain.",
+    "Roughly chop parsley.",
+    "Halve the lemon.",
+    "Measure water and have fish stock concentrate ready.",
+    "Start the rice: Heat a large deep pan over medium heat on the StoveTop and add olive oil.",
+    "Sauté onions with a pinch of salt until translucent, 8–10 minutes, then add garlic and red pepper; cook 2–3 minutes.",
+    "Stir in paprika and saffron; toast 30 seconds.",
+    "Add spanish rice; stir to coat in oil and aromatics for 1 minute.",
+    "Pour in diced tomatoes, fish stock concentrate, and water; add bay leaf and a pinch of black pepper. Bring to a boil.",
+    "Reduce to low, cover, and simmer gently until rice is tender and liquid is absorbed, 18–22 minutes. If needed, add a splash of water to finish. Keep covered off-heat 5 minutes; fluff and fold in parsley.",
+    "While rice simmers, drizzle sardines with olive oil; season both sides with salt and black pepper.",
+    "Grill sardines over direct heat, 3–4 minutes per side, until skin is charred and flesh just opaque. Move to indirect heat if flare-ups occur.",
+    "Squeeze lemon over sardines; taste rice and adjust salt and black pepper.",
+    "To serve, spread tomato-pepper rice on a warm platter and arrange sardines on top. Serve extra lemon on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "sardines",
+      "quantity": "8–12 whole sardines (about 1.2–1.6 kg total)",
+      "preparation": "rinsed and patted dry"
+    },
+    {
+      "core_item_name": "spanish rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (400 g)",
+      "preparation": "undrained"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "red pepper",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "fish stock concentrate",
+      "quantity": "2 teaspoons",
+      "preparation": "to dissolve in cooking liquid"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3.5–4 cups",
+      "preparation": "as needed for rice tenderness"
+    },
+    {
+      "core_item_name": "bay leaf",
+      "quantity": "1"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 teaspoons",
+      "preparation": "sweet"
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "a pinch",
+      "preparation": "optional"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Portuguese",
+      "Spanish"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "sardines",
+      "quantity": "8–12 whole sardines (about 1.2–1.6 kg total)",
+      "preparation": "rinsed and patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spanish rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (400 g)",
+      "preparation": "undrained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red pepper",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "fish stock concentrate",
+      "quantity": "2 teaspoons",
+      "preparation": "to dissolve in cooking liquid",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3.5–4 cups",
+      "preparation": "as needed for rice tenderness",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaf",
+      "quantity": "1",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 teaspoons",
+      "preparation": "sweet",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "a pinch",
+      "preparation": "optional",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T170454Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T170209Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,418 @@
+{
+  "meal_id": "meal_20251125T162954Z_01_17b19d",
+  "archetype_uid": "arch_FAM_IND_SHOW_60",
+  "archetype_name": "Family Weekend Showstopper: Indian Feast Night",
+  "name": "Raan-Style Leg of Lamb with Saffron Almond Pilaf and Cucumber-Mint Raita",
+  "description": "Slow-roasted North Indian spiced leg of lamb served with a fragrant saffron-almond basmati pilaf and a cooling cucumber-mint raita. A festive, centerpiece roast with classic sides.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Soak 2 cups basmati rice in cold water for 20 minutes; drain.",
+    "Crush 6 cloves garlic to a paste.",
+    "Finely chop 2 onions.",
+    "Grate or finely chop 1 cucumber; squeeze out excess liquid.",
+    "Chop a small handful of mint.",
+    "Warm 2 tablespoons water and steep a pinch of saffron for 10 minutes.",
+    "Make lamb marinade in a bowl: 1.5 cups yoghurt, juice of 1 lemon, garlic paste, 2 tablespoons garam masala, 2 teaspoons ground cumin, 1 teaspoon turmeric powder, 1 teaspoon black pepper, 1–2 teaspoons chili flakes, 2 teaspoons salt, and 2 tablespoons oil.",
+    "Pat dry 1 leg of lamb and score shallow crosshatches on the surface.",
+    "Rub marinade all over the leg of lamb, pushing into cuts; cover and refrigerate 2–12 hours.",
+    "Preheat oven to 160°C/320°F. Set out a large roasting pan with rack and foil."
+  ],
+  "cook_steps": [
+    "Place marinated leg of lamb on a rack in the roasting pan; cover loosely with foil.",
+    "Roast at 160°C/320°F for 2 hours, basting with pan juices every 30 minutes.",
+    "Remove foil, increase oven to 200°C/390°F, and roast 20–30 minutes more until deeply browned and internal temp reaches about 60–65°C/140–149°F for medium. Rest 20 minutes, tented.",
+    "For raita: in a bowl combine 1 cup yoghurt, grated cucumber, chopped mint, 1/2 teaspoon cumin seeds (lightly crushed), a squeeze of lemon, and salt to taste. Chill.",
+    "For pilaf: heat 2 tablespoons ghee in a wide pot over medium heat. Add 2 bay leaves, 4 cardamom, 4 cloves, and a small piece of cinnamon; sizzle 30 seconds.",
+    "Add chopped onions with a pinch of salt; cook 8–10 minutes until golden.",
+    "Stir in drained basmati rice; cook 2 minutes to coat in ghee.",
+    "Add saffron with its soaking water, 3.5 cups water, 1 teaspoon salt, and 1/2 teaspoon black pepper; bring to a simmer.",
+    "Fold in 1 cup peas and 1/2 cup roughly chopped almonds. Cover, reduce to low, and cook 12–15 minutes until rice is tender and liquid absorbed. Rest off heat 10 minutes, then fluff.",
+    "Warm naan in the hot oven for 3–5 minutes just before serving.",
+    "Slice lamb across the grain. Serve with saffron almond pilaf, cucumber-mint raita, and warm naan."
+  ],
+  "instructions": [
+    "Soak 2 cups basmati rice in cold water for 20 minutes; drain.",
+    "Crush 6 cloves garlic to a paste.",
+    "Finely chop 2 onions.",
+    "Grate or finely chop 1 cucumber; squeeze out excess liquid.",
+    "Chop a small handful of mint.",
+    "Warm 2 tablespoons water and steep a pinch of saffron for 10 minutes.",
+    "Make lamb marinade in a bowl: 1.5 cups yoghurt, juice of 1 lemon, garlic paste, 2 tablespoons garam masala, 2 teaspoons ground cumin, 1 teaspoon turmeric powder, 1 teaspoon black pepper, 1–2 teaspoons chili flakes, 2 teaspoons salt, and 2 tablespoons oil.",
+    "Pat dry 1 leg of lamb and score shallow crosshatches on the surface.",
+    "Rub marinade all over the leg of lamb, pushing into cuts; cover and refrigerate 2–12 hours.",
+    "Preheat oven to 160°C/320°F. Set out a large roasting pan with rack and foil.",
+    "Place marinated leg of lamb on a rack in the roasting pan; cover loosely with foil.",
+    "Roast at 160°C/320°F for 2 hours, basting with pan juices every 30 minutes.",
+    "Remove foil, increase oven to 200°C/390°F, and roast 20–30 minutes more until deeply browned and internal temp reaches about 60–65°C/140–149°F for medium. Rest 20 minutes, tented.",
+    "For raita: in a bowl combine 1 cup yoghurt, grated cucumber, chopped mint, 1/2 teaspoon cumin seeds (lightly crushed), a squeeze of lemon, and salt to taste. Chill.",
+    "For pilaf: heat 2 tablespoons ghee in a wide pot over medium heat. Add 2 bay leaves, 4 cardamom, 4 cloves, and a small piece of cinnamon; sizzle 30 seconds.",
+    "Add chopped onions with a pinch of salt; cook 8–10 minutes until golden.",
+    "Stir in drained basmati rice; cook 2 minutes to coat in ghee.",
+    "Add saffron with its soaking water, 3.5 cups water, 1 teaspoon salt, and 1/2 teaspoon black pepper; bring to a simmer.",
+    "Fold in 1 cup peas and 1/2 cup roughly chopped almonds. Cover, reduce to low, and cook 12–15 minutes until rice is tender and liquid absorbed. Rest off heat 10 minutes, then fluff.",
+    "Warm naan in the hot oven for 3–5 minutes just before serving.",
+    "Slice lamb across the grain. Serve with saffron almond pilaf, cucumber-mint raita, and warm naan."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "leg of lamb",
+      "quantity": "1 whole (2.0–2.5 kg)",
+      "preparation": "scored"
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1.5 cups + 1 cup",
+      "preparation": "divided for marinade and raita"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "6 cloves",
+      "preparation": "crushed to paste"
+    },
+    {
+      "core_item_name": "garam masala",
+      "quantity": "2 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "2 teaspoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1.5 teaspoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1–2 teaspoons",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "2 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups (raw)",
+      "preparation": "rinsed and soaked"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "ghee",
+      "quantity": "2 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cardamom",
+      "quantity": "4 pods",
+      "preparation": "lightly crushed"
+    },
+    {
+      "core_item_name": "cloves",
+      "quantity": "4",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1 small stick",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "a pinch",
+      "preparation": "soaked in warm water"
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "almonds",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "about 3.5 cups + as needed",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "grated and squeezed"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "small handful",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "1/2 teaspoon",
+      "preparation": "lightly crushed"
+    },
+    {
+      "core_item_name": "naan",
+      "quantity": "4–6 pieces",
+      "preparation": "warmed"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Indian",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Nuts"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "leg of lamb",
+      "quantity": "1 whole (2.0–2.5 kg)",
+      "preparation": "scored",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1.5 cups + 1 cup",
+      "preparation": "divided for marinade and raita",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "6 cloves",
+      "preparation": "crushed to paste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garam masala",
+      "quantity": "2 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "2 teaspoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1.5 teaspoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1–2 teaspoons",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "2 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups (raw)",
+      "preparation": "rinsed and soaked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ghee",
+      "quantity": "2 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cardamom",
+      "quantity": "4 pods",
+      "preparation": "lightly crushed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cloves",
+      "quantity": "4",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1 small stick",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "a pinch",
+      "preparation": "soaked in warm water",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "almonds",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "about 3.5 cups + as needed",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "grated and squeezed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "small handful",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "1/2 teaspoon",
+      "preparation": "lightly crushed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "naan",
+      "quantity": "4–6 pieces",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T163057Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T162954Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

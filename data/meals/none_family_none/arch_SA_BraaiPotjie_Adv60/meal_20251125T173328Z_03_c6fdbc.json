@@ -1,0 +1,287 @@
+{
+  "meal_id": "meal_20251125T173328Z_03_c6fdbc",
+  "archetype_uid": "arch_SA_BraaiPotjie_Adv60",
+  "archetype_name": "Family Weekend Advanced: South African Braai & Potjie",
+  "name": "Apricot-Chutney Glazed Braai Pork Ribs with Tomato-Onion Smoor and Grilled Rolls",
+  "description": "Low-and-slow oven ribs finished on the braai with a sticky apricot-chutney glaze, served with a grill-cooked tomato-onion smoor and charred bread rolls.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Heat oven to 150°C.",
+    "Line a large baking tray with foil.",
+    "Peel and finely chop onions.",
+    "Roughly chop tomatoes.",
+    "Peel and finely chop garlic.",
+    "Roughly chop apricot.",
+    "Mix rib dry rub: 2 tsp braai spice mix, 1 tsp salt, 1 tsp black pepper.",
+    "Pat pork ribs dry with paper towel and remove any tough membrane if still attached.",
+    "Whisk glaze: 1/2 cup BBQ sauce, 1/3 cup chutney, 2 tbsp apple cider vinegar, 1 tbsp brown sugar, 1/2 tsp chilli flakes, 1 tbsp olive oil.",
+    "Split bread rolls for grilling later."
+  ],
+  "cook_steps": [
+    "Rub ribs all over with the dry rub.",
+    "Place ribs meat-side up on the foil-lined tray; cover tightly with another sheet of foil.",
+    "Bake at 150°C for 2 hours until tender but not falling apart.",
+    "While ribs bake, light the outdoor grill for medium-high, two-zone heat (direct and indirect).",
+    "Start the smoor on the grill: set a cast-iron pot over indirect heat, add 2 tbsp olive oil, then onions and a pinch of salt; cook, stirring, 8–10 min until softened.",
+    "Add garlic; cook 1 min. Add tomatoes and chopped apricot; season with 1/2 tsp salt and 1/4 tsp black pepper.",
+    "Simmer smoor uncovered over gentle grill heat, stirring occasionally, 25–35 min until thick; move pot closer to or away from heat to maintain a steady simmer. Adjust salt and black pepper.",
+    "Remove ribs from oven and discard foil. Brush a thin layer of glaze over both sides.",
+    "Transfer ribs to the grill, bone-side down over indirect heat. Close lid and cook 10 min.",
+    "Brush more glaze; move ribs briefly over direct heat to caramelize, 2–3 min per side, watching for flare-ups. Repeat glazing once more for a sticky finish.",
+    "Toast bread rolls cut-side down over direct heat 1–2 min until charred at the edges.",
+    "Rest ribs 5 min, then slice between bones. Serve with smoor and grilled rolls. Offer remaining glaze at the table."
+  ],
+  "instructions": [
+    "Heat oven to 150°C.",
+    "Line a large baking tray with foil.",
+    "Peel and finely chop onions.",
+    "Roughly chop tomatoes.",
+    "Peel and finely chop garlic.",
+    "Roughly chop apricot.",
+    "Mix rib dry rub: 2 tsp braai spice mix, 1 tsp salt, 1 tsp black pepper.",
+    "Pat pork ribs dry with paper towel and remove any tough membrane if still attached.",
+    "Whisk glaze: 1/2 cup BBQ sauce, 1/3 cup chutney, 2 tbsp apple cider vinegar, 1 tbsp brown sugar, 1/2 tsp chilli flakes, 1 tbsp olive oil.",
+    "Split bread rolls for grilling later.",
+    "Rub ribs all over with the dry rub.",
+    "Place ribs meat-side up on the foil-lined tray; cover tightly with another sheet of foil.",
+    "Bake at 150°C for 2 hours until tender but not falling apart.",
+    "While ribs bake, light the outdoor grill for medium-high, two-zone heat (direct and indirect).",
+    "Start the smoor on the grill: set a cast-iron pot over indirect heat, add 2 tbsp olive oil, then onions and a pinch of salt; cook, stirring, 8–10 min until softened.",
+    "Add garlic; cook 1 min. Add tomatoes and chopped apricot; season with 1/2 tsp salt and 1/4 tsp black pepper.",
+    "Simmer smoor uncovered over gentle grill heat, stirring occasionally, 25–35 min until thick; move pot closer to or away from heat to maintain a steady simmer. Adjust salt and black pepper.",
+    "Remove ribs from oven and discard foil. Brush a thin layer of glaze over both sides.",
+    "Transfer ribs to the grill, bone-side down over indirect heat. Close lid and cook 10 min.",
+    "Brush more glaze; move ribs briefly over direct heat to caramelize, 2–3 min per side, watching for flare-ups. Repeat glazing once more for a sticky finish.",
+    "Toast bread rolls cut-side down over direct heat 1–2 min until charred at the edges.",
+    "Rest ribs 5 min, then slice between bones. Serve with smoor and grilled rolls. Offer remaining glaze at the table."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "pork ribs",
+      "quantity": "2 racks (1.8–2.2 kg total)",
+      "preparation": "membrane removed if present"
+    },
+    {
+      "core_item_name": "braai spice mix",
+      "quantity": "2 tsp",
+      "preparation": "for dry rub"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp total",
+      "preparation": "divide between rub and smoor"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1.25 tsp total",
+      "preparation": "freshly ground if possible"
+    },
+    {
+      "core_item_name": "BBQ sauce",
+      "quantity": "1/2 cup",
+      "preparation": "for glaze"
+    },
+    {
+      "core_item_name": "chutney",
+      "quantity": "1/3 cup",
+      "preparation": "for glaze"
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "2 tbsp",
+      "preparation": "for glaze"
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tbsp",
+      "preparation": "for glaze"
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1/2 tsp",
+      "preparation": "for glaze"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided between glaze and smoor"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "6 medium",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "apricot",
+      "quantity": "3 medium",
+      "preparation": "pitted and roughly chopped"
+    },
+    {
+      "core_item_name": "bread rolls",
+      "quantity": "6–8",
+      "preparation": "halved for grilling"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "pork ribs",
+      "quantity": "2 racks (1.8–2.2 kg total)",
+      "preparation": "membrane removed if present",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "braai spice mix",
+      "quantity": "2 tsp",
+      "preparation": "for dry rub",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp total",
+      "preparation": "divide between rub and smoor",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1.25 tsp total",
+      "preparation": "freshly ground if possible",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "BBQ sauce",
+      "quantity": "1/2 cup",
+      "preparation": "for glaze",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chutney",
+      "quantity": "1/3 cup",
+      "preparation": "for glaze",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "2 tbsp",
+      "preparation": "for glaze",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tbsp",
+      "preparation": "for glaze",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1/2 tsp",
+      "preparation": "for glaze",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided between glaze and smoor",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "6 medium",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apricot",
+      "quantity": "3 medium",
+      "preparation": "pitted and roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bread rolls",
+      "quantity": "6–8",
+      "preparation": "halved for grilling",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T173711Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T173328Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

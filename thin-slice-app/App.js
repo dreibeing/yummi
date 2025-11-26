@@ -400,7 +400,7 @@ const PREFERENCES_TAGS_VERSION = "2025.02.1"; // Keep in sync with data/tags/def
 const PREFERENCES_API_ENDPOINT = API_BASE_URL
   ? `${API_BASE_URL}/preferences`
   : null;
-const EXPLORATION_MEAL_TARGET = 10;
+const EXPLORATION_MEAL_TARGET = 20;
 const EXPLORATION_API_ENDPOINT = API_BASE_URL
   ? `${API_BASE_URL}/recommendations/exploration`
   : null;
@@ -409,7 +409,7 @@ const PREFERENCE_CONTROL_STATES = [
   { id: "neutral", label: "Skip", icon: "○" },
   { id: "dislike", label: "Dislike", icon: "👎" },
 ];
-const RECOMMENDATION_MEAL_TARGET = 10;
+const RECOMMENDATION_MEAL_TARGET = 20;
 const RECOMMENDATION_API_ENDPOINT = API_BASE_URL
   ? `${API_BASE_URL}/recommendations/feed`
   : null;

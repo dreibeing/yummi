@@ -1,0 +1,272 @@
+{
+  "meal_id": "meal_20251125T164026Z_04_83a9d8",
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "archetype_name": "Family Low-Sodium American & French Comfort (30–60, Mild)",
+  "name": "Seared Duck with Orange Pan Sauce, Rosemary Potatoes, and Braised Red Cabbage",
+  "description": "Crisp-skinned duck finished with a bright orange pan sauce, served alongside rosemary-roasted potatoes and gently braised red cabbage with apple. Built for low-sodium family dining with mild, comforting flavors.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 425°F (220°C).",
+    "Scrub potatoes and cut into 1-inch chunks.",
+    "Thinly slice red cabbage; thinly slice onion; core and thinly slice apple.",
+    "Finely chop rosemary (if whole sprigs).",
+    "Pat duck dry; lightly score skin in a crosshatch (do not cut into the meat).",
+    "Zest 1 orange; juice both oranges into a bowl (about 1/2–3/4 cup).",
+    "Stir cornflour with water to make a smooth slurry.",
+    "Set out black pepper, olive oil, butter, and white wine."
+  ],
+  "cook_steps": [
+    "On a sheet pan, toss potatoes with 1.5 tbsp olive oil, half the rosemary, and a few grinds of black pepper. Roast 25–35 minutes, turning once, until golden and tender.",
+    "Start the cabbage: In a wide pot over medium heat, add 1 tbsp olive oil. Cook onion 3–4 minutes until softened. Add cabbage and apple; cook 5 minutes, stirring.",
+    "Add apple cider vinegar and 1/4 cup water to the cabbage. Cover and simmer on low, stirring occasionally, 12–15 minutes until tender with a slight bite. Season with black pepper to taste and keep warm.",
+    "Cook the duck: Place duck skin-side down in a cold, oven-safe skillet. Turn heat to medium. Cook 8–10 minutes to render fat and deeply crisp the skin. Spoon off excess fat as needed (reserve 1 tbsp in pan).",
+    "Flip duck and cook 1–2 minutes. Transfer skillet to the oven (same 425°F) and roast 4–7 minutes depending on thickness for medium doneness. Rest duck on a board, skin-side up, 5 minutes.",
+    "Make the orange pan sauce: Return skillet to medium heat with 1 tbsp reserved duck fat (or 1 tsp olive oil if needed). Add orange zest and white wine; simmer 1–2 minutes, scraping browned bits.",
+    "Add orange juice and honey; simmer 2–3 minutes to reduce slightly. Whisk in the cornflour slurry; simmer 30–60 seconds until glossy. Off heat, whisk in butter to finish. Grind in black pepper.",
+    "Slice duck. Plate with rosemary potatoes and braised cabbage. Spoon orange sauce over duck."
+  ],
+  "instructions": [
+    "Preheat oven to 425°F (220°C).",
+    "Scrub potatoes and cut into 1-inch chunks.",
+    "Thinly slice red cabbage; thinly slice onion; core and thinly slice apple.",
+    "Finely chop rosemary (if whole sprigs).",
+    "Pat duck dry; lightly score skin in a crosshatch (do not cut into the meat).",
+    "Zest 1 orange; juice both oranges into a bowl (about 1/2–3/4 cup).",
+    "Stir cornflour with water to make a smooth slurry.",
+    "Set out black pepper, olive oil, butter, and white wine.",
+    "On a sheet pan, toss potatoes with 1.5 tbsp olive oil, half the rosemary, and a few grinds of black pepper. Roast 25–35 minutes, turning once, until golden and tender.",
+    "Start the cabbage: In a wide pot over medium heat, add 1 tbsp olive oil. Cook onion 3–4 minutes until softened. Add cabbage and apple; cook 5 minutes, stirring.",
+    "Add apple cider vinegar and 1/4 cup water to the cabbage. Cover and simmer on low, stirring occasionally, 12–15 minutes until tender with a slight bite. Season with black pepper to taste and keep warm.",
+    "Cook the duck: Place duck skin-side down in a cold, oven-safe skillet. Turn heat to medium. Cook 8–10 minutes to render fat and deeply crisp the skin. Spoon off excess fat as needed (reserve 1 tbsp in pan).",
+    "Flip duck and cook 1–2 minutes. Transfer skillet to the oven (same 425°F) and roast 4–7 minutes depending on thickness for medium doneness. Rest duck on a board, skin-side up, 5 minutes.",
+    "Make the orange pan sauce: Return skillet to medium heat with 1 tbsp reserved duck fat (or 1 tsp olive oil if needed). Add orange zest and white wine; simmer 1–2 minutes, scraping browned bits.",
+    "Add orange juice and honey; simmer 2–3 minutes to reduce slightly. Whisk in the cornflour slurry; simmer 30–60 seconds until glossy. Off heat, whisk in butter to finish. Grind in black pepper.",
+    "Slice duck. Plate with rosemary potatoes and braised cabbage. Spoon orange sauce over duck."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "duck",
+      "quantity": "4 duck breasts (about 2 lb total)",
+      "preparation": "skin scored"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "1.5 lb",
+      "preparation": "cut into 1-inch chunks"
+    },
+    {
+      "core_item_name": "rosemary",
+      "quantity": "2 tsp",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2.5 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "red cabbage",
+      "quantity": "1 small head (about 1.5 lb)",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "apple",
+      "quantity": "1 medium",
+      "preparation": "cored and thinly sliced"
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1/2 cup",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "orange",
+      "quantity": "2",
+      "preparation": "zested (1) and juiced (2)"
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup"
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "1 tsp",
+      "preparation": "mixed with water to slurry"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "1 tbsp",
+      "preparation": "for finishing sauce"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "French"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowSodium"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "duck",
+      "quantity": "4 duck breasts (about 2 lb total)",
+      "preparation": "skin scored",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "1.5 lb",
+      "preparation": "cut into 1-inch chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rosemary",
+      "quantity": "2 tsp",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2.5 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red cabbage",
+      "quantity": "1 small head (about 1.5 lb)",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple",
+      "quantity": "1 medium",
+      "preparation": "cored and thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1/2 cup",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "orange",
+      "quantity": "2",
+      "preparation": "zested (1) and juiced (2)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "1 tsp",
+      "preparation": "mixed with water to slurry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "1 tbsp",
+      "preparation": "for finishing sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [
+    "Category 'MealComponentPreference' ideally includes 2+ tags; received ['FromScratch']"
+  ],
+  "metadata": {
+    "created_at": "20251125T164411Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T164026Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "meal_id": "meal_20251125T141721Z_03_651395",
+  "archetype_uid": "arch_SA_BraaiPotjie_Adv60",
+  "archetype_name": "Family Weekend Advanced: South African Braai & Potjie",
+  "name": "Beef Short Rib Potjie with Potatoes, Warm Bread Rolls, and Chakalaka",
+  "description": "Slow-braised beef short ribs cooked in a potjie over coals with tomatoes, carrots, and potatoes. Serve with warmed bread rolls and chakalaka for a family braai feast.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Prepare a steady braai fire with medium-low coals; keep extra coals to one side.",
+    "Rinse and pat dry beef short ribs.",
+    "Combine salt, black pepper, paprika, and peri-peri spice blend; rub all over the ribs.",
+    "Slice onions; mince garlic.",
+    "Cut carrots and potatoes into chunky pieces (about 3–4 cm).",
+    "Open diced tomatoes and beef stock.",
+    "Chop parsley for garnish.",
+    "Set out chakalaka and bread rolls."
+  ],
+  "cook_steps": [
+    "Place a potjie or heavy Dutch oven over medium coals and heat olive oil.",
+    "Sear beef short ribs on all sides until browned, 8–10 minutes total; work in batches if needed.",
+    "Add onions and garlic; cook, stirring, 3–4 minutes until softened.",
+    "Stir in diced tomatoes, beef stock, bay leaves, and thyme; bring to a gentle simmer.",
+    "Cover with lid. Move the pot to a low, steady heat zone (barely simmering). Cook 2–2.5 hours, turning ribs every 30 minutes and maintaining gentle heat. Add a splash of stock if the pot gets dry.",
+    "Add carrots and potatoes; stir to submerge. Cover and cook 40–60 minutes more until ribs are tender and vegetables are soft.",
+    "Taste and adjust seasoning with salt and black pepper.",
+    "Wrap bread rolls in foil and warm on the edge of the braai for 5–8 minutes.",
+    "Serve ribs and vegetables with some cooking sauce. Garnish with parsley. Add chakalaka on the side and warm bread rolls for mopping up.",
+    "Optional oven finish (for steady heat): After searing and adding liquids, cover and braise at 160°C in the oven for 2.5–3 hours, adding carrots and potatoes for the last 45–60 minutes."
+  ],
+  "instructions": [
+    "Prepare a steady braai fire with medium-low coals; keep extra coals to one side.",
+    "Rinse and pat dry beef short ribs.",
+    "Combine salt, black pepper, paprika, and peri-peri spice blend; rub all over the ribs.",
+    "Slice onions; mince garlic.",
+    "Cut carrots and potatoes into chunky pieces (about 3–4 cm).",
+    "Open diced tomatoes and beef stock.",
+    "Chop parsley for garnish.",
+    "Set out chakalaka and bread rolls.",
+    "Place a potjie or heavy Dutch oven over medium coals and heat olive oil.",
+    "Sear beef short ribs on all sides until browned, 8–10 minutes total; work in batches if needed.",
+    "Add onions and garlic; cook, stirring, 3–4 minutes until softened.",
+    "Stir in diced tomatoes, beef stock, bay leaves, and thyme; bring to a gentle simmer.",
+    "Cover with lid. Move the pot to a low, steady heat zone (barely simmering). Cook 2–2.5 hours, turning ribs every 30 minutes and maintaining gentle heat. Add a splash of stock if the pot gets dry.",
+    "Add carrots and potatoes; stir to submerge. Cover and cook 40–60 minutes more until ribs are tender and vegetables are soft.",
+    "Taste and adjust seasoning with salt and black pepper.",
+    "Wrap bread rolls in foil and warm on the edge of the braai for 5–8 minutes.",
+    "Serve ribs and vegetables with some cooking sauce. Garnish with parsley. Add chakalaka on the side and warm bread rolls for mopping up.",
+    "Optional oven finish (for steady heat): After searing and adding liquids, cover and braise at 160°C in the oven for 2.5–3 hours, adding carrots and potatoes for the last 45–60 minutes."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef short ribs",
+      "quantity": "1.8 kg",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "peri-peri spice blend",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 x 400 g can",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "3 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "3",
+      "preparation": "cut into chunks"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "6 medium",
+      "preparation": "cut into chunks"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped, for garnish"
+    },
+    {
+      "core_item_name": "chakalaka",
+      "quantity": "400 g",
+      "preparation": "serve at room temperature"
+    },
+    {
+      "core_item_name": "bread rolls",
+      "quantity": "6–8",
+      "preparation": "warmed in foil"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Portuguese",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef short ribs",
+      "quantity": "1.8 kg",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peri-peri spice blend",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 x 400 g can",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "3 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "3",
+      "preparation": "cut into chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "6 medium",
+      "preparation": "cut into chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped, for garnish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chakalaka",
+      "quantity": "400 g",
+      "preparation": "serve at room temperature",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bread rolls",
+      "quantity": "6–8",
+      "preparation": "warmed in foil",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T142055Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T141721Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

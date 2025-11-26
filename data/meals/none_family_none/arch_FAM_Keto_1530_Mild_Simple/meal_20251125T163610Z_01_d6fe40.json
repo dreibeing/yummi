@@ -1,0 +1,219 @@
+{
+  "meal_id": "meal_20251125T163610Z_01_d6fe40",
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "archetype_name": "Family Keto Weeknight Plates (Mild, 15–30, Simple)",
+  "name": "Lemon-Dill Baked Salmon with Sautéed Asparagus and Almonds",
+  "description": "Oven-baked salmon with a cool dill yoghurt sauce, served alongside buttery skillet asparagus and toasted almonds. Mild, fast, and family-friendly keto plate.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 200°C/400°F. Line a baking tray with foil or parchment.",
+    "Pat salmon dry with paper towels.",
+    "Finely chop dill. Mince garlic.",
+    "Zest and juice the lemon; keep zest and juice separate.",
+    "Trim woody ends from asparagus.",
+    "Roughly chop almonds."
+  ],
+  "cook_steps": [
+    "Make sauce: In a bowl, combine yoghurt, half the dill, half the minced garlic, 1 tablespoon olive oil, 1 teaspoon lemon zest, and 1 tablespoon lemon juice. Season with a pinch of salt and black pepper. Chill.",
+    "Bake salmon: Place salmon on the tray. Drizzle with 1 tablespoon olive oil, season with salt, black pepper, and 1 teaspoon lemon zest. Bake 10–12 minutes, until just opaque and flaky.",
+    "Cook asparagus: Heat a large skillet over medium-high. Add butter and 1 tablespoon olive oil. Add asparagus and a pinch of salt and black pepper. Sauté 4–6 minutes until crisp-tender. Stir in remaining minced garlic for the last 30 seconds.",
+    "Toast almonds: In a small dry pan over medium heat, toast almonds 2–3 minutes, stirring, until golden. Remove from heat; season with a tiny pinch of salt.",
+    "Finish and serve: Plate salmon with asparagus. Spoon dill yoghurt over salmon, sprinkle with remaining fresh dill and toasted almonds. Serve with remaining lemon juice to taste."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C/400°F. Line a baking tray with foil or parchment.",
+    "Pat salmon dry with paper towels.",
+    "Finely chop dill. Mince garlic.",
+    "Zest and juice the lemon; keep zest and juice separate.",
+    "Trim woody ends from asparagus.",
+    "Roughly chop almonds.",
+    "Make sauce: In a bowl, combine yoghurt, half the dill, half the minced garlic, 1 tablespoon olive oil, 1 teaspoon lemon zest, and 1 tablespoon lemon juice. Season with a pinch of salt and black pepper. Chill.",
+    "Bake salmon: Place salmon on the tray. Drizzle with 1 tablespoon olive oil, season with salt, black pepper, and 1 teaspoon lemon zest. Bake 10–12 minutes, until just opaque and flaky.",
+    "Cook asparagus: Heat a large skillet over medium-high. Add butter and 1 tablespoon olive oil. Add asparagus and a pinch of salt and black pepper. Sauté 4–6 minutes until crisp-tender. Stir in remaining minced garlic for the last 30 seconds.",
+    "Toast almonds: In a small dry pan over medium heat, toast almonds 2–3 minutes, stirring, until golden. Remove from heat; season with a tiny pinch of salt.",
+    "Finish and serve: Plate salmon with asparagus. Spoon dill yoghurt over salmon, sprinkle with remaining fresh dill and toasted almonds. Serve with remaining lemon juice to taste."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "salmon",
+      "quantity": "4 fillets (600–800 g total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "asparagus",
+      "quantity": "600 g",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup (240 ml)",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "dill",
+      "quantity": "2 tablespoons",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zest and juice separated"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "1 tablespoon",
+      "preparation": "for skillet"
+    },
+    {
+      "core_item_name": "almonds",
+      "quantity": "1/4 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Greek"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Nuts",
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "HighProtein",
+      "Keto",
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "salmon",
+      "quantity": "4 fillets (600–800 g total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "asparagus",
+      "quantity": "600 g",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup (240 ml)",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "dill",
+      "quantity": "2 tablespoons",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zest and juice separated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "1 tablespoon",
+      "preparation": "for skillet",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "almonds",
+      "quantity": "1/4 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T163650Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T163610Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

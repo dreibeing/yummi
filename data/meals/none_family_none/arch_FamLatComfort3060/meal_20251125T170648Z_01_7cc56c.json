@@ -1,0 +1,239 @@
+{
+  "meal_id": "meal_20251125T170648Z_01_7cc56c",
+  "archetype_uid": "arch_FamLatComfort3060",
+  "archetype_name": "Family Latin Comfort (Mild, 30–60, Intermediate)",
+  "name": "Baked Tilapia a la Veracruz with Spanish Rice",
+  "description": "Mild, family-friendly baked tilapia in a tomato, olive, and oregano sauce, served with fluffy Spanish rice. Comforting Latin/Mexican flavors with simple oven-and-stovetop execution.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 200°C/400°F.",
+    "Rinse and pat dry tilapia fillets.",
+    "Thinly slice onions; mince garlic.",
+    "Slice olives if whole.",
+    "Halve the lime (reserve wedges for serving).",
+    "Measure spanish rice and water."
+  ],
+  "cook_steps": [
+    "Start rice: In a pot, cook spanish rice with water according to package directions; keep warm.",
+    "Heat olive oil (1 tbsp) in a skillet over medium heat. Add onions and cook until softened, 5–6 minutes.",
+    "Stir in garlic and cook 30 seconds.",
+    "Add diced tomatoes, olives, oregano, bay leaves, 1/2 tsp salt, and black pepper. Simmer 5 minutes. Squeeze in juice from half the lime and stir.",
+    "Lightly oil a baking dish with remaining olive oil (1 tbsp). Place tilapia in a single layer; season with 1/2 tsp salt.",
+    "Spoon the tomato-olive sauce over the fish. Bake until the fish flakes easily, 12–15 minutes.",
+    "Remove bay leaves. Plate the tilapia with Spanish rice. Serve with remaining lime wedges."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C/400°F.",
+    "Rinse and pat dry tilapia fillets.",
+    "Thinly slice onions; mince garlic.",
+    "Slice olives if whole.",
+    "Halve the lime (reserve wedges for serving).",
+    "Measure spanish rice and water.",
+    "Start rice: In a pot, cook spanish rice with water according to package directions; keep warm.",
+    "Heat olive oil (1 tbsp) in a skillet over medium heat. Add onions and cook until softened, 5–6 minutes.",
+    "Stir in garlic and cook 30 seconds.",
+    "Add diced tomatoes, olives, oregano, bay leaves, 1/2 tsp salt, and black pepper. Simmer 5 minutes. Squeeze in juice from half the lime and stir.",
+    "Lightly oil a baking dish with remaining olive oil (1 tbsp). Place tilapia in a single layer; season with 1/2 tsp salt.",
+    "Spoon the tomato-olive sauce over the fish. Bake until the fish flakes easily, 12–15 minutes.",
+    "Remove bay leaves. Plate the tilapia with Spanish rice. Serve with remaining lime wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "tilapia",
+      "quantity": "4 fillets (600–800 g)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (400 g/14 oz)"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved, plus wedges"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp"
+    },
+    {
+      "core_item_name": "spanish rice",
+      "quantity": "1 1/2 cups (dry)"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed for rice (about 3 cups)"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "LatinAmerican",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "tilapia",
+      "quantity": "4 fillets (600–800 g)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (400 g/14 oz)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved, plus wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spanish rice",
+      "quantity": "1 1/2 cups (dry)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed for rice (about 3 cups)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T170733Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T170648Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

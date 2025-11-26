@@ -1,0 +1,307 @@
+{
+  "meal_id": "meal_20251125T170648Z_05_671009",
+  "archetype_uid": "arch_FamLatComfort3060",
+  "archetype_name": "Family Latin Comfort (Mild, 30–60, Intermediate)",
+  "name": "Family Pork Carnitas Rice Bowls (Mild)",
+  "description": "Tender, lightly crisped pork shoulder over fluffy rice with mild salsa beans and corn, finished with avocado and coriander. A family-friendly Latin/Mexican bowl with gentle seasoning.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Cut pork shoulder into 2–3 cm cubes; trim excess fat.",
+    "Peel and finely chop onions and garlic.",
+    "Rinse jasmine rice until water runs clear.",
+    "Open black beans and drain; drain corn.",
+    "Halve the lime.",
+    "Rinse and chop coriander; dice avocado.",
+    "Set oven to broil/grill on high (or preheat to 230°C/450°F) for later."
+  ],
+  "cook_steps": [
+    "Start rice: Add jasmine rice and water to a pot (1:1.5 rice-to-water). Bring to a boil, then reduce heat to low, cover, and cook 12–15 min until tender. Rest covered 5 min.",
+    "Brown pork: Heat olive oil in a wide pot over medium-high. Add pork shoulder in batches; season with salt and black pepper. Brown 6–8 min total, stirring to color all sides.",
+    "Build braise: Add onions and garlic; cook 2–3 min until fragrant. Stir in cumin and oregano for 30 seconds.",
+    "Simmer pork: Add water (enough to come 1 cm up the pot bottom, about 1 cup), apple cider vinegar, bay leaves, and half the lime juice. Scrape up browned bits. Reduce heat to medium-low, cover, and simmer 30–35 min until pork is tender.",
+    "Crisp pork: Transfer pork (drained from liquid) to a foil-lined tray. Broil/grill 5–8 min, turning once, until edges crisp. Toss with remaining lime juice.",
+    "Warm toppings: In a saucepan over medium heat, combine salsa, black beans, and corn. Heat 4–5 min until bubbling; season with a pinch of salt if needed.",
+    "Assemble bowls: Fluff rice and portion into 4 bowls. Top with crisped pork, spoon over salsa-beans-corn, and finish with avocado and coriander."
+  ],
+  "instructions": [
+    "Cut pork shoulder into 2–3 cm cubes; trim excess fat.",
+    "Peel and finely chop onions and garlic.",
+    "Rinse jasmine rice until water runs clear.",
+    "Open black beans and drain; drain corn.",
+    "Halve the lime.",
+    "Rinse and chop coriander; dice avocado.",
+    "Set oven to broil/grill on high (or preheat to 230°C/450°F) for later.",
+    "Start rice: Add jasmine rice and water to a pot (1:1.5 rice-to-water). Bring to a boil, then reduce heat to low, cover, and cook 12–15 min until tender. Rest covered 5 min.",
+    "Brown pork: Heat olive oil in a wide pot over medium-high. Add pork shoulder in batches; season with salt and black pepper. Brown 6–8 min total, stirring to color all sides.",
+    "Build braise: Add onions and garlic; cook 2–3 min until fragrant. Stir in cumin and oregano for 30 seconds.",
+    "Simmer pork: Add water (enough to come 1 cm up the pot bottom, about 1 cup), apple cider vinegar, bay leaves, and half the lime juice. Scrape up browned bits. Reduce heat to medium-low, cover, and simmer 30–35 min until pork is tender.",
+    "Crisp pork: Transfer pork (drained from liquid) to a foil-lined tray. Broil/grill 5–8 min, turning once, until edges crisp. Toss with remaining lime juice.",
+    "Warm toppings: In a saucepan over medium heat, combine salsa, black beans, and corn. Heat 4–5 min until bubbling; season with a pinch of salt if needed.",
+    "Assemble bowls: Fluff rice and portion into 4 bowls. Top with crisped pork, spoon over salsa-beans-corn, and finish with avocado and coriander."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "pork shoulder",
+      "quantity": "1–1.2 kg",
+      "preparation": "cut into 2–3 cm cubes"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "for browning"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "2 teaspoons",
+      "preparation": "ground"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tablespoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 teaspoons, plus more to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1 cup for braise + 3 cups for rice",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1.5 cups",
+      "preparation": "mild"
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (400 g)",
+      "preparation": "drained"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "1 cup",
+      "preparation": "drained"
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1–2",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "LatinAmerican",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "pork shoulder",
+      "quantity": "1–1.2 kg",
+      "preparation": "cut into 2–3 cm cubes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "for browning",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "2 teaspoons",
+      "preparation": "ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tablespoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 teaspoons, plus more to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1 cup for braise + 3 cups for rice",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1.5 cups",
+      "preparation": "mild",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (400 g)",
+      "preparation": "drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "1 cup",
+      "preparation": "drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1–2",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T171111Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T170648Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

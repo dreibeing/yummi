@@ -1,0 +1,215 @@
+{
+  "meal_id": "meal_20251125T172404Z_01_8bcf0f",
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "archetype_name": "Family Quick Grill & Salad Nights (Mild, 15–30)",
+  "name": "Braai Lamb Chops with Grilled Oregano Potatoes & Cucumber-Tomato Salad",
+  "description": "Quick, mild lamb chops on the braai with crisp grilled potato slices and a fresh cucumber-tomato salad. Simple flavors, fast cooking, family-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat OutdoorGrill to medium-high (or heat a stove-top grill pan).",
+    "Slice potatoes into 1 cm thick rounds.",
+    "In a bowl, toss potato slices with 1.5 tbsp olive oil, 1 tsp oregano, a big pinch of salt, and a few grinds of black pepper.",
+    "Pat lamb chops dry; rub with 1 tbsp olive oil, 1 tsp oregano, salt, and black pepper.",
+    "Slice cucumber, halve cherry tomatoes, and thinly slice red onion.",
+    "Toss cucumber, cherry tomatoes, and red onion with vinaigrette; set aside.",
+    "Cut lemon into wedges."
+  ],
+  "cook_steps": [
+    "Lay potato slices on the hot grill; cook 5–7 minutes per side until tender and lightly charred. Move to a platter.",
+    "Grill lamb chops 3–4 minutes per side for medium (adjust to preferred doneness).",
+    "Rest lamb chops 5 minutes; squeeze lemon over just before serving.",
+    "Serve lamb with grilled potatoes and the cucumber-tomato salad."
+  ],
+  "instructions": [
+    "Preheat OutdoorGrill to medium-high (or heat a stove-top grill pan).",
+    "Slice potatoes into 1 cm thick rounds.",
+    "In a bowl, toss potato slices with 1.5 tbsp olive oil, 1 tsp oregano, a big pinch of salt, and a few grinds of black pepper.",
+    "Pat lamb chops dry; rub with 1 tbsp olive oil, 1 tsp oregano, salt, and black pepper.",
+    "Slice cucumber, halve cherry tomatoes, and thinly slice red onion.",
+    "Toss cucumber, cherry tomatoes, and red onion with vinaigrette; set aside.",
+    "Cut lemon into wedges.",
+    "Lay potato slices on the hot grill; cook 5–7 minutes per side until tender and lightly charred. Move to a platter.",
+    "Grill lamb chops 3–4 minutes per side for medium (adjust to preferred doneness).",
+    "Rest lamb chops 5 minutes; squeeze lemon over just before serving.",
+    "Serve lamb with grilled potatoes and the cucumber-tomato salad."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "lamb chops",
+      "quantity": "1–1.2 kg (about 8 small chops)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "800 g",
+      "preparation": "sliced into 1 cm rounds"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2.5 tbsp total",
+      "preparation": "divided for potatoes and lamb"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp or to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp or to taste"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "vinaigrette",
+      "quantity": "3 tbsp",
+      "preparation": "for salad"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "lamb chops",
+      "quantity": "1–1.2 kg (about 8 small chops)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "800 g",
+      "preparation": "sliced into 1 cm rounds",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2.5 tbsp total",
+      "preparation": "divided for potatoes and lamb",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp or to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp or to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vinaigrette",
+      "quantity": "3 tbsp",
+      "preparation": "for salad",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T172505Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T172404Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

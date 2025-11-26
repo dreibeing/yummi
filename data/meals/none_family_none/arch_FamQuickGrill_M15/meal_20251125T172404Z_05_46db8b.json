@@ -1,0 +1,219 @@
+{
+  "meal_id": "meal_20251125T172404Z_05_46db8b",
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "archetype_name": "Family Quick Grill & Salad Nights (Mild, 15–30)",
+  "name": "Lemon-Oregano Chicken Kebabs with Grilled Baby Carrots and Tomato-Cucumber Salad",
+  "description": "Quick-grilled chicken kebabs with a bright lemon-oregano finish, served alongside charred baby carrots and a crisp tomato-cucumber salad. Mild, fresh, and weeknight-fast.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat outdoor grill (or a stovetop grill pan) to medium-high.",
+    "Rinse and pat dry baby carrots; trim ends.",
+    "Cut tomatoes into wedges (or halve cherry tomatoes if using them).",
+    "Dice cucumber; thinly slice a little red onion.",
+    "Chop parsley.",
+    "Zest and juice the lemon into a small bowl; add olive oil, oregano, salt, and black pepper to make a simple dressing.",
+    "Pat chicken kebabs dry with paper towel."
+  ],
+  "cook_steps": [
+    "Toss baby carrots with a little olive oil, salt, and black pepper.",
+    "Place baby carrots on the hot grill; cook 10–12 minutes, turning occasionally, until tender with light char.",
+    "Grill chicken kebabs 8–10 minutes, turning every 2–3 minutes, until cooked through.",
+    "While grilling, combine tomatoes, cucumber, red onion, and parsley in a bowl; spoon over half the lemon-oregano dressing and toss.",
+    "Transfer cooked carrots to a plate and drizzle with a little of the remaining dressing.",
+    "Move kebabs to a platter and brush with the last of the dressing. Rest 2 minutes, then serve with the salad and carrots."
+  ],
+  "instructions": [
+    "Preheat outdoor grill (or a stovetop grill pan) to medium-high.",
+    "Rinse and pat dry baby carrots; trim ends.",
+    "Cut tomatoes into wedges (or halve cherry tomatoes if using them).",
+    "Dice cucumber; thinly slice a little red onion.",
+    "Chop parsley.",
+    "Zest and juice the lemon into a small bowl; add olive oil, oregano, salt, and black pepper to make a simple dressing.",
+    "Pat chicken kebabs dry with paper towel.",
+    "Toss baby carrots with a little olive oil, salt, and black pepper.",
+    "Place baby carrots on the hot grill; cook 10–12 minutes, turning occasionally, until tender with light char.",
+    "Grill chicken kebabs 8–10 minutes, turning every 2–3 minutes, until cooked through.",
+    "While grilling, combine tomatoes, cucumber, red onion, and parsley in a bowl; spoon over half the lemon-oregano dressing and toss.",
+    "Transfer cooked carrots to a plate and drizzle with a little of the remaining dressing.",
+    "Move kebabs to a platter and brush with the last of the dressing. Rest 2 minutes, then serve with the salad and carrots."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken kebabs",
+      "quantity": "8 kebabs (about 800–900 g total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "baby carrots",
+      "quantity": "500 g",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "3 medium",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/4 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "for dressing and grilling"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken kebabs",
+      "quantity": "8 kebabs (about 800–900 g total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "baby carrots",
+      "quantity": "500 g",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "3 medium",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/4 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "for dressing and grilling",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T172943Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T172404Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

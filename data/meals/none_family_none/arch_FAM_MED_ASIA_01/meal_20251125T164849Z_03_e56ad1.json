@@ -1,0 +1,261 @@
+{
+  "meal_id": "meal_20251125T164849Z_03_e56ad1",
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "archetype_name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)",
+  "name": "Chicken Jalfrezi Skillet with Peppers over Jasmine Rice",
+  "description": "Quick stovetop chicken jalfrezi with onions and bell peppers in a tangy-spicy sauce, served over fluffy jasmine rice. Balanced medium heat and weeknight-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 2 cups jasmine rice in cold water until mostly clear; drain.",
+    "Cut 700 g chicken thighs into bite-size pieces; pat dry.",
+    "Slice 2 onions and 2 bell peppers into strips.",
+    "Mince 4 cloves garlic.",
+    "Halve 1 lime.",
+    "Measure spices: 1 tsp chili flakes, 1 tsp cumin, 1 tsp garam masala.",
+    "Open 1 can diced tomatoes and 1 jar jalfrezi sauce."
+  ],
+  "cook_steps": [
+    "Cook rice: Add rinsed jasmine rice and 2.5 cups water to a pot; bring to a boil, then cover and simmer on low 12–15 minutes until tender. Rest covered 5 minutes, then fluff.",
+    "Heat 1.5 tbsp canola oil in a large skillet over high heat.",
+    "Sear chicken in a single layer 3–4 minutes until lightly browned; season with a pinch of salt and black pepper. Stir and cook 2 minutes more; push to one side.",
+    "Add onions and bell peppers to the empty side with a drizzle of oil if needed; stir-fry 3 minutes until crisp-tender.",
+    "Add minced garlic, chili flakes, and cumin; stir 30 seconds until fragrant.",
+    "Pour in diced tomatoes and jalfrezi sauce; stir to coat everything. Bring to a lively simmer and cook 5–7 minutes, stirring, until the sauce thickens and chicken is cooked through.",
+    "Stir in garam masala and squeeze half the lime over the skillet. Taste and season with salt and black pepper as needed.",
+    "Serve over fluffed jasmine rice. Cut remaining lime into wedges for the table."
+  ],
+  "instructions": [
+    "Rinse 2 cups jasmine rice in cold water until mostly clear; drain.",
+    "Cut 700 g chicken thighs into bite-size pieces; pat dry.",
+    "Slice 2 onions and 2 bell peppers into strips.",
+    "Mince 4 cloves garlic.",
+    "Halve 1 lime.",
+    "Measure spices: 1 tsp chili flakes, 1 tsp cumin, 1 tsp garam masala.",
+    "Open 1 can diced tomatoes and 1 jar jalfrezi sauce.",
+    "Cook rice: Add rinsed jasmine rice and 2.5 cups water to a pot; bring to a boil, then cover and simmer on low 12–15 minutes until tender. Rest covered 5 minutes, then fluff.",
+    "Heat 1.5 tbsp canola oil in a large skillet over high heat.",
+    "Sear chicken in a single layer 3–4 minutes until lightly browned; season with a pinch of salt and black pepper. Stir and cook 2 minutes more; push to one side.",
+    "Add onions and bell peppers to the empty side with a drizzle of oil if needed; stir-fry 3 minutes until crisp-tender.",
+    "Add minced garlic, chili flakes, and cumin; stir 30 seconds until fragrant.",
+    "Pour in diced tomatoes and jalfrezi sauce; stir to coat everything. Bring to a lively simmer and cook 5–7 minutes, stirring, until the sauce thickens and chicken is cooked through.",
+    "Stir in garam masala and squeeze half the lime over the skillet. Taste and season with salt and black pepper as needed.",
+    "Serve over fluffed jasmine rice. Cut remaining lime into wedges for the table."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups (uncooked)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1.5 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "700 g",
+      "preparation": "cut bite-size, patted dry"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (400 g)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "jalfrezi sauce",
+      "quantity": "1 jar (about 350–400 g)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "garam masala",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": ""
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Chinese",
+      "Indian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups (uncooked)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1.5 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "700 g",
+      "preparation": "cut bite-size, patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (400 g)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "jalfrezi sauce",
+      "quantity": "1 jar (about 350–400 g)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garam masala",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T165132Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T164849Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

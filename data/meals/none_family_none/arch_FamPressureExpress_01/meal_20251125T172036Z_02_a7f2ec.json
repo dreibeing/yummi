@@ -1,0 +1,291 @@
+{
+  "meal_id": "meal_20251125T172036Z_02_a7f2ec",
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "archetype_name": "Family Pressure Cooker Express Dinners (15–30, Mild)",
+  "name": "Instant Pot Family Minestrone with Macaroni & Cannellini",
+  "description": "Hearty, mild minestrone made fast in the pressure cooker with vegetables, beans, and macaroni. Family-friendly and balanced with American-Italian flavors.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Dice onions.",
+    "Dice carrots.",
+    "Dice bell peppers.",
+    "Slice zucchini into half-moons.",
+    "Roughly chop kale, removing tough stems.",
+    "Mince garlic.",
+    "Drain and rinse cannellini beans.",
+    "Measure vegetable stock, diced tomatoes, macaroni, and seasonings."
+  ],
+  "cook_steps": [
+    "Set the pressure cooker to Sauté (Normal). Add olive oil.",
+    "Add onions, carrots, and bell peppers. Sauté 3–4 minutes until starting to soften.",
+    "Stir in garlic and italian seasoning; cook 30 seconds until fragrant.",
+    "Add zucchini and kale; stir 1 minute to wilt slightly.",
+    "Stir in tomato paste until coated.",
+    "Add vegetable stock, diced tomatoes (with juices), cannellini beans, bay leaves, salt, and pepper. Scrape the bottom to release any browned bits.",
+    "Stir in macaroni, ensuring pasta is submerged but not clumped.",
+    "Seal the lid. Pressure cook on High for 3 minutes.",
+    "Quick-release the pressure. Open the lid and remove bay leaves.",
+    "Stir, taste, and adjust salt and pepper. Let sit 2–3 minutes to thicken before serving."
+  ],
+  "instructions": [
+    "Dice onions.",
+    "Dice carrots.",
+    "Dice bell peppers.",
+    "Slice zucchini into half-moons.",
+    "Roughly chop kale, removing tough stems.",
+    "Mince garlic.",
+    "Drain and rinse cannellini beans.",
+    "Measure vegetable stock, diced tomatoes, macaroni, and seasonings.",
+    "Set the pressure cooker to Sauté (Normal). Add olive oil.",
+    "Add onions, carrots, and bell peppers. Sauté 3–4 minutes until starting to soften.",
+    "Stir in garlic and italian seasoning; cook 30 seconds until fragrant.",
+    "Add zucchini and kale; stir 1 minute to wilt slightly.",
+    "Stir in tomato paste until coated.",
+    "Add vegetable stock, diced tomatoes (with juices), cannellini beans, bay leaves, salt, and pepper. Scrape the bottom to release any browned bits.",
+    "Stir in macaroni, ensuring pasta is submerged but not clumped.",
+    "Seal the lid. Pressure cook on High for 3 minutes.",
+    "Quick-release the pressure. Open the lid and remove bay leaves.",
+    "Stir, taste, and adjust salt and pepper. Let sit 2–3 minutes to thicken before serving."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "1 medium",
+      "preparation": "sliced into half-moons"
+    },
+    {
+      "core_item_name": "kale",
+      "quantity": "2 cups lightly packed",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "italian seasoning",
+      "quantity": "2 teaspoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "6 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (14–15 oz)",
+      "preparation": "with juices"
+    },
+    {
+      "core_item_name": "cannellini beans",
+      "quantity": "1 can (14–15 oz)",
+      "preparation": "drained and rinsed"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 to 1.5 teaspoons, to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "macaroni",
+      "quantity": "2 cups (about 8 oz)",
+      "preparation": ""
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "SlowOrPressureCooker",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "1 medium",
+      "preparation": "sliced into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "kale",
+      "quantity": "2 cups lightly packed",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "italian seasoning",
+      "quantity": "2 teaspoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "6 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (14–15 oz)",
+      "preparation": "with juices",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cannellini beans",
+      "quantity": "1 can (14–15 oz)",
+      "preparation": "drained and rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 to 1.5 teaspoons, to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "macaroni",
+      "quantity": "2 cups (about 8 oz)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T172202Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T172036Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

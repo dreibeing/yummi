@@ -1,0 +1,223 @@
+{
+  "meal_id": "meal_20251125T172036Z_05_f790aa",
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "archetype_name": "Family Pressure Cooker Express Dinners (15–30, Mild)",
+  "name": "Instant Pot Creamy Tomato Basil Tortelloni Soup",
+  "description": "Family-friendly tomato basil soup with tender tortelloni, finished creamy and cheesy right in the pressure cooker. Mild, cozy, and ready fast.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Dice the onions.",
+    "Mince the garlic.",
+    "Chop the basil (if using fresh).",
+    "Grate the parmesan cheese."
+  ],
+  "cook_steps": [
+    "Set the pressure cooker to Sauté (Normal). Add olive oil and heat 1 minute.",
+    "Sauté onions for 3–4 minutes until softened; add garlic and cook 30 seconds.",
+    "Add crushed tomatoes, chicken stock, water, basil, salt, and pepper. Stir well.",
+    "Stir in tortelloni and make sure it is submerged.",
+    "Cancel Sauté. Seal the lid and cook on High Pressure for 1 minute.",
+    "Quick release pressure immediately. Open the lid and stir.",
+    "Switch back to Sauté (Low). Stir in cream and parmesan cheese until melted and creamy, 1–2 minutes.",
+    "Taste and adjust salt and pepper. Turn off heat and let sit 2 minutes to thicken before serving."
+  ],
+  "instructions": [
+    "Dice the onions.",
+    "Mince the garlic.",
+    "Chop the basil (if using fresh).",
+    "Grate the parmesan cheese.",
+    "Set the pressure cooker to Sauté (Normal). Add olive oil and heat 1 minute.",
+    "Sauté onions for 3–4 minutes until softened; add garlic and cook 30 seconds.",
+    "Add crushed tomatoes, chicken stock, water, basil, salt, and pepper. Stir well.",
+    "Stir in tortelloni and make sure it is submerged.",
+    "Cancel Sauté. Seal the lid and cook on High Pressure for 1 minute.",
+    "Quick release pressure immediately. Open the lid and stir.",
+    "Switch back to Sauté (Low). Stir in cream and parmesan cheese until melted and creamy, 1–2 minutes.",
+    "Taste and adjust salt and pepper. Turn off heat and let sit 2 minutes to thicken before serving."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "28 ounces (800 g)"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "4 cups"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1 cup"
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "1/4 cup fresh or 1 teaspoon dried",
+      "preparation": "chopped if fresh"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon, or to taste"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon, or to taste"
+    },
+    {
+      "core_item_name": "tortelloni",
+      "quantity": "18–20 ounces (family-size pack)"
+    },
+    {
+      "core_item_name": "cream",
+      "quantity": "1/2 cup"
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "1/2 cup",
+      "preparation": "grated"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "SlowOrPressureCooker",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "28 ounces (800 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "4 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "1/4 cup fresh or 1 teaspoon dried",
+      "preparation": "chopped if fresh",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon, or to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon, or to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tortelloni",
+      "quantity": "18–20 ounces (family-size pack)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cream",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "1/2 cup",
+      "preparation": "grated",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T172404Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T172036Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

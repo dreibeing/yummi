@@ -1,0 +1,310 @@
+{
+  "meal_id": "meal_20251125T171558Z_02_7c4a12",
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "archetype_name": "Family Low-Fat Mediterranean Light Plates (15–30, Mild)",
+  "name": "Lemon-Oregano Baked Fish with 7‑Grain Pilaf, Cucumber-Mint Salad, and Tzatziki",
+  "description": "Flaky herb-lemon fish baked with cherry tomatoes and olives, served with a simple 7-grain pilaf and a crisp cucumber-mint salad. A spoon of tzatziki adds a cool, light finish.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C/425°F. Line a sheet pan with baking paper.",
+    "Rinse 7-grain medley and drain.",
+    "Halve 1 lemon; zest then juice it (keep zest and juice separate).",
+    "Halve 1 cup cherry tomatoes.",
+    "Slice 1/3 cup olives.",
+    "Mince 2 cloves garlic.",
+    "Chop 2 tablespoons parsley and 1 tablespoon mint.",
+    "Peel, halve, and thinly slice 1/2 red onion.",
+    "Quarter 1 large cucumber lengthwise, then slice into half-moons."
+  ],
+  "cook_steps": [
+    "Start pilaf: In a pot, combine 1 cup 7-grain medley, 2 cups vegetable stock, and a pinch of salt. Bring to a boil, then reduce to low, cover, and simmer until tender (about 20 minutes). Rest covered 5 minutes, then fluff.",
+    "Season fish: Place 4 fish fillets on the sheet pan. Drizzle 1 tablespoon olive oil, sprinkle 1 teaspoon oregano, half the lemon zest, half the minced garlic, salt, and black pepper. Scatter cherry tomatoes and olives around.",
+    "Bake fish: Roast on middle rack until fish flakes easily and tomatoes soften (10–12 minutes, depending on thickness).",
+    "Make salad: In a bowl, combine cucumber, red onion, remaining lemon zest, mint, 1 tablespoon apple cider vinegar, a pinch of sumac, salt, and black pepper. Toss and set aside.",
+    "Finish fish: Squeeze half the lemon juice over the baked fish and tomatoes. Sprinkle parsley.",
+    "Serve: Spoon 7-grain pilaf onto plates. Top with fish and roasted tomatoes/olives. Add cucumber-mint salad on the side and 2 tablespoons tzatziki per plate. Offer remaining lemon juice to taste."
+  ],
+  "instructions": [
+    "Heat oven to 220°C/425°F. Line a sheet pan with baking paper.",
+    "Rinse 7-grain medley and drain.",
+    "Halve 1 lemon; zest then juice it (keep zest and juice separate).",
+    "Halve 1 cup cherry tomatoes.",
+    "Slice 1/3 cup olives.",
+    "Mince 2 cloves garlic.",
+    "Chop 2 tablespoons parsley and 1 tablespoon mint.",
+    "Peel, halve, and thinly slice 1/2 red onion.",
+    "Quarter 1 large cucumber lengthwise, then slice into half-moons.",
+    "Start pilaf: In a pot, combine 1 cup 7-grain medley, 2 cups vegetable stock, and a pinch of salt. Bring to a boil, then reduce to low, cover, and simmer until tender (about 20 minutes). Rest covered 5 minutes, then fluff.",
+    "Season fish: Place 4 fish fillets on the sheet pan. Drizzle 1 tablespoon olive oil, sprinkle 1 teaspoon oregano, half the lemon zest, half the minced garlic, salt, and black pepper. Scatter cherry tomatoes and olives around.",
+    "Bake fish: Roast on middle rack until fish flakes easily and tomatoes soften (10–12 minutes, depending on thickness).",
+    "Make salad: In a bowl, combine cucumber, red onion, remaining lemon zest, mint, 1 tablespoon apple cider vinegar, a pinch of sumac, salt, and black pepper. Toss and set aside.",
+    "Finish fish: Squeeze half the lemon juice over the baked fish and tomatoes. Sprinkle parsley.",
+    "Serve: Spoon 7-grain pilaf onto plates. Top with fish and roasted tomatoes/olives. Add cucumber-mint salad on the side and 2 tablespoons tzatziki per plate. Offer remaining lemon juice to taste."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "4 fillets (600–700 g total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "7-grain medley",
+      "quantity": "1 cup (dry)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups",
+      "preparation": "for pilaf"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/3 cup",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": "divided use for fish"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "sliced into half-moons"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 small",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1 tablespoon",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tablespoon",
+      "preparation": "for salad"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1/2 teaspoon",
+      "preparation": "for salad"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "tzatziki",
+      "quantity": "1/2 cup",
+      "preparation": "for serving"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowFat"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "4 fillets (600–700 g total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "7-grain medley",
+      "quantity": "1 cup (dry)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups",
+      "preparation": "for pilaf",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/3 cup",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": "divided use for fish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "sliced into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 small",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1 tablespoon",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tablespoon",
+      "preparation": "for salad",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1/2 teaspoon",
+      "preparation": "for salad",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tzatziki",
+      "quantity": "1/2 cup",
+      "preparation": "for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T171751Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T171558Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "meal_id": "meal_20251125T140322Z_03_a481e4",
+  "archetype_uid": "arch_FamLatComfort3060",
+  "archetype_name": "Family Latin Comfort (Mild, 30–60, Intermediate)",
+  "name": "Family Albóndigas Soup (Mild Mexican Meatball Soup)",
+  "description": "A comforting pot of beef-and-rice meatball soup simmered with carrots, potatoes, and zucchini in a mild tomato broth. Family-friendly, gentle seasoning, and made from scratch.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1/3 cup jasmine rice under cold water until it runs clear; drain well.",
+    "Finely chop 1 medium onion and 3 cloves garlic; keep half the onion for the meatballs and half for the soup base.",
+    "Peel and slice 2 carrots; peel and dice 2 potatoes into 2 cm cubes.",
+    "Slice 1 large zucchini into half-moons.",
+    "Roughly chop 1/4 cup coriander; cut 1 lime into wedges.",
+    "In a bowl, combine ground beef, drained jasmine rice, half the chopped onion, half the chopped garlic, 1/2 teaspoon cumin, 1/2 teaspoon oregano, 1/2 teaspoon salt, and 1/4 teaspoon black pepper; mix just until combined and form 16 golf-ball-sized meatballs.",
+    "Set out crushed tomatoes and beef stock at the stove."
+  ],
+  "cook_steps": [
+    "Heat 1 tablespoon olive oil in a large pot over medium heat.",
+    "Add the remaining onion and garlic; cook 2–3 minutes until translucent.",
+    "Stir in 1/2 teaspoon cumin and 1/2 teaspoon oregano; cook 30 seconds until fragrant.",
+    "Pour in 6 cups beef stock and 2 cups crushed tomatoes; bring to a gentle boil.",
+    "Lower to a simmer. Gently place the meatballs into the pot one by one.",
+    "Add carrots and potatoes. Cover and simmer 20 minutes, maintaining a gentle bubble.",
+    "Add zucchini and continue simmering 10–12 minutes, until meatballs are cooked through and vegetables are tender.",
+    "Season to taste with 1 teaspoon salt and 1/4 teaspoon black pepper (adjust as needed).",
+    "Stir in most of the chopped coriander. Ladle into bowls and serve with lime wedges; sprinkle remaining coriander on top."
+  ],
+  "instructions": [
+    "Rinse 1/3 cup jasmine rice under cold water until it runs clear; drain well.",
+    "Finely chop 1 medium onion and 3 cloves garlic; keep half the onion for the meatballs and half for the soup base.",
+    "Peel and slice 2 carrots; peel and dice 2 potatoes into 2 cm cubes.",
+    "Slice 1 large zucchini into half-moons.",
+    "Roughly chop 1/4 cup coriander; cut 1 lime into wedges.",
+    "In a bowl, combine ground beef, drained jasmine rice, half the chopped onion, half the chopped garlic, 1/2 teaspoon cumin, 1/2 teaspoon oregano, 1/2 teaspoon salt, and 1/4 teaspoon black pepper; mix just until combined and form 16 golf-ball-sized meatballs.",
+    "Set out crushed tomatoes and beef stock at the stove.",
+    "Heat 1 tablespoon olive oil in a large pot over medium heat.",
+    "Add the remaining onion and garlic; cook 2–3 minutes until translucent.",
+    "Stir in 1/2 teaspoon cumin and 1/2 teaspoon oregano; cook 30 seconds until fragrant.",
+    "Pour in 6 cups beef stock and 2 cups crushed tomatoes; bring to a gentle boil.",
+    "Lower to a simmer. Gently place the meatballs into the pot one by one.",
+    "Add carrots and potatoes. Cover and simmer 20 minutes, maintaining a gentle bubble.",
+    "Add zucchini and continue simmering 10–12 minutes, until meatballs are cooked through and vegetables are tender.",
+    "Season to taste with 1 teaspoon salt and 1/4 teaspoon black pepper (adjust as needed).",
+    "Stir in most of the chopped coriander. Ladle into bowls and serve with lime wedges; sprinkle remaining coriander on top."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1/3 cup",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "1 lb (450 g)",
+      "preparation": "for meatballs"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp total",
+      "preparation": "divided for meatballs and soup"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp total",
+      "preparation": "divided for meatballs and soup"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "divided, to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "divided, to taste"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "6 cups",
+      "preparation": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "2 cups",
+      "preparation": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "peeled and sliced"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "2 medium",
+      "preparation": "peeled and diced"
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "1 large",
+      "preparation": "sliced into half-moons"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "LatinAmerican",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1/3 cup",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "1 lb (450 g)",
+      "preparation": "for meatballs",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp total",
+      "preparation": "divided for meatballs and soup",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp total",
+      "preparation": "divided for meatballs and soup",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "divided, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "divided, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "6 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "2 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "peeled and sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "2 medium",
+      "preparation": "peeled and diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "1 large",
+      "preparation": "sliced into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T140606Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T140322Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

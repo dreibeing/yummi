@@ -1,0 +1,255 @@
+{
+  "meal_id": "meal_20251125T162531Z_01_fe08cf",
+  "archetype_uid": "arch_FAM_HP_30to60_INT_Mild_v1",
+  "archetype_name": "Family High-Protein Dinners (30–60, Mild, Intermediate)",
+  "name": "Garlic-Herb Chicken and Mushroom Quinoa Skillet with Roasted Green Beans",
+  "description": "Seared chicken thigh fillets simmered with mushrooms, onions, and garlic over fluffy quinoa, served with oven-roasted green beans. Mild, protein-forward, and weeknight-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F.",
+    "Rinse 1 1/2 cups quinoa under cold water in a fine sieve.",
+    "Trim ends from 400 g green beans; pat dry.",
+    "Slice 250 g mushrooms.",
+    "Dice 1 large onion.",
+    "Mince 3 cloves garlic.",
+    "Roughly chop a small handful of parsley.",
+    "Cut 700–800 g chicken thigh fillets into 3–4 cm pieces; pat dry.",
+    "Halve and juice 1 lemon."
+  ],
+  "cook_steps": [
+    "Toss green beans with 1 tbsp olive oil, a pinch of salt, and black pepper on a tray. Roast 12–15 minutes until tender-crisp; shake once midway. Keep warm.",
+    "Heat 1 tbsp olive oil in a large deep skillet over medium-high heat. Season chicken with salt and black pepper, then sear 4–5 minutes until browned. Remove to a plate.",
+    "Add 1 tbsp olive oil to the skillet. Sauté onions and mushrooms with a pinch of salt for 5–6 minutes until lightly browned.",
+    "Stir in garlic; cook 30 seconds until fragrant.",
+    "Add rinsed quinoa and toast 1 minute, stirring.",
+    "Pour in 3 cups water and 1 tsp chicken stock concentrate; stir to dissolve. Return chicken and any juices to the skillet.",
+    "Bring to a boil, then reduce to a gentle simmer. Cover and cook 16–18 minutes until quinoa is tender and liquid is absorbed.",
+    "Turn off heat. Fluff the quinoa; stir in 2 tbsp lemon juice and parsley. Adjust salt and black pepper to taste.",
+    "Serve the chicken-quinoa skillet topped with extra parsley alongside the roasted green beans."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F.",
+    "Rinse 1 1/2 cups quinoa under cold water in a fine sieve.",
+    "Trim ends from 400 g green beans; pat dry.",
+    "Slice 250 g mushrooms.",
+    "Dice 1 large onion.",
+    "Mince 3 cloves garlic.",
+    "Roughly chop a small handful of parsley.",
+    "Cut 700–800 g chicken thigh fillets into 3–4 cm pieces; pat dry.",
+    "Halve and juice 1 lemon.",
+    "Toss green beans with 1 tbsp olive oil, a pinch of salt, and black pepper on a tray. Roast 12–15 minutes until tender-crisp; shake once midway. Keep warm.",
+    "Heat 1 tbsp olive oil in a large deep skillet over medium-high heat. Season chicken with salt and black pepper, then sear 4–5 minutes until browned. Remove to a plate.",
+    "Add 1 tbsp olive oil to the skillet. Sauté onions and mushrooms with a pinch of salt for 5–6 minutes until lightly browned.",
+    "Stir in garlic; cook 30 seconds until fragrant.",
+    "Add rinsed quinoa and toast 1 minute, stirring.",
+    "Pour in 3 cups water and 1 tsp chicken stock concentrate; stir to dissolve. Return chicken and any juices to the skillet.",
+    "Bring to a boil, then reduce to a gentle simmer. Cover and cook 16–18 minutes until quinoa is tender and liquid is absorbed.",
+    "Turn off heat. Fluff the quinoa; stir in 2 tbsp lemon juice and parsley. Adjust salt and black pepper to taste.",
+    "Serve the chicken-quinoa skillet topped with extra parsley alongside the roasted green beans."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "quinoa",
+      "quantity": "1 1/2 cups (uncooked)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "700–800 g",
+      "preparation": "cut into bite-size pieces"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "250 g",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2–3 tbsp",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "chicken stock concentrate",
+      "quantity": "1 tsp",
+      "preparation": "to dissolve in cooking liquid"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": "for quinoa"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "for seasoning"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "for seasoning"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "quinoa",
+      "quantity": "1 1/2 cups (uncooked)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "700–800 g",
+      "preparation": "cut into bite-size pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "250 g",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2–3 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock concentrate",
+      "quantity": "1 tsp",
+      "preparation": "to dissolve in cooking liquid",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": "for quinoa",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "for seasoning",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "for seasoning",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T162617Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T162531Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

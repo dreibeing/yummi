@@ -1,0 +1,290 @@
+{
+  "meal_id": "meal_20251125T141721Z_01_12e6d3",
+  "archetype_uid": "arch_SA_BraaiPotjie_Adv60",
+  "archetype_name": "Family Weekend Advanced: South African Braai & Potjie",
+  "name": "Smoked Braai Brisket with Pap and Chakalaka Relish",
+  "description": "Low-and-slow braai-smoked beef brisket finished tender in the oven, served with maize meal pap and a quick chakalaka relish. A classic South African feast built for weekend project cooking.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Soak a generous load of braai wood per your grill/smoker instructions; prepare a two-zone fire (hot and cool side).",
+    "Preheat OutdoorGrill to 120–135°C (250–275°F) indirect and Oven to 150°C (300°F).",
+    "Trim excess surface fat from beef brisket, leaving a 5–8 mm cap.",
+    "In a bowl, mix braai spice mix (3 tbsp), paprika (1 tbsp), salt (2 tsp), and black pepper (2 tsp). Rub all over brisket and rest 20 minutes at room temperature.",
+    "Stir together mop sauce: apple cider vinegar (1/2 cup), BBQ sauce (1/3 cup), olive oil (1 tbsp), chilli flakes (1 tsp), garlic powder (1 tsp).",
+    "Dice onion (1 large) and bell peppers (2).",
+    "Measure chakalaka (2 cups) and set aside.",
+    "Measure maize meal (2 cups) and chicken stock (6 cups). Keep extra salt ready."
+  ],
+  "cook_steps": [
+    "Place brisket fat-side up on the grill’s cool zone. Close lid; stabilize at 120–135°C (250–275°F). Feed braai wood as needed for clean smoke.",
+    "Smoke for 3 hours, mopping lightly every 45 minutes. Maintain gentle, clean smoke and steady temperature.",
+    "Transfer brisket to an oven-safe roasting dish with a lid. Add 1/4 cup mop to the dish, cover, and move to the Oven at 150°C (300°F).",
+    "Braise-roast 2–3 hours until a probe slides in with little resistance (target internal 93–96°C / 200–205°F). Rest covered 30 minutes off heat.",
+    "While brisket finishes, make chakalaka relish: set a pan over StoveTop medium heat with 1 tbsp olive oil. Sauté onion 4 minutes, add bell peppers and cook 4 minutes more.",
+    "Stir in chakalaka and a pinch of salt; simmer 5–8 minutes to meld. Hold warm on low.",
+    "Cook pap: bring chicken stock to a boil on StoveTop. Rain in maize meal while whisking. Reduce to low, cover, and cook 20–25 minutes, stirring every 5 minutes until thick and smooth. Season with salt to taste and 1 tbsp olive oil.",
+    "Slice brisket across the grain into 5–10 mm slices. Brush with remaining warm mop or a little BBQ sauce if desired.",
+    "Plate sliced brisket with generous spoonfuls of pap and chakalaka relish. Serve immediately."
+  ],
+  "instructions": [
+    "Soak a generous load of braai wood per your grill/smoker instructions; prepare a two-zone fire (hot and cool side).",
+    "Preheat OutdoorGrill to 120–135°C (250–275°F) indirect and Oven to 150°C (300°F).",
+    "Trim excess surface fat from beef brisket, leaving a 5–8 mm cap.",
+    "In a bowl, mix braai spice mix (3 tbsp), paprika (1 tbsp), salt (2 tsp), and black pepper (2 tsp). Rub all over brisket and rest 20 minutes at room temperature.",
+    "Stir together mop sauce: apple cider vinegar (1/2 cup), BBQ sauce (1/3 cup), olive oil (1 tbsp), chilli flakes (1 tsp), garlic powder (1 tsp).",
+    "Dice onion (1 large) and bell peppers (2).",
+    "Measure chakalaka (2 cups) and set aside.",
+    "Measure maize meal (2 cups) and chicken stock (6 cups). Keep extra salt ready.",
+    "Place brisket fat-side up on the grill’s cool zone. Close lid; stabilize at 120–135°C (250–275°F). Feed braai wood as needed for clean smoke.",
+    "Smoke for 3 hours, mopping lightly every 45 minutes. Maintain gentle, clean smoke and steady temperature.",
+    "Transfer brisket to an oven-safe roasting dish with a lid. Add 1/4 cup mop to the dish, cover, and move to the Oven at 150°C (300°F).",
+    "Braise-roast 2–3 hours until a probe slides in with little resistance (target internal 93–96°C / 200–205°F). Rest covered 30 minutes off heat.",
+    "While brisket finishes, make chakalaka relish: set a pan over StoveTop medium heat with 1 tbsp olive oil. Sauté onion 4 minutes, add bell peppers and cook 4 minutes more.",
+    "Stir in chakalaka and a pinch of salt; simmer 5–8 minutes to meld. Hold warm on low.",
+    "Cook pap: bring chicken stock to a boil on StoveTop. Rain in maize meal while whisking. Reduce to low, cover, and cook 20–25 minutes, stirring every 5 minutes until thick and smooth. Season with salt to taste and 1 tbsp olive oil.",
+    "Slice brisket across the grain into 5–10 mm slices. Brush with remaining warm mop or a little BBQ sauce if desired.",
+    "Plate sliced brisket with generous spoonfuls of pap and chakalaka relish. Serve immediately."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef brisket",
+      "quantity": "2.5–3 kg",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "braai spice mix",
+      "quantity": "3 tbsp",
+      "preparation": "for dry rub"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tbsp",
+      "preparation": "for dry rub"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 tsp + to taste",
+      "preparation": "rub and seasoning"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "2 tsp",
+      "preparation": "rub"
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1/2 cup",
+      "preparation": "for mop"
+    },
+    {
+      "core_item_name": "BBQ sauce",
+      "quantity": "1/3 cup",
+      "preparation": "for mop and glazing"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "mop, sauté, and finish pap"
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 tsp",
+      "preparation": "for mop"
+    },
+    {
+      "core_item_name": "garlic powder",
+      "quantity": "1 tsp",
+      "preparation": "for mop"
+    },
+    {
+      "core_item_name": "braai wood",
+      "quantity": "as needed",
+      "preparation": "for clean smoke"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "chakalaka",
+      "quantity": "2 cups",
+      "preparation": "ready to heat"
+    },
+    {
+      "core_item_name": "maize meal",
+      "quantity": "2 cups",
+      "preparation": "for pap"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "6 cups",
+      "preparation": "for pap"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef brisket",
+      "quantity": "2.5–3 kg",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "braai spice mix",
+      "quantity": "3 tbsp",
+      "preparation": "for dry rub",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tbsp",
+      "preparation": "for dry rub",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 tsp + to taste",
+      "preparation": "rub and seasoning",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "2 tsp",
+      "preparation": "rub",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1/2 cup",
+      "preparation": "for mop",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "BBQ sauce",
+      "quantity": "1/3 cup",
+      "preparation": "for mop and glazing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "mop, sauté, and finish pap",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 tsp",
+      "preparation": "for mop",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic powder",
+      "quantity": "1 tsp",
+      "preparation": "for mop",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "braai wood",
+      "quantity": "as needed",
+      "preparation": "for clean smoke",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chakalaka",
+      "quantity": "2 cups",
+      "preparation": "ready to heat",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "maize meal",
+      "quantity": "2 cups",
+      "preparation": "for pap",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "6 cups",
+      "preparation": "for pap",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T141852Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T141721Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

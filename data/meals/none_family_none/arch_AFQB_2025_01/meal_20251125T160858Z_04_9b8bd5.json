@@ -1,0 +1,191 @@
+{
+  "meal_id": "meal_20251125T160858Z_04_9b8bd5",
+  "archetype_uid": "arch_AFQB_2025_01",
+  "archetype_name": "Family AirFryer Quick Bites",
+  "name": "Air Fryer Meatball Burrito Bowls",
+  "description": "Speedy burrito bowls with air-fried meatballs, microwave rice, and kid-friendly toppings. Mild, customizable, and ready in minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat air fryer to 200°C/390°F for 3 minutes.",
+    "Rinse and drain black beans.",
+    "Shred lettuce and slice avocado.",
+    "Set out salsa, cheddar cheese, and sour cream.",
+    "Have microwave rice packets ready to heat."
+  ],
+  "cook_steps": [
+    "Air-fry meatballs for 6–8 minutes, shaking halfway, until heated through and lightly browned.",
+    "Microwave rice per packet directions (about 2–3 minutes total for 2 packets).",
+    "Microwave black beans in a microwave-safe bowl for 60–90 seconds until warm.",
+    "Assemble bowls: rice on the bottom, then black beans and meatballs. Add lettuce, salsa, cheddar cheese, avocado, and sour cream.",
+    "Season with salt and pepper to taste and serve."
+  ],
+  "instructions": [
+    "Preheat air fryer to 200°C/390°F for 3 minutes.",
+    "Rinse and drain black beans.",
+    "Shred lettuce and slice avocado.",
+    "Set out salsa, cheddar cheese, and sour cream.",
+    "Have microwave rice packets ready to heat.",
+    "Air-fry meatballs for 6–8 minutes, shaking halfway, until heated through and lightly browned.",
+    "Microwave rice per packet directions (about 2–3 minutes total for 2 packets).",
+    "Microwave black beans in a microwave-safe bowl for 60–90 seconds until warm.",
+    "Assemble bowls: rice on the bottom, then black beans and meatballs. Add lettuce, salsa, cheddar cheese, avocado, and sour cream.",
+    "Season with salt and pepper to taste and serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "meatballs",
+      "quantity": "500 g (about 20 meatballs)",
+      "preparation": "from chilled or frozen"
+    },
+    {
+      "core_item_name": "rice",
+      "quantity": "2 packets (about 250 g each)",
+      "preparation": "microwave-ready"
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (400 g), drained and rinsed",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1 cup, shredded",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "1 small head",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "sour cream",
+      "quantity": "1/2 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "to taste",
+      "preparation": ""
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "AirFryer",
+      "Microwave"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "meatballs",
+      "quantity": "500 g (about 20 meatballs)",
+      "preparation": "from chilled or frozen",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice",
+      "quantity": "2 packets (about 250 g each)",
+      "preparation": "microwave-ready",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (400 g), drained and rinsed",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1 cup, shredded",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "1 small head",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sour cream",
+      "quantity": "1/2 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T161115Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T160858Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

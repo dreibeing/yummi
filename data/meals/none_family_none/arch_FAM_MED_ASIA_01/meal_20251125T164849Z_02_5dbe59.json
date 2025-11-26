@@ -1,0 +1,273 @@
+{
+  "meal_id": "meal_20251125T164849Z_02_5dbe59",
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "archetype_name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)",
+  "name": "Chili-Soy Eggplant & Tofu Stir-Fry with Jasmine Rice",
+  "description": "A weeknight Chinese–Thai style skillet of tender eggplant and crispy-edged tofu in a medium-heat chili-soy glaze, served over fluffy jasmine rice.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 2 cups jasmine rice until water runs clear; drain well.",
+    "Cut 2 medium eggplant into 2 cm cubes.",
+    "Pat dry 400–500 g tofu and cut into 2 cm cubes.",
+    "Slice 1 large onions into thin wedges.",
+    "Mince 3 cloves garlic.",
+    "Slice 3 spring onion (separate whites and greens).",
+    "In a bowl, whisk together 6 tbsp soy sauce, 2 tbsp rice vinegar, 1 tbsp brown sugar, 1 tsp chili flakes, 1 tbsp chili oil, 1 tsp szechuan pepper oil, and 1 tbsp cornflour until smooth."
+  ],
+  "cook_steps": [
+    "Add rinsed jasmine rice to a pot with 2.5 cups water and a pinch of salt. Bring to a boil, cover, reduce heat to low, and cook 12–15 minutes until tender. Rest covered 5 minutes; fluff.",
+    "Heat 2 tbsp canola oil in a large skillet or wok over medium-high heat.",
+    "Add eggplant; stir-fry 5–6 minutes until browned and starting to soften. Push to the side.",
+    "Add 1 tbsp canola oil, then tofu. Sear 3–4 minutes until golden on edges.",
+    "Add onions, spring onion whites, and garlic. Stir-fry 2 minutes until fragrant.",
+    "Whisk the sauce again, then pour into the pan. Toss to coat and simmer 1–2 minutes until glossy and thickened. If too thick, loosen with a splash of water; if thin, simmer 1 more minute.",
+    "Taste and adjust heat with more chili oil or chili flakes if desired.",
+    "Serve stir-fry over jasmine rice. Top with spring onion greens."
+  ],
+  "instructions": [
+    "Rinse 2 cups jasmine rice until water runs clear; drain well.",
+    "Cut 2 medium eggplant into 2 cm cubes.",
+    "Pat dry 400–500 g tofu and cut into 2 cm cubes.",
+    "Slice 1 large onions into thin wedges.",
+    "Mince 3 cloves garlic.",
+    "Slice 3 spring onion (separate whites and greens).",
+    "In a bowl, whisk together 6 tbsp soy sauce, 2 tbsp rice vinegar, 1 tbsp brown sugar, 1 tsp chili flakes, 1 tbsp chili oil, 1 tsp szechuan pepper oil, and 1 tbsp cornflour until smooth.",
+    "Add rinsed jasmine rice to a pot with 2.5 cups water and a pinch of salt. Bring to a boil, cover, reduce heat to low, and cook 12–15 minutes until tender. Rest covered 5 minutes; fluff.",
+    "Heat 2 tbsp canola oil in a large skillet or wok over medium-high heat.",
+    "Add eggplant; stir-fry 5–6 minutes until browned and starting to soften. Push to the side.",
+    "Add 1 tbsp canola oil, then tofu. Sear 3–4 minutes until golden on edges.",
+    "Add onions, spring onion whites, and garlic. Stir-fry 2 minutes until fragrant.",
+    "Whisk the sauce again, then pour into the pan. Toss to coat and simmer 1–2 minutes until glossy and thickened. If too thick, loosen with a splash of water; if thin, simmer 1 more minute.",
+    "Taste and adjust heat with more chili oil or chili flakes if desired.",
+    "Serve stir-fry over jasmine rice. Top with spring onion greens."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "pinch",
+      "preparation": "for rice"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "eggplant",
+      "quantity": "2 medium",
+      "preparation": "2 cm cubes"
+    },
+    {
+      "core_item_name": "tofu",
+      "quantity": "400–500 g",
+      "preparation": "patted dry, 2 cm cubes"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "thin wedges"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3",
+      "preparation": "slice whites and greens separately"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "6 tbsp",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tbsp",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tbsp",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 tsp",
+      "preparation": "for sauce; more to taste"
+    },
+    {
+      "core_item_name": "chili oil",
+      "quantity": "1 tbsp",
+      "preparation": "for sauce; more to taste"
+    },
+    {
+      "core_item_name": "szechuan pepper oil",
+      "quantity": "1 tsp",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "1 tbsp",
+      "preparation": "whisked into sauce"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Chinese",
+      "Thai"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Soy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "pinch",
+      "preparation": "for rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "eggplant",
+      "quantity": "2 medium",
+      "preparation": "2 cm cubes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tofu",
+      "quantity": "400–500 g",
+      "preparation": "patted dry, 2 cm cubes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "thin wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3",
+      "preparation": "slice whites and greens separately",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "6 tbsp",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tbsp",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tbsp",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 tsp",
+      "preparation": "for sauce; more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili oil",
+      "quantity": "1 tbsp",
+      "preparation": "for sauce; more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "szechuan pepper oil",
+      "quantity": "1 tsp",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "1 tbsp",
+      "preparation": "whisked into sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T165044Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T164849Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

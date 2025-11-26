@@ -1,0 +1,251 @@
+{
+  "meal_id": "meal_20251125T164849Z_05_68af3d",
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "archetype_name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)",
+  "name": "Thai Red Curry Fish with Baby Corn and Bok Choy",
+  "description": "Tender fish gently poached in a fragrant Thai red curry with baby corn and bok choy, served over fluffy jasmine rice. Medium heat and weeknight-fast on the stovetop.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 2 cups jasmine rice until water runs clear; set aside.",
+    "Thinly slice 2 shallots.",
+    "Mince 3 cloves garlic.",
+    "Chop 300 g bok choy into bite-size pieces, separating stems and leaves.",
+    "Drain 200 g baby corn; cut into bite-size pieces if large.",
+    "Cut 600 g fish fillets into 2–3 cm pieces; pat dry.",
+    "Cut 1 lime into wedges."
+  ],
+  "cook_steps": [
+    "Cook rice: Add rinsed jasmine rice to a pot with water (per pack ratio). Bring to a boil, cover, reduce heat to low, and cook until tender. Keep covered off-heat.",
+    "Microwave baby corn for 1 minute to pre-warm; set aside.",
+    "Heat 1 tbsp canola oil in a wide skillet over medium heat. Add sliced shallots and cook 2 minutes until softened. Add minced garlic; cook 30 seconds.",
+    "Stir in 3 tbsp Thai red curry paste and cook 1 minute to bloom.",
+    "Pour in 1 can (400 ml) coconut milk and 1 tbsp fish sauce. Bring to a gentle simmer.",
+    "Add bok choy stems and the warmed baby corn; simmer 2–3 minutes until slightly tender.",
+    "Nestle fish pieces into the simmering curry in a single layer. Simmer gently (do not boil) for 4–6 minutes until fish flakes easily.",
+    "Stir in bok choy leaves and a pinch of chili flakes (optional). Simmer 1 minute until wilted. Taste; add more fish sauce or a small pinch of salt if needed.",
+    "Fluff rice. Serve curry over rice with lime wedges for squeezing."
+  ],
+  "instructions": [
+    "Rinse 2 cups jasmine rice until water runs clear; set aside.",
+    "Thinly slice 2 shallots.",
+    "Mince 3 cloves garlic.",
+    "Chop 300 g bok choy into bite-size pieces, separating stems and leaves.",
+    "Drain 200 g baby corn; cut into bite-size pieces if large.",
+    "Cut 600 g fish fillets into 2–3 cm pieces; pat dry.",
+    "Cut 1 lime into wedges.",
+    "Cook rice: Add rinsed jasmine rice to a pot with water (per pack ratio). Bring to a boil, cover, reduce heat to low, and cook until tender. Keep covered off-heat.",
+    "Microwave baby corn for 1 minute to pre-warm; set aside.",
+    "Heat 1 tbsp canola oil in a wide skillet over medium heat. Add sliced shallots and cook 2 minutes until softened. Add minced garlic; cook 30 seconds.",
+    "Stir in 3 tbsp Thai red curry paste and cook 1 minute to bloom.",
+    "Pour in 1 can (400 ml) coconut milk and 1 tbsp fish sauce. Bring to a gentle simmer.",
+    "Add bok choy stems and the warmed baby corn; simmer 2–3 minutes until slightly tender.",
+    "Nestle fish pieces into the simmering curry in a single layer. Simmer gently (do not boil) for 4–6 minutes until fish flakes easily.",
+    "Stir in bok choy leaves and a pinch of chili flakes (optional). Simmer 1 minute until wilted. Taste; add more fish sauce or a small pinch of salt if needed.",
+    "Fluff rice. Serve curry over rice with lime wedges for squeezing."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups (uncooked)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "shallots",
+      "quantity": "2",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "Thai red curry paste",
+      "quantity": "3 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "coconut milk",
+      "quantity": "1 can (400 ml)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "fish sauce",
+      "quantity": "1–2 tbsp, to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "600 g",
+      "preparation": "cut into 2–3 cm pieces"
+    },
+    {
+      "core_item_name": "baby corn",
+      "quantity": "200 g",
+      "preparation": "drained; cut if large"
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "300 g",
+      "preparation": "chopped; stems and leaves separated"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2 tsp",
+      "preparation": "optional"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "pinch, if needed",
+      "preparation": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Chinese",
+      "Thai"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups (uncooked)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "shallots",
+      "quantity": "2",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "Thai red curry paste",
+      "quantity": "3 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coconut milk",
+      "quantity": "1 can (400 ml)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "fish sauce",
+      "quantity": "1–2 tbsp, to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "600 g",
+      "preparation": "cut into 2–3 cm pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "baby corn",
+      "quantity": "200 g",
+      "preparation": "drained; cut if large",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "300 g",
+      "preparation": "chopped; stems and leaves separated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2 tsp",
+      "preparation": "optional",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "pinch, if needed",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T165343Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T164849Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

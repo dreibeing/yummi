@@ -1,0 +1,255 @@
+{
+  "meal_id": "meal_20251125T170209Z_02_966b1e",
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "archetype_name": "Family Weekend Showstopper: Spanish & Portuguese Feasts",
+  "name": "Smoked Hake à Brás with Blistered Padrón Peppers",
+  "description": "A Portuguese à Brás-style shredded smoked hake with crisp matchstick potatoes and creamy eggs, finished with olives and parsley, served alongside Spanish-style blistered Padrón peppers. A family showpiece with comforting textures and bright lemon.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 230°C (450°F).",
+    "Peel potatoes and cut into thin matchsticks; soak in cold water 20 minutes to remove starch, then drain and dry well with towels.",
+    "Slice onions thinly.",
+    "Mince garlic.",
+    "Roughly chop parsley.",
+    "Beat eggs in a bowl with a pinch of salt and black pepper.",
+    "Rinse smoked hake briefly; set aside.",
+    "Rinse and dry padron peppers; toss in a bowl with a little olive oil and salt.",
+    "Cut lemon into wedges.",
+    "Set out a large frying pan for potatoes, a wide sauté pan for the hake mix, and a baking tray for peppers."
+  ],
+  "cook_steps": [
+    "In a medium pot, add smoked hake, bay leaves, and enough water to cover; bring to a gentle simmer on the stovetop for 6–8 minutes until just flaky. Drain, discard bay leaves, and flake the fish, removing any skin/bones.",
+    "Heat a large frying pan with 80 ml olive oil over medium-high heat. Fry dried potato matchsticks in batches until golden and crisp (6–8 minutes per batch). Transfer to a paper towel–lined tray and season with salt. Keep warm.",
+    "While frying potatoes, spread padron peppers on a baking tray, season with salt, and roast in the oven for 8–10 minutes until blistered, turning once. Hold in the switched-off oven to keep warm.",
+    "In a wide sauté pan, add 2 tablespoons olive oil over medium heat. Cook sliced onions with a pinch of salt until soft and pale golden, 8–10 minutes. Add minced garlic and cook 1 minute.",
+    "Add flaked smoked hake to the onions and warm through for 2–3 minutes, gently folding.",
+    "Reduce heat to low. Pour in beaten eggs and stir slowly with a spatula until just creamy and softly set, 2–3 minutes (do not scramble dry).",
+    "Fold in most of the crispy potatoes (reserve a handful for topping), chopped parsley, and most of the olives. Adjust salt and black pepper, and add a small drizzle of olive oil if needed.",
+    "Plate the à Brás. Top with reserved crispy potatoes and remaining olives. Serve with blistered padron peppers and lemon wedges on the side for squeezing."
+  ],
+  "instructions": [
+    "Preheat oven to 230°C (450°F).",
+    "Peel potatoes and cut into thin matchsticks; soak in cold water 20 minutes to remove starch, then drain and dry well with towels.",
+    "Slice onions thinly.",
+    "Mince garlic.",
+    "Roughly chop parsley.",
+    "Beat eggs in a bowl with a pinch of salt and black pepper.",
+    "Rinse smoked hake briefly; set aside.",
+    "Rinse and dry padron peppers; toss in a bowl with a little olive oil and salt.",
+    "Cut lemon into wedges.",
+    "Set out a large frying pan for potatoes, a wide sauté pan for the hake mix, and a baking tray for peppers.",
+    "In a medium pot, add smoked hake, bay leaves, and enough water to cover; bring to a gentle simmer on the stovetop for 6–8 minutes until just flaky. Drain, discard bay leaves, and flake the fish, removing any skin/bones.",
+    "Heat a large frying pan with 80 ml olive oil over medium-high heat. Fry dried potato matchsticks in batches until golden and crisp (6–8 minutes per batch). Transfer to a paper towel–lined tray and season with salt. Keep warm.",
+    "While frying potatoes, spread padron peppers on a baking tray, season with salt, and roast in the oven for 8–10 minutes until blistered, turning once. Hold in the switched-off oven to keep warm.",
+    "In a wide sauté pan, add 2 tablespoons olive oil over medium heat. Cook sliced onions with a pinch of salt until soft and pale golden, 8–10 minutes. Add minced garlic and cook 1 minute.",
+    "Add flaked smoked hake to the onions and warm through for 2–3 minutes, gently folding.",
+    "Reduce heat to low. Pour in beaten eggs and stir slowly with a spatula until just creamy and softly set, 2–3 minutes (do not scramble dry).",
+    "Fold in most of the crispy potatoes (reserve a handful for topping), chopped parsley, and most of the olives. Adjust salt and black pepper, and add a small drizzle of olive oil if needed.",
+    "Plate the à Brás. Top with reserved crispy potatoes and remaining olives. Serve with blistered padron peppers and lemon wedges on the side for squeezing."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "smoked hake",
+      "quantity": "600 g",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "for poaching"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "1.2 kg",
+      "preparation": "peeled, cut into matchsticks"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "6",
+      "preparation": "beaten with salt and pepper"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "pitted if needed"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1 small bunch",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "padron peppers",
+      "quantity": "300 g",
+      "preparation": "rinsed and dried"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "150 ml",
+      "preparation": "divided for frying and sautéing"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "for seasoning"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "freshly ground"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Portuguese",
+      "Spanish"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "smoked hake",
+      "quantity": "600 g",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "for poaching",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "1.2 kg",
+      "preparation": "peeled, cut into matchsticks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "6",
+      "preparation": "beaten with salt and pepper",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "pitted if needed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1 small bunch",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "padron peppers",
+      "quantity": "300 g",
+      "preparation": "rinsed and dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "150 ml",
+      "preparation": "divided for frying and sautéing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "for seasoning",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T170401Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T170209Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

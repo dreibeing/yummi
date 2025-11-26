@@ -1,0 +1,264 @@
+{
+  "meal_id": "meal_20251125T141042Z_02_3828a3",
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "archetype_name": "Family Pressure Cooker Express Dinners (15–30, Mild)",
+  "name": "Instant Pot Beef & Mushroom Stroganoff (Egg Noodles)",
+  "description": "Tender beef and mushrooms in a creamy, mild stroganoff sauce, finished right in the pressure cooker with egg noodles. Family-friendly and ready in about 30 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Dice onions.",
+    "Slice mushrooms.",
+    "Mince garlic.",
+    "Measure beef stock and water.",
+    "Measure paprika, salt, pepper, and Worcestershire sauce.",
+    "Chop parsley."
+  ],
+  "cook_steps": [
+    "Set the pressure cooker to Sauté. Add butter and let it melt.",
+    "Add onions and mushrooms. Sauté 4–5 minutes until softened.",
+    "Stir in garlic and cook 30 seconds until fragrant.",
+    "Add beef stew meat, paprika, salt, and pepper. Stir to coat and brown lightly for 2–3 minutes.",
+    "Pour in Worcestershire sauce and beef stock. Scrape the bottom to release any browned bits. Add water.",
+    "Cancel Sauté. Seal the lid and cook on High Pressure for 12 minutes. Quick release when done.",
+    "Open the lid. Add egg noodles and stir to submerge; add a splash of water only if needed to barely cover the noodles.",
+    "Seal and cook on High Pressure for 3 minutes. Quick release immediately.",
+    "Stir in sour cream until smooth. Taste and adjust salt and pepper.",
+    "Let sit 2 minutes to thicken. Top with parsley and serve."
+  ],
+  "instructions": [
+    "Dice onions.",
+    "Slice mushrooms.",
+    "Mince garlic.",
+    "Measure beef stock and water.",
+    "Measure paprika, salt, pepper, and Worcestershire sauce.",
+    "Chop parsley.",
+    "Set the pressure cooker to Sauté. Add butter and let it melt.",
+    "Add onions and mushrooms. Sauté 4–5 minutes until softened.",
+    "Stir in garlic and cook 30 seconds until fragrant.",
+    "Add beef stew meat, paprika, salt, and pepper. Stir to coat and brown lightly for 2–3 minutes.",
+    "Pour in Worcestershire sauce and beef stock. Scrape the bottom to release any browned bits. Add water.",
+    "Cancel Sauté. Seal the lid and cook on High Pressure for 12 minutes. Quick release when done.",
+    "Open the lid. Add egg noodles and stir to submerge; add a splash of water only if needed to barely cover the noodles.",
+    "Seal and cook on High Pressure for 3 minutes. Quick release immediately.",
+    "Stir in sour cream until smooth. Taste and adjust salt and pepper.",
+    "Let sit 2 minutes to thicken. Top with parsley and serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "8 ounces",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "beef stew meat",
+      "quantity": "1.5 pounds",
+      "preparation": "cut into bite-size pieces if large"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon, plus more to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "worcestershire sauce",
+      "quantity": "1 tablespoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "2 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1 cup, plus splash if needed",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "egg noodles",
+      "quantity": "12 ounces",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "sour cream",
+      "quantity": "1 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "French"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "SlowOrPressureCooker",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "8 ounces",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "beef stew meat",
+      "quantity": "1.5 pounds",
+      "preparation": "cut into bite-size pieces if large",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon, plus more to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "worcestershire sauce",
+      "quantity": "1 tablespoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "2 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1 cup, plus splash if needed",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "egg noodles",
+      "quantity": "12 ounces",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sour cream",
+      "quantity": "1 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T141223Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T141042Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

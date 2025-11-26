@@ -1,0 +1,187 @@
+{
+  "meal_id": "meal_20251125T163610Z_03_db5950",
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "archetype_name": "Family Keto Weeknight Plates (Mild, 15–30, Simple)",
+  "name": "Garlic-Lemon Prawn Skewers with Sautéed Zucchini and Aioli",
+  "description": "Quick, mild prawn skewers seared with garlic and lemon, served over tender sautéed zucchini with a side of aioli. Keto-friendly and family-simple.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Pat dry the prawn skewers with paper towels.",
+    "Mince the garlic.",
+    "Roughly chop the parsley.",
+    "Zest and halve the lemon.",
+    "Trim ends of zucchini and slice into thin ribbons or half-moons.",
+    "In a bowl, toss prawn skewers with half the olive oil, minced garlic, lemon zest, half the parsley, and a pinch of salt and pepper."
+  ],
+  "cook_steps": [
+    "Heat a large skillet or grill pan over medium-high heat.",
+    "Add a drizzle of olive oil, then place the prawn skewers in a single layer.",
+    "Cook 2–3 minutes per side until prawns are pink and opaque; transfer to a plate and squeeze half the lemon over the top.",
+    "Return the pan to medium heat with the remaining olive oil.",
+    "Add zucchini, a pinch of salt and pepper, and sauté 2–3 minutes until just tender.",
+    "Finish zucchini with the remaining lemon juice.",
+    "Plate zucchini, top with prawn skewers, and sprinkle with remaining parsley.",
+    "Serve with aioli on the side for dipping."
+  ],
+  "instructions": [
+    "Pat dry the prawn skewers with paper towels.",
+    "Mince the garlic.",
+    "Roughly chop the parsley.",
+    "Zest and halve the lemon.",
+    "Trim ends of zucchini and slice into thin ribbons or half-moons.",
+    "In a bowl, toss prawn skewers with half the olive oil, minced garlic, lemon zest, half the parsley, and a pinch of salt and pepper.",
+    "Heat a large skillet or grill pan over medium-high heat.",
+    "Add a drizzle of olive oil, then place the prawn skewers in a single layer.",
+    "Cook 2–3 minutes per side until prawns are pink and opaque; transfer to a plate and squeeze half the lemon over the top.",
+    "Return the pan to medium heat with the remaining olive oil.",
+    "Add zucchini, a pinch of salt and pepper, and sauté 2–3 minutes until just tender.",
+    "Finish zucchini with the remaining lemon juice.",
+    "Plate zucchini, top with prawn skewers, and sprinkle with remaining parsley.",
+    "Serve with aioli on the side for dipping."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "prawn skewers",
+      "quantity": "4–6 skewers (about 600–700 g)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "3 medium",
+      "preparation": "sliced into ribbons or half-moons"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and halved"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "aioli",
+      "quantity": "4 tablespoons",
+      "preparation": "for serving"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein",
+      "Keto",
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "prawn skewers",
+      "quantity": "4–6 skewers (about 600–700 g)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "3 medium",
+      "preparation": "sliced into ribbons or half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "aioli",
+      "quantity": "4 tablespoons",
+      "preparation": "for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T163839Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T163610Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

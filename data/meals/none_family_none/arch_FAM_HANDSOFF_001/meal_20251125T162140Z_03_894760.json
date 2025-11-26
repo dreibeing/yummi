@@ -1,0 +1,233 @@
+{
+  "meal_id": "meal_20251125T162140Z_03_894760",
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "archetype_name": "Family Hands-Off Sheet Pan & Slow Cooker Nights",
+  "name": "Sheet-Pan Greek Meatballs with Peppers & Red Onion, served with Tzatziki Pitas",
+  "description": "Hands-off sheet-pan meatballs roasted with sweet peppers and red onion, finished with lemon and served in warm pitas with tzatziki. Greek/Middle Eastern flavors with no chili heat.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C/425°F and line a sheet pan with foil.",
+    "Cut bell peppers into strips.",
+    "Slice red onion into wedges.",
+    "Mince garlic.",
+    "Zest then cut lemon into wedges.",
+    "In a bowl, combine olive oil, oregano, garlic, salt, and black pepper."
+  ],
+  "cook_steps": [
+    "Toss bell peppers and red onion on the sheet pan with half the olive oil mixture.",
+    "Add meatballs to the pan and brush or spoon the remaining olive oil mixture over them.",
+    "Roast for 20 minutes, then stir vegetables and turn meatballs.",
+    "Roast 10–15 minutes more until meatballs are browned and cooked through.",
+    "Warm pita bread: microwave 20–30 seconds just before serving or wrap in foil and place on the sheet pan for the last 5 minutes.",
+    "Squeeze lemon wedges over meatballs and vegetables; sprinkle lemon zest and chopped parsley if using.",
+    "Serve meatballs and vegetables tucked into warm pita bread with tzatziki."
+  ],
+  "instructions": [
+    "Heat oven to 220°C/425°F and line a sheet pan with foil.",
+    "Cut bell peppers into strips.",
+    "Slice red onion into wedges.",
+    "Mince garlic.",
+    "Zest then cut lemon into wedges.",
+    "In a bowl, combine olive oil, oregano, garlic, salt, and black pepper.",
+    "Toss bell peppers and red onion on the sheet pan with half the olive oil mixture.",
+    "Add meatballs to the pan and brush or spoon the remaining olive oil mixture over them.",
+    "Roast for 20 minutes, then stir vegetables and turn meatballs.",
+    "Roast 10–15 minutes more until meatballs are browned and cooked through.",
+    "Warm pita bread: microwave 20–30 seconds just before serving or wrap in foil and place on the sheet pan for the last 5 minutes.",
+    "Squeeze lemon wedges over meatballs and vegetables; sprinkle lemon zest and chopped parsley if using.",
+    "Serve meatballs and vegetables tucked into warm pita bread with tzatziki."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "meatballs",
+      "quantity": "600–700 g",
+      "preparation": "leave whole"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "3 medium",
+      "preparation": "sliced into strips"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "for tossing and brushing"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 teaspoons",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "or to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "or to taste"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and cut into wedges"
+    },
+    {
+      "core_item_name": "pita bread",
+      "quantity": "8 small",
+      "preparation": "warmed"
+    },
+    {
+      "core_item_name": "tzatziki",
+      "quantity": "1 cup",
+      "preparation": "for serving"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped, optional"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "meatballs",
+      "quantity": "600–700 g",
+      "preparation": "leave whole",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "3 medium",
+      "preparation": "sliced into strips",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "for tossing and brushing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 teaspoons",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "or to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "or to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pita bread",
+      "quantity": "8 small",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tzatziki",
+      "quantity": "1 cup",
+      "preparation": "for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped, optional",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T162338Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T162140Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

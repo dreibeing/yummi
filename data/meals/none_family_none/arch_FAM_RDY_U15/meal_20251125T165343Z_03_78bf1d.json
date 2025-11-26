@@ -1,0 +1,115 @@
+{
+  "meal_id": "meal_20251125T165343Z_03_78bf1d",
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "archetype_name": "Family Heat-and-Eat Weeknights (Under 15, No Heat)",
+  "name": "Microwave Mac & Cheese Bowls with Mixed Veg and Apple Slices",
+  "description": "Family-friendly mac and cheese heated in minutes with a ready veg side and crisp apple slices. Zero chili heat and minimal prep.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Wash and dry the apples.",
+    "Slice apples into wedges; set on a plate.",
+    "Set out 4 microwave-safe bowls and 4 forks.",
+    "Read heating times on the macaroni and cheese and mixed vegetables packages."
+  ],
+  "cook_steps": [
+    "Microwave the macaroni and cheese per package directions until hot, stirring once halfway.",
+    "Microwave the mixed vegetables per package directions until hot.",
+    "Divide the macaroni and cheese into 4 bowls.",
+    "Add a serving of mixed vegetables to each bowl or on the side.",
+    "Serve with apple slices on each plate."
+  ],
+  "instructions": [
+    "Wash and dry the apples.",
+    "Slice apples into wedges; set on a plate.",
+    "Set out 4 microwave-safe bowls and 4 forks.",
+    "Read heating times on the macaroni and cheese and mixed vegetables packages.",
+    "Microwave the macaroni and cheese per package directions until hot, stirring once halfway.",
+    "Microwave the mixed vegetables per package directions until hot.",
+    "Divide the macaroni and cheese into 4 bowls.",
+    "Add a serving of mixed vegetables to each bowl or on the side.",
+    "Serve with apple slices on each plate."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "macaroni and cheese",
+      "quantity": "4 single-serve trays (about 280–300 g each)"
+    },
+    {
+      "core_item_name": "mixed vegetables",
+      "quantity": "2 steam pouches (about 300 g each)"
+    },
+    {
+      "core_item_name": "apple",
+      "quantity": "2 medium",
+      "preparation": "washed and sliced"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "macaroni and cheese",
+      "quantity": "4 single-serve trays (about 280–300 g each)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mixed vegetables",
+      "quantity": "2 steam pouches (about 300 g each)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple",
+      "quantity": "2 medium",
+      "preparation": "washed and sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T165536Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T165343Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

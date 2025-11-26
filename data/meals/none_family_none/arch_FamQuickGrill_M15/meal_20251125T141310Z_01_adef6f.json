@@ -1,0 +1,233 @@
+{
+  "meal_id": "meal_20251125T141310Z_01_adef6f",
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "archetype_name": "Family Quick Grill & Salad Nights (Mild, 15–30)",
+  "name": "Braai Beef Skewers with Lemon Couscous & Cucumber-Yoghurt",
+  "description": "Quick-grilled beef skewers served with fluffy lemon couscous and a cool cucumber-yoghurt sauce. Mild, fresh, and family-friendly for a fast grill night.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat OutdoorGrill to medium-high heat.",
+    "Bring 2 cups water to a boil on the stovetop.",
+    "Finely chop 2 tablespoons parsley.",
+    "Zest and juice 1 lemon (keep separate).",
+    "Halve 1 cup cherry tomatoes.",
+    "Cut 1 small cucumber into small dice.",
+    "Mince 1 clove garlic.",
+    "Pat beef skewers dry; season all sides with salt and black pepper."
+  ],
+  "cook_steps": [
+    "Grill beef skewers 8–10 minutes, turning every 2–3 minutes until nicely charred and cooked to your liking; rest 3 minutes.",
+    "While skewers grill, place couscous in a bowl, pour in boiling water, cover and let stand 5 minutes.",
+    "In a small bowl, mix yoghurt with minced garlic and 1–2 teaspoons lemon juice; season with a pinch of salt and black pepper. Stir in half the diced cucumber.",
+    "Fluff couscous with a fork. Add lemon zest, remaining lemon juice to taste, parsley, cherry tomatoes, remaining diced cucumber, a drizzle of olive oil, salt, and black pepper; toss.",
+    "Serve beef skewers with the lemon couscous and a spoon of cucumber-yoghurt on the side."
+  ],
+  "instructions": [
+    "Preheat OutdoorGrill to medium-high heat.",
+    "Bring 2 cups water to a boil on the stovetop.",
+    "Finely chop 2 tablespoons parsley.",
+    "Zest and juice 1 lemon (keep separate).",
+    "Halve 1 cup cherry tomatoes.",
+    "Cut 1 small cucumber into small dice.",
+    "Mince 1 clove garlic.",
+    "Pat beef skewers dry; season all sides with salt and black pepper.",
+    "Grill beef skewers 8–10 minutes, turning every 2–3 minutes until nicely charred and cooked to your liking; rest 3 minutes.",
+    "While skewers grill, place couscous in a bowl, pour in boiling water, cover and let stand 5 minutes.",
+    "In a small bowl, mix yoghurt with minced garlic and 1–2 teaspoons lemon juice; season with a pinch of salt and black pepper. Stir in half the diced cucumber.",
+    "Fluff couscous with a fork. Add lemon zest, remaining lemon juice to taste, parsley, cherry tomatoes, remaining diced cucumber, a drizzle of olive oil, salt, and black pepper; toss.",
+    "Serve beef skewers with the lemon couscous and a spoon of cucumber-yoghurt on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef skewers",
+      "quantity": "8 skewers (about 800 g total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1.5 cups (dry)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 cups (for couscous)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 small",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and juice"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "1 clove",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": ""
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef skewers",
+      "quantity": "8 skewers (about 800 g total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1.5 cups (dry)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 cups (for couscous)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 small",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and juice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "1 clove",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T141350Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T141310Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

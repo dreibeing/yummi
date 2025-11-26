@@ -1,0 +1,275 @@
+{
+  "meal_id": "meal_20251125T162531Z_04_ae9ab3",
+  "archetype_uid": "arch_FAM_HP_30to60_INT_Mild_v1",
+  "archetype_name": "Family High-Protein Dinners (30–60, Mild, Intermediate)",
+  "name": "Teriyaki Tofu Veggie Brown Rice Bowls",
+  "description": "Crispy tofu and mixed vegetables in a mild teriyaki glaze over brown basmati rice for a balanced, protein-forward family dinner. Simple stir-fry technique with a quick pan sauce.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1.5 cups brown basmati rice under cold water until it runs clear.",
+    "Cut 600 g tofu into 2 cm cubes and pat dry with paper towels.",
+    "In a small bowl, whisk 1/3 cup teriyaki sauce, 2 tbsp soy sauce, 1 tbsp rice vinegar, 2 tsp cornflour, and 1/3 cup water; set aside.",
+    "Cut 1 large head broccoli into small florets; peel and slice the stalk thinly.",
+    "Mince 3 cloves garlic.",
+    "Slice 4 spring onion (whites and greens separated)."
+  ],
+  "cook_steps": [
+    "Add rinsed brown basmati rice and 3 cups water to a pot with a pinch of salt; bring to a boil, reduce to low, cover, and simmer 25–30 minutes until tender. Rest covered 5 minutes, then fluff.",
+    "Heat 1 tbsp olive oil in a large nonstick skillet over medium-high heat. Add tofu cubes; season with a pinch of salt and black pepper. Cook 6–8 minutes, turning to brown on multiple sides.",
+    "Push tofu to one side; add 1 tsp sesame oil and the broccoli. Stir-fry 3 minutes.",
+    "Add 300–400 g stir-fry vegetables and spring onion whites; stir-fry 3–4 minutes until crisp-tender.",
+    "Add minced garlic; stir 30 seconds until fragrant.",
+    "Whisk the teriyaki mixture, then pour into the pan. Toss gently and cook 1–2 minutes until the sauce thickens and coats tofu and vegetables. Adjust with a splash of water if too thick.",
+    "Taste and season with a little black pepper and a few drops of soy sauce if needed. Finish with 1 tsp sesame oil off heat.",
+    "Serve bowls of rice topped with teriyaki tofu and vegetables. Garnish with spring onion greens and 1 tbsp sesame seeds."
+  ],
+  "instructions": [
+    "Rinse 1.5 cups brown basmati rice under cold water until it runs clear.",
+    "Cut 600 g tofu into 2 cm cubes and pat dry with paper towels.",
+    "In a small bowl, whisk 1/3 cup teriyaki sauce, 2 tbsp soy sauce, 1 tbsp rice vinegar, 2 tsp cornflour, and 1/3 cup water; set aside.",
+    "Cut 1 large head broccoli into small florets; peel and slice the stalk thinly.",
+    "Mince 3 cloves garlic.",
+    "Slice 4 spring onion (whites and greens separated).",
+    "Add rinsed brown basmati rice and 3 cups water to a pot with a pinch of salt; bring to a boil, reduce to low, cover, and simmer 25–30 minutes until tender. Rest covered 5 minutes, then fluff.",
+    "Heat 1 tbsp olive oil in a large nonstick skillet over medium-high heat. Add tofu cubes; season with a pinch of salt and black pepper. Cook 6–8 minutes, turning to brown on multiple sides.",
+    "Push tofu to one side; add 1 tsp sesame oil and the broccoli. Stir-fry 3 minutes.",
+    "Add 300–400 g stir-fry vegetables and spring onion whites; stir-fry 3–4 minutes until crisp-tender.",
+    "Add minced garlic; stir 30 seconds until fragrant.",
+    "Whisk the teriyaki mixture, then pour into the pan. Toss gently and cook 1–2 minutes until the sauce thickens and coats tofu and vegetables. Adjust with a splash of water if too thick.",
+    "Taste and season with a little black pepper and a few drops of soy sauce if needed. Finish with 1 tsp sesame oil off heat.",
+    "Serve bowls of rice topped with teriyaki tofu and vegetables. Garnish with spring onion greens and 1 tbsp sesame seeds."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 + 0.33 cups",
+      "preparation": "for rice and sauce"
+    },
+    {
+      "core_item_name": "tofu",
+      "quantity": "600 g",
+      "preparation": "cut into 2 cm cubes, patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "2 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "1 large head",
+      "preparation": "florets and sliced stalks"
+    },
+    {
+      "core_item_name": "stir-fry vegetables",
+      "quantity": "300–400 g"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4",
+      "preparation": "sliced, whites and greens separated"
+    },
+    {
+      "core_item_name": "teriyaki sauce",
+      "quantity": "1/3 cup"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tbsp",
+      "preparation": "plus a few drops to taste"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "2 tsp"
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Japanese"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 + 0.33 cups",
+      "preparation": "for rice and sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tofu",
+      "quantity": "600 g",
+      "preparation": "cut into 2 cm cubes, patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "2 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "1 large head",
+      "preparation": "florets and sliced stalks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "stir-fry vegetables",
+      "quantity": "300–400 g",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4",
+      "preparation": "sliced, whites and greens separated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "teriyaki sauce",
+      "quantity": "1/3 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tbsp",
+      "preparation": "plus a few drops to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T162855Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T162531Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

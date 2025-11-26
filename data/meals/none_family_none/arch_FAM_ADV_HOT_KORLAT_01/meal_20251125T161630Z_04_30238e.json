@@ -1,0 +1,355 @@
+{
+  "meal_id": "meal_20251125T161630Z_04_30238e",
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "archetype_name": "Family Heat Lovers: Korean & Latin American Feasts (Hot, 30–60, Advanced)",
+  "name": "Spicy Dak-Galbi Rice Bowls with Avocado-Jalapeño Salsa and Quick Pickled Red Onions",
+  "description": "Korean-style gochujang chicken stir-fry over Spanish rice with a fresh Latin avocado-jalapeño salsa and quick pickled red onions. Built hot and from scratch for a bold family feast.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Cut chicken thighs into bite-size strips.",
+    "In a bowl, whisk gochujang, soy sauce, rice vinegar (2 tbsp), sesame oil, sugar, garlic (minced), black pepper, and chilli flakes. Toss in chicken to coat; marinate 15–20 minutes.",
+    "Thinly slice red onion and place in a small bowl with rice vinegar (2 tbsp) and a pinch of salt and sugar. Toss and set aside to quick pickle.",
+    "Dice tomatoes and avocado; mince jalapenos; chop coriander. In a bowl, combine with lime juice and a pinch of salt to make salsa.",
+    "Slice onions and bell peppers; shred cabbage.",
+    "Measure spanish rice, water, and salt."
+  ],
+  "cook_steps": [
+    "Heat a medium pot over medium heat. Add 1 tbsp canola oil and spanish rice; toast 1 minute, stirring.",
+    "Add water and 1 tsp salt. Bring to a boil, reduce to low, cover, and simmer 15–18 minutes until tender. Rest off heat, covered, 5 minutes.",
+    "Heat a large skillet or grill pan (or OutdoorGrill with a flat plate) over high heat. Add 1 tbsp canola oil.",
+    "Stir-fry sliced onions and bell peppers 2–3 minutes until charred-tender; add cabbage and cook 1–2 minutes more. Season with a pinch of salt. Transfer to a bowl.",
+    "Add remaining 1 tbsp canola oil to the hot pan. Add marinated chicken in an even layer. Sear 3–4 minutes, then toss and cook 3–4 minutes more until cooked through and lightly charred.",
+    "Return vegetables to the pan with the chicken and toss 30–60 seconds to glaze and heat through. Adjust seasoning to taste.",
+    "Fluff the spanish rice with a fork.",
+    "Assemble bowls: rice, spoon over the spicy chicken and vegetables, top with avocado-jalapeño salsa, and finish with quick pickled red onions."
+  ],
+  "instructions": [
+    "Cut chicken thighs into bite-size strips.",
+    "In a bowl, whisk gochujang, soy sauce, rice vinegar (2 tbsp), sesame oil, sugar, garlic (minced), black pepper, and chilli flakes. Toss in chicken to coat; marinate 15–20 minutes.",
+    "Thinly slice red onion and place in a small bowl with rice vinegar (2 tbsp) and a pinch of salt and sugar. Toss and set aside to quick pickle.",
+    "Dice tomatoes and avocado; mince jalapenos; chop coriander. In a bowl, combine with lime juice and a pinch of salt to make salsa.",
+    "Slice onions and bell peppers; shred cabbage.",
+    "Measure spanish rice, water, and salt.",
+    "Heat a medium pot over medium heat. Add 1 tbsp canola oil and spanish rice; toast 1 minute, stirring.",
+    "Add water and 1 tsp salt. Bring to a boil, reduce to low, cover, and simmer 15–18 minutes until tender. Rest off heat, covered, 5 minutes.",
+    "Heat a large skillet or grill pan (or OutdoorGrill with a flat plate) over high heat. Add 1 tbsp canola oil.",
+    "Stir-fry sliced onions and bell peppers 2–3 minutes until charred-tender; add cabbage and cook 1–2 minutes more. Season with a pinch of salt. Transfer to a bowl.",
+    "Add remaining 1 tbsp canola oil to the hot pan. Add marinated chicken in an even layer. Sear 3–4 minutes, then toss and cook 3–4 minutes more until cooked through and lightly charred.",
+    "Return vegetables to the pan with the chicken and toss 30–60 seconds to glaze and heat through. Adjust seasoning to taste.",
+    "Fluff the spanish rice with a fork.",
+    "Assemble bowls: rice, spoon over the spicy chicken and vegetables, top with avocado-jalapeño salsa, and finish with quick pickled red onions."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "800 g",
+      "preparation": "cut into bite-size strips"
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "3 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "4 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "1",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "2 cups",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "spanish rice",
+      "quantity": "2 cups (raw)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3.5 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Korean",
+      "LatinAmerican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Hot"
+    ],
+    "Allergens": [
+      "Soy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "800 g",
+      "preparation": "cut into bite-size strips",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "3 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "4 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "2 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "1",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "2 cups",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spanish rice",
+      "quantity": "2 cups (raw)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3.5 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T162047Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T161630Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

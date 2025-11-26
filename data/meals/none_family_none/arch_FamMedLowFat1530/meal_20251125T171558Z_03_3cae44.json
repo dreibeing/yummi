@@ -1,0 +1,307 @@
+{
+  "meal_id": "meal_20251125T171558Z_03_3cae44",
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "archetype_name": "Family Low-Fat Mediterranean Light Plates (15–30, Mild)",
+  "name": "Turkish Bulgur–Chickpea Pilaf with Roasted Zucchini and Cucumber-Mint Salad",
+  "description": "A light, lemony bulgur and chickpea pilaf cooked on the stovetop, paired with oven-roasted zucchini and a crisp cucumber-mint salad. Mild, high-fiber, and weeknight-simple.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C/425°F.",
+    "Rinse and drain chickpeas.",
+    "Dice red onion; mince garlic.",
+    "Cut zucchini into half-moons.",
+    "Halve cherry tomatoes.",
+    "Dice cucumber; chop parsley and mint.",
+    "Zest and juice lemon (keep separate).",
+    "Warm vegetable stock in a small pot or microwave-safe jug."
+  ],
+  "cook_steps": [
+    "Roast vegetables: Toss zucchini and cherry tomatoes with 1 tsp olive oil, a pinch of salt, and black pepper on a baking tray; roast 12–15 minutes until tender and lightly browned.",
+    "Start pilaf base: In a wide pot, heat 2 tsp olive oil over medium. Add red onion with a pinch of salt; cook 3–4 minutes until softened. Add garlic, cumin, and paprika; cook 30 seconds.",
+    "Simmer pilaf: Stir in bulgur and chickpeas to coat. Add vegetable stock and 1 tbsp tomato paste if using. Bring to a simmer, cover, and cook 10–12 minutes until bulgur is tender and liquid is absorbed. Remove from heat; rest covered 5 minutes.",
+    "Make salad: In a bowl, combine cucumber, parsley, mint, lemon juice, lemon zest, a drizzle of olive oil (1 tsp), salt, and black pepper. Toss to coat.",
+    "Finish pilaf: Fluff bulgur with a fork. Stir in half the roasted zucchini and tomatoes plus chopped parsley; adjust salt and black pepper. Squeeze in a little lemon juice to taste.",
+    "Serve: Plate pilaf with remaining roasted vegetables on top and the cucumber-mint salad on the side. Add a spoon of hummus per plate if desired."
+  ],
+  "instructions": [
+    "Heat oven to 220°C/425°F.",
+    "Rinse and drain chickpeas.",
+    "Dice red onion; mince garlic.",
+    "Cut zucchini into half-moons.",
+    "Halve cherry tomatoes.",
+    "Dice cucumber; chop parsley and mint.",
+    "Zest and juice lemon (keep separate).",
+    "Warm vegetable stock in a small pot or microwave-safe jug.",
+    "Roast vegetables: Toss zucchini and cherry tomatoes with 1 tsp olive oil, a pinch of salt, and black pepper on a baking tray; roast 12–15 minutes until tender and lightly browned.",
+    "Start pilaf base: In a wide pot, heat 2 tsp olive oil over medium. Add red onion with a pinch of salt; cook 3–4 minutes until softened. Add garlic, cumin, and paprika; cook 30 seconds.",
+    "Simmer pilaf: Stir in bulgur and chickpeas to coat. Add vegetable stock and 1 tbsp tomato paste if using. Bring to a simmer, cover, and cook 10–12 minutes until bulgur is tender and liquid is absorbed. Remove from heat; rest covered 5 minutes.",
+    "Make salad: In a bowl, combine cucumber, parsley, mint, lemon juice, lemon zest, a drizzle of olive oil (1 tsp), salt, and black pepper. Toss to coat.",
+    "Finish pilaf: Fluff bulgur with a fork. Stir in half the roasted zucchini and tomatoes plus chopped parsley; adjust salt and black pepper. Squeeze in a little lemon juice to taste.",
+    "Serve: Plate pilaf with remaining roasted vegetables on top and the cucumber-mint salad on the side. Add a spoon of hummus per plate if desired."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 cups",
+      "preparation": "warmed"
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "1 can (400 g), about 1 1/2 cups",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "cut into half-moons"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": "divided use"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "ground"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1/2 teaspoon",
+      "preparation": "sweet or regular"
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "1 tablespoon",
+      "preparation": "optional"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "hummus",
+      "quantity": "1/2 cup",
+      "preparation": "for serving, optional"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowFat"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 cups",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "1 can (400 g), about 1 1/2 cups",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "cut into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": "divided use",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1/2 teaspoon",
+      "preparation": "sweet or regular",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "1 tablespoon",
+      "preparation": "optional",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "hummus",
+      "quantity": "1/2 cup",
+      "preparation": "for serving, optional",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T171904Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T171558Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

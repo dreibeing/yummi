@@ -1,0 +1,253 @@
+{
+  "meal_id": "meal_20251125T172036Z_04_3f715a",
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "archetype_name": "Family Pressure Cooker Express Dinners (15–30, Mild)",
+  "name": "Instant Pot Chicken & 7-Grain Vegetable Stew",
+  "description": "Hearty, family-friendly chicken stew with a 7-grain medley, peas, and mild Italian herbs made quickly in the pressure cooker.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Dice onions and carrots.",
+    "Mince garlic.",
+    "Cut chicken thighs into bite-size pieces and pat dry.",
+    "Rinse 7-grain medley under cold water in a fine strainer.",
+    "Measure chicken stock, open diced tomatoes, and set peas and seasonings nearby."
+  ],
+  "cook_steps": [
+    "Set the pressure cooker to Sauté (Normal). Add olive oil.",
+    "Sauté onions and carrots for 3–4 minutes until slightly softened.",
+    "Stir in garlic for 30 seconds.",
+    "Add chicken thighs, salt, pepper, and italian seasoning. Sauté 2–3 minutes until the outside is no longer pink.",
+    "Cancel Sauté. Add rinsed 7-grain medley, chicken stock, and diced tomatoes with their juices. Stir and scrape the bottom to remove any browned bits.",
+    "Add bay leaves. Lock the lid, set to High Pressure for 10 minutes.",
+    "Quick release the pressure. Remove bay leaves.",
+    "Stir in peas. Set to Sauté (Low) for 2–3 minutes to heat through.",
+    "Taste and adjust salt and pepper. Stir in chopped parsley and serve."
+  ],
+  "instructions": [
+    "Dice onions and carrots.",
+    "Mince garlic.",
+    "Cut chicken thighs into bite-size pieces and pat dry.",
+    "Rinse 7-grain medley under cold water in a fine strainer.",
+    "Measure chicken stock, open diced tomatoes, and set peas and seasonings nearby.",
+    "Set the pressure cooker to Sauté (Normal). Add olive oil.",
+    "Sauté onions and carrots for 3–4 minutes until slightly softened.",
+    "Stir in garlic for 30 seconds.",
+    "Add chicken thighs, salt, pepper, and italian seasoning. Sauté 2–3 minutes until the outside is no longer pink.",
+    "Cancel Sauté. Add rinsed 7-grain medley, chicken stock, and diced tomatoes with their juices. Stir and scrape the bottom to remove any browned bits.",
+    "Add bay leaves. Lock the lid, set to High Pressure for 10 minutes.",
+    "Quick release the pressure. Remove bay leaves.",
+    "Stir in peas. Set to Sauté (Low) for 2–3 minutes to heat through.",
+    "Taste and adjust salt and pepper. Stir in chopped parsley and serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1.5 tablespoons"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1.5 pounds",
+      "preparation": "cut into bite-size pieces"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.25 teaspoons, or to taste"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "0.5 teaspoon"
+    },
+    {
+      "core_item_name": "italian seasoning",
+      "quantity": "1.5 teaspoons"
+    },
+    {
+      "core_item_name": "7-grain medley",
+      "quantity": "1 cup",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "3 cups"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (14.5 oz)"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2"
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup",
+      "preparation": "frozen or fresh"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "SlowOrPressureCooker",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1.5 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1.5 pounds",
+      "preparation": "cut into bite-size pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.25 teaspoons, or to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "0.5 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "italian seasoning",
+      "quantity": "1.5 teaspoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "7-grain medley",
+      "quantity": "1 cup",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "3 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (14.5 oz)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup",
+      "preparation": "frozen or fresh",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [
+    "Category 'MealComponentPreference' ideally includes 2+ tags; received ['FromScratch']"
+  ],
+  "metadata": {
+    "created_at": "20251125T172326Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T172036Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

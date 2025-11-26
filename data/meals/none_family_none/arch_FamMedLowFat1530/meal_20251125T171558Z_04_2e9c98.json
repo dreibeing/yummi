@@ -1,0 +1,257 @@
+{
+  "meal_id": "meal_20251125T171558Z_04_2e9c98",
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "archetype_name": "Family Low-Fat Mediterranean Light Plates (15–30, Mild)",
+  "name": "Lemon-Herb Orzo with Chickpeas and Roasted Eggplant-Tomato",
+  "description": "Bright, low-fat orzo tossed with lemon, parsley, and chickpeas, topped with tray-roasted eggplant, red onion, and cherry tomatoes. Mild Mediterranean flavors in under 30 minutes for a family dinner.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C/425°F.",
+    "Cut eggplant into 2 cm cubes.",
+    "Halve cherry tomatoes.",
+    "Slice red onion thinly.",
+    "Mince garlic.",
+    "Roughly chop parsley.",
+    "Zest and juice the lemon (keep separate).",
+    "Measure vegetable stock."
+  ],
+  "cook_steps": [
+    "On a sheet pan, toss eggplant, cherry tomatoes, and red onion with olive oil, oregano, salt, and black pepper; spread in a single layer.",
+    "Roast vegetables for 18–20 minutes, stirring once halfway, until eggplant is tender and edges are lightly browned.",
+    "Meanwhile, place a medium pot on the stovetop; add vegetable stock and bring to a boil.",
+    "Stir in orzo and a pinch of salt; reduce heat to a brisk simmer and cook 8–10 minutes until al dente.",
+    "Drain any excess liquid if needed; return orzo to the pot and fold in chickpeas and garlic. Warm over low heat for 1–2 minutes.",
+    "Turn off heat; add lemon zest, half the lemon juice, parsley, and a few grinds of black pepper. Adjust salt and lemon to taste.",
+    "Divide orzo among bowls. Top with roasted vegetables. Sprinkle sumac and the remaining lemon juice if desired.",
+    "Serve immediately."
+  ],
+  "instructions": [
+    "Heat oven to 220°C/425°F.",
+    "Cut eggplant into 2 cm cubes.",
+    "Halve cherry tomatoes.",
+    "Slice red onion thinly.",
+    "Mince garlic.",
+    "Roughly chop parsley.",
+    "Zest and juice the lemon (keep separate).",
+    "Measure vegetable stock.",
+    "On a sheet pan, toss eggplant, cherry tomatoes, and red onion with olive oil, oregano, salt, and black pepper; spread in a single layer.",
+    "Roast vegetables for 18–20 minutes, stirring once halfway, until eggplant is tender and edges are lightly browned.",
+    "Meanwhile, place a medium pot on the stovetop; add vegetable stock and bring to a boil.",
+    "Stir in orzo and a pinch of salt; reduce heat to a brisk simmer and cook 8–10 minutes until al dente.",
+    "Drain any excess liquid if needed; return orzo to the pot and fold in chickpeas and garlic. Warm over low heat for 1–2 minutes.",
+    "Turn off heat; add lemon zest, half the lemon juice, parsley, and a few grinds of black pepper. Adjust salt and lemon to taste.",
+    "Divide orzo among bowls. Top with roasted vegetables. Sprinkle sumac and the remaining lemon juice if desired.",
+    "Serve immediately."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "eggplant",
+      "quantity": "1 large",
+      "preparation": "cut into 2 cm cubes"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 teaspoon, plus to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon, to taste"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "4 cups"
+    },
+    {
+      "core_item_name": "orzo",
+      "quantity": "2 cups dry"
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "400 g can, drained and rinsed"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2–3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zest and juice"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 teaspoon",
+      "preparation": "optional, for serving"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowFat"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "eggplant",
+      "quantity": "1 large",
+      "preparation": "cut into 2 cm cubes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 teaspoon, plus to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon, to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "4 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "orzo",
+      "quantity": "2 cups dry",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "400 g can, drained and rinsed",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2–3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zest and juice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 teaspoon",
+      "preparation": "optional, for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T171948Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T171558Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

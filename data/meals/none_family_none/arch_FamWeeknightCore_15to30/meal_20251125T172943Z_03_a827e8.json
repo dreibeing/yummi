@@ -1,0 +1,245 @@
+{
+  "meal_id": "meal_20251125T172943Z_03_a827e8",
+  "archetype_uid": "arch_FamWeeknightCore_15to30",
+  "archetype_name": "Family Weeknight Classics (Mild, 15–30 min)",
+  "name": "Family Sloppy Joe Sandwiches with Oven Potato Wedges",
+  "description": "Mild, saucy beef mince piled on soft buns with chutney-kissed flavor, served alongside crispy oven potato wedges. Weeknight-friendly and kid-approved.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F.",
+    "Dice onions (1 large) and bell peppers (1).",
+    "Mince garlic (2 cloves).",
+    "Split burger buns (4) and set aside."
+  ],
+  "cook_steps": [
+    "Spread potato wedges on a baking tray and bake for 20–25 minutes until golden, turning once.",
+    "Heat oil in a large skillet over medium-high heat.",
+    "Add ground beef and cook, breaking it up, 4–5 minutes until browned; drain excess fat if needed.",
+    "Add onions and bell peppers; cook 3–4 minutes until softened.",
+    "Stir in garlic and cook 30 seconds until fragrant.",
+    "Add tomato sauce, ketchup, chutney, mustard, salt, and pepper; stir to combine.",
+    "Reduce heat to medium and simmer 5–7 minutes until thick and glossy. Taste and adjust seasoning.",
+    "Toast burger buns cut-side down in a dry pan for 1–2 minutes (optional).",
+    "Spoon the sloppy joe mixture onto buns and serve with hot potato wedges."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F.",
+    "Dice onions (1 large) and bell peppers (1).",
+    "Mince garlic (2 cloves).",
+    "Split burger buns (4) and set aside.",
+    "Spread potato wedges on a baking tray and bake for 20–25 minutes until golden, turning once.",
+    "Heat oil in a large skillet over medium-high heat.",
+    "Add ground beef and cook, breaking it up, 4–5 minutes until browned; drain excess fat if needed.",
+    "Add onions and bell peppers; cook 3–4 minutes until softened.",
+    "Stir in garlic and cook 30 seconds until fragrant.",
+    "Add tomato sauce, ketchup, chutney, mustard, salt, and pepper; stir to combine.",
+    "Reduce heat to medium and simmer 5–7 minutes until thick and glossy. Taste and adjust seasoning.",
+    "Toast burger buns cut-side down in a dry pan for 1–2 minutes (optional).",
+    "Spoon the sloppy joe mixture onto buns and serve with hot potato wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "potato wedges",
+      "quantity": "600 g",
+      "preparation": "spread on tray"
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "1 tbsp",
+      "preparation": "for skillet"
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "500 g",
+      "preparation": "room temperature"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "tomato sauce",
+      "quantity": "1 cup (240 ml)",
+      "preparation": "ready to add"
+    },
+    {
+      "core_item_name": "ketchup",
+      "quantity": "2 tbsp",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "chutney",
+      "quantity": "1–2 tbsp",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "mustard",
+      "quantity": "1 tsp",
+      "preparation": "yellow or mild"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 tsp",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/4 tsp",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "burger buns",
+      "quantity": "4",
+      "preparation": "split"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "potato wedges",
+      "quantity": "600 g",
+      "preparation": "spread on tray",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "1 tbsp",
+      "preparation": "for skillet",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "500 g",
+      "preparation": "room temperature",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato sauce",
+      "quantity": "1 cup (240 ml)",
+      "preparation": "ready to add",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ketchup",
+      "quantity": "2 tbsp",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chutney",
+      "quantity": "1–2 tbsp",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mustard",
+      "quantity": "1 tsp",
+      "preparation": "yellow or mild",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 tsp",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/4 tsp",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "burger buns",
+      "quantity": "4",
+      "preparation": "split",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T173216Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T172943Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

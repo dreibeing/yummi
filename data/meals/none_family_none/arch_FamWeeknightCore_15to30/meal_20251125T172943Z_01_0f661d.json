@@ -1,0 +1,267 @@
+{
+  "meal_id": "meal_20251125T172943Z_01_0f661d",
+  "archetype_uid": "arch_FamWeeknightCore_15to30",
+  "archetype_name": "Family Weeknight Classics (Mild, 15–30 min)",
+  "name": "Stovetop Creamy Tuna & Corn Fusilli",
+  "description": "Family-friendly pasta in a mild, cheesy cream sauce with tuna, corn, and peas. Cooks entirely on the stovetop in under 30 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Bring a large pot of salted water to a boil.",
+    "Finely dice the onions.",
+    "Mince the garlic.",
+    "Grate the cheddar cheese.",
+    "Drain the tuna and corn.",
+    "Measure milk and set flour and butter by the stove.",
+    "Rinse and chop parsley."
+  ],
+  "cook_steps": [
+    "Cook fusilli in boiling salted water until al dente; reserve 1 cup pasta water, then drain.",
+    "While pasta cooks, heat olive oil and butter in a large deep skillet over medium heat.",
+    "Add onions and cook until softened, 3–4 minutes; add garlic and cook 30 seconds.",
+    "Sprinkle in flour and stir for 1 minute to form a roux.",
+    "Gradually whisk in milk until smooth; simmer 2–3 minutes to thicken.",
+    "Stir in cheddar cheese until melted; season with salt and pepper.",
+    "Fold in tuna, corn, and peas; warm through 1–2 minutes.",
+    "Add drained fusilli and a splash of reserved pasta water to loosen; toss until coated.",
+    "Adjust seasoning to taste and finish with chopped parsley.",
+    "Serve hot."
+  ],
+  "instructions": [
+    "Bring a large pot of salted water to a boil.",
+    "Finely dice the onions.",
+    "Mince the garlic.",
+    "Grate the cheddar cheese.",
+    "Drain the tuna and corn.",
+    "Measure milk and set flour and butter by the stove.",
+    "Rinse and chop parsley.",
+    "Cook fusilli in boiling salted water until al dente; reserve 1 cup pasta water, then drain.",
+    "While pasta cooks, heat olive oil and butter in a large deep skillet over medium heat.",
+    "Add onions and cook until softened, 3–4 minutes; add garlic and cook 30 seconds.",
+    "Sprinkle in flour and stir for 1 minute to form a roux.",
+    "Gradually whisk in milk until smooth; simmer 2–3 minutes to thicken.",
+    "Stir in cheddar cheese until melted; season with salt and pepper.",
+    "Fold in tuna, corn, and peas; warm through 1–2 minutes.",
+    "Add drained fusilli and a splash of reserved pasta water to loosen; toss until coated.",
+    "Adjust seasoning to taste and finish with chopped parsley.",
+    "Serve hot."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "fusilli",
+      "quantity": "350 g",
+      "preparation": "cook al dente"
+    },
+    {
+      "core_item_name": "tuna",
+      "quantity": "2 x 160 g cans, drained",
+      "preparation": "flaked"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "1 cup",
+      "preparation": "drained"
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup",
+      "preparation": "rinsed if frozen"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "flour",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "2 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1 cup, packed",
+      "preparation": "grated"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten",
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "fusilli",
+      "quantity": "350 g",
+      "preparation": "cook al dente",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tuna",
+      "quantity": "2 x 160 g cans, drained",
+      "preparation": "flaked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "1 cup",
+      "preparation": "drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup",
+      "preparation": "rinsed if frozen",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "flour",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "2 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1 cup, packed",
+      "preparation": "grated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T173027Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T172943Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

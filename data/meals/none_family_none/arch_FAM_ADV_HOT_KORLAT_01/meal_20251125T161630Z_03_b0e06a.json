@@ -1,0 +1,330 @@
+{
+  "meal_id": "meal_20251125T161630Z_03_b0e06a",
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "archetype_name": "Family Heat Lovers: Korean & Latin American Feasts (Hot, 30–60, Advanced)",
+  "name": "Gochujang–Chorizo Fried Rice with Grilled Corn and Quick-Pickled Cabbage",
+  "description": "Spicy gochujang fried rice studded with crispy chorizo and fire-kissed corn, served with a bright, crunchy cabbage pickle and avocado-lime finish. A bold Korean–Latin mashup built from scratch.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 2 cups jasmine rice until water runs clear; drain well.",
+    "Measure 2 1/2 cups water.",
+    "Thinly slice 1/2 head cabbage.",
+    "Dice 1 onion and 1 bell peppers.",
+    "Mince 3 cloves garlic.",
+    "Shuck 2 ears corn (or measure 1 1/2 cups kernels).",
+    "Dice 1 avocado; cut 1 lime into wedges and reserve half for juice.",
+    "Roughly chop 1/2 cup coriander.",
+    "In a bowl, mix 3 tbsp rice vinegar, 1 tsp sugar, and 1/2 tsp salt for the quick pickle.",
+    "In a small cup, stir together 2 tbsp gochujang, 1 tsp chilli flakes, 1 tbsp rice vinegar, and 1/4 tsp black pepper."
+  ],
+  "cook_steps": [
+    "Cook rice: Combine rinsed jasmine rice and water in a pot; bring to a simmer, cover, and cook on low 12–15 minutes until tender. Rest covered 10 minutes; spread on a tray to steam off.",
+    "Quick-pickle cabbage: Toss sliced cabbage with the vinegar-sugar-salt mix and a squeeze of lime. Massage 30 seconds and set aside, tossing occasionally.",
+    "Grill corn: Preheat OutdoorGrill to high. Grill corn 6–8 minutes, turning, until lightly charred. Cut kernels off cobs. (StoveTop alternative: char kernels in a dry skillet on high 3–4 minutes.)",
+    "Crisp chorizo: Heat 1 tbsp canola oil in a large wok or skillet over medium-high. Add diced chorizo; cook 3–4 minutes until browned and rendered. Scoop out, leaving fat in pan.",
+    "Stir-fry aromatics: Add onion and bell peppers; stir-fry 3 minutes. Add garlic; cook 30 seconds.",
+    "Fry rice: Add 1 tbsp canola oil and the cooled rice. Stir-fry 3–4 minutes, breaking clumps until hot and a bit toasted.",
+    "Season: Push rice to the sides; add the gochujang mixture to the center. Sizzle 30 seconds, then toss to coat evenly. Add grilled corn and cooked chorizo; stir. Drizzle 1 tsp sesame oil and adjust salt to taste.",
+    "Finish and serve: Fold in half the chopped coriander and a squeeze of lime. Plate fried rice, top with diced avocado, remaining coriander, and extra chilli flakes or habanero sauce to taste. Serve with quick-pickled cabbage on the side and lime wedges."
+  ],
+  "instructions": [
+    "Rinse 2 cups jasmine rice until water runs clear; drain well.",
+    "Measure 2 1/2 cups water.",
+    "Thinly slice 1/2 head cabbage.",
+    "Dice 1 onion and 1 bell peppers.",
+    "Mince 3 cloves garlic.",
+    "Shuck 2 ears corn (or measure 1 1/2 cups kernels).",
+    "Dice 1 avocado; cut 1 lime into wedges and reserve half for juice.",
+    "Roughly chop 1/2 cup coriander.",
+    "In a bowl, mix 3 tbsp rice vinegar, 1 tsp sugar, and 1/2 tsp salt for the quick pickle.",
+    "In a small cup, stir together 2 tbsp gochujang, 1 tsp chilli flakes, 1 tbsp rice vinegar, and 1/4 tsp black pepper.",
+    "Cook rice: Combine rinsed jasmine rice and water in a pot; bring to a simmer, cover, and cook on low 12–15 minutes until tender. Rest covered 10 minutes; spread on a tray to steam off.",
+    "Quick-pickle cabbage: Toss sliced cabbage with the vinegar-sugar-salt mix and a squeeze of lime. Massage 30 seconds and set aside, tossing occasionally.",
+    "Grill corn: Preheat OutdoorGrill to high. Grill corn 6–8 minutes, turning, until lightly charred. Cut kernels off cobs. (StoveTop alternative: char kernels in a dry skillet on high 3–4 minutes.)",
+    "Crisp chorizo: Heat 1 tbsp canola oil in a large wok or skillet over medium-high. Add diced chorizo; cook 3–4 minutes until browned and rendered. Scoop out, leaving fat in pan.",
+    "Stir-fry aromatics: Add onion and bell peppers; stir-fry 3 minutes. Add garlic; cook 30 seconds.",
+    "Fry rice: Add 1 tbsp canola oil and the cooled rice. Stir-fry 3–4 minutes, breaking clumps until hot and a bit toasted.",
+    "Season: Push rice to the sides; add the gochujang mixture to the center. Sizzle 30 seconds, then toss to coat evenly. Add grilled corn and cooked chorizo; stir. Drizzle 1 tsp sesame oil and adjust salt to taste.",
+    "Finish and serve: Fold in half the chopped coriander and a squeeze of lime. Plate fried rice, top with diced avocado, remaining coriander, and extra chilli flakes or habanero sauce to taste. Serve with quick-pickled cabbage on the side and lime wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 1/2 cups"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 head",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "4 tbsp total (3 tbsp for pickle, 1 tbsp for sauce)"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "2 ears (or 1 1/2 cups kernels)",
+      "preparation": "grilled and cut from cob"
+    },
+    {
+      "core_item_name": "chorizo",
+      "quantity": "300 g",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tbsp total (1 tbsp for chorizo, 1 tbsp for rice)"
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 tsp, plus extra to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 tsp"
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "wedges and juice"
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "optional, to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Korean",
+      "LatinAmerican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Hot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 1/2 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 head",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "4 tbsp total (3 tbsp for pickle, 1 tbsp for sauce)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "2 ears (or 1 1/2 cups kernels)",
+      "preparation": "grilled and cut from cob",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chorizo",
+      "quantity": "300 g",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tbsp total (1 tbsp for chorizo, 1 tbsp for rice)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 tsp, plus extra to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "wedges and juice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "optional, to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [
+    "Category 'MealComponentPreference' ideally includes 2+ tags; received ['FromScratch']"
+  ],
+  "metadata": {
+    "created_at": "20251125T161940Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T161630Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

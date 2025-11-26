@@ -1,0 +1,301 @@
+{
+  "meal_id": "meal_20251125T164026Z_01_c20fb9",
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "archetype_name": "Family Low-Sodium American & French Comfort (30–60, Mild)",
+  "name": "Chicken & Leek Fricassée with Herbed Barley and Buttered Peas",
+  "description": "Tender chicken thighs simmered with leeks, mushrooms, white wine, and creme fraiche for a light, creamy French-style sauce, served over herb-scented barley with simple buttered peas. Seasoned without added salt for a family-friendly, low-sodium dinner.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 375°F (190°C).",
+    "Rinse 1 cup barley under cold water; drain.",
+    "Peel and slice 2 leeks into 1/2-inch half-moons; rinse well to remove grit.",
+    "Slice 8 oz mushrooms.",
+    "Chop 2 tbsp parsley and strip 1 tsp thyme leaves.",
+    "Zest half a lemon; cut lemon into wedges.",
+    "Pat dry 4–6 chicken thighs (about 2 lb) with paper towels.",
+    "Set out 2 cups low-sodium vegetable stock (or dilute with water), 1/2 cup white wine, 1/3 cup creme fraiche, and 1 tbsp flour."
+  ],
+  "cook_steps": [
+    "Start barley: In a medium pot, add rinsed barley, 2 1/2 cups water, 1 bay leaf, and a pinch of black pepper. Bring to a boil, then reduce to a gentle simmer, cover, and cook 25–30 minutes until tender. Drain excess liquid if needed; discard bay.",
+    "Sear chicken: Heat 1 tbsp olive oil in an oven-safe skillet over medium-high. Add chicken thighs skin-side down; cook 4–5 minutes until golden. Flip and cook 2 minutes. Transfer chicken to a plate.",
+    "Build fricassée base: Reduce heat to medium. Add 1 tbsp butter to the skillet. Stir in leeks and mushrooms; cook 5–6 minutes until softened. Sprinkle in 1 tbsp flour; stir 30 seconds.",
+    "Deglaze: Pour in 1/2 cup white wine; scrape up browned bits and simmer 1 minute. Stir in 1 cup vegetable stock, thyme leaves, and a few grinds black pepper; bring to a simmer.",
+    "Bake: Nestle chicken (and juices) into the sauce, skin-side up. Transfer skillet to the oven and bake 15–20 minutes, until chicken is cooked through (165°F/74°C).",
+    "Finish sauce: Return skillet to stovetop on low. Stir in 1/3 cup creme fraiche and 1 tsp lemon zest; simmer 1–2 minutes to thicken. Adjust pepper and lemon to taste.",
+    "Buttered peas: In a small pot, add 2 cups peas and 1/4 cup water. Cover and steam on medium 3–4 minutes until just tender; drain if needed. Toss with 1 tbsp butter and a pinch of black pepper.",
+    "Finish barley: Fluff barley with a fork; stir in chopped parsley and 1 tsp olive oil.",
+    "Serve: Spoon herbed barley onto plates, top with chicken and spoon over leek–mushroom sauce. Serve peas on the side with lemon wedges."
+  ],
+  "instructions": [
+    "Preheat oven to 375°F (190°C).",
+    "Rinse 1 cup barley under cold water; drain.",
+    "Peel and slice 2 leeks into 1/2-inch half-moons; rinse well to remove grit.",
+    "Slice 8 oz mushrooms.",
+    "Chop 2 tbsp parsley and strip 1 tsp thyme leaves.",
+    "Zest half a lemon; cut lemon into wedges.",
+    "Pat dry 4–6 chicken thighs (about 2 lb) with paper towels.",
+    "Set out 2 cups low-sodium vegetable stock (or dilute with water), 1/2 cup white wine, 1/3 cup creme fraiche, and 1 tbsp flour.",
+    "Start barley: In a medium pot, add rinsed barley, 2 1/2 cups water, 1 bay leaf, and a pinch of black pepper. Bring to a boil, then reduce to a gentle simmer, cover, and cook 25–30 minutes until tender. Drain excess liquid if needed; discard bay.",
+    "Sear chicken: Heat 1 tbsp olive oil in an oven-safe skillet over medium-high. Add chicken thighs skin-side down; cook 4–5 minutes until golden. Flip and cook 2 minutes. Transfer chicken to a plate.",
+    "Build fricassée base: Reduce heat to medium. Add 1 tbsp butter to the skillet. Stir in leeks and mushrooms; cook 5–6 minutes until softened. Sprinkle in 1 tbsp flour; stir 30 seconds.",
+    "Deglaze: Pour in 1/2 cup white wine; scrape up browned bits and simmer 1 minute. Stir in 1 cup vegetable stock, thyme leaves, and a few grinds black pepper; bring to a simmer.",
+    "Bake: Nestle chicken (and juices) into the sauce, skin-side up. Transfer skillet to the oven and bake 15–20 minutes, until chicken is cooked through (165°F/74°C).",
+    "Finish sauce: Return skillet to stovetop on low. Stir in 1/3 cup creme fraiche and 1 tsp lemon zest; simmer 1–2 minutes to thicken. Adjust pepper and lemon to taste.",
+    "Buttered peas: In a small pot, add 2 cups peas and 1/4 cup water. Cover and steam on medium 3–4 minutes until just tender; drain if needed. Toss with 1 tbsp butter and a pinch of black pepper.",
+    "Finish barley: Fluff barley with a fork; stir in chopped parsley and 1 tsp olive oil.",
+    "Serve: Spoon herbed barley onto plates, top with chicken and spoon over leek–mushroom sauce. Serve peas on the side with lemon wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "4–6 thighs (about 2 lb)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "leeks",
+      "quantity": "2 medium",
+      "preparation": "sliced and rinsed"
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "8 oz",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "flour",
+      "quantity": "1 tbsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup",
+      "preparation": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1 cup",
+      "preparation": "use low-sodium or dilute with water"
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 tsp",
+      "preparation": "leaves only"
+    },
+    {
+      "core_item_name": "creme fraiche",
+      "quantity": "1/3 cup",
+      "preparation": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested; cut into wedges"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "barley",
+      "quantity": "1 cup (dry)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 1/2 cups (for barley) + 1/4 cup (for peas)",
+      "preparation": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "1",
+      "preparation": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "2 cups",
+      "preparation": null
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "French"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowSodium"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "4–6 thighs (about 2 lb)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "leeks",
+      "quantity": "2 medium",
+      "preparation": "sliced and rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "8 oz",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "flour",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1 cup",
+      "preparation": "use low-sodium or dilute with water",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 tsp",
+      "preparation": "leaves only",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "creme fraiche",
+      "quantity": "1/3 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested; cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "barley",
+      "quantity": "1 cup (dry)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 1/2 cups (for barley) + 1/4 cup (for peas)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "1",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "2 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T164120Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T164026Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

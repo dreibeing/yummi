@@ -1,0 +1,142 @@
+{
+  "meal_id": "meal_20251125T165343Z_04_ad8e4c",
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "archetype_name": "Family Heat-and-Eat Weeknights (Under 15, No Heat)",
+  "name": "Microwave Cacio e Pepe with Peas, Salad, and Garlic Baguette",
+  "description": "Heat-and-eat cacio e pepe bowls with quick-microwaved peas, a ready salad, and warm garlic baguette. Zero chili heat and table-ready in minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Place the cacio e pepe trays on the counter and pierce film if required.",
+    "Add peas to a microwave-safe bowl with 2–3 tablespoons water.",
+    "If the garlic baguette is whole, cut into 8–10 slices.",
+    "Add salad to a large bowl and set salad dressing nearby."
+  ],
+  "cook_steps": [
+    "Microwave the cacio e pepe per pack directions until hot, stirring once midway.",
+    "Microwave the peas on High for 3–4 minutes until tender; drain any water.",
+    "Microwave the garlic baguette slices for 60–90 seconds until warm (or follow pack).",
+    "Drizzle salad dressing over the salad and toss.",
+    "Plate cacio e pepe, add a scoop of peas, and serve with salad and warm garlic baguette."
+  ],
+  "instructions": [
+    "Place the cacio e pepe trays on the counter and pierce film if required.",
+    "Add peas to a microwave-safe bowl with 2–3 tablespoons water.",
+    "If the garlic baguette is whole, cut into 8–10 slices.",
+    "Add salad to a large bowl and set salad dressing nearby.",
+    "Microwave the cacio e pepe per pack directions until hot, stirring once midway.",
+    "Microwave the peas on High for 3–4 minutes until tender; drain any water.",
+    "Microwave the garlic baguette slices for 60–90 seconds until warm (or follow pack).",
+    "Drizzle salad dressing over the salad and toss.",
+    "Plate cacio e pepe, add a scoop of peas, and serve with salad and warm garlic baguette."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "cacio e pepe",
+      "quantity": "2 trays (about 800–1000 g total)",
+      "preparation": "pierce film if required"
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "2 cups",
+      "preparation": "microwave-safe bowl with a splash of water"
+    },
+    {
+      "core_item_name": "garlic baguette",
+      "quantity": "1 large loaf",
+      "preparation": "slice if whole"
+    },
+    {
+      "core_item_name": "salad",
+      "quantity": "1 family-size pack",
+      "preparation": "bowl for tossing"
+    },
+    {
+      "core_item_name": "salad dressing",
+      "quantity": "3–4 tablespoons",
+      "preparation": "for tossing"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "cacio e pepe",
+      "quantity": "2 trays (about 800–1000 g total)",
+      "preparation": "pierce film if required",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "2 cups",
+      "preparation": "microwave-safe bowl with a splash of water",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic baguette",
+      "quantity": "1 large loaf",
+      "preparation": "slice if whole",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salad",
+      "quantity": "1 family-size pack",
+      "preparation": "bowl for tossing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salad dressing",
+      "quantity": "3–4 tablespoons",
+      "preparation": "for tossing",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [
+    "Category 'Equipment' ideally includes 2+ tags; received ['Microwave']"
+  ],
+  "metadata": {
+    "created_at": "20251125T165615Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T165343Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

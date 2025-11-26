@@ -1,0 +1,275 @@
+{
+  "meal_id": "meal_20251125T161147Z_04_db4e7b",
+  "archetype_uid": "arch_FAMXHOT1530",
+  "archetype_name": "Family Extra-Hot Chili Night (Caribbean & Mexican, 15–30, Simple)",
+  "name": "Extra-Hot Habanero Chicken & Pineapple Roti Wraps",
+  "description": "Caribbean-Mexican fusion wraps: fiery habanero chicken with sweet pineapple, warm spices, and fresh lime in soft roti. Fast skillet cook with optional grill-warm roti for a charred finish.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Thinly slice red onion and bell peppers.",
+    "Finely chop habanero peppers (wear gloves).",
+    "Mince garlic.",
+    "Cut pineapple into small chunks if not pre-cut.",
+    "Roughly chop coriander.",
+    "Cut lime into wedges.",
+    "Trim chicken thighs and slice into thin strips.",
+    "Place roti near the stove or grill for warming."
+  ],
+  "cook_steps": [
+    "Heat olive oil in a large skillet over medium-high heat.",
+    "Add chicken strips; season with salt, cumin, and allspice. Stir-fry until lightly browned, 4–5 minutes.",
+    "Add garlic and chopped habanero peppers; cook 30–60 seconds until fragrant.",
+    "Add sliced red onion and bell peppers; sauté until crisp-tender, 3–4 minutes.",
+    "Stir in chipotle sauce and pineapple; simmer 2–3 minutes to glaze and thicken. Adjust salt to taste.",
+    "Warm roti: heat on a dry skillet or OutdoorGrill 20–30 seconds per side until pliable and lightly charred.",
+    "Assemble wraps: spread a spoon of salsa on each roti, pile on the spicy chicken-pepper mix, top with coriander, and squeeze lime.",
+    "Fold and serve immediately."
+  ],
+  "instructions": [
+    "Thinly slice red onion and bell peppers.",
+    "Finely chop habanero peppers (wear gloves).",
+    "Mince garlic.",
+    "Cut pineapple into small chunks if not pre-cut.",
+    "Roughly chop coriander.",
+    "Cut lime into wedges.",
+    "Trim chicken thighs and slice into thin strips.",
+    "Place roti near the stove or grill for warming.",
+    "Heat olive oil in a large skillet over medium-high heat.",
+    "Add chicken strips; season with salt, cumin, and allspice. Stir-fry until lightly browned, 4–5 minutes.",
+    "Add garlic and chopped habanero peppers; cook 30–60 seconds until fragrant.",
+    "Add sliced red onion and bell peppers; sauté until crisp-tender, 3–4 minutes.",
+    "Stir in chipotle sauce and pineapple; simmer 2–3 minutes to glaze and thicken. Adjust salt to taste.",
+    "Warm roti: heat on a dry skillet or OutdoorGrill 20–30 seconds per side until pliable and lightly charred.",
+    "Assemble wraps: spread a spoon of salsa on each roti, pile on the spicy chicken-pepper mix, top with coriander, and squeeze lime.",
+    "Fold and serve immediately."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "800 g",
+      "preparation": "trimmed, sliced into thin strips"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1.5 tsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1/2 tsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "habanero peppers",
+      "quantity": "2 small",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "chipotle sauce",
+      "quantity": "3 tbsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "pineapple",
+      "quantity": "2 cups",
+      "preparation": "small chunks"
+    },
+    {
+      "core_item_name": "roti",
+      "quantity": "8 small or 4 large",
+      "preparation": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1–2",
+      "preparation": "cut into wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Caribbean",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "ExtraHot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "800 g",
+      "preparation": "trimmed, sliced into thin strips",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1.5 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1/2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero peppers",
+      "quantity": "2 small",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chipotle sauce",
+      "quantity": "3 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pineapple",
+      "quantity": "2 cups",
+      "preparation": "small chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "roti",
+      "quantity": "8 small or 4 large",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1–2",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T161525Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T161147Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

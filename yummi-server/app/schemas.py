@@ -6,7 +6,7 @@ from uuid import UUID
 from pydantic import AliasChoices, BaseModel, ConfigDict, Field
 
 DEFAULT_CANDIDATE_POOL_LIMIT = 40
-MAX_CANDIDATE_POOL_LIMIT = 100
+MAX_CANDIDATE_POOL_LIMIT = 200
 
 
 class Product(BaseModel):

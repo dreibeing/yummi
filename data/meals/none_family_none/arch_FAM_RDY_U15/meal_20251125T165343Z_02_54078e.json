@@ -1,0 +1,143 @@
+{
+  "meal_id": "meal_20251125T165343Z_02_54078e",
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "archetype_name": "Family Heat-and-Eat Weeknights (Under 15, No Heat)",
+  "name": "Microwave Chicken Pie Plates with Veg and Warm Garlic Baguette",
+  "description": "Family-friendly chicken pies heated in minutes, served with microwavable mixed vegetables and warm garlic baguette. Zero chili heat and minimal prep for a fast weeknight dinner.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Read heating instructions on the chicken pie, mixed vegetables, and garlic baguette packages.",
+    "Place chicken pie trays on a microwave-safe plate and pierce film if required.",
+    "Transfer mixed vegetables to a microwave-safe bowl and cover.",
+    "Slice the garlic baguette if not pre-sliced and place on a microwave-safe plate.",
+    "Have gravy and salt and pepper ready."
+  ],
+  "cook_steps": [
+    "Microwave chicken pie according to pack directions (typically 4–6 minutes per pie, heating in batches if needed) until hot in the center.",
+    "Microwave mixed vegetables 3–5 minutes, stirring halfway, until hot and tender.",
+    "Microwave garlic baguette 1–2 minutes until warm (or bake in a preheated oven per pack for a crisper result).",
+    "Warm gravy in the microwave in a microwave-safe jug 60–90 seconds, stirring once.",
+    "Plate one chicken pie per person, add a scoop of vegetables, and serve with warm garlic baguette. Add gravy and a pinch of salt and pepper to taste."
+  ],
+  "instructions": [
+    "Read heating instructions on the chicken pie, mixed vegetables, and garlic baguette packages.",
+    "Place chicken pie trays on a microwave-safe plate and pierce film if required.",
+    "Transfer mixed vegetables to a microwave-safe bowl and cover.",
+    "Slice the garlic baguette if not pre-sliced and place on a microwave-safe plate.",
+    "Have gravy and salt and pepper ready.",
+    "Microwave chicken pie according to pack directions (typically 4–6 minutes per pie, heating in batches if needed) until hot in the center.",
+    "Microwave mixed vegetables 3–5 minutes, stirring halfway, until hot and tender.",
+    "Microwave garlic baguette 1–2 minutes until warm (or bake in a preheated oven per pack for a crisper result).",
+    "Warm gravy in the microwave in a microwave-safe jug 60–90 seconds, stirring once.",
+    "Plate one chicken pie per person, add a scoop of vegetables, and serve with warm garlic baguette. Add gravy and a pinch of salt and pepper to taste."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken pie",
+      "quantity": "4 individual pies",
+      "preparation": "pierce film if required"
+    },
+    {
+      "core_item_name": "mixed vegetables",
+      "quantity": "1 family tray (about 500–600 g)",
+      "preparation": "microwave-safe bowl, covered"
+    },
+    {
+      "core_item_name": "garlic baguette",
+      "quantity": "1 pack (about 300–350 g)",
+      "preparation": "slice if not pre-sliced"
+    },
+    {
+      "core_item_name": "gravy",
+      "quantity": "1 cup",
+      "preparation": "microwave-safe jug"
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "to taste",
+      "preparation": "optional at the table"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken pie",
+      "quantity": "4 individual pies",
+      "preparation": "pierce film if required",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mixed vegetables",
+      "quantity": "1 family tray (about 500–600 g)",
+      "preparation": "microwave-safe bowl, covered",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic baguette",
+      "quantity": "1 pack (about 300–350 g)",
+      "preparation": "slice if not pre-sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "gravy",
+      "quantity": "1 cup",
+      "preparation": "microwave-safe jug",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "to taste",
+      "preparation": "optional at the table",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T165503Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T165343Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

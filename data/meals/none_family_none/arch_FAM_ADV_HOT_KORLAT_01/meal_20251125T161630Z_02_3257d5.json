@@ -1,0 +1,312 @@
+{
+  "meal_id": "meal_20251125T161630Z_02_3257d5",
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "archetype_name": "Family Heat Lovers: Korean & Latin American Feasts (Hot, 30–60, Advanced)",
+  "name": "Chipotle-Gochujang Pork Skewers with Grilled Pineapple and Spanish Rice",
+  "description": "Spicy Korean-Latin fusion: pork shoulder skewers in a gochujang–chipotle glaze, grilled with pineapple, served alongside fluffy Spanish rice and a fresh corn–jalapeño salsa. Built for heat lovers with layered components.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Soak 8 wooden skewers in water for 15 minutes if using wooden skewers; or set out metal skewers.",
+    "Cut pork shoulder into 1.5-inch cubes; pat dry.",
+    "Peel and core pineapple; cut into 1.5-inch chunks.",
+    "Finely chop garlic.",
+    "Finely dice red onion and jalapenos; chop coriander.",
+    "Juice the lime.",
+    "Preheat outdoor grill to medium-high heat (clean and oil grates).",
+    "Set a medium saucepan with lid on the stovetop for rice."
+  ],
+  "cook_steps": [
+    "Make marinade: In a bowl, whisk gochujang, chipotle sauce, rice vinegar, honey, avocado oil, half the chopped garlic, a big pinch of salt, and black pepper.",
+    "Marinate pork: Toss pork cubes in the marinade to coat; reserve 2 tablespoons marinade separately for basting.",
+    "Skewer: Thread pork and pineapple alternately onto skewers; lightly oil the outside with a touch of avocado oil.",
+    "Start rice: Add spanish rice and water to the saucepan (follow pack ratio; typically 2 cups water per cup rice). Add a pinch of salt. Bring to a boil, then cover and simmer on low until tender. Rest 5 minutes off heat, covered.",
+    "Make corn–jalapeño salsa: Char corn kernels in a hot skillet or on the grill until blistered. Toss with diced red onion, jalapenos, remaining garlic, lime juice, chopped coriander, olive oil, salt, and black pepper. Set aside.",
+    "Grill skewers: Place skewers on the hot grill. Cook 8–10 minutes total, turning every 2–3 minutes. Brush with reserved marinade during the last turns to glaze. Cook until pork is just cooked through with light char.",
+    "Fluff rice with a fork. Adjust salt to taste.",
+    "Serve: Plate Spanish rice, top with pork–pineapple skewers, and spoon corn–jalapeño salsa on the side. Sprinkle extra coriander if desired."
+  ],
+  "instructions": [
+    "Soak 8 wooden skewers in water for 15 minutes if using wooden skewers; or set out metal skewers.",
+    "Cut pork shoulder into 1.5-inch cubes; pat dry.",
+    "Peel and core pineapple; cut into 1.5-inch chunks.",
+    "Finely chop garlic.",
+    "Finely dice red onion and jalapenos; chop coriander.",
+    "Juice the lime.",
+    "Preheat outdoor grill to medium-high heat (clean and oil grates).",
+    "Set a medium saucepan with lid on the stovetop for rice.",
+    "Make marinade: In a bowl, whisk gochujang, chipotle sauce, rice vinegar, honey, avocado oil, half the chopped garlic, a big pinch of salt, and black pepper.",
+    "Marinate pork: Toss pork cubes in the marinade to coat; reserve 2 tablespoons marinade separately for basting.",
+    "Skewer: Thread pork and pineapple alternately onto skewers; lightly oil the outside with a touch of avocado oil.",
+    "Start rice: Add spanish rice and water to the saucepan (follow pack ratio; typically 2 cups water per cup rice). Add a pinch of salt. Bring to a boil, then cover and simmer on low until tender. Rest 5 minutes off heat, covered.",
+    "Make corn–jalapeño salsa: Char corn kernels in a hot skillet or on the grill until blistered. Toss with diced red onion, jalapenos, remaining garlic, lime juice, chopped coriander, olive oil, salt, and black pepper. Set aside.",
+    "Grill skewers: Place skewers on the hot grill. Cook 8–10 minutes total, turning every 2–3 minutes. Brush with reserved marinade during the last turns to glaze. Cook until pork is just cooked through with light char.",
+    "Fluff rice with a fork. Adjust salt to taste.",
+    "Serve: Plate Spanish rice, top with pork–pineapple skewers, and spoon corn–jalapeño salsa on the side. Sprinkle extra coriander if desired."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "pork shoulder",
+      "quantity": "1.5–2 lb",
+      "preparation": "cut into 1.5-inch cubes"
+    },
+    {
+      "core_item_name": "pineapple",
+      "quantity": "1 medium",
+      "preparation": "peeled, cored, cut into chunks"
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "3 tablespoons",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "chipotle sauce",
+      "quantity": "2 tablespoons",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tablespoon",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tablespoon",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "avocado oil",
+      "quantity": "2 tablespoons",
+      "preparation": "divided for marinade and brushing"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 teaspoons",
+      "preparation": "divided, to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon",
+      "preparation": "freshly ground, to taste"
+    },
+    {
+      "core_item_name": "spanish rice",
+      "quantity": "1.5 cups (dry)",
+      "preparation": "rinsed if needed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": "for cooking rice (adjust per pack)"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "2 cups kernels",
+      "preparation": "fresh or thawed, for charring"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 medium",
+      "preparation": "finely diced"
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "2",
+      "preparation": "finely diced"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": "for salsa"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Korean",
+      "LatinAmerican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Hot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "pork shoulder",
+      "quantity": "1.5–2 lb",
+      "preparation": "cut into 1.5-inch cubes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pineapple",
+      "quantity": "1 medium",
+      "preparation": "peeled, cored, cut into chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "3 tablespoons",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chipotle sauce",
+      "quantity": "2 tablespoons",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tablespoon",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tablespoon",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado oil",
+      "quantity": "2 tablespoons",
+      "preparation": "divided for marinade and brushing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 teaspoons",
+      "preparation": "divided, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon",
+      "preparation": "freshly ground, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spanish rice",
+      "quantity": "1.5 cups (dry)",
+      "preparation": "rinsed if needed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": "for cooking rice (adjust per pack)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "2 cups kernels",
+      "preparation": "fresh or thawed, for charring",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 medium",
+      "preparation": "finely diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "2",
+      "preparation": "finely diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": "for salsa",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [
+    "Category 'MealComponentPreference' ideally includes 2+ tags; received ['FromScratch']"
+  ],
+  "metadata": {
+    "created_at": "20251125T161845Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T161630Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

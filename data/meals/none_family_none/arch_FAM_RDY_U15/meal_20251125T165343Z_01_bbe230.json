@@ -1,0 +1,125 @@
+{
+  "meal_id": "meal_20251125T165343Z_01_bbe230",
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "archetype_name": "Family Heat-and-Eat Weeknights (Under 15, No Heat)",
+  "name": "Microwave Carbonara Bowls with Mixed Veg and Warm Rolls",
+  "description": "Family-friendly spaghetti carbonara heated in minutes, served with microwave mixed vegetables and warm rolls. Zero chili heat and minimal steps.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Read heating directions on the spaghetti carbonara, mixed vegetables, and rolls packages.",
+    "Set out 4 bowls and 4 plates.",
+    "Pierce or vent films on the ready meals as directed."
+  ],
+  "cook_steps": [
+    "Microwave the spaghetti carbonara according to pack directions (heat in batches if needed). Stir and divide into 4 bowls.",
+    "Microwave the mixed vegetables per pack directions until hot.",
+    "Warm the rolls in the microwave for 20–40 seconds until soft.",
+    "Serve carbonara with a side of mixed vegetables and a warm roll on each plate. Season with salt and pepper if desired."
+  ],
+  "instructions": [
+    "Read heating directions on the spaghetti carbonara, mixed vegetables, and rolls packages.",
+    "Set out 4 bowls and 4 plates.",
+    "Pierce or vent films on the ready meals as directed.",
+    "Microwave the spaghetti carbonara according to pack directions (heat in batches if needed). Stir and divide into 4 bowls.",
+    "Microwave the mixed vegetables per pack directions until hot.",
+    "Warm the rolls in the microwave for 20–40 seconds until soft.",
+    "Serve carbonara with a side of mixed vegetables and a warm roll on each plate. Season with salt and pepper if desired."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "spaghetti carbonara",
+      "quantity": "4 single-serve trays or 2 family trays",
+      "preparation": "vent film as directed"
+    },
+    {
+      "core_item_name": "mixed vegetables",
+      "quantity": "1 large microwavable bag (about 600–900 g)",
+      "preparation": "vent or slit bag as directed"
+    },
+    {
+      "core_item_name": "rolls",
+      "quantity": "1 pack (6 rolls)",
+      "preparation": "unwrap"
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "to taste",
+      "preparation": "optional for vegetables"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "spaghetti carbonara",
+      "quantity": "4 single-serve trays or 2 family trays",
+      "preparation": "vent film as directed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mixed vegetables",
+      "quantity": "1 large microwavable bag (about 600–900 g)",
+      "preparation": "vent or slit bag as directed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rolls",
+      "quantity": "1 pack (6 rolls)",
+      "preparation": "unwrap",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "to taste",
+      "preparation": "optional for vegetables",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T165423Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T165343Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

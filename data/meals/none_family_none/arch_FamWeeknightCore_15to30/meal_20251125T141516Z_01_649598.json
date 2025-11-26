@@ -1,0 +1,250 @@
+{
+  "meal_id": "meal_20251125T141516Z_01_649598",
+  "archetype_uid": "arch_FamWeeknightCore_15to30",
+  "archetype_name": "Family Weeknight Classics (Mild, 15–30 min)",
+  "name": "One-Pan Creamy Chicken & Mushroom Orzo with Garlic Butter Baguette",
+  "description": "A family-friendly, mild orzo skillet with tender chicken and mushrooms in a creamy parmesan sauce, plus warm garlic butter baguette on the side.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 200°C/390°F for the garlic butter baguette.",
+    "Dice 1 medium onions.",
+    "Mince 3 cloves garlic.",
+    "Slice 250 g mushrooms.",
+    "Cut 600 g chicken thigh fillets into small bite-size pieces.",
+    "Chop a small handful of parsley.",
+    "Measure orzo (about 300 g), chicken stock (about 4 cups), cream (about 1/2 cup), and grated parmesan cheese (about 1/2 cup)."
+  ],
+  "cook_steps": [
+    "Place the garlic butter baguette on a tray and bake according to pack directions (about 10–12 minutes).",
+    "Heat 1 tbsp olive oil in a large deep skillet over medium-high heat.",
+    "Season chicken thigh fillets lightly with salt and pepper, add to the skillet, and cook 4–5 minutes until lightly browned; remove to a bowl.",
+    "Add 1 tbsp olive oil to the skillet, then onions and mushrooms; cook 3–4 minutes until softened.",
+    "Stir in garlic and orzo; cook 1 minute to toast the orzo.",
+    "Pour in chicken stock, stir, and bring to a gentle simmer. Reduce heat to medium, cover partially, and cook 8–10 minutes, stirring every couple of minutes to prevent sticking.",
+    "Return chicken and any juices to the pan in the last 3–4 minutes of orzo cooking.",
+    "When orzo is al dente and most liquid is absorbed, stir in cream and parmesan cheese. Simmer 1–2 minutes until creamy. Adjust salt and pepper to taste.",
+    "Turn off heat and fold in parsley. Rest 1 minute to thicken.",
+    "Slice the garlic butter baguette and serve alongside the creamy chicken and mushroom orzo."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C/390°F for the garlic butter baguette.",
+    "Dice 1 medium onions.",
+    "Mince 3 cloves garlic.",
+    "Slice 250 g mushrooms.",
+    "Cut 600 g chicken thigh fillets into small bite-size pieces.",
+    "Chop a small handful of parsley.",
+    "Measure orzo (about 300 g), chicken stock (about 4 cups), cream (about 1/2 cup), and grated parmesan cheese (about 1/2 cup).",
+    "Place the garlic butter baguette on a tray and bake according to pack directions (about 10–12 minutes).",
+    "Heat 1 tbsp olive oil in a large deep skillet over medium-high heat.",
+    "Season chicken thigh fillets lightly with salt and pepper, add to the skillet, and cook 4–5 minutes until lightly browned; remove to a bowl.",
+    "Add 1 tbsp olive oil to the skillet, then onions and mushrooms; cook 3–4 minutes until softened.",
+    "Stir in garlic and orzo; cook 1 minute to toast the orzo.",
+    "Pour in chicken stock, stir, and bring to a gentle simmer. Reduce heat to medium, cover partially, and cook 8–10 minutes, stirring every couple of minutes to prevent sticking.",
+    "Return chicken and any juices to the pan in the last 3–4 minutes of orzo cooking.",
+    "When orzo is al dente and most liquid is absorbed, stir in cream and parmesan cheese. Simmer 1–2 minutes until creamy. Adjust salt and pepper to taste.",
+    "Turn off heat and fold in parsley. Rest 1 minute to thicken.",
+    "Slice the garlic butter baguette and serve alongside the creamy chicken and mushroom orzo."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "600 g",
+      "preparation": "cut into bite-size pieces"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "250 g",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "orzo",
+      "quantity": "300 g (about 1.5 cups)",
+      "preparation": "dry"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "4 cups",
+      "preparation": "hot if possible"
+    },
+    {
+      "core_item_name": "cream",
+      "quantity": "1/2 cup"
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "1/2 cup",
+      "preparation": "grated"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "garlic butter baguette",
+      "quantity": "1 loaf",
+      "preparation": "bake per pack"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "600 g",
+      "preparation": "cut into bite-size pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "250 g",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "orzo",
+      "quantity": "300 g (about 1.5 cups)",
+      "preparation": "dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "4 cups",
+      "preparation": "hot if possible",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cream",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "1/2 cup",
+      "preparation": "grated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic butter baguette",
+      "quantity": "1 loaf",
+      "preparation": "bake per pack",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T141607Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T141516Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

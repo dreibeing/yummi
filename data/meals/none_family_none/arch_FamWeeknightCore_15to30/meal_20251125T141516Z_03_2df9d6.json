@@ -1,0 +1,205 @@
+{
+  "meal_id": "meal_20251125T141516Z_03_2df9d6",
+  "archetype_uid": "arch_FamWeeknightCore_15to30",
+  "archetype_name": "Family Weeknight Classics (Mild, 15–30 min)",
+  "name": "Oven-Roasted Boerewors with Creamy Pap and Tomato-Onion Relish",
+  "description": "South African-style boerewors roasted in the oven, served with quick creamy pap and a warm tomato-onion relish, plus roasted broccoli on the side. Mild, simple, and weeknight-fast.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F.",
+    "Line a baking tray with foil; lightly oil it.",
+    "Cut broccoli into bite-size florets.",
+    "Coil the boerewors onto the tray (secure with a skewer if needed).",
+    "Set a medium pot with 3 cups boiling water for pap.",
+    "Open the tomato and onion mix."
+  ],
+  "cook_steps": [
+    "Roast the boerewors for 20–25 minutes, turning once halfway, until browned and cooked through.",
+    "Toss broccoli with oil, salt, and garlic powder on a second tray; roast for 15–18 minutes until tender and lightly charred.",
+    "For pap: whisk maize meal into the boiling salted water, reduce heat to low, cover, and cook 10–12 minutes, stirring once or twice until thick. Stir in butter to finish.",
+    "Warm the tomato and onion mix in a small saucepan over medium heat for 5–7 minutes; season with a pinch of salt and pepper.",
+    "Slice the boerewors. Plate pap, top with tomato-onion relish, add sliced boerewors and roasted broccoli. Serve chakalaka on the side for those who want it."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F.",
+    "Line a baking tray with foil; lightly oil it.",
+    "Cut broccoli into bite-size florets.",
+    "Coil the boerewors onto the tray (secure with a skewer if needed).",
+    "Set a medium pot with 3 cups boiling water for pap.",
+    "Open the tomato and onion mix.",
+    "Roast the boerewors for 20–25 minutes, turning once halfway, until browned and cooked through.",
+    "Toss broccoli with oil, salt, and garlic powder on a second tray; roast for 15–18 minutes until tender and lightly charred.",
+    "For pap: whisk maize meal into the boiling salted water, reduce heat to low, cover, and cook 10–12 minutes, stirring once or twice until thick. Stir in butter to finish.",
+    "Warm the tomato and onion mix in a small saucepan over medium heat for 5–7 minutes; season with a pinch of salt and pepper.",
+    "Slice the boerewors. Plate pap, top with tomato-onion relish, add sliced boerewors and roasted broccoli. Serve chakalaka on the side for those who want it."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "boerewors",
+      "quantity": "800 g",
+      "preparation": "coiled on tray"
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "1 large head",
+      "preparation": "cut into florets"
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "2 tbsp",
+      "preparation": "for roasting"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "divided, plus to taste"
+    },
+    {
+      "core_item_name": "garlic powder",
+      "quantity": "1/2 tsp",
+      "preparation": "for broccoli"
+    },
+    {
+      "core_item_name": "maize meal",
+      "quantity": "1 cup",
+      "preparation": "for pap"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": "stir into pap"
+    },
+    {
+      "core_item_name": "tomato and onion mix",
+      "quantity": "400 g",
+      "preparation": "heated as relish"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "Pinch",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "chakalaka",
+      "quantity": "1 cup",
+      "preparation": "serve on the side (optional)"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "boerewors",
+      "quantity": "800 g",
+      "preparation": "coiled on tray",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "1 large head",
+      "preparation": "cut into florets",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "2 tbsp",
+      "preparation": "for roasting",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "divided, plus to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic powder",
+      "quantity": "1/2 tsp",
+      "preparation": "for broccoli",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "maize meal",
+      "quantity": "1 cup",
+      "preparation": "for pap",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": "stir into pap",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato and onion mix",
+      "quantity": "400 g",
+      "preparation": "heated as relish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "Pinch",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chakalaka",
+      "quantity": "1 cup",
+      "preparation": "serve on the side (optional)",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T141721Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T141516Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

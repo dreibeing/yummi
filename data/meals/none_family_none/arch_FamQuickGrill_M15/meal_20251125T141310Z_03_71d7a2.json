@@ -1,0 +1,246 @@
+{
+  "meal_id": "meal_20251125T141310Z_03_71d7a2",
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "archetype_name": "Family Quick Grill & Salad Nights (Mild, 15–30)",
+  "name": "Grilled Fish Fillets with Greek Orzo Salad",
+  "description": "Quickly grilled fish with lemon-oregano pairs with a fresh Greek-style orzo salad. Mild, bright, and family-friendly for a weeknight braai.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat the OutdoorGrill to medium-high heat.",
+    "Bring a medium pot of water to a boil on the stove for the orzo.",
+    "Pat dry fish fillets with paper towels.",
+    "Halve the lemon; zest one half and juice both halves into a small bowl.",
+    "Slice cucumber into half-moons; halve cherry tomatoes; thinly slice red onion.",
+    "Rinse olives and crumble feta cheese.",
+    "In a cup, whisk olive oil, vinegar, a pinch of salt, black pepper, lemon zest, and a pinch of oregano for the salad dressing."
+  ],
+  "cook_steps": [
+    "Cook orzo in boiling water until al dente (about 8–10 minutes). Drain, rinse under cool water, and shake dry.",
+    "Toss cooled orzo with cucumber, cherry tomatoes, red onion, olives, feta cheese, and half of the dressing. Set aside.",
+    "Rub fish fillets with olive oil, a squeeze of lemon juice, salt, black pepper, and oregano.",
+    "Oil grill grates. Grill fish 2–4 minutes per side (thickness-dependent) until opaque and flakes easily.",
+    "Plate fish. Drizzle a little of the remaining dressing over the fish and the rest over the orzo if needed.",
+    "Serve immediately with extra lemon wedges (from the grilled lemon halves if desired)."
+  ],
+  "instructions": [
+    "Preheat the OutdoorGrill to medium-high heat.",
+    "Bring a medium pot of water to a boil on the stove for the orzo.",
+    "Pat dry fish fillets with paper towels.",
+    "Halve the lemon; zest one half and juice both halves into a small bowl.",
+    "Slice cucumber into half-moons; halve cherry tomatoes; thinly slice red onion.",
+    "Rinse olives and crumble feta cheese.",
+    "In a cup, whisk olive oil, vinegar, a pinch of salt, black pepper, lemon zest, and a pinch of oregano for the salad dressing.",
+    "Cook orzo in boiling water until al dente (about 8–10 minutes). Drain, rinse under cool water, and shake dry.",
+    "Toss cooled orzo with cucumber, cherry tomatoes, red onion, olives, feta cheese, and half of the dressing. Set aside.",
+    "Rub fish fillets with olive oil, a squeeze of lemon juice, salt, black pepper, and oregano.",
+    "Oil grill grates. Grill fish 2–4 minutes per side (thickness-dependent) until opaque and flakes easily.",
+    "Plate fish. Drizzle a little of the remaining dressing over the fish and the rest over the orzo if needed.",
+    "Serve immediately with extra lemon wedges (from the grilled lemon halves if desired)."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "4 medium fillets (600–800 g total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "orzo",
+      "quantity": "300 g",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "sliced into half-moons"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "250 g",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 small",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "feta cheese",
+      "quantity": "120 g",
+      "preparation": "crumbled"
+    },
+    {
+      "core_item_name": "vinegar",
+      "quantity": "1 tablespoon",
+      "preparation": "for dressing"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "4 medium fillets (600–800 g total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "orzo",
+      "quantity": "300 g",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "sliced into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "250 g",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 small",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "feta cheese",
+      "quantity": "120 g",
+      "preparation": "crumbled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vinegar",
+      "quantity": "1 tablespoon",
+      "preparation": "for dressing",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T141516Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T141310Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

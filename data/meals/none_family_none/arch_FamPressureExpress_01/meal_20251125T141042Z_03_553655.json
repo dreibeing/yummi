@@ -1,0 +1,257 @@
+{
+  "meal_id": "meal_20251125T141042Z_03_553655",
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "archetype_name": "Family Pressure Cooker Express Dinners (15–30, Mild)",
+  "name": "Instant Pot Family Chicken Noodle Soup",
+  "description": "Comforting chicken noodle soup made quickly in the pressure cooker with tender chicken thighs, carrots, and egg noodles. Mild, family-friendly flavors with a bright parsley-lemon finish.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Dice onions.",
+    "Peel and slice carrots into thin rounds.",
+    "Mince garlic.",
+    "Roughly chop parsley.",
+    "Cut lemon into wedges.",
+    "Pat chicken thighs dry and season lightly with salt and pepper."
+  ],
+  "cook_steps": [
+    "Set pressure cooker to Sauté (Normal). Add olive oil.",
+    "Add onions and carrots. Sauté 3–4 minutes until softened.",
+    "Stir in garlic and cook 30 seconds until fragrant.",
+    "Add chicken thighs, chicken stock, water, bay leaves, thyme, a pinch of salt, and a few grinds of pepper. Stir to combine.",
+    "Cancel Sauté. Seal lid and cook on High Pressure for 8 minutes.",
+    "Quick release pressure. Open lid, remove bay leaves, and transfer chicken to a cutting board.",
+    "Set cooker back to Sauté (Normal). Add egg noodles and simmer 5–6 minutes, stirring occasionally, until tender.",
+    "Shred chicken with two forks and return to the pot. Stir in parsley.",
+    "Taste and adjust salt and pepper. Serve with lemon wedges to squeeze over bowls."
+  ],
+  "instructions": [
+    "Dice onions.",
+    "Peel and slice carrots into thin rounds.",
+    "Mince garlic.",
+    "Roughly chop parsley.",
+    "Cut lemon into wedges.",
+    "Pat chicken thighs dry and season lightly with salt and pepper.",
+    "Set pressure cooker to Sauté (Normal). Add olive oil.",
+    "Add onions and carrots. Sauté 3–4 minutes until softened.",
+    "Stir in garlic and cook 30 seconds until fragrant.",
+    "Add chicken thighs, chicken stock, water, bay leaves, thyme, a pinch of salt, and a few grinds of pepper. Stir to combine.",
+    "Cancel Sauté. Seal lid and cook on High Pressure for 8 minutes.",
+    "Quick release pressure. Open lid, remove bay leaves, and transfer chicken to a cutting board.",
+    "Set cooker back to Sauté (Normal). Add egg noodles and simmer 5–6 minutes, stirring occasionally, until tender.",
+    "Shred chicken with two forks and return to the pot. Stir in parsley.",
+    "Taste and adjust salt and pepper. Serve with lemon wedges to squeeze over bowls."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "peeled and sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1.25–1.5 lb",
+      "preparation": "boneless, skinless"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "4 cups"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 cups"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2"
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 teaspoon",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1–1.5 teaspoons",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "egg noodles",
+      "quantity": "6–8 ounces"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Egg",
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "SlowOrPressureCooker",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "peeled and sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1.25–1.5 lb",
+      "preparation": "boneless, skinless",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "4 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 teaspoon",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1–1.5 teaspoons",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "egg noodles",
+      "quantity": "6–8 ounces",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T141310Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T141042Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

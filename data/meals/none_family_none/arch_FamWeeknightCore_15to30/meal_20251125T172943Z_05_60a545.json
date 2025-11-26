@@ -1,0 +1,229 @@
+{
+  "meal_id": "meal_20251125T172943Z_05_60a545",
+  "archetype_uid": "arch_FamWeeknightCore_15to30",
+  "archetype_name": "Family Weeknight Classics (Mild, 15–30 min)",
+  "name": "Tomato-Braised Beef Meatballs with Buttered Couscous and Roasted Green Beans",
+  "description": "Quick-simmered beef meatballs in napoletana sauce served over buttered couscous with a tray of roasted green beans. Mild, simple, and family-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F.",
+    "Trim green beans and pat dry.",
+    "Dice onions and mince garlic.",
+    "Chop parsley.",
+    "Pour vegetable stock into a small pot and bring to a simmer on the stovetop."
+  ],
+  "cook_steps": [
+    "On a baking tray, toss green beans with 1 tbsp olive oil, a pinch of salt, and pepper. Roast 12–15 minutes until tender-crisp.",
+    "Heat 1 tbsp olive oil in a large skillet over medium heat. Add onions and cook 3–4 minutes until softened.",
+    "Add beef meatballs and brown 4–5 minutes, turning to color all sides.",
+    "Stir in garlic and cook 30 seconds until fragrant.",
+    "Pour in napoletana sauce, season lightly with salt and pepper, bring to a simmer, then cover and cook 8–10 minutes until meatballs are cooked through.",
+    "Place couscous in a heatproof bowl. Pour hot vegetable stock over, cover, and let stand 5 minutes. Fluff with a fork and stir in butter.",
+    "Plate couscous, spoon meatballs and sauce on top, add roasted green beans on the side, and sprinkle with parsley."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F.",
+    "Trim green beans and pat dry.",
+    "Dice onions and mince garlic.",
+    "Chop parsley.",
+    "Pour vegetable stock into a small pot and bring to a simmer on the stovetop.",
+    "On a baking tray, toss green beans with 1 tbsp olive oil, a pinch of salt, and pepper. Roast 12–15 minutes until tender-crisp.",
+    "Heat 1 tbsp olive oil in a large skillet over medium heat. Add onions and cook 3–4 minutes until softened.",
+    "Add beef meatballs and brown 4–5 minutes, turning to color all sides.",
+    "Stir in garlic and cook 30 seconds until fragrant.",
+    "Pour in napoletana sauce, season lightly with salt and pepper, bring to a simmer, then cover and cook 8–10 minutes until meatballs are cooked through.",
+    "Place couscous in a heatproof bowl. Pour hot vegetable stock over, cover, and let stand 5 minutes. Fluff with a fork and stir in butter.",
+    "Plate couscous, spoon meatballs and sauce on top, add roasted green beans on the side, and sprinkle with parsley."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef meatballs",
+      "quantity": "500 g",
+      "preparation": "raw, ready-formed"
+    },
+    {
+      "core_item_name": "napoletana sauce",
+      "quantity": "500 ml",
+      "preparation": "jarred"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1.5 cups dry",
+      "preparation": "in bowl"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups",
+      "preparation": "hot/simmering"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": "softened"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef meatballs",
+      "quantity": "500 g",
+      "preparation": "raw, ready-formed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "napoletana sauce",
+      "quantity": "500 ml",
+      "preparation": "jarred",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1.5 cups dry",
+      "preparation": "in bowl",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups",
+      "preparation": "hot/simmering",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": "softened",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T173328Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T172943Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

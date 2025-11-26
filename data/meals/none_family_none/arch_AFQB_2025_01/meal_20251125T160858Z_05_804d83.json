@@ -1,0 +1,191 @@
+{
+  "meal_id": "meal_20251125T160858Z_05_804d83",
+  "archetype_uid": "arch_AFQB_2025_01",
+  "archetype_name": "Family AirFryer Quick Bites",
+  "name": "Air Fryer Crispy Tortilla Nacho Pizzas",
+  "description": "Crunchy tortilla ‘pizzas’ topped with salsa, cheese, beans, and corn, finished with fresh greens. Fast, kid-friendly, and perfect for air fryer nights.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat air fryer to 190°C/375°F.",
+    "Drain and rinse black beans.",
+    "Slice spring onion and olives; shred lettuce if needed.",
+    "Lay out tortillas and gather salsa and shredded cheddar cheese."
+  ],
+  "cook_steps": [
+    "Air-fry 2 tortillas at a time for 2 minutes to lightly crisp.",
+    "Spread each tortilla with 2–3 tablespoons salsa.",
+    "Top with black beans and corn (about 2 tablespoons each per tortilla).",
+    "Add sliced olives and spring onion, then sprinkle a generous layer of cheddar cheese.",
+    "Return topped tortillas to the air fryer (work in batches) and cook 3–4 minutes until cheese melts and edges are crisp.",
+    "Repeat with remaining tortillas.",
+    "Cut into wedges and serve topped with shredded lettuce. Optional: drizzle a little extra salsa."
+  ],
+  "instructions": [
+    "Preheat air fryer to 190°C/375°F.",
+    "Drain and rinse black beans.",
+    "Slice spring onion and olives; shred lettuce if needed.",
+    "Lay out tortillas and gather salsa and shredded cheddar cheese.",
+    "Air-fry 2 tortillas at a time for 2 minutes to lightly crisp.",
+    "Spread each tortilla with 2–3 tablespoons salsa.",
+    "Top with black beans and corn (about 2 tablespoons each per tortilla).",
+    "Add sliced olives and spring onion, then sprinkle a generous layer of cheddar cheese.",
+    "Return topped tortillas to the air fryer (work in batches) and cook 3–4 minutes until cheese melts and edges are crisp.",
+    "Repeat with remaining tortillas.",
+    "Cut into wedges and serve topped with shredded lettuce. Optional: drizzle a little extra salsa."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "tortillas",
+      "quantity": "8 small tortillas"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup"
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1½ cups",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (about 400 g)",
+      "preparation": "drained and rinsed"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "1 cup",
+      "preparation": "drained if canned"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "⅓ cup",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "2 cups",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": "optional light brush for extra crisp"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "AirFryer",
+      "Microwave"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "tortillas",
+      "quantity": "8 small tortillas",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1½ cups",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (about 400 g)",
+      "preparation": "drained and rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "1 cup",
+      "preparation": "drained if canned",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "⅓ cup",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "2 cups",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": "optional light brush for extra crisp",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T161147Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T160858Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "meal_id": "meal_20251125T160858Z_03_ef06da",
+  "archetype_uid": "arch_AFQB_2025_01",
+  "archetype_name": "Family AirFryer Quick Bites",
+  "name": "Air Fryer Chipotle Fish Sandwiches",
+  "description": "Crispy angelfish goujons stuffed in warm buns with mild chipotle sauce, slaw, and pickles. Fast, family-friendly, and air-fryer first.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat air fryer to 200°C/390°F for 3 minutes.",
+    "Slice pickles if whole; separate 4 lettuce leaves.",
+    "Stir slaw to loosen; set out hamburger buns.",
+    "Place chipotle sauce in a small bowl with a spoon for spreading.",
+    "Line air fryer basket with a perforated liner or lightly oil the basket if needed."
+  ],
+  "cook_steps": [
+    "Add angelfish goujons to the air fryer basket in a single layer.",
+    "Air fry for 8–10 minutes, shaking or turning halfway, until golden and hot throughout.",
+    "Microwave hamburger buns for 10–15 seconds to soften.",
+    "Split buns and spread chipotle sauce on the cut sides.",
+    "Layer lettuce on the bottom bun, add goujons, top with slaw and pickles.",
+    "Close sandwiches and serve immediately."
+  ],
+  "instructions": [
+    "Preheat air fryer to 200°C/390°F for 3 minutes.",
+    "Slice pickles if whole; separate 4 lettuce leaves.",
+    "Stir slaw to loosen; set out hamburger buns.",
+    "Place chipotle sauce in a small bowl with a spoon for spreading.",
+    "Line air fryer basket with a perforated liner or lightly oil the basket if needed.",
+    "Add angelfish goujons to the air fryer basket in a single layer.",
+    "Air fry for 8–10 minutes, shaking or turning halfway, until golden and hot throughout.",
+    "Microwave hamburger buns for 10–15 seconds to soften.",
+    "Split buns and spread chipotle sauce on the cut sides.",
+    "Layer lettuce on the bottom bun, add goujons, top with slaw and pickles.",
+    "Close sandwiches and serve immediately."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "angelfish goujons",
+      "quantity": "500 g",
+      "preparation": "air fry from chilled or frozen per pack timing; cook until crisp"
+    },
+    {
+      "core_item_name": "hamburger buns",
+      "quantity": "4 buns",
+      "preparation": "microwave to soften"
+    },
+    {
+      "core_item_name": "chipotle sauce",
+      "quantity": "3–4 tbsp",
+      "preparation": "for spreading"
+    },
+    {
+      "core_item_name": "slaw",
+      "quantity": "2 cups",
+      "preparation": "stir to loosen"
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "4 leaves",
+      "preparation": "rinse and pat dry"
+    },
+    {
+      "core_item_name": "pickles",
+      "quantity": "8–12 slices",
+      "preparation": "slice if needed"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "AirFryer",
+      "Microwave"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "angelfish goujons",
+      "quantity": "500 g",
+      "preparation": "air fry from chilled or frozen per pack timing; cook until crisp",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "hamburger buns",
+      "quantity": "4 buns",
+      "preparation": "microwave to soften",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chipotle sauce",
+      "quantity": "3–4 tbsp",
+      "preparation": "for spreading",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "slaw",
+      "quantity": "2 cups",
+      "preparation": "stir to loosen",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "4 leaves",
+      "preparation": "rinse and pat dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pickles",
+      "quantity": "8–12 slices",
+      "preparation": "slice if needed",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T161039Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T160858Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

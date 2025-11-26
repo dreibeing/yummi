@@ -1,0 +1,201 @@
+{
+  "meal_id": "meal_20251125T141516Z_02_bff972",
+  "archetype_uid": "arch_FamWeeknightCore_15to30",
+  "archetype_name": "Family Weeknight Classics (Mild, 15–30 min)",
+  "name": "BBQ Chicken Kebabs with Basmati Rice and Garden Salad",
+  "description": "Oven-glazed chicken kebabs with fluffy basmati rice and a crisp lettuce-cucumber-tomato salad. Mild, fast, and family-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C (425°F). Line a tray with foil and lightly oil it.",
+    "Rinse basmati rice in a sieve until water runs clear.",
+    "Chop lettuce, slice cucumber, and halve cherry tomatoes; set in a large bowl.",
+    "Measure BBQ sauce, olive oil, salt, and pepper."
+  ],
+  "cook_steps": [
+    "Place chicken kebabs on the prepared tray. Brush with half the BBQ sauce.",
+    "Bake kebabs for 10 minutes, then brush with remaining BBQ sauce and bake 5–8 minutes more until cooked through (juices run clear).",
+    "While kebabs bake, add rinsed basmati rice to a pot with water (about 1.5–2 cups water per cup rice) and a pinch of salt. Bring to a boil, then cover, reduce heat to low, and simmer 12 minutes. Turn off heat and rest covered 5 minutes; fluff with a fork.",
+    "Toss lettuce, cucumber, and cherry tomatoes with vinaigrette. Season with a pinch of salt and pepper.",
+    "Serve kebabs over basmati rice with the salad on the side."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C (425°F). Line a tray with foil and lightly oil it.",
+    "Rinse basmati rice in a sieve until water runs clear.",
+    "Chop lettuce, slice cucumber, and halve cherry tomatoes; set in a large bowl.",
+    "Measure BBQ sauce, olive oil, salt, and pepper.",
+    "Place chicken kebabs on the prepared tray. Brush with half the BBQ sauce.",
+    "Bake kebabs for 10 minutes, then brush with remaining BBQ sauce and bake 5–8 minutes more until cooked through (juices run clear).",
+    "While kebabs bake, add rinsed basmati rice to a pot with water (about 1.5–2 cups water per cup rice) and a pinch of salt. Bring to a boil, then cover, reduce heat to low, and simmer 12 minutes. Turn off heat and rest covered 5 minutes; fluff with a fork.",
+    "Toss lettuce, cucumber, and cherry tomatoes with vinaigrette. Season with a pinch of salt and pepper.",
+    "Serve kebabs over basmati rice with the salad on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken kebabs",
+      "quantity": "600–800 g",
+      "preparation": "pat dry"
+    },
+    {
+      "core_item_name": "BBQ sauce",
+      "quantity": "1/3 cup",
+      "preparation": "for glazing"
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": "for tray"
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "1 head",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "vinaigrette",
+      "quantity": "4 tbsp",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken kebabs",
+      "quantity": "600–800 g",
+      "preparation": "pat dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "BBQ sauce",
+      "quantity": "1/3 cup",
+      "preparation": "for glazing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": "for tray",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "1 head",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vinaigrette",
+      "quantity": "4 tbsp",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T141641Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T141516Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

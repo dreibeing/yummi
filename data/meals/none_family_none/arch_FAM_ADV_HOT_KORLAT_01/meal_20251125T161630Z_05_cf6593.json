@@ -1,0 +1,339 @@
+{
+  "meal_id": "meal_20251125T161630Z_05_cf6593",
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "archetype_name": "Family Heat Lovers: Korean & Latin American Feasts (Hot, 30–60, Advanced)",
+  "name": "Gochujang-Carne Asada Sirloin with Charred Corn-Jalapeño Salsa, Quick Pickled Cucumber, and Brown Basmati Rice",
+  "description": "Grilled gochujang-lime marinated sirloin meets a punchy corn–jalapeño salsa and sesame cucumber quick pickles, served with fluffy brown basmati rice. Built hot and from-scratch for a family feast.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 2 cups brown basmati rice until water runs clear; drain.",
+    "Smash and finely mince 4 cloves garlic.",
+    "Halve 2 limes; juice both and reserve.",
+    "Thinly slice 1 cucumber; place in a bowl.",
+    "Finely dice 1 red onion (divide: half for salsa, half for pickles).",
+    "Finely chop a handful of coriander (stems and leaves).",
+    "Finely chop 2 jalapenos (seed for less heat if desired).",
+    "Shuck 3 ears worth of corn kernels (or measure 3 cups corn).",
+    "Pat dry 1 kg sirloin steak; trim silver skin if needed.",
+    "Preheat outdoor grill to high (two-zone if possible). Set a stovetop pot with 3.5 cups water ready for rice."
+  ],
+  "cook_steps": [
+    "Marinate steak: In a bowl mix 2 tbsp gochujang, 2 tbsp soy sauce, 1 tbsp sesame oil, 1 tbsp brown sugar, 1 tbsp lime juice, 1 tbsp canola oil, 2 minced garlic cloves, and a pinch of salt and black pepper. Coat sirloin; rest 15–20 minutes at room temp.",
+    "Start rice: Bring 3.5 cups water to a boil, add rinsed brown basmati rice and 1 tsp salt. Reduce to low, cover, and simmer 30–35 minutes until tender; rest 5 minutes off heat, covered.",
+    "Quick pickles: Toss sliced cucumber with remaining red onion, 3 tbsp rice vinegar, 1 tsp sugar, 1/2 tsp salt, and 1 tsp sesame seeds. Massage lightly and chill.",
+    "Char salsa base: Toss corn with 1 tbsp canola oil and a pinch of salt. Grill in a perforated tray or cast-iron pan 6–8 minutes, stirring, until charred. Cool slightly, then mix with half the red onion, jalapenos, 2 tbsp lime juice, chopped coriander, and a pinch of salt and black pepper.",
+    "Grill steak: Sear marinated sirloin over high heat 3–4 minutes per side for medium-rare (thickness dependent), moving to indirect heat to finish if needed. Rest 8–10 minutes, then slice against the grain into thin strips.",
+    "Finish rice: Fluff with a fork. Optional: sprinkle a pinch of sesame seeds.",
+    "Plate: Mound rice, top with sliced steak and spoon over any resting juices. Add a generous scoop of charred corn–jalapeño salsa and a side of sesame cucumber pickles.",
+    "Serve: Lime wedges optional (use remaining lime juice to drizzle if preferred) and extra chopped coriander."
+  ],
+  "instructions": [
+    "Rinse 2 cups brown basmati rice until water runs clear; drain.",
+    "Smash and finely mince 4 cloves garlic.",
+    "Halve 2 limes; juice both and reserve.",
+    "Thinly slice 1 cucumber; place in a bowl.",
+    "Finely dice 1 red onion (divide: half for salsa, half for pickles).",
+    "Finely chop a handful of coriander (stems and leaves).",
+    "Finely chop 2 jalapenos (seed for less heat if desired).",
+    "Shuck 3 ears worth of corn kernels (or measure 3 cups corn).",
+    "Pat dry 1 kg sirloin steak; trim silver skin if needed.",
+    "Preheat outdoor grill to high (two-zone if possible). Set a stovetop pot with 3.5 cups water ready for rice.",
+    "Marinate steak: In a bowl mix 2 tbsp gochujang, 2 tbsp soy sauce, 1 tbsp sesame oil, 1 tbsp brown sugar, 1 tbsp lime juice, 1 tbsp canola oil, 2 minced garlic cloves, and a pinch of salt and black pepper. Coat sirloin; rest 15–20 minutes at room temp.",
+    "Start rice: Bring 3.5 cups water to a boil, add rinsed brown basmati rice and 1 tsp salt. Reduce to low, cover, and simmer 30–35 minutes until tender; rest 5 minutes off heat, covered.",
+    "Quick pickles: Toss sliced cucumber with remaining red onion, 3 tbsp rice vinegar, 1 tsp sugar, 1/2 tsp salt, and 1 tsp sesame seeds. Massage lightly and chill.",
+    "Char salsa base: Toss corn with 1 tbsp canola oil and a pinch of salt. Grill in a perforated tray or cast-iron pan 6–8 minutes, stirring, until charred. Cool slightly, then mix with half the red onion, jalapenos, 2 tbsp lime juice, chopped coriander, and a pinch of salt and black pepper.",
+    "Grill steak: Sear marinated sirloin over high heat 3–4 minutes per side for medium-rare (thickness dependent), moving to indirect heat to finish if needed. Rest 8–10 minutes, then slice against the grain into thin strips.",
+    "Finish rice: Fluff with a fork. Optional: sprinkle a pinch of sesame seeds.",
+    "Plate: Mound rice, top with sliced steak and spoon over any resting juices. Add a generous scoop of charred corn–jalapeño salsa and a side of sesame cucumber pickles.",
+    "Serve: Lime wedges optional (use remaining lime juice to drizzle if preferred) and extra chopped coriander."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "2 cups (raw)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3.5 cups",
+      "preparation": "for rice"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp total",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "sirloin steak",
+      "quantity": "1 kg",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "2 tbsp",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tbsp",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tbsp",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tbsp",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2 whole",
+      "preparation": "juiced (divided)"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "freshly ground, divided"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "finely diced, divided"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "3 tbsp",
+      "preparation": "for quick pickles"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tsp",
+      "preparation": "for quick pickles"
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "2 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "3 cups kernels",
+      "preparation": "tossed with oil and salt"
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "2",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Korean",
+      "LatinAmerican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Hot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "2 cups (raw)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3.5 cups",
+      "preparation": "for rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp total",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sirloin steak",
+      "quantity": "1 kg",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "2 tbsp",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tbsp",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tbsp",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tbsp",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2 whole",
+      "preparation": "juiced (divided)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "freshly ground, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "finely diced, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "3 tbsp",
+      "preparation": "for quick pickles",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tsp",
+      "preparation": "for quick pickles",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "2 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "3 cups kernels",
+      "preparation": "tossed with oil and salt",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "2",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T162140Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T161630Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

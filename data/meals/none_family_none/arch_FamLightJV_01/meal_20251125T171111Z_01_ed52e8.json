@@ -1,0 +1,310 @@
+{
+  "meal_id": "meal_20251125T171111Z_01_ed52e8",
+  "archetype_uid": "arch_FamLightJV_01",
+  "archetype_name": "Family Light & Fresh: Japanese and Vietnamese Weeknights",
+  "name": "Garlic-Lime Chicken with Herb Salad and 7-Grain Bowls (No Soy, No Nuts)",
+  "description": "Bright, herb-forward chicken served over a warm 7-grain base with a crunchy cucumber-carrot salad and nori. Light, fresh flavors inspired by Japanese and Vietnamese home cooking without common allergens.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1.5 cups 7-grain medley under cold water.",
+    "Mince 3 cloves garlic.",
+    "Zest and juice 2 limes; keep zest and juice separate.",
+    "Thinly slice 1 cucumber and julienne 2 carrots.",
+    "Roughly chop 1/4 cup each mint, basil, and coriander leaves.",
+    "Slice 2 spring onion.",
+    "Cut 1 sheet nori into thin strips with scissors.",
+    "Trim excess fat from 600 g chicken thighs; pat dry."
+  ],
+  "cook_steps": [
+    "Cook grains: Add 1.5 cups 7-grain medley, 3 cups water, and 1/2 tsp salt to a pot. Bring to a boil, then cover and simmer on low until tender and water is absorbed, 18–22 minutes. Fluff.",
+    "Make dressing: In a bowl, whisk lime juice, 2 tbsp rice vinegar, 1 tbsp honey, 1 tbsp olive oil, a pinch of salt, and 1/4 tsp black pepper.",
+    "Toss salad: In a large bowl, combine cucumber, carrots, mixed greens, chopped mint, basil, coriander, and spring onion. Add half the dressing; toss.",
+    "Season chicken: Mix garlic, lime zest, 1/2 tsp salt, and 1/4 tsp black pepper; rub over chicken thighs.",
+    "Sear chicken: Heat 1 tbsp olive oil in a large skillet over medium-high. Cook chicken 4–5 minutes per side until cooked through. Rest 2 minutes, then slice.",
+    "Assemble bowls: Divide 7-grain into 4 bowls. Top with salad, sliced chicken, and nori strips. Drizzle remaining dressing over bowls.",
+    "Serve: Taste and add a pinch of salt or black pepper if needed."
+  ],
+  "instructions": [
+    "Rinse 1.5 cups 7-grain medley under cold water.",
+    "Mince 3 cloves garlic.",
+    "Zest and juice 2 limes; keep zest and juice separate.",
+    "Thinly slice 1 cucumber and julienne 2 carrots.",
+    "Roughly chop 1/4 cup each mint, basil, and coriander leaves.",
+    "Slice 2 spring onion.",
+    "Cut 1 sheet nori into thin strips with scissors.",
+    "Trim excess fat from 600 g chicken thighs; pat dry.",
+    "Cook grains: Add 1.5 cups 7-grain medley, 3 cups water, and 1/2 tsp salt to a pot. Bring to a boil, then cover and simmer on low until tender and water is absorbed, 18–22 minutes. Fluff.",
+    "Make dressing: In a bowl, whisk lime juice, 2 tbsp rice vinegar, 1 tbsp honey, 1 tbsp olive oil, a pinch of salt, and 1/4 tsp black pepper.",
+    "Toss salad: In a large bowl, combine cucumber, carrots, mixed greens, chopped mint, basil, coriander, and spring onion. Add half the dressing; toss.",
+    "Season chicken: Mix garlic, lime zest, 1/2 tsp salt, and 1/4 tsp black pepper; rub over chicken thighs.",
+    "Sear chicken: Heat 1 tbsp olive oil in a large skillet over medium-high. Cook chicken 4–5 minutes per side until cooked through. Rest 2 minutes, then slice.",
+    "Assemble bowls: Divide 7-grain into 4 bowls. Top with salad, sliced chicken, and nori strips. Drizzle remaining dressing over bowls.",
+    "Serve: Taste and add a pinch of salt or black pepper if needed."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "7-grain medley",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp total, divided",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp total, divided",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "zest and juice separated"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp total, divided",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "carrot",
+      "quantity": "2",
+      "preparation": "julienned"
+    },
+    {
+      "core_item_name": "mixed greens",
+      "quantity": "4 cups",
+      "preparation": "roughly chopped if large"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/4 cup leaves",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "1/4 cup leaves",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup leaves",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "nori",
+      "quantity": "1 sheet",
+      "preparation": "cut into thin strips"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "600 g",
+      "preparation": "trimmed and patted dry"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Japanese",
+      "Vietnamese"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowCalorie"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "7-grain medley",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp total, divided",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp total, divided",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "zest and juice separated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp total, divided",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrot",
+      "quantity": "2",
+      "preparation": "julienned",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mixed greens",
+      "quantity": "4 cups",
+      "preparation": "roughly chopped if large",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/4 cup leaves",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "1/4 cup leaves",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup leaves",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "nori",
+      "quantity": "1 sheet",
+      "preparation": "cut into thin strips",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "600 g",
+      "preparation": "trimmed and patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T171221Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T171111Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

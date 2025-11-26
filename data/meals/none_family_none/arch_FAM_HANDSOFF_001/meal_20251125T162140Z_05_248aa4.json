@@ -1,0 +1,262 @@
+{
+  "meal_id": "meal_20251125T162140Z_05_248aa4",
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "archetype_name": "Family Hands-Off Sheet Pan & Slow Cooker Nights",
+  "name": "Slow Cooker Cumin–Tomato Lentil Stew with Lemon Basmati",
+  "description": "Hands-off Middle Eastern-style lentil and vegetable stew simmered in the slow cooker, finished with parsley and served over fluffy lemon basmati rice.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1 1/2 cups lentils under cold water; drain.",
+    "Peel and dice 1 large onion.",
+    "Peel and slice 2 carrots into 1 cm rounds.",
+    "Peel and finely chop 3 cloves garlic.",
+    "Rinse 1 1/2 cups basmati rice until water runs clear; drain.",
+    "Wash and chop a small handful of parsley.",
+    "Halve and juice 1 lemon."
+  ],
+  "cook_steps": [
+    "Add to the slow cooker: lentils, onion, carrots, garlic, 1 can (about 400 g) crushed tomatoes, 3 cups vegetable stock, 2 tablespoons olive oil, 2 teaspoons ground cumin, 1/2 teaspoon turmeric powder, 1 bay leaf, 1 teaspoon salt, and 1/2 teaspoon black pepper. Stir.",
+    "Cook on High for 3–4 hours or Low for 6–7 hours until lentils are tender. Remove bay leaf.",
+    "Near serving time, cook the rice: add rinsed basmati rice and 2 1/4 cups water to a pot. Bring to a boil, reduce to low, cover, and simmer 12 minutes. Rest off heat, covered, 5 minutes.",
+    "Fluff rice and stir in 1–2 tablespoons lemon juice and a pinch of salt.",
+    "Stir 1–2 tablespoons lemon juice into the stew. Adjust salt and black pepper to taste.",
+    "Serve lemon basmati in bowls, ladle stew over, and top with chopped parsley."
+  ],
+  "instructions": [
+    "Rinse 1 1/2 cups lentils under cold water; drain.",
+    "Peel and dice 1 large onion.",
+    "Peel and slice 2 carrots into 1 cm rounds.",
+    "Peel and finely chop 3 cloves garlic.",
+    "Rinse 1 1/2 cups basmati rice until water runs clear; drain.",
+    "Wash and chop a small handful of parsley.",
+    "Halve and juice 1 lemon.",
+    "Add to the slow cooker: lentils, onion, carrots, garlic, 1 can (about 400 g) crushed tomatoes, 3 cups vegetable stock, 2 tablespoons olive oil, 2 teaspoons ground cumin, 1/2 teaspoon turmeric powder, 1 bay leaf, 1 teaspoon salt, and 1/2 teaspoon black pepper. Stir.",
+    "Cook on High for 3–4 hours or Low for 6–7 hours until lentils are tender. Remove bay leaf.",
+    "Near serving time, cook the rice: add rinsed basmati rice and 2 1/4 cups water to a pot. Bring to a boil, reduce to low, cover, and simmer 12 minutes. Rest off heat, covered, 5 minutes.",
+    "Fluff rice and stir in 1–2 tablespoons lemon juice and a pinch of salt.",
+    "Stir 1–2 tablespoons lemon juice into the stew. Adjust salt and black pepper to taste.",
+    "Serve lemon basmati in bowls, ladle stew over, and top with chopped parsley."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "lentils",
+      "quantity": "1 1/2 cups (about 285 g)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "400 g",
+      "preparation": "canned"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 cups (720 ml)"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "sliced into rounds"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "2 teaspoons"
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "1"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "1 1/2 cups (about 285 g)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1–2",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "SlowOrPressureCooker",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "lentils",
+      "quantity": "1 1/2 cups (about 285 g)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "400 g",
+      "preparation": "canned",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 cups (720 ml)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "sliced into rounds",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "2 teaspoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "1",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "1 1/2 cups (about 285 g)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1–2",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T162531Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T162140Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "meal_id": "meal_20251125T164849Z_04_71e179",
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "archetype_name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)",
+  "name": "Kung Pao-Style Chicken with Peanuts over Jasmine Rice",
+  "description": "Stovetop Chinese-inspired chicken stir-fry with a tangy, medium-heat chili-soy glaze and crunchy peanuts, served over fluffy jasmine rice.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 2 cups jasmine rice until water runs clear; set aside.",
+    "Trim and cut 700 g chicken thighs into 2–3 cm pieces; pat dry.",
+    "Slice 2 bell peppers into strips and 1 onion into thin wedges.",
+    "Mince 4 cloves garlic and slice 4 spring onion (separate whites and greens).",
+    "Stir together sauce in a bowl: 1/4 cup soy sauce, 2 tbsp rice vinegar, 1–2 tbsp sriracha, 1 tbsp brown sugar, 2 tsp cornflour, and 1/3 cup water.",
+    "Measure 1/2 cup peanuts and set aside.",
+    "Optional (for quicker plating): Warm pre-cooked rice in the microwave just before serving."
+  ],
+  "cook_steps": [
+    "Cook jasmine rice on the stovetop per pack directions (use 1:1.5 rice-to-water ratio); keep covered to steam.",
+    "Heat a large skillet over medium-high; add 1 tbsp canola oil. Toast peanuts for 1–2 minutes until fragrant; remove to a bowl.",
+    "Add remaining 1 tbsp canola oil. Stir-fry chicken in a single layer 4–5 minutes until browned and mostly cooked; season with a pinch of salt and remove to a plate.",
+    "In the same pan, add onion wedges and bell pepper; stir-fry 2–3 minutes until crisp-tender.",
+    "Add garlic and spring onion whites; cook 30 seconds until fragrant.",
+    "Return chicken to the pan. Stir the sauce (cornflour settles) and pour it in; add 1/2 tsp chili flakes.",
+    "Stir-fry 1–2 minutes until the sauce bubbles and thickens, coating the chicken and vegetables. Reduce heat to medium if needed.",
+    "Turn off heat; drizzle 1 tsp sesame oil (optional). Toss in toasted peanuts and spring onion greens.",
+    "Fluff rice and serve bowls of rice topped with kung pao-style chicken and extra chili flakes to taste."
+  ],
+  "instructions": [
+    "Rinse 2 cups jasmine rice until water runs clear; set aside.",
+    "Trim and cut 700 g chicken thighs into 2–3 cm pieces; pat dry.",
+    "Slice 2 bell peppers into strips and 1 onion into thin wedges.",
+    "Mince 4 cloves garlic and slice 4 spring onion (separate whites and greens).",
+    "Stir together sauce in a bowl: 1/4 cup soy sauce, 2 tbsp rice vinegar, 1–2 tbsp sriracha, 1 tbsp brown sugar, 2 tsp cornflour, and 1/3 cup water.",
+    "Measure 1/2 cup peanuts and set aside.",
+    "Optional (for quicker plating): Warm pre-cooked rice in the microwave just before serving.",
+    "Cook jasmine rice on the stovetop per pack directions (use 1:1.5 rice-to-water ratio); keep covered to steam.",
+    "Heat a large skillet over medium-high; add 1 tbsp canola oil. Toast peanuts for 1–2 minutes until fragrant; remove to a bowl.",
+    "Add remaining 1 tbsp canola oil. Stir-fry chicken in a single layer 4–5 minutes until browned and mostly cooked; season with a pinch of salt and remove to a plate.",
+    "In the same pan, add onion wedges and bell pepper; stir-fry 2–3 minutes until crisp-tender.",
+    "Add garlic and spring onion whites; cook 30 seconds until fragrant.",
+    "Return chicken to the pan. Stir the sauce (cornflour settles) and pour it in; add 1/2 tsp chili flakes.",
+    "Stir-fry 1–2 minutes until the sauce bubbles and thickens, coating the chicken and vegetables. Reduce heat to medium if needed.",
+    "Turn off heat; drizzle 1 tsp sesame oil (optional). Toss in toasted peanuts and spring onion greens.",
+    "Fluff rice and serve bowls of rice topped with kung pao-style chicken and extra chili flakes to taste."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "700 g",
+      "preparation": "cut into 2–3 cm pieces"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 small",
+      "preparation": "thin wedges"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4",
+      "preparation": "whites and greens separated, sliced"
+    },
+    {
+      "core_item_name": "peanuts",
+      "quantity": "1/2 cup",
+      "preparation": "whole"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "1/4 cup"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "sriracha",
+      "quantity": "1–2 tbsp"
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "2 tsp"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2–1 tsp",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tsp",
+      "preparation": "optional finish"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "pinch",
+      "preparation": "for seasoning"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Chinese",
+      "Thai"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Gluten",
+      "Nuts",
+      "Soy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "700 g",
+      "preparation": "cut into 2–3 cm pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 small",
+      "preparation": "thin wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4",
+      "preparation": "whites and greens separated, sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peanuts",
+      "quantity": "1/2 cup",
+      "preparation": "whole",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "1/4 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sriracha",
+      "quantity": "1–2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2–1 tsp",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tsp",
+      "preparation": "optional finish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "pinch",
+      "preparation": "for seasoning",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T165239Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T164849Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "meal_id": "meal_20251125T140836Z_03_adbbde",
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "archetype_name": "Family Low-Fat Mediterranean Light Plates (15–30, Mild)",
+  "name": "Herbed Turkey Kofta with Bulgur & Cucumber-Tomato Salad",
+  "description": "Lean turkey kofta broiled with oregano and cumin, served over fluffy bulgur with a fresh cucumber-tomato salad and lemon yogurt. Light, mild, and family-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven broiler to high; line a sheet pan with foil and lightly brush with olive oil.",
+    "Rinse bulgur in a fine sieve.",
+    "Finely chop parsley and mint (about 1/2 cup parsley, 2 tablespoons mint).",
+    "Finely grate 1/2 of the red onion and 1 garlic clove for the kofta; finely dice the remaining red onion for the salad.",
+    "Dice cucumber and tomatoes; cut lemon in half.",
+    "In a small bowl, stir yoghurt with a squeeze of lemon juice and a pinch of salt; set aside."
+  ],
+  "cook_steps": [
+    "Cook bulgur: Add bulgur (1 cup) and vegetable stock (2 cups) to a pot. Bring to a boil, then reduce to low, cover, and simmer 12 minutes until tender. Rest covered 5 minutes; fluff.",
+    "Mix kofta: In a bowl, combine turkey (500 g), grated red onion, grated garlic, parsley (1/4 cup), mint (1 tablespoon), ground cumin (1 teaspoon), oregano (1 teaspoon), black pepper (1/2 teaspoon), and salt (3/4 teaspoon).",
+    "Shape kofta into 8 small oval patties and place on the prepared sheet pan. Brush tops lightly with olive oil (about 1 teaspoon).",
+    "Broil kofta on the upper rack 6–8 minutes, turning once, until browned and cooked through (internal temp 74°C/165°F).",
+    "Make salad: In a bowl, combine diced cucumber, diced tomatoes, diced red onion, remaining parsley and mint. Add lemon juice (from 1/2 lemon), olive oil (1 tablespoon), a pinch of salt, and black pepper; toss.",
+    "Plate: Spoon bulgur onto plates, top with kofta, add a side of cucumber-tomato salad, and drizzle or dollop the lemon yoghurt. Serve with extra lemon wedges."
+  ],
+  "instructions": [
+    "Heat oven broiler to high; line a sheet pan with foil and lightly brush with olive oil.",
+    "Rinse bulgur in a fine sieve.",
+    "Finely chop parsley and mint (about 1/2 cup parsley, 2 tablespoons mint).",
+    "Finely grate 1/2 of the red onion and 1 garlic clove for the kofta; finely dice the remaining red onion for the salad.",
+    "Dice cucumber and tomatoes; cut lemon in half.",
+    "In a small bowl, stir yoghurt with a squeeze of lemon juice and a pinch of salt; set aside.",
+    "Cook bulgur: Add bulgur (1 cup) and vegetable stock (2 cups) to a pot. Bring to a boil, then reduce to low, cover, and simmer 12 minutes until tender. Rest covered 5 minutes; fluff.",
+    "Mix kofta: In a bowl, combine turkey (500 g), grated red onion, grated garlic, parsley (1/4 cup), mint (1 tablespoon), ground cumin (1 teaspoon), oregano (1 teaspoon), black pepper (1/2 teaspoon), and salt (3/4 teaspoon).",
+    "Shape kofta into 8 small oval patties and place on the prepared sheet pan. Brush tops lightly with olive oil (about 1 teaspoon).",
+    "Broil kofta on the upper rack 6–8 minutes, turning once, until browned and cooked through (internal temp 74°C/165°F).",
+    "Make salad: In a bowl, combine diced cucumber, diced tomatoes, diced red onion, remaining parsley and mint. Add lemon juice (from 1/2 lemon), olive oil (1 tablespoon), a pinch of salt, and black pepper; toss.",
+    "Plate: Spoon bulgur onto plates, top with kofta, add a side of cucumber-tomato salad, and drizzle or dollop the lemon yoghurt. Serve with extra lemon wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1 cup (dry)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups"
+    },
+    {
+      "core_item_name": "turkey",
+      "quantity": "500 g",
+      "preparation": "minced/ground"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 medium",
+      "preparation": "half grated, half finely diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "1 clove",
+      "preparation": "grated"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "finely chopped, divided"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tablespoons",
+      "preparation": "finely chopped, divided"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "3/4 teaspoon",
+      "preparation": "plus a pinch for salad and yogurt"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon + 1 teaspoon",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1/2 cup",
+      "preparation": "mixed with lemon and salt"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowFat"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1 cup (dry)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "turkey",
+      "quantity": "500 g",
+      "preparation": "minced/ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 medium",
+      "preparation": "half grated, half finely diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "1 clove",
+      "preparation": "grated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "finely chopped, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tablespoons",
+      "preparation": "finely chopped, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "3/4 teaspoon",
+      "preparation": "plus a pinch for salad and yogurt",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon + 1 teaspoon",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "2 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1/2 cup",
+      "preparation": "mixed with lemon and salt",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T141042Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T140836Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

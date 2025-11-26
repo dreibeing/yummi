@@ -1,0 +1,257 @@
+{
+  "meal_id": "meal_20251125T164026Z_03_5d94d7",
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "archetype_name": "Family Low-Sodium American & French Comfort (30–60, Mild)",
+  "name": "Pan-Seared Sirloin with Shallot–White Wine Sauce, Parsley Mash, and Lemon Broccoli",
+  "description": "Family-friendly steak night with a light French-style pan sauce, creamy herb mash, and bright broccoli. Seasoned without added salt for a low-sodium, mild, from-scratch dinner.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 200°F (95°C) to keep steak warm.",
+    "Scrub and peel potatoes; cut into 1-inch chunks.",
+    "Finely chop parsley (leaves and tender stems).",
+    "Mince shallots and garlic.",
+    "Zest the lemon, then cut it in half.",
+    "Cut broccoli into florets; peel and slice stems.",
+    "Pat sirloin steak dry with paper towels; season both sides with black pepper."
+  ],
+  "cook_steps": [
+    "Start potatoes: Place potatoes in a pot, cover with cold water by 1 inch, bring to a boil, then simmer until tender, 12–15 minutes.",
+    "Sear steak: Heat 1 tbsp olive oil in a large skillet over medium-high. Sear sirloin steak 3–4 minutes per side (to desired doneness). Transfer to a sheet pan and keep warm in the oven to rest.",
+    "Make pan sauce: Lower skillet to medium, add 1 tsp olive oil if dry. Add shallots and cook 1–2 minutes, then add garlic for 30 seconds. Deglaze with white wine, scraping browned bits. Add mushroom stock and simmer 3–5 minutes to reduce by about half. Turn off heat; whisk in 1 tbsp butter and a squeeze of lemon juice.",
+    "Cook broccoli: In a separate large skillet, add broccoli with 1/4 cup water. Cover and steam 3–4 minutes until crisp-tender. Uncover, add 1 tsp olive oil, lemon zest, and a few grinds of black pepper; toss 1 minute.",
+    "Finish mash: Drain potatoes, return to pot over low heat 30 seconds to dry. Add milk and 1 tbsp butter; mash to desired texture. Stir in chopped parsley and black pepper. If needed, loosen with a splash of hot water.",
+    "Slice steak against the grain. Plate parsley mash and broccoli, top steak with shallot–white wine sauce, and serve."
+  ],
+  "instructions": [
+    "Preheat oven to 200°F (95°C) to keep steak warm.",
+    "Scrub and peel potatoes; cut into 1-inch chunks.",
+    "Finely chop parsley (leaves and tender stems).",
+    "Mince shallots and garlic.",
+    "Zest the lemon, then cut it in half.",
+    "Cut broccoli into florets; peel and slice stems.",
+    "Pat sirloin steak dry with paper towels; season both sides with black pepper.",
+    "Start potatoes: Place potatoes in a pot, cover with cold water by 1 inch, bring to a boil, then simmer until tender, 12–15 minutes.",
+    "Sear steak: Heat 1 tbsp olive oil in a large skillet over medium-high. Sear sirloin steak 3–4 minutes per side (to desired doneness). Transfer to a sheet pan and keep warm in the oven to rest.",
+    "Make pan sauce: Lower skillet to medium, add 1 tsp olive oil if dry. Add shallots and cook 1–2 minutes, then add garlic for 30 seconds. Deglaze with white wine, scraping browned bits. Add mushroom stock and simmer 3–5 minutes to reduce by about half. Turn off heat; whisk in 1 tbsp butter and a squeeze of lemon juice.",
+    "Cook broccoli: In a separate large skillet, add broccoli with 1/4 cup water. Cover and steam 3–4 minutes until crisp-tender. Uncover, add 1 tsp olive oil, lemon zest, and a few grinds of black pepper; toss 1 minute.",
+    "Finish mash: Drain potatoes, return to pot over low heat 30 seconds to dry. Add milk and 1 tbsp butter; mash to desired texture. Stir in chopped parsley and black pepper. If needed, loosen with a splash of hot water.",
+    "Slice steak against the grain. Plate parsley mash and broccoli, top steak with shallot–white wine sauce, and serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "sirloin steak",
+      "quantity": "4 small steaks (about 700 g total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "900 g",
+      "preparation": "peeled and chunked"
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "1/2 cup",
+      "preparation": "warmed if possible"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp divided + 1 tbsp for sauce",
+      "preparation": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and halved"
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "500 g florets",
+      "preparation": "stems sliced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tsp + 1 tbsp for searing",
+      "preparation": null
+    },
+    {
+      "core_item_name": "shallots",
+      "quantity": "2",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup",
+      "preparation": null
+    },
+    {
+      "core_item_name": "mushroom stock",
+      "quantity": "3/4 cup",
+      "preparation": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": null
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "French"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowSodium"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "sirloin steak",
+      "quantity": "4 small steaks (about 700 g total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "900 g",
+      "preparation": "peeled and chunked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "1/2 cup",
+      "preparation": "warmed if possible",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp divided + 1 tbsp for sauce",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "500 g florets",
+      "preparation": "stems sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tsp + 1 tbsp for searing",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "shallots",
+      "quantity": "2",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushroom stock",
+      "quantity": "3/4 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T164309Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T164026Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

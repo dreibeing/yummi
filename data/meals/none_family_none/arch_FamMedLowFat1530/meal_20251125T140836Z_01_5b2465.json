@@ -1,0 +1,254 @@
+{
+  "meal_id": "meal_20251125T140836Z_01_5b2465",
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "archetype_name": "Family Low-Fat Mediterranean Light Plates (15–30, Mild)",
+  "name": "Za’atar Baked Tilapia with Herbed Bulgur Salad",
+  "description": "Oven-baked tilapia seasoned with za’atar and lemon, served over a bright parsley–mint bulgur salad. Light, mild, and ready in under 30 minutes for a Mediterranean-style family dinner.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F.",
+    "Rinse 1 cup bulgur in a fine sieve.",
+    "Finely chop parsley and mint.",
+    "Dice cucumber and tomatoes; finely slice red onion.",
+    "Pat tilapia dry with paper towels.",
+    "Halve the lemon; cut a few thin slices from one half, and juice the rest."
+  ],
+  "cook_steps": [
+    "Bring vegetable stock to a boil in a medium pot on the stovetop; add bulgur, reduce heat to low, cover, and simmer 10–12 minutes until tender. Remove from heat and fluff.",
+    "Lightly oil a baking tray with 1 tsp olive oil. Place tilapia on the tray; brush with 2 tsp olive oil, sprinkle with za’atar, sumac, a pinch of salt and black pepper, and top with a few lemon slices.",
+    "Bake tilapia for 8–10 minutes until the fish flakes easily.",
+    "In a large bowl, combine warm bulgur with parsley, mint, cucumber, tomatoes, and red onion. Add remaining olive oil and lemon juice; season with salt and black pepper to taste. Toss to coat.",
+    "Plate the herbed bulgur salad and top with baked tilapia. Serve immediately."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F.",
+    "Rinse 1 cup bulgur in a fine sieve.",
+    "Finely chop parsley and mint.",
+    "Dice cucumber and tomatoes; finely slice red onion.",
+    "Pat tilapia dry with paper towels.",
+    "Halve the lemon; cut a few thin slices from one half, and juice the rest.",
+    "Bring vegetable stock to a boil in a medium pot on the stovetop; add bulgur, reduce heat to low, cover, and simmer 10–12 minutes until tender. Remove from heat and fluff.",
+    "Lightly oil a baking tray with 1 tsp olive oil. Place tilapia on the tray; brush with 2 tsp olive oil, sprinkle with za’atar, sumac, a pinch of salt and black pepper, and top with a few lemon slices.",
+    "Bake tilapia for 8–10 minutes until the fish flakes easily.",
+    "In a large bowl, combine warm bulgur with parsley, mint, cucumber, tomatoes, and red onion. Add remaining olive oil and lemon juice; season with salt and black pepper to taste. Toss to coat.",
+    "Plate the herbed bulgur salad and top with baked tilapia. Serve immediately."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1 cup (dry)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups",
+      "preparation": "brought to a boil"
+    },
+    {
+      "core_item_name": "tilapia",
+      "quantity": "4 fillets (500–700 g total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "za'atar",
+      "quantity": "1.5 tbsp",
+      "preparation": "divided over fillets"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 tsp",
+      "preparation": "optional, for the fish"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "thin slices and juice"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1 cup",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/4 cup",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/4 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 tsp",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 tsp",
+      "preparation": "plus more to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowFat"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1 cup (dry)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups",
+      "preparation": "brought to a boil",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tilapia",
+      "quantity": "4 fillets (500–700 g total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "za'atar",
+      "quantity": "1.5 tbsp",
+      "preparation": "divided over fillets",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 tsp",
+      "preparation": "optional, for the fish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "thin slices and juice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1 cup",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/4 cup",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "2 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/4 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 tsp",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 tsp",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T140915Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T140836Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

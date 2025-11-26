@@ -1,0 +1,309 @@
+{
+  "meal_id": "meal_20251125T170648Z_03_71ee94",
+  "archetype_uid": "arch_FamLatComfort3060",
+  "archetype_name": "Family Latin Comfort (Mild, 30–60, Intermediate)",
+  "name": "Family Citrus-Garlic Chicken Rice & Beans Bowls (Mild)",
+  "description": "Seared lime-garlic chicken thighs served over fluffy rice with black beans and corn, finished with fresh coriander and avocado. Comforting Latin flavors with gentle seasoning for the whole family.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 200°C/400°F.",
+    "Rinse 1 1/2 cups jasmine rice until water runs clear; drain well.",
+    "Drain and rinse black beans; drain corn.",
+    "Finely chop 1 onion and 1 bell pepper; mince 3 cloves garlic.",
+    "Zest and juice 1 lime (keep separate).",
+    "Pat dry 4 chicken thighs; season both sides with salt, black pepper, ground cumin, oregano, and paprika.",
+    "Roughly chop a small handful of coriander; slice 1 avocado just before serving."
+  ],
+  "cook_steps": [
+    "Heat 1 tablespoon olive oil in an oven-safe skillet over medium-high. Sear chicken thighs 3–4 minutes per side until browned. Remove to a plate.",
+    "Lower heat to medium. Add 1 tablespoon olive oil, chopped onion and bell pepper; cook 3–4 minutes until softened. Add minced garlic; cook 30 seconds.",
+    "Stir in 1/2 teaspoon ground cumin, 1/2 teaspoon oregano, and 1/2 teaspoon paprika; cook 30 seconds to bloom spices.",
+    "Return chicken to the skillet. Add half the lime zest and 1/2 of the lime juice. Transfer skillet to the oven and bake 15–20 minutes, until chicken is cooked through.",
+    "While chicken bakes, combine rinsed rice, 2 cups chicken stock, 1 bay leaf, and a pinch of salt in a pot. Bring to a boil, then reduce to low, cover, and simmer 12–15 minutes until liquid is absorbed. Rest covered 5 minutes; discard bay leaf and fluff.",
+    "In a small saucepan over low heat, warm black beans and corn with a pinch of salt and black pepper until hot, 3–4 minutes.",
+    "Slice or chop cooked chicken. Toss skillet juices with remaining lime juice and zest to make a mild pan sauce.",
+    "Assemble bowls: add a bed of rice, spoon over beans and corn, top with chicken, drizzle pan sauce, and finish with chopped coriander and avocado slices."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C/400°F.",
+    "Rinse 1 1/2 cups jasmine rice until water runs clear; drain well.",
+    "Drain and rinse black beans; drain corn.",
+    "Finely chop 1 onion and 1 bell pepper; mince 3 cloves garlic.",
+    "Zest and juice 1 lime (keep separate).",
+    "Pat dry 4 chicken thighs; season both sides with salt, black pepper, ground cumin, oregano, and paprika.",
+    "Roughly chop a small handful of coriander; slice 1 avocado just before serving.",
+    "Heat 1 tablespoon olive oil in an oven-safe skillet over medium-high. Sear chicken thighs 3–4 minutes per side until browned. Remove to a plate.",
+    "Lower heat to medium. Add 1 tablespoon olive oil, chopped onion and bell pepper; cook 3–4 minutes until softened. Add minced garlic; cook 30 seconds.",
+    "Stir in 1/2 teaspoon ground cumin, 1/2 teaspoon oregano, and 1/2 teaspoon paprika; cook 30 seconds to bloom spices.",
+    "Return chicken to the skillet. Add half the lime zest and 1/2 of the lime juice. Transfer skillet to the oven and bake 15–20 minutes, until chicken is cooked through.",
+    "While chicken bakes, combine rinsed rice, 2 cups chicken stock, 1 bay leaf, and a pinch of salt in a pot. Bring to a boil, then reduce to low, cover, and simmer 12–15 minutes until liquid is absorbed. Rest covered 5 minutes; discard bay leaf and fluff.",
+    "In a small saucepan over low heat, warm black beans and corn with a pinch of salt and black pepper until hot, 3–4 minutes.",
+    "Slice or chop cooked chicken. Toss skillet juices with remaining lime juice and zest to make a mild pan sauce.",
+    "Assemble bowls: add a bed of rice, spoon over beans and corn, top with chicken, drizzle pan sauce, and finish with chopped coriander and avocado slices."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "4 large (about 800–900 g)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 medium",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 teaspoon, divided",
+      "preparation": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1/2 teaspoon",
+      "preparation": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null
+    },
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1 1/2 cups (uncooked)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "2 cups",
+      "preparation": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "1",
+      "preparation": null
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (400 g), drained and rinsed",
+      "preparation": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "1 cup (canned or thawed)",
+      "preparation": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1",
+      "preparation": "sliced"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "LatinAmerican",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "4 large (about 800–900 g)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 medium",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 teaspoon, divided",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1 1/2 cups (uncooked)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "2 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "1",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (400 g), drained and rinsed",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "1 cup (canned or thawed)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T170931Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T170648Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

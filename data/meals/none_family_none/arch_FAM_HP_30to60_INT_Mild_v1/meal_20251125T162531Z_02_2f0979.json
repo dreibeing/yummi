@@ -1,0 +1,262 @@
+{
+  "meal_id": "meal_20251125T162531Z_02_2f0979",
+  "archetype_uid": "arch_FAM_HP_30to60_INT_Mild_v1",
+  "archetype_name": "Family High-Protein Dinners (30–60, Mild, Intermediate)",
+  "name": "Turkish-Style Beef & Lentil Stuffed Peppers with Brown Basmati-Quinoa Pilaf",
+  "description": "Bell peppers filled with a mild spiced beef and lentil tomato mixture, baked until tender and served with a brown basmati-quinoa pilaf. A balanced, high-protein family plate with gentle seasoning.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 200°C (390°F).",
+    "Rinse 1.5 cups brown basmati rice with quinoa under cold water until it runs clear.",
+    "Halve 4 bell peppers lengthwise and remove seeds and membranes.",
+    "Peel and finely chop 1 large onions.",
+    "Peel and mince 3 cloves garlic.",
+    "Rinse 1 cup lentils under cold water.",
+    "Roughly chop 1/2 cup parsley."
+  ],
+  "cook_steps": [
+    "Place bell pepper halves cut-side up on a baking tray, brush with 1 tsp olive oil, and bake for 10 minutes to soften.",
+    "Heat 1 tbsp olive oil in a large stove-top pan over medium heat. Add onions and cook 3–4 minutes until translucent.",
+    "Add garlic and cook 30 seconds until fragrant.",
+    "Add 500 g minced beef, 1 tsp salt, and 1/4 tsp black pepper. Cook 4–5 minutes, breaking up meat until no longer pink.",
+    "Stir in 1.5 tsp ground cumin and 1 tsp paprika; cook 30 seconds.",
+    "Add 400 g diced tomatoes, rinsed lentils, and 1 cup water. Bring to a simmer, then reduce heat to medium-low and cook 18–22 minutes, stirring occasionally, until lentils are just tender and mixture is thick. Adjust seasoning with salt and black pepper to taste.",
+    "While filling simmers, add rinsed brown basmati rice with quinoa to a pot with 3 cups water and a pinch of salt. Bring to a boil, reduce to low, cover, and cook 18–22 minutes until tender; rest 5 minutes covered, then fluff.",
+    "Stir chopped parsley into the beef-lentil mixture.",
+    "Spoon the filling into the par-baked bell pepper halves. Drizzle with 1 tsp olive oil.",
+    "Return stuffed peppers to the oven and bake 10–12 minutes until peppers are tender and tops slightly caramelized.",
+    "Serve stuffed peppers alongside fluffed brown basmati-quinoa pilaf."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C (390°F).",
+    "Rinse 1.5 cups brown basmati rice with quinoa under cold water until it runs clear.",
+    "Halve 4 bell peppers lengthwise and remove seeds and membranes.",
+    "Peel and finely chop 1 large onions.",
+    "Peel and mince 3 cloves garlic.",
+    "Rinse 1 cup lentils under cold water.",
+    "Roughly chop 1/2 cup parsley.",
+    "Place bell pepper halves cut-side up on a baking tray, brush with 1 tsp olive oil, and bake for 10 minutes to soften.",
+    "Heat 1 tbsp olive oil in a large stove-top pan over medium heat. Add onions and cook 3–4 minutes until translucent.",
+    "Add garlic and cook 30 seconds until fragrant.",
+    "Add 500 g minced beef, 1 tsp salt, and 1/4 tsp black pepper. Cook 4–5 minutes, breaking up meat until no longer pink.",
+    "Stir in 1.5 tsp ground cumin and 1 tsp paprika; cook 30 seconds.",
+    "Add 400 g diced tomatoes, rinsed lentils, and 1 cup water. Bring to a simmer, then reduce heat to medium-low and cook 18–22 minutes, stirring occasionally, until lentils are just tender and mixture is thick. Adjust seasoning with salt and black pepper to taste.",
+    "While filling simmers, add rinsed brown basmati rice with quinoa to a pot with 3 cups water and a pinch of salt. Bring to a boil, reduce to low, cover, and cook 18–22 minutes until tender; rest 5 minutes covered, then fluff.",
+    "Stir chopped parsley into the beef-lentil mixture.",
+    "Spoon the filling into the par-baked bell pepper halves. Drizzle with 1 tsp olive oil.",
+    "Return stuffed peppers to the oven and bake 10–12 minutes until peppers are tender and tops slightly caramelized.",
+    "Serve stuffed peppers alongside fluffed brown basmati-quinoa pilaf."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "4 large",
+      "preparation": "halved, seeded"
+    },
+    {
+      "core_item_name": "minced beef",
+      "quantity": "500 g",
+      "preparation": "crumbled"
+    },
+    {
+      "core_item_name": "lentils",
+      "quantity": "1 cup (about 200 g)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "400 g",
+      "preparation": "canned or boxed"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1.5 teaspoons"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 teaspoons for peppers + 1 tablespoon for filling"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.25 teaspoons, plus to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon, plus to taste"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "brown basmati rice with quinoa",
+      "quantity": "1.5 cups (dry)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "about 4 cups total",
+      "preparation": "divided for filling and pilaf"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "4 large",
+      "preparation": "halved, seeded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "minced beef",
+      "quantity": "500 g",
+      "preparation": "crumbled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lentils",
+      "quantity": "1 cup (about 200 g)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "400 g",
+      "preparation": "canned or boxed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1.5 teaspoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 teaspoons for peppers + 1 tablespoon for filling",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.25 teaspoons, plus to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon, plus to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown basmati rice with quinoa",
+      "quantity": "1.5 cups (dry)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "about 4 cups total",
+      "preparation": "divided for filling and pilaf",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T162712Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T162531Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

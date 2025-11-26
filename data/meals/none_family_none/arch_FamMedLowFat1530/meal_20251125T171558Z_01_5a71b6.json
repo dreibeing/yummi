@@ -1,0 +1,260 @@
+{
+  "meal_id": "meal_20251125T171558Z_01_5a71b6",
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "archetype_name": "Family Low-Fat Mediterranean Light Plates (15–30, Mild)",
+  "name": "Fasolakia-Style Green Beans & Chickpeas over Brown Basmati",
+  "description": "A quick, low-fat Greek-inspired tomato braise of green beans, potatoes, and chickpeas served over brown basmati with lemon and parsley. Mild, family-friendly, and fiber-rich.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1.5 cups brown basmati rice until water runs clear.",
+    "Trim ends of 500 g green beans; cut into 5 cm pieces.",
+    "Peel and dice 2 medium potatoes into 1.5 cm cubes.",
+    "Peel and finely chop 1 medium onion.",
+    "Peel and mince 3 cloves garlic.",
+    "Roughly chop 1/4 cup parsley.",
+    "Zest and halve 1 lemon; set aside for finishing.",
+    "Measure vegetable stock: 3 cups for rice, plus 1 cup for the braise."
+  ],
+  "cook_steps": [
+    "Add 3 cups vegetable stock to a pot; bring to a boil. Stir in rinsed brown basmati rice, reduce to low, cover, and simmer until tender (about 20–25 minutes). Keep covered off heat.",
+    "While rice cooks, heat 1 tablespoon olive oil in a wide pot over medium heat.",
+    "Sauté onions with a pinch of salt until translucent, 3–4 minutes. Add garlic and cook 30 seconds.",
+    "Add diced potatoes and 1/2 cup vegetable stock; cover and steam-sauté 4 minutes to start softening.",
+    "Stir in green beans, diced tomatoes (with juices), remaining 1/2 cup vegetable stock, oregano, salt, and black pepper. Bring to a simmer, cover, and cook 10–12 minutes until beans and potatoes are tender.",
+    "Fold in drained chickpeas and warm 2–3 minutes. Turn off heat; add lemon zest, 2 tablespoons lemon juice, and parsley. Adjust salt and pepper to taste.",
+    "Fluff rice. Spoon braised vegetables and chickpeas over rice and serve."
+  ],
+  "instructions": [
+    "Rinse 1.5 cups brown basmati rice until water runs clear.",
+    "Trim ends of 500 g green beans; cut into 5 cm pieces.",
+    "Peel and dice 2 medium potatoes into 1.5 cm cubes.",
+    "Peel and finely chop 1 medium onion.",
+    "Peel and mince 3 cloves garlic.",
+    "Roughly chop 1/4 cup parsley.",
+    "Zest and halve 1 lemon; set aside for finishing.",
+    "Measure vegetable stock: 3 cups for rice, plus 1 cup for the braise.",
+    "Add 3 cups vegetable stock to a pot; bring to a boil. Stir in rinsed brown basmati rice, reduce to low, cover, and simmer until tender (about 20–25 minutes). Keep covered off heat.",
+    "While rice cooks, heat 1 tablespoon olive oil in a wide pot over medium heat.",
+    "Sauté onions with a pinch of salt until translucent, 3–4 minutes. Add garlic and cook 30 seconds.",
+    "Add diced potatoes and 1/2 cup vegetable stock; cover and steam-sauté 4 minutes to start softening.",
+    "Stir in green beans, diced tomatoes (with juices), remaining 1/2 cup vegetable stock, oregano, salt, and black pepper. Bring to a simmer, cover, and cook 10–12 minutes until beans and potatoes are tender.",
+    "Fold in drained chickpeas and warm 2–3 minutes. Turn off heat; add lemon zest, 2 tablespoons lemon juice, and parsley. Adjust salt and pepper to taste.",
+    "Fluff rice. Spoon braised vegetables and chickpeas over rice and serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "4 cups",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "2 medium",
+      "preparation": "diced 1.5 cm"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "500 g",
+      "preparation": "trimmed, cut into 5 cm pieces"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (400 g)"
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "1 can (400 g)",
+      "preparation": "drained and rinsed"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "3/4 teaspoon",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowFat"
+    ],
+    "Equipment": [
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "4 cups",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "2 medium",
+      "preparation": "diced 1.5 cm",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "500 g",
+      "preparation": "trimmed, cut into 5 cm pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (400 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "1 can (400 g)",
+      "preparation": "drained and rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "3/4 teaspoon",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [
+    "Category 'Equipment' ideally includes 2+ tags; received ['StoveTop']",
+    "Category 'MealComponentPreference' ideally includes 2+ tags; received ['FromScratch']"
+  ],
+  "metadata": {
+    "created_at": "20251125T171639Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T171558Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

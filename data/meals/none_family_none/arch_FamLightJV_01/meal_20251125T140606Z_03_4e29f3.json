@@ -1,0 +1,258 @@
+{
+  "meal_id": "meal_20251125T140606Z_03_4e29f3",
+  "archetype_uid": "arch_FamLightJV_01",
+  "archetype_name": "Family Light & Fresh: Japanese and Vietnamese Weeknights",
+  "name": "Citrus-Herb Chicken Rice Noodle Stir-Fry (No Soy)",
+  "description": "Light, tangy chicken and mixed vegetables tossed with rice noodles in a lime–rice vinegar glaze, finished with fresh coriander. Made fully soy-free and family-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Bring 4 cups water to a boil (kettle or microwave in a large, microwave-safe bowl).",
+    "Soak rice noodles in the hot water until just tender, 6–8 minutes; drain and rinse with cold water.",
+    "In a bowl, whisk rice vinegar, juice of 1 lime, honey, cornflour, 1/2 cup water, and a pinch of salt and black pepper to make the glaze.",
+    "Trim excess fat and slice chicken thighs into thin strips.",
+    "Finely chop garlic and slice spring onion.",
+    "Rinse and roughly chop coriander."
+  ],
+  "cook_steps": [
+    "Heat canola oil in a large skillet or wok over medium-high heat.",
+    "Season chicken lightly with salt and black pepper, then stir-fry until just cooked through and lightly browned, 4–5 minutes; transfer to a plate.",
+    "Add a little more canola oil if needed. Stir-fry stir-fry vegetables for 2–3 minutes until crisp-tender.",
+    "Add garlic and spring onion; cook 30 seconds until fragrant.",
+    "Return chicken to the pan. Whisk the glaze, then pour it in; stir until it bubbles and thickens, 30–60 seconds.",
+    "Add drained rice noodles and toss to coat evenly. If too thick, splash in 1–2 tablespoons water.",
+    "Turn off heat, stir in most of the coriander, and squeeze over the remaining lime to taste.",
+    "Taste and adjust salt and black pepper. Serve hot, topped with the remaining coriander."
+  ],
+  "instructions": [
+    "Bring 4 cups water to a boil (kettle or microwave in a large, microwave-safe bowl).",
+    "Soak rice noodles in the hot water until just tender, 6–8 minutes; drain and rinse with cold water.",
+    "In a bowl, whisk rice vinegar, juice of 1 lime, honey, cornflour, 1/2 cup water, and a pinch of salt and black pepper to make the glaze.",
+    "Trim excess fat and slice chicken thighs into thin strips.",
+    "Finely chop garlic and slice spring onion.",
+    "Rinse and roughly chop coriander.",
+    "Heat canola oil in a large skillet or wok over medium-high heat.",
+    "Season chicken lightly with salt and black pepper, then stir-fry until just cooked through and lightly browned, 4–5 minutes; transfer to a plate.",
+    "Add a little more canola oil if needed. Stir-fry stir-fry vegetables for 2–3 minutes until crisp-tender.",
+    "Add garlic and spring onion; cook 30 seconds until fragrant.",
+    "Return chicken to the pan. Whisk the glaze, then pour it in; stir until it bubbles and thickens, 30–60 seconds.",
+    "Add drained rice noodles and toss to coat evenly. If too thick, splash in 1–2 tablespoons water.",
+    "Turn off heat, stir in most of the coriander, and squeeze over the remaining lime to taste.",
+    "Taste and adjust salt and black pepper. Serve hot, topped with the remaining coriander."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "rice noodles",
+      "quantity": "10–12 oz",
+      "preparation": "soaked and drained"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1 lb",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "stir-fry vegetables",
+      "quantity": "4 cups",
+      "preparation": "use as is"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3 stalks",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "3 tablespoons",
+      "preparation": "for glaze"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1–2",
+      "preparation": "juiced, plus wedges if desired"
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tablespoon",
+      "preparation": "whisked into glaze"
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "2 teaspoons",
+      "preparation": "whisked into glaze"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1–2 tablespoons",
+      "preparation": "for stir-frying"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": "for soaking noodles and adjusting sauce"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Japanese",
+      "Vietnamese"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowCalorie"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "rice noodles",
+      "quantity": "10–12 oz",
+      "preparation": "soaked and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1 lb",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "stir-fry vegetables",
+      "quantity": "4 cups",
+      "preparation": "use as is",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3 stalks",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "3 tablespoons",
+      "preparation": "for glaze",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1–2",
+      "preparation": "juiced, plus wedges if desired",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tablespoon",
+      "preparation": "whisked into glaze",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "2 teaspoons",
+      "preparation": "whisked into glaze",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1–2 tablespoons",
+      "preparation": "for stir-frying",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": "for soaking noodles and adjusting sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T140836Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T140606Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

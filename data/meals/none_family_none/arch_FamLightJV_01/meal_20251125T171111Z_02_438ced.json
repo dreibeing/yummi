@@ -1,0 +1,236 @@
+{
+  "meal_id": "meal_20251125T171111Z_02_438ced",
+  "archetype_uid": "arch_FamLightJV_01",
+  "archetype_name": "Family Light & Fresh: Japanese and Vietnamese Weeknights",
+  "name": "Ponzu-Lime Tilapia with Bok Choy Rice Bowls",
+  "description": "Light, citrusy tilapia seared and glazed with ponzu, served over jasmine rice with tender bok choy and carrots. Mild and weeknight-simple with Japanese/Vietnamese cues.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1.5 cups jasmine rice until water runs clear.",
+    "Trim and slice 2 heads bok choy (separate thick stems and leafy tops).",
+    "Peel and thinly slice 2 carrots.",
+    "Mince 2 cloves garlic.",
+    "Slice 2 spring onion.",
+    "Pat dry tilapia fillets (about 500–600 g total); season both sides with salt and black pepper.",
+    "Halve 1 lime; cut one half into wedges for serving, keep half for juice.",
+    "Stir together 4 tbsp ponzu sauce with the juice from half a lime in a small bowl."
+  ],
+  "cook_steps": [
+    "Cook rice: Add rinsed jasmine rice and 3 cups water to a pot. Bring to a boil, reduce to low, cover, and simmer 12–15 minutes until tender. Rest covered 5 minutes, fluff with a fork.",
+    "Vegetables (stovetop): Heat 1 tsp canola oil in a large pan over medium. Add carrot slices and bok choy stems with a pinch of salt; sauté 2–3 minutes. Add garlic and bok choy leaves; cook 1–2 minutes until just tender. Transfer to a plate.",
+    "Optional microwave assist: Place carrots and bok choy stems in a microwave-safe bowl with 1 tbsp water, cover, and microwave 1–2 minutes to start softening; then finish with leaves and garlic in the pan for 1–2 minutes.",
+    "Cook tilapia: Wipe the pan, add 2 tsp canola oil over medium-high. Add seasoned tilapia; sear 2–3 minutes per side until opaque and flakes easily.",
+    "Glaze: Lower heat to medium. Pour ponzu-lime mixture around the fish; simmer 30–60 seconds, spooning over fillets until lightly glazed. Remove from heat.",
+    "Assemble bowls: Divide rice into 4 bowls. Top with vegetables and a tilapia fillet. Spoon any remaining pan sauce over. Garnish with spring onion and lime wedges."
+  ],
+  "instructions": [
+    "Rinse 1.5 cups jasmine rice until water runs clear.",
+    "Trim and slice 2 heads bok choy (separate thick stems and leafy tops).",
+    "Peel and thinly slice 2 carrots.",
+    "Mince 2 cloves garlic.",
+    "Slice 2 spring onion.",
+    "Pat dry tilapia fillets (about 500–600 g total); season both sides with salt and black pepper.",
+    "Halve 1 lime; cut one half into wedges for serving, keep half for juice.",
+    "Stir together 4 tbsp ponzu sauce with the juice from half a lime in a small bowl.",
+    "Cook rice: Add rinsed jasmine rice and 3 cups water to a pot. Bring to a boil, reduce to low, cover, and simmer 12–15 minutes until tender. Rest covered 5 minutes, fluff with a fork.",
+    "Vegetables (stovetop): Heat 1 tsp canola oil in a large pan over medium. Add carrot slices and bok choy stems with a pinch of salt; sauté 2–3 minutes. Add garlic and bok choy leaves; cook 1–2 minutes until just tender. Transfer to a plate.",
+    "Optional microwave assist: Place carrots and bok choy stems in a microwave-safe bowl with 1 tbsp water, cover, and microwave 1–2 minutes to start softening; then finish with leaves and garlic in the pan for 1–2 minutes.",
+    "Cook tilapia: Wipe the pan, add 2 tsp canola oil over medium-high. Add seasoned tilapia; sear 2–3 minutes per side until opaque and flakes easily.",
+    "Glaze: Lower heat to medium. Pour ponzu-lime mixture around the fish; simmer 30–60 seconds, spooning over fillets until lightly glazed. Remove from heat.",
+    "Assemble bowls: Divide rice into 4 bowls. Top with vegetables and a tilapia fillet. Spoon any remaining pan sauce over. Garnish with spring onion and lime wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "2 heads",
+      "preparation": "stems and leaves separated, sliced"
+    },
+    {
+      "core_item_name": "carrot",
+      "quantity": "2 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "tilapia",
+      "quantity": "4 fillets (500–600 g total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "ponzu sauce",
+      "quantity": "4 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "half juiced, half cut into wedges"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "3 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": ""
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Japanese",
+      "Vietnamese"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowCalorie"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "2 heads",
+      "preparation": "stems and leaves separated, sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrot",
+      "quantity": "2 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tilapia",
+      "quantity": "4 fillets (500–600 g total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ponzu sauce",
+      "quantity": "4 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "half juiced, half cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "3 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T171309Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T171111Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

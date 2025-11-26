@@ -1,0 +1,332 @@
+{
+  "meal_id": "meal_20251125T165650Z_03_2277d5",
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "archetype_name": "Family Turkish & North African Suppers (Medium, 30–60, Intermediate)",
+  "name": "Spinach & Feta Borek with Sumac Tomato-Cucumber Salad and Garlic Yoghurt",
+  "description": "Crisp oven-baked phyllo borek filled with spinach, feta, herbs, and gentle chili heat, served with a bright sumac tomato-cucumber salad and cooling garlic yoghurt.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 200°C (390°F).",
+    "Line a large baking tray with baking paper and set aside.",
+    "Finely chop 1 medium onion.",
+    "Squeeze excess moisture from 400 g spinach if watery.",
+    "Crumble 200 g feta cheese into a bowl.",
+    "Beat 2 eggs in a small bowl.",
+    "Finely chop 2 tbsp mint and 1/4 cup parsley.",
+    "Dice 3 tomatoes and 1 cucumber; thinly slice 1/4 red onion for the salad.",
+    "Crush 1 garlic clove for the yoghurt.",
+    "Lay out 8–10 sheets of phyllo pastry and cover with a clean towel to prevent drying."
+  ],
+  "cook_steps": [
+    "Warm 2 tbsp olive oil in a skillet over medium heat. Add chopped onion and cook 4–5 minutes until translucent.",
+    "Add spinach, 1/2 tsp black pepper, 1/2 tsp salt, and 1 tsp chili flakes. Cook 2–3 minutes to drive off moisture. Cool 5 minutes.",
+    "Stir in crumbled feta, beaten eggs, chopped mint, and half the parsley to make the filling.",
+    "Assemble borek: Lay 2 sheets phyllo on the tray, brush lightly with 1–2 tbsp olive oil; repeat to create a 4-sheet base. Spread the filling evenly, leaving a 2 cm border.",
+    "Top with remaining phyllo sheets, brushing each with olive oil. Tuck edges to seal. Brush the top with 1 tbsp olive oil and sprinkle 1 tbsp sesame seeds.",
+    "Bake 25–35 minutes until deep golden and crisp. Rest 5 minutes before slicing.",
+    "Make salad: In a bowl, combine tomatoes, cucumber, red onion, remaining parsley, 1 tsp sumac, juice of 1 lemon, 2 tbsp olive oil, and a pinch of salt. Toss and set aside.",
+    "Make garlic yoghurt: Mix 1 cup yoghurt with crushed garlic, a pinch of salt, and a drizzle of olive oil.",
+    "Slice borek into squares. Serve with salad and a spoon of garlic yoghurt."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C (390°F).",
+    "Line a large baking tray with baking paper and set aside.",
+    "Finely chop 1 medium onion.",
+    "Squeeze excess moisture from 400 g spinach if watery.",
+    "Crumble 200 g feta cheese into a bowl.",
+    "Beat 2 eggs in a small bowl.",
+    "Finely chop 2 tbsp mint and 1/4 cup parsley.",
+    "Dice 3 tomatoes and 1 cucumber; thinly slice 1/4 red onion for the salad.",
+    "Crush 1 garlic clove for the yoghurt.",
+    "Lay out 8–10 sheets of phyllo pastry and cover with a clean towel to prevent drying.",
+    "Warm 2 tbsp olive oil in a skillet over medium heat. Add chopped onion and cook 4–5 minutes until translucent.",
+    "Add spinach, 1/2 tsp black pepper, 1/2 tsp salt, and 1 tsp chili flakes. Cook 2–3 minutes to drive off moisture. Cool 5 minutes.",
+    "Stir in crumbled feta, beaten eggs, chopped mint, and half the parsley to make the filling.",
+    "Assemble borek: Lay 2 sheets phyllo on the tray, brush lightly with 1–2 tbsp olive oil; repeat to create a 4-sheet base. Spread the filling evenly, leaving a 2 cm border.",
+    "Top with remaining phyllo sheets, brushing each with olive oil. Tuck edges to seal. Brush the top with 1 tbsp olive oil and sprinkle 1 tbsp sesame seeds.",
+    "Bake 25–35 minutes until deep golden and crisp. Rest 5 minutes before slicing.",
+    "Make salad: In a bowl, combine tomatoes, cucumber, red onion, remaining parsley, 1 tsp sumac, juice of 1 lemon, 2 tbsp olive oil, and a pinch of salt. Toss and set aside.",
+    "Make garlic yoghurt: Mix 1 cup yoghurt with crushed garlic, a pinch of salt, and a drizzle of olive oil.",
+    "Slice borek into squares. Serve with salad and a spoon of garlic yoghurt."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "phyllo pastry",
+      "quantity": "8–10 sheets (about 300 g)",
+      "preparation": "kept covered to prevent drying"
+    },
+    {
+      "core_item_name": "spinach",
+      "quantity": "400 g",
+      "preparation": "excess moisture squeezed if needed"
+    },
+    {
+      "core_item_name": "feta cheese",
+      "quantity": "200 g",
+      "preparation": "crumbled"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "2",
+      "preparation": "beaten"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tbsp",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped, divided"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "6 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "plus more to taste, divided"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 tsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "1 tbsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "3 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/4",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 tsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "1 clove",
+      "preparation": "crushed"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "NorthAfrican",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Egg",
+      "Gluten",
+      "Sesame"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "phyllo pastry",
+      "quantity": "8–10 sheets (about 300 g)",
+      "preparation": "kept covered to prevent drying",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spinach",
+      "quantity": "400 g",
+      "preparation": "excess moisture squeezed if needed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "feta cheese",
+      "quantity": "200 g",
+      "preparation": "crumbled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "2",
+      "preparation": "beaten",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tbsp",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "6 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "plus more to taste, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "3 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/4",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "1 clove",
+      "preparation": "crushed",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T170011Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T165650Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

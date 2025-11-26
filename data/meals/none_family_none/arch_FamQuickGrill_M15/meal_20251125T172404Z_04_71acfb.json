@@ -1,0 +1,221 @@
+{
+  "meal_id": "meal_20251125T172404Z_04_71acfb",
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "archetype_name": "Family Quick Grill & Salad Nights (Mild, 15–30)",
+  "name": "Grilled Ostrich with Chimichurri, Veg Skewers & Quick Cucumber Salad",
+  "description": "Fast braai-seared ostrich fillet with chimichurri, grilled courgette and peppers, jasmine rice, and a crunchy cucumber side. Mild, simple, and family-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat OutdoorGrill to medium-high heat.",
+    "Rinse jasmine rice under cold water until it runs clear.",
+    "Slice courgette into 1 cm thick rounds; cut bell peppers into chunky strips.",
+    "Slice cucumber into half-moons.",
+    "Pat ostrich fillet dry; brush lightly with olive oil and season with salt and black pepper.",
+    "In a bowl, toss cucumber with lemon juice, 1 tsp olive oil, and apple cider vinegar; set aside.",
+    "Brush courgette and bell peppers with olive oil; season with a pinch of salt."
+  ],
+  "cook_steps": [
+    "Cook jasmine rice on the StoveTop according to pack directions (about 12–15 minutes), then keep warm.",
+    "Place ostrich fillet on the hot grill; cook 3–4 minutes per side for medium-rare (adjust to preference).",
+    "Grill courgette and bell peppers alongside the ostrich, 3–5 minutes, turning until tender with light char.",
+    "Rest ostrich 5 minutes, then slice across the grain.",
+    "Plate rice, add grilled vegetables, and top ostrich slices with chimichurri.",
+    "Serve with the cucumber salad on the side."
+  ],
+  "instructions": [
+    "Preheat OutdoorGrill to medium-high heat.",
+    "Rinse jasmine rice under cold water until it runs clear.",
+    "Slice courgette into 1 cm thick rounds; cut bell peppers into chunky strips.",
+    "Slice cucumber into half-moons.",
+    "Pat ostrich fillet dry; brush lightly with olive oil and season with salt and black pepper.",
+    "In a bowl, toss cucumber with lemon juice, 1 tsp olive oil, and apple cider vinegar; set aside.",
+    "Brush courgette and bell peppers with olive oil; season with a pinch of salt.",
+    "Cook jasmine rice on the StoveTop according to pack directions (about 12–15 minutes), then keep warm.",
+    "Place ostrich fillet on the hot grill; cook 3–4 minutes per side for medium-rare (adjust to preference).",
+    "Grill courgette and bell peppers alongside the ostrich, 3–5 minutes, turning until tender with light char.",
+    "Rest ostrich 5 minutes, then slice across the grain.",
+    "Plate rice, add grilled vegetables, and top ostrich slices with chimichurri.",
+    "Serve with the cucumber salad on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "ostrich fillet",
+      "quantity": "800 g",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "chimichurri",
+      "quantity": "1/2 cup",
+      "preparation": "for serving"
+    },
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "courgette",
+      "quantity": "2 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "cut into strips"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tbsp",
+      "preparation": "for salad"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "plus a pinch for veg"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "for seasoning"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "ostrich fillet",
+      "quantity": "800 g",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chimichurri",
+      "quantity": "1/2 cup",
+      "preparation": "for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "courgette",
+      "quantity": "2 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "cut into strips",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tbsp",
+      "preparation": "for salad",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "plus a pinch for veg",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "for seasoning",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T172834Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T172404Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

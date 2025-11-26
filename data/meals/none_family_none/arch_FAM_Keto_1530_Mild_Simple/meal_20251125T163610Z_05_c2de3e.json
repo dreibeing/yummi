@@ -1,0 +1,230 @@
+{
+  "meal_id": "meal_20251125T163610Z_05_c2de3e",
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "archetype_name": "Family Keto Weeknight Plates (Mild, 15–30, Simple)",
+  "name": "Creamy Lemon Garlic Chicken Thighs with Spinach & Artichokes",
+  "description": "Quick-seared chicken thighs finished in a mild, creamy lemon-garlic sauce with wilted spinach and artichokes, plus a fast sautéed zucchini side. Family-friendly, keto, and weeknight simple.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F.",
+    "Pat dry chicken thigh fillets with paper towels.",
+    "Mince garlic.",
+    "Drain and roughly chop artichokes.",
+    "Zest and halve the lemon.",
+    "Trim zucchini and slice into thin ribbons or half-moons.",
+    "Measure out cream and parmesan cheese.",
+    "Season chicken on both sides with salt and black pepper."
+  ],
+  "cook_steps": [
+    "Heat 1 tbsp olive oil in a large oven-safe skillet over medium-high heat.",
+    "Sear chicken thigh fillets 3–4 minutes per side until golden.",
+    "Transfer skillet to the oven and bake 6–8 minutes until chicken is cooked through; set chicken on a plate and keep warm.",
+    "Return the skillet to the stove over medium heat; add 1 tbsp olive oil and the garlic. Cook 30 seconds until fragrant.",
+    "Pour in cream, add lemon zest, and stir in parmesan cheese. Simmer 2–3 minutes to thicken slightly.",
+    "Stir in spinach and artichokes; simmer 1–2 minutes until spinach is wilted. Squeeze in half the lemon (to taste) and season with salt and black pepper.",
+    "Return chicken and any juices to the skillet, turning to coat in the sauce. Simmer 1 minute to heat through, then remove from heat.",
+    "In a separate skillet, sauté zucchini in a little olive oil over medium-high heat for 2–3 minutes until just tender; season with salt and black pepper.",
+    "Serve chicken with the creamy spinach-artichoke sauce and the sautéed zucchini on the side."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F.",
+    "Pat dry chicken thigh fillets with paper towels.",
+    "Mince garlic.",
+    "Drain and roughly chop artichokes.",
+    "Zest and halve the lemon.",
+    "Trim zucchini and slice into thin ribbons or half-moons.",
+    "Measure out cream and parmesan cheese.",
+    "Season chicken on both sides with salt and black pepper.",
+    "Heat 1 tbsp olive oil in a large oven-safe skillet over medium-high heat.",
+    "Sear chicken thigh fillets 3–4 minutes per side until golden.",
+    "Transfer skillet to the oven and bake 6–8 minutes until chicken is cooked through; set chicken on a plate and keep warm.",
+    "Return the skillet to the stove over medium heat; add 1 tbsp olive oil and the garlic. Cook 30 seconds until fragrant.",
+    "Pour in cream, add lemon zest, and stir in parmesan cheese. Simmer 2–3 minutes to thicken slightly.",
+    "Stir in spinach and artichokes; simmer 1–2 minutes until spinach is wilted. Squeeze in half the lemon (to taste) and season with salt and black pepper.",
+    "Return chicken and any juices to the skillet, turning to coat in the sauce. Simmer 1 minute to heat through, then remove from heat.",
+    "In a separate skillet, sauté zucchini in a little olive oil over medium-high heat for 2–3 minutes until just tender; season with salt and black pepper.",
+    "Serve chicken with the creamy spinach-artichoke sauce and the sautéed zucchini on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "800 g (about 4 large fillets)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2–3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "cream",
+      "quantity": "1 cup (240 ml)"
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "1/2 cup",
+      "preparation": "finely grated"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and halved"
+    },
+    {
+      "core_item_name": "spinach",
+      "quantity": "200 g",
+      "preparation": "roughly chopped if leaves are large"
+    },
+    {
+      "core_item_name": "artichokes",
+      "quantity": "1 cup",
+      "preparation": "drained and roughly chopped"
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "3 medium",
+      "preparation": "sliced into ribbons or half-moons"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Greek"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein",
+      "Keto",
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "800 g (about 4 large fillets)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2–3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cream",
+      "quantity": "1 cup (240 ml)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "1/2 cup",
+      "preparation": "finely grated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spinach",
+      "quantity": "200 g",
+      "preparation": "roughly chopped if leaves are large",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "artichokes",
+      "quantity": "1 cup",
+      "preparation": "drained and roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "3 medium",
+      "preparation": "sliced into ribbons or half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T164026Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T163610Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

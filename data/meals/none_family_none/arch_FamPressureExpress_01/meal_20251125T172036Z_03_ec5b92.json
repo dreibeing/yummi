@@ -1,0 +1,245 @@
+{
+  "meal_id": "meal_20251125T172036Z_03_ec5b92",
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "archetype_name": "Family Pressure Cooker Express Dinners (15–30, Mild)",
+  "name": "Instant Pot Lemon Herb Chicken & Rice Pilaf",
+  "description": "Tender chicken thighs and fluffy basmati rice pressure-cooked with lemon, herbs, and peas for a mild, family-friendly one-pot dinner. Bright, comforting, and ready fast.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse the basmati rice under cold water until it runs clear; drain well.",
+    "Dice the onions.",
+    "Mince the garlic.",
+    "Zest and juice the lemon; keep separate.",
+    "Roughly chop the parsley.",
+    "Pat chicken thighs dry and season both sides with salt and pepper."
+  ],
+  "cook_steps": [
+    "Set the pressure cooker to Sauté (Normal). Add olive oil and heat until shimmering.",
+    "Add onions; cook 2–3 minutes until starting to soften. Stir in garlic for 30 seconds.",
+    "Add chicken thighs and sprinkle in oregano and thyme; sear 1–2 minutes per side (no need to brown fully).",
+    "Cancel Sauté. Add basmati rice and spread it evenly. Pour in chicken stock and the lemon juice; scrape the bottom to release any browned bits.",
+    "Scatter peas on top; do not stir. Secure the lid and set to High Pressure for 6 minutes.",
+    "Allow 5 minutes natural release, then quick-release remaining pressure. Open the lid and add lemon zest and parsley.",
+    "Fluff gently with a fork, season to taste with salt and pepper, and let rest 2–3 minutes before serving."
+  ],
+  "instructions": [
+    "Rinse the basmati rice under cold water until it runs clear; drain well.",
+    "Dice the onions.",
+    "Mince the garlic.",
+    "Zest and juice the lemon; keep separate.",
+    "Roughly chop the parsley.",
+    "Pat chicken thighs dry and season both sides with salt and pepper.",
+    "Set the pressure cooker to Sauté (Normal). Add olive oil and heat until shimmering.",
+    "Add onions; cook 2–3 minutes until starting to soften. Stir in garlic for 30 seconds.",
+    "Add chicken thighs and sprinkle in oregano and thyme; sear 1–2 minutes per side (no need to brown fully).",
+    "Cancel Sauté. Add basmati rice and spread it evenly. Pour in chicken stock and the lemon juice; scrape the bottom to release any browned bits.",
+    "Scatter peas on top; do not stir. Secure the lid and set to High Pressure for 6 minutes.",
+    "Allow 5 minutes natural release, then quick-release remaining pressure. Open the lid and add lemon zest and parsley.",
+    "Fluff gently with a fork, season to taste with salt and pepper, and let rest 2–3 minutes before serving."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1.5 lb",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "2 1/4 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup",
+      "preparation": "frozen or fresh"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 tsp",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1–1 1/2 tsp, to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 tsp, to taste",
+      "preparation": ""
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "SlowOrPressureCooker",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1.5 lb",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "2 1/4 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup",
+      "preparation": "frozen or fresh",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 tsp",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1–1 1/2 tsp, to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 tsp, to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T172247Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T172036Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

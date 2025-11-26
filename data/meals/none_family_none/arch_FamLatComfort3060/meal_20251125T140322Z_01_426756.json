@@ -1,0 +1,262 @@
+{
+  "meal_id": "meal_20251125T140322Z_01_426756",
+  "archetype_uid": "arch_FamLatComfort3060",
+  "archetype_name": "Family Latin Comfort (Mild, 30–60, Intermediate)",
+  "name": "Family Chicken Enchilada Bake (Mild)",
+  "description": "Rolled chicken-and-pepper enchiladas baked with mild sauce and cheddar. Family-friendly comfort with gentle seasoning.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 190°C/375°F.",
+    "Finely dice onions.",
+    "Slice bell peppers into thin strips.",
+    "Mince garlic.",
+    "Trim excess fat from chicken thighs and cut into small bite-size pieces.",
+    "Grate cheddar cheese if not pre-grated.",
+    "Halve the lime for squeezing and wedges."
+  ],
+  "cook_steps": [
+    "Heat olive oil in a large skillet over medium heat.",
+    "Add onions and bell peppers; cook 5–6 minutes until softened.",
+    "Stir in garlic; cook 30 seconds until fragrant.",
+    "Add chicken thighs, salt, black pepper, cumin, and paprika; cook 6–8 minutes until chicken is just cooked through.",
+    "Pour in half of the enchilada sauce; stir to coat and simmer 2 minutes. Remove from heat.",
+    "Lightly oil a 23x33 cm (9x13 in) baking dish. Spread 2–3 tablespoons enchilada sauce on the bottom.",
+    "Warm tortillas briefly in a dry pan or microwave so they’re pliable.",
+    "Fill each tortilla with the chicken mixture and a little cheddar; roll and place seam-side down in the dish.",
+    "Pour remaining enchilada sauce over the top and sprinkle with the rest of the cheddar.",
+    "Bake 15–18 minutes until bubbly and cheese is melted.",
+    "Rest 5 minutes, then garnish with chopped coriander and a squeeze of lime. Serve with extra lime wedges."
+  ],
+  "instructions": [
+    "Preheat oven to 190°C/375°F.",
+    "Finely dice onions.",
+    "Slice bell peppers into thin strips.",
+    "Mince garlic.",
+    "Trim excess fat from chicken thighs and cut into small bite-size pieces.",
+    "Grate cheddar cheese if not pre-grated.",
+    "Halve the lime for squeezing and wedges.",
+    "Heat olive oil in a large skillet over medium heat.",
+    "Add onions and bell peppers; cook 5–6 minutes until softened.",
+    "Stir in garlic; cook 30 seconds until fragrant.",
+    "Add chicken thighs, salt, black pepper, cumin, and paprika; cook 6–8 minutes until chicken is just cooked through.",
+    "Pour in half of the enchilada sauce; stir to coat and simmer 2 minutes. Remove from heat.",
+    "Lightly oil a 23x33 cm (9x13 in) baking dish. Spread 2–3 tablespoons enchilada sauce on the bottom.",
+    "Warm tortillas briefly in a dry pan or microwave so they’re pliable.",
+    "Fill each tortilla with the chicken mixture and a little cheddar; roll and place seam-side down in the dish.",
+    "Pour remaining enchilada sauce over the top and sprinkle with the rest of the cheddar.",
+    "Bake 15–18 minutes until bubbly and cheese is melted.",
+    "Rest 5 minutes, then garnish with chopped coriander and a squeeze of lime. Serve with extra lime wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely diced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "700 g",
+      "preparation": "cut bite-size"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "enchilada sauce",
+      "quantity": "2 cups"
+    },
+    {
+      "core_item_name": "tortillas",
+      "quantity": "8–10 medium",
+      "preparation": "warmed"
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "2 cups",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped, for garnish"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved, plus wedges to serve"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "LatinAmerican",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "700 g",
+      "preparation": "cut bite-size",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "enchilada sauce",
+      "quantity": "2 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tortillas",
+      "quantity": "8–10 medium",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "2 cups",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped, for garnish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved, plus wedges to serve",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T140358Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T140322Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

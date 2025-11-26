@@ -1,0 +1,242 @@
+{
+  "meal_id": "meal_20251125T164026Z_05_7f07cc",
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "archetype_name": "Family Low-Sodium American & French Comfort (30–60, Mild)",
+  "name": "Herb-Roasted Chicken Thighs with Lemon Potatoes, Carrots, and Pan Sauce",
+  "description": "Roasted chicken thighs with thyme and rosemary, paired with lemony potatoes, sweet carrots, and a quick white wine–herb pan sauce. Built for low-sodium cooking with bright citrus and fresh herbs instead of added salt.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 425°F (220°C).",
+    "Line a large sheet pan with parchment (optional for easy cleanup).",
+    "Trim excess fat from 8 chicken thighs and pat dry.",
+    "Scrub 2 lb potatoes; cut into 1-inch chunks.",
+    "Peel 4 carrots; cut into 1/2-inch thick sticks or coins.",
+    "Trim ends from 12 oz green beans.",
+    "Mince 4 cloves garlic.",
+    "Zest 1 lemon, then cut it in half (reserve zest and juice separately).",
+    "Strip leaves from several sprigs of thyme and rosemary; roughly chop 2 Tbsp mixed herbs.",
+    "Measure 1/2 cup white wine and 1/2 cup vegetable stock."
+  ],
+  "cook_steps": [
+    "In a large bowl, toss potatoes and carrots with 1.5 Tbsp olive oil, half the minced garlic, half the chopped herbs, black pepper, and half the lemon zest.",
+    "On the sheet pan, spread the potatoes and carrots in a single layer. Nestle chicken thighs on top. Brush chicken with 1 Tbsp olive oil and sprinkle with remaining chopped herbs, black pepper, and remaining lemon zest. Squeeze half the lemon over everything.",
+    "Roast for 25 minutes.",
+    "Toss green beans with 1 tsp olive oil and black pepper. After the first 25 minutes, add green beans to the pan around the chicken. Roast 10–15 minutes more, until chicken is cooked through (165°F/74°C) and vegetables are tender with browned edges.",
+    "Transfer chicken and vegetables to a platter, tent loosely with foil. Pour any pan juices into a small skillet.",
+    "Place skillet over medium heat. Add remaining minced garlic; cook 30 seconds. Add white wine; simmer 2–3 minutes, scraping brown bits. Add vegetable stock and a squeeze of lemon juice; simmer 3–5 minutes until slightly syrupy. Whisk in 1 tsp olive oil for sheen. Season with black pepper and extra lemon to taste.",
+    "Spoon pan sauce over chicken. Serve with roasted potatoes, carrots, and green beans."
+  ],
+  "instructions": [
+    "Preheat oven to 425°F (220°C).",
+    "Line a large sheet pan with parchment (optional for easy cleanup).",
+    "Trim excess fat from 8 chicken thighs and pat dry.",
+    "Scrub 2 lb potatoes; cut into 1-inch chunks.",
+    "Peel 4 carrots; cut into 1/2-inch thick sticks or coins.",
+    "Trim ends from 12 oz green beans.",
+    "Mince 4 cloves garlic.",
+    "Zest 1 lemon, then cut it in half (reserve zest and juice separately).",
+    "Strip leaves from several sprigs of thyme and rosemary; roughly chop 2 Tbsp mixed herbs.",
+    "Measure 1/2 cup white wine and 1/2 cup vegetable stock.",
+    "In a large bowl, toss potatoes and carrots with 1.5 Tbsp olive oil, half the minced garlic, half the chopped herbs, black pepper, and half the lemon zest.",
+    "On the sheet pan, spread the potatoes and carrots in a single layer. Nestle chicken thighs on top. Brush chicken with 1 Tbsp olive oil and sprinkle with remaining chopped herbs, black pepper, and remaining lemon zest. Squeeze half the lemon over everything.",
+    "Roast for 25 minutes.",
+    "Toss green beans with 1 tsp olive oil and black pepper. After the first 25 minutes, add green beans to the pan around the chicken. Roast 10–15 minutes more, until chicken is cooked through (165°F/74°C) and vegetables are tender with browned edges.",
+    "Transfer chicken and vegetables to a platter, tent loosely with foil. Pour any pan juices into a small skillet.",
+    "Place skillet over medium heat. Add remaining minced garlic; cook 30 seconds. Add white wine; simmer 2–3 minutes, scraping brown bits. Add vegetable stock and a squeeze of lemon juice; simmer 3–5 minutes until slightly syrupy. Whisk in 1 tsp olive oil for sheen. Season with black pepper and extra lemon to taste.",
+    "Spoon pan sauce over chicken. Serve with roasted potatoes, carrots, and green beans."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "8 pieces (about 2–2.5 lb)",
+      "preparation": "trimmed, patted dry"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "2 lb",
+      "preparation": "cut into 1-inch chunks"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "4 medium",
+      "preparation": "peeled, sliced"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "12 oz",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3.5 Tbsp total",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and halved"
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 Tbsp",
+      "preparation": "leaves chopped"
+    },
+    {
+      "core_item_name": "rosemary",
+      "quantity": "1 Tbsp",
+      "preparation": "leaves chopped"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup",
+      "preparation": "for deglazing"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1/2 cup",
+      "preparation": "low-sodium if available"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "French"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowSodium"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "8 pieces (about 2–2.5 lb)",
+      "preparation": "trimmed, patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "2 lb",
+      "preparation": "cut into 1-inch chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "4 medium",
+      "preparation": "peeled, sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "12 oz",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3.5 Tbsp total",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 Tbsp",
+      "preparation": "leaves chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rosemary",
+      "quantity": "1 Tbsp",
+      "preparation": "leaves chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup",
+      "preparation": "for deglazing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1/2 cup",
+      "preparation": "low-sodium if available",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [
+    "Category 'MealComponentPreference' ideally includes 2+ tags; received ['FromScratch']"
+  ],
+  "metadata": {
+    "created_at": "20251125T164458Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T164026Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

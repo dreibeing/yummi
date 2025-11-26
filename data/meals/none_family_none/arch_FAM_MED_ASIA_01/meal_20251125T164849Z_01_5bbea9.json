@@ -1,0 +1,300 @@
+{
+  "meal_id": "meal_20251125T164849Z_01_5bbea9",
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "archetype_name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)",
+  "name": "Indo-Chinese Chili Paneer Stir-Fry with Basmati Rice",
+  "description": "Crispy paneer and peppers in a tangy, medium-heat soy-tomato sauce, served over fluffy basmati rice. A fast Indo-Chinese skillet dinner for the family.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse basmati rice until water runs clear; set aside.",
+    "Cut paneer into 2 cm cubes; pat very dry with paper towels.",
+    "Core and slice bell peppers into strips.",
+    "Slice onions thinly.",
+    "Mince garlic.",
+    "Slice chilies (remove seeds for less heat).",
+    "Thinly slice spring onion; keep greens for garnish.",
+    "In a bowl, whisk soy sauce, rice vinegar, tomato paste, brown sugar, vegetable stock, white pepper, and a pinch of salt.",
+    "In a separate small bowl, reserve 1 tablespoon cornflour for the sauce; put remaining cornflour in another bowl for dusting paneer."
+  ],
+  "cook_steps": [
+    "Cook rice: Add rinsed basmati rice to a pot with water (about 1.75–2 cups water per cup rice). Bring to a boil, reduce to low, cover, and simmer 12–15 minutes until tender; rest 5 minutes covered.",
+    "Crisp paneer: Toss paneer cubes in the larger bowl of cornflour to lightly coat. Heat canola oil in a large skillet/wok over medium-high. Fry paneer 4–6 minutes, turning, until golden on most sides. Remove to a plate.",
+    "Stir-fry aromatics: In the same pan, add a touch more canola oil if dry. Add onions, garlic, and chilies; stir-fry 1–2 minutes until fragrant.",
+    "Cook vegetables: Add bell peppers; stir-fry 3–4 minutes until crisp-tender.",
+    "Make sauce: Re-whisk the sauce bowl. Sprinkle the reserved 1 tablespoon cornflour into the sauce and whisk smooth.",
+    "Combine: Return paneer to the pan. Pour in the sauce and toss. Cook 1–2 minutes until glossy and thickened, loosening with a splash of vegetable stock if needed.",
+    "Finish: Drizzle in sesame oil and toss. Stir in most of the spring onion greens.",
+    "Serve: Fluff rice. Plate rice, top with chili paneer, and garnish with remaining spring onion greens."
+  ],
+  "instructions": [
+    "Rinse basmati rice until water runs clear; set aside.",
+    "Cut paneer into 2 cm cubes; pat very dry with paper towels.",
+    "Core and slice bell peppers into strips.",
+    "Slice onions thinly.",
+    "Mince garlic.",
+    "Slice chilies (remove seeds for less heat).",
+    "Thinly slice spring onion; keep greens for garnish.",
+    "In a bowl, whisk soy sauce, rice vinegar, tomato paste, brown sugar, vegetable stock, white pepper, and a pinch of salt.",
+    "In a separate small bowl, reserve 1 tablespoon cornflour for the sauce; put remaining cornflour in another bowl for dusting paneer.",
+    "Cook rice: Add rinsed basmati rice to a pot with water (about 1.75–2 cups water per cup rice). Bring to a boil, reduce to low, cover, and simmer 12–15 minutes until tender; rest 5 minutes covered.",
+    "Crisp paneer: Toss paneer cubes in the larger bowl of cornflour to lightly coat. Heat canola oil in a large skillet/wok over medium-high. Fry paneer 4–6 minutes, turning, until golden on most sides. Remove to a plate.",
+    "Stir-fry aromatics: In the same pan, add a touch more canola oil if dry. Add onions, garlic, and chilies; stir-fry 1–2 minutes until fragrant.",
+    "Cook vegetables: Add bell peppers; stir-fry 3–4 minutes until crisp-tender.",
+    "Make sauce: Re-whisk the sauce bowl. Sprinkle the reserved 1 tablespoon cornflour into the sauce and whisk smooth.",
+    "Combine: Return paneer to the pan. Pour in the sauce and toss. Cook 1–2 minutes until glossy and thickened, loosening with a splash of vegetable stock if needed.",
+    "Finish: Drizzle in sesame oil and toss. Stir in most of the spring onion greens.",
+    "Serve: Fluff rice. Plate rice, top with chili paneer, and garnish with remaining spring onion greens."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "1.5 cups (uncooked)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "paneer",
+      "quantity": "400 g",
+      "preparation": "cut into 2 cm cubes, patted dry"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "chilies",
+      "quantity": "2",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3",
+      "preparation": "sliced, greens reserved"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "4 tablespoons"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1–2 teaspoons"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1/2 cup",
+      "preparation": "plus extra as needed to loosen sauce"
+    },
+    {
+      "core_item_name": "white pepper",
+      "quantity": "1/4 teaspoon"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "Pinch",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "3 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "3 tablespoons",
+      "preparation": "for frying"
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 teaspoon",
+      "preparation": "finishing"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Chinese",
+      "Indian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten",
+      "Nuts",
+      "Soy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "1.5 cups (uncooked)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paneer",
+      "quantity": "400 g",
+      "preparation": "cut into 2 cm cubes, patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilies",
+      "quantity": "2",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3",
+      "preparation": "sliced, greens reserved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "4 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1–2 teaspoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1/2 cup",
+      "preparation": "plus extra as needed to loosen sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white pepper",
+      "quantity": "1/4 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "Pinch",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "3 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "3 tablespoons",
+      "preparation": "for frying",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 teaspoon",
+      "preparation": "finishing",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [
+    "Category 'Equipment' ideally includes 2+ tags; received ['StoveTop']",
+    "Category 'MealComponentPreference' ideally includes 2+ tags; received ['FromScratch']"
+  ],
+  "metadata": {
+    "created_at": "20251125T164955Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T164849Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,403 @@
+{
+  "meal_id": "meal_20251125T162954Z_04_83d82d",
+  "archetype_uid": "arch_FAM_IND_SHOW_60",
+  "archetype_name": "Family Weekend Showstopper: Indian Feast Night",
+  "name": "Goan-Style Coconut Fish Curry with Saffron Jeera Rice and Oven-Warmed Naan",
+  "description": "A festival-worthy coconut fish curry balanced with tamarind, served with fragrant saffron jeera rice and warm naan. Medium heat and layered flavors for a weekend family feast.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 2 cups basmati rice until water runs clear; soak 20 minutes, then drain.",
+    "Slice 2 large onions thinly.",
+    "Mince 4 cloves garlic.",
+    "Cut 700–800 g fish fillets into large chunks (about 5 cm).",
+    "In a bowl, toss fish with 1/2 teaspoon turmeric powder, 1/2 teaspoon salt, and 1 tablespoon lemon juice; set aside 15 minutes.",
+    "Warm 1/4 cup water and pinch saffron together in a small cup; let bloom.",
+    "Preheat oven to 180°C for warming naan."
+  ],
+  "cook_steps": [
+    "Make the curry base: Heat 2 tablespoons oil in a wide pot over medium heat. Add 1 teaspoon mustard seeds and 1 teaspoon cumin seeds; let them crackle 30 seconds.",
+    "Add sliced onions and a pinch of salt; cook 10–12 minutes, stirring, until deep golden.",
+    "Stir in minced garlic; cook 1 minute.",
+    "Add 1 teaspoon ground cumin, 1 teaspoon garam masala, 1/2 teaspoon turmeric powder, 1/2 teaspoon chili flakes, and 1 teaspoon paprika; stir 30 seconds.",
+    "Add 1 can (400 g) diced tomatoes and 1 teaspoon sugar; simmer 6–8 minutes until thick and glossy.",
+    "Pour in 400 ml coconut milk and 2 tablespoons tamarind chutney; add 1/2 teaspoon salt. Simmer gently 5 minutes; taste and balance with more tamarind chutney or sugar if needed (medium heat).",
+    "Slide in marinated fish pieces in a single layer. Simmer on low 6–8 minutes until just cooked through. Finish with a handful of chopped coriander and a squeeze of lemon.",
+    "Cook the rice: In a saucepan, melt 1 tablespoon ghee over medium heat. Add 1 teaspoon cumin seeds and 1 bay leaf; sizzle 30 seconds.",
+    "Add the drained basmati rice; stir to coat 1 minute. Add 3 cups water, 1 teaspoon salt, and the bloomed saffron with its water.",
+    "Bring to a boil, then cover and reduce to low; cook 12 minutes. Turn off heat and rest 10 minutes covered. Fluff with a fork.",
+    "Warm the naan: Wrap naan in foil and warm in the preheated oven for 5–7 minutes until soft.",
+    "Serve: Spoon saffron jeera rice onto a platter, ladle fish curry on the side, scatter with extra coriander, and serve with warm naan and lemon wedges."
+  ],
+  "instructions": [
+    "Rinse 2 cups basmati rice until water runs clear; soak 20 minutes, then drain.",
+    "Slice 2 large onions thinly.",
+    "Mince 4 cloves garlic.",
+    "Cut 700–800 g fish fillets into large chunks (about 5 cm).",
+    "In a bowl, toss fish with 1/2 teaspoon turmeric powder, 1/2 teaspoon salt, and 1 tablespoon lemon juice; set aside 15 minutes.",
+    "Warm 1/4 cup water and pinch saffron together in a small cup; let bloom.",
+    "Preheat oven to 180°C for warming naan.",
+    "Make the curry base: Heat 2 tablespoons oil in a wide pot over medium heat. Add 1 teaspoon mustard seeds and 1 teaspoon cumin seeds; let them crackle 30 seconds.",
+    "Add sliced onions and a pinch of salt; cook 10–12 minutes, stirring, until deep golden.",
+    "Stir in minced garlic; cook 1 minute.",
+    "Add 1 teaspoon ground cumin, 1 teaspoon garam masala, 1/2 teaspoon turmeric powder, 1/2 teaspoon chili flakes, and 1 teaspoon paprika; stir 30 seconds.",
+    "Add 1 can (400 g) diced tomatoes and 1 teaspoon sugar; simmer 6–8 minutes until thick and glossy.",
+    "Pour in 400 ml coconut milk and 2 tablespoons tamarind chutney; add 1/2 teaspoon salt. Simmer gently 5 minutes; taste and balance with more tamarind chutney or sugar if needed (medium heat).",
+    "Slide in marinated fish pieces in a single layer. Simmer on low 6–8 minutes until just cooked through. Finish with a handful of chopped coriander and a squeeze of lemon.",
+    "Cook the rice: In a saucepan, melt 1 tablespoon ghee over medium heat. Add 1 teaspoon cumin seeds and 1 bay leaf; sizzle 30 seconds.",
+    "Add the drained basmati rice; stir to coat 1 minute. Add 3 cups water, 1 teaspoon salt, and the bloomed saffron with its water.",
+    "Bring to a boil, then cover and reduce to low; cook 12 minutes. Turn off heat and rest 10 minutes covered. Fluff with a fork.",
+    "Warm the naan: Wrap naan in foil and warm in the preheated oven for 5–7 minutes until soft.",
+    "Serve: Spoon saffron jeera rice onto a platter, ladle fish curry on the side, scatter with extra coriander, and serve with warm naan and lemon wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and soaked"
+    },
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "700–800 g",
+      "preparation": "cut into large chunks"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "mustard seeds",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "2 teaspoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "garam masala",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1 teaspoon",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "400 g can",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1–2 teaspoons",
+      "preparation": "to balance"
+    },
+    {
+      "core_item_name": "coconut milk",
+      "quantity": "400 ml",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "tamarind chutney",
+      "quantity": "2–3 tablespoons",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1 small bunch",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "2",
+      "preparation": "juiced, plus wedges for serving"
+    },
+    {
+      "core_item_name": "ghee",
+      "quantity": "1 tablespoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "bay leaf",
+      "quantity": "1",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "pinch",
+      "preparation": "bloomed in warm water"
+    },
+    {
+      "core_item_name": "naan",
+      "quantity": "4 pieces",
+      "preparation": "warmed"
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "2 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 teaspoons",
+      "preparation": "divided, plus to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": "for saffron bloom and rice"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Indian",
+      "Portuguese"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten",
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and soaked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "700–800 g",
+      "preparation": "cut into large chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mustard seeds",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "2 teaspoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garam masala",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1 teaspoon",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "400 g can",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1–2 teaspoons",
+      "preparation": "to balance",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coconut milk",
+      "quantity": "400 ml",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tamarind chutney",
+      "quantity": "2–3 tablespoons",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1 small bunch",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "2",
+      "preparation": "juiced, plus wedges for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ghee",
+      "quantity": "1 tablespoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaf",
+      "quantity": "1",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "pinch",
+      "preparation": "bloomed in warm water",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "naan",
+      "quantity": "4 pieces",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "2 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 teaspoons",
+      "preparation": "divided, plus to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": "for saffron bloom and rice",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T163355Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T162954Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

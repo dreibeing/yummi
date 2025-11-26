@@ -1,0 +1,294 @@
+{
+  "meal_id": "meal_20251125T171111Z_03_63782b",
+  "archetype_uid": "arch_FamLightJV_01",
+  "archetype_name": "Family Light & Fresh: Japanese and Vietnamese Weeknights",
+  "name": "Clear Chicken, Shiitake & Bok Choy Rice Noodle Soup (No Soy)",
+  "description": "Light, aromatic noodle soup with poached chicken, shiitake, and bok choy in a clear star-anise broth. Japanese and Vietnamese-inspired, mild, and family-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Thinly slice chicken thighs into bite-size strips; pat dry.",
+    "Rinse bok choy; slice stems and leaves into 1-inch pieces.",
+    "Peel carrot; slice into thin rounds.",
+    "Wipe shiitake mushrooms; trim stems and slice caps.",
+    "Slice spring onion (greens and whites) thinly.",
+    "Rinse coriander and mint; pick leaves.",
+    "Cut lime into wedges.",
+    "Break nori into small flakes by hand."
+  ],
+  "cook_steps": [
+    "Bring a large pot to medium heat; add canola oil.",
+    "Add shiitake and carrot; sauté 2–3 minutes until edges soften.",
+    "Pour in mushroom broth and water; add star anise, salt, and white pepper. Bring to a gentle boil.",
+    "Add chicken thigh strips; reduce to a simmer and poach 5–6 minutes until just cooked through.",
+    "Add bok choy; simmer 2 minutes until tender-crisp.",
+    "Stir in rice vinegar; adjust salt/pepper to taste. Remove star anise.",
+    "Meanwhile, cook rice noodles per pack directions until just tender; drain.",
+    "Divide noodles among 4 bowls. Ladle hot soup over.",
+    "Top with spring onion, coriander, mint, and nori flakes. Serve with lime wedges to squeeze over."
+  ],
+  "instructions": [
+    "Thinly slice chicken thighs into bite-size strips; pat dry.",
+    "Rinse bok choy; slice stems and leaves into 1-inch pieces.",
+    "Peel carrot; slice into thin rounds.",
+    "Wipe shiitake mushrooms; trim stems and slice caps.",
+    "Slice spring onion (greens and whites) thinly.",
+    "Rinse coriander and mint; pick leaves.",
+    "Cut lime into wedges.",
+    "Break nori into small flakes by hand.",
+    "Bring a large pot to medium heat; add canola oil.",
+    "Add shiitake and carrot; sauté 2–3 minutes until edges soften.",
+    "Pour in mushroom broth and water; add star anise, salt, and white pepper. Bring to a gentle boil.",
+    "Add chicken thigh strips; reduce to a simmer and poach 5–6 minutes until just cooked through.",
+    "Add bok choy; simmer 2 minutes until tender-crisp.",
+    "Stir in rice vinegar; adjust salt/pepper to taste. Remove star anise.",
+    "Meanwhile, cook rice noodles per pack directions until just tender; drain.",
+    "Divide noodles among 4 bowls. Ladle hot soup over.",
+    "Top with spring onion, coriander, mint, and nori flakes. Serve with lime wedges to squeeze over."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1 lb (450 g)",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "mushroom broth",
+      "quantity": "4 cups"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 cups"
+    },
+    {
+      "core_item_name": "rice noodles",
+      "quantity": "8 oz (225 g)"
+    },
+    {
+      "core_item_name": "shiitake mushrooms",
+      "quantity": "6 oz (170 g)",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "2 small heads",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "carrot",
+      "quantity": "1 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4 stalks",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup leaves",
+      "preparation": "picked"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/4 cup leaves",
+      "preparation": "picked"
+    },
+    {
+      "core_item_name": "nori",
+      "quantity": "1 sheet",
+      "preparation": "crumbled"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "star anise",
+      "quantity": "1 whole pod"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, or to taste"
+    },
+    {
+      "core_item_name": "white pepper",
+      "quantity": "1/4 tsp, or to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Japanese",
+      "Vietnamese"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowCalorie"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1 lb (450 g)",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushroom broth",
+      "quantity": "4 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice noodles",
+      "quantity": "8 oz (225 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "shiitake mushrooms",
+      "quantity": "6 oz (170 g)",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "2 small heads",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrot",
+      "quantity": "1 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4 stalks",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup leaves",
+      "preparation": "picked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/4 cup leaves",
+      "preparation": "picked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "nori",
+      "quantity": "1 sheet",
+      "preparation": "crumbled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "star anise",
+      "quantity": "1 whole pod",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, or to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white pepper",
+      "quantity": "1/4 tsp, or to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T171350Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T171111Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

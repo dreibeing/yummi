@@ -165,10 +165,7 @@ def _prepare_llm_candidates(
             {
                 "meal_id": meal.get("meal_id"),
                 "name": meal.get("name"),
-                "description": meal.get("description"),
                 "tags": meal.get("meal_tags") or {},
-                "key_ingredients": extract_key_ingredients(meal),
-                "sku_snapshot": extract_sku_snapshot(meal),
             }
         )
     return payload
@@ -181,8 +178,9 @@ def _build_prompts(
 ) -> tuple[str, str]:
     system_prompt = (
         "You are Yummi's exploration planner. Select meals from the provided candidate list. "
-        "Your goal is to produce ten meals that the user is likely to enjoy while covering diverse tags "
-        "to confirm their preferences. Always respect the contract and return valid JSON."
+        "All hard constraints have already been applied (Audience, Diet/Ethics, Avoidances/Allergens). "
+        "Treat all remaining categories as preferences, not hard filters. Recommend a full set the user will likely enjoy while keeping reasonable diversity so we can learn from like/dislike feedback. "
+        "Always respect the contract and return valid JSON."
     )
     instructions = dedent(
         f"""
@@ -193,11 +191,14 @@ def _build_prompts(
         {format_json(candidates)}
 
         Requirements:
-        1. Choose exactly {meal_target} meals present in the candidate list.
-        2. Bias toward meals the user will likely enjoy but include at least two exploratory picks that validate different cuisines or proteins.
-        3. Cover every diet/ethics tag the user selected when candidates exist.
-        4. Respond in JSON: {{"explorationSet":[{{"meal_id": "...", "reason_to_show": "...", "expected_reaction": "likely_like|uncertain", "diversity_axes":["Diet:Vegan","Cuisine:Thai"]}}], "information_gain_notes":["note1","note2"]}}
-        5. Never invent meals or tags. Use only provided data.
+        1. Choose exactly {meal_target} meals when the candidate list has at least {meal_target} entries; only return fewer if the candidate pool itself is smaller. Never invent meal IDs.
+        2. Primary objective: maximize expected enjoyment using preferences as soft signals. Secondary objective: maintain reasonable diversity so reactions provide useful learning.
+        3. Treat USER_PROFILE thumbs ("selectedTags" vs. "dislikedTags") as "preferred"/"less preferred" hints—use them for gentle biasing, not strict inclusion/exclusion.
+        4. NutritionFocus (and similar categories) are preferences only; treat "NoNutritionFocus" as neutral. Do not hard-filter on these.
+        5. Do not apply additional hard filtering for Audience, Diet/Ethics, or Allergens—candidates already satisfy these. If the user selected no allergen avoidance, treat all candidates as acceptable.
+        6. Ensure diversity across cuisine, proteins, heat levels, prep time, complexity, and equipment. Favor "expected_reaction":"likely_like"; include at most 3 boundary picks marked "expected_reaction":"uncertain" only if needed to cover unexplored areas without sacrificing overall expected enjoyment.
+        7. Respond in JSON: {{"explorationSet":[{{"meal_id": "...", "reason_to_show": "...", "expected_reaction": "likely_like|uncertain", "diversity_axes":["Cuisine:Thai","Protein:Seafood"]}}], "information_gain_notes":["short hypotheses about preference patterns and what boundary picks test"]}}
+        8. Never invent meals, tags, or SKUs. Use only provided data.
         """
     ).strip()
     return system_prompt, instructions
@@ -218,34 +219,71 @@ def _materialize_meals(
 ) -> List[ExplorationMeal]:
     lookup = {detail.meal.get("meal_id"): detail for detail in detail_records}
     meals: List[ExplorationMeal] = []
+    seen_ids: set[str] = set()
     for selection in selections:
         meal_id = selection.get("meal_id")
         detail = lookup.get(meal_id)
         if not detail:
             continue
-        meal = detail.meal
-        meals.append(
-            ExplorationMeal(
-                mealId=str(meal.get("meal_id")),
-                name=meal.get("name"),
-                description=meal.get("description"),
-                tags=meal.get("meal_tags") or {},
-                keyIngredients=[
-                    IngredientSummary(
-                        name=item.get("name"),
-                        quantity=item.get("quantity"),
-                        productName=item.get("product"),
-                    )
-                    for item in extract_key_ingredients(meal)
-                ],
-                rationale=selection.get("reason_to_show"),
-                expectedReaction=selection.get("expected_reaction"),
-                diversityAxes=selection.get("diversity_axes") or [],
-                skuSnapshot=[
-                    MealSkuSnapshot(**snapshot) for snapshot in extract_sku_snapshot(meal)
-                ],
-            )
+        hydrated = _hydrate_exploration_meal(
+            detail,
+            rationale=selection.get("reason_to_show"),
+            expected=selection.get("expected_reaction"),
+            diversity_axes=selection.get("diversity_axes") or [],
         )
+        meals.append(hydrated)
+        seen_ids.add(hydrated.mealId)
         if len(meals) >= meal_target:
             break
+
+    if len(meals) < meal_target:
+        logger.warning(
+            "Exploration model returned %s selections (target %s); auto-filling remainder",
+            len(meals),
+            meal_target,
+        )
+        for detail in detail_records:
+            meal_id = str(detail.meal.get("meal_id"))
+            if not meal_id or meal_id in seen_ids:
+                continue
+            hydrated = _hydrate_exploration_meal(
+                detail,
+                rationale="Auto-selected to complete lineup",
+                expected="likely_like",
+                diversity_axes=[],
+            )
+            meals.append(hydrated)
+            seen_ids.add(hydrated.mealId)
+            if len(meals) >= meal_target:
+                break
+
     return meals
+
+
+def _hydrate_exploration_meal(
+    detail: CandidateMealDetail,
+    rationale: str | None,
+    expected: str | None,
+    diversity_axes: List[str],
+) -> ExplorationMeal:
+    meal = detail.meal
+    return ExplorationMeal(
+        mealId=str(meal.get("meal_id")),
+        name=meal.get("name"),
+        description=meal.get("description"),
+        tags=meal.get("meal_tags") or {},
+        keyIngredients=[
+            IngredientSummary(
+                name=item.get("name"),
+                quantity=item.get("quantity"),
+                productName=item.get("product"),
+            )
+            for item in extract_key_ingredients(meal)
+        ],
+        rationale=rationale,
+        expectedReaction=expected,
+        diversityAxes=diversity_axes,
+        skuSnapshot=[
+            MealSkuSnapshot(**snapshot) for snapshot in extract_sku_snapshot(meal)
+        ],
+    )

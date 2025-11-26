@@ -1,0 +1,274 @@
+{
+  "meal_id": "meal_20251125T164458Z_02_085397",
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "archetype_name": "Family Low-Carb Weeknight Bowls & Wraps (15–30, Mild)",
+  "name": "Mild Lamb Kofta Cauliflower Rice Bowls with Lemon-Tahini Yogurt",
+  "description": "Pan-seared lamb koftas over cauliflower rice with cucumber, cherry tomatoes, and a lemon-tahini yogurt drizzle. Family-friendly, low-carb, and mild.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Finely chop parsley (about 2 tablespoons).",
+    "Finely dice onions (1/2 cup).",
+    "Mince garlic (2 cloves).",
+    "Halve cherry tomatoes (2 cups).",
+    "Dice cucumber (1 large).",
+    "Cut lemon in half; zest 1/2 teaspoon and juice 2 tablespoons.",
+    "In a small bowl, whisk yogurt, tahini, lemon juice, lemon zest, a pinch of salt, and 1 teaspoon olive oil; set aside.",
+    "Have cauliflower rice ready to heat per package directions."
+  ],
+  "cook_steps": [
+    "In a bowl, combine lamb mince, diced onions, minced garlic, chopped parsley, ground cumin, paprika, 1/2 teaspoon salt, and 1/4 teaspoon black pepper.",
+    "Shape the mixture into 8 small koftas (oval patties).",
+    "Heat 1 tablespoon olive oil in a large skillet over medium-high heat.",
+    "Sear koftas 3–4 minutes per side until browned and cooked through (internal temp 71°C/160°F). Transfer to a plate.",
+    "Microwave cauliflower rice according to package directions; fluff with a fork and season with a pinch of salt and 1 teaspoon olive oil.",
+    "Assemble bowls: divide cauliflower rice among 4 bowls, top with koftas, cucumber, and cherry tomatoes.",
+    "Drizzle with the lemon-tahini yogurt. Serve with extra lemon wedges if desired."
+  ],
+  "instructions": [
+    "Finely chop parsley (about 2 tablespoons).",
+    "Finely dice onions (1/2 cup).",
+    "Mince garlic (2 cloves).",
+    "Halve cherry tomatoes (2 cups).",
+    "Dice cucumber (1 large).",
+    "Cut lemon in half; zest 1/2 teaspoon and juice 2 tablespoons.",
+    "In a small bowl, whisk yogurt, tahini, lemon juice, lemon zest, a pinch of salt, and 1 teaspoon olive oil; set aside.",
+    "Have cauliflower rice ready to heat per package directions.",
+    "In a bowl, combine lamb mince, diced onions, minced garlic, chopped parsley, ground cumin, paprika, 1/2 teaspoon salt, and 1/4 teaspoon black pepper.",
+    "Shape the mixture into 8 small koftas (oval patties).",
+    "Heat 1 tablespoon olive oil in a large skillet over medium-high heat.",
+    "Sear koftas 3–4 minutes per side until browned and cooked through (internal temp 71°C/160°F). Transfer to a plate.",
+    "Microwave cauliflower rice according to package directions; fluff with a fork and season with a pinch of salt and 1 teaspoon olive oil.",
+    "Assemble bowls: divide cauliflower rice among 4 bowls, top with koftas, cucumber, and cherry tomatoes.",
+    "Drizzle with the lemon-tahini yogurt. Serve with extra lemon wedges if desired."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "lamb mince",
+      "quantity": "500 g",
+      "preparation": "mixed into koftas"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1/2 cup",
+      "preparation": "finely diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "3/4 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "4 cups",
+      "preparation": "microwaved per pack"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "yogurt",
+      "quantity": "1/2 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "tahini",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Sesame"
+    ],
+    "NutritionFocus": [
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "lamb mince",
+      "quantity": "500 g",
+      "preparation": "mixed into koftas",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1/2 cup",
+      "preparation": "finely diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "3/4 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "4 cups",
+      "preparation": "microwaved per pack",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yogurt",
+      "quantity": "1/2 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tahini",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T164644Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T164458Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

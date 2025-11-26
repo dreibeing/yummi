@@ -1,0 +1,227 @@
+{
+  "meal_id": "meal_20251125T162140Z_04_441aaf",
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "archetype_name": "Family Hands-Off Sheet Pan & Slow Cooker Nights",
+  "name": "Sheet-Pan Baked Feta with Chickpeas, Tomatoes, and Warm Pitas",
+  "description": "A Greek-inspired, hands-off sheet-pan bake of feta, chickpeas, and tomatoes with oregano and lemon. Serve with warm pita for an easy family dinner with no chili heat.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 200°C/400°F and line a large sheet pan.",
+    "Drain and rinse chickpeas.",
+    "Halve cherry tomatoes.",
+    "Slice red onion into thin wedges.",
+    "Cut lemon into wedges.",
+    "Roughly chop parsley (optional)."
+  ],
+  "cook_steps": [
+    "Add chickpeas, cherry tomatoes, and red onion to the sheet pan. Drizzle with olive oil, season with salt and black pepper, and sprinkle with oregano. Toss to coat and spread out.",
+    "Nestle a block or thick slab of feta cheese in the center. Drizzle the feta with a little olive oil and a pinch of oregano.",
+    "Bake for 20–25 minutes until tomatoes soften and edges of feta are lightly golden.",
+    "During the last 5 minutes, add pita bread wrapped in foil to the oven to warm, or microwave pita bread for 20–30 seconds just before serving.",
+    "Squeeze lemon wedges over the pan. Scatter olives and parsley on top.",
+    "Serve the baked feta, chickpeas, and vegetables with warm pita bread."
+  ],
+  "instructions": [
+    "Heat oven to 200°C/400°F and line a large sheet pan.",
+    "Drain and rinse chickpeas.",
+    "Halve cherry tomatoes.",
+    "Slice red onion into thin wedges.",
+    "Cut lemon into wedges.",
+    "Roughly chop parsley (optional).",
+    "Add chickpeas, cherry tomatoes, and red onion to the sheet pan. Drizzle with olive oil, season with salt and black pepper, and sprinkle with oregano. Toss to coat and spread out.",
+    "Nestle a block or thick slab of feta cheese in the center. Drizzle the feta with a little olive oil and a pinch of oregano.",
+    "Bake for 20–25 minutes until tomatoes soften and edges of feta are lightly golden.",
+    "During the last 5 minutes, add pita bread wrapped in foil to the oven to warm, or microwave pita bread for 20–30 seconds just before serving.",
+    "Squeeze lemon wedges over the pan. Scatter olives and parsley on top.",
+    "Serve the baked feta, chickpeas, and vegetables with warm pita bread."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "feta cheese",
+      "quantity": "200–250 g",
+      "preparation": "leave as a whole block or thick slab"
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "2 cans (about 800 g total), drained and rinsed"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "400 g",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "sliced into wedges"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "whole or sliced"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 teaspoons"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped, optional"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "pita bread",
+      "quantity": "4–6",
+      "preparation": "warmed"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "feta cheese",
+      "quantity": "200–250 g",
+      "preparation": "leave as a whole block or thick slab",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "2 cans (about 800 g total), drained and rinsed",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "400 g",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "sliced into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "whole or sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 teaspoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped, optional",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pita bread",
+      "quantity": "4–6",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T162436Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T162140Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

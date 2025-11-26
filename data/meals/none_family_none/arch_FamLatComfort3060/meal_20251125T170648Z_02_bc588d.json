@@ -1,0 +1,302 @@
+{
+  "meal_id": "meal_20251125T170648Z_02_bc588d",
+  "archetype_uid": "arch_FamLatComfort3060",
+  "archetype_name": "Family Latin Comfort (Mild, 30–60, Intermediate)",
+  "name": "Chorizo & Black Bean Maize Meal Skillet Pie (Mild)",
+  "description": "A family-friendly Latin-inspired bake: a savory chorizo, black bean, and tomato filling topped with creamy maize meal and cheddar, finished in the oven until bubbling and golden.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 200°C/400°F.",
+    "Dice onions and bell peppers; mince garlic.",
+    "Rinse and drain black beans.",
+    "Shred cheddar cheese.",
+    "Chop coriander; cut lime into wedges.",
+    "Measure maize meal and vegetable stock (3 cups for maize meal, 1/2 cup for filling)."
+  ],
+  "cook_steps": [
+    "Heat a large oven-safe skillet over medium heat. Add chorizo and cook 4–5 minutes, breaking it up. If dry, add olive oil.",
+    "Add onions and bell peppers; cook 4–5 minutes until softened.",
+    "Stir in garlic, cumin, oregano, paprika, and chilli powder; cook 30 seconds until fragrant.",
+    "Add black beans, diced tomatoes, 1/2 cup vegetable stock, a pinch of salt, and black pepper. Simmer 5–7 minutes to slightly thicken. Taste and adjust seasoning. Remove from heat while you make the maize layer.",
+    "In a saucepan, bring 3 cups vegetable stock to a simmer. Whisk in maize meal gradually to avoid lumps.",
+    "Reduce heat to low and cook, whisking, 5–7 minutes until thick and creamy. Season with salt and black pepper to taste.",
+    "Spread the chorizo-bean mixture evenly in the skillet. Spoon the maize meal over the top and smooth. Sprinkle cheddar cheese over the surface.",
+    "Bake 12–15 minutes until the top is set and cheese is melted and lightly golden.",
+    "Rest 5 minutes. Top with chopped coriander and serve with lime wedges."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C/400°F.",
+    "Dice onions and bell peppers; mince garlic.",
+    "Rinse and drain black beans.",
+    "Shred cheddar cheese.",
+    "Chop coriander; cut lime into wedges.",
+    "Measure maize meal and vegetable stock (3 cups for maize meal, 1/2 cup for filling).",
+    "Heat a large oven-safe skillet over medium heat. Add chorizo and cook 4–5 minutes, breaking it up. If dry, add olive oil.",
+    "Add onions and bell peppers; cook 4–5 minutes until softened.",
+    "Stir in garlic, cumin, oregano, paprika, and chilli powder; cook 30 seconds until fragrant.",
+    "Add black beans, diced tomatoes, 1/2 cup vegetable stock, a pinch of salt, and black pepper. Simmer 5–7 minutes to slightly thicken. Taste and adjust seasoning. Remove from heat while you make the maize layer.",
+    "In a saucepan, bring 3 cups vegetable stock to a simmer. Whisk in maize meal gradually to avoid lumps.",
+    "Reduce heat to low and cook, whisking, 5–7 minutes until thick and creamy. Season with salt and black pepper to taste.",
+    "Spread the chorizo-bean mixture evenly in the skillet. Spoon the maize meal over the top and smooth. Sprinkle cheddar cheese over the surface.",
+    "Bake 12–15 minutes until the top is set and cheese is melted and lightly golden.",
+    "Rest 5 minutes. Top with chopped coriander and serve with lime wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chorizo",
+      "quantity": "350 g",
+      "preparation": "casings removed if needed"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": "as needed"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "2 cups cooked (about 1 x 400 g can)",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "400 g",
+      "preparation": "undrained"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "chilli powder",
+      "quantity": "1/4 tsp"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 1/2 cups",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "maize meal",
+      "quantity": "1 cup"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp, to taste"
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1 to 1 1/2 cups",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "LatinAmerican",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chorizo",
+      "quantity": "350 g",
+      "preparation": "casings removed if needed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": "as needed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "2 cups cooked (about 1 x 400 g can)",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "400 g",
+      "preparation": "undrained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli powder",
+      "quantity": "1/4 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 1/2 cups",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "maize meal",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp, to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1 to 1 1/2 cups",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T170835Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T170648Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

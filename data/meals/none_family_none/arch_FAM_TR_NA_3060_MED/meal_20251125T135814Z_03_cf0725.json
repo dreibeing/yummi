@@ -1,0 +1,329 @@
+{
+  "meal_id": "meal_20251125T135814Z_03_cf0725",
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "archetype_name": "Family Turkish & North African Suppers (Medium, 30–60, Intermediate)",
+  "name": "Turkish Beef & Eggplant Bake with Preserved Lemon Bulgur",
+  "description": "Moussaka-style layers of roasted eggplant and spiced beef baked under a yoghurt-egg topping, served with fragrant preserved lemon bulgur. Medium warmth, family-friendly, and from-scratch.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 200°C (390°F).",
+    "Slice eggplant into 1 cm rounds; sprinkle lightly with salt and set aside 10 minutes.",
+    "Dice onions and chop garlic.",
+    "Finely chop parsley (reserve some for bulgur).",
+    "Finely chop preserved lemon (remove any large seeds).",
+    "In a bowl, whisk yoghurt, eggs, flour, a pinch of salt, and a pinch of black pepper until smooth.",
+    "Rinse bulgur in a fine sieve and drain well.",
+    "Pat eggplant slices dry with paper towel."
+  ],
+  "cook_steps": [
+    "Toss eggplant slices with 2 tbsp olive oil and a pinch of black pepper; spread on two baking trays and roast 18–22 minutes, turning once, until tender and lightly browned. Reduce oven to 180°C (355°F).",
+    "Meanwhile, heat 1 tbsp olive oil in a large pan over medium-high heat. Add onions and cook 5 minutes until translucent; add garlic and cook 1 minute.",
+    "Add beef mince and cook 5–7 minutes, breaking up, until browned and most liquid evaporates.",
+    "Stir in baharat, cinnamon, chili flakes, 1/2 tsp salt, and black pepper to taste; cook 30 seconds until fragrant.",
+    "Add tomato paste and cook 1 minute; add crushed tomatoes. Simmer 8–10 minutes until thick. Stir in half the chopped parsley and adjust seasoning.",
+    "Lightly oil a medium baking dish. Layer half the roasted eggplant, top with the beef-tomato mixture, then the remaining eggplant. Pour the yoghurt-egg mixture evenly over the top.",
+    "Bake at 180°C (355°F) for 15–20 minutes until the topping is set and lightly golden at the edges. Rest 5 minutes before serving.",
+    "While the bake is in the oven, heat 1 tbsp olive oil in a saucepan over medium heat. Add rinsed bulgur and toast 1 minute, stirring.",
+    "Add vegetable stock, preserved lemon, a pinch of salt, and black pepper. Bring to a boil, then reduce to low, cover, and simmer 12 minutes.",
+    "Remove bulgur from heat and rest covered 5 minutes. Fluff with a fork and fold in remaining chopped parsley.",
+    "Serve the beef & eggplant bake with preserved lemon bulgur on the side."
+  ],
+  "instructions": [
+    "Heat oven to 200°C (390°F).",
+    "Slice eggplant into 1 cm rounds; sprinkle lightly with salt and set aside 10 minutes.",
+    "Dice onions and chop garlic.",
+    "Finely chop parsley (reserve some for bulgur).",
+    "Finely chop preserved lemon (remove any large seeds).",
+    "In a bowl, whisk yoghurt, eggs, flour, a pinch of salt, and a pinch of black pepper until smooth.",
+    "Rinse bulgur in a fine sieve and drain well.",
+    "Pat eggplant slices dry with paper towel.",
+    "Toss eggplant slices with 2 tbsp olive oil and a pinch of black pepper; spread on two baking trays and roast 18–22 minutes, turning once, until tender and lightly browned. Reduce oven to 180°C (355°F).",
+    "Meanwhile, heat 1 tbsp olive oil in a large pan over medium-high heat. Add onions and cook 5 minutes until translucent; add garlic and cook 1 minute.",
+    "Add beef mince and cook 5–7 minutes, breaking up, until browned and most liquid evaporates.",
+    "Stir in baharat, cinnamon, chili flakes, 1/2 tsp salt, and black pepper to taste; cook 30 seconds until fragrant.",
+    "Add tomato paste and cook 1 minute; add crushed tomatoes. Simmer 8–10 minutes until thick. Stir in half the chopped parsley and adjust seasoning.",
+    "Lightly oil a medium baking dish. Layer half the roasted eggplant, top with the beef-tomato mixture, then the remaining eggplant. Pour the yoghurt-egg mixture evenly over the top.",
+    "Bake at 180°C (355°F) for 15–20 minutes until the topping is set and lightly golden at the edges. Rest 5 minutes before serving.",
+    "While the bake is in the oven, heat 1 tbsp olive oil in a saucepan over medium heat. Add rinsed bulgur and toast 1 minute, stirring.",
+    "Add vegetable stock, preserved lemon, a pinch of salt, and black pepper. Bring to a boil, then reduce to low, cover, and simmer 12 minutes.",
+    "Remove bulgur from heat and rest covered 5 minutes. Fluff with a fork and fold in remaining chopped parsley.",
+    "Serve the beef & eggplant bake with preserved lemon bulgur on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "eggplant",
+      "quantity": "2 large",
+      "preparation": "sliced into 1 cm rounds"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tbsp",
+      "preparation": "divided for roasting and sautéing"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "divided, plus to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "divided, plus to taste"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "beef mince",
+      "quantity": "500 g",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "baharat",
+      "quantity": "2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1/2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "400 g",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped, divided"
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "2",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "flour",
+      "quantity": "1 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "preserved lemon",
+      "quantity": "1 tbsp",
+      "preparation": "finely chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "NorthAfrican",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "eggplant",
+      "quantity": "2 large",
+      "preparation": "sliced into 1 cm rounds",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tbsp",
+      "preparation": "divided for roasting and sautéing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "divided, plus to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "divided, plus to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "beef mince",
+      "quantity": "500 g",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "baharat",
+      "quantity": "2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1/2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "400 g",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "2",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "flour",
+      "quantity": "1 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "preserved lemon",
+      "quantity": "1 tbsp",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T140030Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T135814Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

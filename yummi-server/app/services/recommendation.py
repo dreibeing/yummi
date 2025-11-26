@@ -141,11 +141,14 @@ def _merge_declined_ids(
     declined_ids: Sequence[str] | None,
     reactions: Sequence[MealReaction],
 ) -> set[str]:
-    merged = {mid for mid in (declined_ids or []) if mid}
-    for reaction in reactions or []:
-        if reaction.reaction == "dislike":
-            merged.add(reaction.mealId)
-    return merged
+    """Return only explicitly declined IDs as hard exclusions.
+
+    Thumbs-down ("dislike") reactions are treated as strong negative preferences
+    and should influence ranking, not act as hard bans. The LLM prompt receives
+    both reactions and preferences to down-rank these meals instead of excluding
+    them outright.
+    """
+    return {mid for mid in (declined_ids or []) if mid}
 
 
 def _build_feedback_payload(
@@ -185,7 +188,6 @@ def _materialize_feedback_entries(
                     "meal_id": meal_id,
                     "name": snapshot.get("name"),
                     "tags": snapshot.get("tags") or snapshot.get("meal_tags") or {},
-                    "key_ingredients": snapshot.get("keyIngredients") or snapshot.get("key_ingredients") or [],
                 }
             )
             continue
@@ -196,7 +198,6 @@ def _materialize_feedback_entries(
                     "meal_id": meal_id,
                     "name": manifest_entry.get("name"),
                     "tags": manifest_entry.get("meal_tags") or {},
-                    "key_ingredients": extract_key_ingredients(manifest_entry),
                 }
             )
         else:
@@ -231,21 +232,11 @@ def _prepare_candidate_payload(
     payload: List[Dict[str, Any]] = []
     for detail in details[:limit]:
         meal = detail.meal
-        tags = meal.get("meal_tags") or {}
-        metadata = meal.get("metadata") or {}
         payload.append(
             {
                 "meal_id": meal.get("meal_id"),
-                "archetype_id": detail.archetype_uid,
                 "name": meal.get("name"),
-                "description": meal.get("description"),
-                "tags": tags,
-                "heat_level": tags.get("HeatSpice"),
-                "prep_time_minutes": metadata.get("prep_time_minutes"),
-                "prep_time_tags": tags.get("PrepTime") or [],
-                "complexity": tags.get("Complexity"),
-                "key_ingredients": extract_key_ingredients(meal),
-                "sku_snapshot": extract_sku_snapshot(meal),
+                "tags": meal.get("meal_tags") or {},
             }
         )
     return payload
@@ -259,8 +250,9 @@ def _build_prompts(
     meal_target: int,
 ) -> tuple[str, str]:
     system_prompt = (
-        "You are Yummi's weekly meal curator. Select meals the user will love while ensuring variety if they cooked them back-to-back. "
-        "Respect every preference, never invent meals, and keep output JSON valid."
+        "You are Yummi's weekly meal curator. Select meals the user will love while ensuring variety if cooked back-to-back. "
+        "All hard constraints are already applied (Audience, Diet/Ethics, Avoidances/Allergens); treat remaining tags as preferences, not hard filters. "
+        "Use the FEEDBACK_SUMMARY (recent and, when present, historical likes/dislikes) as soft preference signals rather than strict rules so we continue exploring nearby options. Never invent meals and keep output JSON valid."
     )
     instructions = dedent(
         f"""
@@ -274,10 +266,12 @@ def _build_prompts(
         {format_json(candidates)}
 
         Requirements:
-        1. Choose exactly {meal_target} meals from the candidate list. Return them in rank order from best match to exploratory picks.
-        2. Do not repeat meals the user disliked or marked as declined. Reinforce liked themes but vary cuisines, proteins, and prep times.
-        3. Respond in JSON: {{"recommendations":["meal_uid_1","meal_uid_2","meal_uid_3"], "notes":["short variety notes"]}}. Only include the meal IDs in the `recommendations` array; the API will hydrate the rest of the fields.
-        4. Use only information provided here. Never hallucinate new tags, meals, or SKUs.
+        1. Choose exactly {meal_target} meals when the candidate list has at least {meal_target} entries; only return fewer if the pool itself is smaller. Return them in rank order from best match to exploratory picks.
+        2. Infer soft patterns from FEEDBACK_SUMMARY (likedMeals/dislikedMeals) and USER_PROFILE (selected/disliked tags). Preference thumbs populate selected/disliked tags—treat them as "preferred" vs. "less preferred" hints to guide weighting, not mandates. Prefer themes seen in likes/selectedTags, gently de-prioritize dislikedMeals/dislikedTags, and never ban dislikes unless a meal is in declined IDs. Maintain varied cuisines, proteins, heat, and prep times while aligning to inferred preferences.
+        3. NutritionFocus (and similar categories) are preferences only; treat "NoNutritionFocus" as neutral. Do not hard-filter on these.
+        4. Do not add hard filters beyond the candidate pool. Audience, Diet/Ethics, and Allergens are already satisfied. If the user set no allergen avoidance, treat all candidates as acceptable.
+        5. Respond in JSON: {{"recommendations":["meal_uid_1","meal_uid_2","meal_uid_3"], "notes":["short variety notes describing learned themes and variety rationale"]}}. Only include meal IDs in `recommendations`; the API will hydrate fields.
+        6. Use only provided information. Never hallucinate tags, meals, or SKUs.
         """
     ).strip()
     return system_prompt, instructions
@@ -303,29 +297,34 @@ def _materialize_recommendations(
     lookup = {str(detail.meal.get("meal_id")): detail for detail in detail_records}
     hydrated: List[RecommendationMeal] = []
     normalized_selections = _normalize_selection_payload(selections)
+    seen_ids: set[str] = set()
     for index, meal_id in enumerate(normalized_selections, start=1):
         if not meal_id:
             continue
         detail = lookup.get(str(meal_id))
         if not detail:
             continue
-        meal = detail.meal
-        hydrated.append(
-            RecommendationMeal(
-                mealId=str(meal.get("meal_id")),
-                name=meal.get("name"),
-                description=meal.get("description"),
-                tags=meal.get("meal_tags") or {},
-                rank=index,
-                rationale=None,
-                confidence=None,
-                diversityAxes=[],
-                skuSnapshot=[MealSkuSnapshot(**snapshot) for snapshot in extract_sku_snapshot(meal)],
-                archetypeId=detail.archetype_uid,
-            )
-        )
+        hydrated.append(_hydrate_recommendation_meal(detail, rank=index))
+        seen_ids.add(str(detail.meal.get("meal_id")))
         if len(hydrated) >= meal_target:
             break
+
+    if len(hydrated) < meal_target:
+        logger.warning(
+            "Recommendation model returned %s selections (target %s); auto-filling remainder",
+            len(hydrated),
+            meal_target,
+        )
+        next_rank = len(hydrated) + 1
+        for detail in detail_records:
+            meal_id = str(detail.meal.get("meal_id"))
+            if not meal_id or meal_id in seen_ids:
+                continue
+            hydrated.append(_hydrate_recommendation_meal(detail, rank=next_rank))
+            seen_ids.add(meal_id)
+            next_rank += 1
+            if len(hydrated) >= meal_target:
+                break
 
     return hydrated
 
@@ -341,3 +340,23 @@ def _normalize_selection_payload(selections: List[Any]) -> List[str]:
             if meal_id:
                 ordered.append(meal_id)
     return ordered
+
+
+def _hydrate_recommendation_meal(
+    detail: CandidateMealDetail,
+    *,
+    rank: int,
+) -> RecommendationMeal:
+    meal = detail.meal
+    return RecommendationMeal(
+        mealId=str(meal.get("meal_id")),
+        name=meal.get("name"),
+        description=meal.get("description"),
+        tags=meal.get("meal_tags") or {},
+        rank=rank,
+        rationale=None,
+        confidence=None,
+        diversityAxes=[],
+        skuSnapshot=[MealSkuSnapshot(**snapshot) for snapshot in extract_sku_snapshot(meal)],
+        archetypeId=detail.archetype_uid,
+    )

@@ -1,0 +1,227 @@
+{
+  "meal_id": "meal_20251125T163610Z_02_ea4ed3",
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "archetype_name": "Family Keto Weeknight Plates (Mild, 15–30, Simple)",
+  "name": "Za'atar Pork Chops with Tahini Green Beans and Cauli Rice",
+  "description": "Seared pork loin chops finished in the oven, served with garlicky green beans and a lemon-tahini drizzle over quick-sautéed cauliflower rice. Mild, keto-friendly, and weeknight fast.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 200°C (390°F).",
+    "Pat pork loin chops dry with paper towels.",
+    "In a small bowl, mix za'atar, salt, and black pepper.",
+    "Trim green beans and mince garlic.",
+    "Chop parsley and halve the lemon.",
+    "Open the cauliflower rice packs so they’re ready to use."
+  ],
+  "cook_steps": [
+    "Heat 1 tbsp olive oil in an oven-safe skillet over medium-high. Rub the pork loin chops with 1 tbsp olive oil, then coat all over with the za'atar mixture.",
+    "Sear pork 2–3 minutes per side until browned. Transfer skillet to the oven and roast 5–7 minutes, until just cooked through (juices run clear). Rest on a plate for 5 minutes.",
+    "While pork cooks, make sauce: in a bowl whisk tahini with 2 tbsp lemon juice, 1 tbsp olive oil, and a pinch of salt until smooth. Add a little more lemon juice or olive oil to reach a spoonable consistency.",
+    "In a large skillet, heat 1 tbsp olive oil over medium. Add green beans and cook 4–5 minutes, tossing until crisp-tender. Add garlic and cook 30 seconds. Toss in parsley and 1–2 tbsp of the tahini sauce; remove from heat.",
+    "In the same or another skillet, melt butter over medium. Add cauliflower rice and sauté 3–4 minutes until hot and steamy. Season with a pinch of salt and black pepper.",
+    "Slice pork if desired. Plate cauliflower rice, top with pork, add green beans on the side, and drizzle remaining tahini sauce over pork. Serve with lemon wedges from the remaining half lemon."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C (390°F).",
+    "Pat pork loin chops dry with paper towels.",
+    "In a small bowl, mix za'atar, salt, and black pepper.",
+    "Trim green beans and mince garlic.",
+    "Chop parsley and halve the lemon.",
+    "Open the cauliflower rice packs so they’re ready to use.",
+    "Heat 1 tbsp olive oil in an oven-safe skillet over medium-high. Rub the pork loin chops with 1 tbsp olive oil, then coat all over with the za'atar mixture.",
+    "Sear pork 2–3 minutes per side until browned. Transfer skillet to the oven and roast 5–7 minutes, until just cooked through (juices run clear). Rest on a plate for 5 minutes.",
+    "While pork cooks, make sauce: in a bowl whisk tahini with 2 tbsp lemon juice, 1 tbsp olive oil, and a pinch of salt until smooth. Add a little more lemon juice or olive oil to reach a spoonable consistency.",
+    "In a large skillet, heat 1 tbsp olive oil over medium. Add green beans and cook 4–5 minutes, tossing until crisp-tender. Add garlic and cook 30 seconds. Toss in parsley and 1–2 tbsp of the tahini sauce; remove from heat.",
+    "In the same or another skillet, melt butter over medium. Add cauliflower rice and sauté 3–4 minutes until hot and steamy. Season with a pinch of salt and black pepper.",
+    "Slice pork if desired. Plate cauliflower rice, top with pork, add green beans on the side, and drizzle remaining tahini sauce over pork. Serve with lemon wedges from the remaining half lemon."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "pork loin chops",
+      "quantity": "4 chops (about 800–1000 g)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "za'atar",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, plus a pinch for sauce and cauli rice"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp, plus a pinch for cauli rice"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp total",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "tahini",
+      "quantity": "1/3 cup"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "2 packs (about 600 g total)"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "1 tbsp"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Sesame"
+    ],
+    "NutritionFocus": [
+      "HighProtein",
+      "Keto",
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "pork loin chops",
+      "quantity": "4 chops (about 800–1000 g)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "za'atar",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, plus a pinch for sauce and cauli rice",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp, plus a pinch for cauli rice",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp total",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tahini",
+      "quantity": "1/3 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "2 packs (about 600 g total)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T163749Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T163610Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

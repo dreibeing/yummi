@@ -1,0 +1,248 @@
+{
+  "meal_id": "meal_20251125T141721Z_02_bce8d7",
+  "archetype_uid": "arch_SA_BraaiPotjie_Adv60",
+  "archetype_name": "Family Weekend Advanced: South African Braai & Potjie",
+  "name": "Braai Snoek with Mango Chutney Glaze, Fire Corn & Peppers, and Oven-Baked Potatoes",
+  "description": "Whole snoek braaied with a glossy mango-chutney glaze, served with charred corn and peppers and crisp-skinned oven potatoes. A coastal South African feast built for the braai with an oven side.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Preheat oven to 200°C (392°F).",
+    "Scrub 6 medium potatoes; pat dry and prick each a few times with a fork.",
+    "Shuck 6 ears of corn; trim silks. Halve 2 large bell peppers and remove seeds.",
+    "Finely chop a small handful of parsley (about 1/4 cup).",
+    "Mince 3 cloves garlic.",
+    "In a bowl, mix 1/2 cup mango chutney, 3 tbsp melted butter, 1 tbsp apple cider vinegar, 1 tsp chilli flakes, 1/2 tsp salt, and 1/2 tsp black pepper to make the glaze.",
+    "Pat 1 whole snoek dry; brush skin lightly with 1 tbsp olive oil and season both sides with 1 tsp salt and 1/2 tsp black pepper.",
+    "Build a medium braai fire with steady coals for direct heat plus a cooler zone; clean and oil the grill grates."
+  ],
+  "cook_steps": [
+    "Potatoes: Rub potatoes with 1 tbsp olive oil and 1/2 tsp salt. Place on a tray and bake 60–75 minutes until skins are crisp and centers tender. Keep warm.",
+    "Corn & peppers: Just before braaing the fish, toss corn and pepper halves with 1 tbsp olive oil and a pinch of salt. Grill over medium coals, turning occasionally, 12–15 minutes until lightly charred and tender. Move to a warm side.",
+    "Snoek setup: Place snoek skin-side down on a clean, oiled grid over medium heat (cooler side if flare-ups). Close the lid if your braai has one.",
+    "Glaze and cook: After 5 minutes, brush the flesh generously with the chutney glaze. Continue cooking skin-side down 10–15 minutes, brushing twice more, until the fish flakes at the thickest part.",
+    "Optional finish: For light caramelisation, flip briefly (30–60 seconds) flesh-side down over a cooler spot to avoid sticking.",
+    "Rest and garnish: Slide snoek onto a tray. Brush with any remaining warm glaze and scatter parsley.",
+    "Serve: Halve or quarter the baked potatoes. Serve with the charred corn and peppers alongside the glazed snoek."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C (392°F).",
+    "Scrub 6 medium potatoes; pat dry and prick each a few times with a fork.",
+    "Shuck 6 ears of corn; trim silks. Halve 2 large bell peppers and remove seeds.",
+    "Finely chop a small handful of parsley (about 1/4 cup).",
+    "Mince 3 cloves garlic.",
+    "In a bowl, mix 1/2 cup mango chutney, 3 tbsp melted butter, 1 tbsp apple cider vinegar, 1 tsp chilli flakes, 1/2 tsp salt, and 1/2 tsp black pepper to make the glaze.",
+    "Pat 1 whole snoek dry; brush skin lightly with 1 tbsp olive oil and season both sides with 1 tsp salt and 1/2 tsp black pepper.",
+    "Build a medium braai fire with steady coals for direct heat plus a cooler zone; clean and oil the grill grates.",
+    "Potatoes: Rub potatoes with 1 tbsp olive oil and 1/2 tsp salt. Place on a tray and bake 60–75 minutes until skins are crisp and centers tender. Keep warm.",
+    "Corn & peppers: Just before braaing the fish, toss corn and pepper halves with 1 tbsp olive oil and a pinch of salt. Grill over medium coals, turning occasionally, 12–15 minutes until lightly charred and tender. Move to a warm side.",
+    "Snoek setup: Place snoek skin-side down on a clean, oiled grid over medium heat (cooler side if flare-ups). Close the lid if your braai has one.",
+    "Glaze and cook: After 5 minutes, brush the flesh generously with the chutney glaze. Continue cooking skin-side down 10–15 minutes, brushing twice more, until the fish flakes at the thickest part.",
+    "Optional finish: For light caramelisation, flip briefly (30–60 seconds) flesh-side down over a cooler spot to avoid sticking.",
+    "Rest and garnish: Slide snoek onto a tray. Brush with any remaining warm glaze and scatter parsley.",
+    "Serve: Halve or quarter the baked potatoes. Serve with the charred corn and peppers alongside the glazed snoek."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "snoek",
+      "quantity": "1 whole (about 1.2–1.5 kg)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "mango chutney",
+      "quantity": "1/2 cup",
+      "preparation": "for glaze"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "3 tbsp",
+      "preparation": "melted"
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "freshly ground, divided"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "6 ears",
+      "preparation": "shucked"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 large",
+      "preparation": "halved and deseeded"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "6 medium",
+      "preparation": "scrubbed"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "finely chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Portuguese",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "snoek",
+      "quantity": "1 whole (about 1.2–1.5 kg)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mango chutney",
+      "quantity": "1/2 cup",
+      "preparation": "for glaze",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "3 tbsp",
+      "preparation": "melted",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "freshly ground, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "6 ears",
+      "preparation": "shucked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 large",
+      "preparation": "halved and deseeded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "6 medium",
+      "preparation": "scrubbed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T141951Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T141721Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

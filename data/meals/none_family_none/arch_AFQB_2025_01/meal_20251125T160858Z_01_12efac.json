@@ -1,0 +1,197 @@
+{
+  "meal_id": "meal_20251125T160858Z_01_12efac",
+  "archetype_uid": "arch_AFQB_2025_01",
+  "archetype_name": "Family AirFryer Quick Bites",
+  "name": "Air Fryer BBQ Meatball Sliders with Corn Salsa",
+  "description": "Quick BBQ meatball sliders finished with melty cheddar and a fresh corn salsa. Fast assembly and kid-friendly flavors using the air fryer and microwave.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat air fryer to 200°C/390°F for 2 minutes.",
+    "Split the hamburger buns.",
+    "Slice cheddar cheese slices to fit buns if needed.",
+    "Rinse and chop coriander.",
+    "Halve cherry tomatoes.",
+    "In a bowl, combine corn, salsa, cherry tomatoes, and coriander; set aside.",
+    "Lay out lettuce leaves for assembly."
+  ],
+  "cook_steps": [
+    "Air fry meatballs in a single layer for 8–10 minutes, shaking halfway, until browned and cooked through.",
+    "During the last 1 minute, place a piece of cheddar cheese on each meatball to soften slightly (work in batches if needed).",
+    "Microwave the bun halves for 15–20 seconds to warm slightly.",
+    "Spread a little BBQ sauce on the bottom bun halves.",
+    "Place 2 meatballs on each bun, add lettuce, and a spoon of corn salsa.",
+    "Top with more BBQ sauce if desired and cap with the top buns. Serve remaining corn salsa on the side."
+  ],
+  "instructions": [
+    "Preheat air fryer to 200°C/390°F for 2 minutes.",
+    "Split the hamburger buns.",
+    "Slice cheddar cheese slices to fit buns if needed.",
+    "Rinse and chop coriander.",
+    "Halve cherry tomatoes.",
+    "In a bowl, combine corn, salsa, cherry tomatoes, and coriander; set aside.",
+    "Lay out lettuce leaves for assembly.",
+    "Air fry meatballs in a single layer for 8–10 minutes, shaking halfway, until browned and cooked through.",
+    "During the last 1 minute, place a piece of cheddar cheese on each meatball to soften slightly (work in batches if needed).",
+    "Microwave the bun halves for 15–20 seconds to warm slightly.",
+    "Spread a little BBQ sauce on the bottom bun halves.",
+    "Place 2 meatballs on each bun, add lettuce, and a spoon of corn salsa.",
+    "Top with more BBQ sauce if desired and cap with the top buns. Serve remaining corn salsa on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "meatballs",
+      "quantity": "16 small meatballs (about 500 g)",
+      "preparation": "air fry from chilled or thawed"
+    },
+    {
+      "core_item_name": "hamburger buns",
+      "quantity": "8 buns",
+      "preparation": "split"
+    },
+    {
+      "core_item_name": "cheddar cheese slices",
+      "quantity": "8 slices",
+      "preparation": "halve if large"
+    },
+    {
+      "core_item_name": "BBQ sauce",
+      "quantity": "1/2 cup",
+      "preparation": "for spreading and drizzling"
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "4 cups",
+      "preparation": "leaves or shredded"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "1 cup",
+      "preparation": "drained if canned"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": "ready to use"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "AirFryer",
+      "Microwave"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "meatballs",
+      "quantity": "16 small meatballs (about 500 g)",
+      "preparation": "air fry from chilled or thawed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "hamburger buns",
+      "quantity": "8 buns",
+      "preparation": "split",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cheddar cheese slices",
+      "quantity": "8 slices",
+      "preparation": "halve if large",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "BBQ sauce",
+      "quantity": "1/2 cup",
+      "preparation": "for spreading and drizzling",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "4 cups",
+      "preparation": "leaves or shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "1 cup",
+      "preparation": "drained if canned",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": "ready to use",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T160939Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T160858Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

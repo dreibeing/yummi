@@ -1,0 +1,166 @@
+{
+  "meal_id": "meal_20251125T160858Z_02_65f5a6",
+  "archetype_uid": "arch_AFQB_2025_01",
+  "archetype_name": "Family AirFryer Quick Bites",
+  "name": "Air Fryer Chicken Taquitos with Salsa Dip",
+  "description": "Crispy rolled tortillas stuffed with smoked chicken and cheddar, air-fried in minutes and served with salsa, sour cream, and a simple lettuce side.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat air fryer to 200°C/390°F for 3 minutes.",
+    "Shred the smoked chicken breast into small pieces.",
+    "Warm tortillas in the microwave for 20–30 seconds to make them flexible.",
+    "Set out salsa, sour cream, and lettuce for serving."
+  ],
+  "cook_steps": [
+    "Lay out tortillas and add a thin line of shredded smoked chicken breast and cheddar cheese down the center of each.",
+    "Roll each tortilla tightly into a taquito; place seam-side down.",
+    "Lightly brush or spray the taquitos with olive oil.",
+    "Arrange taquitos in the air fryer basket in a single layer (work in batches if needed).",
+    "Air fry for 6–8 minutes at 200°C/390°F until golden and crisp, turning once halfway.",
+    "Serve hot with salsa and sour cream for dipping, with lettuce on the side."
+  ],
+  "instructions": [
+    "Preheat air fryer to 200°C/390°F for 3 minutes.",
+    "Shred the smoked chicken breast into small pieces.",
+    "Warm tortillas in the microwave for 20–30 seconds to make them flexible.",
+    "Set out salsa, sour cream, and lettuce for serving.",
+    "Lay out tortillas and add a thin line of shredded smoked chicken breast and cheddar cheese down the center of each.",
+    "Roll each tortilla tightly into a taquito; place seam-side down.",
+    "Lightly brush or spray the taquitos with olive oil.",
+    "Arrange taquitos in the air fryer basket in a single layer (work in batches if needed).",
+    "Air fry for 6–8 minutes at 200°C/390°F until golden and crisp, turning once halfway.",
+    "Serve hot with salsa and sour cream for dipping, with lettuce on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "tortillas",
+      "quantity": "8 medium",
+      "preparation": "warmed"
+    },
+    {
+      "core_item_name": "smoked chicken breast",
+      "quantity": "300 g",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1 cup, shredded"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1–2 tablespoons",
+      "preparation": "for brushing"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": "for dipping"
+    },
+    {
+      "core_item_name": "sour cream",
+      "quantity": "1/2 cup",
+      "preparation": "for dipping"
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "4 cups",
+      "preparation": "roughly chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "AirFryer",
+      "Microwave"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "tortillas",
+      "quantity": "8 medium",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "smoked chicken breast",
+      "quantity": "300 g",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1 cup, shredded",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1–2 tablespoons",
+      "preparation": "for brushing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": "for dipping",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sour cream",
+      "quantity": "1/2 cup",
+      "preparation": "for dipping",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "4 cups",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T161010Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T160858Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

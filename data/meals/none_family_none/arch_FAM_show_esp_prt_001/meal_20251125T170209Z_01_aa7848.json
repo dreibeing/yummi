@@ -1,0 +1,291 @@
+{
+  "meal_id": "meal_20251125T170209Z_01_aa7848",
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "archetype_name": "Family Weekend Showstopper: Spanish & Portuguese Feasts",
+  "name": "Iberian Tuna & Pepper Empanada (Family-Sized Pie)",
+  "description": "A Galician-style baked savory pie filled with tuna, slow-cooked onions, red pepper, and tomato, finished with a glossy crust. A centerpiece bake for an Iberian weekend spread.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Preheat oven to 200°C (390°F). Line a large baking tray.",
+    "Activate dough: In a bowl, combine yeast, warm water, and sugar. Let stand 5–10 minutes until foamy.",
+    "Make dough base: In a large bowl, add flour and salt. Pour in activated yeast mixture and 3 tbsp olive oil. Mix to form a soft dough.",
+    "Knead on a lightly floured surface for 8–10 minutes until smooth. Place in a greased bowl, cover, and proof 45–60 minutes until doubled.",
+    "Chop onions finely. Dice red pepper. Mince garlic. Roughly chop parsley.",
+    "Drain tuna well.",
+    "Place 2 eggs in a small pot of cold water for hard-boiling (do not start heat yet). Crack the 3rd egg into a small bowl and beat for egg wash."
+  ],
+  "cook_steps": [
+    "Start the filling base: Heat 3 tbsp olive oil in a large pan over medium. Add onions, red pepper, and bay leaf. Cook 12–15 minutes, stirring, until very soft and sweet.",
+    "Add garlic and paprika; cook 1 minute until fragrant.",
+    "Stir in diced tomatoes, a pinch of salt, and black pepper. Simmer 10–12 minutes until thick and jammy. Remove bay leaf. Fold in tuna and parsley. Cool filling to room temperature.",
+    "While the filling simmers, bring the pot with eggs to a boil, then simmer 9 minutes. Cool under cold water, peel, and chop the 2 hard-boiled eggs.",
+    "Punch down the risen dough. Divide into two pieces (one slightly larger for the base).",
+    "Roll the larger piece into a rectangle roughly 30×40 cm. Lay onto the prepared tray.",
+    "Spread the cooled tuna-pepper filling evenly, leaving a 2 cm border. Scatter the chopped hard-boiled eggs over the filling.",
+    "Roll the second dough piece to fit as a lid. Place over filling. Pinch and crimp edges to seal.",
+    "Cut 3–4 small slits on top to vent. Brush with beaten egg.",
+    "Bake 35–45 minutes until deep golden brown and cooked through. Rest 10 minutes before slicing and serving."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C (390°F). Line a large baking tray.",
+    "Activate dough: In a bowl, combine yeast, warm water, and sugar. Let stand 5–10 minutes until foamy.",
+    "Make dough base: In a large bowl, add flour and salt. Pour in activated yeast mixture and 3 tbsp olive oil. Mix to form a soft dough.",
+    "Knead on a lightly floured surface for 8–10 minutes until smooth. Place in a greased bowl, cover, and proof 45–60 minutes until doubled.",
+    "Chop onions finely. Dice red pepper. Mince garlic. Roughly chop parsley.",
+    "Drain tuna well.",
+    "Place 2 eggs in a small pot of cold water for hard-boiling (do not start heat yet). Crack the 3rd egg into a small bowl and beat for egg wash.",
+    "Start the filling base: Heat 3 tbsp olive oil in a large pan over medium. Add onions, red pepper, and bay leaf. Cook 12–15 minutes, stirring, until very soft and sweet.",
+    "Add garlic and paprika; cook 1 minute until fragrant.",
+    "Stir in diced tomatoes, a pinch of salt, and black pepper. Simmer 10–12 minutes until thick and jammy. Remove bay leaf. Fold in tuna and parsley. Cool filling to room temperature.",
+    "While the filling simmers, bring the pot with eggs to a boil, then simmer 9 minutes. Cool under cold water, peel, and chop the 2 hard-boiled eggs.",
+    "Punch down the risen dough. Divide into two pieces (one slightly larger for the base).",
+    "Roll the larger piece into a rectangle roughly 30×40 cm. Lay onto the prepared tray.",
+    "Spread the cooled tuna-pepper filling evenly, leaving a 2 cm border. Scatter the chopped hard-boiled eggs over the filling.",
+    "Roll the second dough piece to fit as a lid. Place over filling. Pinch and crimp edges to seal.",
+    "Cut 3–4 small slits on top to vent. Brush with beaten egg.",
+    "Bake 35–45 minutes until deep golden brown and cooked through. Rest 10 minutes before slicing and serving."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "flour",
+      "quantity": "4 cups (about 500 g)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "yeast",
+      "quantity": "2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1¼ cups, warm",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1½ tsp, plus a pinch for filling",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "6 tbsp, divided",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "red pepper",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (400 g)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "bay leaf",
+      "quantity": "1",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "tuna",
+      "quantity": "400 g, drained",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "3 large",
+      "preparation": "2 hard-boiled and chopped; 1 beaten for egg wash"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Portuguese",
+      "Spanish"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Egg",
+      "Gluten",
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "flour",
+      "quantity": "4 cups (about 500 g)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yeast",
+      "quantity": "2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1¼ cups, warm",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1½ tsp, plus a pinch for filling",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "6 tbsp, divided",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red pepper",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (400 g)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaf",
+      "quantity": "1",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tuna",
+      "quantity": "400 g, drained",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "3 large",
+      "preparation": "2 hard-boiled and chopped; 1 beaten for egg wash",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T170307Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T170209Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

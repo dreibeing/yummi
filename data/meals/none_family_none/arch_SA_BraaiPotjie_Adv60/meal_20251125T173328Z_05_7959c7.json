@@ -1,0 +1,226 @@
+{
+  "meal_id": "meal_20251125T173328Z_05_7959c7",
+  "archetype_uid": "arch_SA_BraaiPotjie_Adv60",
+  "archetype_name": "Family Weekend Advanced: South African Braai & Potjie",
+  "name": "Picanha Braai with Chimichurri, Grilled Corn, and Oven Roosterkoek",
+  "description": "Fat-cap-on picanha cooked over a two-zone braai for a juicy roast, served with bright chimichurri, flame-kissed corn, and oven-baked roosterkoek. An advanced, slow, weekend-style South African-Latin American mashup.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Light the OutdoorGrill for two-zone cooking: one hot direct side and one cooler indirect side.",
+    "Pat dry the picanha steak; score the fat cap in a shallow crosshatch.",
+    "Mix braai spice mix, chilli flakes, salt, black pepper, and 1 tbsp olive oil into a paste; rub all over the picanha. Rest at room temperature 20–30 minutes.",
+    "Shuck corn and remove silk; rub with 1 tbsp olive oil and a pinch of salt.",
+    "In a bowl, combine roosterkoek mix and warm milk to form a soft dough; knead 8–10 minutes until smooth.",
+    "Lightly oil a bowl, set dough in, cover, and proof in a warm spot until doubled, 45–60 minutes.",
+    "Preheat Oven to 200°C (392°F) with a baking tray inside.",
+    "Punch down dough, divide into 8 even balls, and place on a parchment sheet for a 10-minute bench rest.",
+    "Melt butter for brushing."
+  ],
+  "cook_steps": [
+    "Set the picanha fat-side down over indirect heat. Close the lid and cook 30–45 minutes, turning once, until internal temp reaches about 48–50°C (118–122°F).",
+    "Move picanha to the hot direct side, sear 2–3 minutes per side to crisp the fat and build color (watch for flare-ups). Rest on a board 10–15 minutes.",
+    "While the meat rests, grill the corn over direct heat 8–12 minutes, turning until charred in spots and tender. Brush with a little olive oil if dry and season with salt.",
+    "Slide the rested dough balls onto the hot baking tray and bake in the Oven 15–20 minutes until puffed and golden. Brush immediately with melted butter.",
+    "Slice the picanha across the grain into thick slices.",
+    "Serve sliced picanha with chimichurri spooned over, grilled corn on the side, and warm roosterkoek."
+  ],
+  "instructions": [
+    "Light the OutdoorGrill for two-zone cooking: one hot direct side and one cooler indirect side.",
+    "Pat dry the picanha steak; score the fat cap in a shallow crosshatch.",
+    "Mix braai spice mix, chilli flakes, salt, black pepper, and 1 tbsp olive oil into a paste; rub all over the picanha. Rest at room temperature 20–30 minutes.",
+    "Shuck corn and remove silk; rub with 1 tbsp olive oil and a pinch of salt.",
+    "In a bowl, combine roosterkoek mix and warm milk to form a soft dough; knead 8–10 minutes until smooth.",
+    "Lightly oil a bowl, set dough in, cover, and proof in a warm spot until doubled, 45–60 minutes.",
+    "Preheat Oven to 200°C (392°F) with a baking tray inside.",
+    "Punch down dough, divide into 8 even balls, and place on a parchment sheet for a 10-minute bench rest.",
+    "Melt butter for brushing.",
+    "Set the picanha fat-side down over indirect heat. Close the lid and cook 30–45 minutes, turning once, until internal temp reaches about 48–50°C (118–122°F).",
+    "Move picanha to the hot direct side, sear 2–3 minutes per side to crisp the fat and build color (watch for flare-ups). Rest on a board 10–15 minutes.",
+    "While the meat rests, grill the corn over direct heat 8–12 minutes, turning until charred in spots and tender. Brush with a little olive oil if dry and season with salt.",
+    "Slide the rested dough balls onto the hot baking tray and bake in the Oven 15–20 minutes until puffed and golden. Brush immediately with melted butter.",
+    "Slice the picanha across the grain into thick slices.",
+    "Serve sliced picanha with chimichurri spooned over, grilled corn on the side, and warm roosterkoek."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "picanha steak",
+      "quantity": "1.2–1.5 kg",
+      "preparation": "fat cap scored"
+    },
+    {
+      "core_item_name": "braai spice mix",
+      "quantity": "2 tbsp",
+      "preparation": "mixed into paste"
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 tsp",
+      "preparation": "mixed into paste"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "divided between meat and corn"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "chimichurri",
+      "quantity": "1/2 cup",
+      "preparation": "for serving"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "4 ears",
+      "preparation": "husks removed"
+    },
+    {
+      "core_item_name": "roosterkoek mix",
+      "quantity": "500 g",
+      "preparation": "for bread rolls"
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "300 ml",
+      "preparation": "warmed"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": "melted for brushing"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "LatinAmerican",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "picanha steak",
+      "quantity": "1.2–1.5 kg",
+      "preparation": "fat cap scored",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "braai spice mix",
+      "quantity": "2 tbsp",
+      "preparation": "mixed into paste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 tsp",
+      "preparation": "mixed into paste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "divided between meat and corn",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chimichurri",
+      "quantity": "1/2 cup",
+      "preparation": "for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "4 ears",
+      "preparation": "husks removed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "roosterkoek mix",
+      "quantity": "500 g",
+      "preparation": "for bread rolls",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "300 ml",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": "melted for brushing",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T173839Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T173328Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

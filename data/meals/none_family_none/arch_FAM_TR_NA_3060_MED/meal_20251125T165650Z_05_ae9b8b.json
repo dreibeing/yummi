@@ -1,0 +1,371 @@
+{
+  "meal_id": "meal_20251125T165650Z_05_ae9b8b",
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "archetype_name": "Family Turkish & North African Suppers (Medium, 30–60, Intermediate)",
+  "name": "Izmir-Style Beef Köfte Tray Bake with Bulgur Pilaf and Preserved Lemon Chopped Salad",
+  "description": "Baked Turkish beef köfte with potatoes, peppers, and tomato-chili sauce, served with fluffy bulgur pilaf and a bright preserved-lemon salad. Medium warmth and family-friendly, cooked on the stovetop and in the oven.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 200°C/390°F.",
+    "Finely chop 1 of the onions and 3 cloves of garlic for the köfte mix.",
+    "Slice the remaining onion into thin half-moons for the sauce.",
+    "Cut potatoes into 1 cm thick wedges; cut bell peppers into strips.",
+    "Chop parsley; finely chop 1 slice of preserved lemon (rind only) for the salad.",
+    "Dice tomatoes and cucumber for the salad; thinly slice red onion.",
+    "Rinse bulgur in a sieve; drain.",
+    "Measure vegetable stock (hot) for pilaf."
+  ],
+  "cook_steps": [
+    "Make köfte: In a bowl, mix beef mince, the finely chopped onion, 2 cloves minced garlic, parsley (2 tbsp), ground cumin (1 tsp), paprika (1 tsp), chili flakes (1/2 tsp), salt, and black pepper. Form 12–16 oval patties.",
+    "Start tray base: In a large ovenproof dish, toss potatoes and bell peppers with olive oil (2 tbsp), salt, and black pepper.",
+    "Sear köfte: Heat 1 tbsp olive oil in a large skillet over medium-high. Sear köfte 1–2 min per side to brown (do not cook through). Transfer onto the potatoes and peppers.",
+    "Make sauce: In the same skillet, add sliced onion with a little olive oil if needed; cook 3–4 min. Add 1 clove minced garlic, tomato paste (1 tbsp), chili flakes (1/4 tsp), ground cumin (1/2 tsp); cook 1 min. Stir in crushed tomatoes (1 cup) and water (1/2 cup); season with salt and black pepper. Simmer 2–3 min.",
+    "Bake: Pour the sauce over the tray. Cover loosely with foil and bake 20 min, then uncover and bake 10–15 min until potatoes are tender and köfte are cooked through.",
+    "Cook bulgur pilaf: While the tray bakes, heat 1 tbsp olive oil in a saucepan over medium. Add 2 tbsp finely chopped onions; cook 2–3 min. Stir in rinsed bulgur (1 cup) to coat 1 min. Add hot vegetable stock (1.75 cups), a pinch of salt, and black pepper. Bring to a boil, then cover and simmer on low 12–15 min until liquid is absorbed. Rest 5 min, fluff with a fork.",
+    "Make salad: In a bowl, combine diced tomatoes, cucumber, sliced red onion, chopped parsley (2 tbsp), finely chopped preserved lemon, olive oil (1–2 tbsp), lemon juice (1 tbsp), sumac (1/2 tsp), salt, and black pepper. Toss and set aside.",
+    "Serve: Spoon bulgur pilaf onto plates, add köfte, peppers, and potatoes with pan sauce. Serve salad on the side."
+  ],
+  "instructions": [
+    "Heat oven to 200°C/390°F.",
+    "Finely chop 1 of the onions and 3 cloves of garlic for the köfte mix.",
+    "Slice the remaining onion into thin half-moons for the sauce.",
+    "Cut potatoes into 1 cm thick wedges; cut bell peppers into strips.",
+    "Chop parsley; finely chop 1 slice of preserved lemon (rind only) for the salad.",
+    "Dice tomatoes and cucumber for the salad; thinly slice red onion.",
+    "Rinse bulgur in a sieve; drain.",
+    "Measure vegetable stock (hot) for pilaf.",
+    "Make köfte: In a bowl, mix beef mince, the finely chopped onion, 2 cloves minced garlic, parsley (2 tbsp), ground cumin (1 tsp), paprika (1 tsp), chili flakes (1/2 tsp), salt, and black pepper. Form 12–16 oval patties.",
+    "Start tray base: In a large ovenproof dish, toss potatoes and bell peppers with olive oil (2 tbsp), salt, and black pepper.",
+    "Sear köfte: Heat 1 tbsp olive oil in a large skillet over medium-high. Sear köfte 1–2 min per side to brown (do not cook through). Transfer onto the potatoes and peppers.",
+    "Make sauce: In the same skillet, add sliced onion with a little olive oil if needed; cook 3–4 min. Add 1 clove minced garlic, tomato paste (1 tbsp), chili flakes (1/4 tsp), ground cumin (1/2 tsp); cook 1 min. Stir in crushed tomatoes (1 cup) and water (1/2 cup); season with salt and black pepper. Simmer 2–3 min.",
+    "Bake: Pour the sauce over the tray. Cover loosely with foil and bake 20 min, then uncover and bake 10–15 min until potatoes are tender and köfte are cooked through.",
+    "Cook bulgur pilaf: While the tray bakes, heat 1 tbsp olive oil in a saucepan over medium. Add 2 tbsp finely chopped onions; cook 2–3 min. Stir in rinsed bulgur (1 cup) to coat 1 min. Add hot vegetable stock (1.75 cups), a pinch of salt, and black pepper. Bring to a boil, then cover and simmer on low 12–15 min until liquid is absorbed. Rest 5 min, fluff with a fork.",
+    "Make salad: In a bowl, combine diced tomatoes, cucumber, sliced red onion, chopped parsley (2 tbsp), finely chopped preserved lemon, olive oil (1–2 tbsp), lemon juice (1 tbsp), sumac (1/2 tsp), salt, and black pepper. Toss and set aside.",
+    "Serve: Spoon bulgur pilaf onto plates, add köfte, peppers, and potatoes with pan sauce. Serve salad on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef mince",
+      "quantity": "600 g",
+      "preparation": "for köfte"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "1 finely chopped, 1 sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "2 minced for köfte, 1 for sauce"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "4 tbsp",
+      "preparation": "chopped, divided"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "2 tsp",
+      "preparation": "divided between köfte and sauce"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": "for köfte"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "3/4 tsp",
+      "preparation": "divided between köfte and sauce"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "divided, to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "divided, to taste"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4–5 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "600 g",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "cut into strips"
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 cup",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "1 tbsp",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1/2 cup",
+      "preparation": "to loosen sauce"
+    },
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1 cup",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1.75 cups",
+      "preparation": "hot"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "2 medium",
+      "preparation": "diced for salad"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "diced for salad"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "thinly sliced for salad"
+    },
+    {
+      "core_item_name": "preserved lemon",
+      "quantity": "1 thin slice",
+      "preparation": "rind finely chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced for salad"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1/2 tsp",
+      "preparation": "for salad"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "NorthAfrican",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef mince",
+      "quantity": "600 g",
+      "preparation": "for köfte",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "1 finely chopped, 1 sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "2 minced for köfte, 1 for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "4 tbsp",
+      "preparation": "chopped, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "2 tsp",
+      "preparation": "divided between köfte and sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": "for köfte",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "3/4 tsp",
+      "preparation": "divided between köfte and sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "divided, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "divided, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4–5 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "600 g",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "cut into strips",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 cup",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "1 tbsp",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1/2 cup",
+      "preparation": "to loosen sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1 cup",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1.75 cups",
+      "preparation": "hot",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "2 medium",
+      "preparation": "diced for salad",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "diced for salad",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "thinly sliced for salad",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "preserved lemon",
+      "quantity": "1 thin slice",
+      "preparation": "rind finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced for salad",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1/2 tsp",
+      "preparation": "for salad",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T170209Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T165650Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

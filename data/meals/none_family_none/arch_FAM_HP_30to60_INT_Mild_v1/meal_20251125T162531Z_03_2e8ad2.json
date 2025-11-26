@@ -1,0 +1,207 @@
+{
+  "meal_id": "meal_20251125T162531Z_03_2e8ad2",
+  "archetype_uid": "arch_FAM_HP_30to60_INT_Mild_v1",
+  "archetype_name": "Family High-Protein Dinners (30–60, Mild, Intermediate)",
+  "name": "Lemon-Dill Rainbow Trout with Brown Basmati Rice and Roasted Asparagus",
+  "description": "Oven-roasted rainbow trout with dill and lemon, paired with fluffy brown basmati rice and crisp roasted asparagus. A mild, protein-forward family dinner done in under an hour.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F. Line a large baking tray with foil or baking paper.",
+    "Rinse 1.5 cups brown basmati rice under cold water until it runs clear.",
+    "Trim woody ends from asparagus.",
+    "Finely chop dill and mince garlic.",
+    "Pat rainbow trout dry with paper towels.",
+    "Zest the lemon, then cut it in half (reserve one half for juice, slice the other half for garnish)."
+  ],
+  "cook_steps": [
+    "Add rinsed brown basmati rice and 3 cups water with a big pinch of salt to a saucepan; bring to a boil, then reduce to low, cover, and simmer 25–30 minutes until tender. Keep covered to steam 5 minutes off heat.",
+    "On the lined tray, toss asparagus with 1 tbsp olive oil, a pinch of salt, and black pepper. Roast 12–15 minutes until crisp-tender; push to one side of the tray.",
+    "Place trout fillets skin-side down on the cleared side of the tray. Drizzle with 2 tbsp olive oil, sprinkle minced garlic, most of the chopped dill, salt, and black pepper. Lay a few lemon slices on top.",
+    "Roast trout 8–10 minutes until it flakes easily with a fork (thicker fillets may need up to 12 minutes).",
+    "Fluff the cooked rice with a fork; fold in lemon zest and a squeeze of lemon juice. Adjust salt and pepper.",
+    "Plate rice, top with trout, and serve with roasted asparagus. Finish with remaining dill and an extra squeeze of lemon to taste."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F. Line a large baking tray with foil or baking paper.",
+    "Rinse 1.5 cups brown basmati rice under cold water until it runs clear.",
+    "Trim woody ends from asparagus.",
+    "Finely chop dill and mince garlic.",
+    "Pat rainbow trout dry with paper towels.",
+    "Zest the lemon, then cut it in half (reserve one half for juice, slice the other half for garnish).",
+    "Add rinsed brown basmati rice and 3 cups water with a big pinch of salt to a saucepan; bring to a boil, then reduce to low, cover, and simmer 25–30 minutes until tender. Keep covered to steam 5 minutes off heat.",
+    "On the lined tray, toss asparagus with 1 tbsp olive oil, a pinch of salt, and black pepper. Roast 12–15 minutes until crisp-tender; push to one side of the tray.",
+    "Place trout fillets skin-side down on the cleared side of the tray. Drizzle with 2 tbsp olive oil, sprinkle minced garlic, most of the chopped dill, salt, and black pepper. Lay a few lemon slices on top.",
+    "Roast trout 8–10 minutes until it flakes easily with a fork (thicker fillets may need up to 12 minutes).",
+    "Fluff the cooked rice with a fork; fold in lemon zest and a squeeze of lemon juice. Adjust salt and pepper.",
+    "Plate rice, top with trout, and serve with roasted asparagus. Finish with remaining dill and an extra squeeze of lemon to taste."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "rainbow trout",
+      "quantity": "4 fillets (600–800 g total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "1.5 cups (raw)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "asparagus",
+      "quantity": "500 g",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 whole",
+      "preparation": "zested, halved; half sliced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "dill",
+      "quantity": "2 tbsp",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": "for cooking rice"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "French"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "rainbow trout",
+      "quantity": "4 fillets (600–800 g total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "1.5 cups (raw)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "asparagus",
+      "quantity": "500 g",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 whole",
+      "preparation": "zested, halved; half sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "dill",
+      "quantity": "2 tbsp",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": "for cooking rice",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T162753Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T162531Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

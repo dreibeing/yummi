@@ -1,0 +1,141 @@
+{
+  "meal_id": "meal_20251125T165343Z_05_cd8563",
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "archetype_name": "Family Heat-and-Eat Weeknights (Under 15, No Heat)",
+  "name": "Microwave Beef Lasagne Plates with Salad and Warm Rolls",
+  "description": "Family-friendly beef lasagne heated in the microwave, served with a tossed salad and warm rolls. Zero chili heat and ready fast for busy weeknights.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Read heating instructions on the beef lasagne ready meal.",
+    "Place the beef lasagne ready meal on a microwave-safe plate; cut a small vent in the film if required.",
+    "Open the salad and keep the salad dressing nearby.",
+    "Arrange rolls on a microwave-safe plate; cover with a slightly damp paper towel.",
+    "Set out plates, forks, and serving spoons."
+  ],
+  "cook_steps": [
+    "Microwave the beef lasagne ready meal per package directions until hot throughout; let it rest 1–2 minutes.",
+    "Microwave the rolls for 20–30 seconds until warm.",
+    "Toss the salad with salad dressing to taste.",
+    "Serve lasagne onto plates with a side of salad and a warm roll."
+  ],
+  "instructions": [
+    "Read heating instructions on the beef lasagne ready meal.",
+    "Place the beef lasagne ready meal on a microwave-safe plate; cut a small vent in the film if required.",
+    "Open the salad and keep the salad dressing nearby.",
+    "Arrange rolls on a microwave-safe plate; cover with a slightly damp paper towel.",
+    "Set out plates, forks, and serving spoons.",
+    "Microwave the beef lasagne ready meal per package directions until hot throughout; let it rest 1–2 minutes.",
+    "Microwave the rolls for 20–30 seconds until warm.",
+    "Toss the salad with salad dressing to taste.",
+    "Serve lasagne onto plates with a side of salad and a warm roll."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef lasagne ready meal",
+      "quantity": "2 trays (about 350–450 g each)",
+      "preparation": "vent film if required"
+    },
+    {
+      "core_item_name": "salad",
+      "quantity": "1 large bag (about 300–400 g)",
+      "preparation": "ready to eat"
+    },
+    {
+      "core_item_name": "salad dressing",
+      "quantity": "1/3 cup",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "rolls",
+      "quantity": "4–6 rolls",
+      "preparation": "warm"
+    },
+    {
+      "core_item_name": "butter spread",
+      "quantity": "2–3 tablespoons",
+      "preparation": "for serving (optional)"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef lasagne ready meal",
+      "quantity": "2 trays (about 350–450 g each)",
+      "preparation": "vent film if required",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salad",
+      "quantity": "1 large bag (about 300–400 g)",
+      "preparation": "ready to eat",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salad dressing",
+      "quantity": "1/3 cup",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rolls",
+      "quantity": "4–6 rolls",
+      "preparation": "warm",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter spread",
+      "quantity": "2–3 tablespoons",
+      "preparation": "for serving (optional)",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T165650Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T165343Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

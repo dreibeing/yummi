@@ -1,0 +1,295 @@
+{
+  "meal_id": "meal_20251125T161147Z_01_4718b7",
+  "archetype_uid": "arch_FAMXHOT1530",
+  "archetype_name": "Family Extra-Hot Chili Night (Caribbean & Mexican, 15–30, Simple)",
+  "name": "Extra-Hot Habanero Jerk Wings with Coconut Rice and Mango Salsa",
+  "description": "Grilled habanero-jerk chicken wings with creamy coconut rice and a quick mango-lime salsa. Blazing heat, simple steps, and fast family cooking.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Pat dry 1.5 kg chicken wings with paper towels.",
+    "Finely chop 2 habanero peppers (wear gloves) and 3 garlic cloves.",
+    "Zest and juice 2 limes; keep zest and juice separate.",
+    "Peel and dice 1 large mango; finely chop a small handful of coriander.",
+    "Rinse 2 cups jasmine rice under cold water until mostly clear.",
+    "Measure 1 can coconut milk (about 400 ml) and 1.5 cups vegetable stock.",
+    "Preheat outdoor grill to medium-high (or heat a large grill pan on the stovetop). Oil grates lightly."
+  ],
+  "cook_steps": [
+    "Make jerk marinade: In a bowl, mix chopped habanero, garlic, 1 tbsp vinegar, 1 tsp allspice, 1 tsp salt, 1 tsp black pepper, 1 tbsp brown sugar, 1 tbsp olive oil, and half the lime juice.",
+    "Toss wings in the marinade until coated. Let sit 5–10 minutes while rice starts.",
+    "Start rice: In a pot, combine rinsed jasmine rice, coconut milk, vegetable stock, a pinch of salt, and lime zest. Bring to a boil, then reduce heat to low, cover, and simmer 12–15 minutes until liquid is absorbed. Rest off heat, covered, 5 minutes; fluff before serving.",
+    "Grill wings: Place wings on the hot grill. Cook 12–15 minutes, turning every 3–4 minutes, until nicely charred and cooked through (juices run clear).",
+    "Make quick mango salsa: In a bowl, combine diced mango, 1/2 cup salsa, remaining lime juice, and chopped coriander. Stir and set aside.",
+    "Finish wings: Brush lightly with a little hot sauce for extra heat (optional).",
+    "Serve: Plate coconut rice, top with grilled wings, and spoon mango salsa on the side."
+  ],
+  "instructions": [
+    "Pat dry 1.5 kg chicken wings with paper towels.",
+    "Finely chop 2 habanero peppers (wear gloves) and 3 garlic cloves.",
+    "Zest and juice 2 limes; keep zest and juice separate.",
+    "Peel and dice 1 large mango; finely chop a small handful of coriander.",
+    "Rinse 2 cups jasmine rice under cold water until mostly clear.",
+    "Measure 1 can coconut milk (about 400 ml) and 1.5 cups vegetable stock.",
+    "Preheat outdoor grill to medium-high (or heat a large grill pan on the stovetop). Oil grates lightly.",
+    "Make jerk marinade: In a bowl, mix chopped habanero, garlic, 1 tbsp vinegar, 1 tsp allspice, 1 tsp salt, 1 tsp black pepper, 1 tbsp brown sugar, 1 tbsp olive oil, and half the lime juice.",
+    "Toss wings in the marinade until coated. Let sit 5–10 minutes while rice starts.",
+    "Start rice: In a pot, combine rinsed jasmine rice, coconut milk, vegetable stock, a pinch of salt, and lime zest. Bring to a boil, then reduce heat to low, cover, and simmer 12–15 minutes until liquid is absorbed. Rest off heat, covered, 5 minutes; fluff before serving.",
+    "Grill wings: Place wings on the hot grill. Cook 12–15 minutes, turning every 3–4 minutes, until nicely charred and cooked through (juices run clear).",
+    "Make quick mango salsa: In a bowl, combine diced mango, 1/2 cup salsa, remaining lime juice, and chopped coriander. Stir and set aside.",
+    "Finish wings: Brush lightly with a little hot sauce for extra heat (optional).",
+    "Serve: Plate coconut rice, top with grilled wings, and spoon mango salsa on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken wings",
+      "quantity": "1.5 kg",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "habanero peppers",
+      "quantity": "2",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "vinegar",
+      "quantity": "1 tbsp",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1 tsp",
+      "preparation": "ground"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "plus a pinch for rice"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tbsp",
+      "preparation": "for balance"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": "in marinade; plus for grill grates"
+    },
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "coconut milk",
+      "quantity": "400 ml (1 can)",
+      "preparation": "shaken"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1.5 cups",
+      "preparation": "for rice"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "mango",
+      "quantity": "1 large",
+      "preparation": "peeled and diced"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup",
+      "preparation": "jarred"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "2 tbsp",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "hot sauce",
+      "quantity": "1–2 tsp",
+      "preparation": "optional finish"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Caribbean",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "ExtraHot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken wings",
+      "quantity": "1.5 kg",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero peppers",
+      "quantity": "2",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vinegar",
+      "quantity": "1 tbsp",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1 tsp",
+      "preparation": "ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "plus a pinch for rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tbsp",
+      "preparation": "for balance",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": "in marinade; plus for grill grates",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coconut milk",
+      "quantity": "400 ml (1 can)",
+      "preparation": "shaken",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1.5 cups",
+      "preparation": "for rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mango",
+      "quantity": "1 large",
+      "preparation": "peeled and diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup",
+      "preparation": "jarred",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "2 tbsp",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "hot sauce",
+      "quantity": "1–2 tsp",
+      "preparation": "optional finish",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T161246Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T161147Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

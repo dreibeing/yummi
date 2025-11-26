@@ -1,0 +1,249 @@
+{
+  "meal_id": "meal_20251125T164458Z_05_86344c",
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "archetype_name": "Family Low-Carb Weeknight Bowls & Wraps (15–30, Mild)",
+  "name": "Mild Fish Taco Cauliflower Rice Bowls",
+  "description": "Oven-roasted seasoned fish over lime-kissed cauliflower rice with crisp cabbage, avocado, and salsa for a low-carb family bowl. Mild flavors, ready in 15–30 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C/425°F and line a baking tray with foil or parchment.",
+    "In a small bowl, mix ground cumin, paprika, garlic powder, salt, and black pepper.",
+    "Pat dry fish fillets with paper towels.",
+    "Thinly slice cabbage.",
+    "Halve, pit, and slice avocado.",
+    "Cut lime into wedges.",
+    "Roughly chop coriander.",
+    "Open cauliflower rice package and have it ready to heat."
+  ],
+  "cook_steps": [
+    "Place fish fillets on the lined tray; drizzle with olive oil and sprinkle the spice mix evenly on both sides.",
+    "Roast fish for 8–10 minutes until it flakes easily with a fork (thicker fillets may need 1–2 minutes more).",
+    "While fish roasts, heat a large skillet over medium with a little olive oil; add cauliflower rice and a pinch of salt and black pepper, stir 3–4 minutes until hot. Squeeze in a wedge of lime and stir.",
+    "Divide cauliflower rice into 4 bowls.",
+    "Flake roasted fish into large pieces and place on top of the rice.",
+    "Top each bowl with sliced cabbage, avocado, and spoonfuls of salsa.",
+    "Finish with chopped coriander and extra lime wedges on the side."
+  ],
+  "instructions": [
+    "Heat oven to 220°C/425°F and line a baking tray with foil or parchment.",
+    "In a small bowl, mix ground cumin, paprika, garlic powder, salt, and black pepper.",
+    "Pat dry fish fillets with paper towels.",
+    "Thinly slice cabbage.",
+    "Halve, pit, and slice avocado.",
+    "Cut lime into wedges.",
+    "Roughly chop coriander.",
+    "Open cauliflower rice package and have it ready to heat.",
+    "Place fish fillets on the lined tray; drizzle with olive oil and sprinkle the spice mix evenly on both sides.",
+    "Roast fish for 8–10 minutes until it flakes easily with a fork (thicker fillets may need 1–2 minutes more).",
+    "While fish roasts, heat a large skillet over medium with a little olive oil; add cauliflower rice and a pinch of salt and black pepper, stir 3–4 minutes until hot. Squeeze in a wedge of lime and stir.",
+    "Divide cauliflower rice into 4 bowls.",
+    "Flake roasted fish into large pieces and place on top of the rice.",
+    "Top each bowl with sliced cabbage, avocado, and spoonfuls of salsa.",
+    "Finish with chopped coriander and extra lime wedges on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "600–700 g",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "garlic powder",
+      "quantity": "1/2 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 teaspoon, plus a pinch",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 teaspoon, plus a pinch",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "600 g",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "2 cups",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "2",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1–2",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "600–700 g",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic powder",
+      "quantity": "1/2 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 teaspoon, plus a pinch",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 teaspoon, plus a pinch",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "600 g",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "2 cups",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "2",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1–2",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T164849Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T164458Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

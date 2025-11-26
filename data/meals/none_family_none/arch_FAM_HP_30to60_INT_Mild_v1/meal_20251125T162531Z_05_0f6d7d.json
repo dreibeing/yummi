@@ -1,0 +1,285 @@
+{
+  "meal_id": "meal_20251125T162531Z_05_0f6d7d",
+  "archetype_uid": "arch_FAM_HP_30to60_INT_Mild_v1",
+  "archetype_name": "Family High-Protein Dinners (30–60, Mild, Intermediate)",
+  "name": "Lemon-Herb Chicken with Roasted Veg, Couscous, and Dill Yogurt",
+  "description": "Seared lemon-herb chicken thighs with roasted zucchini, bell peppers, and red onion, served over fluffy couscous with a cool dill-yogurt sauce. Mild flavors, high protein, and weeknight-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C (425°F).",
+    "Cut zucchini into half-moons and bell peppers into strips; slice red onion into wedges.",
+    "Mince garlic (4 cloves for chicken/marinade and 1 clove for yogurt).",
+    "Zest then halve the lemon; squeeze juice into a small bowl.",
+    "Pat chicken thigh fillets dry with paper towels.",
+    "Finely chop parsley (2 tbsp) and dill (2 tbsp).",
+    "Grate cucumber on large holes, then squeeze out excess liquid with a clean towel.",
+    "Measure couscous and water."
+  ],
+  "cook_steps": [
+    "On a sheet pan, toss zucchini, bell peppers, and red onion with 1 tbsp olive oil, a pinch of salt, and black pepper. Roast 18–22 minutes, tossing once, until tender and lightly charred.",
+    "In a bowl, mix 1 tbsp olive oil, 2 tbsp lemon juice, 1 tsp lemon zest, 2 minced garlic cloves, 1 tsp paprika, 1 tbsp chopped parsley, 1/2 tsp salt, and 1/4 tsp black pepper. Add chicken thigh fillets and coat well.",
+    "Heat 1 tbsp olive oil in a large oven-safe skillet over medium-high. Sear chicken 3–4 minutes per side until browned.",
+    "Transfer skillet to the oven (or move chicken to the sheet pan edges) and roast 8–12 minutes, until chicken reaches doneness.",
+    "While chicken cooks, bring 1 1/4 cups water and a pinch of salt to a boil. Stir in couscous, cover, remove from heat, and rest 5 minutes. Fluff with a fork and fold in remaining lemon zest and 1 tbsp chopped parsley.",
+    "In a small bowl, combine yoghurt, grated cucumber, remaining minced garlic clove, 1 tbsp lemon juice, 1 tbsp olive oil, 1 tbsp chopped dill, a pinch of salt, and black pepper. Stir to make a smooth sauce.",
+    "Slice chicken if desired. Plate couscous, top with roasted vegetables and chicken, and spoon dill yogurt over or alongside. Garnish with remaining dill."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C (425°F).",
+    "Cut zucchini into half-moons and bell peppers into strips; slice red onion into wedges.",
+    "Mince garlic (4 cloves for chicken/marinade and 1 clove for yogurt).",
+    "Zest then halve the lemon; squeeze juice into a small bowl.",
+    "Pat chicken thigh fillets dry with paper towels.",
+    "Finely chop parsley (2 tbsp) and dill (2 tbsp).",
+    "Grate cucumber on large holes, then squeeze out excess liquid with a clean towel.",
+    "Measure couscous and water.",
+    "On a sheet pan, toss zucchini, bell peppers, and red onion with 1 tbsp olive oil, a pinch of salt, and black pepper. Roast 18–22 minutes, tossing once, until tender and lightly charred.",
+    "In a bowl, mix 1 tbsp olive oil, 2 tbsp lemon juice, 1 tsp lemon zest, 2 minced garlic cloves, 1 tsp paprika, 1 tbsp chopped parsley, 1/2 tsp salt, and 1/4 tsp black pepper. Add chicken thigh fillets and coat well.",
+    "Heat 1 tbsp olive oil in a large oven-safe skillet over medium-high. Sear chicken 3–4 minutes per side until browned.",
+    "Transfer skillet to the oven (or move chicken to the sheet pan edges) and roast 8–12 minutes, until chicken reaches doneness.",
+    "While chicken cooks, bring 1 1/4 cups water and a pinch of salt to a boil. Stir in couscous, cover, remove from heat, and rest 5 minutes. Fluff with a fork and fold in remaining lemon zest and 1 tbsp chopped parsley.",
+    "In a small bowl, combine yoghurt, grated cucumber, remaining minced garlic clove, 1 tbsp lemon juice, 1 tbsp olive oil, 1 tbsp chopped dill, a pinch of salt, and black pepper. Stir to make a smooth sauce.",
+    "Slice chicken if desired. Plate couscous, top with roasted vegetables and chicken, and spoon dill yogurt over or alongside. Garnish with remaining dill."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "800 g",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "cut into half-moons"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced into strips"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1 cup (dry)",
+      "preparation": "rinsing not needed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1 1/4 cups",
+      "preparation": "for couscous"
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "3/4 cup",
+      "preparation": "plain"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1/2 medium",
+      "preparation": "grated and squeezed dry"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 medium",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "5 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "3 tbsp",
+      "preparation": "finely chopped, divided"
+    },
+    {
+      "core_item_name": "dill",
+      "quantity": "2 tbsp",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "3/4 tsp",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "800 g",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "cut into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced into strips",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1 cup (dry)",
+      "preparation": "rinsing not needed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1 1/4 cups",
+      "preparation": "for couscous",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "3/4 cup",
+      "preparation": "plain",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1/2 medium",
+      "preparation": "grated and squeezed dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 medium",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "5 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "3 tbsp",
+      "preparation": "finely chopped, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "dill",
+      "quantity": "2 tbsp",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "3/4 tsp",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251125T162954Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251125T162531Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}
