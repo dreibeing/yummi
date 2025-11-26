@@ -20,56 +20,16 @@ from .preferences import TagManifest
 
 logger = logging.getLogger(__name__)
 
-DIET_RESTRICTION_TAG_IDS = {
-    "diet_vegan",
-    "diet_veg",
-    "diet_pesc",
-    "diet_poultry",
-    "diet_lowcarb",
-    "diet_keto",
-    "diet_glutenaware",
-}
-
-ETHICS_RESTRICTION_TAG_IDS = {
-    "ethics_halal",
-    "ethics_kosher",
-    "ethics_jain",
-    "ethics_sussea",
-    "ethics_animal",
-}
-
-HEAT_RESTRICTION_TAG_IDS = {
-    "heat_none",
-    "heat_mild",
-}
-
-HEAT_LEVEL_ORDER = {
-    "NoHeat": 0,
-    "Mild": 1,
-    "Medium": 2,
-    "Hot": 3,
-    "ExtraHot": 4,
-}
-
-PREP_TIME_BUCKET_TO_MINUTES = {
-    "Under15": 15,
-    "15to30": 30,
-    "30to45": 45,
-    "45Plus": 60,
-}
+PLACEHOLDER_ALLERGEN_VALUES = {"None", "NoAllergens"}
 
 SKU_SNAPSHOT_LIMIT = 4
 
 
 @dataclass
 class ConstraintContext:
-    allowed_audience: set[str]
-    required_diets: set[str]
-    required_ethics: set[str]
+    selected_audience: str | None
+    required_dietary_restrictions: set[str]
     disallowed_allergens: set[str]
-    disallowed_heat: set[str]
-    max_heat_rank: int | None
-    max_prep_minutes: int | None
     declined_meal_ids: set[str]
 
 
@@ -163,91 +123,50 @@ def _build_constraint_context(
     declined_ids: Sequence[str] | None,
 ) -> ConstraintContext:
     selected = dict(profile.selected_tags or {}) if profile else {}
-    disliked = dict(profile.disliked_tags or {}) if profile else {}
 
-    allowed_audience = _resolve_allowed_audience(selected, tag_manifest)
-    required_diets = _resolve_required_diets(selected, tag_manifest, overrides)
-    required_ethics = _resolve_required_ethics(selected, tag_manifest, overrides)
+    selected_audience = _resolve_selected_audience(selected, tag_manifest)
+    required_dietary_restrictions = _resolve_required_dietary_restrictions(
+        selected,
+        tag_manifest,
+        overrides,
+    )
 
-    disallowed_allergens = set(_tag_ids_to_values(disliked.get("Allergens"), tag_manifest))
+    disallowed_allergens = set(_tag_ids_to_values(selected.get("Allergens"), tag_manifest))
     disallowed_allergens.update(_normalize_value_list(overrides.allergens))
+    disallowed_allergens = _drop_placeholder_allergens(disallowed_allergens)
 
-    disallowed_heat = set(_tag_ids_to_values(disliked.get("HeatSpice"), tag_manifest))
-    disallowed_heat.update(_normalize_value_list(overrides.excludeHeatLevels))
-
-    max_heat_rank = _resolve_heat_limit(selected, tag_manifest)
-
-    max_prep_minutes = overrides.maxPrepTimeMinutes
     declined_meal_ids = {mid for mid in (declined_ids or []) if mid}
 
     return ConstraintContext(
-        allowed_audience=allowed_audience,
-        required_diets=required_diets,
-        required_ethics=required_ethics,
+        selected_audience=selected_audience,
+        required_dietary_restrictions=required_dietary_restrictions,
         disallowed_allergens=disallowed_allergens,
-        disallowed_heat=disallowed_heat,
-        max_heat_rank=max_heat_rank,
-        max_prep_minutes=max_prep_minutes,
         declined_meal_ids=declined_meal_ids,
     )
 
 
-def _resolve_allowed_audience(
+def _resolve_selected_audience(
     selected: Dict[str, List[str]],
     tag_manifest: TagManifest,
-) -> set[str]:
+) -> str | None:
     tag_ids = selected.get("Audience") or []
     if not tag_ids:
-        return set()
-    return set(_tag_ids_to_values(tag_ids, tag_manifest))
+        return None
+    tag_values = _tag_ids_to_values(tag_ids, tag_manifest)
+    return _extract_single_value(tag_values)
 
 
-def _resolve_required_diets(
+def _resolve_required_dietary_restrictions(
     selected: Dict[str, List[str]],
     tag_manifest: TagManifest,
     overrides: HardConstraintOverrides,
 ) -> set[str]:
-    strict_ids = [
-        tag_id for tag_id in selected.get("Diet", []) if tag_id in DIET_RESTRICTION_TAG_IDS
-    ]
-    values = set(_tag_ids_to_values(strict_ids, tag_manifest))
-    values.update(_normalize_value_list(overrides.diets))
-    return values
-
-
-def _resolve_required_ethics(
-    selected: Dict[str, List[str]],
-    tag_manifest: TagManifest,
-    overrides: HardConstraintOverrides,
-) -> set[str]:
-    tag_ids = [
-        tag_id
-        for tag_id in selected.get("EthicsReligious", [])
-        if tag_id in ETHICS_RESTRICTION_TAG_IDS
-    ]
+    tag_ids = selected.get("DietaryRestrictions") or []
     values = set(_tag_ids_to_values(tag_ids, tag_manifest))
+    values.update(_normalize_value_list(overrides.diets))
+    # Accept ethics override data for backward compatibility.
     values.update(_normalize_value_list(overrides.ethics))
     return values
-
-
-def _resolve_heat_limit(
-    selected: Dict[str, List[str]],
-    tag_manifest: TagManifest,
-) -> int | None:
-    tag_ids = [
-        tag_id
-        for tag_id in selected.get("HeatSpice", [])
-        if tag_id in HEAT_RESTRICTION_TAG_IDS
-    ]
-    heat_values = _tag_ids_to_values(tag_ids, tag_manifest)
-    ranks = [
-        HEAT_LEVEL_ORDER[value]
-        for value in heat_values
-        if value in HEAT_LEVEL_ORDER
-    ]
-    if not ranks:
-        return None
-    return min(ranks)
 
 
 def _filter_manifest(
@@ -270,15 +189,9 @@ def _filter_manifest(
             tags = meal.get("meal_tags") or {}
             if not _passes_audience(tags, constraints):
                 continue
-            if not _passes_diet(tags, constraints):
-                continue
-            if not _passes_ethics(tags, constraints):
+            if not _passes_dietary_restrictions(tags, constraints):
                 continue
             if not _passes_allergens(tags, constraints):
-                continue
-            if not _passes_heat(tags, constraints):
-                continue
-            if not _passes_prep_time(meal, tags, constraints):
                 continue
             total_matches += 1
             if len(retained) < limit:
@@ -288,24 +201,19 @@ def _filter_manifest(
 
 
 def _passes_audience(tags: Dict[str, List[str]], constraints: ConstraintContext) -> bool:
-    if not constraints.allowed_audience:
-        return True
-    meal_audience = set(tags.get("Audience") or [])
-    return bool(meal_audience & constraints.allowed_audience)
+    selected_audience = constraints.selected_audience
+    if not selected_audience:
+        return False
+    meal_audience = tags.get("Audience") or []
+    return selected_audience in meal_audience
 
 
-def _passes_diet(tags: Dict[str, List[str]], constraints: ConstraintContext) -> bool:
-    if not constraints.required_diets:
-        return True
-    meal_diets = set(tags.get("Diet") or [])
-    return constraints.required_diets.issubset(meal_diets)
-
-
-def _passes_ethics(tags: Dict[str, List[str]], constraints: ConstraintContext) -> bool:
-    if not constraints.required_ethics:
-        return True
-    meal_ethics = set(tags.get("EthicsReligious") or [])
-    return constraints.required_ethics.issubset(meal_ethics)
+def _passes_dietary_restrictions(tags: Dict[str, List[str]], constraints: ConstraintContext) -> bool:
+    required_tags = constraints.required_dietary_restrictions
+    if not required_tags:
+        return False
+    meal_tags = set(tags.get("DietaryRestrictions") or [])
+    return required_tags.issubset(meal_tags)
 
 
 def _passes_allergens(tags: Dict[str, List[str]], constraints: ConstraintContext) -> bool:
@@ -313,43 +221,6 @@ def _passes_allergens(tags: Dict[str, List[str]], constraints: ConstraintContext
         return True
     meal_allergens = set(tags.get("Allergens") or [])
     return not bool(meal_allergens & constraints.disallowed_allergens)
-
-
-def _passes_heat(tags: Dict[str, List[str]], constraints: ConstraintContext) -> bool:
-    meal_heat_tags = set(tags.get("HeatSpice") or [])
-    if constraints.disallowed_heat and meal_heat_tags & constraints.disallowed_heat:
-        return False
-    if constraints.max_heat_rank is None:
-        return True
-    meal_rank = _heat_rank(meal_heat_tags)
-    if meal_rank is None:
-        return True
-    return meal_rank <= constraints.max_heat_rank
-
-
-def _passes_prep_time(
-    meal: Dict[str, Any],
-    tags: Dict[str, List[str]],
-    constraints: ConstraintContext,
-) -> bool:
-    if constraints.max_prep_minutes is None:
-        return True
-    minutes = _estimate_prep_minutes(meal, tags)
-    if minutes is None:
-        return True
-    return minutes <= constraints.max_prep_minutes
-
-
-def _estimate_prep_minutes(meal: Dict[str, Any], tags: Dict[str, List[str]]) -> int | None:
-    metadata = meal.get("metadata") or {}
-    raw_minutes = metadata.get("prep_time_minutes")
-    if isinstance(raw_minutes, (int, float)):
-        return int(raw_minutes)
-    for bucket in tags.get("PrepTime") or []:
-        approx = PREP_TIME_BUCKET_TO_MINUTES.get(bucket)
-        if approx is not None:
-            return approx
-    return None
 
 
 def _build_candidate_summary(meal: Dict[str, Any], archetype_uid: str | None) -> CandidateMealSummary:
@@ -360,9 +231,6 @@ def _build_candidate_summary(meal: Dict[str, Any], archetype_uid: str | None) ->
         name=meal.get("name"),
         description=meal.get("description"),
         tags=tags,
-        heatLevel=_extract_single_value(tags.get("HeatSpice")),
-        prepTimeMinutes=_estimate_prep_minutes(meal, tags),
-        prepTimeTags=tags.get("PrepTime") or [],
         complexity=_extract_single_value(tags.get("Complexity")),
         skuSnapshot=_build_sku_snapshot(meal),
     )
@@ -414,6 +282,16 @@ def _normalize_value_list(values: Iterable[str] | None) -> set[str]:
     return {value for value in normalized if value}
 
 
+def _drop_placeholder_allergens(values: Iterable[str] | None) -> set[str]:
+    if not values:
+        return set()
+    return {
+        value
+        for value in values
+        if value and value not in PLACEHOLDER_ALLERGEN_VALUES
+    }
+
+
 def _extract_single_value(values: Sequence[str] | None) -> str | None:
     if not values:
         return None
@@ -430,11 +308,3 @@ def _coerce_float(value: Any) -> float | None:
         return float(value)
     except (TypeError, ValueError):
         return None
-def _heat_rank(values: Iterable[str] | None) -> int | None:
-    if not values:
-        return None
-    ranks = [HEAT_LEVEL_ORDER.get(value) for value in values if value in HEAT_LEVEL_ORDER]
-    ranks = [rank for rank in ranks if rank is not None]
-    if not ranks:
-        return None
-    return max(ranks)
