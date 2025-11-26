@@ -1740,10 +1740,6 @@ function AppContent() {
     visible: false,
     meal: null,
   });
-  const [explorationMealModal, setExplorationMealModal] = useState({
-    visible: false,
-    meal: null,
-  });
   const [confirmationDialog, setConfirmationDialog] = useState({
     visible: false,
     context: null,
@@ -2774,7 +2770,6 @@ const handlePreferenceSelection = useCallback(
       setExplorationSessionId(null);
       setExplorationError(null);
       setExplorationReactions({});
-      setExplorationMealModal({ visible: false, meal: null });
       setIsRecommendationFlowVisible(false);
       setRecommendationState("idle");
       setRecommendationMeals([]);
@@ -3153,7 +3148,6 @@ const handlePreferenceSelection = useCallback(
     setExplorationNotes([]);
     setExplorationSessionId(null);
     setExplorationReactions({});
-    setExplorationMealModal({ visible: false, meal: null });
     setExplorationState("idle");
     setIsRecommendationFlowVisible(false);
     setRecommendationState("idle");
@@ -3228,7 +3222,6 @@ const handlePreferenceSelection = useCallback(
     setExplorationSessionId(null);
     setExplorationError(null);
     setExplorationReactions({});
-    setExplorationMealModal({ visible: false, meal: null });
     setHomeSurface("meal");
     setIsMealMenuOpen(false);
     setScreen("home");
@@ -3238,7 +3231,6 @@ const handlePreferenceSelection = useCallback(
 
   const handleConfirmExplorationReview = useCallback(() => {
     setHasSeenExplorationResults(true);
-    setExplorationMealModal({ visible: false, meal: null });
     if (!RECOMMENDATION_API_ENDPOINT || !explorationSessionId) {
       shouldAutoCompleteRecommendationRef.current = false;
       handleCompleteOnboardingFlow();
@@ -3390,14 +3382,7 @@ const handlePreferenceSelection = useCallback(
       const servingsLabel = formatServingsPeopleLabel(servingsCount);
       const mealKey = meal.mealId ?? `${meal.name ?? "meal"}-${index}`;
       return (
-        <TouchableOpacity
-          key={mealKey}
-          style={styles.homeMealCard}
-          activeOpacity={0.9}
-          onPress={() =>
-            setExplorationMealModal({ visible: true, meal })
-          }
-        >
+        <View key={mealKey} style={styles.homeMealCard}>
           <Text style={styles.homeMealTitle}>
             {meal.name ?? "Meal"}
           </Text>
@@ -3419,12 +3404,7 @@ const handlePreferenceSelection = useCallback(
                 {servingsLabel}
               </Text>
             </View>
-          </View>
-          <View style={styles.explorationReactionRow}>
-            <Text style={styles.explorationReactionLabel}>
-              How does this look?
-            </Text>
-            <View style={styles.explorationReactionControls}>
+            <View style={styles.explorationReactionInlineControls}>
               {PREFERENCE_CONTROL_STATES.map((control) => {
                 const isSelected = reaction === control.id;
                 const controlStyles = [
@@ -3449,8 +3429,7 @@ const handlePreferenceSelection = useCallback(
                   <TouchableOpacity
                     key={`${mealKey}-${control.id}`}
                     style={controlStyles}
-                    onPress={(event) => {
-                      event?.stopPropagation?.();
+                    onPress={() => {
                       handleExplorationReaction(meal.mealId, control.id);
                     }}
                     accessibilityRole="button"
@@ -3483,10 +3462,10 @@ const handlePreferenceSelection = useCallback(
               })}
             </View>
           </View>
-        </TouchableOpacity>
+        </View>
       );
     },
-    [explorationReactions, handleExplorationReaction, setExplorationMealModal]
+    [explorationReactions, handleExplorationReaction]
   );
 
   const fetchWallet = useCallback(async () => {
@@ -4800,29 +4779,13 @@ const handlePreferenceSelection = useCallback(
     explorationState === "ready"
   ) {
     if (USE_MEAL_CARD_EXPLORATION_UI) {
-      const explorationModalMeal = explorationMealModal.meal;
-      const explorationModalPrepSteps =
-        explorationMealModal.visible && explorationModalMeal
-          ? getMealPrepSteps(explorationModalMeal)
-          : [];
-      const explorationModalCookSteps =
-        explorationMealModal.visible && explorationModalMeal
-          ? getMealCookSteps(explorationModalMeal)
-          : [];
-      const explorationModalIngredients =
-        explorationMealModal.visible && explorationModalMeal
-          ? getMealDetailIngredients(explorationModalMeal)
-          : [];
       return (
         <SafeAreaView style={styles.mealHomeSafeArea}>
           <StatusBar style="dark" />
           <View style={styles.explorationMealCardScreen}>
             <View style={styles.explorationCardHeader}>
               <Text style={styles.explorationCardTitle}>
-                Review your starter meals
-              </Text>
-              <Text style={styles.explorationCardSubtitle}>
-                Tap a meal card to see ingredients and steps, then tell us how it looks so we can learn.
+                Help Us Learn
               </Text>
             </View>
             <View style={styles.explorationMealTipCard}>
@@ -4861,76 +4824,6 @@ const handlePreferenceSelection = useCallback(
               </TouchableOpacity>
             </View>
           </View>
-          {explorationMealModal.visible && explorationModalMeal ? (
-            <View style={styles.mealDetailModalContainer} pointerEvents="box-none">
-              <TouchableWithoutFeedback
-                onPress={() =>
-                  setExplorationMealModal({ visible: false, meal: null })
-                }
-              >
-                <View style={styles.mealDetailBackdrop} />
-              </TouchableWithoutFeedback>
-              <View style={styles.mealDetailCard}>
-                <ScrollView
-                  style={styles.mealDetailScroll}
-                  contentContainerStyle={styles.mealDetailContent}
-                >
-                  <Text style={styles.mealDetailTitle}>
-                    {explorationModalMeal.name ?? "Meal"}
-                  </Text>
-                  {explorationModalMeal.description ? (
-                    <Text style={styles.mealDetailDescription}>
-                      {explorationModalMeal.description}
-                    </Text>
-                  ) : null}
-                  {explorationModalPrepSteps.length > 0 ? (
-                    <View style={styles.mealDetailSection}>
-                      <Text style={styles.mealDetailSectionTitle}>Prep Steps</Text>
-                      {explorationModalPrepSteps.map((step, idx) => (
-                        <Text key={`exploration-prep-${idx}`} style={styles.mealDetailSectionItem}>
-                          {idx + 1}. {step}
-                        </Text>
-                      ))}
-                    </View>
-                  ) : null}
-                  {explorationModalCookSteps.length > 0 ? (
-                    <View style={styles.mealDetailSection}>
-                      <Text style={styles.mealDetailSectionTitle}>Cooking Steps</Text>
-                      {explorationModalCookSteps.map((step, idx) => (
-                        <Text key={`exploration-cook-${idx}`} style={styles.mealDetailSectionItem}>
-                          {idx + 1}. {step}
-                        </Text>
-                      ))}
-                    </View>
-                  ) : null}
-                  {explorationModalIngredients.length > 0 ? (
-                    <View style={styles.mealDetailSection}>
-                      <Text style={styles.mealDetailSectionTitle}>Ingredients</Text>
-                      {explorationModalIngredients.map((ingredient, idx) => {
-                        const label = formatMealIngredientDetailText(ingredient, idx);
-                        return (
-                          <Text
-                            key={`exploration-detail-ingredient-${idx}`}
-                            style={styles.mealDetailSectionItem}
-                          >
-                            • {label}
-                          </Text>
-                        );
-                      })}
-                    </View>
-                  ) : null}
-                </ScrollView>
-                <TouchableOpacity
-                  style={styles.mealDetailCloseButton}
-                  onPress={() =>
-                    setExplorationMealModal({ visible: false, meal: null })
-                  }
-                >
-                  <Text style={styles.mealDetailCloseText}>×</Text>
-                </TouchableOpacity>
-              </View>
-            </View>
-          ) : null}
         </SafeAreaView>
       );
     }
@@ -6431,12 +6324,6 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     color: "#0c3c26",
   },
-  explorationCardSubtitle: {
-    fontSize: 15,
-    color: "#4a5e53",
-    marginTop: 8,
-    lineHeight: 22,
-  },
   explorationMealTipCard: {
     borderRadius: 18,
     backgroundColor: "#f7f9f8",
@@ -6521,21 +6408,11 @@ const styles = StyleSheet.create({
   explorationMealCardFooter: {
     paddingTop: 12,
   },
-  explorationReactionRow: {
-    marginTop: 20,
-    paddingTop: 14,
-    borderTopWidth: 1,
-    borderTopColor: "#e4ede7",
-    gap: 10,
-  },
-  explorationReactionLabel: {
-    fontSize: 14,
-    fontWeight: "600",
-    color: "#0c3c26",
-  },
-  explorationReactionControls: {
+  explorationReactionInlineControls: {
     flexDirection: "row",
+    alignItems: "center",
     gap: 8,
+    marginLeft: "auto",
   },
   explorationActionButton: {
     flex: 1,
