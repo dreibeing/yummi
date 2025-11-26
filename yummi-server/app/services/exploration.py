@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 from textwrap import dedent
 from typing import Any, Dict, List
 import uuid
+import random
 
 from fastapi import HTTPException, status
 
@@ -80,6 +81,7 @@ async def run_exploration_workflow(
     )
     parsed = _parse_llm_payload(llm_text)
     exploration_meals = _materialize_meals(parsed.get("explorationSet") or [], detail_records, meal_target)
+    random.shuffle(exploration_meals)
     information_notes = parsed.get("information_gain_notes") or parsed.get("informationGainNotes") or []
 
     record = await _persist_session(

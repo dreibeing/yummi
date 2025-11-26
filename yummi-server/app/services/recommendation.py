@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import logging
 from textwrap import dedent
+import random
 from typing import Any, Dict, Iterable, List, Sequence
 
 from fastapi import HTTPException, status
@@ -89,6 +90,19 @@ async def run_recommendation_workflow(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="No meals available for the selected preferences. Please adjust your constraints.",
         )
+
+    preferred_archetypes = _derive_preferred_archetypes(request.reactions, manifest)
+    if preferred_archetypes:
+        narrowed = [detail for detail in detail_records if detail.archetype_uid in preferred_archetypes]
+        if narrowed:
+            detail_records = narrowed
+        else:
+            logger.warning(
+                "Preferred archetype filter removed all candidates; falling back to full pool.",
+            )
+
+    if len(detail_records) > candidate_limit:
+        detail_records = random.sample(detail_records, candidate_limit)
 
     profile_payload = serialize_preference_profile(profile, tag_manifest)
     feedback_payload = _build_feedback_payload(
@@ -218,11 +232,18 @@ def _session_meal_lookup(session: MealExplorationSession | None) -> Dict[str, Di
 
 
 def _find_manifest_meal(manifest: Dict[str, Any], meal_id: str) -> Dict[str, Any] | None:
+    meal, _ = _find_manifest_meal_with_archetype(manifest, meal_id)
+    return meal
+
+
+def _find_manifest_meal_with_archetype(
+    manifest: Dict[str, Any], meal_id: str
+) -> tuple[Dict[str, Any] | None, str | None]:
     for archetype in manifest.get("archetypes") or []:
         for meal in archetype.get("meals") or []:
             if str(meal.get("meal_id")) == str(meal_id):
-                return meal
-    return None
+                return meal, archetype.get("uid")
+    return None, None
 
 
 def _prepare_candidate_payload(
@@ -340,6 +361,20 @@ def _normalize_selection_payload(selections: List[Any]) -> List[str]:
             if meal_id:
                 ordered.append(meal_id)
     return ordered
+
+
+def _derive_preferred_archetypes(
+    reactions: Sequence[MealReaction],
+    manifest: Dict[str, Any],
+) -> set[str]:
+    preferred: set[str] = set()
+    for reaction in reactions or []:
+        if reaction.reaction != "like":
+            continue
+        _, archetype_uid = _find_manifest_meal_with_archetype(manifest, reaction.mealId)
+        if archetype_uid:
+            preferred.add(str(archetype_uid))
+    return preferred
 
 
 def _hydrate_recommendation_meal(

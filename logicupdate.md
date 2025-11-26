@@ -157,10 +157,12 @@ Path: `data/tags/defined_tags.json`
 - Preference profile: `user_preference_profiles` model (`yummi-server/app/models.py`) stores `responses`, `selected_tags`, `disliked_tags`, and latest recommendations.
 - Candidate filtering: `yummi-server/app/services/filtering.py`
   - Converts selected/disliked tag_ids into human values using `TagManifest`.
-  - Applies audience/diet/ethics/allergen/heat/prep filters before ranking.
+  - Applies audience/diet/ethics/allergen/heat/prep filters before ranking. Disliked tag values now act as hard exclusions (e.g., thumbs-down `Cuisine:Indian` removes those meals) before we sample candidates. Candidate pools are built per archetype, allocating up to `candidate_limit / distinct_archetypes` meals per archetype so the LLM sees a balanced cross-section.
   - Has hard-coded sets and maps that must stay aligned with tag IDs/values (see “Known Inconsistencies”).
 - Exploration workflow: `yummi-server/app/services/exploration.py` + route `app/routes/recommendations.py` (`/v1/recommendations/exploration`).
+-   - LLM candidates now only include `meal_id`, `name`, and `tags` to keep prompts small; exploration results are shuffled before returning to the client.
 - Recommendation workflow: `yummi-server/app/services/recommendation.py` + same route module (`/v1/recommendations/feed`). Persists latest ranked meal IDs back onto the preference profile.
+-   - Recommendation LLM sees the same slim candidate payload plus user profile + liked/disliked meal summaries (also name + tags). When users like specific meals, we limit candidate pools to those archetypes before sampling the configured maximum (default 200).
 - Meals API: `app/routes/meals.py` serves `GET /v1/meals` and `GET /v1/meals/{uid}` from the manifest.
 - Schemas: `yummi-server/app/schemas.py` defines all request/response contracts (preferences, candidate pool, exploration, feed).
 

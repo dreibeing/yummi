@@ -31,6 +31,7 @@ class ConstraintContext:
     selected_audience: str | None
     required_dietary_restrictions: set[str]
     disallowed_allergens: set[str]
+    disliked_tag_values: Dict[str, set[str]]
     declined_meal_ids: set[str]
 
 
@@ -124,6 +125,7 @@ def _build_constraint_context(
     declined_ids: Sequence[str] | None,
 ) -> ConstraintContext:
     selected = dict(profile.selected_tags or {}) if profile else {}
+    disliked = dict(profile.disliked_tags or {}) if profile else {}
 
     selected_audience = _resolve_selected_audience(selected, tag_manifest)
     required_dietary_restrictions = _resolve_required_dietary_restrictions(
@@ -135,6 +137,7 @@ def _build_constraint_context(
     disallowed_allergens = set(_tag_ids_to_values(selected.get("Allergens"), tag_manifest))
     disallowed_allergens.update(_normalize_value_list(overrides.allergens))
     disallowed_allergens = _drop_placeholder_allergens(disallowed_allergens)
+    disliked_values = _resolve_disliked_values(disliked, tag_manifest)
 
     declined_meal_ids = {mid for mid in (declined_ids or []) if mid}
 
@@ -142,6 +145,7 @@ def _build_constraint_context(
         selected_audience=selected_audience,
         required_dietary_restrictions=required_dietary_restrictions,
         disallowed_allergens=disallowed_allergens,
+        disliked_tag_values=disliked_values,
         declined_meal_ids=declined_meal_ids,
     )
 
@@ -170,6 +174,18 @@ def _resolve_required_dietary_restrictions(
     return values
 
 
+def _resolve_disliked_values(
+    disliked: Dict[str, List[str]],
+    tag_manifest: TagManifest,
+) -> Dict[str, set[str]]:
+    resolved: Dict[str, set[str]] = {}
+    for category, tag_ids in disliked.items():
+        values = set(_tag_ids_to_values(tag_ids, tag_manifest))
+        if values:
+            resolved[category] = values
+    return resolved
+
+
 def _filter_manifest(
     *,
     manifest: Dict[str, Any],
@@ -177,8 +193,7 @@ def _filter_manifest(
     limit: int,
 ) -> tuple[int, List[CandidateMealSummary], List[CandidateMealDetail]]:
     archetypes = manifest.get("archetypes") or []
-    summaries: List[CandidateMealSummary] = []
-    details: List[CandidateMealDetail] = []
+    grouped: Dict[str | None, List[tuple[CandidateMealSummary, CandidateMealDetail]]] = {}
 
     for archetype in archetypes:
         archetype_uid = archetype.get("uid")
@@ -193,17 +208,63 @@ def _filter_manifest(
                 continue
             if not _passes_allergens(tags, constraints):
                 continue
-            summaries.append(_build_candidate_summary(meal, archetype_uid))
-            details.append(CandidateMealDetail(archetype_uid=archetype_uid, meal=meal))
+            if not _passes_disliked_tags(tags, constraints):
+                continue
+            grouped.setdefault(archetype_uid, []).append(
+                (
+                    _build_candidate_summary(meal, archetype_uid),
+                    CandidateMealDetail(archetype_uid=archetype_uid, meal=meal),
+                )
+            )
 
-    total_matches = len(summaries)
+    total_matches = sum(len(pairs) for pairs in grouped.values())
     if total_matches <= limit:
+        summaries: List[CandidateMealSummary] = []
+        details: List[CandidateMealDetail] = []
+        for pairs in grouped.values():
+            for summary, detail in pairs:
+                summaries.append(summary)
+                details.append(detail)
         return total_matches, summaries, details
 
-    indices = random.sample(range(total_matches), limit)
-    selected_summaries = [summaries[i] for i in indices]
-    selected_details = [details[i] for i in indices]
-    return total_matches, selected_summaries, selected_details
+    archetype_entries = list(grouped.items())
+    random.shuffle(archetype_entries)
+    distinct_archetypes = len(archetype_entries)
+    if distinct_archetypes == 0:
+        return 0, [], []
+
+    base = limit // distinct_archetypes
+    remainder = limit % distinct_archetypes
+
+    selected_pairs: List[tuple[CandidateMealSummary, CandidateMealDetail]] = []
+    for index, (uid, pairs) in enumerate(archetype_entries):
+        take = base
+        if remainder > 0:
+            take += 1
+            remainder -= 1
+        if take <= 0:
+            continue
+        if take >= len(pairs):
+            selected = pairs
+            grouped[uid] = []
+        else:
+            random.shuffle(pairs)
+            selected = pairs[:take]
+            grouped[uid] = pairs[take:]
+        selected_pairs.extend(selected)
+
+    if len(selected_pairs) < limit:
+        remaining_needed = limit - len(selected_pairs)
+        leftovers: List[tuple[CandidateMealSummary, CandidateMealDetail]] = []
+        for remaining_pairs in grouped.values():
+            leftovers.extend(remaining_pairs)
+        random.shuffle(leftovers)
+        selected_pairs.extend(leftovers[:remaining_needed])
+
+    selected_pairs = selected_pairs[:limit]
+    summaries = [summary for summary, _ in selected_pairs]
+    details = [detail for _, detail in selected_pairs]
+    return total_matches, summaries, details
 
 
 def _passes_audience(tags: Dict[str, List[str]], constraints: ConstraintContext) -> bool:
@@ -227,6 +288,16 @@ def _passes_allergens(tags: Dict[str, List[str]], constraints: ConstraintContext
         return True
     meal_allergens = set(tags.get("Allergens") or [])
     return not bool(meal_allergens & constraints.disallowed_allergens)
+
+
+def _passes_disliked_tags(tags: Dict[str, List[str]], constraints: ConstraintContext) -> bool:
+    if not constraints.disliked_tag_values:
+        return True
+    for category, disliked_values in constraints.disliked_tag_values.items():
+        meal_values = set(tags.get(category) or [])
+        if meal_values & disliked_values:
+            return False
+    return True
 
 
 def _build_candidate_summary(meal: Dict[str, Any], archetype_uid: str | None) -> CandidateMealSummary:
