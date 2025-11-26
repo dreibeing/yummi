@@ -161,6 +161,7 @@ Path: `data/tags/defined_tags.json`
   - Has hard-coded sets and maps that must stay aligned with tag IDs/values (see “Known Inconsistencies”).
 - Exploration workflow: `yummi-server/app/services/exploration.py` + route `app/routes/recommendations.py` (`/v1/recommendations/exploration`).
 -   - LLM candidates now only include `meal_id`, `name`, and `tags` to keep prompts small; exploration results are shuffled before returning to the client.
+-   - Archetype calls now stream `meal_id`s out of the OpenAI Responses API in real time. We log/stash each streamed id under `raw_payload["streamedMealIds"]`, and apply `exploration_stream_timeout_seconds` (15s default) as an upper bound per archetype. If a stream fails or times out, whatever ids arrived so far are kept and the balancing step auto-fills the remainder so the user still receives up to 20 meals.
 - Recommendation workflow: `yummi-server/app/services/recommendation.py` + same route module (`/v1/recommendations/feed`). Persists latest ranked meal IDs back onto the preference profile.
 -   - Recommendation LLM sees the same slim candidate payload plus user profile + liked/disliked meal summaries (also name + tags). When users like specific meals, we limit candidate pools to those archetypes before sampling the configured maximum (default 200).
 - Meals API: `app/routes/meals.py` serves `GET /v1/meals` and `GET /v1/meals/{uid}` from the manifest.

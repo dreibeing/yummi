@@ -105,12 +105,15 @@ async def run_exploration_workflow(
             meal_id,
         )
 
+    timeout_seconds = settings.exploration_stream_timeout_seconds
     archetype_payloads = await _score_archetype_batches(
         user_id=user_id,
         profile_payload=profile_payload,
         archetype_batches=archetype_batches,
         settings=settings,
         on_stream_meal=handle_streamed_meal,
+        timeout_seconds=timeout_seconds,
+        get_streamed_ids=lambda uid: list(streamed_meal_ids.get(uid, [])),
     )
 
     archetype_meal_map: Dict[str, List[ExplorationMeal]] = {}
@@ -253,19 +256,62 @@ async def _score_archetype_batches(
     archetype_batches: List[tuple[str, List[CandidateMealDetail]]],
     settings,
     on_stream_meal: Callable[[str, str], None] | None = None,
+    timeout_seconds: int | None = None,
+    get_streamed_ids: Callable[[str], List[str]] | None = None,
 ) -> List[tuple[str, Dict[str, Any], List[CandidateMealDetail]]]:
-    tasks = [
-        _score_single_archetype_batch(
-            user_id=user_id,
-            profile_payload=profile_payload,
-            archetype_uid=archetype_uid,
-            batch_details=batch_details,
-            settings=settings,
-            on_stream_meal=on_stream_meal,
+    tasks = []
+    for archetype_uid, batch_details in archetype_batches:
+        task = asyncio.create_task(
+            _score_single_archetype_batch(
+                user_id=user_id,
+                profile_payload=profile_payload,
+                archetype_uid=archetype_uid,
+                batch_details=batch_details,
+                settings=settings,
+                on_stream_meal=on_stream_meal,
+            )
         )
-        for archetype_uid, batch_details in archetype_batches
-    ]
-    return await asyncio.gather(*tasks)
+        tasks.append((task, archetype_uid, batch_details))
+
+    if timeout_seconds and timeout_seconds > 0:
+        done, pending = await asyncio.wait(
+            [task for task, _, _ in tasks],
+            timeout=timeout_seconds,
+        )
+    else:
+        done, pending = await asyncio.wait([task for task, _, _ in tasks])
+
+    results: List[tuple[str, Dict[str, Any], List[CandidateMealDetail]]] = []
+    for task, archetype_uid, batch_details in tasks:
+        if task in done:
+            try:
+                results.append(task.result())
+            except Exception as exc:  # pragma: no cover
+                logger.warning(
+                    "Exploration archetype run failed user=%s archetype=%s error=%s",
+                    user_id,
+                    archetype_uid,
+                    exc,
+                )
+                fallback_payload = _build_stream_fallback_payload(
+                    archetype_uid,
+                    get_streamed_ids,
+                )
+                results.append((archetype_uid, fallback_payload, batch_details))
+        else:
+            task.cancel()
+            logger.warning(
+                "Exploration archetype run timed out user=%s archetype=%s timeout=%ss",
+                user_id,
+                archetype_uid,
+                timeout_seconds,
+            )
+            fallback_payload = _build_stream_fallback_payload(
+                archetype_uid,
+                get_streamed_ids,
+            )
+            results.append((archetype_uid, fallback_payload, batch_details))
+    return results
 
 
 async def _score_single_archetype_batch(
@@ -412,6 +458,15 @@ class _StreamingMealAccumulator:
                 continue
             self._emitted.add(meal_id)
             self.callback(self.archetype_uid, meal_id)
+
+
+def _build_stream_fallback_payload(
+    archetype_uid: str,
+    get_streamed_ids: Callable[[str], List[str]] | None,
+) -> Dict[str, Any]:
+    meal_ids = get_streamed_ids(archetype_uid) if get_streamed_ids else []
+    exploration_set = [{"meal_id": meal_id} for meal_id in meal_ids]
+    return {"explorationSet": exploration_set}
 
 
 def _parse_llm_payload(raw_text: str) -> Dict[str, Any]:
