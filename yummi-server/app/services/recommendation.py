@@ -2,9 +2,10 @@ from __future__ import annotations
 
 import json
 import logging
+import asyncio
 from textwrap import dedent
 import random
-from typing import Any, Dict, Iterable, List, Sequence
+from typing import Any, Callable, Dict, Iterable, List, Sequence
 
 from fastapi import HTTPException, status
 
@@ -74,6 +75,7 @@ async def run_recommendation_workflow(
     declined_ids = _merge_declined_ids(request.declinedMealIds, request.reactions)
     reaction_groups = _bucket_reactions_by_sentiment(request.reactions)
     disliked_meal_ids = set(reaction_groups.get("dislike") or [])
+    liked_meal_ids = [meal_id for meal_id in (reaction_groups.get("like") or []) if meal_id]
     exploration_streamed_details: List[CandidateMealDetail] = []
     if exploration_session:
         streamed_ids = _extract_streamed_meal_ids(exploration_session)
@@ -123,8 +125,20 @@ async def run_recommendation_workflow(
                 detail="No meals available after removing disliked archetypes. Please adjust your dislikes or try again later.",
             )
 
-    if not using_streamed_candidates and len(detail_records) > candidate_limit:
-        detail_records = random.sample(detail_records, candidate_limit)
+    liked_recommendations = _hydrate_preselected_recommendations(
+        liked_meal_ids,
+        detail_records,
+        manifest,
+    )
+    liked_meal_ids_set = {meal.mealId for meal in liked_recommendations}
+    llm_detail_records = [
+        detail
+        for detail in detail_records
+        if str(detail.meal.get("meal_id")) not in liked_meal_ids_set
+    ]
+
+    if len(llm_detail_records) > candidate_limit:
+        llm_detail_records = random.sample(llm_detail_records, candidate_limit)
 
     profile_payload = serialize_preference_profile(profile, tag_manifest)
     feedback_payload = _build_feedback_payload(
@@ -133,29 +147,81 @@ async def run_recommendation_workflow(
         exploration_session=exploration_session,
         declined_ids=declined_ids,
     )
-    candidate_payload_limit = len(detail_records) if using_streamed_candidates else candidate_limit
-    candidate_payload = _prepare_candidate_payload(detail_records, candidate_payload_limit)
-    system_prompt, user_prompt = _build_prompts(
-        profile_payload=profile_payload,
-        feedback_payload=feedback_payload,
-        candidates=candidate_payload,
-        meal_target=meal_target,
-    )
-    llm_text = call_openai_responses(
-        model=settings.openai_recommendation_model,
-        system_prompt=system_prompt,
-        user_prompt=user_prompt,
-        max_output_tokens=settings.openai_recommendation_max_output_tokens,
-        top_p=settings.openai_recommendation_top_p,
-        reasoning_effort=settings.openai_recommendation_reasoning_effort,
-    )
-    parsed = _parse_llm_response(llm_text)
-    meals = _materialize_recommendations(
-        selections=parsed.get("recommendations") or [],
-        detail_records=detail_records,
-        meal_target=meal_target,
-    )
-    meal_ids = [meal.mealId for meal in meals]
+    llm_meal_target = max(meal_target - len(liked_recommendations), 0)
+    llm_meals: List[RecommendationMeal] = []
+    parsed: Dict[str, Any] = {"recommendations": [], "notes": []}
+    if llm_meal_target > 0 and llm_detail_records:
+        candidate_payload_limit = len(llm_detail_records) if using_streamed_candidates else candidate_limit
+        candidate_payload = _prepare_candidate_payload(llm_detail_records, candidate_payload_limit)
+        system_prompt, user_prompt = _build_prompts(
+            profile_payload=profile_payload,
+            feedback_payload=feedback_payload,
+            candidates=candidate_payload,
+            meal_target=llm_meal_target,
+        )
+
+        def handle_streamed_recommendation(meal_id: str) -> None:
+            logger.info("Recommendation stream update user=%s meal_id=%s", user_id, meal_id)
+
+        stream_accumulator = _RecommendationStreamingAccumulator(handle_streamed_recommendation)
+        llm_call = asyncio.to_thread(
+            call_openai_responses,
+            model=settings.openai_recommendation_model,
+            system_prompt=system_prompt,
+            user_prompt=user_prompt,
+            max_output_tokens=settings.openai_recommendation_max_output_tokens,
+            top_p=settings.openai_recommendation_top_p,
+            reasoning_effort=settings.openai_recommendation_reasoning_effort,
+            stream=True,
+            on_stream_delta=stream_accumulator.handle_delta,
+        )
+        stream_timeout = settings.recommendation_stream_timeout_seconds
+        llm_text: str | None = None
+        try:
+            if stream_timeout and stream_timeout > 0:
+                llm_text = await asyncio.wait_for(llm_call, timeout=stream_timeout)
+            else:
+                llm_text = await llm_call
+        except asyncio.TimeoutError:
+            logger.warning(
+                "Recommendation model timed out after %ss; using streamed results",
+                stream_timeout,
+            )
+        final_text = llm_text or stream_accumulator.buffer
+        parsed_payload: Dict[str, Any] | None = None
+        if final_text:
+            try:
+                parsed_payload = _parse_llm_response(final_text)
+            except HTTPException as exc:
+                if stream_accumulator.meal_ids:
+                    logger.warning(
+                        "Recommendation model returned invalid JSON; using streamed fallback",
+                    )
+                    parsed_payload = _build_recommendation_stream_fallback(stream_accumulator.meal_ids)
+                else:
+                    raise exc
+        elif stream_accumulator.meal_ids:
+            parsed_payload = _build_recommendation_stream_fallback(stream_accumulator.meal_ids)
+        if not parsed_payload:
+            raise HTTPException(
+                status_code=status.HTTP_502_BAD_GATEWAY,
+                detail="Recommendation model returned no output",
+            )
+        parsed = parsed_payload
+        llm_meals = _materialize_recommendations(
+            selections=parsed_payload.get("recommendations") or [],
+            detail_records=llm_detail_records,
+            meal_target=llm_meal_target,
+            random_fill=using_streamed_candidates,
+        )
+
+    final_meals = _merge_and_shuffle_recommendations(liked_recommendations, llm_meals)
+    if not final_meals:
+        raise HTTPException(
+            status_code=status.HTTP_502_BAD_GATEWAY,
+            detail="Recommendation flow returned no meals.",
+        )
+    meal_ids = [meal.mealId for meal in final_meals]
     async with get_session() as session:
         await update_latest_recommendations(
             session,
@@ -170,7 +236,7 @@ async def run_recommendation_workflow(
         manifestId=filter_response.manifestId,
         tagsVersion=filter_response.tagsVersion,
         notes=parsed.get("notes") or parsed.get("variety_notes") or [],
-        meals=meals,
+        meals=final_meals,
     )
 
 
@@ -337,6 +403,7 @@ def _materialize_recommendations(
     selections: List[Dict[str, Any]],
     detail_records: List[CandidateMealDetail],
     meal_target: int,
+    random_fill: bool = False,
 ) -> List[RecommendationMeal]:
     lookup = {str(detail.meal.get("meal_id")): detail for detail in detail_records}
     hydrated: List[RecommendationMeal] = []
@@ -359,8 +426,15 @@ def _materialize_recommendations(
             len(hydrated),
             meal_target,
         )
+        remaining_details = [
+            detail
+            for detail in detail_records
+            if detail.meal.get("meal_id") and str(detail.meal.get("meal_id")) not in seen_ids
+        ]
+        if random_fill and remaining_details:
+            random.shuffle(remaining_details)
         next_rank = len(hydrated) + 1
-        for detail in detail_records:
+        for detail in remaining_details:
             meal_id = str(detail.meal.get("meal_id"))
             if not meal_id or meal_id in seen_ids:
                 continue
@@ -479,3 +553,85 @@ def _build_detail_records_from_manifest(
             )
         )
     return details
+
+
+def _hydrate_preselected_recommendations(
+    meal_ids: Sequence[str],
+    detail_records: Sequence[CandidateMealDetail],
+    manifest: Dict[str, Any],
+) -> List[RecommendationMeal]:
+    lookup = {str(detail.meal.get("meal_id")): detail for detail in detail_records}
+    hydrated: List[RecommendationMeal] = []
+    seen: set[str] = set()
+    for meal_id in meal_ids or []:
+        normalized = str(meal_id)
+        if not normalized or normalized in seen:
+            continue
+        detail = lookup.get(normalized)
+        if not detail:
+            meal, archetype_uid = _find_manifest_meal_with_archetype(manifest, normalized)
+            if meal:
+                detail = CandidateMealDetail(archetype_uid=archetype_uid, meal=meal)
+        if not detail:
+            continue
+        hydrated.append(_hydrate_recommendation_meal(detail, rank=len(hydrated) + 1))
+        seen.add(normalized)
+    return hydrated
+
+
+def _merge_and_shuffle_recommendations(
+    liked_meals: Sequence[RecommendationMeal],
+    llm_meals: Sequence[RecommendationMeal],
+) -> List[RecommendationMeal]:
+    combined: List[RecommendationMeal] = []
+    seen: set[str] = set()
+    for meal in list(liked_meals) + list(llm_meals):
+        if not meal.mealId or meal.mealId in seen:
+            continue
+        combined.append(meal)
+        seen.add(meal.mealId)
+    if not combined:
+        return []
+    random.shuffle(combined)
+    ranked: List[RecommendationMeal] = []
+    for index, meal in enumerate(combined, start=1):
+        ranked.append(meal.model_copy(update={"rank": index}))
+    return ranked
+
+
+class _RecommendationStreamingAccumulator:
+    def __init__(self, on_stream_meal: Callable[[str], None] | None = None) -> None:
+        self.on_stream_meal = on_stream_meal
+        self.buffer: str = ""
+        self.meal_ids: List[str] = []
+        self._emitted: set[str] = set()
+
+    def handle_delta(self, delta: str | None) -> None:
+        if not delta:
+            return
+        self.buffer += delta
+        self._try_emit_ids()
+
+    def _try_emit_ids(self) -> None:
+        if not self.buffer:
+            return
+        try:
+            payload = json.loads(self.buffer)
+        except json.JSONDecodeError:
+            return
+        selections = payload.get("recommendations") or []
+        ordered = _normalize_selection_payload(selections)
+        for meal_id in ordered:
+            if not meal_id or meal_id in self._emitted:
+                continue
+            self._emitted.add(meal_id)
+            self.meal_ids.append(meal_id)
+            if self.on_stream_meal:
+                self.on_stream_meal(meal_id)
+
+
+def _build_recommendation_stream_fallback(meal_ids: Sequence[str]) -> Dict[str, Any]:
+    return {
+        "recommendations": [{"meal_id": meal_id} for meal_id in meal_ids],
+        "notes": [],
+    }
