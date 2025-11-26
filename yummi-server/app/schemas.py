@@ -377,6 +377,9 @@ class ExplorationMeal(BaseModel):
     description: Optional[str] = None
     tags: Dict[str, List[str]] = Field(default_factory=dict)
     keyIngredients: List[IngredientSummary] = Field(default_factory=list)
+    prepSteps: List[str] = Field(default_factory=list)
+    cookSteps: List[str] = Field(default_factory=list)
+    ingredients: List[LatestRecommendationIngredient] = Field(default_factory=list)
     rationale: Optional[str] = None
     expectedReaction: Optional[str] = None
     diversityAxes: List[str] = Field(default_factory=list)
@@ -397,7 +400,7 @@ class ExplorationRunResponse(BaseModel):
 
 class MealReaction(BaseModel):
     mealId: str = Field(min_length=1)
-    reaction: Literal["like", "dislike"]
+    reaction: Literal["like", "neutral", "dislike"]
 
 
 class RecommendationRunRequest(BaseModel):

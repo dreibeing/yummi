@@ -269,6 +269,11 @@ def _hydrate_exploration_meal(
     diversity_axes: List[str],
 ) -> ExplorationMeal:
     meal = detail.meal
+    prep_steps = _coerce_step_list(meal.get("prep_steps"))
+    cook_steps = _coerce_step_list(meal.get("cook_steps"))
+    if not cook_steps:
+        cook_steps = _coerce_step_list(meal.get("instructions"))
+    final_ingredients = meal.get("final_ingredients") or meal.get("ingredients") or []
     return ExplorationMeal(
         mealId=str(meal.get("meal_id")),
         name=meal.get("name"),
@@ -282,6 +287,9 @@ def _hydrate_exploration_meal(
             )
             for item in extract_key_ingredients(meal)
         ],
+        prepSteps=prep_steps,
+        cookSteps=cook_steps,
+        ingredients=_format_final_ingredients(final_ingredients),
         rationale=rationale,
         expectedReaction=expected,
         diversityAxes=diversity_axes,
@@ -289,3 +297,44 @@ def _hydrate_exploration_meal(
             MealSkuSnapshot(**snapshot) for snapshot in extract_sku_snapshot(meal)
         ],
     )
+
+
+def _coerce_step_list(value: Any) -> List[str]:
+    if value is None:
+        return []
+    if isinstance(value, (list, tuple)):
+        return [
+            str(entry).strip()
+            for entry in value
+            if entry is not None and str(entry).strip()
+        ]
+    if isinstance(value, str):
+        stripped = value.strip()
+        return [stripped] if stripped else []
+    return []
+
+
+def _format_final_ingredients(entries: List[Any]) -> List[dict[str, object]]:
+    formatted: List[dict[str, object]] = []
+    for entry in entries or []:
+        if isinstance(entry, str):
+            formatted.append({"name": entry})
+            continue
+        if not isinstance(entry, dict):
+            continue
+        product = entry.get("selected_product") or {}
+        formatted.append(
+            {
+                "name": entry.get("core_item_name")
+                or entry.get("name")
+                or entry.get("ingredient"),
+                "quantity": entry.get("quantity"),
+                "preparation": entry.get("preparation"),
+                "productName": product.get("name"),
+                "productId": product.get("product_id"),
+                "detailUrl": product.get("detail_url"),
+                "salePrice": product.get("sale_price"),
+                "packageQuantity": product.get("package_quantity"),
+            }
+        )
+    return formatted

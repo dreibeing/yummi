@@ -404,6 +404,7 @@ const EXPLORATION_MEAL_TARGET = 20;
 const EXPLORATION_API_ENDPOINT = API_BASE_URL
   ? `${API_BASE_URL}/recommendations/exploration`
   : null;
+const USE_MEAL_CARD_EXPLORATION_UI = true;
 const PREFERENCE_CONTROL_STATES = [
   { id: "like", label: "Like", icon: "👍" },
   { id: "neutral", label: "Skip", icon: "○" },
@@ -1117,6 +1118,117 @@ const formatMealIngredientDetailText = (ingredient, fallbackIndex = 0) => {
   return baseLabel;
 };
 
+const coerceMealStepList = (value) => {
+  if (!Array.isArray(value)) {
+    return [];
+  }
+  return value
+    .map((entry) => {
+      if (typeof entry === "string") {
+        return entry.trim();
+      }
+      if (entry && typeof entry === "object") {
+        const textValue =
+          pickFirstNonEmptyString(entry.text, entry.step, entry.description) ??
+          (typeof entry === "number" ? String(entry) : null);
+        return textValue ? textValue.trim() : "";
+      }
+      if (entry == null) {
+        return "";
+      }
+      return String(entry).trim();
+    })
+    .filter(Boolean);
+};
+
+const getMealPrepSteps = (meal) => {
+  if (!meal) {
+    return [];
+  }
+  const candidates = [
+    meal.prepSteps,
+    meal.prep_steps,
+    meal.steps?.prep,
+    meal.steps?.prepSteps,
+    meal.prepInstructions,
+    meal.prep_instructions,
+  ];
+  for (const candidate of candidates) {
+    const normalized = coerceMealStepList(candidate);
+    if (normalized.length) {
+      return normalized;
+    }
+  }
+  return [];
+};
+
+const getMealCookSteps = (meal) => {
+  if (!meal) {
+    return [];
+  }
+  const candidates = [
+    meal.cookSteps,
+    meal.cook_steps,
+    meal.steps?.cook,
+    meal.steps?.cookSteps,
+    meal.cookInstructions,
+    meal.cook_instructions,
+  ];
+  for (const candidate of candidates) {
+    const normalized = coerceMealStepList(candidate);
+    if (normalized.length) {
+      return normalized;
+    }
+  }
+  const instructions = coerceMealStepList(meal.instructions);
+  return instructions;
+};
+
+const normalizeIngredientEntry = (entry) => {
+  if (!entry) {
+    return null;
+  }
+  if (typeof entry === "string") {
+    return { name: entry };
+  }
+  if (typeof entry !== "object") {
+    return null;
+  }
+  const normalizedName =
+    pickFirstNonEmptyString(
+      entry.name,
+      entry.core_item_name,
+      entry.coreItemName,
+      entry.coreName,
+      entry.displayName,
+      entry.ingredient,
+      entry.ingredient_line,
+      entry.text,
+      entry.productName
+    ) ?? null;
+  return {
+    ...entry,
+    name: normalizedName ?? entry.name ?? null,
+  };
+};
+
+const getMealDetailIngredients = (meal) => {
+  if (!meal) {
+    return [];
+  }
+  const sources = [
+    meal.ingredients,
+    meal.finalIngredients,
+    meal.final_ingredients,
+  ];
+  for (const source of sources) {
+    if (Array.isArray(source) && source.length > 0) {
+      return source.map(normalizeIngredientEntry).filter(Boolean);
+    }
+  }
+  return [];
+};
+
 const isWaterIngredient = (labels) => {
   if (!Array.isArray(labels) || !labels.length) {
     return false;
@@ -1620,12 +1732,15 @@ function AppContent() {
   const [isRecommendationFlowVisible, setIsRecommendationFlowVisible] = useState(false);
   const [recommendationState, setRecommendationState] = useState("idle");
   const [recommendationMeals, setRecommendationMeals] = useState([]);
-  const [recommendationNotes, setRecommendationNotes] = useState([]);
   const [recommendationError, setRecommendationError] = useState(null);
   const [homeRecommendedMeals, setHomeRecommendedMeals] = useState([]);
   const [selectedHomeMealIds, setSelectedHomeMealIds] = useState({});
   const [homeMealDislikedIds, setHomeMealDislikedIds] = useState({});
   const [homeMealModal, setHomeMealModal] = useState({
+    visible: false,
+    meal: null,
+  });
+  const [explorationMealModal, setExplorationMealModal] = useState({
     visible: false,
     meal: null,
   });
@@ -1643,6 +1758,7 @@ function AppContent() {
   const preferenceEntryContextRef = useRef(null);
   const homeMealsBackupRef = useRef(null);
   const toggleDefaultsInitializedRef = useRef({});
+  const shouldAutoCompleteRecommendationRef = useRef(false);
 
   const applyHomeRecommendedMeals = useCallback((meals) => {
     const nextSource = Array.isArray(meals)
@@ -2211,13 +2327,11 @@ function AppContent() {
     setIsRecommendationFlowVisible(false);
     setRecommendationState("idle");
     setRecommendationMeals([]);
-    setRecommendationNotes([]);
     setRecommendationError(null);
     setHasSeenExplorationResults(false);
     setIsRecommendationFlowVisible(false);
     setRecommendationState("idle");
     setRecommendationMeals([]);
-    setRecommendationNotes([]);
     setRecommendationError(null);
     toggleDefaultsInitializedRef.current = {};
     setShoppingListItems([]);
@@ -2660,10 +2774,10 @@ const handlePreferenceSelection = useCallback(
       setExplorationSessionId(null);
       setExplorationError(null);
       setExplorationReactions({});
+      setExplorationMealModal({ visible: false, meal: null });
       setIsRecommendationFlowVisible(false);
       setRecommendationState("idle");
       setRecommendationMeals([]);
-      setRecommendationNotes([]);
       setRecommendationError(null);
       applyHomeRecommendedMeals([]);
       preferenceSyncHashRef.current = null;
@@ -3002,7 +3116,6 @@ const handlePreferenceSelection = useCallback(
     setIsRecommendationFlowVisible(false);
     setRecommendationState("idle");
     setRecommendationMeals([]);
-    setRecommendationNotes([]);
     setRecommendationError(null);
     setHasSeenExplorationResults(false);
     try {
@@ -3040,11 +3153,11 @@ const handlePreferenceSelection = useCallback(
     setExplorationNotes([]);
     setExplorationSessionId(null);
     setExplorationReactions({});
+    setExplorationMealModal({ visible: false, meal: null });
     setExplorationState("idle");
     setIsRecommendationFlowVisible(false);
     setRecommendationState("idle");
     setRecommendationMeals([]);
-    setRecommendationNotes([]);
     setRecommendationError(null);
     setHasSeenExplorationResults(false);
   }, []);
@@ -3056,7 +3169,6 @@ const handlePreferenceSelection = useCallback(
     setRecommendationState("running");
     setRecommendationError(null);
     setRecommendationMeals([]);
-    setRecommendationNotes([]);
     try {
       const headers = await buildAuthHeaders({
         "Content-Type": "application/json",
@@ -3082,7 +3194,6 @@ const handlePreferenceSelection = useCallback(
       }
       const data = await response.json();
       setRecommendationMeals(data?.meals ?? []);
-      setRecommendationNotes(data?.notes ?? []);
       setRecommendationState("ready");
     } catch (error) {
       console.warn("Recommendation feed run failed", error);
@@ -3098,14 +3209,18 @@ const handlePreferenceSelection = useCallback(
     explorationSessionId,
   ]);
 
-  const handleCompleteOnboardingFlow = useCallback(() => {
+  const handleCompleteOnboardingFlow = useCallback((options = {}) => {
+    const { seedHomeMeals } = options;
     setHasFetchedRemotePreferences(false);
-    applyHomeRecommendedMeals([]);
+    if (Array.isArray(seedHomeMeals)) {
+      applyHomeRecommendedMeals(seedHomeMeals);
+    } else {
+      applyHomeRecommendedMeals([]);
+    }
     setIsOnboardingActive(false);
     setIsRecommendationFlowVisible(false);
     setRecommendationState("idle");
     setRecommendationMeals([]);
-    setRecommendationNotes([]);
     setRecommendationError(null);
     setExplorationState("idle");
     setExplorationMeals([]);
@@ -3113,18 +3228,23 @@ const handlePreferenceSelection = useCallback(
     setExplorationSessionId(null);
     setExplorationError(null);
     setExplorationReactions({});
+    setExplorationMealModal({ visible: false, meal: null });
     setHomeSurface("meal");
     setIsMealMenuOpen(false);
     setScreen("home");
     preferenceEntryContextRef.current = null;
+    shouldAutoCompleteRecommendationRef.current = false;
   }, [applyHomeRecommendedMeals]);
 
   const handleConfirmExplorationReview = useCallback(() => {
     setHasSeenExplorationResults(true);
+    setExplorationMealModal({ visible: false, meal: null });
     if (!RECOMMENDATION_API_ENDPOINT || !explorationSessionId) {
+      shouldAutoCompleteRecommendationRef.current = false;
       handleCompleteOnboardingFlow();
       return;
     }
+    shouldAutoCompleteRecommendationRef.current = true;
     setIsRecommendationFlowVisible(true);
     runRecommendationFeed();
   }, [
@@ -3138,25 +3258,45 @@ const handlePreferenceSelection = useCallback(
     runRecommendationFeed();
   }, [runRecommendationFeed]);
 
-  const handleRecommendationComplete = useCallback(() => {
-    handleCompleteOnboardingFlow();
-  }, [handleCompleteOnboardingFlow]);
-
   const handleSkipRecommendationFlow = useCallback(() => {
     handleCompleteOnboardingFlow();
   }, [handleCompleteOnboardingFlow]);
 
+  useEffect(() => {
+    if (
+      !shouldAutoCompleteRecommendationRef.current ||
+      !isRecommendationFlowVisible ||
+      recommendationState !== "ready"
+    ) {
+      return;
+    }
+    shouldAutoCompleteRecommendationRef.current = false;
+    handleCompleteOnboardingFlow({ seedHomeMeals: recommendationMeals });
+  }, [
+    handleCompleteOnboardingFlow,
+    isRecommendationFlowVisible,
+    recommendationMeals,
+    recommendationState,
+  ]);
+
   const handleExplorationReaction = useCallback((mealId, value) => {
     setExplorationReactions((prev) => {
-      const current = prev[mealId];
-      if (current === value) {
+      const currentValue = prev[mealId] ?? "neutral";
+      const resolvedValue = resolvePreferenceSelectionValue(
+        currentValue,
+        value
+      );
+      if (resolvedValue === "neutral") {
+        if (!prev[mealId]) {
+          return prev;
+        }
         const next = { ...prev };
         delete next[mealId];
         return next;
       }
       return {
         ...prev,
-        [mealId]: value,
+        [mealId]: resolvedValue,
       };
     });
   }, []);
@@ -3240,57 +3380,114 @@ const handlePreferenceSelection = useCallback(
     [explorationReactions, handleExplorationReaction]
   );
 
-  const renderRecommendationMeal = useCallback(({ item }) => {
-    const tagEntries = Object.entries(item.tags ?? {}).slice(0, 2);
-    const confidenceLabel =
-      typeof item.confidence === "number"
-        ? `${Math.round(item.confidence * 100)}% match`
-        : null;
-    return (
-      <View style={styles.recommendationCard}>
-        <View style={styles.recommendationHeading}>
-          <View style={styles.recommendationRankBadge}>
-            <Text style={styles.recommendationRankText}>#{item.rank}</Text>
-          </View>
-          <View style={styles.recommendationTitleGroup}>
-            <Text style={styles.recommendationMealName}>{item.name}</Text>
-            {confidenceLabel ? (
-              <Text style={styles.recommendationConfidence}>{confidenceLabel}</Text>
-            ) : null}
-          </View>
-        </View>
-        {item.description ? (
-          <Text style={styles.recommendationDescription}>{item.description}</Text>
-        ) : null}
-        {tagEntries.length ? (
-          <View style={styles.recommendationTagRow}>
-            {tagEntries.map(([category, values]) => (
-              <View
-                key={`${item.mealId}-${category}`}
-                style={styles.recommendationTagChip}
-              >
-                <Text style={styles.recommendationTagText}>
-                  {`${category}: ${values.slice(0, 2).join(", ")}`}
-                </Text>
-              </View>
-            ))}
-          </View>
-        ) : null}
-        {item.rationale ? (
-          <Text style={styles.recommendationRationale}>{item.rationale}</Text>
-        ) : null}
-        {item.diversityAxes?.length ? (
-          <View style={styles.recommendationAxes}>
-            {item.diversityAxes.map((axis, index) => (
-              <Text key={`${item.mealId}-axis-${index}`} style={styles.recommendationAxisText}>
-                • {axis}
+  const renderExplorationMealCard = useCallback(
+    (meal, index = 0) => {
+      if (!meal) {
+        return null;
+      }
+      const reaction = explorationReactions[meal.mealId] ?? "neutral";
+      const servingsCount = deriveMealServingsCount(meal);
+      const servingsLabel = formatServingsPeopleLabel(servingsCount);
+      const mealKey = meal.mealId ?? `${meal.name ?? "meal"}-${index}`;
+      return (
+        <TouchableOpacity
+          key={mealKey}
+          style={styles.homeMealCard}
+          activeOpacity={0.9}
+          onPress={() =>
+            setExplorationMealModal({ visible: true, meal })
+          }
+        >
+          <Text style={styles.homeMealTitle}>
+            {meal.name ?? "Meal"}
+          </Text>
+          {meal.description ? (
+            <Text style={styles.homeMealDescription}>
+              {meal.description}
+            </Text>
+          ) : null}
+          {Array.isArray(meal.tags?.PrepTime) &&
+          meal.tags.PrepTime.length > 0 ? (
+            <Text style={styles.homeMealPrepTime}>
+              Prep time: {meal.tags.PrepTime.join(", ")}
+            </Text>
+          ) : null}
+          <View style={styles.homeMealFooterRow}>
+            <View style={styles.homeMealServingsRow}>
+              <Text style={styles.homeMealServingsLabel}>Servings:</Text>
+              <Text style={styles.homeMealServingsValueText}>
+                {servingsLabel}
               </Text>
-            ))}
+            </View>
           </View>
-        ) : null}
-      </View>
-    );
-  }, []);
+          <View style={styles.explorationReactionRow}>
+            <Text style={styles.explorationReactionLabel}>
+              How does this look?
+            </Text>
+            <View style={styles.explorationReactionControls}>
+              {PREFERENCE_CONTROL_STATES.map((control) => {
+                const isSelected = reaction === control.id;
+                const controlStyles = [
+                  styles.prefControlButton,
+                  control.id === "like" && styles.prefControlButtonLike,
+                  control.id === "dislike" &&
+                    styles.prefControlButtonDislike,
+                  control.id === "neutral" &&
+                    styles.prefControlButtonNeutral,
+                  isSelected && styles.prefControlButtonActive,
+                  isSelected &&
+                    control.id === "like" &&
+                    styles.prefControlButtonLikeActive,
+                  isSelected &&
+                    control.id === "dislike" &&
+                    styles.prefControlButtonDislikeActive,
+                  isSelected &&
+                    control.id === "neutral" &&
+                    styles.prefControlButtonNeutralActive,
+                ];
+                return (
+                  <TouchableOpacity
+                    key={`${mealKey}-${control.id}`}
+                    style={controlStyles}
+                    onPress={(event) => {
+                      event?.stopPropagation?.();
+                      handleExplorationReaction(meal.mealId, control.id);
+                    }}
+                    accessibilityRole="button"
+                    accessibilityLabel={`${control.label} ${meal.name ?? ""}`}
+                  >
+                    <Text
+                      style={[
+                        styles.prefControlIcon,
+                        control.id === "like" && styles.prefControlIconLike,
+                        control.id === "dislike" &&
+                          styles.prefControlIconDislike,
+                        control.id === "neutral" &&
+                          styles.prefControlIconNeutral,
+                        isSelected && styles.prefControlIconActive,
+                        isSelected &&
+                          control.id === "like" &&
+                          styles.prefControlIconLikeActive,
+                        isSelected &&
+                          control.id === "dislike" &&
+                          styles.prefControlIconDislikeActive,
+                        isSelected &&
+                          control.id === "neutral" &&
+                          styles.prefControlIconNeutralActive,
+                      ]}
+                    >
+                      {control.icon}
+                    </Text>
+                  </TouchableOpacity>
+                );
+              })}
+            </View>
+          </View>
+        </TouchableOpacity>
+      );
+    },
+    [explorationReactions, handleExplorationReaction, setExplorationMealModal]
+  );
 
   const fetchWallet = useCallback(async () => {
     if (!walletEndpoint) {
@@ -4602,6 +4799,142 @@ const handlePreferenceSelection = useCallback(
     !hasSeenExplorationResults &&
     explorationState === "ready"
   ) {
+    if (USE_MEAL_CARD_EXPLORATION_UI) {
+      const explorationModalMeal = explorationMealModal.meal;
+      const explorationModalPrepSteps =
+        explorationMealModal.visible && explorationModalMeal
+          ? getMealPrepSteps(explorationModalMeal)
+          : [];
+      const explorationModalCookSteps =
+        explorationMealModal.visible && explorationModalMeal
+          ? getMealCookSteps(explorationModalMeal)
+          : [];
+      const explorationModalIngredients =
+        explorationMealModal.visible && explorationModalMeal
+          ? getMealDetailIngredients(explorationModalMeal)
+          : [];
+      return (
+        <SafeAreaView style={styles.mealHomeSafeArea}>
+          <StatusBar style="dark" />
+          <View style={styles.explorationMealCardScreen}>
+            <View style={styles.explorationCardHeader}>
+              <Text style={styles.explorationCardTitle}>
+                Review your starter meals
+              </Text>
+              <Text style={styles.explorationCardSubtitle}>
+                Tap a meal card to see ingredients and steps, then tell us how it looks so we can learn.
+              </Text>
+            </View>
+            <View style={styles.explorationMealTipCard}>
+              <Text style={styles.explorationMealTipTitle}>How it works</Text>
+              <Text style={styles.explorationMealTipText}>
+                👍 Like: We’ll show similar meals more often.
+              </Text>
+              <Text style={styles.explorationMealTipText}>
+                ○ Neutral: Skip it for now without affecting your lineup.
+              </Text>
+              <Text style={styles.explorationMealTipText}>
+                👎 Dislike: We’ll avoid meals like this.
+              </Text>
+            </View>
+            <ScrollView
+              style={styles.explorationMealCardScroll}
+              contentContainerStyle={styles.explorationMealCardList}
+              showsVerticalScrollIndicator={false}
+            >
+              {explorationMeals.length > 0 ? (
+                explorationMeals.map((meal, index) =>
+                  renderExplorationMealCard(meal, index)
+                )
+              ) : (
+                <Text style={styles.mealRecommendationsPlaceholder}>
+                  Starter meals will appear here momentarily.
+                </Text>
+              )}
+            </ScrollView>
+            <View style={styles.explorationMealCardFooter}>
+              <TouchableOpacity
+                style={styles.prefContinueButton}
+                onPress={handleConfirmExplorationReview}
+              >
+                <Text style={styles.prefContinueButtonText}>Continue</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+          {explorationMealModal.visible && explorationModalMeal ? (
+            <View style={styles.mealDetailModalContainer} pointerEvents="box-none">
+              <TouchableWithoutFeedback
+                onPress={() =>
+                  setExplorationMealModal({ visible: false, meal: null })
+                }
+              >
+                <View style={styles.mealDetailBackdrop} />
+              </TouchableWithoutFeedback>
+              <View style={styles.mealDetailCard}>
+                <ScrollView
+                  style={styles.mealDetailScroll}
+                  contentContainerStyle={styles.mealDetailContent}
+                >
+                  <Text style={styles.mealDetailTitle}>
+                    {explorationModalMeal.name ?? "Meal"}
+                  </Text>
+                  {explorationModalMeal.description ? (
+                    <Text style={styles.mealDetailDescription}>
+                      {explorationModalMeal.description}
+                    </Text>
+                  ) : null}
+                  {explorationModalPrepSteps.length > 0 ? (
+                    <View style={styles.mealDetailSection}>
+                      <Text style={styles.mealDetailSectionTitle}>Prep Steps</Text>
+                      {explorationModalPrepSteps.map((step, idx) => (
+                        <Text key={`exploration-prep-${idx}`} style={styles.mealDetailSectionItem}>
+                          {idx + 1}. {step}
+                        </Text>
+                      ))}
+                    </View>
+                  ) : null}
+                  {explorationModalCookSteps.length > 0 ? (
+                    <View style={styles.mealDetailSection}>
+                      <Text style={styles.mealDetailSectionTitle}>Cooking Steps</Text>
+                      {explorationModalCookSteps.map((step, idx) => (
+                        <Text key={`exploration-cook-${idx}`} style={styles.mealDetailSectionItem}>
+                          {idx + 1}. {step}
+                        </Text>
+                      ))}
+                    </View>
+                  ) : null}
+                  {explorationModalIngredients.length > 0 ? (
+                    <View style={styles.mealDetailSection}>
+                      <Text style={styles.mealDetailSectionTitle}>Ingredients</Text>
+                      {explorationModalIngredients.map((ingredient, idx) => {
+                        const label = formatMealIngredientDetailText(ingredient, idx);
+                        return (
+                          <Text
+                            key={`exploration-detail-ingredient-${idx}`}
+                            style={styles.mealDetailSectionItem}
+                          >
+                            • {label}
+                          </Text>
+                        );
+                      })}
+                    </View>
+                  ) : null}
+                </ScrollView>
+                <TouchableOpacity
+                  style={styles.mealDetailCloseButton}
+                  onPress={() =>
+                    setExplorationMealModal({ visible: false, meal: null })
+                  }
+                >
+                  <Text style={styles.mealDetailCloseText}>×</Text>
+                </TouchableOpacity>
+              </View>
+            </View>
+          ) : null}
+        </SafeAreaView>
+      );
+    }
+
     return (
       <SafeAreaView style={styles.preferencesSafeArea}>
         <StatusBar style="dark" />
@@ -4617,15 +4950,6 @@ const handlePreferenceSelection = useCallback(
               <Text style={styles.prefCategorySubtitle}>
                 We’ll use your reactions plus the onboarding tags to refine future runs.
               </Text>
-              {explorationNotes?.length ? (
-                <View style={styles.explorationNotes}>
-                  {explorationNotes.map((note, index) => (
-                    <Text key={`note-${index}`} style={styles.explorationNoteText}>
-                      • {note}
-                    </Text>
-                  ))}
-                </View>
-              ) : null}
             </View>
           }
           ListFooterComponent={
@@ -4648,7 +4972,7 @@ const handlePreferenceSelection = useCallback(
   if (
     isOnboardingActive &&
     isRecommendationFlowVisible &&
-    (recommendationState === "idle" || recommendationState === "running")
+    recommendationState !== "error"
   ) {
     return (
       <SafeAreaView style={styles.preferencesSafeArea}>
@@ -4698,74 +5022,25 @@ const handlePreferenceSelection = useCallback(
   }
 
   if (
-    isOnboardingActive &&
-    isRecommendationFlowVisible &&
-    recommendationState === "ready"
-  ) {
-    return (
-      <SafeAreaView style={styles.preferencesSafeArea}>
-        <StatusBar style="dark" />
-        <FlatList
-          data={recommendationMeals}
-          keyExtractor={(item) => `${item.mealId}-${item.rank}`}
-          renderItem={renderRecommendationMeal}
-          ListHeaderComponent={
-            <View style={styles.recommendationHeader}>
-              <Text style={styles.prefCategoryTitle}>
-                Here’s your starter lineup
-              </Text>
-              <Text style={styles.prefCategorySubtitle}>
-                We prioritized meals you’re likely to enjoy while keeping cuisines and prep times varied.
-              </Text>
-              {recommendationNotes?.length ? (
-                <View style={styles.recommendationNotes}>
-                  {recommendationNotes.map((note, index) => (
-                    <Text key={`rec-note-${index}`} style={styles.recommendationNoteText}>
-                      • {note}
-                    </Text>
-                  ))}
-                </View>
-              ) : null}
-            </View>
-          }
-          ListFooterComponent={
-            <View style={styles.recommendationFooter}>
-              <TouchableOpacity
-                style={styles.prefContinueButton}
-                onPress={handleRecommendationComplete}
-              >
-                <Text style={styles.prefContinueButtonText}>Continue to home</Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={styles.prefRedoButton}
-                onPress={handleRecommendationRetry}
-              >
-                <Text style={styles.prefRedoButtonText}>Refresh list</Text>
-              </TouchableOpacity>
-            </View>
-          }
-          ListEmptyComponent={
-            <View style={styles.recommendationEmptyState}>
-              <Text style={styles.recommendationEmptyTitle}>No meals to show</Text>
-              <Text style={styles.recommendationEmptySubtitle}>
-                We couldn’t map your feedback to new meals yet. Try refreshing the list.
-              </Text>
-            </View>
-          }
-          contentContainerStyle={styles.recommendationList}
-          showsVerticalScrollIndicator={false}
-        />
-      </SafeAreaView>
-    );
-  }
-
-  if (
     screen === "home" &&
     isMealHomeSurface &&
     isWelcomeComplete &&
     isPreferenceStateReady &&
     !isOnboardingActive
   ) {
+    const homeModalMeal = homeMealModal.meal;
+    const homeModalPrepSteps =
+      homeMealModal.visible && homeModalMeal
+        ? getMealPrepSteps(homeModalMeal)
+        : [];
+    const homeModalCookSteps =
+      homeMealModal.visible && homeModalMeal
+        ? getMealCookSteps(homeModalMeal)
+        : [];
+    const homeModalIngredients =
+      homeMealModal.visible && homeModalMeal
+        ? getMealDetailIngredients(homeModalMeal)
+        : [];
     return (
       <SafeAreaView style={styles.mealHomeSafeArea}>
         <StatusBar style="dark" />
@@ -4911,75 +5186,72 @@ const handlePreferenceSelection = useCallback(
         </View>
         {mealMenuOverlay}
         {confirmationDialogPortal}
-        {homeMealModal.visible && homeMealModal.meal ? (
-        <View style={styles.mealDetailModalContainer} pointerEvents="box-none">
-          <TouchableWithoutFeedback
-            onPress={() => setHomeMealModal({ visible: false, meal: null })}
-          >
-            <View style={styles.mealDetailBackdrop} />
-          </TouchableWithoutFeedback>
-          <View style={styles.mealDetailCard}>
-            <ScrollView
-              style={styles.mealDetailScroll}
-              contentContainerStyle={styles.mealDetailContent}
-            >
-              <Text style={styles.mealDetailTitle}>
-                {homeMealModal.meal.name ?? "Meal"}
-              </Text>
-              {homeMealModal.meal.description ? (
-                <Text style={styles.mealDetailDescription}>
-                  {homeMealModal.meal.description}
-                </Text>
-              ) : null}
-              {Array.isArray(homeMealModal.meal.prepSteps) &&
-              homeMealModal.meal.prepSteps.length > 0 ? (
-                <View style={styles.mealDetailSection}>
-                  <Text style={styles.mealDetailSectionTitle}>Prep Steps</Text>
-                  {homeMealModal.meal.prepSteps.map((step, idx) => (
-                    <Text key={`prep-${idx}`} style={styles.mealDetailSectionItem}>
-                      {idx + 1}. {step}
-                    </Text>
-                  ))}
-                </View>
-              ) : null}
-              {Array.isArray(homeMealModal.meal.cookSteps) &&
-              homeMealModal.meal.cookSteps.length > 0 ? (
-                <View style={styles.mealDetailSection}>
-                  <Text style={styles.mealDetailSectionTitle}>Cooking Steps</Text>
-                  {homeMealModal.meal.cookSteps.map((step, idx) => (
-                    <Text key={`cook-${idx}`} style={styles.mealDetailSectionItem}>
-                      {idx + 1}. {step}
-                    </Text>
-                  ))}
-                </View>
-              ) : null}
-              {Array.isArray(homeMealModal.meal.ingredients) &&
-              homeMealModal.meal.ingredients.length > 0 ? (
-                <View style={styles.mealDetailSection}>
-                  <Text style={styles.mealDetailSectionTitle}>Ingredients</Text>
-                  {homeMealModal.meal.ingredients.map((ingredient, idx) => {
-                    const label = formatMealIngredientDetailText(ingredient, idx);
-                    return (
-                      <Text
-                        key={`detail-ingredient-${idx}`}
-                        style={styles.mealDetailSectionItem}
-                      >
-                        • {label}
-                      </Text>
-                    );
-                  })}
-                </View>
-              ) : null}
-            </ScrollView>
-            <TouchableOpacity
-              style={styles.mealDetailCloseButton}
+        {homeMealModal.visible && homeModalMeal ? (
+          <View style={styles.mealDetailModalContainer} pointerEvents="box-none">
+            <TouchableWithoutFeedback
               onPress={() => setHomeMealModal({ visible: false, meal: null })}
             >
-              <Text style={styles.mealDetailCloseText}>×</Text>
-            </TouchableOpacity>
+              <View style={styles.mealDetailBackdrop} />
+            </TouchableWithoutFeedback>
+            <View style={styles.mealDetailCard}>
+              <ScrollView
+                style={styles.mealDetailScroll}
+                contentContainerStyle={styles.mealDetailContent}
+              >
+                <Text style={styles.mealDetailTitle}>
+                  {homeModalMeal.name ?? "Meal"}
+                </Text>
+                {homeModalMeal.description ? (
+                  <Text style={styles.mealDetailDescription}>
+                    {homeModalMeal.description}
+                  </Text>
+                ) : null}
+                {homeModalPrepSteps.length > 0 ? (
+                  <View style={styles.mealDetailSection}>
+                    <Text style={styles.mealDetailSectionTitle}>Prep Steps</Text>
+                    {homeModalPrepSteps.map((step, idx) => (
+                      <Text key={`prep-${idx}`} style={styles.mealDetailSectionItem}>
+                        {idx + 1}. {step}
+                      </Text>
+                    ))}
+                  </View>
+                ) : null}
+                {homeModalCookSteps.length > 0 ? (
+                  <View style={styles.mealDetailSection}>
+                    <Text style={styles.mealDetailSectionTitle}>Cooking Steps</Text>
+                    {homeModalCookSteps.map((step, idx) => (
+                      <Text key={`cook-${idx}`} style={styles.mealDetailSectionItem}>
+                        {idx + 1}. {step}
+                      </Text>
+                    ))}
+                  </View>
+                ) : null}
+                {homeModalIngredients.length > 0 ? (
+                  <View style={styles.mealDetailSection}>
+                    <Text style={styles.mealDetailSectionTitle}>Ingredients</Text>
+                    {homeModalIngredients.map((ingredient, idx) => {
+                      const label = formatMealIngredientDetailText(ingredient, idx);
+                      return (
+                        <Text
+                          key={`detail-ingredient-${idx}`}
+                          style={styles.mealDetailSectionItem}
+                        >
+                          • {label}
+                        </Text>
+                      );
+                    })}
+                  </View>
+                ) : null}
+              </ScrollView>
+              <TouchableOpacity
+                style={styles.mealDetailCloseButton}
+                onPress={() => setHomeMealModal({ visible: false, meal: null })}
+              >
+                <Text style={styles.mealDetailCloseText}>×</Text>
+              </TouchableOpacity>
+            </View>
           </View>
-        </View>
-      ) : null}
+        ) : null}
       </SafeAreaView>
     );
   }
@@ -6145,8 +6417,52 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
     paddingBottom: 8,
   },
+  explorationMealCardScreen: {
+    flex: 1,
+    paddingHorizontal: 24,
+    paddingTop: 12,
+    paddingBottom: 24,
+  },
+  explorationCardHeader: {
+    marginBottom: 16,
+  },
+  explorationCardTitle: {
+    fontSize: 26,
+    fontWeight: "700",
+    color: "#0c3c26",
+  },
+  explorationCardSubtitle: {
+    fontSize: 15,
+    color: "#4a5e53",
+    marginTop: 8,
+    lineHeight: 22,
+  },
+  explorationMealTipCard: {
+    borderRadius: 18,
+    backgroundColor: "#f7f9f8",
+    padding: 16,
+    marginBottom: 16,
+    ...SHADOW.card,
+  },
+  explorationMealTipTitle: {
+    fontSize: 16,
+    fontWeight: "700",
+    color: "#0c3c26",
+  },
+  explorationMealTipText: {
+    fontSize: 14,
+    color: "#4d6055",
+    marginTop: 4,
+  },
   explorationList: {
     paddingBottom: 60,
+  },
+  explorationMealCardScroll: {
+    flex: 1,
+  },
+  explorationMealCardList: {
+    paddingBottom: 32,
+    gap: 18,
   },
   explorationCard: {
     marginHorizontal: 24,
@@ -6202,6 +6518,25 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     gap: 10,
   },
+  explorationMealCardFooter: {
+    paddingTop: 12,
+  },
+  explorationReactionRow: {
+    marginTop: 20,
+    paddingTop: 14,
+    borderTopWidth: 1,
+    borderTopColor: "#e4ede7",
+    gap: 10,
+  },
+  explorationReactionLabel: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "#0c3c26",
+  },
+  explorationReactionControls: {
+    flexDirection: "row",
+    gap: 8,
+  },
   explorationActionButton: {
     flex: 1,
     borderWidth: 1,
@@ -6230,131 +6565,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
     paddingBottom: 36,
     paddingTop: 8,
-  },
-  explorationNotes: {
-    marginTop: 14,
-    backgroundColor: "#f2fbff",
-    borderRadius: 14,
-    padding: 12,
-  },
-  explorationNoteText: {
-    fontSize: 13,
-    color: "#1d3752",
-  },
-  recommendationHeader: {
-    paddingHorizontal: 24,
-    paddingBottom: 8,
-  },
-  recommendationList: {
-    paddingBottom: 60,
-  },
-  recommendationCard: {
-    marginHorizontal: 24,
-    marginBottom: 18,
-    backgroundColor: "#ffffff",
-    borderRadius: 22,
-    padding: 20,
-    ...SHADOW.card,
-  },
-  recommendationHeading: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 12,
-    marginBottom: 8,
-  },
-  recommendationRankBadge: {
-    width: 42,
-    height: 42,
-    borderRadius: 12,
-    backgroundColor: "#e8f6ec",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  recommendationRankText: {
-    fontSize: 18,
-    fontWeight: "700",
-    color: "#0f3c27",
-  },
-  recommendationTitleGroup: {
-    flex: 1,
-  },
-  recommendationMealName: {
-    fontSize: 18,
-    fontWeight: "700",
-    color: "#0f3c27",
-  },
-  recommendationConfidence: {
-    marginTop: 2,
-    fontSize: 13,
-    color: "#2f5b42",
-  },
-  recommendationDescription: {
-    fontSize: 14,
-    color: "#445248",
-    marginBottom: 10,
-    lineHeight: 20,
-  },
-  recommendationTagRow: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    gap: 6,
-    marginBottom: 10,
-  },
-  recommendationTagChip: {
-    backgroundColor: "#eef5f0",
-    borderRadius: 10,
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-  },
-  recommendationTagText: {
-    fontSize: 12,
-    color: "#1b4a33",
-  },
-  recommendationRationale: {
-    fontSize: 14,
-    color: "#1e3529",
-    lineHeight: 20,
-    marginBottom: 8,
-  },
-  recommendationAxes: {
-    marginTop: 4,
-    gap: 2,
-  },
-  recommendationAxisText: {
-    fontSize: 12,
-    color: "#506457",
-  },
-  recommendationNotes: {
-    marginTop: 14,
-    backgroundColor: "#f5f8ff",
-    borderRadius: 14,
-    padding: 12,
-  },
-  recommendationNoteText: {
-    fontSize: 13,
-    color: "#1d2f52",
-  },
-  recommendationFooter: {
-    paddingHorizontal: 24,
-    paddingBottom: 36,
-    paddingTop: 12,
-    gap: 12,
-  },
-  recommendationEmptyState: {
-    paddingHorizontal: 24,
-    paddingVertical: 32,
-    alignItems: "center",
-    gap: 8,
-  },
-  recommendationEmptyTitle: {
-    fontSize: 16,
-    fontWeight: "600",
-    color: "#122e21",
-  },
-  recommendationEmptySubtitle: {
-    fontSize: 14,
-    color: "#3f5c4b",
-    textAlign: "center",
   },
   prefProgressContainer: {
     backgroundColor: "#ffffff",

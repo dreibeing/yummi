@@ -72,6 +72,7 @@ async def run_recommendation_workflow(
     candidate_limit = request.candidateLimit or settings.recommendation_candidate_limit
     meal_target = request.mealCount or settings.recommendation_meal_count
     declined_ids = _merge_declined_ids(request.declinedMealIds, request.reactions)
+    reaction_groups = _bucket_reactions_by_sentiment(request.reactions)
     filter_request = CandidateFilterRequest(
         mealVersion=request.mealVersion,
         hardConstraints=request.hardConstraints,
@@ -91,14 +92,20 @@ async def run_recommendation_workflow(
             detail="No meals available for the selected preferences. Please adjust your constraints.",
         )
 
-    preferred_archetypes = _derive_preferred_archetypes(request.reactions, manifest)
-    if preferred_archetypes:
-        narrowed = [detail for detail in detail_records if detail.archetype_uid in preferred_archetypes]
-        if narrowed:
-            detail_records = narrowed
-        else:
-            logger.warning(
-                "Preferred archetype filter removed all candidates; falling back to full pool.",
+    blocked_archetypes = _derive_blocked_archetypes(
+        reaction_groups.get("dislike") or [],
+        manifest,
+    )
+    if blocked_archetypes:
+        detail_records = [
+            detail
+            for detail in detail_records
+            if detail.archetype_uid not in blocked_archetypes
+        ]
+        if not detail_records:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="No meals available after removing disliked archetypes. Please adjust your dislikes or try again later.",
             )
 
     if len(detail_records) > candidate_limit:
@@ -106,7 +113,7 @@ async def run_recommendation_workflow(
 
     profile_payload = serialize_preference_profile(profile, tag_manifest)
     feedback_payload = _build_feedback_payload(
-        reactions=request.reactions,
+        reaction_groups=reaction_groups,
         manifest=manifest,
         exploration_session=exploration_session,
         declined_ids=declined_ids,
@@ -155,35 +162,35 @@ def _merge_declined_ids(
     declined_ids: Sequence[str] | None,
     reactions: Sequence[MealReaction],
 ) -> set[str]:
-    """Return only explicitly declined IDs as hard exclusions.
+    """Return only explicit declines as hard exclusions.
 
-    Thumbs-down ("dislike") reactions are treated as strong negative preferences
-    and should influence ranking, not act as hard bans. The LLM prompt receives
-    both reactions and preferences to down-rank these meals instead of excluding
-    them outright.
+    Reaction buttons (like/neutral/dislike) are handled as soft-preference
+    signals inside the LLM prompt so we can continue exploring nearby options.
     """
     return {mid for mid in (declined_ids or []) if mid}
 
 
 def _build_feedback_payload(
     *,
-    reactions: Sequence[MealReaction],
+    reaction_groups: Dict[str, List[str]],
     manifest: Dict[str, Any],
     exploration_session: MealExplorationSession | None,
     declined_ids: set[str],
 ) -> Dict[str, Any]:
-    likes: List[str] = []
-    dislikes: List[str] = []
-    for reaction in reactions or []:
-        target = likes if reaction.reaction == "like" else dislikes
-        if reaction.mealId not in target:
-            target.append(reaction.mealId)
+    likes = reaction_groups.get("like") or []
+    neutrals = reaction_groups.get("neutral") or []
+    dislikes = reaction_groups.get("dislike") or []
     return {
         "explorationSessionId": str(exploration_session.id) if exploration_session else None,
         "likedMeals": _materialize_feedback_entries(likes, manifest, exploration_session),
+        "neutralMeals": _materialize_feedback_entries(neutrals, manifest, exploration_session),
         "dislikedMeals": _materialize_feedback_entries(dislikes, manifest, exploration_session),
         "declinedMealIds": sorted(declined_ids),
-        "counts": {"likes": len(likes), "dislikes": len(dislikes)},
+        "counts": {
+            "likes": len(likes),
+            "neutral": len(neutrals),
+            "dislikes": len(dislikes),
+        },
     }
 
 
@@ -288,7 +295,7 @@ def _build_prompts(
 
         Requirements:
         1. Choose exactly {meal_target} meals when the candidate list has at least {meal_target} entries; only return fewer if the pool itself is smaller. Return them in rank order from best match to exploratory picks.
-        2. Infer soft patterns from FEEDBACK_SUMMARY (likedMeals/dislikedMeals) and USER_PROFILE (selected/disliked tags). Preference thumbs populate selected/disliked tags—treat them as "preferred" vs. "less preferred" hints to guide weighting, not mandates. Prefer themes seen in likes/selectedTags, gently de-prioritize dislikedMeals/dislikedTags, and never ban dislikes unless a meal is in declined IDs. Maintain varied cuisines, proteins, heat, and prep times while aligning to inferred preferences.
+        2. Infer soft patterns from FEEDBACK_SUMMARY (likedMeals/neutralMeals/dislikedMeals) and USER_PROFILE (selected/disliked tags). Treat likes as strong positives, neutrals as mild/uncertain signals, and dislikes as negative signals to down-rank (not hard bans unless a meal is in declined IDs). Prefer themes seen in likes/selectedTags, gently explore neutrals, de-prioritize dislikedMeals/dislikedTags, and maintain varied cuisines, proteins, heat, and prep times while aligning to inferred preferences.
         3. NutritionFocus (and similar categories) are preferences only; treat "NoNutritionFocus" as neutral. Do not hard-filter on these.
         4. Do not add hard filters beyond the candidate pool. Audience, Diet/Ethics, and Allergens are already satisfied. If the user set no allergen avoidance, treat all candidates as acceptable.
         5. Respond in JSON: {{"recommendations":["meal_uid_1","meal_uid_2","meal_uid_3"], "notes":["short variety notes describing learned themes and variety rationale"]}}. Only include meal IDs in `recommendations`; the API will hydrate fields.
@@ -363,18 +370,28 @@ def _normalize_selection_payload(selections: List[Any]) -> List[str]:
     return ordered
 
 
-def _derive_preferred_archetypes(
-    reactions: Sequence[MealReaction],
+def _derive_blocked_archetypes(
+    disliked_meal_ids: Sequence[str],
     manifest: Dict[str, Any],
 ) -> set[str]:
-    preferred: set[str] = set()
-    for reaction in reactions or []:
-        if reaction.reaction != "like":
-            continue
-        _, archetype_uid = _find_manifest_meal_with_archetype(manifest, reaction.mealId)
+    blocked: set[str] = set()
+    for meal_id in disliked_meal_ids or []:
+        _, archetype_uid = _find_manifest_meal_with_archetype(manifest, meal_id)
         if archetype_uid:
-            preferred.add(str(archetype_uid))
-    return preferred
+            blocked.add(str(archetype_uid))
+    return blocked
+
+
+def _bucket_reactions_by_sentiment(
+    reactions: Sequence[MealReaction],
+) -> Dict[str, List[str]]:
+    buckets = {"like": [], "neutral": [], "dislike": []}
+    for reaction in reactions or []:
+        sentiment = (reaction.reaction or "").lower()
+        meal_id = reaction.mealId
+        if sentiment in buckets and meal_id and meal_id not in buckets[sentiment]:
+            buckets[sentiment].append(meal_id)
+    return buckets
 
 
 def _hydrate_recommendation_meal(
