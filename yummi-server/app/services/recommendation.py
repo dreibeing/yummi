@@ -24,6 +24,7 @@ from .filtering import CandidateMealDetail, generate_candidate_pool_with_details
 from .meal_representation import extract_key_ingredients, extract_sku_snapshot, format_json
 from .meals import get_meal_manifest
 from .openai_responses import call_openai_responses
+from .exploration_tracker import flush_background_run
 from .preferences import (
     get_user_preference_profile,
     load_tag_manifest,
@@ -54,6 +55,9 @@ async def run_recommendation_workflow(
         )
     tag_manifest = load_tag_manifest()
 
+    if request.explorationSessionId:
+        await flush_background_run(str(request.explorationSessionId))
+
     async with get_session() as session:
         profile = await get_user_preference_profile(session, user_id)
         exploration_session = None
@@ -71,7 +75,7 @@ async def run_recommendation_workflow(
         )
 
     candidate_limit = request.candidateLimit or settings.recommendation_candidate_limit
-    meal_target = request.mealCount or settings.recommendation_meal_count
+    meal_target = _resolve_meal_target(settings.recommendation_meal_count, request.mealCount)
     declined_ids = _merge_declined_ids(request.declinedMealIds, request.reactions)
     reaction_groups = _bucket_reactions_by_sentiment(request.reactions)
     disliked_meal_ids = set(reaction_groups.get("dislike") or [])
@@ -553,6 +557,12 @@ def _build_detail_records_from_manifest(
             )
         )
     return details
+
+
+def _resolve_meal_target(default_target: int, requested: int | None) -> int:
+    if requested is None:
+        return default_target
+    return min(requested, default_target)
 
 
 def _hydrate_preselected_recommendations(

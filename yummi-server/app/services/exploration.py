@@ -29,6 +29,7 @@ from .filtering import CandidateMealDetail, generate_candidate_pool_with_details
 from .meals import get_meal_manifest
 from .meal_representation import extract_key_ingredients, extract_sku_snapshot, format_json
 from .openai_responses import call_openai_responses
+from .exploration_tracker import register_background_run
 from .preferences import (
     get_user_preference_profile,
     load_tag_manifest,
@@ -56,7 +57,7 @@ async def run_exploration_workflow(
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Preferences must be saved before running recommendations")
 
     candidate_limit = request.candidateLimit or settings.exploration_candidate_limit
-    meal_target = request.mealCount or settings.exploration_meal_count
+    meal_target = _resolve_meal_target(settings.exploration_meal_count, request.mealCount)
     logger.info(
         "Exploration run starting user=%s model=%s candidate_limit=%s meal_target=%s",
         user_id,
@@ -106,7 +107,7 @@ async def run_exploration_workflow(
         )
 
     timeout_seconds = settings.exploration_stream_timeout_seconds
-    archetype_payloads = await _score_archetype_batches(
+    archetype_payloads, pending_tasks = await _score_archetype_batches(
         user_id=user_id,
         profile_payload=profile_payload,
         archetype_batches=archetype_batches,
@@ -119,7 +120,7 @@ async def run_exploration_workflow(
     archetype_meal_map: Dict[str, List[ExplorationMeal]] = {}
     raw_payload: Dict[str, Any] = {
         "archetypeResponses": {},
-        "streamedMealIds": {uid: meals for uid, meals in streamed_meal_ids.items()},
+        "streamedMealIds": _snapshot_streamed_meal_ids(streamed_meal_ids),
     }
     for archetype_uid, parsed_payload, batch_details in archetype_payloads:
         raw_payload["archetypeResponses"][archetype_uid] = parsed_payload
@@ -154,6 +155,17 @@ async def run_exploration_workflow(
         raw_payload=raw_payload,
         notes=[],
     )
+
+    if pending_tasks:
+        async def _persist_stream_snapshot(stream_snapshot: Dict[str, List[str]]) -> None:
+            await _persist_streamed_ids(record.id, stream_snapshot)
+
+        register_background_run(
+            session_id=str(record.id),
+            streamed_ids=streamed_meal_ids,
+            pending_tasks=pending_tasks,
+            persist_callback=_persist_stream_snapshot,
+        )
 
     return ExplorationRunResponse(
         sessionId=str(record.id),
@@ -258,7 +270,7 @@ async def _score_archetype_batches(
     on_stream_meal: Callable[[str, str], None] | None = None,
     timeout_seconds: int | None = None,
     get_streamed_ids: Callable[[str], List[str]] | None = None,
-) -> List[tuple[str, Dict[str, Any], List[CandidateMealDetail]]]:
+) -> tuple[List[tuple[str, Dict[str, Any], List[CandidateMealDetail]]], List[asyncio.Task]]:
     tasks = []
     for archetype_uid, batch_details in archetype_batches:
         task = asyncio.create_task(
@@ -273,15 +285,14 @@ async def _score_archetype_batches(
         )
         tasks.append((task, archetype_uid, batch_details))
 
+    task_objects = [task for task, _, _ in tasks]
     if timeout_seconds and timeout_seconds > 0:
-        done, pending = await asyncio.wait(
-            [task for task, _, _ in tasks],
-            timeout=timeout_seconds,
-        )
+        done, _pending = await asyncio.wait(task_objects, timeout=timeout_seconds)
     else:
-        done, pending = await asyncio.wait([task for task, _, _ in tasks])
+        done, _pending = await asyncio.wait(task_objects)
 
     results: List[tuple[str, Dict[str, Any], List[CandidateMealDetail]]] = []
+    pending_tasks: List[asyncio.Task] = []
     for task, archetype_uid, batch_details in tasks:
         if task in done:
             try:
@@ -299,7 +310,6 @@ async def _score_archetype_batches(
                 )
                 results.append((archetype_uid, fallback_payload, batch_details))
         else:
-            task.cancel()
             logger.warning(
                 "Exploration archetype run timed out user=%s archetype=%s timeout=%ss",
                 user_id,
@@ -311,7 +321,8 @@ async def _score_archetype_batches(
                 get_streamed_ids,
             )
             results.append((archetype_uid, fallback_payload, batch_details))
-    return results
+            pending_tasks.append(task)
+    return results, pending_tasks
 
 
 async def _score_single_archetype_batch(
@@ -467,6 +478,30 @@ def _build_stream_fallback_payload(
     meal_ids = get_streamed_ids(archetype_uid) if get_streamed_ids else []
     exploration_set = [{"meal_id": meal_id} for meal_id in meal_ids]
     return {"explorationSet": exploration_set}
+
+
+def _resolve_meal_target(default_target: int, requested: int | None) -> int:
+    if requested is None:
+        return default_target
+    return min(requested, default_target)
+
+
+def _snapshot_streamed_meal_ids(streamed_meal_ids: Dict[str, List[str]]) -> Dict[str, List[str]]:
+    return {uid: list(meals) for uid, meals in streamed_meal_ids.items()}
+
+
+async def _persist_streamed_ids(session_id: uuid.UUID, streamed_meal_ids: Dict[str, List[str]]) -> None:
+    snapshot = _snapshot_streamed_meal_ids(streamed_meal_ids)
+    async with get_session() as session:
+        record = await session.get(MealExplorationSession, session_id)
+        if not record:
+            return
+        results = dict(record.exploration_results or {})
+        raw_payload = dict(results.get("rawResponse") or {})
+        raw_payload["streamedMealIds"] = snapshot
+        results["rawResponse"] = raw_payload
+        record.exploration_results = results
+        await session.commit()
 
 
 def _parse_llm_payload(raw_text: str) -> Dict[str, Any]:
