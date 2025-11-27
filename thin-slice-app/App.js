@@ -4590,33 +4590,38 @@ const handlePreferenceSelection = useCallback(
                   <Text style={styles.pastOrderCardDay}>{dayLabel}</Text>
                   <View style={styles.pastOrderCardDateWrapper}>
                     <Text style={styles.pastOrderCardDate}>{dateLabel}</Text>
-                    <TouchableOpacity
-                      style={[
-                        styles.prefControlButton,
-                        styles.prefControlButtonDislike,
-                        styles.pastOrderDeleteButton,
-                      ]}
-                      onPress={() => handleDeletePastOrder(order)}
-                      accessibilityRole="button"
-                      accessibilityLabel="Delete past order"
-                    >
-                      <Feather
-                        name="trash-2"
-                        size={16}
-                        style={[
-                          styles.prefControlIcon,
-                          styles.prefControlIconDislike,
-                        ]}
-                      />
-                    </TouchableOpacity>
                   </View>
                 </View>
-                  <Text style={styles.pastOrderCardMeta}>
-                    {mealCount} {mealCount === 1 ? "meal" : "meals"}
-                  </Text>
-                </TouchableOpacity>
-              );
-            })
+                <Text style={styles.pastOrderCardMeta}>
+                  {mealCount} {mealCount === 1 ? "meal" : "meals"}
+                </Text>
+                <View style={styles.pastOrderFooter}>
+                  <TouchableOpacity
+                    style={[
+                      styles.prefControlButton,
+                      styles.prefControlButtonDislike,
+                      styles.pastOrderDeleteButton,
+                    ]}
+                    onPress={(event) => {
+                      event?.stopPropagation?.();
+                      handleDeletePastOrder(order);
+                    }}
+                    accessibilityRole="button"
+                    accessibilityLabel="Delete past order"
+                  >
+                    <Feather
+                      name="trash-2"
+                      size={16}
+                      style={[
+                        styles.prefControlIcon,
+                        styles.prefControlIconDislike,
+                      ]}
+                    />
+                  </TouchableOpacity>
+                </View>
+              </TouchableOpacity>
+            );
+          })
           )}
         </ScrollView>
         {mealMenuOverlay}
@@ -6257,6 +6262,11 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: "#0c3c26",
     fontWeight: "600",
+  },
+  pastOrderFooter: {
+    flexDirection: "row",
+    justifyContent: "flex-end",
+    marginTop: 12,
   },
   pastOrdersEmptyState: {
     flex: 1,
