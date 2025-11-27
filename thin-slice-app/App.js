@@ -1938,11 +1938,11 @@ function AppContent() {
     setCheckedShoppingListItems(new Set());
     setImageReloadCounters({});
     prefetchedImageUrls.current.clear();
+    clearPrefetchTimeoutsFor("shoppingList");
+    clearPrefetchTimeoutsFor("ingredients");
     Object.values(imageRetryTimeouts.current).forEach(clearTimeout);
     imageRetryTimeouts.current = {};
-    Object.values(imagePrefetchTimeouts.current).forEach(clearTimeout);
-    imagePrefetchTimeouts.current = {};
-  }, [shoppingListItems]);
+  }, [shoppingListItems, clearPrefetchTimeoutsFor]);
 
   useEffect(() => {
     return () => {
@@ -2192,6 +2192,26 @@ function AppContent() {
     [ingredientQuantities]
   );
 
+  const getIngredientTrackingId = useCallback((ingredient, fallbackIndex = 0) => {
+    if (!ingredient || typeof ingredient !== "object") {
+      return `ingredient-${fallbackIndex}`;
+    }
+    return (
+      ingredient.id ??
+      ingredient.groupKey ??
+      ingredient.text ??
+      ingredient.productId ??
+      ingredient.productName ??
+      ingredient.name ??
+      `ingredient-${fallbackIndex}`
+    );
+  }, []);
+
+  const getIngredientImageUrl = useCallback((ingredient) => {
+    const preferredProduct = pickPreferredShoppingListProduct(ingredient);
+    return preferredProduct?.imageUrl ?? null;
+  }, []);
+
   const shoppingListDisplayItems = useMemo(() => {
     const entries = [];
     shoppingListItems.forEach((ingredient) => {
@@ -2207,11 +2227,9 @@ function AppContent() {
         "Ingredient";
       const imageUrl = preferredProduct?.imageUrl ?? null;
       const quantityValue = getIngredientQuantityValue(ingredient);
+      const trackingId = getIngredientTrackingId(ingredient, entries.length);
       entries.push({
-        id:
-          ingredient.id ??
-          ingredient.groupKey ??
-          `${displayName}-${entries.length + 1}`,
+        id: trackingId,
         displayName,
         imageUrl,
         displayQuantity: formatIngredientQuantity(quantityValue),
@@ -2245,9 +2263,22 @@ function AppContent() {
         incrementImageReloadCounter(itemId);
         delete imageRetryTimeouts.current[itemId];
       }, 2200);
-    },
-    [incrementImageReloadCounter]
-  );
+      },
+      [incrementImageReloadCounter]
+    );
+
+  const clearPrefetchTimeoutsFor = useCallback((category) => {
+    if (!category) {
+      return;
+    }
+    const prefix = `${category}-`;
+    Object.keys(imagePrefetchTimeouts.current).forEach((key) => {
+      if (key.startsWith(prefix)) {
+        clearTimeout(imagePrefetchTimeouts.current[key]);
+        delete imagePrefetchTimeouts.current[key];
+      }
+    });
+  }, []);
 
   const handleToggleShoppingListItem = useCallback((itemId) => {
     if (!itemId) {
@@ -2265,13 +2296,13 @@ function AppContent() {
   }, []);
 
   useEffect(() => {
-    Object.values(imagePrefetchTimeouts.current).forEach(clearTimeout);
-    imagePrefetchTimeouts.current = {};
+    clearPrefetchTimeoutsFor("shoppingList");
     shoppingListDisplayItems.forEach((item, index) => {
       if (!item?.imageUrl || prefetchedImageUrls.current.has(item.imageUrl)) {
         return;
       }
       const delay = Math.min(2200, index * 150);
+      const timeoutKey = `shoppingList-${item.id}`;
       const timeoutId = setTimeout(() => {
         Image.prefetch(item.imageUrl)
           .then(() => {
@@ -2281,15 +2312,52 @@ function AppContent() {
             scheduleImageReload(item.id);
           })
           .finally(() => {
-            delete imagePrefetchTimeouts.current[item.id];
+            delete imagePrefetchTimeouts.current[timeoutKey];
           });
       }, delay);
-      imagePrefetchTimeouts.current[item.id] = timeoutId;
+      imagePrefetchTimeouts.current[timeoutKey] = timeoutId;
     });
     return () => {
-      Object.values(imagePrefetchTimeouts.current).forEach(clearTimeout);
+      clearPrefetchTimeoutsFor("shoppingList");
     };
-  }, [scheduleImageReload, shoppingListDisplayItems]);
+  }, [clearPrefetchTimeoutsFor, scheduleImageReload, shoppingListDisplayItems]);
+
+  useEffect(() => {
+    clearPrefetchTimeoutsFor("ingredients");
+    const ingredients = [...stapleIngredients, ...primaryIngredients];
+    ingredients.forEach((ingredient, index) => {
+      const imageUrl = getIngredientImageUrl(ingredient);
+      if (!imageUrl || prefetchedImageUrls.current.has(imageUrl)) {
+        return;
+      }
+      const trackingId = getIngredientTrackingId(ingredient, index);
+      const timeoutKey = `ingredients-${trackingId}`;
+      const delay = Math.min(2200, index * 120);
+      const timeoutId = setTimeout(() => {
+        Image.prefetch(imageUrl)
+          .then(() => {
+            prefetchedImageUrls.current.add(imageUrl);
+          })
+          .catch(() => {
+            scheduleImageReload(trackingId);
+          })
+          .finally(() => {
+            delete imagePrefetchTimeouts.current[timeoutKey];
+          });
+      }, delay);
+      imagePrefetchTimeouts.current[timeoutKey] = timeoutId;
+    });
+    return () => {
+      clearPrefetchTimeoutsFor("ingredients");
+    };
+  }, [
+    clearPrefetchTimeoutsFor,
+    getIngredientImageUrl,
+    getIngredientTrackingId,
+    scheduleImageReload,
+    stapleIngredients,
+    primaryIngredients,
+  ]);
 
   const getIngredientUnitPriceMinor = useCallback((ingredient) => {
     if (!ingredient) {
@@ -2448,18 +2516,19 @@ function AppContent() {
   }, [getIngredientQuantityValue, shoppingListItems]);
 
   const renderIngredientRow = useCallback(
-    (ingredient) => {
+    (ingredient, fallbackIndex = 0) => {
       if (!ingredient) {
         return null;
       }
+      const trackingId = getIngredientTrackingId(ingredient, fallbackIndex);
       const preferredProduct = pickPreferredShoppingListProduct(ingredient);
+      const productImageUrl = getIngredientImageUrl(ingredient);
       const displayName =
         preferredProduct?.name ??
         ingredient.productName ??
         ingredient.text ??
         ingredient.groupKey ??
         "Ingredient";
-      const productImageUrl = preferredProduct?.imageUrl ?? null;
       const placeholderInitial = (displayName ?? "?")
         .trim()
         .charAt(0)
@@ -2485,6 +2554,7 @@ function AppContent() {
         priceDetails.lineTotalMinor > 0
           ? priceDetails.lineTotalMinor
           : null;
+      const imageReloadKey = imageReloadCounters[trackingId] ?? 0;
       return (
         <View
           key={ingredient.id}
@@ -2497,8 +2567,10 @@ function AppContent() {
             <View style={styles.ingredientsItemImageWrapper}>
               {productImageUrl ? (
                 <Image
-                  source={{ uri: productImageUrl }}
+                  key={`ingredient-image-${trackingId}-${imageReloadKey}`}
+                  source={{ uri: productImageUrl, cache: "reload" }}
                   style={styles.ingredientsItemImage}
+                  onError={() => scheduleImageReload(trackingId)}
                 />
               ) : (
                 <View style={styles.ingredientsItemImagePlaceholder}>
@@ -2581,9 +2653,13 @@ function AppContent() {
     [
       formatIngredientQuantity,
       getIngredientQuantityValue,
+      getIngredientImageUrl,
+      getIngredientTrackingId,
       handleIngredientQuantityDecrease,
       handleIngredientQuantityIncrease,
+      scheduleImageReload,
       shoppingListPricing,
+      imageReloadCounters,
     ]
   );
 
@@ -5791,7 +5867,9 @@ const handlePreferenceSelection = useCallback(
                         We think you already have these staples. Increase the quantity if you need to restock.
                       </Text>
                     </View>
-                    {stapleIngredients.map((ingredient) => renderIngredientRow(ingredient))}
+                    {stapleIngredients.map((ingredient, index) =>
+                      renderIngredientRow(ingredient, `staple-${index}`)
+                    )}
                     <View style={styles.ingredientsPrimaryNotice}>
                       <Text style={styles.ingredientsPrimaryNoticeTitle}>Need to pick these up?</Text>
                       <Text style={styles.ingredientsPrimaryNoticeDescription}>
@@ -5802,7 +5880,9 @@ const handlePreferenceSelection = useCallback(
                 ) : null}
                 {primaryIngredients.length > 0 ? (
                   <View style={styles.ingredientsPrimarySection}>
-                    {primaryIngredients.map((ingredient) => renderIngredientRow(ingredient))}
+                    {primaryIngredients.map((ingredient, index) =>
+                      renderIngredientRow(ingredient, `primary-${index}`)
+                    )}
                   </View>
                 ) : null}
               </>
