@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import asyncio
 import json
 import logging
 import math
@@ -112,17 +113,29 @@ async def run_shopping_list_workflow(
             items=[],
         )
     system_prompt = _build_system_prompt()
-    user_prompt = _build_user_prompt(meals, ingredient_groups)
-    llm_text = call_openai_responses(
-        model=settings.openai_shopping_list_model,
-        system_prompt=system_prompt,
-        user_prompt=user_prompt,
-        max_output_tokens=settings.openai_shopping_list_max_output_tokens,
-        top_p=settings.openai_shopping_list_top_p,
-        reasoning_effort=settings.openai_shopping_list_reasoning_effort,
-    )
-    llm_payload = _parse_model_response(llm_text)
-    items = _normalize_result_items(ingredient_groups, llm_payload)
+    auto_assigned: Dict[str, ShoppingListResultItem] = {}
+    pending_groups: List[Dict[str, Any]] = []
+    for group in ingredient_groups:
+        group_key = str(group.get("group_key"))
+        if _should_auto_assign_group(group):
+            auto_assigned[group_key] = _build_auto_assigned_item(group)
+        else:
+            pending_groups.append(group)
+    llm_items: Dict[str, ShoppingListResultItem] = {}
+    if pending_groups:
+        llm_items = await _score_ingredient_groups(
+            meals=meals,
+            ingredient_groups=pending_groups,
+            system_prompt=system_prompt,
+            settings=settings,
+        )
+    items: List[ShoppingListResultItem] = []
+    for group in ingredient_groups:
+        group_key = str(group.get("group_key"))
+        item = auto_assigned.get(group_key) or llm_items.get(group_key)
+        if not item:
+            item = _build_result_item(group, None)
+        items.append(item)
     return ShoppingListBuildResponse(
         status="completed",
         generatedAt=datetime.now(timezone.utc),
@@ -205,6 +218,48 @@ def _aggregate_ingredient_groups(
         aggregated.append(group)
     aggregated.sort(key=lambda item: (item.get("label") or item.get("group_key") or "").lower())
     return aggregated
+
+
+def _collect_group_meal_ids(group: Dict[str, Any]) -> set[str]:
+    meal_ids: set[str] = set()
+    for entry in group.get("entries") or []:
+        meal_id = entry.get("meal_id")
+        if meal_id:
+            meal_ids.add(str(meal_id))
+    return meal_ids
+
+
+def _should_auto_assign_group(group: Dict[str, Any]) -> bool:
+    products = group.get("linked_products") or []
+    if len(products) != 1:
+        return False
+    product = products[0] or {}
+    product_id = product.get("productId") or product.get("product_id")
+    catalog_ref_id = product.get("catalogRefId") or product.get("catalog_ref_id")
+    if product_id is None and catalog_ref_id is None:
+        return False
+    meal_ids = _collect_group_meal_ids(group)
+    return len(meal_ids) == 1
+
+
+def _build_auto_assigned_item(group: Dict[str, Any]) -> ShoppingListResultItem:
+    products = group.get("linked_products") or []
+    product = products[0] if products else {}
+    fallback_packages = float(group.get("fallback_packages") or 1)
+    llm_entry = {
+        "classification": "pickup",
+        "packages_needed": fallback_packages,
+        "notes": "Auto-assigned single linked product",
+        "product_selections": [
+            {
+                "product_id": product.get("productId") or product.get("product_id"),
+                "catalog_ref_id": product.get("catalogRefId") or product.get("catalog_ref_id"),
+                "image_url": product.get("imageUrl") or product.get("image_url"),
+                "packages": fallback_packages,
+            }
+        ],
+    }
+    return _build_result_item(group, llm_entry)
 
 
 def _build_linked_products(entries: Sequence[Dict[str, Any]]) -> List[Dict[str, Any]]:
@@ -362,16 +417,9 @@ def _build_system_prompt() -> str:
 def _build_user_prompt(
     meals: Sequence[ShoppingListMealPayload],
     ingredient_groups: Sequence[Dict[str, Any]],
+    limit_meal_ids: Sequence[str] | None = None,
 ) -> str:
-    meal_context = [
-        {
-            "meal_id": meal.meal_id,
-            "name": meal.name,
-            "servings": meal.servings,
-            "ingredient_count": len(getattr(meal, "ingredients", []) or []),
-        }
-        for meal in meals
-    ]
+    meal_context = _build_meal_context(meals, limit_meal_ids)
     group_context: List[Dict[str, Any]] = []
     for group in ingredient_groups:
         requirements = []
@@ -437,6 +485,32 @@ def _build_user_prompt(
     )
 
 
+def _build_meal_context(
+    meals: Sequence[ShoppingListMealPayload],
+    limit_meal_ids: Sequence[str] | None,
+) -> List[Dict[str, Any]]:
+    allowed = {str(meal_id) for meal_id in limit_meal_ids or [] if meal_id is not None} or None
+
+    def _serialize(meal: ShoppingListMealPayload) -> Dict[str, Any]:
+        return {
+            "meal_id": meal.meal_id,
+            "name": meal.name,
+            "servings": meal.servings,
+            "ingredient_count": len(getattr(meal, "ingredients", []) or []),
+        }
+
+    context: List[Dict[str, Any]] = []
+    for meal in meals:
+        meal_id = getattr(meal, "meal_id", None)
+        meal_id_str = str(meal_id) if meal_id is not None else None
+        if allowed and (meal_id_str is None or meal_id_str not in allowed):
+            continue
+        context.append(_serialize(meal))
+    if not context:
+        context = [_serialize(meal) for meal in meals]
+    return context
+
+
 def _parse_model_response(text: str) -> Dict[str, Any]:
     stripped = text.strip()
     match = CODE_FENCE_PATTERN.search(stripped)
@@ -452,24 +526,86 @@ def _parse_model_response(text: str) -> Dict[str, Any]:
         ) from exc
 
 
-def _normalize_result_items(
+async def _score_ingredient_groups(
+    *,
+    meals: Sequence[ShoppingListMealPayload],
     ingredient_groups: Sequence[Dict[str, Any]],
-    llm_payload: Dict[str, Any],
-) -> List[ShoppingListResultItem]:
-    llm_lookup: Dict[str, Dict[str, Any]] = {}
-    for entry in llm_payload.get("items") or []:
+    system_prompt: str,
+    settings,
+) -> Dict[str, ShoppingListResultItem]:
+    if not ingredient_groups:
+        return {}
+    tasks = [
+        asyncio.create_task(
+            _score_single_group(
+                meals=meals,
+                group=group,
+                system_prompt=system_prompt,
+                settings=settings,
+            )
+        )
+        for group in ingredient_groups
+    ]
+    results: Dict[str, ShoppingListResultItem] = {}
+    responses = await asyncio.gather(*tasks, return_exceptions=True)
+    for group, outcome in zip(ingredient_groups, responses):
+        group_key = str(group.get("group_key"))
+        if isinstance(outcome, Exception):
+            logger.warning(
+                "Shopping list group run failed group=%s error=%s",
+                group_key,
+                outcome,
+            )
+            results[group_key] = _build_result_item(group, None)
+            continue
+        results[group_key] = outcome
+    return results
+
+
+async def _score_single_group(
+    *,
+    meals: Sequence[ShoppingListMealPayload],
+    group: Dict[str, Any],
+    system_prompt: str,
+    settings,
+) -> ShoppingListResultItem:
+    meal_ids = list(_collect_group_meal_ids(group))
+    user_prompt = _build_user_prompt(
+        meals,
+        [group],
+        limit_meal_ids=meal_ids or None,
+    )
+    llm_text = await asyncio.to_thread(
+        call_openai_responses,
+        model=settings.openai_shopping_list_model,
+        system_prompt=system_prompt,
+        user_prompt=user_prompt,
+        max_output_tokens=settings.openai_shopping_list_max_output_tokens,
+        top_p=settings.openai_shopping_list_top_p,
+        reasoning_effort=settings.openai_shopping_list_reasoning_effort,
+    )
+    payload = _parse_model_response(llm_text)
+    llm_entry = _extract_group_entry(payload, group.get("group_key"))
+    return _build_result_item(group, llm_entry)
+
+
+def _extract_group_entry(payload: Dict[str, Any], group_key: Any) -> Dict[str, Any] | None:
+    entries = payload.get("items") or []
+    if not isinstance(entries, list):
+        return None
+    target = str(group_key) if group_key is not None else None
+    fallback: Dict[str, Any] | None = None
+    for entry in entries:
         if not isinstance(entry, dict):
             continue
         key = entry.get("group_key") or entry.get("key") or entry.get("id")
-        if not key:
-            continue
-        llm_lookup[str(key)] = entry
-    items: List[ShoppingListResultItem] = []
-    for group in ingredient_groups:
-        group_key = str(group.get("group_key"))
-        llm_entry = llm_lookup.get(group_key)
-        items.append(_build_result_item(group, llm_entry))
-    return items
+        if key is not None and target is not None and str(key) == target:
+            return entry
+        if fallback is None:
+            fallback = entry
+    if len(entries) == 1:
+        return fallback
+    return None
 
 
 def _build_result_item(group: Dict[str, Any], llm_entry: Dict[str, Any] | None) -> ShoppingListResultItem:
