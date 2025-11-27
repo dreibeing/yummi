@@ -1980,35 +1980,65 @@ function AppContent() {
     setScreen("pastOrders");
   }, []);
 
-  const handleToggleHomeMealDislike = useCallback((mealId) => {
-    if (!mealId) {
-      return;
-    }
-    setHomeMealDislikedIds((prev) => {
-      const next = { ...(prev || {}) };
-      if (next[mealId]) {
-        delete next[mealId];
-      } else {
-        next[mealId] = true;
+  const handleToggleHomeMealDislike = useCallback(
+    (mealId) => {
+      if (!mealId) {
+        return;
       }
-      return next;
-    });
-  }, []);
+      setHomeMealDislikedIds((prev) => {
+        const next = { ...(prev || {}) };
+        const isCurrentlyDisliked = Boolean(next[mealId]);
+        const shouldEnable = !isCurrentlyDisliked;
+        if (shouldEnable) {
+          next[mealId] = true;
+        } else {
+          delete next[mealId];
+        }
+        if (shouldEnable) {
+          setSelectedHomeMealIds((prevSelected) => {
+            if (prevSelected?.[mealId]) {
+              const updated = { ...(prevSelected || {}) };
+              delete updated[mealId];
+              return updated;
+            }
+            return prevSelected;
+          });
+        }
+        return next;
+      });
+    },
+    []
+  );
 
-  const handleToggleHomeMealSelection = useCallback((mealId) => {
-    if (!mealId) {
-      return;
-    }
-    setSelectedHomeMealIds((prev) => {
-      const next = { ...(prev || {}) };
-      if (next[mealId]) {
-        delete next[mealId];
-      } else {
-        next[mealId] = true;
+  const handleToggleHomeMealSelection = useCallback(
+    (mealId) => {
+      if (!mealId) {
+        return;
       }
-      return next;
-    });
-  }, []);
+      setSelectedHomeMealIds((prev) => {
+        const next = { ...(prev || {}) };
+        const isCurrentlySelected = Boolean(next[mealId]);
+        const shouldEnable = !isCurrentlySelected;
+        if (shouldEnable) {
+          next[mealId] = true;
+        } else {
+          delete next[mealId];
+        }
+        if (shouldEnable) {
+          setHomeMealDislikedIds((prevDisliked) => {
+            if (prevDisliked?.[mealId]) {
+              const updated = { ...(prevDisliked || {}) };
+              delete updated[mealId];
+              return updated;
+            }
+            return prevDisliked;
+          });
+        }
+        return next;
+      });
+    },
+    []
+  );
 
   const handleIngredientQuantityDecrease = useCallback((ingredientId) => {
     if (!ingredientId) {
