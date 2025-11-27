@@ -1757,6 +1757,7 @@ function AppContent() {
   const [shoppingListItems, setShoppingListItems] = useState([]);
   const [shoppingListStatus, setShoppingListStatus] = useState("idle");
   const [shoppingListError, setShoppingListError] = useState(null);
+  const [checkedShoppingListItems, setCheckedShoppingListItems] = useState(() => new Set());
   const [isCartPushPending, setIsCartPushPending] = useState(false);
   const preferenceSyncHashRef = useRef(null);
   const preferenceEntryContextRef = useRef(null);
@@ -1928,6 +1929,10 @@ function AppContent() {
       items: shoppingListItems,
     });
   }, [persistShoppingList, shoppingListItems, shoppingListStatus]);
+
+  useEffect(() => {
+    setCheckedShoppingListItems(new Set());
+  }, [shoppingListItems]);
 
   const canSendShoppingListToCart =
     shoppingListStatus === "ready" && shoppingListItems.length > 0;
@@ -2197,6 +2202,21 @@ function AppContent() {
       a.displayName.localeCompare(b.displayName, undefined, { sensitivity: "base" })
     );
   }, [formatIngredientQuantity, getIngredientQuantityValue, shoppingListItems]);
+
+  const handleToggleShoppingListItem = useCallback((itemId) => {
+    if (!itemId) {
+      return;
+    }
+    setCheckedShoppingListItems((prev) => {
+      const next = new Set(prev);
+      if (next.has(itemId)) {
+        next.delete(itemId);
+      } else {
+        next.add(itemId);
+      }
+      return next;
+    });
+  }, []);
 
   const getIngredientUnitPriceMinor = useCallback((ingredient) => {
     if (!ingredient) {
@@ -5808,8 +5828,17 @@ const handlePreferenceSelection = useCallback(
                   .trim()
                   .charAt(0)
                   .toUpperCase();
+                const isChecked = checkedShoppingListItems.has(item.id);
                 return (
-                  <View key={item.id} style={styles.shoppingListItem}>
+                  <TouchableOpacity
+                    key={item.id}
+                    style={[
+                      styles.shoppingListItem,
+                      isChecked && styles.shoppingListItemChecked,
+                    ]}
+                    onPress={() => handleToggleShoppingListItem(item.id)}
+                    activeOpacity={0.7}
+                  >
                     <View style={styles.shoppingListItemImageWrapper}>
                       {item.imageUrl ? (
                         <Image
@@ -5825,14 +5854,24 @@ const handlePreferenceSelection = useCallback(
                       )}
                     </View>
                     <View style={styles.shoppingListItemBody}>
-                      <Text style={styles.shoppingListItemName}>
+                      <Text
+                        style={[
+                          styles.shoppingListItemName,
+                          isChecked && styles.shoppingListItemNameChecked,
+                        ]}
+                      >
                         {item.displayName}
                       </Text>
-                      <Text style={styles.shoppingListItemQuantity}>
+                      <Text
+                        style={[
+                          styles.shoppingListItemQuantity,
+                          isChecked && styles.shoppingListItemQuantityChecked,
+                        ]}
+                      >
                         Quantity: {item.displayQuantity}
                       </Text>
                     </View>
-                  </View>
+                  </TouchableOpacity>
                 );
               })}
             </ScrollView>
@@ -6825,6 +6864,9 @@ const styles = StyleSheet.create({
     marginBottom: 12,
     ...SHADOW.card,
   },
+  shoppingListItemChecked: {
+    backgroundColor: "#e6f5ed",
+  },
   shoppingListItemImageWrapper: {
     width: 56,
     height: 56,
@@ -6863,9 +6905,17 @@ const styles = StyleSheet.create({
     color: "#0c3c26",
     marginBottom: 4,
   },
+  shoppingListItemNameChecked: {
+    color: "#4b7a5d",
+    textDecorationLine: "line-through",
+  },
   shoppingListItemQuantity: {
     fontSize: 14,
     color: "#4d4d4d",
+  },
+  shoppingListItemQuantityChecked: {
+    color: "#4b7a5d",
+    textDecorationLine: "line-through",
   },
   shoppingListFooter: {
     paddingHorizontal: 20,
