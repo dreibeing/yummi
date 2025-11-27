@@ -3156,6 +3156,18 @@ const handlePreferenceSelection = useCallback(
     showConfirmationDialog("shoppingList");
   }, [SHOPPING_LIST_API_ENDPOINT, selectedHomeMeals.length, showConfirmationDialog]);
 
+  const handleIngredientsShoppingListNotice = useCallback(() => {
+    if (!selectedHomeMeals.length) {
+      Alert.alert(
+        "Select meals",
+        "Choose at least one meal before preparing your shopping list."
+      );
+      return;
+    }
+    recordPastOrder(selectedHomeMeals);
+    Alert.alert("Shopping list ready", "You've got a shopping list.");
+  }, [recordPastOrder, selectedHomeMeals]);
+
   const confirmationDialogPortal = confirmationDialog.visible ? (
     <View style={styles.mealDetailModalContainer} pointerEvents="box-none">
       <TouchableWithoutFeedback onPress={handleCloseConfirmationDialog}>
@@ -5531,7 +5543,7 @@ const handlePreferenceSelection = useCallback(
           <View style={styles.ingredientsButtonGroup}>
             <TouchableOpacity
               style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
-              onPress={handleOpenShoppingListConfirm}
+              onPress={handleIngredientsShoppingListNotice}
             >
               <Text style={styles.welcomeButtonText}>Get Shopping List (Use a free use)</Text>
             </TouchableOpacity>
