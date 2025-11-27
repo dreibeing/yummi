@@ -806,6 +806,7 @@ const normalizeShoppingListProductSelection = (product) => {
     name: product.name ?? product.title ?? null,
     detailUrl,
     packages,
+    imageUrl: product.imageUrl ?? product.image_url ?? null,
   };
 };
 
@@ -2193,6 +2194,17 @@ function AppContent() {
       if (!ingredient) {
         return null;
       }
+      const preferredProduct = pickPreferredShoppingListProduct(ingredient);
+      const productImageUrl = preferredProduct?.imageUrl ?? null;
+      const placeholderInitial = (
+        preferredProduct?.name ??
+        ingredient.text ??
+        ingredient.groupKey ??
+        "?"
+      )
+        .trim()
+        .charAt(0)
+        .toUpperCase();
       const numericQuantity = getIngredientQuantityValue(ingredient);
       const displayQuantity = formatIngredientQuantity(numericQuantity);
       const disableDecrease = numericQuantity <= 0;
@@ -2209,52 +2221,71 @@ function AppContent() {
           : null;
       return (
         <View key={ingredient.id} style={styles.ingredientsListItem}>
-          <View style={styles.ingredientsItemHeader}>
-            <Text style={styles.ingredientsItemText}>{ingredient.text}</Text>
-            {lineTotalMinor != null ? (
-              <Text style={styles.ingredientsItemLineTotal}>
-                {formatCurrency(lineTotalMinor)}
-              </Text>
-            ) : null}
-          </View>
-          {unitPriceMinor != null ? (
-            <Text style={styles.ingredientsItemUnitPrice}>
-              {`${formatCurrency(unitPriceMinor)} each`}
-            </Text>
-          ) : null}
-          <View style={styles.ingredientsQuantityRow}>
-            <TouchableOpacity
-              style={[
-                styles.ingredientsQuantityButton,
-                disableDecrease && styles.ingredientsQuantityButtonDisabled,
-              ]}
-              onPress={() => handleIngredientQuantityDecrease(ingredient.id)}
-              accessibilityRole="button"
-              accessibilityLabel={`Decrease quantity for ${ingredient.text}`}
-              disabled={disableDecrease}
-            >
-              <Text
-                style={[
-                  styles.ingredientsQuantityButtonText,
-                  disableDecrease && styles.ingredientsQuantityButtonTextDisabled,
-                ]}
-              >
-                -
-              </Text>
-            </TouchableOpacity>
-            <View style={styles.ingredientsQuantityValue}>
-              <Text style={styles.ingredientsQuantityValueText}>
-                {displayQuantity}
-              </Text>
+          <View style={styles.ingredientsListItemRow}>
+            <View style={styles.ingredientsItemImageWrapper}>
+              {productImageUrl ? (
+                <Image
+                  source={{ uri: productImageUrl }}
+                  style={styles.ingredientsItemImage}
+                />
+              ) : (
+                <View style={styles.ingredientsItemImagePlaceholder}>
+                  <Text style={styles.ingredientsItemImagePlaceholderText}>
+                    {placeholderInitial || "?"}
+                  </Text>
+                </View>
+              )}
             </View>
-            <TouchableOpacity
-              style={styles.ingredientsQuantityButton}
-              onPress={() => handleIngredientQuantityIncrease(ingredient.id)}
-              accessibilityRole="button"
-              accessibilityLabel={`Increase quantity for ${ingredient.text}`}
-            >
-              <Text style={styles.ingredientsQuantityButtonText}>+</Text>
-            </TouchableOpacity>
+            <View style={styles.ingredientsItemBody}>
+              <View style={styles.ingredientsItemHeader}>
+                <Text style={styles.ingredientsItemText}>{ingredient.text}</Text>
+                {lineTotalMinor != null ? (
+                  <Text style={styles.ingredientsItemLineTotal}>
+                    {formatCurrency(lineTotalMinor)}
+                  </Text>
+                ) : null}
+              </View>
+              {unitPriceMinor != null ? (
+                <Text style={styles.ingredientsItemUnitPrice}>
+                  {`${formatCurrency(unitPriceMinor)} each`}
+                </Text>
+              ) : null}
+              <View style={styles.ingredientsQuantityRow}>
+                <TouchableOpacity
+                  style={[
+                    styles.ingredientsQuantityButton,
+                    disableDecrease && styles.ingredientsQuantityButtonDisabled,
+                  ]}
+                  onPress={() => handleIngredientQuantityDecrease(ingredient.id)}
+                  accessibilityRole="button"
+                  accessibilityLabel={`Decrease quantity for ${ingredient.text}`}
+                  disabled={disableDecrease}
+                >
+                  <Text
+                    style={[
+                      styles.ingredientsQuantityButtonText,
+                      disableDecrease &&
+                        styles.ingredientsQuantityButtonTextDisabled,
+                    ]}
+                  >
+                    -
+                  </Text>
+                </TouchableOpacity>
+                <View style={styles.ingredientsQuantityValue}>
+                  <Text style={styles.ingredientsQuantityValueText}>
+                    {displayQuantity}
+                  </Text>
+                </View>
+                <TouchableOpacity
+                  style={styles.ingredientsQuantityButton}
+                  onPress={() => handleIngredientQuantityIncrease(ingredient.id)}
+                  accessibilityRole="button"
+                  accessibilityLabel={`Increase quantity for ${ingredient.text}`}
+                >
+                  <Text style={styles.ingredientsQuantityButtonText}>+</Text>
+                </TouchableOpacity>
+              </View>
+            </View>
           </View>
         </View>
       );
@@ -5760,6 +5791,39 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     gap: 12,
     ...SHADOW.card,
+  },
+  ingredientsListItemRow: {
+    flexDirection: "row",
+    alignItems: "stretch",
+    gap: 12,
+  },
+  ingredientsItemImageWrapper: {
+    width: 72,
+    height: 72,
+    borderRadius: 12,
+    overflow: "hidden",
+    backgroundColor: "#f1f4f2",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  ingredientsItemImage: {
+    width: "100%",
+    height: "100%",
+    resizeMode: "cover",
+  },
+  ingredientsItemImagePlaceholder: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  ingredientsItemImagePlaceholderText: {
+    fontSize: 18,
+    fontWeight: "600",
+    color: "#6c7a70",
+  },
+  ingredientsItemBody: {
+    flex: 1,
+    gap: 8,
   },
   ingredientsItemHeader: {
     flexDirection: "row",

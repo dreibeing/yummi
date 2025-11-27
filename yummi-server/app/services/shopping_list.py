@@ -229,6 +229,7 @@ def _build_linked_products(entries: Sequence[Dict[str, Any]]) -> List[Dict[str, 
                 "packageQuantity": product.get("package_quantity"),
                 "ingredientLine": product.get("ingredient_line"),
                 "packageMeasurement": measurement,
+                "imageUrl": product.get("image_url") or product.get("imageUrl"),
             }
         )
     return products
@@ -500,6 +501,7 @@ def _build_result_item(group: Dict[str, Any], llm_entry: Dict[str, Any] | None) 
             detailUrl=product.get("detailUrl") or product.get("detail_url"),
             salePrice=product.get("salePrice"),
             packages=product.get("packages"),
+            imageUrl=product.get("imageUrl") or product.get("image_url"),
         )
         for product in products
     ]
@@ -561,6 +563,8 @@ def _coerce_product_selections(value: Any) -> List[Dict[str, Any]]:
         if not hydrated:
             continue
         hydrated["packages"] = packages
+        if not hydrated.get("imageUrl"):
+            hydrated["imageUrl"] = entry.get("image_url") or entry.get("imageUrl")
         selections.append(hydrated)
     return selections
 
@@ -773,6 +777,7 @@ def _build_classified_product_option(
     sale_price = None
     package_quantity = None
     ingredient_line = fallback_name
+    image_url = None
     if catalog_entry:
         if product_id is None:
             catalog_product_id = (
@@ -801,6 +806,7 @@ def _build_classified_product_option(
             or package_quantity
         )
         ingredient_line = ingredient_line or name
+        image_url = catalog_entry.get("imageUrl") or catalog_entry.get("image_url")
     if product_id is None and catalog_ref_id is None and not name:
         return None
     return {
@@ -811,6 +817,7 @@ def _build_classified_product_option(
         "salePrice": sale_price,
         "packageQuantity": package_quantity,
         "ingredientLine": ingredient_line,
+        "imageUrl": image_url,
     }
 
 
@@ -843,6 +850,12 @@ def _normalize_product_meta(ingredient: Dict[str, Any]) -> Dict[str, Any] | None
         product.get("detailUrl"),
         ingredient.get("detail_url"),
         ingredient.get("detailUrl"),
+    )
+    image_url = _coalesce(
+        product.get("image_url"),
+        product.get("imageUrl"),
+        ingredient.get("image_url"),
+        ingredient.get("imageUrl"),
     )
     sale_price = _parse_numeric_quantity(
         product.get("sale_price")
@@ -878,6 +891,8 @@ def _normalize_product_meta(ingredient: Dict[str, Any]) -> Dict[str, Any] | None
             )
         if ingredient_line is None:
             ingredient_line = catalog_entry.get("name") or catalog_entry.get("title")
+        if image_url is None:
+            image_url = catalog_entry.get("imageUrl") or catalog_entry.get("image_url")
     if not any([product_id, name, ingredient_line, detail_url]):
         return None
     return {
@@ -888,6 +903,7 @@ def _normalize_product_meta(ingredient: Dict[str, Any]) -> Dict[str, Any] | None
         "sale_price": sale_price,
         "package_quantity": package_quantity,
         "ingredient_line": ingredient_line or name,
+        "image_url": image_url,
     }
 
 

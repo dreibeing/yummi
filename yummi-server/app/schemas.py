@@ -265,6 +265,7 @@ class ShoppingListProductSelection(BaseModel):
     detailUrl: Optional[str] = None
     salePrice: Optional[float] = None
     packages: Optional[float] = None
+    imageUrl: Optional[str] = None
 
 
 class ShoppingListResultItem(BaseModel):
