@@ -1,0 +1,333 @@
+{
+  "meal_id": "meal_20251126T150951Z_08_5b4192",
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "archetype_name": "Family Heat Lovers: Korean & Latin American Feasts (Hot, 30–60, Advanced)",
+  "name": "Gochujang-Glazed Duck Breast with Mango-Habanero Salsa, Sesame Cabbage Slaw, and Brown & Wild Rice",
+  "description": "Crisp-skinned duck breasts glazed with a hot gochujang-honey soy marinade, served with bright mango-habanero salsa, a tangy sesame cabbage slaw, and hearty brown & wild rice. Built hot and from scratch with Korean and Latin American elements.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1.5 cups brown and wild rice under cold water; drain.",
+    "Score duck breast skin in a crosshatch (do not cut into meat). Pat dry.",
+    "In a bowl, whisk gochujang, soy sauce, honey, minced garlic, lime juice, olive oil, black pepper, and a pinch of salt to make marinade.",
+    "Toss duck in marinade; set aside 10–15 minutes (reserve 2 tablespoons marinade separately for glazing).",
+    "For salsa: dice mango, finely dice red onion, and mince habanero peppers (remove seeds for slightly less heat). Chop coriander.",
+    "Mix mango, red onion, habanero peppers, coriander, lime juice, and a pinch of salt; set aside.",
+    "For slaw: thinly slice cabbage. In a bowl, mix rice vinegar, sesame oil, sugar, chilli flakes, and a pinch of salt. Add cabbage and toss. Sprinkle sesame seeds.",
+    "Preheat outdoor grill to medium-high, oiling grates lightly."
+  ],
+  "cook_steps": [
+    "Combine rinsed brown and wild rice with 3 cups water and 1/2 teaspoon salt in a pot. Bring to a boil, reduce to low, cover, and simmer until tender (30–40 minutes). Keep warm.",
+    "Place duck breasts skin-side down on the preheated grill over indirect-to-medium heat. Cook 6–8 minutes to render fat and crisp skin (manage flare-ups).",
+    "Flip duck breasts and grill 3–5 minutes more to medium-rare/medium (target 54–60°C/130–140°F internal).",
+    "Brush duck with the reserved marinade during the last minute; grill 30–60 seconds to set the glaze.",
+    "Transfer duck to a board and rest 5 minutes, then slice across the grain.",
+    "Fluff rice with a fork and season to taste with salt.",
+    "Plate rice, add sliced duck, spoon mango-habanero salsa over the duck, and serve sesame cabbage slaw on the side."
+  ],
+  "instructions": [
+    "Rinse 1.5 cups brown and wild rice under cold water; drain.",
+    "Score duck breast skin in a crosshatch (do not cut into meat). Pat dry.",
+    "In a bowl, whisk gochujang, soy sauce, honey, minced garlic, lime juice, olive oil, black pepper, and a pinch of salt to make marinade.",
+    "Toss duck in marinade; set aside 10–15 minutes (reserve 2 tablespoons marinade separately for glazing).",
+    "For salsa: dice mango, finely dice red onion, and mince habanero peppers (remove seeds for slightly less heat). Chop coriander.",
+    "Mix mango, red onion, habanero peppers, coriander, lime juice, and a pinch of salt; set aside.",
+    "For slaw: thinly slice cabbage. In a bowl, mix rice vinegar, sesame oil, sugar, chilli flakes, and a pinch of salt. Add cabbage and toss. Sprinkle sesame seeds.",
+    "Preheat outdoor grill to medium-high, oiling grates lightly.",
+    "Combine rinsed brown and wild rice with 3 cups water and 1/2 teaspoon salt in a pot. Bring to a boil, reduce to low, cover, and simmer until tender (30–40 minutes). Keep warm.",
+    "Place duck breasts skin-side down on the preheated grill over indirect-to-medium heat. Cook 6–8 minutes to render fat and crisp skin (manage flare-ups).",
+    "Flip duck breasts and grill 3–5 minutes more to medium-rare/medium (target 54–60°C/130–140°F internal).",
+    "Brush duck with the reserved marinade during the last minute; grill 30–60 seconds to set the glaze.",
+    "Transfer duck to a board and rest 5 minutes, then slice across the grain.",
+    "Fluff rice with a fork and season to taste with salt.",
+    "Plate rice, add sliced duck, spoon mango-habanero salsa over the duck, and serve sesame cabbage slaw on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "brown and wild rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "duck breast",
+      "quantity": "4 medium breasts (about 700–900 g total)",
+      "preparation": "skin scored"
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "juiced (divided for marinade and salsa)"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "mango",
+      "quantity": "2",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 medium",
+      "preparation": "finely diced"
+    },
+    {
+      "core_item_name": "habanero peppers",
+      "quantity": "1–2",
+      "preparation": "finely minced"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 small head",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "1 tablespoon"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Korean",
+      "LatinAmerican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Hot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "brown and wild rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "duck breast",
+      "quantity": "4 medium breasts (about 700–900 g total)",
+      "preparation": "skin scored",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "juiced (divided for marinade and salsa)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mango",
+      "quantity": "2",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 medium",
+      "preparation": "finely diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero peppers",
+      "quantity": "1–2",
+      "preparation": "finely minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 small head",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T151621Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T150951Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

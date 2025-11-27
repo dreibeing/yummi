@@ -1,0 +1,280 @@
+{
+  "meal_id": "meal_20251126T151753Z_01_703357",
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "archetype_name": "Family Hands-Off Sheet Pan & Slow Cooker Nights",
+  "name": "Slow Cooker Baharat Beef & Chickpeas with Basmati Rice",
+  "description": "Hands-off Middle Eastern–leaning beef stew scented with baharat, cinnamon, and preserved lemon, served over fluffy basmati rice. Family-friendly and completely chili-free.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Peel and chop onion into medium dice.",
+    "Scrub and slice carrots into thick coins.",
+    "Rinse 1.5 cups basmati rice until water runs clear.",
+    "Finely chop preserved lemon (remove any seeds).",
+    "Rinse and roughly chop parsley."
+  ],
+  "cook_steps": [
+    "Add to slow cooker: beef stew meat, onion, carrots, chickpeas, crushed tomatoes, beef stock, olive oil, baharat, cinnamon, allspice, bay leaves, salt, and black pepper. Stir to coat.",
+    "Cook on LOW 6–8 hours or HIGH 3–4 hours, until beef is tender.",
+    "30 minutes before serving, stir in preserved lemon. Cover and continue to cook.",
+    "Cook rice on the stovetop: combine rinsed basmati rice with water in a lidded pot. Bring to a boil, reduce to low, cover, and simmer 12–15 minutes. Rest 5 minutes, then fluff.",
+    "Discard bay leaves. Taste stew and adjust salt if needed.",
+    "Serve stew over basmati rice and sprinkle with parsley."
+  ],
+  "instructions": [
+    "Peel and chop onion into medium dice.",
+    "Scrub and slice carrots into thick coins.",
+    "Rinse 1.5 cups basmati rice until water runs clear.",
+    "Finely chop preserved lemon (remove any seeds).",
+    "Rinse and roughly chop parsley.",
+    "Add to slow cooker: beef stew meat, onion, carrots, chickpeas, crushed tomatoes, beef stock, olive oil, baharat, cinnamon, allspice, bay leaves, salt, and black pepper. Stir to coat.",
+    "Cook on LOW 6–8 hours or HIGH 3–4 hours, until beef is tender.",
+    "30 minutes before serving, stir in preserved lemon. Cover and continue to cook.",
+    "Cook rice on the stovetop: combine rinsed basmati rice with water in a lidded pot. Bring to a boil, reduce to low, cover, and simmer 12–15 minutes. Rest 5 minutes, then fluff.",
+    "Discard bay leaves. Taste stew and adjust salt if needed.",
+    "Serve stew over basmati rice and sprinkle with parsley."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef stew meat",
+      "quantity": "800 g",
+      "preparation": "trim visible fat if needed"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "3 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "400 g can (about 1.5 cups)",
+      "preparation": "drained if canned"
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "400 g can (about 1.5 cups)"
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "1 cup"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "baharat",
+      "quantity": "2 tsp"
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1/2 tsp"
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1/4 tsp"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp"
+    },
+    {
+      "core_item_name": "preserved lemon",
+      "quantity": "1/2 medium",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": "for cooking rice"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "SlowOrPressureCooker",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef stew meat",
+      "quantity": "800 g",
+      "preparation": "trim visible fat if needed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "3 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "400 g can (about 1.5 cups)",
+      "preparation": "drained if canned",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "400 g can (about 1.5 cups)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "baharat",
+      "quantity": "2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1/2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1/4 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, plus more to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "preserved lemon",
+      "quantity": "1/2 medium",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": "for cooking rice",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T151829Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T151753Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

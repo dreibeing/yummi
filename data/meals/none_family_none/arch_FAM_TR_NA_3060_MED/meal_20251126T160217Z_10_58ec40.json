@@ -1,0 +1,323 @@
+{
+  "meal_id": "meal_20251126T160217Z_10_58ec40",
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "archetype_name": "Family Turkish & North African Suppers (Medium, 30–60, Intermediate)",
+  "name": "Izmir-Style Baked Köfte with Potatoes, Tomato Sauce, and Herbed Bulgur with Cucumber Yoghurt",
+  "description": "Tray-baked Turkish beef köfte with potatoes in a spiced tomato sauce, served with fluffy parsley-lemon bulgur and a cool cucumber yoghurt. Medium warmth and family-friendly sides.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C (425°F). Lightly oil a baking dish.",
+    "Finely grate 1 of the onions for the köfte; finely slice the remaining onions for the sauce.",
+    "Peel and cut the potatoes into 1.5–2 cm chunks.",
+    "Finely chop parsley and mint (keep some parsley for bulgur).",
+    "Grate or mince the garlic (split: 2 cloves for köfte/sauce, 1 clove for yoghurt).",
+    "Rinse the bulgur in a sieve and drain well.",
+    "Halve the cucumber lengthwise, scrape seeds if watery, then grate and squeeze out excess liquid.",
+    "Zest and juice the lemon (divide: zest and 1 tbsp juice for bulgur, 1 tsp juice for yoghurt)."
+  ],
+  "cook_steps": [
+    "Make köfte mix: In a bowl combine beef mince, grated onion, half the chopped parsley, 1 tsp cumin, 1 tsp paprika, 1/2 tsp chili flakes, 1/2 tsp black pepper, and 1 tsp salt. Mix just until combined and shape into 12 short logs.",
+    "Sear köfte: Heat 1 tbsp olive oil in a large oven-safe pan over medium-high. Brown köfte 1–2 min per side (no need to cook through). Transfer to a plate.",
+    "Start sauce: In the same pan add 1 tbsp olive oil, the sliced onions, and a pinch of salt. Cook 3–4 min until translucent. Add half the garlic and cook 30 seconds.",
+    "Add potatoes and 1 tbsp tomato paste; cook 1 min, stirring. Pour in crushed tomatoes and 1/2 cup water. Season with 1/2 tsp cumin, 1/2 tsp chili flakes, salt, and black pepper to taste. Simmer 3 min.",
+    "Bake: Nestle the browned köfte into the sauce with potatoes. Transfer to the oven and bake 20–25 min until potatoes are tender and köfte are cooked through.",
+    "Cook bulgur: While baking, warm 1 tbsp olive oil in a saucepan over medium heat. Add rinsed bulgur and toast 1 min. Pour in 2 cups vegetable stock (or water plus salt). Bring to a boil, reduce to low, cover, and cook 12–15 min until liquid is absorbed. Rest 5 min off heat, then fluff with a fork, stir in remaining parsley, lemon zest, and 1 tbsp lemon juice. Adjust salt.",
+    "Make cucumber yoghurt: In a bowl combine yoghurt, grated cucumber, mint, remaining garlic, 1 tsp lemon juice, a pinch of salt, and a drizzle of olive oil. Mix and chill.",
+    "Finish and serve: Remove the pan from the oven. Taste sauce and adjust salt, black pepper, or chili flakes for medium heat. Plate köfte and potatoes with sauce alongside herbed bulgur. Spoon cucumber yoghurt on the side."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C (425°F). Lightly oil a baking dish.",
+    "Finely grate 1 of the onions for the köfte; finely slice the remaining onions for the sauce.",
+    "Peel and cut the potatoes into 1.5–2 cm chunks.",
+    "Finely chop parsley and mint (keep some parsley for bulgur).",
+    "Grate or mince the garlic (split: 2 cloves for köfte/sauce, 1 clove for yoghurt).",
+    "Rinse the bulgur in a sieve and drain well.",
+    "Halve the cucumber lengthwise, scrape seeds if watery, then grate and squeeze out excess liquid.",
+    "Zest and juice the lemon (divide: zest and 1 tbsp juice for bulgur, 1 tsp juice for yoghurt).",
+    "Make köfte mix: In a bowl combine beef mince, grated onion, half the chopped parsley, 1 tsp cumin, 1 tsp paprika, 1/2 tsp chili flakes, 1/2 tsp black pepper, and 1 tsp salt. Mix just until combined and shape into 12 short logs.",
+    "Sear köfte: Heat 1 tbsp olive oil in a large oven-safe pan over medium-high. Brown köfte 1–2 min per side (no need to cook through). Transfer to a plate.",
+    "Start sauce: In the same pan add 1 tbsp olive oil, the sliced onions, and a pinch of salt. Cook 3–4 min until translucent. Add half the garlic and cook 30 seconds.",
+    "Add potatoes and 1 tbsp tomato paste; cook 1 min, stirring. Pour in crushed tomatoes and 1/2 cup water. Season with 1/2 tsp cumin, 1/2 tsp chili flakes, salt, and black pepper to taste. Simmer 3 min.",
+    "Bake: Nestle the browned köfte into the sauce with potatoes. Transfer to the oven and bake 20–25 min until potatoes are tender and köfte are cooked through.",
+    "Cook bulgur: While baking, warm 1 tbsp olive oil in a saucepan over medium heat. Add rinsed bulgur and toast 1 min. Pour in 2 cups vegetable stock (or water plus salt). Bring to a boil, reduce to low, cover, and cook 12–15 min until liquid is absorbed. Rest 5 min off heat, then fluff with a fork, stir in remaining parsley, lemon zest, and 1 tbsp lemon juice. Adjust salt.",
+    "Make cucumber yoghurt: In a bowl combine yoghurt, grated cucumber, mint, remaining garlic, 1 tsp lemon juice, a pinch of salt, and a drizzle of olive oil. Mix and chill.",
+    "Finish and serve: Remove the pan from the oven. Taste sauce and adjust salt, black pepper, or chili flakes for medium heat. Plate köfte and potatoes with sauce alongside herbed bulgur. Spoon cucumber yoghurt on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef mince",
+      "quantity": "600 g",
+      "preparation": "for köfte"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "1 grated, 1 thinly sliced"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "600 g",
+      "preparation": "peeled, 1.5–2 cm chunks"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1 small bunch",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "grated or minced"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1.5 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": "for köfte"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 tsp",
+      "preparation": "divided, to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "to taste, divided"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3–4 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "1 tbsp",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "400 g can",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1 cup (dry)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups",
+      "preparation": "or water plus salt"
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": "plain"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "grated and squeezed"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tbsp",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and juice"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "NorthAfrican",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef mince",
+      "quantity": "600 g",
+      "preparation": "for köfte",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "1 grated, 1 thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "600 g",
+      "preparation": "peeled, 1.5–2 cm chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1 small bunch",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "grated or minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1.5 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": "for köfte",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 tsp",
+      "preparation": "divided, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "to taste, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3–4 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "1 tbsp",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "400 g can",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1 cup (dry)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups",
+      "preparation": "or water plus salt",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": "plain",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "grated and squeezed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tbsp",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and juice",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T160822Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T160217Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

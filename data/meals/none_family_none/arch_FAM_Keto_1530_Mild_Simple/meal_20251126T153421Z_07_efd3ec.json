@@ -1,0 +1,225 @@
+{
+  "meal_id": "meal_20251126T153421Z_07_efd3ec",
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "archetype_name": "Family Keto Weeknight Plates (Mild, 15–30, Simple)",
+  "name": "Greek Herb Baked Hake with Tomato-Olive Pan Sauce and Cauli Rice",
+  "description": "Oven-baked hake gets a bright tomato-olive topping and sits over quick-sautéed cauliflower rice. Mild, keto-friendly, and ready in under 30 minutes for a family dinner.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F; line a sheet pan.",
+    "Pat dry hake fillets with paper towels.",
+    "Halve cherry tomatoes.",
+    "Roughly chop olives.",
+    "Finely chop garlic.",
+    "Roughly chop parsley.",
+    "Zest and juice the lemon; keep separate.",
+    "Open cauliflower rice package."
+  ],
+  "cook_steps": [
+    "Place hake fillets on the sheet pan; drizzle 1 tbsp olive oil and season with 1/2 tsp salt, 1/4 tsp black pepper, lemon zest, and oregano.",
+    "Bake hake for 10–12 minutes until opaque and flakes easily.",
+    "While fish bakes, heat 1 tbsp olive oil in a skillet over medium. Add cherry tomatoes and cook 2–3 minutes until they start to soften.",
+    "Stir in olives and garlic; cook 1 minute until fragrant. Add 1–2 tbsp lemon juice and half the parsley; simmer 30 seconds. Turn off heat and taste; add a pinch of salt if needed.",
+    "In another large skillet, heat 1 tbsp olive oil over medium. Add cauliflower rice and 1/2 tsp salt, 1/4 tsp black pepper; sauté 4–5 minutes until hot and tender.",
+    "Plate cauliflower rice, top with baked hake, and spoon the tomato-olive pan sauce over. Finish with remaining parsley and lemon wedges if desired."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F; line a sheet pan.",
+    "Pat dry hake fillets with paper towels.",
+    "Halve cherry tomatoes.",
+    "Roughly chop olives.",
+    "Finely chop garlic.",
+    "Roughly chop parsley.",
+    "Zest and juice the lemon; keep separate.",
+    "Open cauliflower rice package.",
+    "Place hake fillets on the sheet pan; drizzle 1 tbsp olive oil and season with 1/2 tsp salt, 1/4 tsp black pepper, lemon zest, and oregano.",
+    "Bake hake for 10–12 minutes until opaque and flakes easily.",
+    "While fish bakes, heat 1 tbsp olive oil in a skillet over medium. Add cherry tomatoes and cook 2–3 minutes until they start to soften.",
+    "Stir in olives and garlic; cook 1 minute until fragrant. Add 1–2 tbsp lemon juice and half the parsley; simmer 30 seconds. Turn off heat and taste; add a pinch of salt if needed.",
+    "In another large skillet, heat 1 tbsp olive oil over medium. Add cauliflower rice and 1/2 tsp salt, 1/4 tsp black pepper; sauté 4–5 minutes until hot and tender.",
+    "Plate cauliflower rice, top with baked hake, and spoon the tomato-olive pan sauce over. Finish with remaining parsley and lemon wedges if desired."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "hake fillets",
+      "quantity": "4 fillets (600–800 g)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "4 cups",
+      "preparation": "ready to heat"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein",
+      "Keto",
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "hake fillets",
+      "quantity": "4 fillets (600–800 g)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "4 cups",
+      "preparation": "ready to heat",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T153812Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T153421Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "meal_id": "meal_20251126T155808Z_09_8e7c11",
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "archetype_name": "Family Heat-and-Eat Weeknights (Under 15, No Heat)",
+  "name": "Microwave Beef Lasagne Plates with Green Beans and Warm Garlic Baguette",
+  "description": "Heat-and-eat beef lasagne with quick-steamed green beans and a microwaved garlic baguette. Kid-friendly with zero chili heat and ready in under 15 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Remove film/lids from the beef lasagne ready meal trays per pack directions.",
+    "Rinse green beans and trim the ends.",
+    "Slice the garlic baguette into thick slices (or keep whole if pre-sliced).",
+    "Set out a large microwave-safe bowl with a microwave-safe plate to use as a cover."
+  ],
+  "cook_steps": [
+    "Microwave the first beef lasagne tray according to pack instructions (typically 4–6 minutes on high), rotate or stir if directed, and let stand 1 minute. Repeat with the second tray.",
+    "Add green beans to the bowl with 2 tablespoons water. Cover with the microwave-safe plate and microwave 3–4 minutes until crisp-tender. Drain and season lightly with salt.",
+    "Wrap garlic baguette slices loosely in a clean, slightly damp paper towel and microwave 30–60 seconds until warm (or microwave the whole baguette 45–90 seconds).",
+    "Plate lasagne portions, add green beans on the side, and serve with warm garlic baguette."
+  ],
+  "instructions": [
+    "Remove film/lids from the beef lasagne ready meal trays per pack directions.",
+    "Rinse green beans and trim the ends.",
+    "Slice the garlic baguette into thick slices (or keep whole if pre-sliced).",
+    "Set out a large microwave-safe bowl with a microwave-safe plate to use as a cover.",
+    "Microwave the first beef lasagne tray according to pack instructions (typically 4–6 minutes on high), rotate or stir if directed, and let stand 1 minute. Repeat with the second tray.",
+    "Add green beans to the bowl with 2 tablespoons water. Cover with the microwave-safe plate and microwave 3–4 minutes until crisp-tender. Drain and season lightly with salt.",
+    "Wrap garlic baguette slices loosely in a clean, slightly damp paper towel and microwave 30–60 seconds until warm (or microwave the whole baguette 45–90 seconds).",
+    "Plate lasagne portions, add green beans on the side, and serve with warm garlic baguette."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef lasagne ready meal",
+      "quantity": "2 trays",
+      "preparation": "film/lid removed per pack"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "rinsed and trimmed"
+    },
+    {
+      "core_item_name": "garlic baguette",
+      "quantity": "1 baguette",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "Pinch",
+      "preparation": "for seasoning green beans"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef lasagne ready meal",
+      "quantity": "2 trays",
+      "preparation": "film/lid removed per pack",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "rinsed and trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic baguette",
+      "quantity": "1 baguette",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "Pinch",
+      "preparation": "for seasoning green beans",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T160151Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T155808Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

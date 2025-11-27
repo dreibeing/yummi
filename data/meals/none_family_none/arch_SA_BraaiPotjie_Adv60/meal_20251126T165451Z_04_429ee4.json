@@ -1,0 +1,307 @@
+{
+  "meal_id": "meal_20251126T165451Z_04_429ee4",
+  "archetype_uid": "arch_SA_BraaiPotjie_Adv60",
+  "archetype_name": "Family Weekend Advanced: South African Braai & Potjie",
+  "name": "Beef Short Rib Potjie with Butternut and Oven-Warmed Rolls",
+  "description": "A slow-cooked South African potjie of beef short ribs layered with root veg and butternut, simmered over coals and finished with a rich tomato-beef stock gravy. Serve with oven-warmed bread rolls to mop up the sauce.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Prepare a steady bed of medium coals on the outdoor grill; you’ll cook the potjie over gentle, consistent heat.",
+    "Peel and roughly chop onions.",
+    "Peel and cut carrots into thick chunks.",
+    "Peel potatoes and cut into large chunks.",
+    "Peel and cube butternut squash into large pieces.",
+    "Crush or finely chop garlic.",
+    "Measure crushed tomatoes and beef stock; keep bay leaves and spices ready.",
+    "Set oven to 160°C (320°F) to warm bread rolls later."
+  ],
+  "cook_steps": [
+    "Set a potjie/Dutch oven over the coals and heat sunflower oil until shimmering.",
+    "Season beef short ribs generously with salt and black pepper.",
+    "Brown beef short ribs in batches, turning to color all sides; remove to a tray.",
+    "Add onions to the pot; cook until softened and lightly golden.",
+    "Stir in garlic, paprika, ground cumin, and lightly crushed coriander seeds; cook 30 seconds until fragrant.",
+    "Return beef to the pot with any juices. Add crushed tomatoes, beef stock, bay leaves, and a pinch of chilli flakes for medium heat. Bring to a gentle simmer.",
+    "Layer carrots over the meat, then potatoes, then butternut squash. Do not stir; keep layers intact.",
+    "Cover with lid. Cook over low, steady coals for 2–2.5 hours, adjusting coals to maintain a gentle bubble. Rotate the pot occasionally for even heat.",
+    "After 2 hours, check tenderness. If the liquid is low, top up with a splash of beef stock and re-cover. Cook until ribs are tender and vegetables are soft.",
+    "Taste and adjust seasoning with salt and black pepper. Gently tilt the pot to mix some sauce through without breaking the layers.",
+    "During the last 10 minutes, place bread rolls on a tray and warm in the oven until soft and heated through.",
+    "Serve the potjie hot with the oven-warmed bread rolls for dipping."
+  ],
+  "instructions": [
+    "Prepare a steady bed of medium coals on the outdoor grill; you’ll cook the potjie over gentle, consistent heat.",
+    "Peel and roughly chop onions.",
+    "Peel and cut carrots into thick chunks.",
+    "Peel potatoes and cut into large chunks.",
+    "Peel and cube butternut squash into large pieces.",
+    "Crush or finely chop garlic.",
+    "Measure crushed tomatoes and beef stock; keep bay leaves and spices ready.",
+    "Set oven to 160°C (320°F) to warm bread rolls later.",
+    "Set a potjie/Dutch oven over the coals and heat sunflower oil until shimmering.",
+    "Season beef short ribs generously with salt and black pepper.",
+    "Brown beef short ribs in batches, turning to color all sides; remove to a tray.",
+    "Add onions to the pot; cook until softened and lightly golden.",
+    "Stir in garlic, paprika, ground cumin, and lightly crushed coriander seeds; cook 30 seconds until fragrant.",
+    "Return beef to the pot with any juices. Add crushed tomatoes, beef stock, bay leaves, and a pinch of chilli flakes for medium heat. Bring to a gentle simmer.",
+    "Layer carrots over the meat, then potatoes, then butternut squash. Do not stir; keep layers intact.",
+    "Cover with lid. Cook over low, steady coals for 2–2.5 hours, adjusting coals to maintain a gentle bubble. Rotate the pot occasionally for even heat.",
+    "After 2 hours, check tenderness. If the liquid is low, top up with a splash of beef stock and re-cover. Cook until ribs are tender and vegetables are soft.",
+    "Taste and adjust seasoning with salt and black pepper. Gently tilt the pot to mix some sauce through without breaking the layers.",
+    "During the last 10 minutes, place bread rolls on a tray and warm in the oven until soft and heated through.",
+    "Serve the potjie hot with the oven-warmed bread rolls for dipping."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef short ribs",
+      "quantity": "1.8–2 kg",
+      "preparation": "cut into manageable pieces if needed"
+    },
+    {
+      "core_item_name": "sunflower oil",
+      "quantity": "2–3 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "crushed or finely chopped"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "coriander seeds",
+      "quantity": "1 tsp",
+      "preparation": "lightly crushed"
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "400 g",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "500 ml",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1/2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "3",
+      "preparation": "cut into thick chunks"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "4 medium",
+      "preparation": "peeled and cut into large chunks"
+    },
+    {
+      "core_item_name": "butternut squash",
+      "quantity": "600 g",
+      "preparation": "peeled and cubed"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "bread rolls",
+      "quantity": "8–10",
+      "preparation": ""
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "French",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef short ribs",
+      "quantity": "1.8–2 kg",
+      "preparation": "cut into manageable pieces if needed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sunflower oil",
+      "quantity": "2–3 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "crushed or finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander seeds",
+      "quantity": "1 tsp",
+      "preparation": "lightly crushed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "400 g",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "500 ml",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1/2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "3",
+      "preparation": "cut into thick chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "4 medium",
+      "preparation": "peeled and cut into large chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butternut squash",
+      "quantity": "600 g",
+      "preparation": "peeled and cubed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bread rolls",
+      "quantity": "8–10",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T165728Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T165451Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

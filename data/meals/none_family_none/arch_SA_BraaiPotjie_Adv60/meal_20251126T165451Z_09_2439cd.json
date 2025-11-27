@@ -1,0 +1,287 @@
+{
+  "meal_id": "meal_20251126T165451Z_09_2439cd",
+  "archetype_uid": "arch_SA_BraaiPotjie_Adv60",
+  "archetype_name": "Family Weekend Advanced: South African Braai & Potjie",
+  "name": "Sticky Chutney-Glazed Pork Ribs Braai with Creamy Pap and Charred Corn",
+  "description": "Low-and-slow oven ribs finished over a wood-fired braai with a chutney-honey glaze, served with creamy pap and charred corn, plus warm chakalaka on the side.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 160°C.",
+    "Set out heavy-duty foil for the ribs.",
+    "Mix dry rub in a small bowl: salt, black pepper, and paprika.",
+    "Stir glaze in a bowl: chutney, honey, apple cider vinegar, garlic (finely minced), and chilli flakes.",
+    "Shuck corn and rub lightly with olive oil and a pinch of salt.",
+    "Measure maize meal and milk; set butter nearby.",
+    "Prepare braai wood and grid for a two-zone fire (one side medium-hot coals, one side cooler)."
+  ],
+  "cook_steps": [
+    "Season pork ribs all over with the dry rub. Wrap each rack tightly in foil and place on a tray.",
+    "Bake ribs at 160°C for 2 hours until tender but still holding shape.",
+    "About 45 minutes before ribs are done, light the braai wood and burn down to steady medium coals.",
+    "Transfer the baked ribs (unwrapped) to the cool side of the braai to dry the surface for 5 minutes per side.",
+    "Brush ribs generously with the chutney glaze. Move over medium-hot coals and braai 3–4 minutes per side, brushing with more glaze, until lacquered and lightly charred. Rest 10 minutes, then slice.",
+    "While ribs finish, set a pot over the braai. Bring milk just to a simmer, then rain in maize meal while stirring. Cook, stirring often, until thick and smooth, 12–15 minutes. Stir in butter and a pinch of salt.",
+    "Braai the corn over medium-hot coals, turning often, 8–10 minutes until charred in spots and tender.",
+    "Warm chakalaka in a small pot on the cooler side of the braai, stirring occasionally.",
+    "Serve sliced glazed ribs with creamy pap, charred corn, and a side of warm chakalaka."
+  ],
+  "instructions": [
+    "Preheat oven to 160°C.",
+    "Set out heavy-duty foil for the ribs.",
+    "Mix dry rub in a small bowl: salt, black pepper, and paprika.",
+    "Stir glaze in a bowl: chutney, honey, apple cider vinegar, garlic (finely minced), and chilli flakes.",
+    "Shuck corn and rub lightly with olive oil and a pinch of salt.",
+    "Measure maize meal and milk; set butter nearby.",
+    "Prepare braai wood and grid for a two-zone fire (one side medium-hot coals, one side cooler).",
+    "Season pork ribs all over with the dry rub. Wrap each rack tightly in foil and place on a tray.",
+    "Bake ribs at 160°C for 2 hours until tender but still holding shape.",
+    "About 45 minutes before ribs are done, light the braai wood and burn down to steady medium coals.",
+    "Transfer the baked ribs (unwrapped) to the cool side of the braai to dry the surface for 5 minutes per side.",
+    "Brush ribs generously with the chutney glaze. Move over medium-hot coals and braai 3–4 minutes per side, brushing with more glaze, until lacquered and lightly charred. Rest 10 minutes, then slice.",
+    "While ribs finish, set a pot over the braai. Bring milk just to a simmer, then rain in maize meal while stirring. Cook, stirring often, until thick and smooth, 12–15 minutes. Stir in butter and a pinch of salt.",
+    "Braai the corn over medium-hot coals, turning often, 8–10 minutes until charred in spots and tender.",
+    "Warm chakalaka in a small pot on the cooler side of the braai, stirring occasionally.",
+    "Serve sliced glazed ribs with creamy pap, charred corn, and a side of warm chakalaka."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "pork ribs",
+      "quantity": "2 racks (about 1.8–2 kg)",
+      "preparation": "membrane removed if present"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 tsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 tsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "chutney",
+      "quantity": "1 cup",
+      "preparation": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "2 tbsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "2 tbsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "finely minced"
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 tsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "4 ears",
+      "preparation": "husks removed"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": "for corn"
+    },
+    {
+      "core_item_name": "maize meal",
+      "quantity": "2 cups",
+      "preparation": null
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "6 cups",
+      "preparation": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "chakalaka",
+      "quantity": "400 g",
+      "preparation": "warmed"
+    },
+    {
+      "core_item_name": "braai wood",
+      "quantity": "as needed for a medium fire",
+      "preparation": null
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Dairy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "pork ribs",
+      "quantity": "2 racks (about 1.8–2 kg)",
+      "preparation": "membrane removed if present",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chutney",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "finely minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "4 ears",
+      "preparation": "husks removed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": "for corn",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "maize meal",
+      "quantity": "2 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "6 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chakalaka",
+      "quantity": "400 g",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "braai wood",
+      "quantity": "as needed for a medium fire",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T170154Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T165451Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

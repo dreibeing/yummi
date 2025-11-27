@@ -1,0 +1,233 @@
+{
+  "meal_id": "meal_20251126T154707Z_10_3edf91",
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "archetype_name": "Family Low-Carb Weeknight Bowls & Wraps (15–30, Mild)",
+  "name": "Shawarma-Style Pork Lettuce Wraps with Cucumber-Tomato Salad",
+  "description": "Quick skillet-seared shawarma pork tucked into crisp romaine leaves with a fresh lemony cucumber-tomato salad. Mild, low-carb, and weeknight simple.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Wash and dry romaine lettuce; separate large leaves for wraps.",
+    "Thinly slice pork chops into strips.",
+    "Thinly slice onions.",
+    "Dice cucumber and halve cherry tomatoes.",
+    "Chop parsley.",
+    "Zest and juice the lemon.",
+    "In a bowl, combine shawarma paste, half the lemon juice, half the lemon zest, minced garlic, 1 tbsp olive oil, a pinch of salt, and black pepper; add pork and toss to coat.",
+    "In a second bowl, mix cucumber, cherry tomatoes, remaining lemon juice and zest, 1 tsp olive oil, a pinch of salt, and parsley."
+  ],
+  "cook_steps": [
+    "Heat a large skillet over medium-high heat.",
+    "Add 1 tsp olive oil, then the sliced onions; cook 3–4 minutes until softened and lightly browned. Transfer to a plate.",
+    "Add marinated pork to the hot skillet in a single layer. Sear 4–6 minutes, stirring once or twice, until cooked through and lightly caramelized.",
+    "Return onions to the skillet, toss with pork, and adjust salt and black pepper to taste.",
+    "Assemble wraps: place pork and onions into romaine leaves and top with the cucumber-tomato salad.",
+    "Serve immediately."
+  ],
+  "instructions": [
+    "Wash and dry romaine lettuce; separate large leaves for wraps.",
+    "Thinly slice pork chops into strips.",
+    "Thinly slice onions.",
+    "Dice cucumber and halve cherry tomatoes.",
+    "Chop parsley.",
+    "Zest and juice the lemon.",
+    "In a bowl, combine shawarma paste, half the lemon juice, half the lemon zest, minced garlic, 1 tbsp olive oil, a pinch of salt, and black pepper; add pork and toss to coat.",
+    "In a second bowl, mix cucumber, cherry tomatoes, remaining lemon juice and zest, 1 tsp olive oil, a pinch of salt, and parsley.",
+    "Heat a large skillet over medium-high heat.",
+    "Add 1 tsp olive oil, then the sliced onions; cook 3–4 minutes until softened and lightly browned. Transfer to a plate.",
+    "Add marinated pork to the hot skillet in a single layer. Sear 4–6 minutes, stirring once or twice, until cooked through and lightly caramelized.",
+    "Return onions to the skillet, toss with pork, and adjust salt and black pepper to taste.",
+    "Assemble wraps: place pork and onions into romaine leaves and top with the cucumber-tomato salad.",
+    "Serve immediately."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "2 heads",
+      "preparation": "leaves separated"
+    },
+    {
+      "core_item_name": "pork chops",
+      "quantity": "1 to 1.25 lb",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "shawarma paste",
+      "quantity": "1.5 tbsp",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and juice separated"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp total",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowCarb"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "2 heads",
+      "preparation": "leaves separated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pork chops",
+      "quantity": "1 to 1.25 lb",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "shawarma paste",
+      "quantity": "1.5 tbsp",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and juice separated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp total",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T155214Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T154707Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

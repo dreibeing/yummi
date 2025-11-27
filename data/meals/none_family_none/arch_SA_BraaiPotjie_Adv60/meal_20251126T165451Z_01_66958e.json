@@ -1,0 +1,324 @@
+{
+  "meal_id": "meal_20251126T165451Z_01_66958e",
+  "archetype_uid": "arch_SA_BraaiPotjie_Adv60",
+  "archetype_name": "Family Weekend Advanced: South African Braai & Potjie",
+  "name": "Oxtail Potjie with Samp & Beans and Warm Bread Rolls",
+  "description": "Slow-cooked oxtail potjie with tomato, herbs, and paprika, served with hearty samp & beans and oven-warmed bread rolls with chakalaka on the side.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Light a medium braai fire for steady coals (plan for 2–3 hours of gentle heat).",
+    "Rinse and drain samp and beans.",
+    "Peel and dice onions; peel and slice carrots into thick rounds; peel and cut potatoes into large chunks; peel and crush garlic.",
+    "Measure beef stock and Chenin Blanc.",
+    "Set out bay leaves, rosemary, thyme, paprika, salt, and black pepper.",
+    "Preheat oven to 180°C for warming bread rolls later."
+  ],
+  "cook_steps": [
+    "Set the potjie over steady coals. Add sunflower oil and heat until shimmering.",
+    "Brown oxtail in batches until well caramelized on all sides. Remove to a bowl.",
+    "Add onions and carrots to the potjie; cook, stirring, until softened. Add garlic and paprika; stir 30 seconds.",
+    "Deglaze with Chenin Blanc, scraping the base. Reduce by half.",
+    "Return oxtail to the pot. Add diced tomatoes, tomato paste, beef stock, bay leaves, rosemary, thyme, salt, and black pepper. Stir to combine.",
+    "Bring to a gentle simmer, then cover. Cook over low, steady coals 2.5–3 hours, turning pieces occasionally, until oxtail is tender and the sauce is glossy.",
+    "After 90 minutes, add potatoes. Cover and continue cooking until potatoes are soft and the meat pulls from the bone.",
+    "While the potjie cooks, place samp and beans in a pot with plenty of water and a generous pinch of salt. Simmer on the stove until tender (about 60–90 minutes), topping up water as needed; drain.",
+    "About 10 minutes before serving, place bread rolls on a tray and warm in the oven until hot. If using butter, split and spread while warm.",
+    "Taste and adjust the potjie with salt and black pepper. Serve oxtail and sauce over or alongside the samp & beans, with warm bread rolls and chakalaka on the side."
+  ],
+  "instructions": [
+    "Light a medium braai fire for steady coals (plan for 2–3 hours of gentle heat).",
+    "Rinse and drain samp and beans.",
+    "Peel and dice onions; peel and slice carrots into thick rounds; peel and cut potatoes into large chunks; peel and crush garlic.",
+    "Measure beef stock and Chenin Blanc.",
+    "Set out bay leaves, rosemary, thyme, paprika, salt, and black pepper.",
+    "Preheat oven to 180°C for warming bread rolls later.",
+    "Set the potjie over steady coals. Add sunflower oil and heat until shimmering.",
+    "Brown oxtail in batches until well caramelized on all sides. Remove to a bowl.",
+    "Add onions and carrots to the potjie; cook, stirring, until softened. Add garlic and paprika; stir 30 seconds.",
+    "Deglaze with Chenin Blanc, scraping the base. Reduce by half.",
+    "Return oxtail to the pot. Add diced tomatoes, tomato paste, beef stock, bay leaves, rosemary, thyme, salt, and black pepper. Stir to combine.",
+    "Bring to a gentle simmer, then cover. Cook over low, steady coals 2.5–3 hours, turning pieces occasionally, until oxtail is tender and the sauce is glossy.",
+    "After 90 minutes, add potatoes. Cover and continue cooking until potatoes are soft and the meat pulls from the bone.",
+    "While the potjie cooks, place samp and beans in a pot with plenty of water and a generous pinch of salt. Simmer on the stove until tender (about 60–90 minutes), topping up water as needed; drain.",
+    "About 10 minutes before serving, place bread rolls on a tray and warm in the oven until hot. If using butter, split and spread while warm.",
+    "Taste and adjust the potjie with salt and black pepper. Serve oxtail and sauce over or alongside the samp & beans, with warm bread rolls and chakalaka on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "oxtail",
+      "quantity": "1.8–2 kg",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "sunflower oil",
+      "quantity": "2–3 tbsp"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "3",
+      "preparation": "thick rounds"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "4 medium",
+      "preparation": "large chunks"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "crushed"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "2 cans (800 g total)"
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "750 ml–1 L"
+    },
+    {
+      "core_item_name": "Chenin Blanc",
+      "quantity": "250 ml"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2"
+    },
+    {
+      "core_item_name": "rosemary",
+      "quantity": "1 tsp",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 tsp"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "samp and beans",
+      "quantity": "2 cups (dry)"
+    },
+    {
+      "core_item_name": "bread rolls",
+      "quantity": "8–10"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "optional, 2–3 tbsp",
+      "preparation": "softened"
+    },
+    {
+      "core_item_name": "chakalaka",
+      "quantity": "1–2 cups",
+      "preparation": "for serving"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "French",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "oxtail",
+      "quantity": "1.8–2 kg",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sunflower oil",
+      "quantity": "2–3 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "3",
+      "preparation": "thick rounds",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "4 medium",
+      "preparation": "large chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "crushed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "2 cans (800 g total)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "750 ml–1 L",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "Chenin Blanc",
+      "quantity": "250 ml",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rosemary",
+      "quantity": "1 tsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "samp and beans",
+      "quantity": "2 cups (dry)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bread rolls",
+      "quantity": "8–10",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "optional, 2–3 tbsp",
+      "preparation": "softened",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chakalaka",
+      "quantity": "1–2 cups",
+      "preparation": "for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T165530Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T165451Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

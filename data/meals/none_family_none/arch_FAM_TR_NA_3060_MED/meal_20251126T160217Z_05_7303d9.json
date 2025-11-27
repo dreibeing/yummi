@@ -1,0 +1,394 @@
+{
+  "meal_id": "meal_20251126T160217Z_05_7303d9",
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "archetype_name": "Family Turkish & North African Suppers (Medium, 30–60, Intermediate)",
+  "name": "Moroccan-Style Turkey & Chickpea Stew with Apricot Couscous and Sumac-Roasted Courgette",
+  "description": "A medium-heat North African-inspired turkey and chickpea stew served with lemony date-almond couscous and a tray of sumac-roasted courgette and red onion.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F.",
+    "Cut turkey into bite-size pieces.",
+    "Dice onions and carrots; slice red pepper; mince garlic.",
+    "Slice courgette into half-moons and cut red onion into wedges; line a baking tray.",
+    "Rinse and drain chickpeas.",
+    "Finely chop preserved lemon and roughly chop olives and parsley.",
+    "Chop dates and roughly chop almonds.",
+    "Heat vegetable stock to a near boil for couscous.",
+    "Zest and halve the lemon."
+  ],
+  "cook_steps": [
+    "Roast veg: On the tray, toss courgette and red onion with olive oil, sumac, salt, and black pepper. Roast 18–20 minutes until tender and lightly charred.",
+    "Brown turkey: Heat olive oil in a wide pot over medium-high. Season turkey with salt and black pepper, then brown in batches 4–6 minutes total. Transfer to a plate.",
+    "Build stew base: In the same pot, add a little olive oil if dry. Add onions and carrots; cook 4 minutes. Add red pepper and garlic; cook 1–2 minutes.",
+    "Spice and simmer: Stir in Moroccan rub, cumin, paprika, cinnamon, and harissa paste; cook 30 seconds. Add crushed tomatoes, chickpeas, preserved lemon, and olives. Return turkey and any juices. Bring to a simmer, then cook 12–15 minutes until turkey is cooked through and sauce thickens. Adjust salt and black pepper.",
+    "Make couscous: In a bowl, combine couscous and a pinch of salt. Pour hot vegetable stock over, cover, and rest 5–7 minutes. Fluff with a fork, then mix in olive oil, lemon zest, a squeeze of lemon juice, dates, almonds, and half the parsley.",
+    "Finish and serve: Stir remaining parsley into the stew. Plate couscous, ladle over turkey-chickpea stew, and serve with the sumac-roasted courgette and red onion on the side. Offer extra lemon to taste."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F.",
+    "Cut turkey into bite-size pieces.",
+    "Dice onions and carrots; slice red pepper; mince garlic.",
+    "Slice courgette into half-moons and cut red onion into wedges; line a baking tray.",
+    "Rinse and drain chickpeas.",
+    "Finely chop preserved lemon and roughly chop olives and parsley.",
+    "Chop dates and roughly chop almonds.",
+    "Heat vegetable stock to a near boil for couscous.",
+    "Zest and halve the lemon.",
+    "Roast veg: On the tray, toss courgette and red onion with olive oil, sumac, salt, and black pepper. Roast 18–20 minutes until tender and lightly charred.",
+    "Brown turkey: Heat olive oil in a wide pot over medium-high. Season turkey with salt and black pepper, then brown in batches 4–6 minutes total. Transfer to a plate.",
+    "Build stew base: In the same pot, add a little olive oil if dry. Add onions and carrots; cook 4 minutes. Add red pepper and garlic; cook 1–2 minutes.",
+    "Spice and simmer: Stir in Moroccan rub, cumin, paprika, cinnamon, and harissa paste; cook 30 seconds. Add crushed tomatoes, chickpeas, preserved lemon, and olives. Return turkey and any juices. Bring to a simmer, then cook 12–15 minutes until turkey is cooked through and sauce thickens. Adjust salt and black pepper.",
+    "Make couscous: In a bowl, combine couscous and a pinch of salt. Pour hot vegetable stock over, cover, and rest 5–7 minutes. Fluff with a fork, then mix in olive oil, lemon zest, a squeeze of lemon juice, dates, almonds, and half the parsley.",
+    "Finish and serve: Stir remaining parsley into the stew. Plate couscous, ladle over turkey-chickpea stew, and serve with the sumac-roasted courgette and red onion on the side. Offer extra lemon to taste."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "600 g",
+      "preparation": "cut into bite-size pieces"
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "400 g cooked (about 1 can)",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "red pepper",
+      "quantity": "1",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "400 g"
+    },
+    {
+      "core_item_name": "Moroccan rub",
+      "quantity": "1.5 tbsp"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1/4 tsp"
+    },
+    {
+      "core_item_name": "harissa paste",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "preserved lemon",
+      "quantity": "1/2",
+      "preparation": "finely chopped (rind only)"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/3 cup",
+      "preparation": "pitted and roughly chopped"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tbsp total"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1.5 cups (dry)"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1.75 cups",
+      "preparation": "hot"
+    },
+    {
+      "core_item_name": "dates",
+      "quantity": "1/3 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "almonds",
+      "quantity": "1/4 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and cut into wedges"
+    },
+    {
+      "core_item_name": "courgette",
+      "quantity": "2 medium",
+      "preparation": "sliced into half-moons"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 tsp"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "NorthAfrican",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "600 g",
+      "preparation": "cut into bite-size pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "400 g cooked (about 1 can)",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red pepper",
+      "quantity": "1",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "400 g",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "Moroccan rub",
+      "quantity": "1.5 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1/4 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "harissa paste",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "preserved lemon",
+      "quantity": "1/2",
+      "preparation": "finely chopped (rind only)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/3 cup",
+      "preparation": "pitted and roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tbsp total",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1.5 cups (dry)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1.75 cups",
+      "preparation": "hot",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "dates",
+      "quantity": "1/3 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "almonds",
+      "quantity": "1/4 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "courgette",
+      "quantity": "2 medium",
+      "preparation": "sliced into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T160445Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T160217Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "meal_id": "meal_20251126T164837Z_03_232ec6",
+  "archetype_uid": "arch_FamWeeknightCore_15to30",
+  "archetype_name": "Family Weeknight Classics (Mild, 15–30 min)",
+  "name": "Chakalaka Chicken Skillet with Basmati Rice",
+  "description": "Tender chicken thigh pieces simmered in a mild chakalaka sauce with peppers and onions, served over fluffy basmati rice. Weeknight-friendly and family-pleasing.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1.5 cups basmati rice under cold water until it runs clear.",
+    "Dice 1 large onion.",
+    "Slice 2 bell peppers into strips.",
+    "Mince 3 cloves garlic.",
+    "Cut 700 g chicken thigh fillets into bite-size pieces; pat dry.",
+    "Roughly chop a small handful of parsley.",
+    "Halve 1 lemon for squeezing."
+  ],
+  "cook_steps": [
+    "Add 3 cups chicken stock to a pot; bring to a boil. Stir in rinsed basmati rice, reduce to low, cover, and simmer 12–15 minutes until tender. Rest off heat, covered, 5 minutes; fluff.",
+    "While rice cooks, heat 1 tbsp olive oil in a large skillet over medium-high. Season chicken with salt and pepper. Sear in two batches 3–4 minutes per side until browned; transfer to a plate.",
+    "Return skillet to medium heat with 1 tbsp olive oil. Add onion and bell peppers; cook 4–5 minutes until softened.",
+    "Stir in garlic; cook 30 seconds until fragrant.",
+    "Pour in 1 can chakalaka and bring to a simmer. Return chicken and any juices to the pan; simmer 4–6 minutes until chicken is cooked through and sauce slightly thickens. Adjust salt and pepper.",
+    "Squeeze half the lemon over the skillet (to taste).",
+    "Fluff rice and serve bowls of rice topped with chakalaka chicken. Garnish with parsley and extra lemon wedges if desired."
+  ],
+  "instructions": [
+    "Rinse 1.5 cups basmati rice under cold water until it runs clear.",
+    "Dice 1 large onion.",
+    "Slice 2 bell peppers into strips.",
+    "Mince 3 cloves garlic.",
+    "Cut 700 g chicken thigh fillets into bite-size pieces; pat dry.",
+    "Roughly chop a small handful of parsley.",
+    "Halve 1 lemon for squeezing.",
+    "Add 3 cups chicken stock to a pot; bring to a boil. Stir in rinsed basmati rice, reduce to low, cover, and simmer 12–15 minutes until tender. Rest off heat, covered, 5 minutes; fluff.",
+    "While rice cooks, heat 1 tbsp olive oil in a large skillet over medium-high. Season chicken with salt and pepper. Sear in two batches 3–4 minutes per side until browned; transfer to a plate.",
+    "Return skillet to medium heat with 1 tbsp olive oil. Add onion and bell peppers; cook 4–5 minutes until softened.",
+    "Stir in garlic; cook 30 seconds until fragrant.",
+    "Pour in 1 can chakalaka and bring to a simmer. Return chicken and any juices to the pan; simmer 4–6 minutes until chicken is cooked through and sauce slightly thickens. Adjust salt and pepper.",
+    "Squeeze half the lemon over the skillet (to taste).",
+    "Fluff rice and serve bowls of rice topped with chakalaka chicken. Garnish with parsley and extra lemon wedges if desired."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "3 cups",
+      "preparation": "for cooking rice"
+    },
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "700 g",
+      "preparation": "cut into bite-size pieces"
+    },
+    {
+      "core_item_name": "chakalaka",
+      "quantity": "1 can (about 400 g)"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "halved"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "3 cups",
+      "preparation": "for cooking rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "700 g",
+      "preparation": "cut into bite-size pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chakalaka",
+      "quantity": "1 can (about 400 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T165022Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T164837Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

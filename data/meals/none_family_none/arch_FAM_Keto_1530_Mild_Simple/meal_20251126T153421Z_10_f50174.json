@@ -1,0 +1,235 @@
+{
+  "meal_id": "meal_20251126T153421Z_10_f50174",
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "archetype_name": "Family Keto Weeknight Plates (Mild, 15–30, Simple)",
+  "name": "Shawarma-Style Chicken Thighs with Sautéed Cabbage and Lemon-Tahini",
+  "description": "Pan-seared, mildly spiced chicken thigh fillets with a quick lemon-tahini drizzle, served over sautéed cabbage and onions. A fast, keto-friendly family plate with Middle Eastern flavors.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 200°C/400°F.",
+    "Thinly slice 1 medium cabbage.",
+    "Thinly slice 1 medium onions.",
+    "Mince 3 cloves garlic.",
+    "Finely chop 1/4 cup parsley.",
+    "Zest and juice 1 large lemon (keep separate).",
+    "In a small bowl, mix 1.5 tsp paprika, 1 tsp ground cumin, 1/2 tsp black pepper, and 1/2 tsp salt."
+  ],
+  "cook_steps": [
+    "Season chicken: In a bowl, toss 800 g chicken thigh fillets with spice mix, 1 tbsp olive oil, and half the minced garlic.",
+    "Sear chicken: Heat a large oven-safe skillet over medium-high with 1 tbsp olive oil. Sear chicken 3–4 min per side until browned.",
+    "Finish in oven: Transfer skillet to oven and cook 6–8 min until cooked through (juices run clear). Rest 3 min, then slice.",
+    "Sauté veg: While chicken bakes, heat 1 tbsp olive oil in a second large pan over medium. Add onions and remaining garlic; cook 1–2 min. Add cabbage, 1/2 tsp salt, and sauté 6–8 min until tender-crisp.",
+    "Make sauce: In a cup, whisk 1/4 cup tahini with lemon juice and zest. Thin with a splash of olive oil if needed. Season with a pinch of salt and black pepper.",
+    "Plate: Divide sautéed cabbage among plates. Top with sliced chicken. Spoon over lemon-tahini and sprinkle with parsley."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C/400°F.",
+    "Thinly slice 1 medium cabbage.",
+    "Thinly slice 1 medium onions.",
+    "Mince 3 cloves garlic.",
+    "Finely chop 1/4 cup parsley.",
+    "Zest and juice 1 large lemon (keep separate).",
+    "In a small bowl, mix 1.5 tsp paprika, 1 tsp ground cumin, 1/2 tsp black pepper, and 1/2 tsp salt.",
+    "Season chicken: In a bowl, toss 800 g chicken thigh fillets with spice mix, 1 tbsp olive oil, and half the minced garlic.",
+    "Sear chicken: Heat a large oven-safe skillet over medium-high with 1 tbsp olive oil. Sear chicken 3–4 min per side until browned.",
+    "Finish in oven: Transfer skillet to oven and cook 6–8 min until cooked through (juices run clear). Rest 3 min, then slice.",
+    "Sauté veg: While chicken bakes, heat 1 tbsp olive oil in a second large pan over medium. Add onions and remaining garlic; cook 1–2 min. Add cabbage, 1/2 tsp salt, and sauté 6–8 min until tender-crisp.",
+    "Make sauce: In a cup, whisk 1/4 cup tahini with lemon juice and zest. Thin with a splash of olive oil if needed. Season with a pinch of salt and black pepper.",
+    "Plate: Divide sautéed cabbage among plates. Top with sliced chicken. Spoon over lemon-tahini and sprinkle with parsley."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "800 g",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1.5 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "plus extra to taste"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1 medium head (about 600 g)",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "tahini",
+      "quantity": "1/4 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "finely chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein",
+      "Keto",
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "800 g",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1.5 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "plus extra to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1 medium head (about 600 g)",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tahini",
+      "quantity": "1/4 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T154013Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T153421Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

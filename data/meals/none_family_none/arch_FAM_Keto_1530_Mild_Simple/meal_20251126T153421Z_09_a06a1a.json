@@ -1,0 +1,196 @@
+{
+  "meal_id": "meal_20251126T153421Z_09_a06a1a",
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "archetype_name": "Family Keto Weeknight Plates (Mild, 15–30, Simple)",
+  "name": "Sumac-Lemon Roasted Salmon with Broccoli and Warm Tahini Drizzle",
+  "description": "Oven-roasted salmon seasoned with sumac and lemon, served with garlicky roasted broccoli and a quick warm tahini drizzle. Mild, keto-friendly, and weeknight simple.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F and line a large sheet pan.",
+    "Cut broccoli into bite-size florets.",
+    "Mince garlic.",
+    "Halve lemon; juice one half for the sauce and cut the other half into wedges.",
+    "Pat salmon dry with paper towels.",
+    "Measure out tahini, olive oil, sumac, salt, and black pepper."
+  ],
+  "cook_steps": [
+    "Toss broccoli with 1.5 tbsp olive oil, half the minced garlic, a big pinch of salt, and black pepper on the sheet pan. Spread in a single layer and roast for 10 minutes.",
+    "Remove pan, push broccoli to the sides, and place salmon in the center. Drizzle salmon with 1 tbsp olive oil, sprinkle sumac, a pinch of salt, and black pepper. Add lemon wedges to the pan.",
+    "Return pan to the oven and roast until salmon flakes and broccoli is tender-crisp, 8–10 minutes.",
+    "While salmon roasts, place a small pan over low heat. Whisk tahini with remaining 0.5 tbsp olive oil, a pinch of salt, and the lemon juice until smooth and slightly warm (30–60 seconds). Do not boil.",
+    "Plate salmon with broccoli. Squeeze roasted lemon over the salmon and drizzle with warm tahini. Serve immediately."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F and line a large sheet pan.",
+    "Cut broccoli into bite-size florets.",
+    "Mince garlic.",
+    "Halve lemon; juice one half for the sauce and cut the other half into wedges.",
+    "Pat salmon dry with paper towels.",
+    "Measure out tahini, olive oil, sumac, salt, and black pepper.",
+    "Toss broccoli with 1.5 tbsp olive oil, half the minced garlic, a big pinch of salt, and black pepper on the sheet pan. Spread in a single layer and roast for 10 minutes.",
+    "Remove pan, push broccoli to the sides, and place salmon in the center. Drizzle salmon with 1 tbsp olive oil, sprinkle sumac, a pinch of salt, and black pepper. Add lemon wedges to the pan.",
+    "Return pan to the oven and roast until salmon flakes and broccoli is tender-crisp, 8–10 minutes.",
+    "While salmon roasts, place a small pan over low heat. Whisk tahini with remaining 0.5 tbsp olive oil, a pinch of salt, and the lemon juice until smooth and slightly warm (30–60 seconds). Do not boil.",
+    "Plate salmon with broccoli. Squeeze roasted lemon over the salmon and drizzle with warm tahini. Serve immediately."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "salmon",
+      "quantity": "4 fillets (600–700 g total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "600 g",
+      "preparation": "cut into florets"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "halved (juice one half, wedge the other)"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "2 tsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "tahini",
+      "quantity": "3 tbsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, to taste",
+      "preparation": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp, to taste",
+      "preparation": null
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Seafood",
+      "Sesame"
+    ],
+    "NutritionFocus": [
+      "HighProtein",
+      "Keto",
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "salmon",
+      "quantity": "4 fillets (600–700 g total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "600 g",
+      "preparation": "cut into florets",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "halved (juice one half, wedge the other)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tahini",
+      "quantity": "3 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp, to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T153929Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T153421Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

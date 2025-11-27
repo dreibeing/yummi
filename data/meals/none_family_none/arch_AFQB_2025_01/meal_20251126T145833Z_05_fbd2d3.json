@@ -1,0 +1,191 @@
+{
+  "meal_id": "meal_20251126T145833Z_05_fbd2d3",
+  "archetype_uid": "arch_AFQB_2025_01",
+  "archetype_name": "Family AirFryer Quick Bites",
+  "name": "Air Fryer BBQ Chicken Sliders",
+  "description": "Crispy air-fried chicken strips glazed with BBQ sauce, stacked on warm buns with cheese, slaw, and pickles. Fast, kid-friendly sliders using semi-prepped components.",
+  "servings": "Serves 4 (8 sliders)",
+  "prep_steps": [
+    "Preheat air fryer to 200°C/390°F.",
+    "Split 8 hamburger buns.",
+    "Shred a handful of lettuce if using and drain any liquid from slaw.",
+    "Lay out cheddar cheese slices and pickles for easy assembly."
+  ],
+  "cook_steps": [
+    "Toss chicken strips with olive oil to lightly coat.",
+    "Air fry chicken strips in a single layer for 6–8 minutes, shaking halfway.",
+    "Brush chicken strips with BBQ sauce in the last 1 minute to glaze.",
+    "Microwave the split hamburger buns for 15–20 seconds to warm.",
+    "Assemble each slider: bottom bun, cheddar cheese slice, BBQ-glazed chicken, a spoon of slaw, pickles, a little extra BBQ sauce if desired, then top bun.",
+    "Serve with salsa on the side for dipping."
+  ],
+  "instructions": [
+    "Preheat air fryer to 200°C/390°F.",
+    "Split 8 hamburger buns.",
+    "Shred a handful of lettuce if using and drain any liquid from slaw.",
+    "Lay out cheddar cheese slices and pickles for easy assembly.",
+    "Toss chicken strips with olive oil to lightly coat.",
+    "Air fry chicken strips in a single layer for 6–8 minutes, shaking halfway.",
+    "Brush chicken strips with BBQ sauce in the last 1 minute to glaze.",
+    "Microwave the split hamburger buns for 15–20 seconds to warm.",
+    "Assemble each slider: bottom bun, cheddar cheese slice, BBQ-glazed chicken, a spoon of slaw, pickles, a little extra BBQ sauce if desired, then top bun.",
+    "Serve with salsa on the side for dipping."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken strips",
+      "quantity": "500 g (about 1 lb)",
+      "preparation": "pat dry if needed"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": "for tossing chicken"
+    },
+    {
+      "core_item_name": "BBQ sauce",
+      "quantity": "1/2 cup",
+      "preparation": "plus extra for serving"
+    },
+    {
+      "core_item_name": "hamburger buns",
+      "quantity": "8 buns",
+      "preparation": "split"
+    },
+    {
+      "core_item_name": "cheddar cheese slices",
+      "quantity": "8 slices",
+      "preparation": "ready to place"
+    },
+    {
+      "core_item_name": "slaw",
+      "quantity": "2 cups",
+      "preparation": "drained if watery"
+    },
+    {
+      "core_item_name": "pickles",
+      "quantity": "1 cup",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "1 cup",
+      "preparation": "shredded (optional)"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup",
+      "preparation": "for dipping"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "AirFryer",
+      "Microwave"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken strips",
+      "quantity": "500 g (about 1 lb)",
+      "preparation": "pat dry if needed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": "for tossing chicken",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "BBQ sauce",
+      "quantity": "1/2 cup",
+      "preparation": "plus extra for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "hamburger buns",
+      "quantity": "8 buns",
+      "preparation": "split",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cheddar cheese slices",
+      "quantity": "8 slices",
+      "preparation": "ready to place",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "slaw",
+      "quantity": "2 cups",
+      "preparation": "drained if watery",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pickles",
+      "quantity": "1 cup",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "1 cup",
+      "preparation": "shredded (optional)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup",
+      "preparation": "for dipping",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T150039Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T145833Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

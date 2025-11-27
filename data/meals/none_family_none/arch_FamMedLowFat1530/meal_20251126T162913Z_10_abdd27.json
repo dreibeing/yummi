@@ -1,0 +1,258 @@
+{
+  "meal_id": "meal_20251126T162913Z_10_abdd27",
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "archetype_name": "Family Low-Fat Mediterranean Light Plates (15–30, Mild)",
+  "name": "Za'atar Turkey with Bulgur Tabbouleh and Cucumber Yogurt",
+  "description": "Lean za'atar-seasoned turkey baked until tender, served with a bright bulgur-parsley salad and a cooling cucumber yogurt. Light on oil, high in fiber, and ready in under 30 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C/425°F and line a sheet pan.",
+    "Rinse bulgur in a fine sieve.",
+    "Finely chop parsley and mint.",
+    "Halve cherry tomatoes.",
+    "Peel and grate cucumber; squeeze out excess liquid with a paper towel.",
+    "Mince garlic.",
+    "Zest and juice lemon."
+  ],
+  "cook_steps": [
+    "Bring vegetable stock to a boil in a small pot; add bulgur, reduce heat to low, cover, and cook 10–12 minutes until tender. Fluff and cool slightly.",
+    "In a bowl, mix turkey with za'atar, half the minced garlic, 1 teaspoon olive oil, a big pinch of salt, and black pepper.",
+    "Spread turkey on the lined sheet pan and bake 8–10 minutes until just cooked through (no pink).",
+    "In a large bowl, combine warm bulgur with parsley, half the mint, cherry tomatoes, 1 teaspoon olive oil, half the lemon juice, a pinch of salt, and black pepper. Toss and adjust lemon and seasoning.",
+    "In a small bowl, stir yoghurt with grated cucumber, remaining mint, remaining lemon juice, remaining garlic, a pinch of salt, and black pepper.",
+    "Plate bulgur tabbouleh, top with turkey, and add a spoon of cucumber yogurt. Finish with lemon zest."
+  ],
+  "instructions": [
+    "Heat oven to 220°C/425°F and line a sheet pan.",
+    "Rinse bulgur in a fine sieve.",
+    "Finely chop parsley and mint.",
+    "Halve cherry tomatoes.",
+    "Peel and grate cucumber; squeeze out excess liquid with a paper towel.",
+    "Mince garlic.",
+    "Zest and juice lemon.",
+    "Bring vegetable stock to a boil in a small pot; add bulgur, reduce heat to low, cover, and cook 10–12 minutes until tender. Fluff and cool slightly.",
+    "In a bowl, mix turkey with za'atar, half the minced garlic, 1 teaspoon olive oil, a big pinch of salt, and black pepper.",
+    "Spread turkey on the lined sheet pan and bake 8–10 minutes until just cooked through (no pink).",
+    "In a large bowl, combine warm bulgur with parsley, half the mint, cherry tomatoes, 1 teaspoon olive oil, half the lemon juice, a pinch of salt, and black pepper. Toss and adjust lemon and seasoning.",
+    "In a small bowl, stir yoghurt with grated cucumber, remaining mint, remaining lemon juice, remaining garlic, a pinch of salt, and black pepper.",
+    "Plate bulgur tabbouleh, top with turkey, and add a spoon of cucumber yogurt. Finish with lemon zest."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1 cup (dry)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups",
+      "preparation": "brought to a boil"
+    },
+    {
+      "core_item_name": "turkey",
+      "quantity": "500 g",
+      "preparation": "cut into bite-size pieces if not pre-cut"
+    },
+    {
+      "core_item_name": "za'atar",
+      "quantity": "1 tablespoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 teaspoons total",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1 packed cup",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "3 tablespoons",
+      "preparation": "finely chopped, divided"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1/2 medium",
+      "preparation": "grated and squeezed dry"
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced, divided"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": ""
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowFat"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1 cup (dry)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups",
+      "preparation": "brought to a boil",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "turkey",
+      "quantity": "500 g",
+      "preparation": "cut into bite-size pieces if not pre-cut",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "za'atar",
+      "quantity": "1 tablespoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 teaspoons total",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1 packed cup",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "3 tablespoons",
+      "preparation": "finely chopped, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1/2 medium",
+      "preparation": "grated and squeezed dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T163643Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T162913Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

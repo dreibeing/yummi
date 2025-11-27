@@ -1,0 +1,213 @@
+{
+  "meal_id": "meal_20251126T153421Z_04_add72c",
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "archetype_name": "Family Keto Weeknight Plates (Mild, 15–30, Simple)",
+  "name": "Herb-Seared Pork Fillet with Garlic-Lemon Brussels Sprouts",
+  "description": "Quick-seared pork fillet finished in the oven with oregano, lemon, and butter. Served with skillet-brightened Brussels sprouts for a mild, keto-friendly family plate.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 200°C/400°F with a rack in the middle.",
+    "Trim any silver skin from the pork fillet and pat dry.",
+    "Halve the brussels sprouts; quarter any very large ones.",
+    "Mince the garlic.",
+    "Zest then halve the lemon.",
+    "Chop the parsley."
+  ],
+  "cook_steps": [
+    "Season pork fillet all over with salt, black pepper, and oregano; rub with olive oil.",
+    "Heat an oven-safe skillet over medium-high on the stovetop; sear pork on all sides until browned, 4–5 minutes total.",
+    "Add 1 tablespoon butter, half the minced garlic, and half the lemon zest to the skillet; spoon over pork for 30 seconds.",
+    "Transfer skillet to the oven and roast until the thickest part reaches 63°C/145°F, about 10–12 minutes; rest pork on a board, tented with foil.",
+    "While pork roasts, heat a large frying pan over medium; add olive oil and the brussels sprouts cut-side down. Cook without stirring until browned, 3–4 minutes.",
+    "Add remaining minced garlic and lemon zest; toss 30 seconds. Season with salt and black pepper.",
+    "Add remaining butter and a squeeze of lemon juice; toss to glaze, then sprinkle with parsley.",
+    "Slice pork into medallions and serve with the garlicky brussels sprouts. Offer extra lemon wedges to taste."
+  ],
+  "instructions": [
+    "Heat oven to 200°C/400°F with a rack in the middle.",
+    "Trim any silver skin from the pork fillet and pat dry.",
+    "Halve the brussels sprouts; quarter any very large ones.",
+    "Mince the garlic.",
+    "Zest then halve the lemon.",
+    "Chop the parsley.",
+    "Season pork fillet all over with salt, black pepper, and oregano; rub with olive oil.",
+    "Heat an oven-safe skillet over medium-high on the stovetop; sear pork on all sides until browned, 4–5 minutes total.",
+    "Add 1 tablespoon butter, half the minced garlic, and half the lemon zest to the skillet; spoon over pork for 30 seconds.",
+    "Transfer skillet to the oven and roast until the thickest part reaches 63°C/145°F, about 10–12 minutes; rest pork on a board, tented with foil.",
+    "While pork roasts, heat a large frying pan over medium; add olive oil and the brussels sprouts cut-side down. Cook without stirring until browned, 3–4 minutes.",
+    "Add remaining minced garlic and lemon zest; toss 30 seconds. Season with salt and black pepper.",
+    "Add remaining butter and a squeeze of lemon juice; toss to glaze, then sprinkle with parsley.",
+    "Slice pork into medallions and serve with the garlicky brussels sprouts. Offer extra lemon wedges to taste."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "pork fillet",
+      "quantity": "700–800 g",
+      "preparation": "trimmed, patted dry"
+    },
+    {
+      "core_item_name": "brussels sprouts",
+      "quantity": "600 g",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 to 1.5 teaspoons",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon",
+      "preparation": "freshly ground, to taste"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and wedged"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Greek"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein",
+      "Keto",
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "pork fillet",
+      "quantity": "700–800 g",
+      "preparation": "trimmed, patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brussels sprouts",
+      "quantity": "600 g",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 to 1.5 teaspoons",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon",
+      "preparation": "freshly ground, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and wedged",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T153630Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T153421Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,268 @@
+{
+  "meal_id": "meal_20251126T154013Z_03_9f8bda",
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "archetype_name": "Family Low-Sodium American & French Comfort (30–60, Mild)",
+  "name": "Provençal Baked Fish with Tomato–Fennel and Herbed Couscous",
+  "description": "Mild, low-sodium baked white fish nestled in a tomato–fennel braise with thyme and bay, served alongside fluffy lemon–parsley couscous. Comforting and family-friendly with classic French bistro notes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 400°F (200°C).",
+    "Slice 1 fennel bulb thinly (save fronds for garnish if present).",
+    "Dice 1 onion and mince 3 cloves garlic.",
+    "Rinse and pat dry 4 fish fillets.",
+    "Zest 1 lemon, then cut the lemon into wedges.",
+    "Rinse and chop a small handful of parsley.",
+    "Measure 1 cup couscous and 1 cup water."
+  ],
+  "cook_steps": [
+    "Heat 1 tablespoon olive oil in a large oven-safe skillet over medium heat.",
+    "Add onion and fennel; cook 5–6 minutes until softened, stirring occasionally.",
+    "Stir in garlic; cook 30 seconds until fragrant.",
+    "Add 1/2 cup white wine and simmer 2 minutes to reduce slightly.",
+    "Stir in 1 can (about 14 oz) crushed tomatoes, 1 teaspoon thyme, 1 bay leaf, and a few grinds of black pepper; simmer 3–4 minutes.",
+    "Nestle fish fillets into the sauce in a single layer; spoon some sauce over the tops.",
+    "Transfer skillet to the oven and bake 10–14 minutes until fish flakes easily.",
+    "While fish bakes, bring 1 cup water to a boil in a small pot; remove from heat, stir in 1 teaspoon olive oil, lemon zest, and couscous; cover and rest 5 minutes.",
+    "Fluff couscous with a fork; fold in chopped parsley and a squeeze of lemon.",
+    "Remove bay leaf; taste sauce and adjust pepper or lemon to keep flavors bright without added salt.",
+    "Serve fish and tomato–fennel sauce with herbed couscous; garnish with fennel fronds and lemon wedges."
+  ],
+  "instructions": [
+    "Preheat oven to 400°F (200°C).",
+    "Slice 1 fennel bulb thinly (save fronds for garnish if present).",
+    "Dice 1 onion and mince 3 cloves garlic.",
+    "Rinse and pat dry 4 fish fillets.",
+    "Zest 1 lemon, then cut the lemon into wedges.",
+    "Rinse and chop a small handful of parsley.",
+    "Measure 1 cup couscous and 1 cup water.",
+    "Heat 1 tablespoon olive oil in a large oven-safe skillet over medium heat.",
+    "Add onion and fennel; cook 5–6 minutes until softened, stirring occasionally.",
+    "Stir in garlic; cook 30 seconds until fragrant.",
+    "Add 1/2 cup white wine and simmer 2 minutes to reduce slightly.",
+    "Stir in 1 can (about 14 oz) crushed tomatoes, 1 teaspoon thyme, 1 bay leaf, and a few grinds of black pepper; simmer 3–4 minutes.",
+    "Nestle fish fillets into the sauce in a single layer; spoon some sauce over the tops.",
+    "Transfer skillet to the oven and bake 10–14 minutes until fish flakes easily.",
+    "While fish bakes, bring 1 cup water to a boil in a small pot; remove from heat, stir in 1 teaspoon olive oil, lemon zest, and couscous; cover and rest 5 minutes.",
+    "Fluff couscous with a fork; fold in chopped parsley and a squeeze of lemon.",
+    "Remove bay leaf; taste sauce and adjust pepper or lemon to keep flavors bright without added salt.",
+    "Serve fish and tomato–fennel sauce with herbed couscous; garnish with fennel fronds and lemon wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "4 fillets (1.25–1.5 lb total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "fennel",
+      "quantity": "1 bulb",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 can (14–15 oz)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 teaspoon",
+      "preparation": "dried or fresh, chopped"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "1 leaf",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 teaspoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1 cup + as needed",
+      "preparation": "for couscous and rinsing"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and cut into wedges"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "French"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowSodium"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "4 fillets (1.25–1.5 lb total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "fennel",
+      "quantity": "1 bulb",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 can (14–15 oz)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 teaspoon",
+      "preparation": "dried or fresh, chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "1 leaf",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 teaspoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1 cup + as needed",
+      "preparation": "for couscous and rinsing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [
+    "Category 'MealComponentPreference' ideally includes 2+ tags; received ['FromScratch']"
+  ],
+  "metadata": {
+    "created_at": "20251126T154232Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T154013Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

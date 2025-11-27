@@ -1,0 +1,323 @@
+{
+  "meal_id": "meal_20251126T161548Z_04_2a1602",
+  "archetype_uid": "arch_FamLatComfort3060",
+  "archetype_name": "Family Latin Comfort (Mild, 30–60, Intermediate)",
+  "name": "Mild Turkey Albóndigas Soup with Rice",
+  "description": "Family-friendly Mexican-style turkey meatball soup simmered in a tomato-chicken broth with rice, carrots, and potatoes. Mild seasoning and bright lime make it comforting and approachable.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C/425°F and line a baking tray.",
+    "Finely chop onions (1 large total; divide for meatballs and soup).",
+    "Mince garlic (4 cloves total; divide for meatballs and soup).",
+    "Peel and dice carrots (2 medium) and potatoes (2 medium) into small cubes.",
+    "Rinse jasmine rice (3/4 cup) under cold water until it runs clear.",
+    "In a bowl, combine turkey, half the chopped onions, half the minced garlic, 1 tsp ground cumin, 1/2 tsp oregano, 1/2 tsp salt, 1/4 tsp black pepper, and cornflour; mix gently and form 16 small meatballs.",
+    "Open diced tomatoes (1 can) and have chicken stock and water measured.",
+    "Roughly chop coriander and cut lime into wedges for serving."
+  ],
+  "cook_steps": [
+    "Arrange turkey meatballs on the lined tray, brush lightly with olive oil, and bake for 10–12 minutes until just set and lightly browned.",
+    "Meanwhile, heat 1.5 tbsp olive oil in a large pot over medium heat. Add remaining onions and carrots; cook 4–5 minutes until softened.",
+    "Stir in remaining garlic; cook 30 seconds. Add 1 tsp ground cumin, 1/2 tsp oregano, 1/2 tsp paprika, a pinch of black pepper, and a small pinch of salt; toast 30 seconds.",
+    "Add diced potatoes, diced tomatoes, chicken stock, and water along with 1 bay leaf. Bring to a boil.",
+    "Stir in rinsed jasmine rice. Reduce to a gentle simmer, cover, and cook 12–15 minutes, stirring once or twice to prevent sticking.",
+    "Add the baked meatballs to the pot. Simmer uncovered 8–10 minutes more, until meatballs are cooked through and rice and potatoes are tender.",
+    "Remove bay leaf. Taste and adjust salt and black pepper.",
+    "Stir in half the chopped coriander. Ladle into bowls and finish with remaining coriander and a squeeze of lime."
+  ],
+  "instructions": [
+    "Heat oven to 220°C/425°F and line a baking tray.",
+    "Finely chop onions (1 large total; divide for meatballs and soup).",
+    "Mince garlic (4 cloves total; divide for meatballs and soup).",
+    "Peel and dice carrots (2 medium) and potatoes (2 medium) into small cubes.",
+    "Rinse jasmine rice (3/4 cup) under cold water until it runs clear.",
+    "In a bowl, combine turkey, half the chopped onions, half the minced garlic, 1 tsp ground cumin, 1/2 tsp oregano, 1/2 tsp salt, 1/4 tsp black pepper, and cornflour; mix gently and form 16 small meatballs.",
+    "Open diced tomatoes (1 can) and have chicken stock and water measured.",
+    "Roughly chop coriander and cut lime into wedges for serving.",
+    "Arrange turkey meatballs on the lined tray, brush lightly with olive oil, and bake for 10–12 minutes until just set and lightly browned.",
+    "Meanwhile, heat 1.5 tbsp olive oil in a large pot over medium heat. Add remaining onions and carrots; cook 4–5 minutes until softened.",
+    "Stir in remaining garlic; cook 30 seconds. Add 1 tsp ground cumin, 1/2 tsp oregano, 1/2 tsp paprika, a pinch of black pepper, and a small pinch of salt; toast 30 seconds.",
+    "Add diced potatoes, diced tomatoes, chicken stock, and water along with 1 bay leaf. Bring to a boil.",
+    "Stir in rinsed jasmine rice. Reduce to a gentle simmer, cover, and cook 12–15 minutes, stirring once or twice to prevent sticking.",
+    "Add the baked meatballs to the pot. Simmer uncovered 8–10 minutes more, until meatballs are cooked through and rice and potatoes are tender.",
+    "Remove bay leaf. Taste and adjust salt and black pepper.",
+    "Stir in half the chopped coriander. Ladle into bowls and finish with remaining coriander and a squeeze of lime."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "500 g",
+      "preparation": "minced/ground"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "finely chopped, divided"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced, divided"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "2 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1/2 tsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "to taste, divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "to taste, divided"
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "1 tbsp",
+      "preparation": "for binding meatballs"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "peeled and small-diced"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "2 medium",
+      "preparation": "peeled and small-diced"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "400 g can",
+      "preparation": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "4 cups",
+      "preparation": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1 cup",
+      "preparation": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "1",
+      "preparation": null
+    },
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "3/4 cup",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "LatinAmerican",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "500 g",
+      "preparation": "minced/ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "finely chopped, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "2 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1/2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "to taste, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "to taste, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "1 tbsp",
+      "preparation": "for binding meatballs",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "peeled and small-diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "2 medium",
+      "preparation": "peeled and small-diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "400 g can",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "4 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "1",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "3/4 cup",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T161853Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T161548Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

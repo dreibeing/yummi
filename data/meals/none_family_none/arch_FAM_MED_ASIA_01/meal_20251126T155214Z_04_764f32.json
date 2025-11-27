@@ -1,0 +1,278 @@
+{
+  "meal_id": "meal_20251126T155214Z_04_764f32",
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "archetype_name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)",
+  "name": "Szechuan Pepper Beef & Green Bean Stir-Fry with Jasmine Rice",
+  "description": "Thin-sliced beef and crisp green beans in a soy-chili glaze finished with szechuan pepper oil, served over fluffy jasmine rice. Medium heat and weeknight-fast on the stovetop.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 2 cups jasmine rice until water runs clear; drain.",
+    "Thinly slice 500 g beef across the grain.",
+    "Trim 300 g green beans; cut in half.",
+    "Slice 1 bell pepper and 1 onion into thin strips.",
+    "Mince 3 cloves garlic; slice 2 spring onion.",
+    "In a bowl, whisk 3 tbsp soy sauce, 1 tbsp rice vinegar, 1 tbsp brown sugar, 1–2 tsp sriracha, and 1–2 tsp szechuan pepper oil.",
+    "Toss sliced beef with 2 tsp cornflour and a pinch of salt."
+  ],
+  "cook_steps": [
+    "Cook rice: Add rinsed jasmine rice to a pot with 2 1/2 cups water and a pinch of salt. Bring to a boil, cover, reduce heat to low, and simmer 12–15 minutes until tender. Keep covered off heat.",
+    "Heat a large skillet or wok over high heat. Add 1 tbsp canola oil.",
+    "Stir-fry green beans 2 minutes until bright and slightly blistered. Add a pinch of salt, then transfer to a plate.",
+    "Add 1 tbsp canola oil to the skillet. Sear beef in a single layer 2–3 minutes, flipping once, until just browned (work in batches if needed).",
+    "Add sliced onion and bell pepper; stir-fry 2 minutes until starting to soften.",
+    "Add minced garlic; stir 30 seconds until fragrant.",
+    "Return green beans to the pan. Pour in the soy-chili sauce; toss 1–2 minutes until glossy and slightly thickened. Adjust heat with extra sriracha if desired.",
+    "Taste and season with a pinch of black pepper and salt if needed.",
+    "Fluff rice. Serve stir-fry over rice and top with sliced spring onion."
+  ],
+  "instructions": [
+    "Rinse 2 cups jasmine rice until water runs clear; drain.",
+    "Thinly slice 500 g beef across the grain.",
+    "Trim 300 g green beans; cut in half.",
+    "Slice 1 bell pepper and 1 onion into thin strips.",
+    "Mince 3 cloves garlic; slice 2 spring onion.",
+    "In a bowl, whisk 3 tbsp soy sauce, 1 tbsp rice vinegar, 1 tbsp brown sugar, 1–2 tsp sriracha, and 1–2 tsp szechuan pepper oil.",
+    "Toss sliced beef with 2 tsp cornflour and a pinch of salt.",
+    "Cook rice: Add rinsed jasmine rice to a pot with 2 1/2 cups water and a pinch of salt. Bring to a boil, cover, reduce heat to low, and simmer 12–15 minutes until tender. Keep covered off heat.",
+    "Heat a large skillet or wok over high heat. Add 1 tbsp canola oil.",
+    "Stir-fry green beans 2 minutes until bright and slightly blistered. Add a pinch of salt, then transfer to a plate.",
+    "Add 1 tbsp canola oil to the skillet. Sear beef in a single layer 2–3 minutes, flipping once, until just browned (work in batches if needed).",
+    "Add sliced onion and bell pepper; stir-fry 2 minutes until starting to soften.",
+    "Add minced garlic; stir 30 seconds until fragrant.",
+    "Return green beans to the pan. Pour in the soy-chili sauce; toss 1–2 minutes until glossy and slightly thickened. Adjust heat with extra sriracha if desired.",
+    "Taste and season with a pinch of black pepper and salt if needed.",
+    "Fluff rice. Serve stir-fry over rice and top with sliced spring onion."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "beef",
+      "quantity": "500 g",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "300 g",
+      "preparation": "trimmed, halved"
+    },
+    {
+      "core_item_name": "bell pepper",
+      "quantity": "1 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "3 tbsp"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "sriracha",
+      "quantity": "1–2 tsp"
+    },
+    {
+      "core_item_name": "szechuan pepper oil",
+      "quantity": "1–2 tsp"
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "2 tsp"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Chinese",
+      "Thai"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Soy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "beef",
+      "quantity": "500 g",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "300 g",
+      "preparation": "trimmed, halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell pepper",
+      "quantity": "1 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "3 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sriracha",
+      "quantity": "1–2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "szechuan pepper oil",
+      "quantity": "1–2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T155429Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T155214Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

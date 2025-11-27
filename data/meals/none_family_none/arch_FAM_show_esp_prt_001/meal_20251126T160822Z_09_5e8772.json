@@ -1,0 +1,250 @@
+{
+  "meal_id": "meal_20251126T160822Z_09_5e8772",
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "archetype_name": "Family Weekend Showstopper: Spanish & Portuguese Feasts",
+  "name": "Portuguese Smoked Hake à Gomes de Sá (Iberian Hake-Potato Bake)",
+  "description": "A Portuguese-style family casserole of flaked smoked hake baked with potatoes, sweet onions, olives, and sliced eggs, finished with parsley and olive oil. Showstopper presentation in a large baking dish for a weekend feast.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Preheat oven to 200°C (390°F).",
+    "Rinse smoked hake under cold water.",
+    "Peel potatoes and cut into 1 cm rounds.",
+    "Peel and thinly slice onions.",
+    "Peel and finely slice garlic.",
+    "Rinse parsley and roughly chop leaves.",
+    "Bring a medium pot of water to a boil for the eggs.",
+    "Bring a large pot of salted water to a boil for the potatoes."
+  ],
+  "cook_steps": [
+    "Boil eggs for 10 minutes, cool under cold water, peel, and slice into rounds; set aside.",
+    "Simmer smoked hake in a saucepan with enough water to cover and 2 bay leaves for 8–10 minutes until it flakes; drain, discard bay leaves, and flake the fish into large chunks (remove any bones).",
+    "Boil potato rounds in salted water for 8–10 minutes until just tender but not falling apart; drain gently.",
+    "Heat 1/3 cup olive oil in a large pan over medium heat; cook onions with a pinch of salt for 10–12 minutes until soft and lightly golden. Add garlic and cook 1 minute more.",
+    "In a large oiled baking dish, layer half the potatoes, half the onions/garlic, and half the flaked smoked hake. Season lightly with salt and black pepper and scatter half the olives.",
+    "Repeat with remaining potatoes, onions/garlic, hake, and olives. Drizzle the remaining olive oil over the top.",
+    "Bake uncovered at 200°C (390°F) for 20–25 minutes until edges are sizzling and lightly browned.",
+    "Remove from oven; arrange sliced eggs on top, sprinkle with parsley, and finish with a light squeeze of lemon. Rest 5 minutes, then serve."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C (390°F).",
+    "Rinse smoked hake under cold water.",
+    "Peel potatoes and cut into 1 cm rounds.",
+    "Peel and thinly slice onions.",
+    "Peel and finely slice garlic.",
+    "Rinse parsley and roughly chop leaves.",
+    "Bring a medium pot of water to a boil for the eggs.",
+    "Bring a large pot of salted water to a boil for the potatoes.",
+    "Boil eggs for 10 minutes, cool under cold water, peel, and slice into rounds; set aside.",
+    "Simmer smoked hake in a saucepan with enough water to cover and 2 bay leaves for 8–10 minutes until it flakes; drain, discard bay leaves, and flake the fish into large chunks (remove any bones).",
+    "Boil potato rounds in salted water for 8–10 minutes until just tender but not falling apart; drain gently.",
+    "Heat 1/3 cup olive oil in a large pan over medium heat; cook onions with a pinch of salt for 10–12 minutes until soft and lightly golden. Add garlic and cook 1 minute more.",
+    "In a large oiled baking dish, layer half the potatoes, half the onions/garlic, and half the flaked smoked hake. Season lightly with salt and black pepper and scatter half the olives.",
+    "Repeat with remaining potatoes, onions/garlic, hake, and olives. Drizzle the remaining olive oil over the top.",
+    "Bake uncovered at 200°C (390°F) for 20–25 minutes until edges are sizzling and lightly browned.",
+    "Remove from oven; arrange sliced eggs on top, sprinkle with parsley, and finish with a light squeeze of lemon. Rest 5 minutes, then serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "smoked hake",
+      "quantity": "700–800 g",
+      "preparation": "rinsed, poached, flaked"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "1.2 kg",
+      "preparation": "peeled, sliced into 1 cm rounds"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "for poaching"
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "4",
+      "preparation": "hard-boiled, sliced"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1 cup",
+      "preparation": "whole or halved"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1/2 cup total",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped leaves"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "for finishing"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": "for boiling and poaching"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Portuguese",
+      "Spanish"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Egg",
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "smoked hake",
+      "quantity": "700–800 g",
+      "preparation": "rinsed, poached, flaked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "1.2 kg",
+      "preparation": "peeled, sliced into 1 cm rounds",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "for poaching",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "4",
+      "preparation": "hard-boiled, sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1 cup",
+      "preparation": "whole or halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1/2 cup total",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped leaves",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "for finishing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": "for boiling and poaching",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T161457Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T160822Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

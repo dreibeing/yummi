@@ -1,0 +1,251 @@
+{
+  "meal_id": "meal_20251126T165451Z_05_95ad54",
+  "archetype_uid": "arch_SA_BraaiPotjie_Adv60",
+  "archetype_name": "Family Weekend Advanced: South African Braai & Potjie",
+  "name": "Snoek Braai with Chutney-Honey Glaze, Coal-Baked Potatoes, and Grilled Corn",
+  "description": "Whole snoek grilled over medium coals with a glossy chutney-honey glaze, served with coal-baked potatoes and charred corn. A classic South African braai centerpiece with balanced medium heat.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 200°C (390°F).",
+    "Scrub 4 large potatoes; pat dry.",
+    "Peel and finely mince garlic.",
+    "In a bowl, whisk chutney, honey, apple cider vinegar, olive oil, chilli flakes, a pinch of salt, and black pepper to make the glaze.",
+    "Pat snoek dry with paper towels; sprinkle both sides lightly with salt and black pepper.",
+    "Trim corn of any loose husk/silk; leave a thin layer of husk if present or keep bare for faster charring.",
+    "Chop parsley for garnish.",
+    "Light the braai and build a medium bed of coals with a cool zone; clean and oil the grill grates."
+  ],
+  "cook_steps": [
+    "Bake potatoes on an oven rack for 45 minutes until starting to soften.",
+    "Move potatoes to the braai: wrap each in foil if you prefer tidier skins (optional), then place at the edge of the coals; turn every 10 minutes until fully tender, 20–30 minutes.",
+    "Place snoek skin-side down on an oiled grill over medium heat (cooler side if the fire is hot). Close the lid or cover loosely; grill 6–8 minutes.",
+    "Brush snoek generously with the chutney-honey glaze. Continue grilling 6–10 minutes, brushing once more, until the thickest part just flakes and the glaze is tacky. Avoid direct flames to prevent burning.",
+    "Grill corn over medium heat, turning every 2–3 minutes until charred in spots and tender, 10–12 minutes.",
+    "Split potatoes; add butter and a pinch of salt and black pepper.",
+    "Rest snoek 3 minutes off heat. Brush with any remaining warm glaze.",
+    "Plate snoek with baked potatoes and grilled corn. Sprinkle parsley over the fish and potatoes. Serve immediately."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C (390°F).",
+    "Scrub 4 large potatoes; pat dry.",
+    "Peel and finely mince garlic.",
+    "In a bowl, whisk chutney, honey, apple cider vinegar, olive oil, chilli flakes, a pinch of salt, and black pepper to make the glaze.",
+    "Pat snoek dry with paper towels; sprinkle both sides lightly with salt and black pepper.",
+    "Trim corn of any loose husk/silk; leave a thin layer of husk if present or keep bare for faster charring.",
+    "Chop parsley for garnish.",
+    "Light the braai and build a medium bed of coals with a cool zone; clean and oil the grill grates.",
+    "Bake potatoes on an oven rack for 45 minutes until starting to soften.",
+    "Move potatoes to the braai: wrap each in foil if you prefer tidier skins (optional), then place at the edge of the coals; turn every 10 minutes until fully tender, 20–30 minutes.",
+    "Place snoek skin-side down on an oiled grill over medium heat (cooler side if the fire is hot). Close the lid or cover loosely; grill 6–8 minutes.",
+    "Brush snoek generously with the chutney-honey glaze. Continue grilling 6–10 minutes, brushing once more, until the thickest part just flakes and the glaze is tacky. Avoid direct flames to prevent burning.",
+    "Grill corn over medium heat, turning every 2–3 minutes until charred in spots and tender, 10–12 minutes.",
+    "Split potatoes; add butter and a pinch of salt and black pepper.",
+    "Rest snoek 3 minutes off heat. Brush with any remaining warm glaze.",
+    "Plate snoek with baked potatoes and grilled corn. Sprinkle parsley over the fish and potatoes. Serve immediately."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "snoek",
+      "quantity": "1 whole (about 1.2–1.5 kg)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "chutney",
+      "quantity": "1/2 cup",
+      "preparation": "for glaze"
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "2 tbsp",
+      "preparation": "for glaze"
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tbsp",
+      "preparation": "for glaze"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "for glaze and grill grates"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "finely minced"
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 tsp",
+      "preparation": "for glaze"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 tsp",
+      "preparation": "divided, to season fish and potatoes"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "freshly ground, divided"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "4 large",
+      "preparation": "scrubbed"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "4 tbsp",
+      "preparation": "for potatoes"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "4 ears",
+      "preparation": "husk trimmed"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "snoek",
+      "quantity": "1 whole (about 1.2–1.5 kg)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chutney",
+      "quantity": "1/2 cup",
+      "preparation": "for glaze",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "2 tbsp",
+      "preparation": "for glaze",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tbsp",
+      "preparation": "for glaze",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "for glaze and grill grates",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "finely minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 tsp",
+      "preparation": "for glaze",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 tsp",
+      "preparation": "divided, to season fish and potatoes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "freshly ground, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "4 large",
+      "preparation": "scrubbed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "4 tbsp",
+      "preparation": "for potatoes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "4 ears",
+      "preparation": "husk trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T165812Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T165451Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

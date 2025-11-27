@@ -1,0 +1,233 @@
+{
+  "meal_id": "meal_20251126T151753Z_03_24346b",
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "archetype_name": "Family Hands-Off Sheet Pan & Slow Cooker Nights",
+  "name": "Sheet-Pan Gemista-Style Beef & Rice Stuffed Peppers",
+  "description": "Hands-off stuffed peppers baked in a tomato bath with cumin, cinnamon, lemon, and herbs. Uses ready basmati rice with quinoa for an easy family sheet-pan dinner with no chili heat.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 200°C/400°F. Line a rimmed sheet pan or shallow roasting dish with foil.",
+    "Halve 4 large bell peppers lengthwise; remove seeds and membranes.",
+    "Finely chop 1 medium onion and a small handful of parsley.",
+    "Zest 1 lemon (save the lemon for serving if desired).",
+    "Microwave the basmati rice with quinoa pouch per pack directions to loosen (about 90 seconds).",
+    "Open the can/carton of crushed tomatoes."
+  ],
+  "cook_steps": [
+    "In a large bowl, combine minced beef, warmed basmati rice with quinoa, chopped onion, chopped parsley, lemon zest, cumin, cinnamon, 1 teaspoon salt, and 1/2 teaspoon black pepper. Drizzle in 1 tablespoon olive oil and mix until evenly combined.",
+    "Spread the crushed tomatoes over the lined sheet pan to make a shallow sauce base. Season the tomatoes with a pinch of salt and black pepper.",
+    "Nestle pepper halves cut-side up on the tomato base. Fill each pepper evenly with the beef–rice mixture, mounding slightly.",
+    "Drizzle the tops lightly with 1 tablespoon olive oil. Cover the pan tightly with foil.",
+    "Bake covered for 35–40 minutes, until the peppers are tender and the filling is nearly cooked through.",
+    "Uncover and bake 10–15 minutes more to brown the tops and finish cooking (internal temp of beef reaches 71°C/160°F).",
+    "Rest 5 minutes. Spoon the tomato sauce over the peppers to serve. Optional: squeeze lemon wedges over the top."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C/400°F. Line a rimmed sheet pan or shallow roasting dish with foil.",
+    "Halve 4 large bell peppers lengthwise; remove seeds and membranes.",
+    "Finely chop 1 medium onion and a small handful of parsley.",
+    "Zest 1 lemon (save the lemon for serving if desired).",
+    "Microwave the basmati rice with quinoa pouch per pack directions to loosen (about 90 seconds).",
+    "Open the can/carton of crushed tomatoes.",
+    "In a large bowl, combine minced beef, warmed basmati rice with quinoa, chopped onion, chopped parsley, lemon zest, cumin, cinnamon, 1 teaspoon salt, and 1/2 teaspoon black pepper. Drizzle in 1 tablespoon olive oil and mix until evenly combined.",
+    "Spread the crushed tomatoes over the lined sheet pan to make a shallow sauce base. Season the tomatoes with a pinch of salt and black pepper.",
+    "Nestle pepper halves cut-side up on the tomato base. Fill each pepper evenly with the beef–rice mixture, mounding slightly.",
+    "Drizzle the tops lightly with 1 tablespoon olive oil. Cover the pan tightly with foil.",
+    "Bake covered for 35–40 minutes, until the peppers are tender and the filling is nearly cooked through.",
+    "Uncover and bake 10–15 minutes more to brown the tops and finish cooking (internal temp of beef reaches 71°C/160°F).",
+    "Rest 5 minutes. Spoon the tomato sauce over the peppers to serve. Optional: squeeze lemon wedges over the top."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "4 large",
+      "preparation": "halved lengthwise, seeds removed"
+    },
+    {
+      "core_item_name": "minced beef",
+      "quantity": "500 g",
+      "preparation": "raw"
+    },
+    {
+      "core_item_name": "basmati rice with quinoa",
+      "quantity": "1 pouch (250 g)",
+      "preparation": "microwaved to loosen"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested (wedges optional for serving)"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1/4 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 can/carton (400 g)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 1/4 teaspoons",
+      "preparation": "divided, or to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "3/4 teaspoon",
+      "preparation": "divided, or to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "4 large",
+      "preparation": "halved lengthwise, seeds removed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "minced beef",
+      "quantity": "500 g",
+      "preparation": "raw",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basmati rice with quinoa",
+      "quantity": "1 pouch (250 g)",
+      "preparation": "microwaved to loosen",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested (wedges optional for serving)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1/4 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 can/carton (400 g)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 1/4 teaspoons",
+      "preparation": "divided, or to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "3/4 teaspoon",
+      "preparation": "divided, or to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T151955Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T151753Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

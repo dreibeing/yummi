@@ -1,0 +1,277 @@
+{
+  "meal_id": "meal_20251126T162243Z_08_39d659",
+  "archetype_uid": "arch_FamLightJV_01",
+  "archetype_name": "Family Light & Fresh: Japanese and Vietnamese Weeknights",
+  "name": "Garlic-Lime Chicken & Veg Rice Noodles (Mild)",
+  "description": "Quick rice noodles tossed with tender chicken, bok choy, and crisp vegetables in a bright lime and rice vinegar finish. Light, fresh, and weeknight-fast.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Bring a large pot of water to a boil for noodles.",
+    "Trim excess fat from chicken thighs; slice into thin bite-size strips.",
+    "Slice bok choy (separate stems and leafy tops).",
+    "Peel and thinly slice carrots.",
+    "Slice bell pepper into thin strips.",
+    "Mince garlic.",
+    "Thinly slice spring onion.",
+    "Cut lime into wedges; set aside half for squeezing and half for serving.",
+    "Rinse and chop coriander and mint (optional garnish)."
+  ],
+  "cook_steps": [
+    "Cook rice noodles in boiling water according to package instructions until just tender; drain and rinse under cold water to stop cooking. Set aside.",
+    "Heat canola oil in a large skillet over medium-high heat.",
+    "Season chicken strips with salt and black pepper; add to the skillet and stir-fry until just cooked through and lightly browned, 4–6 minutes. Transfer to a bowl.",
+    "In the same skillet, add a small splash of canola oil if dry. Add garlic and bok choy stems; stir-fry 30 seconds.",
+    "Add carrots and bell pepper; stir-fry 2–3 minutes until crisp-tender.",
+    "Add bok choy leafy tops and spring onion; cook 1 minute until wilted.",
+    "Return chicken to the skillet. Add drained rice noodles.",
+    "Season with a big squeeze of lime and a splash of rice vinegar; toss to coat. Adjust salt and black pepper to taste.",
+    "Turn off heat. Sprinkle chopped coriander and mint if using. Serve with extra lime wedges."
+  ],
+  "instructions": [
+    "Bring a large pot of water to a boil for noodles.",
+    "Trim excess fat from chicken thighs; slice into thin bite-size strips.",
+    "Slice bok choy (separate stems and leafy tops).",
+    "Peel and thinly slice carrots.",
+    "Slice bell pepper into thin strips.",
+    "Mince garlic.",
+    "Thinly slice spring onion.",
+    "Cut lime into wedges; set aside half for squeezing and half for serving.",
+    "Rinse and chop coriander and mint (optional garnish).",
+    "Cook rice noodles in boiling water according to package instructions until just tender; drain and rinse under cold water to stop cooking. Set aside.",
+    "Heat canola oil in a large skillet over medium-high heat.",
+    "Season chicken strips with salt and black pepper; add to the skillet and stir-fry until just cooked through and lightly browned, 4–6 minutes. Transfer to a bowl.",
+    "In the same skillet, add a small splash of canola oil if dry. Add garlic and bok choy stems; stir-fry 30 seconds.",
+    "Add carrots and bell pepper; stir-fry 2–3 minutes until crisp-tender.",
+    "Add bok choy leafy tops and spring onion; cook 1 minute until wilted.",
+    "Return chicken to the skillet. Add drained rice noodles.",
+    "Season with a big squeeze of lime and a splash of rice vinegar; toss to coat. Adjust salt and black pepper to taste.",
+    "Turn off heat. Sprinkle chopped coriander and mint if using. Serve with extra lime wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "rice noodles",
+      "quantity": "12 oz",
+      "preparation": "cooked and rinsed"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1 lb",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "2 small heads",
+      "preparation": "stems and leaves separated, sliced"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "bell pepper",
+      "quantity": "1 large",
+      "preparation": "thin strips"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3 stalks",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2–3 tablespoons"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 teaspoon",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 teaspoon",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped (optional)"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped (optional)"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "for boiling noodles"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Japanese",
+      "Vietnamese"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowCalorie"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "rice noodles",
+      "quantity": "12 oz",
+      "preparation": "cooked and rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1 lb",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "2 small heads",
+      "preparation": "stems and leaves separated, sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell pepper",
+      "quantity": "1 large",
+      "preparation": "thin strips",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3 stalks",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2–3 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 teaspoon",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 teaspoon",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped (optional)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped (optional)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "for boiling noodles",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T162740Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T162243Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

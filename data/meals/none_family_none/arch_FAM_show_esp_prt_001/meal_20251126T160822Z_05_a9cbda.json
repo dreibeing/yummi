@@ -1,0 +1,255 @@
+{
+  "meal_id": "meal_20251126T160822Z_05_a9cbda",
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "archetype_name": "Family Weekend Showstopper: Spanish & Portuguese Feasts",
+  "name": "Grilled Picanha with Garlic Spanish Rice and Charred Peppers",
+  "description": "Showstopper family feast of juicy grilled picanha over garlicky Spanish rice with smoky charred peppers and lemon-parsley finish.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Pat dry the picanha steak and score the fat cap in a crosshatch (shallow cuts).",
+    "Season the picanha all over with salt, black pepper, and a light dusting of paprika.",
+    "Rinse the spanish rice under cold water until it runs mostly clear; drain well.",
+    "Slice bell peppers into thick strips; peel and slice onions; peel and finely chop garlic.",
+    "Roughly chop parsley; cut the lemon into wedges (reserve a little zest if desired).",
+    "Preheat Outdoor Grill to medium-high. Set oven to 220°C/425°F (for finishing peppers if needed).",
+    "Set a wide stovetop pot or deep skillet for rice over medium heat."
+  ],
+  "cook_steps": [
+    "Start peppers: Toss bell peppers and onions with olive oil, salt, and a pinch of paprika. Place on the grill in a grill basket or on a tray; cook until lightly charred and tender (10–15 minutes), turning occasionally. If needed, transfer to the oven to finish softening.",
+    "Render and sear picanha: Place picanha fat-side down on the grill over indirect-to-medium heat to render the fat (6–8 minutes), moving to avoid flare-ups. Flip and grill to desired doneness (approx. 8–12 minutes more for medium-rare), then rest on a board 10 minutes.",
+    "Start rice base: Add olive oil to the hot pot. Sauté onions with a pinch of salt until translucent (5 minutes). Stir in garlic and a pinch of paprika for 30 seconds.",
+    "Toast and simmer rice: Add drained spanish rice; stir 1–2 minutes to coat. Pour in white wine and simmer until mostly absorbed. Add chicken stock and bay leaves, bring to a gentle boil, then reduce to low, cover, and cook until rice is tender and liquid is absorbed (15–18 minutes).",
+    "Finish sides: Toss charred peppers and onions with a squeeze of lemon and half the chopped parsley. Keep warm.",
+    "Finish rice: Remove bay leaves; rest covered 5 minutes, then fluff. Stir in remaining parsley and a small squeeze of lemon (optional zest to taste).",
+    "Slice and serve: Slice picanha against the grain. Serve over the garlic Spanish rice with the charred peppers alongside. Finish with a light drizzle of olive oil and lemon wedges."
+  ],
+  "instructions": [
+    "Pat dry the picanha steak and score the fat cap in a crosshatch (shallow cuts).",
+    "Season the picanha all over with salt, black pepper, and a light dusting of paprika.",
+    "Rinse the spanish rice under cold water until it runs mostly clear; drain well.",
+    "Slice bell peppers into thick strips; peel and slice onions; peel and finely chop garlic.",
+    "Roughly chop parsley; cut the lemon into wedges (reserve a little zest if desired).",
+    "Preheat Outdoor Grill to medium-high. Set oven to 220°C/425°F (for finishing peppers if needed).",
+    "Set a wide stovetop pot or deep skillet for rice over medium heat.",
+    "Start peppers: Toss bell peppers and onions with olive oil, salt, and a pinch of paprika. Place on the grill in a grill basket or on a tray; cook until lightly charred and tender (10–15 minutes), turning occasionally. If needed, transfer to the oven to finish softening.",
+    "Render and sear picanha: Place picanha fat-side down on the grill over indirect-to-medium heat to render the fat (6–8 minutes), moving to avoid flare-ups. Flip and grill to desired doneness (approx. 8–12 minutes more for medium-rare), then rest on a board 10 minutes.",
+    "Start rice base: Add olive oil to the hot pot. Sauté onions with a pinch of salt until translucent (5 minutes). Stir in garlic and a pinch of paprika for 30 seconds.",
+    "Toast and simmer rice: Add drained spanish rice; stir 1–2 minutes to coat. Pour in white wine and simmer until mostly absorbed. Add chicken stock and bay leaves, bring to a gentle boil, then reduce to low, cover, and cook until rice is tender and liquid is absorbed (15–18 minutes).",
+    "Finish sides: Toss charred peppers and onions with a squeeze of lemon and half the chopped parsley. Keep warm.",
+    "Finish rice: Remove bay leaves; rest covered 5 minutes, then fluff. Stir in remaining parsley and a small squeeze of lemon (optional zest to taste).",
+    "Slice and serve: Slice picanha against the grain. Serve over the garlic Spanish rice with the charred peppers alongside. Finish with a light drizzle of olive oil and lemon wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "picanha steak",
+      "quantity": "1.2–1.5 kg",
+      "preparation": "fat cap scored"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2–3 tsp, divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1–2 tsp, divided",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 tsp, divided"
+    },
+    {
+      "core_item_name": "spanish rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4–6 tbsp, divided"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "5–6 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "3 1/2–4 cups",
+      "preparation": "warm"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "3 large",
+      "preparation": "cut into thick strips"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "wedged (optional zest)"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Portuguese",
+      "Spanish"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "picanha steak",
+      "quantity": "1.2–1.5 kg",
+      "preparation": "fat cap scored",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2–3 tsp, divided",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1–2 tsp, divided",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 tsp, divided",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spanish rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4–6 tbsp, divided",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "5–6 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "3 1/2–4 cups",
+      "preparation": "warm",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "3 large",
+      "preparation": "cut into thick strips",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "wedged (optional zest)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T161201Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T160822Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "meal_id": "meal_20251126T153421Z_06_abaf96",
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "archetype_name": "Family Keto Weeknight Plates (Mild, 15–30, Simple)",
+  "name": "Za'atar Pork Chops with Roasted Green Beans and Lemon-Tahini Drizzle",
+  "description": "Seared pork chops finished with za'atar and lemon, served alongside oven-roasted green beans and a simple tahini drizzle. Keto-friendly, mild, and weeknight quick.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C/425°F and place a rimmed baking tray inside to preheat.",
+    "Trim green beans and pat dry.",
+    "Mince garlic.",
+    "Zest lemon, then cut and juice it (reserve 2 tablespoons juice).",
+    "Pat pork chops dry; season both sides with salt and black pepper.",
+    "In a small bowl, whisk tahini with 1 tablespoon lemon juice, 1 tablespoon olive oil, and a pinch of salt until smooth; adjust with a bit more lemon juice or olive oil to reach drizzle consistency."
+  ],
+  "cook_steps": [
+    "In a bowl, toss green beans with 1 tablespoon olive oil, half the minced garlic, a pinch of salt, and black pepper.",
+    "Spread green beans on the hot baking tray and roast for 12–15 minutes, tossing once, until tender-crisp and lightly browned.",
+    "While beans roast, heat 1 tablespoon olive oil in a large oven-safe skillet over medium-high heat.",
+    "Sear pork chops 3–4 minutes per side until well browned.",
+    "Sprinkle za'atar over the chops and add 1 tablespoon lemon juice to the pan; baste chops for 30 seconds. If chops are thick, transfer skillet to the oven for 3–5 minutes to finish (internal temp about 63°C/145°F).",
+    "Rest pork chops on a plate for 3–5 minutes. Return skillet to low heat with remaining minced garlic and 1 teaspoon olive oil if dry; warm 30 seconds.",
+    "Add roasted green beans and lemon zest to the skillet; toss to coat and season to taste with salt and black pepper.",
+    "Plate pork chops with green beans. Drizzle chops with the tahini sauce and sprinkle with chopped parsley."
+  ],
+  "instructions": [
+    "Heat oven to 220°C/425°F and place a rimmed baking tray inside to preheat.",
+    "Trim green beans and pat dry.",
+    "Mince garlic.",
+    "Zest lemon, then cut and juice it (reserve 2 tablespoons juice).",
+    "Pat pork chops dry; season both sides with salt and black pepper.",
+    "In a small bowl, whisk tahini with 1 tablespoon lemon juice, 1 tablespoon olive oil, and a pinch of salt until smooth; adjust with a bit more lemon juice or olive oil to reach drizzle consistency.",
+    "In a bowl, toss green beans with 1 tablespoon olive oil, half the minced garlic, a pinch of salt, and black pepper.",
+    "Spread green beans on the hot baking tray and roast for 12–15 minutes, tossing once, until tender-crisp and lightly browned.",
+    "While beans roast, heat 1 tablespoon olive oil in a large oven-safe skillet over medium-high heat.",
+    "Sear pork chops 3–4 minutes per side until well browned.",
+    "Sprinkle za'atar over the chops and add 1 tablespoon lemon juice to the pan; baste chops for 30 seconds. If chops are thick, transfer skillet to the oven for 3–5 minutes to finish (internal temp about 63°C/145°F).",
+    "Rest pork chops on a plate for 3–5 minutes. Return skillet to low heat with remaining minced garlic and 1 teaspoon olive oil if dry; warm 30 seconds.",
+    "Add roasted green beans and lemon zest to the skillet; toss to coat and season to taste with salt and black pepper.",
+    "Plate pork chops with green beans. Drizzle chops with the tahini sauce and sprinkle with chopped parsley."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "pork chops",
+      "quantity": "4 chops (about 600–800 g total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "450 g / 1 lb",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "za'atar",
+      "quantity": "1–1.5 tablespoons",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "tahini",
+      "quantity": "3 tablespoons",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1–1.5 teaspoons",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Sesame"
+    ],
+    "NutritionFocus": [
+      "HighProtein",
+      "Keto",
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "pork chops",
+      "quantity": "4 chops (about 600–800 g total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "450 g / 1 lb",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "za'atar",
+      "quantity": "1–1.5 tablespoons",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tahini",
+      "quantity": "3 tablespoons",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1–1.5 teaspoons",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T153740Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T153421Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

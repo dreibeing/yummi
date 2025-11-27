@@ -1,0 +1,177 @@
+{
+  "meal_id": "meal_20251126T145833Z_10_db3051",
+  "archetype_uid": "arch_AFQB_2025_01",
+  "archetype_name": "Family AirFryer Quick Bites",
+  "name": "Air Fryer Honey Mustard Chicken Nugget Wraps with Sweet Potato Chips",
+  "description": "Crispy air-fried chicken nuggets and sweet potato chips bundled into quick honey mustard wraps. Mild, kid-friendly, and ready in minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat air fryer to 200°C/390°F for 3 minutes.",
+    "Slice tomato into thin rounds.",
+    "Shred lettuce and grate cheddar cheese if needed.",
+    "Lay out 4 wraps and have honey mustard ready.",
+    "Microwave the wraps for 15–20 seconds just before assembly to soften."
+  ],
+  "cook_steps": [
+    "Add sweet potato chips to one side of the air fryer basket and chicken nuggets to the other side in a single layer.",
+    "Air fry at 200°C/390°F for 10–12 minutes, shaking/turning halfway through, until nuggets are hot and crisp and chips are golden.",
+    "Season sweet potato chips with a pinch of salt and pepper if desired.",
+    "Fill each warm wrap with lettuce, tomato slices, a handful of cheddar cheese, and 4–5 chicken nuggets.",
+    "Drizzle honey mustard over the filling, roll up tightly, and slice in half.",
+    "Serve wraps with the sweet potato chips on the side."
+  ],
+  "instructions": [
+    "Preheat air fryer to 200°C/390°F for 3 minutes.",
+    "Slice tomato into thin rounds.",
+    "Shred lettuce and grate cheddar cheese if needed.",
+    "Lay out 4 wraps and have honey mustard ready.",
+    "Microwave the wraps for 15–20 seconds just before assembly to soften.",
+    "Add sweet potato chips to one side of the air fryer basket and chicken nuggets to the other side in a single layer.",
+    "Air fry at 200°C/390°F for 10–12 minutes, shaking/turning halfway through, until nuggets are hot and crisp and chips are golden.",
+    "Season sweet potato chips with a pinch of salt and pepper if desired.",
+    "Fill each warm wrap with lettuce, tomato slices, a handful of cheddar cheese, and 4–5 chicken nuggets.",
+    "Drizzle honey mustard over the filling, roll up tightly, and slice in half.",
+    "Serve wraps with the sweet potato chips on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken nuggets",
+      "quantity": "16–20 pieces (about 500 g)"
+    },
+    {
+      "core_item_name": "sweet potato chips",
+      "quantity": "400 g"
+    },
+    {
+      "core_item_name": "wraps",
+      "quantity": "4 large"
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "2 cups",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "tomato",
+      "quantity": "2 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1 cup",
+      "preparation": "grated"
+    },
+    {
+      "core_item_name": "honey mustard",
+      "quantity": "1/4 cup"
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "to taste",
+      "preparation": "optional"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "AirFryer",
+      "Microwave"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken nuggets",
+      "quantity": "16–20 pieces (about 500 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sweet potato chips",
+      "quantity": "400 g",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "wraps",
+      "quantity": "4 large",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "2 cups",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato",
+      "quantity": "2 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1 cup",
+      "preparation": "grated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey mustard",
+      "quantity": "1/4 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "to taste",
+      "preparation": "optional",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T150252Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T145833Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

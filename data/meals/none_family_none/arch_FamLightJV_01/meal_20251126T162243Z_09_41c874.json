@@ -1,0 +1,288 @@
+{
+  "meal_id": "meal_20251126T162243Z_09_41c874",
+  "archetype_uid": "arch_FamLightJV_01",
+  "archetype_name": "Family Light & Fresh: Japanese and Vietnamese Weeknights",
+  "name": "Chicken & Herb Fresh Rice Paper Rolls with Lime-Garlic Dip (No Soy, No Nuts)",
+  "description": "Light Vietnamese-style fresh rolls with juicy chicken, crisp veggies, and fragrant herbs served with a tangy lime-garlic dip. Mild, fresh, and family-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Wash and dry romaine lettuce, mint, basil, cucumber, and carrots.",
+    "Shred or tear romaine lettuce into long strips.",
+    "Julienne cucumber and carrots into thin matchsticks.",
+    "Pick mint and basil leaves from stems.",
+    "Trim excess fat from chicken thighs and slice into thin strips.",
+    "Mince 3 cloves garlic; divide: 2 cloves for chicken, 1 clove for the dip.",
+    "Juice the lime.",
+    "Set a wide, microwave-safe bowl of water (about 6 cups) to heat in the microwave until very warm (not boiling), 2–3 minutes.",
+    "Place rice paper wrappers, herbs, veggies, and a clean board or damp kitchen towel at your rolling station."
+  ],
+  "cook_steps": [
+    "Cook the rice vermicelli: Place in a pot, cover with boiling water, and cook per pack (usually 3–4 minutes) until tender; drain and rinse under cold water.",
+    "Cook the chicken: Heat canola oil in a large skillet over medium-high. Add chicken, 2 minced garlic cloves, a pinch of salt, and black pepper. Stir-fry 5–7 minutes until cooked through; set aside to cool slightly.",
+    "Make the dip: In a small bowl, combine lime juice, rice vinegar, honey, 1 minced garlic clove, a pinch of salt, and 2–3 tablespoons water. Adjust to taste with more water for milder acidity.",
+    "Assemble rolls (work one at a time): Dip a rice paper wrapper in the warm water for 5–10 seconds and lay it on the board.",
+    "Layer a small handful of lettuce, a few mint and basil leaves, some cucumber and carrots, a small bundle of vermicelli, and a few strips of chicken in the lower third of the wrapper.",
+    "Roll: Fold the sides over, then roll up tightly from the bottom to seal. Repeat with remaining wrappers and fillings.",
+    "Serve the fresh rolls with the lime-garlic dip."
+  ],
+  "instructions": [
+    "Wash and dry romaine lettuce, mint, basil, cucumber, and carrots.",
+    "Shred or tear romaine lettuce into long strips.",
+    "Julienne cucumber and carrots into thin matchsticks.",
+    "Pick mint and basil leaves from stems.",
+    "Trim excess fat from chicken thighs and slice into thin strips.",
+    "Mince 3 cloves garlic; divide: 2 cloves for chicken, 1 clove for the dip.",
+    "Juice the lime.",
+    "Set a wide, microwave-safe bowl of water (about 6 cups) to heat in the microwave until very warm (not boiling), 2–3 minutes.",
+    "Place rice paper wrappers, herbs, veggies, and a clean board or damp kitchen towel at your rolling station.",
+    "Cook the rice vermicelli: Place in a pot, cover with boiling water, and cook per pack (usually 3–4 minutes) until tender; drain and rinse under cold water.",
+    "Cook the chicken: Heat canola oil in a large skillet over medium-high. Add chicken, 2 minced garlic cloves, a pinch of salt, and black pepper. Stir-fry 5–7 minutes until cooked through; set aside to cool slightly.",
+    "Make the dip: In a small bowl, combine lime juice, rice vinegar, honey, 1 minced garlic clove, a pinch of salt, and 2–3 tablespoons water. Adjust to taste with more water for milder acidity.",
+    "Assemble rolls (work one at a time): Dip a rice paper wrapper in the warm water for 5–10 seconds and lay it on the board.",
+    "Layer a small handful of lettuce, a few mint and basil leaves, some cucumber and carrots, a small bundle of vermicelli, and a few strips of chicken in the lower third of the wrapper.",
+    "Roll: Fold the sides over, then roll up tightly from the bottom to seal. Repeat with remaining wrappers and fillings.",
+    "Serve the fresh rolls with the lime-garlic dip."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "rice paper wrappers",
+      "quantity": "12–16 wrappers",
+      "preparation": "for rolling"
+    },
+    {
+      "core_item_name": "rice vermicelli",
+      "quantity": "150 g",
+      "preparation": "cooked and rinsed"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "500 g",
+      "preparation": "sliced into thin strips"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 tablespoon",
+      "preparation": "for stir-frying"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced, divided"
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "4 cups",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "julienned"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "julienned"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1 cup",
+      "preparation": "leaves picked"
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "1 cup",
+      "preparation": "leaves picked"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1 large",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tablespoons",
+      "preparation": "for dip"
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1–2 teaspoons",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "for seasoning"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "for seasoning"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": "for soaking wrappers and thinning dip"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Japanese",
+      "Vietnamese"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowCalorie"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "rice paper wrappers",
+      "quantity": "12–16 wrappers",
+      "preparation": "for rolling",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vermicelli",
+      "quantity": "150 g",
+      "preparation": "cooked and rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "500 g",
+      "preparation": "sliced into thin strips",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 tablespoon",
+      "preparation": "for stir-frying",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "4 cups",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "julienned",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "julienned",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1 cup",
+      "preparation": "leaves picked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "1 cup",
+      "preparation": "leaves picked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1 large",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tablespoons",
+      "preparation": "for dip",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1–2 teaspoons",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "for seasoning",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "for seasoning",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": "for soaking wrappers and thinning dip",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T162841Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T162243Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

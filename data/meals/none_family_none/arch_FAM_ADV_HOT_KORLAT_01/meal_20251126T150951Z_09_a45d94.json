@@ -1,0 +1,389 @@
+{
+  "meal_id": "meal_20251126T150951Z_09_a45d94",
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "archetype_name": "Family Heat Lovers: Korean & Latin American Feasts (Hot, 30–60, Advanced)",
+  "name": "Gochujang Chorizo Fried Rice with Habanero-Lime Cucumber Pickles and Sesame Cabbage Slaw",
+  "description": "Hot, from-scratch fried rice with chorizo and gochujang, served with quick habanero-lime cucumber pickles and a crisp sesame cabbage slaw. Multi-component, bold flavors for an advanced family cook.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 2 cups jasmine rice until water runs clear; drain.",
+    "Dice 300 g chorizo into small cubes.",
+    "Finely chop 1 onions, 3 garlic cloves, and 2 spring onion (whites and greens separated).",
+    "Dice 1 carrots and 1 bell peppers; finely chop 1 habanero peppers (seeds optional).",
+    "Slice 1 cucumber thinly for pickles; shred 1/2 head cabbage.",
+    "In a small bowl, whisk the fried-rice sauce: 2 tbsp gochujang, 2 tbsp soy sauce, 1 tbsp rice vinegar, 1 tsp sugar, 1 tsp sesame oil.",
+    "In another bowl, mix pickling liquid: 2 tbsp rice vinegar, juice of 1/2 lime, 1/2 tsp sugar, pinch of salt; add half the chopped habanero peppers.",
+    "Toss sliced cucumber in the pickling liquid; set aside.",
+    "For slaw, combine shredded cabbage with 1 tsp sesame oil, 1 tbsp rice vinegar, juice of 1/2 lime, pinch of salt, and 1 tsp sesame seeds.",
+    "Drain and rinse 1 cup black beans; set out 1 cup corn.",
+    "Beat 3 eggs with a pinch of salt."
+  ],
+  "cook_steps": [
+    "Cook rice: add rinsed jasmine rice and 2 1/4 cups water to a pot; bring to a boil, then cover and simmer on low until tender (12–15 min). Spread on a tray to steam off and cool 10 minutes.",
+    "Heat a large wok or skillet over medium-high; add 1 tbsp oil. Render and brown chorizo 4–5 minutes; remove to a bowl, leaving the fat in the pan.",
+    "Add beaten eggs; scramble just set, 30–60 seconds. Remove to the chorizo bowl.",
+    "Add 1 tbsp oil if needed; stir-fry onions, garlic, carrots, and bell peppers 3–4 minutes until crisp-tender.",
+    "Add corn and black beans; stir-fry 1 minute. Stir in remaining chopped habanero peppers for heat.",
+    "Add cooled rice; stir-fry 2–3 minutes, breaking up clumps.",
+    "Pour in the fried-rice sauce; toss until evenly coated and glossy, 1–2 minutes.",
+    "Return chorizo and eggs; add spring onion whites and half the greens. Toss 1 minute to heat through. Season with salt and pepper to taste.",
+    "Finish with 1 tsp sesame oil and 1 tsp sesame seeds. Remove from heat.",
+    "Serve fried rice topped with remaining spring onion greens. Plate with a side of sesame cabbage slaw and the habanero-lime cucumber pickles. Serve lime wedges if desired."
+  ],
+  "instructions": [
+    "Rinse 2 cups jasmine rice until water runs clear; drain.",
+    "Dice 300 g chorizo into small cubes.",
+    "Finely chop 1 onions, 3 garlic cloves, and 2 spring onion (whites and greens separated).",
+    "Dice 1 carrots and 1 bell peppers; finely chop 1 habanero peppers (seeds optional).",
+    "Slice 1 cucumber thinly for pickles; shred 1/2 head cabbage.",
+    "In a small bowl, whisk the fried-rice sauce: 2 tbsp gochujang, 2 tbsp soy sauce, 1 tbsp rice vinegar, 1 tsp sugar, 1 tsp sesame oil.",
+    "In another bowl, mix pickling liquid: 2 tbsp rice vinegar, juice of 1/2 lime, 1/2 tsp sugar, pinch of salt; add half the chopped habanero peppers.",
+    "Toss sliced cucumber in the pickling liquid; set aside.",
+    "For slaw, combine shredded cabbage with 1 tsp sesame oil, 1 tbsp rice vinegar, juice of 1/2 lime, pinch of salt, and 1 tsp sesame seeds.",
+    "Drain and rinse 1 cup black beans; set out 1 cup corn.",
+    "Beat 3 eggs with a pinch of salt.",
+    "Cook rice: add rinsed jasmine rice and 2 1/4 cups water to a pot; bring to a boil, then cover and simmer on low until tender (12–15 min). Spread on a tray to steam off and cool 10 minutes.",
+    "Heat a large wok or skillet over medium-high; add 1 tbsp oil. Render and brown chorizo 4–5 minutes; remove to a bowl, leaving the fat in the pan.",
+    "Add beaten eggs; scramble just set, 30–60 seconds. Remove to the chorizo bowl.",
+    "Add 1 tbsp oil if needed; stir-fry onions, garlic, carrots, and bell peppers 3–4 minutes until crisp-tender.",
+    "Add corn and black beans; stir-fry 1 minute. Stir in remaining chopped habanero peppers for heat.",
+    "Add cooled rice; stir-fry 2–3 minutes, breaking up clumps.",
+    "Pour in the fried-rice sauce; toss until evenly coated and glossy, 1–2 minutes.",
+    "Return chorizo and eggs; add spring onion whites and half the greens. Toss 1 minute to heat through. Season with salt and pepper to taste.",
+    "Finish with 1 tsp sesame oil and 1 tsp sesame seeds. Remove from heat.",
+    "Serve fried rice topped with remaining spring onion greens. Plate with a side of sesame cabbage slaw and the habanero-lime cucumber pickles. Serve lime wedges if desired."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 1/4 cups"
+    },
+    {
+      "core_item_name": "chorizo",
+      "quantity": "300 g",
+      "preparation": "diced small"
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "3",
+      "preparation": "beaten with a pinch of salt"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "1 small",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 small",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "1 cup",
+      "preparation": "kernels"
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 cup",
+      "preparation": "drained and rinsed"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "whites and greens separated, sliced"
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "2 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "2 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 1/2 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "habanero peppers",
+      "quantity": "1",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 head",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "2 tbsp",
+      "preparation": "for stir-frying"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Korean",
+      "LatinAmerican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Hot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 1/4 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chorizo",
+      "quantity": "300 g",
+      "preparation": "diced small",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "3",
+      "preparation": "beaten with a pinch of salt",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "1 small",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 small",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "1 cup",
+      "preparation": "kernels",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 cup",
+      "preparation": "drained and rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "whites and greens separated, sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "2 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "2 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 1/2 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero peppers",
+      "quantity": "1",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 head",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "2 tbsp",
+      "preparation": "for stir-frying",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [
+    "Category 'MealComponentPreference' ideally includes 2+ tags; received ['FromScratch']"
+  ],
+  "metadata": {
+    "created_at": "20251126T151704Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T150951Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

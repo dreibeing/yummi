@@ -1,0 +1,284 @@
+{
+  "meal_id": "meal_20251126T165451Z_06_9fbfaa",
+  "archetype_uid": "arch_SA_BraaiPotjie_Adv60",
+  "archetype_name": "Family Weekend Advanced: South African Braai & Potjie",
+  "name": "Braaied Lamb Chops with Oven Pap Tart, Chakalaka, and Mint Yoghurt",
+  "description": "Flame-grilled lamb chops finished with a cool mint yoghurt, served alongside a cheese-topped oven pap tart and warm chakalaka. A classic South African braai with a Greek-leaning sauce touch.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Light a medium-hot braai fire; allow coals to form.",
+    "Preheat oven to 200°C (390°F). Grease a medium baking dish.",
+    "Trim excess fat from lamb chops if needed. Pat dry.",
+    "In a bowl, combine olive oil, crushed garlic, chopped rosemary, chilli flakes, salt, and black pepper. Rub over lamb chops and marinate 20–30 minutes.",
+    "Finely chop the onion.",
+    "Grate the cheddar.",
+    "Beat the eggs in a small bowl.",
+    "Set out chakalaka and mint yoghurt dressing to serve.",
+    "Bring a large pot and whisk to the stovetop for pap (you’ll need water and a pinch of salt from the pantry)."
+  ],
+  "cook_steps": [
+    "Make the pap: Bring salted water to a boil, whisk in maize meal gradually to avoid lumps, then lower heat and cook, stirring, until thick and smooth (10–15 minutes).",
+    "Stir in butter and half the cheddar. Remove from heat and let cool 2–3 minutes, then quickly whisk in the beaten eggs.",
+    "Spread the pap mixture into the greased baking dish, top with the remaining cheddar, and bake until set and golden at the edges (25–30 minutes).",
+    "While pap bakes, place a small pan on the braai or stovetop with a knob of butter and gently cook the chopped onion until soft and lightly golden (5–7 minutes). Keep warm to spoon over pap when serving (optional).",
+    "Braai the lamb chops over medium-hot coals, turning every 2–3 minutes, until nicely browned and cooked to your liking (about 8–12 minutes total for medium).",
+    "Rest lamb chops on a tray, loosely covered, for 5–10 minutes.",
+    "Warm the chakalaka in a small pot on the braai grid or stovetop until hot, stirring occasionally (3–5 minutes).",
+    "Cut the pap tart into squares. Top with the sautéed onions if using.",
+    "Serve lamb chops with a spoon of mint yoghurt dressing, pap tart squares, and warm chakalaka."
+  ],
+  "instructions": [
+    "Light a medium-hot braai fire; allow coals to form.",
+    "Preheat oven to 200°C (390°F). Grease a medium baking dish.",
+    "Trim excess fat from lamb chops if needed. Pat dry.",
+    "In a bowl, combine olive oil, crushed garlic, chopped rosemary, chilli flakes, salt, and black pepper. Rub over lamb chops and marinate 20–30 minutes.",
+    "Finely chop the onion.",
+    "Grate the cheddar.",
+    "Beat the eggs in a small bowl.",
+    "Set out chakalaka and mint yoghurt dressing to serve.",
+    "Bring a large pot and whisk to the stovetop for pap (you’ll need water and a pinch of salt from the pantry).",
+    "Make the pap: Bring salted water to a boil, whisk in maize meal gradually to avoid lumps, then lower heat and cook, stirring, until thick and smooth (10–15 minutes).",
+    "Stir in butter and half the cheddar. Remove from heat and let cool 2–3 minutes, then quickly whisk in the beaten eggs.",
+    "Spread the pap mixture into the greased baking dish, top with the remaining cheddar, and bake until set and golden at the edges (25–30 minutes).",
+    "While pap bakes, place a small pan on the braai or stovetop with a knob of butter and gently cook the chopped onion until soft and lightly golden (5–7 minutes). Keep warm to spoon over pap when serving (optional).",
+    "Braai the lamb chops over medium-hot coals, turning every 2–3 minutes, until nicely browned and cooked to your liking (about 8–12 minutes total for medium).",
+    "Rest lamb chops on a tray, loosely covered, for 5–10 minutes.",
+    "Warm the chakalaka in a small pot on the braai grid or stovetop until hot, stirring occasionally (3–5 minutes).",
+    "Cut the pap tart into squares. Top with the sautéed onions if using.",
+    "Serve lamb chops with a spoon of mint yoghurt dressing, pap tart squares, and warm chakalaka."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "braai wood",
+      "quantity": "enough for a steady 60–90 minute fire"
+    },
+    {
+      "core_item_name": "lamb chops",
+      "quantity": "1.2–1.5 kg"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "crushed"
+    },
+    {
+      "core_item_name": "rosemary",
+      "quantity": "1 tbsp",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1–1.5 tsp"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "maize meal",
+      "quantity": "2 cups"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "3 tbsp + 1 tbsp",
+      "preparation": "divided (pap and onion sauté)"
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "1 cup"
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "2",
+      "preparation": "beaten"
+    },
+    {
+      "core_item_name": "cheddar",
+      "quantity": "1.5 cups",
+      "preparation": "grated"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "chakalaka",
+      "quantity": "400 g"
+    },
+    {
+      "core_item_name": "mint yoghurt dressing",
+      "quantity": "1/2 cup"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Egg"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "braai wood",
+      "quantity": "enough for a steady 60–90 minute fire",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lamb chops",
+      "quantity": "1.2–1.5 kg",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "crushed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rosemary",
+      "quantity": "1 tbsp",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1–1.5 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "maize meal",
+      "quantity": "2 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "3 tbsp + 1 tbsp",
+      "preparation": "divided (pap and onion sauté)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "2",
+      "preparation": "beaten",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cheddar",
+      "quantity": "1.5 cups",
+      "preparation": "grated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chakalaka",
+      "quantity": "400 g",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint yoghurt dressing",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T165854Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T165451Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

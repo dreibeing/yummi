@@ -1,0 +1,361 @@
+{
+  "meal_id": "meal_20251126T160822Z_03_8af9ad",
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "archetype_name": "Family Weekend Showstopper: Spanish & Portuguese Feasts",
+  "name": "Portuguese Caldeirada de Peixe (Iberian Fisherman’s Stew) with Garlic Toasts",
+  "description": "Layered Portuguese seafood stew with potatoes, peppers, and saffron in a rich fish broth, finished with fresh parsley and lemon. Served with crisp oven-toasted sourdough and aioli for dipping.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Preheat oven to 200°C/400°F.",
+    "Slice 2 large onions into thin half-moons.",
+    "Slice 6 cloves garlic thinly; reserve 1 clove for the toasts.",
+    "Slice 2 bell peppers into strips.",
+    "Peel and slice 800 g potatoes into 1 cm rounds; rinse under cold water.",
+    "Cut 600 g fish fillets into large 4–5 cm chunks.",
+    "Slice 300 g squid into 1 cm rings.",
+    "Rinse 500 g mussels under cold water; discard any broken shells (if using ready-cooked, just drain).",
+    "Pat dry 400 g prawns.",
+    "Chop a small bunch of parsley; cut 1 lemon into wedges.",
+    "Slice sourdough bread into 12–16 slices; lightly brush with olive oil."
+  ],
+  "cook_steps": [
+    "Heat 3 tbsp olive oil in a wide heavy pot over medium heat (StoveTop).",
+    "Soften onions with a pinch of salt for 8–10 min until translucent.",
+    "Stir in sliced garlic (reserve 1 clove for toast), bell peppers, and cook 4–5 min.",
+    "Add 1 can (400 g) diced tomatoes, 2 bay leaves, a pinch of saffron, 1 tsp black pepper, and 1.5 tsp salt; cook 3 min.",
+    "Pour in 250 ml white wine; simmer 3–4 min to reduce slightly.",
+    "Stir 2 tbsp fish stock concentrate into 1.2 liters water; add to the pot and bring to a gentle boil.",
+    "Layer potato slices into the pot so they are mostly submerged; reduce to a steady simmer, cover, and cook 15–18 min until potatoes are just tender.",
+    "Uncover; tuck in fish fillets and squid. Simmer gently 5 min.",
+    "Add mussels and prawns in an even layer. Cover and cook 5–7 min until mussels open and prawns are opaque. Discard any mussels that do not open.",
+    "Taste broth; adjust salt and black pepper as needed. Stir through most of the chopped parsley.",
+    "While seafood finishes, place oiled sourdough slices on a tray and bake 8–10 min at 200°C/400°F until golden (Oven). Rub the hot toasts with the reserved raw garlic clove.",
+    "Ladle the stew into a large serving bowl. Top with remaining parsley and serve with lemon wedges, garlic toasts, and aioli on the side."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C/400°F.",
+    "Slice 2 large onions into thin half-moons.",
+    "Slice 6 cloves garlic thinly; reserve 1 clove for the toasts.",
+    "Slice 2 bell peppers into strips.",
+    "Peel and slice 800 g potatoes into 1 cm rounds; rinse under cold water.",
+    "Cut 600 g fish fillets into large 4–5 cm chunks.",
+    "Slice 300 g squid into 1 cm rings.",
+    "Rinse 500 g mussels under cold water; discard any broken shells (if using ready-cooked, just drain).",
+    "Pat dry 400 g prawns.",
+    "Chop a small bunch of parsley; cut 1 lemon into wedges.",
+    "Slice sourdough bread into 12–16 slices; lightly brush with olive oil.",
+    "Heat 3 tbsp olive oil in a wide heavy pot over medium heat (StoveTop).",
+    "Soften onions with a pinch of salt for 8–10 min until translucent.",
+    "Stir in sliced garlic (reserve 1 clove for toast), bell peppers, and cook 4–5 min.",
+    "Add 1 can (400 g) diced tomatoes, 2 bay leaves, a pinch of saffron, 1 tsp black pepper, and 1.5 tsp salt; cook 3 min.",
+    "Pour in 250 ml white wine; simmer 3–4 min to reduce slightly.",
+    "Stir 2 tbsp fish stock concentrate into 1.2 liters water; add to the pot and bring to a gentle boil.",
+    "Layer potato slices into the pot so they are mostly submerged; reduce to a steady simmer, cover, and cook 15–18 min until potatoes are just tender.",
+    "Uncover; tuck in fish fillets and squid. Simmer gently 5 min.",
+    "Add mussels and prawns in an even layer. Cover and cook 5–7 min until mussels open and prawns are opaque. Discard any mussels that do not open.",
+    "Taste broth; adjust salt and black pepper as needed. Stir through most of the chopped parsley.",
+    "While seafood finishes, place oiled sourdough slices on a tray and bake 8–10 min at 200°C/400°F until golden (Oven). Rub the hot toasts with the reserved raw garlic clove.",
+    "Ladle the stew into a large serving bowl. Top with remaining parsley and serve with lemon wedges, garlic toasts, and aioli on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp plus extra for brushing",
+      "preparation": "for stew and toasts"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "7 cloves",
+      "preparation": "6 sliced, 1 whole for rubbing toasts"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "seeded and sliced"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "800 g",
+      "preparation": "peeled, 1 cm slices"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (400 g)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "1 large pinch",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp, plus to taste",
+      "preparation": "freshly ground if possible"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp, plus to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "250 ml",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "fish stock concentrate",
+      "quantity": "2 tbsp",
+      "preparation": "dissolved in water"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1.2 liters",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "600 g",
+      "preparation": "cut into 4–5 cm chunks"
+    },
+    {
+      "core_item_name": "squid",
+      "quantity": "300 g",
+      "preparation": "cut into 1 cm rings"
+    },
+    {
+      "core_item_name": "mussels",
+      "quantity": "500 g",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "prawns",
+      "quantity": "400 g",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1 small bunch",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "sourdough bread",
+      "quantity": "1 loaf",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "aioli",
+      "quantity": "1/2 cup",
+      "preparation": "for serving"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Portuguese",
+      "Spanish"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp plus extra for brushing",
+      "preparation": "for stew and toasts",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "7 cloves",
+      "preparation": "6 sliced, 1 whole for rubbing toasts",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "seeded and sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "800 g",
+      "preparation": "peeled, 1 cm slices",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (400 g)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "1 large pinch",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp, plus to taste",
+      "preparation": "freshly ground if possible",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp, plus to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "250 ml",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "fish stock concentrate",
+      "quantity": "2 tbsp",
+      "preparation": "dissolved in water",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1.2 liters",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "600 g",
+      "preparation": "cut into 4–5 cm chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "squid",
+      "quantity": "300 g",
+      "preparation": "cut into 1 cm rings",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mussels",
+      "quantity": "500 g",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "prawns",
+      "quantity": "400 g",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1 small bunch",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sourdough bread",
+      "quantity": "1 loaf",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "aioli",
+      "quantity": "1/2 cup",
+      "preparation": "for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T161026Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T160822Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

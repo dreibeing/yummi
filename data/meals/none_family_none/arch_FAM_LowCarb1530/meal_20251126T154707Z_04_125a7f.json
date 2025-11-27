@@ -1,0 +1,246 @@
+{
+  "meal_id": "meal_20251126T154707Z_04_125a7f",
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "archetype_name": "Family Low-Carb Weeknight Bowls & Wraps (15–30, Mild)",
+  "name": "Mild Turkey Taco Lettuce Wraps with Roasted Peppers & Onions",
+  "description": "Low-carb turkey taco lettuce wraps with oven-roasted peppers and onions, mild seasoning, and fresh avocado and salsa. Easy family weeknight handhelds with bright, familiar flavors.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F.",
+    "Slice onions and peppers into thin strips.",
+    "In a small bowl, mix ground cumin, paprika, garlic powder, salt, and black pepper.",
+    "Separate and rinse romaine lettuce leaves; pat dry.",
+    "Halve, pit, and dice avocado; squeeze lime over the avocado to prevent browning.",
+    "Grate or shred cheddar cheese if not pre-shredded."
+  ],
+  "cook_steps": [
+    "On a sheet pan, toss sliced onions and peppers with half the olive oil and half the spice mix. Spread in a single layer and roast for 12–15 minutes until tender with light browning.",
+    "While vegetables roast, heat a large skillet over medium-high heat with the remaining olive oil. Add turkey and cook, breaking it up, for 6–8 minutes until no longer pink.",
+    "Sprinkle the remaining spice mix over the turkey and stir for 1 minute to coat evenly. Reduce heat to low to keep warm.",
+    "Assemble wraps: place 2 romaine leaves per person on plates. Fill with spiced turkey, roasted peppers and onions, avocado, a spoon of salsa, and a sprinkle of cheddar cheese.",
+    "Serve immediately with extra lime wedges if desired."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F.",
+    "Slice onions and peppers into thin strips.",
+    "In a small bowl, mix ground cumin, paprika, garlic powder, salt, and black pepper.",
+    "Separate and rinse romaine lettuce leaves; pat dry.",
+    "Halve, pit, and dice avocado; squeeze lime over the avocado to prevent browning.",
+    "Grate or shred cheddar cheese if not pre-shredded.",
+    "On a sheet pan, toss sliced onions and peppers with half the olive oil and half the spice mix. Spread in a single layer and roast for 12–15 minutes until tender with light browning.",
+    "While vegetables roast, heat a large skillet over medium-high heat with the remaining olive oil. Add turkey and cook, breaking it up, for 6–8 minutes until no longer pink.",
+    "Sprinkle the remaining spice mix over the turkey and stir for 1 minute to coat evenly. Reduce heat to low to keep warm.",
+    "Assemble wraps: place 2 romaine leaves per person on plates. Fill with spiced turkey, roasted peppers and onions, avocado, a spoon of salsa, and a sprinkle of cheddar cheese.",
+    "Serve immediately with extra lime wedges if desired."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "500 g",
+      "preparation": "minced or finely chopped"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "peppers",
+      "quantity": "2 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1.5 teaspoons"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "garlic powder",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "3/4 teaspoon"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "12–16 large leaves",
+      "preparation": "rinsed and dried"
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "juiced over avocado; wedges optional"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup"
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1/2 cup",
+      "preparation": "shredded"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "500 g",
+      "preparation": "minced or finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peppers",
+      "quantity": "2 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1.5 teaspoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic powder",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "3/4 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "12–16 large leaves",
+      "preparation": "rinsed and dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "juiced over avocado; wedges optional",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1/2 cup",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T154918Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T154707Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

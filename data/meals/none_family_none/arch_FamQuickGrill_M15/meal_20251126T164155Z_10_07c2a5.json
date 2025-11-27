@@ -1,0 +1,213 @@
+{
+  "meal_id": "meal_20251126T164155Z_10_07c2a5",
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "archetype_name": "Family Quick Grill & Salad Nights (Mild, 15–30)",
+  "name": "Grilled Pork Chops with Tangy Slaw and Quick Pap",
+  "description": "Juicy, mildly spiced pork chops grilled on the braai, served with a crunchy cabbage-carrot slaw and a quick maize meal pap side. A fast family grill plate with simple, familiar flavors.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat OutdoorGrill to medium-high heat.",
+    "Shred cabbage (about 4 cups) and grate carrots (about 2 cups).",
+    "In a bowl, whisk mayonnaise, apple cider vinegar, honey mustard, a pinch of salt, and black pepper for the slaw dressing.",
+    "Pat pork chops dry; rub with olive oil and braai spice mix on both sides.",
+    "Bring 4 cups water and 1/2 teaspoon salt to a boil in a medium pot for pap."
+  ],
+  "cook_steps": [
+    "Start pap: Whisk in maize meal gradually into the boiling water, reduce to low, cover, and cook 15–20 minutes, stirring once or twice until thick and creamy.",
+    "Grill pork chops 4–5 minutes per side with the lid closed until cooked through and lightly charred (internal temp 63°C/145°F). Rest 5 minutes.",
+    "Toss cabbage and carrots with the prepared dressing. Taste and adjust salt and black pepper.",
+    "Fluff pap with a spoon. Plate pap, add pork chops, and serve with a generous side of slaw."
+  ],
+  "instructions": [
+    "Preheat OutdoorGrill to medium-high heat.",
+    "Shred cabbage (about 4 cups) and grate carrots (about 2 cups).",
+    "In a bowl, whisk mayonnaise, apple cider vinegar, honey mustard, a pinch of salt, and black pepper for the slaw dressing.",
+    "Pat pork chops dry; rub with olive oil and braai spice mix on both sides.",
+    "Bring 4 cups water and 1/2 teaspoon salt to a boil in a medium pot for pap.",
+    "Start pap: Whisk in maize meal gradually into the boiling water, reduce to low, cover, and cook 15–20 minutes, stirring once or twice until thick and creamy.",
+    "Grill pork chops 4–5 minutes per side with the lid closed until cooked through and lightly charred (internal temp 63°C/145°F). Rest 5 minutes.",
+    "Toss cabbage and carrots with the prepared dressing. Taste and adjust salt and black pepper.",
+    "Fluff pap with a spoon. Plate pap, add pork chops, and serve with a generous side of slaw."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "pork chops",
+      "quantity": "4 chops (about 700–800 g total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "braai spice mix",
+      "quantity": "1–2 tablespoons",
+      "preparation": "rub on chops"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "coat chops"
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 medium (about 4 cups shredded)",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "grated"
+    },
+    {
+      "core_item_name": "mayonnaise",
+      "quantity": "3 tablespoons",
+      "preparation": "for slaw dressing"
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tablespoon",
+      "preparation": "for slaw dressing"
+    },
+    {
+      "core_item_name": "honey mustard",
+      "quantity": "1 tablespoon",
+      "preparation": "for slaw dressing"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "divided, to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "maize meal",
+      "quantity": "1 cup (dry)",
+      "preparation": "for pap"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "pork chops",
+      "quantity": "4 chops (about 700–800 g total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "braai spice mix",
+      "quantity": "1–2 tablespoons",
+      "preparation": "rub on chops",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "coat chops",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 medium (about 4 cups shredded)",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "grated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mayonnaise",
+      "quantity": "3 tablespoons",
+      "preparation": "for slaw dressing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tablespoon",
+      "preparation": "for slaw dressing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey mustard",
+      "quantity": "1 tablespoon",
+      "preparation": "for slaw dressing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "divided, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "maize meal",
+      "quantity": "1 cup (dry)",
+      "preparation": "for pap",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T164837Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T164155Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

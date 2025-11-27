@@ -1,0 +1,220 @@
+{
+  "meal_id": "meal_20251126T164837Z_05_06de32",
+  "archetype_uid": "arch_FamWeeknightCore_15to30",
+  "archetype_name": "Family Weeknight Classics (Mild, 15–30 min)",
+  "name": "Creamy Chicken Alfredo Linguine with Roasted Broccoli",
+  "description": "Family-friendly Alfredo-style chicken pasta with a quick roasted broccoli side. Mild, comforting, and ready in about 25 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C (425°F).",
+    "Bring a large pot of salted water to a boil for the pasta.",
+    "Cut broccoli into bite-size florets.",
+    "Cut chicken thigh fillets into 2–3 cm pieces; pat dry.",
+    "Peel and finely chop garlic.",
+    "Finely grate parmesan cheese.",
+    "Cut lemon into wedges."
+  ],
+  "cook_steps": [
+    "Toss broccoli with 1 tbsp olive oil, a pinch of salt, and pepper on a baking tray; roast 12–15 minutes until tender and lightly browned.",
+    "Add linguine to boiling water; cook until al dente (pack time), reserving 1 cup pasta water. Drain.",
+    "Meanwhile, heat 1 tbsp olive oil in a large skillet over medium-high heat. Season chicken with salt and pepper; cook 5–6 minutes, stirring, until cooked through and lightly browned.",
+    "Reduce heat to medium. Add garlic; cook 30 seconds until fragrant.",
+    "Stir in white sauce and cream; simmer 2–3 minutes, loosening with splashes of reserved pasta water as needed to make a silky sauce.",
+    "Add drained linguine to the skillet; toss with parmesan cheese until coated and creamy. Adjust salt and pepper to taste; add more pasta water if needed.",
+    "Squeeze a wedge of lemon over the pasta to brighten.",
+    "Serve pasta in bowls with roasted broccoli on the side. Offer extra lemon wedges at the table."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C (425°F).",
+    "Bring a large pot of salted water to a boil for the pasta.",
+    "Cut broccoli into bite-size florets.",
+    "Cut chicken thigh fillets into 2–3 cm pieces; pat dry.",
+    "Peel and finely chop garlic.",
+    "Finely grate parmesan cheese.",
+    "Cut lemon into wedges.",
+    "Toss broccoli with 1 tbsp olive oil, a pinch of salt, and pepper on a baking tray; roast 12–15 minutes until tender and lightly browned.",
+    "Add linguine to boiling water; cook until al dente (pack time), reserving 1 cup pasta water. Drain.",
+    "Meanwhile, heat 1 tbsp olive oil in a large skillet over medium-high heat. Season chicken with salt and pepper; cook 5–6 minutes, stirring, until cooked through and lightly browned.",
+    "Reduce heat to medium. Add garlic; cook 30 seconds until fragrant.",
+    "Stir in white sauce and cream; simmer 2–3 minutes, loosening with splashes of reserved pasta water as needed to make a silky sauce.",
+    "Add drained linguine to the skillet; toss with parmesan cheese until coated and creamy. Adjust salt and pepper to taste; add more pasta water if needed.",
+    "Squeeze a wedge of lemon over the pasta to brighten.",
+    "Serve pasta in bowls with roasted broccoli on the side. Offer extra lemon wedges at the table."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "linguine",
+      "quantity": "400 g"
+    },
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "600 g",
+      "preparation": "cut into bite-size pieces"
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "500 g",
+      "preparation": "cut into florets"
+    },
+    {
+      "core_item_name": "white sauce",
+      "quantity": "1 cup (240 ml)"
+    },
+    {
+      "core_item_name": "cream",
+      "quantity": "1/2 cup (120 ml)"
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "3/4 cup",
+      "preparation": "finely grated"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "linguine",
+      "quantity": "400 g",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "600 g",
+      "preparation": "cut into bite-size pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "500 g",
+      "preparation": "cut into florets",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white sauce",
+      "quantity": "1 cup (240 ml)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cream",
+      "quantity": "1/2 cup (120 ml)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "3/4 cup",
+      "preparation": "finely grated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T165124Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T164837Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

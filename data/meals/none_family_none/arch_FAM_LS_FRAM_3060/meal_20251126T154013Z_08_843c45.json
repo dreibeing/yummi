@@ -1,0 +1,284 @@
+{
+  "meal_id": "meal_20251126T154013Z_08_843c45",
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "archetype_name": "Family Low-Sodium American & French Comfort (30–60, Mild)",
+  "name": "Mini Turkey-Quinoa Meatloaves with Garlic Mash and Roasted Broccoli",
+  "description": "Family-friendly mini meatloaves bound with quinoa and herbs, glazed with a tomato-vinegar mix, served with creamy low-sodium garlic mashed potatoes and roasted broccoli. Mild flavors and classic comfort with mindful salt control.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 400°F (205°C). Line a sheet pan with parchment.",
+    "Rinse 1 cup quinoa under cold water in a fine sieve.",
+    "Peel and quarter 2 lb potatoes; peel 4 cloves garlic.",
+    "Finely dice 1 medium onion; chop 2 tbsp parsley.",
+    "Cut 1 large head broccoli into florets.",
+    "In a small bowl, mix 3 tbsp tomato paste, 1 tbsp apple cider vinegar, and 1 tsp maple syrup for the glaze."
+  ],
+  "cook_steps": [
+    "Cook quinoa: Add rinsed quinoa and 2 cups water to a saucepan; bring to a boil, reduce to low, cover, and simmer 15 minutes until tender. Fluff and cool 5 minutes.",
+    "Start potatoes: Place potatoes and whole garlic in a pot, cover with water, bring to a boil, then simmer until very tender, 15–18 minutes.",
+    "Make meatloaf mix: In a bowl, combine 1.5 lb turkey, 1 cup cooked quinoa (use more if mixture seems wet), diced onion, parsley, 1 egg, 1 tbsp olive oil, and 1 tsp black pepper. Mix gently until just combined.",
+    "Form loaves: Divide into 8 oval mini loaves and set on the lined sheet pan. Brush tops with half the glaze.",
+    "Roast: Place loaves on upper rack and bake 20 minutes. Toss broccoli with 1 tbsp olive oil and 1/2 tsp black pepper on a second pan. Add broccoli to lower rack and roast 12–15 minutes until tender-crisp.",
+    "Glaze finish: Brush loaves with remaining glaze and roast 5–7 minutes more until cooked through (internal temp 165°F/74°C).",
+    "Mash potatoes: Drain potatoes and garlic well. Return to pot; add 3 tbsp butter, 1/2 cup milk, and 1/2 tsp black pepper. Mash until smooth and creamy; adjust milk to desired texture.",
+    "Serve: Plate two mini meatloaves per person with a scoop of garlic mash and roasted broccoli."
+  ],
+  "instructions": [
+    "Preheat oven to 400°F (205°C). Line a sheet pan with parchment.",
+    "Rinse 1 cup quinoa under cold water in a fine sieve.",
+    "Peel and quarter 2 lb potatoes; peel 4 cloves garlic.",
+    "Finely dice 1 medium onion; chop 2 tbsp parsley.",
+    "Cut 1 large head broccoli into florets.",
+    "In a small bowl, mix 3 tbsp tomato paste, 1 tbsp apple cider vinegar, and 1 tsp maple syrup for the glaze.",
+    "Cook quinoa: Add rinsed quinoa and 2 cups water to a saucepan; bring to a boil, reduce to low, cover, and simmer 15 minutes until tender. Fluff and cool 5 minutes.",
+    "Start potatoes: Place potatoes and whole garlic in a pot, cover with water, bring to a boil, then simmer until very tender, 15–18 minutes.",
+    "Make meatloaf mix: In a bowl, combine 1.5 lb turkey, 1 cup cooked quinoa (use more if mixture seems wet), diced onion, parsley, 1 egg, 1 tbsp olive oil, and 1 tsp black pepper. Mix gently until just combined.",
+    "Form loaves: Divide into 8 oval mini loaves and set on the lined sheet pan. Brush tops with half the glaze.",
+    "Roast: Place loaves on upper rack and bake 20 minutes. Toss broccoli with 1 tbsp olive oil and 1/2 tsp black pepper on a second pan. Add broccoli to lower rack and roast 12–15 minutes until tender-crisp.",
+    "Glaze finish: Brush loaves with remaining glaze and roast 5–7 minutes more until cooked through (internal temp 165°F/74°C).",
+    "Mash potatoes: Drain potatoes and garlic well. Return to pot; add 3 tbsp butter, 1/2 cup milk, and 1/2 tsp black pepper. Mash until smooth and creamy; adjust milk to desired texture.",
+    "Serve: Plate two mini meatloaves per person with a scoop of garlic mash and roasted broccoli."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "quinoa",
+      "quantity": "1 cup (dry)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 cups",
+      "preparation": "for cooking quinoa"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "2 lb",
+      "preparation": "peeled and quartered"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "peeled"
+    },
+    {
+      "core_item_name": "turkey",
+      "quantity": "1.5 lb",
+      "preparation": "ground"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "finely diced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "1",
+      "preparation": "lightly beaten"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "2 tsp",
+      "preparation": "divided, to taste"
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "3 tbsp",
+      "preparation": "for glaze"
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tbsp",
+      "preparation": "for glaze"
+    },
+    {
+      "core_item_name": "maple syrup",
+      "quantity": "1 tsp",
+      "preparation": "for glaze"
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "1 large head",
+      "preparation": "cut into florets"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "3 tbsp",
+      "preparation": "for mash"
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "1/2 cup",
+      "preparation": "warmed, for mash"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "French"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowSodium"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "quinoa",
+      "quantity": "1 cup (dry)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 cups",
+      "preparation": "for cooking quinoa",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "2 lb",
+      "preparation": "peeled and quartered",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "peeled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "turkey",
+      "quantity": "1.5 lb",
+      "preparation": "ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "finely diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "1",
+      "preparation": "lightly beaten",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "2 tsp",
+      "preparation": "divided, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "3 tbsp",
+      "preparation": "for glaze",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tbsp",
+      "preparation": "for glaze",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "maple syrup",
+      "quantity": "1 tsp",
+      "preparation": "for glaze",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "1 large head",
+      "preparation": "cut into florets",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "3 tbsp",
+      "preparation": "for mash",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "1/2 cup",
+      "preparation": "warmed, for mash",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [
+    "Category 'MealComponentPreference' ideally includes 2+ tags; received ['FromScratch']"
+  ],
+  "metadata": {
+    "created_at": "20251126T154544Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T154013Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

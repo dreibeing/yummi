@@ -1,0 +1,231 @@
+{
+  "meal_id": "meal_20251126T164155Z_05_75c14a",
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "archetype_name": "Family Quick Grill & Salad Nights (Mild, 15–30)",
+  "name": "BBQ Chicken Thighs with Grilled Corn and Avocado-Tomato Salad",
+  "description": "Quick, family-friendly braai chicken glazed with barbecue sauce, served with charred corn and a fresh avocado-tomato salad.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat the outdoor grill to medium-high heat.",
+    "Pat dry the chicken thighs with paper towel.",
+    "In a bowl, mix chicken thighs with olive oil, barbecue rub, salt, and black pepper.",
+    "Husk the corn and remove silks.",
+    "Dice tomatoes, cube avocado, and thinly slice red onion.",
+    "In a large bowl, add mixed greens, tomatoes, avocado, and red onion. Squeeze lemon over and drizzle with olive oil; season with a pinch of salt and black pepper. Toss gently and set aside.",
+    "Pour barbecue sauce into a small bowl with a brush ready for glazing."
+  ],
+  "cook_steps": [
+    "Place chicken thighs on the hot grill, skin-side down if skin-on. Grill 6–8 minutes per side until cooked through (juices run clear).",
+    "During the last 2–3 minutes, brush chicken generously with barbecue sauce on both sides and let it glaze without burning.",
+    "Grill the corn alongside the chicken, turning every 2–3 minutes until lightly charred and tender, about 10–12 minutes.",
+    "Rest chicken 3 minutes. Taste salad and adjust lemon/salt if needed.",
+    "Serve chicken with grilled corn and the avocado-tomato salad."
+  ],
+  "instructions": [
+    "Preheat the outdoor grill to medium-high heat.",
+    "Pat dry the chicken thighs with paper towel.",
+    "In a bowl, mix chicken thighs with olive oil, barbecue rub, salt, and black pepper.",
+    "Husk the corn and remove silks.",
+    "Dice tomatoes, cube avocado, and thinly slice red onion.",
+    "In a large bowl, add mixed greens, tomatoes, avocado, and red onion. Squeeze lemon over and drizzle with olive oil; season with a pinch of salt and black pepper. Toss gently and set aside.",
+    "Pour barbecue sauce into a small bowl with a brush ready for glazing.",
+    "Place chicken thighs on the hot grill, skin-side down if skin-on. Grill 6–8 minutes per side until cooked through (juices run clear).",
+    "During the last 2–3 minutes, brush chicken generously with barbecue sauce on both sides and let it glaze without burning.",
+    "Grill the corn alongside the chicken, turning every 2–3 minutes until lightly charred and tender, about 10–12 minutes.",
+    "Rest chicken 3 minutes. Taste salad and adjust lemon/salt if needed.",
+    "Serve chicken with grilled corn and the avocado-tomato salad."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "8 small pieces (about 1 kg)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "barbecue rub",
+      "quantity": "1 tbsp",
+      "preparation": "for seasoning"
+    },
+    {
+      "core_item_name": "barbecue sauce",
+      "quantity": "1/2 cup",
+      "preparation": "for glazing"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "plus a pinch for salad"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "plus a pinch for salad"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "4 cobs",
+      "preparation": "husked"
+    },
+    {
+      "core_item_name": "mixed greens",
+      "quantity": "120 g",
+      "preparation": "rinsed and dried"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "3 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "2",
+      "preparation": "peeled, pitted, cubed"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 small",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "8 small pieces (about 1 kg)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "barbecue rub",
+      "quantity": "1 tbsp",
+      "preparation": "for seasoning",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "barbecue sauce",
+      "quantity": "1/2 cup",
+      "preparation": "for glazing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "plus a pinch for salad",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "plus a pinch for salad",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "4 cobs",
+      "preparation": "husked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mixed greens",
+      "quantity": "120 g",
+      "preparation": "rinsed and dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "3 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "2",
+      "preparation": "peeled, pitted, cubed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 small",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T164543Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T164155Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

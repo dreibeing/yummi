@@ -1,0 +1,238 @@
+{
+  "meal_id": "meal_20251126T164155Z_04_ce33e1",
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "archetype_name": "Family Quick Grill & Salad Nights (Mild, 15–30)",
+  "name": "Grilled Tuna Steaks with Lemon Couscous and Greek Salad",
+  "description": "Quick-seared tuna on the braai with fluffy lemon couscous and a crisp Greek-style salad. Mild, fresh, and weeknight fast.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat OutdoorGrill to high heat; clean and oil the grates.",
+    "Boil 1.5 cups water for couscous.",
+    "Halve the cherry tomatoes.",
+    "Dice the cucumber.",
+    "Thinly slice the red onion.",
+    "Crumble the feta cheese.",
+    "Pit and slice the olives if whole.",
+    "Zest and juice the lemon.",
+    "Pat dry the tuna steak and brush with olive oil."
+  ],
+  "cook_steps": [
+    "In a bowl, toss cherry tomatoes, cucumber, red onion, olives, 1 tbsp olive oil, a big pinch of oregano, a squeeze of lemon juice, salt, and black pepper; set aside.",
+    "Place couscous in a heatproof bowl with a pinch of salt and black pepper; pour 1.5 cups boiling water over, cover, and let stand 5 minutes.",
+    "Season tuna steak with salt, black pepper, and a pinch of oregano.",
+    "Grill tuna over high heat 2–3 minutes per side for medium-rare (cook longer if preferred). Rest 2 minutes.",
+    "Fluff couscous with a fork; stir in 1 tbsp olive oil and half the lemon zest.",
+    "Top salad with feta cheese and a final drizzle of olive oil.",
+    "Slice tuna if desired. Serve tuna with lemon wedges, couscous, and salad."
+  ],
+  "instructions": [
+    "Preheat OutdoorGrill to high heat; clean and oil the grates.",
+    "Boil 1.5 cups water for couscous.",
+    "Halve the cherry tomatoes.",
+    "Dice the cucumber.",
+    "Thinly slice the red onion.",
+    "Crumble the feta cheese.",
+    "Pit and slice the olives if whole.",
+    "Zest and juice the lemon.",
+    "Pat dry the tuna steak and brush with olive oil.",
+    "In a bowl, toss cherry tomatoes, cucumber, red onion, olives, 1 tbsp olive oil, a big pinch of oregano, a squeeze of lemon juice, salt, and black pepper; set aside.",
+    "Place couscous in a heatproof bowl with a pinch of salt and black pepper; pour 1.5 cups boiling water over, cover, and let stand 5 minutes.",
+    "Season tuna steak with salt, black pepper, and a pinch of oregano.",
+    "Grill tuna over high heat 2–3 minutes per side for medium-rare (cook longer if preferred). Rest 2 minutes.",
+    "Fluff couscous with a fork; stir in 1 tbsp olive oil and half the lemon zest.",
+    "Top salad with feta cheese and a final drizzle of olive oil.",
+    "Slice tuna if desired. Serve tuna with lemon wedges, couscous, and salad."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "tuna steak",
+      "quantity": "4 steaks (about 600–800 g total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1.5 cups (dry)",
+      "preparation": "in heatproof bowl"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 small",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "pitted and sliced"
+    },
+    {
+      "core_item_name": "feta cheese",
+      "quantity": "120 g",
+      "preparation": "crumbled"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced; wedges for serving"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "tuna steak",
+      "quantity": "4 steaks (about 600–800 g total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1.5 cups (dry)",
+      "preparation": "in heatproof bowl",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 small",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "pitted and sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "feta cheese",
+      "quantity": "120 g",
+      "preparation": "crumbled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced; wedges for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T164454Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T164155Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

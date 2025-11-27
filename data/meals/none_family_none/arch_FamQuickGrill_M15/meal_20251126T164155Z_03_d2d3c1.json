@@ -1,0 +1,247 @@
+{
+  "meal_id": "meal_20251126T164155Z_03_d2d3c1",
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "archetype_name": "Family Quick Grill & Salad Nights (Mild, 15–30)",
+  "name": "Boerewors Braai with Tomato-Onion Relish and Garden Salad",
+  "description": "Quickly grill boerewors and sweet corn on the braai, then finish with a simple tomato-onion relish and a crisp garden salad. Mild, family-friendly, and ready in 15–30 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat the OutdoorGrill to medium-high heat.",
+    "Slice onions into thin half-moons.",
+    "Dice tomatoes into small cubes.",
+    "Mince garlic.",
+    "Halve the cucumber lengthwise and slice.",
+    "Tear lettuce into bite-size pieces; rinse and dry.",
+    "Rinse corn and pat dry.",
+    "In a salad bowl, combine lettuce, cucumber, and cherry tomatoes."
+  ],
+  "cook_steps": [
+    "Brush corn lightly with olive oil and season with a pinch of salt and black pepper.",
+    "Place boerewors and corn on the hot grill; cook boerewors 5–7 minutes per side (about 12–14 minutes total) until cooked through; grill corn 10–12 minutes, turning every few minutes until lightly charred.",
+    "While grilling, heat 1 tablespoon olive oil in a small pan over medium (StoveTop). Add onions and cook 3–4 minutes until softened.",
+    "Add garlic; cook 30 seconds until fragrant. Stir in tomatoes, a pinch of salt, black pepper, 1 teaspoon brown sugar, and 1 teaspoon apple cider vinegar; simmer 3–4 minutes until slightly jammy. Adjust seasoning to taste and set aside.",
+    "Dress the salad with 2 tablespoons olive oil and 1 tablespoon apple cider vinegar; season with a pinch of salt and black pepper and toss.",
+    "Rest boerewors 2 minutes, then slice into portions. Serve with grilled corn, spoon the warm tomato-onion relish over the sausage, and plate with the garden salad."
+  ],
+  "instructions": [
+    "Preheat the OutdoorGrill to medium-high heat.",
+    "Slice onions into thin half-moons.",
+    "Dice tomatoes into small cubes.",
+    "Mince garlic.",
+    "Halve the cucumber lengthwise and slice.",
+    "Tear lettuce into bite-size pieces; rinse and dry.",
+    "Rinse corn and pat dry.",
+    "In a salad bowl, combine lettuce, cucumber, and cherry tomatoes.",
+    "Brush corn lightly with olive oil and season with a pinch of salt and black pepper.",
+    "Place boerewors and corn on the hot grill; cook boerewors 5–7 minutes per side (about 12–14 minutes total) until cooked through; grill corn 10–12 minutes, turning every few minutes until lightly charred.",
+    "While grilling, heat 1 tablespoon olive oil in a small pan over medium (StoveTop). Add onions and cook 3–4 minutes until softened.",
+    "Add garlic; cook 30 seconds until fragrant. Stir in tomatoes, a pinch of salt, black pepper, 1 teaspoon brown sugar, and 1 teaspoon apple cider vinegar; simmer 3–4 minutes until slightly jammy. Adjust seasoning to taste and set aside.",
+    "Dress the salad with 2 tablespoons olive oil and 1 tablespoon apple cider vinegar; season with a pinch of salt and black pepper and toss.",
+    "Rest boerewors 2 minutes, then slice into portions. Serve with grilled corn, spoon the warm tomato-onion relish over the sausage, and plate with the garden salad."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "boerewors",
+      "quantity": "900 g–1 kg",
+      "preparation": "whole coil"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "4 ears",
+      "preparation": "husks removed"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "3 medium",
+      "preparation": "diced small"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "1 clove",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "2 tablespoons + 1 teaspoon",
+      "preparation": "divided (salad and relish)"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "1 head",
+      "preparation": "torn, rinsed, dried"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": ""
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "boerewors",
+      "quantity": "900 g–1 kg",
+      "preparation": "whole coil",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "4 ears",
+      "preparation": "husks removed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "3 medium",
+      "preparation": "diced small",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "1 clove",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "2 tablespoons + 1 teaspoon",
+      "preparation": "divided (salad and relish)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "1 head",
+      "preparation": "torn, rinsed, dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T164407Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T164155Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,360 @@
+{
+  "meal_id": "meal_20251126T152605Z_05_b155df",
+  "archetype_uid": "arch_FAM_IND_SHOW_60",
+  "archetype_name": "Family Weekend Showstopper: Indian Feast Night",
+  "name": "Shahi Paneer Korma with Saffron Rice and Oven-Puffed Poppadoms",
+  "description": "A rich, nut-forward paneer korma with fragrant saffron basmati rice and crisp oven-puffed poppadoms for a celebratory Indian family feast.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Rinse 2 cups basmati rice in cold water until clear; drain.",
+    "Cube 500 g paneer into bite-size pieces.",
+    "Thinly slice 3 onions; mince 6 cloves garlic.",
+    "Soak 1 cup cashews in hot water for 15 minutes; drain.",
+    "Soak a pinch of saffron in 2 tablespoons warm water.",
+    "Preheat oven to 200°C (400°F) for poppadoms.",
+    "Pick and chop 1/2 cup coriander leaves.",
+    "Cut 1 lemon into wedges."
+  ],
+  "cook_steps": [
+    "Make saffron rice: Heat 2 tablespoons ghee in a pot over medium. Add 2 bay leaves and 4 cardamom pods; toast 30 seconds.",
+    "Add rinsed basmati rice; stir to coat 1 minute. Add 3 1/2 cups water, 1 teaspoon salt, and the saffron water. Bring to a boil, then cover and simmer on low 12 minutes. Turn off heat and rest covered 10 minutes.",
+    "Start korma base: In a wide pan, heat 2 tablespoons oil (or ghee) over medium. Add sliced onions and 1/2 teaspoon salt; cook, stirring, until deep golden, 12–15 minutes.",
+    "Add minced garlic; cook 1 minute. Stir in 4 tablespoons korma paste, 2 tablespoons korma spice blend, 1/2 teaspoon turmeric powder, and 1 teaspoon chili flakes; fry 1–2 minutes until aromatic.",
+    "Blend the drained cashews with 1 cup milk to a smooth paste. Add to the pan along with 1 cup cream and 1/2 teaspoon sugar; whisk until smooth. Simmer gently 5 minutes, stirring.",
+    "Add paneer cubes; simmer on low 5–8 minutes to heat through. Finish with 1 teaspoon garam masala and half the chopped coriander. Adjust salt to taste.",
+    "Oven-puff poppadoms: Arrange 8 poppadoms on baking trays. Lightly brush with oil. Bake 2–3 minutes, rotating trays once, until blistered and crisp.",
+    "Fluff rice with a fork. Plate rice, spoon over shahi paneer korma, and top with remaining coriander. Serve with poppadoms and lemon wedges."
+  ],
+  "instructions": [
+    "Rinse 2 cups basmati rice in cold water until clear; drain.",
+    "Cube 500 g paneer into bite-size pieces.",
+    "Thinly slice 3 onions; mince 6 cloves garlic.",
+    "Soak 1 cup cashews in hot water for 15 minutes; drain.",
+    "Soak a pinch of saffron in 2 tablespoons warm water.",
+    "Preheat oven to 200°C (400°F) for poppadoms.",
+    "Pick and chop 1/2 cup coriander leaves.",
+    "Cut 1 lemon into wedges.",
+    "Make saffron rice: Heat 2 tablespoons ghee in a pot over medium. Add 2 bay leaves and 4 cardamom pods; toast 30 seconds.",
+    "Add rinsed basmati rice; stir to coat 1 minute. Add 3 1/2 cups water, 1 teaspoon salt, and the saffron water. Bring to a boil, then cover and simmer on low 12 minutes. Turn off heat and rest covered 10 minutes.",
+    "Start korma base: In a wide pan, heat 2 tablespoons oil (or ghee) over medium. Add sliced onions and 1/2 teaspoon salt; cook, stirring, until deep golden, 12–15 minutes.",
+    "Add minced garlic; cook 1 minute. Stir in 4 tablespoons korma paste, 2 tablespoons korma spice blend, 1/2 teaspoon turmeric powder, and 1 teaspoon chili flakes; fry 1–2 minutes until aromatic.",
+    "Blend the drained cashews with 1 cup milk to a smooth paste. Add to the pan along with 1 cup cream and 1/2 teaspoon sugar; whisk until smooth. Simmer gently 5 minutes, stirring.",
+    "Add paneer cubes; simmer on low 5–8 minutes to heat through. Finish with 1 teaspoon garam masala and half the chopped coriander. Adjust salt to taste.",
+    "Oven-puff poppadoms: Arrange 8 poppadoms on baking trays. Lightly brush with oil. Bake 2–3 minutes, rotating trays once, until blistered and crisp.",
+    "Fluff rice with a fork. Plate rice, spoon over shahi paneer korma, and top with remaining coriander. Serve with poppadoms and lemon wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "ghee",
+      "quantity": "2 tablespoons",
+      "preparation": "for rice"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2"
+    },
+    {
+      "core_item_name": "cardamom",
+      "quantity": "4 pods"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 1/2 cups + 2 tablespoons",
+      "preparation": "for rice and saffron"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "1 pinch",
+      "preparation": "soaked"
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "2 tablespoons",
+      "preparation": "or ghee, for sautéing"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "3 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "6 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "korma paste",
+      "quantity": "4 tablespoons"
+    },
+    {
+      "core_item_name": "korma spice blend",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "cashews",
+      "quantity": "1 cup",
+      "preparation": "soaked and drained"
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "1 cup"
+    },
+    {
+      "core_item_name": "cream",
+      "quantity": "1 cup"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "paneer",
+      "quantity": "500 g",
+      "preparation": "cubed"
+    },
+    {
+      "core_item_name": "garam masala",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "poppadoms",
+      "quantity": "8",
+      "preparation": "brushed with oil"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Indian",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ghee",
+      "quantity": "2 tablespoons",
+      "preparation": "for rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cardamom",
+      "quantity": "4 pods",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 1/2 cups + 2 tablespoons",
+      "preparation": "for rice and saffron",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "1 pinch",
+      "preparation": "soaked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "2 tablespoons",
+      "preparation": "or ghee, for sautéing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "3 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "6 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "korma paste",
+      "quantity": "4 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "korma spice blend",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cashews",
+      "quantity": "1 cup",
+      "preparation": "soaked and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cream",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paneer",
+      "quantity": "500 g",
+      "preparation": "cubed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garam masala",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "poppadoms",
+      "quantity": "8",
+      "preparation": "brushed with oil",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T153030Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T152605Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

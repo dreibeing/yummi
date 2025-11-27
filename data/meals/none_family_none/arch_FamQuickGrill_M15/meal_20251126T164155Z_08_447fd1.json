@@ -1,0 +1,206 @@
+{
+  "meal_id": "meal_20251126T164155Z_08_447fd1",
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "archetype_name": "Family Quick Grill & Salad Nights (Mild, 15–30)",
+  "name": "Grilled Sirloin with Chimichurri, Charred Green Beans & Brown Basmati Side Salad",
+  "description": "Quick braai-seared sirloin served with chimichurri, charred green beans, brown basmati rice, and a fresh mixed-greens salad. Mild, family-friendly and done in 15–30 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat OutdoorGrill to medium-high heat.",
+    "Rinse brown basmati rice under cold water until it runs clear.",
+    "Trim green beans and pat dry.",
+    "Pat sirloin steak dry; season both sides with salt and black pepper.",
+    "Halve the lemon.",
+    "Place mixed greens in a salad bowl."
+  ],
+  "cook_steps": [
+    "Stovetop: Add brown basmati rice to a pot with 2 parts water and a pinch of salt; bring to a boil, then cover and simmer on low until tender (about 15–20 minutes). Fluff and keep warm.",
+    "OutdoorGrill: Lightly oil grates. Toss green beans with a little olive oil, salt, and black pepper.",
+    "Grill the sirloin steak 3–5 minutes per side for medium (adjust to preference). Transfer to a board and rest 5 minutes.",
+    "Grill green beans in a grill basket or on foil until lightly charred and crisp-tender, 4–6 minutes, turning once.",
+    "Dress the mixed greens with vinaigrette and toss.",
+    "Slice the rested sirloin against the grain. Serve with chimichurri spooned over, a squeeze of lemon, charred green beans, and brown basmati rice on the side."
+  ],
+  "instructions": [
+    "Preheat OutdoorGrill to medium-high heat.",
+    "Rinse brown basmati rice under cold water until it runs clear.",
+    "Trim green beans and pat dry.",
+    "Pat sirloin steak dry; season both sides with salt and black pepper.",
+    "Halve the lemon.",
+    "Place mixed greens in a salad bowl.",
+    "Stovetop: Add brown basmati rice to a pot with 2 parts water and a pinch of salt; bring to a boil, then cover and simmer on low until tender (about 15–20 minutes). Fluff and keep warm.",
+    "OutdoorGrill: Lightly oil grates. Toss green beans with a little olive oil, salt, and black pepper.",
+    "Grill the sirloin steak 3–5 minutes per side for medium (adjust to preference). Transfer to a board and rest 5 minutes.",
+    "Grill green beans in a grill basket or on foil until lightly charred and crisp-tender, 4–6 minutes, turning once.",
+    "Dress the mixed greens with vinaigrette and toss.",
+    "Slice the rested sirloin against the grain. Serve with chimichurri spooned over, a squeeze of lemon, charred green beans, and brown basmati rice on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "sirloin steak",
+      "quantity": "700–900 g total",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "chimichurri",
+      "quantity": "1/3 cup",
+      "preparation": "for serving"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "1 cup (raw)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "mixed greens",
+      "quantity": "120–150 g",
+      "preparation": "in a bowl"
+    },
+    {
+      "core_item_name": "vinaigrette",
+      "quantity": "3–4 tablespoons",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1–2 tablespoons",
+      "preparation": "for grilling"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "sirloin steak",
+      "quantity": "700–900 g total",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chimichurri",
+      "quantity": "1/3 cup",
+      "preparation": "for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "1 cup (raw)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mixed greens",
+      "quantity": "120–150 g",
+      "preparation": "in a bowl",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vinaigrette",
+      "quantity": "3–4 tablespoons",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1–2 tablespoons",
+      "preparation": "for grilling",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [
+    "Category 'MealComponentPreference' ideally includes 2+ tags; received ['FromScratch']"
+  ],
+  "metadata": {
+    "created_at": "20251126T164710Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T164155Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

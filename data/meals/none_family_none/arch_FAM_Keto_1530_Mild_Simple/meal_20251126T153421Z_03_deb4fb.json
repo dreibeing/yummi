@@ -1,0 +1,213 @@
+{
+  "meal_id": "meal_20251126T153421Z_03_deb4fb",
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "archetype_name": "Family Keto Weeknight Plates (Mild, 15–30, Simple)",
+  "name": "Greek Lemon-Garlic Sirloin with Roasted Broccoli and Tzatziki",
+  "description": "Seared sirloin with oregano and lemon, served alongside roasted garlic broccoli and a cool tzatziki drizzle. Mild, quick, and keto-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F.",
+    "Cut broccoli into florets; dry well.",
+    "Mince garlic.",
+    "Zest and halve the lemon.",
+    "Pat dry beef sirloin steak and season both sides with salt and black pepper.",
+    "Set tzatziki out at room temperature."
+  ],
+  "cook_steps": [
+    "On a sheet pan, toss broccoli with 2 tbsp olive oil, half the minced garlic, half the lemon zest, salt, and black pepper.",
+    "Roast broccoli for 15–18 minutes, turning once, until edges are browned and tender.",
+    "While broccoli roasts, heat 1 tbsp olive oil in a large skillet over medium-high heat.",
+    "Sear beef sirloin steak 3–4 minutes per side for medium-rare (thickness dependent).",
+    "Reduce heat to low; add butter, remaining garlic, oregano, and remaining lemon zest to the pan. Spoon over steak for 30–60 seconds.",
+    "Transfer steak to a board to rest 5 minutes.",
+    "Squeeze half the lemon over roasted broccoli and toss.",
+    "Slice steak against the grain. Serve with tzatziki and remaining lemon wedges."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F.",
+    "Cut broccoli into florets; dry well.",
+    "Mince garlic.",
+    "Zest and halve the lemon.",
+    "Pat dry beef sirloin steak and season both sides with salt and black pepper.",
+    "Set tzatziki out at room temperature.",
+    "On a sheet pan, toss broccoli with 2 tbsp olive oil, half the minced garlic, half the lemon zest, salt, and black pepper.",
+    "Roast broccoli for 15–18 minutes, turning once, until edges are browned and tender.",
+    "While broccoli roasts, heat 1 tbsp olive oil in a large skillet over medium-high heat.",
+    "Sear beef sirloin steak 3–4 minutes per side for medium-rare (thickness dependent).",
+    "Reduce heat to low; add butter, remaining garlic, oregano, and remaining lemon zest to the pan. Spoon over steak for 30–60 seconds.",
+    "Transfer steak to a board to rest 5 minutes.",
+    "Squeeze half the lemon over roasted broccoli and toss.",
+    "Slice steak against the grain. Serve with tzatziki and remaining lemon wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef sirloin steak",
+      "quantity": "750–900 g total (4 small steaks)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "2 medium heads",
+      "preparation": "cut into florets"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and halved"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp dried",
+      "preparation": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "1 tbsp",
+      "preparation": null
+    },
+    {
+      "core_item_name": "tzatziki",
+      "quantity": "1/2 cup",
+      "preparation": "for serving"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Greek"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy"
+    ],
+    "NutritionFocus": [
+      "HighProtein",
+      "Keto",
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef sirloin steak",
+      "quantity": "750–900 g total (4 small steaks)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "2 medium heads",
+      "preparation": "cut into florets",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp dried",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tzatziki",
+      "quantity": "1/2 cup",
+      "preparation": "for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T153606Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T153421Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

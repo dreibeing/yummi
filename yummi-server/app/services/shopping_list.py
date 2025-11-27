@@ -6,6 +6,7 @@ import math
 import os
 import re
 import threading
+from collections import defaultdict
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Sequence
 
@@ -29,6 +30,12 @@ _catalog_by_catalog_ref: Dict[str, Dict[str, Any]] | None = None
 _catalog_cache_mtime: float = 0.0
 _catalog_cache_path: str | None = None
 
+_product_index_lock = threading.Lock()
+_ingredient_product_index: Dict[str, List[Dict[str, Any]]] | None = None
+_ingredient_product_index_path: str | None = None
+_ingredient_product_index_mtime: float = 0.0
+
+MAX_CLASSIFIED_PRODUCTS = 12
 UNIT_DEFINITIONS: Dict[str, Dict[str, Any]] = {
     "g": {"unit_type": "weight", "unit_label": "g", "multiplier": 1},
     "gram": {"unit_type": "weight", "unit_label": "g", "multiplier": 1},
@@ -145,6 +152,7 @@ def _aggregate_ingredient_groups(
             group_key = _derive_group_key(ingredient, fallback) or f"{meal.meal_id or 'meal'}-{index}"
             entry_id = ingredient.get("id") or f"{meal.meal_id or 'meal'}-{index}"
             requirement_measurement = _parse_measurement_value(ingredient.get("quantity") or ingredient.get("text"))
+            package_count = _derive_package_count(ingredient, requirement_measurement)
             product_meta = _normalize_product_meta(ingredient)
             package_measurement = None
             if product_meta:
@@ -153,9 +161,7 @@ def _aggregate_ingredient_groups(
                     or product_meta.get("name")
                     or fallback
                 )
-            required_quantity = _parse_numeric_quantity(
-                ingredient.get("package_quantity")
-            ) or _parse_numeric_quantity(ingredient.get("quantity")) or 1.0
+            required_quantity = package_count if package_count is not None else 1.0
             group = groups.setdefault(
                 group_key,
                 {
@@ -177,6 +183,7 @@ def _aggregate_ingredient_groups(
                     "labels": labels,
                     "quantity_text": ingredient.get("quantity") or ingredient.get("text"),
                     "required_quantity": required_quantity,
+                    "package_count": package_count,
                     "requirement_measurement": requirement_measurement,
                     "package_measurement": package_measurement,
                     "product": product_meta,
@@ -191,7 +198,9 @@ def _aggregate_ingredient_groups(
         summary = _summarize_requirement(entries)
         group["requirement_summary"] = summary
         group["fallback_packages"] = summary.get("fallback_packages", 1)
-        group["linked_products"] = _build_linked_products(entries)
+        base_products = _build_linked_products(entries)
+        classified_products = _lookup_group_product_options(group)
+        group["linked_products"] = _merge_product_lists(base_products, classified_products)
         group["label"] = group.get("label") or entries[0].get("display_text") or group.get("group_key")
         aggregated.append(group)
     aggregated.sort(key=lambda item: (item.get("label") or item.get("group_key") or "").lower())
@@ -225,12 +234,98 @@ def _build_linked_products(entries: Sequence[Dict[str, Any]]) -> List[Dict[str, 
     return products
 
 
+def _derive_package_count(
+    ingredient: Dict[str, Any], requirement_measurement: Dict[str, Any] | None
+) -> float | None:
+    raw_package_quantity = ingredient.get("package_quantity")
+    package_count = _parse_numeric_quantity(raw_package_quantity)
+    if package_count is not None:
+        return package_count
+    if (
+        requirement_measurement
+        and requirement_measurement.get("unit_type") == "count"
+        and isinstance(requirement_measurement.get("base_amount"), (int, float))
+    ):
+        amount = float(requirement_measurement["base_amount"])
+        if math.isfinite(amount):
+            return amount
+    return None
+
+
+def _lookup_group_product_options(group: Dict[str, Any]) -> List[Dict[str, Any]]:
+    labels: List[str] = []
+    for key in ("group_key", "label"):
+        value = group.get(key)
+        if isinstance(value, str):
+            labels.append(value)
+    for entry in group.get("entries", []):
+        entry_labels = entry.get("labels") or []
+        for label in entry_labels:
+            if isinstance(label, str):
+                labels.append(label)
+    return _lookup_indexed_products(labels)
+
+
+def _merge_product_lists(
+    primary: Sequence[Dict[str, Any]], secondary: Sequence[Dict[str, Any]]
+) -> List[Dict[str, Any]]:
+    merged: List[Dict[str, Any]] = []
+    seen: set[str] = set()
+
+    def _append(items: Sequence[Dict[str, Any]]) -> None:
+        for item in items or []:
+            key = (
+                item.get("productId")
+                or item.get("product_id")
+                or item.get("catalogRefId")
+                or item.get("catalog_ref_id")
+                or item.get("name")
+            )
+            if not key:
+                continue
+            normalized_key = str(key)
+            if normalized_key in seen:
+                continue
+            seen.add(normalized_key)
+            merged.append(item)
+
+    _append(primary)
+    _append(secondary)
+    return merged
+
+
+def _lookup_indexed_products(labels: Sequence[str]) -> List[Dict[str, Any]]:
+    if not labels:
+        return []
+    index = _load_ingredient_product_index()
+    if not index:
+        return []
+    results: List[Dict[str, Any]] = []
+    seen: set[str] = set()
+    for label in labels:
+        normalized = _normalize_label(label)
+        if not normalized:
+            continue
+        for option in index.get(normalized) or []:
+            key = option.get("productId") or option.get("catalogRefId") or option.get("name")
+            if not key:
+                continue
+            normalized_key = str(key)
+            if normalized_key in seen:
+                continue
+            seen.add(normalized_key)
+            results.append(dict(option))
+            if len(results) >= MAX_CLASSIFIED_PRODUCTS:
+                return results
+    return results
+
+
 def _summarize_requirement(entries: Sequence[Dict[str, Any]]) -> Dict[str, Any]:
     unit_type = None
     total_amount = 0.0
     fallback_packages = 0.0
     for entry in entries:
-        qty = entry.get("required_quantity")
+        qty = entry.get("package_count")
         if isinstance(qty, (int, float)) and math.isfinite(qty):
             fallback_packages += qty
         else:
@@ -256,9 +351,10 @@ def _summarize_requirement(entries: Sequence[Dict[str, Any]]) -> Dict[str, Any]:
 
 def _build_system_prompt() -> str:
     return (
-        "You are Yummi's grocery planning assistant. Combine meal ingredients into a shopping list "
-        "using Woolworths retail packs. Always return valid JSON, respect the provided quantities, "
-        "and classify each ingredient as either 'pickup' (buy now) or 'pantry' (likely already on hand)."
+        "You are Yummi's grocery planning assistant. Your job is to examine meal ingredient requirements "
+        "and decide which Woolworths retail products (and how many packs of each) the user should buy "
+        "to satisfy every meal. Always return valid JSON, classify each ingredient as 'pickup' or 'pantry', "
+        "and source selections exclusively from the provided product IDs."
     )
 
 
@@ -277,15 +373,17 @@ def _build_user_prompt(
     ]
     group_context: List[Dict[str, Any]] = []
     for group in ingredient_groups:
-        entry_examples = []
-        for entry in group.get("entries", [])[:5]:
-            entry_examples.append(
+        requirements = []
+        for entry in group.get("entries", []):
+            requirements.append(
                 {
+                    "entry_id": entry.get("entry_id"),
                     "meal_id": entry.get("meal_id"),
                     "meal_name": entry.get("meal_name"),
-                    "quantity": entry.get("quantity_text"),
+                    "quantity_text": entry.get("quantity_text"),
+                    "requirement_measurement": entry.get("requirement_measurement"),
                     "display": entry.get("display_text"),
-                    "product": (entry.get("product") or {}).get("name"),
+                    "labels": entry.get("labels"),
                 }
             )
         group_context.append(
@@ -293,24 +391,22 @@ def _build_user_prompt(
                 "group_key": group.get("group_key"),
                 "label": group.get("label"),
                 "total_entries": len(group.get("entries", [])),
+                "requirements": requirements,
                 "requirement_summary": group.get("requirement_summary"),
                 "fallback_packages": group.get("fallback_packages"),
                 "linked_products": group.get("linked_products"),
-                "entry_examples": entry_examples,
             }
         )
     schema = {
         "items": [
             {
                 "group_key": "string identifier from ingredient_groups[*].group_key",
-                "display_name": "string label for the ingredient line",
                 "classification": "pickup | pantry",
                 "packages_needed": "non-negative integer describing how many retail packs to buy",
                 "notes": "optional short rationale",
                 "product_selections": [
                     {
-                        "product_id": "sku drawn from linked_products[].productId (or null if unavailable)",
-                        "name": "product label",
+                        "product_id": "sku drawn from linked_products[].productId",
                         "packages": "float or int count of packs to buy",
                     }
                 ],
@@ -327,9 +423,12 @@ def _build_user_prompt(
     )
     schema_json = json.dumps(schema, ensure_ascii=False, indent=2)
     instructions = (
-        "For every ingredient group you must return exactly one line in the output. "
+        "For every ingredient group return exactly one entry. Treat each requirement in the group as a distinct meal need "
+        "and combine Woolworths products logically so the user can cover them (multiple SKUs or multiple packs are allowed). "
         "Classify staples or tiny amounts as 'pantry' (default quantity zero) and everything else as 'pickup'. "
-        "Use the linked Woolworths products whenever available and round packages to practical retail counts."
+        "Every entry (including pantry items) must include at least one product selection referencing the provided linked_products[].productId; "
+        "output only the product_id and how many packages to buy (use 0 packs when marking something as pantry). "
+        "Do not generate custom product names or descriptions."
     )
     return (
         f"{instructions}\nContext JSON:\n```json\n{context_json}\n```\n"
@@ -375,18 +474,21 @@ def _normalize_result_items(
 def _build_result_item(group: Dict[str, Any], llm_entry: Dict[str, Any] | None) -> ShoppingListResultItem:
     fallback_packages = float(group.get("fallback_packages") or 1)
     classification = "pickup"
-    display_name = group.get("label") or group.get("group_key") or "Ingredient"
+    group_label = group.get("label") or group.get("group_key") or "Ingredient"
+    display_name = group_label
     notes = None
     packages = fallback_packages
     products = group.get("linked_products") or []
     if llm_entry:
         classification = _coerce_classification(llm_entry.get("classification")) or classification
-        display_name = llm_entry.get("display_name") or display_name
         notes = llm_entry.get("notes")
         packages = _coerce_packages(llm_entry.get("packages_needed"), fallback_packages, classification)
         model_products = _coerce_product_selections(llm_entry.get("product_selections"))
         if model_products:
             products = model_products
+    product_display_name = _resolve_primary_product_name(products)
+    if product_display_name:
+        display_name = product_display_name
     default_quantity = 0.0 if classification == "pantry" else packages
     unit_price = _resolve_unit_price(products, group.get("entries") or [])
     unit_price_minor = _to_minor_units(unit_price)
@@ -413,6 +515,15 @@ def _build_result_item(group: Dict[str, Any], llm_entry: Dict[str, Any] | None) 
         unitPrice=unit_price,
         unitPriceMinor=unit_price_minor,
     )
+
+
+def _resolve_primary_product_name(products: Sequence[Dict[str, Any]]) -> str | None:
+    for product in products or []:
+        for key in ("name", "ingredientLine", "ingredient_line"):
+            value = product.get(key)
+            if isinstance(value, str) and value.strip():
+                return value.strip()
+    return None
 
 
 def _coerce_classification(value: Any) -> str | None:
@@ -443,15 +554,14 @@ def _coerce_product_selections(value: Any) -> List[Dict[str, Any]]:
     for entry in value:
         if not isinstance(entry, dict):
             continue
-        selections.append(
-            {
-                "productId": entry.get("product_id") or entry.get("productId"),
-                "name": entry.get("name"),
-                "detailUrl": entry.get("detail_url") or entry.get("detailUrl"),
-                "salePrice": entry.get("sale_price") or entry.get("salePrice"),
-                "packages": entry.get("packages"),
-            }
-        )
+        product_id = entry.get("product_id") or entry.get("productId")
+        catalog_ref_id = entry.get("catalog_ref_id") or entry.get("catalogRefId")
+        packages = entry.get("packages")
+        hydrated = _build_classified_product_option(product_id, catalog_ref_id, None)
+        if not hydrated:
+            continue
+        hydrated["packages"] = packages
+        selections.append(hydrated)
     return selections
 
 
@@ -591,6 +701,117 @@ def _lookup_catalog_product(product_id: Any, catalog_ref_id: Any) -> Dict[str, A
         if entry:
             return entry
     return None
+
+
+def _load_ingredient_product_index() -> Dict[str, List[Dict[str, Any]]]:
+    settings = get_settings()
+    path = settings.ingredient_classifications_path
+    if not path:
+        return {}
+    try:
+        stat = os.stat(path)
+    except OSError:
+        return {}
+    global _ingredient_product_index, _ingredient_product_index_mtime, _ingredient_product_index_path
+    with _product_index_lock:
+        if (
+            _ingredient_product_index is not None
+            and _ingredient_product_index_path == path
+            and _ingredient_product_index_mtime >= stat.st_mtime
+        ):
+            return _ingredient_product_index
+        mapping: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
+        seen_keys: Dict[str, set[str]] = defaultdict(set)
+        with open(path, "r", encoding="utf-8") as handle:
+            for raw_line in handle:
+                line = raw_line.strip()
+                if not line:
+                    continue
+                try:
+                    payload = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                core_name = payload.get("core_item_name") or payload.get("coreItemName")
+                normalized = _normalize_label(core_name)
+                if not normalized:
+                    continue
+                product_id = (
+                    payload.get("product_id")
+                    or payload.get("productId")
+                    or payload.get("sku")
+                )
+                catalog_ref_id = payload.get("catalog_ref_id") or payload.get("catalogRefId")
+                option = _build_classified_product_option(product_id, catalog_ref_id, core_name)
+                if not option:
+                    continue
+                key = (
+                    option.get("productId")
+                    or option.get("catalogRefId")
+                    or option.get("name")
+                )
+                if not key:
+                    continue
+                normalized_key = str(key)
+                if normalized_key in seen_keys[normalized]:
+                    continue
+                seen_keys[normalized].add(normalized_key)
+                mapping[normalized].append(option)
+        _ingredient_product_index = dict(mapping)
+        _ingredient_product_index_path = path
+        _ingredient_product_index_mtime = stat.st_mtime
+        return _ingredient_product_index
+
+
+def _build_classified_product_option(
+    product_id: Any, catalog_ref_id: Any, fallback_name: str | None
+) -> Dict[str, Any] | None:
+    if product_id is None and catalog_ref_id is None and not fallback_name:
+        return None
+    catalog_entry = _lookup_catalog_product(product_id, catalog_ref_id)
+    name = fallback_name
+    detail_url = None
+    sale_price = None
+    package_quantity = None
+    ingredient_line = fallback_name
+    if catalog_entry:
+        if product_id is None:
+            catalog_product_id = (
+                catalog_entry.get("productId")
+                or catalog_entry.get("product_id")
+                or catalog_entry.get("catalogRefId")
+                or catalog_entry.get("catalog_ref_id")
+            )
+            if catalog_product_id is not None:
+                product_id = catalog_product_id
+        if catalog_ref_id is None:
+            catalog_ref_id = (
+                catalog_entry.get("catalogRefId") or catalog_entry.get("catalog_ref_id")
+            )
+        name = name or catalog_entry.get("name") or catalog_entry.get("title")
+        detail_url = catalog_entry.get("detailUrl") or catalog_entry.get("url")
+        sale_price = _parse_numeric_quantity(
+            catalog_entry.get("salePrice") or catalog_entry.get("sale_price") or catalog_entry.get("price")
+        )
+        package_quantity = (
+            _parse_numeric_quantity(
+                catalog_entry.get("packageQuantity")
+                or catalog_entry.get("package_quantity")
+                or catalog_entry.get("size")
+            )
+            or package_quantity
+        )
+        ingredient_line = ingredient_line or name
+    if product_id is None and catalog_ref_id is None and not name:
+        return None
+    return {
+        "productId": str(product_id) if product_id is not None else None,
+        "catalogRefId": str(catalog_ref_id) if catalog_ref_id is not None else None,
+        "name": name,
+        "detailUrl": detail_url,
+        "salePrice": sale_price,
+        "packageQuantity": package_quantity,
+        "ingredientLine": ingredient_line,
+    }
 
 
 def _normalize_product_meta(ingredient: Dict[str, Any]) -> Dict[str, Any] | None:

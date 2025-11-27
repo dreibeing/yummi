@@ -1,0 +1,329 @@
+{
+  "meal_id": "meal_20251126T154013Z_01_bebef5",
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "archetype_name": "Family Low-Sodium American & French Comfort (30–60, Mild)",
+  "name": "Apple-Onion Pork Chops with Barley Pilaf and Sautéed Cabbage",
+  "description": "Seared pork chops roasted with apples and onions, finished with a light pan sauce. Served with herbed barley pilaf and buttery sautéed cabbage and carrots for a family-friendly, low-sodium comfort dinner.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 400°F (200°C).",
+    "Pat dry pork chops; set out to temper 10 minutes.",
+    "Slice onion into thin half-moons.",
+    "Core and slice apple into thin wedges.",
+    "Mince garlic.",
+    "Thinly slice cabbage.",
+    "Peel and thinly slice carrots.",
+    "Rinse barley under cold water and drain.",
+    "Chop parsley.",
+    "In a small cup, mix 1 tablespoon flour with 2 tablespoons water to make a smooth slurry."
+  ],
+  "cook_steps": [
+    "Start barley: Warm 1 teaspoon olive oil in a medium pot over medium heat. Add barley and toast 1 minute, stirring.",
+    "Add 2 1/2 cups water and 1 bay leaf. Bring to a boil, then reduce to a gentle simmer, cover, and cook 25–30 minutes until tender. Keep covered off heat.",
+    "Sear pork: Heat 1 tablespoon olive oil in a large oven-safe skillet over medium-high. Season pork chops on both sides with black pepper, a pinch of thyme, and a pinch of rosemary.",
+    "Add pork chops to the skillet and sear 2–3 minutes per side until well browned.",
+    "Add onion and apple to the skillet around the chops; scatter in half the minced garlic. Transfer skillet to the oven and roast 8–12 minutes, until pork reaches 145°F (63°C). Transfer chops to a plate and tent loosely.",
+    "Make pan sauce: Return the skillet to medium heat. Add 1/3 cup white wine and simmer 1–2 minutes, scraping browned bits. Stir in 1/2 cup vegetable stock and reduce 2–3 minutes. Whisk in the flour slurry and simmer 1 minute until lightly thickened. Swirl in 1 tablespoon butter. Adjust black pepper to taste.",
+    "Sauté cabbage: In a separate large skillet, melt 1 tablespoon butter with 1 teaspoon olive oil over medium heat. Add cabbage and carrots; cook 5–7 minutes, tossing, until tender-crisp. Add remaining garlic in the last minute. Finish with a squeeze of lemon and black pepper.",
+    "Finish barley: Remove bay leaf. Fluff barley with a fork and fold in parsley and a squeeze of lemon.",
+    "Plate chops with the apples and onions on top. Spoon pan sauce over. Serve with barley pilaf and sautéed cabbage and carrots."
+  ],
+  "instructions": [
+    "Preheat oven to 400°F (200°C).",
+    "Pat dry pork chops; set out to temper 10 minutes.",
+    "Slice onion into thin half-moons.",
+    "Core and slice apple into thin wedges.",
+    "Mince garlic.",
+    "Thinly slice cabbage.",
+    "Peel and thinly slice carrots.",
+    "Rinse barley under cold water and drain.",
+    "Chop parsley.",
+    "In a small cup, mix 1 tablespoon flour with 2 tablespoons water to make a smooth slurry.",
+    "Start barley: Warm 1 teaspoon olive oil in a medium pot over medium heat. Add barley and toast 1 minute, stirring.",
+    "Add 2 1/2 cups water and 1 bay leaf. Bring to a boil, then reduce to a gentle simmer, cover, and cook 25–30 minutes until tender. Keep covered off heat.",
+    "Sear pork: Heat 1 tablespoon olive oil in a large oven-safe skillet over medium-high. Season pork chops on both sides with black pepper, a pinch of thyme, and a pinch of rosemary.",
+    "Add pork chops to the skillet and sear 2–3 minutes per side until well browned.",
+    "Add onion and apple to the skillet around the chops; scatter in half the minced garlic. Transfer skillet to the oven and roast 8–12 minutes, until pork reaches 145°F (63°C). Transfer chops to a plate and tent loosely.",
+    "Make pan sauce: Return the skillet to medium heat. Add 1/3 cup white wine and simmer 1–2 minutes, scraping browned bits. Stir in 1/2 cup vegetable stock and reduce 2–3 minutes. Whisk in the flour slurry and simmer 1 minute until lightly thickened. Swirl in 1 tablespoon butter. Adjust black pepper to taste.",
+    "Sauté cabbage: In a separate large skillet, melt 1 tablespoon butter with 1 teaspoon olive oil over medium heat. Add cabbage and carrots; cook 5–7 minutes, tossing, until tender-crisp. Add remaining garlic in the last minute. Finish with a squeeze of lemon and black pepper.",
+    "Finish barley: Remove bay leaf. Fluff barley with a fork and fold in parsley and a squeeze of lemon.",
+    "Plate chops with the apples and onions on top. Spoon pan sauce over. Serve with barley pilaf and sautéed cabbage and carrots."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "pork chops",
+      "quantity": "4 chops (about 2–2.5 lb total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1/2 teaspoon",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "rosemary",
+      "quantity": "1/2 teaspoon",
+      "preparation": "dried, crushed"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 teaspoons + 1 tablespoon",
+      "preparation": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "apple",
+      "quantity": "2 medium",
+      "preparation": "cored and thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/3 cup",
+      "preparation": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1/2 cup",
+      "preparation": null
+    },
+    {
+      "core_item_name": "flour",
+      "quantity": "1 tablespoon",
+      "preparation": "mixed with water as slurry"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tablespoons",
+      "preparation": null
+    },
+    {
+      "core_item_name": "barley",
+      "quantity": "1 cup",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 1/2 cups + 2 tablespoons",
+      "preparation": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "1",
+      "preparation": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 medium head",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges for squeezing"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "French"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowSodium"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "pork chops",
+      "quantity": "4 chops (about 2–2.5 lb total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1/2 teaspoon",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rosemary",
+      "quantity": "1/2 teaspoon",
+      "preparation": "dried, crushed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 teaspoons + 1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple",
+      "quantity": "2 medium",
+      "preparation": "cored and thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/3 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "flour",
+      "quantity": "1 tablespoon",
+      "preparation": "mixed with water as slurry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "barley",
+      "quantity": "1 cup",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 1/2 cups + 2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "1",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 medium head",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges for squeezing",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T154102Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T154013Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

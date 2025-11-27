@@ -1,0 +1,235 @@
+{
+  "meal_id": "meal_20251126T165451Z_02_43aeaa",
+  "archetype_uid": "arch_SA_BraaiPotjie_Adv60",
+  "archetype_name": "Family Weekend Advanced: South African Braai & Potjie",
+  "name": "Peri-Peri Butterflied Chicken Braai with Oven Roosterkoek and Chakalaka",
+  "description": "Butterflied chicken braaied over medium coals with a peri-peri baste, served with oven-baked roosterkoek, warm chakalaka, and fire-grilled corn. A classic South African feast with Portuguese heat notes.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Light a two-zone braai fire: medium heat on one side, cooler side for indirect cooking.",
+    "Preheat oven to 200°C for the roosterkoek.",
+    "In a bowl, mix peri peri sauce, olive oil, minced garlic, paprika, chilli flakes, salt, and black pepper to make a baste.",
+    "Pat the butterflied chicken dry and lightly season with salt and black pepper.",
+    "Prepare roosterkoek mix per pack directions; knead, rest, and shape into 8–10 rolls on a floured board if directed.",
+    "Husk corn and rub with a little olive oil.",
+    "Open chakalaka can/jar and have it ready for heating."
+  ],
+  "cook_steps": [
+    "Set the shaped roosterkoek on a baking tray; bake at 200°C until puffed and golden, 18–25 minutes (timing per mix). Keep warm.",
+    "Place butterflied chicken skin-side up on the cool side of the grill. Brush with peri-peri baste. Cover with lid and cook indirectly for 25 minutes.",
+    "Flip chicken skin-side down over medium heat for 6–8 minutes to crisp skin. Move back to indirect side, baste again, and cook 15–25 minutes more until juices run clear (thickest part 74°C).",
+    "While chicken finishes, grill corn over direct heat, turning until charred in spots, 10–12 minutes.",
+    "Warm chakalaka in a small pot on the grill or in the oven, 5–10 minutes, stirring once.",
+    "Rest chicken 10 minutes on a board, then brush with any remaining baste.",
+    "Serve carved chicken with roosterkoek, warm chakalaka, and grilled corn. Add butter to corn and season with salt and black pepper."
+  ],
+  "instructions": [
+    "Light a two-zone braai fire: medium heat on one side, cooler side for indirect cooking.",
+    "Preheat oven to 200°C for the roosterkoek.",
+    "In a bowl, mix peri peri sauce, olive oil, minced garlic, paprika, chilli flakes, salt, and black pepper to make a baste.",
+    "Pat the butterflied chicken dry and lightly season with salt and black pepper.",
+    "Prepare roosterkoek mix per pack directions; knead, rest, and shape into 8–10 rolls on a floured board if directed.",
+    "Husk corn and rub with a little olive oil.",
+    "Open chakalaka can/jar and have it ready for heating.",
+    "Set the shaped roosterkoek on a baking tray; bake at 200°C until puffed and golden, 18–25 minutes (timing per mix). Keep warm.",
+    "Place butterflied chicken skin-side up on the cool side of the grill. Brush with peri-peri baste. Cover with lid and cook indirectly for 25 minutes.",
+    "Flip chicken skin-side down over medium heat for 6–8 minutes to crisp skin. Move back to indirect side, baste again, and cook 15–25 minutes more until juices run clear (thickest part 74°C).",
+    "While chicken finishes, grill corn over direct heat, turning until charred in spots, 10–12 minutes.",
+    "Warm chakalaka in a small pot on the grill or in the oven, 5–10 minutes, stirring once.",
+    "Rest chicken 10 minutes on a board, then brush with any remaining baste.",
+    "Serve carved chicken with roosterkoek, warm chakalaka, and grilled corn. Add butter to corn and season with salt and black pepper."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "butterflied chicken",
+      "quantity": "1 large (1.4–1.8 kg)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "peri peri sauce",
+      "quantity": "1/2 cup",
+      "preparation": "for basting"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 teaspoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 teaspoons",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "roosterkoek mix",
+      "quantity": "1 packet (makes 8–10)",
+      "preparation": "prepared per pack directions"
+    },
+    {
+      "core_item_name": "chakalaka",
+      "quantity": "1–2 cups",
+      "preparation": "warmed"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "4–6 ears",
+      "preparation": "husked"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tablespoons",
+      "preparation": "for serving on corn"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Portuguese",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "butterflied chicken",
+      "quantity": "1 large (1.4–1.8 kg)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peri peri sauce",
+      "quantity": "1/2 cup",
+      "preparation": "for basting",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 teaspoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 teaspoons",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "roosterkoek mix",
+      "quantity": "1 packet (makes 8–10)",
+      "preparation": "prepared per pack directions",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chakalaka",
+      "quantity": "1–2 cups",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "4–6 ears",
+      "preparation": "husked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tablespoons",
+      "preparation": "for serving on corn",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T165602Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T165451Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "meal_id": "meal_20251126T163643Z_03_0617ae",
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "archetype_name": "Family Pressure Cooker Express Dinners (15–30, Mild)",
+  "name": "Instant Pot Weeknight Cheesy Beef & Macaroni",
+  "description": "Comforting American-Italian pasta with ground beef, tomatoes, and melted cheddar made fast in the pressure cooker. Mild, kid-friendly, and weeknight-ready.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Dice onions (1 medium).",
+    "Dice bell peppers (1 medium).",
+    "Mince garlic (3 cloves).",
+    "Measure macaroni (12 oz), crushed tomatoes (28 oz), beef stock (2 cups), cheddar (1 cup shredded), and seasonings.",
+    "Set pressure cooker to Sauté and warm olive oil."
+  ],
+  "cook_steps": [
+    "Add olive oil to the pot and sauté onions and bell peppers for 2–3 minutes until slightly softened.",
+    "Add ground beef and cook, breaking it up, until browned (4–5 minutes).",
+    "Stir in garlic, italian seasoning, paprika, salt, and pepper; cook 30 seconds.",
+    "Pour in beef stock and scrape the bottom to deglaze fully.",
+    "Add crushed tomatoes and macaroni; stir just to submerge pasta while keeping the bottom clear to prevent scorching.",
+    "Lock lid. Cook on High Pressure for 4 minutes.",
+    "Quick release pressure. Stir well; the sauce will thicken as it sits.",
+    "Fold in cheddar until melted. Rest 2 minutes, then adjust salt and pepper to taste and serve."
+  ],
+  "instructions": [
+    "Dice onions (1 medium).",
+    "Dice bell peppers (1 medium).",
+    "Mince garlic (3 cloves).",
+    "Measure macaroni (12 oz), crushed tomatoes (28 oz), beef stock (2 cups), cheddar (1 cup shredded), and seasonings.",
+    "Set pressure cooker to Sauté and warm olive oil.",
+    "Add olive oil to the pot and sauté onions and bell peppers for 2–3 minutes until slightly softened.",
+    "Add ground beef and cook, breaking it up, until browned (4–5 minutes).",
+    "Stir in garlic, italian seasoning, paprika, salt, and pepper; cook 30 seconds.",
+    "Pour in beef stock and scrape the bottom to deglaze fully.",
+    "Add crushed tomatoes and macaroni; stir just to submerge pasta while keeping the bottom clear to prevent scorching.",
+    "Lock lid. Cook on High Pressure for 4 minutes.",
+    "Quick release pressure. Stir well; the sauce will thicken as it sits.",
+    "Fold in cheddar until melted. Rest 2 minutes, then adjust salt and pepper to taste and serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "1 lb",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "italian seasoning",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon, or to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon, or to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "2 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 can (28 oz)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "macaroni",
+      "quantity": "12 oz (about 3 cups dry)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cheddar",
+      "quantity": "1 cup",
+      "preparation": "shredded"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "SlowOrPressureCooker",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "1 lb",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "italian seasoning",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon, or to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon, or to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "2 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 can (28 oz)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "macaroni",
+      "quantity": "12 oz (about 3 cups dry)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cheddar",
+      "quantity": "1 cup",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T163802Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T163643Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

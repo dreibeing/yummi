@@ -1,0 +1,316 @@
+{
+  "meal_id": "meal_20251126T150951Z_02_5b2d09",
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "archetype_name": "Family Heat Lovers: Korean & Latin American Feasts (Hot, 30–60, Advanced)",
+  "name": "Gochujang-Chipotle Pork Belly Tacos with Sesame-Lime Slaw and Quick Pickled Red Onions",
+  "description": "Hot, crunchy, and saucy tacos: charred gochujang-marinated pork belly, a crisp sesame-lime cabbage slaw, and punchy pickled red onions, finished with a smoky gochujang-chipotle salsa.",
+  "servings": "Serves 4 (about 12 tacos)",
+  "prep_steps": [
+    "Thinly slice pork belly (about 1/4 inch).",
+    "In a bowl, whisk gochujang, soy sauce, 2 tbsp rice vinegar, honey, minced garlic, 1 tbsp sesame oil, 1/2 tsp salt, and black pepper. Toss pork belly in marinade; chill 15–20 minutes.",
+    "Shred cabbage. Chop coriander. Halve and juice limes.",
+    "Make slaw: In a large bowl, toss cabbage with 1 tbsp sesame oil, 1–2 tbsp lime juice, 1 tbsp rice vinegar, and 1/2 tsp salt. Fold in chopped coriander; set aside.",
+    "Pickle red onion: Thinly slice red onion and place in a small bowl with 2 tbsp rice vinegar, 1 tsp sugar, and a pinch of salt. Toss and let sit.",
+    "Make spicy salsa: Stir salsa with chipotle sauce and 1 tbsp gochujang (optional extra heat).",
+    "Slice jalapenos.",
+    "Preheat an outdoor grill (medium-high, well-oiled grates) or heat a large stovetop skillet over medium-high with a thin film of oil."
+  ],
+  "cook_steps": [
+    "Grill or sear pork belly in a single layer until deeply caramelized and slightly charred, 2–3 minutes per side. Cook in batches; rest on a plate.",
+    "Warm tortillas on the grill or in a dry pan until pliable and lightly charred; wrap in a clean towel to keep warm.",
+    "Assemble tacos: Add a handful of sesame-lime slaw to each tortilla, pile on pork belly, spoon over the gochujang-chipotle salsa, then top with quick pickled red onions and jalapenos.",
+    "Serve immediately with extra lime wedges (from the limes used) if desired."
+  ],
+  "instructions": [
+    "Thinly slice pork belly (about 1/4 inch).",
+    "In a bowl, whisk gochujang, soy sauce, 2 tbsp rice vinegar, honey, minced garlic, 1 tbsp sesame oil, 1/2 tsp salt, and black pepper. Toss pork belly in marinade; chill 15–20 minutes.",
+    "Shred cabbage. Chop coriander. Halve and juice limes.",
+    "Make slaw: In a large bowl, toss cabbage with 1 tbsp sesame oil, 1–2 tbsp lime juice, 1 tbsp rice vinegar, and 1/2 tsp salt. Fold in chopped coriander; set aside.",
+    "Pickle red onion: Thinly slice red onion and place in a small bowl with 2 tbsp rice vinegar, 1 tsp sugar, and a pinch of salt. Toss and let sit.",
+    "Make spicy salsa: Stir salsa with chipotle sauce and 1 tbsp gochujang (optional extra heat).",
+    "Slice jalapenos.",
+    "Preheat an outdoor grill (medium-high, well-oiled grates) or heat a large stovetop skillet over medium-high with a thin film of oil.",
+    "Grill or sear pork belly in a single layer until deeply caramelized and slightly charred, 2–3 minutes per side. Cook in batches; rest on a plate.",
+    "Warm tortillas on the grill or in a dry pan until pliable and lightly charred; wrap in a clean towel to keep warm.",
+    "Assemble tacos: Add a handful of sesame-lime slaw to each tortilla, pile on pork belly, spoon over the gochujang-chipotle salsa, then top with quick pickled red onions and jalapenos.",
+    "Serve immediately with extra lime wedges (from the limes used) if desired."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "pork belly",
+      "quantity": "700 g (1.5 lb)",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "4 tbsp (divided)",
+      "preparation": "3 tbsp for marinade, 1 tbsp for salsa (optional)"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "3 tbsp",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "5 tbsp (divided)",
+      "preparation": "marinade, slaw, and onions"
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tbsp",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided for slaw and marinade"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp + pinch",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 medium head",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tsp",
+      "preparation": "for quick pickle"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": "for sauce base"
+    },
+    {
+      "core_item_name": "chipotle sauce",
+      "quantity": "2 tbsp",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "2",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "tortillas",
+      "quantity": "12 small",
+      "preparation": "warmed"
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "1–2 tbsp",
+      "preparation": "for grilling or searing"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Korean",
+      "LatinAmerican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Hot"
+    ],
+    "Allergens": [
+      "Sesame",
+      "Soy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "pork belly",
+      "quantity": "700 g (1.5 lb)",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "4 tbsp (divided)",
+      "preparation": "3 tbsp for marinade, 1 tbsp for salsa (optional)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "3 tbsp",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "5 tbsp (divided)",
+      "preparation": "marinade, slaw, and onions",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tbsp",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided for slaw and marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp + pinch",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 medium head",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tsp",
+      "preparation": "for quick pickle",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": "for sauce base",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chipotle sauce",
+      "quantity": "2 tbsp",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "2",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tortillas",
+      "quantity": "12 small",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "1–2 tbsp",
+      "preparation": "for grilling or searing",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T151132Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T150951Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

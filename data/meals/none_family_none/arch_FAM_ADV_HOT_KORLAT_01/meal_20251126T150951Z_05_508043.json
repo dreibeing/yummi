@@ -1,0 +1,355 @@
+{
+  "meal_id": "meal_20251126T150951Z_05_508043",
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "archetype_name": "Family Heat Lovers: Korean & Latin American Feasts (Hot, 30–60, Advanced)",
+  "name": "LA-Galbi Short Ribs with Habanero Chimichurri Corn Rice and Quick Cabbage-Cucumber Pickles",
+  "description": "Korean-style grilled beef short ribs get a gochujang-soy glaze, paired with Latin-inspired habanero chimichurri corn rice and bright quick pickles. Built hot and fast on the grill with bold, spicy sides.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Slice cabbage and cucumber thinly; set in a medium bowl.",
+    "Mince garlic and habanero chillies; slice spring onion; chop coriander.",
+    "Rinse jasmine rice under cold water until it runs clear; drain well.",
+    "In a large bowl, whisk gochujang, soy sauce, honey, 2 tbsp rice vinegar, 1 minced garlic clove, 1 tbsp sesame oil, and black pepper. Reserve 2 tbsp of this glaze in a small bowl for basting.",
+    "Add beef short ribs to the large bowl with the remaining glaze; toss to coat. Marinate 20–30 minutes at room temp.",
+    "In a small bowl, combine remaining rice vinegar (about 2 tbsp), sugar, and a big pinch of salt. Pour over cabbage and cucumber; toss and press down to lightly pickle.",
+    "Stir chimichurri with minced habanero chillies and lime juice; set aside.",
+    "Preheat OutdoorGrill to high heat (clean, oil grates). Place a lidded saucepan on the StoveTop for rice and a skillet for corn."
+  ],
+  "cook_steps": [
+    "Cook rice: Add jasmine rice, water, and a pinch of salt to the saucepan. Bring to a boil, cover, reduce to low, and simmer 12 minutes. Turn off heat and rest 10 minutes covered.",
+    "Char the corn: Heat 1 tsp sesame oil in the skillet over medium-high. Add corn and a pinch of salt; cook 3–4 minutes, stirring, until lightly charred. Remove from heat.",
+    "Grill ribs: Lightly oil grill grates with canola oil. Shake excess marinade from ribs. Grill 3–4 minutes per side, basting once with the reserved glaze. Aim for deep caramelization with slight char; move to a cooler zone if flare-ups occur. Rest 5 minutes.",
+    "Finish rice: Fluff rice; fold in charred corn and 2–3 tbsp of the habanero chimichurri. Taste and season with salt if needed.",
+    "Serve: Mound chimichurri corn rice on plates. Top with grilled short ribs. Add a pile of cabbage-cucumber pickles (drain off excess liquid). Spoon extra habanero chimichurri over ribs to taste.",
+    "Garnish: Sprinkle spring onion, coriander, and sesame seeds over the ribs and rice."
+  ],
+  "instructions": [
+    "Slice cabbage and cucumber thinly; set in a medium bowl.",
+    "Mince garlic and habanero chillies; slice spring onion; chop coriander.",
+    "Rinse jasmine rice under cold water until it runs clear; drain well.",
+    "In a large bowl, whisk gochujang, soy sauce, honey, 2 tbsp rice vinegar, 1 minced garlic clove, 1 tbsp sesame oil, and black pepper. Reserve 2 tbsp of this glaze in a small bowl for basting.",
+    "Add beef short ribs to the large bowl with the remaining glaze; toss to coat. Marinate 20–30 minutes at room temp.",
+    "In a small bowl, combine remaining rice vinegar (about 2 tbsp), sugar, and a big pinch of salt. Pour over cabbage and cucumber; toss and press down to lightly pickle.",
+    "Stir chimichurri with minced habanero chillies and lime juice; set aside.",
+    "Preheat OutdoorGrill to high heat (clean, oil grates). Place a lidded saucepan on the StoveTop for rice and a skillet for corn.",
+    "Cook rice: Add jasmine rice, water, and a pinch of salt to the saucepan. Bring to a boil, cover, reduce to low, and simmer 12 minutes. Turn off heat and rest 10 minutes covered.",
+    "Char the corn: Heat 1 tsp sesame oil in the skillet over medium-high. Add corn and a pinch of salt; cook 3–4 minutes, stirring, until lightly charred. Remove from heat.",
+    "Grill ribs: Lightly oil grill grates with canola oil. Shake excess marinade from ribs. Grill 3–4 minutes per side, basting once with the reserved glaze. Aim for deep caramelization with slight char; move to a cooler zone if flare-ups occur. Rest 5 minutes.",
+    "Finish rice: Fluff rice; fold in charred corn and 2–3 tbsp of the habanero chimichurri. Taste and season with salt if needed.",
+    "Serve: Mound chimichurri corn rice on plates. Top with grilled short ribs. Add a pile of cabbage-cucumber pickles (drain off excess liquid). Spoon extra habanero chimichurri over ribs to taste.",
+    "Garnish: Sprinkle spring onion, coriander, and sesame seeds over the ribs and rice."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef short ribs",
+      "quantity": "1.2 kg",
+      "preparation": "LA-cut or thin-cut, bone-in"
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "3 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "4 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "4 tbsp",
+      "preparation": "divided for glaze and pickles"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "6 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "2 tsp",
+      "preparation": "divided for corn and glaze"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 tbsp",
+      "preparation": "for oiling grill grates"
+    },
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 1/2 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 1/2 tsp",
+      "preparation": "divided, to taste"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "1 1/2 cups",
+      "preparation": "kernels"
+    },
+    {
+      "core_item_name": "chimichurri",
+      "quantity": "1/2 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "habanero chillies",
+      "quantity": "1–2",
+      "preparation": "minced, to heat preference"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "3 cups",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "1 tbsp",
+      "preparation": "for garnish"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Korean",
+      "LatinAmerican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Hot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef short ribs",
+      "quantity": "1.2 kg",
+      "preparation": "LA-cut or thin-cut, bone-in",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "3 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "4 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "4 tbsp",
+      "preparation": "divided for glaze and pickles",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "6 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "2 tsp",
+      "preparation": "divided for corn and glaze",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 tbsp",
+      "preparation": "for oiling grill grates",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 1/2 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 1/2 tsp",
+      "preparation": "divided, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "1 1/2 cups",
+      "preparation": "kernels",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chimichurri",
+      "quantity": "1/2 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero chillies",
+      "quantity": "1–2",
+      "preparation": "minced, to heat preference",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "3 cups",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "1 tbsp",
+      "preparation": "for garnish",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T151405Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T150951Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

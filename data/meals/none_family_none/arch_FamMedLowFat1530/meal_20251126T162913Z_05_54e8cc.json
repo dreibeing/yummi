@@ -1,0 +1,307 @@
+{
+  "meal_id": "meal_20251126T162913Z_05_54e8cc",
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "archetype_name": "Family Low-Fat Mediterranean Light Plates (15–30, Mild)",
+  "name": "Quinoa-Chickpea Stuffed Peppers with Lemon-Herb Arugula Salad",
+  "description": "Oven-baked bell peppers filled with a lemony quinoa, chickpea, and herb mixture, served with a bright arugula-cucumber side. Light, high-fiber, and family-friendly with mild Mediterranean spices.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 400°F (200°C).",
+    "Rinse 1 cup quinoa under cold water in a fine strainer.",
+    "Bring 2 cups vegetable stock to a simmer in a small pot.",
+    "Drain and rinse chickpeas if using cooked from a can; measure 2 cups chickpeas.",
+    "Halve 4 bell peppers lengthwise and remove seeds/cores; set in a baking dish cut-side up.",
+    "Finely chop 1 small red onion and 2 cloves garlic.",
+    "Halve 1 cup cherry tomatoes.",
+    "Roughly chop 1/2 cup parsley and 2 tablespoons mint.",
+    "Zest and juice 1 lemon; keep separate.",
+    "Slice 1 large cucumber into half-moons; set 4 cups arugula in a bowl."
+  ],
+  "cook_steps": [
+    "Add rinsed quinoa to the simmering vegetable stock, reduce heat to low, cover, and cook until fluffy, 12–15 minutes. Fluff with a fork.",
+    "While quinoa cooks, heat 1 teaspoon olive oil in a skillet over medium. Soften red onion for 3–4 minutes, then add garlic for 30 seconds.",
+    "In a bowl, combine cooked quinoa, sautéed onion/garlic, chickpeas, cherry tomatoes, parsley, mint, lemon zest, 1 teaspoon cumin, 1/2 teaspoon paprika, 1/2 teaspoon salt, and 1/4 teaspoon black pepper. Stir in 1 teaspoon sumac and 1 tablespoon lemon juice. Taste and adjust seasoning.",
+    "Lightly brush the cut edges of bell peppers with 1 teaspoon olive oil and a pinch of salt. Spoon the quinoa mixture into each pepper half, packing gently.",
+    "Cover the baking dish with foil and bake for 15 minutes. Uncover and bake 5 more minutes until peppers are tender but hold shape.",
+    "Make the salad: toss arugula and cucumber with 2 teaspoons olive oil, 1 tablespoon lemon juice, a pinch of salt, and black pepper.",
+    "Serve 2 stuffed pepper halves per person with a side of the arugula-cucumber salad. Optional: sprinkle a pinch of sumac on top for brightness."
+  ],
+  "instructions": [
+    "Preheat oven to 400°F (200°C).",
+    "Rinse 1 cup quinoa under cold water in a fine strainer.",
+    "Bring 2 cups vegetable stock to a simmer in a small pot.",
+    "Drain and rinse chickpeas if using cooked from a can; measure 2 cups chickpeas.",
+    "Halve 4 bell peppers lengthwise and remove seeds/cores; set in a baking dish cut-side up.",
+    "Finely chop 1 small red onion and 2 cloves garlic.",
+    "Halve 1 cup cherry tomatoes.",
+    "Roughly chop 1/2 cup parsley and 2 tablespoons mint.",
+    "Zest and juice 1 lemon; keep separate.",
+    "Slice 1 large cucumber into half-moons; set 4 cups arugula in a bowl.",
+    "Add rinsed quinoa to the simmering vegetable stock, reduce heat to low, cover, and cook until fluffy, 12–15 minutes. Fluff with a fork.",
+    "While quinoa cooks, heat 1 teaspoon olive oil in a skillet over medium. Soften red onion for 3–4 minutes, then add garlic for 30 seconds.",
+    "In a bowl, combine cooked quinoa, sautéed onion/garlic, chickpeas, cherry tomatoes, parsley, mint, lemon zest, 1 teaspoon cumin, 1/2 teaspoon paprika, 1/2 teaspoon salt, and 1/4 teaspoon black pepper. Stir in 1 teaspoon sumac and 1 tablespoon lemon juice. Taste and adjust seasoning.",
+    "Lightly brush the cut edges of bell peppers with 1 teaspoon olive oil and a pinch of salt. Spoon the quinoa mixture into each pepper half, packing gently.",
+    "Cover the baking dish with foil and bake for 15 minutes. Uncover and bake 5 more minutes until peppers are tender but hold shape.",
+    "Make the salad: toss arugula and cucumber with 2 teaspoons olive oil, 1 tablespoon lemon juice, a pinch of salt, and black pepper.",
+    "Serve 2 stuffed pepper halves per person with a side of the arugula-cucumber salad. Optional: sprinkle a pinch of sumac on top for brightness."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "quinoa",
+      "quantity": "1 cup (dry)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups"
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "2 cups",
+      "preparation": "drained and rinsed if canned"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "4 large",
+      "preparation": "halved, cored"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 teaspoons total"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "arugula",
+      "quantity": "4 cups"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "sliced"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowFat"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "quinoa",
+      "quantity": "1 cup (dry)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "2 cups",
+      "preparation": "drained and rinsed if canned",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "4 large",
+      "preparation": "halved, cored",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 teaspoons total",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "arugula",
+      "quantity": "4 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T163326Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T162913Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

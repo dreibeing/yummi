@@ -1,0 +1,295 @@
+{
+  "meal_id": "meal_20251126T161548Z_02_71c223",
+  "archetype_uid": "arch_FamLatComfort3060",
+  "archetype_name": "Family Latin Comfort (Mild, 30–60, Intermediate)",
+  "name": "Mild Mexican-Style Picadillo Baked Potatoes",
+  "description": "Crisp roasted potato halves topped with a mild beef picadillo simmered with tomatoes, peppers, olives, and warm spices. Family-friendly comfort with Latin flavors and no dairy.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C/425°F.",
+    "Scrub 4 large potatoes; halve lengthwise and pat dry.",
+    "Dice 1 large onion and 1 bell pepper.",
+    "Mince 3 cloves garlic.",
+    "Slice 1/3 cup olives.",
+    "Rinse and chop 1/4 cup coriander.",
+    "Halve, pit, and slice 1 avocado (for topping)."
+  ],
+  "cook_steps": [
+    "Toss potato halves with 1 tbsp olive oil and a big pinch of salt and black pepper; place cut-side down on a baking tray.",
+    "Roast potatoes until tender and edges crisp, 30–35 minutes.",
+    "While potatoes roast, heat 1 tbsp olive oil in a large pan over medium heat.",
+    "Add onion and bell pepper; cook until softened, 5–6 minutes.",
+    "Add garlic; cook 30 seconds until fragrant.",
+    "Add ground beef; season with salt, black pepper, cumin, oregano, and paprika. Cook, breaking up, until browned, 6–8 minutes. Spoon off excess fat if needed.",
+    "Stir in diced tomatoes, bay leaves, and olives. Simmer on medium-low, stirring occasionally, 8–10 minutes until thickened.",
+    "Stir in apple cider vinegar; adjust salt and black pepper to taste. Remove bay leaves.",
+    "Flip roasted potatoes cut-side up. Lightly mash the centers with a fork to make a well.",
+    "Spoon picadillo over potatoes. Top with coriander and avocado slices. Serve hot."
+  ],
+  "instructions": [
+    "Heat oven to 220°C/425°F.",
+    "Scrub 4 large potatoes; halve lengthwise and pat dry.",
+    "Dice 1 large onion and 1 bell pepper.",
+    "Mince 3 cloves garlic.",
+    "Slice 1/3 cup olives.",
+    "Rinse and chop 1/4 cup coriander.",
+    "Halve, pit, and slice 1 avocado (for topping).",
+    "Toss potato halves with 1 tbsp olive oil and a big pinch of salt and black pepper; place cut-side down on a baking tray.",
+    "Roast potatoes until tender and edges crisp, 30–35 minutes.",
+    "While potatoes roast, heat 1 tbsp olive oil in a large pan over medium heat.",
+    "Add onion and bell pepper; cook until softened, 5–6 minutes.",
+    "Add garlic; cook 30 seconds until fragrant.",
+    "Add ground beef; season with salt, black pepper, cumin, oregano, and paprika. Cook, breaking up, until browned, 6–8 minutes. Spoon off excess fat if needed.",
+    "Stir in diced tomatoes, bay leaves, and olives. Simmer on medium-low, stirring occasionally, 8–10 minutes until thickened.",
+    "Stir in apple cider vinegar; adjust salt and black pepper to taste. Remove bay leaves.",
+    "Flip roasted potatoes cut-side up. Lightly mash the centers with a fork to make a well.",
+    "Spoon picadillo over potatoes. Top with coriander and avocado slices. Serve hot."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "potatoes",
+      "quantity": "4 large",
+      "preparation": "halved lengthwise"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 to 1.5 tsp",
+      "preparation": "divided, to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "divided, to taste"
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "500 g"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "400 g",
+      "preparation": "with juices"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "1"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/3 cup",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped, for topping"
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1",
+      "preparation": "sliced, for topping"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "LatinAmerican",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "potatoes",
+      "quantity": "4 large",
+      "preparation": "halved lengthwise",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 to 1.5 tsp",
+      "preparation": "divided, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "divided, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "500 g",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "400 g",
+      "preparation": "with juices",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "1",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/3 cup",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped, for topping",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1",
+      "preparation": "sliced, for topping",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T161703Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T161548Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

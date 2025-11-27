@@ -1,0 +1,255 @@
+{
+  "meal_id": "meal_20251126T150252Z_06_eb769e",
+  "archetype_uid": "arch_FAMXHOT1530",
+  "archetype_name": "Family Extra-Hot Chili Night (Caribbean & Mexican, 15–30, Simple)",
+  "name": "Extra-Hot Jerk Habanero Chicken Wings with Grilled Corn–Avocado Salad",
+  "description": "Firey jerk-style habanero wings grilled hot and served with a bright Mexican-inspired corn–avocado salad. Built fast for a family heat night.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat OutdoorGrill to medium-high heat (200–230°C).",
+    "Pat dry chicken wings with paper towel.",
+    "In a small bowl, mix salt, black pepper, allspice, and ground cumin.",
+    "Halve the lime; zest one half and juice both halves into separate small bowls.",
+    "Shuck corn if needed. Cut avocado into medium dice. Finely chop red onion, jalapenos, and coriander.",
+    "In a small saucepan, combine habanero sauce with 1 tablespoon lime juice and honey; set aside for stovetop warming."
+  ],
+  "cook_steps": [
+    "Toss chicken wings with olive oil, then coat evenly with the spice mix.",
+    "Place corn on the hot grill; cook 8–10 minutes, turning until lightly charred. Set aside to cool.",
+    "Grill wings 14–18 minutes total, turning every 4–5 minutes until cooked through and crispy at the edges.",
+    "While wings grill, warm the habanero sauce mixture over StoveTop on low for 2–3 minutes until slightly thickened; remove from heat.",
+    "Cut kernels off the grilled corn. In a bowl, combine corn, avocado, red onion, jalapenos, coriander, lime zest, remaining lime juice, a drizzle of olive oil, and a pinch of salt; toss gently.",
+    "Brush grilled wings with the warm habanero glaze on both sides and grill 1 more minute per side to set.",
+    "Serve wings hot with the corn–avocado salad on the side."
+  ],
+  "instructions": [
+    "Preheat OutdoorGrill to medium-high heat (200–230°C).",
+    "Pat dry chicken wings with paper towel.",
+    "In a small bowl, mix salt, black pepper, allspice, and ground cumin.",
+    "Halve the lime; zest one half and juice both halves into separate small bowls.",
+    "Shuck corn if needed. Cut avocado into medium dice. Finely chop red onion, jalapenos, and coriander.",
+    "In a small saucepan, combine habanero sauce with 1 tablespoon lime juice and honey; set aside for stovetop warming.",
+    "Toss chicken wings with olive oil, then coat evenly with the spice mix.",
+    "Place corn on the hot grill; cook 8–10 minutes, turning until lightly charred. Set aside to cool.",
+    "Grill wings 14–18 minutes total, turning every 4–5 minutes until cooked through and crispy at the edges.",
+    "While wings grill, warm the habanero sauce mixture over StoveTop on low for 2–3 minutes until slightly thickened; remove from heat.",
+    "Cut kernels off the grilled corn. In a bowl, combine corn, avocado, red onion, jalapenos, coriander, lime zest, remaining lime juice, a drizzle of olive oil, and a pinch of salt; toss gently.",
+    "Brush grilled wings with the warm habanero glaze on both sides and grill 1 more minute per side to set.",
+    "Serve wings hot with the corn–avocado salad on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken wings",
+      "quantity": "1.2–1.5 kg",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "for wings, plus 1 teaspoon for salad"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "for wings, plus pinch for salad"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "for wings"
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1 teaspoon",
+      "preparation": "ground"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "1/3 cup",
+      "preparation": "for glaze"
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1 large",
+      "preparation": "zest and juice"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "3 ears",
+      "preparation": "grilled and kernels cut off"
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/3 cup",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "1–2",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Caribbean",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "ExtraHot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken wings",
+      "quantity": "1.2–1.5 kg",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "for wings, plus 1 teaspoon for salad",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "for wings, plus pinch for salad",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "for wings",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1 teaspoon",
+      "preparation": "ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "1/3 cup",
+      "preparation": "for glaze",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1 large",
+      "preparation": "zest and juice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "3 ears",
+      "preparation": "grilled and kernels cut off",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/3 cup",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "1–2",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T150717Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T150252Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

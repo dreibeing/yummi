@@ -1,0 +1,388 @@
+{
+  "meal_id": "meal_20251126T152605Z_02_c274de",
+  "archetype_uid": "arch_FAM_IND_SHOW_60",
+  "archetype_name": "Family Weekend Showstopper: Indian Feast Night",
+  "name": "Lamb Shank Rogan Josh with Saffron Pulao and Kachumber",
+  "description": "Slow-braised lamb shanks in a rich rogan josh sauce, served with fragrant saffron basmati pulao and a bright lemon-mint kachumber. A centerpiece Indian feast with layered aromas and medium heat.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Preheat oven to 160°C (320°F).",
+    "Rinse 2 cups basmati rice until water runs clear; soak 20 minutes, then drain.",
+    "Slice 2 large onions thinly; mince 6 cloves garlic.",
+    "Rinse and pat dry 4 lamb shank pieces; season lightly with salt and pepper.",
+    "Crush a pinch of saffron in 2 tablespoons warm water.",
+    "Dice 2 tomatoes and 1 cucumber; thinly slice 1/2 red onion; chop a small handful of mint.",
+    "Measure spices: 3 tablespoons rogan josh spice blend, 1 teaspoon garam masala, 1 teaspoon cumin seeds, 2 cardamom pods, 1 small cinnamon piece, 2 cloves, 1 bay leaf.",
+    "Set out 1 cup crushed tomatoes, 1/2 cup yoghurt, 3 cups water (for braise), 2 cups water (for rice), and 2 tablespoons ghee or oil."
+  ],
+  "cook_steps": [
+    "Heat 2 tablespoons oil in a heavy oven-safe pot on StoveTop over medium-high. Brown lamb shanks 2–3 minutes per side; remove.",
+    "Add 2 tablespoons oil if needed. Add sliced onions and a pinch of salt; cook 10–12 minutes until deep golden. Add minced garlic; cook 1 minute.",
+    "Stir in 3 tablespoons rogan josh spice blend and 1 teaspoon garam masala; toast 30 seconds.",
+    "Add 1 cup crushed tomatoes and 3 cups water; scrape the bottom. Return lamb shanks and bring to a simmer.",
+    "Cover and transfer to Oven; braise at 160°C (320°F) for 2–2.5 hours until tender, turning shanks once halfway.",
+    "Near the end, make saffron pulao: Heat 1 tablespoon ghee or oil in a saucepan on StoveTop over medium. Add 1 teaspoon cumin seeds, 1 bay leaf, 2 cardamom pods, 1 small cinnamon piece, and 2 cloves; sizzle 30 seconds.",
+    "Add drained rice; stir to coat 1 minute. Add 2 cups water, 1 teaspoon salt, and the saffron water. Bring to a boil, then cover and reduce to low; cook 12 minutes. Rest off heat, covered, 10 minutes; fluff.",
+    "Make kachumber: In a bowl combine diced tomato, cucumber, and sliced red onion with chopped mint, a big squeeze of lemon, salt, and pepper. Toss and chill.",
+    "Finish lamb: Remove pot from Oven. Skim excess fat. If the sauce is thin, simmer uncovered on StoveTop 5–10 minutes to thicken. Stir in 1/2 cup yoghurt off heat until smooth; adjust salt.",
+    "Warm poppadoms per pack guidance (quick fry or dry heat) if using.",
+    "Serve lamb shanks over saffron pulao with extra sauce. Add kachumber on the side and poppadoms for crunch."
+  ],
+  "instructions": [
+    "Preheat oven to 160°C (320°F).",
+    "Rinse 2 cups basmati rice until water runs clear; soak 20 minutes, then drain.",
+    "Slice 2 large onions thinly; mince 6 cloves garlic.",
+    "Rinse and pat dry 4 lamb shank pieces; season lightly with salt and pepper.",
+    "Crush a pinch of saffron in 2 tablespoons warm water.",
+    "Dice 2 tomatoes and 1 cucumber; thinly slice 1/2 red onion; chop a small handful of mint.",
+    "Measure spices: 3 tablespoons rogan josh spice blend, 1 teaspoon garam masala, 1 teaspoon cumin seeds, 2 cardamom pods, 1 small cinnamon piece, 2 cloves, 1 bay leaf.",
+    "Set out 1 cup crushed tomatoes, 1/2 cup yoghurt, 3 cups water (for braise), 2 cups water (for rice), and 2 tablespoons ghee or oil.",
+    "Heat 2 tablespoons oil in a heavy oven-safe pot on StoveTop over medium-high. Brown lamb shanks 2–3 minutes per side; remove.",
+    "Add 2 tablespoons oil if needed. Add sliced onions and a pinch of salt; cook 10–12 minutes until deep golden. Add minced garlic; cook 1 minute.",
+    "Stir in 3 tablespoons rogan josh spice blend and 1 teaspoon garam masala; toast 30 seconds.",
+    "Add 1 cup crushed tomatoes and 3 cups water; scrape the bottom. Return lamb shanks and bring to a simmer.",
+    "Cover and transfer to Oven; braise at 160°C (320°F) for 2–2.5 hours until tender, turning shanks once halfway.",
+    "Near the end, make saffron pulao: Heat 1 tablespoon ghee or oil in a saucepan on StoveTop over medium. Add 1 teaspoon cumin seeds, 1 bay leaf, 2 cardamom pods, 1 small cinnamon piece, and 2 cloves; sizzle 30 seconds.",
+    "Add drained rice; stir to coat 1 minute. Add 2 cups water, 1 teaspoon salt, and the saffron water. Bring to a boil, then cover and reduce to low; cook 12 minutes. Rest off heat, covered, 10 minutes; fluff.",
+    "Make kachumber: In a bowl combine diced tomato, cucumber, and sliced red onion with chopped mint, a big squeeze of lemon, salt, and pepper. Toss and chill.",
+    "Finish lamb: Remove pot from Oven. Skim excess fat. If the sauce is thin, simmer uncovered on StoveTop 5–10 minutes to thicken. Stir in 1/2 cup yoghurt off heat until smooth; adjust salt.",
+    "Warm poppadoms per pack guidance (quick fry or dry heat) if using.",
+    "Serve lamb shanks over saffron pulao with extra sauce. Add kachumber on the side and poppadoms for crunch."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "lamb shank",
+      "quantity": "4 pieces",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 teaspoons, divided"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "4 tablespoons, divided"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "6 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "rogan josh spice blend",
+      "quantity": "3 tablespoons"
+    },
+    {
+      "core_item_name": "garam masala",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 cup"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups (braise) + 2 cups (rice)"
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1/2 cup",
+      "preparation": "room temperature"
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and soaked"
+    },
+    {
+      "core_item_name": "ghee",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "bay leaf",
+      "quantity": "1"
+    },
+    {
+      "core_item_name": "cardamom",
+      "quantity": "2 pods"
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1 small stick"
+    },
+    {
+      "core_item_name": "cloves",
+      "quantity": "2"
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "1 big pinch",
+      "preparation": "soaked in warm water"
+    },
+    {
+      "core_item_name": "tomato",
+      "quantity": "2",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "small handful",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "poppadoms",
+      "quantity": "8",
+      "preparation": "warmed"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Indian",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "lamb shank",
+      "quantity": "4 pieces",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 teaspoons, divided",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "4 tablespoons, divided",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "6 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rogan josh spice blend",
+      "quantity": "3 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garam masala",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups (braise) + 2 cups (rice)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1/2 cup",
+      "preparation": "room temperature",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and soaked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ghee",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaf",
+      "quantity": "1",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cardamom",
+      "quantity": "2 pods",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1 small stick",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cloves",
+      "quantity": "2",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "1 big pinch",
+      "preparation": "soaked in warm water",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato",
+      "quantity": "2",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "small handful",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "poppadoms",
+      "quantity": "8",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T152728Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T152605Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "meal_id": "meal_20251126T155808Z_01_cc1386",
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "archetype_name": "Family Heat-and-Eat Weeknights (Under 15, No Heat)",
+  "name": "Microwave Honey Mustard Chicken Wraps with Salad and Grapes",
+  "description": "Warm roast chicken is rolled in soft wraps with cheddar and honey mustard dressing, served with a ready salad and fresh grapes. A fast, kid-friendly, no-heat-spice plate.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse and drain the grapes.",
+    "Open the salad and salad dressing.",
+    "Lay out wraps and cheddar cheese slices on a clean work surface."
+  ],
+  "cook_steps": [
+    "Microwave the roast chicken according to the pack directions until hot.",
+    "Microwave the wraps for 10–20 seconds until pliable.",
+    "Assemble wraps: place a cheddar cheese slice on each wrap, add warm roast chicken, drizzle with honey mustard dressing, then roll up and halve.",
+    "Toss the salad with salad dressing and divide among plates.",
+    "Add a handful of grapes to each plate and serve."
+  ],
+  "instructions": [
+    "Rinse and drain the grapes.",
+    "Open the salad and salad dressing.",
+    "Lay out wraps and cheddar cheese slices on a clean work surface.",
+    "Microwave the roast chicken according to the pack directions until hot.",
+    "Microwave the wraps for 10–20 seconds until pliable.",
+    "Assemble wraps: place a cheddar cheese slice on each wrap, add warm roast chicken, drizzle with honey mustard dressing, then roll up and halve.",
+    "Toss the salad with salad dressing and divide among plates.",
+    "Add a handful of grapes to each plate and serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "roast chicken",
+      "quantity": "2 packs (about 600–700 g total)",
+      "preparation": "heat per pack"
+    },
+    {
+      "core_item_name": "wraps",
+      "quantity": "8 small wraps (or 4 large)"
+    },
+    {
+      "core_item_name": "cheddar cheese slices",
+      "quantity": "8 slices"
+    },
+    {
+      "core_item_name": "honey mustard dressing",
+      "quantity": "1/3 cup",
+      "preparation": "for drizzling"
+    },
+    {
+      "core_item_name": "salad",
+      "quantity": "1 large family pack"
+    },
+    {
+      "core_item_name": "salad dressing",
+      "quantity": "1/4 cup",
+      "preparation": "to toss with salad"
+    },
+    {
+      "core_item_name": "grapes",
+      "quantity": "500 g",
+      "preparation": "rinsed"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "roast chicken",
+      "quantity": "2 packs (about 600–700 g total)",
+      "preparation": "heat per pack",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "wraps",
+      "quantity": "8 small wraps (or 4 large)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cheddar cheese slices",
+      "quantity": "8 slices",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey mustard dressing",
+      "quantity": "1/3 cup",
+      "preparation": "for drizzling",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salad",
+      "quantity": "1 large family pack",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salad dressing",
+      "quantity": "1/4 cup",
+      "preparation": "to toss with salad",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "grapes",
+      "quantity": "500 g",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T155838Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T155808Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

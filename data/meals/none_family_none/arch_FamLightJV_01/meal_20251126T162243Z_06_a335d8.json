@@ -1,0 +1,270 @@
+{
+  "meal_id": "meal_20251126T162243Z_06_a335d8",
+  "archetype_uid": "arch_FamLightJV_01",
+  "archetype_name": "Family Light & Fresh: Japanese and Vietnamese Weeknights",
+  "name": "Ponzu Tilapia with Bok Choy Veg over Jasmine Rice",
+  "description": "Light, citrusy pan-seared tilapia glazed with ponzu and quick-sautéed veggies over fluffy jasmine rice. Mild, fresh, and weeknight-fast.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1.5 cups jasmine rice until water runs clear.",
+    "Measure 2.25 cups water for the rice.",
+    "Pat dry 4 tilapia fillets; season both sides with a pinch of salt and black pepper.",
+    "Mix sauce: 1/3 cup ponzu sauce, 1 tbsp rice vinegar, 1 tbsp honey, and juice of 1/2 lime.",
+    "Slice 2 bok choy (separate stems and leaves), thinly slice 2 carrots, and 1 bell pepper.",
+    "Mince 3 cloves garlic; slice 3 spring onion (whites and greens separated).",
+    "Cut remaining 1/2 lime into wedges for serving."
+  ],
+  "cook_steps": [
+    "Cook rice: Combine rinsed jasmine rice and measured water in a pot; bring to a boil, reduce to low, cover, and simmer 12–15 minutes until tender. Rest covered 5 minutes.",
+    "Heat a large nonstick pan over medium with 1 tbsp canola oil.",
+    "Sear tilapia 2–3 minutes per side until opaque and flakes easily.",
+    "Pour the ponzu-honey mixture into the pan; simmer 30–60 seconds, spooning over fish to glaze. Transfer fish to a plate; keep warm.",
+    "In the same pan, add 1 tbsp canola oil. Sauté spring onion whites and minced garlic 30 seconds.",
+    "Add carrot and bell pepper; cook 2 minutes, stirring.",
+    "Add bok choy stems, a splash of water, and a pinch of salt; cook 2 minutes to soften. Stir in bok choy leaves; cook 30–60 seconds until just wilted.",
+    "Fluff rice. Plate rice, top with sautéed vegetables, then the glazed tilapia. Spoon any remaining pan sauce over.",
+    "Garnish with spring onion greens and lime wedges."
+  ],
+  "instructions": [
+    "Rinse 1.5 cups jasmine rice until water runs clear.",
+    "Measure 2.25 cups water for the rice.",
+    "Pat dry 4 tilapia fillets; season both sides with a pinch of salt and black pepper.",
+    "Mix sauce: 1/3 cup ponzu sauce, 1 tbsp rice vinegar, 1 tbsp honey, and juice of 1/2 lime.",
+    "Slice 2 bok choy (separate stems and leaves), thinly slice 2 carrots, and 1 bell pepper.",
+    "Mince 3 cloves garlic; slice 3 spring onion (whites and greens separated).",
+    "Cut remaining 1/2 lime into wedges for serving.",
+    "Cook rice: Combine rinsed jasmine rice and measured water in a pot; bring to a boil, reduce to low, cover, and simmer 12–15 minutes until tender. Rest covered 5 minutes.",
+    "Heat a large nonstick pan over medium with 1 tbsp canola oil.",
+    "Sear tilapia 2–3 minutes per side until opaque and flakes easily.",
+    "Pour the ponzu-honey mixture into the pan; simmer 30–60 seconds, spooning over fish to glaze. Transfer fish to a plate; keep warm.",
+    "In the same pan, add 1 tbsp canola oil. Sauté spring onion whites and minced garlic 30 seconds.",
+    "Add carrot and bell pepper; cook 2 minutes, stirring.",
+    "Add bok choy stems, a splash of water, and a pinch of salt; cook 2 minutes to soften. Stir in bok choy leaves; cook 30–60 seconds until just wilted.",
+    "Fluff rice. Plate rice, top with sautéed vegetables, then the glazed tilapia. Spoon any remaining pan sauce over.",
+    "Garnish with spring onion greens and lime wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2.25 cups",
+      "preparation": "for rice"
+    },
+    {
+      "core_item_name": "tilapia",
+      "quantity": "4 fillets (about 500–600 g)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "ponzu sauce",
+      "quantity": "1/3 cup"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1 whole",
+      "preparation": "1/2 juiced, 1/2 cut into wedges"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tbsp, divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "2 small heads",
+      "preparation": "stems and leaves separated, sliced"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "bell pepper",
+      "quantity": "1 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3",
+      "preparation": "whites and greens sliced, divided"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Japanese",
+      "Vietnamese"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowCalorie"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2.25 cups",
+      "preparation": "for rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tilapia",
+      "quantity": "4 fillets (about 500–600 g)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ponzu sauce",
+      "quantity": "1/3 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1 whole",
+      "preparation": "1/2 juiced, 1/2 cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tbsp, divided",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "2 small heads",
+      "preparation": "stems and leaves separated, sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell pepper",
+      "quantity": "1 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3",
+      "preparation": "whites and greens sliced, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T162637Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T162243Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "meal_id": "meal_20251126T154707Z_03_909478",
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "archetype_name": "Family Low-Carb Weeknight Bowls & Wraps (15–30, Mild)",
+  "name": "Mild Middle Eastern Beef & Lemon-Herb Cauli Rice Bowls",
+  "description": "Quick, low-carb bowls with spiced ground beef, lemon-herb tomato-cucumber salad, and fluffy cauliflower rice. Mild flavor and family-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Dice 1 medium onions.",
+    "Mince 2 cloves garlic.",
+    "Dice 2 medium tomatoes.",
+    "Dice 1 medium cucumber.",
+    "Roughly chop 1/4 cup parsley.",
+    "Halve 1 lemon.",
+    "Shred 4 cups romaine lettuce.",
+    "Set out 4 cups cauliflower rice for heating."
+  ],
+  "cook_steps": [
+    "Heat 1 tbsp olive oil in a large skillet over medium heat.",
+    "Add onions and cook 2–3 minutes until starting to soften.",
+    "Stir in garlic and cook 30 seconds until fragrant.",
+    "Add ground beef, break it up, and cook 5–6 minutes until browned.",
+    "Season beef with ground cumin, paprika, salt, and black pepper; stir and cook 1–2 minutes more. Reduce heat to low to keep warm.",
+    "In a bowl, combine tomatoes, cucumber, parsley, juice of the lemon, and 1 tbsp olive oil; toss and season with a pinch of salt and black pepper.",
+    "Microwave cauliflower rice according to pack directions (about 3–4 minutes), then fluff. Alternatively, warm in a skillet over medium heat 3–4 minutes.",
+    "Build bowls: add cauliflower rice, top with beef, spoon over lemon-herb salad, and add a handful of shredded romaine lettuce."
+  ],
+  "instructions": [
+    "Dice 1 medium onions.",
+    "Mince 2 cloves garlic.",
+    "Dice 2 medium tomatoes.",
+    "Dice 1 medium cucumber.",
+    "Roughly chop 1/4 cup parsley.",
+    "Halve 1 lemon.",
+    "Shred 4 cups romaine lettuce.",
+    "Set out 4 cups cauliflower rice for heating.",
+    "Heat 1 tbsp olive oil in a large skillet over medium heat.",
+    "Add onions and cook 2–3 minutes until starting to soften.",
+    "Stir in garlic and cook 30 seconds until fragrant.",
+    "Add ground beef, break it up, and cook 5–6 minutes until browned.",
+    "Season beef with ground cumin, paprika, salt, and black pepper; stir and cook 1–2 minutes more. Reduce heat to low to keep warm.",
+    "In a bowl, combine tomatoes, cucumber, parsley, juice of the lemon, and 1 tbsp olive oil; toss and season with a pinch of salt and black pepper.",
+    "Microwave cauliflower rice according to pack directions (about 3–4 minutes), then fluff. Alternatively, warm in a skillet over medium heat 3–4 minutes.",
+    "Build bowls: add cauliflower rice, top with beef, spoon over lemon-herb salad, and add a handful of shredded romaine lettuce."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "1 lb",
+      "preparation": "crumbled"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp, to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "4 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "4 cups",
+      "preparation": "shredded"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "1 lb",
+      "preparation": "crumbled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp, to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "4 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "2 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "4 cups",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T154830Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T154707Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

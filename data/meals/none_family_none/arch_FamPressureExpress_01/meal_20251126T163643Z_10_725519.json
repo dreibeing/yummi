@@ -1,0 +1,238 @@
+{
+  "meal_id": "meal_20251126T163643Z_10_725519",
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "archetype_name": "Family Pressure Cooker Express Dinners (15–30, Mild)",
+  "name": "Instant Pot Family Beef Stroganoff with Egg Noodles",
+  "description": "Comforting beef stroganoff made fast in the pressure cooker with tender beef, mushrooms, and a creamy sauce tossed with egg noodles. Mild and family-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Slice mushrooms.",
+    "Dice onions.",
+    "Mince garlic.",
+    "Measure 4 cups beef stock; keep 1 cup separate for noodles.",
+    "Chop parsley."
+  ],
+  "cook_steps": [
+    "Set the pressure cooker to Sauté. Add olive oil.",
+    "Brown beef stew meat in two batches, 2–3 minutes per side. Return all beef to the pot.",
+    "Add onions, mushrooms, and garlic. Sauté 3 minutes to soften.",
+    "Stir in paprika, salt, and pepper.",
+    "Pour in 3 cups beef stock and scrape the bottom to deglaze.",
+    "Seal and cook on High Pressure for 10 minutes; natural release 5 minutes, then quick release.",
+    "Stir in egg noodles and the remaining 1 cup beef stock. Ensure noodles are mostly submerged.",
+    "Seal and cook on High Pressure for 4 minutes; quick release.",
+    "Switch to Sauté (Low). Stir in sour cream until smooth. Simmer 1–2 minutes to thicken as needed.",
+    "Turn off heat. Taste and adjust salt and pepper. Sprinkle with parsley and serve."
+  ],
+  "instructions": [
+    "Slice mushrooms.",
+    "Dice onions.",
+    "Mince garlic.",
+    "Measure 4 cups beef stock; keep 1 cup separate for noodles.",
+    "Chop parsley.",
+    "Set the pressure cooker to Sauté. Add olive oil.",
+    "Brown beef stew meat in two batches, 2–3 minutes per side. Return all beef to the pot.",
+    "Add onions, mushrooms, and garlic. Sauté 3 minutes to soften.",
+    "Stir in paprika, salt, and pepper.",
+    "Pour in 3 cups beef stock and scrape the bottom to deglaze.",
+    "Seal and cook on High Pressure for 10 minutes; natural release 5 minutes, then quick release.",
+    "Stir in egg noodles and the remaining 1 cup beef stock. Ensure noodles are mostly submerged.",
+    "Seal and cook on High Pressure for 4 minutes; quick release.",
+    "Switch to Sauté (Low). Stir in sour cream until smooth. Simmer 1–2 minutes to thicken as needed.",
+    "Turn off heat. Taste and adjust salt and pepper. Sprinkle with parsley and serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef stew meat",
+      "quantity": "1.5 lb (680 g)",
+      "preparation": "cut large pieces into bite-size chunks if needed"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "12 oz (340 g)",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 to 1.5 tsp, to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "4 cups, divided",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "egg noodles",
+      "quantity": "12 oz (340 g)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "sour cream",
+      "quantity": "3/4 cup",
+      "preparation": "room temperature if possible"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "SlowOrPressureCooker",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef stew meat",
+      "quantity": "1.5 lb (680 g)",
+      "preparation": "cut large pieces into bite-size chunks if needed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "12 oz (340 g)",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 to 1.5 tsp, to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "4 cups, divided",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "egg noodles",
+      "quantity": "12 oz (340 g)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sour cream",
+      "quantity": "3/4 cup",
+      "preparation": "room temperature if possible",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T164155Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T163643Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

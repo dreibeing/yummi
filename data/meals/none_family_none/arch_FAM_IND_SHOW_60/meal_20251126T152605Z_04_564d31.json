@@ -1,0 +1,383 @@
+{
+  "meal_id": "meal_20251126T152605Z_04_564d31",
+  "archetype_uid": "arch_FAM_IND_SHOW_60",
+  "archetype_name": "Family Weekend Showstopper: Indian Feast Night",
+  "name": "Punjabi Chole with Yogurt-Fermented Bhature and Pickled Onion",
+  "description": "A festival-style North Indian chickpea curry simmered with warm spices, served with puffed, yogurt-fermented bhature and bright lemon-herb garnish. Set aside time to soak beans and rest the dough for a true weekend showstopper.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Pick through and rinse chickpeas; cover with plenty of water and soak 8–12 hours (overnight). Drain.",
+    "Finely chop onions and garlic. Roughly chop coriander. Cut lemon into wedges.",
+    "Measure spices for chole: cumin seeds, ground cumin, coriander, turmeric powder, garam masala, chili flakes, bay leaves, cinnamon, cloves, black pepper, salt.",
+    "Make bhature dough: In a bowl, combine flour, sugar, salt, yoghurt, 1 tablespoon oil, and enough water to form a soft, slightly tacky dough. Knead 8–10 minutes until smooth.",
+    "Lightly oil the dough, cover, and rest in a warm spot 2–3 hours to gently ferment and relax.",
+    "Open diced tomatoes and set aside. Line a tray with paper towels for fried bread. Set out pickled onions and mango chutney."
+  ],
+  "cook_steps": [
+    "Cook chickpeas: Add soaked chickpeas to a pot with fresh water to cover by 5 cm and a pinch of salt. Simmer on the stovetop until tender (60–90 minutes), or pressure cook until soft. Drain and reserve 1 cup cooking liquid.",
+    "Start the chole masala: Heat 3 tablespoons oil or ghee in a wide pot. Add cumin seeds, bay leaves, cinnamon, and cloves; toast 30–45 seconds until fragrant.",
+    "Add onions and a pinch of salt; cook on medium, stirring, until deep golden brown, 10–15 minutes. Add garlic; cook 1 minute.",
+    "Stir in ground cumin, coriander, turmeric powder, chili flakes, and black pepper; toast 30 seconds.",
+    "Add diced tomatoes; cook down 6–8 minutes until thick and glossy.",
+    "Add cooked chickpeas, 1/2 cup reserved cooking liquid, and garam masala. Simmer 15–20 minutes, mashing a few chickpeas with a spoon to thicken. Adjust salt and heat; add more liquid if needed for a saucy consistency.",
+    "Finish chole: Stir in chopped coriander and a squeeze of lemon. Keep warm on low.",
+    "Fry bhature: Divide rested dough into 10–12 balls. Roll each to a 15–18 cm round, 3–4 mm thick. Heat 4–5 cm oil in a deep pan to 180–185°C. Fry one round at a time, gently pressing to help puff; flip once golden (30–45 seconds per side). Drain on paper towels. Repeat.",
+    "Serve: Spoon chole into a serving bowl. Garnish with extra coriander and lemon wedges. Serve hot bhature alongside with pickled onions and mango chutney."
+  ],
+  "instructions": [
+    "Pick through and rinse chickpeas; cover with plenty of water and soak 8–12 hours (overnight). Drain.",
+    "Finely chop onions and garlic. Roughly chop coriander. Cut lemon into wedges.",
+    "Measure spices for chole: cumin seeds, ground cumin, coriander, turmeric powder, garam masala, chili flakes, bay leaves, cinnamon, cloves, black pepper, salt.",
+    "Make bhature dough: In a bowl, combine flour, sugar, salt, yoghurt, 1 tablespoon oil, and enough water to form a soft, slightly tacky dough. Knead 8–10 minutes until smooth.",
+    "Lightly oil the dough, cover, and rest in a warm spot 2–3 hours to gently ferment and relax.",
+    "Open diced tomatoes and set aside. Line a tray with paper towels for fried bread. Set out pickled onions and mango chutney.",
+    "Cook chickpeas: Add soaked chickpeas to a pot with fresh water to cover by 5 cm and a pinch of salt. Simmer on the stovetop until tender (60–90 minutes), or pressure cook until soft. Drain and reserve 1 cup cooking liquid.",
+    "Start the chole masala: Heat 3 tablespoons oil or ghee in a wide pot. Add cumin seeds, bay leaves, cinnamon, and cloves; toast 30–45 seconds until fragrant.",
+    "Add onions and a pinch of salt; cook on medium, stirring, until deep golden brown, 10–15 minutes. Add garlic; cook 1 minute.",
+    "Stir in ground cumin, coriander, turmeric powder, chili flakes, and black pepper; toast 30 seconds.",
+    "Add diced tomatoes; cook down 6–8 minutes until thick and glossy.",
+    "Add cooked chickpeas, 1/2 cup reserved cooking liquid, and garam masala. Simmer 15–20 minutes, mashing a few chickpeas with a spoon to thicken. Adjust salt and heat; add more liquid if needed for a saucy consistency.",
+    "Finish chole: Stir in chopped coriander and a squeeze of lemon. Keep warm on low.",
+    "Fry bhature: Divide rested dough into 10–12 balls. Roll each to a 15–18 cm round, 3–4 mm thick. Heat 4–5 cm oil in a deep pan to 180–185°C. Fry one round at a time, gently pressing to help puff; flip once golden (30–45 seconds per side). Drain on paper towels. Repeat.",
+    "Serve: Spoon chole into a serving bowl. Garnish with extra coriander and lemon wedges. Serve hot bhature alongside with pickled onions and mango chutney."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "500 g (dried)",
+      "preparation": "soaked 8–12 hours, drained"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (400 g)"
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "2 teaspoons"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "2 teaspoons"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped, plus more for garnish"
+    },
+    {
+      "core_item_name": "coriander seeds",
+      "quantity": "1 teaspoon",
+      "preparation": "lightly crushed (optional)"
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "garam masala",
+      "quantity": "2 teaspoons"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2–1 teaspoon"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2"
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1 small stick"
+    },
+    {
+      "core_item_name": "cloves",
+      "quantity": "3"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "ghee",
+      "quantity": "2 tablespoons",
+      "preparation": "or use oil"
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "for sautéing and deep-frying",
+      "preparation": "about 1 liter for frying"
+    },
+    {
+      "core_item_name": "flour",
+      "quantity": "4 cups (about 500 g)",
+      "preparation": "for bhature dough"
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": "for bhature dough"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "2 teaspoons",
+      "preparation": "for bhature dough"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": "to bring dough together and for cooking chickpeas"
+    },
+    {
+      "core_item_name": "pickled onions",
+      "quantity": "1 cup",
+      "preparation": "to serve"
+    },
+    {
+      "core_item_name": "mango chutney",
+      "quantity": "1/2 cup",
+      "preparation": "to serve"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Indian",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "SlowOrPressureCooker",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "500 g (dried)",
+      "preparation": "soaked 8–12 hours, drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (400 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "2 teaspoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "2 teaspoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped, plus more for garnish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander seeds",
+      "quantity": "1 teaspoon",
+      "preparation": "lightly crushed (optional)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garam masala",
+      "quantity": "2 teaspoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2–1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1 small stick",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cloves",
+      "quantity": "3",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ghee",
+      "quantity": "2 tablespoons",
+      "preparation": "or use oil",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "for sautéing and deep-frying",
+      "preparation": "about 1 liter for frying",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "flour",
+      "quantity": "4 cups (about 500 g)",
+      "preparation": "for bhature dough",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": "for bhature dough",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "2 teaspoons",
+      "preparation": "for bhature dough",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": "to bring dough together and for cooking chickpeas",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pickled onions",
+      "quantity": "1 cup",
+      "preparation": "to serve",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mango chutney",
+      "quantity": "1/2 cup",
+      "preparation": "to serve",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T152926Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T152605Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

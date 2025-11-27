@@ -1,0 +1,232 @@
+{
+  "meal_id": "meal_20251126T162913Z_01_3e5e4f",
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "archetype_name": "Family Low-Fat Mediterranean Light Plates (15–30, Mild)",
+  "name": "Sumac Tuna & Cucumber Couscous Salad",
+  "description": "A light, lemony couscous salad folded with tuna, crisp cucumber, cherry tomatoes, herbs, and sumac. Bright, filling, and family-friendly with minimal oil.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Finely chop parsley and mint (about 1/2 cup parsley, 2 tablespoons mint).",
+    "Halve cherry tomatoes and dice cucumber.",
+    "Finely slice red onion.",
+    "Zest and juice the lemon (about 2–3 tablespoons juice).",
+    "Open and drain tuna.",
+    "Bring vegetable stock to a boil in a small pot (enough to hydrate couscous; see quantities)."
+  ],
+  "cook_steps": [
+    "Place couscous in a heatproof bowl. Pour hot vegetable stock over, cover, and let sit 5 minutes.",
+    "Fluff couscous with a fork to separate grains and let steam off 2 minutes.",
+    "In a large bowl, combine couscous, tuna, cucumber, cherry tomatoes, and red onion.",
+    "Add parsley, mint, lemon juice, lemon zest, olive oil, sumac, and a pinch of salt and pepper.",
+    "Toss gently to coat. Taste and adjust lemon or seasoning to preference.",
+    "Serve at room temperature. Optional: chill 10 minutes for a cooler salad."
+  ],
+  "instructions": [
+    "Finely chop parsley and mint (about 1/2 cup parsley, 2 tablespoons mint).",
+    "Halve cherry tomatoes and dice cucumber.",
+    "Finely slice red onion.",
+    "Zest and juice the lemon (about 2–3 tablespoons juice).",
+    "Open and drain tuna.",
+    "Bring vegetable stock to a boil in a small pot (enough to hydrate couscous; see quantities).",
+    "Place couscous in a heatproof bowl. Pour hot vegetable stock over, cover, and let sit 5 minutes.",
+    "Fluff couscous with a fork to separate grains and let steam off 2 minutes.",
+    "In a large bowl, combine couscous, tuna, cucumber, cherry tomatoes, and red onion.",
+    "Add parsley, mint, lemon juice, lemon zest, olive oil, sumac, and a pinch of salt and pepper.",
+    "Toss gently to coat. Taste and adjust lemon or seasoning to preference.",
+    "Serve at room temperature. Optional: chill 10 minutes for a cooler salad."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "couscous",
+      "quantity": "1 1/2 cups",
+      "preparation": "dry"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1 3/4 cups",
+      "preparation": "brought to a boil"
+    },
+    {
+      "core_item_name": "tuna",
+      "quantity": "2 cans (5–6 oz each), drained",
+      "preparation": "flaked"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 1/2 cups",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 small",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 teaspoon",
+      "preparation": null
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "to taste",
+      "preparation": null
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowFat"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "couscous",
+      "quantity": "1 1/2 cups",
+      "preparation": "dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1 3/4 cups",
+      "preparation": "brought to a boil",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tuna",
+      "quantity": "2 cans (5–6 oz each), drained",
+      "preparation": "flaked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 1/2 cups",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 small",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T163003Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T162913Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

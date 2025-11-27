@@ -1,0 +1,289 @@
+{
+  "meal_id": "meal_20251126T154013Z_07_57c28a",
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "archetype_name": "Family Low-Sodium American & French Comfort (30–60, Mild)",
+  "name": "Herbed Chicken Pot Pie with Puff Pastry Top",
+  "description": "Comforting chicken and vegetable filling in a light herb cream sauce, baked under a golden puff pastry lid. Seasoned with herbs and pepper to keep sodium in check.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 400°F (200°C).",
+    "Dice chicken thighs into 1-inch pieces; pat dry.",
+    "Peel and dice potatoes into 1/2-inch cubes.",
+    "Dice onion; slice celery; peel and dice carrots.",
+    "Chop parsley; strip thyme leaves from stems.",
+    "Measure milk and vegetable stock.",
+    "Unfold puff pastry and keep chilled; if needed, roll to fit a 9–10 inch oven-safe skillet or casserole.",
+    "Have a small amount of milk ready for brushing the pastry."
+  ],
+  "cook_steps": [
+    "Heat a large oven-safe skillet over medium heat; add olive oil and 1 tbsp butter.",
+    "Sear chicken thighs until lightly browned, 4–5 minutes; transfer to a bowl.",
+    "Add remaining 1 tbsp butter to the skillet; sauté onion, celery, and carrots until starting to soften, 4–5 minutes.",
+    "Stir in potatoes; cook 2 minutes. Sprinkle flour over vegetables; stir 1 minute to form a roux.",
+    "Gradually whisk in vegetable stock, then milk, stirring until smooth. Simmer 3–4 minutes until lightly thickened.",
+    "Return chicken and any juices to the skillet. Add peas, thyme, parsley, and black pepper. Simmer 3–4 minutes until the potatoes are just tender. Adjust consistency with a splash of water if too thick.",
+    "Remove from heat. Lay puff pastry over the skillet, tucking edges. Cut 3–4 small slits for steam. Brush top with a little milk.",
+    "Bake at 400°F (200°C) until pastry is puffed and deep golden and filling is bubbling at the edges, 20–25 minutes.",
+    "Rest 5 minutes before serving. Spoon into bowls."
+  ],
+  "instructions": [
+    "Preheat oven to 400°F (200°C).",
+    "Dice chicken thighs into 1-inch pieces; pat dry.",
+    "Peel and dice potatoes into 1/2-inch cubes.",
+    "Dice onion; slice celery; peel and dice carrots.",
+    "Chop parsley; strip thyme leaves from stems.",
+    "Measure milk and vegetable stock.",
+    "Unfold puff pastry and keep chilled; if needed, roll to fit a 9–10 inch oven-safe skillet or casserole.",
+    "Have a small amount of milk ready for brushing the pastry.",
+    "Heat a large oven-safe skillet over medium heat; add olive oil and 1 tbsp butter.",
+    "Sear chicken thighs until lightly browned, 4–5 minutes; transfer to a bowl.",
+    "Add remaining 1 tbsp butter to the skillet; sauté onion, celery, and carrots until starting to soften, 4–5 minutes.",
+    "Stir in potatoes; cook 2 minutes. Sprinkle flour over vegetables; stir 1 minute to form a roux.",
+    "Gradually whisk in vegetable stock, then milk, stirring until smooth. Simmer 3–4 minutes until lightly thickened.",
+    "Return chicken and any juices to the skillet. Add peas, thyme, parsley, and black pepper. Simmer 3–4 minutes until the potatoes are just tender. Adjust consistency with a splash of water if too thick.",
+    "Remove from heat. Lay puff pastry over the skillet, tucking edges. Cut 3–4 small slits for steam. Brush top with a little milk.",
+    "Bake at 400°F (200°C) until pastry is puffed and deep golden and filling is bubbling at the edges, 20–25 minutes.",
+    "Rest 5 minutes before serving. Spoon into bowls."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1.5 lb",
+      "preparation": "diced into 1-inch pieces"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "celery",
+      "quantity": "2 stalks",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "2 medium",
+      "preparation": "peeled and diced"
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "flour",
+      "quantity": "3 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "1.5 cups + 1 tbsp for brushing",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 tsp",
+      "preparation": "leaves"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2–1 tsp",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "puff pastry",
+      "quantity": "1 sheet",
+      "preparation": "chilled"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": "to adjust sauce"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "French"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowSodium"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1.5 lb",
+      "preparation": "diced into 1-inch pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "celery",
+      "quantity": "2 stalks",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "2 medium",
+      "preparation": "peeled and diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "flour",
+      "quantity": "3 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "1.5 cups + 1 tbsp for brushing",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 tsp",
+      "preparation": "leaves",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2–1 tsp",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "puff pastry",
+      "quantity": "1 sheet",
+      "preparation": "chilled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": "to adjust sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T154511Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T154013Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

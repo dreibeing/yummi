@@ -1,0 +1,295 @@
+{
+  "meal_id": "meal_20251126T150252Z_08_bb5aaf",
+  "archetype_uid": "arch_FAMXHOT1530",
+  "archetype_name": "Family Extra-Hot Chili Night (Caribbean & Mexican, 15–30, Simple)",
+  "name": "Extra-Hot Habanero Chipotle Meatball Subs with Chili-Lime Corn",
+  "description": "Spicy beef meatballs simmered in a habanero–chipotle tomato sauce, loaded into crusty bread and served with zesty chili-lime corn. A fast, fiery family dinner with Caribbean-Mexican heat.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Finely chop onion and garlic.",
+    "Halve lime.",
+    "Roughly chop coriander.",
+    "If using an outdoor grill for corn, preheat to medium-high; otherwise set a large skillet on the stovetop.",
+    "Split bread lengthwise without cutting all the way through."
+  ],
+  "cook_steps": [
+    "In a bowl, mix minced beef, half the chopped onion, half the garlic, allspice, ground cumin, chilli powder, salt, and black pepper until just combined.",
+    "Form 12 golf-ball-sized meatballs.",
+    "Heat olive oil in a large skillet over medium-high heat; sear meatballs on all sides until browned (4–5 minutes).",
+    "Reduce heat to medium. Add remaining onion and garlic to the skillet; cook 1 minute, stirring around the meatballs.",
+    "Pour in passata, stir in habanero sauce and chipotle sauce; simmer uncovered until meatballs are cooked through and sauce thickens (6–8 minutes).",
+    "While sauce simmers, cook corn: grill on OutdoorGrill, turning until lightly charred (6–8 minutes), or sauté kernels in a skillet with a little olive oil until tender and browned at spots (4–5 minutes).",
+    "Toss hot corn with chilli lime seasoning, a squeeze of lime, a pinch of salt, and half the chopped coriander.",
+    "Warm bread briefly on the grill or in a dry skillet. Spoon meatballs and spicy sauce into the bread. Top with remaining coriander and an extra drizzle of habanero sauce if desired.",
+    "Serve subs with the chili-lime corn on the side. Squeeze remaining lime over everything."
+  ],
+  "instructions": [
+    "Finely chop onion and garlic.",
+    "Halve lime.",
+    "Roughly chop coriander.",
+    "If using an outdoor grill for corn, preheat to medium-high; otherwise set a large skillet on the stovetop.",
+    "Split bread lengthwise without cutting all the way through.",
+    "In a bowl, mix minced beef, half the chopped onion, half the garlic, allspice, ground cumin, chilli powder, salt, and black pepper until just combined.",
+    "Form 12 golf-ball-sized meatballs.",
+    "Heat olive oil in a large skillet over medium-high heat; sear meatballs on all sides until browned (4–5 minutes).",
+    "Reduce heat to medium. Add remaining onion and garlic to the skillet; cook 1 minute, stirring around the meatballs.",
+    "Pour in passata, stir in habanero sauce and chipotle sauce; simmer uncovered until meatballs are cooked through and sauce thickens (6–8 minutes).",
+    "While sauce simmers, cook corn: grill on OutdoorGrill, turning until lightly charred (6–8 minutes), or sauté kernels in a skillet with a little olive oil until tender and browned at spots (4–5 minutes).",
+    "Toss hot corn with chilli lime seasoning, a squeeze of lime, a pinch of salt, and half the chopped coriander.",
+    "Warm bread briefly on the grill or in a dry skillet. Spoon meatballs and spicy sauce into the bread. Top with remaining coriander and an extra drizzle of habanero sauce if desired.",
+    "Serve subs with the chili-lime corn on the side. Squeeze remaining lime over everything."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "minced beef",
+      "quantity": "500 g",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "chilli powder",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, plus pinch for corn",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "passata",
+      "quantity": "1 1/2 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "2–3 tbsp, to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "chipotle sauce",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "bread",
+      "quantity": "4 crusty rolls or sub buns",
+      "preparation": "split"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "3 cups kernels or 4 ears",
+      "preparation": "grilled or pan-seared"
+    },
+    {
+      "core_item_name": "chilli lime seasoning",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Caribbean",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "ExtraHot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "minced beef",
+      "quantity": "500 g",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli powder",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, plus pinch for corn",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "passata",
+      "quantity": "1 1/2 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "2–3 tbsp, to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chipotle sauce",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bread",
+      "quantity": "4 crusty rolls or sub buns",
+      "preparation": "split",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "3 cups kernels or 4 ears",
+      "preparation": "grilled or pan-seared",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli lime seasoning",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T150841Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T150252Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

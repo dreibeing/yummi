@@ -1,0 +1,247 @@
+{
+  "meal_id": "meal_20251126T151753Z_05_811a32",
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "archetype_name": "Family Hands-Off Sheet Pan & Slow Cooker Nights",
+  "name": "Slow Cooker Lemon-Tomato Lamb Shanks with Chickpeas & Warm Pitas",
+  "description": "Hands-off Greek–Middle Eastern lamb shanks braised with tomatoes, cinnamon, and oregano, finished with lemon and parsley. Serve with warm pita for an easy family dinner.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Gather slow cooker and a baking tray for warming pitas later.",
+    "Peel and slice onion.",
+    "Peel and lightly crush garlic.",
+    "Rinse and drain chickpeas.",
+    "Zest then halve the lemon; set zest aside.",
+    "Rinse and roughly chop parsley."
+  ],
+  "cook_steps": [
+    "Add onion, garlic, crushed tomatoes, chickpeas, olive oil, oregano, cinnamon, bay leaves, salt, and black pepper to the slow cooker. Stir to combine.",
+    "Nestle lamb shanks into the sauce, turning to coat.",
+    "Cover and cook on LOW 6–8 hours (or HIGH 3–4 hours) until lamb is very tender.",
+    "Remove bay leaves. Stir in lemon zest and squeeze in lemon juice. Adjust salt and black pepper to taste.",
+    "Just before serving, place pita bread on a baking tray and warm in a 180°C/350°F oven for 3–5 minutes.",
+    "Sprinkle parsley over the lamb and serve with warm pita bread."
+  ],
+  "instructions": [
+    "Gather slow cooker and a baking tray for warming pitas later.",
+    "Peel and slice onion.",
+    "Peel and lightly crush garlic.",
+    "Rinse and drain chickpeas.",
+    "Zest then halve the lemon; set zest aside.",
+    "Rinse and roughly chop parsley.",
+    "Add onion, garlic, crushed tomatoes, chickpeas, olive oil, oregano, cinnamon, bay leaves, salt, and black pepper to the slow cooker. Stir to combine.",
+    "Nestle lamb shanks into the sauce, turning to coat.",
+    "Cover and cook on LOW 6–8 hours (or HIGH 3–4 hours) until lamb is very tender.",
+    "Remove bay leaves. Stir in lemon zest and squeeze in lemon juice. Adjust salt and black pepper to taste.",
+    "Just before serving, place pita bread on a baking tray and warm in a 180°C/350°F oven for 3–5 minutes.",
+    "Sprinkle parsley over the lamb and serve with warm pita bread."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "lamb shanks",
+      "quantity": "4 shanks (about 1.8–2 kg)"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "lightly crushed"
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 can (400 g)"
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "1 can (400 g)",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp, plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp, plus more to taste"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "pita bread",
+      "quantity": "4–6",
+      "preparation": "warmed"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "SlowOrPressureCooker"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "lamb shanks",
+      "quantity": "4 shanks (about 1.8–2 kg)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "lightly crushed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 can (400 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "1 can (400 g)",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp, plus more to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp, plus more to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pita bread",
+      "quantity": "4–6",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T152113Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T151753Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

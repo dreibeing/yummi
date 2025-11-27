@@ -1,0 +1,271 @@
+{
+  "meal_id": "meal_20251126T154013Z_09_09f336",
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "archetype_name": "Family Low-Sodium American & French Comfort (30–60, Mild)",
+  "name": "Skillet Beef Bourguignon with Olive Oil Mash",
+  "description": "A family-friendly, low-sodium take on a French bistro classic: tender beef, mushrooms, and carrots in a wine–herb sauce, served with olive oil mashed potatoes. Comforting and mild, finished in the oven for rich flavor without added salt.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 350°F (175°C).",
+    "Peel and cut potatoes into 1.5-inch chunks; cover with cold water in a pot.",
+    "Slice onion; peel and cut carrots into 1-inch pieces.",
+    "Quarter mushrooms.",
+    "Mince garlic.",
+    "Roughly chop parsley.",
+    "Pat beef stew meat dry; toss with flour and black pepper."
+  ],
+  "cook_steps": [
+    "Heat 1 tablespoon olive oil in a large oven-safe skillet or Dutch oven over medium-high heat.",
+    "Brown half the beef in a single layer, 3–4 minutes per side; transfer to a plate. Add 1 tablespoon olive oil and brown the remaining beef; transfer to the plate.",
+    "Add remaining 1 tablespoon olive oil to the pan. Sauté onion and carrots for 4–5 minutes until lightly browned. Add mushrooms and cook 3 minutes more. Stir in garlic for 30 seconds.",
+    "Clear a space in the pan; add tomato paste and cook 1 minute to darken. Pour in white wine, scraping up browned bits.",
+    "Return beef and juices to the pan. Add water, bay leaves, and thyme. Bring to a simmer, cover, and transfer to the oven. Bake 25–30 minutes until beef is tender.",
+    "While the stew braises, bring the potatoes to a boil over high heat, then reduce to a simmer and cook 12–15 minutes until very tender.",
+    "Reserve 1 cup potato cooking water, then drain. Mash potatoes with 3 tablespoons olive oil, splashing in reserved water until creamy. Season with black pepper to taste and stir in half the parsley.",
+    "Remove the stew from the oven. If sauce needs thickening, simmer uncovered on the stovetop for 3–5 minutes until glossy. Stir in remaining parsley and a few grinds of black pepper.",
+    "Serve stew over (or alongside) the olive oil mash."
+  ],
+  "instructions": [
+    "Preheat oven to 350°F (175°C).",
+    "Peel and cut potatoes into 1.5-inch chunks; cover with cold water in a pot.",
+    "Slice onion; peel and cut carrots into 1-inch pieces.",
+    "Quarter mushrooms.",
+    "Mince garlic.",
+    "Roughly chop parsley.",
+    "Pat beef stew meat dry; toss with flour and black pepper.",
+    "Heat 1 tablespoon olive oil in a large oven-safe skillet or Dutch oven over medium-high heat.",
+    "Brown half the beef in a single layer, 3–4 minutes per side; transfer to a plate. Add 1 tablespoon olive oil and brown the remaining beef; transfer to the plate.",
+    "Add remaining 1 tablespoon olive oil to the pan. Sauté onion and carrots for 4–5 minutes until lightly browned. Add mushrooms and cook 3 minutes more. Stir in garlic for 30 seconds.",
+    "Clear a space in the pan; add tomato paste and cook 1 minute to darken. Pour in white wine, scraping up browned bits.",
+    "Return beef and juices to the pan. Add water, bay leaves, and thyme. Bring to a simmer, cover, and transfer to the oven. Bake 25–30 minutes until beef is tender.",
+    "While the stew braises, bring the potatoes to a boil over high heat, then reduce to a simmer and cook 12–15 minutes until very tender.",
+    "Reserve 1 cup potato cooking water, then drain. Mash potatoes with 3 tablespoons olive oil, splashing in reserved water until creamy. Season with black pepper to taste and stir in half the parsley.",
+    "Remove the stew from the oven. If sauce needs thickening, simmer uncovered on the stovetop for 3–5 minutes until glossy. Stir in remaining parsley and a few grinds of black pepper.",
+    "Serve stew over (or alongside) the olive oil mash."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef stew meat",
+      "quantity": "1.5 lb",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "flour",
+      "quantity": "2 tablespoons",
+      "preparation": "for dredging"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon, plus more to taste",
+      "preparation": "freshly ground if possible"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "5 tablespoons total",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "3 medium",
+      "preparation": "cut into 1-inch pieces"
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "8 ounces",
+      "preparation": "quartered"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1 cup"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1.5 cups"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2"
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 teaspoon",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "2 lb",
+      "preparation": "peeled and chunked"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "French"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "LowSodium"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef stew meat",
+      "quantity": "1.5 lb",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "flour",
+      "quantity": "2 tablespoons",
+      "preparation": "for dredging",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon, plus more to taste",
+      "preparation": "freshly ground if possible",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "5 tablespoons total",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "3 medium",
+      "preparation": "cut into 1-inch pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "8 ounces",
+      "preparation": "quartered",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1.5 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "1 teaspoon",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "2 lb",
+      "preparation": "peeled and chunked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T154629Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T154013Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

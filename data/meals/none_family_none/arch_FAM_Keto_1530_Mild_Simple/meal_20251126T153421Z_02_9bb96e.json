@@ -1,0 +1,232 @@
+{
+  "meal_id": "meal_20251126T153421Z_02_9bb96e",
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "archetype_name": "Family Keto Weeknight Plates (Mild, 15–30, Simple)",
+  "name": "Lemon-Oregano Chicken Kebabs with Cucumber-Tomato Salad and Cauli Rice",
+  "description": "Bright, herb-lemon chicken kebabs served with a crisp cucumber-tomato salad and quick sautéed cauliflower rice. Mild, fast, and keto-friendly for a family dinner.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "If using oven, set broiler to high; otherwise place a grill pan on the stove (do not heat yet).",
+    "Zest and juice the lemon; keep separate.",
+    "Mince the garlic.",
+    "Slice the cucumber into half-moons.",
+    "Halve the cherry tomatoes.",
+    "Thinly slice the red onion.",
+    "Roughly chop the parsley."
+  ],
+  "cook_steps": [
+    "Season the chicken kebabs with half the lemon zest, half the lemon juice, minced garlic, 1.5 tbsp olive oil, 1 tsp oregano, salt, and black pepper; toss to coat.",
+    "Stovetop option: Heat a grill pan over medium-high. Cook kebabs 3–4 minutes per side until cooked through (165°F/74°C).",
+    "Oven option: Place kebabs on a foil-lined tray and broil 6–8 minutes, turning once, until cooked through.",
+    "While kebabs cook, make salad: In a bowl combine cucumber, cherry tomatoes, red onion, remaining lemon zest and juice, 1 tbsp olive oil, a pinch of oregano, salt, black pepper, and most of the parsley; toss.",
+    "Heat a large skillet over medium with 1 tbsp olive oil. Add cauliflower rice, season with salt and black pepper, and sauté 3–5 minutes until hot and tender-crisp.",
+    "Plate cauliflower rice, top with kebabs, and serve salad on the side. Finish with remaining parsley."
+  ],
+  "instructions": [
+    "If using oven, set broiler to high; otherwise place a grill pan on the stove (do not heat yet).",
+    "Zest and juice the lemon; keep separate.",
+    "Mince the garlic.",
+    "Slice the cucumber into half-moons.",
+    "Halve the cherry tomatoes.",
+    "Thinly slice the red onion.",
+    "Roughly chop the parsley.",
+    "Season the chicken kebabs with half the lemon zest, half the lemon juice, minced garlic, 1.5 tbsp olive oil, 1 tsp oregano, salt, and black pepper; toss to coat.",
+    "Stovetop option: Heat a grill pan over medium-high. Cook kebabs 3–4 minutes per side until cooked through (165°F/74°C).",
+    "Oven option: Place kebabs on a foil-lined tray and broil 6–8 minutes, turning once, until cooked through.",
+    "While kebabs cook, make salad: In a bowl combine cucumber, cherry tomatoes, red onion, remaining lemon zest and juice, 1 tbsp olive oil, a pinch of oregano, salt, black pepper, and most of the parsley; toss.",
+    "Heat a large skillet over medium with 1 tbsp olive oil. Add cauliflower rice, season with salt and black pepper, and sauté 3–5 minutes until hot and tender-crisp.",
+    "Plate cauliflower rice, top with kebabs, and serve salad on the side. Finish with remaining parsley."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken kebabs",
+      "quantity": "6–8 skewers (about 1–1.2 lb)",
+      "preparation": "raw, ready to season"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3.5 tbsp"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1.5 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "sliced into half-moons"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1.5 cups",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/4 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "24 oz",
+      "preparation": "ready to heat"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein",
+      "Keto",
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken kebabs",
+      "quantity": "6–8 skewers (about 1–1.2 lb)",
+      "preparation": "raw, ready to season",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3.5 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1.5 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "sliced into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1.5 cups",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/4 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "24 oz",
+      "preparation": "ready to heat",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T153531Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T153421Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

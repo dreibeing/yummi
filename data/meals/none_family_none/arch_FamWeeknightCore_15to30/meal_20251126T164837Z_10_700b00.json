@@ -1,0 +1,225 @@
+{
+  "meal_id": "meal_20251126T164837Z_10_700b00",
+  "archetype_uid": "arch_FamWeeknightCore_15to30",
+  "archetype_name": "Family Weeknight Classics (Mild, 15–30 min)",
+  "name": "Honey Mustard Chicken with Roasted Veg and Fluffy Couscous",
+  "description": "Tender honey mustard chicken and tray-roasted vegetables served over lemony couscous. Mild, fast, and family-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C (425°F). Line a large sheet pan.",
+    "Cut broccoli into small florets; slice carrots into 1 cm rounds; halve and slice zucchini into half-moons.",
+    "Cut chicken thigh fillets into bite-size pieces.",
+    "Zest the lemon, then cut it in half and juice it.",
+    "Bring 2 cups of vegetable stock to a boil.",
+    "Measure couscous into a heatproof bowl."
+  ],
+  "cook_steps": [
+    "On the sheet pan, toss broccoli, carrots, and zucchini with 1 tbsp olive oil, a pinch of salt, and pepper. Spread out and roast for 12–15 minutes.",
+    "In a bowl, mix chicken thigh fillets with honey mustard, 1 tbsp olive oil, a pinch of salt, pepper, and half the lemon juice.",
+    "Remove the tray, push vegetables to the sides, and add the chicken to the center in a single layer. Return to the oven and roast 10–12 minutes until chicken is cooked through.",
+    "While the chicken roasts, pour the hot vegetable stock over the couscous. Cover and let stand 5 minutes, then fluff with a fork. Mix in lemon zest, a drizzle of olive oil (optional), and a pinch of salt to taste.",
+    "Serve couscous in bowls, top with roasted vegetables and chicken. Squeeze over remaining lemon juice and sprinkle chopped parsley if using."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C (425°F). Line a large sheet pan.",
+    "Cut broccoli into small florets; slice carrots into 1 cm rounds; halve and slice zucchini into half-moons.",
+    "Cut chicken thigh fillets into bite-size pieces.",
+    "Zest the lemon, then cut it in half and juice it.",
+    "Bring 2 cups of vegetable stock to a boil.",
+    "Measure couscous into a heatproof bowl.",
+    "On the sheet pan, toss broccoli, carrots, and zucchini with 1 tbsp olive oil, a pinch of salt, and pepper. Spread out and roast for 12–15 minutes.",
+    "In a bowl, mix chicken thigh fillets with honey mustard, 1 tbsp olive oil, a pinch of salt, pepper, and half the lemon juice.",
+    "Remove the tray, push vegetables to the sides, and add the chicken to the center in a single layer. Return to the oven and roast 10–12 minutes until chicken is cooked through.",
+    "While the chicken roasts, pour the hot vegetable stock over the couscous. Cover and let stand 5 minutes, then fluff with a fork. Mix in lemon zest, a drizzle of olive oil (optional), and a pinch of salt to taste.",
+    "Serve couscous in bowls, top with roasted vegetables and chicken. Squeeze over remaining lemon juice and sprinkle chopped parsley if using."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "600–700 g",
+      "preparation": "cut into bite-size pieces"
+    },
+    {
+      "core_item_name": "honey mustard",
+      "quantity": "3 tbsp"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2–3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "3 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "1 medium head",
+      "preparation": "cut into small florets"
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "sliced into half-moons"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1½ cups (about 270 g)"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups (480 ml)",
+      "preparation": "hot"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped, optional"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "600–700 g",
+      "preparation": "cut into bite-size pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey mustard",
+      "quantity": "3 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2–3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "3 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "1 medium head",
+      "preparation": "cut into small florets",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "sliced into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1½ cups (about 270 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups (480 ml)",
+      "preparation": "hot",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped, optional",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T165451Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T164837Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "meal_id": "meal_20251126T150252Z_10_5af3c3",
+  "archetype_uid": "arch_FAMXHOT1530",
+  "archetype_name": "Family Extra-Hot Chili Night (Caribbean & Mexican, 15–30, Simple)",
+  "name": "Extra-Hot Picanha Jerk Fajitas with Avocado and Lime",
+  "description": "Thin-sliced picanha steak is tossed in a ghost pepper–jerk style seasoning, seared hot with peppers and onions, and stuffed into warm tortillas with avocado and lime. Fiery, fast, and family-friendly to assemble.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Thinly slice picanha steak against the grain.",
+    "Slice bell peppers and onion into thin strips.",
+    "Finely chop spring onion and garlic.",
+    "Halve the lime; cut extra wedges if desired.",
+    "In a bowl, mix olive oil, lime juice, vinegar, allspice, oregano, salt, black pepper, habanero sauce, and a pinch of brown sugar.",
+    "Toss sliced steak with the marinade; set aside 5 minutes.",
+    "Slice avocado just before cooking to avoid browning.",
+    "If using OutdoorGrill, preheat to high; otherwise preheat a large stovetop skillet on high."
+  ],
+  "cook_steps": [
+    "OutdoorGrill option: Place a grill pan or basket on the grill. Grill peppers and onion 3–4 minutes until charred-tender; remove.",
+    "StoveTop option: Add a little olive oil to the hot skillet; stir-fry peppers and onion 3–4 minutes until charred-tender; remove.",
+    "Add a touch of olive oil. Sear marinated steak in a single layer 1–2 minutes per side until just cooked and slightly charred.",
+    "Return peppers and onion to the pan with the steak; add garlic and spring onion; toss 30–60 seconds. Adjust heat with extra habanero sauce or a pinch of chilli flakes if desired. Check seasoning with salt and black pepper.",
+    "Warm tortillas briefly on the grill or directly over a burner/skillet until pliable.",
+    "Assemble fajitas: fill tortillas with steak-pepper mix, top with avocado, and squeeze lime over the top. Serve immediately."
+  ],
+  "instructions": [
+    "Thinly slice picanha steak against the grain.",
+    "Slice bell peppers and onion into thin strips.",
+    "Finely chop spring onion and garlic.",
+    "Halve the lime; cut extra wedges if desired.",
+    "In a bowl, mix olive oil, lime juice, vinegar, allspice, oregano, salt, black pepper, habanero sauce, and a pinch of brown sugar.",
+    "Toss sliced steak with the marinade; set aside 5 minutes.",
+    "Slice avocado just before cooking to avoid browning.",
+    "If using OutdoorGrill, preheat to high; otherwise preheat a large stovetop skillet on high.",
+    "OutdoorGrill option: Place a grill pan or basket on the grill. Grill peppers and onion 3–4 minutes until charred-tender; remove.",
+    "StoveTop option: Add a little olive oil to the hot skillet; stir-fry peppers and onion 3–4 minutes until charred-tender; remove.",
+    "Add a touch of olive oil. Sear marinated steak in a single layer 1–2 minutes per side until just cooked and slightly charred.",
+    "Return peppers and onion to the pan with the steak; add garlic and spring onion; toss 30–60 seconds. Adjust heat with extra habanero sauce or a pinch of chilli flakes if desired. Check seasoning with salt and black pepper.",
+    "Warm tortillas briefly on the grill or directly over a burner/skillet until pliable.",
+    "Assemble fajitas: fill tortillas with steak-pepper mix, top with avocado, and squeeze lime over the top. Serve immediately."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "picanha steak",
+      "quantity": "700 g",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1–2",
+      "preparation": "1 juiced, extra cut into wedges"
+    },
+    {
+      "core_item_name": "vinegar",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "1–2 tablespoons",
+      "preparation": "to heat preference (ExtraHot)"
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1/2 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "divided, to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "pinch",
+      "preparation": "optional, for extra heat"
+    },
+    {
+      "core_item_name": "tortillas",
+      "quantity": "8 small",
+      "preparation": "warmed"
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1 large",
+      "preparation": "sliced"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Caribbean",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "ExtraHot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "picanha steak",
+      "quantity": "700 g",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1–2",
+      "preparation": "1 juiced, extra cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vinegar",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "1–2 tablespoons",
+      "preparation": "to heat preference (ExtraHot)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1/2 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "divided, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "pinch",
+      "preparation": "optional, for extra heat",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tortillas",
+      "quantity": "8 small",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T150951Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T150252Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

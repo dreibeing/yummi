@@ -1,0 +1,259 @@
+{
+  "meal_id": "meal_20251126T152418Z_02_30a848",
+  "archetype_uid": "arch_FAM_HP_30to60_INT_Mild_v1",
+  "archetype_name": "Family High-Protein Dinners (30–60, Mild, Intermediate)",
+  "name": "Lemon-Paprika Turkey & Lentil Pilaf with Roasted Broccoli",
+  "description": "Mild, high-protein turkey and lentils folded with warm spices and lemon, served alongside crisp roasted broccoli. Balanced and family-friendly in under an hour.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F.",
+    "Rinse 1.5 cups brown basmati rice under cold water until it runs clear.",
+    "Rinse 1 cup lentils and drain.",
+    "Cut broccoli into medium florets.",
+    "Finely chop 1 large onion.",
+    "Mince 3 garlic cloves.",
+    "Roughly chop parsley (about 1/4 cup).",
+    "Zest and juice 1 lemon; keep separate."
+  ],
+  "cook_steps": [
+    "Cook rice: In a medium pot, combine rinsed rice with 3 cups water and a pinch of salt. Bring to a boil, reduce to low, cover, and simmer 25–30 minutes until tender. Rest covered 5 minutes.",
+    "Cook lentils: In another pot, add rinsed lentils and 3 cups water. Bring to a boil, then simmer 18–22 minutes until just tender. Drain well.",
+    "Roast broccoli: Toss broccoli with 1 tbsp olive oil, salt, and black pepper on a sheet pan. Roast 15–20 minutes until edges are browned and tender.",
+    "Start turkey: Heat 2 tbsp olive oil in a large skillet over medium-high. Add onion and cook 3–4 minutes until softened. Add garlic and cook 30 seconds.",
+    "Brown turkey: Add turkey, 1.5 tsp ground cumin, 1 tsp paprika, 1 tsp salt, and black pepper. Cook 5–7 minutes, breaking up, until no longer pink.",
+    "Combine: Add drained lentils to the skillet and toss 2–3 minutes to heat through. Stir in lemon zest, half the lemon juice, and most of the parsley. Adjust salt, pepper, and lemon juice to taste.",
+    "Finish and serve: Fluff the rice. Plate rice, top with turkey-lentil mixture, and serve with roasted broccoli. Sprinkle remaining parsley over the top."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F.",
+    "Rinse 1.5 cups brown basmati rice under cold water until it runs clear.",
+    "Rinse 1 cup lentils and drain.",
+    "Cut broccoli into medium florets.",
+    "Finely chop 1 large onion.",
+    "Mince 3 garlic cloves.",
+    "Roughly chop parsley (about 1/4 cup).",
+    "Zest and juice 1 lemon; keep separate.",
+    "Cook rice: In a medium pot, combine rinsed rice with 3 cups water and a pinch of salt. Bring to a boil, reduce to low, cover, and simmer 25–30 minutes until tender. Rest covered 5 minutes.",
+    "Cook lentils: In another pot, add rinsed lentils and 3 cups water. Bring to a boil, then simmer 18–22 minutes until just tender. Drain well.",
+    "Roast broccoli: Toss broccoli with 1 tbsp olive oil, salt, and black pepper on a sheet pan. Roast 15–20 minutes until edges are browned and tender.",
+    "Start turkey: Heat 2 tbsp olive oil in a large skillet over medium-high. Add onion and cook 3–4 minutes until softened. Add garlic and cook 30 seconds.",
+    "Brown turkey: Add turkey, 1.5 tsp ground cumin, 1 tsp paprika, 1 tsp salt, and black pepper. Cook 5–7 minutes, breaking up, until no longer pink.",
+    "Combine: Add drained lentils to the skillet and toss 2–3 minutes to heat through. Stir in lemon zest, half the lemon juice, and most of the parsley. Adjust salt, pepper, and lemon juice to taste.",
+    "Finish and serve: Fluff the rice. Plate rice, top with turkey-lentil mixture, and serve with roasted broccoli. Sprinkle remaining parsley over the top."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "1.5 cups (about 285 g)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "lentils",
+      "quantity": "1 cup (about 200 g)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "turkey",
+      "quantity": "600 g",
+      "preparation": "minced or finely chopped"
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "600 g florets",
+      "preparation": "cut into medium pieces"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1.5 tsp"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "6 cups",
+      "preparation": "divided for rice and lentils"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "1.5 cups (about 285 g)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lentils",
+      "quantity": "1 cup (about 200 g)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "turkey",
+      "quantity": "600 g",
+      "preparation": "minced or finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "600 g florets",
+      "preparation": "cut into medium pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1.5 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "6 cups",
+      "preparation": "divided for rice and lentils",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [
+    "Category 'MealComponentPreference' ideally includes 2+ tags; received ['FromScratch']"
+  ],
+  "metadata": {
+    "created_at": "20251126T152524Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T152418Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

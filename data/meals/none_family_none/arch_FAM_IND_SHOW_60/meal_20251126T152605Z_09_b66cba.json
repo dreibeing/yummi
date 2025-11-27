@@ -1,0 +1,414 @@
+{
+  "meal_id": "meal_20251126T152605Z_09_b66cba",
+  "archetype_uid": "arch_FAM_IND_SHOW_60",
+  "archetype_name": "Family Weekend Showstopper: Indian Feast Night",
+  "name": "Vegetable Dum Biryani with Kachumber and Oven-Puffed Poppadoms",
+  "description": "A layered vegetable dum biryani finished under a tight seal for fragrant, fluffy rice, served with a bright kachumber salad and crisp oven-puffed poppadoms.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Rinse basmati rice under cold water until it runs clear; soak 30 minutes, then drain.",
+    "Crush saffron lightly and soak in 1/4 cup warm water.",
+    "Thinly slice 2 large onions; mince garlic; slice chilies.",
+    "Cut vegetables: cube potatoes; slice carrots; dice bell peppers; measure peas.",
+    "Rough-chop coriander and mint; cut cucumber, tomato, and red onion for kachumber.",
+    "Preheat oven to 180°C/350°F.",
+    "Grease a large oven-safe pot or Dutch oven with oil; line a baking tray for poppadoms."
+  ],
+  "cook_steps": [
+    "Parboil rice: Bring a large pot of water to a boil with salt, bay leaves, cardamom, cloves, cinnamon, and star anise. Add soaked rice and cook 5–6 minutes until 70% done; drain and spread to steam off.",
+    "Make fried onions: Heat oil in a wide pan on medium-high. Fry sliced onions with a pinch of salt until deep golden and crisp at edges (12–15 minutes); remove half to a plate for topping.",
+    "Build vegetable masala: In the same pan with remaining onions, add garlic and chilies; sauté 1 minute. Add potatoes and carrots; cook 4–5 minutes. Stir in bell peppers and peas, then add biryani mix and diced tomatoes; cook until thick and glossy (5–7 minutes). Season with salt and black pepper.",
+    "Layer biryani: In the greased Dutch oven, spread half the parboiled rice. Top with all the vegetable masala, some coriander and mint, and a handful of fried onions. Cover with remaining rice. Drizzle saffron water evenly over the top and a little oil. Scatter remaining herbs and fried onions.",
+    "Seal and bake (dum): Cover pot tightly with foil and a fitting lid. Bake 30–35 minutes until rice is fully tender and aromatic. Rest 10 minutes before opening.",
+    "Make kachumber: Toss cucumber, tomato, and red onion with lemon juice, coriander, mint, salt, and black pepper. Chill until serving.",
+    "Oven-puff poppadoms: Place poppadoms on the lined tray and bake 2–3 minutes, flipping once, until blistered and crisp.",
+    "Serve: Gently fluff biryani, lifting from the sides to keep layers intact. Plate with kachumber and poppadoms."
+  ],
+  "instructions": [
+    "Rinse basmati rice under cold water until it runs clear; soak 30 minutes, then drain.",
+    "Crush saffron lightly and soak in 1/4 cup warm water.",
+    "Thinly slice 2 large onions; mince garlic; slice chilies.",
+    "Cut vegetables: cube potatoes; slice carrots; dice bell peppers; measure peas.",
+    "Rough-chop coriander and mint; cut cucumber, tomato, and red onion for kachumber.",
+    "Preheat oven to 180°C/350°F.",
+    "Grease a large oven-safe pot or Dutch oven with oil; line a baking tray for poppadoms.",
+    "Parboil rice: Bring a large pot of water to a boil with salt, bay leaves, cardamom, cloves, cinnamon, and star anise. Add soaked rice and cook 5–6 minutes until 70% done; drain and spread to steam off.",
+    "Make fried onions: Heat oil in a wide pan on medium-high. Fry sliced onions with a pinch of salt until deep golden and crisp at edges (12–15 minutes); remove half to a plate for topping.",
+    "Build vegetable masala: In the same pan with remaining onions, add garlic and chilies; sauté 1 minute. Add potatoes and carrots; cook 4–5 minutes. Stir in bell peppers and peas, then add biryani mix and diced tomatoes; cook until thick and glossy (5–7 minutes). Season with salt and black pepper.",
+    "Layer biryani: In the greased Dutch oven, spread half the parboiled rice. Top with all the vegetable masala, some coriander and mint, and a handful of fried onions. Cover with remaining rice. Drizzle saffron water evenly over the top and a little oil. Scatter remaining herbs and fried onions.",
+    "Seal and bake (dum): Cover pot tightly with foil and a fitting lid. Bake 30–35 minutes until rice is fully tender and aromatic. Rest 10 minutes before opening.",
+    "Make kachumber: Toss cucumber, tomato, and red onion with lemon juice, coriander, mint, salt, and black pepper. Chill until serving.",
+    "Oven-puff poppadoms: Place poppadoms on the lined tray and bake 2–3 minutes, flipping once, until blistered and crisp.",
+    "Serve: Gently fluff biryani, lifting from the sides to keep layers intact. Plate with kachumber and poppadoms."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "3 cups",
+      "preparation": "rinsed and soaked 30 min"
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "1/2 tsp",
+      "preparation": "soaked in 1/4 cup warm water"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "chilies",
+      "quantity": "2",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "2 medium",
+      "preparation": "peeled and cubed"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "biryani mix",
+      "quantity": "3 tbsp",
+      "preparation": "ready to use"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 1/2 cups",
+      "preparation": "undrained"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "for boiling rice"
+    },
+    {
+      "core_item_name": "cardamom",
+      "quantity": "6 pods",
+      "preparation": "lightly crushed"
+    },
+    {
+      "core_item_name": "cloves",
+      "quantity": "6",
+      "preparation": "whole"
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1 small stick",
+      "preparation": "whole"
+    },
+    {
+      "core_item_name": "star anise",
+      "quantity": "1",
+      "preparation": "whole"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped, divided"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped, divided"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced for kachumber"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "tomato",
+      "quantity": "2",
+      "preparation": "diced for kachumber"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "poppadoms",
+      "quantity": "8",
+      "preparation": "ready to bake"
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "6 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Indian",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "3 cups",
+      "preparation": "rinsed and soaked 30 min",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "1/2 tsp",
+      "preparation": "soaked in 1/4 cup warm water",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilies",
+      "quantity": "2",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "2 medium",
+      "preparation": "peeled and cubed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "biryani mix",
+      "quantity": "3 tbsp",
+      "preparation": "ready to use",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 1/2 cups",
+      "preparation": "undrained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "for boiling rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cardamom",
+      "quantity": "6 pods",
+      "preparation": "lightly crushed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cloves",
+      "quantity": "6",
+      "preparation": "whole",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1 small stick",
+      "preparation": "whole",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "star anise",
+      "quantity": "1",
+      "preparation": "whole",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced for kachumber",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato",
+      "quantity": "2",
+      "preparation": "diced for kachumber",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "poppadoms",
+      "quantity": "8",
+      "preparation": "ready to bake",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oil",
+      "quantity": "6 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "as needed",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T153340Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T152605Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

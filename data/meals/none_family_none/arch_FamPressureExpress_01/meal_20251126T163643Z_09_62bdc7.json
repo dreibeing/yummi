@@ -1,0 +1,247 @@
+{
+  "meal_id": "meal_20251126T163643Z_09_62bdc7",
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "archetype_name": "Family Pressure Cooker Express Dinners (15–30, Mild)",
+  "name": "Instant Pot Creamy Tuna Penne Primavera",
+  "description": "Family-friendly penne with tuna and mixed vegetables, pressure-cooked for speed and finished creamy with parmesan. Mild, comforting flavors with a quick sauté and short pressure cook.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Drain tuna and set aside.",
+    "Dice onions.",
+    "Mince garlic.",
+    "Measure penne pasta, chicken stock, frozen mixed vegetables, cream, and parmesan cheese.",
+    "Halve lemon for finishing (optional)."
+  ],
+  "cook_steps": [
+    "Set the pressure cooker to Sauté. Add olive oil and onions; cook 2–3 minutes until softened. Add garlic; cook 30 seconds.",
+    "Cancel Sauté. Add penne pasta, frozen mixed vegetables, salt, pepper, italian seasoning, and chicken stock. Press pasta under the liquid (do not stir excessively).",
+    "Seal and cook on High Pressure for 4 minutes. Quick release pressure.",
+    "Switch back to Sauté (Low). Stir in cream and parmesan cheese until creamy, 1–2 minutes.",
+    "Fold in tuna gently to warm through, 1 minute. Adjust salt and pepper to taste.",
+    "Optional: Squeeze a little lemon and sprinkle parsley before serving."
+  ],
+  "instructions": [
+    "Drain tuna and set aside.",
+    "Dice onions.",
+    "Mince garlic.",
+    "Measure penne pasta, chicken stock, frozen mixed vegetables, cream, and parmesan cheese.",
+    "Halve lemon for finishing (optional).",
+    "Set the pressure cooker to Sauté. Add olive oil and onions; cook 2–3 minutes until softened. Add garlic; cook 30 seconds.",
+    "Cancel Sauté. Add penne pasta, frozen mixed vegetables, salt, pepper, italian seasoning, and chicken stock. Press pasta under the liquid (do not stir excessively).",
+    "Seal and cook on High Pressure for 4 minutes. Quick release pressure.",
+    "Switch back to Sauté (Low). Stir in cream and parmesan cheese until creamy, 1–2 minutes.",
+    "Fold in tuna gently to warm through, 1 minute. Adjust salt and pepper to taste.",
+    "Optional: Squeeze a little lemon and sprinkle parsley before serving."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 small",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "penne pasta",
+      "quantity": "12 oz (340 g)"
+    },
+    {
+      "core_item_name": "frozen mixed vegetables",
+      "quantity": "2 cups"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "italian seasoning",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "3 cups"
+    },
+    {
+      "core_item_name": "cream",
+      "quantity": "1/2 cup"
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "1/2 cup",
+      "preparation": "grated"
+    },
+    {
+      "core_item_name": "tuna",
+      "quantity": "10–12 oz total",
+      "preparation": "drained"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1/2",
+      "preparation": "optional, for squeezing"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped, optional"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten",
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "SlowOrPressureCooker",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 small",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "penne pasta",
+      "quantity": "12 oz (340 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "frozen mixed vegetables",
+      "quantity": "2 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "italian seasoning",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "3 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cream",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "1/2 cup",
+      "preparation": "grated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tuna",
+      "quantity": "10–12 oz total",
+      "preparation": "drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1/2",
+      "preparation": "optional, for squeezing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped, optional",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T164123Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T163643Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "meal_id": "meal_20251126T155214Z_05_a74de9",
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "archetype_name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)",
+  "name": "Indo-Chinese Chilli Paneer Stir-Fry with Basmati Rice",
+  "description": "Crisp cornflour-coated paneer tossed with bell peppers, onions, and a tangy medium-heat chilli-garlic soy sauce. Serve over fluffy basmati rice for a fast family skillet dinner.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1 1/2 cups basmati rice until water runs clear; drain.",
+    "Cut 400–500 g paneer into 2 cm cubes.",
+    "Slice 1 large onion and 2 bell peppers into strips.",
+    "Mince 3–4 cloves garlic.",
+    "Thinly slice 2 spring onion stalks (separate whites and greens).",
+    "In a small bowl, mix 3 tbsp soy sauce, 1 tbsp vinegar, 1–2 tsp chilli paste, 1 tsp sriracha, 1 tsp sugar, and 3–4 tbsp water.",
+    "In another bowl, toss paneer cubes with 3 tbsp cornflour, 1/2 tsp salt, and 1/4 tsp black pepper."
+  ],
+  "cook_steps": [
+    "Cook the rice: Add rinsed basmati rice to a pot with 2 1/4 cups water and a pinch of salt. Bring to a boil, cover, reduce heat to low, and simmer 12–15 minutes until tender. Rest 5 minutes, then fluff.",
+    "Heat 2 tbsp canola oil in a large skillet over medium-high.",
+    "Fry paneer in a single layer until golden and crisp on 2–3 sides, about 4–6 minutes. Transfer to a plate.",
+    "Add 1 tbsp canola oil to the pan. Stir-fry onion, bell peppers, and spring onion whites for 2 minutes.",
+    "Add garlic and 1/4 tsp chili flakes (optional) and cook 30 seconds until fragrant.",
+    "Stir the sauce mixture, then pour into the pan. Simmer 1 minute to thicken slightly.",
+    "Return paneer to the pan; toss to coat. Drizzle 1 tsp sesame oil and adjust seasoning with soy sauce or sriracha to taste for medium heat.",
+    "Serve stir-fry over basmati rice. Garnish with spring onion greens and a pinch of sesame seeds if desired."
+  ],
+  "instructions": [
+    "Rinse 1 1/2 cups basmati rice until water runs clear; drain.",
+    "Cut 400–500 g paneer into 2 cm cubes.",
+    "Slice 1 large onion and 2 bell peppers into strips.",
+    "Mince 3–4 cloves garlic.",
+    "Thinly slice 2 spring onion stalks (separate whites and greens).",
+    "In a small bowl, mix 3 tbsp soy sauce, 1 tbsp vinegar, 1–2 tsp chilli paste, 1 tsp sriracha, 1 tsp sugar, and 3–4 tbsp water.",
+    "In another bowl, toss paneer cubes with 3 tbsp cornflour, 1/2 tsp salt, and 1/4 tsp black pepper.",
+    "Cook the rice: Add rinsed basmati rice to a pot with 2 1/4 cups water and a pinch of salt. Bring to a boil, cover, reduce heat to low, and simmer 12–15 minutes until tender. Rest 5 minutes, then fluff.",
+    "Heat 2 tbsp canola oil in a large skillet over medium-high.",
+    "Fry paneer in a single layer until golden and crisp on 2–3 sides, about 4–6 minutes. Transfer to a plate.",
+    "Add 1 tbsp canola oil to the pan. Stir-fry onion, bell peppers, and spring onion whites for 2 minutes.",
+    "Add garlic and 1/4 tsp chili flakes (optional) and cook 30 seconds until fragrant.",
+    "Stir the sauce mixture, then pour into the pan. Simmer 1 minute to thicken slightly.",
+    "Return paneer to the pan; toss to coat. Drizzle 1 tsp sesame oil and adjust seasoning with soy sauce or sriracha to taste for medium heat.",
+    "Serve stir-fry over basmati rice. Garnish with spring onion greens and a pinch of sesame seeds if desired."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "paneer",
+      "quantity": "400–500 g",
+      "preparation": "cut into 2 cm cubes"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2 stalks",
+      "preparation": "sliced; whites and greens separated"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3–4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "3 tbsp"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "3–4 tbsp"
+    },
+    {
+      "core_item_name": "vinegar",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "chilli paste",
+      "quantity": "1–2 tsp"
+    },
+    {
+      "core_item_name": "sriracha",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "3 tbsp total",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tsp",
+      "preparation": "finish"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 tsp"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "1 tsp",
+      "preparation": "optional garnish"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/4 tsp",
+      "preparation": "optional"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Chinese",
+      "Indian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Sesame",
+      "Soy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paneer",
+      "quantity": "400–500 g",
+      "preparation": "cut into 2 cm cubes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2 stalks",
+      "preparation": "sliced; whites and greens separated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3–4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "3 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "3–4 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vinegar",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli paste",
+      "quantity": "1–2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sriracha",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "3 tbsp total",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tsp",
+      "preparation": "finish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "1 tsp",
+      "preparation": "optional garnish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/4 tsp",
+      "preparation": "optional",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T155502Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T155214Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

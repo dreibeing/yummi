@@ -1,0 +1,233 @@
+{
+  "meal_id": "meal_20251126T150252Z_01_931d9e",
+  "archetype_uid": "arch_FAMXHOT1530",
+  "archetype_name": "Family Extra-Hot Chili Night (Caribbean & Mexican, 15–30, Simple)",
+  "name": "Extra-Hot Habanero Fish Tacos with Cabbage-Lime Slaw",
+  "description": "Crispy-edged, chile-laced fish tucked into warm tortillas with a sharp cabbage-lime slaw and fresh coriander. Turn up the heat with extra habanero sauce at the table.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Thinly slice cabbage (about 4 packed cups).",
+    "Thinly slice red onion (1/2 medium).",
+    "Roughly chop coriander (1/2 cup).",
+    "Cut lime into wedges; squeeze 2 tablespoons juice into a small bowl.",
+    "Pat fish fillets dry with paper towels.",
+    "In a bowl, mix 2 tablespoons olive oil, 1 tablespoon habanero sauce, 1 teaspoon ground cumin, 1 minced garlic clove, 1/2 teaspoon salt, and 1/4 teaspoon black pepper; coat fish with this paste.",
+    "Stack tortillas and wrap in foil for warming."
+  ],
+  "cook_steps": [
+    "Make slaw: In a large bowl, toss cabbage and red onion with lime juice, 1 tablespoon olive oil, and a pinch of salt; set aside to soften.",
+    "Preheat an outdoor grill (high) or a large stovetop skillet over medium-high. Oil grates or pan lightly.",
+    "Cook fish 2–3 minutes per side until opaque and flakes easily; brush with 1–2 teaspoons extra habanero sauce in the last 30 seconds per side for an extra-hot glaze.",
+    "Warm tortillas on the grill or in a dry pan 30–60 seconds per side (or in the foil packet for 3–5 minutes on the grill).",
+    "Flake cooked fish into chunky pieces.",
+    "Assemble tacos: add slaw to tortillas, top with fish, scatter coriander, and finish with more habanero sauce and lime wedges to taste."
+  ],
+  "instructions": [
+    "Thinly slice cabbage (about 4 packed cups).",
+    "Thinly slice red onion (1/2 medium).",
+    "Roughly chop coriander (1/2 cup).",
+    "Cut lime into wedges; squeeze 2 tablespoons juice into a small bowl.",
+    "Pat fish fillets dry with paper towels.",
+    "In a bowl, mix 2 tablespoons olive oil, 1 tablespoon habanero sauce, 1 teaspoon ground cumin, 1 minced garlic clove, 1/2 teaspoon salt, and 1/4 teaspoon black pepper; coat fish with this paste.",
+    "Stack tortillas and wrap in foil for warming.",
+    "Make slaw: In a large bowl, toss cabbage and red onion with lime juice, 1 tablespoon olive oil, and a pinch of salt; set aside to soften.",
+    "Preheat an outdoor grill (high) or a large stovetop skillet over medium-high. Oil grates or pan lightly.",
+    "Cook fish 2–3 minutes per side until opaque and flakes easily; brush with 1–2 teaspoons extra habanero sauce in the last 30 seconds per side for an extra-hot glaze.",
+    "Warm tortillas on the grill or in a dry pan 30–60 seconds per side (or in the foil packet for 3–5 minutes on the grill).",
+    "Flake cooked fish into chunky pieces.",
+    "Assemble tacos: add slaw to tortillas, top with fish, scatter coriander, and finish with more habanero sauce and lime wedges to taste."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "600–700 g",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "2–3 tablespoons",
+      "preparation": "divided (marinade + finishing)"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "1 clove",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "3/4 teaspoon",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 small head",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1–2",
+      "preparation": "cut into wedges; juice 2 tbsp"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "tortillas",
+      "quantity": "12 small",
+      "preparation": "warmed"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Caribbean",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "ExtraHot"
+    ],
+    "Allergens": [
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "600–700 g",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "2–3 tablespoons",
+      "preparation": "divided (marinade + finishing)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "1 clove",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "3/4 teaspoon",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 small head",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1–2",
+      "preparation": "cut into wedges; juice 2 tbsp",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tortillas",
+      "quantity": "12 small",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T150345Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T150252Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

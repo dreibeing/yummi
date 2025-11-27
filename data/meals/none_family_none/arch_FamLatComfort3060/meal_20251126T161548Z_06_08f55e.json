@@ -1,0 +1,319 @@
+{
+  "meal_id": "meal_20251126T161548Z_06_08f55e",
+  "archetype_uid": "arch_FamLatComfort3060",
+  "archetype_name": "Family Latin Comfort (Mild, 30–60, Intermediate)",
+  "name": "Family Beef & Black Bean Tostada Bake (Mild)",
+  "description": "Crisped oven-baked tortillas topped with a mild, tomato-cumin ground beef and black bean mixture, plus fresh lettuce, tomatoes, and a little cheese and sour cream.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 400°F (200°C).",
+    "Finely chop onions and garlic.",
+    "Rinse and drain black beans if needed.",
+    "Shred lettuce and dice tomatoes.",
+    "Grate cheddar cheese.",
+    "Cut lime into wedges."
+  ],
+  "cook_steps": [
+    "Arrange tortillas on two baking sheets (no overlap). Brush both sides lightly with olive oil.",
+    "Bake tortillas for 6–8 minutes, flipping once, until golden and crisp. Set aside.",
+    "While tortillas bake, heat olive oil in a large skillet over medium heat. Add onions and cook 3–4 minutes until translucent.",
+    "Add garlic and cook 30 seconds until fragrant.",
+    "Add ground beef, breaking it up. Season with salt, black pepper, cumin, oregano, and paprika. Cook 5–7 minutes until browned.",
+    "Stir in tomato paste and a splash of water to loosen (about 1/2 cup), then fold in black beans. Simmer 3–4 minutes to thicken; adjust salt and black pepper.",
+    "To serve, place crisp tortillas on plates. Spoon beef-bean mixture on each. Top with lettuce, tomatoes, cheddar cheese, and a dollop of sour cream.",
+    "Serve with lime wedges and salsa on the side for optional extra flavor."
+  ],
+  "instructions": [
+    "Heat oven to 400°F (200°C).",
+    "Finely chop onions and garlic.",
+    "Rinse and drain black beans if needed.",
+    "Shred lettuce and dice tomatoes.",
+    "Grate cheddar cheese.",
+    "Cut lime into wedges.",
+    "Arrange tortillas on two baking sheets (no overlap). Brush both sides lightly with olive oil.",
+    "Bake tortillas for 6–8 minutes, flipping once, until golden and crisp. Set aside.",
+    "While tortillas bake, heat olive oil in a large skillet over medium heat. Add onions and cook 3–4 minutes until translucent.",
+    "Add garlic and cook 30 seconds until fragrant.",
+    "Add ground beef, breaking it up. Season with salt, black pepper, cumin, oregano, and paprika. Cook 5–7 minutes until browned.",
+    "Stir in tomato paste and a splash of water to loosen (about 1/2 cup), then fold in black beans. Simmer 3–4 minutes to thicken; adjust salt and black pepper.",
+    "To serve, place crisp tortillas on plates. Spoon beef-bean mixture on each. Top with lettuce, tomatoes, cheddar cheese, and a dollop of sour cream.",
+    "Serve with lime wedges and salsa on the side for optional extra flavor."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "tortillas",
+      "quantity": "8 small tortillas",
+      "preparation": "brushed with oil"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "500 g (about 1 lb)",
+      "preparation": "crumbled"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1/2 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "2 cups",
+      "preparation": "rinsed and drained if canned"
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "2 cups",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1 cup",
+      "preparation": "grated"
+    },
+    {
+      "core_item_name": "sour cream",
+      "quantity": "1/2 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup",
+      "preparation": "for serving (optional)"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "LatinAmerican",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "tortillas",
+      "quantity": "8 small tortillas",
+      "preparation": "brushed with oil",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "500 g (about 1 lb)",
+      "preparation": "crumbled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1/2 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "2 cups",
+      "preparation": "rinsed and drained if canned",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lettuce",
+      "quantity": "2 cups",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "2 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1 cup",
+      "preparation": "grated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sour cream",
+      "quantity": "1/2 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup",
+      "preparation": "for serving (optional)",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T162012Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T161548Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

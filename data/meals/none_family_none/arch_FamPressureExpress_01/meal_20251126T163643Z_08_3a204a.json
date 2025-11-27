@@ -1,0 +1,251 @@
+{
+  "meal_id": "meal_20251126T163643Z_08_3a204a",
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "archetype_name": "Family Pressure Cooker Express Dinners (15–30, Mild)",
+  "name": "Instant Pot Lemon Herb Chicken & Rice",
+  "description": "Tender chicken thighs and fluffy jasmine rice pressure-cooked with carrots and peas, finished with fresh lemon and parsley for a mild, family-friendly dinner.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 2 cups jasmine rice under cold water until the water runs mostly clear; drain well.",
+    "Dice 1.5 lb chicken thighs into bite-size pieces; pat dry.",
+    "Dice 1 medium onion and 2 medium carrots.",
+    "Mince 3 cloves garlic.",
+    "Zest 1 lemon, then halve and juice it (remove seeds).",
+    "Roughly chop 1/4 cup parsley.",
+    "Measure 2.5 cups chicken stock."
+  ],
+  "cook_steps": [
+    "Set the pressure cooker to Sauté (Normal). Add olive oil and heat 1 minute.",
+    "Add onions and carrots; cook, stirring, 3 minutes until slightly softened.",
+    "Stir in garlic; cook 30 seconds until fragrant.",
+    "Add chicken thighs, italian seasoning, salt, and pepper; sauté 2–3 minutes to lightly color (no need to cook through).",
+    "Stir in the drained jasmine rice to coat with juices, 30 seconds.",
+    "Pour in chicken stock, scraping the bottom to remove any browned bits.",
+    "Scatter peas over the top; do not stir.",
+    "Cancel Sauté. Seal the lid and set to Pressure Cook (High) for 6 minutes.",
+    "Allow a 10-minute natural release, then quick release any remaining pressure and open the lid.",
+    "Fluff gently with a fork. Stir in lemon zest, 2 tablespoons lemon juice (to taste), and parsley. Adjust salt and pepper.",
+    "Let sit 3–5 minutes on Keep Warm to set, then serve."
+  ],
+  "instructions": [
+    "Rinse 2 cups jasmine rice under cold water until the water runs mostly clear; drain well.",
+    "Dice 1.5 lb chicken thighs into bite-size pieces; pat dry.",
+    "Dice 1 medium onion and 2 medium carrots.",
+    "Mince 3 cloves garlic.",
+    "Zest 1 lemon, then halve and juice it (remove seeds).",
+    "Roughly chop 1/4 cup parsley.",
+    "Measure 2.5 cups chicken stock.",
+    "Set the pressure cooker to Sauté (Normal). Add olive oil and heat 1 minute.",
+    "Add onions and carrots; cook, stirring, 3 minutes until slightly softened.",
+    "Stir in garlic; cook 30 seconds until fragrant.",
+    "Add chicken thighs, italian seasoning, salt, and pepper; sauté 2–3 minutes to lightly color (no need to cook through).",
+    "Stir in the drained jasmine rice to coat with juices, 30 seconds.",
+    "Pour in chicken stock, scraping the bottom to remove any browned bits.",
+    "Scatter peas over the top; do not stir.",
+    "Cancel Sauté. Seal the lid and set to Pressure Cook (High) for 6 minutes.",
+    "Allow a 10-minute natural release, then quick release any remaining pressure and open the lid.",
+    "Fluff gently with a fork. Stir in lemon zest, 2 tablespoons lemon juice (to taste), and parsley. Adjust salt and pepper.",
+    "Let sit 3–5 minutes on Keep Warm to set, then serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1.5 lb",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1.5 tablespoons"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "2.5 cups"
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup"
+    },
+    {
+      "core_item_name": "italian seasoning",
+      "quantity": "1.5 teaspoons"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 to 1.25 teaspoons",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "SlowOrPressureCooker",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1.5 lb",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1.5 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "2.5 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "italian seasoning",
+      "quantity": "1.5 teaspoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 to 1.25 teaspoons",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T164049Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T163643Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

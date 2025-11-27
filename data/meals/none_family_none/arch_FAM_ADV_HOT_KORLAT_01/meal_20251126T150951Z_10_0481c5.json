@@ -1,0 +1,326 @@
+{
+  "meal_id": "meal_20251126T150951Z_10_0481c5",
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "archetype_name": "Family Heat Lovers: Korean & Latin American Feasts (Hot, 30–60, Advanced)",
+  "name": "Gochujang-Habanero Chicken Skewers with Pineapple-Corn Salsa, Scallion Rice, and Quick Cucumber Pickles",
+  "description": "Grilled gochujang-marinated chicken skewers bring Korean heat, paired with a bright pineapple-corn salsa and scallion jasmine rice, plus crisp cucumber pickles for contrast.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "If using wooden skewers, soak 8–10 in water for 15 minutes.",
+    "Rinse 2 cups jasmine rice under cold water until it runs mostly clear; drain.",
+    "Cut 800 g chicken thighs into 3 cm pieces.",
+    "Make marinade: in a bowl, mix 3 tbsp gochujang, 1 tbsp honey, 2 cloves garlic (minced), 1 tbsp olive oil, juice of 1 lime, 1 tsp salt, 1/2 tsp black pepper.",
+    "Toss chicken in marinade; set aside 15–20 minutes.",
+    "Dice 2 cups pineapple, finely chop 1 small red onion, and chop 1/2 cup coriander.",
+    "Char-corn prep: drain 2 cups corn and pat dry.",
+    "Make salsa mix-in: finely chop 1–2 jalapenos (or to heat preference).",
+    "Slice 1 large cucumber into thin rounds.",
+    "Quick pickle: in a small bowl, mix 1/3 cup rice vinegar, 2 tsp sugar, 1/2 tsp salt; add cucumber and toss. Chill.",
+    "Slice 4 spring onion thinly (whites and greens) for rice.",
+    "Preheat outdoor grill to medium-high heat. Set a stovetop pan ready for rice and a skillet for charring corn."
+  ],
+  "cook_steps": [
+    "Rice: add rinsed jasmine rice and 3 cups water with 1/2 tsp salt to a pot. Bring to a boil, cover, reduce to low, and cook 12 minutes. Rest off heat 10 minutes.",
+    "Char the corn in a hot dry skillet over medium-high, stirring until lightly blistered (3–5 minutes). Transfer to a bowl to cool slightly.",
+    "Salsa: combine charred corn, diced pineapple, half of the chopped red onion, chopped coriander, chopped jalapenos, juice of 1/2 lime, 1 tbsp olive oil, 1/4 tsp salt. Mix and set aside.",
+    "Thread marinated chicken onto soaked skewers.",
+    "Grill skewers over direct heat, turning every 2–3 minutes, until nicely charred and cooked through (internal temp 74°C/165°F), about 10–12 minutes total. Brush any leftover marinade on during the first few turns only.",
+    "Fluff rice; fold in sliced spring onion and a squeeze of lime to taste.",
+    "Taste salsa and pickles; adjust salt or lime if needed.",
+    "Serve: plate scallion rice, top with chicken skewers. Spoon pineapple-corn salsa over or alongside. Add a mound of quick cucumber pickles on the side."
+  ],
+  "instructions": [
+    "If using wooden skewers, soak 8–10 in water for 15 minutes.",
+    "Rinse 2 cups jasmine rice under cold water until it runs mostly clear; drain.",
+    "Cut 800 g chicken thighs into 3 cm pieces.",
+    "Make marinade: in a bowl, mix 3 tbsp gochujang, 1 tbsp honey, 2 cloves garlic (minced), 1 tbsp olive oil, juice of 1 lime, 1 tsp salt, 1/2 tsp black pepper.",
+    "Toss chicken in marinade; set aside 15–20 minutes.",
+    "Dice 2 cups pineapple, finely chop 1 small red onion, and chop 1/2 cup coriander.",
+    "Char-corn prep: drain 2 cups corn and pat dry.",
+    "Make salsa mix-in: finely chop 1–2 jalapenos (or to heat preference).",
+    "Slice 1 large cucumber into thin rounds.",
+    "Quick pickle: in a small bowl, mix 1/3 cup rice vinegar, 2 tsp sugar, 1/2 tsp salt; add cucumber and toss. Chill.",
+    "Slice 4 spring onion thinly (whites and greens) for rice.",
+    "Preheat outdoor grill to medium-high heat. Set a stovetop pan ready for rice and a skillet for charring corn.",
+    "Rice: add rinsed jasmine rice and 3 cups water with 1/2 tsp salt to a pot. Bring to a boil, cover, reduce to low, and cook 12 minutes. Rest off heat 10 minutes.",
+    "Char the corn in a hot dry skillet over medium-high, stirring until lightly blistered (3–5 minutes). Transfer to a bowl to cool slightly.",
+    "Salsa: combine charred corn, diced pineapple, half of the chopped red onion, chopped coriander, chopped jalapenos, juice of 1/2 lime, 1 tbsp olive oil, 1/4 tsp salt. Mix and set aside.",
+    "Thread marinated chicken onto soaked skewers.",
+    "Grill skewers over direct heat, turning every 2–3 minutes, until nicely charred and cooked through (internal temp 74°C/165°F), about 10–12 minutes total. Brush any leftover marinade on during the first few turns only.",
+    "Fluff rice; fold in sliced spring onion and a squeeze of lime to taste.",
+    "Taste salsa and pickles; adjust salt or lime if needed.",
+    "Serve: plate scallion rice, top with chicken skewers. Spoon pineapple-corn salsa over or alongside. Add a mound of quick cucumber pickles on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp total",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "800 g",
+      "preparation": "cut into 3 cm pieces"
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "3 tbsp"
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp total",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "juiced as directed"
+    },
+    {
+      "core_item_name": "pineapple",
+      "quantity": "2 cups",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "2 cups",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "1–2",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1/3 cup"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "2 tsp"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4",
+      "preparation": "thinly sliced"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Korean",
+      "LatinAmerican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Hot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp total",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "800 g",
+      "preparation": "cut into 3 cm pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "3 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp total",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "juiced as directed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pineapple",
+      "quantity": "2 cups",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "2 cups",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "1–2",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1/3 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T151753Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T150951Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

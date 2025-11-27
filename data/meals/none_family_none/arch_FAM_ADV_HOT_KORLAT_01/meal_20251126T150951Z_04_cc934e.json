@@ -1,0 +1,371 @@
+{
+  "meal_id": "meal_20251126T150951Z_04_cc934e",
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "archetype_name": "Family Heat Lovers: Korean & Latin American Feasts (Hot, 30–60, Advanced)",
+  "name": "Korean BBQ Picanha Fajita Wraps with Quick Cabbage Pickles and Spicy Black Beans",
+  "description": "Char-grilled picanha in a gochujang–soy lime marinade, sliced fajita-style with peppers and onions, quick-pickled cabbage and red onion, and chipotle-black beans, all wrapped in warm tortillas.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "In a bowl, whisk gochujang, soy sauce, lime juice, garlic, brown sugar, and sesame oil.",
+    "Pat dry picanha steak and coat with the marinade; set aside 15–30 minutes.",
+    "Thinly slice cabbage and red onion for pickles.",
+    "Mix rice vinegar, sugar, salt, and water in a separate bowl; add cabbage and red onion and toss. Set aside.",
+    "Slice bell peppers and onions into 1 cm strips for fajitas.",
+    "Rinse and drain black beans.",
+    "Chop coriander (leaves and tender stems).",
+    "Preheat outdoor grill to high heat and place a stovetop skillet over medium-high heat."
+  ],
+  "cook_steps": [
+    "Start pickles: Toss cabbage and red onion again and press down so they’re submerged; leave at room temp while cooking.",
+    "Grill steak: Oil grill grates lightly with canola oil. Sear picanha 3–4 minutes per side for medium-rare (thicker pieces may need an extra minute per side). Move to a cooler spot if flaring. Rest 10 minutes, tented.",
+    "Fajita veg: In the hot skillet, add canola oil, then bell peppers and onions. Season with salt, black pepper, ground cumin, and chilli flakes. Sauté 6–8 minutes until tender-crisp with charred edges. Keep warm.",
+    "Spicy beans: In a saucepan, combine black beans, chipotle sauce, a splash of water, and a pinch of salt. Simmer 5–7 minutes, stirring, until saucy.",
+    "Warm tortillas: Place tortilla wraps on the grill 10–15 seconds per side until pliable; stack and wrap in a clean towel.",
+    "Slice steak: Cut picanha against the grain into thin slices. Toss with any resting juices.",
+    "Assemble: Lay out tortillas. Add fajita peppers/onions, steak slices, a spoon of quick pickles (drained), spicy black beans, and coriander.",
+    "Serve immediately with extra pickles and beans on the side."
+  ],
+  "instructions": [
+    "In a bowl, whisk gochujang, soy sauce, lime juice, garlic, brown sugar, and sesame oil.",
+    "Pat dry picanha steak and coat with the marinade; set aside 15–30 minutes.",
+    "Thinly slice cabbage and red onion for pickles.",
+    "Mix rice vinegar, sugar, salt, and water in a separate bowl; add cabbage and red onion and toss. Set aside.",
+    "Slice bell peppers and onions into 1 cm strips for fajitas.",
+    "Rinse and drain black beans.",
+    "Chop coriander (leaves and tender stems).",
+    "Preheat outdoor grill to high heat and place a stovetop skillet over medium-high heat.",
+    "Start pickles: Toss cabbage and red onion again and press down so they’re submerged; leave at room temp while cooking.",
+    "Grill steak: Oil grill grates lightly with canola oil. Sear picanha 3–4 minutes per side for medium-rare (thicker pieces may need an extra minute per side). Move to a cooler spot if flaring. Rest 10 minutes, tented.",
+    "Fajita veg: In the hot skillet, add canola oil, then bell peppers and onions. Season with salt, black pepper, ground cumin, and chilli flakes. Sauté 6–8 minutes until tender-crisp with charred edges. Keep warm.",
+    "Spicy beans: In a saucepan, combine black beans, chipotle sauce, a splash of water, and a pinch of salt. Simmer 5–7 minutes, stirring, until saucy.",
+    "Warm tortillas: Place tortilla wraps on the grill 10–15 seconds per side until pliable; stack and wrap in a clean towel.",
+    "Slice steak: Cut picanha against the grain into thin slices. Toss with any resting juices.",
+    "Assemble: Lay out tortillas. Add fajita peppers/onions, steak slices, a spoon of quick pickles (drained), spicy black beans, and coriander.",
+    "Serve immediately with extra pickles and beans on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "picanha steak",
+      "quantity": "800 g",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "3 tablespoons",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "3 tablespoons",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "juiced for marinade"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely grated"
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tablespoon",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tablespoon",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "300 g",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1/2 cup",
+      "preparation": "for quick pickles"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "2 teaspoons",
+      "preparation": "for quick pickles"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 1/4 teaspoons",
+      "preparation": "divided; for pickles and seasoning"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 tablespoons",
+      "preparation": "for pickles; plus splashes as needed"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 large",
+      "preparation": "sliced into strips"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "sliced into strips"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tablespoons",
+      "preparation": "divided; for grill grates and sautéing"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "for seasoning"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "for fajita veg"
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1/2 teaspoon",
+      "preparation": "for fajita veg"
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "2 cans (400 g each)",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "chipotle sauce",
+      "quantity": "3 tablespoons",
+      "preparation": "for beans"
+    },
+    {
+      "core_item_name": "tortilla wraps",
+      "quantity": "8 small (20 cm)",
+      "preparation": "warmed"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Korean",
+      "LatinAmerican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Hot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "picanha steak",
+      "quantity": "800 g",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "3 tablespoons",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "3 tablespoons",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "juiced for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely grated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tablespoon",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tablespoon",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "300 g",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1/2 cup",
+      "preparation": "for quick pickles",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "2 teaspoons",
+      "preparation": "for quick pickles",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 1/4 teaspoons",
+      "preparation": "divided; for pickles and seasoning",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 tablespoons",
+      "preparation": "for pickles; plus splashes as needed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 large",
+      "preparation": "sliced into strips",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "sliced into strips",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tablespoons",
+      "preparation": "divided; for grill grates and sautéing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "for seasoning",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "for fajita veg",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1/2 teaspoon",
+      "preparation": "for fajita veg",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "2 cans (400 g each)",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chipotle sauce",
+      "quantity": "3 tablespoons",
+      "preparation": "for beans",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tortilla wraps",
+      "quantity": "8 small (20 cm)",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T151321Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T150951Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

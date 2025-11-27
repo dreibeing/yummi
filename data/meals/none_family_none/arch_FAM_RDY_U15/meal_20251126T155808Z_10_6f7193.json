@@ -1,0 +1,135 @@
+{
+  "meal_id": "meal_20251126T155808Z_10_6f7193",
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "archetype_name": "Family Heat-and-Eat Weeknights (Under 15, No Heat)",
+  "name": "BBQ Chicken Pizza Night with Coleslaw and Sweet Corn",
+  "description": "Family-friendly heat-and-eat dinner: warm BBQ chicken pizzas with chilled coleslaw and quick microwave sweet corn, plus fresh grapes on the side. Zero chili heat and ready in minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "If using an oven, preheat to 220°C/425°F (optional; microwave works too).",
+    "Rinse grapes and pat dry.",
+    "If corn is canned, drain; if frozen, measure straight from bag."
+  ],
+  "cook_steps": [
+    "Heat bbq chicken pizza: Microwave 1 pizza on a microwave-safe plate for 3–5 minutes until hot (or bake 10–12 minutes if using oven and time allows). Repeat for the second pizza if needed.",
+    "Warm corn: Place corn in a microwave-safe bowl with 2 tablespoons water, cover, and microwave 2–3 minutes; drain any liquid and season lightly with salt if desired.",
+    "Open coleslaw and give it a quick stir.",
+    "Slice pizzas, then plate with a scoop of coleslaw, a serving of sweet corn, and a handful of grapes for each person."
+  ],
+  "instructions": [
+    "If using an oven, preheat to 220°C/425°F (optional; microwave works too).",
+    "Rinse grapes and pat dry.",
+    "If corn is canned, drain; if frozen, measure straight from bag.",
+    "Heat bbq chicken pizza: Microwave 1 pizza on a microwave-safe plate for 3–5 minutes until hot (or bake 10–12 minutes if using oven and time allows). Repeat for the second pizza if needed.",
+    "Warm corn: Place corn in a microwave-safe bowl with 2 tablespoons water, cover, and microwave 2–3 minutes; drain any liquid and season lightly with salt if desired.",
+    "Open coleslaw and give it a quick stir.",
+    "Slice pizzas, then plate with a scoop of coleslaw, a serving of sweet corn, and a handful of grapes for each person."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "bbq chicken pizza",
+      "quantity": "2 pizzas (10–12 inches each)"
+    },
+    {
+      "core_item_name": "coleslaw",
+      "quantity": "1 large tub (400–500 g)"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "2 cups kernels",
+      "preparation": "drained if canned"
+    },
+    {
+      "core_item_name": "grapes",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "Pinch, to taste",
+      "preparation": "optional for corn"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "bbq chicken pizza",
+      "quantity": "2 pizzas (10–12 inches each)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coleslaw",
+      "quantity": "1 large tub (400–500 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "2 cups kernels",
+      "preparation": "drained if canned",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "grapes",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "Pinch, to taste",
+      "preparation": "optional for corn",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T160217Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T155808Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

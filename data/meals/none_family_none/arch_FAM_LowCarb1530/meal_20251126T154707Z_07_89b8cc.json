@@ -1,0 +1,283 @@
+{
+  "meal_id": "meal_20251126T154707Z_07_89b8cc",
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "archetype_name": "Family Low-Carb Weeknight Bowls & Wraps (15–30, Mild)",
+  "name": "Mild Cheeseburger Taco Salad Bowls",
+  "description": "Low-carb family salad bowls with seasoned ground beef, crisp romaine, and taco-inspired toppings with a quick mayo-mustard dressing. Mild, ready in 15–30 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Wash and dry romaine lettuce; chop into bite-size pieces.",
+    "Halve cherry tomatoes.",
+    "Thinly slice red onion.",
+    "Dice pickles.",
+    "Slice or dice avocado.",
+    "Shred cheddar cheese.",
+    "In a small bowl, whisk mayonnaise, mustard, and apple cider vinegar until smooth; set aside.",
+    "Set out salsa for topping."
+  ],
+  "cook_steps": [
+    "Heat olive oil in a large skillet over medium-high heat.",
+    "Add ground beef and break it up with a spatula; cook until no longer pink, 5–7 minutes.",
+    "Season beef with salt, black pepper, paprika, garlic powder, and ground cumin; stir and cook 1–2 minutes until fragrant. Remove from heat.",
+    "Assemble bowls: add romaine lettuce, top with warm seasoned beef, cherry tomatoes, red onion, pickles, avocado, and cheddar cheese.",
+    "Drizzle bowls with the mayo-mustard dressing and spoon over salsa to taste. Serve immediately."
+  ],
+  "instructions": [
+    "Wash and dry romaine lettuce; chop into bite-size pieces.",
+    "Halve cherry tomatoes.",
+    "Thinly slice red onion.",
+    "Dice pickles.",
+    "Slice or dice avocado.",
+    "Shred cheddar cheese.",
+    "In a small bowl, whisk mayonnaise, mustard, and apple cider vinegar until smooth; set aside.",
+    "Set out salsa for topping.",
+    "Heat olive oil in a large skillet over medium-high heat.",
+    "Add ground beef and break it up with a spatula; cook until no longer pink, 5–7 minutes.",
+    "Season beef with salt, black pepper, paprika, garlic powder, and ground cumin; stir and cook 1–2 minutes until fragrant. Remove from heat.",
+    "Assemble bowls: add romaine lettuce, top with warm seasoned beef, cherry tomatoes, red onion, pickles, avocado, and cheddar cheese.",
+    "Drizzle bowls with the mayo-mustard dressing and spoon over salsa to taste. Serve immediately."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "2 large heads",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "1.5 lb (680 g)",
+      "preparation": "crumbled"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon, plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "garlic powder",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1 cup",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "pickles",
+      "quantity": "1/2 cup",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "2",
+      "preparation": "sliced or diced"
+    },
+    {
+      "core_item_name": "mayonnaise",
+      "quantity": "1/3 cup"
+    },
+    {
+      "core_item_name": "mustard",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1–2 teaspoons"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup, to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "2 large heads",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "1.5 lb (680 g)",
+      "preparation": "crumbled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon, plus more to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic powder",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1 cup",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pickles",
+      "quantity": "1/2 cup",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "2",
+      "preparation": "sliced or diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mayonnaise",
+      "quantity": "1/3 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mustard",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1–2 teaspoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup, to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T155041Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T154707Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

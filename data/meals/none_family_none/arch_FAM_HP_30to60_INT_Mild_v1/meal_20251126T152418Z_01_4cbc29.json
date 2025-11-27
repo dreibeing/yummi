@@ -1,0 +1,258 @@
+{
+  "meal_id": "meal_20251126T152418Z_01_4cbc29",
+  "archetype_uid": "arch_FAM_HP_30to60_INT_Mild_v1",
+  "archetype_name": "Family High-Protein Dinners (30–60, Mild, Intermediate)",
+  "name": "Mild Beef, Broccoli & Pepper Stir-Fry with Brown Basmati Rice",
+  "description": "Tender soy-glazed beef tossed with roasted broccoli and bell peppers, finished with spring onion, served over brown basmati rice. A mild, high-protein family dinner.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F.",
+    "Rinse 2 cups brown basmati rice under cold water until the water runs clear.",
+    "Cut 700–800 g beef sirloin steak into thin strips across the grain.",
+    "Cut 2 heads of broccoli into bite-size florets; slice stems thinly.",
+    "Slice 2 bell peppers into strips.",
+    "Mince 4 cloves garlic.",
+    "Slice 4 spring onion (white and green parts separated).",
+    "In a bowl, whisk 6 tbsp soy sauce, 2 tbsp honey, 1.5 tbsp rice vinegar, 1 cup water, and 2 tbsp cornflour until smooth."
+  ],
+  "cook_steps": [
+    "Start rice: Add rinsed brown basmati rice to a pot with 4 cups water and a pinch of salt. Bring to a boil, then reduce to low, cover, and simmer 25–30 minutes until tender. Rest 5 minutes, then fluff.",
+    "Roast vegetables: On a large baking sheet, toss broccoli and bell peppers with 2 tbsp olive oil, salt, and black pepper. Roast 12–15 minutes until crisp-tender and lightly charred.",
+    "Heat 1 tbsp olive oil in a large skillet over medium-high heat.",
+    "Sear beef: Pat beef dry, season lightly with salt and black pepper, then cook in two batches 2–3 minutes per side until just browned. Transfer to a plate.",
+    "Lower heat to medium. Add a small splash of olive oil if needed. Add minced garlic and the white parts of spring onion; cook 30–45 seconds until fragrant.",
+    "Whisk the sauce again and pour into the skillet. Stir constantly 1–2 minutes until glossy and slightly thickened.",
+    "Return beef and any juices to the pan. Toss 30–60 seconds to coat.",
+    "Add roasted broccoli and bell peppers. Toss 1–2 minutes to combine and warm through. Adjust seasoning with a little more soy sauce or water to taste.",
+    "Serve beef and vegetables over fluffed brown basmati rice. Garnish with the green parts of spring onion."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F.",
+    "Rinse 2 cups brown basmati rice under cold water until the water runs clear.",
+    "Cut 700–800 g beef sirloin steak into thin strips across the grain.",
+    "Cut 2 heads of broccoli into bite-size florets; slice stems thinly.",
+    "Slice 2 bell peppers into strips.",
+    "Mince 4 cloves garlic.",
+    "Slice 4 spring onion (white and green parts separated).",
+    "In a bowl, whisk 6 tbsp soy sauce, 2 tbsp honey, 1.5 tbsp rice vinegar, 1 cup water, and 2 tbsp cornflour until smooth.",
+    "Start rice: Add rinsed brown basmati rice to a pot with 4 cups water and a pinch of salt. Bring to a boil, then reduce to low, cover, and simmer 25–30 minutes until tender. Rest 5 minutes, then fluff.",
+    "Roast vegetables: On a large baking sheet, toss broccoli and bell peppers with 2 tbsp olive oil, salt, and black pepper. Roast 12–15 minutes until crisp-tender and lightly charred.",
+    "Heat 1 tbsp olive oil in a large skillet over medium-high heat.",
+    "Sear beef: Pat beef dry, season lightly with salt and black pepper, then cook in two batches 2–3 minutes per side until just browned. Transfer to a plate.",
+    "Lower heat to medium. Add a small splash of olive oil if needed. Add minced garlic and the white parts of spring onion; cook 30–45 seconds until fragrant.",
+    "Whisk the sauce again and pour into the skillet. Stir constantly 1–2 minutes until glossy and slightly thickened.",
+    "Return beef and any juices to the pan. Toss 30–60 seconds to coat.",
+    "Add roasted broccoli and bell peppers. Toss 1–2 minutes to combine and warm through. Adjust seasoning with a little more soy sauce or water to taste.",
+    "Serve beef and vegetables over fluffed brown basmati rice. Garnish with the green parts of spring onion."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef sirloin steak",
+      "quantity": "700–800 g",
+      "preparation": "thinly sliced across the grain"
+    },
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "2 cups (uncooked)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "2 medium heads",
+      "preparation": "florets and thinly sliced stems"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4 stalks",
+      "preparation": "sliced, whites and greens separated"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "6 tbsp"
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1.5 tbsp"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1 cup for sauce + 4 cups for rice"
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3–4 tbsp total",
+      "preparation": "for roasting and stir-frying"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Chinese"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Soy"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef sirloin steak",
+      "quantity": "700–800 g",
+      "preparation": "thinly sliced across the grain",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "2 cups (uncooked)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "2 medium heads",
+      "preparation": "florets and thinly sliced stems",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4 stalks",
+      "preparation": "sliced, whites and greens separated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "6 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1.5 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1 cup for sauce + 4 cups for rice",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3–4 tbsp total",
+      "preparation": "for roasting and stir-frying",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T152453Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T152418Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

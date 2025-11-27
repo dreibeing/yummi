@@ -1,0 +1,357 @@
+{
+  "meal_id": "meal_20251126T150951Z_01_2ea0d5",
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "archetype_name": "Family Heat Lovers: Korean & Latin American Feasts (Hot, 30–60, Advanced)",
+  "name": "Gochujang Chicken Tinga Tostadas with Habanero-Lime Slaw and Smoky Black Beans",
+  "description": "Grilled gochujang-marinated chicken gets a Latin tinga-style finish, piled onto crisp tostadas with a fiery lime slaw and smoky black beans. A bold Korean–Latin mashup built from scratch with real heat.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Pat dry 900 g chicken thighs and place in a bowl.",
+    "In a small bowl, mix gochujang, soy sauce, honey, 2 minced garlic cloves, and ground cumin to form a marinade.",
+    "Thinly slice 1/2 head cabbage and 1 small red onion; place in a large bowl.",
+    "Finely slice 2 jalapenos (leave seeds for extra heat).",
+    "In a cup, whisk juice of 2 limes, rice vinegar, sugar, and a big pinch of salt; pour over cabbage, red onion, and half the jalapenos. Toss and set aside.",
+    "Rinse and drain 1 can black beans.",
+    "Chop a small handful of coriander for garnish.",
+    "Brush grill grates with olive oil. Preheat OutdoorGrill to medium-high. Set a large skillet on the StoveTop."
+  ],
+  "cook_steps": [
+    "Add the marinade to the chicken thighs and coat well. Grill over medium-high heat 5–6 minutes per side until charred and cooked through (juices run clear). Rest 5 minutes, then slice.",
+    "While chicken grills, heat 1 tbsp olive oil in the skillet over medium. Add 1 minced garlic clove and the remaining jalapenos; cook 30 seconds.",
+    "Stir in black beans, chipotle sauce, a pinch of salt, and 2–3 tbsp water. Simmer 3–4 minutes, mashing lightly with a spoon until thick and spreadable. Keep warm on low.",
+    "In a separate wide pan, heat 1 cm of canola oil over medium-high. Fry tortillas one at a time 30–45 seconds per side until golden and crisp. Drain on paper towels and sprinkle with salt.",
+    "Return sliced chicken to the grill (or a hot pan) for 30–60 seconds with a spoonful of salsa to glaze lightly.",
+    "Assemble tostadas: spread a spoonful of smoky black beans on each crisp tortilla, top with sliced chicken, a mound of habanero-lime slaw, and a drizzle of salsa.",
+    "Finish with chopped coriander and black pepper. Serve immediately while tostadas stay crisp."
+  ],
+  "instructions": [
+    "Pat dry 900 g chicken thighs and place in a bowl.",
+    "In a small bowl, mix gochujang, soy sauce, honey, 2 minced garlic cloves, and ground cumin to form a marinade.",
+    "Thinly slice 1/2 head cabbage and 1 small red onion; place in a large bowl.",
+    "Finely slice 2 jalapenos (leave seeds for extra heat).",
+    "In a cup, whisk juice of 2 limes, rice vinegar, sugar, and a big pinch of salt; pour over cabbage, red onion, and half the jalapenos. Toss and set aside.",
+    "Rinse and drain 1 can black beans.",
+    "Chop a small handful of coriander for garnish.",
+    "Brush grill grates with olive oil. Preheat OutdoorGrill to medium-high. Set a large skillet on the StoveTop.",
+    "Add the marinade to the chicken thighs and coat well. Grill over medium-high heat 5–6 minutes per side until charred and cooked through (juices run clear). Rest 5 minutes, then slice.",
+    "While chicken grills, heat 1 tbsp olive oil in the skillet over medium. Add 1 minced garlic clove and the remaining jalapenos; cook 30 seconds.",
+    "Stir in black beans, chipotle sauce, a pinch of salt, and 2–3 tbsp water. Simmer 3–4 minutes, mashing lightly with a spoon until thick and spreadable. Keep warm on low.",
+    "In a separate wide pan, heat 1 cm of canola oil over medium-high. Fry tortillas one at a time 30–45 seconds per side until golden and crisp. Drain on paper towels and sprinkle with salt.",
+    "Return sliced chicken to the grill (or a hot pan) for 30–60 seconds with a spoonful of salsa to glaze lightly.",
+    "Assemble tostadas: spread a spoonful of smoky black beans on each crisp tortilla, top with sliced chicken, a mound of habanero-lime slaw, and a drizzle of salsa.",
+    "Finish with chopped coriander and black pepper. Serve immediately while tostadas stay crisp."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "900 g",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "3 tbsp",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tbsp",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tbsp",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced, divided"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": "for marinade and beans"
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 small head",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "2",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tbsp",
+      "preparation": "for slaw"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tsp",
+      "preparation": "for slaw"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "for slaw, beans, and seasoning"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "for finish"
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (400 g)",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "chipotle sauce",
+      "quantity": "2 tbsp",
+      "preparation": "for beans and chicken glaze"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup",
+      "preparation": "plus extra for serving"
+    },
+    {
+      "core_item_name": "tortillas",
+      "quantity": "8 small",
+      "preparation": "for frying"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "1 tbsp for beans, 1 tbsp for grill grates"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 cup",
+      "preparation": "for frying tostadas"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2–3 tbsp",
+      "preparation": "to loosen beans"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "small handful",
+      "preparation": "chopped for garnish"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Korean",
+      "LatinAmerican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Hot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "900 g",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "3 tbsp",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tbsp",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tbsp",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": "for marinade and beans",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 small head",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "2",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tbsp",
+      "preparation": "for slaw",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tsp",
+      "preparation": "for slaw",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "for slaw, beans, and seasoning",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "for finish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (400 g)",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chipotle sauce",
+      "quantity": "2 tbsp",
+      "preparation": "for beans and chicken glaze",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup",
+      "preparation": "plus extra for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tortillas",
+      "quantity": "8 small",
+      "preparation": "for frying",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "1 tbsp for beans, 1 tbsp for grill grates",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 cup",
+      "preparation": "for frying tostadas",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2–3 tbsp",
+      "preparation": "to loosen beans",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "small handful",
+      "preparation": "chopped for garnish",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T151052Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T150951Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

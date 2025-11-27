@@ -1,0 +1,127 @@
+{
+  "meal_id": "meal_20251126T155808Z_06_a2361c",
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "archetype_name": "Family Heat-and-Eat Weeknights (Under 15, No Heat)",
+  "name": "Microwave Tuna Penne Plates with Greek Salad and Warm Ciabatta Rolls",
+  "description": "Heat tuna penne, add ready Greek salad, and warm ciabatta rolls for a fast, no-heat family dinner. Fresh grapes round out the plate.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Set out 4 dinner plates and 4 small side bowls.",
+    "Open 4 tuna penne trays and peel back film as directed.",
+    "Open the greek salad tub and give it a quick toss.",
+    "Slice the ciabatta rolls if you prefer them halved.",
+    "Rinse the grapes and pull into small clusters for easy serving."
+  ],
+  "cook_steps": [
+    "Microwave the tuna penne trays per pack directions (about 3–5 minutes each). Heat two at a time to save time; repeat for the remaining trays.",
+    "Warm the ciabatta rolls: microwave 20–30 seconds until soft, or optionally bake at 180°C/350°F for 3–5 minutes if you prefer a crust.",
+    "Plate each portion of tuna penne, add a generous scoop of greek salad to the side, and serve with a ciabatta roll.",
+    "Add a handful of grapes to each plate or serve in a shared bowl."
+  ],
+  "instructions": [
+    "Set out 4 dinner plates and 4 small side bowls.",
+    "Open 4 tuna penne trays and peel back film as directed.",
+    "Open the greek salad tub and give it a quick toss.",
+    "Slice the ciabatta rolls if you prefer them halved.",
+    "Rinse the grapes and pull into small clusters for easy serving.",
+    "Microwave the tuna penne trays per pack directions (about 3–5 minutes each). Heat two at a time to save time; repeat for the remaining trays.",
+    "Warm the ciabatta rolls: microwave 20–30 seconds until soft, or optionally bake at 180°C/350°F for 3–5 minutes if you prefer a crust.",
+    "Plate each portion of tuna penne, add a generous scoop of greek salad to the side, and serve with a ciabatta roll.",
+    "Add a handful of grapes to each plate or serve in a shared bowl."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "tuna penne",
+      "quantity": "4 single-serve trays (about 300 g each)"
+    },
+    {
+      "core_item_name": "greek salad",
+      "quantity": "1 family tub (about 600–800 g)"
+    },
+    {
+      "core_item_name": "ciabatta rolls",
+      "quantity": "4 rolls",
+      "preparation": "optional: slice"
+    },
+    {
+      "core_item_name": "grapes",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "tuna penne",
+      "quantity": "4 single-serve trays (about 300 g each)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "greek salad",
+      "quantity": "1 family tub (about 600–800 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ciabatta rolls",
+      "quantity": "4 rolls",
+      "preparation": "optional: slice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "grapes",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T160040Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T155808Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

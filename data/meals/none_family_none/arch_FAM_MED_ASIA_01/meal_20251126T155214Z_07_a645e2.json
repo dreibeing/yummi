@@ -1,0 +1,272 @@
+{
+  "meal_id": "meal_20251126T155214Z_07_a645e2",
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "archetype_name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)",
+  "name": "Tom Yum Chicken Fried Rice with Baby Corn and Snow Peas",
+  "description": "A bright, medium-heat skillet fried rice using tom yum paste, tender chicken, and crisp vegetables. Quick microwave rice keeps it weeknight-fast while the wok brings the flavor.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Dice chicken thighs into small bite-size pieces.",
+    "Thinly slice onions and spring onion (separate whites and greens).",
+    "Slice bell pepper; drain baby corn and cut into bite-size pieces if large.",
+    "Rinse snow peas and pat dry.",
+    "In a small bowl, stir together tom yum paste and soy sauce.",
+    "Microwave rice according to packet directions and fluff; keep warm."
+  ],
+  "cook_steps": [
+    "Heat canola oil in a large skillet or wok over high heat until shimmering.",
+    "Add chicken thighs, season lightly with salt, and stir-fry until browned and just cooked through, 4–5 minutes; push to one side.",
+    "Add onions (and spring onion whites) and garlic to the empty side; stir-fry 1 minute until fragrant.",
+    "Add bell pepper, baby corn, and snow peas; stir-fry 2–3 minutes until crisp-tender.",
+    "Pour in chicken stock and the tom yum–soy mixture; toss everything to coat and simmer 30–60 seconds.",
+    "Add the hot rice to the pan; toss vigorously to combine and dry-fry 1–2 minutes so the grains pick up sauce.",
+    "Sprinkle chili flakes to taste for medium heat; adjust salt or soy sauce if needed.",
+    "Finish with a squeeze of lime and the spring onion greens; serve hot."
+  ],
+  "instructions": [
+    "Dice chicken thighs into small bite-size pieces.",
+    "Thinly slice onions and spring onion (separate whites and greens).",
+    "Slice bell pepper; drain baby corn and cut into bite-size pieces if large.",
+    "Rinse snow peas and pat dry.",
+    "In a small bowl, stir together tom yum paste and soy sauce.",
+    "Microwave rice according to packet directions and fluff; keep warm.",
+    "Heat canola oil in a large skillet or wok over high heat until shimmering.",
+    "Add chicken thighs, season lightly with salt, and stir-fry until browned and just cooked through, 4–5 minutes; push to one side.",
+    "Add onions (and spring onion whites) and garlic to the empty side; stir-fry 1 minute until fragrant.",
+    "Add bell pepper, baby corn, and snow peas; stir-fry 2–3 minutes until crisp-tender.",
+    "Pour in chicken stock and the tom yum–soy mixture; toss everything to coat and simmer 30–60 seconds.",
+    "Add the hot rice to the pan; toss vigorously to combine and dry-fry 1–2 minutes so the grains pick up sauce.",
+    "Sprinkle chili flakes to taste for medium heat; adjust salt or soy sauce if needed.",
+    "Finish with a squeeze of lime and the spring onion greens; serve hot."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "600 g",
+      "preparation": "diced small"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tablespoons",
+      "preparation": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3 stalks",
+      "preparation": "slice whites and greens, separate"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "bell pepper",
+      "quantity": "1 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "baby corn",
+      "quantity": "200 g",
+      "preparation": "bite-size pieces if large"
+    },
+    {
+      "core_item_name": "snow peas",
+      "quantity": "150 g",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "tom yum paste",
+      "quantity": "3 tablespoons",
+      "preparation": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tablespoons",
+      "preparation": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "1/4 cup",
+      "preparation": null
+    },
+    {
+      "core_item_name": "rice",
+      "quantity": "2 x 250 g microwave pouches",
+      "preparation": "heated and fluffed"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2–1 teaspoon, to taste",
+      "preparation": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "wedges for serving"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "pinch",
+      "preparation": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Chinese",
+      "Thai"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Seafood",
+      "Soy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "600 g",
+      "preparation": "diced small",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3 stalks",
+      "preparation": "slice whites and greens, separate",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell pepper",
+      "quantity": "1 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "baby corn",
+      "quantity": "200 g",
+      "preparation": "bite-size pieces if large",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "snow peas",
+      "quantity": "150 g",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tom yum paste",
+      "quantity": "3 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "1/4 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice",
+      "quantity": "2 x 250 g microwave pouches",
+      "preparation": "heated and fluffed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2–1 teaspoon, to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "wedges for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "pinch",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T155628Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T155214Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

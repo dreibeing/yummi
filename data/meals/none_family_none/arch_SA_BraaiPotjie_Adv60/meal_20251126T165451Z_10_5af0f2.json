@@ -1,0 +1,366 @@
+{
+  "meal_id": "meal_20251126T165451Z_10_5af0f2",
+  "archetype_uid": "arch_SA_BraaiPotjie_Adv60",
+  "archetype_name": "Family Weekend Advanced: South African Braai & Potjie",
+  "name": "Oxtail Potjie with Samp and Beans and Honey-Chilli Roast Butternut",
+  "description": "Slow-braised oxtail potjie over coals with a tomato-beef stock base, served alongside classic samp and beans and an oven-roasted butternut with honey and chilli.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Soak samp and beans in plenty of water for at least 4 hours or overnight; drain.",
+    "Chop onions, carrots, and potatoes into chunky pieces.",
+    "Crush garlic.",
+    "Light a braai and build a steady medium bed of coals for the potjie.",
+    "Preheat oven to 200°C.",
+    "Peel and cube butternut squash.",
+    "Roughly crush coriander seeds."
+  ],
+  "cook_steps": [
+    "Set a potjie (or heavy pot) over the coals and heat olive oil.",
+    "Brown oxtail pieces on all sides in batches; set aside.",
+    "In the same pot, add onions and carrots; cook until softened.",
+    "Stir in garlic, tomato paste, paprika, crushed coriander seeds, salt, and black pepper; cook 1 minute.",
+    "Return oxtail to the pot, add diced tomatoes, bay leaves, and beef stock; bring to a gentle simmer.",
+    "Cover and cook over a low, steady heat for 2.5–3 hours, adjusting coals to maintain a gentle bubble. Stir occasionally.",
+    "After 2 hours, add potatoes to the potjie; continue simmering until oxtail is tender and the sauce is rich.",
+    "While the potjie simmers, place soaked samp and beans in a large pot, cover with fresh water, bring to a boil on the stovetop, then reduce to a simmer. Cook 60–90 minutes until tender. Season with salt to taste and keep warm.",
+    "Toss butternut squash with olive oil, honey, chilli flakes, salt, and black pepper on a baking tray.",
+    "Roast butternut at 200°C for 25–35 minutes, turning once, until caramelised and tender.",
+    "When the oxtail is tender and sauce has reduced, taste and adjust seasoning. Sprinkle chopped parsley over the potjie.",
+    "Serve oxtail potjie with ladles of sauce, a scoop of samp and beans, and the honey-chilli roast butternut on the side."
+  ],
+  "instructions": [
+    "Soak samp and beans in plenty of water for at least 4 hours or overnight; drain.",
+    "Chop onions, carrots, and potatoes into chunky pieces.",
+    "Crush garlic.",
+    "Light a braai and build a steady medium bed of coals for the potjie.",
+    "Preheat oven to 200°C.",
+    "Peel and cube butternut squash.",
+    "Roughly crush coriander seeds.",
+    "Set a potjie (or heavy pot) over the coals and heat olive oil.",
+    "Brown oxtail pieces on all sides in batches; set aside.",
+    "In the same pot, add onions and carrots; cook until softened.",
+    "Stir in garlic, tomato paste, paprika, crushed coriander seeds, salt, and black pepper; cook 1 minute.",
+    "Return oxtail to the pot, add diced tomatoes, bay leaves, and beef stock; bring to a gentle simmer.",
+    "Cover and cook over a low, steady heat for 2.5–3 hours, adjusting coals to maintain a gentle bubble. Stir occasionally.",
+    "After 2 hours, add potatoes to the potjie; continue simmering until oxtail is tender and the sauce is rich.",
+    "While the potjie simmers, place soaked samp and beans in a large pot, cover with fresh water, bring to a boil on the stovetop, then reduce to a simmer. Cook 60–90 minutes until tender. Season with salt to taste and keep warm.",
+    "Toss butternut squash with olive oil, honey, chilli flakes, salt, and black pepper on a baking tray.",
+    "Roast butternut at 200°C for 25–35 minutes, turning once, until caramelised and tender.",
+    "When the oxtail is tender and sauce has reduced, taste and adjust seasoning. Sprinkle chopped parsley over the potjie.",
+    "Serve oxtail potjie with ladles of sauce, a scoop of samp and beans, and the honey-chilli roast butternut on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "oxtail",
+      "quantity": "1.8–2 kg",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "3 medium",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "crushed"
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "400 g",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "750 ml",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "coriander seeds",
+      "quantity": "1 tsp",
+      "preparation": "lightly crushed"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 tsp, plus more to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "600 g",
+      "preparation": "peeled and cubed"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "samp and beans",
+      "quantity": "2 cups (dried)",
+      "preparation": "soaked and drained"
+    },
+    {
+      "core_item_name": "butternut squash",
+      "quantity": "1 large (about 1.2 kg)",
+      "preparation": "peeled and cubed"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "for butternut"
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "for butternut"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 tsp",
+      "preparation": "for butternut"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "French",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "oxtail",
+      "quantity": "1.8–2 kg",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "3 medium",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "crushed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "400 g",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "750 ml",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander seeds",
+      "quantity": "1 tsp",
+      "preparation": "lightly crushed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 tsp, plus more to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "600 g",
+      "preparation": "peeled and cubed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "samp and beans",
+      "quantity": "2 cups (dried)",
+      "preparation": "soaked and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butternut squash",
+      "quantity": "1 large (about 1.2 kg)",
+      "preparation": "peeled and cubed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "for butternut",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "for butternut",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 tsp",
+      "preparation": "for butternut",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T170240Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T165451Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "meal_id": "meal_20251126T151753Z_07_fc519c",
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "archetype_name": "Family Hands-Off Sheet Pan & Slow Cooker Nights",
+  "name": "Sheet-Pan Kofta-Style Meatballs with Peppers, Zucchini & Tahini Yogurt",
+  "description": "Family-friendly Middle Eastern–leaning beef meatballs roast on a sheet pan with colorful veggies. Serve warm pitas and a tahini yogurt drizzle for an easy, hands-off dinner.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C/425°F. Line a large sheet pan with foil or baking paper.",
+    "Dice 2 bell peppers and 2 courgette into bite-size pieces. Slice 1 red onion into wedges. Rinse 2 cups cherry tomatoes.",
+    "Finely grate 1 small onion for the meat mixture. Mince 3 cloves garlic. Chop 1/2 cup parsley.",
+    "Cut 1 lemon into wedges.",
+    "Have 6 pita bread and 1/2 cup tahini yogurt drizzle ready."
+  ],
+  "cook_steps": [
+    "In a bowl, combine 800 g minced beef, grated onion, minced garlic, 2 tsp cumin, 1 tsp coriander, 1 tsp paprika, 1/2 tsp salt, 1/2 tsp black pepper, and half the chopped parsley. Mix just until combined.",
+    "Form 16 golf-ball-sized meatballs and place on one side of the sheet pan.",
+    "On the other side, toss peppers, courgette, red onion, and cherry tomatoes with 2 tbsp olive oil, 1/2 tsp salt, 1/4 tsp black pepper, and 1 tsp oregano. Spread in an even layer.",
+    "Roast for 20 minutes. Rotate the pan and gently turn the meatballs and vegetables. Roast 5–10 minutes more until meatballs are cooked through (internal temp 71°C/160°F) and vegetables are tender.",
+    "In the last 3–4 minutes, place pita bread on the oven rack to warm.",
+    "Transfer meatballs and vegetables to a platter. Drizzle with tahini yogurt drizzle and sprinkle remaining parsley. Serve with warm pitas and lemon wedges."
+  ],
+  "instructions": [
+    "Heat oven to 220°C/425°F. Line a large sheet pan with foil or baking paper.",
+    "Dice 2 bell peppers and 2 courgette into bite-size pieces. Slice 1 red onion into wedges. Rinse 2 cups cherry tomatoes.",
+    "Finely grate 1 small onion for the meat mixture. Mince 3 cloves garlic. Chop 1/2 cup parsley.",
+    "Cut 1 lemon into wedges.",
+    "Have 6 pita bread and 1/2 cup tahini yogurt drizzle ready.",
+    "In a bowl, combine 800 g minced beef, grated onion, minced garlic, 2 tsp cumin, 1 tsp coriander, 1 tsp paprika, 1/2 tsp salt, 1/2 tsp black pepper, and half the chopped parsley. Mix just until combined.",
+    "Form 16 golf-ball-sized meatballs and place on one side of the sheet pan.",
+    "On the other side, toss peppers, courgette, red onion, and cherry tomatoes with 2 tbsp olive oil, 1/2 tsp salt, 1/4 tsp black pepper, and 1 tsp oregano. Spread in an even layer.",
+    "Roast for 20 minutes. Rotate the pan and gently turn the meatballs and vegetables. Roast 5–10 minutes more until meatballs are cooked through (internal temp 71°C/160°F) and vegetables are tender.",
+    "In the last 3–4 minutes, place pita bread on the oven rack to warm.",
+    "Transfer meatballs and vegetables to a platter. Drizzle with tahini yogurt drizzle and sprinkle remaining parsley. Serve with warm pitas and lemon wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "minced beef",
+      "quantity": "800 g",
+      "preparation": "for meatballs"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 small",
+      "preparation": "finely grated"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, divided",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "3/4 tsp, divided",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped, divided"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "courgette",
+      "quantity": "2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1",
+      "preparation": "wedges"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "pita bread",
+      "quantity": "6",
+      "preparation": "warmed"
+    },
+    {
+      "core_item_name": "tahini yogurt drizzle",
+      "quantity": "1/2 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "minced beef",
+      "quantity": "800 g",
+      "preparation": "for meatballs",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 small",
+      "preparation": "finely grated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, divided",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "3/4 tsp, divided",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "courgette",
+      "quantity": "2 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1",
+      "preparation": "wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pita bread",
+      "quantity": "6",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tahini yogurt drizzle",
+      "quantity": "1/2 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T152211Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T151753Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

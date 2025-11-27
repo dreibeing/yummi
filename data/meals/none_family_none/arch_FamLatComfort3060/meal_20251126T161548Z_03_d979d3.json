@@ -1,0 +1,294 @@
+{
+  "meal_id": "meal_20251126T161548Z_03_d979d3",
+  "archetype_uid": "arch_FamLatComfort3060",
+  "archetype_name": "Family Latin Comfort (Mild, 30–60, Intermediate)",
+  "name": "Family Chicken & Black Bean Enchilada Bake (Mild)",
+  "description": "Rolled tortillas filled with shredded chicken, black beans, and corn, topped with mild enchilada sauce and cheddar, then baked until bubbly. Family-friendly comfort with gentle spices.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 190°C/375°F.",
+    "Finely dice the onions.",
+    "Mince the garlic.",
+    "Drain and rinse the black beans.",
+    "Measure corn, spices, and enchilada sauce.",
+    "Shred the cheddar cheese if needed.",
+    "Chop coriander for garnish.",
+    "Warm the tortillas briefly in the microwave or a dry pan to make them flexible."
+  ],
+  "cook_steps": [
+    "Heat olive oil in a large skillet over medium heat.",
+    "Add onions and cook until softened, 4–5 minutes.",
+    "Stir in garlic and cook 30 seconds.",
+    "Add chicken thighs, a pinch of salt and black pepper; cook until browned on both sides and cooked through, 8–10 minutes depending on thickness.",
+    "Transfer chicken to a board and shred with two forks.",
+    "Return shredded chicken to the skillet; add black beans, corn, cumin, oregano, 1/2 cup enchilada sauce, and a pinch of salt and black pepper. Stir 1–2 minutes to combine, then remove from heat.",
+    "Spread 1/2 cup enchilada sauce over the bottom of a 23×33 cm (9×13 in) baking dish.",
+    "Fill each tortilla with about 1/3 cup of the chicken mixture, roll tightly, and place seam-side down in the dish.",
+    "Pour remaining enchilada sauce evenly over the rolls and top with cheddar cheese.",
+    "Bake until the cheese is melted and the sauce is bubbling, 15–20 minutes.",
+    "Rest 5 minutes. Garnish with coriander and serve with lime wedges and sour cream on the side."
+  ],
+  "instructions": [
+    "Preheat oven to 190°C/375°F.",
+    "Finely dice the onions.",
+    "Mince the garlic.",
+    "Drain and rinse the black beans.",
+    "Measure corn, spices, and enchilada sauce.",
+    "Shred the cheddar cheese if needed.",
+    "Chop coriander for garnish.",
+    "Warm the tortillas briefly in the microwave or a dry pan to make them flexible.",
+    "Heat olive oil in a large skillet over medium heat.",
+    "Add onions and cook until softened, 4–5 minutes.",
+    "Stir in garlic and cook 30 seconds.",
+    "Add chicken thighs, a pinch of salt and black pepper; cook until browned on both sides and cooked through, 8–10 minutes depending on thickness.",
+    "Transfer chicken to a board and shred with two forks.",
+    "Return shredded chicken to the skillet; add black beans, corn, cumin, oregano, 1/2 cup enchilada sauce, and a pinch of salt and black pepper. Stir 1–2 minutes to combine, then remove from heat.",
+    "Spread 1/2 cup enchilada sauce over the bottom of a 23×33 cm (9×13 in) baking dish.",
+    "Fill each tortilla with about 1/3 cup of the chicken mixture, roll tightly, and place seam-side down in the dish.",
+    "Pour remaining enchilada sauce evenly over the rolls and top with cheddar cheese.",
+    "Bake until the cheese is melted and the sauce is bubbling, 15–20 minutes.",
+    "Rest 5 minutes. Garnish with coriander and serve with lime wedges and sour cream on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "900 g",
+      "preparation": "boneless, skinless; shredded after cooking"
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "400 g",
+      "preparation": "cooked, drained and rinsed"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "1 cup",
+      "preparation": "kernels"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp, to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "enchilada sauce",
+      "quantity": "2 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "tortillas",
+      "quantity": "8–10 medium",
+      "preparation": "warmed"
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "2 cups",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "2 tbsp",
+      "preparation": "chopped, for garnish"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges, for serving"
+    },
+    {
+      "core_item_name": "sour cream",
+      "quantity": "1/2 cup",
+      "preparation": "for serving (optional)"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "LatinAmerican",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "900 g",
+      "preparation": "boneless, skinless; shredded after cooking",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "400 g",
+      "preparation": "cooked, drained and rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "1 cup",
+      "preparation": "kernels",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp, to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "enchilada sauce",
+      "quantity": "2 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tortillas",
+      "quantity": "8–10 medium",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "2 cups",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "2 tbsp",
+      "preparation": "chopped, for garnish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges, for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sour cream",
+      "quantity": "1/2 cup",
+      "preparation": "for serving (optional)",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T161735Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T161548Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

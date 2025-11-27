@@ -1,0 +1,215 @@
+{
+  "meal_id": "meal_20251126T153421Z_08_c1457d",
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "archetype_name": "Family Keto Weeknight Plates (Mild, 15–30, Simple)",
+  "name": "Baked Herby Meatballs with Sautéed Zucchini and Mint-Yoghurt Drizzle",
+  "description": "Oven-baked meatballs with quick garlicky zucchini ribbons and a fresh mint-yoghurt drizzle. Mild, keto-friendly, and ready in under 30 minutes for a family plate.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F. Line a baking tray.",
+    "Mince 2 cloves garlic for the sauce and 1 clove for the zucchini.",
+    "Finely chop mint (about 1/4 cup).",
+    "Zest and juice 1 lemon.",
+    "Trim ends of zucchini and make ribbons with a peeler (or slice into half-moons).",
+    "Toss meatballs with 1 tbsp olive oil, oregano, a pinch of salt, and black pepper."
+  ],
+  "cook_steps": [
+    "Spread meatballs on the tray and bake 12–15 minutes until browned and cooked through.",
+    "While meatballs bake, heat 1 tbsp olive oil in a large skillet over medium-high heat. Add zucchini and 1 minced garlic clove; sauté 3–4 minutes until just tender. Season with salt and black pepper; remove from heat.",
+    "In a bowl, combine yoghurt, chopped mint, lemon zest, 1–2 tbsp lemon juice, remaining 1 tbsp olive oil, and a pinch of salt. Stir to a drizzleable consistency.",
+    "Plate zucchini, top with meatballs, and spoon over mint-yoghurt drizzle. Finish with a pinch of sumac if desired."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F. Line a baking tray.",
+    "Mince 2 cloves garlic for the sauce and 1 clove for the zucchini.",
+    "Finely chop mint (about 1/4 cup).",
+    "Zest and juice 1 lemon.",
+    "Trim ends of zucchini and make ribbons with a peeler (or slice into half-moons).",
+    "Toss meatballs with 1 tbsp olive oil, oregano, a pinch of salt, and black pepper.",
+    "Spread meatballs on the tray and bake 12–15 minutes until browned and cooked through.",
+    "While meatballs bake, heat 1 tbsp olive oil in a large skillet over medium-high heat. Add zucchini and 1 minced garlic clove; sauté 3–4 minutes until just tender. Season with salt and black pepper; remove from heat.",
+    "In a bowl, combine yoghurt, chopped mint, lemon zest, 1–2 tbsp lemon juice, remaining 1 tbsp olive oil, and a pinch of salt. Stir to a drizzleable consistency.",
+    "Plate zucchini, top with meatballs, and spoon over mint-yoghurt drizzle. Finish with a pinch of sumac if desired."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "meatballs",
+      "quantity": "700 g",
+      "preparation": "tossed with seasoning"
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "4 medium",
+      "preparation": "ribbons or half-moons"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": "plain"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/4 cup",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced, divided"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "pinch",
+      "preparation": "optional garnish"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein",
+      "Keto",
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "meatballs",
+      "quantity": "700 g",
+      "preparation": "tossed with seasoning",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "4 medium",
+      "preparation": "ribbons or half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": "plain",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/4 cup",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "pinch",
+      "preparation": "optional garnish",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T153853Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T153421Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

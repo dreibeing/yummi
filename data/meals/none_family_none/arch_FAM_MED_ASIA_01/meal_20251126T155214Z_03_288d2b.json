@@ -1,0 +1,241 @@
+{
+  "meal_id": "meal_20251126T155214Z_03_288d2b",
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "archetype_name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)",
+  "name": "Beef & Broccoli Rice Noodles (Pad See Ew-Style)",
+  "description": "Quick, saucy stir-fried rice noodles with tender beef, broccoli, and a balanced soy–oyster glaze, finished with chili heat. Family-friendly noodles done in one pan.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Soak rice noodles in hot water until pliable per pack directions; drain well.",
+    "Slice beef thinly against the grain.",
+    "Cut broccoli into small florets; slice stems thin.",
+    "Mince garlic; slice spring onion.",
+    "In a bowl, mix soy sauce, oyster sauce, rice vinegar, brown sugar, and chili flakes.",
+    "Crack eggs into a small bowl and beat lightly."
+  ],
+  "cook_steps": [
+    "Heat canola oil in a large skillet or wok over high heat.",
+    "Stir-fry broccoli for 2–3 minutes until bright and crisp-tender; push to the side.",
+    "Add beef and garlic; stir-fry 2–3 minutes until just browned.",
+    "Push beef to the side; pour in beaten eggs and scramble until just set.",
+    "Add drained rice noodles and the sauce; toss vigorously 1–2 minutes until noodles are glossy and coated.",
+    "Stir in spring onion; taste and adjust chili flakes or soy sauce if needed.",
+    "Optional: drizzle sriracha to reach medium heat preferred by your family. Serve hot."
+  ],
+  "instructions": [
+    "Soak rice noodles in hot water until pliable per pack directions; drain well.",
+    "Slice beef thinly against the grain.",
+    "Cut broccoli into small florets; slice stems thin.",
+    "Mince garlic; slice spring onion.",
+    "In a bowl, mix soy sauce, oyster sauce, rice vinegar, brown sugar, and chili flakes.",
+    "Crack eggs into a small bowl and beat lightly.",
+    "Heat canola oil in a large skillet or wok over high heat.",
+    "Stir-fry broccoli for 2–3 minutes until bright and crisp-tender; push to the side.",
+    "Add beef and garlic; stir-fry 2–3 minutes until just browned.",
+    "Push beef to the side; pour in beaten eggs and scramble until just set.",
+    "Add drained rice noodles and the sauce; toss vigorously 1–2 minutes until noodles are glossy and coated.",
+    "Stir in spring onion; taste and adjust chili flakes or soy sauce if needed.",
+    "Optional: drizzle sriracha to reach medium heat preferred by your family. Serve hot."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "rice noodles",
+      "quantity": "12 oz (340 g)",
+      "preparation": "soaked and drained"
+    },
+    {
+      "core_item_name": "beef",
+      "quantity": "500 g",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "4 cups florets",
+      "preparation": "stems thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "1/4 cup"
+    },
+    {
+      "core_item_name": "oyster sauce",
+      "quantity": "3 tbsp"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "2",
+      "preparation": "lightly beaten"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2–3 tbsp"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "sriracha",
+      "quantity": "1–2 tbsp",
+      "preparation": "optional, to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Chinese",
+      "Thai"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Egg",
+      "Seafood",
+      "Soy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "rice noodles",
+      "quantity": "12 oz (340 g)",
+      "preparation": "soaked and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "beef",
+      "quantity": "500 g",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "broccoli",
+      "quantity": "4 cups florets",
+      "preparation": "stems thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "1/4 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oyster sauce",
+      "quantity": "3 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "2",
+      "preparation": "lightly beaten",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2–3 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sriracha",
+      "quantity": "1–2 tbsp",
+      "preparation": "optional, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T155356Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T155214Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "meal_id": "meal_20251126T160217Z_03_97ede5",
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "archetype_name": "Family Turkish & North African Suppers (Medium, 30–60, Intermediate)",
+  "name": "Lamb Kofta & Apricot Tomato Sauce with Preserved Lemon Almond Couscous",
+  "description": "Baked lamb kofta simmered in a gently spiced tomato–apricot sauce, served over fluffy couscous with toasted almonds and preserved lemon. Medium warmth, Turkish–North African inspired family supper.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 200°C/400°F. Line a baking tray with foil and lightly oil.",
+    "Finely chop onions (1 medium) and garlic (4 cloves).",
+    "Roughly chop apricot (8–10 pieces) and preserved lemon (1/2), removing any seeds.",
+    "Chop parsley (small handful) and mint (small handful), keeping a little for garnish.",
+    "In a bowl, mix lamb mince with half the chopped onions, half the garlic, parsley, 1 tsp baharat, 1/2 tsp cumin, 1/4 tsp cinnamon, 1/2 tsp chili flakes, 1 tsp salt, and 1/2 tsp black pepper.",
+    "Shape the lamb mixture into 12–16 small kofta (oval meatballs).",
+    "Measure couscous (1.5 cups) into a heatproof bowl.",
+    "Set out almonds (1/3 cup, roughly chopped)."
+  ],
+  "cook_steps": [
+    "Toast almonds: spread on a small tray and bake 5–7 minutes until golden; set aside.",
+    "Bake kofta: place shaped kofta on the oiled tray and bake 10–12 minutes until browned and just cooked; keep warm.",
+    "Start sauce: heat 2 tbsp olive oil in a wide pan over medium heat. Sauté remaining onions with a pinch of salt for 5 minutes until translucent.",
+    "Add remaining garlic, 1 tsp baharat, 1/2 tsp cumin, a pinch of cinnamon, and 1/2 tsp chili flakes; cook 30 seconds until fragrant.",
+    "Stir in crushed tomatoes (1 can), chopped apricot, 1 tbsp apricot jam (optional for balance), and 1/2 cup water. Simmer 8–10 minutes, stirring occasionally.",
+    "Season sauce with salt and black pepper to taste. Gently nestle baked kofta into the sauce and simmer 5 minutes to coat and glaze.",
+    "Make couscous: bring 1.5 cups vegetable stock (or water) to a boil. Pour over couscous bowl, cover tightly, and rest 5 minutes. Fluff with a fork.",
+    "Fold into couscous: toasted almonds, chopped preserved lemon, mint, 1 tbsp olive oil, and a pinch of salt and black pepper.",
+    "Serve: spoon couscous onto plates, top with kofta and apricot tomato sauce. Garnish with reserved herbs."
+  ],
+  "instructions": [
+    "Heat oven to 200°C/400°F. Line a baking tray with foil and lightly oil.",
+    "Finely chop onions (1 medium) and garlic (4 cloves).",
+    "Roughly chop apricot (8–10 pieces) and preserved lemon (1/2), removing any seeds.",
+    "Chop parsley (small handful) and mint (small handful), keeping a little for garnish.",
+    "In a bowl, mix lamb mince with half the chopped onions, half the garlic, parsley, 1 tsp baharat, 1/2 tsp cumin, 1/4 tsp cinnamon, 1/2 tsp chili flakes, 1 tsp salt, and 1/2 tsp black pepper.",
+    "Shape the lamb mixture into 12–16 small kofta (oval meatballs).",
+    "Measure couscous (1.5 cups) into a heatproof bowl.",
+    "Set out almonds (1/3 cup, roughly chopped).",
+    "Toast almonds: spread on a small tray and bake 5–7 minutes until golden; set aside.",
+    "Bake kofta: place shaped kofta on the oiled tray and bake 10–12 minutes until browned and just cooked; keep warm.",
+    "Start sauce: heat 2 tbsp olive oil in a wide pan over medium heat. Sauté remaining onions with a pinch of salt for 5 minutes until translucent.",
+    "Add remaining garlic, 1 tsp baharat, 1/2 tsp cumin, a pinch of cinnamon, and 1/2 tsp chili flakes; cook 30 seconds until fragrant.",
+    "Stir in crushed tomatoes (1 can), chopped apricot, 1 tbsp apricot jam (optional for balance), and 1/2 cup water. Simmer 8–10 minutes, stirring occasionally.",
+    "Season sauce with salt and black pepper to taste. Gently nestle baked kofta into the sauce and simmer 5 minutes to coat and glaze.",
+    "Make couscous: bring 1.5 cups vegetable stock (or water) to a boil. Pour over couscous bowl, cover tightly, and rest 5 minutes. Fluff with a fork.",
+    "Fold into couscous: toasted almonds, chopped preserved lemon, mint, 1 tbsp olive oil, and a pinch of salt and black pepper.",
+    "Serve: spoon couscous onto plates, top with kofta and apricot tomato sauce. Garnish with reserved herbs."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "lamb mince",
+      "quantity": "500 g",
+      "preparation": "mixed into kofta"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "baharat",
+      "quantity": "2 tsp",
+      "preparation": "divided for kofta and sauce"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1/2 tsp",
+      "preparation": "pinch in kofta and sauce"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 tsp",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "to taste, divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "to taste, divided"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 can (400 g)",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "apricot",
+      "quantity": "8–10 pieces",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "apricot jam",
+      "quantity": "1 tbsp",
+      "preparation": "optional, for sweetness"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1/2 cup",
+      "preparation": "for sauce"
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1.5 cups",
+      "preparation": "dry"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1.5 cups",
+      "preparation": "hot; or use water"
+    },
+    {
+      "core_item_name": "almonds",
+      "quantity": "1/3 cup",
+      "preparation": "roughly chopped, toasted"
+    },
+    {
+      "core_item_name": "preserved lemon",
+      "quantity": "1/2 piece",
+      "preparation": "finely chopped, seeds removed"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "small handful",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "small handful",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "NorthAfrican",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Gluten",
+      "Nuts"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "lamb mince",
+      "quantity": "500 g",
+      "preparation": "mixed into kofta",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "baharat",
+      "quantity": "2 tsp",
+      "preparation": "divided for kofta and sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1/2 tsp",
+      "preparation": "pinch in kofta and sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 tsp",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "to taste, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": "to taste, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 can (400 g)",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apricot",
+      "quantity": "8–10 pieces",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apricot jam",
+      "quantity": "1 tbsp",
+      "preparation": "optional, for sweetness",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1/2 cup",
+      "preparation": "for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1.5 cups",
+      "preparation": "dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1.5 cups",
+      "preparation": "hot; or use water",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "almonds",
+      "quantity": "1/3 cup",
+      "preparation": "roughly chopped, toasted",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "preserved lemon",
+      "quantity": "1/2 piece",
+      "preparation": "finely chopped, seeds removed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "small handful",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "small handful",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T160343Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T160217Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

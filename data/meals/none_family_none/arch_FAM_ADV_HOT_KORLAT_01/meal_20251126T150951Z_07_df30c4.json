@@ -1,0 +1,364 @@
+{
+  "meal_id": "meal_20251126T150951Z_07_df30c4",
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "archetype_name": "Family Heat Lovers: Korean & Latin American Feasts (Hot, 30–60, Advanced)",
+  "name": "Spicy Gochujang Picadillo Bibimbap Bowls with Charred Corn–Bean Relish and Quick Cucumber Pickles",
+  "description": "Korean bibimbap meets Latin picadillo: hot gochujang-beef over steamed rice, topped with a lime-jalapeño corn–black bean relish and crisp rice-vinegar cucumber pickles.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 2 cups jasmine rice until water runs clear; drain.",
+    "Slice 1 cucumber into thin rounds.",
+    "Mix pickle brine: 1/3 cup rice vinegar, 1 tbsp sugar, 1/2 tsp salt; add cucumber and toss. Set aside 15–20 min.",
+    "Dice 1 onion and 1 bell pepper; mince 3 cloves garlic.",
+    "Finely chop 2 jalapenos (seed for less heat).",
+    "Rinse and drain 1 can black beans; pat dry.",
+    "Thinly slice 2 spring onion; roughly chop a handful of coriander.",
+    "Preheat an outdoor grill or a heavy skillet to high for the corn.",
+    "Gather spices and sauces: gochujang, chilli powder, ground cumin, paprika, black pepper, salt."
+  ],
+  "cook_steps": [
+    "Cook rice: Add rinsed jasmine rice, 2 1/4 cups water, and a pinch of salt to a pot. Bring to a boil, reduce to low, cover, and cook 12–15 min. Rest covered 5 min, then fluff.",
+    "Char the corn: Toss 2 cups corn with 1 tbsp canola oil and a pinch of salt. Grill in a basket or sear in a hot skillet until lightly charred, 4–6 min; transfer to a bowl.",
+    "Make the relish: Add black beans, jalapenos, juice of 1 lime, 1 tbsp olive oil (or canola oil), 1/4 tsp salt, and black pepper to the corn. Stir in half the spring onion and half the coriander. Taste and adjust lime/salt.",
+    "Cook the beef: Heat 1 tbsp canola oil in a large pan over medium-high. Add onion and bell pepper; cook until softened, 4–5 min. Add garlic; cook 30 sec.",
+    "Add 1 lb ground beef; break up and brown until no pink remains, 5–6 min. Spoon off excess fat if needed.",
+    "Season beef: Stir in 3 tbsp gochujang, 1 tsp chilli powder, 1 tsp ground cumin, 1 tsp paprika, 1/2 tsp salt, and 1/4 cup water. Simmer, stirring, 2–3 min until glossy and saucy. Finish with black pepper to taste.",
+    "Quick pickle finish: Drain cucumber pickles (reserve a spoon of brine). Toss with a pinch of black pepper; add a splash of brine to brighten if desired.",
+    "Assemble bowls: Divide rice into 4 bowls. Top with spicy beef, spoon on corn–bean relish, add cucumber pickles. Garnish with remaining spring onion and coriander.",
+    "Serve hot: Offer extra gochujang at the table for more heat."
+  ],
+  "instructions": [
+    "Rinse 2 cups jasmine rice until water runs clear; drain.",
+    "Slice 1 cucumber into thin rounds.",
+    "Mix pickle brine: 1/3 cup rice vinegar, 1 tbsp sugar, 1/2 tsp salt; add cucumber and toss. Set aside 15–20 min.",
+    "Dice 1 onion and 1 bell pepper; mince 3 cloves garlic.",
+    "Finely chop 2 jalapenos (seed for less heat).",
+    "Rinse and drain 1 can black beans; pat dry.",
+    "Thinly slice 2 spring onion; roughly chop a handful of coriander.",
+    "Preheat an outdoor grill or a heavy skillet to high for the corn.",
+    "Gather spices and sauces: gochujang, chilli powder, ground cumin, paprika, black pepper, salt.",
+    "Cook rice: Add rinsed jasmine rice, 2 1/4 cups water, and a pinch of salt to a pot. Bring to a boil, reduce to low, cover, and cook 12–15 min. Rest covered 5 min, then fluff.",
+    "Char the corn: Toss 2 cups corn with 1 tbsp canola oil and a pinch of salt. Grill in a basket or sear in a hot skillet until lightly charred, 4–6 min; transfer to a bowl.",
+    "Make the relish: Add black beans, jalapenos, juice of 1 lime, 1 tbsp olive oil (or canola oil), 1/4 tsp salt, and black pepper to the corn. Stir in half the spring onion and half the coriander. Taste and adjust lime/salt.",
+    "Cook the beef: Heat 1 tbsp canola oil in a large pan over medium-high. Add onion and bell pepper; cook until softened, 4–5 min. Add garlic; cook 30 sec.",
+    "Add 1 lb ground beef; break up and brown until no pink remains, 5–6 min. Spoon off excess fat if needed.",
+    "Season beef: Stir in 3 tbsp gochujang, 1 tsp chilli powder, 1 tsp ground cumin, 1 tsp paprika, 1/2 tsp salt, and 1/4 cup water. Simmer, stirring, 2–3 min until glossy and saucy. Finish with black pepper to taste.",
+    "Quick pickle finish: Drain cucumber pickles (reserve a spoon of brine). Toss with a pinch of black pepper; add a splash of brine to brighten if desired.",
+    "Assemble bowls: Divide rice into 4 bowls. Top with spicy beef, spoon on corn–bean relish, add cucumber pickles. Garnish with remaining spring onion and coriander.",
+    "Serve hot: Offer extra gochujang at the table for more heat."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 1/4 cups"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1/3 cup"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tbsp total",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "2 cups",
+      "preparation": "kernels"
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (about 400 g)",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "2",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "1 lb (450 g)"
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "3 tbsp"
+    },
+    {
+      "core_item_name": "chilli powder",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Korean",
+      "LatinAmerican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Hot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 1/4 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1/3 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tbsp total",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "2 cups",
+      "preparation": "kernels",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (about 400 g)",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "2",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "1 lb (450 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "3 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli powder",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T151542Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T150951Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

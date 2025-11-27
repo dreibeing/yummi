@@ -1,0 +1,326 @@
+{
+  "meal_id": "meal_20251126T160217Z_01_74c840",
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "archetype_name": "Family Turkish & North African Suppers (Medium, 30–60, Intermediate)",
+  "name": "Harissa Chicken Thigh Kebabs with Saffron Basmati and Sumac Cucumber-Tomato Salad",
+  "description": "Skewered harissa-yoghurt chicken roasted until charred, served with saffron basmati rice and a bright sumac cucumber-tomato salad. Medium warmth with balanced, family-friendly sides.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven grill/broiler to high (or 220°C). Line a baking tray and set a rack on top; lightly oil the rack.",
+    "Rinse basmati rice under cold water until it runs clear; drain well.",
+    "Bloom saffron in 2 tablespoons warm water; set aside.",
+    "Cut chicken thighs into 3 cm chunks. Mince garlic. Zest 1 lemon and juice both lemons; keep juice divided for marinade, salad, and yoghurt.",
+    "In a bowl, mix harissa paste, half the yoghurt, half the minced garlic, lemon zest, 1 tablespoon lemon juice, 1 tablespoon olive oil, 1/2 teaspoon salt, black pepper, cumin, and paprika. Toss in chicken and marinate 15 minutes.",
+    "Dice cucumber, halve cherry tomatoes, thinly slice red onion, and chop parsley and mint.",
+    "In a small bowl, combine remaining yoghurt with remaining minced garlic, 1 tablespoon lemon juice, a pinch of salt, and chopped mint; set aside.",
+    "Thread marinated chicken onto meat skewers, packing pieces snugly."
+  ],
+  "cook_steps": [
+    "Make the rice: Heat 1 tablespoon olive oil in a pot over medium. Add drained basmati rice; stir 1 minute. Add 3 cups water, 1/2 teaspoon salt, and the saffron with its liquid. Bring to a boil, cover, reduce to low, and cook 12 minutes. Turn off heat and rest 10 minutes covered.",
+    "Roast the kebabs: Place skewers on the prepared rack. Grill/broil 10–12 minutes, turning once, until browned and cooked through.",
+    "Toss the salad: In a bowl, combine cucumber, cherry tomatoes, red onion, and half the parsley. Add 2 tablespoons olive oil, 1 tablespoon lemon juice, sumac, a pinch of salt, and black pepper; toss.",
+    "Finish the rice: Fluff with a fork and fold in remaining parsley.",
+    "Serve: Plate saffron rice, top with chicken kebabs, add salad on the side, and spoon the mint-garlic yoghurt over or alongside."
+  ],
+  "instructions": [
+    "Preheat oven grill/broiler to high (or 220°C). Line a baking tray and set a rack on top; lightly oil the rack.",
+    "Rinse basmati rice under cold water until it runs clear; drain well.",
+    "Bloom saffron in 2 tablespoons warm water; set aside.",
+    "Cut chicken thighs into 3 cm chunks. Mince garlic. Zest 1 lemon and juice both lemons; keep juice divided for marinade, salad, and yoghurt.",
+    "In a bowl, mix harissa paste, half the yoghurt, half the minced garlic, lemon zest, 1 tablespoon lemon juice, 1 tablespoon olive oil, 1/2 teaspoon salt, black pepper, cumin, and paprika. Toss in chicken and marinate 15 minutes.",
+    "Dice cucumber, halve cherry tomatoes, thinly slice red onion, and chop parsley and mint.",
+    "In a small bowl, combine remaining yoghurt with remaining minced garlic, 1 tablespoon lemon juice, a pinch of salt, and chopped mint; set aside.",
+    "Thread marinated chicken onto meat skewers, packing pieces snugly.",
+    "Make the rice: Heat 1 tablespoon olive oil in a pot over medium. Add drained basmati rice; stir 1 minute. Add 3 cups water, 1/2 teaspoon salt, and the saffron with its liquid. Bring to a boil, cover, reduce to low, and cook 12 minutes. Turn off heat and rest 10 minutes covered.",
+    "Roast the kebabs: Place skewers on the prepared rack. Grill/broil 10–12 minutes, turning once, until browned and cooked through.",
+    "Toss the salad: In a bowl, combine cucumber, cherry tomatoes, red onion, and half the parsley. Add 2 tablespoons olive oil, 1 tablespoon lemon juice, sumac, a pinch of salt, and black pepper; toss.",
+    "Finish the rice: Fluff with a fork and fold in remaining parsley.",
+    "Serve: Plate saffron rice, top with chicken kebabs, add salad on the side, and spoon the mint-garlic yoghurt over or alongside."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "800 g",
+      "preparation": "cut into 3 cm chunks"
+    },
+    {
+      "core_item_name": "harissa paste",
+      "quantity": "2 tablespoons",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "3/4 cup",
+      "preparation": "divided for marinade and sauce"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced, divided"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "2",
+      "preparation": "zest 1, juice both"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 1/2 teaspoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "meat skewers",
+      "quantity": "6–8",
+      "preparation": "metal or soaked wooden"
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "pinch",
+      "preparation": "bloomed in warm water"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": "for cooking rice"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 bunch",
+      "preparation": "chopped, divided"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "NorthAfrican",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Dairy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "800 g",
+      "preparation": "cut into 3 cm chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "harissa paste",
+      "quantity": "2 tablespoons",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "3/4 cup",
+      "preparation": "divided for marinade and sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "2",
+      "preparation": "zest 1, juice both",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 1/2 teaspoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "meat skewers",
+      "quantity": "6–8",
+      "preparation": "metal or soaked wooden",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "pinch",
+      "preparation": "bloomed in warm water",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": "for cooking rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 bunch",
+      "preparation": "chopped, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T160253Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T160217Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

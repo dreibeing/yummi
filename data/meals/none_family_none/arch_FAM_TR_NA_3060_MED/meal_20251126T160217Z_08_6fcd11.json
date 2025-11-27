@@ -1,0 +1,386 @@
+{
+  "meal_id": "meal_20251126T160217Z_08_6fcd11",
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "archetype_name": "Family Turkish & North African Suppers (Medium, 30–60, Intermediate)",
+  "name": "Karniyarik-Inspired Stuffed Eggplant with Spiced Beef and Herbed Bulgur",
+  "description": "Roasted eggplants stuffed with baharat-spiced beef and tomatoes, finished in the oven and served with fluffy bulgur, sumac onions, yoghurt, and lemon. Medium warmth and family-friendly, with Turkish and North African accents.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 200°C (390°F).",
+    "Halve 2 large eggplant lengthwise; score the flesh in a crosshatch without piercing the skin. Sprinkle with a pinch of salt and set aside.",
+    "Dice 2 medium onions and mince 3 cloves garlic.",
+    "Chop 1/2 bunch parsley and 2 tbsp mint (optional).",
+    "Toast and chop 1/3 cup almonds.",
+    "Rinse 1.5 cups bulgur in a sieve; drain.",
+    "Thinly slice 1 small red onion; toss with 1 tsp sumac, 1 tbsp apple cider vinegar, a pinch of salt, and 1 tsp olive oil; set aside.",
+    "Warm 3 cups vegetable stock in a saucepan or kettle."
+  ],
+  "cook_steps": [
+    "Brush eggplant cut sides with 2 tbsp olive oil and place cut-side down on a baking tray. Roast 20–25 minutes until soft and collapses slightly.",
+    "While eggplant roasts, heat 1 tbsp olive oil in a large skillet over medium heat. Add diced onions and cook 5–6 minutes until translucent; add minced garlic for 30 seconds.",
+    "Add 500 g beef mince; cook, breaking up, until browned and most moisture evaporates, 5–7 minutes.",
+    "Stir in 2 tsp baharat, 1 tsp cumin, 1 tsp paprika, 1/4 tsp cinnamon, 1/2 tsp chili flakes, 1 tsp salt, and 1/2 tsp black pepper; cook 1 minute.",
+    "Add 2 tbsp tomato paste; cook 1 minute, then add 400 g can crushed tomatoes. Simmer 5–7 minutes until thick. Stir in chopped parsley and toasted almonds; adjust salt to taste. Remove from heat.",
+    "In a saucepan, combine rinsed bulgur with 3 cups hot vegetable stock, 1 tbsp olive oil, and a pinch of salt. Bring to a simmer, cover, and cook on low 12–15 minutes until liquid is absorbed; rest covered 5 minutes, then fluff and fold in chopped mint (if using).",
+    "Remove eggplants from oven and flip cut-side up. Use a spoon to press a trench into each half. Spoon the spiced beef mixture into the eggplants, mounding evenly.",
+    "Drizzle stuffed eggplants with 1 tbsp olive oil. Return to oven for 10 minutes to meld flavors.",
+    "Serve stuffed eggplants over or alongside the herbed bulgur. Top with a spoon of yoghurt, scatter the sumac onions, and add lemon wedges for squeezing."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C (390°F).",
+    "Halve 2 large eggplant lengthwise; score the flesh in a crosshatch without piercing the skin. Sprinkle with a pinch of salt and set aside.",
+    "Dice 2 medium onions and mince 3 cloves garlic.",
+    "Chop 1/2 bunch parsley and 2 tbsp mint (optional).",
+    "Toast and chop 1/3 cup almonds.",
+    "Rinse 1.5 cups bulgur in a sieve; drain.",
+    "Thinly slice 1 small red onion; toss with 1 tsp sumac, 1 tbsp apple cider vinegar, a pinch of salt, and 1 tsp olive oil; set aside.",
+    "Warm 3 cups vegetable stock in a saucepan or kettle.",
+    "Brush eggplant cut sides with 2 tbsp olive oil and place cut-side down on a baking tray. Roast 20–25 minutes until soft and collapses slightly.",
+    "While eggplant roasts, heat 1 tbsp olive oil in a large skillet over medium heat. Add diced onions and cook 5–6 minutes until translucent; add minced garlic for 30 seconds.",
+    "Add 500 g beef mince; cook, breaking up, until browned and most moisture evaporates, 5–7 minutes.",
+    "Stir in 2 tsp baharat, 1 tsp cumin, 1 tsp paprika, 1/4 tsp cinnamon, 1/2 tsp chili flakes, 1 tsp salt, and 1/2 tsp black pepper; cook 1 minute.",
+    "Add 2 tbsp tomato paste; cook 1 minute, then add 400 g can crushed tomatoes. Simmer 5–7 minutes until thick. Stir in chopped parsley and toasted almonds; adjust salt to taste. Remove from heat.",
+    "In a saucepan, combine rinsed bulgur with 3 cups hot vegetable stock, 1 tbsp olive oil, and a pinch of salt. Bring to a simmer, cover, and cook on low 12–15 minutes until liquid is absorbed; rest covered 5 minutes, then fluff and fold in chopped mint (if using).",
+    "Remove eggplants from oven and flip cut-side up. Use a spoon to press a trench into each half. Spoon the spiced beef mixture into the eggplants, mounding evenly.",
+    "Drizzle stuffed eggplants with 1 tbsp olive oil. Return to oven for 10 minutes to meld flavors.",
+    "Serve stuffed eggplants over or alongside the herbed bulgur. Top with a spoon of yoghurt, scatter the sumac onions, and add lemon wedges for squeezing."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "eggplant",
+      "quantity": "2 large",
+      "preparation": "halved lengthwise, scored"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "6 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "plus a pinch for vegetables"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "beef mince",
+      "quantity": "500 g",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "baharat",
+      "quantity": "2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1/4 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "400 g can",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "almonds",
+      "quantity": "1/3 cup",
+      "preparation": "toasted and chopped"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 bunch",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 cups",
+      "preparation": "hot"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": "for serving"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tbsp",
+      "preparation": "chopped, optional"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "NorthAfrican",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "eggplant",
+      "quantity": "2 large",
+      "preparation": "halved lengthwise, scored",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "6 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": "plus a pinch for vegetables",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "beef mince",
+      "quantity": "500 g",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "baharat",
+      "quantity": "2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1/4 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "400 g can",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "almonds",
+      "quantity": "1/3 cup",
+      "preparation": "toasted and chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 bunch",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 cups",
+      "preparation": "hot",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 cup",
+      "preparation": "for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tbsp",
+      "preparation": "chopped, optional",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [
+    "Category 'MealComponentPreference' ideally includes 2+ tags; received ['FromScratch']"
+  ],
+  "metadata": {
+    "created_at": "20251126T160711Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T160217Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

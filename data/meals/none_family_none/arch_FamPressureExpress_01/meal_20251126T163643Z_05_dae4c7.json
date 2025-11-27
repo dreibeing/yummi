@@ -1,0 +1,257 @@
+{
+  "meal_id": "meal_20251126T163643Z_05_dae4c7",
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "archetype_name": "Family Pressure Cooker Express Dinners (15–30, Mild)",
+  "name": "Instant Pot Turkey Ragu Penne",
+  "description": "A quick, mild turkey ragu and penne cooked together in the pressure cooker for a hearty family pasta night. Classic American-Italian flavors in under 30 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Dice onions.",
+    "Dice carrots.",
+    "Mince garlic.",
+    "Measure penne pasta, tomato passata with basil, water, and seasonings."
+  ],
+  "cook_steps": [
+    "Set pressure cooker to Sauté. Add olive oil, onions, and carrots; cook 3–4 minutes until softened.",
+    "Add garlic and turkey; cook 3–4 minutes, breaking up meat until no longer pink.",
+    "Stir in tomato paste, italian seasoning, oregano, salt, and pepper; cook 30 seconds.",
+    "Pour in water and scrape the bottom well to deglaze.",
+    "Add penne pasta and spread evenly. Pour tomato passata with basil on top; do not stir.",
+    "Seal lid. Pressure cook on High for 5 minutes.",
+    "Quick release pressure. Open lid and stir vigorously to combine and thicken.",
+    "If sauce is thin, use Sauté for 1–2 minutes, stirring until it clings to pasta.",
+    "Stir in chopped basil. Taste and adjust salt and pepper."
+  ],
+  "instructions": [
+    "Dice onions.",
+    "Dice carrots.",
+    "Mince garlic.",
+    "Measure penne pasta, tomato passata with basil, water, and seasonings.",
+    "Set pressure cooker to Sauté. Add olive oil, onions, and carrots; cook 3–4 minutes until softened.",
+    "Add garlic and turkey; cook 3–4 minutes, breaking up meat until no longer pink.",
+    "Stir in tomato paste, italian seasoning, oregano, salt, and pepper; cook 30 seconds.",
+    "Pour in water and scrape the bottom well to deglaze.",
+    "Add penne pasta and spread evenly. Pour tomato passata with basil on top; do not stir.",
+    "Seal lid. Pressure cook on High for 5 minutes.",
+    "Quick release pressure. Open lid and stir vigorously to combine and thicken.",
+    "If sauce is thin, use Sauté for 1–2 minutes, stirring until it clings to pasta.",
+    "Stir in chopped basil. Taste and adjust salt and pepper."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 small",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "turkey",
+      "quantity": "1 pound (450 g)",
+      "preparation": "ground or finely chopped"
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "italian seasoning",
+      "quantity": "1 1/2 teaspoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon, or to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "penne pasta",
+      "quantity": "12 ounces (340 g)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "tomato passata with basil",
+      "quantity": "2 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "1/4 cup",
+      "preparation": "chopped, for finishing"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "SlowOrPressureCooker",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 small",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "turkey",
+      "quantity": "1 pound (450 g)",
+      "preparation": "ground or finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "italian seasoning",
+      "quantity": "1 1/2 teaspoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon, or to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "penne pasta",
+      "quantity": "12 ounces (340 g)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato passata with basil",
+      "quantity": "2 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "1/4 cup",
+      "preparation": "chopped, for finishing",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T163918Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T163643Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

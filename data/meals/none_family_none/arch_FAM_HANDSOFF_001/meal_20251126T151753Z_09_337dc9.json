@@ -1,0 +1,246 @@
+{
+  "meal_id": "meal_20251126T151753Z_09_337dc9",
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "archetype_name": "Family Hands-Off Sheet Pan & Slow Cooker Nights",
+  "name": "Slow Cooker Greek Beef & Green Bean Stew (Fasolakia) with Basmati Rice & Quinoa",
+  "description": "Hands-off, tomato-cinnamon beef stew with tender green beans, finished with herbs and served over a quick basmati rice with quinoa. Mild, family-friendly, and set-and-forget.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Peel and finely chop the onion.",
+    "Peel and mince the garlic.",
+    "Trim the ends from the green beans; leave whole or cut in half.",
+    "Measure spices and set aside.",
+    "Open the basmati rice with quinoa pack(s) and have a small saucepan ready."
+  ],
+  "cook_steps": [
+    "To a slow cooker, add onion, garlic, green beans, crushed tomatoes, olive oil, cinnamon, oregano, bay leaves, salt, and black pepper. Stir to combine.",
+    "Nestle beef stew meat into the mixture and stir so pieces are coated.",
+    "Cook on Low for 6–8 hours or on High for 3–4 hours until beef is fork-tender and beans are soft.",
+    "10 minutes before serving, add 2–3 tablespoons water to a small saucepan, add basmati rice with quinoa, and warm over low heat, stirring occasionally, until hot.",
+    "Taste the stew and adjust salt to preference. Remove bay leaves.",
+    "Serve the stew over the warmed basmati rice with quinoa."
+  ],
+  "instructions": [
+    "Peel and finely chop the onion.",
+    "Peel and mince the garlic.",
+    "Trim the ends from the green beans; leave whole or cut in half.",
+    "Measure spices and set aside.",
+    "Open the basmati rice with quinoa pack(s) and have a small saucepan ready.",
+    "To a slow cooker, add onion, garlic, green beans, crushed tomatoes, olive oil, cinnamon, oregano, bay leaves, salt, and black pepper. Stir to combine.",
+    "Nestle beef stew meat into the mixture and stir so pieces are coated.",
+    "Cook on Low for 6–8 hours or on High for 3–4 hours until beef is fork-tender and beans are soft.",
+    "10 minutes before serving, add 2–3 tablespoons water to a small saucepan, add basmati rice with quinoa, and warm over low heat, stirring occasionally, until hot.",
+    "Taste the stew and adjust salt to preference. Remove bay leaves.",
+    "Serve the stew over the warmed basmati rice with quinoa."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef stew meat",
+      "quantity": "900 g (about 2 lb)",
+      "preparation": "cut larger pieces to 4–5 cm if needed"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "500 g (about 1 lb)",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "800 g (about 28 oz) can"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 teaspoons, or to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "basmati rice with quinoa",
+      "quantity": "2 packs (about 450–500 g total)",
+      "preparation": "ready-meal; heat per steps"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2–3 tablespoons",
+      "preparation": "for warming rice with quinoa"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "Small handful (optional)",
+      "preparation": "chopped, for serving"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "SlowOrPressureCooker",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef stew meat",
+      "quantity": "900 g (about 2 lb)",
+      "preparation": "cut larger pieces to 4–5 cm if needed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "500 g (about 1 lb)",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "800 g (about 28 oz) can",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 teaspoons, or to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basmati rice with quinoa",
+      "quantity": "2 packs (about 450–500 g total)",
+      "preparation": "ready-meal; heat per steps",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2–3 tablespoons",
+      "preparation": "for warming rice with quinoa",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "Small handful (optional)",
+      "preparation": "chopped, for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T152334Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T151753Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

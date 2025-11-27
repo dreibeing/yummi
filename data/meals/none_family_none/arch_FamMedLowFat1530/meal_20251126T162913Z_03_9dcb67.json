@@ -1,0 +1,292 @@
+{
+  "meal_id": "meal_20251126T162913Z_03_9dcb67",
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "archetype_name": "Family Low-Fat Mediterranean Light Plates (15–30, Mild)",
+  "name": "Lemony Cannellini & Leek Skillet with Roasted Zucchini over Brown & Wild Rice",
+  "description": "Bright, low-fat Greek–Levant vibes: lemony cannellini and leeks over brown & wild rice with oregano-roasted zucchini and a crisp cucumber–mint side.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C/425°F and line a baking tray.",
+    "Rinse 1.5 cups brown and wild rice under cold water.",
+    "Slice 1 large leek (white and light green parts) into thin half-moons; rinse grit away.",
+    "Cut 2 medium zucchini into half-moons.",
+    "Halve 2 cups cherry tomatoes.",
+    "Peel and mince 3 cloves garlic.",
+    "Chop 2 tablespoons parsley and 2 tablespoons mint.",
+    "Dice 1 large cucumber.",
+    "Zest 1 lemon, then cut and squeeze for 3 tablespoons lemon juice.",
+    "Drain and rinse 2 cups cannellini beans."
+  ],
+  "cook_steps": [
+    "Rice: In a pot, combine rinsed brown and wild rice with 3 cups vegetable stock. Bring to a boil, reduce to low, cover, and simmer until tender, 25–30 minutes. Keep covered off heat 5 minutes.",
+    "Roast veg: Toss zucchini and cherry tomatoes with 1 teaspoon olive oil, 1 teaspoon oregano, a pinch of salt, and black pepper. Spread on tray and roast 12–15 minutes until tender and lightly browned.",
+    "Bean skillet: Heat 1 teaspoon olive oil in a large nonstick pan over medium. Add leeks and a pinch of salt; cook 5–6 minutes until soft.",
+    "Stir in garlic; cook 30 seconds until fragrant.",
+    "Add cannellini beans, lemon zest, 1/2 cup vegetable stock, and a pinch of black pepper. Simmer 3–4 minutes to warm through and lightly thicken.",
+    "Finish beans with 2 tablespoons lemon juice and parsley. Taste and season with salt and black pepper as needed.",
+    "Cucumber side: In a bowl, combine cucumber, mint, 1 teaspoon olive oil, 1 tablespoon lemon juice, and 1/2 teaspoon sumac. Add a pinch of salt; toss.",
+    "Serve: Fluff rice and plate. Spoon lemony beans over rice, add roasted zucchini and tomatoes on the side, and serve cucumber–mint salad alongside."
+  ],
+  "instructions": [
+    "Heat oven to 220°C/425°F and line a baking tray.",
+    "Rinse 1.5 cups brown and wild rice under cold water.",
+    "Slice 1 large leek (white and light green parts) into thin half-moons; rinse grit away.",
+    "Cut 2 medium zucchini into half-moons.",
+    "Halve 2 cups cherry tomatoes.",
+    "Peel and mince 3 cloves garlic.",
+    "Chop 2 tablespoons parsley and 2 tablespoons mint.",
+    "Dice 1 large cucumber.",
+    "Zest 1 lemon, then cut and squeeze for 3 tablespoons lemon juice.",
+    "Drain and rinse 2 cups cannellini beans.",
+    "Rice: In a pot, combine rinsed brown and wild rice with 3 cups vegetable stock. Bring to a boil, reduce to low, cover, and simmer until tender, 25–30 minutes. Keep covered off heat 5 minutes.",
+    "Roast veg: Toss zucchini and cherry tomatoes with 1 teaspoon olive oil, 1 teaspoon oregano, a pinch of salt, and black pepper. Spread on tray and roast 12–15 minutes until tender and lightly browned.",
+    "Bean skillet: Heat 1 teaspoon olive oil in a large nonstick pan over medium. Add leeks and a pinch of salt; cook 5–6 minutes until soft.",
+    "Stir in garlic; cook 30 seconds until fragrant.",
+    "Add cannellini beans, lemon zest, 1/2 cup vegetable stock, and a pinch of black pepper. Simmer 3–4 minutes to warm through and lightly thicken.",
+    "Finish beans with 2 tablespoons lemon juice and parsley. Taste and season with salt and black pepper as needed.",
+    "Cucumber side: In a bowl, combine cucumber, mint, 1 teaspoon olive oil, 1 tablespoon lemon juice, and 1/2 teaspoon sumac. Add a pinch of salt; toss.",
+    "Serve: Fluff rice and plate. Spoon lemony beans over rice, add roasted zucchini and tomatoes on the side, and serve cucumber–mint salad alongside."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "brown and wild rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3.5 cups",
+      "preparation": "divided (3 cups for rice, 1/2 cup for skillet)"
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "sliced into half-moons"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 teaspoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "leeks",
+      "quantity": "1 large",
+      "preparation": "thinly sliced, rinsed"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "cannellini beans",
+      "quantity": "2 cups",
+      "preparation": "drained and rinsed"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zested and juiced (about 3 tbsp juice)"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1/2 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": ""
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowFat"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "brown and wild rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3.5 cups",
+      "preparation": "divided (3 cups for rice, 1/2 cup for skillet)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "sliced into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 teaspoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "leeks",
+      "quantity": "1 large",
+      "preparation": "thinly sliced, rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cannellini beans",
+      "quantity": "2 cups",
+      "preparation": "drained and rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zested and juiced (about 3 tbsp juice)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1/2 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T163204Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T162913Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

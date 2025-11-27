@@ -1,0 +1,231 @@
+{
+  "meal_id": "meal_20251126T155214Z_06_8828a7",
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "archetype_name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)",
+  "name": "Black Pepper Tofu & Bok Choy Stir-Fry with Microwave Rice",
+  "description": "Crispy cornflour-coated tofu tossed with bok choy, onions, and bell pepper in Thai black pepper sauce. Medium-heat family stir-fry served over quick microwave rice.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Drain tofu and pat very dry; cut into 2 cm cubes.",
+    "Toss tofu with cornflour in a bowl to lightly coat.",
+    "Trim bok choy; separate stems and leaves, slice stems and roughly chop leaves.",
+    "Slice onions; mince garlic; slice bell pepper into strips.",
+    "Thinly slice spring onion for garnish.",
+    "Microwave rice pouches per pack timing just before serving (keep sealed until step 6)."
+  ],
+  "cook_steps": [
+    "Heat canola oil in a large skillet or wok over medium-high heat.",
+    "Add coated tofu in a single layer; cook 6–8 minutes, turning to crisp all sides. Transfer tofu to a plate.",
+    "In the same pan, add a little more canola oil if dry. Stir-fry onions and bell pepper 2 minutes.",
+    "Add bok choy stems and garlic; stir-fry 1–2 minutes until fragrant.",
+    "Return tofu to the pan. Add Thai black pepper sauce, tamari, and chili flakes; toss 1–2 minutes until glazed. Fold in bok choy leaves to wilt, 30–60 seconds.",
+    "Microwave rice pouches, fluff, and divide among bowls. Top with stir-fry and spring onion. Serve immediately."
+  ],
+  "instructions": [
+    "Drain tofu and pat very dry; cut into 2 cm cubes.",
+    "Toss tofu with cornflour in a bowl to lightly coat.",
+    "Trim bok choy; separate stems and leaves, slice stems and roughly chop leaves.",
+    "Slice onions; mince garlic; slice bell pepper into strips.",
+    "Thinly slice spring onion for garnish.",
+    "Microwave rice pouches per pack timing just before serving (keep sealed until step 6).",
+    "Heat canola oil in a large skillet or wok over medium-high heat.",
+    "Add coated tofu in a single layer; cook 6–8 minutes, turning to crisp all sides. Transfer tofu to a plate.",
+    "In the same pan, add a little more canola oil if dry. Stir-fry onions and bell pepper 2 minutes.",
+    "Add bok choy stems and garlic; stir-fry 1–2 minutes until fragrant.",
+    "Return tofu to the pan. Add Thai black pepper sauce, tamari, and chili flakes; toss 1–2 minutes until glazed. Fold in bok choy leaves to wilt, 30–60 seconds.",
+    "Microwave rice pouches, fluff, and divide among bowls. Top with stir-fry and spring onion. Serve immediately."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "tofu",
+      "quantity": "400 g",
+      "preparation": "cubed"
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "2 tbsp",
+      "preparation": "for coating"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2–3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "300 g",
+      "preparation": "stems sliced, leaves chopped"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "bell pepper",
+      "quantity": "1 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "Thai black pepper sauce",
+      "quantity": "1/3 cup",
+      "preparation": "ready to use"
+    },
+    {
+      "core_item_name": "tamari",
+      "quantity": "1 tbsp",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2 tsp",
+      "preparation": "adjust to heat preference"
+    },
+    {
+      "core_item_name": "rice",
+      "quantity": "2 pouches (about 500 g)",
+      "preparation": "microwave per pack"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "sliced for garnish"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Chinese",
+      "Thai"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Soy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "tofu",
+      "quantity": "400 g",
+      "preparation": "cubed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "2 tbsp",
+      "preparation": "for coating",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2–3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "300 g",
+      "preparation": "stems sliced, leaves chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell pepper",
+      "quantity": "1 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "Thai black pepper sauce",
+      "quantity": "1/3 cup",
+      "preparation": "ready to use",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tamari",
+      "quantity": "1 tbsp",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2 tsp",
+      "preparation": "adjust to heat preference",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice",
+      "quantity": "2 pouches (about 500 g)",
+      "preparation": "microwave per pack",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "sliced for garnish",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T155539Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T155214Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

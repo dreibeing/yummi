@@ -1,0 +1,272 @@
+{
+  "meal_id": "meal_20251126T162243Z_03_b6e978",
+  "archetype_uid": "arch_FamLightJV_01",
+  "archetype_name": "Family Light & Fresh: Japanese and Vietnamese Weeknights",
+  "name": "Ginger-Lime Chicken Lettuce Cups with Jasmine Rice (No Soy, No Sesame)",
+  "description": "Light, herb-forward chicken served in crisp romaine leaves with a citrusy dressing and a side of steamed jasmine rice. Mild, simple, and family-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1 1/2 cups jasmine rice until water runs clear.",
+    "Trim 1 lb chicken thighs and slice into thin bite-size strips.",
+    "Peel and julienne 2 carrots.",
+    "Thinly slice 1 cucumber.",
+    "Thinly slice 4 spring onion.",
+    "Mince 3 cloves garlic.",
+    "Zest and juice 1 lime.",
+    "Rinse and dry 1 head romaine lettuce; separate large leaves.",
+    "Roughly chop 1/2 cup mint.",
+    "In a small bowl, mix dressing: lime juice and zest, 1 1/2 tbsp rice vinegar, 1 tsp honey, a pinch of salt, and a pinch of black pepper."
+  ],
+  "cook_steps": [
+    "Cook rice: Add rinsed jasmine rice and 2 cups water to a pot. Bring to a boil, reduce to low, cover, and simmer 12–15 minutes until tender. Rest covered 5 minutes, then fluff.",
+    "Heat a large nonstick skillet over medium-high. Add 1 tbsp canola oil.",
+    "Season chicken with 1/2 tsp salt and 1/4 tsp black pepper. Add to skillet and cook 5–6 minutes, stirring, until just cooked through.",
+    "Add minced garlic to the chicken. Cook 30–60 seconds until fragrant. Turn off heat.",
+    "Toss sliced cucumber, carrots, and half the spring onion with half the dressing and half the chopped mint.",
+    "Drizzle remaining dressing over the cooked chicken and toss. Sprinkle with remaining mint and spring onion.",
+    "Assemble: Fill romaine leaves with a spoonful of rice, top with chicken and the dressed vegetables. Serve extra rice on the side."
+  ],
+  "instructions": [
+    "Rinse 1 1/2 cups jasmine rice until water runs clear.",
+    "Trim 1 lb chicken thighs and slice into thin bite-size strips.",
+    "Peel and julienne 2 carrots.",
+    "Thinly slice 1 cucumber.",
+    "Thinly slice 4 spring onion.",
+    "Mince 3 cloves garlic.",
+    "Zest and juice 1 lime.",
+    "Rinse and dry 1 head romaine lettuce; separate large leaves.",
+    "Roughly chop 1/2 cup mint.",
+    "In a small bowl, mix dressing: lime juice and zest, 1 1/2 tbsp rice vinegar, 1 tsp honey, a pinch of salt, and a pinch of black pepper.",
+    "Cook rice: Add rinsed jasmine rice and 2 cups water to a pot. Bring to a boil, reduce to low, cover, and simmer 12–15 minutes until tender. Rest covered 5 minutes, then fluff.",
+    "Heat a large nonstick skillet over medium-high. Add 1 tbsp canola oil.",
+    "Season chicken with 1/2 tsp salt and 1/4 tsp black pepper. Add to skillet and cook 5–6 minutes, stirring, until just cooked through.",
+    "Add minced garlic to the chicken. Cook 30–60 seconds until fragrant. Turn off heat.",
+    "Toss sliced cucumber, carrots, and half the spring onion with half the dressing and half the chopped mint.",
+    "Drizzle remaining dressing over the cooked chicken and toss. Sprinkle with remaining mint and spring onion.",
+    "Assemble: Fill romaine leaves with a spoonful of rice, top with chicken and the dressed vegetables. Serve extra rice on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 cups"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1 lb",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "1 head",
+      "preparation": "leaves separated"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "julienned"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 1/2 tablespoons"
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Japanese",
+      "Vietnamese"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowCalorie"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1 lb",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "1 head",
+      "preparation": "leaves separated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "julienned",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 1/2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T162454Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T162243Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

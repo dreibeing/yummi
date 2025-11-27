@@ -1,0 +1,183 @@
+{
+  "meal_id": "meal_20251126T145833Z_04_2e156c",
+  "archetype_uid": "arch_AFQB_2025_01",
+  "archetype_name": "Family AirFryer Quick Bites",
+  "name": "Air Fryer Pepperoni Pizza Quesadillas",
+  "description": "Crispy tortilla quesadillas with mozzarella, pepperoni, and herby tomato sauce, finished in the air fryer. Family-friendly and ready fast.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat air fryer to 190°C/375°F (2 minutes).",
+    "Lay out 8 tortillas on a board.",
+    "Drain any excess liquid from mozzarella if needed and pat dry.",
+    "In a small bowl, stir tomato sauce with italian seasoning.",
+    "Lightly brush one side of each tortilla with olive oil (this will be the outside).",
+    "Set out salad and dressing for serving."
+  ],
+  "cook_steps": [
+    "Flip 4 tortillas so oiled side is down. Spread 1–2 tablespoons of the seasoned tomato sauce on each.",
+    "Top each with mozzarella, pepperoni, and a little more mozzarella. Cap with a second tortilla, oiled side up.",
+    "Air fry 1–2 quesadillas at a time for 5–6 minutes, flipping halfway, until golden and cheese is melted.",
+    "Repeat with remaining quesadillas.",
+    "Microwave the remaining tomato sauce for 30–45 seconds to warm as a dip.",
+    "Slice quesadillas into wedges and serve with warm sauce and salad."
+  ],
+  "instructions": [
+    "Preheat air fryer to 190°C/375°F (2 minutes).",
+    "Lay out 8 tortillas on a board.",
+    "Drain any excess liquid from mozzarella if needed and pat dry.",
+    "In a small bowl, stir tomato sauce with italian seasoning.",
+    "Lightly brush one side of each tortilla with olive oil (this will be the outside).",
+    "Set out salad and dressing for serving.",
+    "Flip 4 tortillas so oiled side is down. Spread 1–2 tablespoons of the seasoned tomato sauce on each.",
+    "Top each with mozzarella, pepperoni, and a little more mozzarella. Cap with a second tortilla, oiled side up.",
+    "Air fry 1–2 quesadillas at a time for 5–6 minutes, flipping halfway, until golden and cheese is melted.",
+    "Repeat with remaining quesadillas.",
+    "Microwave the remaining tomato sauce for 30–45 seconds to warm as a dip.",
+    "Slice quesadillas into wedges and serve with warm sauce and salad."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "tortillas",
+      "quantity": "8 medium tortillas",
+      "preparation": "lightly brushed with oil on outer sides"
+    },
+    {
+      "core_item_name": "mozzarella",
+      "quantity": "300 g",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "pepperoni",
+      "quantity": "120 g",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "tomato sauce",
+      "quantity": "1 cup",
+      "preparation": "mixed with seasoning; extra warmed for dipping"
+    },
+    {
+      "core_item_name": "italian seasoning",
+      "quantity": "1 teaspoon",
+      "preparation": "stirred into sauce"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 teaspoons",
+      "preparation": "brushed on tortillas"
+    },
+    {
+      "core_item_name": "salad",
+      "quantity": "1 family pack",
+      "preparation": "serve on the side"
+    },
+    {
+      "core_item_name": "salad dressing",
+      "quantity": "to taste",
+      "preparation": "serve on the side"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "AirFryer",
+      "Microwave"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "tortillas",
+      "quantity": "8 medium tortillas",
+      "preparation": "lightly brushed with oil on outer sides",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mozzarella",
+      "quantity": "300 g",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepperoni",
+      "quantity": "120 g",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato sauce",
+      "quantity": "1 cup",
+      "preparation": "mixed with seasoning; extra warmed for dipping",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "italian seasoning",
+      "quantity": "1 teaspoon",
+      "preparation": "stirred into sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 teaspoons",
+      "preparation": "brushed on tortillas",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salad",
+      "quantity": "1 family pack",
+      "preparation": "serve on the side",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salad dressing",
+      "quantity": "to taste",
+      "preparation": "serve on the side",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T150013Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T145833Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

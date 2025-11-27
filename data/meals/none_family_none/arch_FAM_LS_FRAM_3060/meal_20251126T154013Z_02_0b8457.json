@@ -1,0 +1,287 @@
+{
+  "meal_id": "meal_20251126T154013Z_02_0b8457",
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "archetype_name": "Family Low-Sodium American & French Comfort (30–60, Mild)",
+  "name": "Creamy Dijon-Mushroom Beef over Fettuccine with Roasted Lemon Green Beans",
+  "description": "A bistro-style, low-sodium skillet beef and mushroom cream sauce served over fettuccine, with bright roasted lemon green beans. Mild flavors and weeknight-friendly steps.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 425°F (220°C).",
+    "Bring a large pot of water to a boil for the pasta (no added salt).",
+    "Trim green beans and pat dry.",
+    "Thinly slice onion; clean and slice mushrooms.",
+    "Mince garlic; chop parsley.",
+    "Zest the lemon, then cut it into wedges.",
+    "Thinly slice the beef across the grain."
+  ],
+  "cook_steps": [
+    "Roast the beans: On a sheet pan, toss green beans with 1 tbsp olive oil, a pinch of black pepper, and half the lemon zest. Spread out and roast 12–15 minutes until tender with lightly browned spots. Squeeze 1–2 lemon wedges over before serving.",
+    "Cook pasta: Add fettuccine to boiling water and cook until al dente per package time. Reserve 1/2 cup cooking water, then drain.",
+    "Sear beef: Heat 1 tbsp olive oil and 1 tbsp butter in a large skillet over medium-high. Add beef in a single layer; sear 1–2 minutes per side until just browned. Transfer to a plate.",
+    "Sauté veg: Reduce heat to medium. Add remaining 1 tbsp olive oil and the onion; cook 2 minutes. Add mushrooms and cook 5–6 minutes until they release moisture and brown. Stir in garlic for 30 seconds.",
+    "Make roux: Add remaining 1 tbsp butter and sprinkle in flour. Stir 1 minute to coat.",
+    "Deglaze and simmer: Pour in white wine, scraping up browned bits. Add mushroom stock and remaining lemon zest; simmer 3–4 minutes until slightly thickened.",
+    "Finish sauce: Stir in mustard and creme fraiche. Return beef and any juices to the pan; simmer 1–2 minutes until just cooked through. Season with black pepper and a squeeze of lemon to taste.",
+    "Serve: Toss drained fettuccine with a splash of reserved pasta water and a ladle of sauce, or plate pasta and spoon beef-mushroom sauce over the top. Garnish with parsley. Serve with roasted lemon green beans."
+  ],
+  "instructions": [
+    "Preheat oven to 425°F (220°C).",
+    "Bring a large pot of water to a boil for the pasta (no added salt).",
+    "Trim green beans and pat dry.",
+    "Thinly slice onion; clean and slice mushrooms.",
+    "Mince garlic; chop parsley.",
+    "Zest the lemon, then cut it into wedges.",
+    "Thinly slice the beef across the grain.",
+    "Roast the beans: On a sheet pan, toss green beans with 1 tbsp olive oil, a pinch of black pepper, and half the lemon zest. Spread out and roast 12–15 minutes until tender with lightly browned spots. Squeeze 1–2 lemon wedges over before serving.",
+    "Cook pasta: Add fettuccine to boiling water and cook until al dente per package time. Reserve 1/2 cup cooking water, then drain.",
+    "Sear beef: Heat 1 tbsp olive oil and 1 tbsp butter in a large skillet over medium-high. Add beef in a single layer; sear 1–2 minutes per side until just browned. Transfer to a plate.",
+    "Sauté veg: Reduce heat to medium. Add remaining 1 tbsp olive oil and the onion; cook 2 minutes. Add mushrooms and cook 5–6 minutes until they release moisture and brown. Stir in garlic for 30 seconds.",
+    "Make roux: Add remaining 1 tbsp butter and sprinkle in flour. Stir 1 minute to coat.",
+    "Deglaze and simmer: Pour in white wine, scraping up browned bits. Add mushroom stock and remaining lemon zest; simmer 3–4 minutes until slightly thickened.",
+    "Finish sauce: Stir in mustard and creme fraiche. Return beef and any juices to the pan; simmer 1–2 minutes until just cooked through. Season with black pepper and a squeeze of lemon to taste.",
+    "Serve: Toss drained fettuccine with a splash of reserved pasta water and a ladle of sauce, or plate pasta and spoon beef-mushroom sauce over the top. Garnish with parsley. Serve with roasted lemon green beans."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "fettuccine",
+      "quantity": "12 oz (340 g)"
+    },
+    {
+      "core_item_name": "beef",
+      "quantity": "1 lb (450 g)",
+      "preparation": "thinly sliced across the grain"
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "12 oz (340 g)",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "flour",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup"
+    },
+    {
+      "core_item_name": "mushroom stock",
+      "quantity": "1 1/4 cups"
+    },
+    {
+      "core_item_name": "creme fraiche",
+      "quantity": "1/2 cup"
+    },
+    {
+      "core_item_name": "mustard",
+      "quantity": "1 tbsp"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp, plus more to taste"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "1 lb (450 g)",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and cut into wedges"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "4 quarts (for boiling pasta)"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "French"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowSodium"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "fettuccine",
+      "quantity": "12 oz (340 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "beef",
+      "quantity": "1 lb (450 g)",
+      "preparation": "thinly sliced across the grain",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "12 oz (340 g)",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "flour",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushroom stock",
+      "quantity": "1 1/4 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "creme fraiche",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mustard",
+      "quantity": "1 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp, plus more to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "1 lb (450 g)",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "4 quarts (for boiling pasta)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T154155Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T154013Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

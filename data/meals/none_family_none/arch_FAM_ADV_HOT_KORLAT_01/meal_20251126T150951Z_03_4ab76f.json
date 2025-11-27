@@ -1,0 +1,335 @@
+{
+  "meal_id": "meal_20251126T150951Z_03_4ab76f",
+  "archetype_uid": "arch_FAM_ADV_HOT_KORLAT_01",
+  "archetype_name": "Family Heat Lovers: Korean & Latin American Feasts (Hot, 30–60, Advanced)",
+  "name": "Gochujang-Lime Grilled Tilapia with Charred Corn-Jalapeño Relish, Sesame Cabbage Slaw, and Sticky Rice",
+  "description": "Hot, bold grilled tilapia glazed with gochujang-lime, served with a bright corn–jalapeño relish, crisp sesame cabbage slaw, and sticky rice. A Korean–Latin American mashup built from scratch with layered heat.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 2 cups sticky rice under cold water until it runs mostly clear; drain.",
+    "Pat dry 4 tilapia fillets with paper towels.",
+    "In a bowl, whisk gochujang, soy sauce, lime juice, garlic, sesame oil, olive oil, and a pinch of sugar for the fish glaze.",
+    "Toss tilapia with half of the glaze; reserve the other half for basting.",
+    "Shred cabbage (about 6 cups) and thinly slice spring onion (4).",
+    "In a bowl, whisk rice vinegar, a squeeze of lime, a pinch of sugar, salt, black pepper, and a pinch of chilli flakes for the slaw dressing; add cabbage and spring onion and toss. Set aside to lightly pickle.",
+    "Shuck corn (3 cobs) if needed and halve jalapenos (2) lengthwise; lightly oil with olive oil and season with salt and black pepper.",
+    "Chop coriander (a small handful) for finishing the relish.",
+    "Preheat outdoor grill to medium-high heat (clean and oil grates).",
+    "Set a lidded pot on the stovetop for rice."
+  ],
+  "cook_steps": [
+    "Cook the rice on the stovetop: Add rinsed sticky rice and 2 cups water to the pot, bring to a boil, reduce to low, cover, and simmer 12–15 minutes until tender; rest off heat, covered, 10 minutes.",
+    "Grill the corn and jalapenos over direct heat, turning until corn is charred in spots and jalapenos blistered (6–8 minutes). Remove; cut kernels from cobs and finely chop jalapenos.",
+    "Make the corn–jalapeno relish: In a bowl, combine charred corn, chopped jalapenos, chopped coriander, a squeeze of lime, a drizzle of olive oil, salt, and black pepper. Set aside.",
+    "Grill the tilapia: Place marinated fillets on the hot grill. Cook 3–4 minutes per side, basting with reserved glaze, until opaque and lightly charred at edges.",
+    "Taste slaw and adjust with salt, black pepper, or more rice vinegar as needed. Sprinkle sesame seeds over the slaw and toss.",
+    "Fluff the sticky rice. Plate rice, top with a fillet, spoon over corn–jalapeno relish, and add a mound of sesame cabbage slaw. Serve hot."
+  ],
+  "instructions": [
+    "Rinse 2 cups sticky rice under cold water until it runs mostly clear; drain.",
+    "Pat dry 4 tilapia fillets with paper towels.",
+    "In a bowl, whisk gochujang, soy sauce, lime juice, garlic, sesame oil, olive oil, and a pinch of sugar for the fish glaze.",
+    "Toss tilapia with half of the glaze; reserve the other half for basting.",
+    "Shred cabbage (about 6 cups) and thinly slice spring onion (4).",
+    "In a bowl, whisk rice vinegar, a squeeze of lime, a pinch of sugar, salt, black pepper, and a pinch of chilli flakes for the slaw dressing; add cabbage and spring onion and toss. Set aside to lightly pickle.",
+    "Shuck corn (3 cobs) if needed and halve jalapenos (2) lengthwise; lightly oil with olive oil and season with salt and black pepper.",
+    "Chop coriander (a small handful) for finishing the relish.",
+    "Preheat outdoor grill to medium-high heat (clean and oil grates).",
+    "Set a lidded pot on the stovetop for rice.",
+    "Cook the rice on the stovetop: Add rinsed sticky rice and 2 cups water to the pot, bring to a boil, reduce to low, cover, and simmer 12–15 minutes until tender; rest off heat, covered, 10 minutes.",
+    "Grill the corn and jalapenos over direct heat, turning until corn is charred in spots and jalapenos blistered (6–8 minutes). Remove; cut kernels from cobs and finely chop jalapenos.",
+    "Make the corn–jalapeno relish: In a bowl, combine charred corn, chopped jalapenos, chopped coriander, a squeeze of lime, a drizzle of olive oil, salt, and black pepper. Set aside.",
+    "Grill the tilapia: Place marinated fillets on the hot grill. Cook 3–4 minutes per side, basting with reserved glaze, until opaque and lightly charred at edges.",
+    "Taste slaw and adjust with salt, black pepper, or more rice vinegar as needed. Sprinkle sesame seeds over the slaw and toss.",
+    "Fluff the sticky rice. Plate rice, top with a fillet, spoon over corn–jalapeno relish, and add a mound of sesame cabbage slaw. Serve hot."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "sticky rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 cups",
+      "preparation": "for rice"
+    },
+    {
+      "core_item_name": "tilapia",
+      "quantity": "4 fillets (about 600–800 g total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "3 tablespoons",
+      "preparation": "for glaze"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "1.5 tablespoons",
+      "preparation": "for glaze"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "juice for glaze and relish"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely grated"
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tablespoon",
+      "preparation": "for glaze"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "divided, for grilling and relish"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 teaspoon",
+      "preparation": "pinch for glaze and slaw"
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 medium head (about 6 cups shredded)",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "3 tablespoons",
+      "preparation": "for slaw"
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1/2 teaspoon",
+      "preparation": "for slaw, to taste"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "3 cobs",
+      "preparation": "grilled and kernels cut off"
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "2",
+      "preparation": "halved, grilled, finely chopped"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "1 tablespoon",
+      "preparation": "for slaw"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "for all components"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "for all components"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Korean",
+      "LatinAmerican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Hot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "sticky rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 cups",
+      "preparation": "for rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tilapia",
+      "quantity": "4 fillets (about 600–800 g total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "gochujang",
+      "quantity": "3 tablespoons",
+      "preparation": "for glaze",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "1.5 tablespoons",
+      "preparation": "for glaze",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "juice for glaze and relish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely grated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tablespoon",
+      "preparation": "for glaze",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "divided, for grilling and relish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 teaspoon",
+      "preparation": "pinch for glaze and slaw",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 medium head (about 6 cups shredded)",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "3 tablespoons",
+      "preparation": "for slaw",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1/2 teaspoon",
+      "preparation": "for slaw, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "3 cobs",
+      "preparation": "grilled and kernels cut off",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "2",
+      "preparation": "halved, grilled, finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame seeds",
+      "quantity": "1 tablespoon",
+      "preparation": "for slaw",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "for all components",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "for all components",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T151238Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T150951Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

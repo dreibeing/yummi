@@ -1,0 +1,263 @@
+{
+  "meal_id": "meal_20251126T151753Z_04_1beded",
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "archetype_name": "Family Hands-Off Sheet Pan & Slow Cooker Nights",
+  "name": "Slow Cooker Lemon-Oregano Whole Chicken with Potatoes & Green Beans",
+  "description": "Hands-off Greek–Middle Eastern style whole chicken braised with potatoes, olives, and preserved lemon. Finish under the oven for crispy skin and serve with the tender vegetables and pan juices.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Pat dry 1 whole chicken with paper towels.",
+    "Scrub and cut potatoes into large chunks (bite-size).",
+    "Slice onion into thick wedges.",
+    "Mince garlic.",
+    "Finely chop preserved lemon.",
+    "Trim green beans; keep aside for later.",
+    "Zest the lemon, then halve it.",
+    "In a small bowl, mix olive oil, oregano, lemon zest, salt, and black pepper to form a paste."
+  ],
+  "cook_steps": [
+    "Place potatoes, onion, and half the garlic in the slow cooker in an even layer.",
+    "Set the chicken on top, breast side up. Rub the seasoning paste all over the chicken.",
+    "Scatter preserved lemon, remaining garlic, and olives around the chicken. Pour chicken stock around (not over) the bird.",
+    "Cover and cook on LOW 4–5 hours or HIGH 2.5–3 hours, until the thickest part of the breast reaches 74°C/165°F.",
+    "Add green beans to the slow cooker for the last 25–30 minutes of cooking until tender-crisp.",
+    "Optional crisping: Transfer chicken to a sheet pan and place under a hot oven broiler for 5–8 minutes until the skin browns. Rest 10 minutes.",
+    "Squeeze the lemon over the chicken. Sprinkle with chopped parsley.",
+    "Carve and serve chicken with the potatoes, green beans, olives, and cooking juices."
+  ],
+  "instructions": [
+    "Pat dry 1 whole chicken with paper towels.",
+    "Scrub and cut potatoes into large chunks (bite-size).",
+    "Slice onion into thick wedges.",
+    "Mince garlic.",
+    "Finely chop preserved lemon.",
+    "Trim green beans; keep aside for later.",
+    "Zest the lemon, then halve it.",
+    "In a small bowl, mix olive oil, oregano, lemon zest, salt, and black pepper to form a paste.",
+    "Place potatoes, onion, and half the garlic in the slow cooker in an even layer.",
+    "Set the chicken on top, breast side up. Rub the seasoning paste all over the chicken.",
+    "Scatter preserved lemon, remaining garlic, and olives around the chicken. Pour chicken stock around (not over) the bird.",
+    "Cover and cook on LOW 4–5 hours or HIGH 2.5–3 hours, until the thickest part of the breast reaches 74°C/165°F.",
+    "Add green beans to the slow cooker for the last 25–30 minutes of cooking until tender-crisp.",
+    "Optional crisping: Transfer chicken to a sheet pan and place under a hot oven broiler for 5–8 minutes until the skin browns. Rest 10 minutes.",
+    "Squeeze the lemon over the chicken. Sprinkle with chopped parsley.",
+    "Carve and serve chicken with the potatoes, green beans, olives, and cooking juices."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "whole chicken",
+      "quantity": "1 (about 1.5–2 kg)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "800 g",
+      "preparation": "cut into chunks"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "preserved lemon",
+      "quantity": "1/4 cup",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "whole or pitted"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "300 g",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "for paste"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 tsp",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and halved"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "1 cup",
+      "preparation": "ready to use"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 1/2 tsp",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "SlowOrPressureCooker"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "whole chicken",
+      "quantity": "1 (about 1.5–2 kg)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "800 g",
+      "preparation": "cut into chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "preserved lemon",
+      "quantity": "1/4 cup",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "whole or pitted",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "300 g",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "for paste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 tsp",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "1 cup",
+      "preparation": "ready to use",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 1/2 tsp",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T152034Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T151753Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

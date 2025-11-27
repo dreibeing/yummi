@@ -1,0 +1,383 @@
+{
+  "meal_id": "meal_20251126T152605Z_10_028df0",
+  "archetype_uid": "arch_FAM_IND_SHOW_60",
+  "archetype_name": "Family Weekend Showstopper: Indian Feast Night",
+  "name": "Tandoori Roast Whole Chicken with Saffron Jeera Rice and Mint Raita",
+  "description": "A showstopper tandoori-style whole chicken roasted until charred and juicy, served with aromatic saffron jeera rice and a cooling mint-cucumber raita.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F. Place a rack over a roasting tray.",
+    "Pat dry the whole chicken and remove excess moisture.",
+    "In a large bowl, whisk yoghurt, lemon juice, canola oil, garlic (finely minced), salt, pepper, garam masala, cumin, paprika, cayenne pepper, and turmeric powder.",
+    "Make shallow slashes on the chicken legs and breasts; rub marinade all over and under the skin. Marinate 4–12 hours in the fridge (cover).",
+    "Rinse basmati rice until water runs clear; soak 20 minutes, then drain.",
+    "Warm 2 tablespoons water and crumble saffron into it; set aside.",
+    "Thinly slice red onion for pickle; mix with apple cider vinegar, sugar, and a pinch of salt; set aside to quick-pickle.",
+    "Grate or finely chop cucumber; squeeze out excess water. Chop mint finely.",
+    "In a bowl, mix yoghurt (for raita) with cucumber, mint, salt, pepper, and a pinch of cumin; chill."
+  ],
+  "cook_steps": [
+    "Roast the chicken: Place the marinated whole chicken on the rack. Roast at 220°C/425°F for 15 minutes to char.",
+    "Lower oven to 180°C/350°F and continue roasting 50–70 minutes, until juices run clear and thickest thigh reads 74°C/165°F. Rest 15 minutes before carving.",
+    "Cook the rice: In a pot, heat ghee over medium. Add cumin seeds and bay leaves; let them crackle 30 seconds.",
+    "Add sliced onions with a pinch of salt; cook 6–8 minutes until soft and lightly golden.",
+    "Stir in drained basmati rice; toast 1 minute. Add water, salt, and the saffron water. Bring to a boil.",
+    "Reduce to low, cover, and cook 12 minutes. Turn off heat; rest covered 10 minutes, then fluff with a fork.",
+    "Slice the chicken. Serve over saffron jeera rice with a side of mint raita and the quick-pickled red onions."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F. Place a rack over a roasting tray.",
+    "Pat dry the whole chicken and remove excess moisture.",
+    "In a large bowl, whisk yoghurt, lemon juice, canola oil, garlic (finely minced), salt, pepper, garam masala, cumin, paprika, cayenne pepper, and turmeric powder.",
+    "Make shallow slashes on the chicken legs and breasts; rub marinade all over and under the skin. Marinate 4–12 hours in the fridge (cover).",
+    "Rinse basmati rice until water runs clear; soak 20 minutes, then drain.",
+    "Warm 2 tablespoons water and crumble saffron into it; set aside.",
+    "Thinly slice red onion for pickle; mix with apple cider vinegar, sugar, and a pinch of salt; set aside to quick-pickle.",
+    "Grate or finely chop cucumber; squeeze out excess water. Chop mint finely.",
+    "In a bowl, mix yoghurt (for raita) with cucumber, mint, salt, pepper, and a pinch of cumin; chill.",
+    "Roast the chicken: Place the marinated whole chicken on the rack. Roast at 220°C/425°F for 15 minutes to char.",
+    "Lower oven to 180°C/350°F and continue roasting 50–70 minutes, until juices run clear and thickest thigh reads 74°C/165°F. Rest 15 minutes before carving.",
+    "Cook the rice: In a pot, heat ghee over medium. Add cumin seeds and bay leaves; let them crackle 30 seconds.",
+    "Add sliced onions with a pinch of salt; cook 6–8 minutes until soft and lightly golden.",
+    "Stir in drained basmati rice; toast 1 minute. Add water, salt, and the saffron water. Bring to a boil.",
+    "Reduce to low, cover, and cook 12 minutes. Turn off heat; rest covered 10 minutes, then fluff with a fork.",
+    "Slice the chicken. Serve over saffron jeera rice with a side of mint raita and the quick-pickled red onions."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "whole chicken",
+      "quantity": "1 (1.6–2 kg)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 1/4 cups total",
+      "preparation": "1 cup for marinade, 1/4 cup for raita"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tablespoons",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "finely minced"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 1/2 teaspoons total",
+      "preparation": "divide between marinade, rice, and raita"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1 teaspoon",
+      "preparation": "for marinade and raita"
+    },
+    {
+      "core_item_name": "garam masala",
+      "quantity": "2 teaspoons",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "ground; for marinade and raita pinch"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 teaspoons",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "cayenne pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "adjust to taste"
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1 teaspoon",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and soaked 20 minutes"
+    },
+    {
+      "core_item_name": "ghee",
+      "quantity": "2 tablespoons",
+      "preparation": "for rice"
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "2 teaspoons",
+      "preparation": "for tempering"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "left whole"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 1/2 cups",
+      "preparation": "for rice (adjust per pot)"
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "1/4 teaspoon",
+      "preparation": "bloomed in warm water"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1/3 cup",
+      "preparation": "for quick pickle"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 teaspoon",
+      "preparation": "for quick pickle"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1/2 medium",
+      "preparation": "grated and squeezed dry"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tablespoons",
+      "preparation": "finely chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Indian",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Dairy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "whole chicken",
+      "quantity": "1 (1.6–2 kg)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yoghurt",
+      "quantity": "1 1/4 cups total",
+      "preparation": "1 cup for marinade, 1/4 cup for raita",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tablespoons",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "finely minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 1/2 teaspoons total",
+      "preparation": "divide between marinade, rice, and raita",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1 teaspoon",
+      "preparation": "for marinade and raita",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garam masala",
+      "quantity": "2 teaspoons",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "ground; for marinade and raita pinch",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 teaspoons",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cayenne pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "adjust to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1 teaspoon",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed and soaked 20 minutes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ghee",
+      "quantity": "2 tablespoons",
+      "preparation": "for rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "2 teaspoons",
+      "preparation": "for tempering",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "left whole",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 1/2 cups",
+      "preparation": "for rice (adjust per pot)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "1/4 teaspoon",
+      "preparation": "bloomed in warm water",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1/3 cup",
+      "preparation": "for quick pickle",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 teaspoon",
+      "preparation": "for quick pickle",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1/2 medium",
+      "preparation": "grated and squeezed dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tablespoons",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T153421Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T152605Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "meal_id": "meal_20251126T154013Z_05_20dc20",
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "archetype_name": "Family Low-Sodium American & French Comfort (30–60, Mild)",
+  "name": "Lemon-Parsley Tilapia with Brown Rice Pilaf and Sautéed Asparagus",
+  "description": "Mild, family-friendly tilapia baked with lemon and parsley, served with a simple brown rice pilaf and garlicky asparagus. Built for low-sodium cooking with bright herb and citrus flavor.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 400°F (200°C).",
+    "Rinse 1 cup brown rice under cold water until it runs clear.",
+    "Finely chop 1 small onion.",
+    "Mince 2 cloves garlic (divide for rice and asparagus).",
+    "Zest 1 lemon, then cut it in half (reserve a few thin slices for the fish).",
+    "Roughly chop a small handful of parsley.",
+    "Trim woody ends from 1 bunch asparagus.",
+    "Pat dry 4 tilapia fillets with paper towels."
+  ],
+  "cook_steps": [
+    "Start rice pilaf: Heat 1 tablespoon olive oil in a medium pot over medium heat. Add chopped onion and cook 3–4 minutes until softened.",
+    "Stir in rinsed brown rice and half the minced garlic; toast 1 minute. Add 2 cups water, a pinch of black pepper, and lemon zest. Bring to a boil, cover, reduce to low, and simmer 35–40 minutes until tender. Keep covered off heat 5 minutes.",
+    "Bake tilapia: Place tilapia on a lined sheet pan. Drizzle 1 tablespoon olive oil, season with black pepper, and top with a few lemon slices. Bake 10–12 minutes until the fish flakes easily.",
+    "Make quick pan drizzle: In a small skillet over medium heat, melt 1 tablespoon butter. Add 2 tablespoons white wine and the juice from half the lemon; simmer 1–2 minutes to reduce slightly. Stir in half the chopped parsley and a pinch of black pepper. Remove from heat.",
+    "Sauté asparagus: Heat 1 tablespoon olive oil in a large skillet over medium-high heat. Add asparagus and the remaining minced garlic; cook 4–5 minutes until crisp-tender, tossing. Finish with a squeeze of lemon.",
+    "Fluff the rice with a fork and fold in remaining parsley.",
+    "Plate: Serve tilapia with a spoon of lemon-parsley drizzle, a scoop of brown rice pilaf, and sautéed asparagus."
+  ],
+  "instructions": [
+    "Preheat oven to 400°F (200°C).",
+    "Rinse 1 cup brown rice under cold water until it runs clear.",
+    "Finely chop 1 small onion.",
+    "Mince 2 cloves garlic (divide for rice and asparagus).",
+    "Zest 1 lemon, then cut it in half (reserve a few thin slices for the fish).",
+    "Roughly chop a small handful of parsley.",
+    "Trim woody ends from 1 bunch asparagus.",
+    "Pat dry 4 tilapia fillets with paper towels.",
+    "Start rice pilaf: Heat 1 tablespoon olive oil in a medium pot over medium heat. Add chopped onion and cook 3–4 minutes until softened.",
+    "Stir in rinsed brown rice and half the minced garlic; toast 1 minute. Add 2 cups water, a pinch of black pepper, and lemon zest. Bring to a boil, cover, reduce to low, and simmer 35–40 minutes until tender. Keep covered off heat 5 minutes.",
+    "Bake tilapia: Place tilapia on a lined sheet pan. Drizzle 1 tablespoon olive oil, season with black pepper, and top with a few lemon slices. Bake 10–12 minutes until the fish flakes easily.",
+    "Make quick pan drizzle: In a small skillet over medium heat, melt 1 tablespoon butter. Add 2 tablespoons white wine and the juice from half the lemon; simmer 1–2 minutes to reduce slightly. Stir in half the chopped parsley and a pinch of black pepper. Remove from heat.",
+    "Sauté asparagus: Heat 1 tablespoon olive oil in a large skillet over medium-high heat. Add asparagus and the remaining minced garlic; cook 4–5 minutes until crisp-tender, tossing. Finish with a squeeze of lemon.",
+    "Fluff the rice with a fork and fold in remaining parsley.",
+    "Plate: Serve tilapia with a spoon of lemon-parsley drizzle, a scoop of brown rice pilaf, and sautéed asparagus."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "tilapia",
+      "quantity": "4 fillets (about 1.25–1.5 lb total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "brown rice",
+      "quantity": "1 cup (uncooked)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 small",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "asparagus",
+      "quantity": "1 bunch (about 1 lb)",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested, halved, a few thin slices reserved"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "1 tablespoon",
+      "preparation": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "2 tablespoons",
+      "preparation": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 cups + for rinsing rice",
+      "preparation": null
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "French"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowSodium"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "tilapia",
+      "quantity": "4 fillets (about 1.25–1.5 lb total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown rice",
+      "quantity": "1 cup (uncooked)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 small",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "asparagus",
+      "quantity": "1 bunch (about 1 lb)",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested, halved, a few thin slices reserved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 cups + for rinsing rice",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T154402Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T154013Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

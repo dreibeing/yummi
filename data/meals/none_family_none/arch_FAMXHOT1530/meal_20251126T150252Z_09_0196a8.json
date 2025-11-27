@@ -1,0 +1,271 @@
+{
+  "meal_id": "meal_20251126T150252Z_09_0196a8",
+  "archetype_uid": "arch_FAMXHOT1530",
+  "archetype_name": "Family Extra-Hot Chili Night (Caribbean & Mexican, 15–30, Simple)",
+  "name": "Extra-Hot Habanero Chicken & Black Bean Roti Wraps",
+  "description": "Fiery grilled chicken tossed with habanero and ghost chilli, folded into warm roti with a quick black bean–pepper mix and fresh lime. Caribbean heat meets Mexican street-wrap speed.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Thinly slice chicken thighs into bite-size strips.",
+    "Slice bell peppers into thin strips and onion into thin wedges.",
+    "Finely chop garlic and roughly chop coriander (leaves and tender stems).",
+    "Finely mince ghost chilli (use gloves) and cut limes into wedges.",
+    "Drain and rinse black beans.",
+    "In a bowl, toss chicken with habanero sauce, ground cumin, a big pinch of salt, and 1 tbsp olive oil.",
+    "Preheat an outdoor grill (medium-high) or a large stovetop pan/skillet over medium-high heat.",
+    "Set roti, salsa, and avocado (sliced) ready for assembly."
+  ],
+  "cook_steps": [
+    "Grill or pan-sear the chicken in a single layer until charred and cooked through, 6–8 minutes, tossing once. Transfer to a bowl.",
+    "Add 1 tbsp olive oil to the pan. Sauté onion and bell peppers with garlic and the minced ghost chilli for 3–4 minutes until crisp-tender.",
+    "Stir in black beans and a pinch of salt; cook 1–2 minutes to warm through. Return chicken to the pan and toss to combine. Squeeze in 1 lime wedge and adjust salt.",
+    "Warm roti on the grill or dry pan 15–30 seconds per side.",
+    "Assemble wraps: layer chicken-bean-pepper mix on roti, top with coriander, avocado slices, and spoonfuls of salsa. Add extra habanero sauce if desired.",
+    "Serve with remaining lime wedges for squeezing."
+  ],
+  "instructions": [
+    "Thinly slice chicken thighs into bite-size strips.",
+    "Slice bell peppers into thin strips and onion into thin wedges.",
+    "Finely chop garlic and roughly chop coriander (leaves and tender stems).",
+    "Finely mince ghost chilli (use gloves) and cut limes into wedges.",
+    "Drain and rinse black beans.",
+    "In a bowl, toss chicken with habanero sauce, ground cumin, a big pinch of salt, and 1 tbsp olive oil.",
+    "Preheat an outdoor grill (medium-high) or a large stovetop pan/skillet over medium-high heat.",
+    "Set roti, salsa, and avocado (sliced) ready for assembly.",
+    "Grill or pan-sear the chicken in a single layer until charred and cooked through, 6–8 minutes, tossing once. Transfer to a bowl.",
+    "Add 1 tbsp olive oil to the pan. Sauté onion and bell peppers with garlic and the minced ghost chilli for 3–4 minutes until crisp-tender.",
+    "Stir in black beans and a pinch of salt; cook 1–2 minutes to warm through. Return chicken to the pan and toss to combine. Squeeze in 1 lime wedge and adjust salt.",
+    "Warm roti on the grill or dry pan 15–30 seconds per side.",
+    "Assemble wraps: layer chicken-bean-pepper mix on roti, top with coriander, avocado slices, and spoonfuls of salsa. Add extra habanero sauce if desired.",
+    "Serve with remaining lime wedges for squeezing."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "700 g",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "3 tbsp",
+      "preparation": "for marinade and finishing"
+    },
+    {
+      "core_item_name": "ghost chilli",
+      "quantity": "1 small",
+      "preparation": "finely minced (use gloves)"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1.5 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (about 400 g)",
+      "preparation": "drained and rinsed"
+    },
+    {
+      "core_item_name": "roti",
+      "quantity": "8 rounds",
+      "preparation": "warmed"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1 small bunch",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": "for topping"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "cut into wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Caribbean",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "ExtraHot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "700 g",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "3 tbsp",
+      "preparation": "for marinade and finishing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ghost chilli",
+      "quantity": "1 small",
+      "preparation": "finely minced (use gloves)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1.5 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (about 400 g)",
+      "preparation": "drained and rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "roti",
+      "quantity": "8 rounds",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1 small bunch",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": "for topping",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T150915Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T150252Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "meal_id": "meal_20251126T162913Z_07_1a88f6",
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "archetype_name": "Family Low-Fat Mediterranean Light Plates (15–30, Mild)",
+  "name": "Skillet Lemon Chicken Bites with Roasted Green Beans and Brown Basmati",
+  "description": "Quick lemon-oregano chicken bites with a light pan sauce, served over brown basmati with roasted green beans. Family-friendly, mild, and low in fat with whole-grain fiber.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1.5 cups brown basmati rice until water runs clear.",
+    "Measure 3 cups vegetable stock (reserve an extra 2 tbsp separately).",
+    "Preheat oven to 220°C/425°F and line a sheet pan.",
+    "Trim 400 g green beans.",
+    "Zest and juice 1 lemon (keep zest and juice separate).",
+    "Mince 2 cloves garlic; chop 1/4 cup parsley.",
+    "Remove chicken kebabs from skewers; pat dry. Toss with oregano, half the lemon zest, black pepper, and half the salt."
+  ],
+  "cook_steps": [
+    "Cook rice: Combine rinsed brown basmati rice with 3 cups vegetable stock in a pot. Bring to a boil, reduce to low, cover, and simmer 15 minutes until tender. Rest covered off heat.",
+    "Roast beans: Toss green beans with 1 tsp olive oil and a pinch of salt and pepper on the sheet pan. Roast 10–12 minutes until crisp-tender.",
+    "Sear chicken: Heat a large nonstick skillet over medium-high. Add remaining olive oil (2 tsp). Add seasoned chicken pieces in a single layer; cook 5–7 minutes, turning once, until cooked through.",
+    "Make pan sauce: Reduce heat to medium. Add minced garlic; stir 30 seconds. Add lemon juice and 2 tbsp vegetable stock; scrape up browned bits and simmer 1 minute. Remove from heat.",
+    "Finish and serve: Fluff rice with remaining lemon zest and parsley. Plate rice, top with chicken and spoon over pan sauce. Serve roasted green beans on the side."
+  ],
+  "instructions": [
+    "Rinse 1.5 cups brown basmati rice until water runs clear.",
+    "Measure 3 cups vegetable stock (reserve an extra 2 tbsp separately).",
+    "Preheat oven to 220°C/425°F and line a sheet pan.",
+    "Trim 400 g green beans.",
+    "Zest and juice 1 lemon (keep zest and juice separate).",
+    "Mince 2 cloves garlic; chop 1/4 cup parsley.",
+    "Remove chicken kebabs from skewers; pat dry. Toss with oregano, half the lemon zest, black pepper, and half the salt.",
+    "Cook rice: Combine rinsed brown basmati rice with 3 cups vegetable stock in a pot. Bring to a boil, reduce to low, cover, and simmer 15 minutes until tender. Rest covered off heat.",
+    "Roast beans: Toss green beans with 1 tsp olive oil and a pinch of salt and pepper on the sheet pan. Roast 10–12 minutes until crisp-tender.",
+    "Sear chicken: Heat a large nonstick skillet over medium-high. Add remaining olive oil (2 tsp). Add seasoned chicken pieces in a single layer; cook 5–7 minutes, turning once, until cooked through.",
+    "Make pan sauce: Reduce heat to medium. Add minced garlic; stir 30 seconds. Add lemon juice and 2 tbsp vegetable stock; scrape up browned bits and simmer 1 minute. Remove from heat.",
+    "Finish and serve: Fluff rice with remaining lemon zest and parsley. Plate rice, top with chicken and spoon over pan sauce. Serve roasted green beans on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 cups + 2 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "chicken kebabs",
+      "quantity": "600 g",
+      "preparation": "removed from skewers"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and juice separated"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 tsp",
+      "preparation": "divided"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowFat"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "brown basmati rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 cups + 2 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken kebabs",
+      "quantity": "600 g",
+      "preparation": "removed from skewers",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and juice separated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T163438Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T162913Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

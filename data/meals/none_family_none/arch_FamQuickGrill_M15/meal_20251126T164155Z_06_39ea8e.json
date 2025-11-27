@@ -1,0 +1,213 @@
+{
+  "meal_id": "meal_20251126T164155Z_06_39ea8e",
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "archetype_name": "Family Quick Grill & Salad Nights (Mild, 15–30)",
+  "name": "Grilled Lamb Chops with Lemon Bulgur Salad",
+  "description": "Quick-grilled lamb chops with a fresh lemon, cucumber, and tomato bulgur salad. Mild, bright flavors for an easy family grill night.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat OutdoorGrill to medium-high heat.",
+    "Rinse bulgur in a sieve and drain well.",
+    "Finely chop parsley; dice tomatoes and cucumber.",
+    "Mince garlic.",
+    "Zest and juice the lemon into a small bowl.",
+    "Pat lamb chops dry; season both sides with salt, black pepper, oregano, and a drizzle of olive oil."
+  ],
+  "cook_steps": [
+    "Bring a small pot of water to a boil on the StoveTop; add bulgur, reduce heat to low, cover, and simmer until tender, 10–12 minutes. Drain any excess and fluff.",
+    "While bulgur cooks, grill lamb chops 3–4 minutes per side for medium, or to preferred doneness. Rest 5 minutes.",
+    "In a large bowl, combine warm bulgur, tomatoes, cucumber, parsley, garlic, lemon zest and juice, and olive oil. Season with salt and black pepper; toss.",
+    "Serve lamb chops alongside the lemon bulgur salad."
+  ],
+  "instructions": [
+    "Preheat OutdoorGrill to medium-high heat.",
+    "Rinse bulgur in a sieve and drain well.",
+    "Finely chop parsley; dice tomatoes and cucumber.",
+    "Mince garlic.",
+    "Zest and juice the lemon into a small bowl.",
+    "Pat lamb chops dry; season both sides with salt, black pepper, oregano, and a drizzle of olive oil.",
+    "Bring a small pot of water to a boil on the StoveTop; add bulgur, reduce heat to low, cover, and simmer until tender, 10–12 minutes. Drain any excess and fluff.",
+    "While bulgur cooks, grill lamb chops 3–4 minutes per side for medium, or to preferred doneness. Rest 5 minutes.",
+    "In a large bowl, combine warm bulgur, tomatoes, cucumber, parsley, garlic, lemon zest and juice, and olive oil. Season with salt and black pepper; toss.",
+    "Serve lamb chops alongside the lemon bulgur salad."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "lamb chops",
+      "quantity": "4–6 chops (about 700–900 g)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1 cup (dry)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 whole",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "lamb chops",
+      "quantity": "4–6 chops (about 700–900 g)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1 cup (dry)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 whole",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "2 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T164609Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T164155Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

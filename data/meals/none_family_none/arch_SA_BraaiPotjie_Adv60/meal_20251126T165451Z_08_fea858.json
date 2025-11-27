@@ -1,0 +1,261 @@
+{
+  "meal_id": "meal_20251126T165451Z_08_fea858",
+  "archetype_uid": "arch_SA_BraaiPotjie_Adv60",
+  "archetype_name": "Family Weekend Advanced: South African Braai & Potjie",
+  "name": "Boerewors Coil Braai with Tomato Sheba, Coal-Baked Potatoes, and Charred Corn",
+  "description": "A classic South African boerewors braai with a rich, medium-heat tomato-onion sheba, coal-baked potatoes, and charred corn. Weekend project with hands-on fire management and slow sides.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Light the braai with braai wood and build a two-zone fire (hot side and cooler side). Let coals burn to medium heat.",
+    "Scrub 4 potatoes and pat dry. Prick each a few times with a fork and rub with 1 tbsp olive oil and a big pinch of salt.",
+    "Shuck 4 corn and rub with 1 tbsp olive oil; season with salt and a pinch of black pepper.",
+    "Dice 2 onions. Chop 6 tomatoes. Mince 3 cloves garlic.",
+    "Measure 1 tsp chilli flakes, 1 tbsp apple cider vinegar, and 1 tsp brown sugar for the sheba.",
+    "Coil 1.2 kg boerewors into a neat spiral and secure with two skewers to hold its shape.",
+    "Set a medium saucepan on the stovetop for the sheba; keep a braai-safe pan ready if you prefer to keep it on the fire."
+  ],
+  "cook_steps": [
+    "Bake the potatoes: Nestle the oiled, salted potatoes in medium-hot coals (or place just at the edge of the hot zone). Turn every 15 minutes until skins are charred and centers are tender, 60–75 minutes.",
+    "Start the sheba (stovetop): Heat 1 tbsp olive oil over medium heat. Add diced onions with a pinch of salt; cook until soft and lightly golden, 8–10 minutes.",
+    "Add minced garlic and 1 tsp chilli flakes; stir 30 seconds. Add chopped tomatoes, 1 tbsp apple cider vinegar, and 1 tsp brown sugar. Season with salt and black pepper.",
+    "Simmer the sheba on low, stirring occasionally, until thick and jammy, 25–35 minutes. Adjust salt and heat to taste, then keep warm.",
+    "Grill the corn: Place corn over medium-hot coals. Turn every 2–3 minutes until lightly charred all over and tender, 10–12 minutes. Season with salt and a pinch of black pepper; keep warm on the cooler side.",
+    "Braai the boerewors: Place the coil on the cooler side (indirect heat). Cover the braai (or use a lid) and cook 10–12 minutes. Move to the hot side to brown, 3–4 minutes per side, until cooked through and juices run clear.",
+    "Rest the boerewors 5 minutes. Slice into lengths.",
+    "Serve: Split baked potatoes, fluff, and top with a spoon of warm sheba. Plate boerewors with extra sheba and charred corn. Garnish with chopped coriander if desired."
+  ],
+  "instructions": [
+    "Light the braai with braai wood and build a two-zone fire (hot side and cooler side). Let coals burn to medium heat.",
+    "Scrub 4 potatoes and pat dry. Prick each a few times with a fork and rub with 1 tbsp olive oil and a big pinch of salt.",
+    "Shuck 4 corn and rub with 1 tbsp olive oil; season with salt and a pinch of black pepper.",
+    "Dice 2 onions. Chop 6 tomatoes. Mince 3 cloves garlic.",
+    "Measure 1 tsp chilli flakes, 1 tbsp apple cider vinegar, and 1 tsp brown sugar for the sheba.",
+    "Coil 1.2 kg boerewors into a neat spiral and secure with two skewers to hold its shape.",
+    "Set a medium saucepan on the stovetop for the sheba; keep a braai-safe pan ready if you prefer to keep it on the fire.",
+    "Bake the potatoes: Nestle the oiled, salted potatoes in medium-hot coals (or place just at the edge of the hot zone). Turn every 15 minutes until skins are charred and centers are tender, 60–75 minutes.",
+    "Start the sheba (stovetop): Heat 1 tbsp olive oil over medium heat. Add diced onions with a pinch of salt; cook until soft and lightly golden, 8–10 minutes.",
+    "Add minced garlic and 1 tsp chilli flakes; stir 30 seconds. Add chopped tomatoes, 1 tbsp apple cider vinegar, and 1 tsp brown sugar. Season with salt and black pepper.",
+    "Simmer the sheba on low, stirring occasionally, until thick and jammy, 25–35 minutes. Adjust salt and heat to taste, then keep warm.",
+    "Grill the corn: Place corn over medium-hot coals. Turn every 2–3 minutes until lightly charred all over and tender, 10–12 minutes. Season with salt and a pinch of black pepper; keep warm on the cooler side.",
+    "Braai the boerewors: Place the coil on the cooler side (indirect heat). Cover the braai (or use a lid) and cook 10–12 minutes. Move to the hot side to brown, 3–4 minutes per side, until cooked through and juices run clear.",
+    "Rest the boerewors 5 minutes. Slice into lengths.",
+    "Serve: Split baked potatoes, fluff, and top with a spoon of warm sheba. Plate boerewors with extra sheba and charred corn. Garnish with chopped coriander if desired."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "boerewors",
+      "quantity": "1.2 kg coil",
+      "preparation": "secured with skewers"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "4 large",
+      "preparation": "scrubbed and pricked"
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "4 ears",
+      "preparation": "husks removed"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "6 medium",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 teaspoon",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tablespoon",
+      "preparation": "for sheba"
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 teaspoon",
+      "preparation": "to balance acidity"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 teaspoons",
+      "preparation": "divided, to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped, optional garnish"
+    },
+    {
+      "core_item_name": "braai wood",
+      "quantity": "as needed",
+      "preparation": "for a medium, steady coal bed"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Advanced"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "boerewors",
+      "quantity": "1.2 kg coil",
+      "preparation": "secured with skewers",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "4 large",
+      "preparation": "scrubbed and pricked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "corn",
+      "quantity": "4 ears",
+      "preparation": "husks removed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "6 medium",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chilli flakes",
+      "quantity": "1 teaspoon",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tablespoon",
+      "preparation": "for sheba",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 teaspoon",
+      "preparation": "to balance acidity",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 teaspoons",
+      "preparation": "divided, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped, optional garnish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "braai wood",
+      "quantity": "as needed",
+      "preparation": "for a medium, steady coal bed",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T170112Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T165451Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

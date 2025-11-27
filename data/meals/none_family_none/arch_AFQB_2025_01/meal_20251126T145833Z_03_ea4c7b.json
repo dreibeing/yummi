@@ -1,0 +1,157 @@
+{
+  "meal_id": "meal_20251126T145833Z_03_ea4c7b",
+  "archetype_uid": "arch_AFQB_2025_01",
+  "archetype_name": "Family AirFryer Quick Bites",
+  "name": "Air Fryer Crunchy Fish Tacos with Slaw",
+  "description": "Crispy whiting portions tucked into warm taco shells with slaw, salsa, and creamy avocado dip. Fast, family-friendly, and mild.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat air fryer to 200°C/390°F.",
+    "Set out 12 taco shells on a plate.",
+    "Cut the lemon into wedges.",
+    "Open the slaw, salsa, and avocado dip so they’re ready to use.",
+    "Optional: Warm taco shells in the microwave for 20–30 seconds just before assembly."
+  ],
+  "cook_steps": [
+    "Air fry whiting portions in a single layer for 8–10 minutes until hot and crisp, shaking the basket halfway.",
+    "Microwave taco shells for 20–30 seconds to soften slightly (if not already warmed).",
+    "Fill each taco shell with a small handful of slaw.",
+    "Add 1 whiting portion per taco (cut in half if needed to fit).",
+    "Top with a spoon of salsa and a dollop of avocado dip.",
+    "Squeeze lemon wedges over tacos to taste and serve immediately."
+  ],
+  "instructions": [
+    "Preheat air fryer to 200°C/390°F.",
+    "Set out 12 taco shells on a plate.",
+    "Cut the lemon into wedges.",
+    "Open the slaw, salsa, and avocado dip so they’re ready to use.",
+    "Optional: Warm taco shells in the microwave for 20–30 seconds just before assembly.",
+    "Air fry whiting portions in a single layer for 8–10 minutes until hot and crisp, shaking the basket halfway.",
+    "Microwave taco shells for 20–30 seconds to soften slightly (if not already warmed).",
+    "Fill each taco shell with a small handful of slaw.",
+    "Add 1 whiting portion per taco (cut in half if needed to fit).",
+    "Top with a spoon of salsa and a dollop of avocado dip.",
+    "Squeeze lemon wedges over tacos to taste and serve immediately."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "whiting portions",
+      "quantity": "12 pieces",
+      "preparation": "air fry from frozen or chilled per pack guidance"
+    },
+    {
+      "core_item_name": "taco shells",
+      "quantity": "12 shells",
+      "preparation": "warm to taste"
+    },
+    {
+      "core_item_name": "slaw",
+      "quantity": "2 cups",
+      "preparation": "use straight from pack"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": "mild preferred"
+    },
+    {
+      "core_item_name": "avocado dip",
+      "quantity": "1/2 cup",
+      "preparation": "for dolloping"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "AirFryer",
+      "Microwave"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "whiting portions",
+      "quantity": "12 pieces",
+      "preparation": "air fry from frozen or chilled per pack guidance",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "taco shells",
+      "quantity": "12 shells",
+      "preparation": "warm to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "slaw",
+      "quantity": "2 cups",
+      "preparation": "use straight from pack",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": "mild preferred",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado dip",
+      "quantity": "1/2 cup",
+      "preparation": "for dolloping",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T145949Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T145833Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

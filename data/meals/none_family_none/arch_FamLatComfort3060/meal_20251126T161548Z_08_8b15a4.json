@@ -1,0 +1,281 @@
+{
+  "meal_id": "meal_20251126T161548Z_08_8b15a4",
+  "archetype_uid": "arch_FamLatComfort3060",
+  "archetype_name": "Family Latin Comfort (Mild, 30–60, Intermediate)",
+  "name": "Family Chorizo & Pepper Rice Skillet (Mild, Oven-Finished)",
+  "description": "A family-friendly Mexican-Latin rice skillet with chorizo, sweet bell peppers, and mild spices, finished in the oven for fluffy brown rice. Bright lime and coriander round it out.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 180°C/350°F.",
+    "Rinse the brown rice under cold water until it runs clear; drain well.",
+    "Dice the onions. Core and slice the bell peppers into strips.",
+    "Mince the garlic. Roughly chop the coriander. Cut the lime into wedges.",
+    "Measure chicken stock and crushed tomatoes; set out spices and bay leaf."
+  ],
+  "cook_steps": [
+    "Heat a large oven-safe skillet or Dutch oven over medium heat. Add chorizo and cook 5–6 minutes, breaking it up, until lightly browned.",
+    "If the pan is dry, add olive oil. Add onions and bell peppers; cook 5–7 minutes until softened.",
+    "Stir in garlic, ground cumin, paprika, and oregano; cook 30 seconds until fragrant.",
+    "Add drained brown rice; stir 1 minute to coat grains in the aromatics.",
+    "Pour in chicken stock and crushed tomatoes. Add bay leaves, salt, and black pepper; stir and bring to a strong simmer.",
+    "Cover tightly with a lid (or foil) and transfer to the oven. Bake 25–30 minutes until rice is tender and most liquid is absorbed.",
+    "Remove from oven and rest covered 5 minutes. Discard bay leaves, fluff with a fork, and adjust salt and pepper to taste.",
+    "Top with chopped coriander and serve with lime wedges for squeezing."
+  ],
+  "instructions": [
+    "Preheat oven to 180°C/350°F.",
+    "Rinse the brown rice under cold water until it runs clear; drain well.",
+    "Dice the onions. Core and slice the bell peppers into strips.",
+    "Mince the garlic. Roughly chop the coriander. Cut the lime into wedges.",
+    "Measure chicken stock and crushed tomatoes; set out spices and bay leaf.",
+    "Heat a large oven-safe skillet or Dutch oven over medium heat. Add chorizo and cook 5–6 minutes, breaking it up, until lightly browned.",
+    "If the pan is dry, add olive oil. Add onions and bell peppers; cook 5–7 minutes until softened.",
+    "Stir in garlic, ground cumin, paprika, and oregano; cook 30 seconds until fragrant.",
+    "Add drained brown rice; stir 1 minute to coat grains in the aromatics.",
+    "Pour in chicken stock and crushed tomatoes. Add bay leaves, salt, and black pepper; stir and bring to a strong simmer.",
+    "Cover tightly with a lid (or foil) and transfer to the oven. Bake 25–30 minutes until rice is tender and most liquid is absorbed.",
+    "Remove from oven and rest covered 5 minutes. Discard bay leaves, fluff with a fork, and adjust salt and pepper to taste.",
+    "Top with chopped coriander and serve with lime wedges for squeezing."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chorizo",
+      "quantity": "400 g",
+      "preparation": "casings removed if present"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": "as needed"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1.5 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "brown rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "4 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "1",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, or to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp, or to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "LatinAmerican",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chorizo",
+      "quantity": "400 g",
+      "preparation": "casings removed if present",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": "as needed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1.5 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "4 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "1",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, or to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp, or to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T162138Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T161548Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

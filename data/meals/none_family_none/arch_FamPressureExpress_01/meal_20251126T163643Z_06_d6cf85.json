@@ -1,0 +1,257 @@
+{
+  "meal_id": "meal_20251126T163643Z_06_d6cf85",
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "archetype_name": "Family Pressure Cooker Express Dinners (15–30, Mild)",
+  "name": "Instant Pot Sausage, Kale & White Bean Orzo Soup",
+  "description": "A hearty, mild sausage and kale soup with cannellini beans and orzo made fast in the pressure cooker. Family-friendly flavors with an Italian-American vibe.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Dice onions and carrots.",
+    "Mince garlic.",
+    "Slice sausages into bite-size rounds.",
+    "Rinse and drain cannellini beans.",
+    "Roughly chop kale, removing tough stems.",
+    "Open diced tomatoes and measure orzo.",
+    "Set pressure cooker to Sauté (Normal)."
+  ],
+  "cook_steps": [
+    "Add olive oil to the pot. Sauté sliced sausages for 3–4 minutes until lightly browned.",
+    "Add onions and carrots; sauté 2–3 minutes until onions soften.",
+    "Stir in garlic for 30 seconds until fragrant.",
+    "Pour in a splash of chicken stock and scrape up browned bits to deglaze.",
+    "Add remaining chicken stock, diced tomatoes, cannellini beans, orzo, italian seasoning, salt, and pepper; stir well.",
+    "Place kale on top without packing it down.",
+    "Seal the lid. Cook on High Pressure for 3 minutes.",
+    "Quick Release pressure. Stir to wilt and distribute kale; let stand 2 minutes to thicken.",
+    "Taste and adjust salt and pepper if needed. Ladle into bowls and serve."
+  ],
+  "instructions": [
+    "Dice onions and carrots.",
+    "Mince garlic.",
+    "Slice sausages into bite-size rounds.",
+    "Rinse and drain cannellini beans.",
+    "Roughly chop kale, removing tough stems.",
+    "Open diced tomatoes and measure orzo.",
+    "Set pressure cooker to Sauté (Normal).",
+    "Add olive oil to the pot. Sauté sliced sausages for 3–4 minutes until lightly browned.",
+    "Add onions and carrots; sauté 2–3 minutes until onions soften.",
+    "Stir in garlic for 30 seconds until fragrant.",
+    "Pour in a splash of chicken stock and scrape up browned bits to deglaze.",
+    "Add remaining chicken stock, diced tomatoes, cannellini beans, orzo, italian seasoning, salt, and pepper; stir well.",
+    "Place kale on top without packing it down.",
+    "Seal the lid. Cook on High Pressure for 3 minutes.",
+    "Quick Release pressure. Stir to wilt and distribute kale; let stand 2 minutes to thicken.",
+    "Taste and adjust salt and pepper if needed. Ladle into bowls and serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "sausages",
+      "quantity": "1 pound",
+      "preparation": "sliced into rounds"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "4 cups"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (14.5 oz)"
+    },
+    {
+      "core_item_name": "cannellini beans",
+      "quantity": "2 cans (15 oz each)",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "orzo",
+      "quantity": "1 cup",
+      "preparation": "dry"
+    },
+    {
+      "core_item_name": "italian seasoning",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon, or to taste"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "kale",
+      "quantity": "4 packed cups",
+      "preparation": "stems removed, chopped"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped, optional garnish"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "SlowOrPressureCooker",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sausages",
+      "quantity": "1 pound",
+      "preparation": "sliced into rounds",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "4 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (14.5 oz)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cannellini beans",
+      "quantity": "2 cans (15 oz each)",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "orzo",
+      "quantity": "1 cup",
+      "preparation": "dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "italian seasoning",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon, or to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "kale",
+      "quantity": "4 packed cups",
+      "preparation": "stems removed, chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped, optional garnish",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T163946Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T163643Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

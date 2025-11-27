@@ -1,0 +1,222 @@
+{
+  "meal_id": "meal_20251126T162243Z_10_54010e",
+  "archetype_uid": "arch_FamLightJV_01",
+  "archetype_name": "Family Light & Fresh: Japanese and Vietnamese Weeknights",
+  "name": "Tofu, Shiitake & Bok Choy Miso Soup with Jasmine Rice",
+  "description": "A light, comforting miso soup loaded with tofu, shiitake, and bok choy, served with fluffy jasmine rice. Mild, vegetable-forward, and ready in about 25 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1.5 cups jasmine rice until water runs mostly clear.",
+    "Slice 6 oz shiitake mushrooms (stems removed if tough).",
+    "Chop 2 small heads bok choy, separating stems and leafy tops.",
+    "Cut 14 oz tofu into 1/2-inch cubes.",
+    "Mince 2 cloves garlic.",
+    "Slice 3 spring onion (greens and whites separated)."
+  ],
+  "cook_steps": [
+    "Add 2.25 cups water and the rinsed jasmine rice to a pot; bring to a boil, then cover and reduce heat to low. Cook 12–15 minutes until tender; rest covered 5 minutes.",
+    "In a separate pot, combine 2 cups mushroom broth and 4 cups water; bring to a gentle simmer over medium heat.",
+    "Add minced garlic, sliced shiitake, and the white parts of spring onion; simmer 3–4 minutes until mushrooms soften.",
+    "Stir in bok choy stems; simmer 2 minutes. Add bok choy leaves; simmer 1 minute.",
+    "Ladle 1 cup hot broth into a bowl and whisk in 3 tablespoons miso paste until smooth.",
+    "Turn heat to low (avoid boiling). Gently add tofu cubes and the miso mixture back to the pot. Warm 1–2 minutes without boiling.",
+    "Taste and add a pinch of white pepper if desired. Top soup with spring onion greens.",
+    "Fluff rice and serve bowls of soup alongside scoops of jasmine rice."
+  ],
+  "instructions": [
+    "Rinse 1.5 cups jasmine rice until water runs mostly clear.",
+    "Slice 6 oz shiitake mushrooms (stems removed if tough).",
+    "Chop 2 small heads bok choy, separating stems and leafy tops.",
+    "Cut 14 oz tofu into 1/2-inch cubes.",
+    "Mince 2 cloves garlic.",
+    "Slice 3 spring onion (greens and whites separated).",
+    "Add 2.25 cups water and the rinsed jasmine rice to a pot; bring to a boil, then cover and reduce heat to low. Cook 12–15 minutes until tender; rest covered 5 minutes.",
+    "In a separate pot, combine 2 cups mushroom broth and 4 cups water; bring to a gentle simmer over medium heat.",
+    "Add minced garlic, sliced shiitake, and the white parts of spring onion; simmer 3–4 minutes until mushrooms soften.",
+    "Stir in bok choy stems; simmer 2 minutes. Add bok choy leaves; simmer 1 minute.",
+    "Ladle 1 cup hot broth into a bowl and whisk in 3 tablespoons miso paste until smooth.",
+    "Turn heat to low (avoid boiling). Gently add tofu cubes and the miso mixture back to the pot. Warm 1–2 minutes without boiling.",
+    "Taste and add a pinch of white pepper if desired. Top soup with spring onion greens.",
+    "Fluff rice and serve bowls of soup alongside scoops of jasmine rice."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2.25 cups",
+      "preparation": "for cooking rice"
+    },
+    {
+      "core_item_name": "mushroom broth",
+      "quantity": "2 cups"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "4 cups",
+      "preparation": "for soup base"
+    },
+    {
+      "core_item_name": "shiitake mushrooms",
+      "quantity": "6 oz",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "2 small heads",
+      "preparation": "chopped, stems and leaves separated"
+    },
+    {
+      "core_item_name": "tofu",
+      "quantity": "14 oz",
+      "preparation": "cubed"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3",
+      "preparation": "sliced, whites and greens separated"
+    },
+    {
+      "core_item_name": "miso paste",
+      "quantity": "3 tablespoons"
+    },
+    {
+      "core_item_name": "white pepper",
+      "quantity": "pinch",
+      "preparation": "optional"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Japanese",
+      "Vietnamese"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowCalorie"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2.25 cups",
+      "preparation": "for cooking rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushroom broth",
+      "quantity": "2 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "4 cups",
+      "preparation": "for soup base",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "shiitake mushrooms",
+      "quantity": "6 oz",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "2 small heads",
+      "preparation": "chopped, stems and leaves separated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tofu",
+      "quantity": "14 oz",
+      "preparation": "cubed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3",
+      "preparation": "sliced, whites and greens separated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "miso paste",
+      "quantity": "3 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white pepper",
+      "quantity": "pinch",
+      "preparation": "optional",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T162913Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T162243Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

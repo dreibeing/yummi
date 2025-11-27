@@ -1,0 +1,255 @@
+{
+  "meal_id": "meal_20251126T164155Z_07_825e59",
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "archetype_name": "Family Quick Grill & Salad Nights (Mild, 15–30)",
+  "name": "Grilled Halloumi & Veg Skewers with Rocket-Cucumber Salad and Warm Pita",
+  "description": "Quick halloumi and vegetable skewers grilled until golden, served with a fresh rocket-cucumber salad and warm pita. Mild, family-friendly, and ready fast.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat OutdoorGrill to medium-high heat.",
+    "If using wooden skewers, soak them in water for 10 minutes (optional but helpful).",
+    "Cut halloumi cheese into 3 cm cubes.",
+    "Cut bell peppers and courgette into 3 cm chunks; peel and cut red onion into wedges.",
+    "Rinse rocket and slice cucumber into half-moons.",
+    "Halve cherry tomatoes.",
+    "In a large bowl, whisk olive oil, juice of half the lemon, oregano, a pinch of salt, and black pepper.",
+    "Toss halloumi cheese, bell peppers, courgette, red onion, and cherry tomatoes in half the dressing.",
+    "In another bowl, combine rocket, cucumber, and olives; set aside with the remaining dressing for serving."
+  ],
+  "cook_steps": [
+    "Thread halloumi cheese and vegetables onto skewers, alternating pieces.",
+    "Oil grill grates lightly, then place skewers on the grill; cook 6–8 minutes, turning every 2 minutes until halloumi is golden and veg are tender-crisp.",
+    "Warm pita bread on the grill for 30–60 seconds per side.",
+    "Toss the rocket-cucumber-olive salad with the reserved dressing and a squeeze of the remaining lemon.",
+    "Serve skewers with the salad and warm pita bread. Season to taste with extra salt and black pepper if needed."
+  ],
+  "instructions": [
+    "Preheat OutdoorGrill to medium-high heat.",
+    "If using wooden skewers, soak them in water for 10 minutes (optional but helpful).",
+    "Cut halloumi cheese into 3 cm cubes.",
+    "Cut bell peppers and courgette into 3 cm chunks; peel and cut red onion into wedges.",
+    "Rinse rocket and slice cucumber into half-moons.",
+    "Halve cherry tomatoes.",
+    "In a large bowl, whisk olive oil, juice of half the lemon, oregano, a pinch of salt, and black pepper.",
+    "Toss halloumi cheese, bell peppers, courgette, red onion, and cherry tomatoes in half the dressing.",
+    "In another bowl, combine rocket, cucumber, and olives; set aside with the remaining dressing for serving.",
+    "Thread halloumi cheese and vegetables onto skewers, alternating pieces.",
+    "Oil grill grates lightly, then place skewers on the grill; cook 6–8 minutes, turning every 2 minutes until halloumi is golden and veg are tender-crisp.",
+    "Warm pita bread on the grill for 30–60 seconds per side.",
+    "Toss the rocket-cucumber-olive salad with the reserved dressing and a squeeze of the remaining lemon.",
+    "Serve skewers with the salad and warm pita bread. Season to taste with extra salt and black pepper if needed."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "halloumi cheese",
+      "quantity": "400 g",
+      "preparation": "cut into 3 cm cubes"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "cut into 3 cm chunks"
+    },
+    {
+      "core_item_name": "courgette",
+      "quantity": "2 small",
+      "preparation": "cut into 3 cm chunks"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "200 g",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced, divided"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp"
+    },
+    {
+      "core_item_name": "rocket",
+      "quantity": "120 g",
+      "preparation": "rinsed and dried"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "sliced into half-moons"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "pitted if needed"
+    },
+    {
+      "core_item_name": "pita bread",
+      "quantity": "4 rounds"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "halloumi cheese",
+      "quantity": "400 g",
+      "preparation": "cut into 3 cm cubes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "cut into 3 cm chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "courgette",
+      "quantity": "2 small",
+      "preparation": "cut into 3 cm chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "200 g",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rocket",
+      "quantity": "120 g",
+      "preparation": "rinsed and dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "sliced into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "pitted if needed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pita bread",
+      "quantity": "4 rounds",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T164639Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T164155Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

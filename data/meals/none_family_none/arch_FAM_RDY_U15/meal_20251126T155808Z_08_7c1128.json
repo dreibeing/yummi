@@ -1,0 +1,124 @@
+{
+  "meal_id": "meal_20251126T155808Z_08_7c1128",
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "archetype_name": "Family Heat-and-Eat Weeknights (Under 15, No Heat)",
+  "name": "Microwave Pepperoni Pizza Slices with Salad and Apple Wedges",
+  "description": "Fast family pizza night with a ready-made pepperoni pizza, bagged salad, and fresh apple wedges. Heat the pizza, toss the salad, and serve in minutes with zero chili heat.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Open the salad and place in a large bowl.",
+    "Shake the salad dressing bottle.",
+    "Rinse the apples and cut into wedges."
+  ],
+  "cook_steps": [
+    "Microwave the pepperoni pizza according to package directions until hot (or bake in the oven if preferred).",
+    "Cut the pizza into slices.",
+    "Drizzle salad dressing over the salad and toss.",
+    "Plate pizza slices with a side of salad and apple wedges."
+  ],
+  "instructions": [
+    "Open the salad and place in a large bowl.",
+    "Shake the salad dressing bottle.",
+    "Rinse the apples and cut into wedges.",
+    "Microwave the pepperoni pizza according to package directions until hot (or bake in the oven if preferred).",
+    "Cut the pizza into slices.",
+    "Drizzle salad dressing over the salad and toss.",
+    "Plate pizza slices with a side of salad and apple wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "pepperoni pizza",
+      "quantity": "2 pizzas (family size)",
+      "preparation": "heat per package directions"
+    },
+    {
+      "core_item_name": "salad",
+      "quantity": "1 large bag (about 300–400 g)"
+    },
+    {
+      "core_item_name": "salad dressing",
+      "quantity": "4 tablespoons",
+      "preparation": "for tossing"
+    },
+    {
+      "core_item_name": "apple",
+      "quantity": "2 medium",
+      "preparation": "cut into wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "pepperoni pizza",
+      "quantity": "2 pizzas (family size)",
+      "preparation": "heat per package directions",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salad",
+      "quantity": "1 large bag (about 300–400 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salad dressing",
+      "quantity": "4 tablespoons",
+      "preparation": "for tossing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple",
+      "quantity": "2 medium",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T160126Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T155808Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

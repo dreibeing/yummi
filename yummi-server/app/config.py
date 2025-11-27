@@ -25,6 +25,9 @@ class Settings(BaseSettings):
     catalog_path: str | None = Field(default="resolver/catalog.json")
     meals_manifest_path: str | None = Field(default="resolver/meals/meals_manifest.json")
     tags_manifest_path: str | None = Field(default="data/tags/defined_tags.json")
+    ingredient_classifications_path: str | None = Field(
+        default="data/ingredients/ingredient_classifications.jsonl"
+    )
     thin_runner_log_path: str = Field(default="data/thin-runner-log.txt")
     thin_slice_enabled: bool = Field(default=True)
 

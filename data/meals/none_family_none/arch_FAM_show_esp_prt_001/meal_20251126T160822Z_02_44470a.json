@@ -1,0 +1,250 @@
+{
+  "meal_id": "meal_20251126T160822Z_02_44470a",
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "archetype_name": "Family Weekend Showstopper: Spanish & Portuguese Feasts",
+  "name": "Portuguese Peri-Peri Butterflied Chicken with Roast Garlic Potatoes and Grilled Padrón Peppers",
+  "description": "A showpiece peri-peri butterflied chicken grilled over flames, served with lemon-garlic roast potatoes and blistered Padrón peppers. Slow, hands-on cooking for a memorable Iberian family feast.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Preheat oven to 220°C (430°F). Preheat Outdoor Grill to medium-high, two-zone heat.",
+    "Rinse and pat dry the butterflied chicken.",
+    "Peel and slice onions into thick rings. Peel and cut potatoes into 2–3 cm chunks.",
+    "Finely chop garlic. Roughly chop parsley. Halve lemon and cut extra wedges.",
+    "In a bowl, mix peri-peri sauce, peri-peri spice blend, olive oil, paprika, salt, and black pepper to make a marinade.",
+    "Toss potatoes and onions with olive oil, garlic, salt, and black pepper on a roasting tray.",
+    "Drizzle Padrón peppers with olive oil and season with salt for grilling later."
+  ],
+  "cook_steps": [
+    "Marinate chicken: Rub the peri-peri marinade all over the butterflied chicken, including under the skin. Squeeze lemon over and let sit 20–30 minutes.",
+    "Start potatoes: Roast the potato and onion tray on the middle rack for 20 minutes.",
+    "Grill chicken (skin side up first): Place chicken over indirect heat, close lid, and grill 20 minutes.",
+    "Flip chicken skin-side down over direct heat to crisp 5–7 minutes, watching for flare-ups. Move back to indirect heat, close lid, and cook 15–25 minutes more until juices run clear (thickest part reaches 74°C/165°F).",
+    "Finish potatoes: Toss potatoes with parsley and a little olive oil; continue roasting until golden and tender (total 40–50 minutes).",
+    "Grill Padrón peppers: Just before serving, grill peppers over direct heat 3–4 minutes, turning until blistered and tender. Season with a pinch of salt.",
+    "Rest chicken 10 minutes on a board. Carve into halves, then portions.",
+    "Serve: Plate chicken with roast potatoes and onions, add blistered Padrón peppers, and offer lemon wedges for squeezing."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C (430°F). Preheat Outdoor Grill to medium-high, two-zone heat.",
+    "Rinse and pat dry the butterflied chicken.",
+    "Peel and slice onions into thick rings. Peel and cut potatoes into 2–3 cm chunks.",
+    "Finely chop garlic. Roughly chop parsley. Halve lemon and cut extra wedges.",
+    "In a bowl, mix peri-peri sauce, peri-peri spice blend, olive oil, paprika, salt, and black pepper to make a marinade.",
+    "Toss potatoes and onions with olive oil, garlic, salt, and black pepper on a roasting tray.",
+    "Drizzle Padrón peppers with olive oil and season with salt for grilling later.",
+    "Marinate chicken: Rub the peri-peri marinade all over the butterflied chicken, including under the skin. Squeeze lemon over and let sit 20–30 minutes.",
+    "Start potatoes: Roast the potato and onion tray on the middle rack for 20 minutes.",
+    "Grill chicken (skin side up first): Place chicken over indirect heat, close lid, and grill 20 minutes.",
+    "Flip chicken skin-side down over direct heat to crisp 5–7 minutes, watching for flare-ups. Move back to indirect heat, close lid, and cook 15–25 minutes more until juices run clear (thickest part reaches 74°C/165°F).",
+    "Finish potatoes: Toss potatoes with parsley and a little olive oil; continue roasting until golden and tender (total 40–50 minutes).",
+    "Grill Padrón peppers: Just before serving, grill peppers over direct heat 3–4 minutes, turning until blistered and tender. Season with a pinch of salt.",
+    "Rest chicken 10 minutes on a board. Carve into halves, then portions.",
+    "Serve: Plate chicken with roast potatoes and onions, add blistered Padrón peppers, and offer lemon wedges for squeezing."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "butterflied chicken",
+      "quantity": "1 whole (1.6–2.0 kg)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "peri-peri sauce",
+      "quantity": "1/2 cup",
+      "preparation": "for marinade"
+    },
+    {
+      "core_item_name": "peri-peri spice blend",
+      "quantity": "1–2 tbsp",
+      "preparation": "to taste for mild heat"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "6–8 tbsp",
+      "preparation": "divided for marinade, potatoes, and peppers"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 tsp",
+      "preparation": "sweet"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2–3 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1–2 tsp",
+      "preparation": "freshly ground, divided"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "2",
+      "preparation": "1 juiced for marinade, 1 cut into wedges"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "6 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "1.2 kg",
+      "preparation": "cut into 2–3 cm chunks"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "thick rings"
+    },
+    {
+      "core_item_name": "padron peppers",
+      "quantity": "300–400 g",
+      "preparation": "left whole"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 bunch",
+      "preparation": "roughly chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Portuguese",
+      "Spanish"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "butterflied chicken",
+      "quantity": "1 whole (1.6–2.0 kg)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peri-peri sauce",
+      "quantity": "1/2 cup",
+      "preparation": "for marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peri-peri spice blend",
+      "quantity": "1–2 tbsp",
+      "preparation": "to taste for mild heat",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "6–8 tbsp",
+      "preparation": "divided for marinade, potatoes, and peppers",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 tsp",
+      "preparation": "sweet",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2–3 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1–2 tsp",
+      "preparation": "freshly ground, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "2",
+      "preparation": "1 juiced for marinade, 1 cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "6 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "1.2 kg",
+      "preparation": "cut into 2–3 cm chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "thick rings",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "padron peppers",
+      "quantity": "300–400 g",
+      "preparation": "left whole",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 bunch",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T160945Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T160822Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

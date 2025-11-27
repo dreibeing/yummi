@@ -1,0 +1,251 @@
+{
+  "meal_id": "meal_20251126T150252Z_04_94eeba",
+  "archetype_uid": "arch_FAMXHOT1530",
+  "archetype_name": "Family Extra-Hot Chili Night (Caribbean & Mexican, 15–30, Simple)",
+  "name": "Extra-Hot Habanero Sausage & Pepper Skillet over Lime Rice",
+  "description": "Fiery sausage, peppers, onion, and jalapeños seared with habanero sauce and cumin, spooned over fragrant lime jasmine rice. A fast Caribbean-Mexican fusion skillet with real heat.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 2 cups jasmine rice until water runs clear.",
+    "Chop 1 large onion into strips.",
+    "Slice 2 large bell peppers into strips.",
+    "Slice 2 jalapenos (leave seeds for extra heat).",
+    "Slice 500 g sausages into 1–2 cm rounds.",
+    "Roughly chop 1/2 cup coriander.",
+    "Zest and juice 1 lime.",
+    "Measure 3 cups vegetable stock."
+  ],
+  "cook_steps": [
+    "Add jasmine rice and vegetable stock to a pot; season with a pinch of salt. Bring to a boil, then cover and simmer on low until liquid is absorbed, 12–15 minutes. Keep covered to steam.",
+    "Heat 1 tbsp olive oil in a large skillet (StoveTop) or grill-safe pan (OutdoorGrill) over medium-high.",
+    "Add sausage rounds and sear until browned, 3–4 minutes.",
+    "Add onion and bell peppers; cook, tossing, until softened with charred edges, 4–5 minutes.",
+    "Stir in jalapenos, 1 tsp ground cumin, 1/2 tsp black pepper, and 1–2 tsp salt to taste.",
+    "Pour in 2–3 tbsp habanero sauce; toss for 30–60 seconds to glaze. Turn off heat.",
+    "Fluff rice with a fork; stir in lime zest and juice plus 1 tbsp olive oil.",
+    "Serve lime rice in bowls, top with the sausage-pepper mix, and finish with chopped coriander."
+  ],
+  "instructions": [
+    "Rinse 2 cups jasmine rice until water runs clear.",
+    "Chop 1 large onion into strips.",
+    "Slice 2 large bell peppers into strips.",
+    "Slice 2 jalapenos (leave seeds for extra heat).",
+    "Slice 500 g sausages into 1–2 cm rounds.",
+    "Roughly chop 1/2 cup coriander.",
+    "Zest and juice 1 lime.",
+    "Measure 3 cups vegetable stock.",
+    "Add jasmine rice and vegetable stock to a pot; season with a pinch of salt. Bring to a boil, then cover and simmer on low until liquid is absorbed, 12–15 minutes. Keep covered to steam.",
+    "Heat 1 tbsp olive oil in a large skillet (StoveTop) or grill-safe pan (OutdoorGrill) over medium-high.",
+    "Add sausage rounds and sear until browned, 3–4 minutes.",
+    "Add onion and bell peppers; cook, tossing, until softened with charred edges, 4–5 minutes.",
+    "Stir in jalapenos, 1 tsp ground cumin, 1/2 tsp black pepper, and 1–2 tsp salt to taste.",
+    "Pour in 2–3 tbsp habanero sauce; toss for 30–60 seconds to glaze. Turn off heat.",
+    "Fluff rice with a fork; stir in lime zest and juice plus 1 tbsp olive oil.",
+    "Serve lime rice in bowls, top with the sausage-pepper mix, and finish with chopped coriander."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1–2 tsp, to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp, divided",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "sausages",
+      "quantity": "500 g",
+      "preparation": "sliced into rounds"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "2",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "2–3 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Caribbean",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "ExtraHot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1–2 tsp, to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp, divided",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sausages",
+      "quantity": "500 g",
+      "preparation": "sliced into rounds",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "2",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero sauce",
+      "quantity": "2–3 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T150602Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T150252Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

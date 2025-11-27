@@ -1,0 +1,265 @@
+{
+  "meal_id": "meal_20251126T151753Z_08_7b6963",
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "archetype_name": "Family Hands-Off Sheet Pan & Slow Cooker Nights",
+  "name": "Sheet-Pan Greek Turkey Meatloaf with Lemon Potatoes & Zucchini",
+  "description": "Hands-off turkey meatloaf seasoned with garlic, oregano, and herbs, roasted alongside lemony potatoes and zucchini. Serve with ready tzatziki for a cool, no-heat finish.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 200°C/400°F and line a large sheet pan with foil or parchment.",
+    "Finely chop onion and garlic.",
+    "Cut potatoes into 2–3 cm chunks; cut zucchini into thick half-moons.",
+    "Zest and juice the lemon (keep separate).",
+    "In a large bowl, add turkey, onion, garlic, oregano, parsley, egg, crumbled bread, 1 tbsp olive oil, 1 tsp salt, and 1/2 tsp black pepper; mix just to combine.",
+    "In a second bowl, toss potatoes and zucchini with 2 tbsp olive oil, 1/2 tsp salt, 1/4 tsp black pepper, 1 tsp oregano, and half the lemon juice."
+  ],
+  "cook_steps": [
+    "Form the turkey mixture into a compact loaf (about 20 cm long) in the center of the sheet pan.",
+    "Scatter the seasoned potatoes and zucchini around the meatloaf in a single layer.",
+    "Roast 35–45 minutes until the meatloaf is cooked through (internal temp 74°C/165°F) and potatoes are tender.",
+    "Brush the meatloaf and vegetables with remaining lemon juice and a little olive oil; sprinkle lemon zest over the vegetables. Rest 5 minutes.",
+    "Slice the meatloaf and serve with tzatziki on the side. Warm pita bread in the oven for the last 3–4 minutes or microwave 20–30 seconds, if using."
+  ],
+  "instructions": [
+    "Heat oven to 200°C/400°F and line a large sheet pan with foil or parchment.",
+    "Finely chop onion and garlic.",
+    "Cut potatoes into 2–3 cm chunks; cut zucchini into thick half-moons.",
+    "Zest and juice the lemon (keep separate).",
+    "In a large bowl, add turkey, onion, garlic, oregano, parsley, egg, crumbled bread, 1 tbsp olive oil, 1 tsp salt, and 1/2 tsp black pepper; mix just to combine.",
+    "In a second bowl, toss potatoes and zucchini with 2 tbsp olive oil, 1/2 tsp salt, 1/4 tsp black pepper, 1 tsp oregano, and half the lemon juice.",
+    "Form the turkey mixture into a compact loaf (about 20 cm long) in the center of the sheet pan.",
+    "Scatter the seasoned potatoes and zucchini around the meatloaf in a single layer.",
+    "Roast 35–45 minutes until the meatloaf is cooked through (internal temp 74°C/165°F) and potatoes are tender.",
+    "Brush the meatloaf and vegetables with remaining lemon juice and a little olive oil; sprinkle lemon zest over the vegetables. Rest 5 minutes.",
+    "Slice the meatloaf and serve with tzatziki on the side. Warm pita bread in the oven for the last 3–4 minutes or microwave 20–30 seconds, if using."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "900 g (2 lb)",
+      "preparation": "minced/ground"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "1",
+      "preparation": "lightly beaten"
+    },
+    {
+      "core_item_name": "bread",
+      "quantity": "1 slice",
+      "preparation": "crumbled into fine crumbs"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3–4 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 1/2 tsp",
+      "preparation": "divided, to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "3/4 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "700 g (1 1/2 lb)",
+      "preparation": "cut into chunks"
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "cut into thick half-moons"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "tzatziki",
+      "quantity": "1 cup",
+      "preparation": "for serving"
+    },
+    {
+      "core_item_name": "pita bread",
+      "quantity": "4",
+      "preparation": "optional, warmed"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "900 g (2 lb)",
+      "preparation": "minced/ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "1",
+      "preparation": "lightly beaten",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bread",
+      "quantity": "1 slice",
+      "preparation": "crumbled into fine crumbs",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3–4 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 1/2 tsp",
+      "preparation": "divided, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "3/4 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "700 g (1 1/2 lb)",
+      "preparation": "cut into chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "cut into thick half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tzatziki",
+      "quantity": "1 cup",
+      "preparation": "for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pita bread",
+      "quantity": "4",
+      "preparation": "optional, warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T152248Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T151753Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

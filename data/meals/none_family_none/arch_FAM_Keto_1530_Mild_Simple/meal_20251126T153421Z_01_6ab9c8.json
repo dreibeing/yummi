@@ -1,0 +1,249 @@
+{
+  "meal_id": "meal_20251126T153421Z_01_6ab9c8",
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "archetype_name": "Family Keto Weeknight Plates (Mild, 15–30, Simple)",
+  "name": "Skillet Lamb Kofta with Pepper-Tomato Sauté over Cauli Rice",
+  "description": "Pan-seared lamb kofta finished in the oven with a mild cumin-paprika profile, served over quick cauliflower rice and a sauté of bell peppers and cherry tomatoes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 200°C/400°F.",
+    "Finely chop onions and garlic.",
+    "Roughly chop parsley.",
+    "Slice bell peppers into thin strips.",
+    "Halve cherry tomatoes.",
+    "Open the cauliflower rice package."
+  ],
+  "cook_steps": [
+    "In a bowl, combine lamb mince, half the onions, half the garlic, parsley, cumin, paprika, 1 tsp salt, and 1/2 tsp black pepper. Mix just until combined.",
+    "Form 12 small kofta (oval logs) or meatballs.",
+    "Heat 1 tbsp olive oil in an oven-safe skillet over medium-high. Sear kofta 3–4 minutes, turning to brown on two sides.",
+    "Transfer the skillet to the oven and cook 6–8 minutes until cooked through.",
+    "While kofta bake, heat 1 tbsp olive oil in a large skillet over medium-high. Sauté remaining onions 1 minute, add bell peppers and cook 3–4 minutes until crisp-tender.",
+    "Add cherry tomatoes to the peppers, season with a pinch of salt and black pepper, and cook 2–3 minutes until tomatoes start to soften. Turn heat to low to keep warm.",
+    "In a separate skillet over medium heat, add 1 tsp olive oil and the cauliflower rice. Stir 3–4 minutes until hot; season lightly with salt and a squeeze of lemon.",
+    "Plate cauliflower rice, top with kofta, and spoon pepper-tomato sauté over or alongside. Serve with lemon wedges for extra brightness."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C/400°F.",
+    "Finely chop onions and garlic.",
+    "Roughly chop parsley.",
+    "Slice bell peppers into thin strips.",
+    "Halve cherry tomatoes.",
+    "Open the cauliflower rice package.",
+    "In a bowl, combine lamb mince, half the onions, half the garlic, parsley, cumin, paprika, 1 tsp salt, and 1/2 tsp black pepper. Mix just until combined.",
+    "Form 12 small kofta (oval logs) or meatballs.",
+    "Heat 1 tbsp olive oil in an oven-safe skillet over medium-high. Sear kofta 3–4 minutes, turning to brown on two sides.",
+    "Transfer the skillet to the oven and cook 6–8 minutes until cooked through.",
+    "While kofta bake, heat 1 tbsp olive oil in a large skillet over medium-high. Sauté remaining onions 1 minute, add bell peppers and cook 3–4 minutes until crisp-tender.",
+    "Add cherry tomatoes to the peppers, season with a pinch of salt and black pepper, and cook 2–3 minutes until tomatoes start to soften. Turn heat to low to keep warm.",
+    "In a separate skillet over medium heat, add 1 tsp olive oil and the cauliflower rice. Stir 3–4 minutes until hot; season lightly with salt and a squeeze of lemon.",
+    "Plate cauliflower rice, top with kofta, and spoon pepper-tomato sauté over or alongside. Serve with lemon wedges for extra brightness."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "lamb mince",
+      "quantity": "680 g (1.5 lb)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 small",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste (~1+ tsp total)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste (~1/2 tsp total)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2–3 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "600–700 g (about 2 standard packs)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein",
+      "Keto",
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "lamb mince",
+      "quantity": "680 g (1.5 lb)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 small",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste (~1+ tsp total)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste (~1/2 tsp total)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2–3 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "600–700 g (about 2 standard packs)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T153503Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T153421Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

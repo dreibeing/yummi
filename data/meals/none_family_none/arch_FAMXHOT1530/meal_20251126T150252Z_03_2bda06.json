@@ -1,0 +1,247 @@
+{
+  "meal_id": "meal_20251126T150252Z_03_2bda06",
+  "archetype_uid": "arch_FAMXHOT1530",
+  "archetype_name": "Family Extra-Hot Chili Night (Caribbean & Mexican, 15–30, Simple)",
+  "name": "Extra-Hot Jerk Pork & Pineapple Grill over Mexican-Style Spanish Rice",
+  "description": "Habanero-and-allspice–rubbed pork shoulder grilled with pineapple, served over quick, tomato-scented Spanish rice. Fiery, fast, and family-friendly to plate.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Cut pork shoulder into 2–3 cm cubes; pat dry.",
+    "Dice half the pineapple into 2–3 cm chunks; save the rest for snacking or garnish.",
+    "Finely chop garlic and 1–2 habanero peppers (use gloves).",
+    "Halve the lime.",
+    "Dice half an onion.",
+    "Measure spanish rice, diced tomatoes, and chicken stock.",
+    "Preheat outdoor grill to medium-high (or heat a grill pan) and set a saucepan on the stovetop."
+  ],
+  "cook_steps": [
+    "In a bowl, mix pork shoulder with olive oil, allspice, salt, black pepper, chopped garlic, and chopped habanero peppers; squeeze in lime juice and toss. Thread onto skewers if using.",
+    "Toss pineapple chunks with a little olive oil.",
+    "Start rice: add olive oil to the saucepan over medium heat; sauté diced onion 2 minutes. Stir in spanish rice to toast 1 minute.",
+    "Add diced tomatoes and chicken stock to the rice; bring to a simmer, cover, and cook on low until liquid is absorbed and rice is tender (about 12–15 minutes).",
+    "Grill pork (and pineapple) over direct heat, turning occasionally, until pork is cooked through with charred edges and pineapple is caramelized, about 8–10 minutes.",
+    "Fluff the rice. Taste and adjust salt.",
+    "Plate rice, top with grilled pork and pineapple. Squeeze extra lime over everything to serve."
+  ],
+  "instructions": [
+    "Cut pork shoulder into 2–3 cm cubes; pat dry.",
+    "Dice half the pineapple into 2–3 cm chunks; save the rest for snacking or garnish.",
+    "Finely chop garlic and 1–2 habanero peppers (use gloves).",
+    "Halve the lime.",
+    "Dice half an onion.",
+    "Measure spanish rice, diced tomatoes, and chicken stock.",
+    "Preheat outdoor grill to medium-high (or heat a grill pan) and set a saucepan on the stovetop.",
+    "In a bowl, mix pork shoulder with olive oil, allspice, salt, black pepper, chopped garlic, and chopped habanero peppers; squeeze in lime juice and toss. Thread onto skewers if using.",
+    "Toss pineapple chunks with a little olive oil.",
+    "Start rice: add olive oil to the saucepan over medium heat; sauté diced onion 2 minutes. Stir in spanish rice to toast 1 minute.",
+    "Add diced tomatoes and chicken stock to the rice; bring to a simmer, cover, and cook on low until liquid is absorbed and rice is tender (about 12–15 minutes).",
+    "Grill pork (and pineapple) over direct heat, turning occasionally, until pork is cooked through with charred edges and pineapple is caramelized, about 8–10 minutes.",
+    "Fluff the rice. Taste and adjust salt.",
+    "Plate rice, top with grilled pork and pineapple. Squeeze extra lime over everything to serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "pork shoulder",
+      "quantity": "800 g",
+      "preparation": "cut into 2–3 cm cubes"
+    },
+    {
+      "core_item_name": "pineapple",
+      "quantity": "1 medium",
+      "preparation": "half diced for grilling"
+    },
+    {
+      "core_item_name": "habanero peppers",
+      "quantity": "1–2",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1/2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "spanish rice",
+      "quantity": "1 cup",
+      "preparation": "raw"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "2 cups",
+      "preparation": ""
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Caribbean",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "ExtraHot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "pork shoulder",
+      "quantity": "800 g",
+      "preparation": "cut into 2–3 cm cubes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pineapple",
+      "quantity": "1 medium",
+      "preparation": "half diced for grilling",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "habanero peppers",
+      "quantity": "1–2",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "allspice",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1/2 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spanish rice",
+      "quantity": "1 cup",
+      "preparation": "raw",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "2 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T150527Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T150252Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

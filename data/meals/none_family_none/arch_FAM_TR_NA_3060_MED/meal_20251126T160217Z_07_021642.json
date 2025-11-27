@@ -1,0 +1,363 @@
+{
+  "meal_id": "meal_20251126T160217Z_07_021642",
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "archetype_name": "Family Turkish & North African Suppers (Medium, 30–60, Intermediate)",
+  "name": "Turkish-Style Beef & Green Bean Güveç with Cumin-Turmeric Rice and Lemon-Parsley Chopped Salad",
+  "description": "Oven-finished beef and green bean tomato stew with warm spices, served with fragrant cumin-turmeric basmati rice and a bright lemon-parsley salad. Medium warmth and family-friendly sides.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 180°C (350°F).",
+    "Rinse basmati rice until water runs clear; drain.",
+    "Trim green beans; cut into 4–5 cm pieces.",
+    "Dice onions and red onion separately; chop tomatoes (if using whole) or have crushed tomatoes ready.",
+    "Mince garlic.",
+    "Chop cucumber and tomatoes for salad; roughly chop parsley.",
+    "Cut beef into 2–3 cm cubes; pat dry.",
+    "Halve lemon and set aside for juicing."
+  ],
+  "cook_steps": [
+    "StoveTop: Heat olive oil in a deep oven-safe pan over medium-high. Season beef with salt and black pepper; sear in batches until browned (5–7 min).",
+    "StoveTop: Add onions and a pinch of salt; cook until translucent (3–4 min). Stir in garlic, cumin, paprika, cinnamon, chili flakes, and bay leaves; cook 30 seconds until fragrant.",
+    "StoveTop: Add crushed tomatoes and a splash of water if needed to loosen. Stir in green beans; bring to a simmer and adjust salt and black pepper.",
+    "Oven: Cover the pan (or transfer to a covered baking dish) and bake 25–30 minutes until beef is tender and beans are soft but not mushy.",
+    "StoveTop (Rice): In a saucepan, warm olive oil over medium heat. Add cumin seeds; sizzle 20–30 seconds. Stir in rinsed basmati rice, turmeric powder, and salt; toast 30 seconds.",
+    "StoveTop (Rice): Add water (about 1.5–1.75 cups per cup of rice). Bring to a boil, reduce to low, cover, and cook 12 minutes. Rest off heat 5 minutes, then fluff.",
+    "Salad: In a bowl, combine cucumber, tomatoes, red onion, and parsley. Add olive oil, lemon juice, sumac, and a pinch of salt; toss.",
+    "Finish: Remove bay leaves from the stew. Taste and adjust seasoning or chili flakes for medium heat. Serve stew over or alongside the rice with salad on the side."
+  ],
+  "instructions": [
+    "Heat oven to 180°C (350°F).",
+    "Rinse basmati rice until water runs clear; drain.",
+    "Trim green beans; cut into 4–5 cm pieces.",
+    "Dice onions and red onion separately; chop tomatoes (if using whole) or have crushed tomatoes ready.",
+    "Mince garlic.",
+    "Chop cucumber and tomatoes for salad; roughly chop parsley.",
+    "Cut beef into 2–3 cm cubes; pat dry.",
+    "Halve lemon and set aside for juicing.",
+    "StoveTop: Heat olive oil in a deep oven-safe pan over medium-high. Season beef with salt and black pepper; sear in batches until browned (5–7 min).",
+    "StoveTop: Add onions and a pinch of salt; cook until translucent (3–4 min). Stir in garlic, cumin, paprika, cinnamon, chili flakes, and bay leaves; cook 30 seconds until fragrant.",
+    "StoveTop: Add crushed tomatoes and a splash of water if needed to loosen. Stir in green beans; bring to a simmer and adjust salt and black pepper.",
+    "Oven: Cover the pan (or transfer to a covered baking dish) and bake 25–30 minutes until beef is tender and beans are soft but not mushy.",
+    "StoveTop (Rice): In a saucepan, warm olive oil over medium heat. Add cumin seeds; sizzle 20–30 seconds. Stir in rinsed basmati rice, turmeric powder, and salt; toast 30 seconds.",
+    "StoveTop (Rice): Add water (about 1.5–1.75 cups per cup of rice). Bring to a boil, reduce to low, cover, and cook 12 minutes. Rest off heat 5 minutes, then fluff.",
+    "Salad: In a bowl, combine cucumber, tomatoes, red onion, and parsley. Add olive oil, lemon juice, sumac, and a pinch of salt; toss.",
+    "Finish: Remove bay leaves from the stew. Taste and adjust seasoning or chili flakes for medium heat. Serve stew over or alongside the rice with salad on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef",
+      "quantity": "700 g",
+      "preparation": "cut into 2–3 cm cubes"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4–5 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trimmed, cut"
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 can (400 g)"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": "ground, for stew"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1/4 tsp"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2–1 tsp",
+      "preparation": "to taste for medium heat"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups (uncooked)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1/2 tsp"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3–3.5 cups",
+      "preparation": "for rice"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "2 medium",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1/2 tsp",
+      "preparation": "optional for salad"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "NorthAfrican",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef",
+      "quantity": "700 g",
+      "preparation": "cut into 2–3 cm cubes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4–5 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trimmed, cut",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 can (400 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 tsp",
+      "preparation": "ground, for stew",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cinnamon",
+      "quantity": "1/4 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2–1 tsp",
+      "preparation": "to taste for medium heat",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups (uncooked)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin seeds",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1/2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3–3.5 cups",
+      "preparation": "for rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomatoes",
+      "quantity": "2 medium",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1/2 tsp",
+      "preparation": "optional for salad",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T160627Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T160217Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "meal_id": "meal_20251126T155808Z_03_df01b3",
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "archetype_name": "Family Heat-and-Eat Weeknights (Under 15, No Heat)",
+  "name": "Chicken Pasta Salad Plates with Warm Garlic Baguette and Apple Slices",
+  "description": "Heat-and-eat chicken pasta salad with a quick-warmed garlic baguette and fresh apple slices for a kid-friendly, no-heat-flavor dinner.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Gather chicken pasta salad, garlic baguette, and apples.",
+    "Rinse apples and slice into wedges.",
+    "Place chicken pasta salad portions onto plates or bowls.",
+    "If using an oven instead of the microwave, preheat it now per baguette pack directions (optional)."
+  ],
+  "cook_steps": [
+    "Warm the garlic baguette: microwave per pack directions until hot (typically 1–2 minutes), or bake in a preheated oven as directed if preferred.",
+    "Slice the warmed baguette and place in a basket or on a plate.",
+    "Add apple slices to each plate alongside the chicken pasta salad.",
+    "Serve immediately."
+  ],
+  "instructions": [
+    "Gather chicken pasta salad, garlic baguette, and apples.",
+    "Rinse apples and slice into wedges.",
+    "Place chicken pasta salad portions onto plates or bowls.",
+    "If using an oven instead of the microwave, preheat it now per baguette pack directions (optional).",
+    "Warm the garlic baguette: microwave per pack directions until hot (typically 1–2 minutes), or bake in a preheated oven as directed if preferred.",
+    "Slice the warmed baguette and place in a basket or on a plate.",
+    "Add apple slices to each plate alongside the chicken pasta salad.",
+    "Serve immediately."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken pasta salad",
+      "quantity": "4 servings",
+      "preparation": "chilled, ready to eat"
+    },
+    {
+      "core_item_name": "garlic baguette",
+      "quantity": "1 large loaf",
+      "preparation": "microwave or oven per pack"
+    },
+    {
+      "core_item_name": "apple",
+      "quantity": "2 medium",
+      "preparation": "washed and sliced"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken pasta salad",
+      "quantity": "4 servings",
+      "preparation": "chilled, ready to eat",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic baguette",
+      "quantity": "1 large loaf",
+      "preparation": "microwave or oven per pack",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple",
+      "quantity": "2 medium",
+      "preparation": "washed and sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T155930Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T155808Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

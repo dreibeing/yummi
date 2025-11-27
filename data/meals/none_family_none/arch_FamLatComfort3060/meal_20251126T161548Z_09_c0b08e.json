@@ -1,0 +1,268 @@
+{
+  "meal_id": "meal_20251126T161548Z_09_c0b08e",
+  "archetype_uid": "arch_FamLatComfort3060",
+  "archetype_name": "Family Latin Comfort (Mild, 30–60, Intermediate)",
+  "name": "Baked Tilapia Veracruz with Brown Rice (Mild)",
+  "description": "Family-friendly Veracruz-style tilapia baked in a tomato, pepper, and olive sauce. Serve over brown rice with a squeeze of lime for a mild Latin comfort dinner.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1 1/2 cups brown rice under cold water.",
+    "Peel and thinly slice 1 large onions.",
+    "Seed and slice 2 bell peppers.",
+    "Mince 3 cloves garlic.",
+    "Slice 1/3 cup olives.",
+    "Halve 1 lime.",
+    "Pat dry 4 tilapia fillets and season both sides with salt and black pepper.",
+    "Preheat oven to 200°C/400°F."
+  ],
+  "cook_steps": [
+    "Add 3 cups water and the rinsed brown rice to a pot with a pinch of salt; bring to a boil, then reduce heat to low, cover, and simmer until tender, 35–40 minutes. Keep covered off heat.",
+    "Heat 2 tablespoons olive oil in a large oven-safe skillet over medium heat. Add onions and bell peppers; cook, stirring, until softened, 6–8 minutes.",
+    "Stir in garlic; cook 30 seconds until fragrant.",
+    "Add 1 can diced tomatoes (about 400 g), sliced olives, 1 bay leaves, 1 teaspoon oregano, 1/2 teaspoon salt, and 1/4 teaspoon black pepper. Simmer 5 minutes to meld.",
+    "Nestle the seasoned tilapia into the sauce in a single layer. Spoon some sauce over the top.",
+    "Transfer the skillet to the oven and bake until the fish flakes easily with a fork, 12–15 minutes (thickness may vary).",
+    "Remove bay leaves. Squeeze the juice of 1/2 lime over the fish and sauce. Adjust salt and black pepper to taste.",
+    "Fluff the brown rice. Serve fish and sauce over rice. Sprinkle with 2 tablespoons chopped parsley and offer remaining lime wedges."
+  ],
+  "instructions": [
+    "Rinse 1 1/2 cups brown rice under cold water.",
+    "Peel and thinly slice 1 large onions.",
+    "Seed and slice 2 bell peppers.",
+    "Mince 3 cloves garlic.",
+    "Slice 1/3 cup olives.",
+    "Halve 1 lime.",
+    "Pat dry 4 tilapia fillets and season both sides with salt and black pepper.",
+    "Preheat oven to 200°C/400°F.",
+    "Add 3 cups water and the rinsed brown rice to a pot with a pinch of salt; bring to a boil, then reduce heat to low, cover, and simmer until tender, 35–40 minutes. Keep covered off heat.",
+    "Heat 2 tablespoons olive oil in a large oven-safe skillet over medium heat. Add onions and bell peppers; cook, stirring, until softened, 6–8 minutes.",
+    "Stir in garlic; cook 30 seconds until fragrant.",
+    "Add 1 can diced tomatoes (about 400 g), sliced olives, 1 bay leaves, 1 teaspoon oregano, 1/2 teaspoon salt, and 1/4 teaspoon black pepper. Simmer 5 minutes to meld.",
+    "Nestle the seasoned tilapia into the sauce in a single layer. Spoon some sauce over the top.",
+    "Transfer the skillet to the oven and bake until the fish flakes easily with a fork, 12–15 minutes (thickness may vary).",
+    "Remove bay leaves. Squeeze the juice of 1/2 lime over the fish and sauce. Adjust salt and black pepper to taste.",
+    "Fluff the brown rice. Serve fish and sauce over rice. Sprinkle with 2 tablespoons chopped parsley and offer remaining lime wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "brown rice",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "seeded and sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (about 400 g)"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/3 cup",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "1"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 teaspoon, plus more to taste"
+    },
+    {
+      "core_item_name": "tilapia",
+      "quantity": "4 fillets (120–150 g each)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "LatinAmerican",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "brown rice",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "seeded and sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (about 400 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/3 cup",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "1",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 teaspoon, plus more to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tilapia",
+      "quantity": "4 fillets (120–150 g each)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T162214Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T161548Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

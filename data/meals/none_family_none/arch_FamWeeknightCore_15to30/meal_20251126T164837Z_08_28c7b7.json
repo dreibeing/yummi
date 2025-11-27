@@ -1,0 +1,231 @@
+{
+  "meal_id": "meal_20251126T164837Z_08_28c7b7",
+  "archetype_uid": "arch_FamWeeknightCore_15to30",
+  "archetype_name": "Family Weeknight Classics (Mild, 15–30 min)",
+  "name": "Skillet Pork Chops with Creamy Mushroom Sauce and Roasted Green Beans",
+  "description": "Pan-seared pork chops topped with a quick creamy mushroom-garlic sauce, served alongside oven-roasted green beans. Mild, familiar flavors for a fast family dinner.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F.",
+    "Trim ends from green beans and pat dry.",
+    "Slice mushrooms.",
+    "Finely chop onions and mince garlic.",
+    "Roughly chop parsley.",
+    "Pat pork chops dry; season both sides with salt and pepper."
+  ],
+  "cook_steps": [
+    "Roast green beans: Toss green beans with 1 tbsp olive oil, a pinch of salt and pepper on a baking tray. Roast 12–15 minutes until tender-crisp, shaking once.",
+    "Sear pork: Heat 1 tbsp olive oil in a large skillet over medium-high. Sear pork chops 3–4 minutes per side until browned and just cooked through (internal 63°C/145°F). Transfer to a warm plate; tent loosely.",
+    "Start sauce aromatics: Reduce heat to medium. Add 1 tbsp butter to the same skillet. Add onions and cook 2 minutes until softened. Add garlic; cook 30 seconds.",
+    "Cook mushrooms: Add mushrooms and a pinch of salt. Cook 4–5 minutes, stirring, until browned and their liquid evaporates.",
+    "Finish sauce: Stir in 150 ml cream; simmer 2–3 minutes to thicken slightly. Add any pork resting juices. Season with salt and pepper to taste. Stir in half the parsley.",
+    "Serve: Return pork to the skillet to coat with sauce for 1 minute. Plate pork with mushroom sauce on top. Add roasted green beans alongside and sprinkle remaining parsley. Optional: squeeze lemon over green beans."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F.",
+    "Trim ends from green beans and pat dry.",
+    "Slice mushrooms.",
+    "Finely chop onions and mince garlic.",
+    "Roughly chop parsley.",
+    "Pat pork chops dry; season both sides with salt and pepper.",
+    "Roast green beans: Toss green beans with 1 tbsp olive oil, a pinch of salt and pepper on a baking tray. Roast 12–15 minutes until tender-crisp, shaking once.",
+    "Sear pork: Heat 1 tbsp olive oil in a large skillet over medium-high. Sear pork chops 3–4 minutes per side until browned and just cooked through (internal 63°C/145°F). Transfer to a warm plate; tent loosely.",
+    "Start sauce aromatics: Reduce heat to medium. Add 1 tbsp butter to the same skillet. Add onions and cook 2 minutes until softened. Add garlic; cook 30 seconds.",
+    "Cook mushrooms: Add mushrooms and a pinch of salt. Cook 4–5 minutes, stirring, until browned and their liquid evaporates.",
+    "Finish sauce: Stir in 150 ml cream; simmer 2–3 minutes to thicken slightly. Add any pork resting juices. Season with salt and pepper to taste. Stir in half the parsley.",
+    "Serve: Return pork to the skillet to coat with sauce for 1 minute. Plate pork with mushroom sauce on top. Add roasted green beans alongside and sprinkle remaining parsley. Optional: squeeze lemon over green beans."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "pork chops",
+      "quantity": "4 chops (about 600–700 g total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "300 g",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 small",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "cream",
+      "quantity": "150 ml",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "1 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1/2",
+      "preparation": "wedges for serving (optional)"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste",
+      "preparation": ""
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "pork chops",
+      "quantity": "4 chops (about 600–700 g total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "300 g",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 small",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cream",
+      "quantity": "150 ml",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "1 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1/2",
+      "preparation": "wedges for serving (optional)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T165305Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T164837Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

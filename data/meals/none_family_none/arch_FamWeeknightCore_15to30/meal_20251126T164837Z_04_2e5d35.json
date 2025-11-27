@@ -1,0 +1,156 @@
+{
+  "meal_id": "meal_20251126T164837Z_04_2e5d35",
+  "archetype_uid": "arch_FamWeeknightCore_15to30",
+  "archetype_name": "Family Weeknight Classics (Mild, 15–30 min)",
+  "name": "Quick Boerewors in Tomato-Onion Gravy with Creamy Maize Meal",
+  "description": "A family-friendly South African-style boerewors skillet simmered in tomato-onion gravy, served over creamy maize meal. Mild, simple, and ready in 15–30 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Measure 1 cup maize meal and 4 cups water for the porridge.",
+    "Cut 700 g boerewors into 4–5 cm pieces.",
+    "Open 1 can tomato and onion mix.",
+    "Measure butter, salt, and pepper."
+  ],
+  "cook_steps": [
+    "Start maize meal: Bring 4 cups water and 1/2 tsp salt to a boil in a medium pot over medium-high heat.",
+    "Whisk in 1 cup maize meal gradually to avoid lumps. Reduce heat to low, cover, and cook 10–12 minutes, stirring every few minutes until thick and creamy. Stir in 1 tbsp butter; keep warm.",
+    "While maize cooks, heat a large skillet over medium heat. Add boerewors pieces and cook 5–6 minutes, turning to brown on all sides.",
+    "Drain excess fat if needed, then add tomato and onion mix to the skillet. Season with a pinch of salt and 1/4 tsp pepper.",
+    "Simmer 5–7 minutes, stirring occasionally, until the sauce slightly thickens and boerewors is cooked through.",
+    "Finish maize meal with another 1 tbsp butter if you like. Taste both components and adjust salt and pepper.",
+    "Serve a scoop of creamy maize meal in bowls, top with boerewors and spoon over tomato-onion gravy."
+  ],
+  "instructions": [
+    "Measure 1 cup maize meal and 4 cups water for the porridge.",
+    "Cut 700 g boerewors into 4–5 cm pieces.",
+    "Open 1 can tomato and onion mix.",
+    "Measure butter, salt, and pepper.",
+    "Start maize meal: Bring 4 cups water and 1/2 tsp salt to a boil in a medium pot over medium-high heat.",
+    "Whisk in 1 cup maize meal gradually to avoid lumps. Reduce heat to low, cover, and cook 10–12 minutes, stirring every few minutes until thick and creamy. Stir in 1 tbsp butter; keep warm.",
+    "While maize cooks, heat a large skillet over medium heat. Add boerewors pieces and cook 5–6 minutes, turning to brown on all sides.",
+    "Drain excess fat if needed, then add tomato and onion mix to the skillet. Season with a pinch of salt and 1/4 tsp pepper.",
+    "Simmer 5–7 minutes, stirring occasionally, until the sauce slightly thickens and boerewors is cooked through.",
+    "Finish maize meal with another 1 tbsp butter if you like. Taste both components and adjust salt and pepper.",
+    "Serve a scoop of creamy maize meal in bowls, top with boerewors and spoon over tomato-onion gravy."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "boerewors",
+      "quantity": "700 g",
+      "preparation": "cut into 4–5 cm pieces"
+    },
+    {
+      "core_item_name": "tomato and onion mix",
+      "quantity": "1 can (about 400 g)"
+    },
+    {
+      "core_item_name": "maize meal",
+      "quantity": "1 cup",
+      "preparation": "for porridge"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "start with 1/2 tsp for maize, pinch for sauce"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/4 tsp",
+      "preparation": "plus more to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "boerewors",
+      "quantity": "700 g",
+      "preparation": "cut into 4–5 cm pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato and onion mix",
+      "quantity": "1 can (about 400 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "maize meal",
+      "quantity": "1 cup",
+      "preparation": "for porridge",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "start with 1/2 tsp for maize, pinch for sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/4 tsp",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T165050Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T164837Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

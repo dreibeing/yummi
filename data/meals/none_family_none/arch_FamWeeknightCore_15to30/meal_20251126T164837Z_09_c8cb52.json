@@ -1,0 +1,223 @@
+{
+  "meal_id": "meal_20251126T164837Z_09_c8cb52",
+  "archetype_uid": "arch_FamWeeknightCore_15to30",
+  "archetype_name": "Family Weeknight Classics (Mild, 15–30 min)",
+  "name": "Quick Beef Stroganoff with Egg Noodles and Garlic Ciabatta",
+  "description": "A fast, family-friendly skillet stroganoff with tender beef, mushrooms, and creamy sauce over egg noodles, plus warm garlic ciabatta on the side.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 200°C (390°F) for the garlic butter ciabatta.",
+    "Bring a large pot of salted water to a boil for the egg noodles.",
+    "Slice beef sirloin steak thinly against the grain.",
+    "Slice mushrooms and onions; mince garlic.",
+    "Roughly chop parsley (optional) for garnish."
+  ],
+  "cook_steps": [
+    "Place garlic butter ciabatta on a tray and bake until hot and crisp, 8–10 minutes; keep warm.",
+    "Cook egg noodles in boiling salted water until tender, 6–8 minutes; drain and set aside.",
+    "Heat olive oil in a large skillet over medium-high heat. Season beef lightly with salt and pepper, then sear in two batches until just browned, 2–3 minutes per batch. Transfer to a plate.",
+    "Reduce heat to medium. Add a small knob of butter to the skillet, then sauté onions and mushrooms with a pinch of salt until softened and lightly browned, 4–5 minutes. Add garlic and cook 30 seconds.",
+    "Pour in stroganoff sauce and bring to a gentle simmer, 1–2 minutes. Return beef and any juices to the pan and toss to coat; simmer 1 minute to warm through. Adjust salt and pepper to taste.",
+    "Toss drained egg noodles with a little butter, then plate and spoon stroganoff over the noodles. Garnish with parsley if using. Serve with warm garlic butter ciabatta."
+  ],
+  "instructions": [
+    "Preheat oven to 200°C (390°F) for the garlic butter ciabatta.",
+    "Bring a large pot of salted water to a boil for the egg noodles.",
+    "Slice beef sirloin steak thinly against the grain.",
+    "Slice mushrooms and onions; mince garlic.",
+    "Roughly chop parsley (optional) for garnish.",
+    "Place garlic butter ciabatta on a tray and bake until hot and crisp, 8–10 minutes; keep warm.",
+    "Cook egg noodles in boiling salted water until tender, 6–8 minutes; drain and set aside.",
+    "Heat olive oil in a large skillet over medium-high heat. Season beef lightly with salt and pepper, then sear in two batches until just browned, 2–3 minutes per batch. Transfer to a plate.",
+    "Reduce heat to medium. Add a small knob of butter to the skillet, then sauté onions and mushrooms with a pinch of salt until softened and lightly browned, 4–5 minutes. Add garlic and cook 30 seconds.",
+    "Pour in stroganoff sauce and bring to a gentle simmer, 1–2 minutes. Return beef and any juices to the pan and toss to coat; simmer 1 minute to warm through. Adjust salt and pepper to taste.",
+    "Toss drained egg noodles with a little butter, then plate and spoon stroganoff over the noodles. Garnish with parsley if using. Serve with warm garlic butter ciabatta."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef sirloin steak",
+      "quantity": "500 g",
+      "preparation": "thinly sliced against the grain"
+    },
+    {
+      "core_item_name": "stroganoff sauce",
+      "quantity": "1 jar (about 350–400 g)"
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "250 g",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "egg noodles",
+      "quantity": "300 g (dry)"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1–2 tbsp"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped, optional"
+    },
+    {
+      "core_item_name": "garlic butter ciabatta",
+      "quantity": "1 loaf"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef sirloin steak",
+      "quantity": "500 g",
+      "preparation": "thinly sliced against the grain",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "stroganoff sauce",
+      "quantity": "1 jar (about 350–400 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "250 g",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "egg noodles",
+      "quantity": "300 g (dry)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1–2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tbsp",
+      "preparation": "chopped, optional",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic butter ciabatta",
+      "quantity": "1 loaf",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T165416Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T164837Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

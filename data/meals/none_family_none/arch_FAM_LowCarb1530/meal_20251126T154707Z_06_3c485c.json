@@ -1,0 +1,255 @@
+{
+  "meal_id": "meal_20251126T154707Z_06_3c485c",
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "archetype_name": "Family Low-Carb Weeknight Bowls & Wraps (15–30, Mild)",
+  "name": "Lemon-Garlic Chicken Cauliflower Rice Bowls",
+  "description": "Quick roasted lemon-garlic chicken served over herbed cauliflower rice with cucumber, tomatoes, and avocado. Mild, low-carb, family-friendly bowls ready in 15–30 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C/425°F. Line a sheet pan.",
+    "Cut chicken thighs into bite-size pieces.",
+    "Mince garlic; zest and juice the lemon.",
+    "Dice cucumber and avocado; halve cherry tomatoes.",
+    "Chop parsley; slice romaine into ribbons.",
+    "Open the cauliflower rice package."
+  ],
+  "cook_steps": [
+    "In a bowl, toss chicken thighs with olive oil, lemon zest, half the lemon juice, garlic, oregano, paprika, salt, and black pepper.",
+    "Spread chicken on the sheet pan in a single layer and roast 12–15 minutes until cooked through, stirring once.",
+    "While chicken roasts, heat a large skillet over medium with a little olive oil. Add cauliflower rice and a pinch of salt; cook 4–5 minutes until hot and tender.",
+    "Stir parsley and the remaining lemon juice into the cauliflower rice; adjust salt and black pepper.",
+    "Build bowls: add cauliflower rice, top with roasted chicken, romaine, cucumber, cherry tomatoes, and avocado.",
+    "Serve immediately."
+  ],
+  "instructions": [
+    "Heat oven to 220°C/425°F. Line a sheet pan.",
+    "Cut chicken thighs into bite-size pieces.",
+    "Mince garlic; zest and juice the lemon.",
+    "Dice cucumber and avocado; halve cherry tomatoes.",
+    "Chop parsley; slice romaine into ribbons.",
+    "Open the cauliflower rice package.",
+    "In a bowl, toss chicken thighs with olive oil, lemon zest, half the lemon juice, garlic, oregano, paprika, salt, and black pepper.",
+    "Spread chicken on the sheet pan in a single layer and roast 12–15 minutes until cooked through, stirring once.",
+    "While chicken roasts, heat a large skillet over medium with a little olive oil. Add cauliflower rice and a pinch of salt; cook 4–5 minutes until hot and tender.",
+    "Stir parsley and the remaining lemon juice into the cauliflower rice; adjust salt and black pepper.",
+    "Build bowls: add cauliflower rice, top with roasted chicken, romaine, cucumber, cherry tomatoes, and avocado.",
+    "Serve immediately."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "700 g (about 1.5 lb)",
+      "preparation": "cut into bite-size pieces"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and juice"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, plus a pinch",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "680 g (24 oz)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "1 small heart",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1 large",
+      "preparation": "diced"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "700 g (about 1.5 lb)",
+      "preparation": "cut into bite-size pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zest and juice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, plus a pinch",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "680 g (24 oz)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "1 small heart",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T155013Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T154707Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

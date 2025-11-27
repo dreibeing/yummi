@@ -1,0 +1,277 @@
+{
+  "meal_id": "meal_20251126T151753Z_10_4d9d5f",
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "archetype_name": "Family Hands-Off Sheet Pan & Slow Cooker Nights",
+  "name": "Slow Cooker Greek Turkey with Chickpeas, Artichokes & Preserved Lemon",
+  "description": "Hands-off, lemon-herb turkey stew with chickpeas, artichokes, and olives for bright Greek-Middle Eastern flavors. Optional quick oven finish to crisp the potatoes.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Peel and dice onion.",
+    "Peel and lightly crush garlic.",
+    "Scrub and cut potatoes into 1.5-inch chunks.",
+    "Rinse and drain chickpeas.",
+    "Cut artichokes into halves or quarters.",
+    "Rinse preserved lemon; scrape out pulp and finely chop the peel.",
+    "Roughly chop olives.",
+    "Pat turkey dry and cut into large chunks (about 2 inches).",
+    "Measure chicken stock.",
+    "Preheat oven to 220°C/425°F if planning the optional crisping step later."
+  ],
+  "cook_steps": [
+    "Add to the slow cooker: onion, garlic, potatoes, chickpeas, artichokes, olives, preserved lemon peel, oregano, dill, salt, and black pepper.",
+    "Place turkey on top. Drizzle olive oil over the turkey and vegetables.",
+    "Pour chicken stock around (not directly over) the turkey.",
+    "Cover and cook on Low for 6–8 hours or on High for 3–4 hours, until turkey is tender and potatoes are soft.",
+    "Stir gently to combine; taste and adjust salt and black pepper.",
+    "Optional oven finish (for crisp potatoes): Transfer potatoes with a little olive oil to a sheet pan and roast 8–12 minutes at 220°C/425°F until edges are golden. Return to the stew and toss.",
+    "Finish with a squeeze of fresh lemon to taste and serve."
+  ],
+  "instructions": [
+    "Peel and dice onion.",
+    "Peel and lightly crush garlic.",
+    "Scrub and cut potatoes into 1.5-inch chunks.",
+    "Rinse and drain chickpeas.",
+    "Cut artichokes into halves or quarters.",
+    "Rinse preserved lemon; scrape out pulp and finely chop the peel.",
+    "Roughly chop olives.",
+    "Pat turkey dry and cut into large chunks (about 2 inches).",
+    "Measure chicken stock.",
+    "Preheat oven to 220°C/425°F if planning the optional crisping step later.",
+    "Add to the slow cooker: onion, garlic, potatoes, chickpeas, artichokes, olives, preserved lemon peel, oregano, dill, salt, and black pepper.",
+    "Place turkey on top. Drizzle olive oil over the turkey and vegetables.",
+    "Pour chicken stock around (not directly over) the turkey.",
+    "Cover and cook on Low for 6–8 hours or on High for 3–4 hours, until turkey is tender and potatoes are soft.",
+    "Stir gently to combine; taste and adjust salt and black pepper.",
+    "Optional oven finish (for crisp potatoes): Transfer potatoes with a little olive oil to a sheet pan and roast 8–12 minutes at 220°C/425°F until edges are golden. Return to the stew and toss.",
+    "Finish with a squeeze of fresh lemon to taste and serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "900 g (2 lb)",
+      "preparation": "cut into large chunks"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "800 g (about 1.75 lb)",
+      "preparation": "cut into 1.5-inch chunks"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "lightly crushed"
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "2 cups cooked (or 1 can equivalent)",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "artichokes",
+      "quantity": "2 cups",
+      "preparation": "halved or quartered"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "preserved lemon",
+      "quantity": "1/2 to 1 peel",
+      "preparation": "rinsed and finely chopped"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 teaspoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "dill",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "1 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 to 1.5 teaspoons, to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon, to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1/2 to 1",
+      "preparation": "juiced, for finishing"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "SlowOrPressureCooker"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "900 g (2 lb)",
+      "preparation": "cut into large chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "800 g (about 1.75 lb)",
+      "preparation": "cut into 1.5-inch chunks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "lightly crushed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "2 cups cooked (or 1 can equivalent)",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "artichokes",
+      "quantity": "2 cups",
+      "preparation": "halved or quartered",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "preserved lemon",
+      "quantity": "1/2 to 1 peel",
+      "preparation": "rinsed and finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 teaspoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "dill",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "1 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 to 1.5 teaspoons, to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon, to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1/2 to 1",
+      "preparation": "juiced, for finishing",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T152418Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T151753Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

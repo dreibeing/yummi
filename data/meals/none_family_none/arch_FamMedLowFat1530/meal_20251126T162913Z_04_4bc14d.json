@@ -1,0 +1,264 @@
+{
+  "meal_id": "meal_20251126T162913Z_04_4bc14d",
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "archetype_name": "Family Low-Fat Mediterranean Light Plates (15–30, Mild)",
+  "name": "Turkey Kofta with Bulgur Pilaf and Roasted Zucchini-Tomato",
+  "description": "Lean turkey koftas seared on the stovetop, served with a quick herbed bulgur pilaf and a light oven-roasted zucchini and tomato side. Bright lemon and fresh herbs keep it Mediterranean and mild.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C/425°F and line a sheet pan.",
+    "Cut 2 medium zucchini into half-moons and halve 2 cups cherry tomatoes.",
+    "Finely dice 1 small red onion (divide: half for kofta, half for pilaf).",
+    "Mince 3 cloves garlic.",
+    "Chop 1/2 cup parsley and 1/4 cup mint.",
+    "In a jug, combine 2 cups vegetable stock and bring to a simmer on the stovetop.",
+    "In a bowl, mix 500 g turkey with half the red onion, half the garlic, 1.5 tsp cumin, 1 tsp oregano, 1/2 tsp salt, 1/4 tsp black pepper, and 1 tbsp chopped parsley; form 8 small oval patties."
+  ],
+  "cook_steps": [
+    "Toss zucchini and cherry tomatoes with 1 tsp olive oil, a pinch of salt, pepper, and a pinch of oregano; spread on the sheet pan and roast 15–18 minutes until tender.",
+    "For the pilaf, heat 1 tsp olive oil in a saucepan over medium; add remaining red onion and garlic and cook 2 minutes until softened.",
+    "Stir in 1 cup bulgur, toast 1 minute, then add the hot vegetable stock; bring to a simmer, cover, and cook 10–12 minutes until liquid is absorbed. Off heat, fluff and fold in remaining parsley and mint, plus half the lemon juiced.",
+    "While pilaf cooks, heat 2 tsp olive oil in a large nonstick skillet over medium; sear turkey koftas 3–4 minutes per side until browned and cooked through.",
+    "Plate bulgur, top with koftas, add roasted zucchini and tomatoes, and finish with remaining lemon wedges for squeezing. Adjust salt and black pepper to taste."
+  ],
+  "instructions": [
+    "Heat oven to 220°C/425°F and line a sheet pan.",
+    "Cut 2 medium zucchini into half-moons and halve 2 cups cherry tomatoes.",
+    "Finely dice 1 small red onion (divide: half for kofta, half for pilaf).",
+    "Mince 3 cloves garlic.",
+    "Chop 1/2 cup parsley and 1/4 cup mint.",
+    "In a jug, combine 2 cups vegetable stock and bring to a simmer on the stovetop.",
+    "In a bowl, mix 500 g turkey with half the red onion, half the garlic, 1.5 tsp cumin, 1 tsp oregano, 1/2 tsp salt, 1/4 tsp black pepper, and 1 tbsp chopped parsley; form 8 small oval patties.",
+    "Toss zucchini and cherry tomatoes with 1 tsp olive oil, a pinch of salt, pepper, and a pinch of oregano; spread on the sheet pan and roast 15–18 minutes until tender.",
+    "For the pilaf, heat 1 tsp olive oil in a saucepan over medium; add remaining red onion and garlic and cook 2 minutes until softened.",
+    "Stir in 1 cup bulgur, toast 1 minute, then add the hot vegetable stock; bring to a simmer, cover, and cook 10–12 minutes until liquid is absorbed. Off heat, fluff and fold in remaining parsley and mint, plus half the lemon juiced.",
+    "While pilaf cooks, heat 2 tsp olive oil in a large nonstick skillet over medium; sear turkey koftas 3–4 minutes per side until browned and cooked through.",
+    "Plate bulgur, top with koftas, add roasted zucchini and tomatoes, and finish with remaining lemon wedges for squeezing. Adjust salt and black pepper to taste."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "500 g",
+      "preparation": "mixed into koftas"
+    },
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1 cup",
+      "preparation": "dry"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups",
+      "preparation": "hot"
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "cut into half-moons"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "finely diced, divided"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1.5 teaspoons"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced and wedged"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowFat"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "500 g",
+      "preparation": "mixed into koftas",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1 cup",
+      "preparation": "dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups",
+      "preparation": "hot",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "cut into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "finely diced, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1.5 teaspoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "juiced and wedged",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T163247Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T162913Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

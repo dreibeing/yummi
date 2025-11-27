@@ -1,0 +1,299 @@
+{
+  "meal_id": "meal_20251126T162243Z_01_211369",
+  "archetype_uid": "arch_FamLightJV_01",
+  "archetype_name": "Family Light & Fresh: Japanese and Vietnamese Weeknights",
+  "name": "Lemongrass Herb Vermicelli Salad with Chickpeas (No Soy, No Nuts)",
+  "description": "Light, fresh rice vermicelli tossed with crisp vegetables, herbs, chickpeas, and a zesty lemongrass-lime dressing. A fast, family-friendly bowl with Japanese/Vietnamese freshness.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Bring a large pot of water to a boil.",
+    "Rinse and drain chickpeas.",
+    "Shred romaine lettuce (4 cups) and place in a large mixing bowl.",
+    "Peel and julienne carrots (2 medium).",
+    "Slice cucumber (1 medium) into thin half-moons.",
+    "Thinly slice spring onion (3 stalks).",
+    "Roughly tear mint (1/2 cup) and basil (1/2 cup) leaves.",
+    "Mince garlic (2 cloves).",
+    "In a small bowl, whisk lemongrass paste, lime juice, rice vinegar, honey, olive oil, salt, and black pepper to make the dressing."
+  ],
+  "cook_steps": [
+    "Add rice vermicelli to the boiling water and cook per package directions (usually 3–5 minutes) until just tender.",
+    "Drain vermicelli and rinse under cold water to cool and prevent sticking; shake off excess water.",
+    "In the large mixing bowl, combine cooled vermicelli, romaine lettuce, carrots, cucumber, spring onion, mint, basil, and chickpeas.",
+    "Pour dressing over the bowl and toss gently until evenly coated.",
+    "Taste and adjust salt and black pepper as needed.",
+    "Serve immediately in bowls. Optional: add extra lime wedges on the side."
+  ],
+  "instructions": [
+    "Bring a large pot of water to a boil.",
+    "Rinse and drain chickpeas.",
+    "Shred romaine lettuce (4 cups) and place in a large mixing bowl.",
+    "Peel and julienne carrots (2 medium).",
+    "Slice cucumber (1 medium) into thin half-moons.",
+    "Thinly slice spring onion (3 stalks).",
+    "Roughly tear mint (1/2 cup) and basil (1/2 cup) leaves.",
+    "Mince garlic (2 cloves).",
+    "In a small bowl, whisk lemongrass paste, lime juice, rice vinegar, honey, olive oil, salt, and black pepper to make the dressing.",
+    "Add rice vermicelli to the boiling water and cook per package directions (usually 3–5 minutes) until just tender.",
+    "Drain vermicelli and rinse under cold water to cool and prevent sticking; shake off excess water.",
+    "In the large mixing bowl, combine cooled vermicelli, romaine lettuce, carrots, cucumber, spring onion, mint, basil, and chickpeas.",
+    "Pour dressing over the bowl and toss gently until evenly coated.",
+    "Taste and adjust salt and black pepper as needed.",
+    "Serve immediately in bowls. Optional: add extra lime wedges on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "rice vermicelli",
+      "quantity": "300 g",
+      "preparation": "cooked and rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 liters",
+      "preparation": "for boiling noodles"
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "1 can (about 400 g)",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "4 cups",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "peeled and julienned"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3 stalks",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/2 cup",
+      "preparation": "roughly torn"
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "1/2 cup",
+      "preparation": "roughly torn"
+    },
+    {
+      "core_item_name": "lemongrass paste",
+      "quantity": "1 tablespoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "juiced (about 4 tablespoons)"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tablespoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 teaspoon",
+      "preparation": "plus more to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 teaspoon",
+      "preparation": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Japanese",
+      "Vietnamese"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowCalorie"
+    ],
+    "Equipment": [
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "rice vermicelli",
+      "quantity": "300 g",
+      "preparation": "cooked and rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 liters",
+      "preparation": "for boiling noodles",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "1 can (about 400 g)",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "4 cups",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "peeled and julienned",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3 stalks",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/2 cup",
+      "preparation": "roughly torn",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "1/2 cup",
+      "preparation": "roughly torn",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemongrass paste",
+      "quantity": "1 tablespoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "juiced (about 4 tablespoons)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tablespoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 teaspoon",
+      "preparation": "plus more to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 teaspoon",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [
+    "Category 'Equipment' ideally includes 2+ tags; received ['StoveTop']"
+  ],
+  "metadata": {
+    "created_at": "20251126T162332Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T162243Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "meal_id": "meal_20251126T155214Z_01_3257fd",
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "archetype_name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)",
+  "name": "Coconut Chicken & Green Bean Skillet Curry with Ready Rice",
+  "description": "A family-friendly Indian-Thai style coconut curry with tender chicken and green beans, finished with a lime squeeze for balance. Built on the stovetop in under 30 minutes and served over microwave-ready rice.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Dice onions (1 medium).",
+    "Mince garlic (3 cloves).",
+    "Trim green beans (2 cups) into bite-size pieces.",
+    "Cut chicken thighs (1.2–1.5 lb) into 1-inch pieces; pat dry.",
+    "Halve lime (1) for squeezing.",
+    "Have rice (2 pouches) ready to microwave but do not heat yet."
+  ],
+  "cook_steps": [
+    "Heat canola oil in a large skillet over medium-high heat.",
+    "Season chicken thighs lightly with salt and add to the skillet; sear 3–4 minutes until lightly browned.",
+    "Add onions and cook 2 minutes, stirring to pick up browned bits.",
+    "Stir in garlic, curry powder, turmeric powder, and chili flakes; cook 30 seconds until fragrant.",
+    "Pour in coconut milk and diced tomatoes; stir and bring to a steady simmer.",
+    "Add green beans and a pinch of salt; reduce heat to medium and simmer 6–8 minutes until chicken is cooked through and beans are tender-crisp.",
+    "Adjust salt and chili flakes to taste; squeeze half the lime into the curry.",
+    "Microwave rice pouches per package directions.",
+    "Serve curry over hot rice; garnish with sliced spring onion and extra lime wedges if desired."
+  ],
+  "instructions": [
+    "Dice onions (1 medium).",
+    "Mince garlic (3 cloves).",
+    "Trim green beans (2 cups) into bite-size pieces.",
+    "Cut chicken thighs (1.2–1.5 lb) into 1-inch pieces; pat dry.",
+    "Halve lime (1) for squeezing.",
+    "Have rice (2 pouches) ready to microwave but do not heat yet.",
+    "Heat canola oil in a large skillet over medium-high heat.",
+    "Season chicken thighs lightly with salt and add to the skillet; sear 3–4 minutes until lightly browned.",
+    "Add onions and cook 2 minutes, stirring to pick up browned bits.",
+    "Stir in garlic, curry powder, turmeric powder, and chili flakes; cook 30 seconds until fragrant.",
+    "Pour in coconut milk and diced tomatoes; stir and bring to a steady simmer.",
+    "Add green beans and a pinch of salt; reduce heat to medium and simmer 6–8 minutes until chicken is cooked through and beans are tender-crisp.",
+    "Adjust salt and chili flakes to taste; squeeze half the lime into the curry.",
+    "Microwave rice pouches per package directions.",
+    "Serve curry over hot rice; garnish with sliced spring onion and extra lime wedges if desired."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1.5 tablespoons"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1.2–1.5 lb",
+      "preparation": "cut into 1-inch pieces"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "curry powder",
+      "quantity": "1.5 tablespoons"
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2–1 teaspoon"
+    },
+    {
+      "core_item_name": "coconut milk",
+      "quantity": "1 can (13–14 oz)"
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (14–15 oz)"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "2 cups",
+      "preparation": "trimmed and halved"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "thinly sliced, for garnish"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "rice",
+      "quantity": "2 microwave pouches (about 8–9 oz each)"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Indian",
+      "Thai"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1.5 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "1.2–1.5 lb",
+      "preparation": "cut into 1-inch pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "curry powder",
+      "quantity": "1.5 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "turmeric powder",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2–1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coconut milk",
+      "quantity": "1 can (13–14 oz)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "diced tomatoes",
+      "quantity": "1 can (14–15 oz)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "2 cups",
+      "preparation": "trimmed and halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "thinly sliced, for garnish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice",
+      "quantity": "2 microwave pouches (about 8–9 oz each)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T155247Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T155214Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

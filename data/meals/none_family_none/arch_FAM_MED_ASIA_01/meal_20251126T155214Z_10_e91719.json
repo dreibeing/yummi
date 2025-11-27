@@ -1,0 +1,302 @@
+{
+  "meal_id": "meal_20251126T155214Z_10_e91719",
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "archetype_name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)",
+  "name": "Curry Singapore Rice Vermicelli with Chicken and Veg",
+  "description": "Stir-fried rice vermicelli with curry-scented chicken, mixed vegetables, and soft scrambled egg in a savory tamari–oyster sauce. Balanced medium heat for a quick family skillet dinner.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Soak rice vermicelli in hot water until pliable (6–8 minutes), then drain well.",
+    "Trim and thinly slice chicken thighs against the grain.",
+    "Beat eggs in a small bowl with a pinch of salt.",
+    "Slice onions and bell pepper; peel and thinly slice carrots.",
+    "Mince garlic; slice spring onion; trim snow peas.",
+    "In a cup, whisk tamari, oyster sauce, curry powder, sugar, and sriracha with 2–3 tablespoons water."
+  ],
+  "cook_steps": [
+    "Heat canola oil in a large skillet or wok over medium-high heat.",
+    "Add eggs and scramble just set; remove to a plate.",
+    "Add a bit more canola oil, then chicken thighs; season lightly with salt and black pepper. Stir-fry until just cooked through.",
+    "Add onions, carrots, and bell pepper; stir-fry 2–3 minutes until starting to soften. Add garlic and cook 30 seconds.",
+    "Add drained rice vermicelli and the curry sauce; toss continuously to coat and heat through.",
+    "Add snow peas; stir-fry 1–2 minutes until crisp-tender. Return eggs and toss.",
+    "Taste; adjust with a splash of tamari or a pinch of sugar as needed. Remove from heat and sprinkle spring onion.",
+    "Serve with lime wedges to squeeze over just before eating."
+  ],
+  "instructions": [
+    "Soak rice vermicelli in hot water until pliable (6–8 minutes), then drain well.",
+    "Trim and thinly slice chicken thighs against the grain.",
+    "Beat eggs in a small bowl with a pinch of salt.",
+    "Slice onions and bell pepper; peel and thinly slice carrots.",
+    "Mince garlic; slice spring onion; trim snow peas.",
+    "In a cup, whisk tamari, oyster sauce, curry powder, sugar, and sriracha with 2–3 tablespoons water.",
+    "Heat canola oil in a large skillet or wok over medium-high heat.",
+    "Add eggs and scramble just set; remove to a plate.",
+    "Add a bit more canola oil, then chicken thighs; season lightly with salt and black pepper. Stir-fry until just cooked through.",
+    "Add onions, carrots, and bell pepper; stir-fry 2–3 minutes until starting to soften. Add garlic and cook 30 seconds.",
+    "Add drained rice vermicelli and the curry sauce; toss continuously to coat and heat through.",
+    "Add snow peas; stir-fry 1–2 minutes until crisp-tender. Return eggs and toss.",
+    "Taste; adjust with a splash of tamari or a pinch of sugar as needed. Remove from heat and sprinkle spring onion.",
+    "Serve with lime wedges to squeeze over just before eating."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "rice vermicelli",
+      "quantity": "250–300 g",
+      "preparation": "soaked and drained"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "500 g",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "3",
+      "preparation": "beaten"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "bell pepper",
+      "quantity": "1",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "1 medium",
+      "preparation": "thin matchsticks"
+    },
+    {
+      "core_item_name": "snow peas",
+      "quantity": "150 g",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "tamari",
+      "quantity": "3 tablespoons"
+    },
+    {
+      "core_item_name": "oyster sauce",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "curry powder",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 teaspoon"
+    },
+    {
+      "core_item_name": "sriracha",
+      "quantity": "1–2 teaspoons"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2–3 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Chinese",
+      "Indian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Egg",
+      "Seafood",
+      "Soy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "rice vermicelli",
+      "quantity": "250–300 g",
+      "preparation": "soaked and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "500 g",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "eggs",
+      "quantity": "3",
+      "preparation": "beaten",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell pepper",
+      "quantity": "1",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "1 medium",
+      "preparation": "thin matchsticks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "snow peas",
+      "quantity": "150 g",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "3",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tamari",
+      "quantity": "3 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oyster sauce",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "curry powder",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sriracha",
+      "quantity": "1–2 teaspoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2–3 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T155808Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T155214Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

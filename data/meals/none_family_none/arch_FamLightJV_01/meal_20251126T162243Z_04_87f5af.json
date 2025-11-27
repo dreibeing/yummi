@@ -1,0 +1,302 @@
+{
+  "meal_id": "meal_20251126T162243Z_04_87f5af",
+  "archetype_uid": "arch_FamLightJV_01",
+  "archetype_name": "Family Light & Fresh: Japanese and Vietnamese Weeknights",
+  "name": "Miso Vegetable Udon Stir-Fry with Tofu (Mild)",
+  "description": "Quick, light stir-fry with tofu, bok choy, shiitake, and spring onion tossed in a mild miso-soy glaze. Brightened with a squeeze of lime for a fresh finish.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Bring a large pot of water to a boil for the udon noodles.",
+    "Drain tofu and pat very dry; cut into 1-inch cubes.",
+    "Trim and slice bok choy (separate stems and leafy tops).",
+    "Peel and thinly slice carrots.",
+    "Wipe and slice shiitake mushrooms.",
+    "Slice spring onion (whites and greens separated).",
+    "Peel and finely chop garlic.",
+    "In a small bowl, whisk soy sauce, miso paste, rice vinegar, honey, water, and white pepper."
+  ],
+  "cook_steps": [
+    "Cook udon noodles in the boiling water according to package directions until just tender; drain and set aside.",
+    "Heat canola oil in a large skillet or wok over medium-high heat.",
+    "Add tofu cubes and cook, turning occasionally, until lightly browned on most sides, 5–6 minutes; transfer to a plate.",
+    "In the same pan, add garlic and spring onion whites; stir 30 seconds until fragrant.",
+    "Add shiitake mushrooms and bok choy stems; stir-fry 2 minutes.",
+    "Add carrots and bok choy leafy tops; stir-fry 2–3 minutes until crisp-tender.",
+    "Return tofu to the pan. Pour in the miso-soy mixture; toss to coat and simmer 1 minute.",
+    "Add cooked udon noodles; toss over heat 1–2 minutes until glossy and evenly coated. Drizzle sesame oil and adjust salt to taste.",
+    "Remove from heat and top with spring onion greens. Serve with lime wedges for squeezing at the table."
+  ],
+  "instructions": [
+    "Bring a large pot of water to a boil for the udon noodles.",
+    "Drain tofu and pat very dry; cut into 1-inch cubes.",
+    "Trim and slice bok choy (separate stems and leafy tops).",
+    "Peel and thinly slice carrots.",
+    "Wipe and slice shiitake mushrooms.",
+    "Slice spring onion (whites and greens separated).",
+    "Peel and finely chop garlic.",
+    "In a small bowl, whisk soy sauce, miso paste, rice vinegar, honey, water, and white pepper.",
+    "Cook udon noodles in the boiling water according to package directions until just tender; drain and set aside.",
+    "Heat canola oil in a large skillet or wok over medium-high heat.",
+    "Add tofu cubes and cook, turning occasionally, until lightly browned on most sides, 5–6 minutes; transfer to a plate.",
+    "In the same pan, add garlic and spring onion whites; stir 30 seconds until fragrant.",
+    "Add shiitake mushrooms and bok choy stems; stir-fry 2 minutes.",
+    "Add carrots and bok choy leafy tops; stir-fry 2–3 minutes until crisp-tender.",
+    "Return tofu to the pan. Pour in the miso-soy mixture; toss to coat and simmer 1 minute.",
+    "Add cooked udon noodles; toss over heat 1–2 minutes until glossy and evenly coated. Drizzle sesame oil and adjust salt to taste.",
+    "Remove from heat and top with spring onion greens. Serve with lime wedges for squeezing at the table."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "udon noodles",
+      "quantity": "14–16 oz",
+      "preparation": "cooked and drained"
+    },
+    {
+      "core_item_name": "tofu",
+      "quantity": "14 oz",
+      "preparation": "drained, patted dry, cubed"
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "2 small heads",
+      "preparation": "sliced; stems and leaves separated"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "shiitake mushrooms",
+      "quantity": "6 oz",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4",
+      "preparation": "sliced; whites and greens separated"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "miso paste",
+      "quantity": "1 1/2 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tablespoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3–4 tablespoons",
+      "preparation": "to loosen sauce"
+    },
+    {
+      "core_item_name": "white pepper",
+      "quantity": "1/4 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tablespoons",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "Pinch, to taste",
+      "preparation": ""
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Japanese",
+      "Vietnamese"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowCalorie"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "udon noodles",
+      "quantity": "14–16 oz",
+      "preparation": "cooked and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tofu",
+      "quantity": "14 oz",
+      "preparation": "drained, patted dry, cubed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "2 small heads",
+      "preparation": "sliced; stems and leaves separated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "shiitake mushrooms",
+      "quantity": "6 oz",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4",
+      "preparation": "sliced; whites and greens separated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "2 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "miso paste",
+      "quantity": "1 1/2 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tablespoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3–4 tablespoons",
+      "preparation": "to loosen sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white pepper",
+      "quantity": "1/4 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tablespoons",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "Pinch, to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T162520Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T162243Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

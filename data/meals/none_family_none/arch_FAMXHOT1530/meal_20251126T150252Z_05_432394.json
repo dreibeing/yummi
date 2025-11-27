@@ -1,0 +1,293 @@
+{
+  "meal_id": "meal_20251126T150252Z_05_432394",
+  "archetype_uid": "arch_FAMXHOT1530",
+  "archetype_name": "Family Extra-Hot Chili Night (Caribbean & Mexican, 15–30, Simple)",
+  "name": "Extra-Hot Ghost Chilli Beef & Black Bean Chili Bowls",
+  "description": "Fiery, pepper-forward beef and black bean chili loaded with jalapeños and ghost chilli, served over fluffy rice. Simple, fast, and built for heat lovers with Caribbean-Mex vibes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 2 cups jasmine rice until water runs clear.",
+    "Finely chop 1 onion.",
+    "Mince 3 cloves garlic.",
+    "Slice 2 jalapenos (keep seeds for extra heat).",
+    "Finely mince 1 small ghost chilli (use gloves).",
+    "Rinse and drain 1 can black beans.",
+    "Cut 1 lime into wedges.",
+    "Roughly chop a handful of coriander."
+  ],
+  "cook_steps": [
+    "Cook rice: In a pot, combine rinsed jasmine rice with water and a pinch of salt; bring to a boil, then cover and simmer until tender (about 12–15 minutes). Keep warm.",
+    "Heat 1 tbsp olive oil in a large pot over medium-high heat.",
+    "Add ground beef and cook, breaking it up, until browned (4–5 minutes). Drain excess fat if needed.",
+    "Stir in onion and garlic; cook until softened (2–3 minutes).",
+    "Add jalapenos and ghost chilli; cook 1 minute, stirring.",
+    "Season with ground cumin, paprika, oregano, salt, and black pepper; toast spices for 30 seconds.",
+    "Pour in crushed tomatoes; bring to a simmer and cook 5–7 minutes to thicken.",
+    "Stir in black beans and simmer 2 minutes to heat through.",
+    "Squeeze in half the lime; adjust salt and heat to taste.",
+    "Serve chili over rice. Top with coriander and lime wedges.",
+    "(Optional, OutdoorGrill): Char whole jalapenos on a hot grill 2–3 minutes, chop, and stir into the chili for smoky heat."
+  ],
+  "instructions": [
+    "Rinse 2 cups jasmine rice until water runs clear.",
+    "Finely chop 1 onion.",
+    "Mince 3 cloves garlic.",
+    "Slice 2 jalapenos (keep seeds for extra heat).",
+    "Finely mince 1 small ghost chilli (use gloves).",
+    "Rinse and drain 1 can black beans.",
+    "Cut 1 lime into wedges.",
+    "Roughly chop a handful of coriander.",
+    "Cook rice: In a pot, combine rinsed jasmine rice with water and a pinch of salt; bring to a boil, then cover and simmer until tender (about 12–15 minutes). Keep warm.",
+    "Heat 1 tbsp olive oil in a large pot over medium-high heat.",
+    "Add ground beef and cook, breaking it up, until browned (4–5 minutes). Drain excess fat if needed.",
+    "Stir in onion and garlic; cook until softened (2–3 minutes).",
+    "Add jalapenos and ghost chilli; cook 1 minute, stirring.",
+    "Season with ground cumin, paprika, oregano, salt, and black pepper; toast spices for 30 seconds.",
+    "Pour in crushed tomatoes; bring to a simmer and cook 5–7 minutes to thicken.",
+    "Stir in black beans and simmer 2 minutes to heat through.",
+    "Squeeze in half the lime; adjust salt and heat to taste.",
+    "Serve chili over rice. Top with coriander and lime wedges.",
+    "(Optional, OutdoorGrill): Char whole jalapenos on a hot grill 2–3 minutes, chop, and stir into the chili for smoky heat."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1–2 tbsp",
+      "preparation": "for sautéing"
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "500 g (about 1 lb)",
+      "preparation": "crumbled"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "2",
+      "preparation": "sliced, seeds kept"
+    },
+    {
+      "core_item_name": "ghost chilli",
+      "quantity": "1 small",
+      "preparation": "finely minced"
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 can (400 g)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (400 g)",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp, to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1 small handful",
+      "preparation": "roughly chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Caribbean",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "ExtraHot"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1–2 tbsp",
+      "preparation": "for sautéing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "500 g (about 1 lb)",
+      "preparation": "crumbled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "jalapenos",
+      "quantity": "2",
+      "preparation": "sliced, seeds kept",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ghost chilli",
+      "quantity": "1 small",
+      "preparation": "finely minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "1 can (400 g)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black beans",
+      "quantity": "1 can (400 g)",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp, to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp, to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1 small handful",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T150644Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T150252Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

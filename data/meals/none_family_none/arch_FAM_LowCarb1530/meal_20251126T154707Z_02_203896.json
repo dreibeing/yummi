@@ -1,0 +1,247 @@
+{
+  "meal_id": "meal_20251126T154707Z_02_203896",
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "archetype_name": "Family Low-Carb Weeknight Bowls & Wraps (15–30, Mild)",
+  "name": "Za'atar Turkey Meatball Lettuce Boats with Tzatziki",
+  "description": "Mild, low-carb lettuce boats filled with quick skillet turkey meatballs, crunchy veg, and a cool tzatziki drizzle.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Finely chop onions (about 1/2 cup).",
+    "Mince garlic.",
+    "Chop parsley.",
+    "Halve cherry tomatoes.",
+    "Dice cucumber.",
+    "Separate and rinse romaine lettuce leaves; pat dry.",
+    "Zest and cut lemon into wedges."
+  ],
+  "cook_steps": [
+    "In a bowl, combine turkey, onions, garlic, parsley, za'atar, 1/2 teaspoon salt, and 1/4 teaspoon black pepper.",
+    "Form 16 small meatballs (about golf-ball size).",
+    "Heat 1 tablespoon olive oil in a large skillet over medium heat.",
+    "Add meatballs and cook 8–10 minutes, turning occasionally, until browned and cooked through.",
+    "Remove from heat and squeeze lemon wedges over meatballs.",
+    "Assemble boats: place meatballs in romaine leaves, top with cucumber and cherry tomatoes.",
+    "Drizzle with tzatziki and finish with a little lemon zest. Serve immediately."
+  ],
+  "instructions": [
+    "Finely chop onions (about 1/2 cup).",
+    "Mince garlic.",
+    "Chop parsley.",
+    "Halve cherry tomatoes.",
+    "Dice cucumber.",
+    "Separate and rinse romaine lettuce leaves; pat dry.",
+    "Zest and cut lemon into wedges.",
+    "In a bowl, combine turkey, onions, garlic, parsley, za'atar, 1/2 teaspoon salt, and 1/4 teaspoon black pepper.",
+    "Form 16 small meatballs (about golf-ball size).",
+    "Heat 1 tablespoon olive oil in a large skillet over medium heat.",
+    "Add meatballs and cook 8–10 minutes, turning occasionally, until browned and cooked through.",
+    "Remove from heat and squeeze lemon wedges over meatballs.",
+    "Assemble boats: place meatballs in romaine leaves, top with cucumber and cherry tomatoes.",
+    "Drizzle with tzatziki and finish with a little lemon zest. Serve immediately."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "1 lb (450 g)",
+      "preparation": "ground"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1/2 cup",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "za'atar",
+      "quantity": "1 tablespoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "12–16 large leaves",
+      "preparation": "washed and dried"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 cup",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "tzatziki",
+      "quantity": "1/2 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and cut into wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "turkey",
+      "quantity": "1 lb (450 g)",
+      "preparation": "ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1/2 cup",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "za'atar",
+      "quantity": "1 tablespoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "12–16 large leaves",
+      "preparation": "washed and dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 cup",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tzatziki",
+      "quantity": "1/2 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T154758Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T154707Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

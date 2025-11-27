@@ -1,0 +1,127 @@
+{
+  "meal_id": "meal_20251126T155808Z_07_bb0508",
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "archetype_name": "Family Heat-and-Eat Weeknights (Under 15, No Heat)",
+  "name": "Microwave Cottage Pie Plates with Peas and Warm Rolls",
+  "description": "Family-friendly cottage pie heated in the microwave, served with quick-steamed peas and warmed rolls. Zero chili heat and ready in minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Set out 1 large microwave-safe dish and 2 microwave-safe bowls.",
+    "Open the cottage pie packaging (pierce film if directed).",
+    "Measure peas and place into a bowl with a splash of water.",
+    "Place rolls on a plate and cover with a paper towel."
+  ],
+  "cook_steps": [
+    "Microwave the cottage pie according to package directions until hot in the center (about 6–8 minutes for a family tray), resting as directed.",
+    "Microwave the peas until tender (2–3 minutes), then drain any water and season lightly with salt if desired.",
+    "Microwave the rolls to warm (30–60 seconds) until soft.",
+    "Spoon cottage pie onto plates, add peas on the side, and serve with warm rolls."
+  ],
+  "instructions": [
+    "Set out 1 large microwave-safe dish and 2 microwave-safe bowls.",
+    "Open the cottage pie packaging (pierce film if directed).",
+    "Measure peas and place into a bowl with a splash of water.",
+    "Place rolls on a plate and cover with a paper towel.",
+    "Microwave the cottage pie according to package directions until hot in the center (about 6–8 minutes for a family tray), resting as directed.",
+    "Microwave the peas until tender (2–3 minutes), then drain any water and season lightly with salt if desired.",
+    "Microwave the rolls to warm (30–60 seconds) until soft.",
+    "Spoon cottage pie onto plates, add peas on the side, and serve with warm rolls."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "cottage pie",
+      "quantity": "1 family tray (about 800–1000 g)",
+      "preparation": "pierce film if required"
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "3 cups",
+      "preparation": "rinse; add splash of water for steaming"
+    },
+    {
+      "core_item_name": "rolls",
+      "quantity": "4–6 rolls",
+      "preparation": "microwave to warm"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "pinch",
+      "preparation": "optional, to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "cottage pie",
+      "quantity": "1 family tray (about 800–1000 g)",
+      "preparation": "pierce film if required",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "3 cups",
+      "preparation": "rinse; add splash of water for steaming",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rolls",
+      "quantity": "4–6 rolls",
+      "preparation": "microwave to warm",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "pinch",
+      "preparation": "optional, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T160106Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T155808Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

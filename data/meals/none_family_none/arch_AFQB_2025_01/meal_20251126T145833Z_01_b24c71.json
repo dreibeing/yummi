@@ -1,0 +1,201 @@
+{
+  "meal_id": "meal_20251126T145833Z_01_b24c71",
+  "archetype_uid": "arch_AFQB_2025_01",
+  "archetype_name": "Family AirFryer Quick Bites",
+  "name": "Air Fryer Chicken Nugget Caesar Wraps",
+  "description": "Crispy air-fried chicken nuggets tossed with quick Caesar-style lettuce and parmesan in warm wraps. Kid-friendly, mild, and ready in minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat air fryer to 200°C/390°F for 3 minutes.",
+    "Rinse and chop romaine lettuce into bite-size pieces.",
+    "In a bowl, whisk mayonnaise, lemon juice, olive oil, garlic powder, a pinch of salt, and black pepper.",
+    "Lay out wraps and grate/shave parmesan cheese if needed."
+  ],
+  "cook_steps": [
+    "Air fry chicken nuggets in a single layer for 8–10 minutes until hot and crisp, shaking halfway.",
+    "Microwave wraps for 15–20 seconds to warm and soften.",
+    "Toss chopped romaine lettuce with half of the dressing.",
+    "Slice or leave nuggets whole; add to the bowl and gently toss with remaining dressing.",
+    "Divide filling among the 4 wraps, sprinkle with parmesan cheese, and roll tightly. Cut in half and serve."
+  ],
+  "instructions": [
+    "Preheat air fryer to 200°C/390°F for 3 minutes.",
+    "Rinse and chop romaine lettuce into bite-size pieces.",
+    "In a bowl, whisk mayonnaise, lemon juice, olive oil, garlic powder, a pinch of salt, and black pepper.",
+    "Lay out wraps and grate/shave parmesan cheese if needed.",
+    "Air fry chicken nuggets in a single layer for 8–10 minutes until hot and crisp, shaking halfway.",
+    "Microwave wraps for 15–20 seconds to warm and soften.",
+    "Toss chopped romaine lettuce with half of the dressing.",
+    "Slice or leave nuggets whole; add to the bowl and gently toss with remaining dressing.",
+    "Divide filling among the 4 wraps, sprinkle with parmesan cheese, and roll tightly. Cut in half and serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken nuggets",
+      "quantity": "500 g",
+      "preparation": "air fry from frozen per steps"
+    },
+    {
+      "core_item_name": "wraps",
+      "quantity": "4 large",
+      "preparation": "warm in microwave"
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "1 large head",
+      "preparation": "rinsed and chopped"
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "1/2 cup",
+      "preparation": "grated or shaved"
+    },
+    {
+      "core_item_name": "mayonnaise",
+      "quantity": "1/3 cup",
+      "preparation": "for dressing"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1/2 lemon",
+      "preparation": "juiced for dressing"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": "for dressing"
+    },
+    {
+      "core_item_name": "garlic powder",
+      "quantity": "1/2 teaspoon",
+      "preparation": "for dressing"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "pinch",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 teaspoon",
+      "preparation": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "AirFryer",
+      "Microwave"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken nuggets",
+      "quantity": "500 g",
+      "preparation": "air fry from frozen per steps",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "wraps",
+      "quantity": "4 large",
+      "preparation": "warm in microwave",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "1 large head",
+      "preparation": "rinsed and chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "1/2 cup",
+      "preparation": "grated or shaved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mayonnaise",
+      "quantity": "1/3 cup",
+      "preparation": "for dressing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1/2 lemon",
+      "preparation": "juiced for dressing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": "for dressing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic powder",
+      "quantity": "1/2 teaspoon",
+      "preparation": "for dressing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "pinch",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 teaspoon",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T145850Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T145833Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

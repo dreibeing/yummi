@@ -1,0 +1,313 @@
+{
+  "meal_id": "meal_20251126T160217Z_02_230711",
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "archetype_name": "Family Turkish & North African Suppers (Medium, 30–60, Intermediate)",
+  "name": "Chermoula Baked Fish with Turkish Bulgur Pilaf and Sumac-Roasted Vegetables",
+  "description": "North African-style chermoula fish baked until tender, served with a tomato Turkish bulgur pilaf and tangy sumac-roasted vegetables. Medium warmth, family-friendly, and balanced.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C/425°F.",
+    "Slice red onion into wedges; cut bell peppers and zucchini into bite-size pieces; peel and cut carrots into thin batons; leave cherry tomatoes whole.",
+    "Finely chop onions for pilaf.",
+    "Chop parsley; cut lemon into wedges.",
+    "Pat fish fillets dry and spread chermoula over both sides.",
+    "Boil water or warm vegetable stock for the pilaf."
+  ],
+  "cook_steps": [
+    "Roast vegetables: On a large tray, toss red onion, bell peppers, zucchini, carrots, and cherry tomatoes with olive oil, sumac, salt, and black pepper. Roast 20–25 minutes, tossing once, until browned and tender.",
+    "Start pilaf: In a saucepan, heat olive oil over medium. Add onions and cook 4–5 minutes until soft. Stir in paprika and cumin; cook 30 seconds.",
+    "Add bulgur and stir to coat. Pour in passata and vegetable stock (or water) with a pinch of salt and black pepper. Bring to a simmer, then cover and cook on low 12–15 minutes until liquid is absorbed. Rest off heat 5 minutes, then fluff.",
+    "Bake fish: Line a small tray with a little olive oil. Place chermoula-coated fish fillets on the tray and bake at 220°C/425°F for 8–12 minutes (thickness dependent) until opaque and flakes easily.",
+    "Finish and serve: Fold half the parsley into the bulgur. Plate pilaf, top with baked fish, add roasted vegetables on the side, and garnish with remaining parsley. Serve with lemon wedges to squeeze over."
+  ],
+  "instructions": [
+    "Heat oven to 220°C/425°F.",
+    "Slice red onion into wedges; cut bell peppers and zucchini into bite-size pieces; peel and cut carrots into thin batons; leave cherry tomatoes whole.",
+    "Finely chop onions for pilaf.",
+    "Chop parsley; cut lemon into wedges.",
+    "Pat fish fillets dry and spread chermoula over both sides.",
+    "Boil water or warm vegetable stock for the pilaf.",
+    "Roast vegetables: On a large tray, toss red onion, bell peppers, zucchini, carrots, and cherry tomatoes with olive oil, sumac, salt, and black pepper. Roast 20–25 minutes, tossing once, until browned and tender.",
+    "Start pilaf: In a saucepan, heat olive oil over medium. Add onions and cook 4–5 minutes until soft. Stir in paprika and cumin; cook 30 seconds.",
+    "Add bulgur and stir to coat. Pour in passata and vegetable stock (or water) with a pinch of salt and black pepper. Bring to a simmer, then cover and cook on low 12–15 minutes until liquid is absorbed. Rest off heat 5 minutes, then fluff.",
+    "Bake fish: Line a small tray with a little olive oil. Place chermoula-coated fish fillets on the tray and bake at 220°C/425°F for 8–12 minutes (thickness dependent) until opaque and flakes easily.",
+    "Finish and serve: Fold half the parsley into the bulgur. Plate pilaf, top with baked fish, add roasted vegetables on the side, and garnish with remaining parsley. Serve with lemon wedges to squeeze over."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "4 fillets (600–800 g total)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "chermoula",
+      "quantity": "3–4 tablespoons",
+      "preparation": "spread over fish"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tablespoons total",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "bite-size pieces"
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "1 large",
+      "preparation": "bite-size pieces"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "thin batons"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "left whole"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 teaspoon",
+      "preparation": "for vegetables"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1–1.5 teaspoons",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": "for pilaf"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "for pilaf"
+    },
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed if needed"
+    },
+    {
+      "core_item_name": "passata",
+      "quantity": "1 cup",
+      "preparation": "for pilaf"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1.5 cups",
+      "preparation": "warm (or use water)"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "NorthAfrican",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "4 fillets (600–800 g total)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chermoula",
+      "quantity": "3–4 tablespoons",
+      "preparation": "spread over fish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tablespoons total",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2 medium",
+      "preparation": "bite-size pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "1 large",
+      "preparation": "bite-size pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "thin batons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "left whole",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 teaspoon",
+      "preparation": "for vegetables",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1–1.5 teaspoons",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 teaspoon",
+      "preparation": "for pilaf",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "for pilaf",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bulgur",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed if needed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "passata",
+      "quantity": "1 cup",
+      "preparation": "for pilaf",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1.5 cups",
+      "preparation": "warm (or use water)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T160317Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T160217Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

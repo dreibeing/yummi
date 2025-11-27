@@ -1,0 +1,280 @@
+{
+  "meal_id": "meal_20251126T155214Z_08_fcf43e",
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "archetype_name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)",
+  "name": "Garlic-Chili Chicken Udon with Bok Choy",
+  "description": "A family skillet stir-fry of chewy udon, chicken thighs, and crisp veg in a soy–oyster–sriracha sauce for balanced medium heat. Built start-to-finish on the stovetop in under 30 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Slice chicken thighs into thin strips; toss with cornflour.",
+    "Mince garlic. Slice spring onion (whites and greens separated).",
+    "Slice bell pepper and carrots into thin strips. Chop bok choy into bite-size pieces (separate stems and leafy tops).",
+    "In a small bowl, mix soy sauce, oyster sauce, sriracha, rice vinegar, sugar, and white pepper (if using).",
+    "Loosen udon noodles: either microwave packs 1 minute to soften or boil briefly per pack instructions; drain well."
+  ],
+  "cook_steps": [
+    "Heat canola oil in a large wok or skillet over high heat.",
+    "Add chicken and spring onion whites; stir-fry until chicken is mostly cooked and lightly browned, 4–5 minutes.",
+    "Add garlic; stir-fry 30 seconds until fragrant.",
+    "Add carrots, bell pepper, and bok choy stems; stir-fry 2 minutes until starting to soften.",
+    "Add bok choy leaves and udon noodles; toss to combine.",
+    "Pour in the sauce; stir-fry 1–2 minutes, tossing until noodles are glossy and coated. Drizzle sesame oil (optional).",
+    "Turn off heat; garnish with spring onion greens. Taste and adjust heat with a little more sriracha if desired. Serve hot."
+  ],
+  "instructions": [
+    "Slice chicken thighs into thin strips; toss with cornflour.",
+    "Mince garlic. Slice spring onion (whites and greens separated).",
+    "Slice bell pepper and carrots into thin strips. Chop bok choy into bite-size pieces (separate stems and leafy tops).",
+    "In a small bowl, mix soy sauce, oyster sauce, sriracha, rice vinegar, sugar, and white pepper (if using).",
+    "Loosen udon noodles: either microwave packs 1 minute to soften or boil briefly per pack instructions; drain well.",
+    "Heat canola oil in a large wok or skillet over high heat.",
+    "Add chicken and spring onion whites; stir-fry until chicken is mostly cooked and lightly browned, 4–5 minutes.",
+    "Add garlic; stir-fry 30 seconds until fragrant.",
+    "Add carrots, bell pepper, and bok choy stems; stir-fry 2 minutes until starting to soften.",
+    "Add bok choy leaves and udon noodles; toss to combine.",
+    "Pour in the sauce; stir-fry 1–2 minutes, tossing until noodles are glossy and coated. Drizzle sesame oil (optional).",
+    "Turn off heat; garnish with spring onion greens. Taste and adjust heat with a little more sriracha if desired. Serve hot."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "600 g",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "1 tbsp",
+      "preparation": "for coating chicken"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4",
+      "preparation": "slice whites and greens separately"
+    },
+    {
+      "core_item_name": "bell pepper",
+      "quantity": "1 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "2 small heads",
+      "preparation": "chopped; separate stems and leaves"
+    },
+    {
+      "core_item_name": "udon noodles",
+      "quantity": "600 g",
+      "preparation": "loosened"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "3 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "oyster sauce",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "sriracha",
+      "quantity": "1–2 tbsp",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "white pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "optional"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tbsp",
+      "preparation": "optional finish"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Chinese",
+      "Thai"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Sesame",
+      "Soy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "600 g",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "1 tbsp",
+      "preparation": "for coating chicken",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "4",
+      "preparation": "slice whites and greens separately",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell pepper",
+      "quantity": "1 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "2 small heads",
+      "preparation": "chopped; separate stems and leaves",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "udon noodles",
+      "quantity": "600 g",
+      "preparation": "loosened",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "3 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oyster sauce",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sriracha",
+      "quantity": "1–2 tbsp",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sugar",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "optional",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tbsp",
+      "preparation": "optional finish",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T155702Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T155214Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

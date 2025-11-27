@@ -1,0 +1,310 @@
+{
+  "meal_id": "meal_20251126T162243Z_02_1bfcb4",
+  "archetype_uid": "arch_FamLightJV_01",
+  "archetype_name": "Family Light & Fresh: Japanese and Vietnamese Weeknights",
+  "name": "Lemongrass-Lime Chicken Vermicelli Salad with Apple (No Soy, No Nuts)",
+  "description": "A light Vietnamese-inspired noodle salad with juicy lemongrass chicken, crisp apple, and herbs in a lime–rice vinegar dressing. Fresh, mild, and ready in under 30 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Bring a large pot of water to a boil for the noodles.",
+    "Trim excess fat from chicken thighs and pat dry.",
+    "In a small bowl, whisk lime juice, rice vinegar, honey, a pinch of salt, and 2 tablespoons water for dressing.",
+    "Slice romaine lettuce into thin ribbons.",
+    "Cut cucumber into thin matchsticks.",
+    "Peel carrot and cut into thin matchsticks.",
+    "Core apple and slice into thin matchsticks; keep separate.",
+    "Slice spring onion thinly.",
+    "Pick mint, basil, and coriander leaves."
+  ],
+  "cook_steps": [
+    "Toss chicken thighs with lemongrass paste, 1 teaspoon canola oil, a pinch of salt, and black pepper.",
+    "Cook rice vermicelli in boiling water until just tender (per pack timing, usually 3–4 minutes). Drain and rinse under cold water; set aside.",
+    "Heat a large nonstick skillet over medium-high. Add 2 teaspoons canola oil, then cook chicken 4–5 minutes per side until cooked through. Rest 2 minutes; slice.",
+    "In a large bowl, combine noodles, romaine, cucumber, carrot, spring onion, mint, basil, and coriander. Add half the dressing and toss.",
+    "Add apple and gently toss again.",
+    "Top bowls with sliced chicken. Drizzle remaining dressing over the chicken. Finish with black pepper to taste and serve."
+  ],
+  "instructions": [
+    "Bring a large pot of water to a boil for the noodles.",
+    "Trim excess fat from chicken thighs and pat dry.",
+    "In a small bowl, whisk lime juice, rice vinegar, honey, a pinch of salt, and 2 tablespoons water for dressing.",
+    "Slice romaine lettuce into thin ribbons.",
+    "Cut cucumber into thin matchsticks.",
+    "Peel carrot and cut into thin matchsticks.",
+    "Core apple and slice into thin matchsticks; keep separate.",
+    "Slice spring onion thinly.",
+    "Pick mint, basil, and coriander leaves.",
+    "Toss chicken thighs with lemongrass paste, 1 teaspoon canola oil, a pinch of salt, and black pepper.",
+    "Cook rice vermicelli in boiling water until just tender (per pack timing, usually 3–4 minutes). Drain and rinse under cold water; set aside.",
+    "Heat a large nonstick skillet over medium-high. Add 2 teaspoons canola oil, then cook chicken 4–5 minutes per side until cooked through. Rest 2 minutes; slice.",
+    "In a large bowl, combine noodles, romaine, cucumber, carrot, spring onion, mint, basil, and coriander. Add half the dressing and toss.",
+    "Add apple and gently toss again.",
+    "Top bowls with sliced chicken. Drizzle remaining dressing over the chicken. Finish with black pepper to taste and serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "600 g (about 4–5 thighs)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "lemongrass paste",
+      "quantity": "1 tablespoon",
+      "preparation": "mixed into chicken"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 tablespoon",
+      "preparation": "divided for marinade and pan"
+    },
+    {
+      "core_item_name": "rice vermicelli",
+      "quantity": "300 g",
+      "preparation": "boiled and rinsed cold"
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "1 large head",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "cut into matchsticks"
+    },
+    {
+      "core_item_name": "carrot",
+      "quantity": "2 medium",
+      "preparation": "cut into matchsticks"
+    },
+    {
+      "core_item_name": "apple",
+      "quantity": "1 large",
+      "preparation": "cored, cut into matchsticks"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/2 cup leaves",
+      "preparation": "picked"
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "1/2 cup leaves",
+      "preparation": "picked"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup leaves",
+      "preparation": "picked"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "juiced for dressing"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tablespoons",
+      "preparation": "for dressing"
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tablespoon",
+      "preparation": "for dressing"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 tablespoons",
+      "preparation": "to loosen dressing"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "seasoning"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "seasoning"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Japanese",
+      "Vietnamese"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowCalorie"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "600 g (about 4–5 thighs)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemongrass paste",
+      "quantity": "1 tablespoon",
+      "preparation": "mixed into chicken",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 tablespoon",
+      "preparation": "divided for marinade and pan",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vermicelli",
+      "quantity": "300 g",
+      "preparation": "boiled and rinsed cold",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "1 large head",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "cut into matchsticks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrot",
+      "quantity": "2 medium",
+      "preparation": "cut into matchsticks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple",
+      "quantity": "1 large",
+      "preparation": "cored, cut into matchsticks",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/2 cup leaves",
+      "preparation": "picked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "1/2 cup leaves",
+      "preparation": "picked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "1/4 cup leaves",
+      "preparation": "picked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "juiced for dressing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tablespoons",
+      "preparation": "for dressing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tablespoon",
+      "preparation": "for dressing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "2 tablespoons",
+      "preparation": "to loosen dressing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "seasoning",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "seasoning",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T162416Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T162243Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

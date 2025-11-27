@@ -1,0 +1,243 @@
+{
+  "meal_id": "meal_20251126T163643Z_01_8f8970",
+  "archetype_uid": "arch_FamPressureExpress_01",
+  "archetype_name": "Family Pressure Cooker Express Dinners (15–30, Mild)",
+  "name": "Instant Pot Family Sloppy Joes",
+  "description": "Sweet-savory ground beef sandwiches made fast in the pressure cooker with mild seasonings. Pile the saucy meat onto hamburger buns for an easy family dinner.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Dice onions (1 medium) and bell peppers (1 medium).",
+    "Mince garlic (3 cloves).",
+    "Measure ketchup, tomato paste, Worcestershire sauce, apple cider vinegar, brown sugar, salt, pepper, and beef stock.",
+    "Split hamburger buns."
+  ],
+  "cook_steps": [
+    "Set the pressure cooker to Sauté. Add olive oil and onions; cook 2 minutes until starting to soften.",
+    "Add bell peppers and garlic; cook 1 minute, stirring.",
+    "Add ground beef and break it up; cook 3–4 minutes until mostly browned. Drain excess fat if needed.",
+    "Stir in ketchup, tomato paste, Worcestershire sauce, apple cider vinegar, brown sugar, salt, pepper, and beef stock. Scrape up browned bits.",
+    "Cancel Sauté. Seal the lid and cook on High Pressure for 5 minutes.",
+    "Quick release pressure. Turn Sauté back on and simmer 2–4 minutes, stirring, until thick to your liking. Adjust salt and pepper.",
+    "Toast hamburger buns if desired. Spoon the sloppy joe mixture onto buns and serve."
+  ],
+  "instructions": [
+    "Dice onions (1 medium) and bell peppers (1 medium).",
+    "Mince garlic (3 cloves).",
+    "Measure ketchup, tomato paste, Worcestershire sauce, apple cider vinegar, brown sugar, salt, pepper, and beef stock.",
+    "Split hamburger buns.",
+    "Set the pressure cooker to Sauté. Add olive oil and onions; cook 2 minutes until starting to soften.",
+    "Add bell peppers and garlic; cook 1 minute, stirring.",
+    "Add ground beef and break it up; cook 3–4 minutes until mostly browned. Drain excess fat if needed.",
+    "Stir in ketchup, tomato paste, Worcestershire sauce, apple cider vinegar, brown sugar, salt, pepper, and beef stock. Scrape up browned bits.",
+    "Cancel Sauté. Seal the lid and cook on High Pressure for 5 minutes.",
+    "Quick release pressure. Turn Sauté back on and simmer 2–4 minutes, stirring, until thick to your liking. Adjust salt and pepper.",
+    "Toast hamburger buns if desired. Spoon the sloppy joe mixture onto buns and serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "1.5 pounds"
+    },
+    {
+      "core_item_name": "ketchup",
+      "quantity": "3/4 cup"
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tablespoons"
+    },
+    {
+      "core_item_name": "worcestershire sauce",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tablespoon"
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1–2 tablespoons"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 teaspoon, plus to taste"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon"
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "1/2 cup"
+    },
+    {
+      "core_item_name": "hamburger buns",
+      "quantity": "8 buns",
+      "preparation": "split"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "SlowOrPressureCooker",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground beef",
+      "quantity": "1.5 pounds",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ketchup",
+      "quantity": "3/4 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tomato paste",
+      "quantity": "2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "worcestershire sauce",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple cider vinegar",
+      "quantity": "1 tablespoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1–2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 teaspoon, plus to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "beef stock",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "hamburger buns",
+      "quantity": "8 buns",
+      "preparation": "split",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T163709Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T163643Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

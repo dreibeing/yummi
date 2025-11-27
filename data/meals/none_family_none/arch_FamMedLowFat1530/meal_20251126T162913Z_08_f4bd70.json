@@ -1,0 +1,286 @@
+{
+  "meal_id": "meal_20251126T162913Z_08_f4bd70",
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "archetype_name": "Family Low-Fat Mediterranean Light Plates (15–30, Mild)",
+  "name": "Herbed Turkey, Zucchini & Chickpeas over Quinoa",
+  "description": "A light, lemony skillet of turkey, zucchini, and chickpeas served over fluffy quinoa with fresh parsley and mint. Mild spices and minimal oil keep it family-friendly and low-fat.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1 cup quinoa under cold water in a fine sieve.",
+    "Dice 1 red onion and 2 zucchini; halve 1 cup cherry tomatoes.",
+    "Mince 2 cloves garlic.",
+    "Rinse and drain 1 can (about 1.5 cups) chickpeas if using canned.",
+    "Roughly chop 1/4 cup parsley and 2 tablespoons mint.",
+    "Cut 1 lemon into wedges for serving and zest half the lemon.",
+    "Preheat oven to 425°F/220°C and set a kettle or pot of water to boil for stock."
+  ],
+  "cook_steps": [
+    "Bring 2 cups vegetable stock to a simmer; add rinsed quinoa, cover, and cook on low until fluffy, 15 minutes. Rest 5 minutes, then fluff.",
+    "On a sheet pan, toss zucchini and cherry tomatoes with 1 teaspoon olive oil and a pinch of salt and pepper. Roast until tender, 12–15 minutes.",
+    "While vegetables roast, heat 1 teaspoon olive oil in a large skillet over medium. Add red onion and cook 3–4 minutes until soft.",
+    "Add minced garlic and 1 teaspoon ground cumin, 1/2 teaspoon paprika, 1/2 teaspoon oregano, and lemon zest; stir 30 seconds.",
+    "Add 1 pound turkey to the skillet. Cook, breaking into small pieces, until just cooked through, 5–6 minutes. Season with salt and pepper.",
+    "Stir in chickpeas and roasted zucchini and tomatoes. Warm 2–3 minutes. Squeeze in juice from 1/2 lemon.",
+    "Off heat, fold in parsley and mint. Taste and adjust salt and pepper.",
+    "Serve a scoop of quinoa in bowls. Top with the turkey–vegetable mixture. Serve with remaining lemon wedges."
+  ],
+  "instructions": [
+    "Rinse 1 cup quinoa under cold water in a fine sieve.",
+    "Dice 1 red onion and 2 zucchini; halve 1 cup cherry tomatoes.",
+    "Mince 2 cloves garlic.",
+    "Rinse and drain 1 can (about 1.5 cups) chickpeas if using canned.",
+    "Roughly chop 1/4 cup parsley and 2 tablespoons mint.",
+    "Cut 1 lemon into wedges for serving and zest half the lemon.",
+    "Preheat oven to 425°F/220°C and set a kettle or pot of water to boil for stock.",
+    "Bring 2 cups vegetable stock to a simmer; add rinsed quinoa, cover, and cook on low until fluffy, 15 minutes. Rest 5 minutes, then fluff.",
+    "On a sheet pan, toss zucchini and cherry tomatoes with 1 teaspoon olive oil and a pinch of salt and pepper. Roast until tender, 12–15 minutes.",
+    "While vegetables roast, heat 1 teaspoon olive oil in a large skillet over medium. Add red onion and cook 3–4 minutes until soft.",
+    "Add minced garlic and 1 teaspoon ground cumin, 1/2 teaspoon paprika, 1/2 teaspoon oregano, and lemon zest; stir 30 seconds.",
+    "Add 1 pound turkey to the skillet. Cook, breaking into small pieces, until just cooked through, 5–6 minutes. Season with salt and pepper.",
+    "Stir in chickpeas and roasted zucchini and tomatoes. Warm 2–3 minutes. Squeeze in juice from 1/2 lemon.",
+    "Off heat, fold in parsley and mint. Taste and adjust salt and pepper.",
+    "Serve a scoop of quinoa in bowls. Top with the turkey–vegetable mixture. Serve with remaining lemon wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "quinoa",
+      "quantity": "1 cup (dry)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups",
+      "preparation": "hot"
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "turkey",
+      "quantity": "1 lb (450 g)",
+      "preparation": "ground"
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed and drained"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 teaspoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1/2 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1/2 teaspoon",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and wedged"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "to taste",
+      "preparation": ""
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowFat"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "quinoa",
+      "quantity": "1 cup (dry)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "2 cups",
+      "preparation": "hot",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "turkey",
+      "quantity": "1 lb (450 g)",
+      "preparation": "ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chickpeas",
+      "quantity": "1.5 cups",
+      "preparation": "rinsed and drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 teaspoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1/2 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1/2 teaspoon",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and wedged",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "2 tablespoons",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T163534Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T162913Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "meal_id": "meal_20251126T151753Z_02_0bf3af",
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "archetype_name": "Family Hands-Off Sheet Pan & Slow Cooker Nights",
+  "name": "Sheet-Pan Za'atar Chicken Thighs with Potatoes, Green Beans & Warm Pitas",
+  "description": "Hands-off Greek–Middle Eastern sheet-pan dinner: juicy za'atar chicken thighs roasted with potatoes, green beans, and olives, served with warm pita and hummus.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C/425°F.",
+    "Scrub potatoes and cut into wedges (about 2–3 cm thick).",
+    "Trim ends from green beans.",
+    "Peel and cut red onion into thick wedges.",
+    "Mince garlic.",
+    "Zest the lemon, then cut it in half and squeeze out the juice.",
+    "Pat chicken thighs dry with paper towels."
+  ],
+  "cook_steps": [
+    "On a large sheet pan, toss potatoes and red onion with 1.5 tbsp olive oil, 1/2 tsp salt, a pinch of black pepper, and half the minced garlic. Spread in a single layer.",
+    "In a bowl, mix remaining 1.5 tbsp olive oil, 1 tsp salt, remaining black pepper, za'atar, oregano, lemon zest, and 1.5 tbsp lemon juice to form a paste.",
+    "Rub the paste all over the chicken thighs. Nestle thighs skin-side up on the sheet pan among the potatoes and onions.",
+    "Roast for 25 minutes.",
+    "Remove pan, add green beans and olives, and toss the vegetables lightly with pan juices. Return to oven and roast until chicken is cooked through and potatoes are tender, 12–15 minutes (internal temp 75°C/165°F).",
+    "Wrap pita bread in foil and warm on an oven rack for the last 5–7 minutes (or warm in a dry skillet over medium heat for 30–60 seconds per side).",
+    "Rest the chicken 5 minutes. Serve chicken and vegetables with warm pita and hummus. Squeeze remaining lemon juice over to taste."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C/425°F.",
+    "Scrub potatoes and cut into wedges (about 2–3 cm thick).",
+    "Trim ends from green beans.",
+    "Peel and cut red onion into thick wedges.",
+    "Mince garlic.",
+    "Zest the lemon, then cut it in half and squeeze out the juice.",
+    "Pat chicken thighs dry with paper towels.",
+    "On a large sheet pan, toss potatoes and red onion with 1.5 tbsp olive oil, 1/2 tsp salt, a pinch of black pepper, and half the minced garlic. Spread in a single layer.",
+    "In a bowl, mix remaining 1.5 tbsp olive oil, 1 tsp salt, remaining black pepper, za'atar, oregano, lemon zest, and 1.5 tbsp lemon juice to form a paste.",
+    "Rub the paste all over the chicken thighs. Nestle thighs skin-side up on the sheet pan among the potatoes and onions.",
+    "Roast for 25 minutes.",
+    "Remove pan, add green beans and olives, and toss the vegetables lightly with pan juices. Return to oven and roast until chicken is cooked through and potatoes are tender, 12–15 minutes (internal temp 75°C/165°F).",
+    "Wrap pita bread in foil and warm on an oven rack for the last 5–7 minutes (or warm in a dry skillet over medium heat for 30–60 seconds per side).",
+    "Rest the chicken 5 minutes. Serve chicken and vegetables with warm pita and hummus. Squeeze remaining lemon juice over to taste."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "8 pieces (about 1.2 kg)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "800 g",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1 cup",
+      "preparation": "pitted if available"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "za'atar",
+      "quantity": "1.5 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.25 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "pita bread",
+      "quantity": "6 small",
+      "preparation": "warmed"
+    },
+    {
+      "core_item_name": "hummus",
+      "quantity": "300 g tub",
+      "preparation": "for serving"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "8 pieces (about 1.2 kg)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "800 g",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1 cup",
+      "preparation": "pitted if available",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "za'atar",
+      "quantity": "1.5 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.25 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pita bread",
+      "quantity": "6 small",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "hummus",
+      "quantity": "300 g tub",
+      "preparation": "for serving",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T151915Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T151753Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

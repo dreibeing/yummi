@@ -1,0 +1,276 @@
+{
+  "meal_id": "meal_20251126T160822Z_08_a69a33",
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "archetype_name": "Family Weekend Showstopper: Spanish & Portuguese Feasts",
+  "name": "Iberian Herb-Crusted Roast Leg of Lamb with Patatas a lo Pobre",
+  "description": "Showstopping roast leg of lamb scented with garlic, lemon, thyme, oregano, and paprika, served over Spanish-style potatoes with onions and peppers. A slow, impressive family feast with Portuguese and Spanish touches.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Pat dry the leg of lamb.",
+    "Peel and crush the garlic.",
+    "Zest and juice the lemon.",
+    "Slice the onions and bell peppers.",
+    "Peel potatoes and slice into 5 mm rounds.",
+    "Mix marinade: olive oil, garlic, lemon zest and juice, paprika, oregano, thyme, salt, and black pepper.",
+    "Rub lamb all over with marinade; tuck in bay leaves and let sit 30–60 minutes at room temperature.",
+    "Preheat oven to 180°C (355°F). If using grill for searing, preheat OutdoorGrill to high."
+  ],
+  "cook_steps": [
+    "Optional sear: Sear the marinated leg of lamb on the OutdoorGrill 2–3 minutes per side for color.",
+    "Set lamb on a rack over a roasting pan. Pour white wine into the pan.",
+    "Roast at 180°C for 75–100 minutes, until internal temp reaches 55–60°C for medium (adjust to preference). Baste once or twice with pan juices.",
+    "While lamb roasts, heat a large stovetop pan with a drizzle of olive oil. Add onions and bell peppers; cook 6–8 minutes until softened.",
+    "Add potato slices, season with salt, black pepper, and a pinch of paprika. Cook on medium, turning occasionally, 10–12 minutes until edges start to color.",
+    "Transfer potatoes, onions, and peppers to the roasting pan under the rack for the final 25–30 minutes so they absorb lamb juices. Stir once halfway.",
+    "Remove lamb to a board, tent with foil, and rest 15–20 minutes.",
+    "Toss potatoes with chopped parsley. Slice lamb thickly and serve over the potatoes with pan juices spooned on top."
+  ],
+  "instructions": [
+    "Pat dry the leg of lamb.",
+    "Peel and crush the garlic.",
+    "Zest and juice the lemon.",
+    "Slice the onions and bell peppers.",
+    "Peel potatoes and slice into 5 mm rounds.",
+    "Mix marinade: olive oil, garlic, lemon zest and juice, paprika, oregano, thyme, salt, and black pepper.",
+    "Rub lamb all over with marinade; tuck in bay leaves and let sit 30–60 minutes at room temperature.",
+    "Preheat oven to 180°C (355°F). If using grill for searing, preheat OutdoorGrill to high.",
+    "Optional sear: Sear the marinated leg of lamb on the OutdoorGrill 2–3 minutes per side for color.",
+    "Set lamb on a rack over a roasting pan. Pour white wine into the pan.",
+    "Roast at 180°C for 75–100 minutes, until internal temp reaches 55–60°C for medium (adjust to preference). Baste once or twice with pan juices.",
+    "While lamb roasts, heat a large stovetop pan with a drizzle of olive oil. Add onions and bell peppers; cook 6–8 minutes until softened.",
+    "Add potato slices, season with salt, black pepper, and a pinch of paprika. Cook on medium, turning occasionally, 10–12 minutes until edges start to color.",
+    "Transfer potatoes, onions, and peppers to the roasting pan under the rack for the final 25–30 minutes so they absorb lamb juices. Stir once halfway.",
+    "Remove lamb to a board, tent with foil, and rest 15–20 minutes.",
+    "Toss potatoes with chopped parsley. Slice lamb thickly and serve over the potatoes with pan juices spooned on top."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "leg of lamb",
+      "quantity": "2–2.5 kg",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "8 cloves",
+      "preparation": "peeled and crushed"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1/3 cup",
+      "preparation": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 teaspoons",
+      "preparation": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 teaspoons",
+      "preparation": null
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "2 teaspoons",
+      "preparation": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 teaspoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon",
+      "preparation": "freshly ground, divided"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1 cup",
+      "preparation": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "1.5 kg",
+      "preparation": "peeled and sliced into 5 mm rounds"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Portuguese",
+      "Spanish"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "leg of lamb",
+      "quantity": "2–2.5 kg",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "8 cloves",
+      "preparation": "peeled and crushed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1/3 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 teaspoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "2 teaspoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "thyme",
+      "quantity": "2 teaspoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "2 teaspoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 teaspoon",
+      "preparation": "freshly ground, divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "2",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "1.5 kg",
+      "preparation": "peeled and sliced into 5 mm rounds",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T161415Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T160822Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

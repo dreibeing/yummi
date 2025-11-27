@@ -1,0 +1,316 @@
+{
+  "meal_id": "meal_20251126T155214Z_09_cbf67e",
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "archetype_name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)",
+  "name": "Cashew Chicken Stir-Fry with Bell Peppers & Snow Peas over Jasmine Rice",
+  "description": "Family-friendly wok stir-fry with tender chicken, crunchy cashews, and bright veg in a savory-sweet, medium-heat sauce. Built fast on the stovetop and served over fluffy jasmine rice.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1 1/2 cups jasmine rice until water runs clear; set aside to cook.",
+    "Trim and slice 500 g chicken thighs into bite-size strips.",
+    "Slice 1 onion and 1 bell pepper into thin strips.",
+    "Rinse 200 g snow peas and pat dry.",
+    "Mince 3 cloves garlic.",
+    "Sauce: In a bowl, mix 3 tbsp soy sauce, 1 tbsp oyster sauce, 1 tbsp rice vinegar, 1 tbsp brown sugar, 1 tsp chili flakes (medium heat), 1 tsp sesame oil.",
+    "Slurry: In a small cup, mix 1 tbsp cornflour with a splash of water.",
+    "Optional quick prep: Place snow peas in a microwave-safe bowl with a splash of water and cover; set aside to microwave just before stir-frying (45–60 seconds)."
+  ],
+  "cook_steps": [
+    "Cook rice on the stovetop according to package directions; keep warm.",
+    "Heat 1 tbsp canola oil in a large skillet/wok over high heat.",
+    "Add chicken; season lightly with salt and black pepper. Stir-fry until just browned (3–4 min). Transfer to a plate.",
+    "Add 1 tbsp canola oil to the pan. Stir-fry onions and bell pepper until crisp-tender (2–3 min).",
+    "Add garlic; cook 30 seconds until fragrant.",
+    "Return chicken and any juices to the pan. Stir the sauce, pour it in, and bring to a simmer (30–60 seconds).",
+    "Stir the cornflour slurry and drizzle in while tossing until the sauce thickens and coats (30–60 seconds).",
+    "Microwave the snow peas (45–60 seconds) and drain, or add them directly to the pan; toss for 1 minute to keep them crisp.",
+    "Scatter 1/2 cup cashews; toss to combine. Taste and adjust with extra soy sauce or chili flakes for heat.",
+    "Fluff rice and serve stir-fry on top. Garnish with sliced spring onion if desired."
+  ],
+  "instructions": [
+    "Rinse 1 1/2 cups jasmine rice until water runs clear; set aside to cook.",
+    "Trim and slice 500 g chicken thighs into bite-size strips.",
+    "Slice 1 onion and 1 bell pepper into thin strips.",
+    "Rinse 200 g snow peas and pat dry.",
+    "Mince 3 cloves garlic.",
+    "Sauce: In a bowl, mix 3 tbsp soy sauce, 1 tbsp oyster sauce, 1 tbsp rice vinegar, 1 tbsp brown sugar, 1 tsp chili flakes (medium heat), 1 tsp sesame oil.",
+    "Slurry: In a small cup, mix 1 tbsp cornflour with a splash of water.",
+    "Optional quick prep: Place snow peas in a microwave-safe bowl with a splash of water and cover; set aside to microwave just before stir-frying (45–60 seconds).",
+    "Cook rice on the stovetop according to package directions; keep warm.",
+    "Heat 1 tbsp canola oil in a large skillet/wok over high heat.",
+    "Add chicken; season lightly with salt and black pepper. Stir-fry until just browned (3–4 min). Transfer to a plate.",
+    "Add 1 tbsp canola oil to the pan. Stir-fry onions and bell pepper until crisp-tender (2–3 min).",
+    "Add garlic; cook 30 seconds until fragrant.",
+    "Return chicken and any juices to the pan. Stir the sauce, pour it in, and bring to a simmer (30–60 seconds).",
+    "Stir the cornflour slurry and drizzle in while tossing until the sauce thickens and coats (30–60 seconds).",
+    "Microwave the snow peas (45–60 seconds) and drain, or add them directly to the pan; toss for 1 minute to keep them crisp.",
+    "Scatter 1/2 cup cashews; toss to combine. Taste and adjust with extra soy sauce or chili flakes for heat.",
+    "Fluff rice and serve stir-fry on top. Garnish with sliced spring onion if desired."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "500 g",
+      "preparation": "sliced into strips"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "bell pepper",
+      "quantity": "1 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "snow peas",
+      "quantity": "200 g",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "3 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "oyster sauce",
+      "quantity": "1 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 tsp",
+      "preparation": "adjust to taste"
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "1 tbsp",
+      "preparation": "mixed with a splash of water"
+    },
+    {
+      "core_item_name": "cashews",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped or whole"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "pinch",
+      "preparation": "to season chicken"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "pinch",
+      "preparation": "to season chicken"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2 stalks",
+      "preparation": "sliced, optional garnish"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Chinese",
+      "Thai"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Nuts",
+      "Soy"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1 1/2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "500 g",
+      "preparation": "sliced into strips",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell pepper",
+      "quantity": "1 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "snow peas",
+      "quantity": "200 g",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "soy sauce",
+      "quantity": "3 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oyster sauce",
+      "quantity": "1 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "1 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1 tsp",
+      "preparation": "adjust to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sesame oil",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cornflour",
+      "quantity": "1 tbsp",
+      "preparation": "mixed with a splash of water",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cashews",
+      "quantity": "1/2 cup",
+      "preparation": "roughly chopped or whole",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "pinch",
+      "preparation": "to season chicken",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "pinch",
+      "preparation": "to season chicken",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2 stalks",
+      "preparation": "sliced, optional garnish",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T155737Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T155214Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

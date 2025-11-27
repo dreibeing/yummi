@@ -1,0 +1,259 @@
+{
+  "meal_id": "meal_20251126T160822Z_07_dfe6b1",
+  "archetype_uid": "arch_FAM_show_esp_prt_001",
+  "archetype_name": "Family Weekend Showstopper: Spanish & Portuguese Feasts",
+  "name": "Asturian-Style Fabada with Chorizo, Ham, and Sausage",
+  "description": "A slow-simmered Iberian bean feast layered with chorizo, ham, and sausage, gently perfumed with paprika, bay, and saffron. A hearty, showpiece pot for a lingering family dinner.",
+  "servings": "Serves 4–6",
+  "prep_steps": [
+    "Rinse 500 g cannellini beans and soak in plenty of water overnight (8–12 hours). Drain before cooking.",
+    "Peel and finely chop 2 onions.",
+    "Peel and slice 6 garlic cloves.",
+    "Slice 300 g chorizo into thick rounds.",
+    "Cut 250 g ham into chunky cubes.",
+    "Slice 250 g sausage into thick coins.",
+    "Measure spices: 2 tsp paprika, 2 bay leaves, a pinch of saffron, 1 tsp salt, and 1 tsp black pepper.",
+    "Boil a kettle or have 1.5–2 liters water ready hot.",
+    "Optional: Preheat oven to 150°C (300°F) if you prefer finishing the stew in the oven."
+  ],
+  "cook_steps": [
+    "Set a large heavy pot over medium heat and add 2 tbsp olive oil.",
+    "Add chorizo and sausage; cook 5–7 minutes until lightly browned and some fat renders. Scoop meats to a bowl, leaving fat in the pot.",
+    "Add ham to the pot; brown 3–4 minutes. Transfer to the bowl with the other meats.",
+    "Add onions to the pot with a pinch of salt; cook 8–10 minutes until soft and golden.",
+    "Stir in garlic and paprika; cook 30 seconds until fragrant.",
+    "Add drained cannellini beans, bay leaves, saffron, and all browned meats (plus any juices) back to the pot.",
+    "Pour in hot water to cover by 3–4 cm (about 1.5–2 liters). Bring to a gentle simmer.",
+    "Season with 1 tsp salt and 1 tsp black pepper. Partially cover and simmer very gently 75–90 minutes, stirring occasionally, until beans are creamy and tender. Add hot water as needed to keep beans just submerged.",
+    "Optional oven finish: After the pot returns to a simmer, cover and transfer to the 150°C (300°F) oven for 60–75 minutes, checking once or twice to maintain a gentle bubble.",
+    "Adjust seasoning with salt and black pepper. Rest off heat 10 minutes to thicken slightly.",
+    "Ladle into warm bowls and drizzle with a little olive oil to serve."
+  ],
+  "instructions": [
+    "Rinse 500 g cannellini beans and soak in plenty of water overnight (8–12 hours). Drain before cooking.",
+    "Peel and finely chop 2 onions.",
+    "Peel and slice 6 garlic cloves.",
+    "Slice 300 g chorizo into thick rounds.",
+    "Cut 250 g ham into chunky cubes.",
+    "Slice 250 g sausage into thick coins.",
+    "Measure spices: 2 tsp paprika, 2 bay leaves, a pinch of saffron, 1 tsp salt, and 1 tsp black pepper.",
+    "Boil a kettle or have 1.5–2 liters water ready hot.",
+    "Optional: Preheat oven to 150°C (300°F) if you prefer finishing the stew in the oven.",
+    "Set a large heavy pot over medium heat and add 2 tbsp olive oil.",
+    "Add chorizo and sausage; cook 5–7 minutes until lightly browned and some fat renders. Scoop meats to a bowl, leaving fat in the pot.",
+    "Add ham to the pot; brown 3–4 minutes. Transfer to the bowl with the other meats.",
+    "Add onions to the pot with a pinch of salt; cook 8–10 minutes until soft and golden.",
+    "Stir in garlic and paprika; cook 30 seconds until fragrant.",
+    "Add drained cannellini beans, bay leaves, saffron, and all browned meats (plus any juices) back to the pot.",
+    "Pour in hot water to cover by 3–4 cm (about 1.5–2 liters). Bring to a gentle simmer.",
+    "Season with 1 tsp salt and 1 tsp black pepper. Partially cover and simmer very gently 75–90 minutes, stirring occasionally, until beans are creamy and tender. Add hot water as needed to keep beans just submerged.",
+    "Optional oven finish: After the pot returns to a simmer, cover and transfer to the 150°C (300°F) oven for 60–75 minutes, checking once or twice to maintain a gentle bubble.",
+    "Adjust seasoning with salt and black pepper. Rest off heat 10 minutes to thicken slightly.",
+    "Ladle into warm bowls and drizzle with a little olive oil to serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "cannellini beans",
+      "quantity": "500 g",
+      "preparation": "rinsed and soaked overnight, drained"
+    },
+    {
+      "core_item_name": "chorizo",
+      "quantity": "300 g",
+      "preparation": "sliced into thick rounds"
+    },
+    {
+      "core_item_name": "ham",
+      "quantity": "250 g",
+      "preparation": "cut into chunky cubes"
+    },
+    {
+      "core_item_name": "sausage",
+      "quantity": "250 g",
+      "preparation": "sliced into thick coins"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "6 cloves",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 tsp",
+      "preparation": "sweet or smoked"
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "whole"
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "1 pinch",
+      "preparation": "crumbled"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "for sautéing and finishing"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "start with 1 tsp"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "start with 1 tsp"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1.5–2 liters",
+      "preparation": "hot"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Portuguese",
+      "Spanish"
+    ],
+    "PrepTime": [
+      "60Plus"
+    ],
+    "Complexity": [
+      "Showstopper"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "cannellini beans",
+      "quantity": "500 g",
+      "preparation": "rinsed and soaked overnight, drained",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chorizo",
+      "quantity": "300 g",
+      "preparation": "sliced into thick rounds",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ham",
+      "quantity": "250 g",
+      "preparation": "cut into chunky cubes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sausage",
+      "quantity": "250 g",
+      "preparation": "sliced into thick coins",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "2 medium",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "6 cloves",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "2 tsp",
+      "preparation": "sweet or smoked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bay leaves",
+      "quantity": "2",
+      "preparation": "whole",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "1 pinch",
+      "preparation": "crumbled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "for sautéing and finishing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "start with 1 tsp",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "start with 1 tsp",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "1.5–2 liters",
+      "preparation": "hot",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T161336Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T160822Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

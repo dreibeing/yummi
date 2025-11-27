@@ -1,0 +1,282 @@
+{
+  "meal_id": "meal_20251126T160217Z_06_b1a626",
+  "archetype_uid": "arch_FAM_TR_NA_3060_MED",
+  "archetype_name": "Family Turkish & North African Suppers (Medium, 30–60, Intermediate)",
+  "name": "Sheet-Pan Shawarma Chicken with Saffron Rice and Sumac Onion-Cucumber Salad",
+  "description": "Roasted shawarma-spiced chicken thighs served over fragrant saffron basmati rice with a bright sumac onion-cucumber-tomato salad. Medium warmth and family-friendly components cooked on the stove and in the oven.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C (425°F). Line a sheet pan with foil.",
+    "Rinse 2 cups basmati rice in cold water until it runs mostly clear; drain well.",
+    "In a bowl, mix 2 tbsp shawarma paste, 2 tbsp olive oil, 3 minced garlic cloves, zest of 1 lemon, juice of 1/2 lemon, 1/2 tsp chili flakes, 1 tsp salt, and 1/2 tsp black pepper.",
+    "Pat 800 g chicken thighs dry; toss in the marinade to coat.",
+    "Thinly slice 1 red onion. In a small bowl, combine onion with 1 tsp sumac, juice of 1/2 lemon, a pinch of salt, and 1 tsp olive oil; toss and let stand.",
+    "Dice 1 cucumber and halve 200 g cherry tomatoes; chop 1/2 bunch parsley (leaves and tender stems).",
+    "Warm 3 cups vegetable stock (or water) and crumble a small pinch of saffron into it."
+  ],
+  "cook_steps": [
+    "Spread marinated chicken thighs on the lined sheet pan in a single layer. Roast 20–25 minutes until browned and cooked through (internal temp 75°C/165°F). Optional: broil for 2–3 minutes to char edges.",
+    "While chicken roasts, heat 1 tbsp olive oil in a pot over medium heat. Add rinsed rice and stir 1 minute to coat.",
+    "Pour in the warm saffron stock, add 1/2 tsp salt, bring to a boil, then cover, reduce heat to low, and cook 12 minutes. Turn off heat and rest covered 5 minutes.",
+    "Combine the quick-pickled onions with the cucumber, cherry tomatoes, and most of the parsley. Add 1 tbsp olive oil, a pinch of salt, and black pepper; toss. Adjust lemon to taste.",
+    "Fluff the rice with a fork.",
+    "Slice or leave chicken thighs whole. Serve chicken over saffron rice with the sumac onion-cucumber-tomato salad on the side. Garnish with remaining parsley and a pinch of sumac if desired."
+  ],
+  "instructions": [
+    "Heat oven to 220°C (425°F). Line a sheet pan with foil.",
+    "Rinse 2 cups basmati rice in cold water until it runs mostly clear; drain well.",
+    "In a bowl, mix 2 tbsp shawarma paste, 2 tbsp olive oil, 3 minced garlic cloves, zest of 1 lemon, juice of 1/2 lemon, 1/2 tsp chili flakes, 1 tsp salt, and 1/2 tsp black pepper.",
+    "Pat 800 g chicken thighs dry; toss in the marinade to coat.",
+    "Thinly slice 1 red onion. In a small bowl, combine onion with 1 tsp sumac, juice of 1/2 lemon, a pinch of salt, and 1 tsp olive oil; toss and let stand.",
+    "Dice 1 cucumber and halve 200 g cherry tomatoes; chop 1/2 bunch parsley (leaves and tender stems).",
+    "Warm 3 cups vegetable stock (or water) and crumble a small pinch of saffron into it.",
+    "Spread marinated chicken thighs on the lined sheet pan in a single layer. Roast 20–25 minutes until browned and cooked through (internal temp 75°C/165°F). Optional: broil for 2–3 minutes to char edges.",
+    "While chicken roasts, heat 1 tbsp olive oil in a pot over medium heat. Add rinsed rice and stir 1 minute to coat.",
+    "Pour in the warm saffron stock, add 1/2 tsp salt, bring to a boil, then cover, reduce heat to low, and cook 12 minutes. Turn off heat and rest covered 5 minutes.",
+    "Combine the quick-pickled onions with the cucumber, cherry tomatoes, and most of the parsley. Add 1 tbsp olive oil, a pinch of salt, and black pepper; toss. Adjust lemon to taste.",
+    "Fluff the rice with a fork.",
+    "Slice or leave chicken thighs whole. Serve chicken over saffron rice with the sumac onion-cucumber-tomato salad on the side. Garnish with remaining parsley and a pinch of sumac if desired."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "800 g",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "shawarma paste",
+      "quantity": "2 tbsp",
+      "preparation": "mixed into marinade"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tbsp",
+      "preparation": "divided (marinade, salad, rice)"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "2",
+      "preparation": "zest and juice separated"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2 tsp",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 1/2 tsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 tsp",
+      "preparation": "plus extra to garnish"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "200 g",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 bunch",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 cups",
+      "preparation": "warmed"
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "small pinch",
+      "preparation": "crumbled into stock"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "NorthAfrican",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "800 g",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "shawarma paste",
+      "quantity": "2 tbsp",
+      "preparation": "mixed into marinade",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4 tbsp",
+      "preparation": "divided (marinade, salad, rice)",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "2",
+      "preparation": "zest and juice separated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2 tsp",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 1/2 tsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sumac",
+      "quantity": "1 tsp",
+      "preparation": "plus extra to garnish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "200 g",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 bunch",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basmati rice",
+      "quantity": "2 cups",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3 cups",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "saffron",
+      "quantity": "small pinch",
+      "preparation": "crumbled into stock",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [
+    "Category 'MealComponentPreference' ideally includes 2+ tags; received ['FromScratch']"
+  ],
+  "metadata": {
+    "created_at": "20251126T160523Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T160217Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

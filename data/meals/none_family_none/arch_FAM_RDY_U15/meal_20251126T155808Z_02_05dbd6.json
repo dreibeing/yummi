@@ -1,0 +1,139 @@
+{
+  "meal_id": "meal_20251126T155808Z_02_05dbd6",
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "archetype_name": "Family Heat-and-Eat Weeknights (Under 15, No Heat)",
+  "name": "Microwave Spaghetti Bolognese Plates with Garlic Baguette and Salad",
+  "description": "Heat a family-size spaghetti bolognese, warm a garlic baguette, and serve with a ready salad for a fast, no-heat kid-friendly dinner.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Set out 4 dinner plates and 4 bowls.",
+    "Open the spaghetti bolognese tray and loosen the film as directed.",
+    "Place the garlic baguette on a microwave-safe plate.",
+    "Open the salad and have salad dressing and parmesan cheese ready."
+  ],
+  "cook_steps": [
+    "Microwave the spaghetti bolognese according to pack directions (typically 5–7 minutes), stirring halfway if instructed.",
+    "Microwave the garlic baguette until warm (typically 1–2 minutes; or bake in oven per pack if preferred).",
+    "Toss the salad with salad dressing in a large bowl.",
+    "Divide the spaghetti bolognese into bowls, sprinkle with parmesan cheese if using, and serve with slices of warm garlic baguette and salad on the side."
+  ],
+  "instructions": [
+    "Set out 4 dinner plates and 4 bowls.",
+    "Open the spaghetti bolognese tray and loosen the film as directed.",
+    "Place the garlic baguette on a microwave-safe plate.",
+    "Open the salad and have salad dressing and parmesan cheese ready.",
+    "Microwave the spaghetti bolognese according to pack directions (typically 5–7 minutes), stirring halfway if instructed.",
+    "Microwave the garlic baguette until warm (typically 1–2 minutes; or bake in oven per pack if preferred).",
+    "Toss the salad with salad dressing in a large bowl.",
+    "Divide the spaghetti bolognese into bowls, sprinkle with parmesan cheese if using, and serve with slices of warm garlic baguette and salad on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "spaghetti bolognese",
+      "quantity": "2 trays (about 800–1000 g total)",
+      "preparation": "film loosened for microwaving"
+    },
+    {
+      "core_item_name": "garlic baguette",
+      "quantity": "1–2 loaves",
+      "preparation": "microwave or oven-warm"
+    },
+    {
+      "core_item_name": "salad",
+      "quantity": "1 large bag or bowl (about 300–400 g)",
+      "preparation": "ready to serve"
+    },
+    {
+      "core_item_name": "salad dressing",
+      "quantity": "4–6 tbsp",
+      "preparation": "for tossing"
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "30–40 g",
+      "preparation": "grated, for topping (optional)"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "spaghetti bolognese",
+      "quantity": "2 trays (about 800–1000 g total)",
+      "preparation": "film loosened for microwaving",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic baguette",
+      "quantity": "1–2 loaves",
+      "preparation": "microwave or oven-warm",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salad",
+      "quantity": "1 large bag or bowl (about 300–400 g)",
+      "preparation": "ready to serve",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salad dressing",
+      "quantity": "4–6 tbsp",
+      "preparation": "for tossing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "30–40 g",
+      "preparation": "grated, for topping (optional)",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T155858Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T155808Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

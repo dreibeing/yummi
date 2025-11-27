@@ -1,0 +1,183 @@
+{
+  "meal_id": "meal_20251126T145833Z_09_3be462",
+  "archetype_uid": "arch_AFQB_2025_01",
+  "archetype_name": "Family AirFryer Quick Bites",
+  "name": "Air Fryer Chicken Taco Pita Pizzas",
+  "description": "Family-friendly mini taco-style pizzas on pita bread with cheesy chicken, peppers, and a cumin-kissed salsa. Fast, crispy, and perfect for dipping.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat air fryer to 375°F (190°C).",
+    "Slice bell peppers into thin strips.",
+    "Thinly slice red onion.",
+    "Stir ground cumin into the salsa.",
+    "Lightly brush both sides of each pita bread with olive oil.",
+    "Optional: Microwave the sliced peppers and onions for 45 seconds to soften."
+  ],
+  "cook_steps": [
+    "Air fry chicken strips in a single layer for 5–6 minutes until hot and lightly crisp; cut into bite-size pieces.",
+    "Warm the pita bread in the air fryer for 1–2 minutes to lightly crisp.",
+    "Set pitas on a board and spread each with a spoonful of the cumin salsa.",
+    "Top with cheddar cheese, sliced peppers, red onion, and the chicken pieces.",
+    "Return assembled pitas to the air fryer (work in batches) and cook 3–4 minutes until cheese is melted and edges are crisp.",
+    "Slice into wedges and serve with extra salsa for dipping."
+  ],
+  "instructions": [
+    "Preheat air fryer to 375°F (190°C).",
+    "Slice bell peppers into thin strips.",
+    "Thinly slice red onion.",
+    "Stir ground cumin into the salsa.",
+    "Lightly brush both sides of each pita bread with olive oil.",
+    "Optional: Microwave the sliced peppers and onions for 45 seconds to soften.",
+    "Air fry chicken strips in a single layer for 5–6 minutes until hot and lightly crisp; cut into bite-size pieces.",
+    "Warm the pita bread in the air fryer for 1–2 minutes to lightly crisp.",
+    "Set pitas on a board and spread each with a spoonful of the cumin salsa.",
+    "Top with cheddar cheese, sliced peppers, red onion, and the chicken pieces.",
+    "Return assembled pitas to the air fryer (work in batches) and cook 3–4 minutes until cheese is melted and edges are crisp.",
+    "Slice into wedges and serve with extra salsa for dipping."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "pita bread",
+      "quantity": "4 rounds",
+      "preparation": "brushed with oil"
+    },
+    {
+      "core_item_name": "chicken strips",
+      "quantity": "300 g",
+      "preparation": "air fried, chopped"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": "mixed with cumin"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": "stirred into salsa"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1 1/2 cups",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": "for brushing pitas"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "AirFryer",
+      "Microwave"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "pita bread",
+      "quantity": "4 rounds",
+      "preparation": "brushed with oil",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken strips",
+      "quantity": "300 g",
+      "preparation": "air fried, chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1 cup",
+      "preparation": "mixed with cumin",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": "stirred into salsa",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cheddar cheese",
+      "quantity": "1 1/2 cups",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tbsp",
+      "preparation": "for brushing pitas",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T150224Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T145833Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

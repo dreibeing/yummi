@@ -1,0 +1,254 @@
+{
+  "meal_id": "meal_20251126T154707Z_09_0e0698",
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "archetype_name": "Family Low-Carb Weeknight Bowls & Wraps (15–30, Mild)",
+  "name": "Mild Baked Fish Taco Cauliflower Bowls",
+  "description": "Oven-baked seasoned fish over sautéed cauliflower rice with crisp cabbage, avocado, salsa, and a cool yogurt-lime drizzle. Family-friendly, low-carb, and ready in 15–30 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 220°C (425°F). Lightly oil a baking tray.",
+    "Pat dry fish fillets with paper towels.",
+    "In a small bowl, mix ground cumin, paprika, salt, and black pepper with 1 tbsp olive oil.",
+    "Shred cabbage; slice avocado; chop coriander.",
+    "Cut lime into wedges; reserve 1 wedge for the yogurt drizzle.",
+    "Open the cauliflower rice package."
+  ],
+  "cook_steps": [
+    "Coat fish fillets with the seasoned oil mix and place on the oiled tray.",
+    "Bake fish for 8–12 minutes until it flakes easily with a fork.",
+    "While fish bakes, heat 1 tbsp olive oil in a large skillet over medium heat.",
+    "Add cauliflower rice, garlic powder, a pinch of salt, and black pepper; sauté 5–6 minutes until hot and lightly dry.",
+    "In a bowl, toss shredded cabbage with a squeeze of lime and a pinch of salt.",
+    "Stir yogurt with a squeeze from the reserved lime wedge and a pinch of salt to make a drizzle.",
+    "Assemble bowls: add cauliflower rice, top with cabbage, portions of baked fish, avocado slices, and spoonfuls of salsa.",
+    "Drizzle yogurt-lime sauce over the top and finish with chopped coriander. Serve with extra lime wedges."
+  ],
+  "instructions": [
+    "Preheat oven to 220°C (425°F). Lightly oil a baking tray.",
+    "Pat dry fish fillets with paper towels.",
+    "In a small bowl, mix ground cumin, paprika, salt, and black pepper with 1 tbsp olive oil.",
+    "Shred cabbage; slice avocado; chop coriander.",
+    "Cut lime into wedges; reserve 1 wedge for the yogurt drizzle.",
+    "Open the cauliflower rice package.",
+    "Coat fish fillets with the seasoned oil mix and place on the oiled tray.",
+    "Bake fish for 8–12 minutes until it flakes easily with a fork.",
+    "While fish bakes, heat 1 tbsp olive oil in a large skillet over medium heat.",
+    "Add cauliflower rice, garlic powder, a pinch of salt, and black pepper; sauté 5–6 minutes until hot and lightly dry.",
+    "In a bowl, toss shredded cabbage with a squeeze of lime and a pinch of salt.",
+    "Stir yogurt with a squeeze from the reserved lime wedge and a pinch of salt to make a drizzle.",
+    "Assemble bowls: add cauliflower rice, top with cabbage, portions of baked fish, avocado slices, and spoonfuls of salsa.",
+    "Drizzle yogurt-lime sauce over the top and finish with chopped coriander. Serve with extra lime wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "700 g",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp total",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "divided, to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "4 cups"
+    },
+    {
+      "core_item_name": "garlic powder",
+      "quantity": "1/2 tsp"
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 small head",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "2",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup"
+    },
+    {
+      "core_item_name": "yogurt",
+      "quantity": "1/2 cup"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1–2",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "2 tbsp",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "700 g",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp total",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 tsp",
+      "preparation": "divided, to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/2 tsp",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "4 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic powder",
+      "quantity": "1/2 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 small head",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "2",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "yogurt",
+      "quantity": "1/2 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1–2",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "2 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T155133Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T154707Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

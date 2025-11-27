@@ -1,0 +1,285 @@
+{
+  "meal_id": "meal_20251126T162913Z_02_53c9ed",
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "archetype_name": "Family Low-Fat Mediterranean Light Plates (15–30, Mild)",
+  "name": "Cumin-Lemon Butter Beans over Quinoa with Roasted Zucchini & Tomatoes",
+  "description": "A light, herby Mediterranean bowl: fluffy quinoa topped with gently spiced tomato-braised butter beans and a tray of roasted zucchini and cherry tomatoes. Mild, high-fiber, and low in added fat.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C (425°F).",
+    "Rinse 1.5 cups quinoa in a fine strainer.",
+    "Slice 2 medium zucchini into half-moons.",
+    "Halve 2 cups cherry tomatoes.",
+    "Dice 1 medium onion and mince 3 cloves garlic.",
+    "Chop parsley and mint (about 1/2 cup parsley, 1/4 cup mint).",
+    "Drain and rinse about 800 g butter beans.",
+    "Zest and juice 1 lemon (keep separate)."
+  ],
+  "cook_steps": [
+    "Roast vegetables: On a sheet pan, toss zucchini and cherry tomatoes with 1 tbsp olive oil, 1 tsp oregano, a pinch of salt, and black pepper. Roast until tender and lightly browned, 12–15 minutes.",
+    "Cook quinoa: In a pot, combine rinsed quinoa and 3 cups vegetable stock. Bring to a boil, reduce to low, cover, and cook 15 minutes. Rest off heat, covered, 5 minutes; fluff with a fork.",
+    "Start bean sauce: While quinoa cooks, heat 1 tsp olive oil in a large pan over medium. Soften onions 3–4 minutes, then add garlic and 1 tsp cumin; cook 30 seconds.",
+    "Simmer: Stir in 400 g crushed tomatoes and 1/2 cup vegetable stock. Simmer 3–4 minutes, then fold in butter beans. Warm through 3–4 minutes.",
+    "Finish: Stir in lemon zest and 1–2 tbsp lemon juice, parsley, and mint. Season to taste with salt and black pepper. If needed, thin with a splash of vegetable stock.",
+    "Serve: Spoon quinoa into bowls, top with the cumin-lemon butter beans, and finish with the roasted zucchini and tomatoes."
+  ],
+  "instructions": [
+    "Heat oven to 220°C (425°F).",
+    "Rinse 1.5 cups quinoa in a fine strainer.",
+    "Slice 2 medium zucchini into half-moons.",
+    "Halve 2 cups cherry tomatoes.",
+    "Dice 1 medium onion and mince 3 cloves garlic.",
+    "Chop parsley and mint (about 1/2 cup parsley, 1/4 cup mint).",
+    "Drain and rinse about 800 g butter beans.",
+    "Zest and juice 1 lemon (keep separate).",
+    "Roast vegetables: On a sheet pan, toss zucchini and cherry tomatoes with 1 tbsp olive oil, 1 tsp oregano, a pinch of salt, and black pepper. Roast until tender and lightly browned, 12–15 minutes.",
+    "Cook quinoa: In a pot, combine rinsed quinoa and 3 cups vegetable stock. Bring to a boil, reduce to low, cover, and cook 15 minutes. Rest off heat, covered, 5 minutes; fluff with a fork.",
+    "Start bean sauce: While quinoa cooks, heat 1 tsp olive oil in a large pan over medium. Soften onions 3–4 minutes, then add garlic and 1 tsp cumin; cook 30 seconds.",
+    "Simmer: Stir in 400 g crushed tomatoes and 1/2 cup vegetable stock. Simmer 3–4 minutes, then fold in butter beans. Warm through 3–4 minutes.",
+    "Finish: Stir in lemon zest and 1–2 tbsp lemon juice, parsley, and mint. Season to taste with salt and black pepper. If needed, thin with a splash of vegetable stock.",
+    "Serve: Spoon quinoa into bowls, top with the cumin-lemon butter beans, and finish with the roasted zucchini and tomatoes."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "quinoa",
+      "quantity": "1.5 cups (dry)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3.5 to 4 cups, divided",
+      "preparation": "for quinoa and sauce"
+    },
+    {
+      "core_item_name": "butter beans",
+      "quantity": "800 g cooked beans",
+      "preparation": "drained and rinsed"
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "sliced into half-moons"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "400 g",
+      "preparation": "none"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 teaspoons + 1 tablespoon",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "ground"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "none"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "freshly ground"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowFat"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "quinoa",
+      "quantity": "1.5 cups (dry)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "3.5 to 4 cups, divided",
+      "preparation": "for quinoa and sauce",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter beans",
+      "quantity": "800 g cooked beans",
+      "preparation": "drained and rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "sliced into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "crushed tomatoes",
+      "quantity": "400 g",
+      "preparation": "none",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 teaspoons + 1 tablespoon",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cumin",
+      "quantity": "1 teaspoon",
+      "preparation": "ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "none",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T163057Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T162913Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

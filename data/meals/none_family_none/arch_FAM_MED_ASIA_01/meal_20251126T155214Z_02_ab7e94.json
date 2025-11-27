@@ -1,0 +1,242 @@
+{
+  "meal_id": "meal_20251126T155214Z_02_ab7e94",
+  "archetype_uid": "arch_FAM_MED_ASIA_01",
+  "archetype_name": "Family Skillet Curries & Stir-Fries (Medium Heat, 15–30, Intermediate)",
+  "name": "Quick Massaman Beef & Potato Curry with Jasmine Rice",
+  "description": "Family-friendly Thai-style massaman curry with tender beef and potatoes in coconut sauce, finished with lime and crunchy peanuts. Medium heat, ready in under 30 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1.5 cups jasmine rice until water runs clear.",
+    "Dice potatoes into 1 cm cubes (about 500 g).",
+    "Slice onions thinly (1 large).",
+    "Slice beef thinly against the grain (about 500 g).",
+    "Roughly chop peanuts (1/3 cup).",
+    "Microwave the diced potatoes in a covered, microwave-safe bowl for 4–5 minutes until just tender; drain.",
+    "Open coconut milk can and measure massaman curry paste (about 3 tbsp).",
+    "Cut lime into wedges."
+  ],
+  "cook_steps": [
+    "Cook rice on the stovetop per pack directions (about 1.5 cups rice to 3 cups water); keep warm.",
+    "Heat a large skillet or wok over medium heat and dry-toast the chopped peanuts for 2–3 minutes until fragrant; set aside.",
+    "Add canola oil to the skillet (1–2 tbsp). Add sliced onions and cook 2–3 minutes until starting to soften.",
+    "Stir in massaman curry paste (about 3 tbsp) and cook 30–60 seconds to bloom.",
+    "Increase heat to medium-high. Add sliced beef and stir-fry 2–3 minutes until just losing pink.",
+    "Pour in coconut milk (400 ml). Add fish sauce (1–2 tbsp), brown sugar (1–2 tsp to taste), and chili flakes (1/2 tsp). Stir to combine.",
+    "Add the par-cooked potatoes. Simmer 5–7 minutes, stirring, until potatoes are tender and sauce slightly thickens. Adjust seasoning with a splash more fish sauce or a pinch of brown sugar if needed.",
+    "Squeeze lime over the curry to taste.",
+    "Serve curry over jasmine rice and top with toasted peanuts."
+  ],
+  "instructions": [
+    "Rinse 1.5 cups jasmine rice until water runs clear.",
+    "Dice potatoes into 1 cm cubes (about 500 g).",
+    "Slice onions thinly (1 large).",
+    "Slice beef thinly against the grain (about 500 g).",
+    "Roughly chop peanuts (1/3 cup).",
+    "Microwave the diced potatoes in a covered, microwave-safe bowl for 4–5 minutes until just tender; drain.",
+    "Open coconut milk can and measure massaman curry paste (about 3 tbsp).",
+    "Cut lime into wedges.",
+    "Cook rice on the stovetop per pack directions (about 1.5 cups rice to 3 cups water); keep warm.",
+    "Heat a large skillet or wok over medium heat and dry-toast the chopped peanuts for 2–3 minutes until fragrant; set aside.",
+    "Add canola oil to the skillet (1–2 tbsp). Add sliced onions and cook 2–3 minutes until starting to soften.",
+    "Stir in massaman curry paste (about 3 tbsp) and cook 30–60 seconds to bloom.",
+    "Increase heat to medium-high. Add sliced beef and stir-fry 2–3 minutes until just losing pink.",
+    "Pour in coconut milk (400 ml). Add fish sauce (1–2 tbsp), brown sugar (1–2 tsp to taste), and chili flakes (1/2 tsp). Stir to combine.",
+    "Add the par-cooked potatoes. Simmer 5–7 minutes, stirring, until potatoes are tender and sauce slightly thickens. Adjust seasoning with a splash more fish sauce or a pinch of brown sugar if needed.",
+    "Squeeze lime over the curry to taste.",
+    "Serve curry over jasmine rice and top with toasted peanuts."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1.5 cups (uncooked)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "beef",
+      "quantity": "500 g",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "500 g",
+      "preparation": "diced 1 cm"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "massaman curry paste",
+      "quantity": "3 tbsp",
+      "preparation": "measure ahead"
+    },
+    {
+      "core_item_name": "coconut milk",
+      "quantity": "400 ml",
+      "preparation": "shaken"
+    },
+    {
+      "core_item_name": "fish sauce",
+      "quantity": "1–2 tbsp",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1–2 tsp",
+      "preparation": "to taste"
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2 tsp",
+      "preparation": "adjust to heat preference"
+    },
+    {
+      "core_item_name": "peanuts",
+      "quantity": "1/3 cup",
+      "preparation": "roughly chopped, toasted"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1–2 tbsp",
+      "preparation": "for sautéing"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Indian",
+      "Thai"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Medium"
+    ],
+    "Allergens": [
+      "Nuts",
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1.5 cups (uncooked)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "beef",
+      "quantity": "500 g",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "potatoes",
+      "quantity": "500 g",
+      "preparation": "diced 1 cm",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "massaman curry paste",
+      "quantity": "3 tbsp",
+      "preparation": "measure ahead",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coconut milk",
+      "quantity": "400 ml",
+      "preparation": "shaken",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "fish sauce",
+      "quantity": "1–2 tbsp",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "brown sugar",
+      "quantity": "1–2 tsp",
+      "preparation": "to taste",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chili flakes",
+      "quantity": "1/2 tsp",
+      "preparation": "adjust to heat preference",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peanuts",
+      "quantity": "1/3 cup",
+      "preparation": "roughly chopped, toasted",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1–2 tbsp",
+      "preparation": "for sautéing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T155310Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T155214Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

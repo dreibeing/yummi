@@ -1,0 +1,301 @@
+{
+  "meal_id": "meal_20251126T154013Z_06_726818",
+  "archetype_uid": "arch_FAM_LS_FRAM_3060",
+  "archetype_name": "Family Low-Sodium American & French Comfort (30–60, Mild)",
+  "name": "Chicken Tarragon Braise with Creamy Polenta and Lemon Green Beans",
+  "description": "A family-friendly French-American stovetop and oven braise of chicken thighs with mushrooms, shallots, and tarragon, served over creamy polenta with bright lemony green beans. Built for low-sodium cooking with herb and citrus balance.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat oven to 375°F (190°C).",
+    "Pat dry 6–8 chicken thighs with paper towels.",
+    "Slice 8 oz mushrooms and 2 shallots; mince 2 cloves garlic.",
+    "Chop 2 tbsp tarragon (reserve some leaves for garnish).",
+    "Trim 12 oz green beans; halve 1 lemon.",
+    "Grate 1/2 cup parmesan cheese.",
+    "Measure liquids: 1/2 cup white wine, 1 cup vegetable stock, 3 cups water, 1 cup milk, 1/3 cup creme fraiche.",
+    "Set out 1 cup polenta, 2 tbsp butter, 2 tbsp olive oil, and black pepper."
+  ],
+  "cook_steps": [
+    "Heat 1 tbsp olive oil in an oven-safe sauté pan over medium-high. Add chicken thighs, skin-side down if skin-on, and sear 4–5 minutes per side until browned. Transfer to a plate.",
+    "Lower heat to medium. Add 1 tsp olive oil if pan is dry, then sauté shallots 2 minutes. Add mushrooms and cook 4–5 minutes until lightly browned. Stir in garlic for 30 seconds.",
+    "Pour in white wine and simmer 1 minute, scraping browned bits. Add vegetable stock, half the tarragon, a few grinds of black pepper, and return chicken to the pan (skin-side up).",
+    "Transfer pan to oven and braise 15–20 minutes until chicken is cooked through.",
+    "While chicken braises, bring 3 cups water and 1 cup milk to a gentle boil in a saucepan. Whisk in 1 cup polenta. Reduce to low and cook, whisking often, 12–15 minutes until creamy. Stir in 2 tbsp butter and 1/2 cup parmesan cheese. Season with black pepper to taste; keep warm on low.",
+    "Bring a pot of water to a boil. Add green beans and cook 3–4 minutes until crisp-tender. Drain well.",
+    "In the empty pot, warm 1 tsp olive oil over low. Add green beans, squeeze in juice from half the lemon, and add a pinch of black pepper; toss 30 seconds. Set aside.",
+    "Remove chicken pan from oven. Stir in creme fraiche and remaining tarragon; simmer on stovetop 1–2 minutes to slightly thicken. Squeeze in remaining lemon half to taste and add black pepper if desired.",
+    "Plate polenta, top with chicken and mushroom-tarragon sauce, and serve with lemon green beans. Garnish with reserved tarragon."
+  ],
+  "instructions": [
+    "Preheat oven to 375°F (190°C).",
+    "Pat dry 6–8 chicken thighs with paper towels.",
+    "Slice 8 oz mushrooms and 2 shallots; mince 2 cloves garlic.",
+    "Chop 2 tbsp tarragon (reserve some leaves for garnish).",
+    "Trim 12 oz green beans; halve 1 lemon.",
+    "Grate 1/2 cup parmesan cheese.",
+    "Measure liquids: 1/2 cup white wine, 1 cup vegetable stock, 3 cups water, 1 cup milk, 1/3 cup creme fraiche.",
+    "Set out 1 cup polenta, 2 tbsp butter, 2 tbsp olive oil, and black pepper.",
+    "Heat 1 tbsp olive oil in an oven-safe sauté pan over medium-high. Add chicken thighs, skin-side down if skin-on, and sear 4–5 minutes per side until browned. Transfer to a plate.",
+    "Lower heat to medium. Add 1 tsp olive oil if pan is dry, then sauté shallots 2 minutes. Add mushrooms and cook 4–5 minutes until lightly browned. Stir in garlic for 30 seconds.",
+    "Pour in white wine and simmer 1 minute, scraping browned bits. Add vegetable stock, half the tarragon, a few grinds of black pepper, and return chicken to the pan (skin-side up).",
+    "Transfer pan to oven and braise 15–20 minutes until chicken is cooked through.",
+    "While chicken braises, bring 3 cups water and 1 cup milk to a gentle boil in a saucepan. Whisk in 1 cup polenta. Reduce to low and cook, whisking often, 12–15 minutes until creamy. Stir in 2 tbsp butter and 1/2 cup parmesan cheese. Season with black pepper to taste; keep warm on low.",
+    "Bring a pot of water to a boil. Add green beans and cook 3–4 minutes until crisp-tender. Drain well.",
+    "In the empty pot, warm 1 tsp olive oil over low. Add green beans, squeeze in juice from half the lemon, and add a pinch of black pepper; toss 30 seconds. Set aside.",
+    "Remove chicken pan from oven. Stir in creme fraiche and remaining tarragon; simmer on stovetop 1–2 minutes to slightly thicken. Squeeze in remaining lemon half to taste and add black pepper if desired.",
+    "Plate polenta, top with chicken and mushroom-tarragon sauce, and serve with lemon green beans. Garnish with reserved tarragon."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "6–8 pieces (about 2–2.5 lb)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "8 oz",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "shallots",
+      "quantity": "2 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "tarragon",
+      "quantity": "2 tbsp",
+      "preparation": "chopped, plus extra leaves for garnish"
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup",
+      "preparation": "dry style preferred"
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1 cup",
+      "preparation": "unsalted if available"
+    },
+    {
+      "core_item_name": "creme fraiche",
+      "quantity": "1/3 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "freshly ground"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "polenta",
+      "quantity": "1 cup",
+      "preparation": "dry"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "1 cup",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "1/2 cup",
+      "preparation": "grated"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "12 oz",
+      "preparation": "trimmed"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "halved"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "French"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Intermediate"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowSodium"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "6–8 pieces (about 2–2.5 lb)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "8 oz",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "shallots",
+      "quantity": "2 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "tarragon",
+      "quantity": "2 tbsp",
+      "preparation": "chopped, plus extra leaves for garnish",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "white wine",
+      "quantity": "1/2 cup",
+      "preparation": "dry style preferred",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1 cup",
+      "preparation": "unsalted if available",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "creme fraiche",
+      "quantity": "1/3 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "freshly ground",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "polenta",
+      "quantity": "1 cup",
+      "preparation": "dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "milk",
+      "quantity": "1 cup",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tbsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "1/2 cup",
+      "preparation": "grated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "12 oz",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T154436Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T154013Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

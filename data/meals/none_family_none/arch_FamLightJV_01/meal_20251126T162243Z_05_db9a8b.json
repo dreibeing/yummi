@@ -1,0 +1,266 @@
+{
+  "meal_id": "meal_20251126T162243Z_05_db9a8b",
+  "archetype_uid": "arch_FamLightJV_01",
+  "archetype_name": "Family Light & Fresh: Japanese and Vietnamese Weeknights",
+  "name": "Lime-Herb Chicken Cabbage Salad with Jasmine Rice",
+  "description": "Bright, crunchy chicken-and-cabbage salad with apple, herbs, and a light lime-vinegar dressing, served alongside fluffy jasmine rice. Fresh Vietnamese/Japanese-inspired flavors with no soy.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1.5 cups jasmine rice until water runs clear.",
+    "Thinly slice 1/2 small cabbage.",
+    "Julienne 2 carrots.",
+    "Core and thinly slice 1 apple.",
+    "Roughly chop a small handful each of mint, basil, and coriander.",
+    "Cut 2 limes in half.",
+    "In a small bowl, whisk juice of 1.5 limes, 2 tbsp rice vinegar, and 1 tsp honey until dissolved; season with a pinch of salt and black pepper.",
+    "Pat dry 600 g chicken thighs and season both sides with salt and black pepper."
+  ],
+  "cook_steps": [
+    "Cook rice: Add rinsed jasmine rice and 3 cups water to a pot. Bring to a boil, then cover and reduce heat to low. Simmer 12–15 minutes until tender; rest covered 5 minutes.",
+    "Sear chicken: Heat 1 tbsp canola oil in a large skillet over medium-high. Add chicken thighs and cook 5–6 minutes per side until cooked through. Transfer to a board to rest 3 minutes, then slice.",
+    "Assemble salad: In a large bowl, combine cabbage, carrots, apple, and chopped herbs. Drizzle over the lime-vinegar dressing and toss to coat. Taste and adjust salt and black pepper.",
+    "Serve: Fluff rice and portion into bowls. Add a generous mound of the cabbage salad and top with sliced chicken. Squeeze the remaining 1/2 lime over portions to taste.",
+    "Optional: If rice is cooked early, briefly microwave portions 20–30 seconds to rewarm before serving."
+  ],
+  "instructions": [
+    "Rinse 1.5 cups jasmine rice until water runs clear.",
+    "Thinly slice 1/2 small cabbage.",
+    "Julienne 2 carrots.",
+    "Core and thinly slice 1 apple.",
+    "Roughly chop a small handful each of mint, basil, and coriander.",
+    "Cut 2 limes in half.",
+    "In a small bowl, whisk juice of 1.5 limes, 2 tbsp rice vinegar, and 1 tsp honey until dissolved; season with a pinch of salt and black pepper.",
+    "Pat dry 600 g chicken thighs and season both sides with salt and black pepper.",
+    "Cook rice: Add rinsed jasmine rice and 3 cups water to a pot. Bring to a boil, then cover and reduce heat to low. Simmer 12–15 minutes until tender; rest covered 5 minutes.",
+    "Sear chicken: Heat 1 tbsp canola oil in a large skillet over medium-high. Add chicken thighs and cook 5–6 minutes per side until cooked through. Transfer to a board to rest 3 minutes, then slice.",
+    "Assemble salad: In a large bowl, combine cabbage, carrots, apple, and chopped herbs. Drizzle over the lime-vinegar dressing and toss to coat. Taste and adjust salt and black pepper.",
+    "Serve: Fluff rice and portion into bowls. Add a generous mound of the cabbage salad and top with sliced chicken. Squeeze the remaining 1/2 lime over portions to taste.",
+    "Optional: If rice is cooked early, briefly microwave portions 20–30 seconds to rewarm before serving."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1.5 cups (uncooked)",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": "for cooking rice"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "600 g",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 tbsp",
+      "preparation": "for searing"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 small head",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "julienned"
+    },
+    {
+      "core_item_name": "apple",
+      "quantity": "1 medium",
+      "preparation": "cored, thinly sliced"
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "small handful",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "small handful",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "small handful",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tbsp"
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tsp"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Japanese",
+      "Vietnamese"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowCalorie"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1.5 cups (uncooked)",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "3 cups",
+      "preparation": "for cooking rice",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "600 g",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 tbsp",
+      "preparation": "for searing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cabbage",
+      "quantity": "1/2 small head",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "julienned",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "apple",
+      "quantity": "1 medium",
+      "preparation": "cored, thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mint",
+      "quantity": "small handful",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "small handful",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "small handful",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "2",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "rice vinegar",
+      "quantity": "2 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "honey",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T162602Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T162243Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

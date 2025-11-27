@@ -1,0 +1,231 @@
+{
+  "meal_id": "meal_20251126T164155Z_09_14dc6d",
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "archetype_name": "Family Quick Grill & Salad Nights (Mild, 15–30)",
+  "name": "Grilled Chicken Kebabs with Herbed Orzo & Watermelon-Feta Salad",
+  "description": "Quickly grill chicken kebabs and pair with lemon-herb orzo and a crisp watermelon-cucumber-feta salad. Mild, bright flavors for an easy family braai night.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat OutdoorGrill to medium-high heat; clean and oil grates.",
+    "Bring a medium pot of salted water to a boil for the orzo.",
+    "Finely chop parsley (about 1/4 cup) and set aside.",
+    "Cut watermelon into 2 cm cubes (about 4 cups).",
+    "Slice cucumber into half-moons (2 cups) and thinly slice red onion (1/2 small).",
+    "Juice 1 lemon and zest half of it; keep separate.",
+    "In a large bowl, add watermelon, cucumber, red onion, and crumble feta cheese."
+  ],
+  "cook_steps": [
+    "Drizzle chicken kebabs with olive oil; season with salt, black pepper, and a pinch of oregano.",
+    "Grill chicken kebabs for 8–10 minutes, turning every 2–3 minutes, until cooked through with light char.",
+    "While kebabs cook, boil orzo for 8–9 minutes until al dente; drain well.",
+    "Return orzo to the warm pot; add olive oil, lemon zest, half the chopped parsley, a pinch of oregano, salt, and black pepper. Toss and adjust seasoning.",
+    "Dress the watermelon salad: add olive oil and half the lemon juice; toss gently. Add remaining parsley and a pinch of black pepper.",
+    "Rest kebabs 2 minutes, then serve with herbed orzo and the watermelon-feta salad. Offer extra lemon wedges from the remaining lemon juice if desired."
+  ],
+  "instructions": [
+    "Preheat OutdoorGrill to medium-high heat; clean and oil grates.",
+    "Bring a medium pot of salted water to a boil for the orzo.",
+    "Finely chop parsley (about 1/4 cup) and set aside.",
+    "Cut watermelon into 2 cm cubes (about 4 cups).",
+    "Slice cucumber into half-moons (2 cups) and thinly slice red onion (1/2 small).",
+    "Juice 1 lemon and zest half of it; keep separate.",
+    "In a large bowl, add watermelon, cucumber, red onion, and crumble feta cheese.",
+    "Drizzle chicken kebabs with olive oil; season with salt, black pepper, and a pinch of oregano.",
+    "Grill chicken kebabs for 8–10 minutes, turning every 2–3 minutes, until cooked through with light char.",
+    "While kebabs cook, boil orzo for 8–9 minutes until al dente; drain well.",
+    "Return orzo to the warm pot; add olive oil, lemon zest, half the chopped parsley, a pinch of oregano, salt, and black pepper. Toss and adjust seasoning.",
+    "Dress the watermelon salad: add olive oil and half the lemon juice; toss gently. Add remaining parsley and a pinch of black pepper.",
+    "Rest kebabs 2 minutes, then serve with herbed orzo and the watermelon-feta salad. Offer extra lemon wedges from the remaining lemon juice if desired."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "chicken kebabs",
+      "quantity": "8 skewers (about 800 g)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "orzo",
+      "quantity": "300 g",
+      "preparation": "boiled"
+    },
+    {
+      "core_item_name": "watermelon",
+      "quantity": "4 cups",
+      "preparation": "cubed"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "2 cups",
+      "preparation": "sliced into half-moons"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 small",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "feta cheese",
+      "quantity": "120 g",
+      "preparation": "crumbled"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4–5 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "chicken kebabs",
+      "quantity": "8 skewers (about 800 g)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "orzo",
+      "quantity": "300 g",
+      "preparation": "boiled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "watermelon",
+      "quantity": "4 cups",
+      "preparation": "cubed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "2 cups",
+      "preparation": "sliced into half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1/2 small",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "feta cheese",
+      "quantity": "120 g",
+      "preparation": "crumbled",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 large",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "4–5 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T164745Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T164155Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

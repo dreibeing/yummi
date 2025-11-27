@@ -1,0 +1,125 @@
+{
+  "meal_id": "meal_20251126T155808Z_05_41b474",
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "archetype_name": "Family Heat-and-Eat Weeknights (Under 15, No Heat)",
+  "name": "Microwave Meatballs & Noodles with Salad and Warm Garlic Baguette",
+  "description": "Heat-and-eat meatballs with noodles paired with a quick dressed salad and soft, warm garlic baguette. Zero chili heat and table-ready in under 15 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Set out 4 plates and 1 serving bowl.",
+    "Open the salad and have the salad dressing ready.",
+    "Slice the garlic baguette if it is not pre-sliced."
+  ],
+  "cook_steps": [
+    "Microwave meatballs with noodles: Heat 4 individual trays one at a time per pack directions (typically 3–5 minutes each, stirring halfway). Keep covered to stay warm.",
+    "Microwave garlic baguette: Heat per pack directions until warm and soft (usually 1–2 minutes).",
+    "Toss salad: Add salad to the serving bowl and drizzle with salad dressing. Toss gently.",
+    "Plate: Divide meatballs with noodles onto plates. Add a portion of salad and slices of garlic baguette on the side. Serve."
+  ],
+  "instructions": [
+    "Set out 4 plates and 1 serving bowl.",
+    "Open the salad and have the salad dressing ready.",
+    "Slice the garlic baguette if it is not pre-sliced.",
+    "Microwave meatballs with noodles: Heat 4 individual trays one at a time per pack directions (typically 3–5 minutes each, stirring halfway). Keep covered to stay warm.",
+    "Microwave garlic baguette: Heat per pack directions until warm and soft (usually 1–2 minutes).",
+    "Toss salad: Add salad to the serving bowl and drizzle with salad dressing. Toss gently.",
+    "Plate: Divide meatballs with noodles onto plates. Add a portion of salad and slices of garlic baguette on the side. Serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "meatballs with noodles",
+      "quantity": "4 individual trays",
+      "preparation": "microwave per pack"
+    },
+    {
+      "core_item_name": "salad",
+      "quantity": "1 large pack",
+      "preparation": "ready to serve"
+    },
+    {
+      "core_item_name": "salad dressing",
+      "quantity": "4 tablespoons",
+      "preparation": "for tossing salad"
+    },
+    {
+      "core_item_name": "garlic baguette",
+      "quantity": "1–2 loaves (about 8–12 slices)",
+      "preparation": "microwave per pack"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "Oven"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "meatballs with noodles",
+      "quantity": "4 individual trays",
+      "preparation": "microwave per pack",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salad",
+      "quantity": "1 large pack",
+      "preparation": "ready to serve",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salad dressing",
+      "quantity": "4 tablespoons",
+      "preparation": "for tossing salad",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic baguette",
+      "quantity": "1–2 loaves (about 8–12 slices)",
+      "preparation": "microwave per pack",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T160017Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T155808Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "meal_id": "meal_20251126T145833Z_08_76545d",
+  "archetype_uid": "arch_AFQB_2025_01",
+  "archetype_name": "Family AirFryer Quick Bites",
+  "name": "Air Fryer BBQ Meatball Melt Rolls",
+  "description": "Toasty rolls stuffed with quick air-fried meatballs, BBQ sauce, and melty mozzarella, finished with mild salsa and pickles. Fast, kid-friendly, and built for the air fryer.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat air fryer to 200°C/390°F for 3 minutes.",
+    "Split the bread rolls and set cut-side up.",
+    "Slice the pickles.",
+    "Place BBQ sauce in a microwave-safe bowl and warm for 20–30 seconds.",
+    "Measure shredded mozzarella and set aside."
+  ],
+  "cook_steps": [
+    "Air-fry the meatballs in a single layer for 7–8 minutes, shaking halfway, until heated through and lightly browned.",
+    "Toss hot meatballs in the warmed BBQ sauce to coat.",
+    "Arrange coated meatballs inside the bread rolls and sprinkle with mozzarella.",
+    "Return the filled rolls to the air fryer and cook 2–3 minutes until the cheese is melted and the rolls are toasty.",
+    "Top with salsa and pickles. Serve hot."
+  ],
+  "instructions": [
+    "Preheat air fryer to 200°C/390°F for 3 minutes.",
+    "Split the bread rolls and set cut-side up.",
+    "Slice the pickles.",
+    "Place BBQ sauce in a microwave-safe bowl and warm for 20–30 seconds.",
+    "Measure shredded mozzarella and set aside.",
+    "Air-fry the meatballs in a single layer for 7–8 minutes, shaking halfway, until heated through and lightly browned.",
+    "Toss hot meatballs in the warmed BBQ sauce to coat.",
+    "Arrange coated meatballs inside the bread rolls and sprinkle with mozzarella.",
+    "Return the filled rolls to the air fryer and cook 2–3 minutes until the cheese is melted and the rolls are toasty.",
+    "Top with salsa and pickles. Serve hot."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "meatballs",
+      "quantity": "16 small meatballs (about 400 g)",
+      "preparation": "frozen or chilled is fine"
+    },
+    {
+      "core_item_name": "BBQ sauce",
+      "quantity": "1/2 cup",
+      "preparation": "warmed"
+    },
+    {
+      "core_item_name": "bread rolls",
+      "quantity": "4 medium",
+      "preparation": "split"
+    },
+    {
+      "core_item_name": "mozzarella",
+      "quantity": "1 cup",
+      "preparation": "shredded"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup",
+      "preparation": "mild"
+    },
+    {
+      "core_item_name": "pickles",
+      "quantity": "1/2 cup",
+      "preparation": "sliced"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "AirFryer",
+      "Microwave"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "meatballs",
+      "quantity": "16 small meatballs (about 400 g)",
+      "preparation": "frozen or chilled is fine",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "BBQ sauce",
+      "quantity": "1/2 cup",
+      "preparation": "warmed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bread rolls",
+      "quantity": "4 medium",
+      "preparation": "split",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mozzarella",
+      "quantity": "1 cup",
+      "preparation": "shredded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup",
+      "preparation": "mild",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pickles",
+      "quantity": "1/2 cup",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T150154Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T145833Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

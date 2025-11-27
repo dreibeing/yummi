@@ -1,0 +1,269 @@
+{
+  "meal_id": "meal_20251126T154707Z_08_c71ccd",
+  "archetype_uid": "arch_FAM_LowCarb1530",
+  "archetype_name": "Family Low-Carb Weeknight Bowls & Wraps (15–30, Mild)",
+  "name": "Mild Steak & Avocado Cauliflower Burrito Bowls",
+  "description": "Quick, low-carb burrito bowls with seared sirloin, peppers, and avocado over cauliflower rice. Mild spices keep it family-friendly.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Pat dry 2 beef sirloin steaks and slice into thin strips.",
+    "Slice 1 large onion and 2 peppers into thin strips.",
+    "Mince 2 cloves garlic.",
+    "Halve 1 lime and dice 1 avocado.",
+    "Roughly chop a small handful of coriander.",
+    "Rinse and chop a few leaves of romaine lettuce for a fresh side.",
+    "Open the pack of cauliflower rice."
+  ],
+  "cook_steps": [
+    "In a bowl, toss steak strips with 1 tbsp olive oil, 1 tsp ground cumin, 1 tsp paprika, 1/2 tsp salt, and 1/4 tsp black pepper.",
+    "Heat a large skillet over medium-high. Sear the steak in a single layer 2–3 minutes per side until just cooked. Transfer to a plate.",
+    "In the same skillet, add 1 tsp olive oil if needed. Sauté onions and peppers with a pinch of salt for 4–5 minutes until tender-crisp. Stir in minced garlic for 30 seconds. Turn off heat.",
+    "Heat cauliflower rice: either microwave per pack directions, or sauté in a lightly oiled skillet over medium for 3–4 minutes until hot.",
+    "Assemble bowls: add a base of cauliflower rice, top with steak, peppers/onions, a spoonful of salsa, diced avocado, and coriander.",
+    "Finish with a squeeze of lime over each bowl. Serve romaine lettuce on the side."
+  ],
+  "instructions": [
+    "Pat dry 2 beef sirloin steaks and slice into thin strips.",
+    "Slice 1 large onion and 2 peppers into thin strips.",
+    "Mince 2 cloves garlic.",
+    "Halve 1 lime and dice 1 avocado.",
+    "Roughly chop a small handful of coriander.",
+    "Rinse and chop a few leaves of romaine lettuce for a fresh side.",
+    "Open the pack of cauliflower rice.",
+    "In a bowl, toss steak strips with 1 tbsp olive oil, 1 tsp ground cumin, 1 tsp paprika, 1/2 tsp salt, and 1/4 tsp black pepper.",
+    "Heat a large skillet over medium-high. Sear the steak in a single layer 2–3 minutes per side until just cooked. Transfer to a plate.",
+    "In the same skillet, add 1 tsp olive oil if needed. Sauté onions and peppers with a pinch of salt for 4–5 minutes until tender-crisp. Stir in minced garlic for 30 seconds. Turn off heat.",
+    "Heat cauliflower rice: either microwave per pack directions, or sauté in a lightly oiled skillet over medium for 3–4 minutes until hot.",
+    "Assemble bowls: add a base of cauliflower rice, top with steak, peppers/onions, a spoonful of salsa, diced avocado, and coriander.",
+    "Finish with a squeeze of lime over each bowl. Serve romaine lettuce on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef sirloin steaks",
+      "quantity": "2 steaks (about 500–600 g total)",
+      "preparation": "sliced into thin strips"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tsp + 1 tbsp divided",
+      "preparation": "for searing and sautéing"
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 tsp, plus pinch to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 tsp",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "4 cups",
+      "preparation": "heated"
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup",
+      "preparation": "mild"
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "2 tbsp",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "2 cups",
+      "preparation": "chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Mexican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef sirloin steaks",
+      "quantity": "2 steaks (about 500–600 g total)",
+      "preparation": "sliced into thin strips",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "2 tsp + 1 tbsp divided",
+      "preparation": "for searing and sautéing",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "ground cumin",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "paprika",
+      "quantity": "1 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1/2 tsp, plus pinch to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1/4 tsp",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 large",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peppers",
+      "quantity": "2 medium",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "4 cups",
+      "preparation": "heated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salsa",
+      "quantity": "1/2 cup",
+      "preparation": "mild",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "avocado",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "coriander",
+      "quantity": "2 tbsp",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "romaine lettuce",
+      "quantity": "2 cups",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T155105Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T154707Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "meal_id": "meal_20251126T162913Z_06_17718d",
+  "archetype_uid": "arch_FamMedLowFat1530",
+  "archetype_name": "Family Low-Fat Mediterranean Light Plates (15–30, Mild)",
+  "name": "Baked Fish with Tomato–Olive Couscous and Lemon Green Beans",
+  "description": "Tender baked white fish with a quick tomato–olive pan sauce, served over herbed couscous with bright lemon green beans. Light, family-friendly, and ready in 15–30 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C/425°F.",
+    "Finely dice 1 small red onion and mince 3 garlic cloves.",
+    "Halve 2 cups cherry tomatoes.",
+    "Roughly chop 1/3 cup olives and 1/4 cup parsley.",
+    "Zest 1 lemon, then cut it into wedges.",
+    "Trim 12 oz green beans.",
+    "Boil 1 3/4 cups vegetable stock (kettle or pot).",
+    "Pat dry 4 fish fillets and season both sides with salt and pepper."
+  ],
+  "cook_steps": [
+    "Sheet pan: Toss cherry tomatoes, red onion, and garlic with 1 tbsp olive oil, 1 tsp oregano, a big pinch of salt and pepper on a lined tray.",
+    "Nestle seasoned fish fillets on top; scatter chopped olives. Bake 10–12 minutes until fish flakes.",
+    "Couscous: Add 1 1/2 cups couscous to a bowl. Pour over 1 3/4 cups boiling vegetable stock, cover 5 minutes, then fluff with a fork. Stir in lemon zest and chopped parsley; season to taste.",
+    "Green beans: Steam or boil green beans 4–5 minutes until crisp-tender. Drain and squeeze a lemon wedge over; season lightly with salt and pepper.",
+    "Plate couscous, top with fish and roasted tomato–olive mixture. Serve green beans on the side with extra lemon wedges."
+  ],
+  "instructions": [
+    "Heat oven to 220°C/425°F.",
+    "Finely dice 1 small red onion and mince 3 garlic cloves.",
+    "Halve 2 cups cherry tomatoes.",
+    "Roughly chop 1/3 cup olives and 1/4 cup parsley.",
+    "Zest 1 lemon, then cut it into wedges.",
+    "Trim 12 oz green beans.",
+    "Boil 1 3/4 cups vegetable stock (kettle or pot).",
+    "Pat dry 4 fish fillets and season both sides with salt and pepper.",
+    "Sheet pan: Toss cherry tomatoes, red onion, and garlic with 1 tbsp olive oil, 1 tsp oregano, a big pinch of salt and pepper on a lined tray.",
+    "Nestle seasoned fish fillets on top; scatter chopped olives. Bake 10–12 minutes until fish flakes.",
+    "Couscous: Add 1 1/2 cups couscous to a bowl. Pour over 1 3/4 cups boiling vegetable stock, cover 5 minutes, then fluff with a fork. Stir in lemon zest and chopped parsley; season to taste.",
+    "Green beans: Steam or boil green beans 4–5 minutes until crisp-tender. Drain and squeeze a lemon wedge over; season lightly with salt and pepper.",
+    "Plate couscous, top with fish and roasted tomato–olive mixture. Serve green beans on the side with extra lemon wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "4 fillets (120–150 g each)",
+      "preparation": "patted dry"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "finely diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/3 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and cut into wedges"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1 1/2 cups (dry)",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1 3/4 cups, boiling",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "12 oz (340 g)",
+      "preparation": "trimmed"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "Turkish"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "Seafood"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowFat"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "fish fillets",
+      "quantity": "4 fillets (120–150 g each)",
+      "preparation": "patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 small",
+      "preparation": "finely diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "3 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/3 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 teaspoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1 tablespoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "couscous",
+      "quantity": "1 1/2 cups (dry)",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "vegetable stock",
+      "quantity": "1 3/4 cups, boiling",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "12 oz (340 g)",
+      "preparation": "trimmed",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T163356Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T162913Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

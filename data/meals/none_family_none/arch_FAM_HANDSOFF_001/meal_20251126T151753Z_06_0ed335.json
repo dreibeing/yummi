@@ -1,0 +1,236 @@
+{
+  "meal_id": "meal_20251126T151753Z_06_0ed335",
+  "archetype_uid": "arch_FAM_HANDSOFF_001",
+  "archetype_name": "Family Hands-Off Sheet Pan & Slow Cooker Nights",
+  "name": "Sheet-Pan Halloumi with Zucchini, Tomatoes & Lemon Orzo",
+  "description": "Hands-off roasted halloumi, zucchini, and tomatoes with olives and oregano, served over bright lemon orzo. Family-friendly and chili-free with Greek–Middle Eastern flavors.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C/425°F and line a large sheet pan.",
+    "Cut zucchini into half-moons (1 cm thick).",
+    "Halve the cherry tomatoes.",
+    "Slice red onion into thick wedges.",
+    "Cut halloumi cheese into 2 cm cubes and pat dry.",
+    "Roughly chop parsley.",
+    "Zest and juice the lemon; keep separate.",
+    "Bring a large pot of salted water to a boil for the orzo."
+  ],
+  "cook_steps": [
+    "On the sheet pan, toss zucchini, cherry tomatoes, and red onion with olive oil, oregano, salt, and black pepper; spread in a single layer.",
+    "Roast vegetables for 15 minutes.",
+    "Remove pan, add halloumi cheese and olives, toss gently, and roast 10–12 minutes more until halloumi is golden at the edges.",
+    "While the pan roasts, cook orzo in boiling salted water until al dente (about 8–10 minutes); drain well.",
+    "Return orzo to the pot and stir in a drizzle of olive oil, lemon zest, half the lemon juice, and a pinch of salt and black pepper.",
+    "Taste the sheet-pan mix and add a little lemon juice if desired.",
+    "Serve lemon orzo in bowls topped with the roasted halloumi and vegetables; finish with parsley."
+  ],
+  "instructions": [
+    "Heat oven to 220°C/425°F and line a large sheet pan.",
+    "Cut zucchini into half-moons (1 cm thick).",
+    "Halve the cherry tomatoes.",
+    "Slice red onion into thick wedges.",
+    "Cut halloumi cheese into 2 cm cubes and pat dry.",
+    "Roughly chop parsley.",
+    "Zest and juice the lemon; keep separate.",
+    "Bring a large pot of salted water to a boil for the orzo.",
+    "On the sheet pan, toss zucchini, cherry tomatoes, and red onion with olive oil, oregano, salt, and black pepper; spread in a single layer.",
+    "Roast vegetables for 15 minutes.",
+    "Remove pan, add halloumi cheese and olives, toss gently, and roast 10–12 minutes more until halloumi is golden at the edges.",
+    "While the pan roasts, cook orzo in boiling salted water until al dente (about 8–10 minutes); drain well.",
+    "Return orzo to the pot and stir in a drizzle of olive oil, lemon zest, half the lemon juice, and a pinch of salt and black pepper.",
+    "Taste the sheet-pan mix and add a little lemon juice if desired.",
+    "Serve lemon orzo in bowls topped with the roasted halloumi and vegetables; finish with parsley."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "halloumi cheese",
+      "quantity": "225–250 g",
+      "preparation": "cut into 2 cm cubes, patted dry"
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "cut into 1 cm half-moons"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "300 g",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "whole or pitted"
+    },
+    {
+      "core_item_name": "orzo",
+      "quantity": "300 g",
+      "preparation": "uncooked"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3–4 tablespoons",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1–2 teaspoons",
+      "preparation": "dried"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "MiddleEastern"
+    ],
+    "PrepTime": [
+      "30to60"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "Dairy",
+      "Gluten"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "halloumi cheese",
+      "quantity": "225–250 g",
+      "preparation": "cut into 2 cm cubes, patted dry",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "zucchini",
+      "quantity": "2 medium",
+      "preparation": "cut into 1 cm half-moons",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "300 g",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "red onion",
+      "quantity": "1 large",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olives",
+      "quantity": "1/2 cup",
+      "preparation": "whole or pitted",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "orzo",
+      "quantity": "300 g",
+      "preparation": "uncooked",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3–4 tablespoons",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1–2 teaspoons",
+      "preparation": "dried",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1",
+      "preparation": "zested and juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T152143Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T151753Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "meal_id": "meal_20251126T162243Z_07_ccca35",
+  "archetype_uid": "arch_FamLightJV_01",
+  "archetype_name": "Family Light & Fresh: Japanese and Vietnamese Weeknights",
+  "name": "Lemongrass-Lime Chicken & Veggie Rice Soup (No Soy)",
+  "description": "Light, brothy chicken soup with lemongrass, bok choy, carrots, and jasmine rice. Bright lime finishes a fresh Japanese/Vietnamese-inspired weeknight bowl.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Rinse 1 cup jasmine rice until water runs clear.",
+    "Peel and finely chop 2 cloves garlic.",
+    "Halve and thinly slice 1 onion.",
+    "Slice 2 carrots into thin rounds.",
+    "Trim and slice 2 bok choy (separate stems and leaves).",
+    "Wipe and slice 1 cup mushrooms.",
+    "Thinly slice 500 g chicken thighs (trim excess fat).",
+    "Cut 1 lime into wedges.",
+    "If using lemongrass, trim and bruise 1 stalk; if using lemongrass paste, measure 1 tablespoon.",
+    "Slice 2 spring onion for garnish."
+  ],
+  "cook_steps": [
+    "Add 1 cup jasmine rice and 1.5 cups water to a pot; bring to a boil, cover, reduce heat, and simmer 12–15 minutes until tender. Keep warm.",
+    "Heat 1 tablespoon canola oil in a large pot over medium heat.",
+    "Add onion and garlic; cook 2–3 minutes until fragrant.",
+    "Add chicken thighs; season with 1/2 teaspoon salt and a pinch of black pepper. Cook 3–4 minutes until lightly opaque.",
+    "Stir in 1 tablespoon lemongrass paste (or the bruised stalk).",
+    "Pour in 4 cups chicken stock and 2 cups water; bring to a gentle boil.",
+    "Add carrots and mushrooms; simmer 8–10 minutes until chicken is cooked through and vegetables are tender.",
+    "Add bok choy stems; cook 2 minutes, then add bok choy leaves and cook 1 minute more.",
+    "Turn off heat. Squeeze 2 lime wedges into the pot, taste, and adjust with salt and black pepper.",
+    "To serve, add a scoop of rice to each bowl, ladle soup over, and garnish with spring onion. Serve with extra lime wedges."
+  ],
+  "instructions": [
+    "Rinse 1 cup jasmine rice until water runs clear.",
+    "Peel and finely chop 2 cloves garlic.",
+    "Halve and thinly slice 1 onion.",
+    "Slice 2 carrots into thin rounds.",
+    "Trim and slice 2 bok choy (separate stems and leaves).",
+    "Wipe and slice 1 cup mushrooms.",
+    "Thinly slice 500 g chicken thighs (trim excess fat).",
+    "Cut 1 lime into wedges.",
+    "If using lemongrass, trim and bruise 1 stalk; if using lemongrass paste, measure 1 tablespoon.",
+    "Slice 2 spring onion for garnish.",
+    "Add 1 cup jasmine rice and 1.5 cups water to a pot; bring to a boil, cover, reduce heat, and simmer 12–15 minutes until tender. Keep warm.",
+    "Heat 1 tablespoon canola oil in a large pot over medium heat.",
+    "Add onion and garlic; cook 2–3 minutes until fragrant.",
+    "Add chicken thighs; season with 1/2 teaspoon salt and a pinch of black pepper. Cook 3–4 minutes until lightly opaque.",
+    "Stir in 1 tablespoon lemongrass paste (or the bruised stalk).",
+    "Pour in 4 cups chicken stock and 2 cups water; bring to a gentle boil.",
+    "Add carrots and mushrooms; simmer 8–10 minutes until chicken is cooked through and vegetables are tender.",
+    "Add bok choy stems; cook 2 minutes, then add bok choy leaves and cook 1 minute more.",
+    "Turn off heat. Squeeze 2 lime wedges into the pot, taste, and adjust with salt and black pepper.",
+    "To serve, add a scoop of rice to each bowl, ladle soup over, and garnish with spring onion. Serve with extra lime wedges."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1 cup",
+      "preparation": "rinsed"
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "4.5 cups total",
+      "preparation": "1.5 cups for rice, 3 cups for soup"
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 tablespoon",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "500 g",
+      "preparation": "thinly sliced"
+    },
+    {
+      "core_item_name": "lemongrass paste",
+      "quantity": "1 tablespoon",
+      "preparation": "or 1 bruised lemongrass stalk"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "4 cups",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "thin rounds"
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "1 cup",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "2 small heads",
+      "preparation": "stems and leaves separated, sliced"
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges"
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "sliced"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": ""
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": ""
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Japanese",
+      "Vietnamese"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighFiber",
+      "LowCalorie"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1 cup",
+      "preparation": "rinsed",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "water",
+      "quantity": "4.5 cups total",
+      "preparation": "1.5 cups for rice, 3 cups for soup",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "canola oil",
+      "quantity": "1 tablespoon",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onion",
+      "quantity": "1 medium",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thighs",
+      "quantity": "500 g",
+      "preparation": "thinly sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemongrass paste",
+      "quantity": "1 tablespoon",
+      "preparation": "or 1 bruised lemongrass stalk",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "4 cups",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "carrots",
+      "quantity": "2 medium",
+      "preparation": "thin rounds",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mushrooms",
+      "quantity": "1 cup",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bok choy",
+      "quantity": "2 small heads",
+      "preparation": "stems and leaves separated, sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lime",
+      "quantity": "1",
+      "preparation": "cut into wedges",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "spring onion",
+      "quantity": "2",
+      "preparation": "sliced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": "",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T162705Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T162243Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

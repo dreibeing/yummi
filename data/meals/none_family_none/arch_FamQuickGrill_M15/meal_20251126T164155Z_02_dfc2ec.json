@@ -1,0 +1,212 @@
+{
+  "meal_id": "meal_20251126T164155Z_02_dfc2ec",
+  "archetype_uid": "arch_FamQuickGrill_M15",
+  "archetype_name": "Family Quick Grill & Salad Nights (Mild, 15–30)",
+  "name": "Grilled Beef Skewers with Lemon Rice & Cucumber-Tomato Salad",
+  "description": "Quickly grilled beef skewers with mild seasoning, served alongside fluffy lemon jasmine rice and a fresh cucumber–tomato salad. Family-friendly, bright, and ready in under 30 minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Preheat OutdoorGrill to medium-high heat.",
+    "Rinse jasmine rice under cold water until it runs clear.",
+    "Halve and deseed bell peppers; cut into large flat pieces for easy grilling.",
+    "Dice cucumber and halve cherry tomatoes; chop parsley.",
+    "In a small bowl, whisk olive oil, lemon juice, oregano, salt, and black pepper for salad dressing.",
+    "Pat beef skewers dry; brush lightly with olive oil and season with salt and black pepper."
+  ],
+  "cook_steps": [
+    "Cook rice: Add rinsed jasmine rice to a pot with water (per pack guidance), a pinch of salt; bring to a boil, then cover and simmer until tender. Fluff and squeeze in a little lemon juice.",
+    "Grill bell peppers 3–4 minutes per side until lightly charred and tender; remove and slice.",
+    "Grill beef skewers 2–3 minutes per side (turning once) until just cooked to your liking; rest 2 minutes.",
+    "Toss cucumber, cherry tomatoes, sliced grilled peppers, and parsley with the lemon-oregano dressing; adjust salt and black pepper.",
+    "Plate lemon rice, top with beef skewers, and serve the salad on the side."
+  ],
+  "instructions": [
+    "Preheat OutdoorGrill to medium-high heat.",
+    "Rinse jasmine rice under cold water until it runs clear.",
+    "Halve and deseed bell peppers; cut into large flat pieces for easy grilling.",
+    "Dice cucumber and halve cherry tomatoes; chop parsley.",
+    "In a small bowl, whisk olive oil, lemon juice, oregano, salt, and black pepper for salad dressing.",
+    "Pat beef skewers dry; brush lightly with olive oil and season with salt and black pepper.",
+    "Cook rice: Add rinsed jasmine rice to a pot with water (per pack guidance), a pinch of salt; bring to a boil, then cover and simmer until tender. Fluff and squeeze in a little lemon juice.",
+    "Grill bell peppers 3–4 minutes per side until lightly charred and tender; remove and slice.",
+    "Grill beef skewers 2–3 minutes per side (turning once) until just cooked to your liking; rest 2 minutes.",
+    "Toss cucumber, cherry tomatoes, sliced grilled peppers, and parsley with the lemon-oregano dressing; adjust salt and black pepper.",
+    "Plate lemon rice, top with beef skewers, and serve the salad on the side."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "beef skewers",
+      "quantity": "8 skewers"
+    },
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1 1/2 cups (dry)"
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "3 medium",
+      "preparation": "halved, deseeded"
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1–2",
+      "preparation": "juiced"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3–4 tbsp",
+      "preparation": "divided"
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "Greek",
+      "SouthAfrican"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein"
+    ],
+    "Equipment": [
+      "OutdoorGrill",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "beef skewers",
+      "quantity": "8 skewers",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "jasmine rice",
+      "quantity": "1 1/2 cups (dry)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "bell peppers",
+      "quantity": "3 medium",
+      "preparation": "halved, deseeded",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cucumber",
+      "quantity": "1 large",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "2 cups",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/2 cup",
+      "preparation": "chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1–2",
+      "preparation": "juiced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3–4 tbsp",
+      "preparation": "divided",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "oregano",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T164333Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T164155Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

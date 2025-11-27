@@ -1,0 +1,204 @@
+{
+  "meal_id": "meal_20251126T153421Z_05_50cb88",
+  "archetype_uid": "arch_FAM_Keto_1530_Mild_Simple",
+  "archetype_name": "Family Keto Weeknight Plates (Mild, 15–30, Simple)",
+  "name": "Lemon-Garlic Turkey Skillet with Roasted Zucchini over Cauli Rice",
+  "description": "Bright, herb-garlic turkey served with oven-roasted zucchini and fluffy cauliflower rice. A quick, keto-friendly family plate with mild flavors.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Heat oven to 220°C/425°F.",
+    "Trim and cut zucchini into half-moons, 1 cm thick.",
+    "Finely chop onions.",
+    "Mince garlic.",
+    "Roughly chop parsley.",
+    "Zest then halve the lemon."
+  ],
+  "cook_steps": [
+    "Roast zucchini: Toss zucchini with 1 tbsp olive oil, a big pinch of salt and black pepper on a baking tray. Roast 12–15 minutes until tender and lightly browned.",
+    "Start turkey: Heat 2 tbsp olive oil in a large skillet over medium-high. Add onions and cook 2–3 minutes until softened.",
+    "Add turkey: Crumble in turkey and cook 5–7 minutes, breaking up, until no longer pink.",
+    "Season turkey: Stir in garlic, lemon zest, 1 tsp salt, and 1/2 tsp black pepper. Cook 1–2 minutes until fragrant. Squeeze in half the lemon, then stir in parsley. Turn heat low to keep warm.",
+    "Warm cauli rice: In a separate skillet over medium heat, add cauliflower rice with a pinch of salt and black pepper. Cook 3–4 minutes, stirring, until hot and steamy.",
+    "Finish and serve: Plate cauliflower rice, top with turkey, add roasted zucchini on the side. Serve with remaining lemon wedges for extra brightness."
+  ],
+  "instructions": [
+    "Heat oven to 220°C/425°F.",
+    "Trim and cut zucchini into half-moons, 1 cm thick.",
+    "Finely chop onions.",
+    "Mince garlic.",
+    "Roughly chop parsley.",
+    "Zest then halve the lemon.",
+    "Roast zucchini: Toss zucchini with 1 tbsp olive oil, a big pinch of salt and black pepper on a baking tray. Roast 12–15 minutes until tender and lightly browned.",
+    "Start turkey: Heat 2 tbsp olive oil in a large skillet over medium-high. Add onions and cook 2–3 minutes until softened.",
+    "Add turkey: Crumble in turkey and cook 5–7 minutes, breaking up, until no longer pink.",
+    "Season turkey: Stir in garlic, lemon zest, 1 tsp salt, and 1/2 tsp black pepper. Cook 1–2 minutes until fragrant. Squeeze in half the lemon, then stir in parsley. Turn heat low to keep warm.",
+    "Warm cauli rice: In a separate skillet over medium heat, add cauliflower rice with a pinch of salt and black pepper. Cook 3–4 minutes, stirring, until hot and steamy.",
+    "Finish and serve: Plate cauliflower rice, top with turkey, add roasted zucchini on the side. Serve with remaining lemon wedges for extra brightness."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "zucchini",
+      "quantity": "4 medium"
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp"
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "turkey",
+      "quantity": "800 g",
+      "preparation": "crumbled or chopped small"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced"
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 whole",
+      "preparation": "zested and halved"
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "roughly chopped"
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "700 g (about 2 x 350 g packs)"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Greek"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "HighProtein",
+      "Keto",
+      "LowCarb"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "zucchini",
+      "quantity": "4 medium",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "olive oil",
+      "quantity": "3 tbsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1.5 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "black pepper",
+      "quantity": "1 tsp",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "turkey",
+      "quantity": "800 g",
+      "preparation": "crumbled or chopped small",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "4 cloves",
+      "preparation": "minced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "lemon",
+      "quantity": "1 whole",
+      "preparation": "zested and halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parsley",
+      "quantity": "1/4 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cauliflower rice",
+      "quantity": "700 g (about 2 x 350 g packs)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T153658Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T153421Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

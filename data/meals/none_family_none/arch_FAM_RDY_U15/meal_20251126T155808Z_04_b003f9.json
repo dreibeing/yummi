@@ -1,0 +1,157 @@
+{
+  "meal_id": "meal_20251126T155808Z_04_b003f9",
+  "archetype_uid": "arch_FAM_RDY_U15",
+  "archetype_name": "Family Heat-and-Eat Weeknights (Under 15, No Heat)",
+  "name": "Microwave Roast Chicken Dinner Plates with Mash, Green Beans, and Gravy",
+  "description": "Heat-and-eat roast chicken with creamy mashed potatoes, microwave-steamed green beans, and warm gravy. Kid-friendly, no chili heat, ready in minutes.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Set out 4 microwave-safe plates and a microwave-safe bowl with a lid.",
+    "Trim ends from green beans if needed and place in the bowl with 2 tablespoons water; cover.",
+    "Open gravy and place in a small microwave-safe jug or bowl.",
+    "Have butter and salt and pepper ready for seasoning."
+  ],
+  "cook_steps": [
+    "Microwave roast chicken according to package directions until hot.",
+    "Microwave mashed potatoes according to package directions until steaming.",
+    "Microwave the covered green beans on High for 3–5 minutes until crisp-tender; drain any water.",
+    "Microwave gravy on High for 60–90 seconds, stirring halfway, until hot.",
+    "Plate chicken (slice if desired), add a scoop of mashed potatoes, and a serving of green beans to each plate.",
+    "Top potatoes with butter; season potatoes and green beans with salt and pepper to taste.",
+    "Spoon gravy over chicken (and potatoes if desired) and serve."
+  ],
+  "instructions": [
+    "Set out 4 microwave-safe plates and a microwave-safe bowl with a lid.",
+    "Trim ends from green beans if needed and place in the bowl with 2 tablespoons water; cover.",
+    "Open gravy and place in a small microwave-safe jug or bowl.",
+    "Have butter and salt and pepper ready for seasoning.",
+    "Microwave roast chicken according to package directions until hot.",
+    "Microwave mashed potatoes according to package directions until steaming.",
+    "Microwave the covered green beans on High for 3–5 minutes until crisp-tender; drain any water.",
+    "Microwave gravy on High for 60–90 seconds, stirring halfway, until hot.",
+    "Plate chicken (slice if desired), add a scoop of mashed potatoes, and a serving of green beans to each plate.",
+    "Top potatoes with butter; season potatoes and green beans with salt and pepper to taste.",
+    "Spoon gravy over chicken (and potatoes if desired) and serve."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "roast chicken",
+      "quantity": "1 family-size ready-to-eat chicken",
+      "preparation": "heat per pack"
+    },
+    {
+      "core_item_name": "mashed potatoes",
+      "quantity": "1 large family tray",
+      "preparation": "heat per pack"
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trim ends"
+    },
+    {
+      "core_item_name": "gravy",
+      "quantity": "1 cup",
+      "preparation": "warm in microwave"
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tablespoons",
+      "preparation": "for topping potatoes"
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "to taste",
+      "preparation": "for seasoning"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "Under15"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "NoHeat"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Microwave",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "ReadyMealPreferred",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "roast chicken",
+      "quantity": "1 family-size ready-to-eat chicken",
+      "preparation": "heat per pack",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "mashed potatoes",
+      "quantity": "1 large family tray",
+      "preparation": "heat per pack",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "green beans",
+      "quantity": "400 g",
+      "preparation": "trim ends",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "gravy",
+      "quantity": "1 cup",
+      "preparation": "warm in microwave",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "butter",
+      "quantity": "2 tablespoons",
+      "preparation": "for topping potatoes",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt and pepper",
+      "quantity": "to taste",
+      "preparation": "for seasoning",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T155951Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T155808Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}

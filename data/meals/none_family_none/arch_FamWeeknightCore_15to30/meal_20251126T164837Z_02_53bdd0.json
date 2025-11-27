@@ -1,0 +1,245 @@
+{
+  "meal_id": "meal_20251126T164837Z_02_53bdd0",
+  "archetype_uid": "arch_FamWeeknightCore_15to30",
+  "archetype_name": "Family Weeknight Classics (Mild, 15–30 min)",
+  "name": "One-Pan Creamy Sun-Dried Tomato Chicken Orzo",
+  "description": "Family-friendly chicken and orzo simmered in sun-dried tomato sauce and stock, finished with peas, cherry tomatoes, parmesan, and basil. Mild, quick, and comforting.",
+  "servings": "Serves 4",
+  "prep_steps": [
+    "Dice onions.",
+    "Finely chop garlic.",
+    "Cut chicken thigh fillets into bite-size pieces and pat dry.",
+    "Halve cherry tomatoes.",
+    "Grate parmesan cheese if not pre-grated.",
+    "Pick basil leaves and chop roughly.",
+    "Measure chicken stock and sun-dried tomato pasta sauce."
+  ],
+  "cook_steps": [
+    "Heat olive oil in a large deep skillet over medium-high heat.",
+    "Season chicken thigh fillets lightly with salt and pepper, then add to the skillet and sear until lightly browned, 4–5 minutes.",
+    "Add onions and cook, stirring, until softened, 2–3 minutes; add garlic and cook 30 seconds.",
+    "Stir in orzo and toast for 1 minute to coat with oil and aromatics.",
+    "Pour in chicken stock and sun-dried tomato pasta sauce; stir, bring to a gentle simmer, then reduce heat to medium-low.",
+    "Cover and cook, stirring once or twice, until orzo is just tender and most liquid is absorbed, 10–12 minutes.",
+    "Stir in peas and cherry tomatoes; cook uncovered 2–3 minutes until peas are heated through and sauce is creamy. If too thick, add a splash of stock or water.",
+    "Remove from heat; fold in parmesan cheese and half the basil. Taste and adjust salt and pepper.",
+    "Top with remaining basil and serve hot."
+  ],
+  "instructions": [
+    "Dice onions.",
+    "Finely chop garlic.",
+    "Cut chicken thigh fillets into bite-size pieces and pat dry.",
+    "Halve cherry tomatoes.",
+    "Grate parmesan cheese if not pre-grated.",
+    "Pick basil leaves and chop roughly.",
+    "Measure chicken stock and sun-dried tomato pasta sauce.",
+    "Heat olive oil in a large deep skillet over medium-high heat.",
+    "Season chicken thigh fillets lightly with salt and pepper, then add to the skillet and sear until lightly browned, 4–5 minutes.",
+    "Add onions and cook, stirring, until softened, 2–3 minutes; add garlic and cook 30 seconds.",
+    "Stir in orzo and toast for 1 minute to coat with oil and aromatics.",
+    "Pour in chicken stock and sun-dried tomato pasta sauce; stir, bring to a gentle simmer, then reduce heat to medium-low.",
+    "Cover and cook, stirring once or twice, until orzo is just tender and most liquid is absorbed, 10–12 minutes.",
+    "Stir in peas and cherry tomatoes; cook uncovered 2–3 minutes until peas are heated through and sauce is creamy. If too thick, add a splash of stock or water.",
+    "Remove from heat; fold in parmesan cheese and half the basil. Taste and adjust salt and pepper.",
+    "Top with remaining basil and serve hot."
+  ],
+  "ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1–2 tablespoons"
+    },
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "600–700 g",
+      "preparation": "cut into bite-size pieces"
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon, plus to taste"
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon, plus to taste"
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced"
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "finely chopped"
+    },
+    {
+      "core_item_name": "orzo",
+      "quantity": "1 1/2 cups (about 300 g)"
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "3 cups"
+    },
+    {
+      "core_item_name": "sun-dried tomato pasta sauce",
+      "quantity": "1 cup"
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup",
+      "preparation": "frozen or fresh"
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved"
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "1/2 cup",
+      "preparation": "grated"
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "1/4 cup",
+      "preparation": "roughly chopped"
+    }
+  ],
+  "meal_tags": {
+    "DietaryRestrictions": [
+      "None"
+    ],
+    "Audience": [
+      "Family"
+    ],
+    "Cuisine": [
+      "American",
+      "Italian"
+    ],
+    "PrepTime": [
+      "15to30"
+    ],
+    "Complexity": [
+      "Simple"
+    ],
+    "HeatSpice": [
+      "Mild"
+    ],
+    "Allergens": [
+      "None"
+    ],
+    "NutritionFocus": [
+      "NoNutritionFocus"
+    ],
+    "Equipment": [
+      "Oven",
+      "StoveTop"
+    ],
+    "MealComponentPreference": [
+      "FromScratch",
+      "SemiPrepared"
+    ]
+  },
+  "product_matches": [],
+  "final_ingredients": [
+    {
+      "core_item_name": "olive oil",
+      "quantity": "1–2 tablespoons",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken thigh fillets",
+      "quantity": "600–700 g",
+      "preparation": "cut into bite-size pieces",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "salt",
+      "quantity": "1 teaspoon, plus to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "pepper",
+      "quantity": "1/2 teaspoon, plus to taste",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "onions",
+      "quantity": "1 medium",
+      "preparation": "diced",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "garlic",
+      "quantity": "2 cloves",
+      "preparation": "finely chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "orzo",
+      "quantity": "1 1/2 cups (about 300 g)",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "chicken stock",
+      "quantity": "3 cups",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "sun-dried tomato pasta sauce",
+      "quantity": "1 cup",
+      "preparation": null,
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "peas",
+      "quantity": "1 cup",
+      "preparation": "frozen or fresh",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "cherry tomatoes",
+      "quantity": "1 cup",
+      "preparation": "halved",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "parmesan cheese",
+      "quantity": "1/2 cup",
+      "preparation": "grated",
+      "selected_product": null,
+      "ingredient_line": null
+    },
+    {
+      "core_item_name": "basil",
+      "quantity": "1/4 cup",
+      "preparation": "roughly chopped",
+      "selected_product": null,
+      "ingredient_line": null
+    }
+  ],
+  "warnings": [],
+  "metadata": {
+    "created_at": "20251126T164939Z",
+    "meal_model": "gpt-5",
+    "tags_version": "2025.02.1",
+    "run_dir": "data\\meals\\runs\\none_family_none\\run_20251126T164837Z",
+    "predefined_scope": "none_family_none",
+    "product_selection_status": "skipped"
+  }
+}
