@@ -4591,12 +4591,23 @@ const handlePreferenceSelection = useCallback(
                   <View style={styles.pastOrderCardDateWrapper}>
                     <Text style={styles.pastOrderCardDate}>{dateLabel}</Text>
                     <TouchableOpacity
-                      style={styles.pastOrderDeleteButton}
+                      style={[
+                        styles.prefControlButton,
+                        styles.prefControlButtonDislike,
+                        styles.pastOrderDeleteButton,
+                      ]}
                       onPress={() => handleDeletePastOrder(order)}
                       accessibilityRole="button"
                       accessibilityLabel="Delete past order"
                     >
-                      <Feather name="trash-2" size={16} color="#c65959" />
+                      <Feather
+                        name="trash-2"
+                        size={16}
+                        style={[
+                          styles.prefControlIcon,
+                          styles.prefControlIconDislike,
+                        ]}
+                      />
                     </TouchableOpacity>
                   </View>
                 </View>
