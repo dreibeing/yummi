@@ -2207,7 +2207,14 @@ function AppContent() {
         .toUpperCase();
       const numericQuantity = getIngredientQuantityValue(ingredient);
       const displayQuantity = formatIngredientQuantity(numericQuantity);
-      const disableDecrease = numericQuantity <= 0;
+      const needsManualProductSelection = Boolean(
+        ingredient.needsManualProductSelection ?? ingredient.needs_manual_product_selection
+      );
+      const manualNote =
+        ingredient.notes ??
+        "We couldn't find a Woolworths product to cover this ingredient yet. Please pick one manually.";
+      const disableDecrease = needsManualProductSelection || numericQuantity <= 0;
+      const disableIncrease = needsManualProductSelection;
       const priceDetails =
         shoppingListPricing.byIngredientId?.[ingredient.id] ?? {};
       const unitPriceMinor =
@@ -2220,7 +2227,13 @@ function AppContent() {
           ? priceDetails.lineTotalMinor
           : null;
       return (
-        <View key={ingredient.id} style={styles.ingredientsListItem}>
+        <View
+          key={ingredient.id}
+          style={[
+            styles.ingredientsListItem,
+            needsManualProductSelection && styles.ingredientsListItemManual,
+          ]}
+        >
           <View style={styles.ingredientsListItemRow}>
             <View style={styles.ingredientsItemImageWrapper}>
               {productImageUrl ? (
@@ -2250,6 +2263,11 @@ function AppContent() {
                   {`${formatCurrency(unitPriceMinor)} each`}
                 </Text>
               ) : null}
+              {needsManualProductSelection ? (
+                <View style={styles.ingredientsManualNotice}>
+                  <Text style={styles.ingredientsManualNoticeText}>{manualNote}</Text>
+                </View>
+              ) : null}
               <View style={styles.ingredientsQuantityRow}>
                 <TouchableOpacity
                   style={[
@@ -2277,12 +2295,23 @@ function AppContent() {
                   </Text>
                 </View>
                 <TouchableOpacity
-                  style={styles.ingredientsQuantityButton}
+                  style={[
+                    styles.ingredientsQuantityButton,
+                    disableIncrease && styles.ingredientsQuantityButtonDisabled,
+                  ]}
                   onPress={() => handleIngredientQuantityIncrease(ingredient.id)}
                   accessibilityRole="button"
                   accessibilityLabel={`Increase quantity for ${ingredient.text}`}
+                  disabled={disableIncrease}
                 >
-                  <Text style={styles.ingredientsQuantityButtonText}>+</Text>
+                  <Text
+                    style={[
+                      styles.ingredientsQuantityButtonText,
+                      disableIncrease && styles.ingredientsQuantityButtonTextDisabled,
+                    ]}
+                  >
+                    +
+                  </Text>
                 </TouchableOpacity>
               </View>
             </View>
@@ -5792,6 +5821,10 @@ const styles = StyleSheet.create({
     gap: 12,
     ...SHADOW.card,
   },
+  ingredientsListItemManual: {
+    borderWidth: 1,
+    borderColor: "#fca5a5",
+  },
   ingredientsListItemRow: {
     flexDirection: "row",
     alignItems: "stretch",
@@ -5838,6 +5871,18 @@ const styles = StyleSheet.create({
   ingredientsItemUnitPrice: {
     fontSize: 13,
     color: "#4d4d4d",
+  },
+  ingredientsManualNotice: {
+    padding: 10,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: "#fecdd3",
+    backgroundColor: "#fff1f2",
+  },
+  ingredientsManualNoticeText: {
+    fontSize: 12,
+    lineHeight: 16,
+    color: "#9f1239",
   },
   ingredientsItemLineTotal: {
     fontSize: 15,

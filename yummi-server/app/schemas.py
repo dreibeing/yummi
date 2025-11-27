@@ -279,6 +279,7 @@ class ShoppingListResultItem(BaseModel):
     linkedProducts: List[ShoppingListProductSelection] = Field(default_factory=list)
     unitPrice: Optional[float] = None
     unitPriceMinor: Optional[int] = None
+    needsManualProductSelection: bool = False
 
 
 class ShoppingListBuildResponse(BaseModel):

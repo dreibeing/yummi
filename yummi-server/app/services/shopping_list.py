@@ -248,16 +248,8 @@ def _build_auto_assigned_item(group: Dict[str, Any]) -> ShoppingListResultItem:
     fallback_packages = float(group.get("fallback_packages") or 1)
     llm_entry = {
         "classification": "pickup",
-        "packages_needed": fallback_packages,
-        "notes": "Auto-assigned single linked product",
-        "product_selections": [
-            {
-                "product_id": product.get("productId") or product.get("product_id"),
-                "catalog_ref_id": product.get("catalogRefId") or product.get("catalog_ref_id"),
-                "image_url": product.get("imageUrl") or product.get("image_url"),
-                "packages": fallback_packages,
-            }
-        ],
+        "product_id": product.get("productId") or product.get("product_id"),
+        "catalog_ref_id": product.get("catalogRefId") or product.get("catalog_ref_id"),
     }
     return _build_result_item(group, llm_entry)
 
@@ -407,10 +399,10 @@ def _summarize_requirement(entries: Sequence[Dict[str, Any]]) -> Dict[str, Any]:
 
 def _build_system_prompt() -> str:
     return (
-        "You are Yummi's grocery planning assistant. Your job is to examine meal ingredient requirements "
-        "and decide which Woolworths retail products (and how many packs of each) the user should buy "
-        "to satisfy every meal. Always return valid JSON, classify each ingredient as 'pickup' or 'pantry', "
-        "and source selections exclusively from the provided product IDs."
+        "You are Yummi's grocery planning assistant. For each ingredient group you receive a breakdown of "
+        "per-meal requirements plus a catalog of Woolworths products (with pack sizes and prices). "
+        "Sum the required units across every meal, match them to a product's pack size, and output how many "
+        "retail packs to buy so packs * pack_size >= total required. Never invent products or rely on pack sizes as if they were counts."
     )
 
 
@@ -451,14 +443,8 @@ def _build_user_prompt(
             {
                 "group_key": "string identifier from ingredient_groups[*].group_key",
                 "classification": "pickup | pantry",
-                "packages_needed": "non-negative integer describing how many retail packs to buy",
-                "notes": "optional short rationale",
-                "product_selections": [
-                    {
-                        "product_id": "sku drawn from linked_products[].productId",
-                        "packages": "float or int count of packs to buy",
-                    }
-                ],
+                "product_id": "productId drawn from linked_products[].productId (omit only when no product can satisfy the requirement)",
+                "catalog_ref_id": "optional catalogRefId when product_id is unavailable",
             }
         ]
     }
@@ -472,12 +458,13 @@ def _build_user_prompt(
     )
     schema_json = json.dumps(schema, ensure_ascii=False, indent=2)
     instructions = (
-        "For every ingredient group return exactly one entry. Treat each requirement in the group as a distinct meal need "
-        "and combine Woolworths products logically so the user can cover them (multiple SKUs or multiple packs are allowed). "
-        "Classify staples or tiny amounts as 'pantry' (default quantity zero) and everything else as 'pickup'. "
-        "Every entry (including pantry items) must include at least one product selection referencing the provided linked_products[].productId; "
-        "output only the product_id and how many packages to buy (use 0 packs when marking something as pantry). "
-        "Do not generate custom product names or descriptions."
+        "Return exactly one entry per ingredient group and keep the response minimal:\n"
+        "1. Inspect `requirements` to understand how many total units the meals need (sum the `requirement_measurement.base_amount` values when present; otherwise infer from the text).\n"
+        "2. Review `linked_products` to see the available Woolworths SKUs. Pick the single best product ID (`product_id`) that covers the requirement. "
+        "Do not include pricing, pack math, or other metadata—only the identifier (plus optional `catalog_ref_id`).\n"
+        "3. Classify items the user likely has on hand as `pantry` (packages default to zero); everything else is `pickup`.\n"
+        "4. If no provided product can satisfy the request, simply omit `product_id`/`catalog_ref_id` for that entry.\n"
+        "5. Always output valid JSON that matches the schema."
     )
     return (
         f"{instructions}\nContext JSON:\n```json\n{context_json}\n```\n"
@@ -556,7 +543,10 @@ async def _score_ingredient_groups(
                 group_key,
                 outcome,
             )
-            results[group_key] = _build_result_item(group, None)
+            results[group_key] = _build_manual_selection_item(
+                group,
+                reason="Unable to select a Woolworths product automatically.",
+            )
             continue
         results[group_key] = outcome
     return results
@@ -609,38 +599,37 @@ def _extract_group_entry(payload: Dict[str, Any], group_key: Any) -> Dict[str, A
 
 
 def _build_result_item(group: Dict[str, Any], llm_entry: Dict[str, Any] | None) -> ShoppingListResultItem:
+    group_label = group.get("label") or group.get("group_key") or "Ingredient"
     fallback_packages = float(group.get("fallback_packages") or 1)
     classification = "pickup"
-    group_label = group.get("label") or group.get("group_key") or "Ingredient"
     display_name = group_label
-    notes = None
-    packages = fallback_packages
     products = group.get("linked_products") or []
-    if llm_entry:
-        classification = _coerce_classification(llm_entry.get("classification")) or classification
-        notes = llm_entry.get("notes")
-        packages = _coerce_packages(llm_entry.get("packages_needed"), fallback_packages, classification)
-        model_products = _coerce_product_selections(llm_entry.get("product_selections"))
-        if model_products:
-            products = model_products
-    product_display_name = _resolve_primary_product_name(products)
+    if not llm_entry:
+        return _build_manual_selection_item(group, reason="Model returned no selection.")
+    classification = _coerce_classification(llm_entry.get("classification")) or classification
+    product_id = llm_entry.get("product_id") or llm_entry.get("productId")
+    catalog_ref_id = llm_entry.get("catalog_ref_id") or llm_entry.get("catalogRefId")
+    selected_product = _select_product_option(products, product_id, catalog_ref_id)
+    if classification == "pickup" and not selected_product:
+        return _build_manual_selection_item(
+            group,
+            reason=f"No viable Woolworths product was returned for {group_label}.",
+        )
+    products = [selected_product] if selected_product else []
+    product_display_name = _resolve_primary_product_name(products) if products else None
     if product_display_name:
         display_name = product_display_name
+    packages = _calculate_required_packages(group, selected_product, fallback_packages, classification)
     default_quantity = 0.0 if classification == "pantry" else packages
     unit_price = _resolve_unit_price(products, group.get("entries") or [])
     unit_price_minor = _to_minor_units(unit_price)
-    selection_models = [
-        ShoppingListProductSelection(
-            productId=product.get("productId") or product.get("product_id"),
-            catalogRefId=product.get("catalogRefId") or product.get("catalog_ref_id"),
-            name=product.get("name"),
-            detailUrl=product.get("detailUrl") or product.get("detail_url"),
-            salePrice=product.get("salePrice"),
-            packages=product.get("packages"),
-            imageUrl=product.get("imageUrl") or product.get("image_url"),
-        )
-        for product in products
-    ]
+    selection_models = (
+        [
+            _build_product_selection_model(selected_product, packages)
+        ]
+        if selected_product
+        else []
+    )
     return ShoppingListResultItem(
         id=group.get("group_key") or display_name,
         groupKey=group.get("group_key") or display_name,
@@ -648,10 +637,107 @@ def _build_result_item(group: Dict[str, Any], llm_entry: Dict[str, Any] | None) 
         classification=classification,
         requiredQuantity=float(packages),
         defaultQuantity=float(default_quantity),
-        notes=notes,
+        notes=None,
         linkedProducts=selection_models,
         unitPrice=unit_price,
         unitPriceMinor=unit_price_minor,
+    )
+
+
+def _build_manual_selection_item(group: Dict[str, Any], reason: str | None = None) -> ShoppingListResultItem:
+    group_label = group.get("label") or group.get("group_key") or "Ingredient"
+    note = reason or f"We couldn't find a Woolworths product for {group_label}."
+    return ShoppingListResultItem(
+        id=group.get("group_key") or group_label,
+        groupKey=group.get("group_key") or group_label,
+        text=str(group_label),
+        classification="pickup",
+        requiredQuantity=0.0,
+        defaultQuantity=0.0,
+        notes=note,
+        linkedProducts=[],
+        unitPrice=None,
+        unitPriceMinor=None,
+        needsManualProductSelection=True,
+    )
+
+
+def _select_product_option(
+    products: Sequence[Dict[str, Any]],
+    product_id: Any,
+    catalog_ref_id: Any,
+) -> Dict[str, Any] | None:
+    if not products:
+        return None
+    target_id = str(product_id) if product_id is not None else None
+    target_catalog = str(catalog_ref_id) if catalog_ref_id is not None else None
+    for product in products:
+        pid = product.get("productId") or product.get("product_id")
+        cid = product.get("catalogRefId") or product.get("catalog_ref_id")
+        if target_id and pid and str(pid) == target_id:
+            return dict(product)
+        if target_catalog and cid and str(cid) == target_catalog:
+            return dict(product)
+    return None
+
+
+def _calculate_required_packages(
+    group: Dict[str, Any],
+    product: Dict[str, Any] | None,
+    fallback_packages: float,
+    classification: str,
+) -> float:
+    if classification == "pantry":
+        return 0.0
+    fallback = max(1.0, math.ceil(fallback_packages or 1))
+    if not product:
+        return fallback
+    summary = group.get("requirement_summary") or {}
+    total_amount = summary.get("amount")
+    requirement_unit = summary.get("unit_type")
+    pack_amount, pack_unit = _extract_pack_measurement(product)
+    if (
+        total_amount
+        and pack_amount
+        and requirement_unit
+        and pack_unit
+        and requirement_unit == pack_unit
+        and pack_amount > 0
+    ):
+        return max(1.0, math.ceil(total_amount / pack_amount))
+    return fallback
+
+
+def _extract_pack_measurement(
+    product: Dict[str, Any] | None,
+) -> tuple[float | None, str | None]:
+    if not product:
+        return None, None
+    measurement = product.get("packageMeasurement") or product.get("package_measurement")
+    if measurement:
+        amount = measurement.get("base_amount")
+        unit_type = measurement.get("unit_type")
+        if isinstance(amount, (int, float)) and math.isfinite(amount) and unit_type:
+            return float(amount), unit_type
+    package_quantity = product.get("packageQuantity")
+    if isinstance(package_quantity, (int, float)) and math.isfinite(package_quantity):
+        return float(package_quantity), "count"
+    return None, None
+
+
+def _build_product_selection_model(
+    product: Dict[str, Any] | None,
+    packages: float,
+) -> ShoppingListProductSelection:
+    product = product or {}
+    return ShoppingListProductSelection(
+        productId=product.get("productId") or product.get("product_id"),
+        catalogRefId=product.get("catalogRefId") or product.get("catalog_ref_id"),
+        name=product.get("name"),
+        detailUrl=product.get("detailUrl") or product.get("detail_url"),
+        salePrice=product.get("salePrice"),
+        packages=packages,
+        imageUrl=product.get("imageUrl") or product.get("image_url"),
     )
 
 
@@ -683,26 +769,6 @@ def _coerce_packages(value: Any, fallback: float, classification: str) -> float:
     if classification == "pantry":
         return max(0.0, safe_value)
     return safe_value or fallback
-
-
-def _coerce_product_selections(value: Any) -> List[Dict[str, Any]]:
-    if not isinstance(value, list):
-        return []
-    selections: List[Dict[str, Any]] = []
-    for entry in value:
-        if not isinstance(entry, dict):
-            continue
-        product_id = entry.get("product_id") or entry.get("productId")
-        catalog_ref_id = entry.get("catalog_ref_id") or entry.get("catalogRefId")
-        packages = entry.get("packages")
-        hydrated = _build_classified_product_option(product_id, catalog_ref_id, None)
-        if not hydrated:
-            continue
-        hydrated["packages"] = packages
-        if not hydrated.get("imageUrl"):
-            hydrated["imageUrl"] = entry.get("image_url") or entry.get("imageUrl")
-        selections.append(hydrated)
-    return selections
 
 
 def _build_display_text(ingredient: Dict[str, Any], index: int) -> str:
