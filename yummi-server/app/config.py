@@ -60,7 +60,7 @@ class Settings(BaseSettings):
     openai_shopping_list_model: str = Field(default="gpt-5-mini")
     openai_shopping_list_top_p: float | None = Field(default=None)
     openai_shopping_list_reasoning_effort: str = Field(default="low")
-    openai_shopping_list_max_output_tokens: int = Field(default=12000)
+    openai_shopping_list_max_output_tokens: int = Field(default=500)
     openai_request_timeout_seconds: int = Field(default=90, ge=30, le=300)
 
     # Observability

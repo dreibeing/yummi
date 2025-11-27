@@ -272,6 +272,7 @@ class ShoppingListResultItem(BaseModel):
     id: str
     groupKey: str
     text: str
+    productName: Optional[str] = None
     classification: Literal["pickup", "pantry"]
     requiredQuantity: float = Field(default=0, ge=0)
     defaultQuantity: float = Field(default=0, ge=0)

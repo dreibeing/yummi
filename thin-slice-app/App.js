@@ -2151,9 +2151,15 @@ function AppContent() {
       const normalizedQuantity = Math.max(1, Math.ceil(quantity));
       const selection = pickPreferredShoppingListProduct(ingredient);
       if (!selection || (!selection.productId && !selection.catalogRefId)) {
+        const displayName =
+          selection?.name ??
+          ingredient.productName ??
+          ingredient.text ??
+          ingredient.groupKey ??
+          "Ingredient";
         skipped.push({
           id: ingredient.id ?? ingredient.groupKey ?? ingredient.text ?? null,
-          label: ingredient.text ?? ingredient.groupKey ?? selection?.name ?? "Ingredient",
+          label: displayName,
         });
         return;
       }
@@ -2167,7 +2173,11 @@ function AppContent() {
           selection.productId ??
           selection.catalogRefId ??
           `ingredient-${readyItems.length + 1}`,
-        title: selection.name ?? ingredient.text ?? "Ingredient",
+        title:
+          selection.name ??
+          ingredient.productName ??
+          ingredient.text ??
+          "Ingredient",
         productId: selection.productId,
         catalogRefId: selection.catalogRefId ?? selection.productId,
         qty: normalizedQuantity,
@@ -2195,13 +2205,14 @@ function AppContent() {
         return null;
       }
       const preferredProduct = pickPreferredShoppingListProduct(ingredient);
-      const productImageUrl = preferredProduct?.imageUrl ?? null;
-      const placeholderInitial = (
+      const displayName =
         preferredProduct?.name ??
+        ingredient.productName ??
         ingredient.text ??
         ingredient.groupKey ??
-        "?"
-      )
+        "Ingredient";
+      const productImageUrl = preferredProduct?.imageUrl ?? null;
+      const placeholderInitial = (displayName ?? "?")
         .trim()
         .charAt(0)
         .toUpperCase();
@@ -2251,7 +2262,7 @@ function AppContent() {
             </View>
             <View style={styles.ingredientsItemBody}>
               <View style={styles.ingredientsItemHeader}>
-                <Text style={styles.ingredientsItemText}>{ingredient.text}</Text>
+                <Text style={styles.ingredientsItemText}>{displayName}</Text>
                 {lineTotalMinor != null ? (
                   <Text style={styles.ingredientsItemLineTotal}>
                     {formatCurrency(lineTotalMinor)}
@@ -2276,7 +2287,7 @@ function AppContent() {
                   ]}
                   onPress={() => handleIngredientQuantityDecrease(ingredient.id)}
                   accessibilityRole="button"
-                  accessibilityLabel={`Decrease quantity for ${ingredient.text}`}
+                  accessibilityLabel={`Decrease quantity for ${displayName}`}
                   disabled={disableDecrease}
                 >
                   <Text
@@ -2301,7 +2312,7 @@ function AppContent() {
                   ]}
                   onPress={() => handleIngredientQuantityIncrease(ingredient.id)}
                   accessibilityRole="button"
-                  accessibilityLabel={`Increase quantity for ${ingredient.text}`}
+                  accessibilityLabel={`Increase quantity for ${displayName}`}
                   disabled={disableIncrease}
                 >
                   <Text
