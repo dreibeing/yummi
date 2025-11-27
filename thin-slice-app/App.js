@@ -4579,6 +4579,8 @@ const handlePreferenceSelection = useCallback(
           {mealsList.map((meal, index) => {
             const servingsCount = deriveMealServingsCount(meal);
             const servingsLabel = formatServingsPeopleLabel(servingsCount);
+            const isSelected = Boolean(selectedHomeMealIds[meal?.mealId]);
+            const isDisliked = Boolean(homeMealDislikedIds[meal?.mealId]);
             return (
               <TouchableOpacity
                 key={`${meal?.mealId ?? "meal"}-${index}`}
@@ -4602,6 +4604,55 @@ const handlePreferenceSelection = useCallback(
                     <Text style={styles.homeMealServingsValueText}>
                       {servingsLabel}
                     </Text>
+                  </View>
+                  <View style={styles.homeMealActionGroup}>
+                    <TouchableOpacity
+                      style={[
+                        styles.homeMealDislikeButton,
+                        isDisliked && styles.homeMealDislikeButtonActive,
+                      ]}
+                      onPress={(event) => {
+                        event?.stopPropagation?.();
+                        handleToggleHomeMealDislike(meal.mealId);
+                      }}
+                      accessibilityRole="button"
+                      accessibilityLabel={
+                        isDisliked ? "Undo dislike" : "Mark meal as disliked"
+                      }
+                    >
+                      <Text
+                        style={[
+                          styles.homeMealDislikeButtonIcon,
+                          isDisliked && styles.homeMealDislikeButtonIconActive,
+                        ]}
+                      >
+                        👎
+                      </Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity
+                      style={[
+                        styles.homeMealChooseButton,
+                        isSelected && styles.homeMealChooseButtonActive,
+                        styles.homeMealActionIconButton,
+                      ]}
+                      onPress={(event) => {
+                        event?.stopPropagation?.();
+                        handleToggleHomeMealSelection(meal.mealId);
+                      }}
+                      accessibilityRole="button"
+                      accessibilityLabel={
+                        isSelected ? "Undo like" : "Mark meal as liked"
+                      }
+                    >
+                      <Feather
+                        name="thumbs-up"
+                        size={20}
+                        style={[
+                          styles.homeMealChooseButtonIcon,
+                          isSelected && styles.homeMealChooseButtonIconActive,
+                        ]}
+                      />
+                    </TouchableOpacity>
                   </View>
                 </View>
               </TouchableOpacity>
@@ -7479,6 +7530,15 @@ const styles = StyleSheet.create({
   },
   homeMealChooseButtonTextActive: {
     color: "#fff",
+  },
+  homeMealChooseButtonIcon: {
+    color: "#00a651",
+  },
+  homeMealChooseButtonIconActive: {
+    color: "#fff",
+  },
+  homeMealActionIconButton: {
+    paddingHorizontal: 12,
   },
   homeMealIngredientItem: {
     fontSize: 14,
