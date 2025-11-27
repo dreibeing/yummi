@@ -4742,28 +4742,6 @@ const handlePreferenceSelection = useCallback(
                         </TouchableOpacity>
                       );
                     })}
-                    <TouchableOpacity
-                      style={[
-                        styles.prefControlButton,
-                        styles.prefControlButtonNeutral,
-                        styles.pastOrderDeleteButton,
-                      ]}
-                      onPress={(event) => {
-                        event?.stopPropagation?.();
-                        handleDeletePastOrder(order);
-                      }}
-                      accessibilityRole="button"
-                      accessibilityLabel="Delete this past order"
-                    >
-                      <Feather
-                        name="trash-2"
-                        size={18}
-                        style={[
-                          styles.prefControlIcon,
-                          styles.prefControlIconDislikeActive,
-                        ]}
-                      />
-                    </TouchableOpacity>
                   </View>
                 </View>
                 </TouchableOpacity>
