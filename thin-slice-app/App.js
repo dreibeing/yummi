@@ -4645,7 +4645,7 @@ const handlePreferenceSelection = useCallback(
                       }
                     >
                       <Feather
-                        name="thumbs-up"
+                        name="heart"
                         size={20}
                         style={[
                           styles.homeMealChooseButtonIcon,
