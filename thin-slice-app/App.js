@@ -4681,16 +4681,16 @@ const handlePreferenceSelection = useCallback(
                       Prep time: {meal.tags.PrepTime.join(", ")}
                     </Text>
                   ) : null}
-                  <View style={styles.homeMealFooterRow}>
-                    <View style={styles.homeMealServingsRow}>
-                      <Text style={styles.homeMealServingsLabel}>Servings:</Text>
-                      <Text style={styles.homeMealServingsValueText}>
-                        {servingsLabel}
-                      </Text>
-                    </View>
-                    <View
-                      style={[styles.prefControls, styles.pastOrderActionControls]}
-                    >
+                <View style={styles.homeMealFooterRow}>
+                  <View style={styles.homeMealServingsRow}>
+                    <Text style={styles.homeMealServingsLabel}>Servings:</Text>
+                    <Text style={styles.homeMealServingsValueText}>
+                      {servingsLabel}
+                    </Text>
+                  </View>
+                  <View
+                    style={[styles.prefControls, styles.pastOrderActionControls]}
+                  >
                       {PAST_ORDER_REACTION_CONTROLS.map((control) => {
                         const isActive =
                           control.id === "dislike" ? isDisliked : isSelected;
@@ -4739,11 +4739,33 @@ const handlePreferenceSelection = useCallback(
                             }`}
                           >
                             <Text style={iconStyles}>{control.icon}</Text>
-                          </TouchableOpacity>
-                        );
-                      })}
-                    </View>
+                        </TouchableOpacity>
+                      );
+                    })}
+                    <TouchableOpacity
+                      style={[
+                        styles.prefControlButton,
+                        styles.prefControlButtonNeutral,
+                        styles.pastOrderDeleteButton,
+                      ]}
+                      onPress={(event) => {
+                        event?.stopPropagation?.();
+                        handleDeletePastOrder(order);
+                      }}
+                      accessibilityRole="button"
+                      accessibilityLabel="Delete this past order"
+                    >
+                      <Feather
+                        name="trash-2"
+                        size={18}
+                        style={[
+                          styles.prefControlIcon,
+                          styles.prefControlIconDislikeActive,
+                        ]}
+                      />
+                    </TouchableOpacity>
                   </View>
+                </View>
                 </TouchableOpacity>
               );
             })}
@@ -6229,6 +6251,9 @@ const styles = StyleSheet.create({
   },
   pastOrderDeleteButton: {
     padding: 4,
+  },
+  pastOrderActionControls: {
+    marginLeft: "auto",
   },
   pastOrderCardDay: {
     fontSize: 16,
