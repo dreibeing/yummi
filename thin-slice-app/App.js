@@ -2783,18 +2783,11 @@ function AppContent() {
   }, []);
 
   const handleConfirmReturnHome = useCallback(() => {
-    Alert.alert(
-      "Return to home",
-      "This will take you back to the welcome screen.",
-      [
-        { text: "Cancel", style: "cancel" },
-        {
-          text: "Done",
-          onPress: handleReturnToWelcome,
-        },
-      ]
+    showConfirmationDialog(
+      "returnHomeFromShoppingList",
+      "This will take you back to the welcome screen."
     );
-  }, [handleReturnToWelcome]);
+  }, [showConfirmationDialog]);
 
   const recordPastOrder = useCallback(
     (mealsSnapshot, options = {}) => {
@@ -3566,6 +3559,8 @@ const handlePreferenceSelection = useCallback(
         });
       }
       deleteOrderRef.current = null;
+    } else if (context === "returnHomeFromShoppingList") {
+      handleReturnToWelcome();
     }
   }, [
     confirmationDialog.context,
@@ -3575,6 +3570,7 @@ const handlePreferenceSelection = useCallback(
     recordPastOrder,
     selectedHomeMeals,
     persistPastOrders,
+    handleReturnToWelcome,
   ]);
 
   const handleOpenShoppingListConfirm = useCallback(() => {
