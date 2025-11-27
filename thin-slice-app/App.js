@@ -1747,7 +1747,7 @@ function AppContent() {
     context: null,
   });
   const [confirmationDialogSubtitle, setConfirmationDialogSubtitle] = useState(
-    "use a free use"
+    "Use one free use"
   );
   const [pastOrders, setPastOrders] = useState([]);
   const [activePastOrder, setActivePastOrder] = useState(null);
@@ -3118,7 +3118,8 @@ const handlePreferenceSelection = useCallback(
     setHasAcknowledgedPreferenceComplete(true);
   }, []);
 
-  const showConfirmationDialog = useCallback((context, subtitle = "use a free use") => {
+  const showConfirmationDialog = useCallback(
+    (context, subtitle = "Use one free use") => {
     setConfirmationDialog({
       visible: true,
       context,
@@ -3171,9 +3172,9 @@ const handlePreferenceSelection = useCallback(
 
   const handleOpenShoppingListConfirm = useCallback(() => {
     if (!selectedHomeMeals.length) {
-      Alert.alert(
-        "Select meals",
-        "Choose at least one meal before preparing your shopping list."
+      showConfirmationDialog(
+        "noMeals",
+        "Please select at least one meal to build a shopping list."
       );
       return;
     }
@@ -3184,7 +3185,7 @@ const handlePreferenceSelection = useCallback(
       );
       return;
     }
-    showConfirmationDialog("shoppingList");
+    showConfirmationDialog("shoppingList", "Use one free use");
   }, [SHOPPING_LIST_API_ENDPOINT, selectedHomeMeals.length, showConfirmationDialog]);
 
   const handleIngredientsShoppingListNotice = useCallback(() => {
@@ -3217,14 +3218,16 @@ const handlePreferenceSelection = useCallback(
         >
           <Text style={styles.confirmAcceptText}>✓</Text>
         </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.mealDetailCloseButton}
-          onPress={handleCloseConfirmationDialog}
-          accessibilityRole="button"
-          accessibilityLabel="Dismiss confirmation"
-        >
-          <Text style={styles.mealDetailCloseText}>×</Text>
-        </TouchableOpacity>
+        {confirmationDialog.context !== "noMeals" && (
+          <TouchableOpacity
+            style={styles.mealDetailCloseButton}
+            onPress={handleCloseConfirmationDialog}
+            accessibilityRole="button"
+            accessibilityLabel="Dismiss confirmation"
+          >
+            <Text style={styles.mealDetailCloseText}>×</Text>
+          </TouchableOpacity>
+        )}
       </View>
     </View>
   ) : null;
@@ -3320,7 +3323,7 @@ const handlePreferenceSelection = useCallback(
       return;
     }
     setIsMealMenuOpen(false);
-    setScreen("ingredients");
+    setScreen("buildingShoppingList");
     setShoppingListStatus("pending");
     setShoppingListError(null);
     setShoppingListItems([]);
@@ -3338,12 +3341,14 @@ const handlePreferenceSelection = useCallback(
       const items = Array.isArray(data?.items) ? data.items.filter(Boolean) : [];
       setShoppingListItems(items);
       setShoppingListStatus("ready");
+      setScreen("ingredients");
     } catch (error) {
       console.warn("Shopping list build failed", error);
       setShoppingListStatus("error");
       setShoppingListError(
         error?.message ?? "Something went wrong while preparing your shopping list."
       );
+      setScreen("ingredients");
     }
   }, [
     SHOPPING_LIST_API_ENDPOINT,
@@ -3516,6 +3521,7 @@ const handlePreferenceSelection = useCallback(
       return;
     }
     setIsCompletingExploration(true);
+    setScreen("buildingRecommendations");
     try {
       const meals = await runRecommendationFeed();
       handleCompleteOnboardingFlow({
@@ -3527,7 +3533,12 @@ const handlePreferenceSelection = useCallback(
     } finally {
       setIsCompletingExploration(false);
     }
-  }, [handleCompleteOnboardingFlow, isCompletingExploration, runRecommendationFeed]);
+  }, [
+    handleCompleteOnboardingFlow,
+    isCompletingExploration,
+    runRecommendationFeed,
+    setScreen,
+  ]);
 
   const handleExplorationReaction = useCallback((mealId, value) => {
     setExplorationReactions((prev) => {
@@ -5245,6 +5256,40 @@ const handlePreferenceSelection = useCallback(
     );
   }
 
+  if (screen === "buildingShoppingList") {
+    return (
+      <SafeAreaView style={styles.preferencesSafeArea}>
+        <StatusBar style="dark" />
+        <View style={styles.explorationWrapper}>
+          <ActivityIndicator size="large" color="#00a651" />
+          <Text style={styles.explorationProcessingTitle}>
+            Building your shopping list…
+          </Text>
+          <Text style={styles.explorationProcessingSubtitle}>
+            We're gathering the ingredients and quantities you selected. This usually takes just a few seconds.
+          </Text>
+        </View>
+      </SafeAreaView>
+    );
+  }
+
+  if (screen === "buildingRecommendations") {
+    return (
+      <SafeAreaView style={styles.preferencesSafeArea}>
+        <StatusBar style="dark" />
+        <View style={styles.explorationWrapper}>
+          <ActivityIndicator size="large" color="#00a651" />
+          <Text style={styles.explorationProcessingTitle}>
+            Generating your recommendations…
+          </Text>
+          <Text style={styles.explorationProcessingSubtitle}>
+            We're sending your likes and dislikes to the chef AI before we surface your next meals. This usually takes 10–15 seconds.
+          </Text>
+        </View>
+      </SafeAreaView>
+    );
+  }
+
   if (
     isOnboardingActive &&
     isPreferencesFlowComplete &&
@@ -5421,6 +5466,7 @@ const handlePreferenceSelection = useCallback(
                             style={[
                               styles.homeMealDislikeButton,
                               isDisliked && styles.homeMealDislikeButtonActive,
+                              isDisliked && styles.prefControlButtonActive,
                             ]}
                             onPress={(event) => {
                               event?.stopPropagation?.();
@@ -5444,6 +5490,7 @@ const handlePreferenceSelection = useCallback(
                             style={[
                               styles.homeMealChooseButton,
                               isSelected && styles.homeMealChooseButtonActive,
+                              isSelected && styles.prefControlButtonActive,
                             ]}
                             onPress={(event) => {
                               event?.stopPropagation?.();
@@ -5489,7 +5536,7 @@ const handlePreferenceSelection = useCallback(
             style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
             onPress={handleOpenShoppingListConfirm}
           >
-            <Text style={styles.welcomeButtonText}>Next</Text>
+            <Text style={styles.welcomeButtonText}>Build Shopping List</Text>
           </TouchableOpacity>
         </View>
         {mealMenuOverlay}
@@ -5573,12 +5620,12 @@ const handlePreferenceSelection = useCallback(
             ) : (
               <View style={styles.ingredientsEmptyState}>
                 <Text style={styles.ingredientsEmptyText}>
-                  {shoppingListStatus === "ready"
-                    ? "Your selected meals don't require any new ingredients."
-                    : selectedHomeMeals.length
-                    ? "Tap Next on the previous screen to prepare your shopping list."
-                    : "Select meals on the previous screen to see their ingredients here."}
-                </Text>
+              {shoppingListStatus === "ready"
+                ? "Your selected meals don't require any new ingredients."
+                : selectedHomeMeals.length
+                ? "Tap Build Shopping List on the previous screen to prepare your shopping list."
+                : "Select meals on the previous screen to see their ingredients here."}
+            </Text>
               </View>
             )}
           </ScrollView>
@@ -5604,7 +5651,7 @@ const handlePreferenceSelection = useCallback(
               style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
               onPress={handleIngredientsShoppingListNotice}
             >
-              <Text style={styles.welcomeButtonText}>Get Shopping List (Use a free use)</Text>
+              <Text style={styles.welcomeButtonText}>Get Shopping List</Text>
             </TouchableOpacity>
             <TouchableOpacity
               style={[
@@ -5619,7 +5666,7 @@ const handlePreferenceSelection = useCallback(
               <Text style={styles.welcomeButtonText}>
                 {isCartPushPending
                   ? "Sending to Woolworths..."
-                  : "Add to Woolworths Cart (Use a free use)"}
+                  : "Add to Woolworths Cart"}
               </Text>
             </TouchableOpacity>
           </View>
@@ -7647,46 +7694,48 @@ const styles = StyleSheet.create({
     height: 40,
     borderRadius: 12,
     borderWidth: 1.5,
-    borderColor: "#ff4d4f",
+    borderColor: "#f9dede",
     backgroundColor: "#fff5f5",
     alignItems: "center",
     justifyContent: "center",
   },
   homeMealDislikeButtonActive: {
-    backgroundColor: "#ff4d4f",
+    backgroundColor: "#fdeeee",
+    borderColor: "#e56b6b",
   },
   homeMealDislikeButtonIcon: {
     fontSize: 18,
-    color: "#d93025",
+    color: "#c77a7a",
   },
   homeMealDislikeButtonIconActive: {
-    color: "#fff",
+    color: "#b53a3a",
   },
   homeMealChooseButton: {
     marginLeft: 0,
     borderRadius: 12,
     borderWidth: 1.5,
-    borderColor: "#00a651",
+    borderColor: "#d8f3e4",
     paddingHorizontal: 16,
     paddingVertical: 8,
     backgroundColor: "#fff",
   },
   homeMealChooseButtonActive: {
-    backgroundColor: "#00a651",
+    backgroundColor: "#eaf8f0",
+    borderColor: "#23a665",
   },
   homeMealChooseButtonText: {
     fontSize: 14,
     fontWeight: "600",
-    color: "#00a651",
+    color: "#0c3c26",
   },
   homeMealChooseButtonTextActive: {
-    color: "#fff",
+    color: "#0d7c4b",
   },
   homeMealChooseButtonIcon: {
-    color: "#00a651",
+    color: "#7bb394",
   },
   homeMealChooseButtonIconActive: {
-    color: "#fff",
+    color: "#0d7c4b",
   },
   homeMealActionIconButton: {
     paddingHorizontal: 12,
