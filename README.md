@@ -43,13 +43,14 @@ Keep Yummi-specific directories (scraper, Woolworths agent brief, cart integrati
 - Clerk-provided OAuth (Google, Apple, Facebook) with session persistence and protected routes.
 - Wallet screen that calls `/v1/wallet/balance`, launches PayFast checkout, and refreshes on return.
 - Deep-link bridges (`yummi://payfast/{return,cancel}`) that Expo handles automatically.
-- Meal home + Ingredients flow: pick meals directly on the home surface, tap `Next`, and the Ingredients screen aggregates all selected products (sorted alphabetically) with inline quantity controls, per-item pricing, and an estimated basket total alongside CTAs for generating a shopping list or auto-filling Woolworths carts.
+- Meal home + Ingredients flow: pick meals directly on the home surface, tap `Next`, acknowledge the free-use modal, and the client posts your `finalIngredients` bundle to `/v1/shopping-list/build`. The Ingredients screen shows a spinner while the LLM finishes, then splits staples (LLM `pantry` classification) from pickup items, renders product imagery from each `linkedProducts[].imageUrl`, and offers inline quantity controls that immediately recalc unit/line pricing plus the estimated basket total. CTAs let you rebuild the list (`Get Shopping List (Use a free use)`) or push the curated SKUs into the Woolworths cart runner (`Add to Woolworths Cart (Use a free use)`).
 - See `yummi_scaffold_spec.md` for provider setup, routing, and environment variables.
 
 ### Backend (`yummi-server`)
 - FastAPI + Postgres + Redis with Alembic migrations.
 - `/v1/payments/payfast/{initiate,status,itn}` endpoints that sign requests, parse ITN webhooks, and update the wallet ledger.
 - `/v1/wallet/*` + `/v1/me` for account balances, plus thin-slice routes under `/v1/thin/*`.
+- `/v1/shopping-list/build` aggregates selected meals, feeds a structured GPT-5 prompt that enforces one entry per ingredient group, pantry vs pickup classification, and resolver-backed `product_selections`, then returns pricing metadata plus `linkedProducts[].imageUrl` so the Expo Ingredients surface can show pack art while users tweak quantities.
 - Docker Compose + Fly runbooks, logging, and PayFast-specific operational guidance (see `server.md` + `payfastmigration.md`).
 
 ### Automation & data helpers
