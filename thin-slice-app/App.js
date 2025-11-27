@@ -1758,6 +1758,8 @@ function AppContent() {
   const [shoppingListStatus, setShoppingListStatus] = useState("idle");
   const [shoppingListError, setShoppingListError] = useState(null);
   const [checkedShoppingListItems, setCheckedShoppingListItems] = useState(() => new Set());
+  const [imageReloadCounters, setImageReloadCounters] = useState({});
+  const imageRetryTimeouts = useRef({});
   const [isCartPushPending, setIsCartPushPending] = useState(false);
   const preferenceSyncHashRef = useRef(null);
   const preferenceEntryContextRef = useRef(null);
@@ -1932,7 +1934,17 @@ function AppContent() {
 
   useEffect(() => {
     setCheckedShoppingListItems(new Set());
+    setImageReloadCounters({});
+    Object.values(imageRetryTimeouts.current).forEach(clearTimeout);
+    imageRetryTimeouts.current = {};
   }, [shoppingListItems]);
+
+  useEffect(() => {
+    return () => {
+      Object.values(imageRetryTimeouts.current).forEach(clearTimeout);
+      imageRetryTimeouts.current = {};
+    };
+  }, []);
 
   const canSendShoppingListToCart =
     shoppingListStatus === "ready" && shoppingListItems.length > 0;
@@ -2202,6 +2214,33 @@ function AppContent() {
       a.displayName.localeCompare(b.displayName, undefined, { sensitivity: "base" })
     );
   }, [formatIngredientQuantity, getIngredientQuantityValue, shoppingListItems]);
+
+  const incrementImageReloadCounter = useCallback((itemId) => {
+    if (!itemId) {
+      return;
+    }
+    setImageReloadCounters((prev) => ({
+      ...prev,
+      [itemId]: (prev[itemId] ?? 0) + 1,
+    }));
+  }, []);
+
+  const scheduleImageReload = useCallback(
+    (itemId) => {
+      if (!itemId) {
+        return;
+      }
+      const pending = imageRetryTimeouts.current[itemId];
+      if (pending) {
+        clearTimeout(pending);
+      }
+      imageRetryTimeouts.current[itemId] = setTimeout(() => {
+        incrementImageReloadCounter(itemId);
+        delete imageRetryTimeouts.current[itemId];
+      }, 2200);
+    },
+    [incrementImageReloadCounter]
+  );
 
   const handleToggleShoppingListItem = useCallback((itemId) => {
     if (!itemId) {
@@ -5842,8 +5881,13 @@ const handlePreferenceSelection = useCallback(
                     <View style={styles.shoppingListItemImageWrapper}>
                       {item.imageUrl ? (
                         <Image
-                          source={{ uri: item.imageUrl }}
+                          key={`shopping-list-image-${item.id}-${imageReloadCounters[item.id] ?? 0}`}
+                          source={{
+                            uri: item.imageUrl,
+                            cache: "reload",
+                          }}
                           style={styles.shoppingListItemImage}
+                          onError={() => scheduleImageReload(item.id)}
                         />
                       ) : (
                         <View style={styles.shoppingListItemImagePlaceholder}>
