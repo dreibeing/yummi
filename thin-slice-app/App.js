@@ -95,6 +95,7 @@ const deriveApiBaseUrl = () => {
   return null;
 };
 const API_BASE_URL = deriveApiBaseUrl();
+const PAST_ORDERS_STORAGE_KEY = "yummi_past_orders_v1";
 const RAW_CLERK_JWT_TEMPLATE =
   process.env.EXPO_PUBLIC_CLERK_JWT_TEMPLATE ??
   Constants.expoConfig?.extra?.clerkJwtTemplate ??
@@ -1741,6 +1742,8 @@ function AppContent() {
     visible: false,
     context: null,
   });
+  const [pastOrders, setPastOrders] = useState([]);
+  const [activePastOrder, setActivePastOrder] = useState(null);
   const [isSorryToHearScreenVisible, setIsSorryToHearScreenVisible] = useState(false);
   const [ingredientQuantities, setIngredientQuantities] = useState({});
   const [shoppingListItems, setShoppingListItems] = useState([]);
@@ -1761,6 +1764,40 @@ function AppContent() {
     setSelectedHomeMealIds({});
     setHomeMealDislikedIds({});
   }, []);
+
+  const persistPastOrders = useCallback(async (orders) => {
+    try {
+      await SecureStore.setItemAsync(
+        PAST_ORDERS_STORAGE_KEY,
+        JSON.stringify(orders ?? [])
+      );
+    } catch (error) {
+      if (__DEV__) {
+        console.warn("Unable to persist past orders", error);
+      }
+    }
+  }, []);
+
+  const hydratePastOrders = useCallback(async () => {
+    try {
+      const stored = await SecureStore.getItemAsync(PAST_ORDERS_STORAGE_KEY);
+      if (!stored) {
+        return;
+      }
+      const parsed = JSON.parse(stored);
+      if (Array.isArray(parsed)) {
+        setPastOrders(parsed);
+      }
+    } catch (error) {
+      if (__DEV__) {
+        console.warn("Unable to restore past orders", error);
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    hydratePastOrders();
+  }, [hydratePastOrders]);
 
   const { height: SCREEN_HEIGHT } = Dimensions.get("window");
   const isSmallDevice = SCREEN_HEIGHT < 740;
@@ -1932,6 +1969,11 @@ function AppContent() {
     } catch (error) {
       Alert.alert("Unable to share", "Please try again.");
     }
+  }, []);
+
+  const handleOpenPastOrders = useCallback(() => {
+    setActivePastOrder(null);
+    setScreen("pastOrders");
   }, []);
 
   const handleToggleHomeMealDislike = useCallback((mealId) => {
@@ -2369,6 +2411,59 @@ function AppContent() {
     setHomeSurface("meal");
     setScreen("home");
     setIsSorryToHearScreenVisible(false);
+  }, []);
+
+  const recordPastOrder = useCallback(
+    (mealsSnapshot) => {
+      if (!Array.isArray(mealsSnapshot) || mealsSnapshot.length === 0) {
+        return;
+      }
+      const entries = mealsSnapshot
+        .filter((meal) => meal && meal.mealId)
+        .map((meal) => {
+          try {
+            return JSON.parse(JSON.stringify(meal));
+          } catch (error) {
+            return { ...meal };
+          }
+        })
+        .filter(Boolean);
+      if (!entries.length) {
+        return;
+      }
+      const entry = {
+        orderId: `past-${Date.now()}`,
+        createdAt: new Date().toISOString(),
+        meals: entries,
+      };
+      setPastOrders((prev) => {
+        const next = [entry, ...(prev ?? [])];
+        if (next.length > 20) {
+          next.length = 20;
+        }
+        persistPastOrders(next);
+        return next;
+      });
+    },
+    [persistPastOrders]
+  );
+
+  const handleClosePastOrders = useCallback(() => {
+    setActivePastOrder(null);
+    handleReturnToWelcome();
+  }, [handleReturnToWelcome]);
+
+  const handleOpenPastOrderDetails = useCallback((order) => {
+    if (!order) {
+      return;
+    }
+    setActivePastOrder(order);
+    setScreen("pastOrderDetails");
+  }, []);
+
+  const handleClosePastOrderDetails = useCallback(() => {
+    setActivePastOrder(null);
+    setScreen("pastOrders");
   }, []);
 
   useEffect(() => {
@@ -2919,6 +3014,7 @@ const handlePreferenceSelection = useCallback(
     } else if (context === "newMeals") {
       handleConfirmPreferenceComplete();
     } else if (context === "woolworthsCart") {
+      recordPastOrder(selectedHomeMeals);
       handleSendShoppingListToCart();
     }
   }, [
@@ -2926,6 +3022,8 @@ const handlePreferenceSelection = useCallback(
     handleBuildShoppingList,
     handleConfirmPreferenceComplete,
     handleSendShoppingListToCart,
+    recordPastOrder,
+    selectedHomeMeals,
   ]);
 
   const handleOpenShoppingListConfirm = useCallback(() => {
@@ -4261,6 +4359,182 @@ const handlePreferenceSelection = useCallback(
     );
   }
 
+  const mealMenuOverlay = isMealMenuOpen ? (
+    <View style={styles.mealMenuContainer} pointerEvents="box-none">
+      <TouchableWithoutFeedback onPress={closeMealMenu}>
+        <View style={styles.mealMenuBackdrop} />
+      </TouchableWithoutFeedback>
+      <View style={[styles.mealMenuCard, { top: menuOverlayTop }]}>
+        <TouchableOpacity style={styles.mealMenuItem} onPress={handleMealMenuReset}>
+          <Text style={styles.mealMenuItemText}>Update Preferences</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.mealMenuItem} onPress={handleMealMenuSignOut}>
+          <Text style={[styles.mealMenuItemText, styles.mealMenuItemDanger]}>
+            Sign out
+          </Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  ) : null;
+
+  if (screen === "pastOrders") {
+    return (
+      <SafeAreaView style={styles.mealHomeSafeArea}>
+        <StatusBar style="dark" />
+        <View style={styles.mealHomeHeader}>
+          <TouchableOpacity
+            style={styles.mealHomeBackButton}
+            onPress={handleClosePastOrders}
+            accessibilityRole="button"
+            accessibilityLabel="Back to welcome"
+          >
+            <Feather name="arrow-left" size={24} color="#00a651" />
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.mealHomeMenuButton}
+            onPress={toggleMealMenu}
+            accessibilityRole="button"
+            accessibilityLabel="Open menu"
+          >
+            <Feather name="menu" size={24} color="#0c3c26" />
+          </TouchableOpacity>
+        </View>
+        <ScrollView
+          style={styles.pastOrdersScroll}
+          contentContainerStyle={styles.pastOrdersContent}
+          showsVerticalScrollIndicator={false}
+        >
+          {pastOrders.length === 0 ? (
+            <View style={styles.pastOrdersEmptyState}>
+              <Text style={styles.pastOrdersEmptyTitle}>No orders yet</Text>
+              <Text style={styles.pastOrdersEmptySubtitle}>
+                Send a shopping list to Woolworths to build your first past order.
+              </Text>
+            </View>
+          ) : (
+            pastOrders.map((order) => {
+              const orderDate = new Date(order.createdAt);
+              const hasValidDate = !Number.isNaN(orderDate.getTime());
+              const dayLabel = hasValidDate
+                ? orderDate.toLocaleDateString(undefined, { weekday: "long" })
+                : "Unknown day";
+              const dateLabel = hasValidDate
+                ? orderDate.toLocaleDateString(undefined, {
+                    month: "long",
+                    day: "numeric",
+                  })
+                : "Unknown date";
+              const mealCount = Array.isArray(order.meals)
+                ? order.meals.length
+                : 0;
+              return (
+                <TouchableOpacity
+                  key={order.orderId ?? `${order.createdAt}-${mealCount}`}
+                  style={styles.pastOrderCard}
+                  onPress={() => handleOpenPastOrderDetails(order)}
+                >
+                  <View style={styles.pastOrderCardHeader}>
+                    <Text style={styles.pastOrderCardDay}>{dayLabel}</Text>
+                    <Text style={styles.pastOrderCardDate}>{dateLabel}</Text>
+                  </View>
+                  <Text style={styles.pastOrderCardMeta}>
+                    {mealCount} {mealCount === 1 ? "meal" : "meals"}
+                  </Text>
+                </TouchableOpacity>
+              );
+            })
+          )}
+        </ScrollView>
+        {mealMenuOverlay}
+        {confirmationDialogPortal}
+      </SafeAreaView>
+    );
+  }
+
+  if (screen === "pastOrderDetails" && activePastOrder) {
+    const previewDate = new Date(activePastOrder.createdAt);
+    const hasValidPreviewDate = !Number.isNaN(previewDate.getTime());
+    const detailDayLabel = hasValidPreviewDate
+      ? previewDate.toLocaleDateString(undefined, { weekday: "long" })
+      : "Unknown day";
+    const detailDateLabel = hasValidPreviewDate
+      ? previewDate.toLocaleDateString(undefined, { month: "long", day: "numeric" })
+      : "Unknown date";
+    const mealsList = Array.isArray(activePastOrder.meals)
+      ? activePastOrder.meals
+      : [];
+    return (
+      <SafeAreaView style={styles.mealHomeSafeArea}>
+        <StatusBar style="dark" />
+        <View style={styles.mealHomeHeader}>
+          <TouchableOpacity
+            style={styles.mealHomeBackButton}
+            onPress={handleClosePastOrderDetails}
+            accessibilityRole="button"
+            accessibilityLabel="Back to past orders"
+          >
+            <Feather name="arrow-left" size={24} color="#00a651" />
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.mealHomeMenuButton}
+            onPress={toggleMealMenu}
+            accessibilityRole="button"
+            accessibilityLabel="Open menu"
+          >
+            <Feather name="menu" size={24} color="#0c3c26" />
+          </TouchableOpacity>
+        </View>
+        <View style={styles.pastOrderDetailMeta}>
+          <Text style={styles.pastOrderDetailMetaText}>
+            {detailDayLabel}, {detailDateLabel}
+          </Text>
+          <Text style={styles.pastOrderDetailMetaText}>
+            {mealsList.length} {mealsList.length === 1 ? "meal" : "meals"}
+          </Text>
+        </View>
+        <ScrollView
+          style={styles.pastOrderMealsScroll}
+          contentContainerStyle={styles.pastOrderMealsContent}
+          showsVerticalScrollIndicator={false}
+        >
+          {mealsList.map((meal, index) => {
+            const servingsCount = deriveMealServingsCount(meal);
+            const servingsLabel = formatServingsPeopleLabel(servingsCount);
+            return (
+              <TouchableOpacity
+                key={`${meal?.mealId ?? "meal"}-${index}`}
+                style={styles.homeMealCard}
+                activeOpacity={0.9}
+                onPress={() => setHomeMealModal({ visible: true, meal })}
+              >
+                <Text style={styles.homeMealTitle}>{meal?.name ?? "Meal"}</Text>
+                {meal?.description ? (
+                  <Text style={styles.homeMealDescription}>{meal.description}</Text>
+                ) : null}
+                {Array.isArray(meal?.tags?.PrepTime) &&
+                meal.tags.PrepTime.length > 0 ? (
+                  <Text style={styles.homeMealPrepTime}>
+                    Prep time: {meal.tags.PrepTime.join(", ")}
+                  </Text>
+                ) : null}
+                <View style={styles.homeMealFooterRow}>
+                  <View style={styles.homeMealServingsRow}>
+                    <Text style={styles.homeMealServingsLabel}>Servings:</Text>
+                    <Text style={styles.homeMealServingsValueText}>
+                      {servingsLabel}
+                    </Text>
+                  </View>
+                </View>
+              </TouchableOpacity>
+            );
+          })}
+        </ScrollView>
+        {mealMenuOverlay}
+        {confirmationDialogPortal}
+      </SafeAreaView>
+    );
+  }
+
   if (!isWelcomeComplete) {
     return (
       <SafeAreaView style={styles.welcomeSafeArea}>
@@ -4311,12 +4585,20 @@ const handlePreferenceSelection = useCallback(
             </View>
           </ScrollView>
           <View style={styles.welcomeFooter}>
-            <TouchableOpacity
-              style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
-              onPress={() => setIsWelcomeComplete(true)}
-            >
-              <Text style={styles.welcomeButtonText}>Start Shopping!</Text>
-            </TouchableOpacity>
+            <View style={styles.welcomeButtonGroup}>
+              <TouchableOpacity
+                style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
+                onPress={handleOpenPastOrders}
+              >
+                <Text style={styles.welcomeButtonText}>Past Orders</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
+                onPress={() => setIsWelcomeComplete(true)}
+              >
+                <Text style={styles.welcomeButtonText}>Start Shopping!</Text>
+              </TouchableOpacity>
+            </View>
           </View>
         </View>
       </SafeAreaView>
@@ -4569,24 +4851,6 @@ const handlePreferenceSelection = useCallback(
       </SafeAreaView>
     );
   }
-
-  const mealMenuOverlay = isMealMenuOpen ? (
-    <View style={styles.mealMenuContainer} pointerEvents="box-none">
-      <TouchableWithoutFeedback onPress={closeMealMenu}>
-        <View style={styles.mealMenuBackdrop} />
-      </TouchableWithoutFeedback>
-      <View style={[styles.mealMenuCard, { top: menuOverlayTop }] }>
-        <TouchableOpacity style={styles.mealMenuItem} onPress={handleMealMenuReset}>
-          <Text style={styles.mealMenuItemText}>Update Preferences</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.mealMenuItem} onPress={handleMealMenuSignOut}>
-          <Text style={[styles.mealMenuItemText, styles.mealMenuItemDanger]}>
-            Sign out
-          </Text>
-        </TouchableOpacity>
-      </View>
-    </View>
-  ) : null;
 
   if (shouldShowPreferenceCompletionScreen) {
     return (
@@ -5774,6 +6038,79 @@ const styles = StyleSheet.create({
     color: "#1f4b35",
     textAlign: "center",
   },
+  pastOrdersScroll: {
+    flex: 1,
+    width: "100%",
+  },
+  pastOrdersContent: {
+    paddingHorizontal: 20,
+    paddingTop: 8,
+    paddingBottom: 24,
+    gap: 12,
+  },
+  pastOrderCard: {
+    backgroundColor: "#ffffff",
+    borderRadius: 20,
+    padding: 16,
+    gap: 4,
+    ...SHADOW.card,
+  },
+  pastOrderCardHeader: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "baseline",
+  },
+  pastOrderCardDay: {
+    fontSize: 16,
+    fontWeight: "700",
+    color: "#0c3c26",
+  },
+  pastOrderCardDate: {
+    fontSize: 14,
+    color: "#4d4d4d",
+  },
+  pastOrderCardMeta: {
+    fontSize: 14,
+    color: "#0c3c26",
+    fontWeight: "600",
+  },
+  pastOrdersEmptyState: {
+    flex: 1,
+    paddingTop: 32,
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 8,
+  },
+  pastOrdersEmptyTitle: {
+    fontSize: 16,
+    fontWeight: "700",
+    color: "#0c3c26",
+  },
+  pastOrdersEmptySubtitle: {
+    fontSize: 14,
+    color: "#4d4d4d",
+    textAlign: "center",
+  },
+  pastOrderDetailMeta: {
+    paddingHorizontal: 20,
+    paddingTop: 8,
+    paddingBottom: 4,
+    gap: 4,
+  },
+  pastOrderDetailMetaText: {
+    fontSize: 14,
+    color: "#4d4d4d",
+  },
+  pastOrderMealsScroll: {
+    flex: 1,
+    width: "100%",
+  },
+  pastOrderMealsContent: {
+    paddingHorizontal: 20,
+    paddingTop: 8,
+    paddingBottom: 32,
+    gap: 12,
+  },
   ingredientsBody: {
     flex: 1,
     paddingHorizontal: 20,
@@ -6172,6 +6509,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#f4f9f5",
     justifyContent: "center",
     alignItems: "center",
+  },
+  welcomeButtonGroup: {
+    width: "100%",
+    gap: 12,
   },
   welcomeButton: {
     backgroundColor: "#00a651",
