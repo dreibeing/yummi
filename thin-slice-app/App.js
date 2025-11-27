@@ -2506,6 +2506,8 @@ function AppContent() {
     if (!order) {
       return;
     }
+    setSelectedHomeMealIds({});
+    setHomeMealDislikedIds({});
     setActivePastOrder(order);
     setScreen("pastOrderDetails");
   }, []);
