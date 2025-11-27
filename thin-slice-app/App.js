@@ -4565,14 +4565,6 @@ const handlePreferenceSelection = useCallback(
   }
 
   if (screen === "pastOrderDetails" && activePastOrder) {
-    const previewDate = new Date(activePastOrder.createdAt);
-    const hasValidPreviewDate = !Number.isNaN(previewDate.getTime());
-    const detailDayLabel = hasValidPreviewDate
-      ? previewDate.toLocaleDateString(undefined, { weekday: "long" })
-      : "Unknown day";
-    const detailDateLabel = hasValidPreviewDate
-      ? previewDate.toLocaleDateString(undefined, { month: "long", day: "numeric" })
-      : "Unknown date";
     const mealsList = Array.isArray(activePastOrder.meals)
       ? activePastOrder.meals
       : [];
@@ -4599,10 +4591,13 @@ const handlePreferenceSelection = useCallback(
         </View>
         <View style={styles.pastOrderDetailMeta}>
           <Text style={styles.pastOrderDetailMetaText}>
-            {detailDayLabel}, {detailDateLabel}
+            Tap a meal card to see the instructions and ingredients.
           </Text>
           <Text style={styles.pastOrderDetailMetaText}>
-            {mealsList.length} {mealsList.length === 1 ? "meal" : "meals"}
+            Thumbs down if you didn’t enjoy a meal.
+          </Text>
+          <Text style={styles.pastOrderDetailMetaText}>
+            Heart the meal to add it to your favorites.
           </Text>
         </View>
         <ScrollView
