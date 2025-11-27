@@ -2487,6 +2487,35 @@ function AppContent() {
     handleReturnToWelcome();
   }, [handleReturnToWelcome]);
 
+  const handleDeletePastOrder = useCallback(
+    (order) => {
+      if (!order?.orderId) {
+        return;
+      }
+      Alert.alert(
+        "Delete past order?",
+        "This will remove the saved meals from your history.",
+        [
+          { text: "Cancel", style: "cancel" },
+          {
+            text: "Delete",
+            style: "destructive",
+            onPress: () => {
+              setPastOrders((prev) => {
+                const next = Array.isArray(prev)
+                  ? prev.filter((entry) => entry.orderId !== order.orderId)
+                  : [];
+                persistPastOrders(next);
+                return next;
+              });
+            },
+          },
+        ]
+      );
+    },
+    [persistPastOrders]
+  );
+
   const handleOpenPastOrderDetails = useCallback((order) => {
     if (!order) {
       return;
@@ -4557,10 +4586,20 @@ const handlePreferenceSelection = useCallback(
                   style={styles.pastOrderCard}
                   onPress={() => handleOpenPastOrderDetails(order)}
                 >
-                  <View style={styles.pastOrderCardHeader}>
-                    <Text style={styles.pastOrderCardDay}>{dayLabel}</Text>
+                <View style={styles.pastOrderCardHeader}>
+                  <Text style={styles.pastOrderCardDay}>{dayLabel}</Text>
+                  <View style={styles.pastOrderCardDateWrapper}>
                     <Text style={styles.pastOrderCardDate}>{dateLabel}</Text>
+                    <TouchableOpacity
+                      style={styles.pastOrderDeleteButton}
+                      onPress={() => handleDeletePastOrder(order)}
+                      accessibilityRole="button"
+                      accessibilityLabel="Delete past order"
+                    >
+                      <Feather name="trash-2" size={16} color="#c65959" />
+                    </TouchableOpacity>
                   </View>
+                </View>
                   <Text style={styles.pastOrderCardMeta}>
                     {mealCount} {mealCount === 1 ? "meal" : "meals"}
                   </Text>
@@ -6183,6 +6222,13 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "baseline",
+  },
+  pastOrderCardDateWrapper: {
+    alignItems: "flex-end",
+    gap: 4,
+  },
+  pastOrderDeleteButton: {
+    padding: 4,
   },
   pastOrderCardDay: {
     fontSize: 16,
