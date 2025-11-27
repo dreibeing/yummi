@@ -96,6 +96,7 @@ const deriveApiBaseUrl = () => {
 };
 const API_BASE_URL = deriveApiBaseUrl();
 const PAST_ORDERS_STORAGE_KEY = "yummi_past_orders_v1";
+const SHOPPING_LIST_STORAGE_KEY = "yummi_shopping_list_v1";
 const RAW_CLERK_JWT_TEMPLATE =
   process.env.EXPO_PUBLIC_CLERK_JWT_TEMPLATE ??
   Constants.expoConfig?.extra?.clerkJwtTemplate ??
@@ -1806,6 +1807,44 @@ function AppContent() {
     hydratePastOrders();
   }, [hydratePastOrders]);
 
+  const persistShoppingList = useCallback(async (snapshot) => {
+    try {
+      await SecureStore.setItemAsync(
+        SHOPPING_LIST_STORAGE_KEY,
+        JSON.stringify(snapshot)
+      );
+    } catch (error) {
+      if (__DEV__) {
+        console.warn("Unable to persist shopping list", error);
+      }
+    }
+  }, []);
+
+  const hydrateShoppingList = useCallback(async () => {
+    try {
+      const stored = await SecureStore.getItemAsync(SHOPPING_LIST_STORAGE_KEY);
+      if (!stored) {
+        return;
+      }
+      const parsed = JSON.parse(stored);
+      const items = Array.isArray(parsed?.items)
+        ? parsed.items
+        : Array.isArray(parsed)
+        ? parsed
+        : [];
+      if (items.length) {
+        setShoppingListItems(items);
+        setShoppingListStatus(
+          typeof parsed?.status === "string" ? parsed.status : "ready"
+        );
+      }
+    } catch (error) {
+      if (__DEV__) {
+        console.warn("Unable to restore shopping list", error);
+      }
+    }
+  }, []);
+
   const { height: SCREEN_HEIGHT } = Dimensions.get("window");
   const isSmallDevice = SCREEN_HEIGHT < 740;
   const FREE_USES_FONT_SIZE = isSmallDevice ? 68 : 84;
@@ -1882,6 +1921,13 @@ function AppContent() {
     });
     return { stapleIngredients: staples, primaryIngredients: primary };
   }, [shoppingListItems]);
+
+  useEffect(() => {
+    persistShoppingList({
+      status: shoppingListStatus,
+      items: shoppingListItems,
+    });
+  }, [persistShoppingList, shoppingListItems, shoppingListStatus]);
 
   const canSendShoppingListToCart =
     shoppingListStatus === "ready" && shoppingListItems.length > 0;
@@ -2121,6 +2167,36 @@ function AppContent() {
     },
     [ingredientQuantities]
   );
+
+  const shoppingListDisplayItems = useMemo(() => {
+    const entries = [];
+    shoppingListItems.forEach((ingredient) => {
+      if (!ingredient) {
+        return;
+      }
+      const preferredProduct = pickPreferredShoppingListProduct(ingredient);
+      const displayName =
+        preferredProduct?.name ??
+        ingredient.productName ??
+        ingredient.text ??
+        ingredient.groupKey ??
+        "Ingredient";
+      const imageUrl = preferredProduct?.imageUrl ?? null;
+      const quantityValue = getIngredientQuantityValue(ingredient);
+      entries.push({
+        id:
+          ingredient.id ??
+          ingredient.groupKey ??
+          `${displayName}-${entries.length + 1}`,
+        displayName,
+        imageUrl,
+        displayQuantity: formatIngredientQuantity(quantityValue),
+      });
+    });
+    return entries.sort((a, b) =>
+      a.displayName.localeCompare(b.displayName, undefined, { sensitivity: "base" })
+    );
+  }, [formatIngredientQuantity, getIngredientQuantityValue, shoppingListItems]);
 
   const getIngredientUnitPriceMinor = useCallback((ingredient) => {
     if (!ingredient) {
@@ -2441,6 +2517,11 @@ function AppContent() {
     setScreen("home");
   }, []);
 
+  const handleReturnToIngredients = useCallback(() => {
+    setIsMealMenuOpen(false);
+    setScreen("ingredients");
+  }, []);
+
   const handleReturnToWelcome = useCallback(() => {
     setIsWelcomeComplete(false);
     setIsOnboardingActive(false);
@@ -2617,6 +2698,10 @@ function AppContent() {
     setShoppingListError(null);
     setIngredientQuantities({});
   }, [applyHomeRecommendedMeals, userId]);
+
+  useEffect(() => {
+    hydrateShoppingList();
+  }, [hydrateShoppingList, userId]);
 
   useEffect(() => {
     if (screen !== "home" || !isMealHomeSurface) {
@@ -3196,9 +3281,20 @@ const handlePreferenceSelection = useCallback(
       );
       return;
     }
+    if (shoppingListStatus !== "ready" || shoppingListItems.length === 0) {
+      handleOpenShoppingListConfirm();
+      return;
+    }
     recordPastOrder(selectedHomeMeals);
-    Alert.alert("Shopping list ready", "You've got a shopping list.");
-  }, [recordPastOrder, selectedHomeMeals]);
+    setScreen("shoppingList");
+  }, [
+    handleOpenShoppingListConfirm,
+    recordPastOrder,
+    selectedHomeMeals,
+    setScreen,
+    shoppingListItems.length,
+    shoppingListStatus,
+  ]);
 
   const confirmationDialogPortal = confirmationDialog.visible ? (
     <View style={styles.mealDetailModalContainer} pointerEvents="box-none">
@@ -5677,6 +5773,90 @@ const handlePreferenceSelection = useCallback(
     );
   }
 
+  if (screen === "shoppingList") {
+    return (
+      <SafeAreaView style={styles.shoppingListSafeArea}>
+        <StatusBar style="dark" />
+        <View style={styles.shoppingListHeader}>
+          <TouchableOpacity
+            style={styles.mealHomeBackButton}
+            onPress={handleReturnToIngredients}
+            accessibilityRole="button"
+            accessibilityLabel="Back to ingredients"
+          >
+            <Feather name="arrow-left" size={24} color="#00a651" />
+          </TouchableOpacity>
+          <Text style={styles.shoppingListHeaderTitle}>Shopping List</Text>
+          <View style={styles.shoppingListHeaderAction} />
+        </View>
+        <View style={styles.shoppingListBody}>
+          {shoppingListDisplayItems.length === 0 ? (
+            <View style={styles.shoppingListEmptyState}>
+              <Text style={styles.shoppingListEmptyTitle}>No shopping list yet</Text>
+              <Text style={styles.shoppingListEmptySubtitle}>
+                Build a shopping list from the ingredients screen to see it here.
+              </Text>
+            </View>
+          ) : (
+            <ScrollView
+              style={styles.shoppingListScroll}
+              contentContainerStyle={styles.shoppingListScrollContent}
+              showsVerticalScrollIndicator={false}
+            >
+              {shoppingListDisplayItems.map((item) => {
+                const placeholderInitial = (item.displayName ?? "?")
+                  .trim()
+                  .charAt(0)
+                  .toUpperCase();
+                return (
+                  <View key={item.id} style={styles.shoppingListItem}>
+                    <View style={styles.shoppingListItemImageWrapper}>
+                      {item.imageUrl ? (
+                        <Image
+                          source={{ uri: item.imageUrl }}
+                          style={styles.shoppingListItemImage}
+                        />
+                      ) : (
+                        <View style={styles.shoppingListItemImagePlaceholder}>
+                          <Text style={styles.shoppingListItemImagePlaceholderText}>
+                            {placeholderInitial || "?"}
+                          </Text>
+                        </View>
+                      )}
+                    </View>
+                    <View style={styles.shoppingListItemBody}>
+                      <Text style={styles.shoppingListItemName}>
+                        {item.displayName}
+                      </Text>
+                      <Text style={styles.shoppingListItemQuantity}>
+                        Quantity: {item.displayQuantity}
+                      </Text>
+                    </View>
+                  </View>
+                );
+              })}
+            </ScrollView>
+          )}
+        </View>
+        <View style={styles.shoppingListFooter}>
+          <TouchableOpacity
+            style={[
+              styles.welcomeButton,
+              styles.mealHomeCtaButton,
+              styles.welcomeCtaButton,
+              styles.shoppingListHomeButton,
+            ]}
+            onPress={handleReturnToWelcome}
+          >
+            <Text style={styles.welcomeButtonText}>Home</Text>
+          </TouchableOpacity>
+        </View>
+        {mealMenuOverlay}
+        {confirmationDialogPortal}
+      </SafeAreaView>
+    );
+  }
+
   if (screen === "webview" && activeOrder) {
     const injectedRunner =
       activeOrder.mode === "runner"
@@ -6582,6 +6762,118 @@ const styles = StyleSheet.create({
     gap: 12,
     alignSelf: "stretch",
     width: "100%",
+  },
+  shoppingListSafeArea: {
+    flex: 1,
+    backgroundColor: "#f4f9f5",
+  },
+  shoppingListHeader: {
+    paddingHorizontal: 16,
+    paddingTop: 16,
+    paddingBottom: 8,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  shoppingListHeaderTitle: {
+    fontSize: 18,
+    fontWeight: "700",
+    color: "#0c3c26",
+  },
+  shoppingListHeaderAction: {
+    width: 44,
+    height: 44,
+  },
+  shoppingListBody: {
+    flex: 1,
+    paddingHorizontal: 20,
+    paddingTop: 8,
+    paddingBottom: 16,
+  },
+  shoppingListEmptyState: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    paddingHorizontal: 12,
+  },
+  shoppingListEmptyTitle: {
+    fontSize: 16,
+    fontWeight: "700",
+    color: "#0c3c26",
+    textAlign: "center",
+    marginBottom: 6,
+  },
+  shoppingListEmptySubtitle: {
+    fontSize: 14,
+    color: "#4d4d4d",
+    textAlign: "center",
+  },
+  shoppingListScroll: {
+    flex: 1,
+  },
+  shoppingListScrollContent: {
+    paddingVertical: 12,
+    paddingBottom: 24,
+  },
+  shoppingListItem: {
+    width: "100%",
+    flexDirection: "row",
+    alignItems: "center",
+    padding: 14,
+    borderRadius: 16,
+    backgroundColor: "#fff",
+    marginBottom: 12,
+    ...SHADOW.card,
+  },
+  shoppingListItemImageWrapper: {
+    width: 56,
+    height: 56,
+    borderRadius: 14,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#eef5ef",
+  },
+  shoppingListItemImage: {
+    width: "100%",
+    height: "100%",
+    borderRadius: 14,
+    resizeMode: "cover",
+  },
+  shoppingListItemImagePlaceholder: {
+    width: "100%",
+    height: "100%",
+    borderRadius: 14,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#dfe7e1",
+  },
+  shoppingListItemImagePlaceholderText: {
+    fontSize: 18,
+    fontWeight: "700",
+    color: "#0c3c26",
+  },
+  shoppingListItemBody: {
+    flex: 1,
+    justifyContent: "center",
+    marginLeft: 10,
+  },
+  shoppingListItemName: {
+    fontSize: 16,
+    fontWeight: "600",
+    color: "#0c3c26",
+    marginBottom: 4,
+  },
+  shoppingListItemQuantity: {
+    fontSize: 14,
+    color: "#4d4d4d",
+  },
+  shoppingListFooter: {
+    paddingHorizontal: 20,
+    paddingBottom: 16,
+    paddingTop: 6,
+  },
+  shoppingListHomeButton: {
+    borderRadius: 14,
   },
   mealHomeMenuButton: {
     paddingVertical: 10,
