@@ -389,33 +389,70 @@ def _balance_archetype_meals(
     return selections
 
 
+def _build_preference_guide(profile_payload: Dict[str, Any]) -> Dict[str, Any]:
+    selected = profile_payload.get("selectedTags") or {}
+    disliked = profile_payload.get("dislikedTags") or {}
+    responses = profile_payload.get("responses") or {}
+    response_categories = {str(key) for key in responses.keys()}
+    liked_categories = {str(key) for key in selected.keys()}
+    disliked_categories = {str(key) for key in disliked.keys()}
+    neutral_categories = sorted(response_categories - liked_categories - disliked_categories)
+    return {
+        "highConfidenceLikes": _format_tag_category_map(selected),
+        "softDislikes": _format_tag_category_map(disliked),
+        "neutralOrUnprovenCategories": neutral_categories,
+        "notes": [
+            "Likes are strong positive priors but still soft constraints.",
+            "Dislikes indicate caution but remain eligible unless explicitly declined elsewhere.",
+            "Neutral or unmentioned categories are ideal for exploratory picks.",
+        ],
+    }
+
+
+def _format_tag_category_map(tag_map: Dict[str, List[str]]) -> List[Dict[str, Any]]:
+    formatted: List[Dict[str, Any]] = []
+    for category, tags in sorted(tag_map.items()):
+        normalized_tags = sorted(str(tag) for tag in tags or [] if tag)
+        if not normalized_tags:
+            continue
+        formatted.append(
+            {
+                "category": str(category),
+                "tags": normalized_tags,
+            }
+        )
+    return formatted
+
+
 def _build_prompts(
     profile_payload: Dict[str, Any],
     candidates: List[Dict[str, Any]],
     meal_target: int | None,
 ) -> tuple[str, str]:
+    preference_guide = _build_preference_guide(profile_payload)
     system_prompt = (
         "You are Yummi's exploration planner. Select meals from the provided candidate list. "
         "All hard constraints have already been applied (Audience, Diet/Ethics, Avoidances/Allergens). "
-        "Treat all remaining categories as preferences, not hard filters. Recommend a full set the user will likely enjoy while keeping reasonable diversity so we can learn from like/dislike feedback. "
+        "Treat all remaining categories as preference-strength guides, not hard filters. Recommend a full set the user will likely enjoy while keeping reasonable diversity so we can learn from like/dislike feedback. "
         "Always respect the contract and return valid JSON."
     )
     requirement_lines: List[str] = []
     if meal_target is not None:
         requirement_lines.append(
-            f"Choose exactly {meal_target} meals when the candidate list has at least {meal_target} entries; only return fewer if the candidate pool itself is smaller. Never invent meal IDs."
+            f"Choose exactly {meal_target} meals when the candidate list has at least {meal_target} entries; only return fewer if the candidate pool itself is smaller. Focus on removing only the meals that are clearly wrong for the user and retain every other plausible option so the follow-up recommender can make the final call. Never invent meal IDs."
         )
     else:
         requirement_lines.append(
-            "Review the provided meals and return the subset that best matches the USER_PROFILE. You may return any number of meals from 1 up to the provided candidates. Never invent meal IDs."
+            "Review the provided meals and return the subset that best matches the USER_PROFILE. Err on the side of keeping meals unless they are obvious mismatches so the recommendation stage has room to refine. You may return any number of meals from 1 up to the provided candidates. Never invent meal IDs."
         )
     requirement_lines.extend(
         [
-            "Primary objective: maximize expected enjoyment using preferences as soft signals. Secondary objective: maintain reasonable diversity so reactions provide useful learning.",
-            "Treat USER_PROFILE thumbs (\"selectedTags\" vs. \"dislikedTags\") as \"preferred\"/\"less preferred\" hints—use them for gentle biasing, not strict inclusion/exclusion.",
+            "Primary objective: remove only the meals the user would definitely dislike while keeping every meal they would definitely or possibly enjoy. Secondary objective: maintain reasonable diversity so reactions provide useful learning for the next stage.",
+            "Treat USER_PROFILE thumbs (\"selectedTags\" vs. \"dislikedTags\") as probability hints: likes are strong positives, dislikes are down-weighted but still eligible unless explicitly declined, and everything else is exploratory signal.",
+            "Only explicitly declined meals (if surfaced elsewhere) are true exclusions. All candidates already satisfy Audience, Diet/Ethics, and Allergen requirements.",
+            "Aim for roughly 70% high-confidence fits (align with likes), 20% near-miss or neutral options, and 10% exploratory curveballs to validate preference boundaries; adjust proportions gracefully when the pool is small.",
             "NutritionFocus (and similar categories) are preferences only; treat \"NoNutritionFocus\" as neutral. Do not hard-filter on these.",
-            "Do not apply additional hard filtering for Audience, Diet/Ethics, or Allergens—candidates already satisfy these. If the user selected no allergen avoidance, treat all candidates as acceptable.",
-            "Ensure diversity across cuisine, proteins, heat levels, prep time, complexity, and equipment.",
+            "Ensure diversity across cuisine, proteins, heat levels, prep time, complexity, and equipment so the next stage receives informative reactions.",
             "Respond in JSON: {\"explorationSet\":[{\"meal_id\": \"...\"}]}",
             "Never invent meals, tags, or SKUs. Use only provided data.",
         ]
@@ -427,6 +464,9 @@ def _build_prompts(
         f"""
         USER_PROFILE:
         {format_json(profile_payload)}
+
+        PREFERENCE_GUIDE:
+        {format_json(preference_guide)}
 
         CANDIDATE_MEALS:
         {format_json(candidates)}

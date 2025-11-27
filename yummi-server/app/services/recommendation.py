@@ -5,6 +5,7 @@ import logging
 import asyncio
 from textwrap import dedent
 import random
+from collections import defaultdict
 from typing import Any, Callable, Dict, Iterable, List, Sequence
 
 from fastapi import HTTPException, status
@@ -266,17 +267,25 @@ def _build_feedback_payload(
     likes = reaction_groups.get("like") or []
     neutrals = reaction_groups.get("neutral") or []
     dislikes = reaction_groups.get("dislike") or []
+    liked_entries = _materialize_feedback_entries(likes, manifest, exploration_session)
+    neutral_entries = _materialize_feedback_entries(neutrals, manifest, exploration_session)
+    disliked_entries = _materialize_feedback_entries(dislikes, manifest, exploration_session)
     return {
         "explorationSessionId": str(exploration_session.id) if exploration_session else None,
-        "likedMeals": _materialize_feedback_entries(likes, manifest, exploration_session),
-        "neutralMeals": _materialize_feedback_entries(neutrals, manifest, exploration_session),
-        "dislikedMeals": _materialize_feedback_entries(dislikes, manifest, exploration_session),
+        "likedMeals": liked_entries,
+        "neutralMeals": neutral_entries,
+        "dislikedMeals": disliked_entries,
         "declinedMealIds": sorted(declined_ids),
         "counts": {
             "likes": len(likes),
             "neutral": len(neutrals),
             "dislikes": len(dislikes),
         },
+        "conceptSummary": _build_reaction_concept_summary(
+            liked_entries=liked_entries,
+            neutral_entries=neutral_entries,
+            disliked_entries=disliked_entries,
+        ),
     }
 
 
@@ -310,6 +319,101 @@ def _materialize_feedback_entries(
         else:
             entries.append({"meal_id": meal_id})
     return entries
+
+
+def _build_reaction_concept_summary(
+    *,
+    liked_entries: List[Dict[str, Any]],
+    neutral_entries: List[Dict[str, Any]],
+    disliked_entries: List[Dict[str, Any]],
+) -> Dict[str, Any]:
+    liked_counts = _count_tag_frequencies(liked_entries)
+    neutral_counts = _count_tag_frequencies(neutral_entries)
+    disliked_counts = _count_tag_frequencies(disliked_entries)
+    return {
+        "likedThemes": _format_tag_frequency_payload(liked_counts),
+        "neutralThemes": _format_tag_frequency_payload(neutral_counts),
+        "dislikedThemes": _format_tag_frequency_payload(disliked_counts),
+        "varietyHints": _derive_variety_hints(
+            liked_counts=liked_counts,
+            neutral_counts=neutral_counts,
+            disliked_counts=disliked_counts,
+        ),
+    }
+
+
+def _count_tag_frequencies(entries: Iterable[Dict[str, Any]]) -> Dict[str, Dict[str, int]]:
+    counts: Dict[str, Dict[str, int]] = defaultdict(lambda: defaultdict(int))
+    for entry in entries or []:
+        tags = entry.get("tags") or {}
+        if not isinstance(tags, dict):
+            continue
+        for category, values in tags.items():
+            normalized_values = _coerce_tag_values(values)
+            if not normalized_values:
+                continue
+            bucket = counts[str(category)]
+            for value in normalized_values:
+                bucket[str(value)] += 1
+    return counts
+
+
+def _coerce_tag_values(value: Any) -> List[str]:
+    normalized: List[str] = []
+    if value is None:
+        return normalized
+    if isinstance(value, str):
+        stripped = value.strip()
+        if stripped:
+            normalized.append(stripped)
+        return normalized
+    if isinstance(value, (list, tuple, set)):
+        for entry in value:
+            normalized.extend(_coerce_tag_values(entry))
+        return normalized
+    if isinstance(value, dict):
+        for entry in value.values():
+            normalized.extend(_coerce_tag_values(entry))
+        return normalized
+    normalized.append(str(value))
+    return normalized
+
+
+def _format_tag_frequency_payload(counts: Dict[str, Dict[str, int]]) -> List[Dict[str, Any]]:
+    formatted: List[Dict[str, Any]] = []
+    for category, tag_counts in sorted(counts.items()):
+        ranked = sorted(tag_counts.items(), key=lambda item: (-item[1], item[0]))
+        top_values = [
+            {"value": value, "count": count} for value, count in ranked[:5]
+        ]
+        if top_values:
+            formatted.append({"category": category, "topValues": top_values})
+    return formatted
+
+
+def _derive_variety_hints(
+    *,
+    liked_counts: Dict[str, Dict[str, int]],
+    neutral_counts: Dict[str, Dict[str, int]],
+    disliked_counts: Dict[str, Dict[str, int]],
+) -> List[str]:
+    hints: List[str] = []
+    liked_categories = {category for category, tags in liked_counts.items() if tags}
+    neutral_categories = {category for category, tags in neutral_counts.items() if tags}
+    disliked_categories = {category for category, tags in disliked_counts.items() if tags}
+    unexplored_categories = sorted(neutral_categories - liked_categories)
+    if unexplored_categories:
+        hints.append(
+            f"Consider including meals that highlight under-explored categories: {', '.join(unexplored_categories[:5])}."
+        )
+    overlap_categories = sorted((liked_categories & disliked_categories))
+    if overlap_categories:
+        hints.append(
+            f"Balance categories appearing in both likes and dislikes ({', '.join(overlap_categories[:5])}) with varied takes instead of repeats."
+        )
+    if not hints and not liked_categories:
+        hints.append("No strong likes yet—prioritize variety across cuisines, proteins, and techniques.")
+    return hints
 
 
 def _session_meal_lookup(session: MealExplorationSession | None) -> Dict[str, Dict[str, Any]]:
@@ -368,6 +472,7 @@ def _build_prompts(
         "All hard constraints are already applied (Audience, Diet/Ethics, Avoidances/Allergens); treat remaining tags as preferences, not hard filters. "
         "Use the FEEDBACK_SUMMARY (recent and, when present, historical likes/dislikes) as soft preference signals rather than strict rules so we continue exploring nearby options. Never invent meals and keep output JSON valid."
     )
+    concept_summary = feedback_payload.get("conceptSummary") or {}
     instructions = dedent(
         f"""
         USER_PROFILE:
@@ -376,16 +481,20 @@ def _build_prompts(
         FEEDBACK_SUMMARY:
         {format_json(feedback_payload)}
 
+        FEEDBACK_CONCEPTS:
+        {format_json(concept_summary)}
+
         CANDIDATE_MEALS:
         {format_json(candidates)}
 
         Requirements:
-        1. Choose exactly {meal_target} meals when the candidate list has at least {meal_target} entries; only return fewer if the pool itself is smaller. Return them in rank order from best match to exploratory picks.
-        2. Infer soft patterns from FEEDBACK_SUMMARY (likedMeals/neutralMeals/dislikedMeals) and USER_PROFILE (selected/disliked tags). Treat likes as strong positives, neutrals as mild/uncertain signals, and dislikes as negative signals to down-rank (not hard bans unless a meal is in declined IDs). Prefer themes seen in likes/selectedTags, gently explore neutrals, de-prioritize dislikedMeals/dislikedTags, and maintain varied cuisines, proteins, heat, and prep times while aligning to inferred preferences.
-        3. NutritionFocus (and similar categories) are preferences only; treat "NoNutritionFocus" as neutral. Do not hard-filter on these.
-        4. Do not add hard filters beyond the candidate pool. Audience, Diet/Ethics, and Allergens are already satisfied. If the user set no allergen avoidance, treat all candidates as acceptable.
-        5. Respond in JSON: {{"recommendations":[{{"meal_id":"meal_uid_1"}},{{"meal_id":"meal_uid_2"}},{{"meal_id":"meal_uid_3"}}], "notes":["short variety notes describing learned themes and variety rationale"]}}. Each recommendation entry must only include the `meal_id` field—no names, descriptions, rationales, or other metadata.
-        6. Use only provided information. Never hallucinate tags, meals, or SKUs.
+        1. Choose exactly {meal_target} meals when the candidate list has at least {meal_target} entries; only return fewer if the pool itself is smaller. Return them in rank order from strongest fit to most exploratory.
+        2. Variety is the top priority: build a lineup that stays interesting if cooked back-to-back. When possible, ensure successive picks differ in cuisine, primary protein, heat level, and prep technique. Avoid near-duplicates of the same liked meal.
+        3. Infer soft patterns using FEEDBACK_SUMMARY and FEEDBACK_CONCEPTS. Treat likes and selectedTags as high-confidence positives, neutrals as hypotheses to test, and dislikes as down-weighting signals—not bans unless a meal is explicitly declined. Use concept summaries to extrapolate themes (e.g., \"Mediterranean grains\") rather than repeating specific meals.
+        4. Keep a mix of high-confidence fits and inventive curveballs (for example ~60% strong matches, ~25% nuanced variations, ~15% bold explorations) unless the pool is too small to support it.
+        5. NutritionFocus (and similar categories) are preferences only; treat "NoNutritionFocus" as neutral. Do not hard-filter on these, and do not add new hard filters beyond the candidate pool (Audience/Diet/Allergens already satisfy constraints).
+        6. Respond in JSON: {{"recommendations":[{{"meal_id":"meal_uid_1"}},{{"meal_id":"meal_uid_2"}},{{"meal_id":"meal_uid_3"}}], "notes":["short variety notes describing learned themes and variety rationale"]}}. Each recommendation entry must only include the `meal_id` field—no names, descriptions, rationales, or other metadata.
+        7. Use only provided information. Never hallucinate tags, meals, or SKUs.
         """
     ).strip()
     return system_prompt, instructions
