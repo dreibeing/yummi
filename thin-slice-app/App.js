@@ -1746,6 +1746,9 @@ function AppContent() {
     visible: false,
     context: null,
   });
+  const [confirmationDialogSubtitle, setConfirmationDialogSubtitle] = useState(
+    "use a free use"
+  );
   const [pastOrders, setPastOrders] = useState([]);
   const [activePastOrder, setActivePastOrder] = useState(null);
   const [isSorryToHearScreenVisible, setIsSorryToHearScreenVisible] = useState(false);
@@ -2487,33 +2490,16 @@ function AppContent() {
     handleReturnToWelcome();
   }, [handleReturnToWelcome]);
 
+  const deleteOrderRef = useRef(null);
   const handleDeletePastOrder = useCallback(
     (order) => {
       if (!order?.orderId) {
         return;
       }
-      Alert.alert(
-        "Delete past order?",
-        "This will remove the saved meals from your history.",
-        [
-          { text: "Cancel", style: "cancel" },
-          {
-            text: "Delete",
-            style: "destructive",
-            onPress: () => {
-              setPastOrders((prev) => {
-                const next = Array.isArray(prev)
-                  ? prev.filter((entry) => entry.orderId !== order.orderId)
-                  : [];
-                persistPastOrders(next);
-                return next;
-              });
-            },
-          },
-        ]
-      );
+      deleteOrderRef.current = order;
+      showConfirmationDialog("deletePastOrder", "delete past order");
     },
-    [persistPastOrders]
+    [showConfirmationDialog]
   );
 
   const handleOpenPastOrderDetails = useCallback((order) => {
@@ -3130,11 +3116,12 @@ const handlePreferenceSelection = useCallback(
     setHasAcknowledgedPreferenceComplete(true);
   }, []);
 
-  const showConfirmationDialog = useCallback((context) => {
+  const showConfirmationDialog = useCallback((context, subtitle = "use a free use") => {
     setConfirmationDialog({
       visible: true,
       context,
     });
+    setConfirmationDialogSubtitle(subtitle);
   }, []);
 
   const handleCloseConfirmationDialog = useCallback(() => {
@@ -3157,6 +3144,18 @@ const handlePreferenceSelection = useCallback(
     } else if (context === "woolworthsCart") {
       recordPastOrder(selectedHomeMeals);
       handleSendShoppingListToCart();
+    } else if (context === "deletePastOrder") {
+      const order = deleteOrderRef.current;
+      if (order?.orderId) {
+        setPastOrders((prev) => {
+          const next = Array.isArray(prev)
+            ? prev.filter((entry) => entry.orderId !== order.orderId)
+            : [];
+          persistPastOrders(next);
+          return next;
+        });
+      }
+      deleteOrderRef.current = null;
     }
   }, [
     confirmationDialog.context,
@@ -3165,6 +3164,7 @@ const handlePreferenceSelection = useCallback(
     handleSendShoppingListToCart,
     recordPastOrder,
     selectedHomeMeals,
+    persistPastOrders,
   ]);
 
   const handleOpenShoppingListConfirm = useCallback(() => {
@@ -3205,7 +3205,7 @@ const handlePreferenceSelection = useCallback(
       <View style={styles.mealDetailCard}>
         <View style={styles.confirmModalContent}>
           <Text style={styles.mealDetailTitle}>Please confirm</Text>
-          <Text style={styles.confirmSubtitle}>use a free use</Text>
+          <Text style={styles.confirmSubtitle}>{confirmationDialogSubtitle}</Text>
         </View>
         <TouchableOpacity
           style={styles.confirmAcceptButton}
