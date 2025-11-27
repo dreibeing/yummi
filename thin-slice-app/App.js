@@ -1760,6 +1760,8 @@ function AppContent() {
   const [checkedShoppingListItems, setCheckedShoppingListItems] = useState(() => new Set());
   const [imageReloadCounters, setImageReloadCounters] = useState({});
   const imageRetryTimeouts = useRef({});
+  const imagePrefetchTimeouts = useRef({});
+  const prefetchedImageUrls = useRef(new Set());
   const [isCartPushPending, setIsCartPushPending] = useState(false);
   const preferenceSyncHashRef = useRef(null);
   const preferenceEntryContextRef = useRef(null);
@@ -1935,14 +1937,19 @@ function AppContent() {
   useEffect(() => {
     setCheckedShoppingListItems(new Set());
     setImageReloadCounters({});
+    prefetchedImageUrls.current.clear();
     Object.values(imageRetryTimeouts.current).forEach(clearTimeout);
     imageRetryTimeouts.current = {};
+    Object.values(imagePrefetchTimeouts.current).forEach(clearTimeout);
+    imagePrefetchTimeouts.current = {};
   }, [shoppingListItems]);
 
   useEffect(() => {
     return () => {
       Object.values(imageRetryTimeouts.current).forEach(clearTimeout);
+      Object.values(imagePrefetchTimeouts.current).forEach(clearTimeout);
       imageRetryTimeouts.current = {};
+      imagePrefetchTimeouts.current = {};
     };
   }, []);
 
@@ -2256,6 +2263,33 @@ function AppContent() {
       return next;
     });
   }, []);
+
+  useEffect(() => {
+    Object.values(imagePrefetchTimeouts.current).forEach(clearTimeout);
+    imagePrefetchTimeouts.current = {};
+    shoppingListDisplayItems.forEach((item, index) => {
+      if (!item?.imageUrl || prefetchedImageUrls.current.has(item.imageUrl)) {
+        return;
+      }
+      const delay = Math.min(2200, index * 150);
+      const timeoutId = setTimeout(() => {
+        Image.prefetch(item.imageUrl)
+          .then(() => {
+            prefetchedImageUrls.current.add(item.imageUrl);
+          })
+          .catch(() => {
+            scheduleImageReload(item.id);
+          })
+          .finally(() => {
+            delete imagePrefetchTimeouts.current[item.id];
+          });
+      }, delay);
+      imagePrefetchTimeouts.current[item.id] = timeoutId;
+    });
+    return () => {
+      Object.values(imagePrefetchTimeouts.current).forEach(clearTimeout);
+    };
+  }, [scheduleImageReload, shoppingListDisplayItems]);
 
   const getIngredientUnitPriceMinor = useCallback((ingredient) => {
     if (!ingredient) {
