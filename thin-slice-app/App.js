@@ -2466,6 +2466,84 @@ function AppContent() {
     setScreen("pastOrders");
   }, []);
 
+  const homeModalMeal = homeMealModal.meal;
+  const homeModalPrepSteps =
+    homeMealModal.visible && homeModalMeal ? getMealPrepSteps(homeModalMeal) : [];
+  const homeModalCookSteps =
+    homeMealModal.visible && homeModalMeal ? getMealCookSteps(homeModalMeal) : [];
+  const homeModalIngredients =
+    homeMealModal.visible && homeModalMeal
+      ? getMealDetailIngredients(homeModalMeal)
+      : [];
+
+  const homeMealDetailModal =
+    homeMealModal.visible && homeModalMeal ? (
+      <View style={styles.mealDetailModalContainer} pointerEvents="box-none">
+        <TouchableWithoutFeedback
+          onPress={() => setHomeMealModal({ visible: false, meal: null })}
+        >
+          <View style={styles.mealDetailBackdrop} />
+        </TouchableWithoutFeedback>
+        <View style={styles.mealDetailCard}>
+          <ScrollView
+            style={styles.mealDetailScroll}
+            contentContainerStyle={styles.mealDetailContent}
+          >
+            <Text style={styles.mealDetailTitle}>
+              {homeModalMeal.name ?? "Meal"}
+            </Text>
+            {homeModalMeal.description ? (
+              <Text style={styles.mealDetailDescription}>
+                {homeModalMeal.description}
+              </Text>
+            ) : null}
+            {homeModalPrepSteps.length > 0 ? (
+              <View style={styles.mealDetailSection}>
+                <Text style={styles.mealDetailSectionTitle}>Prep Steps</Text>
+                {homeModalPrepSteps.map((step, idx) => (
+                  <Text key={`prep-${idx}`} style={styles.mealDetailSectionItem}>
+                    {idx + 1}. {step}
+                  </Text>
+                ))}
+              </View>
+            ) : null}
+            {homeModalCookSteps.length > 0 ? (
+              <View style={styles.mealDetailSection}>
+                <Text style={styles.mealDetailSectionTitle}>Cooking Steps</Text>
+                {homeModalCookSteps.map((step, idx) => (
+                  <Text key={`cook-${idx}`} style={styles.mealDetailSectionItem}>
+                    {idx + 1}. {step}
+                  </Text>
+                ))}
+              </View>
+            ) : null}
+            {homeModalIngredients.length > 0 ? (
+              <View style={styles.mealDetailSection}>
+                <Text style={styles.mealDetailSectionTitle}>Ingredients</Text>
+                {homeModalIngredients.map((ingredient, idx) => {
+                  const label = formatMealIngredientDetailText(ingredient, idx);
+                  return (
+                    <Text
+                      key={`detail-ingredient-${idx}`}
+                      style={styles.mealDetailSectionItem}
+                    >
+                      • {label}
+                    </Text>
+                  );
+                })}
+              </View>
+            ) : null}
+          </ScrollView>
+          <TouchableOpacity
+            style={styles.mealDetailCloseButton}
+            onPress={() => setHomeMealModal({ visible: false, meal: null })}
+          >
+            <Text style={styles.mealDetailCloseText}>×</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+    ) : null;
+
   useEffect(() => {
     setHasFetchedRemotePreferences(false);
     setLastPreferencesSyncedAt(null);
@@ -4447,6 +4525,7 @@ const handlePreferenceSelection = useCallback(
         </ScrollView>
         {mealMenuOverlay}
         {confirmationDialogPortal}
+        {homeMealDetailModal}
       </SafeAreaView>
     );
   }
@@ -4531,6 +4610,7 @@ const handlePreferenceSelection = useCallback(
         </ScrollView>
         {mealMenuOverlay}
         {confirmationDialogPortal}
+        {homeMealDetailModal}
       </SafeAreaView>
     );
   }
@@ -5110,19 +5190,6 @@ const handlePreferenceSelection = useCallback(
     isPreferenceStateReady &&
     !isOnboardingActive
   ) {
-    const homeModalMeal = homeMealModal.meal;
-    const homeModalPrepSteps =
-      homeMealModal.visible && homeModalMeal
-        ? getMealPrepSteps(homeModalMeal)
-        : [];
-    const homeModalCookSteps =
-      homeMealModal.visible && homeModalMeal
-        ? getMealCookSteps(homeModalMeal)
-        : [];
-    const homeModalIngredients =
-      homeMealModal.visible && homeModalMeal
-        ? getMealDetailIngredients(homeModalMeal)
-        : [];
     return (
       <SafeAreaView style={styles.mealHomeSafeArea}>
         <StatusBar style="dark" />
@@ -5268,72 +5335,7 @@ const handlePreferenceSelection = useCallback(
         </View>
         {mealMenuOverlay}
         {confirmationDialogPortal}
-        {homeMealModal.visible && homeModalMeal ? (
-          <View style={styles.mealDetailModalContainer} pointerEvents="box-none">
-            <TouchableWithoutFeedback
-              onPress={() => setHomeMealModal({ visible: false, meal: null })}
-            >
-              <View style={styles.mealDetailBackdrop} />
-            </TouchableWithoutFeedback>
-            <View style={styles.mealDetailCard}>
-              <ScrollView
-                style={styles.mealDetailScroll}
-                contentContainerStyle={styles.mealDetailContent}
-              >
-                <Text style={styles.mealDetailTitle}>
-                  {homeModalMeal.name ?? "Meal"}
-                </Text>
-                {homeModalMeal.description ? (
-                  <Text style={styles.mealDetailDescription}>
-                    {homeModalMeal.description}
-                  </Text>
-                ) : null}
-                {homeModalPrepSteps.length > 0 ? (
-                  <View style={styles.mealDetailSection}>
-                    <Text style={styles.mealDetailSectionTitle}>Prep Steps</Text>
-                    {homeModalPrepSteps.map((step, idx) => (
-                      <Text key={`prep-${idx}`} style={styles.mealDetailSectionItem}>
-                        {idx + 1}. {step}
-                      </Text>
-                    ))}
-                  </View>
-                ) : null}
-                {homeModalCookSteps.length > 0 ? (
-                  <View style={styles.mealDetailSection}>
-                    <Text style={styles.mealDetailSectionTitle}>Cooking Steps</Text>
-                    {homeModalCookSteps.map((step, idx) => (
-                      <Text key={`cook-${idx}`} style={styles.mealDetailSectionItem}>
-                        {idx + 1}. {step}
-                      </Text>
-                    ))}
-                  </View>
-                ) : null}
-                {homeModalIngredients.length > 0 ? (
-                  <View style={styles.mealDetailSection}>
-                    <Text style={styles.mealDetailSectionTitle}>Ingredients</Text>
-                    {homeModalIngredients.map((ingredient, idx) => {
-                      const label = formatMealIngredientDetailText(ingredient, idx);
-                      return (
-                        <Text
-                          key={`detail-ingredient-${idx}`}
-                          style={styles.mealDetailSectionItem}
-                        >
-                          • {label}
-                        </Text>
-                      );
-                    })}
-                  </View>
-                ) : null}
-              </ScrollView>
-              <TouchableOpacity
-                style={styles.mealDetailCloseButton}
-                onPress={() => setHomeMealModal({ visible: false, meal: null })}
-              >
-                <Text style={styles.mealDetailCloseText}>×</Text>
-              </TouchableOpacity>
-            </View>
-          </View>
-        ) : null}
+        {homeMealDetailModal}
       </SafeAreaView>
     );
   }
