@@ -4614,100 +4614,102 @@ const handlePreferenceSelection = useCallback(
             </Text>
           </View>
         </View>
-        <ScrollView
-          style={styles.pastOrderMealsScroll}
-          contentContainerStyle={styles.pastOrderMealsContent}
-          showsVerticalScrollIndicator={false}
-        >
-          {mealsList.map((meal, index) => {
-            const servingsCount = deriveMealServingsCount(meal);
-            const servingsLabel = formatServingsPeopleLabel(servingsCount);
-            const isSelected = Boolean(selectedHomeMealIds[meal?.mealId]);
-            const isDisliked = Boolean(homeMealDislikedIds[meal?.mealId]);
-            return (
-              <TouchableOpacity
-                key={`${meal?.mealId ?? "meal"}-${index}`}
-                style={styles.homeMealCard}
-                activeOpacity={0.9}
-                onPress={() => setHomeMealModal({ visible: true, meal })}
-              >
-                <Text style={styles.homeMealTitle}>{meal?.name ?? "Meal"}</Text>
-                {meal?.description ? (
-                  <Text style={styles.homeMealDescription}>{meal.description}</Text>
-                ) : null}
-                {Array.isArray(meal?.tags?.PrepTime) &&
-                meal.tags.PrepTime.length > 0 ? (
-                  <Text style={styles.homeMealPrepTime}>
-                    Prep time: {meal.tags.PrepTime.join(", ")}
-                  </Text>
-                ) : null}
-                <View style={styles.homeMealFooterRow}>
-                  <View style={styles.homeMealServingsRow}>
-                    <Text style={styles.homeMealServingsLabel}>Servings:</Text>
-                    <Text style={styles.homeMealServingsValueText}>
-                      {servingsLabel}
+        <View style={styles.pastOrderMealsContainer}>
+          <ScrollView
+            style={styles.pastOrderMealsScroll}
+            contentContainerStyle={styles.pastOrderMealsContent}
+            showsVerticalScrollIndicator={false}
+          >
+            {mealsList.map((meal, index) => {
+              const servingsCount = deriveMealServingsCount(meal);
+              const servingsLabel = formatServingsPeopleLabel(servingsCount);
+              const isSelected = Boolean(selectedHomeMealIds[meal?.mealId]);
+              const isDisliked = Boolean(homeMealDislikedIds[meal?.mealId]);
+              return (
+                <TouchableOpacity
+                  key={`${meal?.mealId ?? "meal"}-${index}`}
+                  style={styles.homeMealCard}
+                  activeOpacity={0.9}
+                  onPress={() => setHomeMealModal({ visible: true, meal })}
+                >
+                  <Text style={styles.homeMealTitle}>{meal?.name ?? "Meal"}</Text>
+                  {meal?.description ? (
+                    <Text style={styles.homeMealDescription}>{meal.description}</Text>
+                  ) : null}
+                  {Array.isArray(meal?.tags?.PrepTime) &&
+                  meal.tags.PrepTime.length > 0 ? (
+                    <Text style={styles.homeMealPrepTime}>
+                      Prep time: {meal.tags.PrepTime.join(", ")}
                     </Text>
-                  </View>
-                  <View
-                    style={[styles.prefControls, styles.pastOrderActionControls]}
-                  >
-                    {PAST_ORDER_REACTION_CONTROLS.map((control) => {
-                      const isActive =
-                        control.id === "dislike" ? isDisliked : isSelected;
-                      const controlStyles = [
-                        styles.prefControlButton,
-                        control.id === "like" && styles.prefControlButtonLike,
-                        control.id === "dislike" &&
-                          styles.prefControlButtonDislike,
-                        isActive && styles.prefControlButtonActive,
-                        isActive &&
-                          control.id === "like" &&
-                          styles.prefControlButtonLikeActive,
-                        isActive &&
+                  ) : null}
+                  <View style={styles.homeMealFooterRow}>
+                    <View style={styles.homeMealServingsRow}>
+                      <Text style={styles.homeMealServingsLabel}>Servings:</Text>
+                      <Text style={styles.homeMealServingsValueText}>
+                        {servingsLabel}
+                      </Text>
+                    </View>
+                    <View
+                      style={[styles.prefControls, styles.pastOrderActionControls]}
+                    >
+                      {PAST_ORDER_REACTION_CONTROLS.map((control) => {
+                        const isActive =
+                          control.id === "dislike" ? isDisliked : isSelected;
+                        const controlStyles = [
+                          styles.prefControlButton,
+                          control.id === "like" && styles.prefControlButtonLike,
                           control.id === "dislike" &&
-                          styles.prefControlButtonDislikeActive,
-                      ];
-                      const iconStyles = [
-                        styles.prefControlIcon,
-                        control.id === "like" && styles.prefControlIconLike,
-                        control.id === "dislike" &&
-                          styles.prefControlIconDislike,
-                        isActive && styles.prefControlIconActive,
-                        isActive &&
-                          control.id === "like" &&
-                          styles.prefControlIconLikeActive,
-                        isActive &&
+                            styles.prefControlButtonDislike,
+                          isActive && styles.prefControlButtonActive,
+                          isActive &&
+                            control.id === "like" &&
+                            styles.prefControlButtonLikeActive,
+                          isActive &&
+                            control.id === "dislike" &&
+                            styles.prefControlButtonDislikeActive,
+                        ];
+                        const iconStyles = [
+                          styles.prefControlIcon,
+                          control.id === "like" && styles.prefControlIconLike,
                           control.id === "dislike" &&
-                          styles.prefControlIconDislikeActive,
-                      ];
-                      const handleControlPress = (event) => {
-                        event?.stopPropagation?.();
-                        if (control.id === "dislike") {
-                          handleToggleHomeMealDislike(meal.mealId);
-                        } else if (control.id === "like") {
-                          handleToggleHomeMealSelection(meal.mealId);
-                        }
-                      };
-                      return (
-                        <TouchableOpacity
-                          key={`${meal?.mealId ?? "meal"}-${control.id}`}
-                          style={controlStyles}
-                          onPress={handleControlPress}
-                          accessibilityRole="button"
-                          accessibilityLabel={`${control.label} ${
-                            meal?.name ?? ""
-                          }`}
-                        >
-                          <Text style={iconStyles}>{control.icon}</Text>
-                        </TouchableOpacity>
-                      );
-                    })}
+                            styles.prefControlIconDislike,
+                          isActive && styles.prefControlIconActive,
+                          isActive &&
+                            control.id === "like" &&
+                            styles.prefControlIconLikeActive,
+                          isActive &&
+                            control.id === "dislike" &&
+                            styles.prefControlIconDislikeActive,
+                        ];
+                        const handleControlPress = (event) => {
+                          event?.stopPropagation?.();
+                          if (control.id === "dislike") {
+                            handleToggleHomeMealDislike(meal.mealId);
+                          } else if (control.id === "like") {
+                            handleToggleHomeMealSelection(meal.mealId);
+                          }
+                        };
+                        return (
+                          <TouchableOpacity
+                            key={`${meal?.mealId ?? "meal"}-${control.id}`}
+                            style={controlStyles}
+                            onPress={handleControlPress}
+                            accessibilityRole="button"
+                            accessibilityLabel={`${control.label} ${
+                              meal?.name ?? ""
+                            }`}
+                          >
+                            <Text style={iconStyles}>{control.icon}</Text>
+                          </TouchableOpacity>
+                        );
+                      })}
+                    </View>
                   </View>
-                </View>
-              </TouchableOpacity>
-            );
-          })}
-        </ScrollView>
+                </TouchableOpacity>
+              );
+            })}
+          </ScrollView>
+        </View>
         {mealMenuOverlay}
         {confirmationDialogPortal}
         {homeMealDetailModal}
@@ -6223,14 +6225,19 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: "#4d4d4d",
   },
+  pastOrderMealsContainer: {
+    flex: 1,
+    width: "100%",
+    paddingHorizontal: 20,
+    paddingTop: 12,
+    paddingBottom: 16,
+  },
   pastOrderMealsScroll: {
     flex: 1,
     width: "100%",
   },
   pastOrderMealsContent: {
-    paddingHorizontal: 20,
-    paddingTop: 8,
-    paddingBottom: 32,
+    paddingBottom: 24,
     gap: 12,
   },
   ingredientsBody: {
