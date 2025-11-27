@@ -2782,6 +2782,20 @@ function AppContent() {
     setIsSorryToHearScreenVisible(false);
   }, []);
 
+  const handleConfirmReturnHome = useCallback(() => {
+    Alert.alert(
+      "Return to home",
+      "This will take you back to the welcome screen.",
+      [
+        { text: "Cancel", style: "cancel" },
+        {
+          text: "Done",
+          onPress: handleReturnToWelcome,
+        },
+      ]
+    );
+  }, [handleReturnToWelcome]);
+
   const recordPastOrder = useCallback(
     (mealsSnapshot, options = {}) => {
       if (!Array.isArray(mealsSnapshot) || mealsSnapshot.length === 0) {
@@ -6297,9 +6311,9 @@ const handlePreferenceSelection = useCallback(
               styles.welcomeCtaButton,
               styles.shoppingListHomeButton,
             ]}
-            onPress={handleReturnToWelcome}
+            onPress={handleConfirmReturnHome}
           >
-            <Text style={styles.welcomeButtonText}>Home</Text>
+            <Text style={styles.welcomeButtonText}>Done</Text>
           </TouchableOpacity>
         </View>
         {mealMenuOverlay}
