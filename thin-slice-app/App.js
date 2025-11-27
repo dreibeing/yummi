@@ -5157,19 +5157,6 @@ const handlePreferenceSelection = useCallback(
             </ScrollView>
           )}
         </View>
-        <View style={styles.shoppingListFooter}>
-          <TouchableOpacity
-            style={[
-              styles.welcomeButton,
-              styles.mealHomeCtaButton,
-              styles.welcomeCtaButton,
-              styles.shoppingListHomeButton,
-            ]}
-            onPress={handleReturnToWelcome}
-          >
-            <Text style={styles.welcomeButtonText}>Home</Text>
-          </TouchableOpacity>
-        </View>
         {mealMenuOverlay}
         {confirmationDialogPortal}
       </SafeAreaView>
