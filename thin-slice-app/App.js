@@ -2785,7 +2785,7 @@ function AppContent() {
   const handleConfirmReturnHome = useCallback(() => {
     showConfirmationDialog(
       "returnHomeFromShoppingList",
-      "This will take you back to the welcome screen."
+      "This will take you back to the home screen.\nYou can always get your shopping list in past orders."
     );
   }, [showConfirmationDialog]);
 
