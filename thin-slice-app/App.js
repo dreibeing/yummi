@@ -1762,6 +1762,7 @@ function AppContent() {
   const imageRetryTimeouts = useRef({});
   const imagePrefetchTimeouts = useRef({});
   const prefetchedImageUrls = useRef(new Set());
+  const [activePastOrderShoppingList, setActivePastOrderShoppingList] = useState(null);
   const [isCartPushPending, setIsCartPushPending] = useState(false);
   const preferenceSyncHashRef = useRef(null);
   const preferenceEntryContextRef = useRef(null);
@@ -2212,33 +2213,79 @@ function AppContent() {
     return preferredProduct?.imageUrl ?? null;
   }, []);
 
-  const shoppingListDisplayItems = useMemo(() => {
-    const entries = [];
-    shoppingListItems.forEach((ingredient) => {
-      if (!ingredient) {
-        return;
+  const getPastOrderQuantity = useCallback((item) => {
+    if (!item) {
+      return 0;
+    }
+    if (typeof item.qty === "number" && Number.isFinite(item.qty)) {
+      return item.qty;
+    }
+    if (typeof item.requiredQuantity === "number" && Number.isFinite(item.requiredQuantity)) {
+      return item.requiredQuantity;
+    }
+    if (typeof item.defaultQuantity === "number" && Number.isFinite(item.defaultQuantity)) {
+      return item.defaultQuantity;
+    }
+    return 0;
+  }, []);
+
+  const buildShoppingListEntries = useCallback(
+    (items, resolveQuantity) => {
+      if (!Array.isArray(items)) {
+        return [];
       }
-      const preferredProduct = pickPreferredShoppingListProduct(ingredient);
-      const displayName =
-        preferredProduct?.name ??
-        ingredient.productName ??
-        ingredient.text ??
-        ingredient.groupKey ??
-        "Ingredient";
-      const imageUrl = preferredProduct?.imageUrl ?? null;
-      const quantityValue = getIngredientQuantityValue(ingredient);
-      const trackingId = getIngredientTrackingId(ingredient, entries.length);
-      entries.push({
-        id: trackingId,
-        displayName,
-        imageUrl,
-        displayQuantity: formatIngredientQuantity(quantityValue),
+      const entries = [];
+      items.forEach((ingredient, index) => {
+        if (!ingredient) {
+          return;
+        }
+        const preferredProduct = pickPreferredShoppingListProduct(ingredient);
+        const displayName =
+          preferredProduct?.name ??
+          ingredient.productName ??
+          ingredient.text ??
+          ingredient.groupKey ??
+          "Ingredient";
+        const imageUrl = preferredProduct?.imageUrl ?? null;
+        const quantityValue =
+          typeof resolveQuantity === "function"
+            ? resolveQuantity(ingredient)
+            : 0;
+        const trackingId = getIngredientTrackingId(
+          ingredient,
+          `built-${index}-${ingredient?.id ?? ""}`
+        );
+        entries.push({
+          id: trackingId,
+          displayName,
+          imageUrl,
+          displayQuantity: formatIngredientQuantity(quantityValue),
+        });
       });
-    });
-    return entries.sort((a, b) =>
-      a.displayName.localeCompare(b.displayName, undefined, { sensitivity: "base" })
+      return entries.sort((a, b) =>
+        a.displayName.localeCompare(b.displayName, undefined, { sensitivity: "base" })
+      );
+    },
+    [formatIngredientQuantity, getIngredientTrackingId]
+  );
+
+  const shoppingListDisplayItems = useMemo(
+    () =>
+      buildShoppingListEntries(shoppingListItems, (ingredient) =>
+        getIngredientQuantityValue(ingredient)
+      ),
+    [buildShoppingListEntries, getIngredientQuantityValue, shoppingListItems]
+  );
+
+  const pastOrderShoppingListDisplayItems = useMemo(() => {
+    if (!activePastOrderShoppingList) {
+      return [];
+    }
+    return buildShoppingListEntries(
+      activePastOrderShoppingList.shoppingListItems ?? [],
+      getPastOrderQuantity
     );
-  }, [formatIngredientQuantity, getIngredientQuantityValue, shoppingListItems]);
+  }, [activePastOrderShoppingList, buildShoppingListEntries, getPastOrderQuantity]);
 
   const incrementImageReloadCounter = useCallback((itemId) => {
     if (!itemId) {
@@ -2263,9 +2310,9 @@ function AppContent() {
         incrementImageReloadCounter(itemId);
         delete imageRetryTimeouts.current[itemId];
       }, 2200);
-      },
-      [incrementImageReloadCounter]
-    );
+    },
+    [incrementImageReloadCounter]
+  );
 
   const clearPrefetchTimeoutsFor = useCallback((category) => {
     if (!category) {
@@ -2357,6 +2404,41 @@ function AppContent() {
     scheduleImageReload,
     stapleIngredients,
     primaryIngredients,
+  ]);
+
+  useEffect(() => {
+    if (screen !== "pastOrderShoppingList") {
+      return undefined;
+    }
+    clearPrefetchTimeoutsFor("pastOrderList");
+    pastOrderShoppingListDisplayItems.forEach((item, index) => {
+      if (!item?.imageUrl || prefetchedImageUrls.current.has(item.imageUrl)) {
+        return;
+      }
+      const timeoutKey = `pastOrderList-${item.id}`;
+      const delay = Math.min(2200, index * 120);
+      const timeoutId = setTimeout(() => {
+        Image.prefetch(item.imageUrl)
+          .then(() => {
+            prefetchedImageUrls.current.add(item.imageUrl);
+          })
+          .catch(() => {
+            scheduleImageReload(item.id);
+          })
+          .finally(() => {
+            delete imagePrefetchTimeouts.current[timeoutKey];
+          });
+      }, delay);
+      imagePrefetchTimeouts.current[timeoutKey] = timeoutId;
+    });
+    return () => {
+      clearPrefetchTimeoutsFor("pastOrderList");
+    };
+  }, [
+    clearPrefetchTimeoutsFor,
+    pastOrderShoppingListDisplayItems,
+    scheduleImageReload,
+    screen,
   ]);
 
   const getIngredientUnitPriceMinor = useCallback((ingredient) => {
@@ -2701,7 +2783,7 @@ function AppContent() {
   }, []);
 
   const recordPastOrder = useCallback(
-    (mealsSnapshot) => {
+    (mealsSnapshot, options = {}) => {
       if (!Array.isArray(mealsSnapshot) || mealsSnapshot.length === 0) {
         return;
       }
@@ -2718,10 +2800,25 @@ function AppContent() {
       if (!entries.length) {
         return;
       }
+      const shoppingListSnapshot = Array.isArray(options.shoppingListItems)
+        ? options.shoppingListItems
+            .map((item) => {
+              if (!item) {
+                return null;
+              }
+              try {
+                return JSON.parse(JSON.stringify(item));
+              } catch (error) {
+                return { ...item };
+              }
+            })
+            .filter(Boolean)
+        : [];
       const entry = {
         orderId: `past-${Date.now()}`,
         createdAt: new Date().toISOString(),
         meals: entries,
+        shoppingListItems: shoppingListSnapshot,
       };
       setPastOrders((prev) => {
         const next = [entry, ...(prev ?? [])];
@@ -2739,6 +2836,48 @@ function AppContent() {
     setActivePastOrder(null);
     handleReturnToWelcome();
   }, [handleReturnToWelcome]);
+
+  const getPastOrderLabel = useCallback((order) => {
+    if (!order) {
+      return "Shopping List";
+    }
+    const orderDate = order.createdAt ? new Date(order.createdAt) : null;
+    if (orderDate && !Number.isNaN(orderDate.getTime())) {
+      const dayLabel = orderDate.toLocaleDateString(undefined, { weekday: "short" });
+      const dateLabel = orderDate.toLocaleDateString(undefined, {
+        month: "short",
+        day: "numeric",
+      });
+      return `Shopping List · ${dayLabel} ${dateLabel}`;
+    }
+    return "Shopping List";
+  }, []);
+
+  const handleShowPastOrderShoppingList = useCallback(
+    (order) => {
+      if (!order) {
+        return;
+      }
+      const items = Array.isArray(order.shoppingListItems)
+        ? order.shoppingListItems
+        : [];
+      if (!items.length) {
+        Alert.alert(
+          "Shopping list unavailable",
+          "This past order does not have a saved shopping list."
+        );
+        return;
+      }
+      setActivePastOrderShoppingList(order);
+      setScreen("pastOrderShoppingList");
+    },
+    []
+  );
+
+  const handleClosePastOrderShoppingList = useCallback(() => {
+    setActivePastOrderShoppingList(null);
+    setScreen("pastOrders");
+  }, []);
 
   const deleteOrderRef = useRef(null);
   const handleDeletePastOrder = useCallback(
@@ -3399,7 +3538,7 @@ const handlePreferenceSelection = useCallback(
     } else if (context === "newMeals") {
       handleConfirmPreferenceComplete();
     } else if (context === "woolworthsCart") {
-      recordPastOrder(selectedHomeMeals);
+      recordPastOrder(selectedHomeMeals, { shoppingListItems });
       handleSendShoppingListToCart();
     } else if (context === "deletePastOrder") {
       const order = deleteOrderRef.current;
@@ -3454,7 +3593,7 @@ const handlePreferenceSelection = useCallback(
       handleOpenShoppingListConfirm();
       return;
     }
-    recordPastOrder(selectedHomeMeals);
+    recordPastOrder(selectedHomeMeals, { shoppingListItems });
     setScreen("shoppingList");
   }, [
     handleOpenShoppingListConfirm,
@@ -4877,6 +5016,25 @@ const handlePreferenceSelection = useCallback(
                   <TouchableOpacity
                     style={[
                       styles.prefControlButton,
+                      styles.prefControlButtonPrimary,
+                      styles.pastOrderListButton,
+                    ]}
+                    onPress={(event) => {
+                      event?.stopPropagation?.();
+                      handleShowPastOrderShoppingList(order);
+                    }}
+                    accessibilityRole="button"
+                    accessibilityLabel="View shopping list"
+                  >
+                    <Feather
+                      name="list"
+                      size={16}
+                      style={[styles.prefControlIcon, styles.prefControlIconPrimary]}
+                    />
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                    style={[
+                      styles.prefControlButton,
                       styles.prefControlButtonDislike,
                       styles.pastOrderDeleteButton,
                     ]}
@@ -4905,6 +5063,115 @@ const handlePreferenceSelection = useCallback(
         {mealMenuOverlay}
         {confirmationDialogPortal}
         {homeMealDetailModal}
+      </SafeAreaView>
+    );
+  }
+
+  if (screen === "pastOrderShoppingList" && activePastOrderShoppingList) {
+    const listLabel = getPastOrderLabel(activePastOrderShoppingList);
+    return (
+      <SafeAreaView style={styles.shoppingListSafeArea}>
+        <StatusBar style="dark" />
+        <View style={styles.shoppingListHeader}>
+          <TouchableOpacity
+            style={styles.mealHomeBackButton}
+            onPress={handleClosePastOrderShoppingList}
+            accessibilityRole="button"
+            accessibilityLabel="Back to past orders"
+          >
+            <Feather name="arrow-left" size={24} color="#00a651" />
+          </TouchableOpacity>
+          <View>
+            <Text style={styles.shoppingListHeaderTitle}>{listLabel}</Text>
+            <Text style={styles.shoppingListHeaderSubtitle}>Past order</Text>
+          </View>
+          <View style={styles.shoppingListHeaderAction} />
+        </View>
+        <View style={styles.shoppingListBody}>
+          {pastOrderShoppingListDisplayItems.length === 0 ? (
+            <View style={styles.shoppingListEmptyState}>
+              <Text style={styles.shoppingListEmptyTitle}>No shopping list items</Text>
+              <Text style={styles.shoppingListEmptySubtitle}>
+                We couldn&apos;t find any saved ingredients for this order.
+              </Text>
+            </View>
+          ) : (
+            <ScrollView
+              style={styles.shoppingListScroll}
+              contentContainerStyle={styles.shoppingListScrollContent}
+              showsVerticalScrollIndicator={false}
+            >
+              {pastOrderShoppingListDisplayItems.map((item) => {
+                const placeholderInitial = (item.displayName ?? "?")
+                  .trim()
+                  .charAt(0)
+                  .toUpperCase();
+                const isChecked = checkedShoppingListItems.has(item.id);
+                return (
+                  <TouchableOpacity
+                    key={item.id}
+                    style={[
+                      styles.shoppingListItem,
+                      isChecked && styles.shoppingListItemChecked,
+                    ]}
+                    onPress={() => handleToggleShoppingListItem(item.id)}
+                    activeOpacity={0.7}
+                  >
+                    <View style={styles.shoppingListItemImageWrapper}>
+                      {item.imageUrl ? (
+                        <Image
+                          source={{ uri: item.imageUrl, cache: "reload" }}
+                          style={styles.shoppingListItemImage}
+                          onError={() => scheduleImageReload(item.id)}
+                          key={`past-order-${item.id}-${imageReloadCounters[item.id] ?? 0}`}
+                        />
+                      ) : (
+                        <View style={styles.shoppingListItemImagePlaceholder}>
+                          <Text style={styles.shoppingListItemImagePlaceholderText}>
+                            {placeholderInitial || "?"}
+                          </Text>
+                        </View>
+                      )}
+                    </View>
+                    <View style={styles.shoppingListItemBody}>
+                      <Text
+                        style={[
+                          styles.shoppingListItemName,
+                          isChecked && styles.shoppingListItemNameChecked,
+                        ]}
+                      >
+                        {item.displayName}
+                      </Text>
+                      <Text
+                        style={[
+                          styles.shoppingListItemQuantity,
+                          isChecked && styles.shoppingListItemQuantityChecked,
+                        ]}
+                      >
+                        Quantity: {item.displayQuantity}
+                      </Text>
+                    </View>
+                  </TouchableOpacity>
+                );
+              })}
+            </ScrollView>
+          )}
+        </View>
+        <View style={styles.shoppingListFooter}>
+          <TouchableOpacity
+            style={[
+              styles.welcomeButton,
+              styles.mealHomeCtaButton,
+              styles.welcomeCtaButton,
+              styles.shoppingListHomeButton,
+            ]}
+            onPress={handleReturnToWelcome}
+          >
+            <Text style={styles.welcomeButtonText}>Home</Text>
+          </TouchableOpacity>
+        </View>
+        {mealMenuOverlay}
+        {confirmationDialogPortal}
       </SafeAreaView>
     );
   }
@@ -6977,6 +7244,11 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     color: "#0c3c26",
   },
+  shoppingListHeaderSubtitle: {
+    fontSize: 12,
+    color: "#4d4d4d",
+    marginTop: 4,
+  },
   shoppingListHeaderAction: {
     width: 44,
     height: 44,
@@ -7667,6 +7939,16 @@ const styles = StyleSheet.create({
   },
   prefControlIconNeutralActive: {
     color: "#324C3C",
+  },
+  prefControlButtonPrimary: {
+    borderColor: "#d1f2da",
+    backgroundColor: "#f1faf4",
+  },
+  prefControlIconPrimary: {
+    color: "#0b7a3e",
+  },
+  pastOrderListButton: {
+    marginRight: 8,
   },
   prefFooter: {
     paddingHorizontal: 20,
