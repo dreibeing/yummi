@@ -4589,15 +4589,15 @@ const handlePreferenceSelection = useCallback(
             <Feather name="menu" size={24} color="#0c3c26" />
           </TouchableOpacity>
         </View>
-        <View style={styles.pastOrderDetailMeta}>
-          <Text style={styles.pastOrderDetailMetaText}>
-            Tap a meal card to see the instructions and ingredients.
+        <View style={styles.pastOrderInstructionCard}>
+          <Text style={styles.pastOrderInstructionText}>
+            Tap meal card to see details.
           </Text>
-          <Text style={styles.pastOrderDetailMetaText}>
+          <Text style={styles.pastOrderInstructionText}>
             Thumbs down if you didn’t enjoy a meal.
           </Text>
-          <Text style={styles.pastOrderDetailMetaText}>
-            Heart the meal to add it to your favorites.
+          <Text style={styles.pastOrderInstructionText}>
+            Heart adds it to your favorites.
           </Text>
         </View>
         <ScrollView
@@ -6125,6 +6125,23 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     color: "#1f4b35",
     textAlign: "center",
+  },
+  pastOrderInstructionCard: {
+    width: "100%",
+    marginTop: 12,
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 18,
+    backgroundColor: "#ffffff",
+    alignItems: "center",
+    justifyContent: "center",
+    ...SHADOW.card,
+  },
+  pastOrderInstructionText: {
+    fontSize: 14,
+    color: "#0c3c26",
+    textAlign: "center",
+    marginBottom: 4,
   },
   pastOrdersScroll: {
     flex: 1,
