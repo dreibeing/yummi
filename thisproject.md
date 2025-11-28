@@ -186,7 +186,9 @@ See [plan.md](plan.md) for the authoritative roadmap. Top priorities for the nex
 3. **PayFast production rollout** — clone the hardened staging config into production Fly apps, keep `PAYFAST_SKIP_REMOTE_VALIDATION=false`, and add monitoring/alerts using the regression log in [payfastmigration.md](payfastmigration.md).
 4. **Chargeback/refund groundwork** — design debit/negative-balance handling in backend services (refer to [Chargebacks.txt](Chargebacks.txt)).
 5. **Wallet UI polish** — expand thin-slice UI to show full transaction history and flag negative balances before chargeback logic hardens.
-6. **Preference-driven runtime** — plug the newly stored `user_preference_profiles` into meal filtering and runner logic so `/v1/meals*` can honor saved diet/allergen tags per user.
+6. **Preference-driven runtime** — plug the newly stored `user_preference_profiles` into meal filtering and runner logic so `/v1/meals*` can honor saved diet/allergen tags per user.
+7. **Recommendation learning engine** — `app/services/recommendationlearning.py` now runs a dual-stage shadow exploration + recommendation pass fed by `meal_feedback_events`, preference snapshots, and the latest shopping/cart context before updating `latestRecommendations`. `/v1/recommendations/latest` exposes the stored lineup for the home surface.
+8. **Feedback persistence** — `meal_feedback_events` records likes/dislikes across recommendation feed reactions, shopping-list selections, manual `/v1/feedback/meals` calls, and future order reviews; `app/services/meal_feedback.py` exposes helpers plus a lightweight API surface for the thin slice. Active home-feed meals are excluded from the next recommendation run by default, preventing immediate repeats.
 
 ### Archetype generation workflow (2025-02 update)
 - `data/archetypes/predefined_archetypes.xlsx` (or the CSV export) now enumerates every hard-scope combination (DietaryRestrictions × Audience × secondary DietaryRestrictions).

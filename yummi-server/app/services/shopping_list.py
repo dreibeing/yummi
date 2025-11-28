@@ -22,6 +22,12 @@ from ..schemas import (
     ShoppingListResultItem,
 )
 from .openai_responses import call_openai_responses
+from .meal_feedback import MealFeedbackSource, record_meal_feedback_events
+from .recommendationlearning import (
+    SHOPPING_LIST_TRIGGER,
+    build_learning_context,
+    schedule_recommendation_learning_run,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -123,11 +129,32 @@ async def run_shopping_list_workflow(
     for group in ingredient_groups:
         group_key = str(group.get("group_key"))
         items.append(llm_items.get(group_key) or _build_result_item(group, None))
-    return ShoppingListBuildResponse(
+    response = ShoppingListBuildResponse(
         status="completed",
         generatedAt=datetime.now(timezone.utc),
         items=items,
     )
+    selected_meal_ids = [meal.meal_id for meal in request.meals or [] if getattr(meal, "meal_id", None)]
+    if selected_meal_ids:
+        await record_meal_feedback_events(
+            user_id=user_id,
+            likes=selected_meal_ids,
+            source=MealFeedbackSource.SHOPPING_SELECTION,
+            metadata={"source": "shopping_list.build"},
+        )
+    schedule_recommendation_learning_run(
+        user_id=user_id,
+        trigger=SHOPPING_LIST_TRIGGER,
+        event_context=build_learning_context(
+            request_payload=request,
+            response_payload=response,
+            metadata={
+                "mealIds": [meal.meal_id for meal in request.meals or []],
+                "source": "shopping_list.build",
+            },
+        ),
+    )
+    return response
 
 
 def _aggregate_ingredient_groups(

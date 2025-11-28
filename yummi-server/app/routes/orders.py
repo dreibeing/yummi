@@ -10,6 +10,11 @@ from ..config import get_settings
 from ..auth import get_current_principal
 from ..schemas import CreateOrderRequest, CreateOrderResponse, OrderStatusResponse
 from ..ratelimit import limiter
+from ..services.recommendationlearning import (
+    WOOLWORTHS_CART_TRIGGER,
+    build_learning_context,
+    schedule_recommendation_learning_run,
+)
 
 
 router = APIRouter()
@@ -59,7 +64,7 @@ def _order_get(oid: str) -> Dict | None:
 
 @router.post("/orders", response_model=CreateOrderResponse)
 @limiter.limit("60/minute")
-def create_order(
+async def create_order(
     request: Request,
     body: CreateOrderRequest,
     principal=Depends(get_current_principal),
@@ -86,6 +91,19 @@ def create_order(
     resp = CreateOrderResponse(order_id=oid, status="queued")
     if idempotency_key:
         _idem_get_set(idempotency_key, resp.model_dump())
+    schedule_recommendation_learning_run(
+        user_id=principal.get("sub"),
+        trigger=WOOLWORTHS_CART_TRIGGER,
+        event_context=build_learning_context(
+            request_payload=body,
+            response_payload={"order": order, "response": resp},
+            metadata={
+                "orderId": oid,
+                "retailer": body.retailer,
+                "source": "orders.create",
+            },
+        ),
+    )
     return resp
 
 

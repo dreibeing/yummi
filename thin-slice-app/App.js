@@ -95,6 +95,9 @@ const deriveApiBaseUrl = () => {
   return null;
 };
 const API_BASE_URL = deriveApiBaseUrl();
+const RECOMMENDATIONS_LATEST_ENDPOINT = API_BASE_URL
+  ? `${API_BASE_URL}/recommendations/latest`
+  : null;
 const PAST_ORDERS_STORAGE_KEY = "yummi_past_orders_v1";
 const SHOPPING_LIST_STORAGE_KEY = "yummi_shopping_list_v1";
 const RAW_CLERK_JWT_TEMPLATE =
@@ -346,6 +349,24 @@ const parseServerDate = (value) => {
   } catch (error) {
     return null;
   }
+};
+
+const normalizeGeneratedAtValue = (value) => {
+  if (!value) {
+    return null;
+  }
+  if (value instanceof Date) {
+    return Number.isNaN(value.valueOf()) ? null : value.toISOString();
+  }
+  if (typeof value === "number") {
+    const fromNumber = new Date(value);
+    return Number.isNaN(fromNumber.valueOf()) ? null : fromNumber.toISOString();
+  }
+  if (typeof value === "string") {
+    const parsed = parseServerDate(value);
+    return parsed ? parsed.toISOString() : null;
+  }
+  return null;
 };
 
 const formatCurrency = (minor, currency = "ZAR") => {
@@ -1737,6 +1758,7 @@ function AppContent() {
   const [explorationReactions, setExplorationReactions] = useState({});
   const [isCompletingExploration, setIsCompletingExploration] = useState(false);
   const [homeRecommendedMeals, setHomeRecommendedMeals] = useState([]);
+  const [homeRecommendationsGeneratedAt, setHomeRecommendationsGeneratedAt] = useState(null);
   const [selectedHomeMealIds, setSelectedHomeMealIds] = useState({});
   const [homeMealDislikedIds, setHomeMealDislikedIds] = useState({});
   const [homeMealModal, setHomeMealModal] = useState({
@@ -1768,8 +1790,9 @@ function AppContent() {
   const preferenceEntryContextRef = useRef(null);
   const homeMealsBackupRef = useRef(null);
   const toggleDefaultsInitializedRef = useRef({});
+  const latestRecommendationsRequestRef = useRef(null);
 
-  const applyHomeRecommendedMeals = useCallback((meals) => {
+  const applyHomeRecommendedMeals = useCallback((meals, options = {}) => {
     const nextSource = Array.isArray(meals)
       ? meals.filter((meal) => Boolean(meal))
       : [];
@@ -1777,6 +1800,8 @@ function AppContent() {
     setHomeRecommendedMeals(randomizedMeals);
     setSelectedHomeMealIds({});
     setHomeMealDislikedIds({});
+    const normalizedGeneratedAt = normalizeGeneratedAtValue(options.generatedAt);
+    setHomeRecommendationsGeneratedAt(normalizedGeneratedAt);
   }, []);
 
   const persistPastOrders = useCallback(async (orders) => {
@@ -1812,6 +1837,15 @@ function AppContent() {
   useEffect(() => {
     hydratePastOrders();
   }, [hydratePastOrders]);
+
+  useEffect(() => {
+    return () => {
+      if (latestRecommendationsRequestRef.current) {
+        latestRecommendationsRequestRef.current.abort();
+        latestRecommendationsRequestRef.current = null;
+      }
+    };
+  }, []);
 
   const persistShoppingList = useCallback(async (snapshot) => {
     try {
@@ -3025,6 +3059,13 @@ function AppContent() {
   }, [isMealHomeSurface, screen]);
 
   useEffect(() => {
+    if (screen !== "home" || !isMealHomeSurface) {
+      return;
+    }
+    refreshLatestRecommendations({ skipIfPending: true });
+  }, [screen, isMealHomeSurface, refreshLatestRecommendations]);
+
+  useEffect(() => {
     let isActive = true;
     const hydratePreferences = async () => {
       try {
@@ -3157,7 +3198,13 @@ function AppContent() {
             ? payload.latestRecommendationMeals
             : [];
         if (latestMealsSource.length > 0) {
-          applyHomeRecommendedMeals(latestMealsSource);
+          const latestGeneratedAt =
+            payload?.latestRecommendations?.generatedAt ??
+            payload?.latestRecommendationsGeneratedAt ??
+            null;
+          applyHomeRecommendedMeals(latestMealsSource, {
+            generatedAt: latestGeneratedAt,
+          });
         } else {
           applyHomeRecommendedMeals([]);
         }
@@ -3718,6 +3765,80 @@ const handlePreferenceSelection = useCallback(
       .filter((meal) => meal.ingredients.length > 0);
     return { meals: mealsPayload };
   }, [selectedHomeMeals]);
+
+  const refreshLatestRecommendations = useCallback(
+    async (options = {}) => {
+      if (!RECOMMENDATIONS_LATEST_ENDPOINT || !userId) {
+        return false;
+      }
+      const { skipIfPending = false, force = false } = options;
+      if (latestRecommendationsRequestRef.current) {
+        if (skipIfPending) {
+          return false;
+        }
+        latestRecommendationsRequestRef.current.abort();
+      }
+      const controller = new AbortController();
+      latestRecommendationsRequestRef.current = controller;
+      try {
+        const headers = await buildAuthHeaders();
+        const response = await fetch(RECOMMENDATIONS_LATEST_ENDPOINT, {
+          headers,
+          signal: controller.signal,
+        });
+        if (!response.ok) {
+          if (response.status === 404) {
+            return false;
+          }
+          throw new Error(`Latest recommendations request failed (${response.status})`);
+        }
+        const payload = await response.json();
+        const meals = Array.isArray(payload?.meals)
+          ? payload.meals.filter(Boolean)
+          : [];
+        if (!meals.length) {
+          return false;
+        }
+        const generatedAtValue =
+          payload?.generatedAt ??
+          payload?.generated_at ??
+          payload?.generatedAt ??
+          null;
+        const normalizedGeneratedAt = normalizeGeneratedAtValue(generatedAtValue);
+        if (
+          normalizedGeneratedAt &&
+          homeRecommendationsGeneratedAt &&
+          !force
+        ) {
+          const currentTs = new Date(homeRecommendationsGeneratedAt).valueOf();
+          const nextTs = new Date(normalizedGeneratedAt).valueOf();
+          if (!Number.isNaN(currentTs) && !Number.isNaN(nextTs) && nextTs <= currentTs) {
+            return false;
+          }
+        }
+        applyHomeRecommendedMeals(meals, { generatedAt: normalizedGeneratedAt });
+        return true;
+      } catch (error) {
+        if (error?.name === "AbortError") {
+          return false;
+        }
+        if (__DEV__) {
+          console.warn("Failed to refresh latest recommendations", error);
+        }
+        return false;
+      } finally {
+        if (latestRecommendationsRequestRef.current === controller) {
+          latestRecommendationsRequestRef.current = null;
+        }
+      }
+    },
+    [
+      applyHomeRecommendedMeals,
+      buildAuthHeaders,
+      homeRecommendationsGeneratedAt,
+      userId,
+    ]
+  );
 
   const handleBuildShoppingList = useCallback(async () => {
     const payload = buildShoppingListRequestPayload();

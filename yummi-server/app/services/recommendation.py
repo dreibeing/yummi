@@ -26,6 +26,7 @@ from .meal_representation import extract_key_ingredients, extract_sku_snapshot, 
 from .meals import get_meal_manifest
 from .openai_responses import call_openai_responses
 from .exploration_tracker import flush_background_run
+from .meal_feedback import MealFeedbackSource, record_meal_feedback_events
 from .preferences import (
     get_user_preference_profile,
     load_tag_manifest,
@@ -78,9 +79,20 @@ async def run_recommendation_workflow(
     candidate_limit = request.candidateLimit or settings.recommendation_candidate_limit
     meal_target = _resolve_meal_target(settings.recommendation_meal_count, request.mealCount)
     declined_ids = _merge_declined_ids(request.declinedMealIds, request.reactions)
+    declined_ids.update(_extract_latest_home_feed_ids(profile))
     reaction_groups = _bucket_reactions_by_sentiment(request.reactions)
     disliked_meal_ids = set(reaction_groups.get("dislike") or [])
     liked_meal_ids = [meal_id for meal_id in (reaction_groups.get("like") or []) if meal_id]
+    await record_meal_feedback_events(
+        user_id=user_id,
+        likes=reaction_groups.get("like"),
+        dislikes=reaction_groups.get("dislike"),
+        source=MealFeedbackSource.RECOMMENDATION_FEED,
+        metadata={
+            "trigger": "recommendation.feed",
+            "explorationSessionId": str(request.explorationSessionId) if request.explorationSessionId else None,
+        },
+    )
     exploration_streamed_details: List[CandidateMealDetail] = []
     if exploration_session:
         streamed_ids = _extract_streamed_meal_ids(exploration_session)
@@ -255,6 +267,12 @@ def _merge_declined_ids(
     signals inside the LLM prompt so we can continue exploring nearby options.
     """
     return {mid for mid in (declined_ids or []) if mid}
+
+
+def _extract_latest_home_feed_ids(profile: UserPreferenceProfile | None) -> set[str]:
+    if not profile or not profile.latest_recommendation_meal_ids:
+        return set()
+    return {str(meal_id) for meal_id in profile.latest_recommendation_meal_ids if meal_id}
 
 
 def _build_feedback_payload(

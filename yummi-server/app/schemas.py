@@ -437,6 +437,44 @@ class RecommendationRunResponse(BaseModel):
     meals: List[RecommendationMeal] = Field(default_factory=list)
 
 
+RecommendationLearningTrigger = Literal["shopping_list_build", "woolworths_cart_add"]
+RecommendationLearningStatus = Literal["pending", "completed", "failed", "skipped"]
+
+
+class RecommendationLearningRunRecord(BaseModel):
+    runId: str
+    userId: str
+    trigger: RecommendationLearningTrigger
+    status: RecommendationLearningStatus
+    model: Optional[str] = None
+    createdAt: datetime
+    completedAt: Optional[datetime] = None
+    eventContext: Dict[str, Any] = Field(default_factory=dict)
+    usageSnapshot: Dict[str, Any] = Field(default_factory=dict)
+    responsePayload: Dict[str, Any] = Field(default_factory=dict)
+    errorMessage: Optional[str] = None
+
+
+class MealFeedbackSubmitRequest(BaseModel):
+    mealId: str
+    reaction: Literal["like", "dislike", "neutral"]
+    source: Optional[str] = None
+    metadata: Dict[str, Any] = Field(default_factory=dict)
+
+
+class MealFeedbackRecordResponse(BaseModel):
+    mealId: str
+    reaction: Optional[str] = None
+    source: Optional[str] = None
+    occurredAt: Optional[datetime] = None
+    context: Dict[str, Any] = Field(default_factory=dict)
+
+
+class MealFeedbackSummaryResponse(BaseModel):
+    likedMealIds: List[str] = Field(default_factory=list)
+    dislikedMealIds: List[str] = Field(default_factory=list)
+
+
 class LatestRecommendationIngredient(BaseModel):
     name: Optional[str] = None
     quantity: Optional[str] = None
