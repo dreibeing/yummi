@@ -17,6 +17,7 @@ from ..config import get_settings
 from ..schemas import (
     ShoppingListBuildRequest,
     ShoppingListBuildResponse,
+    ShoppingListIngredientMealUsage,
     ShoppingListMealPayload,
     ShoppingListProductSelection,
     ShoppingListResultItem,
@@ -630,6 +631,16 @@ def _build_result_item(group: Dict[str, Any], llm_entry: Dict[str, Any] | None) 
         if selected_product
         else []
     )
+    meal_usage: list[ShoppingListIngredientMealUsage] = []
+    for entry in group.get("entries") or []:
+        meal_usage.append(
+            ShoppingListIngredientMealUsage(
+                mealId=str(entry.get("meal_id")) if entry.get("meal_id") is not None else None,
+                mealName=entry.get("meal_name"),
+                quantityText=entry.get("quantity_text"),
+                requiredQuantity=entry.get("required_quantity"),
+            )
+        )
     return ShoppingListResultItem(
         id=group.get("group_key") or display_name,
         groupKey=group.get("group_key") or display_name,
@@ -642,12 +653,23 @@ def _build_result_item(group: Dict[str, Any], llm_entry: Dict[str, Any] | None) 
         linkedProducts=selection_models,
         unitPrice=unit_price,
         unitPriceMinor=unit_price_minor,
+        mealUsage=meal_usage,
     )
 
 
 def _build_manual_selection_item(group: Dict[str, Any], reason: str | None = None) -> ShoppingListResultItem:
     group_label = group.get("label") or group.get("group_key") or "Ingredient"
     note = reason or f"We couldn't find a Woolworths product for {group_label}."
+    meal_usage: list[ShoppingListIngredientMealUsage] = []
+    for entry in group.get("entries") or []:
+        meal_usage.append(
+            ShoppingListIngredientMealUsage(
+                mealId=str(entry.get("meal_id")) if entry.get("meal_id") is not None else None,
+                mealName=entry.get("meal_name"),
+                quantityText=entry.get("quantity_text"),
+                requiredQuantity=entry.get("required_quantity"),
+            )
+        )
     return ShoppingListResultItem(
         id=group.get("group_key") or group_label,
         groupKey=group.get("group_key") or group_label,
@@ -661,6 +683,7 @@ def _build_manual_selection_item(group: Dict[str, Any], reason: str | None = Non
         unitPrice=None,
         unitPriceMinor=None,
         needsManualProductSelection=True,
+        mealUsage=meal_usage,
     )
 
 

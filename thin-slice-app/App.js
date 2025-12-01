@@ -1780,6 +1780,10 @@ function AppContent() {
   const [isSorryToHearScreenVisible, setIsSorryToHearScreenVisible] = useState(false);
   const [ingredientQuantities, setIngredientQuantities] = useState({});
   const [shoppingListItems, setShoppingListItems] = useState([]);
+  const [activeIngredientModal, setActiveIngredientModal] = useState({
+    visible: false,
+    ingredient: null,
+  });
   const [shoppingListStatus, setShoppingListStatus] = useState("idle");
   const [shoppingListError, setShoppingListError] = useState(null);
   const [checkedShoppingListItems, setCheckedShoppingListItems] = useState(() => new Set());
@@ -2636,8 +2640,8 @@ function AppContent() {
     return { items: readyItems, skipped };
   }, [getIngredientQuantityValue, shoppingListItems]);
 
-  const renderIngredientRow = useCallback(
-    (ingredient, fallbackIndex = 0) => {
+    const renderIngredientRow = useCallback(
+      (ingredient, fallbackIndex = 0) => {
       if (!ingredient) {
         return null;
       }
@@ -2675,19 +2679,34 @@ function AppContent() {
         priceDetails.lineTotalMinor > 0
           ? priceDetails.lineTotalMinor
           : null;
-      const imageReloadKey = imageReloadCounters[trackingId] ?? 0;
-      return (
-        <View
-          key={ingredient.id}
-          style={[
-            styles.ingredientsListItem,
-            needsManualProductSelection && styles.ingredientsListItemManual,
-          ]}
-        >
-          <View style={styles.ingredientsListItemRow}>
-            <View style={styles.ingredientsItemImageWrapper}>
-              {productImageUrl ? (
-                <Image
+        const imageReloadKey = imageReloadCounters[trackingId] ?? 0;
+        const handleIngredientPress = () => {
+          if (!ingredient) {
+            return;
+          }
+          setActiveIngredientModal({
+            visible: true,
+            ingredient,
+          });
+        };
+        return (
+          <View
+            key={ingredient.id}
+            style={[
+              styles.ingredientsListItem,
+              needsManualProductSelection && styles.ingredientsListItemManual,
+            ]}
+          >
+            <TouchableOpacity
+              style={styles.ingredientsListItemRow}
+              activeOpacity={0.85}
+              onPress={handleIngredientPress}
+              accessibilityRole="button"
+              accessibilityLabel={`Show meal details for ${displayName}`}
+            >
+              <View style={styles.ingredientsItemImageWrapper}>
+                {productImageUrl ? (
+                  <Image
                   key={`ingredient-image-${trackingId}-${imageReloadKey}`}
                   source={{ uri: productImageUrl, cache: "reload" }}
                   style={styles.ingredientsItemImage}
@@ -2762,27 +2781,97 @@ function AppContent() {
                       disableIncrease && styles.ingredientsQuantityButtonTextDisabled,
                     ]}
                   >
-                    +
-                  </Text>
-                </TouchableOpacity>
+                      +
+                    </Text>
+                  </TouchableOpacity>
+                </View>
               </View>
-            </View>
+            </TouchableOpacity>
           </View>
-        </View>
-      );
-    },
-    [
-      formatIngredientQuantity,
+        );
+      },
+      [
+        formatIngredientQuantity,
       getIngredientQuantityValue,
       getIngredientImageUrl,
-      getIngredientTrackingId,
-      handleIngredientQuantityDecrease,
-      handleIngredientQuantityIncrease,
-      scheduleImageReload,
-      shoppingListPricing,
-      imageReloadCounters,
-    ]
-  );
+        getIngredientTrackingId,
+        handleIngredientQuantityDecrease,
+        handleIngredientQuantityIncrease,
+        scheduleImageReload,
+        shoppingListPricing,
+        imageReloadCounters,
+        setActiveIngredientModal,
+      ]
+    );
+
+    const ingredientDetailModal =
+      activeIngredientModal.visible && activeIngredientModal.ingredient
+        ? (() => {
+            const ingredient = activeIngredientModal.ingredient;
+            const displayName =
+              ingredient.productName ??
+              ingredient.text ??
+              ingredient.groupKey ??
+              "Ingredient";
+            const mealUsages = Array.isArray(ingredient.mealUsage)
+              ? ingredient.mealUsage
+              : [];
+            return (
+              <View style={styles.mealDetailModalContainer} pointerEvents="box-none">
+                <TouchableWithoutFeedback
+                  onPress={() =>
+                    setActiveIngredientModal({ visible: false, ingredient: null })
+                  }
+                >
+                  <View style={styles.mealDetailBackdrop} />
+                </TouchableWithoutFeedback>
+                <View style={styles.mealDetailCard}>
+                  <ScrollView
+                    style={styles.mealDetailScroll}
+                    contentContainerStyle={styles.mealDetailContent}
+                  >
+                    <Text style={styles.mealDetailTitle}>{displayName}</Text>
+                    {mealUsages.length > 0 ? (
+                      <View style={styles.mealDetailSection}>
+                        <Text style={styles.mealDetailSectionTitle}>
+                          Used in these meals
+                        </Text>
+                        {mealUsages.map((usage, idx) => {
+                          const mealName = usage.mealName || "Meal";
+                          const quantityLabel =
+                            usage.quantityText != null && usage.quantityText !== ""
+                              ? usage.quantityText
+                              : usage.requiredQuantity != null
+                              ? formatIngredientQuantity(usage.requiredQuantity)
+                              : null;
+                          return (
+                            <Text
+                              key={`${ingredient.id || "ingredient"}-meal-${idx}`}
+                              style={styles.mealDetailSectionItem}
+                            >
+                              {mealName}
+                              {quantityLabel ? ` – ${quantityLabel}` : ""}
+                            </Text>
+                          );
+                        })}
+                      </View>
+                    ) : null}
+                  </ScrollView>
+                  <TouchableOpacity
+                    style={styles.mealDetailCloseButton}
+                    onPress={() =>
+                      setActiveIngredientModal({ visible: false, ingredient: null })
+                    }
+                    accessibilityRole="button"
+                    accessibilityLabel="Close ingredient details"
+                  >
+                    <Text style={styles.mealDetailCloseText}>×</Text>
+                  </TouchableOpacity>
+                </View>
+              </View>
+            );
+          })()
+        : null;
 
   const toggleMealMenu = useCallback(() => {
     setIsMealMenuOpen((prev) => !prev);
@@ -5276,7 +5365,8 @@ const handlePreferenceSelection = useCallback(
         </ScrollView>
         {mealMenuOverlay}
         {confirmationDialogPortal}
-        {homeMealDetailModal}
+          {homeMealDetailModal}
+          {ingredientDetailModal}
       </SafeAreaView>
     );
   }
@@ -5370,12 +5460,13 @@ const handlePreferenceSelection = useCallback(
               })}
             </ScrollView>
           )}
-        </View>
-        {mealMenuOverlay}
-        {confirmationDialogPortal}
-      </SafeAreaView>
-    );
-  }
+          </View>
+          {mealMenuOverlay}
+          {confirmationDialogPortal}
+          {ingredientDetailModal}
+        </SafeAreaView>
+      );
+    }
 
   if (screen === "pastOrderDetails" && activePastOrder) {
     const mealsList = Array.isArray(activePastOrder.meals)
@@ -5513,7 +5604,8 @@ const handlePreferenceSelection = useCallback(
         </View>
         {mealMenuOverlay}
         {confirmationDialogPortal}
-        {homeMealDetailModal}
+          {homeMealDetailModal}
+          {ingredientDetailModal}
       </SafeAreaView>
     );
   }
@@ -6274,7 +6366,8 @@ const handlePreferenceSelection = useCallback(
         </View>
         {mealMenuOverlay}
         {confirmationDialogPortal}
-        {homeMealDetailModal}
+          {homeMealDetailModal}
+          {ingredientDetailModal}
       </SafeAreaView>
     );
   }
@@ -6301,7 +6394,7 @@ const handlePreferenceSelection = useCallback(
             <Feather name="menu" size={24} color="#0c3c26" />
           </TouchableOpacity>
         </View>
-        <View style={styles.ingredientsBody}>
+          <View style={styles.ingredientsBody}>
           <View style={styles.mealHomeTipContainer}>
             <Text style={styles.mealHomeTipText}>Tap product card to see details.</Text>
           </View>
@@ -6388,7 +6481,7 @@ const handlePreferenceSelection = useCallback(
               </Text>
             </View>
           ) : null}
-          <View style={styles.ingredientsButtonGroup}>
+            <View style={styles.ingredientsButtonGroup}>
             <TouchableOpacity
               style={[styles.welcomeButton, styles.mealHomeCtaButton, styles.welcomeCtaButton]}
               onPress={handleIngredientsShoppingListNotice}
@@ -6410,14 +6503,15 @@ const handlePreferenceSelection = useCallback(
                   ? "Sending to Woolworths..."
                   : "Add to Woolworths Cart"}
               </Text>
-            </TouchableOpacity>
+              </TouchableOpacity>
+            </View>
           </View>
-        </View>
-        {mealMenuOverlay}
-        {confirmationDialogPortal}
-      </SafeAreaView>
-    );
-  }
+          {mealMenuOverlay}
+          {confirmationDialogPortal}
+          {ingredientDetailModal}
+        </SafeAreaView>
+      );
+    }
 
   if (screen === "shoppingList") {
     return (

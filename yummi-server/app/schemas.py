@@ -269,6 +269,13 @@ class ShoppingListProductSelection(BaseModel):
     imageUrl: Optional[str] = None
 
 
+class ShoppingListIngredientMealUsage(BaseModel):
+    mealId: Optional[str] = None
+    mealName: Optional[str] = None
+    quantityText: Optional[str] = None
+    requiredQuantity: Optional[float] = None
+
+
 class ShoppingListResultItem(BaseModel):
     id: str
     groupKey: str
@@ -282,6 +289,7 @@ class ShoppingListResultItem(BaseModel):
     unitPrice: Optional[float] = None
     unitPriceMinor: Optional[int] = None
     needsManualProductSelection: bool = False
+    mealUsage: List[ShoppingListIngredientMealUsage] = Field(default_factory=list)
 
 
 class ShoppingListBuildResponse(BaseModel):
