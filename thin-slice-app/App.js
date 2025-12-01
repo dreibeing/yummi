@@ -1793,6 +1793,7 @@ function AppContent() {
   const prefetchedImageUrls = useRef(new Set());
   const [activePastOrderShoppingList, setActivePastOrderShoppingList] = useState(null);
   const [isCartPushPending, setIsCartPushPending] = useState(false);
+  const [isClearingHistory, setIsClearingHistory] = useState(false);
   const preferenceSyncHashRef = useRef(null);
   const preferenceEntryContextRef = useRef(null);
   const homeMealsBackupRef = useRef(null);
@@ -3611,6 +3612,34 @@ const handlePreferenceSelection = useCallback(
     handleResetPreferencesFlow();
   }, [closeMealMenu, handleResetPreferencesFlow]);
 
+  const handleClearHistoryRequest = useCallback(() => {
+    closeMealMenu();
+    showConfirmationDialog("clearHistory", "Clear like/dislike history");
+  }, [closeMealMenu, showConfirmationDialog]);
+
+  const handleConfirmClearHistory = useCallback(async () => {
+    if (!API_BASE_URL || isClearingHistory) {
+      return;
+    }
+    setIsClearingHistory(true);
+    try {
+      const headers = await buildAuthHeaders();
+      const response = await fetch(`${API_BASE_URL}/feedback/meals`, {
+        method: "DELETE",
+        headers,
+      });
+      if (!response.ok && __DEV__) {
+        console.warn("Failed to clear feedback history", response.status);
+      }
+    } catch (error) {
+      if (__DEV__) {
+        console.warn("Error clearing feedback history", error);
+      }
+    } finally {
+      setIsClearingHistory(false);
+    }
+  }, [API_BASE_URL, buildAuthHeaders, isClearingHistory]);
+
   const handleSorryScreenUpdatePreferences = useCallback(() => {
     handleResetPreferencesFlow({ returnToSorryScreen: true });
   }, [handleResetPreferencesFlow]);
@@ -3660,10 +3689,10 @@ const handlePreferenceSelection = useCallback(
   }, []);
 
   const showConfirmationDialog = useCallback(
-    (context, subtitle = "Use one free use") => {
-    setConfirmationDialog({
-      visible: true,
-      context,
+      (context, subtitle = "Use one free use") => {
+      setConfirmationDialog({
+        visible: true,
+        context,
     });
     setConfirmationDialogSubtitle(subtitle);
   }, []);
@@ -3679,11 +3708,11 @@ const handlePreferenceSelection = useCallback(
 
   const handleConfirmDialog = useCallback(() => {
     const context = confirmationDialog.context;
-    setConfirmationDialog({
-      visible: false,
-      context: null,
-    });
-    if (context === "shoppingList") {
+      setConfirmationDialog({
+        visible: false,
+        context: null,
+      });
+      if (context === "shoppingList") {
       const triggerLearning = shoppingListLearningIntentRef.current;
       const nextScreen = shoppingListNextScreenRef.current || "ingredients";
       shoppingListLearningIntentRef.current = false;
@@ -3709,19 +3738,22 @@ const handlePreferenceSelection = useCallback(
         });
       }
       deleteOrderRef.current = null;
-    } else if (context === "returnHomeFromShoppingList") {
-      handleReturnToWelcome();
-    }
+      } else if (context === "returnHomeFromShoppingList") {
+        handleReturnToWelcome();
+      } else if (context === "clearHistory") {
+        handleConfirmClearHistory();
+      }
   }, [
     confirmationDialog.context,
     handleBuildShoppingList,
     handleConfirmPreferenceComplete,
-    handleSendShoppingListToCart,
-    recordPastOrder,
-    selectedHomeMeals,
-    persistPastOrders,
-    handleReturnToWelcome,
-  ]);
+      handleSendShoppingListToCart,
+      recordPastOrder,
+      selectedHomeMeals,
+      persistPastOrders,
+      handleReturnToWelcome,
+      handleConfirmClearHistory,
+    ]);
 
   const handleOpenShoppingListConfirm = useCallback((options = {}) => {
     const { triggerLearning = false, nextScreen = "ingredients" } = options;
@@ -3890,27 +3922,30 @@ const handlePreferenceSelection = useCallback(
   );
 
   const buildShoppingListRequestPayload = useCallback(() => {
-    const mealsPayload = selectedHomeMeals
-      .filter((meal) => meal && meal.mealId)
-      .map((meal) => {
-        const finalIngredients = Array.isArray(meal.finalIngredients)
-          ? meal.finalIngredients
-          : Array.isArray(meal.final_ingredients)
-          ? meal.final_ingredients
-          : Array.isArray(meal.ingredients)
-          ? meal.ingredients
-          : [];
-        const servingsText = deriveServingsTextForPayload(meal);
-        return {
-          mealId: meal.mealId,
-          name: meal.name,
-          servings: servingsText,
-          ingredients: finalIngredients.filter(Boolean),
-        };
-      })
-      .filter((meal) => meal.ingredients.length > 0);
-    return { meals: mealsPayload };
-  }, [selectedHomeMeals]);
+      const mealsPayload = selectedHomeMeals
+        .filter((meal) => meal && meal.mealId)
+        .map((meal) => {
+          const finalIngredients = Array.isArray(meal.finalIngredients)
+            ? meal.finalIngredients
+            : Array.isArray(meal.final_ingredients)
+            ? meal.final_ingredients
+            : Array.isArray(meal.ingredients)
+            ? meal.ingredients
+            : [];
+          const servingsText = deriveServingsTextForPayload(meal);
+          return {
+            mealId: meal.mealId,
+            name: meal.name,
+            servings: servingsText,
+            ingredients: finalIngredients.filter(Boolean),
+          };
+        })
+        .filter((meal) => meal.ingredients.length > 0);
+      const dislikedMealIds = Object.entries(homeMealDislikedIds || {})
+        .filter(([, isDisliked]) => Boolean(isDisliked))
+        .map(([mealId]) => mealId);
+      return { meals: mealsPayload, dislikedMealIds };
+    }, [selectedHomeMeals, homeMealDislikedIds]);
 
   const refreshLatestRecommendations = useCallback(
     async (options = {}) => {
@@ -5233,19 +5268,22 @@ const handlePreferenceSelection = useCallback(
   }
 
   const mealMenuOverlay = isMealMenuOpen ? (
-    <View style={styles.mealMenuContainer} pointerEvents="box-none">
-      <TouchableWithoutFeedback onPress={closeMealMenu}>
-        <View style={styles.mealMenuBackdrop} />
-      </TouchableWithoutFeedback>
-      <View style={[styles.mealMenuCard, { top: menuOverlayTop }]}>
-        <TouchableOpacity style={styles.mealMenuItem} onPress={handleMealMenuReset}>
-          <Text style={styles.mealMenuItemText}>Update Preferences</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.mealMenuItem} onPress={handleMealMenuSignOut}>
-          <Text style={[styles.mealMenuItemText, styles.mealMenuItemDanger]}>
-            Sign out
-          </Text>
-        </TouchableOpacity>
+      <View style={styles.mealMenuContainer} pointerEvents="box-none">
+        <TouchableWithoutFeedback onPress={closeMealMenu}>
+          <View style={styles.mealMenuBackdrop} />
+        </TouchableWithoutFeedback>
+        <View style={[styles.mealMenuCard, { top: menuOverlayTop }]}>
+          <TouchableOpacity style={styles.mealMenuItem} onPress={handleMealMenuReset}>
+            <Text style={styles.mealMenuItemText}>Update Preferences</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.mealMenuItem} onPress={handleClearHistoryRequest}>
+            <Text style={styles.mealMenuItemText}>Clear History</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.mealMenuItem} onPress={handleMealMenuSignOut}>
+            <Text style={[styles.mealMenuItemText, styles.mealMenuItemDanger]}>
+              Sign out
+            </Text>
+          </TouchableOpacity>
       </View>
     </View>
   ) : null;

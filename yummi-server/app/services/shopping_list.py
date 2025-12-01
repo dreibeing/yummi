@@ -136,10 +136,12 @@ async def run_shopping_list_workflow(
         items=items,
     )
     selected_meal_ids = [meal.meal_id for meal in request.meals or [] if getattr(meal, "meal_id", None)]
-    if selected_meal_ids:
+    disliked_meal_ids = [mid for mid in (request.dislikedMealIds or []) if mid]
+    if selected_meal_ids or disliked_meal_ids:
         await record_meal_feedback_events(
             user_id=user_id,
-            likes=selected_meal_ids,
+            likes=selected_meal_ids or None,
+            dislikes=disliked_meal_ids or None,
             source=MealFeedbackSource.SHOPPING_SELECTION,
             metadata={"source": "shopping_list.build"},
         )

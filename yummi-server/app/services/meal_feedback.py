@@ -6,10 +6,12 @@ from datetime import datetime, timezone
 from enum import Enum
 from typing import Any, Dict, Iterable, List, Sequence
 
-from sqlalchemy import select
+from sqlalchemy import delete, select
 
 from ..db import get_session
 from ..models import MealFeedbackEvent
+
+MAX_FEEDBACK_EVENTS_PER_USER = 100
 
 
 class MealFeedbackReaction(str, Enum):
@@ -94,6 +96,22 @@ async def record_meal_feedback_events(
     async with get_session() as session:
         session.add_all(events)
         await session.commit()
+        if MAX_FEEDBACK_EVENTS_PER_USER and MAX_FEEDBACK_EVENTS_PER_USER > 0:
+            stmt = (
+                select(MealFeedbackEvent.id)
+                .where(MealFeedbackEvent.user_id == user_id)
+                .order_by(
+                    MealFeedbackEvent.occurred_at.desc(),
+                    MealFeedbackEvent.created_at.desc(),
+                )
+                .offset(MAX_FEEDBACK_EVENTS_PER_USER)
+            )
+            result = await session.execute(stmt)
+            stale_ids = [row[0] for row in result.all()]
+            if stale_ids:
+                delete_stmt = delete(MealFeedbackEvent).where(MealFeedbackEvent.id.in_(stale_ids))
+                await session.execute(delete_stmt)
+                await session.commit()
 
 
 async def record_single_meal_feedback(
@@ -157,6 +175,13 @@ async def load_feedback_summary(user_id: str) -> MealFeedbackSummary:
         disliked=disliked,
         latest_by_meal=latest,
     )
+
+
+async def clear_user_feedback(user_id: str) -> None:
+    async with get_session() as session:
+        stmt = delete(MealFeedbackEvent).where(MealFeedbackEvent.user_id == user_id)
+        await session.execute(stmt)
+        await session.commit()
 
 
 def summarize_feedback_entries(entries: Iterable[MealFeedbackEntry]) -> List[Dict[str, Any]]:

@@ -13,6 +13,7 @@ from ..services.meal_feedback import (
     MealFeedbackSource,
     load_feedback_summary,
     record_single_meal_feedback,
+    clear_user_feedback,
 )
 
 
@@ -64,3 +65,12 @@ async def submit_meal_feedback(
         occurredAt=None,
         context=payload.metadata,
     )
+
+
+@router.delete("/meals", status_code=status.HTTP_204_NO_CONTENT)
+async def clear_meal_feedback_history(
+    principal=Depends(get_current_principal),
+) -> None:
+    user_id = principal.get("sub")
+    await clear_user_feedback(user_id)
+    return None

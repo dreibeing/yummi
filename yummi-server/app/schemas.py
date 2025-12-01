@@ -257,6 +257,7 @@ class ShoppingListMealPayload(BaseModel):
 class ShoppingListBuildRequest(BaseModel):
     meals: List[ShoppingListMealPayload] = Field(default_factory=list, min_length=1)
     triggerRecommendationLearning: Optional[bool] = Field(default=False)
+    dislikedMealIds: List[str] = Field(default_factory=list)
 
 
 class ShoppingListProductSelection(BaseModel):
