@@ -3660,11 +3660,28 @@ const handlePreferenceSelection = useCallback(
       );
       return;
     }
+    if (shoppingListStatus === "pending") {
+      Alert.alert(
+        "Please wait",
+        "We're still preparing your shopping list. Try again in a moment."
+      );
+      return;
+    }
+    if (shoppingListItems.length > 0 && shoppingListStatus === "ready") {
+      setScreen("shoppingList");
+      return;
+    }
     handleOpenShoppingListConfirm({
       triggerLearning: true,
       nextScreen: "shoppingList",
     });
-  }, [handleOpenShoppingListConfirm, selectedHomeMeals.length]);
+  }, [
+    handleOpenShoppingListConfirm,
+    selectedHomeMeals.length,
+    setScreen,
+    shoppingListItems.length,
+    shoppingListStatus,
+  ]);
 
   const confirmationDialogPortal = confirmationDialog.visible ? (
     <View style={styles.mealDetailModalContainer} pointerEvents="box-none">

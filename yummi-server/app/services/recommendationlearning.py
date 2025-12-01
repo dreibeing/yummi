@@ -92,6 +92,13 @@ def schedule_recommendation_learning_run(
 ) -> None:
     """Fire-and-forget helper so API responses aren't blocked by the LLM call."""
 
+    context_keys = sorted((event_context or {}).keys())
+    logger.info(
+        "Scheduling recommendation learning run user=%s trigger=%s context_keys=%s",
+        user_id,
+        trigger,
+        context_keys,
+    )
     try:
         loop = asyncio.get_running_loop()
     except RuntimeError:
@@ -117,6 +124,7 @@ async def _run_with_guard(
     trigger: RecommendationLearningTrigger,
     event_context: Dict[str, Any],
 ) -> None:
+    logger.info("Recommendation learning workflow dispatch user=%s trigger=%s", user_id, trigger)
     try:
         await run_recommendation_learning_workflow(
             user_id=user_id,
@@ -211,10 +219,21 @@ async def run_recommendation_learning_workflow(
         candidate_details=candidate_details,
     )
     shortlisted_ids = exploration_stage.get("mealIds") or []
+    logger.info(
+        "Shadow exploration stage complete user=%s shortlisted_ids=%s",
+        user_id,
+        len(shortlisted_ids),
+    )
     shortlisted_details = _restrict_candidates(candidate_details, shortlisted_ids) or list(candidate_details)
     max_reco_candidates = settings.recommendation_learning_recommendation_candidate_limit
     if max_reco_candidates and len(shortlisted_details) > max_reco_candidates:
         shortlisted_details = random.sample(shortlisted_details, max_reco_candidates)
+    logger.info(
+        "Recommendation learning shortlist ready user=%s candidates_for_recommendation=%s limit=%s",
+        user_id,
+        len(shortlisted_details),
+        max_reco_candidates,
+    )
 
     recommendation_stage = await _run_shadow_recommendation(
         settings=settings,
@@ -320,15 +339,32 @@ async def _run_shadow_exploration(
         timeout_seconds=timeout,
         get_streamed_ids=lambda uid: list(streamed_meal_ids.get(uid, [])),
     )
+    logger.info(
+        "Shadow exploration responses received user=%s archetypes=%s",
+        user_id,
+        [archetype_uid for archetype_uid, _, _ in archetype_payloads],
+    )
     archetype_meal_map: Dict[str, List[Any]] = {}
     for archetype_uid, parsed_payload, batch_details in archetype_payloads:
         selections = parsed_payload.get("explorationSet") or []
         meals = exploration_materialize_meals(selections, batch_details, None)
         if meals:
             archetype_meal_map[archetype_uid] = meals
+            logger.info(
+                "Shadow exploration archetype ready user=%s archetype=%s selections=%s",
+                user_id,
+                archetype_uid,
+                len(meals),
+            )
     exploration_target = settings.recommendation_learning_exploration_meal_count
     exploration_meals = exploration_balance_archetype_meals(archetype_meal_map, exploration_target)
     meal_ids = [meal.mealId for meal in exploration_meals]
+    logger.info(
+        "Shadow exploration shortlist prepared user=%s shortlisted=%s target=%s",
+        user_id,
+        len(meal_ids),
+        exploration_target,
+    )
     return {"mealIds": meal_ids, "notes": []}
 
 
