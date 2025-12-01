@@ -256,6 +256,7 @@ class ShoppingListMealPayload(BaseModel):
 
 class ShoppingListBuildRequest(BaseModel):
     meals: List[ShoppingListMealPayload] = Field(default_factory=list, min_length=1)
+    triggerRecommendationLearning: Optional[bool] = Field(default=False)
 
 
 class ShoppingListProductSelection(BaseModel):
@@ -435,6 +436,7 @@ class RecommendationRunResponse(BaseModel):
     tagsVersion: Optional[str] = None
     notes: List[str] = Field(default_factory=list)
     meals: List[RecommendationMeal] = Field(default_factory=list)
+    latestRecommendationMeals: List[LatestRecommendationMeal] = Field(default_factory=list)
 
 
 RecommendationLearningTrigger = Literal["shopping_list_build", "woolworths_cart_add"]

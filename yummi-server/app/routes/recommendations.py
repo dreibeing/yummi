@@ -21,7 +21,10 @@ from ..services.exploration import (
 )
 from ..services.meal_representation import extract_sku_snapshot
 from ..services.meals import get_meal_manifest
-from ..services.preferences import get_user_preference_profile
+from ..services.preferences import (
+    get_user_preference_profile,
+    _materialize_latest_recommendation_meals,
+)
 from ..services.recommendation import run_recommendation_workflow
 
 router = APIRouter(prefix="/recommendations", tags=["recommendations"])
@@ -67,10 +70,12 @@ async def get_latest_recommendations(
             status_code=status.HTTP_404_NOT_FOUND,
             detail="latest_recommendations_unavailable",
         )
+    meal_ids = profile.latest_recommendation_meal_ids
     meals = _hydrate_latest_meals(
         manifest=manifest,
-        meal_ids=profile.latest_recommendation_meal_ids,
+        meal_ids=meal_ids,
     )
+    latest_full_meals = _materialize_latest_recommendation_meals(meal_ids)
     if not meals:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
@@ -85,6 +90,7 @@ async def get_latest_recommendations(
         tagsVersion=tags_version,
         notes=[],
         meals=meals,
+        latestRecommendationMeals=latest_full_meals,
     )
 
 

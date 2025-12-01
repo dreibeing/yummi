@@ -142,18 +142,19 @@ async def run_shopping_list_workflow(
             source=MealFeedbackSource.SHOPPING_SELECTION,
             metadata={"source": "shopping_list.build"},
         )
-    schedule_recommendation_learning_run(
-        user_id=user_id,
-        trigger=SHOPPING_LIST_TRIGGER,
-        event_context=build_learning_context(
-            request_payload=request,
-            response_payload=response,
-            metadata={
-                "mealIds": [meal.meal_id for meal in request.meals or []],
-                "source": "shopping_list.build",
-            },
-        ),
-    )
+    if request.triggerRecommendationLearning:
+        schedule_recommendation_learning_run(
+            user_id=user_id,
+            trigger=SHOPPING_LIST_TRIGGER,
+            event_context=build_learning_context(
+                request_payload=request,
+                response_payload=response,
+                metadata={
+                    "mealIds": [meal.meal_id for meal in request.meals or []],
+                    "source": "shopping_list.build",
+                },
+            ),
+        )
     return response
 
 

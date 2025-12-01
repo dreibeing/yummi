@@ -1791,6 +1791,8 @@ function AppContent() {
   const homeMealsBackupRef = useRef(null);
   const toggleDefaultsInitializedRef = useRef({});
   const latestRecommendationsRequestRef = useRef(null);
+  const shoppingListLearningIntentRef = useRef(false);
+  const shoppingListNextScreenRef = useRef("ingredients");
 
   const applyHomeRecommendedMeals = useCallback((meals, options = {}) => {
     const nextSource = Array.isArray(meals)
@@ -3579,6 +3581,8 @@ const handlePreferenceSelection = useCallback(
       visible: false,
       context: null,
     });
+    shoppingListLearningIntentRef.current = false;
+    shoppingListNextScreenRef.current = "ingredients";
   }, []);
 
   const handleConfirmDialog = useCallback(() => {
@@ -3588,7 +3592,14 @@ const handlePreferenceSelection = useCallback(
       context: null,
     });
     if (context === "shoppingList") {
-      handleBuildShoppingList();
+      const triggerLearning = shoppingListLearningIntentRef.current;
+      const nextScreen = shoppingListNextScreenRef.current || "ingredients";
+      shoppingListLearningIntentRef.current = false;
+      shoppingListNextScreenRef.current = "ingredients";
+      handleBuildShoppingList({
+        triggerLearning,
+        nextScreen,
+      });
     } else if (context === "newMeals") {
       handleConfirmPreferenceComplete();
     } else if (context === "woolworthsCart") {
@@ -3620,7 +3631,10 @@ const handlePreferenceSelection = useCallback(
     handleReturnToWelcome,
   ]);
 
-  const handleOpenShoppingListConfirm = useCallback(() => {
+  const handleOpenShoppingListConfirm = useCallback((options = {}) => {
+    const { triggerLearning = false, nextScreen = "ingredients" } = options;
+    shoppingListLearningIntentRef.current = triggerLearning;
+    shoppingListNextScreenRef.current = nextScreen;
     if (!selectedHomeMeals.length) {
       showConfirmationDialog(
         "noMeals",
@@ -3646,20 +3660,11 @@ const handlePreferenceSelection = useCallback(
       );
       return;
     }
-    if (shoppingListStatus !== "ready" || shoppingListItems.length === 0) {
-      handleOpenShoppingListConfirm();
-      return;
-    }
-    recordPastOrder(selectedHomeMeals, { shoppingListItems });
-    setScreen("shoppingList");
-  }, [
-    handleOpenShoppingListConfirm,
-    recordPastOrder,
-    selectedHomeMeals,
-    setScreen,
-    shoppingListItems.length,
-    shoppingListStatus,
-  ]);
+    handleOpenShoppingListConfirm({
+      triggerLearning: true,
+      nextScreen: "shoppingList",
+    });
+  }, [handleOpenShoppingListConfirm, selectedHomeMeals.length]);
 
   const confirmationDialogPortal = confirmationDialog.visible ? (
     <View style={styles.mealDetailModalContainer} pointerEvents="box-none">
@@ -3793,10 +3798,12 @@ const handlePreferenceSelection = useCallback(
           throw new Error(`Latest recommendations request failed (${response.status})`);
         }
         const payload = await response.json();
-        const meals = Array.isArray(payload?.meals)
+        const recommendationMeals = Array.isArray(payload?.latestRecommendationMeals)
+          ? payload.latestRecommendationMeals.filter(Boolean)
+          : Array.isArray(payload?.meals)
           ? payload.meals.filter(Boolean)
           : [];
-        if (!meals.length) {
+        if (!recommendationMeals.length) {
           return false;
         }
         const generatedAtValue =
@@ -3816,7 +3823,7 @@ const handlePreferenceSelection = useCallback(
             return false;
           }
         }
-        applyHomeRecommendedMeals(meals, { generatedAt: normalizedGeneratedAt });
+        applyHomeRecommendedMeals(recommendationMeals, { generatedAt: normalizedGeneratedAt });
         return true;
       } catch (error) {
         if (error?.name === "AbortError") {
@@ -3840,7 +3847,11 @@ const handlePreferenceSelection = useCallback(
     ]
   );
 
-  const handleBuildShoppingList = useCallback(async () => {
+  const handleBuildShoppingList = useCallback(async (options = {}) => {
+    const {
+      triggerLearning = false,
+      nextScreen = "ingredients",
+    } = options;
     const payload = buildShoppingListRequestPayload();
     if (!payload.meals.length) {
       setShoppingListItems([]);
@@ -3867,7 +3878,10 @@ const handlePreferenceSelection = useCallback(
       const response = await fetch(SHOPPING_LIST_API_ENDPOINT, {
         method: "POST",
         headers,
-        body: JSON.stringify(payload),
+        body: JSON.stringify({
+          ...payload,
+          triggerRecommendationLearning: Boolean(triggerLearning),
+        }),
       });
       if (!response.ok) {
         throw new Error(`Shopping list request failed (${response.status})`);
@@ -3876,7 +3890,12 @@ const handlePreferenceSelection = useCallback(
       const items = Array.isArray(data?.items) ? data.items.filter(Boolean) : [];
       setShoppingListItems(items);
       setShoppingListStatus("ready");
-      setScreen("ingredients");
+      if (nextScreen === "shoppingList") {
+        recordPastOrder(selectedHomeMeals, { shoppingListItems: items });
+        setScreen("shoppingList");
+      } else {
+        setScreen("ingredients");
+      }
     } catch (error) {
       console.warn("Shopping list build failed", error);
       setShoppingListStatus("error");
@@ -3889,6 +3908,8 @@ const handlePreferenceSelection = useCallback(
     SHOPPING_LIST_API_ENDPOINT,
     buildAuthHeaders,
     buildShoppingListRequestPayload,
+    recordPastOrder,
+    selectedHomeMeals,
   ]);
 
   const handleSendShoppingListToCart = useCallback(async () => {
@@ -6237,7 +6258,12 @@ const handlePreferenceSelection = useCallback(
                 <Text style={styles.ingredientsEmptyText}>{shoppingListError}</Text>
                 <TouchableOpacity
                   style={styles.ingredientsRetryButton}
-                  onPress={handleOpenShoppingListConfirm}
+                  onPress={() =>
+                    handleOpenShoppingListConfirm({
+                      triggerLearning: true,
+                      nextScreen: "shoppingList",
+                    })
+                  }
                 >
                   <Text style={styles.ingredientsRetryButtonText}>Try again</Text>
                 </TouchableOpacity>
