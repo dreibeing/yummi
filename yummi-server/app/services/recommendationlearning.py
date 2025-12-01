@@ -607,6 +607,23 @@ async def _create_run_record_if_allowed(
     usage_snapshot: Dict[str, Any],
 ) -> Tuple[RecommendationLearningRun | None, str | None]:
     async with get_session() as session:
+        active_stmt = (
+            select(RecommendationLearningRun.id)
+            .where(
+                RecommendationLearningRun.user_id == user_id,
+                RecommendationLearningRun.status == LEARNING_STATUS_PENDING,
+            )
+            .limit(1)
+        )
+        active_result = await session.execute(active_stmt)
+        if active_result.scalar_one_or_none():
+            logger.info(
+                "Recommendation learning guard blocked run (active pending) user=%s trigger=%s",
+                user_id,
+                trigger,
+            )
+            return None, "active_run_in_progress"
+
         run = RecommendationLearningRun(
             user_id=user_id,
             trigger_event=trigger,
