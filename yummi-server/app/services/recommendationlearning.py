@@ -144,6 +144,12 @@ async def run_recommendation_learning_workflow(
     """Persist the run, build prompts, and execute the dual-stage learning flow."""
 
     settings = get_settings()
+    logger.info(
+        "Recommendation learning workflow started user=%s trigger=%s event_keys=%s",
+        user_id,
+        trigger,
+        sorted((event_context or {}).keys()),
+    )
     manifest = get_meal_manifest()
     tag_manifest = load_tag_manifest()
     profile, usage_snapshot = await _collect_profile_snapshot(user_id, tag_manifest)
@@ -208,11 +214,11 @@ async def run_recommendation_learning_workflow(
     }
     await _update_run_record(run.id, prompt_payload=prompts_payload)
 
-    if not settings.recommendation_learning_enabled or not settings.openai_api_key:
+    if not settings.openai_api_key:
         await _update_run_record(
             run.id,
             status=LEARNING_STATUS_SKIPPED,
-            error_message="learning_disabled" if not settings.recommendation_learning_enabled else "openai_not_configured",
+            error_message="openai_not_configured",
             completed_at=datetime.now(timezone.utc),
         )
         return
@@ -600,51 +606,7 @@ async def _create_run_record_if_allowed(
     event_context: Dict[str, Any],
     usage_snapshot: Dict[str, Any],
 ) -> Tuple[RecommendationLearningRun | None, str | None]:
-    event_fingerprint = _fingerprint_payload(event_context)
-    usage_fingerprint = _fingerprint_payload(usage_snapshot)
-
     async with get_session() as session:
-        active_stmt = (
-            select(RecommendationLearningRun.id)
-            .where(
-                RecommendationLearningRun.user_id == user_id,
-                RecommendationLearningRun.status == LEARNING_STATUS_PENDING,
-            )
-            .limit(1)
-        )
-        active_result = await session.execute(active_stmt)
-        if active_result.scalar_one_or_none():
-            logger.info(
-                "Recommendation learning guard blocked run (active pending) user=%s trigger=%s",
-                user_id,
-                trigger,
-            )
-            return None, "active_run_in_progress"
-
-        duplicate_stmt = (
-            select(RecommendationLearningRun)
-            .where(
-                RecommendationLearningRun.user_id == user_id,
-                RecommendationLearningRun.trigger_event == trigger,
-                RecommendationLearningRun.status == LEARNING_STATUS_COMPLETED,
-            )
-            .order_by(RecommendationLearningRun.created_at.desc())
-            .limit(1)
-        )
-        duplicate_result = await session.execute(duplicate_stmt)
-        last_run: RecommendationLearningRun | None = duplicate_result.scalar_one_or_none()
-        if last_run:
-            last_event_fp = _fingerprint_payload(last_run.event_context or {})
-            last_usage_fp = _fingerprint_payload(last_run.usage_snapshot or {})
-            if last_event_fp == event_fingerprint and last_usage_fp == usage_fingerprint:
-                logger.info(
-                    "Recommendation learning guard blocked run (duplicate context) user=%s trigger=%s run_id=%s",
-                    user_id,
-                    trigger,
-                    last_run.id,
-                )
-                return None, "duplicate_context"
-
         run = RecommendationLearningRun(
             user_id=user_id,
             trigger_event=trigger,

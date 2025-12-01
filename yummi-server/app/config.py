@@ -57,7 +57,6 @@ class Settings(BaseSettings):
     recommendation_candidate_limit: int = Field(default=100)
     recommendation_meal_count: int = Field(default=10)
     recommendation_stream_timeout_seconds: int = Field(default=20, ge=5, le=120)
-    recommendation_learning_enabled: bool = Field(default=False)
     recommendation_learning_candidate_limit: int = Field(default=60)
     recommendation_learning_exploration_meal_count: int = Field(default=25)
     recommendation_learning_meal_count: int = Field(default=10)
