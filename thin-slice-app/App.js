@@ -443,6 +443,9 @@ const RECOMMENDATION_API_ENDPOINT = API_BASE_URL
 const SHOPPING_LIST_API_ENDPOINT = API_BASE_URL
   ? `${API_BASE_URL}/shopping-list/build`
   : null;
+const SHOPPING_LIST_LEARNING_ENDPOINT = API_BASE_URL
+  ? `${API_BASE_URL}/shopping-list/learning/trigger`
+  : null;
 const DIETARY_RESTRICTIONS_CATEGORY_ID = "DietaryRestrictions";
 const DIETARY_NO_RESTRICTIONS_TAG_ID = "dietres_none";
 const ALLERGENS_CATEGORY_ID = "Allergens";
@@ -3652,6 +3655,29 @@ const handlePreferenceSelection = useCallback(
     showConfirmationDialog("shoppingList", "Use one free use");
   }, [SHOPPING_LIST_API_ENDPOINT, selectedHomeMeals.length, showConfirmationDialog]);
 
+  const triggerRecommendationLearning = useCallback(
+    async ({ trigger, context, metadata = {} }) => {
+      if (!SHOPPING_LIST_LEARNING_ENDPOINT) {
+        return;
+      }
+      try {
+        const headers = await buildAuthHeaders({ "Content-Type": "application/json" });
+        await fetch(SHOPPING_LIST_LEARNING_ENDPOINT, {
+          method: "POST",
+          headers,
+          body: JSON.stringify({
+            trigger,
+            context,
+            metadata,
+          }),
+        });
+      } catch (error) {
+        console.warn("Failed to trigger recommendation learning", error);
+      }
+    },
+    [SHOPPING_LIST_LEARNING_ENDPOINT, buildAuthHeaders]
+  );
+
   const handleIngredientsShoppingListNotice = useCallback(() => {
     if (!selectedHomeMeals.length) {
       Alert.alert(
@@ -3668,6 +3694,14 @@ const handlePreferenceSelection = useCallback(
       return;
     }
     if (shoppingListItems.length > 0 && shoppingListStatus === "ready") {
+      triggerRecommendationLearning({
+        trigger: "shopping_list_build",
+        context: "ingredients.getShoppingList",
+        metadata: {
+          selectedMealIds: selectedHomeMeals.map((meal) => meal?.mealId).filter(Boolean),
+          shoppingListItemCount: shoppingListItems.length,
+        },
+      });
       setScreen("shoppingList");
       return;
     }
@@ -3677,10 +3711,11 @@ const handlePreferenceSelection = useCallback(
     });
   }, [
     handleOpenShoppingListConfirm,
-    selectedHomeMeals.length,
+    selectedHomeMeals,
     setScreen,
     shoppingListItems.length,
     shoppingListStatus,
+    triggerRecommendationLearning,
   ]);
 
   const confirmationDialogPortal = confirmationDialog.visible ? (
@@ -3958,6 +3993,15 @@ const handlePreferenceSelection = useCallback(
     const selectedMealIds = selectedHomeMeals
       .map((meal) => meal?.mealId)
       .filter(Boolean);
+    triggerRecommendationLearning({
+      trigger: "woolworths_cart_add",
+      context: "shoppingList.addToCart",
+      metadata: {
+        selectedMealIds,
+        cartItemCount: cartItems.length,
+        shoppingListItemCount: shoppingListItems.length,
+      },
+    });
     setIsCartPushPending(true);
     setBasket(cartItems);
     setErrorMessage(null);
@@ -3985,6 +4029,7 @@ const handlePreferenceSelection = useCallback(
     selectedHomeMeals,
     shoppingListItems.length,
     shoppingListStatus,
+    triggerRecommendationLearning,
   ]);
 
   const startExplorationRun = useCallback(async () => {

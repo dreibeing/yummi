@@ -457,6 +457,12 @@ class RecommendationLearningRunRecord(BaseModel):
     errorMessage: Optional[str] = None
 
 
+class RecommendationLearningTriggerRequest(BaseModel):
+    trigger: RecommendationLearningTrigger
+    context: Optional[str] = None
+    metadata: Dict[str, Any] = Field(default_factory=dict)
+
+
 class MealFeedbackSubmitRequest(BaseModel):
     mealId: str
     reaction: Literal["like", "dislike", "neutral"]
