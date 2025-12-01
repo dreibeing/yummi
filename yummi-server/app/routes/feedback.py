@@ -67,10 +67,10 @@ async def submit_meal_feedback(
     )
 
 
-@router.delete("/meals", status_code=status.HTTP_204_NO_CONTENT)
+@router.delete("/meals", status_code=status.HTTP_200_OK)
 async def clear_meal_feedback_history(
     principal=Depends(get_current_principal),
-) -> None:
+) -> dict:
     user_id = principal.get("sub")
     await clear_user_feedback(user_id)
-    return None
+    return {"status": "cleared"}
