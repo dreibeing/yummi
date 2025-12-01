@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import logging
+
 from fastapi import APIRouter, Depends, status
 
 from ..auth import get_current_principal
@@ -17,6 +19,8 @@ from ..services.shopping_list import run_shopping_list_workflow
 
 router = APIRouter(prefix="/shopping-list", tags=["shopping-list"])
 
+logger = logging.getLogger(__name__)
+
 
 @router.post("/build", response_model=ShoppingListBuildResponse)
 async def create_shopping_list(
@@ -33,6 +37,12 @@ async def trigger_recommendation_learning(
     principal=Depends(get_current_principal),
 ) -> dict:
     user_id = principal.get("sub")
+    logger.info(
+        "Manual recommendation learning trigger received user=%s trigger=%s context=%s",
+        user_id,
+        payload.trigger,
+        payload.context,
+    )
     schedule_recommendation_learning_run(
         user_id=user_id,
         trigger=payload.trigger,
@@ -40,5 +50,10 @@ async def trigger_recommendation_learning(
             request_payload={"trigger": payload.trigger, "context": payload.context},
             metadata=payload.metadata,
         ),
+    )
+    logger.info(
+        "Manual recommendation learning trigger scheduled user=%s trigger=%s",
+        user_id,
+        payload.trigger,
     )
     return {"status": "scheduled"}

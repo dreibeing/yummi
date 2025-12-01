@@ -192,6 +192,13 @@ async def run_recommendation_learning_workflow(
         )
         return
 
+    logger.info(
+        "Recommendation learning candidate pool ready user=%s trigger=%s candidates=%s declined=%s",
+        user_id,
+        trigger,
+        len(candidate_details),
+        len(declined_meal_ids),
+    )
     prompts_payload = {
         "trigger": trigger,
         "usageSnapshot": usage_snapshot,
@@ -313,24 +320,53 @@ async def _run_shadow_exploration(
     candidate_details: Sequence[CandidateMealDetail],
 ) -> Dict[str, Any]:
     per_archetype_limit = settings.recommendation_learning_exploration_meal_count
+    if not per_archetype_limit or per_archetype_limit <= 0:
+        per_archetype_limit = settings.recommendation_learning_meal_count or 1
     if not candidate_details:
         return {"mealIds": [], "notes": []}
+    logger.info(
+        "Shadow exploration starting user=%s candidates=%s per_archetype_limit=%s",
+        user_id,
+        len(candidate_details),
+        per_archetype_limit,
+    )
     profile_payload = dict(usage_snapshot or {})
     profile_payload["learningFeedback"] = feedback_summary.serialize_for_prompt()
     profile_payload["learningEventContext"] = event_context
     archetype_batches = exploration_build_archetype_batches(list(candidate_details), per_archetype_limit)
     if not archetype_batches:
         return {"mealIds": [], "notes": []}
+    logger.info(
+        "Shadow exploration batches prepared user=%s archetypes=%s",
+        user_id,
+        [
+            f"{uid}:{len(batch)}"
+            for uid, batch in archetype_batches
+        ],
+    )
     streamed_meal_ids: Dict[str, List[str]] = defaultdict(list)
 
     def handle_streamed_meal(archetype_uid: str, meal_id: str) -> None:
         if not archetype_uid or not meal_id:
             return
         streamed_meal_ids[archetype_uid].append(meal_id)
+        logger.info(
+            "Shadow exploration streamed meal user=%s archetype=%s meal_id=%s streamed_so_far=%s",
+            user_id,
+            archetype_uid,
+            meal_id,
+            len(streamed_meal_ids[archetype_uid]),
+        )
 
     settings_proxy = _ShadowExplorationSettings(settings)
     timeout = settings.recommendation_learning_exploration_timeout_seconds
-    archetype_payloads, _ = exploration_score_archetype_batches(
+    logger.info(
+        "Shadow exploration scoring starting user=%s archetype_batch_count=%s timeout=%s",
+        user_id,
+        len(archetype_batches),
+        timeout,
+    )
+    archetype_payloads, pending_tasks = await exploration_score_archetype_batches(
         user_id=user_id,
         profile_payload=profile_payload,
         archetype_batches=archetype_batches,
@@ -339,6 +375,14 @@ async def _run_shadow_exploration(
         timeout_seconds=timeout,
         get_streamed_ids=lambda uid: list(streamed_meal_ids.get(uid, [])),
     )
+    if pending_tasks:
+        logger.info(
+            "Shadow exploration cancelling %s pending archetype tasks user=%s",
+            len(pending_tasks),
+            user_id,
+        )
+        for task in pending_tasks:
+            task.cancel()
     logger.info(
         "Shadow exploration responses received user=%s archetypes=%s",
         user_id,
@@ -378,6 +422,11 @@ async def _run_shadow_recommendation(
 ) -> Dict[str, Any]:
     target = settings.recommendation_learning_meal_count
     candidate_payload = _build_candidate_payload(candidate_details, limit=len(candidate_details))
+    logger.info(
+        "Shadow recommendation starting candidates=%s target=%s",
+        len(candidate_details),
+        target,
+    )
     prompt_payload = {
         "userProfile": usage_snapshot,
         "feedback": feedback_summary.serialize_for_prompt(),
@@ -406,6 +455,12 @@ async def _run_shadow_recommendation(
     parsed = _parse_json_response(raw)
     ranked_ids = _normalize_selection(parsed.get("recommendations"))
     meals = _hydrate_recommendation_meals(candidate_details, ranked_ids, target)
+    logger.info(
+        "Shadow recommendation completed ranked=%s hydrated=%s notes=%s",
+        len(ranked_ids),
+        len(meals),
+        len(parsed.get("notes") or []),
+    )
     return {"meals": meals, "notes": parsed.get("notes") or []}
 
 
@@ -559,6 +614,11 @@ async def _create_run_record_if_allowed(
         )
         active_result = await session.execute(active_stmt)
         if active_result.scalar_one_or_none():
+            logger.info(
+                "Recommendation learning guard blocked run (active pending) user=%s trigger=%s",
+                user_id,
+                trigger,
+            )
             return None, "active_run_in_progress"
 
         duplicate_stmt = (
@@ -577,6 +637,12 @@ async def _create_run_record_if_allowed(
             last_event_fp = _fingerprint_payload(last_run.event_context or {})
             last_usage_fp = _fingerprint_payload(last_run.usage_snapshot or {})
             if last_event_fp == event_fingerprint and last_usage_fp == usage_fingerprint:
+                logger.info(
+                    "Recommendation learning guard blocked run (duplicate context) user=%s trigger=%s run_id=%s",
+                    user_id,
+                    trigger,
+                    last_run.id,
+                )
                 return None, "duplicate_context"
 
         run = RecommendationLearningRun(
@@ -589,6 +655,12 @@ async def _create_run_record_if_allowed(
         session.add(run)
         await session.commit()
         await session.refresh(run)
+        logger.info(
+            "Recommendation learning run scheduled user=%s trigger=%s run_id=%s",
+            user_id,
+            trigger,
+            run.id,
+        )
         return run, None
 
 
